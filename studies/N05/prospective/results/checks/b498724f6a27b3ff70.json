@@ -1,0 +1,58 @@
+{
+  "key": "b498724f6a27b3ff70",
+  "args": {
+    "crate": "semver",
+    "version": "1.0.26",
+    "id": "1697c46b8963c202",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0865,
+  "errors": [
+    {
+      "code": "E0422",
+      "message": "cannot find struct, variant or union type `Version` in this scope",
+      "rendered": "error[E0422]: cannot find struct, variant or union type `Version` in this scope\n --> src/main.rs:2:1\n  |\n2 | Version {\n  | ^^^^^^^ not found in this scope\n  |\nhelp: consider importing this struct\n  |\n1 + use semver::Version;\n  |\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find value `major` in this scope",
+      "rendered": "error[E0425]: cannot find value `major` in this scope\n --> src/main.rs:3:5\n  |\n3 |     major,\n  |     ^^^^^ not found in this scope\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find value `minor` in this scope",
+      "rendered": "error[E0425]: cannot find value `minor` in this scope\n --> src/main.rs:4:5\n  |\n4 |     minor,\n  |     ^^^^^ not found in this scope\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find value `patch` in this scope",
+      "rendered": "error[E0425]: cannot find value `patch` in this scope\n --> src/main.rs:5:5\n  |\n5 |     patch,\n  |     ^^^^^ not found in this scope\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Prerelease`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Prerelease`\n --> src/main.rs:6:10\n  |\n6 |     pre: Prerelease::EMPTY,\n  |          ^^^^^^^^^^ use of undeclared type `Prerelease`\n  |\nhelp: consider importing this struct\n  |\n1 + use semver::Prerelease;\n  |\n\n",
+      "line": 6
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `BuildMetadata`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `BuildMetadata`\n --> src/main.rs:7:12\n  |\n7 |     build: BuildMetadata::EMPTY,\n  |            ^^^^^^^^^^^^^ use of undeclared type `BuildMetadata`\n  |\nhelp: consider importing this struct\n  |\n1 + use semver::BuildMetadata;\n  |\n\n",
+      "line": 7
+    }
+  ],
+  "error_count": 6,
+  "stderr_excerpt": "error: could not compile `n05_semver_consumer` (bin \"n05_semver_consumer\") due to 6 previous errors\n",
+  "code_sha256": "b6f22391eb80985056371b988385fc28787e7c7509687eecb2e7edda63493c4e",
+  "manifest_sha256": "2c95983c6ff96ca1140c23c602406268f3f3f32d938e8db3e0e0649009100569",
+  "log_file": "prospective/results/check_logs/b498724f6a27b3ff70.txt.gz"
+}

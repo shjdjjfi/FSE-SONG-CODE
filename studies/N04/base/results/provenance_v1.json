@@ -1,0 +1,175 @@
+{
+  "snapshot_semantics": "Public Git revisions fixed at execution; not exact historical CI runtime",
+  "toolchain": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "packages": {
+      "pytest": "8.4.2",
+      "tree-sitter": "0.25.2",
+      "tree-sitter-java": "0.23.5",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8"
+    }
+  },
+  "repository_heads": {
+    "TestingResearchIllinois/idoft": {
+      "present": true,
+      "git_head": "4903dc9233eead4e4191c66f9ed0b14eea091052",
+      "url": "https://github.com/TestingResearchIllinois/idoft"
+    },
+    "test-flare/flaky-test-dataset": {
+      "present": true,
+      "git_head": "b872ed937b7b811938e58b1a13bb3144882fda21",
+      "url": "https://github.com/test-flare/flaky-test-dataset"
+    },
+    "apereo/java-cas-client": {
+      "present": true,
+      "git_head": "dfaa93aaf0e4776d8ea2b65e550196bdbe697fbd",
+      "url": "https://github.com/apereo/java-cas-client"
+    },
+    "javadelight/delight-nashorn-sandbox": {
+      "present": true,
+      "git_head": "e9b3ebd48c46ec0843535becadf8b2055676ba42",
+      "url": "https://github.com/javadelight/delight-nashorn-sandbox"
+    },
+    "TooTallNate/Java-WebSocket": {
+      "present": true,
+      "git_head": "afeacbf8c0f6f6a761c9d9daed8c813dd3b8ed7d",
+      "url": "https://github.com/TooTallNate/Java-WebSocket"
+    },
+    "eclipse-ee4j/tyrus": {
+      "present": true,
+      "git_head": "d6dc66cd3e858f852872a53059699755e97dc2e9",
+      "url": "https://github.com/eclipse-ee4j/tyrus"
+    },
+    "feroult/yawp": {
+      "present": true,
+      "git_head": "a415710efce1aa25ad3bade754b8b57ed398f36e",
+      "url": "https://github.com/feroult/yawp"
+    },
+    "fluent/fluent-logger-java": {
+      "present": true,
+      "git_head": "2e5fdf2dbed59cc5af88442ceae6cbe72f321060",
+      "url": "https://github.com/fluent/fluent-logger-java"
+    },
+    "spotify/helios": {
+      "present": true,
+      "git_head": "819e59493b502ddbf40cd96a4a7a0ea2a8af3edb",
+      "url": "https://github.com/spotify/helios"
+    },
+    "sonatype-nexus-community/nexus-repository-helm": {
+      "present": true,
+      "git_head": "e9178160b16f5500a1e91b21ee98423a96968f65",
+      "url": "https://github.com/sonatype-nexus-community/nexus-repository-helm"
+    },
+    "danfickle/openhtmltopdf": {
+      "present": true,
+      "git_head": "780ba564839f1ad5abfa5df12e4aebb9dd6782d2",
+      "url": "https://github.com/danfickle/openhtmltopdf"
+    },
+    "zalando/riptide": {
+      "present": true,
+      "git_head": "fabb72952974bef818f958f559a26daaa67abc53",
+      "url": "https://github.com/zalando/riptide"
+    },
+    "jdereg/json-io": {
+      "present": true,
+      "git_head": "893e7dbed1b3f358e66a364fce3d3793c84f9f9b",
+      "url": "https://github.com/jdereg/json-io"
+    },
+    "spring-cloud/spring-cloud-kubernetes": {
+      "present": true,
+      "git_head": "e102dc5730b3b3e45b8552ac0382f197e6277c83",
+      "url": "https://github.com/spring-cloud/spring-cloud-kubernetes"
+    },
+    "graphhopper/graphhopper": {
+      "present": true,
+      "git_head": "9df847473a5e73e979ce194ca0fc9a0767a5bb36",
+      "url": "https://github.com/graphhopper/graphhopper"
+    },
+    "Activiti/Activiti": {
+      "present": true,
+      "git_head": "e06f2b3f15f71a9387f4d8f12f6fbb5440324344",
+      "url": "https://github.com/Activiti/Activiti"
+    },
+    "google/guava": {
+      "present": true,
+      "git_head": "fce80fd984c8227262a63972ccc68ae6f2ad0519",
+      "url": "https://github.com/google/guava"
+    },
+    "alibaba/druid": {
+      "present": true,
+      "git_head": "fa8dc9912637a2f729eef9f55356621fec18d40e",
+      "url": "https://github.com/alibaba/druid"
+    },
+    "c2mon/c2mon": {
+      "present": true,
+      "git_head": "c8d8edbd52162a76ea1e419bb60fadb7521bb617",
+      "url": "https://github.com/c2mon/c2mon"
+    },
+    "apache/maven-doxia": {
+      "present": true,
+      "git_head": "dbaf4dad39e2e473df8df8a9c89f6c2697e6dc0a",
+      "url": "https://github.com/apache/maven-doxia"
+    }
+  },
+  "ftw_downloaded_archive": {
+    "source_url": "https://zenodo.org/records/10639030",
+    "present": true,
+    "md5": "00e3f51ddd8ae8f92b62ceafe1130cce",
+    "sha256": "c03d5c6954fe80b8592f765ad4805fb59a03d866cbeeb49388a002a5e1e7da70"
+  },
+  "bundle_sha256": {
+    "PAPER_EXPERIMENTS_EN.md": "cd39d6c7f4df82c5d0dd922a011165ca1852050027e0bfc1da9ae57f9a1ee5c8",
+    "README.md": "515877072c48f4b192d8f23733db3aa7ef767f9a13a8287aba86b6eb41ac574b",
+    "REPORT_ZH.md": "5291ccfd5c66824309fed3b5ae0a6e1989ad9f5efa3e34f96740cce1a518979e",
+    "REPRODUCE_COMMANDS.md": "d712cac33224c115fd56bfc916516dcdd1296b3f2c4bd3e8e9e9adc1fed84f94",
+    "SOURCE_PROVENANCE.md": "8eb4e21f369f8b5ec56894a4681a28006a521a95b93be49d9c622441ae0c66a9",
+    "evidence/source_events_gold.json": "bbbc92e556d9c530fdecd6a8f70a71658ec27140a44972b51a305648a745e619",
+    "figures/ftw_source_coverage.pdf": "9179f2c48c9bfd5c2a1e0ebc795da7895b11e6f0115e3ad930af9de5f7b7fc4d",
+    "figures/ftw_source_coverage.png": "12963e122c714e40779256ec39ef8cd3ca962491c0038c415818b185fcea90f6",
+    "figures/junit_parameter_instance_recovery.pdf": "16be305bb7eaa0836d46f2904e106b94414f125cd20ab7db53f0e3dce4b9bdc6",
+    "figures/junit_parameter_instance_recovery.png": "ecb6e88c04efeda9d815b63208e2f837a5463b2583433bc3e82898ec59a1a719",
+    "figures/lineage_tradeoff.pdf": "e43227080d5cacb464fb362f132731d0b276d2910df8b9ac050906ff80502fd5",
+    "figures/lineage_tradeoff.png": "3762e9158ddf805a9f09f87fe80594b2704059dcf791150e5bd81ec9f31f8491",
+    "figures/pytest_cache_mechanism.pdf": "d42615a825616a88a52593a1c1cbe9731443e3cc11269823959762ad4a0e5599",
+    "figures/pytest_cache_mechanism.png": "3b85b502e472a1f66469d190af47f3338e82f52de516fc3750058d6b88a75a22",
+    "requirements.txt": "9e2f6a524a84a84b174eb4bc299affbc18c7208d1f9e161438f7bfa762564cb7",
+    "results/actual_history_policy.json": "f0413ae923b068c6ee521e4a33a3543b49291591581b64af5de84ca52f51a7e2",
+    "results/experiment_status.json": "f0431f63bd1c73d8800ed0c55b6bebc6b0d009906f300cac277c5d2db7d020a4",
+    "results/ftw_histories.json": "e2350504516ad628c05fa03c7c327f711a4d71bda56f44cd5dfedaeb00f67608",
+    "results/idoft_evaluation.json": "3509da705c37f1e75795f8c7d27defc06d2b425679f89fb15797d9cd0b6b3859",
+    "results/idoft_heldout.json": "67bb4c6a91ec3d4afbacf590707092f698c2eac3fbcc1684dacc76e7dfb00cc6",
+    "results/idoft_heldout_evaluation.json": "68be414fd16a52ed252de77f357bf0a152f7f569e8c215672ce73f712124dcf9",
+    "results/idoft_migrations.json": "837d5c9e41cc8c08d51eca05282d701c2756f8ba8afcc8573c84224b7aaa7fb8",
+    "results/junit_parameter_migration.json": "9cae3717cf85755b2d48cd78b8e606e04c81cbd0a02e647d224e7b107b99eac2",
+    "results/label_audit.json": "3068c015f0382ce102e7a9dbd6a53d2f60aea97efec783225cfd9d7142e18ed7",
+    "results/maven_replay.json": "5079f732d4e496b3a4b8ad4a3e1c00114cbef77e3876c57405518b8d8d89712d",
+    "results/maven_replay_issue580.json": "64372a030c68d054be52d0327c05be03c432c9c69a36951d4d800d24843ad8ae",
+    "results/maven_replay_retry.json": "33aba75f20ccd57540cd06a7b470b53b2fcbd47b0c15ff3671532b78d60c2638",
+    "results/pytest_cache_replay.json": "05dd37e5b822a3e978d06e540089879457a7bd4c9c33de8a6fcb20a7ccf13c88",
+    "results/real_ci_audit.json": "39453e875d93fa00e61af1aa7e2771b045bb93f500337392da4624c6344e200f",
+    "results/source_aligned.json": "0209146320fbbd99c11a2f75903f58225d62a71cc084eb61754ac0f7b5b32f6e",
+    "results/source_gold_evaluation.json": "51ed89cbaf24a5f0be7d122dd52bc56704d7c9981c26dc0b3d23caa68faa5737",
+    "results/statistical_audit.json": "3c4c7f7a8e74577ed7fb4a8df5c7147d093e388dce4b0e341d44c4d2200e852f",
+    "src/align_git.py": "834ee034a24a56888bc5100966e60ead16bcec85ec38838bc69a354657e89075",
+    "src/audit_idoft.py": "4d3cc7c6c38fec85aebde8c801054d3b09dddcfd1bb5d52238b6135642b44cda",
+    "src/audit_real_ci.py": "014f66f350d6b4eb27ea230d31ad7dd92963f25edaae212e5cba95c63acec69d",
+    "src/build_idoft.py": "361002e533918a36cba13c63cd771425cc42b3d4f887ebd489726f238ef6683e",
+    "src/evaluate_idoft.py": "2a0bf57a0385f19a506958c6753dbf7adeb66c82c5d199861893f12e454b5afe",
+    "src/evaluate_junit_parameters.py": "1cffcbd21aa016e6ce0e33c1f92e9e5d9627f9c454483b3d4e639252424f063b",
+    "src/evaluate_source_gold.py": "457117e4bae797cf4249263200b002c08f31d73813edfe933d337fd09616dbd8",
+    "src/ingest_histories.py": "244a548e79ca93324f113d084f1ccbdb0e3167dae7107650e158139679b60b05",
+    "src/java_source.py": "a2cb270301c70d0aee592c887ca55f686b1602419e8b93d47dcc1bad1d4d3e9a",
+    "src/make_figures.py": "31ec9b72bb051907647e6e390a898cc51d205a94bc40ba99ddef5c297ea2452b",
+    "src/record_provenance.py": "52ba668277dc366d7a3c8c9506f4cb8ff029ce75684298c53bb0e12f123d58c9",
+    "src/replay_history_policy.py": "164607554967c919b7beca1a79a2b387142a04f1e8b1d1b6379c06d05c9ac28c",
+    "src/replay_maven.py": "97c1d85457c8f914c656476be4737f114fdddc4ad72e9753e99ae4200d79a930",
+    "src/replay_pytest.py": "0ed145b3fd14816a5a021af9edb672e9714eefec828ae81108f72a703c8b9633",
+    "src/statistical_audit.py": "27cc6bccbfeadbd16e19162e85fdd2eeb0516eebd2daaaeafafb3a1ee8f1ec60",
+    "src/verify_results.py": "ad3aebcc4ce01aadd46d221302a9fe0361aa6f9e07174841f23ecfa402207fb7",
+    "tests/test_core.py": "7f12331a7b880add23663e337e00b45e9facde1a0ab680f86592eef44c8a33d6",
+    "tests/test_validity.py": "709884f0496909da629b52133db8261474b8ddfc5fbe2da41a028791570f7ca7"
+  }
+}

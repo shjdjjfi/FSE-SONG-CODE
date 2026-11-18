@@ -1,0 +1,40 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 28095,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "-",
+      "code": "import { BitwardenShield } from \"../icon/logos\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { AnonLayoutBitwardenShield } from \"../icon/logos\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.icon = BitwardenShield;",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.icon = AnonLayoutBitwardenShield;",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:46.559010+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 2,
+  "pr": 15522,
+  "repository": "bitwarden/clients",
+  "sha256": "aaafafae7482d40599b72a400f8ee1ba76d0494382a689bb70a44927281cadda",
+  "target_code_changed_lines": 4,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15522.patch"
+}

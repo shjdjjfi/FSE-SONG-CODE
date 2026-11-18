@@ -1,0 +1,8 @@
+{
+  "pod_ready": "kube_pod_status_ready{namespace=\"__NAMESPACE__\",condition=\"true\"}",
+  "pod_owner": "kube_pod_owner{namespace=\"__NAMESPACE__\"}",
+  "replicaset_owner": "kube_replicaset_owner{namespace=\"__NAMESPACE__\"}",
+  "deployment_ready": "kube_deployment_status_replicas_available{namespace=\"__NAMESPACE__\"}",
+  "up": "up{namespace=\"__NAMESPACE__\"}",
+  "n06_owner_unavailable": "n06_owner_unavailable{namespace=\"__NAMESPACE__\",job=\"n06-relink\"}"
+}

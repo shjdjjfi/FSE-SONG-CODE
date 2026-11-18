@@ -1,0 +1,26 @@
+{
+  "pr": 16940,
+  "pr_author": "hinton",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-10-20T20:03:40Z",
+      "requested_people": [
+        "hinton"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-20T20:03:41Z",
+      "requested_people": [
+        "hinton",
+        "willmartian"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "528a26b42da532234e34378116ca1a085af08a14aebca96f721155b68f62df06",
+  "url": "https://github.com/bitwarden/clients/pull/16940"
+}

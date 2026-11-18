@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "name": "independent-system-A",
+      "manifest": "system_A/manifest.json",
+      "capture": "system_A/capture.jsonl",
+      "incidents": "system_A/operator_incidents.jsonl",
+      "deliveries": [
+        {"policy": "n06", "path": "system_A/n06_webhooks.jsonl"},
+        {"policy": "nextdoor_deployment", "path": "system_A/nextdoor_webhooks.jsonl"},
+        {"policy": "kube_mixin_lookback", "path": "system_A/mixin_webhooks.jsonl"}
+      ],
+      "pager_receipts": "system_A/verified_provider_receipts.jsonl",
+      "production_cost": "system_A/production_process_cost.jsonl",
+      "native_replay": "system_A/native_real_tsdb_replay.json"
+    },
+    {
+      "name": "independent-system-B",
+      "manifest": "system_B/manifest.json",
+      "capture": "system_B/capture.jsonl",
+      "incidents": "system_B/operator_incidents.jsonl",
+      "deliveries": [
+        {"policy": "n06", "path": "system_B/n06_webhooks.jsonl"},
+        {"policy": "nextdoor_deployment", "path": "system_B/nextdoor_webhooks.jsonl"},
+        {"policy": "kube_mixin_lookback", "path": "system_B/mixin_webhooks.jsonl"}
+      ],
+      "pager_receipts": "system_B/verified_provider_receipts.jsonl",
+      "production_cost": "system_B/production_process_cost.jsonl",
+      "native_replay": "system_B/native_real_tsdb_replay.json"
+    }
+  ]
+}

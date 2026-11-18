@@ -1,0 +1,799 @@
+kube-system, n02-cert-manager-cainjector:leaderelection, Role (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cainjector
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-cainjector:leaderelection
+    namespace: kube-system
+  rules:
+...
+kube-system, n02-cert-manager-cainjector:leaderelection, RoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cainjector
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-cainjector:leaderelection
+    namespace: kube-system
+  roleRef:
+...
+kube-system, n02-cert-manager:leaderelection, Role (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager:leaderelection
+    namespace: kube-system
+  rules:
+...
+kube-system, n02-cert-manager:leaderelection, RoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager:leaderelection
+    namespace: kube-system
+  roleRef:
+...
+    kind: Role
+    name: n02-cert-manager:leaderelection
+  subjects:
+- - apiGroup: ""
+-   kind: ServiceAccount
++ - kind: ServiceAccount
+    name: n02-cert-manager
+    namespace: n02-test
+
+n02-test, n02-cert-manager, Deployment (apps) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager
+    namespace: n02-test
+  spec:
+...
+          app.kubernetes.io/instance: n02
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: cert-manager
+-         app.kubernetes.io/version: v1.15.3
+-         helm.sh/chart: cert-manager-v1.15.3
++         app.kubernetes.io/version: v1.16.0
++         helm.sh/chart: cert-manager-v1.16.0
+      spec:
+        containers:
+        - args:
+          - --v=2
+          - --cluster-resource-namespace=$(POD_NAMESPACE)
+          - --leader-election-namespace=kube-system
+-         - --acme-http01-solver-image=quay.io/jetstack/cert-manager-acmesolver:v1.15.3
++         - --acme-http01-solver-image=quay.io/jetstack/cert-manager-acmesolver:v1.16.0
+          - --max-concurrent-challenges=60
+          env:
+          - name: POD_NAMESPACE
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.namespace
+-         image: quay.io/jetstack/cert-manager-controller:v1.15.3
++         image: quay.io/jetstack/cert-manager-controller:v1.16.0
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            failureThreshold: 8
+...
+n02-test, n02-cert-manager, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-cert-manager, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager
+    namespace: n02-test
+
+n02-test, n02-cert-manager-cainjector, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cainjector
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-cainjector
+  rules:
+  - apiGroups:
+...
+n02-test, n02-cert-manager-cainjector, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cainjector
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-cainjector
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-cert-manager-cainjector, Deployment (apps) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cainjector
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-cainjector
+    namespace: n02-test
+  spec:
+...
+        app.kubernetes.io/name: cainjector
+    template:
+      metadata:
++       annotations:
++         prometheus.io/path: /metrics
++         prometheus.io/port: "9402"
++         prometheus.io/scrape: "true"
+        labels:
+          app: cainjector
+          app.kubernetes.io/component: cainjector
+          app.kubernetes.io/instance: n02
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: cainjector
+-         app.kubernetes.io/version: v1.15.3
+-         helm.sh/chart: cert-manager-v1.15.3
++         app.kubernetes.io/version: v1.16.0
++         helm.sh/chart: cert-manager-v1.16.0
+      spec:
+        containers:
+        - args:
+...
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.namespace
+-         image: quay.io/jetstack/cert-manager-cainjector:v1.15.3
++         image: quay.io/jetstack/cert-manager-cainjector:v1.16.0
+          imagePullPolicy: IfNotPresent
+          name: cert-manager-cainjector
++         ports:
++         - containerPort: 9402
++           name: http-metrics
++           protocol: TCP
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+...
+n02-test, n02-cert-manager-cainjector, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cainjector
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-cainjector
+    namespace: n02-test
+
+n02-test, n02-cert-manager-cluster-view, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+      rbac.authorization.k8s.io/aggregate-to-cluster-reader: "true"
+    name: n02-cert-manager-cluster-view
+  rules:
+...
+n02-test, n02-cert-manager-controller-approve:cert-manager-io, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-approve:cert-manager-io
+  rules:
+  - apiGroups:
+...
+n02-test, n02-cert-manager-controller-approve:cert-manager-io, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-approve:cert-manager-io
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-cert-manager-controller-certificates, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-certificates
+  rules:
+  - apiGroups:
+...
+n02-test, n02-cert-manager-controller-certificates, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-certificates
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-cert-manager-controller-certificatesigningrequests, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-certificatesigningrequests
+  rules:
+  - apiGroups:
+...
+n02-test, n02-cert-manager-controller-certificatesigningrequests, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-certificatesigningrequests
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-cert-manager-controller-challenges, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-challenges
+  rules:
+  - apiGroups:
+...
+n02-test, n02-cert-manager-controller-challenges, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-challenges
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-cert-manager-controller-clusterissuers, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-clusterissuers
+  rules:
+  - apiGroups:
+...
+n02-test, n02-cert-manager-controller-clusterissuers, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-clusterissuers
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-cert-manager-controller-ingress-shim, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-ingress-shim
+  rules:
+  - apiGroups:
+...
+n02-test, n02-cert-manager-controller-ingress-shim, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-ingress-shim
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-cert-manager-controller-issuers, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-issuers
+  rules:
+  - apiGroups:
+...
+n02-test, n02-cert-manager-controller-issuers, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-issuers
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-cert-manager-controller-orders, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-orders
+  rules:
+  - apiGroups:
+...
+n02-test, n02-cert-manager-controller-orders, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-controller-orders
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-cert-manager-edit, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+      rbac.authorization.k8s.io/aggregate-to-admin: "true"
+      rbac.authorization.k8s.io/aggregate-to-edit: "true"
+    name: n02-cert-manager-edit
+...
+n02-test, n02-cert-manager-startupapicheck, Job (batch) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: startupapicheck
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-startupapicheck
+    namespace: n02-test
+  spec:
+...
+          app.kubernetes.io/instance: n02
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: startupapicheck
+-         app.kubernetes.io/version: v1.15.3
+-         helm.sh/chart: cert-manager-v1.15.3
++         app.kubernetes.io/version: v1.16.0
++         helm.sh/chart: cert-manager-v1.16.0
+      spec:
+        containers:
+        - args:
+...
+          - api
+          - --wait=1m
+          - -v
+-         image: quay.io/jetstack/cert-manager-startupapicheck:v1.15.3
++         env:
++         - name: POD_NAMESPACE
++           valueFrom:
++             fieldRef:
++               fieldPath: metadata.namespace
++         image: quay.io/jetstack/cert-manager-startupapicheck:v1.16.0
+          imagePullPolicy: IfNotPresent
+          name: cert-manager-startupapicheck
+          securityContext:
+...
+n02-test, n02-cert-manager-startupapicheck, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: startupapicheck
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-startupapicheck
+    namespace: n02-test
+
+n02-test, n02-cert-manager-startupapicheck:create-cert, Role (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: startupapicheck
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-startupapicheck:create-cert
+    namespace: n02-test
+  rules:
+  - apiGroups:
+    - cert-manager.io
+    resources:
+-   - certificates
++   - certificaterequests
+    verbs:
+    - create
+
+n02-test, n02-cert-manager-startupapicheck:create-cert, RoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: startupapicheck
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-startupapicheck:create-cert
+    namespace: n02-test
+  roleRef:
+...
+n02-test, n02-cert-manager-view, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+      rbac.authorization.k8s.io/aggregate-to-admin: "true"
+      rbac.authorization.k8s.io/aggregate-to-cluster-reader: "true"
+      rbac.authorization.k8s.io/aggregate-to-edit: "true"
+...
+n02-test, n02-cert-manager-webhook, Deployment (apps) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: webhook
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-webhook
+    namespace: n02-test
+  spec:
+...
+        app.kubernetes.io/name: webhook
+    template:
+      metadata:
++       annotations:
++         prometheus.io/path: /metrics
++         prometheus.io/port: "9402"
++         prometheus.io/scrape: "true"
+        labels:
+          app: webhook
+          app.kubernetes.io/component: webhook
+          app.kubernetes.io/instance: n02
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: webhook
+-         app.kubernetes.io/version: v1.15.3
+-         helm.sh/chart: cert-manager-v1.15.3
++         app.kubernetes.io/version: v1.16.0
++         helm.sh/chart: cert-manager-v1.16.0
+      spec:
+        containers:
+        - args:
+...
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.namespace
+-         image: quay.io/jetstack/cert-manager-webhook:v1.15.3
++         image: quay.io/jetstack/cert-manager-webhook:v1.16.0
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            failureThreshold: 3
+...
+            protocol: TCP
+          - containerPort: 6080
+            name: healthcheck
++           protocol: TCP
++         - containerPort: 9402
++           name: http-metrics
+            protocol: TCP
+          readinessProbe:
+            failureThreshold: 3
+...
+n02-test, n02-cert-manager-webhook, MutatingWebhookConfiguration (admissionregistration.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: webhook
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-webhook
+  webhooks:
+  - admissionReviewVersions:
+...
+n02-test, n02-cert-manager-webhook, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: webhook
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-webhook
+    namespace: n02-test
+  spec:
+...
+      port: 443
+      protocol: TCP
+      targetPort: https
++   - name: metrics
++     port: 9402
++     protocol: TCP
++     targetPort: http-metrics
+    selector:
+      app.kubernetes.io/component: webhook
+      app.kubernetes.io/instance: n02
+...
+n02-test, n02-cert-manager-webhook, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: webhook
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-webhook
+    namespace: n02-test
+
+n02-test, n02-cert-manager-webhook, ValidatingWebhookConfiguration (admissionregistration.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: webhook
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-webhook
+  webhooks:
+  - admissionReviewVersions:
+...
+n02-test, n02-cert-manager-webhook:dynamic-serving, Role (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: webhook
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-webhook:dynamic-serving
+    namespace: n02-test
+  rules:
+...
+n02-test, n02-cert-manager-webhook:dynamic-serving, RoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: webhook
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-webhook:dynamic-serving
+    namespace: n02-test
+  roleRef:
+...
+    kind: Role
+    name: n02-cert-manager-webhook:dynamic-serving
+  subjects:
+- - apiGroup: ""
+-   kind: ServiceAccount
++ - kind: ServiceAccount
+    name: n02-cert-manager-webhook
+    namespace: n02-test
+
+n02-test, n02-cert-manager-webhook:subjectaccessreviews, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: webhook
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-webhook:subjectaccessreviews
+  rules:
+  - apiGroups:
+...
+n02-test, n02-cert-manager-webhook:subjectaccessreviews, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: webhook
+-     app.kubernetes.io/version: v1.15.3
+-     helm.sh/chart: cert-manager-v1.15.3
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
+    name: n02-cert-manager-webhook:subjectaccessreviews
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+    kind: ClusterRole
+    name: n02-cert-manager-webhook:subjectaccessreviews
+  subjects:
+- - apiGroup: ""
+-   kind: ServiceAccount
++ - kind: ServiceAccount
+    name: n02-cert-manager-webhook
+    namespace: n02-test
+
+n02-test, n02-cert-manager-cainjector, Service (v1) has been added:
++ apiVersion: v1
++ kind: Service
++ metadata:
++   labels:
++     app: cainjector
++     app.kubernetes.io/component: cainjector
++     app.kubernetes.io/instance: n02
++     app.kubernetes.io/managed-by: Helm
++     app.kubernetes.io/name: cainjector
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
++   name: n02-cert-manager-cainjector
++   namespace: n02-test
++ spec:
++   ports:
++   - name: http-metrics
++     port: 9402
++     protocol: TCP
++   selector:
++     app.kubernetes.io/component: cainjector
++     app.kubernetes.io/instance: n02
++     app.kubernetes.io/name: cainjector
++   type: ClusterIP
+
+n02-test, n02-cert-manager-n02-cert-manager-tokenrequest, RoleBinding (rbac.authorization.k8s.io) has been added:
++ apiVersion: rbac.authorization.k8s.io/v1
++ kind: RoleBinding
++ metadata:
++   labels:
++     app: cert-manager
++     app.kubernetes.io/component: controller
++     app.kubernetes.io/instance: n02
++     app.kubernetes.io/managed-by: Helm
++     app.kubernetes.io/name: cert-manager
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
++   name: n02-cert-manager-n02-cert-manager-tokenrequest
++   namespace: n02-test
++ roleRef:
++   apiGroup: rbac.authorization.k8s.io
++   kind: Role
++   name: n02-cert-manager-tokenrequest
++ subjects:
++ - kind: ServiceAccount
++   name: n02-cert-manager
++   namespace: n02-test
+
+n02-test, n02-cert-manager-tokenrequest, Role (rbac.authorization.k8s.io) has been added:
++ apiVersion: rbac.authorization.k8s.io/v1
++ kind: Role
++ metadata:
++   labels:
++     app: cert-manager
++     app.kubernetes.io/component: controller
++     app.kubernetes.io/instance: n02
++     app.kubernetes.io/managed-by: Helm
++     app.kubernetes.io/name: cert-manager
++     app.kubernetes.io/version: v1.16.0
++     helm.sh/chart: cert-manager-v1.16.0
++   name: n02-cert-manager-tokenrequest
++   namespace: n02-test
++ rules:
++ - apiGroups:
++   - ""
++   resourceNames:
++   - n02-cert-manager
++   resources:
++   - serviceaccounts/token
++   verbs:
++   - create
+

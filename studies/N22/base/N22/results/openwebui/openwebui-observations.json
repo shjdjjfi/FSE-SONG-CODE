@@ -1,0 +1,1100 @@
+{
+  "input": {
+    "file": "backend/open_webui/migrations/versions/b10670c03dd5_update_user_table.py",
+    "tag": "v0.9.6",
+    "commit": "1a97751e376e00a1897bc3679215ae1c7bd8fd42",
+    "sha256": "9ad51c7b6129683700fce53672b3d69b097de7ac5eb3cb2ce14f7c85eac03698",
+    "patch_sha256": "455f21de1d3f42f2b88bbe7fabaa301d4d4f1714c9b209193c82084ab1de9f96",
+    "reference_patch_is_not_an_upstream_release": true,
+    "sqlalchemy": "2.0.48",
+    "sqlite": "3.53.1",
+    "python": "3.12.14"
+  },
+  "runs": [
+    {
+      "id": "zero_users__upstream",
+      "project": "open-webui",
+      "source_class": "real_upstream_migration_with_controlled_input",
+      "arm": "upstream",
+      "scenario": "zero_users",
+      "input_users": [],
+      "success": true,
+      "exception": null,
+      "migration_ms": 36.928,
+      "sqlite_file": "zero_users__upstream.sqlite",
+      "ledger": "b10670c03dd5",
+      "user_count": 0,
+      "raw_users": [],
+      "generic_json_parse_success": true,
+      "typed_pydantic_probe_success": true,
+      "oracle_preserves_source_payload": true,
+      "application_probe_errors": [],
+      "schema": [
+        [
+          "alembic_version",
+          "CREATE TABLE alembic_version (version_num VARCHAR(32) NOT NULL)"
+        ],
+        [
+          "api_key",
+          "CREATE TABLE api_key (\n\tid TEXT NOT NULL, \n\tuser_id TEXT, \n\t\"key\" TEXT NOT NULL, \n\tdata JSON, \n\texpires_at BIGINT, \n\tlast_used_at BIGINT, \n\tcreated_at BIGINT NOT NULL, \n\tupdated_at BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (id), \n\tFOREIGN KEY(user_id) REFERENCES user (id) ON DELETE CASCADE, \n\tUNIQUE (\"key\")\n)"
+        ],
+        [
+          "user",
+          "CREATE TABLE user (id TEXT PRIMARY KEY, profile_banner_image_url TEXT, timezone VARCHAR, presence_state VARCHAR, status_emoji VARCHAR, status_message TEXT, status_expires_at BIGINT, oauth JSON, info JSON, settings JSON)"
+        ]
+      ],
+      "columns": [
+        "id",
+        "info",
+        "oauth",
+        "presence_state",
+        "profile_banner_image_url",
+        "settings",
+        "status_emoji",
+        "status_expires_at",
+        "status_message",
+        "timezone"
+      ],
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_count_as_reference": true
+    },
+    {
+      "id": "zero_users__reference_patch",
+      "project": "open-webui",
+      "source_class": "real_upstream_migration_with_controlled_input",
+      "arm": "reference_patch",
+      "scenario": "zero_users",
+      "input_users": [],
+      "success": true,
+      "exception": null,
+      "migration_ms": 23.663,
+      "sqlite_file": "zero_users__reference_patch.sqlite",
+      "ledger": "b10670c03dd5",
+      "user_count": 0,
+      "raw_users": [],
+      "generic_json_parse_success": true,
+      "typed_pydantic_probe_success": true,
+      "oracle_preserves_source_payload": true,
+      "application_probe_errors": [],
+      "schema": [
+        [
+          "alembic_version",
+          "CREATE TABLE alembic_version (version_num VARCHAR(32) NOT NULL)"
+        ],
+        [
+          "api_key",
+          "CREATE TABLE api_key (\n\tid TEXT NOT NULL, \n\tuser_id TEXT, \n\t\"key\" TEXT NOT NULL, \n\tdata JSON, \n\texpires_at BIGINT, \n\tlast_used_at BIGINT, \n\tcreated_at BIGINT NOT NULL, \n\tupdated_at BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (id), \n\tFOREIGN KEY(user_id) REFERENCES user (id) ON DELETE CASCADE, \n\tUNIQUE (\"key\")\n)"
+        ],
+        [
+          "user",
+          "CREATE TABLE user (id TEXT PRIMARY KEY, profile_banner_image_url TEXT, timezone VARCHAR, presence_state VARCHAR, status_emoji VARCHAR, status_message TEXT, status_expires_at BIGINT, oauth JSON, info JSON, settings JSON)"
+        ]
+      ],
+      "columns": [
+        "id",
+        "info",
+        "oauth",
+        "presence_state",
+        "profile_banner_image_url",
+        "settings",
+        "status_emoji",
+        "status_expires_at",
+        "status_message",
+        "timezone"
+      ],
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_count_as_reference": true
+    },
+    {
+      "id": "one_valid__upstream",
+      "project": "open-webui",
+      "source_class": "real_upstream_migration_with_controlled_input",
+      "arm": "upstream",
+      "scenario": "one_valid",
+      "input_users": [
+        {
+          "id": "u0",
+          "info": {
+            "name": "Alice"
+          },
+          "settings": {
+            "ui": {
+              "version": "0.4.7"
+            }
+          }
+        }
+      ],
+      "success": true,
+      "exception": null,
+      "migration_ms": 19.692,
+      "sqlite_file": "one_valid__upstream.sqlite",
+      "ledger": "b10670c03dd5",
+      "user_count": 1,
+      "raw_users": [
+        {
+          "id": "u0",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info": "\"{\\\"name\\\": \\\"Alice\\\"}\"",
+          "settings": "\"{\\\"ui\\\": {\\\"version\\\": \\\"0.4.7\\\"}}\""
+        }
+      ],
+      "generic_json_parse_success": true,
+      "typed_pydantic_probe_success": false,
+      "oracle_preserves_source_payload": false,
+      "application_probe_errors": [
+        {
+          "user_id": "u0",
+          "error_types": [
+            "dict_type",
+            "dict_type"
+          ]
+        }
+      ],
+      "schema": [
+        [
+          "alembic_version",
+          "CREATE TABLE alembic_version (version_num VARCHAR(32) NOT NULL)"
+        ],
+        [
+          "api_key",
+          "CREATE TABLE api_key (\n\tid TEXT NOT NULL, \n\tuser_id TEXT, \n\t\"key\" TEXT NOT NULL, \n\tdata JSON, \n\texpires_at BIGINT, \n\tlast_used_at BIGINT, \n\tcreated_at BIGINT NOT NULL, \n\tupdated_at BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (id), \n\tFOREIGN KEY(user_id) REFERENCES user (id) ON DELETE CASCADE, \n\tUNIQUE (\"key\")\n)"
+        ],
+        [
+          "user",
+          "CREATE TABLE user (id TEXT PRIMARY KEY, profile_banner_image_url TEXT, timezone VARCHAR, presence_state VARCHAR, status_emoji VARCHAR, status_message TEXT, status_expires_at BIGINT, oauth JSON, info JSON, settings JSON)"
+        ]
+      ],
+      "columns": [
+        "id",
+        "info",
+        "oauth",
+        "presence_state",
+        "profile_banner_image_url",
+        "settings",
+        "status_emoji",
+        "status_expires_at",
+        "status_message",
+        "timezone"
+      ],
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_count_as_reference": true
+    },
+    {
+      "id": "one_valid__reference_patch",
+      "project": "open-webui",
+      "source_class": "real_upstream_migration_with_controlled_input",
+      "arm": "reference_patch",
+      "scenario": "one_valid",
+      "input_users": [
+        {
+          "id": "u0",
+          "info": {
+            "name": "Alice"
+          },
+          "settings": {
+            "ui": {
+              "version": "0.4.7"
+            }
+          }
+        }
+      ],
+      "success": true,
+      "exception": null,
+      "migration_ms": 21.858,
+      "sqlite_file": "one_valid__reference_patch.sqlite",
+      "ledger": "b10670c03dd5",
+      "user_count": 1,
+      "raw_users": [
+        {
+          "id": "u0",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info": "{\"name\": \"Alice\"}",
+          "settings": "{\"ui\": {\"version\": \"0.4.7\"}}"
+        }
+      ],
+      "generic_json_parse_success": true,
+      "typed_pydantic_probe_success": true,
+      "oracle_preserves_source_payload": true,
+      "application_probe_errors": [],
+      "schema": [
+        [
+          "alembic_version",
+          "CREATE TABLE alembic_version (version_num VARCHAR(32) NOT NULL)"
+        ],
+        [
+          "api_key",
+          "CREATE TABLE api_key (\n\tid TEXT NOT NULL, \n\tuser_id TEXT, \n\t\"key\" TEXT NOT NULL, \n\tdata JSON, \n\texpires_at BIGINT, \n\tlast_used_at BIGINT, \n\tcreated_at BIGINT NOT NULL, \n\tupdated_at BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (id), \n\tFOREIGN KEY(user_id) REFERENCES user (id) ON DELETE CASCADE, \n\tUNIQUE (\"key\")\n)"
+        ],
+        [
+          "user",
+          "CREATE TABLE user (id TEXT PRIMARY KEY, profile_banner_image_url TEXT, timezone VARCHAR, presence_state VARCHAR, status_emoji VARCHAR, status_message TEXT, status_expires_at BIGINT, oauth JSON, info JSON, settings JSON)"
+        ]
+      ],
+      "columns": [
+        "id",
+        "info",
+        "oauth",
+        "presence_state",
+        "profile_banner_image_url",
+        "settings",
+        "status_emoji",
+        "status_expires_at",
+        "status_message",
+        "timezone"
+      ],
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_count_as_reference": true
+    },
+    {
+      "id": "one_empty__upstream",
+      "project": "open-webui",
+      "source_class": "real_upstream_migration_with_controlled_input",
+      "arm": "upstream",
+      "scenario": "one_empty",
+      "input_users": [
+        {
+          "id": "u0",
+          "info": {},
+          "settings": {}
+        }
+      ],
+      "success": true,
+      "exception": null,
+      "migration_ms": 20.188,
+      "sqlite_file": "one_empty__upstream.sqlite",
+      "ledger": "b10670c03dd5",
+      "user_count": 1,
+      "raw_users": [
+        {
+          "id": "u0",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info": "null",
+          "settings": "null"
+        }
+      ],
+      "generic_json_parse_success": true,
+      "typed_pydantic_probe_success": true,
+      "oracle_preserves_source_payload": false,
+      "application_probe_errors": [],
+      "schema": [
+        [
+          "alembic_version",
+          "CREATE TABLE alembic_version (version_num VARCHAR(32) NOT NULL)"
+        ],
+        [
+          "api_key",
+          "CREATE TABLE api_key (\n\tid TEXT NOT NULL, \n\tuser_id TEXT, \n\t\"key\" TEXT NOT NULL, \n\tdata JSON, \n\texpires_at BIGINT, \n\tlast_used_at BIGINT, \n\tcreated_at BIGINT NOT NULL, \n\tupdated_at BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (id), \n\tFOREIGN KEY(user_id) REFERENCES user (id) ON DELETE CASCADE, \n\tUNIQUE (\"key\")\n)"
+        ],
+        [
+          "user",
+          "CREATE TABLE user (id TEXT PRIMARY KEY, profile_banner_image_url TEXT, timezone VARCHAR, presence_state VARCHAR, status_emoji VARCHAR, status_message TEXT, status_expires_at BIGINT, oauth JSON, info JSON, settings JSON)"
+        ]
+      ],
+      "columns": [
+        "id",
+        "info",
+        "oauth",
+        "presence_state",
+        "profile_banner_image_url",
+        "settings",
+        "status_emoji",
+        "status_expires_at",
+        "status_message",
+        "timezone"
+      ],
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_count_as_reference": true
+    },
+    {
+      "id": "one_empty__reference_patch",
+      "project": "open-webui",
+      "source_class": "real_upstream_migration_with_controlled_input",
+      "arm": "reference_patch",
+      "scenario": "one_empty",
+      "input_users": [
+        {
+          "id": "u0",
+          "info": {},
+          "settings": {}
+        }
+      ],
+      "success": true,
+      "exception": null,
+      "migration_ms": 17.534,
+      "sqlite_file": "one_empty__reference_patch.sqlite",
+      "ledger": "b10670c03dd5",
+      "user_count": 1,
+      "raw_users": [
+        {
+          "id": "u0",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info": "{}",
+          "settings": "{}"
+        }
+      ],
+      "generic_json_parse_success": true,
+      "typed_pydantic_probe_success": true,
+      "oracle_preserves_source_payload": true,
+      "application_probe_errors": [],
+      "schema": [
+        [
+          "alembic_version",
+          "CREATE TABLE alembic_version (version_num VARCHAR(32) NOT NULL)"
+        ],
+        [
+          "api_key",
+          "CREATE TABLE api_key (\n\tid TEXT NOT NULL, \n\tuser_id TEXT, \n\t\"key\" TEXT NOT NULL, \n\tdata JSON, \n\texpires_at BIGINT, \n\tlast_used_at BIGINT, \n\tcreated_at BIGINT NOT NULL, \n\tupdated_at BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (id), \n\tFOREIGN KEY(user_id) REFERENCES user (id) ON DELETE CASCADE, \n\tUNIQUE (\"key\")\n)"
+        ],
+        [
+          "user",
+          "CREATE TABLE user (id TEXT PRIMARY KEY, profile_banner_image_url TEXT, timezone VARCHAR, presence_state VARCHAR, status_emoji VARCHAR, status_message TEXT, status_expires_at BIGINT, oauth JSON, info JSON, settings JSON)"
+        ]
+      ],
+      "columns": [
+        "id",
+        "info",
+        "oauth",
+        "presence_state",
+        "profile_banner_image_url",
+        "settings",
+        "status_emoji",
+        "status_expires_at",
+        "status_message",
+        "timezone"
+      ],
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_count_as_reference": true
+    },
+    {
+      "id": "one_null__upstream",
+      "project": "open-webui",
+      "source_class": "real_upstream_migration_with_controlled_input",
+      "arm": "upstream",
+      "scenario": "one_null",
+      "input_users": [
+        {
+          "id": "u0",
+          "info": null,
+          "settings": null
+        }
+      ],
+      "success": true,
+      "exception": null,
+      "migration_ms": 20.2,
+      "sqlite_file": "one_null__upstream.sqlite",
+      "ledger": "b10670c03dd5",
+      "user_count": 1,
+      "raw_users": [
+        {
+          "id": "u0",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info": "null",
+          "settings": "null"
+        }
+      ],
+      "generic_json_parse_success": true,
+      "typed_pydantic_probe_success": true,
+      "oracle_preserves_source_payload": true,
+      "application_probe_errors": [],
+      "schema": [
+        [
+          "alembic_version",
+          "CREATE TABLE alembic_version (version_num VARCHAR(32) NOT NULL)"
+        ],
+        [
+          "api_key",
+          "CREATE TABLE api_key (\n\tid TEXT NOT NULL, \n\tuser_id TEXT, \n\t\"key\" TEXT NOT NULL, \n\tdata JSON, \n\texpires_at BIGINT, \n\tlast_used_at BIGINT, \n\tcreated_at BIGINT NOT NULL, \n\tupdated_at BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (id), \n\tFOREIGN KEY(user_id) REFERENCES user (id) ON DELETE CASCADE, \n\tUNIQUE (\"key\")\n)"
+        ],
+        [
+          "user",
+          "CREATE TABLE user (id TEXT PRIMARY KEY, profile_banner_image_url TEXT, timezone VARCHAR, presence_state VARCHAR, status_emoji VARCHAR, status_message TEXT, status_expires_at BIGINT, oauth JSON, info JSON, settings JSON)"
+        ]
+      ],
+      "columns": [
+        "id",
+        "info",
+        "oauth",
+        "presence_state",
+        "profile_banner_image_url",
+        "settings",
+        "status_emoji",
+        "status_expires_at",
+        "status_message",
+        "timezone"
+      ],
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_count_as_reference": true
+    },
+    {
+      "id": "one_null__reference_patch",
+      "project": "open-webui",
+      "source_class": "real_upstream_migration_with_controlled_input",
+      "arm": "reference_patch",
+      "scenario": "one_null",
+      "input_users": [
+        {
+          "id": "u0",
+          "info": null,
+          "settings": null
+        }
+      ],
+      "success": true,
+      "exception": null,
+      "migration_ms": 18.167,
+      "sqlite_file": "one_null__reference_patch.sqlite",
+      "ledger": "b10670c03dd5",
+      "user_count": 1,
+      "raw_users": [
+        {
+          "id": "u0",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info": "null",
+          "settings": "null"
+        }
+      ],
+      "generic_json_parse_success": true,
+      "typed_pydantic_probe_success": true,
+      "oracle_preserves_source_payload": true,
+      "application_probe_errors": [],
+      "schema": [
+        [
+          "alembic_version",
+          "CREATE TABLE alembic_version (version_num VARCHAR(32) NOT NULL)"
+        ],
+        [
+          "api_key",
+          "CREATE TABLE api_key (\n\tid TEXT NOT NULL, \n\tuser_id TEXT, \n\t\"key\" TEXT NOT NULL, \n\tdata JSON, \n\texpires_at BIGINT, \n\tlast_used_at BIGINT, \n\tcreated_at BIGINT NOT NULL, \n\tupdated_at BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (id), \n\tFOREIGN KEY(user_id) REFERENCES user (id) ON DELETE CASCADE, \n\tUNIQUE (\"key\")\n)"
+        ],
+        [
+          "user",
+          "CREATE TABLE user (id TEXT PRIMARY KEY, profile_banner_image_url TEXT, timezone VARCHAR, presence_state VARCHAR, status_emoji VARCHAR, status_message TEXT, status_expires_at BIGINT, oauth JSON, info JSON, settings JSON)"
+        ]
+      ],
+      "columns": [
+        "id",
+        "info",
+        "oauth",
+        "presence_state",
+        "profile_banner_image_url",
+        "settings",
+        "status_emoji",
+        "status_expires_at",
+        "status_message",
+        "timezone"
+      ],
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_count_as_reference": true
+    },
+    {
+      "id": "one_custom__upstream",
+      "project": "open-webui",
+      "source_class": "real_upstream_migration_with_controlled_input",
+      "arm": "upstream",
+      "scenario": "one_custom",
+      "input_users": [
+        {
+          "id": "u0",
+          "info": {
+            "name": "Customer"
+          },
+          "settings": {
+            "theme": "custom"
+          }
+        }
+      ],
+      "success": true,
+      "exception": null,
+      "migration_ms": 17.71,
+      "sqlite_file": "one_custom__upstream.sqlite",
+      "ledger": "b10670c03dd5",
+      "user_count": 1,
+      "raw_users": [
+        {
+          "id": "u0",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info": "\"{\\\"name\\\": \\\"Customer\\\"}\"",
+          "settings": "\"{\\\"theme\\\": \\\"custom\\\"}\""
+        }
+      ],
+      "generic_json_parse_success": true,
+      "typed_pydantic_probe_success": false,
+      "oracle_preserves_source_payload": false,
+      "application_probe_errors": [
+        {
+          "user_id": "u0",
+          "error_types": [
+            "dict_type",
+            "dict_type"
+          ]
+        }
+      ],
+      "schema": [
+        [
+          "alembic_version",
+          "CREATE TABLE alembic_version (version_num VARCHAR(32) NOT NULL)"
+        ],
+        [
+          "api_key",
+          "CREATE TABLE api_key (\n\tid TEXT NOT NULL, \n\tuser_id TEXT, \n\t\"key\" TEXT NOT NULL, \n\tdata JSON, \n\texpires_at BIGINT, \n\tlast_used_at BIGINT, \n\tcreated_at BIGINT NOT NULL, \n\tupdated_at BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (id), \n\tFOREIGN KEY(user_id) REFERENCES user (id) ON DELETE CASCADE, \n\tUNIQUE (\"key\")\n)"
+        ],
+        [
+          "user",
+          "CREATE TABLE user (id TEXT PRIMARY KEY, profile_banner_image_url TEXT, timezone VARCHAR, presence_state VARCHAR, status_emoji VARCHAR, status_message TEXT, status_expires_at BIGINT, oauth JSON, info JSON, settings JSON)"
+        ]
+      ],
+      "columns": [
+        "id",
+        "info",
+        "oauth",
+        "presence_state",
+        "profile_banner_image_url",
+        "settings",
+        "status_emoji",
+        "status_expires_at",
+        "status_message",
+        "timezone"
+      ],
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_count_as_reference": true
+    },
+    {
+      "id": "one_custom__reference_patch",
+      "project": "open-webui",
+      "source_class": "real_upstream_migration_with_controlled_input",
+      "arm": "reference_patch",
+      "scenario": "one_custom",
+      "input_users": [
+        {
+          "id": "u0",
+          "info": {
+            "name": "Customer"
+          },
+          "settings": {
+            "theme": "custom"
+          }
+        }
+      ],
+      "success": true,
+      "exception": null,
+      "migration_ms": 16.67,
+      "sqlite_file": "one_custom__reference_patch.sqlite",
+      "ledger": "b10670c03dd5",
+      "user_count": 1,
+      "raw_users": [
+        {
+          "id": "u0",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info": "{\"name\": \"Customer\"}",
+          "settings": "{\"theme\": \"custom\"}"
+        }
+      ],
+      "generic_json_parse_success": true,
+      "typed_pydantic_probe_success": true,
+      "oracle_preserves_source_payload": true,
+      "application_probe_errors": [],
+      "schema": [
+        [
+          "alembic_version",
+          "CREATE TABLE alembic_version (version_num VARCHAR(32) NOT NULL)"
+        ],
+        [
+          "api_key",
+          "CREATE TABLE api_key (\n\tid TEXT NOT NULL, \n\tuser_id TEXT, \n\t\"key\" TEXT NOT NULL, \n\tdata JSON, \n\texpires_at BIGINT, \n\tlast_used_at BIGINT, \n\tcreated_at BIGINT NOT NULL, \n\tupdated_at BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (id), \n\tFOREIGN KEY(user_id) REFERENCES user (id) ON DELETE CASCADE, \n\tUNIQUE (\"key\")\n)"
+        ],
+        [
+          "user",
+          "CREATE TABLE user (id TEXT PRIMARY KEY, profile_banner_image_url TEXT, timezone VARCHAR, presence_state VARCHAR, status_emoji VARCHAR, status_message TEXT, status_expires_at BIGINT, oauth JSON, info JSON, settings JSON)"
+        ]
+      ],
+      "columns": [
+        "id",
+        "info",
+        "oauth",
+        "presence_state",
+        "profile_banner_image_url",
+        "settings",
+        "status_emoji",
+        "status_expires_at",
+        "status_message",
+        "timezone"
+      ],
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_count_as_reference": true
+    },
+    {
+      "id": "two_valid__upstream",
+      "project": "open-webui",
+      "source_class": "real_upstream_migration_with_controlled_input",
+      "arm": "upstream",
+      "scenario": "two_valid",
+      "input_users": [
+        {
+          "id": "u0",
+          "info": {
+            "name": "A"
+          },
+          "settings": {
+            "ui": {
+              "version": "v0"
+            }
+          }
+        },
+        {
+          "id": "u1",
+          "info": {
+            "name": "B"
+          },
+          "settings": {
+            "ui": {
+              "version": "v1"
+            }
+          }
+        }
+      ],
+      "success": false,
+      "exception": "ArgumentError: column object 'info_json' already assigned to table 'user'",
+      "migration_ms": 12.544,
+      "sqlite_file": "two_valid__upstream.sqlite",
+      "ledger": "2f1211949ecc",
+      "user_count": 2,
+      "raw_users": [
+        {
+          "id": "u0",
+          "info": "{\"name\": \"A\"}",
+          "settings": "{\"ui\": {\"version\": \"v0\"}}",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info_json": null
+        },
+        {
+          "id": "u1",
+          "info": "{\"name\": \"B\"}",
+          "settings": "{\"ui\": {\"version\": \"v1\"}}",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info_json": null
+        }
+      ],
+      "generic_json_parse_success": true,
+      "typed_pydantic_probe_success": true,
+      "oracle_preserves_source_payload": true,
+      "application_probe_errors": [],
+      "schema": [
+        [
+          "alembic_version",
+          "CREATE TABLE alembic_version (version_num VARCHAR(32) NOT NULL)"
+        ],
+        [
+          "user",
+          "CREATE TABLE user (id TEXT PRIMARY KEY, info TEXT, settings TEXT, profile_banner_image_url TEXT, timezone VARCHAR, presence_state VARCHAR, status_emoji VARCHAR, status_message TEXT, status_expires_at BIGINT, oauth JSON, info_json JSON)"
+        ]
+      ],
+      "columns": [
+        "id",
+        "info",
+        "info_json",
+        "oauth",
+        "presence_state",
+        "profile_banner_image_url",
+        "settings",
+        "status_emoji",
+        "status_expires_at",
+        "status_message",
+        "timezone"
+      ],
+      "same_schema_as_reference": false,
+      "same_ledger_as_reference": false,
+      "same_row_count_as_reference": true
+    },
+    {
+      "id": "two_valid__reference_patch",
+      "project": "open-webui",
+      "source_class": "real_upstream_migration_with_controlled_input",
+      "arm": "reference_patch",
+      "scenario": "two_valid",
+      "input_users": [
+        {
+          "id": "u0",
+          "info": {
+            "name": "A"
+          },
+          "settings": {
+            "ui": {
+              "version": "v0"
+            }
+          }
+        },
+        {
+          "id": "u1",
+          "info": {
+            "name": "B"
+          },
+          "settings": {
+            "ui": {
+              "version": "v1"
+            }
+          }
+        }
+      ],
+      "success": true,
+      "exception": null,
+      "migration_ms": 17.304,
+      "sqlite_file": "two_valid__reference_patch.sqlite",
+      "ledger": "b10670c03dd5",
+      "user_count": 2,
+      "raw_users": [
+        {
+          "id": "u0",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info": "{\"name\": \"A\"}",
+          "settings": "{\"ui\": {\"version\": \"v0\"}}"
+        },
+        {
+          "id": "u1",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info": "{\"name\": \"B\"}",
+          "settings": "{\"ui\": {\"version\": \"v1\"}}"
+        }
+      ],
+      "generic_json_parse_success": true,
+      "typed_pydantic_probe_success": true,
+      "oracle_preserves_source_payload": true,
+      "application_probe_errors": [],
+      "schema": [
+        [
+          "alembic_version",
+          "CREATE TABLE alembic_version (version_num VARCHAR(32) NOT NULL)"
+        ],
+        [
+          "api_key",
+          "CREATE TABLE api_key (\n\tid TEXT NOT NULL, \n\tuser_id TEXT, \n\t\"key\" TEXT NOT NULL, \n\tdata JSON, \n\texpires_at BIGINT, \n\tlast_used_at BIGINT, \n\tcreated_at BIGINT NOT NULL, \n\tupdated_at BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (id), \n\tFOREIGN KEY(user_id) REFERENCES user (id) ON DELETE CASCADE, \n\tUNIQUE (\"key\")\n)"
+        ],
+        [
+          "user",
+          "CREATE TABLE user (id TEXT PRIMARY KEY, profile_banner_image_url TEXT, timezone VARCHAR, presence_state VARCHAR, status_emoji VARCHAR, status_message TEXT, status_expires_at BIGINT, oauth JSON, info JSON, settings JSON)"
+        ]
+      ],
+      "columns": [
+        "id",
+        "info",
+        "oauth",
+        "presence_state",
+        "profile_banner_image_url",
+        "settings",
+        "status_emoji",
+        "status_expires_at",
+        "status_message",
+        "timezone"
+      ],
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_count_as_reference": true
+    },
+    {
+      "id": "three_valid__upstream",
+      "project": "open-webui",
+      "source_class": "real_upstream_migration_with_controlled_input",
+      "arm": "upstream",
+      "scenario": "three_valid",
+      "input_users": [
+        {
+          "id": "u0",
+          "info": {
+            "i": 0
+          },
+          "settings": {
+            "i": 0
+          }
+        },
+        {
+          "id": "u1",
+          "info": {
+            "i": 1
+          },
+          "settings": {
+            "i": 1
+          }
+        },
+        {
+          "id": "u2",
+          "info": {
+            "i": 2
+          },
+          "settings": {
+            "i": 2
+          }
+        }
+      ],
+      "success": false,
+      "exception": "ArgumentError: column object 'info_json' already assigned to table 'user'",
+      "migration_ms": 14.465,
+      "sqlite_file": "three_valid__upstream.sqlite",
+      "ledger": "2f1211949ecc",
+      "user_count": 3,
+      "raw_users": [
+        {
+          "id": "u0",
+          "info": "{\"i\": 0}",
+          "settings": "{\"i\": 0}",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info_json": null
+        },
+        {
+          "id": "u1",
+          "info": "{\"i\": 1}",
+          "settings": "{\"i\": 1}",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info_json": null
+        },
+        {
+          "id": "u2",
+          "info": "{\"i\": 2}",
+          "settings": "{\"i\": 2}",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info_json": null
+        }
+      ],
+      "generic_json_parse_success": true,
+      "typed_pydantic_probe_success": true,
+      "oracle_preserves_source_payload": true,
+      "application_probe_errors": [],
+      "schema": [
+        [
+          "alembic_version",
+          "CREATE TABLE alembic_version (version_num VARCHAR(32) NOT NULL)"
+        ],
+        [
+          "user",
+          "CREATE TABLE user (id TEXT PRIMARY KEY, info TEXT, settings TEXT, profile_banner_image_url TEXT, timezone VARCHAR, presence_state VARCHAR, status_emoji VARCHAR, status_message TEXT, status_expires_at BIGINT, oauth JSON, info_json JSON)"
+        ]
+      ],
+      "columns": [
+        "id",
+        "info",
+        "info_json",
+        "oauth",
+        "presence_state",
+        "profile_banner_image_url",
+        "settings",
+        "status_emoji",
+        "status_expires_at",
+        "status_message",
+        "timezone"
+      ],
+      "same_schema_as_reference": false,
+      "same_ledger_as_reference": false,
+      "same_row_count_as_reference": true
+    },
+    {
+      "id": "three_valid__reference_patch",
+      "project": "open-webui",
+      "source_class": "real_upstream_migration_with_controlled_input",
+      "arm": "reference_patch",
+      "scenario": "three_valid",
+      "input_users": [
+        {
+          "id": "u0",
+          "info": {
+            "i": 0
+          },
+          "settings": {
+            "i": 0
+          }
+        },
+        {
+          "id": "u1",
+          "info": {
+            "i": 1
+          },
+          "settings": {
+            "i": 1
+          }
+        },
+        {
+          "id": "u2",
+          "info": {
+            "i": 2
+          },
+          "settings": {
+            "i": 2
+          }
+        }
+      ],
+      "success": true,
+      "exception": null,
+      "migration_ms": 18.159,
+      "sqlite_file": "three_valid__reference_patch.sqlite",
+      "ledger": "b10670c03dd5",
+      "user_count": 3,
+      "raw_users": [
+        {
+          "id": "u0",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info": "{\"i\": 0}",
+          "settings": "{\"i\": 0}"
+        },
+        {
+          "id": "u1",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info": "{\"i\": 1}",
+          "settings": "{\"i\": 1}"
+        },
+        {
+          "id": "u2",
+          "profile_banner_image_url": null,
+          "timezone": null,
+          "presence_state": null,
+          "status_emoji": null,
+          "status_message": null,
+          "status_expires_at": null,
+          "oauth": null,
+          "info": "{\"i\": 2}",
+          "settings": "{\"i\": 2}"
+        }
+      ],
+      "generic_json_parse_success": true,
+      "typed_pydantic_probe_success": true,
+      "oracle_preserves_source_payload": true,
+      "application_probe_errors": [],
+      "schema": [
+        [
+          "alembic_version",
+          "CREATE TABLE alembic_version (version_num VARCHAR(32) NOT NULL)"
+        ],
+        [
+          "api_key",
+          "CREATE TABLE api_key (\n\tid TEXT NOT NULL, \n\tuser_id TEXT, \n\t\"key\" TEXT NOT NULL, \n\tdata JSON, \n\texpires_at BIGINT, \n\tlast_used_at BIGINT, \n\tcreated_at BIGINT NOT NULL, \n\tupdated_at BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tUNIQUE (id), \n\tFOREIGN KEY(user_id) REFERENCES user (id) ON DELETE CASCADE, \n\tUNIQUE (\"key\")\n)"
+        ],
+        [
+          "user",
+          "CREATE TABLE user (id TEXT PRIMARY KEY, profile_banner_image_url TEXT, timezone VARCHAR, presence_state VARCHAR, status_emoji VARCHAR, status_message TEXT, status_expires_at BIGINT, oauth JSON, info JSON, settings JSON)"
+        ]
+      ],
+      "columns": [
+        "id",
+        "info",
+        "oauth",
+        "presence_state",
+        "profile_banner_image_url",
+        "settings",
+        "status_emoji",
+        "status_expires_at",
+        "status_message",
+        "timezone"
+      ],
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_count_as_reference": true
+    }
+  ]
+}

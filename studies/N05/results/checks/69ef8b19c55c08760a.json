@@ -1,0 +1,24 @@
+{
+  "key": "69ef8b19c55c08760a",
+  "args": {
+    "crate": "strum",
+    "version": "0.27.1",
+    "id": "4479ab5fc6d4ba3f",
+    "profile": "candidate",
+    "features": [
+      "derive",
+      "std"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0779,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "90efb93c55906f58277809c13308e5973e1b36c689af3f607192a06e1cdeb0a6",
+  "manifest_sha256": "598a63664ced92ce2d42368198d9df1fa9b51e0be3cb99b0c51098b0863063ec",
+  "log_file": "results/check_logs/69ef8b19c55c08760a.txt.gz"
+}

@@ -1,0 +1,67 @@
+{
+  "fetched_utc": "2026-11-14T17:13:07.363074+00:00",
+  "merged_at": "2025-10-07T15:40:58Z",
+  "opened_at": "2025-09-17T13:22:52-07:00",
+  "pr": 16463,
+  "raw_html_sha256": "0c29d643301b899272f71ddddf08d572484189ffbf7b0afd10c56603a8e9a355",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 11,
+  "reviews": [
+    {
+      "login": "shane-melton",
+      "state": "COMMENTED",
+      "submitted_at": "2025-09-18T00:18:45Z"
+    },
+    {
+      "login": "nikwithak",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2025-09-18T18:29:16Z"
+    },
+    {
+      "login": "nick-livefront",
+      "state": "COMMENTED",
+      "submitted_at": "2025-09-25T15:33:16Z"
+    },
+    {
+      "login": "BTreston",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-01T14:55:03Z"
+    },
+    {
+      "login": "jprusik",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-02T14:30:45Z"
+    },
+    {
+      "login": "nikwithak",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-06T21:51:57Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-07T07:21:41Z"
+    },
+    {
+      "login": "dani-garcia",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-07T09:57:53Z"
+    },
+    {
+      "login": "Banrion",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-07T14:17:27Z"
+    },
+    {
+      "login": "BTreston",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-07T14:50:46Z"
+    },
+    {
+      "login": "jprusik",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-07T15:40:56Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/16463"
+}

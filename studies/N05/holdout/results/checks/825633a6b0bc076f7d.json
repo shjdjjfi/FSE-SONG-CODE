@@ -1,0 +1,31 @@
+{
+  "key": "825633a6b0bc076f7d",
+  "args": {
+    "crate": "tower",
+    "version": "0.5.2",
+    "id": "0b9a0622b2b03524",
+    "profile": "candidate",
+    "features": [
+      "balance",
+      "buffer"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.7951,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower::timeout`",
+      "rendered": "error[E0432]: unresolved import `tower::timeout`\n   --> src/main.rs:6:12\n    |\n  6 | use tower::timeout::TimeoutLayer;\n    |            ^^^^^^^ could not find `timeout` in `tower`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-0.5.2/src/lib.rs:195:9\n    |\n194 | #[cfg(feature = \"timeout\")]\n    |       ------------------- the item is gated behind the `timeout` feature\n195 | pub mod timeout;\n    |         ^^^^^^^\n\n",
+      "line": 6
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tower_consumer` (bin \"n05_tower_consumer\") due to 1 previous error\n",
+  "code_sha256": "0c6ae8709237ed757eb684107ae52707de3a52bb839d0ba3fc8b30aa6675bda8",
+  "manifest_sha256": "d9c62557e36e0e7948a5d13c0ab219c687e16e33d9da824851b424584a93849a",
+  "log_file": "holdout/results/check_logs/825633a6b0bc076f7d.txt.gz"
+}

@@ -1,0 +1,47 @@
+{
+  "fetched_utc": "2026-11-14T17:12:20.890396+00:00",
+  "merged_at": "2024-08-15T17:31:05Z",
+  "opened_at": "2024-08-13T18:08:13-07:00",
+  "pr": 10514,
+  "raw_html_sha256": "30f26001540d51f37ec9ca3c129aab1548e25c55e9e9525d8a1284dbd129cf41",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 7,
+  "reviews": [
+    {
+      "login": "shane-melton",
+      "state": "COMMENTED",
+      "submitted_at": "2024-08-14T17:31:12Z"
+    },
+    {
+      "login": "shane-melton",
+      "state": "APPROVED",
+      "submitted_at": "2024-08-14T19:18:20Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2024-08-14T20:31:46Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "APPROVED",
+      "submitted_at": "2024-08-14T22:01:22Z"
+    },
+    {
+      "login": "amorask-bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2024-08-15T13:30:15Z"
+    },
+    {
+      "login": "cyprain-okeke",
+      "state": "APPROVED",
+      "submitted_at": "2024-08-15T13:37:51Z"
+    },
+    {
+      "login": "shane-melton",
+      "state": "APPROVED",
+      "submitted_at": "2024-08-15T14:33:47Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/10514"
+}

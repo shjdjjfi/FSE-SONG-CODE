@@ -1,0 +1,28 @@
+{
+  "key": "8ad2c266190ad5c125",
+  "args": {
+    "crate": "hyper",
+    "version": "1.6.0",
+    "id": "b3a200d0ca0647be",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0637,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n  --> src/main.rs:13:9\n   |\n13 |         tokio::spawn(future);\n   |         ^^^^^ use of unresolved module or unlinked crate `tokio`\n   |\n   = help: if you wanted to use a crate named `tokio`, use `cargo add tokio` to add it to your `Cargo.toml`\n\n",
+      "line": 13
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_hyper_consumer` (bin \"n05_hyper_consumer\") due to 1 previous error\n",
+  "code_sha256": "ae1c0cb7ca95c89ff928606d896dd92540a24fe1881d188496467aaefbb3b63c",
+  "manifest_sha256": "1d18caaacc92ab724c9cdbd21f259df63101b8797322ea5869c3000ec3e4f24a",
+  "log_file": "results/check_logs/8ad2c266190ad5c125.txt.gz"
+}

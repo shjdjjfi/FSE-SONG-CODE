@@ -1,0 +1,147 @@
+{
+  "dataset": "ICPC 2021 public annotated test method name evolution tables",
+  "source": "https://zenodo.org/records/4608143",
+  "audit": {
+    "source_xlsx_sha256": "029c7c46c56bdb157076b67a91f7505b718d5e75216e30418ca0b294b64e4969",
+    "total_sheet_rows": 398,
+    "unique_refactoring_ids": 293,
+    "ids_repeated_across_sheets": 73,
+    "duplicate_new_names": 1,
+    "polarity_flip_warnings": 15
+  },
+  "method_results": {
+    "exact_method_name": {
+      "cases": 879,
+      "recovered": 0,
+      "recovery_rate": 0.0,
+      "present_wrong": 3,
+      "absent_wrong": 3,
+      "combined_false_link_rate": 0.0034129692832764505
+    },
+    "normalized_method_name": {
+      "cases": 879,
+      "recovered": 183,
+      "recovery_rate": 0.20819112627986347,
+      "present_wrong": 6,
+      "absent_wrong": 6,
+      "combined_false_link_rate": 0.006825938566552901
+    },
+    "fuzzy_edit": {
+      "cases": 879,
+      "recovered": 492,
+      "recovery_rate": 0.5597269624573379,
+      "present_wrong": 6,
+      "absent_wrong": 39,
+      "combined_false_link_rate": 0.025597269624573378
+    },
+    "fuzzy_token": {
+      "cases": 879,
+      "recovered": 345,
+      "recovery_rate": 0.3924914675767918,
+      "present_wrong": 9,
+      "absent_wrong": 30,
+      "combined_false_link_rate": 0.02218430034129693
+    },
+    "hybrid_lexical": {
+      "cases": 879,
+      "recovered": 486,
+      "recovery_rate": 0.552901023890785,
+      "present_wrong": 6,
+      "absent_wrong": 30,
+      "combined_false_link_rate": 0.020477815699658702
+    },
+    "hybrid_polarity_veto": {
+      "cases": 879,
+      "recovered": 498,
+      "recovery_rate": 0.5665529010238908,
+      "present_wrong": 6,
+      "absent_wrong": 30,
+      "combined_false_link_rate": 0.020477815699658702
+    }
+  },
+  "polarity_flip_examples": [
+    {
+      "refactoring_id": "102735",
+      "before": "createsUpdateTaskForNewItems",
+      "after": "createsUpdateTaskForItemsIfHashDoesNotMatch"
+    },
+    {
+      "refactoring_id": "1032536",
+      "before": "testStartWithNoPort",
+      "after": "appenderShouldFailToStartWithoutValidPort"
+    },
+    {
+      "refactoring_id": "1194275",
+      "before": "stringConverterNotCalledForString",
+      "after": "stringConverterCalledForString"
+    },
+    {
+      "refactoring_id": "1242283",
+      "before": "testBasicCollectionFilterNotEquals",
+      "after": "testPipeBasic"
+    },
+    {
+      "refactoring_id": "1246804",
+      "before": "matchingOnRequestBodyWithTwoRegexes",
+      "after": "sendsContentLengthWhenTransferEncodingChunkedPolicyIsNever"
+    },
+    {
+      "refactoring_id": "162464",
+      "before": "testGenerator",
+      "after": "shouldNotCreateDirectoriesForSections"
+    },
+    {
+      "refactoring_id": "175282",
+      "before": "testGetDocumentParentsList",
+      "after": "testGetDocumentParentsList_not_include"
+    },
+    {
+      "refactoring_id": "179815",
+      "before": "testPurchaseShouldAlwaysWork",
+      "after": "testPurchaseShouldntWork"
+    },
+    {
+      "refactoring_id": "225211",
+      "before": "testPush",
+      "after": "testPushisNeverNull"
+    },
+    {
+      "refactoring_id": "481575",
+      "before": "mapIsNotEmptyWithFailure",
+      "after": "isEmptyWithFailure"
+    },
+    {
+      "refactoring_id": "481838",
+      "before": "inequalityOfNulls",
+      "after": "isNotEqualToWithNulls"
+    },
+    {
+      "refactoring_id": "508541",
+      "before": "doesNotOverw+E26eValuesIfFieldIsSetToIgnore",
+      "after": "savesSidePanelEntriesToSelectedFiles"
+    },
+    {
+      "refactoring_id": "63768",
+      "before": "testShouldNotIncludeWhenArtifactIdDiffers",
+      "after": "testShouldIncludeWhenArtifactIdDiffers"
+    },
+    {
+      "refactoring_id": "651572",
+      "before": "containsKey_NotStarted",
+      "after": "containsKey_Closed"
+    },
+    {
+      "refactoring_id": "779124",
+      "before": "shouldChangeStatusOfSubscriptionDeactivatedWithDeactivatedDate",
+      "after": "shouldChangeStatusToDeactivatedOnDeactivationOnlyIfPriorStatusIsNotPendingCompleted"
+    }
+  ],
+  "unit": "annotated renamed-method IDs, NOT underlying projects (project IDs absent)",
+  "validity": [
+    "Source XLSX contains published old/new names but not per-commit runnable source.",
+    "Renamed method association is not a validated safe quarantine-history transfer.",
+    "Candidate negatives and target-absent cases are generated stress probes, not real CI failures.",
+    "Folds can contain same unknown source projects: no claim of held-out projects.",
+    "Polarity changes are warning heuristics, not proof of changed semantics."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "key": "86a919b83f0c004e03",
+  "args": {
+    "crate": "figment",
+    "version": "0.10.19",
+    "id": "b4a5fd30e5a6cb70",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1915,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `figment::providers::Toml`",
+      "rendered": "error[E0432]: unresolved import `figment::providers::Toml`\n --> src/main.rs:2:44\n  |\n2 | use figment::{Figment, providers::{Format, Toml}};\n  |                                            ^^^^ no `Toml` in `providers`\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_figment_consumer` (bin \"n05_figment_consumer\") due to 1 previous error; 1 warning emitted\n",
+  "code_sha256": "b6e93e60b012df3e43fc6f0b34d3739c85d9fc59ea011ca5c06f277e1540df60",
+  "manifest_sha256": "d2410a720c516be5af10748de3e0e9ae54369af88cbc0759976d4a194ac78c3c",
+  "log_file": "prospective/results/check_logs/86a919b83f0c004e03.txt.gz"
+}

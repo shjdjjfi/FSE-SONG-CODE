@@ -1,0 +1,42 @@
+{
+  "fetched_utc": "2026-11-14T17:11:35.478343+00:00",
+  "merged_at": "2025-04-21T14:57:26Z",
+  "opened_at": "2025-02-07T11:27:45+01:00",
+  "pr": 13598,
+  "raw_html_sha256": "db21386b047357f21673faafff07f7ffa121a5cb9896261db379811dfd37446e",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 6,
+  "reviews": [
+    {
+      "login": "dani-garcia",
+      "state": "COMMENTED",
+      "submitted_at": "2025-04-02T11:47:51Z"
+    },
+    {
+      "login": "dani-garcia",
+      "state": "COMMENTED",
+      "submitted_at": "2025-04-11T10:54:22Z"
+    },
+    {
+      "login": "Thomas-Avery",
+      "state": "COMMENTED",
+      "submitted_at": "2025-04-11T17:51:17Z"
+    },
+    {
+      "login": "dani-garcia",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-16T12:51:31Z"
+    },
+    {
+      "login": "Thomas-Avery",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-16T15:04:26Z"
+    },
+    {
+      "login": "JaredSnider-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-18T13:43:21Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/13598"
+}

@@ -1,0 +1,1517 @@
+{
+  "typescript": "6.0.2",
+  "real_source_snapshots": "ts-pattern 5.8.0, zod 3.25.76",
+  "compiler_initial_build": {
+    "argv": [
+      "node",
+      "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+      "--build",
+      "tsconfig.json",
+      "--verbose"
+    ],
+    "exit": 0,
+    "seconds": 4.3135,
+    "compiled_projects": [
+      "ts-pattern",
+      "zod",
+      "neverthrow",
+      "mitt"
+    ],
+    "stdout": "12:25:42 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:25:42 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:25:42 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/base/packages/ts-pattern/tsconfig.json'...\n\n12:25:44 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:25:44 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/base/packages/zod/tsconfig.json'...\n\n12:25:46 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:25:46 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/base/packages/neverthrow/tsconfig.json'...\n\n12:25:46 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:25:46 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/base/packages/mitt/tsconfig.json'...\n\n",
+    "stderr": ""
+  },
+  "independent_oracle": {
+    "compile": {
+      "argv": [
+        "node",
+        "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+        "--build",
+        "tsconfig.json",
+        "--verbose"
+      ],
+      "exit": 0,
+      "seconds": 3.3275,
+      "compiled_projects": [
+        "ts-pattern",
+        "zod",
+        "neverthrow",
+        "mitt"
+      ],
+      "stdout": "12:25:46 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:25:46 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:25:46 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/oracle/packages/ts-pattern/tsconfig.json'...\n\n12:25:48 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:25:48 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/oracle/packages/zod/tsconfig.json'...\n\n12:25:49 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:25:49 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/oracle/packages/neverthrow/tsconfig.json'...\n\n12:25:49 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:25:49 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/oracle/packages/mitt/tsconfig.json'...\n\n",
+      "stderr": ""
+    },
+    "exact": true
+  },
+  "trials": [
+    {
+      "project": "ts-pattern",
+      "fault": "delete_nested_js",
+      "arm": "standard",
+      "correct": false,
+      "before": {
+        "missing": 1,
+        "altered": 0,
+        "extra": 0
+      },
+      "after": {
+        "missing": 1,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 0.1827,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 0.1827,
+          "compiled_projects": [],
+          "stdout": "12:25:50 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:25:50 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:25:50 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:25:50 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:25:50 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/ts-pattern/dist/types/IsMatching.js",
+        "fault": "delete_nested_js"
+      }
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "delete_nested_js",
+      "arm": "selective_path",
+      "correct": true,
+      "before": {
+        "missing": 1,
+        "altered": 0,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [
+          "ts-pattern"
+        ],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 1.7857,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "ts-pattern"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 1.7769,
+          "compiled_projects": [
+            "ts-pattern"
+          ],
+          "stdout": "12:25:50 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:25:50 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:25:50 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/ts-pattern/tsconfig.json'...\n\n12:25:51 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:25:51 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:25:51 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/ts-pattern/dist/types/IsMatching.js",
+        "fault": "delete_nested_js"
+      }
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "delete_nested_js",
+      "arm": "selective_hash",
+      "correct": true,
+      "before": {
+        "missing": 1,
+        "altered": 0,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [
+          "ts-pattern"
+        ],
+        "scan": {
+          "bytes_hashed": 396564,
+          "digest_audit": true
+        },
+        "work_seconds": 1.6521,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "ts-pattern"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 1.6455,
+          "compiled_projects": [
+            "ts-pattern"
+          ],
+          "stdout": "12:25:52 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:25:52 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:25:52 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/ts-pattern/tsconfig.json'...\n\n12:25:53 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:25:53 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:25:53 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/ts-pattern/dist/types/IsMatching.js",
+        "fault": "delete_nested_js"
+      }
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "delete_nested_js",
+      "arm": "clean_all",
+      "correct": true,
+      "before": {
+        "missing": 1,
+        "altered": 0,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 3.1124,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "mitt",
+          "neverthrow",
+          "ts-pattern",
+          "zod"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 3.1113,
+          "compiled_projects": [
+            "ts-pattern",
+            "zod",
+            "neverthrow",
+            "mitt"
+          ],
+          "stdout": "12:25:53 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:25:53 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:25:53 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/ts-pattern/tsconfig.json'...\n\n12:25:55 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:25:55 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/zod/tsconfig.json'...\n\n12:25:56 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:25:56 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/neverthrow/tsconfig.json'...\n\n12:25:56 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:25:56 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/mitt/tsconfig.json'...\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/ts-pattern/dist/types/IsMatching.js",
+        "fault": "delete_nested_js"
+      }
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "delete_nested_js",
+      "arm": "full_cache",
+      "correct": true,
+      "before": {
+        "missing": 1,
+        "altered": 0,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 0.0277,
+        "restored_bytes": 444419,
+        "input_key_rejected": false,
+        "compiled_projects": [],
+        "build_succeeded": true
+      },
+      "logs": [],
+      "injected": {
+        "target": "packages/ts-pattern/dist/types/IsMatching.js",
+        "fault": "delete_nested_js"
+      }
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "corrupt_js",
+      "arm": "standard",
+      "correct": false,
+      "before": {
+        "missing": 0,
+        "altered": 1,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 1,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 0.3451,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 0.3451,
+          "compiled_projects": [],
+          "stdout": "12:25:57 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:25:57 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:25:57 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:25:57 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:25:57 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/ts-pattern/dist/types/helpers.js",
+        "fault": "corrupt_js"
+      }
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "corrupt_js",
+      "arm": "selective_path",
+      "correct": false,
+      "before": {
+        "missing": 0,
+        "altered": 1,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 1,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 0.1593,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 0.1555,
+          "compiled_projects": [],
+          "stdout": "12:25:57 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:25:57 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:25:57 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:25:57 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:25:57 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/ts-pattern/dist/types/helpers.js",
+        "fault": "corrupt_js"
+      }
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "corrupt_js",
+      "arm": "selective_hash",
+      "correct": true,
+      "before": {
+        "missing": 0,
+        "altered": 1,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [
+          "ts-pattern"
+        ],
+        "scan": {
+          "bytes_hashed": 396641,
+          "digest_audit": true
+        },
+        "work_seconds": 2.3852,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "ts-pattern"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 2.3768,
+          "compiled_projects": [
+            "ts-pattern"
+          ],
+          "stdout": "12:25:57 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:25:57 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:25:57 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/ts-pattern/tsconfig.json'...\n\n12:25:59 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:25:59 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:25:59 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/ts-pattern/dist/types/helpers.js",
+        "fault": "corrupt_js"
+      }
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "corrupt_js",
+      "arm": "clean_all",
+      "correct": true,
+      "before": {
+        "missing": 0,
+        "altered": 1,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 3.0442,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "mitt",
+          "neverthrow",
+          "ts-pattern",
+          "zod"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 3.0432,
+          "compiled_projects": [
+            "ts-pattern",
+            "zod",
+            "neverthrow",
+            "mitt"
+          ],
+          "stdout": "12:26:00 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:00 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:26:00 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/ts-pattern/tsconfig.json'...\n\n12:26:01 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:26:01 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/zod/tsconfig.json'...\n\n12:26:02 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:26:02 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/neverthrow/tsconfig.json'...\n\n12:26:03 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:26:03 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/mitt/tsconfig.json'...\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/ts-pattern/dist/types/helpers.js",
+        "fault": "corrupt_js"
+      }
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "corrupt_js",
+      "arm": "full_cache",
+      "correct": true,
+      "before": {
+        "missing": 0,
+        "altered": 1,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 0.0259,
+        "restored_bytes": 444419,
+        "input_key_rejected": false,
+        "compiled_projects": [],
+        "build_succeeded": true
+      },
+      "logs": [],
+      "injected": {
+        "target": "packages/ts-pattern/dist/types/helpers.js",
+        "fault": "corrupt_js"
+      }
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "extra_stale",
+      "arm": "standard",
+      "correct": false,
+      "before": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 1
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 1
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 0.2211,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 0.2211,
+          "compiled_projects": [],
+          "stdout": "12:26:03 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:03 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:26:03 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:26:03 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:26:03 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/ts-pattern/dist/stale/removed-module.js",
+        "fault": "extra_stale"
+      }
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "extra_stale",
+      "arm": "selective_path",
+      "correct": true,
+      "before": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 1
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [
+          "ts-pattern"
+        ],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 1.5716,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "ts-pattern"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 1.5659,
+          "compiled_projects": [
+            "ts-pattern"
+          ],
+          "stdout": "12:26:03 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:03 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:26:03 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/ts-pattern/tsconfig.json'...\n\n12:26:05 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:26:05 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:26:05 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/ts-pattern/dist/stale/removed-module.js",
+        "fault": "extra_stale"
+      }
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "extra_stale",
+      "arm": "selective_hash",
+      "correct": true,
+      "before": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 1
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [
+          "ts-pattern"
+        ],
+        "scan": {
+          "bytes_hashed": 396679,
+          "digest_audit": true
+        },
+        "work_seconds": 1.6332,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "ts-pattern"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 1.6219,
+          "compiled_projects": [
+            "ts-pattern"
+          ],
+          "stdout": "12:26:05 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:05 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:26:05 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/ts-pattern/tsconfig.json'...\n\n12:26:06 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:26:06 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:26:06 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/ts-pattern/dist/stale/removed-module.js",
+        "fault": "extra_stale"
+      }
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "extra_stale",
+      "arm": "clean_all",
+      "correct": true,
+      "before": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 1
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 3.0527,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "mitt",
+          "neverthrow",
+          "ts-pattern",
+          "zod"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 3.0516,
+          "compiled_projects": [
+            "ts-pattern",
+            "zod",
+            "neverthrow",
+            "mitt"
+          ],
+          "stdout": "12:26:06 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:06 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:26:06 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/ts-pattern/tsconfig.json'...\n\n12:26:08 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:26:08 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/zod/tsconfig.json'...\n\n12:26:09 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:26:09 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/neverthrow/tsconfig.json'...\n\n12:26:09 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:26:09 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/mitt/tsconfig.json'...\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/ts-pattern/dist/stale/removed-module.js",
+        "fault": "extra_stale"
+      }
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "extra_stale",
+      "arm": "full_cache",
+      "correct": true,
+      "before": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 1
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 0.0309,
+        "restored_bytes": 444419,
+        "input_key_rejected": false,
+        "compiled_projects": [],
+        "build_succeeded": true
+      },
+      "logs": [],
+      "injected": {
+        "target": "packages/ts-pattern/dist/stale/removed-module.js",
+        "fault": "extra_stale"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "delete_nested_js",
+      "arm": "standard",
+      "correct": false,
+      "before": {
+        "missing": 1,
+        "altered": 0,
+        "extra": 0
+      },
+      "after": {
+        "missing": 1,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 0.158,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 0.158,
+          "compiled_projects": [],
+          "stdout": "12:26:10 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:10 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:26:10 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:26:10 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:26:10 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/zod/dist/helpers/typeAliases.js",
+        "fault": "delete_nested_js"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "delete_nested_js",
+      "arm": "selective_path",
+      "correct": true,
+      "before": {
+        "missing": 1,
+        "altered": 0,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [
+          "zod"
+        ],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 1.8232,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "zod"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 1.8181,
+          "compiled_projects": [
+            "zod"
+          ],
+          "stdout": "12:26:10 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:10 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:26:10 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:26:10 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/zod/tsconfig.json'...\n\n12:26:12 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:26:12 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/zod/dist/helpers/typeAliases.js",
+        "fault": "delete_nested_js"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "delete_nested_js",
+      "arm": "selective_hash",
+      "correct": true,
+      "before": {
+        "missing": 1,
+        "altered": 0,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [
+          "zod"
+        ],
+        "scan": {
+          "bytes_hashed": 396564,
+          "digest_audit": true
+        },
+        "work_seconds": 1.8229,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "zod"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 1.8159,
+          "compiled_projects": [
+            "zod"
+          ],
+          "stdout": "12:26:12 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:12 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:26:12 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:26:12 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/zod/tsconfig.json'...\n\n12:26:13 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:26:13 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/zod/dist/helpers/typeAliases.js",
+        "fault": "delete_nested_js"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "delete_nested_js",
+      "arm": "clean_all",
+      "correct": true,
+      "before": {
+        "missing": 1,
+        "altered": 0,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 3.2397,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "mitt",
+          "neverthrow",
+          "ts-pattern",
+          "zod"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 3.2367,
+          "compiled_projects": [
+            "ts-pattern",
+            "zod",
+            "neverthrow",
+            "mitt"
+          ],
+          "stdout": "12:26:14 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:14 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:26:14 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/ts-pattern/tsconfig.json'...\n\n12:26:15 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:26:15 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/zod/tsconfig.json'...\n\n12:26:17 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:26:17 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/neverthrow/tsconfig.json'...\n\n12:26:17 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:26:17 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/mitt/tsconfig.json'...\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/zod/dist/helpers/typeAliases.js",
+        "fault": "delete_nested_js"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "delete_nested_js",
+      "arm": "full_cache",
+      "correct": true,
+      "before": {
+        "missing": 1,
+        "altered": 0,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 0.0435,
+        "restored_bytes": 444419,
+        "input_key_rejected": false,
+        "compiled_projects": [],
+        "build_succeeded": true
+      },
+      "logs": [],
+      "injected": {
+        "target": "packages/zod/dist/helpers/typeAliases.js",
+        "fault": "delete_nested_js"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "corrupt_js",
+      "arm": "standard",
+      "correct": false,
+      "before": {
+        "missing": 0,
+        "altered": 1,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 1,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 0.1656,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 0.1656,
+          "compiled_projects": [],
+          "stdout": "12:26:17 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:17 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:26:17 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:26:17 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:26:17 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/zod/dist/helpers/util.js",
+        "fault": "corrupt_js"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "corrupt_js",
+      "arm": "selective_path",
+      "correct": false,
+      "before": {
+        "missing": 0,
+        "altered": 1,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 1,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 0.1733,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 0.1668,
+          "compiled_projects": [],
+          "stdout": "12:26:17 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:17 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:26:17 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:26:17 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:26:17 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/zod/dist/helpers/util.js",
+        "fault": "corrupt_js"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "corrupt_js",
+      "arm": "selective_hash",
+      "correct": true,
+      "before": {
+        "missing": 0,
+        "altered": 1,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [
+          "zod"
+        ],
+        "scan": {
+          "bytes_hashed": 396641,
+          "digest_audit": true
+        },
+        "work_seconds": 1.9491,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "zod"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 1.9381,
+          "compiled_projects": [
+            "zod"
+          ],
+          "stdout": "12:26:18 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:18 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:26:18 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:26:18 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/zod/tsconfig.json'...\n\n12:26:19 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:26:19 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/zod/dist/helpers/util.js",
+        "fault": "corrupt_js"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "corrupt_js",
+      "arm": "clean_all",
+      "correct": true,
+      "before": {
+        "missing": 0,
+        "altered": 1,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 3.0433,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "mitt",
+          "neverthrow",
+          "ts-pattern",
+          "zod"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 3.0415,
+          "compiled_projects": [
+            "ts-pattern",
+            "zod",
+            "neverthrow",
+            "mitt"
+          ],
+          "stdout": "12:26:20 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:20 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:26:20 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/ts-pattern/tsconfig.json'...\n\n12:26:21 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:26:21 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/zod/tsconfig.json'...\n\n12:26:22 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:26:22 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/neverthrow/tsconfig.json'...\n\n12:26:23 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:26:23 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/mitt/tsconfig.json'...\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/zod/dist/helpers/util.js",
+        "fault": "corrupt_js"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "corrupt_js",
+      "arm": "full_cache",
+      "correct": true,
+      "before": {
+        "missing": 0,
+        "altered": 1,
+        "extra": 0
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 0.0235,
+        "restored_bytes": 444419,
+        "input_key_rejected": false,
+        "compiled_projects": [],
+        "build_succeeded": true
+      },
+      "logs": [],
+      "injected": {
+        "target": "packages/zod/dist/helpers/util.js",
+        "fault": "corrupt_js"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "extra_stale",
+      "arm": "standard",
+      "correct": false,
+      "before": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 1
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 1
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 0.1534,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 0.1534,
+          "compiled_projects": [],
+          "stdout": "12:26:23 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:23 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:26:23 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:26:23 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:26:23 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/zod/dist/stale/removed-module.js",
+        "fault": "extra_stale"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "extra_stale",
+      "arm": "selective_path",
+      "correct": true,
+      "before": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 1
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [
+          "zod"
+        ],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 1.8413,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "zod"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 1.8361,
+          "compiled_projects": [
+            "zod"
+          ],
+          "stdout": "12:26:23 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:23 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:26:23 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:26:23 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/zod/tsconfig.json'...\n\n12:26:25 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:26:25 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/zod/dist/stale/removed-module.js",
+        "fault": "extra_stale"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "extra_stale",
+      "arm": "selective_hash",
+      "correct": true,
+      "before": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 1
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [
+          "zod"
+        ],
+        "scan": {
+          "bytes_hashed": 396679,
+          "digest_audit": true
+        },
+        "work_seconds": 1.8966,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "zod"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 1.8897,
+          "compiled_projects": [
+            "zod"
+          ],
+          "stdout": "12:26:25 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:25 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:26:25 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:26:25 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/zod/tsconfig.json'...\n\n12:26:27 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:26:27 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/zod/dist/stale/removed-module.js",
+        "fault": "extra_stale"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "extra_stale",
+      "arm": "clean_all",
+      "correct": true,
+      "before": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 1
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 4.9746,
+        "restored_bytes": 0,
+        "input_key_rejected": false,
+        "compiled_projects": [
+          "mitt",
+          "neverthrow",
+          "ts-pattern",
+          "zod"
+        ],
+        "build_succeeded": true
+      },
+      "logs": [
+        {
+          "argv": [
+            "node",
+            "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler6/package/bin/tsc",
+            "--build",
+            "tsconfig.json",
+            "--verbose"
+          ],
+          "exit": 0,
+          "seconds": 4.9735,
+          "compiled_projects": [
+            "ts-pattern",
+            "zod",
+            "neverthrow",
+            "mitt"
+          ],
+          "stdout": "12:26:27 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:26:27 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:26:27 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/ts-pattern/tsconfig.json'...\n\n12:26:29 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:26:29 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/zod/tsconfig.json'...\n\n12:26:31 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:26:31 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/neverthrow/tsconfig.json'...\n\n12:26:32 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:26:32 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/ts6_holdout/active/packages/mitt/tsconfig.json'...\n\n",
+          "stderr": ""
+        }
+      ],
+      "injected": {
+        "target": "packages/zod/dist/stale/removed-module.js",
+        "fault": "extra_stale"
+      }
+    },
+    {
+      "project": "zod",
+      "fault": "extra_stale",
+      "arm": "full_cache",
+      "correct": true,
+      "before": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 1
+      },
+      "after": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "repair": {
+        "detect": [],
+        "scan": {
+          "bytes_hashed": 0,
+          "digest_audit": false
+        },
+        "work_seconds": 0.0108,
+        "restored_bytes": 444419,
+        "input_key_rejected": false,
+        "compiled_projects": [],
+        "build_succeeded": true
+      },
+      "logs": [],
+      "injected": {
+        "target": "packages/zod/dist/stale/removed-module.js",
+        "fault": "extra_stale"
+      }
+    }
+  ]
+}

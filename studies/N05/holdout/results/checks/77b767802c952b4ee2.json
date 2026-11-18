@@ -1,0 +1,32 @@
+{
+  "key": "77b767802c952b4ee2",
+  "args": {
+    "crate": "tower",
+    "version": "0.5.2",
+    "id": "c67ede2141155902",
+    "profile": "candidate",
+    "features": [
+      "load",
+      "load-shed",
+      "make"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2451,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved imports `tower::ServiceExt`, `tower::service_fn`, `tower::util`",
+      "rendered": "error[E0432]: unresolved imports `tower::ServiceExt`, `tower::service_fn`, `tower::util`\n   --> src/main.rs:2:22\n    |\n  2 | use tower::{Service, ServiceExt, BoxError, service_fn, util::BoxCloneService};\n    |                      ^^^^^^^^^^            ^^^^^^^^^^  ^^^^ could not find `util` in `tower`\n    |                      |                     |\n    |                      |                     no `service_fn` in the root\n    |                      no `ServiceExt` in the root\n    |                      help: a similar name exists in the module: `Service`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-0.5.2/src/lib.rs:205:34\n    |\n202 | #[cfg(feature = \"util\")]\n    |       ---------------- the item is gated behind the `util` feature\n...\n205 | pub use self::util::{service_fn, ServiceExt};\n    |                                  ^^^^^^^^^^\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-0.5.2/src/lib.rs:205:22\n    |\n202 | #[cfg(feature = \"util\")]\n    |       -----------",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tower_consumer` (bin \"n05_tower_consumer\") due to 1 previous error\n",
+  "code_sha256": "3b1add99b3b08ded2201a0407f7f097f857c8ef70620783ebe6eae788a44edb5",
+  "manifest_sha256": "ed56586301ed1ff7f6c994d362472ce1fb887605c15074e80a2efde26620e4cd",
+  "log_file": "holdout/results/check_logs/77b767802c952b4ee2.txt.gz"
+}

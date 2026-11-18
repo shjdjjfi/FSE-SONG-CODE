@@ -1,0 +1,32 @@
+{
+  "key": "2da232414917ee4567",
+  "args": {
+    "crate": "tinyvec",
+    "version": "1.9.0",
+    "id": "57ff1aff71a9024b",
+    "profile": "candidate",
+    "features": [
+      "alloc",
+      "debugger_visualizer",
+      "experimental_write_impl"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.6499,
+  "errors": [
+    {
+      "code": "E0554",
+      "message": "`#![feature]` may not be used on the stable release channel",
+      "rendered": "error[E0554]: `#![feature]` may not be used on the stable release channel\n --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tinyvec-1.9.0/src/lib.rs:9:3\n  |\n9 |   feature(debugger_visualizer),\n  |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the attribute\n  |\n  = help: the feature `debugger_visualizer` has been stable since `1.71.0` and no longer requires an attribute to enable\n\n",
+      "line": 9
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `tinyvec` (lib) due to 1 previous error\n",
+  "code_sha256": "6790e2f93f757e5ff70afdc23962cf1913a761625a43f7a68e87de5545a32a1d",
+  "manifest_sha256": "0907d5ea63eb293d25e077320d475332d1949dd7ad43be7f8f675fe8dc9ea599",
+  "log_file": "results/check_logs/2da232414917ee4567.txt.gz"
+}

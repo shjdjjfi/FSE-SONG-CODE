@@ -1,0 +1,192 @@
+[
+  {
+    "id": "ai_npc_vulnerable",
+    "project": "rainpaw/AI-NPC",
+    "package": "fastapi",
+    "target_version": "0.109.0",
+    "arm": "vulnerable",
+    "install_type": "exact_project_requirements",
+    "install_requirements_file": "generated_requirements/ai_npc/declared.txt",
+    "packages": [],
+    "test_type": "researcher_smoke_on_real_repo_code",
+    "test_python": "\nimport os\nassert os.environ.get('DEMO_MODE','').lower()=='true'\nfrom fastapi.testclient import TestClient\nfrom app.main import app\nwith TestClient(app) as client:\n    response = client.get('/')\n    assert response.status_code == 200, (response.status_code, response.text)\n    payload = response.json()\n    assert payload.get('status') == 'online', payload\n    schema=client.get('/openapi.json')\n    assert schema.status_code == 200\n    assert '/npc' in schema.json().get('paths', {}), schema.text[:400]\nprint('AI-NPC: root endpoint, OpenAPI route and in-process HTTP smoke passed')\n",
+    "source_workdir": "AI-NPC",
+    "env_overrides": {
+      "DEMO_MODE": "true"
+    }
+  },
+  {
+    "id": "ai_npc_first_fixed",
+    "project": "rainpaw/AI-NPC",
+    "package": "fastapi",
+    "target_version": "0.109.1",
+    "arm": "first_fixed",
+    "install_type": "exact_project_requirements",
+    "install_requirements_file": "generated_requirements/ai_npc/replaced_fixed.txt",
+    "packages": [],
+    "test_type": "researcher_smoke_on_real_repo_code",
+    "test_python": "\nimport os\nassert os.environ.get('DEMO_MODE','').lower()=='true'\nfrom fastapi.testclient import TestClient\nfrom app.main import app\nwith TestClient(app) as client:\n    response = client.get('/')\n    assert response.status_code == 200, (response.status_code, response.text)\n    payload = response.json()\n    assert payload.get('status') == 'online', payload\n    schema=client.get('/openapi.json')\n    assert schema.status_code == 200\n    assert '/npc' in schema.json().get('paths', {}), schema.text[:400]\nprint('AI-NPC: root endpoint, OpenAPI route and in-process HTTP smoke passed')\n",
+    "source_workdir": "AI-NPC",
+    "env_overrides": {
+      "DEMO_MODE": "true"
+    }
+  },
+  {
+    "id": "ai_npc_latest",
+    "project": "rainpaw/AI-NPC",
+    "package": "fastapi",
+    "target_version": "0.162.7",
+    "arm": "latest",
+    "install_type": "exact_project_requirements",
+    "install_requirements_file": "generated_requirements/ai_npc/replaced_latest.txt",
+    "packages": [],
+    "test_type": "researcher_smoke_on_real_repo_code",
+    "test_python": "\nimport os\nassert os.environ.get('DEMO_MODE','').lower()=='true'\nfrom fastapi.testclient import TestClient\nfrom app.main import app\nwith TestClient(app) as client:\n    response = client.get('/')\n    assert response.status_code == 200, (response.status_code, response.text)\n    payload = response.json()\n    assert payload.get('status') == 'online', payload\n    schema=client.get('/openapi.json')\n    assert schema.status_code == 200\n    assert '/npc' in schema.json().get('paths', {}), schema.text[:400]\nprint('AI-NPC: root endpoint, OpenAPI route and in-process HTTP smoke passed')\n",
+    "source_workdir": "AI-NPC",
+    "env_overrides": {
+      "DEMO_MODE": "true"
+    }
+  },
+  {
+    "id": "pyramid_multiauth_vulnerable",
+    "project": "mozilla-services/pyramid_multiauth",
+    "package": "webob",
+    "target_version": "1.8.10",
+    "arm": "vulnerable",
+    "install_type": "upstream_runtime_requirements_plus_exact_webob_and_test_tools",
+    "packages": [
+      "pyramid>=2,<3",
+      "webob==1.8.10",
+      "pytest>=8,<10",
+      "pytest-cov>=4",
+      "setuptools>=64",
+      "setuptools-scm>=8"
+    ],
+    "test_type": "existing_repository_pytest",
+    "pytest_paths": [
+      "tests/test_base.py",
+      "tests/test_securitypolicy.py"
+    ],
+    "source_workdir": "pyramid_multiauth"
+  },
+  {
+    "id": "pyramid_multiauth_first_fixed",
+    "project": "mozilla-services/pyramid_multiauth",
+    "package": "webob",
+    "target_version": "1.8.11",
+    "arm": "first_fixed",
+    "install_type": "upstream_runtime_requirements_plus_exact_webob_and_test_tools",
+    "packages": [
+      "pyramid>=2,<3",
+      "webob==1.8.11",
+      "pytest>=8,<10",
+      "pytest-cov>=4",
+      "setuptools>=64",
+      "setuptools-scm>=8"
+    ],
+    "test_type": "existing_repository_pytest",
+    "pytest_paths": [
+      "tests/test_base.py",
+      "tests/test_securitypolicy.py"
+    ],
+    "source_workdir": "pyramid_multiauth"
+  },
+  {
+    "id": "pypiserver_vulnerable",
+    "project": "pypiserver/pypiserver",
+    "package": "webob",
+    "target_version": "1.8.10",
+    "arm": "vulnerable",
+    "install_type": "upstream_runtime_requirements_plus_selected_test_dependencies",
+    "packages": [
+      "defusedxml>=0.7.1",
+      "packaging>=26",
+      "pip>=26.0.1",
+      "pytest>=8,<10",
+      "pytest-cov>=6",
+      "webtest>=3.0.7",
+      "httpx>=0.28.1",
+      "passlib==1.7.4",
+      "setuptools>=64,<85",
+      "wheel>=0.25",
+      "webob==1.8.10"
+    ],
+    "test_type": "existing_repository_pytest",
+    "pytest_paths": [
+      "tests/test_config.py",
+      "tests/test_core.py",
+      "tests/test_app.py"
+    ],
+    "source_workdir": "pypiserver"
+  },
+  {
+    "id": "pypiserver_first_fixed",
+    "project": "pypiserver/pypiserver",
+    "package": "webob",
+    "target_version": "1.8.11",
+    "arm": "first_fixed",
+    "install_type": "upstream_runtime_requirements_plus_selected_test_dependencies",
+    "packages": [
+      "defusedxml>=0.7.1",
+      "packaging>=26",
+      "pip>=26.0.1",
+      "pytest>=8,<10",
+      "pytest-cov>=6",
+      "webtest>=3.0.7",
+      "httpx>=0.28.1",
+      "passlib==1.7.4",
+      "setuptools>=64,<85",
+      "wheel>=0.25",
+      "webob==1.8.11"
+    ],
+    "test_type": "existing_repository_pytest",
+    "pytest_paths": [
+      "tests/test_config.py",
+      "tests/test_core.py",
+      "tests/test_app.py"
+    ],
+    "source_workdir": "pypiserver"
+  },
+  {
+    "id": "python_jose_vulnerable",
+    "project": "mpdavis/python-jose",
+    "package": "python-jose",
+    "target_version": "3.3.0",
+    "arm": "vulnerable",
+    "install_type": "published_pypi_wheel_root_and_transitives",
+    "packages": [
+      "python-jose==3.3.0"
+    ],
+    "test_type": "researcher_package_smoke",
+    "test_python": "\nfrom jose import jwt\nbody={'sub':'public-cpu-smoke','iat':1234567}\ntoken=jwt.encode(body,'nonproduction-local-test-key',algorithm='HS256')\ndecoded=jwt.decode(token,'nonproduction-local-test-key',algorithms=['HS256'])\nassert decoded['sub']==body['sub']\nprint('python-jose: benign JWT roundtrip passed')\n",
+    "source_workdir": null
+  },
+  {
+    "id": "python_jose_first_fixed",
+    "project": "mpdavis/python-jose",
+    "package": "python-jose",
+    "target_version": "3.4.0",
+    "arm": "first_fixed",
+    "install_type": "published_pypi_wheel_root_and_transitives",
+    "packages": [
+      "python-jose==3.4.0"
+    ],
+    "test_type": "researcher_package_smoke",
+    "test_python": "\nfrom jose import jwt\nbody={'sub':'public-cpu-smoke','iat':1234567}\ntoken=jwt.encode(body,'nonproduction-local-test-key',algorithm='HS256')\ndecoded=jwt.decode(token,'nonproduction-local-test-key',algorithms=['HS256'])\nassert decoded['sub']==body['sub']\nprint('python-jose: benign JWT roundtrip passed')\n",
+    "source_workdir": null
+  },
+  {
+    "id": "python_jose_latest",
+    "project": "mpdavis/python-jose",
+    "package": "python-jose",
+    "target_version": "3.5.0",
+    "arm": "latest",
+    "install_type": "published_pypi_wheel_root_and_transitives",
+    "packages": [
+      "python-jose==3.5.0"
+    ],
+    "test_type": "researcher_package_smoke",
+    "test_python": "\nfrom jose import jwt\nbody={'sub':'public-cpu-smoke','iat':1234567}\ntoken=jwt.encode(body,'nonproduction-local-test-key',algorithm='HS256')\ndecoded=jwt.decode(token,'nonproduction-local-test-key',algorithms=['HS256'])\nassert decoded['sub']==body['sub']\nprint('python-jose: benign JWT roundtrip passed')\n",
+    "source_workdir": null
+  }
+]

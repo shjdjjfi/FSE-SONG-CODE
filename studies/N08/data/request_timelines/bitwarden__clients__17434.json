@@ -1,0 +1,26 @@
+{
+  "pr": 17434,
+  "pr_author": "voommen-livefront",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-11-17T22:48:42Z",
+      "requested_people": [
+        "voommen-livefront"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-11-18T19:17:17Z",
+      "requested_people": [
+        "banrion",
+        "voommen-livefront"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "bbaf9cad4b6d2661c51802e2ae7d6904e5850a73b0735a426ff11c23f073d4c7",
+  "url": "https://github.com/bitwarden/clients/pull/17434"
+}

@@ -1,0 +1,112 @@
+{
+  "key": "7c85b23e6cbd7aa461",
+  "args": {
+    "crate": "tower-http",
+    "version": "0.6.6",
+    "id": "cf0065a6f159bfe3",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1991,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `http`",
+      "rendered": "error[E0432]: unresolved import `http`\n --> src/main.rs:1:5\n  |\n1 | use http::{Request, Response, HeaderMap, StatusCode};\n  |     ^^^^ use of unresolved module or unlinked crate `http`\n  |\n  = help: if you wanted to use a crate named `http`, use `cargo add http` to add it to your `Cargo.toml`\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `http_body_util`",
+      "rendered": "error[E0432]: unresolved import `http_body_util`\n --> src/main.rs:2:5\n  |\n2 | use http_body_util::Full;\n  |     ^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `http_body_util`\n  |\n  = help: if you wanted to use a crate named `http_body_util`, use `cargo add http_body_util` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `bytes`",
+      "rendered": "error[E0432]: unresolved import `bytes`\n --> src/main.rs:3:5\n  |\n3 | use bytes::Bytes;\n  |     ^^^^^ use of unresolved module or unlinked crate `bytes`\n  |\n  = help: if you wanted to use a crate named `bytes`, use `cargo add bytes` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower`",
+      "rendered": "error[E0432]: unresolved import `tower`\n --> src/main.rs:4:5\n  |\n4 | use tower::ServiceBuilder;\n  |     ^^^^^ use of unresolved module or unlinked crate `tower`\n  |\n  = help: if you wanted to use a crate named `tower`, use `cargo add tower` to add it to your `Cargo.toml`\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tracing`",
+      "rendered": "error[E0432]: unresolved import `tracing`\n --> src/main.rs:7:5\n  |\n7 | use tracing::Span;\n  |     ^^^^^^^ use of unresolved module or unlinked crate `tracing`\n  |\n  = help: if you wanted to use a crate named `tracing`, use `cargo add tracing` to add it to your `Cargo.toml`\n\n",
+      "line": 7
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower`",
+      "rendered": "error[E0432]: unresolved import `tower`\n --> src/main.rs:8:5\n  |\n8 | use tower::{ServiceExt, Service};\n  |     ^^^^^ use of unresolved module or unlinked crate `tower`\n  |\n  = help: if you wanted to use a crate named `tower`, use `cargo add tower` to add it to your `Cargo.toml`\n\n",
+      "line": 8
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n  --> src/main.rs:14:3\n   |\n14 | #[tokio::main]\n   |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 14
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tracing`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tracing`\n  --> src/main.rs:22:17\n   |\n22 |                 tracing::debug_span!(\"http-request\")\n   |                 ^^^^^^^ use of unresolved module or unlinked crate `tracing`\n\n",
+      "line": 22
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tracing`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tracing`\n  --> src/main.rs:25:17\n   |\n25 |                 tracing::debug!(\"started {} {}\", request.method(), request.uri().path())\n   |                 ^^^^^^^ use of unresolved module or unlinked crate `tracing`\n\n",
+      "line": 25
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tracing`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tracing`\n  --> src/main.rs:28:17\n   |\n28 |                 tracing::debug!(\"response generated in {:?}\", latency)\n   |                 ^^^^^^^ use of unresolved module or unlinked crate `tracing`\n\n",
+      "line": 28
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tracing`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tracing`\n  --> src/main.rs:31:17\n   |\n31 |                 tracing::debug!(\"sending {} bytes\", chunk.len())\n   |                 ^^^^^^^ use of unresolved module or unlinked crate `tracing`\n\n",
+      "line": 31
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tracing`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tracing`\n  --> src/main.rs:34:17\n   |\n34 |                 tracing::debug!(\"stream closed after {:?}\", stream_duration)\n   |                 ^^^^^^^ use of unresolved module or unlinked crate `tracing`\n\n",
+      "line": 34
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tracing`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tracing`\n  --> src/main.rs:37:17\n   |\n37 |                 tracing::debug!(\"something went wrong\")\n   |                 ^^^^^^^ use of unresolved module or unlinked crate `tracing`\n\n",
+      "line": 37
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tracing_subscriber`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tracing_subscriber`\n  --> src/main.rs:16:1\n   |\n16 | tracing_subscriber::fmt::init();\n   | ^^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `tracing_subscriber`\n   |\n   = help: if you wanted to use a crate named `tracing_subscriber`, use `cargo add tracing_subscriber` to add it to your `Cargo.toml`\n\n",
+      "line": 16
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n  --> src/main.rs:15:1\n   |\n15 | async fn main() -> Result<(), Box<dyn std::error::Error>> {\n   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 15
+    }
+  ],
+  "error_count": 15,
+  "stderr_excerpt": "error: could not compile `n05_tower_http_consumer` (bin \"n05_tower_http_consumer\") due to 15 previous errors\n",
+  "code_sha256": "b1c320b01e7e5476617acf7c929049f640708819fac0bd4cf23ec4ebe061bcb0",
+  "manifest_sha256": "dc57e4318cce77434e3d6edbdf89fdf42f3322950af93ac95dccbf47fad6fa31",
+  "log_file": "holdout/results/check_logs/7c85b23e6cbd7aa461.txt.gz"
+}

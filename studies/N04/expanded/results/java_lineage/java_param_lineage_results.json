@@ -1,0 +1,24 @@
+{
+  "source_parent": "27e26758d6604f5d078709233028bb87b4a39e16",
+  "source_after": "2ce6e6149d0ef44f4919e75326265c64c144a00f",
+  "source_rule": "identical helper call with args + unique parameterized method + bounded numerical suffix",
+  "audits": {
+    "Issue256Test": {
+      "old_runnable_methods": 20,
+      "new_runnable_methods": 2,
+      "generated_junit_parameter_values": 10,
+      "mapped": 20,
+      "rejections": []
+    },
+    "Issue580Test": {
+      "old_runnable_methods": 20,
+      "new_runnable_methods": 2,
+      "generated_junit_parameter_values": 10,
+      "mapped": 20,
+      "rejections": []
+    }
+  },
+  "independent_idoft_moved_records": 27,
+  "matching_independent_idoft_records": 27,
+  "limitation": "Only one repository/one refactoring commit; not independently tested on other Java parameterizations."
+}

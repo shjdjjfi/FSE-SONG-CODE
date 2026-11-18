@@ -1,0 +1,1485 @@
+{
+  "events": [
+    {
+      "anonymized_team_request_prs": [
+        "https://github.com/bitwarden/clients/pull/12187",
+        "https://github.com/bitwarden/clients/pull/12235",
+        "https://github.com/bitwarden/clients/pull/12907",
+        "https://github.com/bitwarden/clients/pull/13039",
+        "https://github.com/bitwarden/clients/pull/13287",
+        "https://github.com/bitwarden/clients/pull/13598",
+        "https://github.com/bitwarden/clients/pull/13609",
+        "https://github.com/bitwarden/clients/pull/14953",
+        "https://github.com/bitwarden/clients/pull/15047",
+        "https://github.com/bitwarden/clients/pull/15070",
+        "https://github.com/bitwarden/clients/pull/15140",
+        "https://github.com/bitwarden/clients/pull/15401",
+        "https://github.com/bitwarden/clients/pull/15457",
+        "https://github.com/bitwarden/clients/pull/15957"
+      ],
+      "at_handoff": "2024-09-30T16:14:33Z",
+      "event": "BW10818",
+      "historical_old_path_reviewers_NOT_VERIFIED_TEAM_MEMBERS": [
+        {
+          "login": "jlf0dev",
+          "pre_migration_reviews": 5,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/10374",
+            "https://github.com/bitwarden/clients/pull/9851",
+            "https://github.com/bitwarden/clients/pull/7771",
+            "https://github.com/bitwarden/clients/pull/7762",
+            "https://github.com/bitwarden/clients/pull/7761"
+          ]
+        },
+        {
+          "login": "justindbaur",
+          "pre_migration_reviews": 4,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11081",
+            "https://github.com/bitwarden/clients/pull/8527",
+            "https://github.com/bitwarden/clients/pull/7771",
+            "https://github.com/bitwarden/clients/pull/7761"
+          ]
+        },
+        {
+          "login": "dani-garcia",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/10374",
+            "https://github.com/bitwarden/clients/pull/10373"
+          ]
+        },
+        {
+          "login": "hinton",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/9682",
+            "https://github.com/bitwarden/clients/pull/7762"
+          ]
+        },
+        {
+          "login": "mgibson1",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/9851",
+            "https://github.com/bitwarden/clients/pull/8140"
+          ]
+        },
+        {
+          "login": "jaredsnider-bitwarden",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/10374"
+          ]
+        },
+        {
+          "login": "jprusik",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/9851"
+          ]
+        },
+        {
+          "login": "trmartin4",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/10373"
+          ]
+        },
+        {
+          "login": "vgrassia",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/9682"
+          ]
+        }
+      ],
+      "new_codeowner_team_handles": [
+        "@bitwarden/team-key-management-dev"
+      ],
+      "old_codeowner_team_handles": [
+        "@bitwarden/team-platform-dev"
+      ],
+      "repository": "bitwarden/clients",
+      "team_membership_at_handoff": "NOT_IDENTIFIABLE_FROM_PUBLIC_DATA"
+    },
+    {
+      "anonymized_team_request_prs": [
+        "https://github.com/bitwarden/clients/pull/11779",
+        "https://github.com/bitwarden/clients/pull/12235",
+        "https://github.com/bitwarden/clients/pull/12646",
+        "https://github.com/bitwarden/clients/pull/12655",
+        "https://github.com/bitwarden/clients/pull/12935",
+        "https://github.com/bitwarden/clients/pull/13121",
+        "https://github.com/bitwarden/clients/pull/13194",
+        "https://github.com/bitwarden/clients/pull/13220",
+        "https://github.com/bitwarden/clients/pull/13576",
+        "https://github.com/bitwarden/clients/pull/14080",
+        "https://github.com/bitwarden/clients/pull/14539",
+        "https://github.com/bitwarden/clients/pull/14900",
+        "https://github.com/bitwarden/clients/pull/14942",
+        "https://github.com/bitwarden/clients/pull/14945",
+        "https://github.com/bitwarden/clients/pull/15457",
+        "https://github.com/bitwarden/clients/pull/15748",
+        "https://github.com/bitwarden/clients/pull/16820"
+      ],
+      "at_handoff": "2024-10-26T11:47:40Z",
+      "event": "BW11709",
+      "historical_old_path_reviewers_NOT_VERIFIED_TEAM_MEMBERS": [
+        {
+          "login": "jlf0dev",
+          "pre_migration_reviews": 7,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/9517",
+            "https://github.com/bitwarden/clients/pull/9235",
+            "https://github.com/bitwarden/clients/pull/9133",
+            "https://github.com/bitwarden/clients/pull/8816",
+            "https://github.com/bitwarden/clients/pull/8612",
+            "https://github.com/bitwarden/clients/pull/8715",
+            "https://github.com/bitwarden/clients/pull/8819"
+          ]
+        },
+        {
+          "login": "jaredsnider-bitwarden",
+          "pre_migration_reviews": 4,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11682",
+            "https://github.com/bitwarden/clients/pull/10785",
+            "https://github.com/bitwarden/clients/pull/9722",
+            "https://github.com/bitwarden/clients/pull/9498"
+          ]
+        },
+        {
+          "login": "addisonbeck",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/10785",
+            "https://github.com/bitwarden/clients/pull/9498",
+            "https://github.com/bitwarden/clients/pull/9133"
+          ]
+        },
+        {
+          "login": "dani-garcia",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11358",
+            "https://github.com/bitwarden/clients/pull/10785",
+            "https://github.com/bitwarden/clients/pull/9133"
+          ]
+        },
+        {
+          "login": "djsmith85",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11358",
+            "https://github.com/bitwarden/clients/pull/9133",
+            "https://github.com/bitwarden/clients/pull/8715"
+          ]
+        },
+        {
+          "login": "mgibson1",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/8612",
+            "https://github.com/bitwarden/clients/pull/8715",
+            "https://github.com/bitwarden/clients/pull/8819"
+          ]
+        },
+        {
+          "login": "shane-melton",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/10785",
+            "https://github.com/bitwarden/clients/pull/8612",
+            "https://github.com/bitwarden/clients/pull/8715"
+          ]
+        },
+        {
+          "login": "audreyality",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/9498",
+            "https://github.com/bitwarden/clients/pull/8612"
+          ]
+        },
+        {
+          "login": "mzieniukbw",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11682",
+            "https://github.com/bitwarden/clients/pull/11358"
+          ]
+        },
+        {
+          "login": "r-tome",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/8612",
+            "https://github.com/bitwarden/clients/pull/8715"
+          ]
+        },
+        {
+          "login": "vincentsalucci",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/10785",
+            "https://github.com/bitwarden/clients/pull/8816"
+          ]
+        },
+        {
+          "login": "amorask-bitwarden",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11358"
+          ]
+        },
+        {
+          "login": "cd-bitwarden",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11358"
+          ]
+        },
+        {
+          "login": "connerbw",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/8612"
+          ]
+        },
+        {
+          "login": "coroiu",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/9498"
+          ]
+        },
+        {
+          "login": "cyprain-okeke",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/9133"
+          ]
+        },
+        {
+          "login": "ike-kottlowski",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11358"
+          ]
+        },
+        {
+          "login": "jingo88",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/9498"
+          ]
+        },
+        {
+          "login": "jrmccannon",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11358"
+          ]
+        },
+        {
+          "login": "lrncardozowdf",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/9133"
+          ]
+        },
+        {
+          "login": "vleague2",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11358"
+          ]
+        }
+      ],
+      "new_codeowner_team_handles": [
+        "@bitwarden/team-key-management-dev"
+      ],
+      "old_codeowner_team_handles": [
+        "@bitwarden/team-auth-dev"
+      ],
+      "repository": "bitwarden/clients",
+      "team_membership_at_handoff": "NOT_IDENTIFIABLE_FROM_PUBLIC_DATA"
+    },
+    {
+      "anonymized_team_request_prs": [
+        "https://github.com/bitwarden/clients/pull/12853",
+        "https://github.com/bitwarden/clients/pull/12854",
+        "https://github.com/bitwarden/clients/pull/12875",
+        "https://github.com/bitwarden/clients/pull/12928",
+        "https://github.com/bitwarden/clients/pull/13093"
+      ],
+      "at_handoff": "2025-01-07T15:47:51Z",
+      "event": "BW12407",
+      "historical_old_path_reviewers_NOT_VERIFIED_TEAM_MEMBERS": [
+        {
+          "login": "mzieniukbw",
+          "pre_migration_reviews": 4,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11829",
+            "https://github.com/bitwarden/clients/pull/12235",
+            "https://github.com/bitwarden/clients/pull/11779",
+            "https://github.com/bitwarden/clients/pull/11358"
+          ]
+        },
+        {
+          "login": "ike-kottlowski",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11560",
+            "https://github.com/bitwarden/clients/pull/11358",
+            "https://github.com/bitwarden/clients/pull/10451"
+          ]
+        },
+        {
+          "login": "jaredsnider-bitwarden",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11829",
+            "https://github.com/bitwarden/clients/pull/12363",
+            "https://github.com/bitwarden/clients/pull/12144"
+          ]
+        },
+        {
+          "login": "justindbaur",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11779",
+            "https://github.com/bitwarden/clients/pull/11513",
+            "https://github.com/bitwarden/clients/pull/10451"
+          ]
+        },
+        {
+          "login": "rr-bw",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12235",
+            "https://github.com/bitwarden/clients/pull/11779",
+            "https://github.com/bitwarden/clients/pull/11513"
+          ]
+        },
+        {
+          "login": "dani-garcia",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12235",
+            "https://github.com/bitwarden/clients/pull/11358"
+          ]
+        },
+        {
+          "login": "djsmith85",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12235",
+            "https://github.com/bitwarden/clients/pull/11358"
+          ]
+        },
+        {
+          "login": "amorask-bitwarden",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11358"
+          ]
+        },
+        {
+          "login": "audreyality",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11513"
+          ]
+        },
+        {
+          "login": "btreston",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "cd-bitwarden",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11358"
+          ]
+        },
+        {
+          "login": "jonashendrickx",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "jprusik",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "jrmccannon",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11358"
+          ]
+        },
+        {
+          "login": "patrick-pimentel-bitwarden",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12453"
+          ]
+        },
+        {
+          "login": "shane-melton",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "vleague2",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11358"
+          ]
+        },
+        {
+          "login": "willmartian",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        }
+      ],
+      "new_codeowner_team_handles": [
+        "@bitwarden/team-key-management-dev"
+      ],
+      "old_codeowner_team_handles": [
+        "@bitwarden/team-auth-dev"
+      ],
+      "repository": "bitwarden/clients",
+      "team_membership_at_handoff": "NOT_IDENTIFIABLE_FROM_PUBLIC_DATA"
+    },
+    {
+      "anonymized_team_request_prs": [
+        "https://github.com/bitwarden/clients/pull/14797",
+        "https://github.com/bitwarden/clients/pull/16042",
+        "https://github.com/bitwarden/clients/pull/16373",
+        "https://github.com/bitwarden/clients/pull/16461",
+        "https://github.com/bitwarden/clients/pull/16944",
+        "https://github.com/bitwarden/clients/pull/17393"
+      ],
+      "at_handoff": "2025-01-29T16:09:20Z",
+      "event": "BW12927",
+      "historical_old_path_reviewers_NOT_VERIFIED_TEAM_MEMBERS": [
+        {
+          "login": "gbubemismith",
+          "pre_migration_reviews": 4,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/10664",
+            "https://github.com/bitwarden/clients/pull/12273",
+            "https://github.com/bitwarden/clients/pull/10540",
+            "https://github.com/bitwarden/clients/pull/8133"
+          ]
+        },
+        {
+          "login": "amorask-bitwarden",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/10664",
+            "https://github.com/bitwarden/clients/pull/10514",
+            "https://github.com/bitwarden/clients/pull/8133"
+          ]
+        },
+        {
+          "login": "audreyality",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12273",
+            "https://github.com/bitwarden/clients/pull/8133"
+          ]
+        },
+        {
+          "login": "jprusik",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12273",
+            "https://github.com/bitwarden/clients/pull/8133"
+          ]
+        },
+        {
+          "login": "shane-melton",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/10664",
+            "https://github.com/bitwarden/clients/pull/10514"
+          ]
+        },
+        {
+          "login": "addisonbeck",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12273"
+          ]
+        },
+        {
+          "login": "btreston",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12273"
+          ]
+        },
+        {
+          "login": "cyprain-okeke",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/10514"
+          ]
+        },
+        {
+          "login": "dani-garcia",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12273"
+          ]
+        },
+        {
+          "login": "djsmith85",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/10514"
+          ]
+        },
+        {
+          "login": "jaredsnider-bitwarden",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12273"
+          ]
+        },
+        {
+          "login": "jingo88",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/10664"
+          ]
+        },
+        {
+          "login": "jlf0dev",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/8133"
+          ]
+        },
+        {
+          "login": "jonashendrickx",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12273"
+          ]
+        },
+        {
+          "login": "justindbaur",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/8133"
+          ]
+        },
+        {
+          "login": "nick-livefront",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/10664"
+          ]
+        },
+        {
+          "login": "vincentsalucci",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/8133"
+          ]
+        },
+        {
+          "login": "willmartian",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12273"
+          ]
+        }
+      ],
+      "new_codeowner_team_handles": [
+        "@bitwarden/team-billing-dev"
+      ],
+      "old_codeowner_team_handles": [
+        "@bitwarden/team-vault-dev"
+      ],
+      "repository": "bitwarden/clients",
+      "team_membership_at_handoff": "NOT_IDENTIFIABLE_FROM_PUBLIC_DATA"
+    },
+    {
+      "anonymized_team_request_prs": [
+        "https://github.com/bitwarden/clients/pull/14277",
+        "https://github.com/bitwarden/clients/pull/14388",
+        "https://github.com/bitwarden/clients/pull/14398",
+        "https://github.com/bitwarden/clients/pull/14432",
+        "https://github.com/bitwarden/clients/pull/14434",
+        "https://github.com/bitwarden/clients/pull/14538",
+        "https://github.com/bitwarden/clients/pull/14942",
+        "https://github.com/bitwarden/clients/pull/15138",
+        "https://github.com/bitwarden/clients/pull/15401",
+        "https://github.com/bitwarden/clients/pull/15457",
+        "https://github.com/bitwarden/clients/pull/16865",
+        "https://github.com/bitwarden/clients/pull/17742",
+        "https://github.com/bitwarden/clients/pull/17771",
+        "https://github.com/bitwarden/clients/pull/18413"
+      ],
+      "at_handoff": "2025-04-10T09:09:35Z",
+      "event": "BW13285",
+      "historical_old_path_reviewers_NOT_VERIFIED_TEAM_MEMBERS": [
+        {
+          "login": "justindbaur",
+          "pre_migration_reviews": 5,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13894",
+            "https://github.com/bitwarden/clients/pull/13619",
+            "https://github.com/bitwarden/clients/pull/13581",
+            "https://github.com/bitwarden/clients/pull/13362",
+            "https://github.com/bitwarden/clients/pull/13309"
+          ]
+        },
+        {
+          "login": "coroiu",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13536",
+            "https://github.com/bitwarden/clients/pull/13121"
+          ]
+        },
+        {
+          "login": "ike-kottlowski",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13362",
+            "https://github.com/bitwarden/clients/pull/12807"
+          ]
+        },
+        {
+          "login": "mzieniukbw",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13266",
+            "https://github.com/bitwarden/clients/pull/12807"
+          ]
+        },
+        {
+          "login": "patrick-pimentel-bitwarden",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13619",
+            "https://github.com/bitwarden/clients/pull/13121"
+          ]
+        },
+        {
+          "login": "quexten",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13894",
+            "https://github.com/bitwarden/clients/pull/13121"
+          ]
+        },
+        {
+          "login": "tangowithfoxtrot",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13266",
+            "https://github.com/bitwarden/clients/pull/13353"
+          ]
+        },
+        {
+          "login": "addisonbeck",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12807"
+          ]
+        },
+        {
+          "login": "dani-garcia",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13537"
+          ]
+        },
+        {
+          "login": "jaredsnider-bitwarden",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13266"
+          ]
+        },
+        {
+          "login": "jrmccannon",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13121"
+          ]
+        },
+        {
+          "login": "nick-livefront",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12807"
+          ]
+        },
+        {
+          "login": "ttalty",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13121"
+          ]
+        }
+      ],
+      "new_codeowner_team_handles": [
+        "@bitwarden/team-key-management-dev"
+      ],
+      "old_codeowner_team_handles": [
+        "@bitwarden/team-platform-dev"
+      ],
+      "repository": "bitwarden/clients",
+      "team_membership_at_handoff": "NOT_IDENTIFIABLE_FROM_PUBLIC_DATA"
+    },
+    {
+      "anonymized_team_request_prs": [
+        "https://github.com/bitwarden/clients/pull/14650",
+        "https://github.com/bitwarden/clients/pull/14797",
+        "https://github.com/bitwarden/clients/pull/14850",
+        "https://github.com/bitwarden/clients/pull/15750",
+        "https://github.com/bitwarden/clients/pull/16020",
+        "https://github.com/bitwarden/clients/pull/16219",
+        "https://github.com/bitwarden/clients/pull/16227",
+        "https://github.com/bitwarden/clients/pull/16353",
+        "https://github.com/bitwarden/clients/pull/16823",
+        "https://github.com/bitwarden/clients/pull/16939",
+        "https://github.com/bitwarden/clients/pull/16952",
+        "https://github.com/bitwarden/clients/pull/16987",
+        "https://github.com/bitwarden/clients/pull/17189",
+        "https://github.com/bitwarden/clients/pull/17434"
+      ],
+      "at_handoff": "2025-05-06T08:32:48Z",
+      "event": "BW14571",
+      "historical_old_path_reviewers_NOT_VERIFIED_TEAM_MEMBERS": [
+        {
+          "login": "djsmith85",
+          "pre_migration_reviews": 8,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14401",
+            "https://github.com/bitwarden/clients/pull/14203",
+            "https://github.com/bitwarden/clients/pull/14195",
+            "https://github.com/bitwarden/clients/pull/14102",
+            "https://github.com/bitwarden/clients/pull/14074",
+            "https://github.com/bitwarden/clients/pull/13644",
+            "https://github.com/bitwarden/clients/pull/13463",
+            "https://github.com/bitwarden/clients/pull/13612"
+          ]
+        },
+        {
+          "login": "audreyality",
+          "pre_migration_reviews": 4,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13725",
+            "https://github.com/bitwarden/clients/pull/13611",
+            "https://github.com/bitwarden/clients/pull/13610",
+            "https://github.com/bitwarden/clients/pull/13556"
+          ]
+        },
+        {
+          "login": "connerbw",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14074",
+            "https://github.com/bitwarden/clients/pull/13463",
+            "https://github.com/bitwarden/clients/pull/13556"
+          ]
+        },
+        {
+          "login": "addisonbeck",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14074",
+            "https://github.com/bitwarden/clients/pull/13556"
+          ]
+        },
+        {
+          "login": "jaredsnider-bitwarden",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13463",
+            "https://github.com/bitwarden/clients/pull/13556"
+          ]
+        },
+        {
+          "login": "jrmccannon",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14074",
+            "https://github.com/bitwarden/clients/pull/13463"
+          ]
+        },
+        {
+          "login": "rr-bw",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14074",
+            "https://github.com/bitwarden/clients/pull/13644"
+          ]
+        },
+        {
+          "login": "shane-melton",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14401",
+            "https://github.com/bitwarden/clients/pull/13556"
+          ]
+        },
+        {
+          "login": "ttalty",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14195",
+            "https://github.com/bitwarden/clients/pull/13725"
+          ]
+        },
+        {
+          "login": "vleague2",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14074",
+            "https://github.com/bitwarden/clients/pull/13556"
+          ]
+        },
+        {
+          "login": "willmartian",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13725",
+            "https://github.com/bitwarden/clients/pull/13463"
+          ]
+        },
+        {
+          "login": "banrion",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14195"
+          ]
+        },
+        {
+          "login": "coroiu",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13644"
+          ]
+        },
+        {
+          "login": "gbubemismith",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13463"
+          ]
+        },
+        {
+          "login": "jimmyvo16",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13556"
+          ]
+        },
+        {
+          "login": "jingo88",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14074"
+          ]
+        },
+        {
+          "login": "jprusik",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13463"
+          ]
+        },
+        {
+          "login": "quexten",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13556"
+          ]
+        },
+        {
+          "login": "r-tome",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13644"
+          ]
+        },
+        {
+          "login": "tangowithfoxtrot",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13463"
+          ]
+        },
+        {
+          "login": "thomas-avery",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13463"
+          ]
+        }
+      ],
+      "new_codeowner_team_handles": [
+        "@bitwarden/team-data-insights-and-reporting-dev"
+      ],
+      "old_codeowner_team_handles": [
+        "@bitwarden/team-tools-dev"
+      ],
+      "repository": "bitwarden/clients",
+      "team_membership_at_handoff": "NOT_IDENTIFIABLE_FROM_PUBLIC_DATA"
+    },
+    {
+      "anonymized_team_request_prs": [
+        "https://github.com/bitwarden/clients/pull/15041",
+        "https://github.com/bitwarden/clients/pull/16562",
+        "https://github.com/bitwarden/clients/pull/16939",
+        "https://github.com/bitwarden/clients/pull/16952"
+      ],
+      "at_handoff": "2025-05-30T07:37:09Z",
+      "event": "BW14987",
+      "historical_old_path_reviewers_NOT_VERIFIED_TEAM_MEMBERS": [
+        {
+          "login": "audreyality",
+          "pre_migration_reviews": 4,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13556",
+            "https://github.com/bitwarden/clients/pull/12831",
+            "https://github.com/bitwarden/clients/pull/12770",
+            "https://github.com/bitwarden/clients/pull/11562"
+          ]
+        },
+        {
+          "login": "dani-garcia",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13448",
+            "https://github.com/bitwarden/clients/pull/12770",
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "djsmith85",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13448",
+            "https://github.com/bitwarden/clients/pull/12235",
+            "https://github.com/bitwarden/clients/pull/11375"
+          ]
+        },
+        {
+          "login": "shane-melton",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13556",
+            "https://github.com/bitwarden/clients/pull/12770",
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "willmartian",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12831",
+            "https://github.com/bitwarden/clients/pull/12770",
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "jaredsnider-bitwarden",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13556",
+            "https://github.com/bitwarden/clients/pull/12770"
+          ]
+        },
+        {
+          "login": "jonashendrickx",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12770",
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "mzieniukbw",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12770",
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "quexten",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13556",
+            "https://github.com/bitwarden/clients/pull/12831"
+          ]
+        },
+        {
+          "login": "rr-bw",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12831",
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "vleague2",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13556",
+            "https://github.com/bitwarden/clients/pull/11375"
+          ]
+        },
+        {
+          "login": "addisonbeck",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13556"
+          ]
+        },
+        {
+          "login": "btreston",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "connerbw",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13556"
+          ]
+        },
+        {
+          "login": "coroiu",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12831"
+          ]
+        },
+        {
+          "login": "eliykat",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12770"
+          ]
+        },
+        {
+          "login": "jimmyvo16",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13556"
+          ]
+        },
+        {
+          "login": "jingo88",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12831"
+          ]
+        },
+        {
+          "login": "jprusik",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "jrmccannon",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12831"
+          ]
+        },
+        {
+          "login": "patrick-pimentel-bitwarden",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13448"
+          ]
+        },
+        {
+          "login": "ttalty",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11678"
+          ]
+        }
+      ],
+      "new_codeowner_team_handles": [
+        "@bitwarden/team-data-insights-and-reporting-dev"
+      ],
+      "old_codeowner_team_handles": [
+        "@bitwarden/team-tools-dev"
+      ],
+      "repository": "bitwarden/clients",
+      "team_membership_at_handoff": "NOT_IDENTIFIABLE_FROM_PUBLIC_DATA"
+    },
+    {
+      "anonymized_team_request_prs": [
+        "https://github.com/bitwarden/clients/pull/15273",
+        "https://github.com/bitwarden/clients/pull/15340",
+        "https://github.com/bitwarden/clients/pull/15362",
+        "https://github.com/bitwarden/clients/pull/15375",
+        "https://github.com/bitwarden/clients/pull/15522",
+        "https://github.com/bitwarden/clients/pull/15610",
+        "https://github.com/bitwarden/clients/pull/15620",
+        "https://github.com/bitwarden/clients/pull/15738",
+        "https://github.com/bitwarden/clients/pull/15777",
+        "https://github.com/bitwarden/clients/pull/15827",
+        "https://github.com/bitwarden/clients/pull/15892",
+        "https://github.com/bitwarden/clients/pull/16002",
+        "https://github.com/bitwarden/clients/pull/16020",
+        "https://github.com/bitwarden/clients/pull/16219",
+        "https://github.com/bitwarden/clients/pull/16349",
+        "https://github.com/bitwarden/clients/pull/16433",
+        "https://github.com/bitwarden/clients/pull/16748",
+        "https://github.com/bitwarden/clients/pull/16940",
+        "https://github.com/bitwarden/clients/pull/16952"
+      ],
+      "at_handoff": "2025-06-17T17:33:02Z",
+      "event": "BW15093",
+      "historical_old_path_reviewers_NOT_VERIFIED_TEAM_MEMBERS": [
+        {
+          "login": "patrick-pimentel-bitwarden",
+          "pre_migration_reviews": 4,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/15035",
+            "https://github.com/bitwarden/clients/pull/14295",
+            "https://github.com/bitwarden/clients/pull/13475",
+            "https://github.com/bitwarden/clients/pull/13360"
+          ]
+        },
+        {
+          "login": "btreston",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14804",
+            "https://github.com/bitwarden/clients/pull/12744",
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "rr-bw",
+          "pre_migration_reviews": 3,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14045",
+            "https://github.com/bitwarden/clients/pull/12235",
+            "https://github.com/bitwarden/clients/pull/11513"
+          ]
+        },
+        {
+          "login": "amorask-bitwarden",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14804",
+            "https://github.com/bitwarden/clients/pull/14295"
+          ]
+        },
+        {
+          "login": "djsmith85",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14804",
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "ike-kottlowski",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11869",
+            "https://github.com/bitwarden/clients/pull/11651"
+          ]
+        },
+        {
+          "login": "jprusik",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12744",
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "justindbaur",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14804",
+            "https://github.com/bitwarden/clients/pull/11513"
+          ]
+        },
+        {
+          "login": "mzieniukbw",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12744",
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "shane-melton",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14804",
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "vleague2",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14295",
+            "https://github.com/bitwarden/clients/pull/12744"
+          ]
+        },
+        {
+          "login": "audreyality",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11513"
+          ]
+        },
+        {
+          "login": "cd-bitwarden",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12744"
+          ]
+        },
+        {
+          "login": "coroiu",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12744"
+          ]
+        },
+        {
+          "login": "dani-garcia",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "jaredsnider-bitwarden",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14804"
+          ]
+        },
+        {
+          "login": "jonashendrickx",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        },
+        {
+          "login": "jtouchstonebw",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/11869"
+          ]
+        },
+        {
+          "login": "merissaacosta",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/13360"
+          ]
+        },
+        {
+          "login": "r-tome",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14295"
+          ]
+        },
+        {
+          "login": "thomas-avery",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/14804"
+          ]
+        },
+        {
+          "login": "trmartin4",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12744"
+          ]
+        },
+        {
+          "login": "willmartian",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/bitwarden/clients/pull/12235"
+          ]
+        }
+      ],
+      "new_codeowner_team_handles": [
+        "@bitwarden/team-ui-foundation"
+      ],
+      "old_codeowner_team_handles": [
+        "@bitwarden/team-auth-dev"
+      ],
+      "repository": "bitwarden/clients",
+      "team_membership_at_handoff": "NOT_IDENTIFIABLE_FROM_PUBLIC_DATA"
+    },
+    {
+      "anonymized_team_request_prs": [
+        "https://github.com/grafana/grafana/pull/105068",
+        "https://github.com/grafana/grafana/pull/107056",
+        "https://github.com/grafana/grafana/pull/109309",
+        "https://github.com/grafana/grafana/pull/109419",
+        "https://github.com/grafana/grafana/pull/109969",
+        "https://github.com/grafana/grafana/pull/110619",
+        "https://github.com/grafana/grafana/pull/110839",
+        "https://github.com/grafana/grafana/pull/112010",
+        "https://github.com/grafana/grafana/pull/112880",
+        "https://github.com/grafana/grafana/pull/114196",
+        "https://github.com/grafana/grafana/pull/115442",
+        "https://github.com/grafana/grafana/pull/115959",
+        "https://github.com/grafana/grafana/pull/116308",
+        "https://github.com/grafana/grafana/pull/116434",
+        "https://github.com/grafana/grafana/pull/116475",
+        "https://github.com/grafana/grafana/pull/116563",
+        "https://github.com/grafana/grafana/pull/117061",
+        "https://github.com/grafana/grafana/pull/117090"
+      ],
+      "at_handoff": "2025-04-30T14:23:56Z",
+      "event": "GF104424",
+      "historical_old_path_reviewers_NOT_VERIFIED_TEAM_MEMBERS": [
+        {
+          "login": "jacobsonmt",
+          "pre_migration_reviews": 5,
+          "reviewed_pr_urls": [
+            "https://github.com/grafana/grafana/pull/104063",
+            "https://github.com/grafana/grafana/pull/103819",
+            "https://github.com/grafana/grafana/pull/95430",
+            "https://github.com/grafana/grafana/pull/91550",
+            "https://github.com/grafana/grafana/pull/94995"
+          ]
+        },
+        {
+          "login": "johnnyqqqq",
+          "pre_migration_reviews": 2,
+          "reviewed_pr_urls": [
+            "https://github.com/grafana/grafana/pull/101395",
+            "https://github.com/grafana/grafana/pull/94684"
+          ]
+        },
+        {
+          "login": "clarity-89",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/grafana/grafana/pull/99793"
+          ]
+        },
+        {
+          "login": "toddtreece",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/grafana/grafana/pull/97531"
+          ]
+        },
+        {
+          "login": "yuri-tceretian",
+          "pre_migration_reviews": 1,
+          "reviewed_pr_urls": [
+            "https://github.com/grafana/grafana/pull/104053"
+          ]
+        }
+      ],
+      "new_codeowner_team_handles": [
+        "@grafana/alerting-backend"
+      ],
+      "old_codeowner_team_handles": [
+        "@grafana/grafana-app-platform-squad",
+        "@grafana/alerting-backend"
+      ],
+      "repository": "grafana/grafana",
+      "team_membership_at_handoff": "NOT_IDENTIFIABLE_FROM_PUBLIC_DATA"
+    }
+  ],
+  "interpretation": "Timestamped CODEOWNERS team handles are verified. Human membership lists remain unknown; pre-handoff module reviewers are NOT equivalent to team members.",
+  "observed_utc": "2026-11-14T23:57:01.147721+00:00",
+  "public_team_endpoint_probes": {
+    "@bitwarden/team-auth-dev": {
+      "http_status": 401,
+      "note": "Not available anonymously; cannot infer historical team members from this response",
+      "url": "https://api.github.com/orgs/bitwarden/teams/team-auth-dev"
+    },
+    "@bitwarden/team-billing-dev": {
+      "http_status": 401,
+      "note": "Not available anonymously; cannot infer historical team members from this response",
+      "url": "https://api.github.com/orgs/bitwarden/teams/team-billing-dev"
+    },
+    "@bitwarden/team-data-insights-and-reporting-dev": {
+      "http_status": 401,
+      "note": "Not available anonymously; cannot infer historical team members from this response",
+      "url": "https://api.github.com/orgs/bitwarden/teams/team-data-insights-and-reporting-dev"
+    },
+    "@bitwarden/team-key-management-dev": {
+      "http_status": 401,
+      "note": "Not available anonymously; cannot infer historical team members from this response",
+      "url": "https://api.github.com/orgs/bitwarden/teams/team-key-management-dev"
+    },
+    "@bitwarden/team-platform-dev": {
+      "http_status": 401,
+      "note": "Not available anonymously; cannot infer historical team members from this response",
+      "url": "https://api.github.com/orgs/bitwarden/teams/team-platform-dev"
+    },
+    "@bitwarden/team-tools-dev": {
+      "http_status": 401,
+      "note": "Not available anonymously; cannot infer historical team members from this response",
+      "url": "https://api.github.com/orgs/bitwarden/teams/team-tools-dev"
+    },
+    "@bitwarden/team-ui-foundation": {
+      "http_status": 401,
+      "note": "Not available anonymously; cannot infer historical team members from this response",
+      "url": "https://api.github.com/orgs/bitwarden/teams/team-ui-foundation"
+    },
+    "@bitwarden/team-vault-dev": {
+      "http_status": 401,
+      "note": "Not available anonymously; cannot infer historical team members from this response",
+      "url": "https://api.github.com/orgs/bitwarden/teams/team-vault-dev"
+    },
+    "@grafana/alerting-backend": {
+      "http_status": 403,
+      "note": "Not available anonymously; cannot infer historical team members from this response",
+      "url": "https://api.github.com/orgs/grafana/teams/alerting-backend"
+    },
+    "@grafana/grafana-app-platform-squad": {
+      "http_status": 403,
+      "note": "Not available anonymously; cannot infer historical team members from this response",
+      "url": "https://api.github.com/orgs/grafana/teams/grafana-app-platform-squad"
+    }
+  }
+}

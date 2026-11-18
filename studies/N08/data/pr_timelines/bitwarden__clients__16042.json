@@ -1,0 +1,77 @@
+{
+  "fetched_utc": "2026-11-14T17:12:20.928287+00:00",
+  "merged_at": "2025-09-04T16:33:40Z",
+  "opened_at": "2025-08-15T19:39:17Z",
+  "pr": 16042,
+  "raw_html_sha256": "51331450c4ae3d8125c4cf2ca536d211d9b40dfb6ade2f6ccba703ce33339110",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 13,
+  "reviews": [
+    {
+      "login": "cyprain-okeke",
+      "state": "APPROVED",
+      "submitted_at": "2025-08-22T17:46:56Z"
+    },
+    {
+      "login": "neuronull",
+      "state": "COMMENTED",
+      "submitted_at": "2025-08-25T23:16:34Z"
+    },
+    {
+      "login": "jprusik",
+      "state": "COMMENTED",
+      "submitted_at": "2025-08-26T11:53:15Z"
+    },
+    {
+      "login": "jprusik",
+      "state": "APPROVED",
+      "submitted_at": "2025-08-26T11:54:40Z"
+    },
+    {
+      "login": "jprusik",
+      "state": "APPROVED",
+      "submitted_at": "2025-08-26T15:55:38Z"
+    },
+    {
+      "login": "cyprain-okeke",
+      "state": "APPROVED",
+      "submitted_at": "2025-08-26T15:57:52Z"
+    },
+    {
+      "login": "neuronull",
+      "state": "COMMENTED",
+      "submitted_at": "2025-08-26T16:34:51Z"
+    },
+    {
+      "login": "neuronull",
+      "state": "APPROVED",
+      "submitted_at": "2025-08-29T21:24:15Z"
+    },
+    {
+      "login": "cyprain-okeke",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-01T07:31:25Z"
+    },
+    {
+      "login": "jprusik",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-03T20:35:50Z"
+    },
+    {
+      "login": "cyprain-okeke",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-04T16:21:47Z"
+    },
+    {
+      "login": "neuronull",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-04T16:32:04Z"
+    },
+    {
+      "login": "jprusik",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-04T16:33:38Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/16042"
+}

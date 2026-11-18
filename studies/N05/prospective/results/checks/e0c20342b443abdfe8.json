@@ -1,0 +1,28 @@
+{
+  "key": "e0c20342b443abdfe8",
+  "args": {
+    "crate": "hyper-util",
+    "version": "0.1.15",
+    "id": "9ff5888449078f2f",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1293,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `http`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `http`\n --> src/main.rs:3:11\n  |\n3 | let uri = http::Uri::from_static(\"https://hyper.rs\");\n  |           ^^^^ use of unresolved module or unlinked crate `http`\n  |\n  = help: if you wanted to use a crate named `http`, use `cargo add http` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_hyper_util_consumer` (bin \"n05_hyper_util_consumer\") due to 1 previous error\n",
+  "code_sha256": "2367e224da85ad69f22a130c77bf86d7ba9c743a075bf6d0510a1ad280423a34",
+  "manifest_sha256": "c0977fd11912a57aee2c92da8357ece3bb50aa34a52be316a34c7e254813818b",
+  "log_file": "prospective/results/check_logs/e0c20342b443abdfe8.txt.gz"
+}

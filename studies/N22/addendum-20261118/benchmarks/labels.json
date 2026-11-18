@@ -1,0 +1,39 @@
+{
+  "label_creation": "Exploratory, retrospective case selection on 2026-11-18; NOT a prospective preregistration or blind holdout",
+  "positive_cases": {
+    "django600_staged": {
+      "independent_source": "https://code.djangoproject.com/ticket/36843",
+      "validation": "Django 6.0.0 to 6.0.1 maintainer fix; application has_perm oracle",
+      "root_cause": "pre_migrate RenamePermission targets unrelated model name substring"
+    },
+    "opencode_early_agent_missing": {
+      "independent_source": "https://github.com/anomalyco/opencode/issues/52226",
+      "validation": "Original v2.0.19 migration, legacy v1.0.x-shaped message; upstream reporter documented 6238 lost messages",
+      "root_cause": "new V1 schema decoder requires an agent field absent from supported historical rows"
+    }
+  },
+  "conditional_cases_not_in_primary_metrics": {
+    "opencode_late_session": {
+      "source": "https://github.com/anomalyco/opencode/issues/50130",
+      "reason": "Mixing V1 and V2 writers after a completed checkpoint may be outside a supported deployment policy; do not assume the business contract without that policy"
+    }
+  },
+  "negative_cases": {
+    "django600_fresh": "Permission assignment after final migration",
+    "django600_staged_ungrouped": "No pre-upgrade user grant at risk",
+    "django601_fresh": "Fixed version, fresh migration",
+    "django601_staged": "Fixed version, upgrade preserving pre-existing grant",
+    "django601_staged_ungrouped": "Fixed version, no at-risk pre-upgrade grant",
+    "sites_fresh": "Official Django site bootstrap",
+    "sites_staged": "Official Django split migration",
+    "sites_staged_user": "User-edited site settings are legitimate, not migration defects",
+    "sites_staged_redirect": "User-added redirect is legitimate, not migration defect",
+    "sites_staged_noop": "Re-running a completed migration is a no-op",
+    "opencode_agent_present": "Supported contemporary V1 message shape",
+    "opencode_mode_backfill": "Controlled counterfactual correction, not an upstream fix",
+    "opencode_no_late_session": "Completed V2 checkpoint with no new V1 writes"
+  },
+  "negative_prefixes": {
+    "sites_user_variant_": "A new user-owned Site.domain/Site.name value is preserved; correlated robustness variants of one project"
+  }
+}

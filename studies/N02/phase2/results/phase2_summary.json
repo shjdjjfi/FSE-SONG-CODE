@@ -1,0 +1,94 @@
+{
+  "study": "N02 Phase 2, rigorously distinguished synthetic vs live evidence",
+  "discovery": {
+    "chart_families": 5,
+    "cases": 27,
+    "constructed_manifest_positive_cases": 8,
+    "controls": 19,
+    "CID_true_positives": 8,
+    "CID_false_positives": 0,
+    "explicitly_actionable_official_docs_hits": 7,
+    "claim": "development/curated corpus, NOT independent performance"
+  },
+  "holdout": {
+    "states": 72,
+    "losses": 0,
+    "controls": 72,
+    "cid_tp": 0,
+    "cid_fp": 0,
+    "missing_key_tp": 0,
+    "missing_key_fp": 0,
+    "render_failures": 0,
+    "cid_recall": null,
+    "cid_fpr": 0.0,
+    "missing_key_recall": null,
+    "missing_key_fpr": 0.0,
+    "family_clusters": 6,
+    "preregistered_families": 8,
+    "cid_minus_missing_key_delta_pp": null,
+    "cluster_bootstrap_delta_95_pp": null
+  },
+  "holdout_design": "preregistered out-of-family manifest literal-preservation, not native runtime",
+  "reuse_sensitivity": {
+    "n": 72,
+    "family_count": 6,
+    "original_reset_then_reuse_nonlosses": 72,
+    "emulated_reuse_render_failures": 0,
+    "emulated_reuse_value_losses": 0,
+    "interpretation": "application runtime not tested; not exact Helm merge semantics"
+  },
+  "native_helm_diff_against_helm_encoded_synthetic_release": {
+    "original_plugin_calls": 27,
+    "successful_original_plugin_calls": 27,
+    "normalized_context3_calls": 27,
+    "successful_normalized_context3_calls": 27,
+    "release_secret_read_verified_for_all": true,
+    "default_diff_median_lines": 1535,
+    "concise_diff_median_lines": 628,
+    "normalized_median_plugin_wall_seconds": 0.521,
+    "normalized_total_diff_lines": 20586,
+    "by_family": {
+      "argo": {
+        "old_default_median_diff_lines": 2805,
+        "normalized_median_diff_lines": 628
+      },
+      "certmanager": {
+        "old_default_median_diff_lines": 7632.5,
+        "normalized_median_diff_lines": 3541.5
+      },
+      "ksm": {
+        "old_default_median_diff_lines": 373.0,
+        "normalized_median_diff_lines": 119.0
+      },
+      "prometheus": {
+        "old_default_median_diff_lines": 1545,
+        "normalized_median_diff_lines": 902
+      },
+      "tempo": {
+        "old_default_median_diff_lines": 1250,
+        "normalized_median_diff_lines": 423
+      }
+    },
+    "important": "Actual binary/plugin and Helm storage format, fake read-only Kubernetes API; not an installed Release in a real cluster"
+  },
+  "native_kubernetes_runtime": {
+    "pods_started": 0,
+    "actual_upgrades_executed": 0,
+    "cluster_available_in_this_environment": false,
+    "external_cluster_replay_harness_exists": true,
+    "status": "BLOCKED - requires user-provided disposable CPU Kubernetes cluster"
+  },
+  "real_human_review": {
+    "reviewers": 0,
+    "observations": 0,
+    "stopwatch_exists": true,
+    "status": "BLOCKED - human participants not recruited"
+  },
+  "prespecified_gate": {
+    "two_families_native_silent_runtime_contract_failures": "UNTESTED",
+    "CID_over_helm_diff_plus_docs_at_equal_human_minutes_at_least_15_pp": "UNTESTED",
+    "out_of_family_sensitivity": "UNDEFINED; 0 positive labels",
+    "out_of_family_observed_FPR": 0.0,
+    "conclusion": "FSE Industry claims not established; do not submit as complete experiment"
+  }
+}

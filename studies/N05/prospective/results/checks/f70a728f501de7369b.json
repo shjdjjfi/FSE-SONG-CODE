@@ -1,0 +1,32 @@
+{
+  "key": "f70a728f501de7369b",
+  "args": {
+    "crate": "hyper-util",
+    "version": "0.1.15",
+    "id": "babba9f5f04cf89e",
+    "profile": "candidate",
+    "features": [
+      "client",
+      "server",
+      "tokio"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0739,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `hyper_util::server::conn::auto`",
+      "rendered": "error[E0432]: unresolved import `hyper_util::server::conn::auto`\n --> src/main.rs:4:5\n  |\n4 |     server::conn::auto,\n  |     ^^^^^^^^^^^^^^^^^^ no `auto` in `server::conn`\n  |\nnote: found an item that was configured out\n --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-util-0.1.15/src/server/conn/mod.rs:4:9\n  |\n3 | #[cfg(any(feature = \"http1\", feature = \"http2\"))]\n  |          -------------------------------------- the item is gated here\n4 | pub mod auto;\n  |         ^^^^\n\n",
+      "line": 4
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_hyper_util_consumer` (bin \"n05_hyper_util_consumer\") due to 1 previous error\n",
+  "code_sha256": "07a34e7fac218ce40399e1f45bdcb4b59d20e73c4be5d688eaf74cdc092d750b",
+  "manifest_sha256": "c9a64807fc0f60499ee5663f43238a0830b9e1bcecb75b241c96748e90e1baed",
+  "log_file": "prospective/results/check_logs/f70a728f501de7369b.txt.gz"
+}

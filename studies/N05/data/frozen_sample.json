@@ -1,0 +1,1183 @@
+{
+  "selection_version": 1,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "rule": "Per seed and crate: up to two risk, plus control, three total; all before compiling.",
+  "n_corpus": 2212,
+  "n_filtered": 1989,
+  "assignments": [
+    {
+      "seed": 17,
+      "crate": "axum",
+      "id": "54004c2631eefe66",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "axum",
+      "id": "664dca3e05a99f5b",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "axum",
+      "id": "412bbf92ccbd4568",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "bitflags",
+      "id": "88afd64b50cf90fa",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "bitflags",
+      "id": "c397d03cff5bb9db",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "bitflags",
+      "id": "220d2e9fde7bd5c7",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "chrono",
+      "id": "d188a1e7a6aa8c55",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "chrono",
+      "id": "56a70e1d3817880d",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "chrono",
+      "id": "8a96b8f2b8ad565a",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "clap",
+      "id": "b74f305275415e6b",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "clap",
+      "id": "febca273195721c4",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "clap",
+      "id": "a1a1a5743fad4e89",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "flate2",
+      "id": "07eecf322e9348f8",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "flate2",
+      "id": "4b95be2cad7ed585",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "flate2",
+      "id": "6d4b553b5d0a24af",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "futures-util",
+      "id": "5e6a4283cb14a9e9",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "hyper",
+      "id": "d0d73db3505a6279",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "hyper",
+      "id": "cc50713a62b46ad7",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "hyper",
+      "id": "a1601de600a18ac6",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "indexmap",
+      "id": "8bc95b18b70e9d04",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "indexmap",
+      "id": "424a4b5fa0603fd4",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "indexmap",
+      "id": "50711d91f1bac4a5",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "indicatif",
+      "id": "3b79f29c6a445aec",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "indicatif",
+      "id": "4c28ce7bda1c0283",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "indicatif",
+      "id": "1fa0440330abb332",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "itertools",
+      "id": "a45c8ce83ce13c1f",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "itertools",
+      "id": "82cb792d9876c300",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "itertools",
+      "id": "42c624ec60fbc731",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "petgraph",
+      "id": "5abd390c115b54d0",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "petgraph",
+      "id": "3c140f56681561cd",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "petgraph",
+      "id": "bc2b1409a14e519f",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "rand",
+      "id": "d0ee1fc46da993d7",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "rand",
+      "id": "5099cbc5366cc656",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "rand",
+      "id": "51511584bdf1edb6",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "rayon",
+      "id": "6dc524241f1d0f7f",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "rayon",
+      "id": "c5396c52fd209fff",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "rayon",
+      "id": "36cda4b902264729",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "regex",
+      "id": "608cb98e5580ceb0",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "regex",
+      "id": "af67a021d69f3836",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "regex",
+      "id": "f50e003f8ee3ad09",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "reqwest",
+      "id": "640792d66cf6f87f",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "reqwest",
+      "id": "61e7e0ad96f7e86b",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "reqwest",
+      "id": "e25bdf5c83d55bff",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "serde",
+      "id": "f2fc76eda58e95e0",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "sqlx",
+      "id": "29b3e1680322e82f",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "sqlx",
+      "id": "4ec1d01865cb7837",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "sqlx",
+      "id": "155cc67f6d97e0d5",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "strum",
+      "id": "f76f735b2f324842",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "strum",
+      "id": "4479ab5fc6d4ba3f",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "strum",
+      "id": "59c54a68094a4178",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tinyvec",
+      "id": "43d3d6bbc0f68d92",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tinyvec",
+      "id": "57ff1aff71a9024b",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tinyvec",
+      "id": "21c6a67eeaea12a8",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "tokio",
+      "id": "81a01fc7b68c2228",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tokio",
+      "id": "cd28cf9ef0f1f8e2",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tokio",
+      "id": "4de8032810115862",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "tokio-util",
+      "id": "2955b2048716f133",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tokio-util",
+      "id": "8dbc5eb2fec57ffd",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tokio-util",
+      "id": "3e0e73cd3555a027",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "tracing-subscriber",
+      "id": "c480e8d6f1ca9fd5",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tracing-subscriber",
+      "id": "52a40054e00419cd",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tracing-subscriber",
+      "id": "846c6ee87fbeced5",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "uuid",
+      "id": "f235f93ca230a419",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "uuid",
+      "id": "6f8f25468af9f32d",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "uuid",
+      "id": "bba68d810891cf4c",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "axum",
+      "id": "54004c2631eefe66",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "axum",
+      "id": "664dca3e05a99f5b",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "axum",
+      "id": "0e644db7283639ee",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "bitflags",
+      "id": "88afd64b50cf90fa",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "bitflags",
+      "id": "220d2e9fde7bd5c7",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "bitflags",
+      "id": "c397d03cff5bb9db",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "chrono",
+      "id": "c5b6a9f3523804f0",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "chrono",
+      "id": "6dff0c615512c1a9",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "chrono",
+      "id": "c1cfa2386eb5f3a2",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "clap",
+      "id": "b74f305275415e6b",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "clap",
+      "id": "a1a1a5743fad4e89",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "clap",
+      "id": "febca273195721c4",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "flate2",
+      "id": "07eecf322e9348f8",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "flate2",
+      "id": "194f7b99f20fe341",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "flate2",
+      "id": "e20323362efcb0e0",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "futures-util",
+      "id": "5e6a4283cb14a9e9",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "hyper",
+      "id": "d0d73db3505a6279",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "hyper",
+      "id": "a1601de600a18ac6",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "hyper",
+      "id": "b3a200d0ca0647be",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "indexmap",
+      "id": "209ae679f4d5145b",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "indexmap",
+      "id": "3872deae632e658c",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "indexmap",
+      "id": "34f08de097e68bd1",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "indicatif",
+      "id": "4c28ce7bda1c0283",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "indicatif",
+      "id": "824116bc8eb07d9d",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "indicatif",
+      "id": "1fa0440330abb332",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "itertools",
+      "id": "b8ab88efc40c8497",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "itertools",
+      "id": "9ef49411592a8c36",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "itertools",
+      "id": "2b54f5fa3f49a42b",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "petgraph",
+      "id": "5abd390c115b54d0",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "petgraph",
+      "id": "e0922e9103409640",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "petgraph",
+      "id": "e91722e71c396087",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "rand",
+      "id": "bb612594fa05b615",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "rand",
+      "id": "bd75362ece2390fc",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "rand",
+      "id": "0473f0c3f45c632e",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "rayon",
+      "id": "0cbdd560f7526e67",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "rayon",
+      "id": "a074ec448cf55d29",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "rayon",
+      "id": "473870992c9c1a75",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "regex",
+      "id": "542ebe70a1cab0ec",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "regex",
+      "id": "ce4fabdcab5af7a6",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "regex",
+      "id": "1a726ab50a571298",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "reqwest",
+      "id": "d105bdfc6df52f39",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "reqwest",
+      "id": "ec2c4e164bfcb60f",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "reqwest",
+      "id": "c80e17f9337101f4",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "serde",
+      "id": "f2fc76eda58e95e0",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "sqlx",
+      "id": "4ec1d01865cb7837",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "sqlx",
+      "id": "29b3e1680322e82f",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "sqlx",
+      "id": "155cc67f6d97e0d5",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "strum",
+      "id": "4479ab5fc6d4ba3f",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "strum",
+      "id": "59c54a68094a4178",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "strum",
+      "id": "f76f735b2f324842",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tinyvec",
+      "id": "57ff1aff71a9024b",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tinyvec",
+      "id": "43d3d6bbc0f68d92",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tinyvec",
+      "id": "a24e3c1538f3e9c3",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "tokio",
+      "id": "9de6c4abaf3d5e7d",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tokio",
+      "id": "c2b72ca2b38fbc45",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tokio",
+      "id": "7b7e8b78670012f6",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "tokio-util",
+      "id": "95e089a1e3849206",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tokio-util",
+      "id": "0a545e5244d54236",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tokio-util",
+      "id": "5d72c20cadbbbaa8",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "tracing-subscriber",
+      "id": "7cf792d58ba414b7",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tracing-subscriber",
+      "id": "f0c3fd88de0d7b5a",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tracing-subscriber",
+      "id": "af72398c40433cf0",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "uuid",
+      "id": "81fe659e70e253fb",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "uuid",
+      "id": "88fe8ee22c2585f0",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "uuid",
+      "id": "26e7e81599854341",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "axum",
+      "id": "54004c2631eefe66",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "axum",
+      "id": "664dca3e05a99f5b",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "axum",
+      "id": "6323bcc67dd1eee3",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "bitflags",
+      "id": "88afd64b50cf90fa",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "bitflags",
+      "id": "c397d03cff5bb9db",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "bitflags",
+      "id": "220d2e9fde7bd5c7",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "chrono",
+      "id": "f1cd1e50bd3d48cf",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "chrono",
+      "id": "9deff3d3f35b3366",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "chrono",
+      "id": "06601215013e9aee",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "clap",
+      "id": "a1a1a5743fad4e89",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "clap",
+      "id": "b74f305275415e6b",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "clap",
+      "id": "febca273195721c4",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "flate2",
+      "id": "07eecf322e9348f8",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "flate2",
+      "id": "194f7b99f20fe341",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "flate2",
+      "id": "d7c3292b7588df81",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "futures-util",
+      "id": "5e6a4283cb14a9e9",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "hyper",
+      "id": "d0d73db3505a6279",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "hyper",
+      "id": "a1601de600a18ac6",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "hyper",
+      "id": "cc50713a62b46ad7",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "indexmap",
+      "id": "7f541ab60dc17a26",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "indexmap",
+      "id": "f98c6cef7922952d",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "indexmap",
+      "id": "8620300d32f39360",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "indicatif",
+      "id": "6d033e1bb3f7e8d0",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "indicatif",
+      "id": "3b79f29c6a445aec",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "indicatif",
+      "id": "824116bc8eb07d9d",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "itertools",
+      "id": "fa5a54b2ee787471",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "itertools",
+      "id": "bf6996c124d29ed6",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "itertools",
+      "id": "bc2d1363a5a90e7d",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "petgraph",
+      "id": "5abd390c115b54d0",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "petgraph",
+      "id": "1803ded34e8d7675",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "petgraph",
+      "id": "1d360676c948b0fc",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "rand",
+      "id": "5acc9b6963ac1679",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "rand",
+      "id": "1a50a9eaa1e8ff24",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "rand",
+      "id": "9522cdb3795224b8",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "rayon",
+      "id": "f9886a04221fd2d7",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "rayon",
+      "id": "0cbdd560f7526e67",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "rayon",
+      "id": "95a80c6eb6a5ad93",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "regex",
+      "id": "cffe27e8a539b3c7",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "regex",
+      "id": "608cb98e5580ceb0",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "regex",
+      "id": "0e23dc535010c9ff",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "reqwest",
+      "id": "5e89b6a4b9062775",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "reqwest",
+      "id": "61e7e0ad96f7e86b",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "reqwest",
+      "id": "7e8977d611d27768",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "serde",
+      "id": "f2fc76eda58e95e0",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "sqlx",
+      "id": "29b3e1680322e82f",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "sqlx",
+      "id": "155cc67f6d97e0d5",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "sqlx",
+      "id": "4ec1d01865cb7837",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "strum",
+      "id": "59c54a68094a4178",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "strum",
+      "id": "f76f735b2f324842",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "strum",
+      "id": "4479ab5fc6d4ba3f",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tinyvec",
+      "id": "43d3d6bbc0f68d92",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tinyvec",
+      "id": "57ff1aff71a9024b",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tinyvec",
+      "id": "c29e2c5248dec928",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "tokio",
+      "id": "9de6c4abaf3d5e7d",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tokio",
+      "id": "6dabd92fe51ac316",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tokio",
+      "id": "089aafa8ca1f9b01",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "tokio-util",
+      "id": "fc2ecf8ee46e4641",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tokio-util",
+      "id": "b567f72ae45aedf4",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tokio-util",
+      "id": "9cb479eb4e090bf4",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "tracing-subscriber",
+      "id": "7c62006a8e0bc50e",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tracing-subscriber",
+      "id": "195b2cb7ce7a9fef",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tracing-subscriber",
+      "id": "fe0ce1e2f90c03a6",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "uuid",
+      "id": "537a4b3ba74d483e",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "uuid",
+      "id": "91cc342b163ffe6d",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "uuid",
+      "id": "03668d3bb1fcb846",
+      "stratum": "control"
+    }
+  ]
+}

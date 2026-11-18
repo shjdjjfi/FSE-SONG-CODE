@@ -1,0 +1,183 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 17,
+  "bytes": 85087,
+  "control_flow_or_callback_lines": 16,
+  "event": "BW10818",
+  "examples": [
+    {
+      "change": "+",
+      "code": "if (message.key == null) {",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts"
+    },
+    {
+      "change": "+",
+      "code": "return;",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (message.key == null) {",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts"
+    },
+    {
+      "change": "+",
+      "code": "return;",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.loadOsBiometricService(this.platform);",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "private loadOsBiometricService(platform: NodeJS.Platform) {",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "return SymmetricCryptoKey.fromString(",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "await this.osBiometricsService.getBiometricKey(",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "\"Bitwarden_biometric\",",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "`${userId}_user_biometric`,",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.clientKeyHalves.get(userId),",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "),",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": ") as UserKey;",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "const biometricKey = await this.osBiometricsService.getBiometricKey(",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "\"Bitwarden_biometric\",",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "`${userId}_user_biometric`,",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.clientKeyHalves.get(userId),",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": ");",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (biometricKey == null) {",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "return null;",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "return SymmetricCryptoKey.fromString(biometricKey) as UserKey;",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "// FIXME: Update this file to be type safe and remove this and next line",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "// @ts-strict-ignore",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "private setIv(iv: string) {",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "this._iv = iv;",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "private setIv(iv?: string) {",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:34.522433+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+  "noncomment_nonimport_changed_lines": 51,
+  "pr": 13039,
+  "repository": "bitwarden/clients",
+  "sha256": "4c3dc1a3568c9121d17c071e022e32f4cfc942b7448021d109984006690ac678",
+  "target_code_changed_lines": 61,
+  "target_files": [
+    "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts",
+    "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts",
+    "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts",
+    "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/13039.patch"
+}

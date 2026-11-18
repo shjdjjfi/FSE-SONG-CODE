@@ -1,0 +1,39 @@
+{
+  "key": "95abce865ab405199a",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "6dabd92fe51ac316",
+    "profile": "candidate",
+    "features": [
+      "io-util",
+      "rt",
+      "sync",
+      "test-util"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 2.0952,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: could not find `main` in `tokio`",
+      "rendered": "error[E0433]: failed to resolve: could not find `main` in `tokio`\n  --> src/main.rs:11:10\n   |\n11 | #[tokio::main]\n   |          ^^^^ could not find `main` in `tokio`\n\n",
+      "line": 11
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n  --> src/main.rs:12:1\n   |\n12 | async fn main() {\n   | ^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 12
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 2 previous errors\n",
+  "code_sha256": "15b810ad247157ebab1c4b71bd0f460eab51c8be2328ff544999d7b941778348",
+  "manifest_sha256": "0ccab4bb438830c1b97ec100a25dac3d78b697c9e51acf6f695ef3324ced5c80",
+  "log_file": "results/check_logs/95abce865ab405199a.txt.gz"
+}

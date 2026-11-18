@@ -1,0 +1,27 @@
+{
+  "key": "9bddfde9fa8890e554",
+  "args": {
+    "crate": "tracing-subscriber",
+    "version": "0.3.19",
+    "id": "7cf792d58ba414b7",
+    "profile": "candidate",
+    "features": [
+      "env-filter",
+      "fmt",
+      "json",
+      "registry",
+      "std"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 1.0976,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "a3a5400c83ea95027bf2472938feb81e4a3d549d738a025aa5ebf9cd4925d82e",
+  "manifest_sha256": "54f2a3b831f335a363bea62e311fc930a5f68e4817568db503be892995686062",
+  "log_file": "results/check_logs/9bddfde9fa8890e554.txt.gz"
+}

@@ -1,0 +1,116 @@
+[
+  {
+    "id": "E01_canary_update_strategy",
+    "original_probe_path": "monitoring.lokiCanary.updateStrategy.type",
+    "values": {
+      "monitoring": {
+        "lokiCanary": {
+          "updateStrategy": {
+            "type": "OnDelete"
+          }
+        }
+      }
+    },
+    "repair": {
+      "lokiCanary": {
+        "updateStrategy": {
+          "type": "OnDelete"
+        }
+      }
+    },
+    "expected": "OnDelete",
+    "key": "strategy",
+    "contract": "DaemonSet.spec.updateStrategy.type remains OnDelete",
+    "source": "auto-discovered literal-loss candidate; manually validated",
+    "fixed_scorer_sha256": "64381bae392d703b7fbc20159dbaa02cf9cb6591412eb8249e6bf1f55fbf2b2e",
+    "valid_manifest_contract_loss": true,
+    "oracle": {
+      "old": {
+        "ok": true,
+        "actual": "OnDelete",
+        "pass": true
+      },
+      "new": {
+        "ok": true,
+        "actual": "RollingUpdate",
+        "pass": false
+      },
+      "repair": {
+        "ok": true,
+        "actual": "OnDelete",
+        "pass": true
+      }
+    },
+    "frozen_method": {
+      "score_counterfactual": 170.0,
+      "cid_alert": true,
+      "score_manifest_diff_magnitude": 123,
+      "missing_default_keys": 1,
+      "vanished_literals": [
+        "OnDelete"
+      ],
+      "old_effect_positions": 1,
+      "new_effect_positions": 0,
+      "lost_effect_positions": 1
+    },
+    "not_kubernetes_runtime": true,
+    "not_independent_confirmatory": true
+  },
+  {
+    "id": "E02_canary_image_registry",
+    "original_probe_path": "monitoring.lokiCanary.image.registry",
+    "values": {
+      "monitoring": {
+        "lokiCanary": {
+          "image": {
+            "registry": "quay.io"
+          }
+        }
+      }
+    },
+    "repair": {
+      "lokiCanary": {
+        "image": {
+          "registry": "quay.io"
+        }
+      }
+    },
+    "expected": "quay.io/",
+    "key": "image",
+    "contract": "Canary container image is taken from the configured registry",
+    "source": "auto-discovered literal-loss candidate; manually validated",
+    "fixed_scorer_sha256": "64381bae392d703b7fbc20159dbaa02cf9cb6591412eb8249e6bf1f55fbf2b2e",
+    "valid_manifest_contract_loss": true,
+    "oracle": {
+      "old": {
+        "ok": true,
+        "actual": "quay.io/grafana/loki-canary:2.9.6",
+        "pass": true
+      },
+      "new": {
+        "ok": true,
+        "actual": "docker.io/grafana/loki-canary:3.0.0",
+        "pass": false
+      },
+      "repair": {
+        "ok": true,
+        "actual": "quay.io/grafana/loki-canary:3.0.0",
+        "pass": true
+      }
+    },
+    "frozen_method": {
+      "score_counterfactual": 170.0,
+      "cid_alert": true,
+      "score_manifest_diff_magnitude": 122,
+      "missing_default_keys": 1,
+      "vanished_literals": [
+        "quay.io"
+      ],
+      "old_effect_positions": 1,
+      "new_effect_positions": 0,
+      "lost_effect_positions": 1
+    },
+    "not_kubernetes_runtime": true,
+    "not_independent_confirmatory": true
+  }
+]

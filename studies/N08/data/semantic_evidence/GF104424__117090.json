@@ -1,0 +1,35 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 85232,
+  "control_flow_or_callback_lines": 0,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "-",
+      "code": "\"github.com/prometheus/alertmanager/config\"",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "Matchers:            make(config.Matchers, 0, len(r.Matchers)),",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "ObjectMatchers:      make(definitions.ObjectMatchers, 0, len(r.Matchers)),",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:58:06.430550+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 3,
+  "pr": 117090,
+  "repository": "grafana/grafana",
+  "sha256": "9ae994db2bcfac95527c127319809f914e3354a112802192cf9d38109c854ec8",
+  "target_code_changed_lines": 3,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/117090.patch"
+}

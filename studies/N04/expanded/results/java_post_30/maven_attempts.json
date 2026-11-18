@@ -1,0 +1,72 @@
+{
+  "source_commit": "2ce6e6149d0ef44f4919e75326265c64c144a00f",
+  "maven_goal": "surefire:test",
+  "source_unmodified": true,
+  "java": "openjdk version \"21.0.13\" 2026-10-20",
+  "network_proxy_configured": true,
+  "results": [
+    {
+      "iteration": 1,
+      "return_code": 0,
+      "elapsed_seconds": 6.65,
+      "log_filename": "attempt_01.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 2,
+      "return_code": 0,
+      "elapsed_seconds": 5.957,
+      "log_filename": "attempt_02.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 3,
+      "return_code": 0,
+      "elapsed_seconds": 6.752,
+      "log_filename": "attempt_03.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 4,
+      "return_code": 1,
+      "elapsed_seconds": 7.407,
+      "log_filename": "attempt_04.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "attempted_post_refactor_test_execution": true,
+  "post_refactor_runs_completed": 3,
+  "collected_junit_case_rows": 160
+}

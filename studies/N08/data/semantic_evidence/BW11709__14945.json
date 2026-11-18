@@ -1,0 +1,181 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 12,
+  "bytes": 59375,
+  "control_flow_or_callback_lines": 37,
+  "event": "BW11709",
+  "examples": [
+    {
+      "change": "-",
+      "code": "import { MasterPasswordVerification } from \"@bitwarden/common/auth/types/verification\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { EncryptedString, EncString } from \"@bitwarden/common/platform/models/domain/enc-string\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { EncString } from \"@bitwarden/common/platform/models/domain/enc-string\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { UserId } from \"@bitwarden/common/types/guid\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { UpdateKeyRequest } from \"./request/update-key.request\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "/**",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "* Creates a new user key and re-encrypts all required data with the it.",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "* @param masterPassword current master password (used for validation)",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "* @deprecated",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "*/",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "async rotateUserKeyAndEncryptedDataLegacy(masterPassword: string, user: Account): Promise<void> {",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.logService.info(\"[Userkey rotation] Starting legacy user key rotation...\");",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "if (!masterPassword) {",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.logService.info(\"[Userkey rotation] Invalid master password provided. Aborting!\");",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "throw new Error(\"Invalid master password\");",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "if ((await this.syncService.getLastSync()) === null) {",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.logService.info(\"[Userkey rotation] Client was never synced. Aborting!\");",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "throw new Error(",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "\"The local vault is de-synced and the keys cannot be rotated. Please log out and log back in to resolve this issue.\",",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": ");",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "const emergencyAccessGrantees = await this.emergencyAccessService.getPublicKeys();",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "const orgs = await this.resetPasswordService.getPublicKeys(user.id);",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "// Verify master password",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "// UV service sets master key on success since it is stored in memory and can be lost on refresh",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "const verification = {",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "type: VerificationType.MasterPassword,",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:47.278751+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+  "noncomment_nonimport_changed_lines": 110,
+  "pr": 14945,
+  "repository": "bitwarden/clients",
+  "sha256": "ae7b012bd8fd23dcd778b47b33127365d22240944306894046bd03b968735487",
+  "target_code_changed_lines": 153,
+  "target_files": [
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/14945.patch"
+}

@@ -1,0 +1,26 @@
+{
+  "all_pass": true,
+  "checks": {
+    "osv_snapshot_sha256_valid": true,
+    "sample_has_120_unique_projects": true,
+    "balanced_year_strata": true,
+    "one_pypi_metadata_per_project": true,
+    "all_available_pypi_response_hashes_match": true,
+    "all_1440_conditions_unique": true,
+    "complete_primary_uv_results": true,
+    "complete_macos11_correction": true,
+    "complete_288_pip_validation": true,
+    "pip_holdout_eight_per_each_of_36_cells": true,
+    "complete_1440_strict_pip_audit": true,
+    "all_120_fixed_advisories_have_source_ids": true,
+    "analysis_results_exists": true,
+    "figures_exist": true,
+    "full_report_exists": true
+  },
+  "osv_sha256": "305dbca79abb7dc1bf52c8466c1be9e7c134b25ec67975c2d395f5259041d22e",
+  "pypi_verified_response_files": 117,
+  "uv_first_pass_records": 1440,
+  "macos_corrective_records": 480,
+  "pip_validation_records": 288,
+  "pip_full_audit_records": 1440
+}

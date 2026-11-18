@@ -1,0 +1,2125 @@
+{
+  "date": "2026-11-14",
+  "sample_projects": 120,
+  "multi_fixed_projects": 6,
+  "osv_fixed_events": 23,
+  "additional_fixed_events": 17,
+  "target_cases": 72,
+  "extra_actual_uv_calls": 204,
+  "metadata_statuses": {
+    "ok": 23
+  },
+  "first_fixed_uv_success": 42,
+  "any_listed_fixed_uv_success": 42,
+  "additional_uv_resolvable_cells": 0,
+  "first_fixed_root_compatible": 54,
+  "any_listed_fixed_root_compatible": 54,
+  "additional_root_compatible_cells": 0,
+  "alternative_uv_statuses": {
+    "success": 96,
+    "unsat": 108
+  },
+  "cases": [
+    {
+      "project": "aws-encryption-sdk-cli",
+      "python": "3.8",
+      "platform": "linux_amd64",
+      "first_version": "1.9.0",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "2.2.0",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "aws-encryption-sdk-cli",
+      "python": "3.8",
+      "platform": "windows_amd64",
+      "first_version": "1.9.0",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "2.2.0",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "aws-encryption-sdk-cli",
+      "python": "3.8",
+      "platform": "macos_arm64",
+      "first_version": "1.9.0",
+      "first_uv_status": "unsat",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "2.2.0",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "aws-encryption-sdk-cli",
+      "python": "3.10",
+      "platform": "linux_amd64",
+      "first_version": "1.9.0",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "2.2.0",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "aws-encryption-sdk-cli",
+      "python": "3.10",
+      "platform": "windows_amd64",
+      "first_version": "1.9.0",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "2.2.0",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "aws-encryption-sdk-cli",
+      "python": "3.10",
+      "platform": "macos_arm64",
+      "first_version": "1.9.0",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "2.2.0",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "aws-encryption-sdk-cli",
+      "python": "3.12",
+      "platform": "linux_amd64",
+      "first_version": "1.9.0",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "2.2.0",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "aws-encryption-sdk-cli",
+      "python": "3.12",
+      "platform": "windows_amd64",
+      "first_version": "1.9.0",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "2.2.0",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "aws-encryption-sdk-cli",
+      "python": "3.12",
+      "platform": "macos_arm64",
+      "first_version": "1.9.0",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "2.2.0",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "aws-encryption-sdk-cli",
+      "python": "3.14",
+      "platform": "linux_amd64",
+      "first_version": "1.9.0",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "2.2.0",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "aws-encryption-sdk-cli",
+      "python": "3.14",
+      "platform": "windows_amd64",
+      "first_version": "1.9.0",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "2.2.0",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "aws-encryption-sdk-cli",
+      "python": "3.14",
+      "platform": "macos_arm64",
+      "first_version": "1.9.0",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "2.2.0",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "case-utils",
+      "python": "3.8",
+      "platform": "linux_amd64",
+      "first_version": "0.5.1",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "0.6.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.7.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.8.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.9.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.10.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.11.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.12.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.13.1",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.14.1",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "case-utils",
+      "python": "3.8",
+      "platform": "windows_amd64",
+      "first_version": "0.5.1",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "0.6.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.7.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.8.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.9.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.10.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.11.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.12.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.13.1",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.14.1",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "case-utils",
+      "python": "3.8",
+      "platform": "macos_arm64",
+      "first_version": "0.5.1",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "0.6.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.7.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.8.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.9.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.10.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.11.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.12.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.13.1",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.14.1",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "case-utils",
+      "python": "3.10",
+      "platform": "linux_amd64",
+      "first_version": "0.5.1",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "0.6.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.7.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.8.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.9.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.10.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.11.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.12.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.13.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.14.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "case-utils",
+      "python": "3.10",
+      "platform": "windows_amd64",
+      "first_version": "0.5.1",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "0.6.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.7.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.8.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.9.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.10.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.11.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.12.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.13.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.14.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "case-utils",
+      "python": "3.10",
+      "platform": "macos_arm64",
+      "first_version": "0.5.1",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "0.6.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.7.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.8.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.9.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.10.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.11.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.12.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.13.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.14.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "case-utils",
+      "python": "3.12",
+      "platform": "linux_amd64",
+      "first_version": "0.5.1",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "0.6.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.7.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.8.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.9.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.10.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.11.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.12.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.13.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.14.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "case-utils",
+      "python": "3.12",
+      "platform": "windows_amd64",
+      "first_version": "0.5.1",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "0.6.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.7.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.8.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.9.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.10.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.11.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.12.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.13.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.14.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "case-utils",
+      "python": "3.12",
+      "platform": "macos_arm64",
+      "first_version": "0.5.1",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "0.6.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.7.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.8.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.9.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.10.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.11.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.12.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.13.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.14.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "case-utils",
+      "python": "3.14",
+      "platform": "linux_amd64",
+      "first_version": "0.5.1",
+      "first_uv_status": "unsat",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "0.6.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.7.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.8.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.9.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.10.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.11.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.12.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.13.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.14.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "case-utils",
+      "python": "3.14",
+      "platform": "windows_amd64",
+      "first_version": "0.5.1",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "0.6.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.7.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.8.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.9.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.10.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.11.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.12.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.13.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.14.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "case-utils",
+      "python": "3.14",
+      "platform": "macos_arm64",
+      "first_version": "0.5.1",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "0.6.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.7.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.8.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        },
+        {
+          "version": "0.9.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.10.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.11.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.12.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.13.1",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "0.14.1",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "jupyterlab",
+      "python": "3.8",
+      "platform": "linux_amd64",
+      "first_version": "4.5.11",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "4.6.4",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "jupyterlab",
+      "python": "3.8",
+      "platform": "windows_amd64",
+      "first_version": "4.5.11",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "4.6.4",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "jupyterlab",
+      "python": "3.8",
+      "platform": "macos_arm64",
+      "first_version": "4.5.11",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "4.6.4",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "jupyterlab",
+      "python": "3.10",
+      "platform": "linux_amd64",
+      "first_version": "4.5.11",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.6.4",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "jupyterlab",
+      "python": "3.10",
+      "platform": "windows_amd64",
+      "first_version": "4.5.11",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.6.4",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "jupyterlab",
+      "python": "3.10",
+      "platform": "macos_arm64",
+      "first_version": "4.5.11",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.6.4",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "jupyterlab",
+      "python": "3.12",
+      "platform": "linux_amd64",
+      "first_version": "4.5.11",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.6.4",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "jupyterlab",
+      "python": "3.12",
+      "platform": "windows_amd64",
+      "first_version": "4.5.11",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.6.4",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "jupyterlab",
+      "python": "3.12",
+      "platform": "macos_arm64",
+      "first_version": "4.5.11",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.6.4",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "jupyterlab",
+      "python": "3.14",
+      "platform": "linux_amd64",
+      "first_version": "4.5.11",
+      "first_uv_status": "unsat",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.6.4",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "jupyterlab",
+      "python": "3.14",
+      "platform": "windows_amd64",
+      "first_version": "4.5.11",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.6.4",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "jupyterlab",
+      "python": "3.14",
+      "platform": "macos_arm64",
+      "first_version": "4.5.11",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.6.4",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "mayan-edms",
+      "python": "3.8",
+      "platform": "linux_amd64",
+      "first_version": "4.6.12",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "4.7.8",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.8.10",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.9.7",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.10.2",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "mayan-edms",
+      "python": "3.8",
+      "platform": "windows_amd64",
+      "first_version": "4.6.12",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "4.7.8",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.8.10",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.9.7",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.10.2",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "mayan-edms",
+      "python": "3.8",
+      "platform": "macos_arm64",
+      "first_version": "4.6.12",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "4.7.8",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.8.10",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.9.7",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.10.2",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "mayan-edms",
+      "python": "3.10",
+      "platform": "linux_amd64",
+      "first_version": "4.6.12",
+      "first_uv_status": "unsat",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.7.8",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.8.10",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.9.7",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.10.2",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "mayan-edms",
+      "python": "3.10",
+      "platform": "windows_amd64",
+      "first_version": "4.6.12",
+      "first_uv_status": "unsat",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.7.8",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.8.10",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.9.7",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.10.2",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "mayan-edms",
+      "python": "3.10",
+      "platform": "macos_arm64",
+      "first_version": "4.6.12",
+      "first_uv_status": "unsat",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.7.8",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.8.10",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.9.7",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.10.2",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "mayan-edms",
+      "python": "3.12",
+      "platform": "linux_amd64",
+      "first_version": "4.6.12",
+      "first_uv_status": "unsat",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.7.8",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.8.10",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.9.7",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.10.2",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "mayan-edms",
+      "python": "3.12",
+      "platform": "windows_amd64",
+      "first_version": "4.6.12",
+      "first_uv_status": "unsat",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.7.8",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.8.10",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.9.7",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.10.2",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "mayan-edms",
+      "python": "3.12",
+      "platform": "macos_arm64",
+      "first_version": "4.6.12",
+      "first_uv_status": "unsat",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.7.8",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.8.10",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.9.7",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.10.2",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "mayan-edms",
+      "python": "3.14",
+      "platform": "linux_amd64",
+      "first_version": "4.6.12",
+      "first_uv_status": "unsat",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.7.8",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.8.10",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.9.7",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.10.2",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "mayan-edms",
+      "python": "3.14",
+      "platform": "windows_amd64",
+      "first_version": "4.6.12",
+      "first_uv_status": "unsat",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.7.8",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.8.10",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.9.7",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.10.2",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "mayan-edms",
+      "python": "3.14",
+      "platform": "macos_arm64",
+      "first_version": "4.6.12",
+      "first_uv_status": "unsat",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "4.7.8",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.8.10",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.9.7",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        },
+        {
+          "version": "4.10.2",
+          "root_compatible": true,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "protobuf",
+      "python": "3.8",
+      "platform": "linux_amd64",
+      "first_version": "5.29.6",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "6.33.5",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "protobuf",
+      "python": "3.8",
+      "platform": "windows_amd64",
+      "first_version": "5.29.6",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "6.33.5",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "protobuf",
+      "python": "3.8",
+      "platform": "macos_arm64",
+      "first_version": "5.29.6",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "6.33.5",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "protobuf",
+      "python": "3.10",
+      "platform": "linux_amd64",
+      "first_version": "5.29.6",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "6.33.5",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "protobuf",
+      "python": "3.10",
+      "platform": "windows_amd64",
+      "first_version": "5.29.6",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "6.33.5",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "protobuf",
+      "python": "3.10",
+      "platform": "macos_arm64",
+      "first_version": "5.29.6",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "6.33.5",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "protobuf",
+      "python": "3.12",
+      "platform": "linux_amd64",
+      "first_version": "5.29.6",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "6.33.5",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "protobuf",
+      "python": "3.12",
+      "platform": "windows_amd64",
+      "first_version": "5.29.6",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "6.33.5",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "protobuf",
+      "python": "3.12",
+      "platform": "macos_arm64",
+      "first_version": "5.29.6",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "6.33.5",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "protobuf",
+      "python": "3.14",
+      "platform": "linux_amd64",
+      "first_version": "5.29.6",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "6.33.5",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "protobuf",
+      "python": "3.14",
+      "platform": "windows_amd64",
+      "first_version": "5.29.6",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "6.33.5",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "protobuf",
+      "python": "3.14",
+      "platform": "macos_arm64",
+      "first_version": "5.29.6",
+      "first_uv_status": "success",
+      "first_root_compatible": true,
+      "alternatives": [
+        {
+          "version": "6.33.5",
+          "root_compatible": true,
+          "uv_status": "success"
+        }
+      ],
+      "any_uv_success": true,
+      "any_root_compatible": true,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "tortoise-orm",
+      "python": "3.8",
+      "platform": "linux_amd64",
+      "first_version": "0.15.23",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "0.16.6",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "tortoise-orm",
+      "python": "3.8",
+      "platform": "windows_amd64",
+      "first_version": "0.15.23",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "0.16.6",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "tortoise-orm",
+      "python": "3.8",
+      "platform": "macos_arm64",
+      "first_version": "0.15.23",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "0.16.6",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "tortoise-orm",
+      "python": "3.10",
+      "platform": "linux_amd64",
+      "first_version": "0.15.23",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "0.16.6",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "tortoise-orm",
+      "python": "3.10",
+      "platform": "windows_amd64",
+      "first_version": "0.15.23",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "0.16.6",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "tortoise-orm",
+      "python": "3.10",
+      "platform": "macos_arm64",
+      "first_version": "0.15.23",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "0.16.6",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "tortoise-orm",
+      "python": "3.12",
+      "platform": "linux_amd64",
+      "first_version": "0.15.23",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "0.16.6",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "tortoise-orm",
+      "python": "3.12",
+      "platform": "windows_amd64",
+      "first_version": "0.15.23",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "0.16.6",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "tortoise-orm",
+      "python": "3.12",
+      "platform": "macos_arm64",
+      "first_version": "0.15.23",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "0.16.6",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "tortoise-orm",
+      "python": "3.14",
+      "platform": "linux_amd64",
+      "first_version": "0.15.23",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "0.16.6",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "tortoise-orm",
+      "python": "3.14",
+      "platform": "windows_amd64",
+      "first_version": "0.15.23",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "0.16.6",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    },
+    {
+      "project": "tortoise-orm",
+      "python": "3.14",
+      "platform": "macos_arm64",
+      "first_version": "0.15.23",
+      "first_uv_status": "unsat",
+      "first_root_compatible": false,
+      "alternatives": [
+        {
+          "version": "0.16.6",
+          "root_compatible": false,
+          "uv_status": "unsat"
+        }
+      ],
+      "any_uv_success": false,
+      "any_root_compatible": false,
+      "uv_recovered_by": null,
+      "root_recovered_by": null
+    }
+  ],
+  "catalog": [
+    {
+      "project": "aws-encryption-sdk-cli",
+      "osv_id": "GHSA-89v2-g37m-g3ff",
+      "versions": [
+        "1.9.0",
+        "2.2.0"
+      ],
+      "first": "1.9.0"
+    },
+    {
+      "project": "case-utils",
+      "osv_id": "GHSA-rgrf-6mf5-m882",
+      "versions": [
+        "0.5.1",
+        "0.6.1",
+        "0.7.1",
+        "0.8.1",
+        "0.9.1",
+        "0.10.1",
+        "0.11.1",
+        "0.12.1",
+        "0.13.1",
+        "0.14.1"
+      ],
+      "first": "0.5.1"
+    },
+    {
+      "project": "jupyterlab",
+      "osv_id": "GHSA-jwrc-gm9j-263p",
+      "versions": [
+        "4.5.11",
+        "4.6.4"
+      ],
+      "first": "4.5.11"
+    },
+    {
+      "project": "mayan-edms",
+      "osv_id": "GHSA-x37w-7p52-8f49",
+      "versions": [
+        "4.6.12",
+        "4.7.8",
+        "4.8.10",
+        "4.9.7",
+        "4.10.2"
+      ],
+      "first": "4.6.12"
+    },
+    {
+      "project": "protobuf",
+      "osv_id": "PYSEC-2026-1805",
+      "versions": [
+        "5.29.6",
+        "6.33.5"
+      ],
+      "first": "5.29.6"
+    },
+    {
+      "project": "tortoise-orm",
+      "osv_id": "PYSEC-2020-144",
+      "versions": [
+        "0.15.23",
+        "0.16.6"
+      ],
+      "first": "0.15.23"
+    }
+  ],
+  "limitations": [
+    "Only 6 purposively inspected multi-fixed projects among the original 120.",
+    "OSV-listed fixed releases are not necessarily interchangeable maintenance branches.",
+    "uv ignores Requires-Python upper bounds; no source builds or application constraints.",
+    "Existence of an installable fixed branch does not prove app-code compatibility or safety from other CVEs."
+  ]
+}

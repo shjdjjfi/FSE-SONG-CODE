@@ -1,0 +1,28 @@
+{
+  "key": "54d356a4664d719c90",
+  "args": {
+    "crate": "indexmap",
+    "version": "2.10.0",
+    "id": "8bc95b18b70e9d04",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.056,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `fnv`",
+      "rendered": "error[E0432]: unresolved import `fnv`\n --> src/main.rs:2:5\n  |\n2 | use fnv::FnvBuildHasher;\n  |     ^^^ use of unresolved module or unlinked crate `fnv`\n  |\n  = help: if you wanted to use a crate named `fnv`, use `cargo add fnv` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_indexmap_consumer` (bin \"n05_indexmap_consumer\") due to 1 previous error\n",
+  "code_sha256": "35e8255e1c16006eef0993e7c686315d0ea5006ea6d5bc2d99ce0460e8d2a622",
+  "manifest_sha256": "6ffc92aa39dbab212aeb4791d497bd599d492618b50d7aee0ee5fde48091e568",
+  "log_file": "results/check_logs/54d356a4664d719c90.txt.gz"
+}

@@ -1,0 +1,32 @@
+{
+  "fetched_utc": "2026-11-14T17:11:44.208521+00:00",
+  "merged_at": "2024-05-09T17:24:11Z",
+  "opened_at": "2024-04-18T14:50:33-04:00",
+  "pr": 8816,
+  "raw_html_sha256": "1a6dca80d9d9208434ae48d194690a7cbef2d585abb451012881b028de4f0696",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 4,
+  "reviews": [
+    {
+      "login": "jlf0dev",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-22T13:32:15Z"
+    },
+    {
+      "login": "vincentsalucci",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-25T21:07:17Z"
+    },
+    {
+      "login": "vincentsalucci",
+      "state": "APPROVED",
+      "submitted_at": "2024-05-09T02:40:38Z"
+    },
+    {
+      "login": "jlf0dev",
+      "state": "APPROVED",
+      "submitted_at": "2024-05-09T16:55:57Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/8816"
+}

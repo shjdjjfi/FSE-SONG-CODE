@@ -1,0 +1,28 @@
+{
+  "key": "7e32e27c6d6e1f98b7",
+  "args": {
+    "crate": "miette",
+    "version": "7.6.0",
+    "id": "fdf61f38a1d80971",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.3675,
+  "errors": [
+    {
+      "code": "E0308",
+      "message": "mismatched types",
+      "rendered": "error[E0308]: mismatched types\n  --> src/main.rs:2:1\n   |\n 1 |   fn main() {\n   |            - expected `()` because of default return type\n 2 | / miette::set_hook(Box::new(|_| {\n 3 | |     Box::new(\n 4 | |         miette::MietteHandlerOpts::new()\n 5 | |             .terminal_links(true)\n...  |\n12 | | }))\n   | |___^ expected `()`, found `Result<(), InstallError>`\n   |\n   = note: expected unit type `()`\n                   found enum `Result<(), InstallError>`\nhelp: consider using a semicolon here\n   |\n12 | }));\n   |    +\nhelp: consider using `Result::expect` to unwrap the `Result<(), InstallError>` value, panicking if the value is a `Result::Err`\n   |\n12 | })).expect(\"REASON\")\n   |    +++++++++++++++++\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_miette_consumer` (bin \"n05_miette_consumer\") due to 1 previous error\n",
+  "code_sha256": "093ecf1bf074071be73b08be18ef9a338338453315d01b05e2b5b70523b35b33",
+  "manifest_sha256": "ba6b5da671ee0fa1466c82363064ff4804fad51e35f15a34f72402f84483ed15",
+  "log_file": "holdout/results/check_logs/7e32e27c6d6e1f98b7.txt.gz"
+}

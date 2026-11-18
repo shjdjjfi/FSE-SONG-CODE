@@ -1,0 +1,21 @@
+{
+  "key": "0ca8240ddbbb2ebdfe",
+  "args": {
+    "crate": "crossterm",
+    "version": "0.28.1",
+    "id": "551ade1fea22b077",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0798,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "54d3fc84c38307075dd3ccedeb398d6a0624cdc3fa2817999326525d43621228",
+  "manifest_sha256": "1685ef3450f65b03eac3e07d392d15e7e881f6014860da1ab0c47c11a817d1be",
+  "log_file": "prospective/results/check_logs/0ca8240ddbbb2ebdfe.txt.gz"
+}

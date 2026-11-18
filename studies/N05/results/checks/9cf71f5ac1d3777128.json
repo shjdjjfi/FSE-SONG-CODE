@@ -1,0 +1,45 @@
+{
+  "key": "9cf71f5ac1d3777128",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "4de8032810115862",
+    "profile": "candidate",
+    "features": [
+      "macros",
+      "net",
+      "rt-multi-thread",
+      "signal"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 1.8417,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio::io::AsyncReadExt`",
+      "rendered": "error[E0432]: unresolved import `tokio::io::AsyncReadExt`\n   --> src/main.rs:1:23\n    |\n  1 | use tokio::io::{self, AsyncReadExt};\n    |                       ^^^^^^^^^^^^\n    |                       |\n    |                       no `AsyncReadExt` in `io`\n    |                       help: a similar name exists in the module: `AsyncRead`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/io/mod.rs:277:131\n    |\n268 | / cfg_io_util! {\n269 | |     mod split;\n270 | |     pub use split::{split, ReadHalf, WriteHalf};\n271 | |     mod join;\n...   |\n277 | |         copy, copy_bidirectional, copy_bidirectional_with_sizes, copy_buf, duplex, empty, repeat, sink, simplex, AsyncBufReadExt, AsyncReadExt, A...\n    | |                                                                                                                                   ^^^^^^^^^^^^\n278 | |         BufReader, BufStream, BufWriter, DuplexStream, Empty, Lines, Repeat, Sink, Split, Take, SimplexStream,\n279 | |     };\n280 | | }\n    | |_- the item is gated behind the `io-util` feature\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `read_u16` found for struct `std::io::Cursor<T>` in the current scope",
+      "rendered": "error[E0599]: no method named `read_u16` found for struct `std::io::Cursor<T>` in the current scope\n --> src/main.rs:9:28\n  |\n9 |     assert_eq!(517, reader.read_u16().await?);\n  |                            ^^^^^^^^\n  |\nhelp: there is a method `read` with a similar name, but with different arguments\n --> /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/io/mod.rs:813:5\n\n",
+      "line": 9
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `read_u16` found for struct `std::io::Cursor<T>` in the current scope",
+      "rendered": "error[E0599]: no method named `read_u16` found for struct `std::io::Cursor<T>` in the current scope\n  --> src/main.rs:10:28\n   |\n10 |     assert_eq!(768, reader.read_u16().await?);\n   |                            ^^^^^^^^\n   |\nhelp: there is a method `read` with a similar name, but with different arguments\n  --> /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/io/mod.rs:813:5\n\n",
+      "line": 10
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 3 previous errors\n",
+  "code_sha256": "5e00e38970bcf76d32fc38139e05c16813f92166848b48cc177db70b89f26c86",
+  "manifest_sha256": "e356e70c5adfca472844ea59f9729cc481ce4b94a7530d44b12d371d0c8472bd",
+  "log_file": "results/check_logs/9cf71f5ac1d3777128.txt.gz"
+}

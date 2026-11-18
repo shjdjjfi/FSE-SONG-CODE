@@ -1,0 +1,52 @@
+{
+  "key": "97b92ac6d16349f996",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "9de6c4abaf3d5e7d",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.093,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio::net::TcpListener`",
+      "rendered": "error[E0432]: unresolved import `tokio::net::TcpListener`\n  --> src/main.rs:1:5\n   |\n 1 | use tokio::net::TcpListener;\n   |     ^^^^^^^^^^^^^^^^^^^^^^^ no `TcpListener` in `net`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/net/mod.rs:43:28\n   |\n38 | / cfg_net! {\n39 | |     mod lookup_host;\n40 | |     pub use lookup_host::lookup_host;\n...  |\n43 | |     pub use tcp::listener::TcpListener;\n   | |                            ^^^^^^^^^^^\n...  |\n52 | | }\n   | |_- the item is gated behind the `net` feature\nhelp: consider importing this struct instead\n   |\n 1 - use tokio::net::TcpListener;\n 1 + use std::net::TcpListener;\n   |\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved imports `tokio::io::AsyncReadExt`, `tokio::io::AsyncWriteExt`",
+      "rendered": "error[E0432]: unresolved imports `tokio::io::AsyncReadExt`, `tokio::io::AsyncWriteExt`\n   --> src/main.rs:2:17\n    |\n  2 | use tokio::io::{AsyncReadExt, AsyncWriteExt};\n    |                 ^^^^^^^^^^^^  ^^^^^^^^^^^^^ no `AsyncWriteExt` in `io`\n    |                 |\n    |                 no `AsyncReadExt` in `io`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/io/mod.rs:277:131\n    |\n268 | / cfg_io_util! {\n269 | |     mod split;\n270 | |     pub use split::{split, ReadHalf, WriteHalf};\n271 | |     mod join;\n...   |\n277 | |         copy, copy_bidirectional, copy_bidirectional_with_sizes, copy_buf, duplex, empty, repeat, sink, simplex, AsyncBufReadExt, AsyncReadExt, A...\n    | |                                                                                                                                   ^^^^^^^^^^^^\n278 | |         BufReader, BufStream, BufWriter, DuplexStream, Empty, Lines, Repeat, Sink, Split, Take, SimplexStream,\n279 | |     };\n280 | | }\n    | |_- the item is gated behind the `io-util` feature\nnote: found an item that was configured out\n   ",
+      "line": 2
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: could not find `main` in `tokio`",
+      "rendered": "error[E0433]: failed to resolve: could not find `main` in `tokio`\n --> src/main.rs:4:10\n  |\n4 | #[tokio::main]\n  |          ^^^^ could not find `main` in `tokio`\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find function `spawn` in crate `tokio`",
+      "rendered": "error[E0425]: cannot find function `spawn` in crate `tokio`\n   --> src/main.rs:11:16\n    |\n 11 |         tokio::spawn(async move {\n    |                ^^^^^ not found in `tokio`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/lib.rs:551:19\n    |\n550 | / cfg_rt! {\n551 | |     pub use task::spawn;\n    | |                   ^^^^^\n552 | | }\n    | |_- the item is gated behind the `rt` feature\nhelp: consider importing this function\n    |\n  1 + use std::thread::spawn;\n    |\nhelp: if you import `spawn`, refer to it directly\n    |\n 11 -         tokio::spawn(async move {\n 11 +         spawn(async move {\n    |\n\n",
+      "line": 11
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:5:1\n  |\n5 | async fn main() -> Result<(), Box<dyn std::error::Error>> {\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 5
+    }
+  ],
+  "error_count": 5,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 5 previous errors\n",
+  "code_sha256": "9ac5dc54edbe7435631fab5ed0ba7a8c682d905d3d74e6894a156d9d95faecdd",
+  "manifest_sha256": "c0fd14620f954d7ba10a88fd6edf9b99ca0ab9a3b720432264b3664dc401a7fc",
+  "log_file": "results/check_logs/97b92ac6d16349f996.txt.gz"
+}

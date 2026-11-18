@@ -1,0 +1,423 @@
+n02-test, n02-tempo, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo
+    namespace: n02-test
+
+n02-test, n02-tempo-compactor, Deployment (apps) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+      app.kubernetes.io/part-of: memberlist
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-compactor
+    namespace: n02-test
+  spec:
+...
+    template:
+      metadata:
+        annotations:
+-         checksum/config: e14922a7bacd43bc419560da40dad47c4c313371878bfa2e027cac2cab699f91
++         checksum/config: 265812871264954bd3fd240b587f488d7a08349c3928111c35a1e647aca03480
+        labels:
+          app.kubernetes.io/component: compactor
+          app.kubernetes.io/instance: n02
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: tempo
+          app.kubernetes.io/part-of: memberlist
+-         app.kubernetes.io/version: 2.7.0
+-         helm.sh/chart: tempo-distributed-1.32.0
++         app.kubernetes.io/version: 2.7.1
++         helm.sh/chart: tempo-distributed-1.33.0
+      spec:
+        affinity:
+          podAntiAffinity:
+...
+          - -target=compactor
+          - -config.file=/conf/tempo.yaml
+          - -mem-ballast-size-mbs=1024
+-         image: docker.io/grafana/tempo:2.7.0
++         image: docker.io/grafana/tempo:2.7.1
+          imagePullPolicy: IfNotPresent
+          name: compactor
+          ports:
+...
+n02-test, n02-tempo-compactor, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-compactor
+  spec:
+    ipFamilies:
+...
+n02-test, n02-tempo-config, ConfigMap (v1) has changed:
+...
+        stream_timeout: 10s
+      multitenancy_enabled: true
+      overrides:
++       defaults: {}
+        per_tenant_override_config: /runtime-config/overrides.yaml
+      querier:
+        frontend_worker:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-config
+    namespace: n02-test
+
+n02-test, n02-tempo-distributor, Deployment (apps) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+      app.kubernetes.io/part-of: memberlist
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-distributor
+    namespace: n02-test
+  spec:
+...
+    template:
+      metadata:
+        annotations:
+-         checksum/config: e14922a7bacd43bc419560da40dad47c4c313371878bfa2e027cac2cab699f91
++         checksum/config: 265812871264954bd3fd240b587f488d7a08349c3928111c35a1e647aca03480
+        labels:
+          app.kubernetes.io/component: distributor
+          app.kubernetes.io/instance: n02
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: tempo
+          app.kubernetes.io/part-of: memberlist
+-         app.kubernetes.io/version: 2.7.0
+-         helm.sh/chart: tempo-distributed-1.32.0
++         app.kubernetes.io/version: 2.7.1
++         helm.sh/chart: tempo-distributed-1.33.0
+      spec:
+        affinity:
+          podAntiAffinity:
+...
+          - -target=distributor
+          - -config.file=/conf/tempo.yaml
+          - -mem-ballast-size-mbs=1024
+-         image: docker.io/grafana/tempo:2.7.0
++         image: docker.io/grafana/tempo:2.7.1
+          imagePullPolicy: IfNotPresent
+          name: distributor
+          ports:
+...
+n02-test, n02-tempo-distributor, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-distributor
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-tempo-distributor-discovery, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+      prometheus.io/service-monitor: "false"
+    name: n02-tempo-distributor-discovery
+    namespace: n02-test
+...
+n02-test, n02-tempo-gossip-ring, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-gossip-ring
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-tempo-ingester, PodDisruptionBudget (policy) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+      app.kubernetes.io/part-of: memberlist
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-ingester
+  spec:
+    maxUnavailable: 1
+...
+n02-test, n02-tempo-ingester, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-ingester
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-tempo-ingester, StatefulSet (apps) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+      app.kubernetes.io/part-of: memberlist
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-ingester
+    namespace: n02-test
+  spec:
+...
+    template:
+      metadata:
+        annotations:
+-         checksum/config: e14922a7bacd43bc419560da40dad47c4c313371878bfa2e027cac2cab699f91
++         checksum/config: 265812871264954bd3fd240b587f488d7a08349c3928111c35a1e647aca03480
+        labels:
+          app.kubernetes.io/component: ingester
+          app.kubernetes.io/instance: n02
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: tempo
+          app.kubernetes.io/part-of: memberlist
+-         app.kubernetes.io/version: 2.7.0
+-         helm.sh/chart: tempo-distributed-1.32.0
++         app.kubernetes.io/version: 2.7.1
++         helm.sh/chart: tempo-distributed-1.33.0
+      spec:
+        affinity:
+          podAntiAffinity:
+...
+          - -target=ingester
+          - -config.file=/conf/tempo.yaml
+          - -mem-ballast-size-mbs=1024
+-         image: docker.io/grafana/tempo:2.7.0
++         image: docker.io/grafana/tempo:2.7.1
+          imagePullPolicy: IfNotPresent
+          name: ingester
+          ports:
+...
+n02-test, n02-tempo-ingester-discovery, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+      prometheus.io/service-monitor: "false"
+    name: n02-tempo-ingester-discovery
+    namespace: n02-test
+...
+n02-test, n02-tempo-memcached, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-memcached
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-tempo-memcached, StatefulSet (apps) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-memcached
+    namespace: n02-test
+  spec:
+...
+          app.kubernetes.io/instance: n02
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: tempo
+-         app.kubernetes.io/version: 2.7.0
+-         helm.sh/chart: tempo-distributed-1.32.0
++         app.kubernetes.io/version: 2.7.1
++         helm.sh/chart: tempo-distributed-1.33.0
+      spec:
+        affinity:
+          podAntiAffinity:
+...
+n02-test, n02-tempo-querier, Deployment (apps) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+      app.kubernetes.io/part-of: memberlist
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-querier
+    namespace: n02-test
+  spec:
+...
+    template:
+      metadata:
+        annotations:
+-         checksum/config: e14922a7bacd43bc419560da40dad47c4c313371878bfa2e027cac2cab699f91
++         checksum/config: 265812871264954bd3fd240b587f488d7a08349c3928111c35a1e647aca03480
+        labels:
+          app.kubernetes.io/component: querier
+          app.kubernetes.io/instance: n02
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: tempo
+          app.kubernetes.io/part-of: memberlist
+-         app.kubernetes.io/version: 2.7.0
+-         helm.sh/chart: tempo-distributed-1.32.0
++         app.kubernetes.io/version: 2.7.1
++         helm.sh/chart: tempo-distributed-1.33.0
+      spec:
+        affinity:
+          podAntiAffinity:
+...
+          - -target=querier
+          - -config.file=/conf/tempo.yaml
+          - -mem-ballast-size-mbs=1024
+-         image: docker.io/grafana/tempo:2.7.0
++         image: docker.io/grafana/tempo:2.7.1
+          imagePullPolicy: IfNotPresent
+          name: querier
+          ports:
+...
+n02-test, n02-tempo-querier, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-querier
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-tempo-query-frontend, Deployment (apps) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-query-frontend
+    namespace: n02-test
+  spec:
+...
+    template:
+      metadata:
+        annotations:
+-         checksum/config: e14922a7bacd43bc419560da40dad47c4c313371878bfa2e027cac2cab699f91
++         checksum/config: 265812871264954bd3fd240b587f488d7a08349c3928111c35a1e647aca03480
+        labels:
+          app.kubernetes.io/component: query-frontend
+          app.kubernetes.io/instance: n02
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: tempo
+-         app.kubernetes.io/version: 2.7.0
+-         helm.sh/chart: tempo-distributed-1.32.0
++         app.kubernetes.io/version: 2.7.1
++         helm.sh/chart: tempo-distributed-1.33.0
+      spec:
+        affinity:
+          podAntiAffinity:
+...
+          - -target=query-frontend
+          - -config.file=/conf/tempo.yaml
+          - -mem-ballast-size-mbs=1024
+-         image: docker.io/grafana/tempo:2.7.0
++         image: docker.io/grafana/tempo:2.7.1
+          imagePullPolicy: IfNotPresent
+          name: query-frontend
+          ports:
+...
+n02-test, n02-tempo-query-frontend, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-query-frontend
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-tempo-query-frontend-discovery, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-query-frontend-discovery
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-tempo-runtime, ConfigMap (v1) has changed:
+...
+    overrides.yaml: |2-
+
+      overrides:
+-       {}
++       null
+  kind: ConfigMap
+  metadata:
+    labels:
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: tempo
+-     app.kubernetes.io/version: 2.7.0
+-     helm.sh/chart: tempo-distributed-1.32.0
++     app.kubernetes.io/version: 2.7.1
++     helm.sh/chart: tempo-distributed-1.33.0
+    name: n02-tempo-runtime
+    namespace: n02-test
+

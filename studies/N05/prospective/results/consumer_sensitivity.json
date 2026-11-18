@@ -1,0 +1,89 @@
+{
+  "type": "post_hoc_consumer_relevance_sensitivity_not_preregistered",
+  "test_fixture_source_evidence": "sea-query 0.32.5 src/lib.rs: #[doc(hidden)] #[cfg(feature = \"tests-cfg\")] pub mod tests_cfg;",
+  "hidden_test_fixture_release": "https://static.crates.io/crates/sea-query/sea-query-0.32.5.crate",
+  "caveat": "Excluding a docs-only test fixture dependency avoids interpreting a doctest repair as a meaningful consumer Cargo.toml patch. The full pre-registered result is retained unchanged.",
+  "excluded": [
+    {
+      "id": "ae307af9e659e67a",
+      "crate": "sea-query",
+      "repo": "seaql/sea-query"
+    },
+    {
+      "id": "15f58f7222bb9c01",
+      "crate": "sea-query",
+      "repo": "seaql/sea-query"
+    },
+    {
+      "id": "cc57460dbc68671e",
+      "crate": "sea-query",
+      "repo": "seaql/sea-query"
+    },
+    {
+      "id": "4aed0419ba60a037",
+      "crate": "sea-query",
+      "repo": "seaql/sea-query"
+    },
+    {
+      "id": "1efe6e3161498bc9",
+      "crate": "sea-query",
+      "repo": "seaql/sea-query"
+    },
+    {
+      "id": "a177aebdb27b5488",
+      "crate": "sea-query",
+      "repo": "seaql/sea-query"
+    }
+  ],
+  "full_preregistered_cohort": {
+    "case_count": 24,
+    "repo_count": 9,
+    "guided_success_at_8": 1,
+    "random_success_at_8": 0.75,
+    "guided_minus_random": 0.25,
+    "project_cluster_95ci_guided_minus_random": [
+      0.0,
+      0.4286
+    ],
+    "mean_guided_additional_compilations": 1.5833,
+    "mean_random_additional_compilations": 4.4306,
+    "pathaware_success_at_8": 1,
+    "diagnostic_success_at_8": 0.75,
+    "diagnostic_minus_guided_project_ci": [
+      -0.6,
+      0.0
+    ],
+    "mean_compiler_diagnostic_additional_compilations": 3.8333,
+    "compiler_minus_guided_additional_compilations": 2.25,
+    "compiler_minus_guided_compilation_project_cluster_ci": [
+      0.1304,
+      4.6
+    ]
+  },
+  "after_excluding_explicit_test_fixture_import": {
+    "case_count": 18,
+    "repo_count": 8,
+    "guided_success_at_8": 1,
+    "random_success_at_8": 0.8704,
+    "guided_minus_random": 0.1296,
+    "project_cluster_95ci_guided_minus_random": [
+      0.0,
+      0.2698
+    ],
+    "mean_guided_additional_compilations": 1.7778,
+    "mean_random_additional_compilations": 3.7593,
+    "pathaware_success_at_8": 1,
+    "diagnostic_success_at_8": 1,
+    "diagnostic_minus_guided_project_ci": [
+      0.0,
+      0.0
+    ],
+    "mean_compiler_diagnostic_additional_compilations": 2.4444,
+    "compiler_minus_guided_additional_compilations": 0.6667,
+    "compiler_minus_guided_compilation_project_cluster_ci": [
+      0.0417,
+      1.8
+    ]
+  },
+  "exclusion_count": 6
+}

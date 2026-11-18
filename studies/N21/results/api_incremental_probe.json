@@ -1,0 +1,75 @@
+{
+  "kind": "real TypeScript API, synthetic minimal project",
+  "source_issue": "https://github.com/nestjs/nest-cli/issues/3312",
+  "controlled_fault": "delete output directory but retain incremental metadata",
+  "observations": [
+    {
+      "version": "5.9.3",
+      "returncode": 0,
+      "stderr": "",
+      "states": [
+        {
+          "label": "cold",
+          "removeOutput": false,
+          "removeBuildinfo": false,
+          "emitSkipped": false,
+          "diagnosticCodes": [],
+          "jsExists": true,
+          "buildinfoExists": true
+        },
+        {
+          "label": "delete_dist_keep_info",
+          "removeOutput": true,
+          "removeBuildinfo": false,
+          "emitSkipped": false,
+          "diagnosticCodes": [],
+          "jsExists": false,
+          "buildinfoExists": true
+        },
+        {
+          "label": "delete_dist_and_info",
+          "removeOutput": true,
+          "removeBuildinfo": true,
+          "emitSkipped": false,
+          "diagnosticCodes": [],
+          "jsExists": true,
+          "buildinfoExists": true
+        }
+      ]
+    },
+    {
+      "version": "6.0.2",
+      "returncode": 0,
+      "stderr": "",
+      "states": [
+        {
+          "label": "cold",
+          "removeOutput": false,
+          "removeBuildinfo": false,
+          "emitSkipped": false,
+          "diagnosticCodes": [],
+          "jsExists": true,
+          "buildinfoExists": true
+        },
+        {
+          "label": "delete_dist_keep_info",
+          "removeOutput": true,
+          "removeBuildinfo": false,
+          "emitSkipped": false,
+          "diagnosticCodes": [],
+          "jsExists": false,
+          "buildinfoExists": true
+        },
+        {
+          "label": "delete_dist_and_info",
+          "removeOutput": true,
+          "removeBuildinfo": true,
+          "emitSkipped": false,
+          "diagnosticCodes": [],
+          "jsExists": true,
+          "buildinfoExists": true
+        }
+      ]
+    }
+  ]
+}

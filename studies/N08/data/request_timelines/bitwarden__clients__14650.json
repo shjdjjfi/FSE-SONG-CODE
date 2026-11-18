@@ -1,0 +1,73 @@
+{
+  "pr": 14650,
+  "pr_author": "patrick-pimentel-bitwarden",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-05-06T14:26:49Z",
+      "requested_people": [
+        "hinton",
+        "jprusik",
+        "patrick-pimentel-bitwarden"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-05-07T21:51:38Z",
+      "requested_people": [
+        "patrick-pimentel-bitwarden"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-05-07T21:51:38Z",
+      "requested_people": [
+        "coroiu",
+        "hinton",
+        "patrick-pimentel-bitwarden"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-05-09T18:37:08Z",
+      "requested_people": [
+        "patrick-pimentel-bitwarden"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-05-09T18:37:09Z",
+      "requested_people": [
+        "patrick-pimentel-bitwarden"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-05-09T18:37:10Z",
+      "requested_people": [
+        "btreston",
+        "jaredsnider-bitwarden",
+        "nick-livefront",
+        "patrick-pimentel-bitwarden"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-05-12T13:31:09Z",
+      "requested_people": [
+        "coroiu",
+        "patrick-pimentel-bitwarden"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "e0c2aa53a825b43e3f278e7fbe0f2c71b5da4f505857377c4f97b2e91cdcd1bb",
+  "url": "https://github.com/bitwarden/clients/pull/14650"
+}

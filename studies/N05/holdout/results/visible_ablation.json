@@ -1,0 +1,101 @@
+[
+  {
+    "id": "0bf19fac2edb5627",
+    "crate": "bytes",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "9b85149ae0dd7ff9f0"
+  },
+  {
+    "id": "0ebb9f3214c33219",
+    "crate": "dashmap",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "bd3c3c1cfac824e93b"
+  },
+  {
+    "id": "d50530e0763f5f3a",
+    "crate": "dashmap",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "docs",
+    "check": "658ffa5762b5429de2"
+  },
+  {
+    "id": "1436c637f2ea2e08",
+    "crate": "hashbrown",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "486dbbdf1a00deb291"
+  },
+  {
+    "id": "0f21fc4721ba5c28",
+    "crate": "miette",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "30b6930816d3cf8868"
+  },
+  {
+    "id": "0563461d2ca6fd93",
+    "crate": "serde_json",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "1a8e89c38a9fb8fae1"
+  },
+  {
+    "id": "42b0485d06b6145e",
+    "crate": "tokio-stream",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "bd055e638b9e317173"
+  },
+  {
+    "id": "a5dfe62ecb17830e",
+    "crate": "tower",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "7aa1f862f11f9a985b"
+  },
+  {
+    "id": "0b9a0622b2b03524",
+    "crate": "tower",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "docs",
+    "check": "30be7830ef129eb27e"
+  },
+  {
+    "id": "6d2144000d187cfb",
+    "crate": "tower-http",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "2fe3231bcdc0bae09a"
+  },
+  {
+    "id": "0351acaee18dfeba",
+    "crate": "tower-http",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "docs",
+    "check": "8e981d106133a2974b"
+  }
+]

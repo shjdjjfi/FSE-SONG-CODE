@@ -1,0 +1,72 @@
+{
+  "fetched_utc": "2026-11-14T17:11:40.726219+00:00",
+  "merged_at": "2024-09-30T16:14:33Z",
+  "opened_at": "2024-08-30T13:36:28Z",
+  "pr": 10818,
+  "raw_html_sha256": "1479062bd63c65c5b6a4a953e0e47a9aef8ed72e9909bc30e2869b5b6565d5a9",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 12,
+  "reviews": [
+    {
+      "login": "jlf0dev",
+      "state": "COMMENTED",
+      "submitted_at": "2024-08-30T17:50:39Z"
+    },
+    {
+      "login": "mzieniukbw",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2024-09-04T13:50:44Z"
+    },
+    {
+      "login": "mzieniukbw",
+      "state": "APPROVED",
+      "submitted_at": "2024-09-04T15:52:37Z"
+    },
+    {
+      "login": "mzieniukbw",
+      "state": "APPROVED",
+      "submitted_at": "2024-09-11T13:53:11Z"
+    },
+    {
+      "login": "JaredSnider-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2024-09-11T14:47:42Z"
+    },
+    {
+      "login": "justindbaur",
+      "state": "APPROVED",
+      "submitted_at": "2024-09-16T18:38:16Z"
+    },
+    {
+      "login": "mzieniukbw",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2024-09-22T15:52:10Z"
+    },
+    {
+      "login": "mzieniukbw",
+      "state": "COMMENTED",
+      "submitted_at": "2024-09-23T06:07:20Z"
+    },
+    {
+      "login": "mzieniukbw",
+      "state": "COMMENTED",
+      "submitted_at": "2024-09-23T06:07:42Z"
+    },
+    {
+      "login": "mzieniukbw",
+      "state": "APPROVED",
+      "submitted_at": "2024-09-23T13:24:50Z"
+    },
+    {
+      "login": "justindbaur",
+      "state": "APPROVED",
+      "submitted_at": "2024-09-25T13:47:16Z"
+    },
+    {
+      "login": "JaredSnider-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2024-09-30T14:36:52Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/10818"
+}

@@ -1,0 +1,42 @@
+{
+  "fetched_utc": "2026-11-14T17:12:25.859350+00:00",
+  "merged_at": "2025-12-02T15:49:55Z",
+  "opened_at": "2025-11-14T12:34:02-05:00",
+  "pr": 17393,
+  "raw_html_sha256": "7ea3be068e378b4c8b6ab5a2cff73ad5c51802b55c1bacd260aa0c7cb00abe8e",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 6,
+  "reviews": [
+    {
+      "login": "amorask-bitwarden",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2025-11-19T14:33:33Z"
+    },
+    {
+      "login": "cyprain-okeke",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2025-11-19T15:51:06Z"
+    },
+    {
+      "login": "sbrown-livefront",
+      "state": "COMMENTED",
+      "submitted_at": "2025-11-21T19:29:36Z"
+    },
+    {
+      "login": "sbrown-livefront",
+      "state": "COMMENTED",
+      "submitted_at": "2025-11-21T19:33:36Z"
+    },
+    {
+      "login": "amorask-bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-21T20:00:29Z"
+    },
+    {
+      "login": "cyprain-okeke",
+      "state": "APPROVED",
+      "submitted_at": "2025-11-24T14:53:33Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/17393"
+}

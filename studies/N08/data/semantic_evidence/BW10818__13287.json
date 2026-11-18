@@ -1,0 +1,87 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 1,
+  "bytes": 41032,
+  "control_flow_or_callback_lines": 3,
+  "event": "BW10818",
+  "examples": [
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "async canEnableBiometricUnlock(): Promise<boolean> {",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "return true;",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "async canEnableBiometricUnlock(): Promise<boolean> {",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "const biometricStatus = await this.getBiometricsStatus();",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "return [",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "BiometricsStatus.Available,",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "BiometricsStatus.AutoSetupNeeded,",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "BiometricsStatus.ManualSetupNeeded,",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "].includes(biometricStatus);",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:34.472533+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+  "noncomment_nonimport_changed_lines": 11,
+  "pr": 13287,
+  "repository": "bitwarden/clients",
+  "sha256": "af8a9534d69ba982317520346cb28943d02a3faaaeb564a79beb68963a8a8975",
+  "target_code_changed_lines": 13,
+  "target_files": [
+    "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts",
+    "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.spec.ts",
+    "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/13287.patch"
+}

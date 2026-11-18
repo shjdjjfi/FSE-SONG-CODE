@@ -1,0 +1,105 @@
+n02-test, n02-vault, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: vault
+-     helm.sh/chart: vault-0.28.1
++     helm.sh/chart: vault-0.29.0
+    name: n02-vault
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-vault, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: vault
+-     helm.sh/chart: vault-0.28.1
++     helm.sh/chart: vault-0.29.0
+    name: n02-vault
+    namespace: n02-test
+
+n02-test, n02-vault, StatefulSet (apps) has changed:
+...
+          app.kubernetes.io/instance: n02
+          app.kubernetes.io/name: vault
+          component: server
+-         helm.sh/chart: vault-0.28.1
++         helm.sh/chart: vault-0.29.0
+      spec:
+        affinity:
+          podAntiAffinity:
+...
+            value: https://$(HOSTNAME).n02-vault-internal:8201
+          - name: HOME
+            value: /home/vault
+-         image: hashicorp/vault:1.17.2
++         image: hashicorp/vault:1.18.1
+          imagePullPolicy: IfNotPresent
+          lifecycle:
+            preStop:
+...
+n02-test, n02-vault-agent-injector, Deployment (apps) has changed:
+...
+          - name: AGENT_INJECT_VAULT_AUTH_PATH
+            value: auth/kubernetes
+          - name: AGENT_INJECT_VAULT_IMAGE
+-           value: hashicorp/vault:1.17.2
++           value: hashicorp/vault:1.18.1
+          - name: AGENT_INJECT_TLS_AUTO
+            value: n02-vault-agent-injector-cfg
+          - name: AGENT_INJECT_TLS_AUTO_HOSTS
+...
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+-         image: hashicorp/vault-k8s:1.4.2
++         image: hashicorp/vault-k8s:1.5.0
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            failureThreshold: 2
+...
+n02-test, n02-vault-config, ConfigMap (v1) has changed:
+  apiVersion: v1
+  data:
+-   extraconfig-from-values.hcl: |2-
++   extraconfig-from-values.hcl: |-
++     ui = true
++     storage "file" { path = "/vault/data/{{ .Release.Name }}" }
+
+      disable_mlock = true
+-     ui = true
+-     storage "file" { path = "/vault/data/n02" }
+  kind: ConfigMap
+  metadata:
+    labels:
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: vault
+-     helm.sh/chart: vault-0.28.1
++     helm.sh/chart: vault-0.29.0
+    name: n02-vault-config
+    namespace: n02-test
+
+n02-test, n02-vault-internal, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: vault
+-     helm.sh/chart: vault-0.28.1
++     helm.sh/chart: vault-0.29.0
+      vault-internal: "true"
+    name: n02-vault-internal
+    namespace: n02-test
+...
+n02-test, n02-vault-server-binding, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: vault
+-     helm.sh/chart: vault-0.28.1
++     helm.sh/chart: vault-0.29.0
+    name: n02-vault-server-binding
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...

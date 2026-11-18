@@ -1,0 +1,28 @@
+{
+  "key": "f6f7c5a429ce4bc092",
+  "args": {
+    "crate": "hashbrown",
+    "version": "0.15.4",
+    "id": "3d9b7fd9b89cace4",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.5463,
+  "errors": [
+    {
+      "code": "E0554",
+      "message": "`#![feature]` may not be used on the stable release channel",
+      "rendered": "error[E0554]: `#![feature]` may not be used on the stable release channel\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.15.4/src/lib.rs:15:5\n   |\n15 | /     feature(\n16 | |         test,\n17 | |         core_intrinsics,\n18 | |         dropck_eyepatch,\n...  |\n24 | |         strict_provenance_lints\n25 | |     )\n   | |_____^\n\n",
+      "line": 15
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `hashbrown` (lib) due to 1 previous error\n",
+  "code_sha256": "81491b026095d28181d9b407f234d438d38ffd341baf370e14af895035e4eda2",
+  "manifest_sha256": "ebedd7107ff306387997485dc227eb2ff25187b499f90e3f367474bd80072a10",
+  "log_file": "holdout/results/check_logs/f6f7c5a429ce4bc092.txt.gz"
+}

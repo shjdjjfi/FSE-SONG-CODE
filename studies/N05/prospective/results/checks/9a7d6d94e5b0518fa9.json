@@ -1,0 +1,34 @@
+{
+  "key": "9a7d6d94e5b0518fa9",
+  "args": {
+    "crate": "time",
+    "version": "0.3.41",
+    "id": "b9b7088defcb01bd",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1006,
+  "errors": [
+    {
+      "code": "E0599",
+      "message": "no method named `seconds` found for type `{float}` in the current scope",
+      "rendered": "error[E0599]: no method named `seconds` found for type `{float}` in the current scope\n --> src/main.rs:2:16\n  |\n2 | assert_eq!(1.5.seconds().as_seconds_f32(), 1.5);\n  |                ^^^^^^^ method not found in `{float}`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `seconds` found for type `{float}` in the current scope",
+      "rendered": "error[E0599]: no method named `seconds` found for type `{float}` in the current scope\n --> src/main.rs:3:19\n  |\n3 | assert_eq!((-1.5).seconds().as_seconds_f32(), -1.5);\n  |                   ^^^^^^^ method not found in `{float}`\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_time_consumer` (bin \"n05_time_consumer\") due to 2 previous errors\n",
+  "code_sha256": "4fd04d2119bead2295fa2fc2ce0273bfb9e1aa53f3ad13d323cfe7727c373bc4",
+  "manifest_sha256": "60f277b82543bdd9c96698f72dfa956042549dd4900b4d66ff53e380ee5fc78e",
+  "log_file": "prospective/results/check_logs/9a7d6d94e5b0518fa9.txt.gz"
+}

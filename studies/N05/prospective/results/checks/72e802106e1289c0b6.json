@@ -1,0 +1,28 @@
+{
+  "key": "72e802106e1289c0b6",
+  "args": {
+    "crate": "time",
+    "version": "0.3.41",
+    "id": "e84c8b1a6178e736",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1926,
+  "errors": [
+    {
+      "code": null,
+      "message": "expected `;`, found `Ok`",
+      "rendered": "error: expected `;`, found `Ok`\n  --> src/main.rs:16:25\n   |\n16 | Ok::<_, time::Error>(())\n   |                         ^ help: add `;` here\n17 | Ok(())\n   | -- unexpected token\n\n",
+      "line": 17
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_time_consumer` (bin \"n05_time_consumer\") due to 1 previous error\n",
+  "code_sha256": "0cbb7154005928e281ac276870e5ec0152c04042c67f7d5c7eab41ee436f1f9a",
+  "manifest_sha256": "6bf6d22ab00d6857887772450854ed4dbe562f8bd79d7af45adcdadb4af75746",
+  "log_file": "prospective/results/check_logs/72e802106e1289c0b6.txt.gz"
+}

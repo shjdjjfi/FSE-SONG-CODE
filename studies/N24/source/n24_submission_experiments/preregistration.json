@@ -1,0 +1,32 @@
+{
+  "study": "N24: Cross-platform npm lockfile repair without unrelated version churn",
+  "registered_utc": "2026-11-18",
+  "source": "FSE2027_4_ideas(2).zip/ideas/N24.md; exploratory B0001 is prior evidence, not confirmatory",
+  "scope": "Public npm packages, reproducible npm-induced faults, and dated real GitHub lockfile snapshots",
+  "hypotheses": {
+    "H1": "A locked npm10 warm-regeneration defect can cause npm-ci success with a failing native loader on an unmatched platform",
+    "H2": "An exact-version leaf-only donor repair restores correct native execution while making zero changes to unrelated locked versions",
+    "H3": "Repair on already-correct locks and deliberately unsafe/unsupported graphs does not change dependencies",
+    "H4": "The in-place current-npm and full-clean-regeneration baselines may match or outperform leaf-only repair; this is reported even if it negates a method claim"
+  },
+  "fixed_parents": {
+    "rollup": "4.18.1",
+    "esbuild": "0.25.2",
+    "@biomejs/biome": "1.9.4",
+    "@swc/core": "1.10.14",
+    "lightningcss": "1.29.3"
+  },
+  "npm_old": "10.9.2",
+  "npm_comparator": "11.4.2",
+  "latest_npm_strong_baseline": "12.2.3 (registry latest on 2026-11-18; added before any npm12 run)",
+  "node": "24.x",
+  "platforms": ["ubuntu-22.04 x64 glibc", "windows-2022 x64", "macos-15 arm64 or macos-15-intel x64 (record actual runner)"] ,
+  "faults": ["actual npm10 installed-tree regeneration", "intact lock as negative control"],
+  "strategies": ["unmodified", "npm11-in-place", "npm12-in-place", "strict-donor", "clean-regenerate"],
+  "endpoints": ["npm-ci exit status", "live native loader/CLI execution", "missing platform variant count", "non-target package-version changes", "lock-entry edits", "time seconds", "lockfile bytes"],
+  "observational_unit": "package family x actual host platform x fault; strategies are paired within each unit; seed repeats are not independent projects",
+  "stats": "Report all denominators and 95% Wilson CIs for proportions, and exact paired differences; do not imply statistical significance from 3 OS or repeated seeds",
+  "holdout": "Real historical lockfile snapshot mining is descriptive, not ground truth for CI failures without matching original CI logs",
+  "early_stop": "If a supported npm version in-place fixes every tested case with no additional unrelated changes and lower/equal cost, do not claim an advantage for targeted repair",
+  "data_ethics": "Do not execute untrusted lifecycle scripts; do not call simulated faults natural incidents; preserve independent source/version/provenance in artifacts"
+}

@@ -1,0 +1,114 @@
+{
+  "promtool_version": "promtool, version 3.8.1 (branch: HEAD, revision: ed753444ffec98097399d0cfa9073c70a840b812)\n  build user:       root@fcf67c824170\n  build date:       20251216-08:46:44\n  go version:       go1.25.5\n  platform:         linux/amd64\n  tags:             netgo,builtinassets",
+  "validation_mode": "--syntax-only",
+  "new_chart_appVersion": "v3.8.1",
+  "limitation": "no Kubernetes cluster, network scrape, or live process",
+  "configurations": [
+    {
+      "arm": "old_chart_explicit_user",
+      "chart": "prometheus-27.0.0.tgz",
+      "render_success": true,
+      "promtool_exit_code": 0,
+      "promtool_stdout": "Checking /workspace/scratch/39d4249dd99a/N02_experiments/results/prometheus_configs/old_chart_explicit_user.yml\n SUCCESS: /workspace/scratch/39d4249dd99a/N02_experiments/results/prometheus_configs/old_chart_explicit_user.yml is valid prometheus config file syntax\n\n",
+      "promtool_stderr": "",
+      "config_path": "results/prometheus_configs/old_chart_explicit_user.yml",
+      "config_sha256": "e5ec9f6c4624d4ddf1420efd73bf8ad99c3180e5c0b144de714c198904575a70",
+      "job_count": 1,
+      "job_names": [
+        "n02-contract"
+      ],
+      "custom_job_present": true,
+      "extra_jobs": []
+    },
+    {
+      "arm": "new_reset_then_reuse_emulated",
+      "chart": "prometheus-28.0.0.tgz",
+      "render_success": true,
+      "promtool_exit_code": 0,
+      "promtool_stdout": "Checking /workspace/scratch/39d4249dd99a/N02_experiments/results/prometheus_configs/new_reset_then_reuse_emulated.yml\n SUCCESS: /workspace/scratch/39d4249dd99a/N02_experiments/results/prometheus_configs/new_reset_then_reuse_emulated.yml is valid prometheus config file syntax\n\n",
+      "promtool_stderr": "",
+      "config_path": "results/prometheus_configs/new_reset_then_reuse_emulated.yml",
+      "config_sha256": "3e8f848d4d98708763b2737dd5fc3413072311b644f2ff1f9d033dfd936d0e2d",
+      "job_count": 11,
+      "job_names": [
+        "kubernetes-api-servers",
+        "kubernetes-nodes",
+        "kubernetes-nodes-cadvisor",
+        "kubernetes-pods",
+        "kubernetes-pods-slow",
+        "kubernetes-service-endpoints",
+        "kubernetes-service-endpoints-slow",
+        "kubernetes-services",
+        "prometheus",
+        "prometheus-pushgateway",
+        "n02-contract"
+      ],
+      "custom_job_present": true,
+      "extra_jobs": [
+        "kubernetes-api-servers",
+        "kubernetes-nodes",
+        "kubernetes-nodes-cadvisor",
+        "kubernetes-pods",
+        "kubernetes-pods-slow",
+        "kubernetes-service-endpoints",
+        "kubernetes-service-endpoints-slow",
+        "kubernetes-services",
+        "prometheus",
+        "prometheus-pushgateway"
+      ]
+    },
+    {
+      "arm": "new_reuse_old_defaults_emulated",
+      "chart": "prometheus-28.0.0.tgz",
+      "render_success": true,
+      "promtool_exit_code": 0,
+      "promtool_stdout": "Checking /workspace/scratch/39d4249dd99a/N02_experiments/results/prometheus_configs/new_reuse_old_defaults_emulated.yml\n SUCCESS: /workspace/scratch/39d4249dd99a/N02_experiments/results/prometheus_configs/new_reuse_old_defaults_emulated.yml is valid prometheus config file syntax\n\n",
+      "promtool_stderr": "",
+      "config_path": "results/prometheus_configs/new_reuse_old_defaults_emulated.yml",
+      "config_sha256": "3e8f848d4d98708763b2737dd5fc3413072311b644f2ff1f9d033dfd936d0e2d",
+      "job_count": 11,
+      "job_names": [
+        "kubernetes-api-servers",
+        "kubernetes-nodes",
+        "kubernetes-nodes-cadvisor",
+        "kubernetes-pods",
+        "kubernetes-pods-slow",
+        "kubernetes-service-endpoints",
+        "kubernetes-service-endpoints-slow",
+        "kubernetes-services",
+        "prometheus",
+        "prometheus-pushgateway",
+        "n02-contract"
+      ],
+      "custom_job_present": true,
+      "extra_jobs": [
+        "kubernetes-api-servers",
+        "kubernetes-nodes",
+        "kubernetes-nodes-cadvisor",
+        "kubernetes-pods",
+        "kubernetes-pods-slow",
+        "kubernetes-service-endpoints",
+        "kubernetes-service-endpoints-slow",
+        "kubernetes-services",
+        "prometheus",
+        "prometheus-pushgateway"
+      ]
+    },
+    {
+      "arm": "new_manually_migrated",
+      "chart": "prometheus-28.0.0.tgz",
+      "render_success": true,
+      "promtool_exit_code": 0,
+      "promtool_stdout": "Checking /workspace/scratch/39d4249dd99a/N02_experiments/results/prometheus_configs/new_manually_migrated.yml\n SUCCESS: /workspace/scratch/39d4249dd99a/N02_experiments/results/prometheus_configs/new_manually_migrated.yml is valid prometheus config file syntax\n\n",
+      "promtool_stderr": "",
+      "config_path": "results/prometheus_configs/new_manually_migrated.yml",
+      "config_sha256": "1854bc48240c7b9a2d912f1acc5587817ac98568451661ef357f7d1d09e54e9f",
+      "job_count": 1,
+      "job_names": [
+        "n02-contract"
+      ],
+      "custom_job_present": true,
+      "extra_jobs": []
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "key": "d3d282948ce2107ee6",
+  "args": {
+    "crate": "hyper-util",
+    "version": "0.1.15",
+    "id": "4334022af9b9728a",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0997,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: could not find `client` in `hyper_util`",
+      "rendered": "error[E0433]: failed to resolve: could not find `client` in `hyper_util`\n  --> src/main.rs:3:17\n   |\n 3 | use hyper_util::client::legacy::Client;\n   |                 ^^^^^^ could not find `client` in `hyper_util`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-util-0.1.15/src/lib.rs:10:9\n   |\n 9 | #[cfg(feature = \"client\")]\n   |       ------------------ the item is gated behind the `client` feature\n10 | pub mod client;\n   |         ^^^^^^\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `hyper`",
+      "rendered": "error[E0432]: unresolved import `hyper`\n --> src/main.rs:2:5\n  |\n2 | use hyper::{Method, Request};\n  |     ^^^^^ use of unresolved module or unlinked crate `hyper`\n  |\n  = help: if you wanted to use a crate named `hyper`, use `cargo add hyper` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `http_body_util`",
+      "rendered": "error[E0432]: unresolved import `http_body_util`\n --> src/main.rs:4:5\n  |\n4 | use http_body_util::Full;\n  |     ^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `http_body_util`\n  |\n  = help: if you wanted to use a crate named `http_body_util`, use `cargo add http_body_util` to add it to your `Cargo.toml`\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `hyper_util::rt::TokioExecutor`",
+      "rendered": "error[E0432]: unresolved import `hyper_util::rt::TokioExecutor`\n  --> src/main.rs:5:5\n   |\n 5 | use hyper_util::rt::TokioExecutor;\n   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ no `TokioExecutor` in `rt`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-util-0.1.15/src/rt/mod.rs:12:23\n   |\n11 | #[cfg(feature = \"tokio\")]\n   |       ----------------- the item is gated behind the `tokio` feature\n12 | pub use self::tokio::{TokioExecutor, TokioIo, TokioTimer};\n   |                       ^^^^^^^^^^^^^\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `bytes`",
+      "rendered": "error[E0432]: unresolved import `bytes`\n --> src/main.rs:6:5\n  |\n6 | use bytes::Bytes;\n  |     ^^^^^ use of unresolved module or unlinked crate `bytes`\n  |\n  = help: if you wanted to use a crate named `bytes`, use `cargo add bytes` to add it to your `Cargo.toml`\n\n",
+      "line": 6
+    }
+  ],
+  "error_count": 5,
+  "stderr_excerpt": "error: could not compile `n05_hyper_util_consumer` (bin \"n05_hyper_util_consumer\") due to 5 previous errors\n",
+  "code_sha256": "a89da682f438ef99662f2254ad0af472725a74dfe2cbc380e6d46a0d4b788e1c",
+  "manifest_sha256": "c211cb5153c3f73935252936f1cf479eb40aed176f43ec11a4ca541a209bb08a",
+  "log_file": "prospective/results/check_logs/d3d282948ce2107ee6.txt.gz"
+}

@@ -1,0 +1,185 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 626097,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "+",
+      "code": "import { AnonLayoutBitwardenShield, Icon } from \"@bitwarden/icons\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { IconModule, Icon } from \"../icon\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { IconModule } from \"../icon\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { AnonLayoutBitwardenShield } from \"../icon/logos\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { LockIcon, RegistrationCheckEmailIcon } from \"@bitwarden/icons\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { LockIcon, RegistrationCheckEmailIcon } from \"../icon/icons\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { AnonLayoutBitwardenShield, Icon } from \"@bitwarden/icons\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { AnonLayoutBitwardenShield, BitwardenLogo, Icon } from \"@bitwarden/icons\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { BitwardenLogo } from \"../icon/icons\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { Icon, LockIcon } from \"@bitwarden/icons\";",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { Icon } from \"../icon\";",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { LockIcon } from \"../icon/icons\";",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { Icon } from \"@bitwarden/icons\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { Icon } from \"../icon\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { Icon } from \"@bitwarden/assets/svg\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { Icon } from \"@bitwarden/icons\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { LockIcon, RegistrationCheckEmailIcon } from \"@bitwarden/assets/svg\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { LockIcon, RegistrationCheckEmailIcon } from \"@bitwarden/icons\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { AnonLayoutBitwardenShield, BitwardenLogo, Icon } from \"@bitwarden/assets/svg\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { AnonLayoutBitwardenShield, BitwardenLogo, Icon } from \"@bitwarden/icons\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { Icon, LockIcon } from \"@bitwarden/assets/svg\";",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { Icon, LockIcon } from \"@bitwarden/icons\";",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { AnonLayoutBitwardenShield, BitwardenLogo, Icon } from \"@bitwarden/assets/svg\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import {",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "AnonLayoutBitwardenShield,",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "BackgroundLeftIllustration,",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "BackgroundRightIllustration,",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "BitwardenLogo,",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "Icon,",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "} from \"@bitwarden/assets/svg\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { LeftIllustration, RightIllustration } from \"./illustrations\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:46.767824+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 12,
+  "pr": 16020,
+  "repository": "bitwarden/clients",
+  "sha256": "f59b3bed24791370027d9f2cd55582f5148f21fff031c6184ecc589906be42fc",
+  "target_code_changed_lines": 38,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout-wrapper.component.ts",
+    "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts",
+    "libs/components/src/anon-layout/anon-layout.component.ts",
+    "libs/components/src/anon-layout/anon-layout.mdx",
+    "libs/components/src/anon-layout/anon-layout.stories.ts",
+    "libs/components/src/anon-layout/illustrations/index.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/16020.patch"
+}

@@ -1,0 +1,21 @@
+{
+  "key": "b5001324ae3de7fd65",
+  "args": {
+    "crate": "reqwest",
+    "version": "0.12.19",
+    "id": "7e8977d611d27768",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.2225,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "86c74c447f41588f849dbfc698de8227642bb633dfc5e58f3999d6a683c14c1e",
+  "manifest_sha256": "7043b6f443bd3ec3e86ae84e7a9e507257ffb73b2b99bbef2592cde1cd198015",
+  "log_file": "results/check_logs/b5001324ae3de7fd65.txt.gz"
+}

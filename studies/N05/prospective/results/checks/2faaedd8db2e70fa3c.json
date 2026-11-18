@@ -1,0 +1,34 @@
+{
+  "key": "2faaedd8db2e70fa3c",
+  "args": {
+    "crate": "deadpool",
+    "version": "0.12.2",
+    "id": "3829e9a065fa1149",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0794,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n  --> src/main.rs:30:3\n   |\n30 | #[tokio::main]\n   |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 30
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n  --> src/main.rs:31:1\n   |\n31 | async fn main() {\n   | ^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 31
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_deadpool_consumer` (bin \"n05_deadpool_consumer\") due to 2 previous errors; 2 warnings emitted\n",
+  "code_sha256": "f2dcc0cb8b5ae711aca18df9519e9cf7df4b63402d5fa5d3f7f8385be8769062",
+  "manifest_sha256": "d8f1ccb40499cadeb08f63d12ea5580367784dc17bb8296ef19a330ae47ef5a5",
+  "log_file": "prospective/results/check_logs/2faaedd8db2e70fa3c.txt.gz"
+}

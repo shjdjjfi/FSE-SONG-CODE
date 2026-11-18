@@ -1,0 +1,64 @@
+{
+  "key": "e9333274dedc302063",
+  "args": {
+    "crate": "utoipa",
+    "version": "5.3.1",
+    "id": "40d48e2554617077",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.128,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `OAuth2`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `OAuth2`\n --> src/main.rs:2:1\n  |\n2 | OAuth2::with_description([Flow::Password(\n  | ^^^^^^ use of undeclared type `OAuth2`\n  |\nhelp: consider importing this struct\n  |\n1 + use utoipa::openapi::security::OAuth2;\n  |\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Flow`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Flow`\n --> src/main.rs:2:27\n  |\n2 | OAuth2::with_description([Flow::Password(\n  |                           ^^^^ use of undeclared type `Flow`\n  |\nhelp: consider importing this enum\n  |\n1 + use utoipa::openapi::security::Flow;\n  |\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Password`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Password`\n --> src/main.rs:3:5\n  |\n3 |     Password::with_refresh_url(\n  |     ^^^^^^^^ use of undeclared type `Password`\n  |\nhelp: consider importing this struct\n  |\n1 + use utoipa::openapi::security::Password;\n  |\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Scopes`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Scopes`\n --> src/main.rs:5:9\n  |\n5 |         Scopes::from_iter([\n  |         ^^^^^^ use of undeclared type `Scopes`\n  |\nhelp: consider importing this struct\n  |\n1 + use utoipa::openapi::security::Scopes;\n  |\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Flow`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Flow`\n  --> src/main.rs:11:5\n   |\n11 |     Flow::AuthorizationCode(\n   |     ^^^^ use of undeclared type `Flow`\n   |\nhelp: consider importing this enum\n   |\n 1 + use utoipa::openapi::security::Flow;\n   |\n\n",
+      "line": 11
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `AuthorizationCode`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `AuthorizationCode`\n  --> src/main.rs:12:9\n   |\n12 |         AuthorizationCode::new(\n   |         ^^^^^^^^^^^^^^^^^ use of undeclared type `AuthorizationCode`\n   |\nhelp: consider importing this struct\n   |\n 1 + use utoipa::openapi::security::AuthorizationCode;\n   |\n\n",
+      "line": 12
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Scopes`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Scopes`\n  --> src/main.rs:15:9\n   |\n15 |         Scopes::from_iter([\n   |         ^^^^^^ use of undeclared type `Scopes`\n   |\nhelp: consider importing this struct\n   |\n 1 + use utoipa::openapi::security::Scopes;\n   |\n\n",
+      "line": 15
+    }
+  ],
+  "error_count": 7,
+  "stderr_excerpt": "error: could not compile `n05_utoipa_consumer` (bin \"n05_utoipa_consumer\") due to 7 previous errors\n",
+  "code_sha256": "1ebc7fe72ed71c3f5db31a02af4b99d4d8333e690983c2093dea6de1528f73d8",
+  "manifest_sha256": "a5a94f8380fe9349a0540b492cc6f7ff5de16ffe81bb423af7b60362c5ede8f1",
+  "log_file": "prospective/results/check_logs/e9333274dedc302063.txt.gz"
+}

@@ -1,0 +1,21 @@
+{
+  "key": "d2a4756b272e398241",
+  "args": {
+    "crate": "miette",
+    "version": "7.6.0",
+    "id": "bc3dd6fe87c9aa93",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.06,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "50d73dc3bbebb9215bff125575789123fa3828de13655738e3f4874927e3dbfb",
+  "manifest_sha256": "1776fe1c3c4017b498af0b0188310d3c09645ca0121dc2bae626078088d41398",
+  "log_file": "holdout/results/check_logs/d2a4756b272e398241.txt.gz"
+}

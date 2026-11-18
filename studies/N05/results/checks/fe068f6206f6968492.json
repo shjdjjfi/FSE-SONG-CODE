@@ -1,0 +1,38 @@
+{
+  "key": "fe068f6206f6968492",
+  "args": {
+    "crate": "tracing-subscriber",
+    "version": "0.3.19",
+    "id": "7cf792d58ba414b7",
+    "profile": "candidate",
+    "features": [
+      "alloc",
+      "ansi",
+      "registry"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0936,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: could not find `EnvFilter` in `tracing_subscriber`",
+      "rendered": "error[E0433]: failed to resolve: could not find `EnvFilter` in `tracing_subscriber`\n   --> src/main.rs:26:39\n    |\n 26 |         .and_then(tracing_subscriber::EnvFilter::from_default_env())\n    |                                       ^^^^^^^^^ could not find `EnvFilter` in `tracing_subscriber`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tracing-subscriber-0.3.19/src/lib.rs:234:21\n    |\n233 |     #![all(feature = \"env-filter\", feature = \"std\")]\n    |            ---------------------- the item is gated behind the `env-filter` feature\n234 |     pub use filter::EnvFilter;\n    |                     ^^^^^^^^^\n\n",
+      "line": 26
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `json` found for struct `tracing_subscriber::fmt::Layer<S, N, E, W>` in the current scope",
+      "rendered": "error[E0599]: no method named `json` found for struct `tracing_subscriber::fmt::Layer<S, N, E, W>` in the current scope\n  --> src/main.rs:16:14\n   |\n13 | /         tracing_subscriber::fmt::layer()\n14 | |             .with_thread_ids(true)\n15 | |             .with_thread_names(true)\n16 | |             .json()\n   | |             -^^^^ method not found in `tracing_subscriber::fmt::Layer<_>`\n   | |_____________|\n   |\n\n",
+      "line": 13
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_tracing_subscriber_consumer` (bin \"n05_tracing_subscriber_consumer\") due to 2 previous errors\n",
+  "code_sha256": "a3a5400c83ea95027bf2472938feb81e4a3d549d738a025aa5ebf9cd4925d82e",
+  "manifest_sha256": "aca0f1913a8f6e36a9fa040843d43cbc0d2abdee4a35c3173fd8a13933e994e4",
+  "log_file": "results/check_logs/fe068f6206f6968492.txt.gz"
+}

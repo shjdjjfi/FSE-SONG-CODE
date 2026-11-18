@@ -1,0 +1,56 @@
+{
+  "kind": "LOCAL_SYNTHETIC_MECHANISM_BENCHMARK_NOT_PRODUCTION",
+  "captured_at": "2026-11-15T00:04:22.494505+00:00",
+  "python": "3.12.14",
+  "host": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "results": [
+    {
+      "policy": "owner_lookback",
+      "synthetic_pod_count": 1000,
+      "ticks": 12,
+      "wall_seconds": 0.007305,
+      "microseconds_per_pod_tick": 0.60879,
+      "peak_python_allocation_mb": 0.0098
+    },
+    {
+      "policy": "owner_relink_v2",
+      "synthetic_pod_count": 1000,
+      "ticks": 12,
+      "wall_seconds": 0.005659,
+      "microseconds_per_pod_tick": 0.47159,
+      "peak_python_allocation_mb": 0.0434
+    },
+    {
+      "policy": "owner_lookback",
+      "synthetic_pod_count": 10000,
+      "ticks": 12,
+      "wall_seconds": 0.13098,
+      "microseconds_per_pod_tick": 1.0915,
+      "peak_python_allocation_mb": 0.0962
+    },
+    {
+      "policy": "owner_relink_v2",
+      "synthetic_pod_count": 10000,
+      "ticks": 12,
+      "wall_seconds": 0.124081,
+      "microseconds_per_pod_tick": 1.034,
+      "peak_python_allocation_mb": 0.3454
+    },
+    {
+      "policy": "owner_lookback",
+      "synthetic_pod_count": 100000,
+      "ticks": 12,
+      "wall_seconds": 1.408414,
+      "microseconds_per_pod_tick": 1.17368,
+      "peak_python_allocation_mb": 0.9509
+    },
+    {
+      "policy": "owner_relink_v2",
+      "synthetic_pod_count": 100000,
+      "ticks": 12,
+      "wall_seconds": 1.598831,
+      "microseconds_per_pod_tick": 1.33236,
+      "peak_python_allocation_mb": 6.3369
+    }
+  ]
+}

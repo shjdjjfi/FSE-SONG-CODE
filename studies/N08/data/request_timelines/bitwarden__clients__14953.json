@@ -1,0 +1,72 @@
+{
+  "pr": 14953,
+  "pr_author": "mzieniukbw",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-05-27T10:18:39Z",
+      "requested_people": [
+        "mzieniukbw"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-05-27T10:35:11Z",
+      "requested_people": [
+        "mzieniukbw"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-05-27T10:35:11Z",
+      "requested_people": [
+        "dani-garcia",
+        "mzieniukbw"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-05-27T13:01:18Z",
+      "requested_people": [
+        "mzieniukbw",
+        "quexten"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-06-25T15:20:23Z",
+      "requested_people": [
+        "dani-garcia",
+        "mzieniukbw",
+        "quexten"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-06-26T12:46:52Z",
+      "requested_people": [
+        "mzieniukbw",
+        "quexten"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-21T16:22:52Z",
+      "requested_people": [
+        "dani-garcia",
+        "mzieniukbw",
+        "quexten"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "bf72f5d69803bf329075bb956f14bf860ee16c341d4b4ab143061f3da9aefaae",
+  "url": "https://github.com/bitwarden/clients/pull/14953"
+}

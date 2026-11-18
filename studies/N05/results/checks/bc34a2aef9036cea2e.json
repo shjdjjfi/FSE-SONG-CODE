@@ -1,0 +1,40 @@
+{
+  "key": "bc34a2aef9036cea2e",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "c2b72ca2b38fbc45",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0514,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: could not find `windows` in `net`",
+      "rendered": "error[E0433]: failed to resolve: could not find `windows` in `net`\n  --> src/main.rs:1:17\n   |\n 1 | use tokio::net::windows::named_pipe::ServerOptions;\n   |                 ^^^^^^^ could not find `windows` in `net`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/net/mod.rs:63:13\n   |\n62 | / cfg_net_windows! {\n63 | |     pub mod windows;\n   | |             ^^^^^^^\n64 | | }\n   | |_- the item is gated here\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: could not find `main` in `tokio`",
+      "rendered": "error[E0433]: failed to resolve: could not find `main` in `tokio`\n --> src/main.rs:5:10\n  |\n5 | #[tokio::main] async fn main() -> std::io::Result<()> {\n  |          ^^^^ could not find `main` in `tokio`\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:5:16\n  |\n5 | #[tokio::main] async fn main() -> std::io::Result<()> {\n  |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 5
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 3 previous errors\n",
+  "code_sha256": "a78c7acdf487c0cd454e9d7dd979c7e77a6d3abffee5ed6fa9a83c0b462ce381",
+  "manifest_sha256": "c0fd14620f954d7ba10a88fd6edf9b99ca0ab9a3b720432264b3664dc401a7fc",
+  "log_file": "results/check_logs/bc34a2aef9036cea2e.txt.gz"
+}

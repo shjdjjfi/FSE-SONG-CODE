@@ -1,0 +1,28 @@
+{
+  "changed_code_lines_under_target": 555,
+  "changed_files_in_whole_pr": 15,
+  "changed_files_under_target": 10,
+  "code_files_under_target": 8,
+  "code_touched": true,
+  "event": "BW10818",
+  "focused_code_touched": true,
+  "pr": 15140,
+  "raw_size_bytes": 102814,
+  "repo": "bitwarden/clients",
+  "sha256": "8b50172ba546a25df9c5c3270f8cf48bd42d2a5c9ff21822d3fdc87eceeec883",
+  "target_file_fraction": 0.66667,
+  "target_paths": [
+    "apps/desktop/src/key-management/biometrics/desktop.biometrics.service.ts",
+    "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts",
+    "apps/desktop/src/key-management/biometrics/main-biometrics.service.spec.ts",
+    "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts",
+    "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts",
+    "apps/desktop/src/key-management/biometrics/os-biometrics-mac.service.ts",
+    "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.spec.ts",
+    "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts",
+    "apps/desktop/src/key-management/biometrics/os-biometrics.service.ts",
+    "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+  ],
+  "test_files_under_target": 2,
+  "url": "https://github.com/bitwarden/clients/pull/15140.patch"
+}

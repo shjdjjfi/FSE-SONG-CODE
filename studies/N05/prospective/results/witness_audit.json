@@ -1,0 +1,1006 @@
+[
+  {
+    "id": "9c7c6c1656f6e371",
+    "crate": "async-compression",
+    "version": "0.4.23",
+    "path": "src/lz4.rs",
+    "line": 17,
+    "source_url": "https://docs.rs/crate/async-compression/0.4.23/source/src/lz4.rs",
+    "archive_sha256": "b37fc50485c4f3f736a4fb14199f6d5f5ba008d7f28fe710306c92780f004c07",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "all",
+      "all-algorithms",
+      "all-implementations",
+      "deflate",
+      "deflate64",
+      "gzip",
+      "lz4",
+      "lzma",
+      "xz",
+      "xz2",
+      "zlib",
+      "zstd",
+      "zstdmt"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "1: //! This module contains lz4-specific types for async-compression.\n2: \n3: pub use lz4::liblz4::BlockSize;\n4: use lz4::{\n5:     liblz4::{BlockChecksum, FrameType, LZ4FFrameInfo, LZ4FPreferences},\n6:     BlockMode, ContentChecksum,\n7: };\n8: \n9: /// lz4 compression parameters builder. This is a stable wrapper around lz4's own encoder\n10: /// params type, to abstract over different versions of the lz4 library.\n11: ///\n12: /// See the [lz4 documentation](https://github.com/lz4/lz4/blob/dev/doc/lz4frame_manual.html)\n13: /// for more information on these parameters.\n14: ///\n15: /// # Examples\n16: ///\n17: /// ```\n18: /// use async_compression::lz4;\n19: ///\n20: /// let params = lz4::EncoderParams::default()\n21: ///     .block_size(lz4::BlockSize::Max1MB)\n22: ///     .content_checksum(true);\n23: /// ```\n24: #[derive(Clone, Debug, Default)]\n25: pub struct EncoderParams {\n26:     block_size: Option<BlockSize>,\n27:     block_checksum: Option<BlockChecksum>,",
+    "compiled_rustdoc_example": "use async_compression::lz4;\n\nlet params = lz4::EncoderParams::default()\n    .block_size(lz4::BlockSize::Max1MB)\n    .content_checksum(true);",
+    "visible_rustdoc_example": "use async_compression::lz4;\n\nlet params = lz4::EncoderParams::default()\n    .block_size(lz4::BlockSize::Max1MB)\n    .content_checksum(true);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "ead852b963b2db7d",
+    "crate": "async-compression",
+    "version": "0.4.23",
+    "path": "src/brotli.rs",
+    "line": 13,
+    "source_url": "https://docs.rs/crate/async-compression/0.4.23/source/src/brotli.rs",
+    "archive_sha256": "b37fc50485c4f3f736a4fb14199f6d5f5ba008d7f28fe710306c92780f004c07",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "all",
+      "all-algorithms",
+      "all-implementations",
+      "deflate",
+      "deflate64",
+      "gzip",
+      "lz4",
+      "lzma",
+      "xz",
+      "xz2",
+      "zlib",
+      "zstd",
+      "zstdmt"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "1: //! This module contains Brotli-specific types for async-compression.\n2: \n3: use brotli::enc::backward_references::{BrotliEncoderMode, BrotliEncoderParams};\n4: \n5: /// Brotli compression parameters builder. This is a stable wrapper around Brotli's own encoder\n6: /// params type, to abstract over different versions of the Brotli library.\n7: ///\n8: /// See the [Brotli documentation](https://www.brotli.org/encode.html#a9a8) for more information on\n9: /// these parameters.\n10: ///\n11: /// # Examples\n12: ///\n13: /// ```\n14: /// use async_compression::brotli;\n15: ///\n16: /// let params = brotli::EncoderParams::default()\n17: ///     .window_size(12)\n18: ///     .text_mode();\n19: /// ```\n20: #[derive(Debug, Clone, Copy, Default, PartialEq, Eq)]\n21: pub struct EncoderParams {\n22:     window_size: Option<i32>,\n23:     block_size: Option<i32>,",
+    "compiled_rustdoc_example": "use async_compression::brotli;\n\nlet params = brotli::EncoderParams::default()\n    .window_size(12)\n    .text_mode();",
+    "visible_rustdoc_example": "use async_compression::brotli;\n\nlet params = brotli::EncoderParams::default()\n    .window_size(12)\n    .text_mode();",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "6414873f00061607",
+    "crate": "hyper-util",
+    "version": "0.1.15",
+    "path": "src/server/conn/auto/mod.rs",
+    "line": 83,
+    "source_url": "https://docs.rs/crate/hyper-util/0.1.15/source/src/server/conn/auto/mod.rs",
+    "archive_sha256": "7f66d5bd4c6f02bf0542fad85d626775bab9258cf795a4256dcaf3161114d1df",
+    "docs_rs_metadata": {
+      "features": [
+        "full"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "__internal_happy_eyeballs_tests",
+      "client",
+      "client-legacy",
+      "client-proxy",
+      "client-proxy-system",
+      "default",
+      "full",
+      "http1",
+      "http2",
+      "server",
+      "server-auto",
+      "server-graceful",
+      "service",
+      "tokio",
+      "tracing"
+    ],
+    "nearby_source_mentions_feature_config": true,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "53: #[cfg(not(feature = \"http2\"))]\n54: impl<A, B: Body, T> HttpServerConnExec<A, B> for T {}\n55: \n56: /// Http1 or Http2 connection builder.\n57: #[derive(Clone, Debug)]\n58: pub struct Builder<E> {\n59:     #[cfg(feature = \"http1\")]\n60:     http1: http1::Builder,\n61:     #[cfg(feature = \"http2\")]\n62:     http2: http2::Builder<E>,\n63:     #[cfg(any(feature = \"http1\", feature = \"http2\"))]\n64:     version: Option<Version>,\n65:     #[cfg(not(feature = \"http2\"))]\n66:     _executor: E,\n67: }\n68: \n69: impl<E: Default> Default for Builder<E> {\n70:     fn default() -> Self {\n71:         Self::new(E::default())\n72:     }\n73: }\n74: \n75: impl<E> Builder<E> {\n76:     /// Create a new auto connection builder.\n77:     ///\n78:     /// `executor` parameter should be a type that implements\n79:     /// [`Executor`](hyper::rt::Executor) trait.\n80:     ///\n81:     /// # Example\n82:     ///\n83:     /// ```\n84:     /// use hyper_util::{\n85:     ///     rt::TokioExecutor,\n86:     ///     server::conn::auto,\n87:     /// };\n88:     ///\n89:     /// auto::Builder::new(TokioExecutor::new());\n90:     /// ```\n91:     pub fn new(executor: E) -> Self {\n92:         Self {\n93:             #[cfg(feature = \"http1\")]",
+    "compiled_rustdoc_example": "use hyper_util::{\n    rt::TokioExecutor,\n    server::conn::auto,\n};\n\nauto::Builder::new(TokioExecutor::new());",
+    "visible_rustdoc_example": "use hyper_util::{\n    rt::TokioExecutor,\n    server::conn::auto,\n};\n\nauto::Builder::new(TokioExecutor::new());",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "a108262e04d9c2c7",
+    "crate": "mio",
+    "version": "1.0.4",
+    "path": "README.md",
+    "line": 42,
+    "source_url": "https://docs.rs/crate/mio/1.0.4/source/README.md",
+    "archive_sha256": "78bed444cc8a2160f01cbcf811ef18cac863ad68ae8ca62092e8db51d51c761c",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--generate-link-to-definition"
+      ],
+      "targets": [
+        "aarch64-apple-ios",
+        "aarch64-linux-android",
+        "wasm32-wasip1",
+        "x86_64-apple-darwin",
+        "x86_64-pc-windows-gnu",
+        "x86_64-pc-windows-msvc",
+        "x86_64-unknown-dragonfly",
+        "x86_64-unknown-freebsd",
+        "x86_64-unknown-illumos",
+        "x86_64-unknown-linux-gnu",
+        "x86_64-unknown-netbsd",
+        "x86_64-unknown-openbsd",
+        "x86_64-unknown-hermit"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "net",
+      "os-ext",
+      "os-poll"
+    ],
+    "nearby_source_mentions_feature_config": true,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "12: [crates-badge]: https://img.shields.io/crates/v/mio.svg\n13: [crates-url]: https://crates.io/crates/mio\n14: [mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg\n15: [mit-url]: LICENSE\n16: [actions-badge]: https://github.com/tokio-rs/mio/workflows/CI/badge.svg\n17: [actions-url]: https://github.com/tokio-rs/mio/actions?query=workflow%3ACI+branch%3Amaster\n18: [cirrus-badge]: https://api.cirrus-ci.com/github/tokio-rs/mio.svg\n19: [cirrus-url]: https://cirrus-ci.com/github/tokio-rs/mio\n20: \n21: **API documentation**\n22: \n23: * [v1](https://docs.rs/mio/^1)\n24: * [v0.8](https://docs.rs/mio/^0.8)\n25: \n26: This is a low level library, if you are looking for something easier to get\n27: started with, see [Tokio](https://tokio.rs).\n28: \n29: ## Usage\n30: \n31: To use `mio`, first add this to your `Cargo.toml`:\n32: \n33: ```toml\n34: [dependencies]\n35: mio = \"1\"\n36: ```\n37: \n38: Next we can start using Mio. The following is quick introduction using\n39: `TcpListener` and `TcpStream`. Note that `features = [\"os-poll\", \"net\"]` must be\n40: specified for this example.\n41: \n42: ```rust\n43: use std::error::Error;\n44: \n45: use mio::net::{TcpListener, TcpStream};\n46: use mio::{Events, Interest, Poll, Token};\n47: \n48: // Some tokens to allow us to identify which event is for which socket.\n49: const SERVER: Token = Token(0);\n50: const CLIENT: Token = Token(1);\n51: \n52: fn main() -> Result<(), Box<dyn Error>> {",
+    "compiled_rustdoc_example": "use std::error::Error;\n\nuse mio::net::{TcpListener, TcpStream};\nuse mio::{Events, Interest, Poll, Token};\n\n// Some tokens to allow us to identify which event is for which socket.\nconst SERVER: Token = Token(0);\nconst CLIENT: Token = Token(1);\n\nfn main() -> Result<(), Box<dyn Error>> {\n    // Create a poll instance.\n    let mut poll = Poll::new()?;\n    // Create storage for events.\n    let mut events = Events::with_capacity(128);\n\n    // Setup the server socket.\n    let addr = \"127.0.0.1:13265\".parse()?;\n    let mut server = TcpListener::bind(addr)?;\n    // Start listening for incoming connections.\n    poll.registry()\n        .register(&mut server, SERVER, Interest::READABLE)?;\n\n    // Setup the client socket.\n    let mut client = TcpStream::connect(addr)?;\n    // Register the socket.\n    poll.registry()\n        .register(&mut client, CLIENT, Interest::READABLE | Interest::WRITABLE)?;\n\n    // Start an event loop.\n    loop {\n        // Poll Mio for events, blocking until we get an event.\n        poll.poll(&mut events, None)?;\n\n        // Process each event.\n        for event in events.iter() {\n            // We can use the token we previously provided to `register` to\n            // determine for which socket the event is.\n            match event.token() {\n                SERVER => {\n                    // If this is an event for the server, it means a connection\n                    // is ready to be accepted.\n                    //\n                    // Accept the connection and drop it immediately. This will\n                    // close the socket and notify the client of the EOF.\n                    let connection = server.accept();\n                    drop(connection);\n                }\n                CLIENT => {\n                    if event.is_writable() {\n                        // We can (likely) write to the socket without blocking.\n                    }\n\n                    if event.is_readable() {\n                        // We can (likely) read from the socket without blocking.\n                    }\n\n                    // Since the server just shuts down the connection, let's\n                    // just exit from our event loop.\n                    return Ok(());\n                }\n                // We don't expect any events with tokens other than those we provided.\n                _ => unreachable!(),\n            }\n        }\n    }\n}",
+    "visible_rustdoc_example": "use std::error::Error;\n\nuse mio::net::{TcpListener, TcpStream};\nuse mio::{Events, Interest, Poll, Token};\n\n// Some tokens to allow us to identify which event is for which socket.\nconst SERVER: Token = Token(0);\nconst CLIENT: Token = Token(1);\n\nfn main() -> Result<(), Box<dyn Error>> {\n    // Create a poll instance.\n    let mut poll = Poll::new()?;\n    // Create storage for events.\n    let mut events = Events::with_capacity(128);\n\n    // Setup the server socket.\n    let addr = \"127.0.0.1:13265\".parse()?;\n    let mut server = TcpListener::bind(addr)?;\n    // Start listening for incoming connections.\n    poll.registry()\n        .register(&mut server, SERVER, Interest::READABLE)?;\n\n    // Setup the client socket.\n    let mut client = TcpStream::connect(addr)?;\n    // Register the socket.\n    poll.registry()\n        .register(&mut client, CLIENT, Interest::READABLE | Interest::WRITABLE)?;\n\n    // Start an event loop.\n    loop {\n        // Poll Mio for events, blocking until we get an event.\n        poll.poll(&mut events, None)?;\n\n        // Process each event.\n        for event in events.iter() {\n            // We can use the token we previously provided to `register` to\n            // determine for which socket the event is.\n            match event.token() {\n                SERVER => {\n                    // If this is an event for the server, it means a connection\n                    // is ready to be accepted.\n                    //\n                    // Accept the connection and drop it immediately. This will\n                    // close the socket and notify the client of the EOF.\n                    let connection = server.accept();\n                    drop(connection);\n                }\n                CLIENT => {\n                    if event.is_writable() {\n                        // We can (likely) write to the socket without blocking.\n                    }\n\n                    if event.is_readable() {\n                        // We can (likely) read from the socket without blocking.\n                    }\n\n                    // Since the server just shuts down the connection, let's\n                    // just exit from our event loop.\n                    return Ok(());\n                }\n                // We don't expect any events with tokens other than those we provided.\n                _ => unreachable!(),\n            }\n        }\n    }\n}",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "80079347bf9fae52",
+    "crate": "mio",
+    "version": "1.0.4",
+    "path": "src/poll.rs",
+    "line": 300,
+    "source_url": "https://docs.rs/crate/mio/1.0.4/source/src/poll.rs",
+    "archive_sha256": "78bed444cc8a2160f01cbcf811ef18cac863ad68ae8ca62092e8db51d51c761c",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--generate-link-to-definition"
+      ],
+      "targets": [
+        "aarch64-apple-ios",
+        "aarch64-linux-android",
+        "wasm32-wasip1",
+        "x86_64-apple-darwin",
+        "x86_64-pc-windows-gnu",
+        "x86_64-pc-windows-msvc",
+        "x86_64-unknown-dragonfly",
+        "x86_64-unknown-freebsd",
+        "x86_64-unknown-illumos",
+        "x86_64-unknown-linux-gnu",
+        "x86_64-unknown-netbsd",
+        "x86_64-unknown-openbsd",
+        "x86_64-unknown-hermit"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "net",
+      "os-ext",
+      "os-poll"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "270: \n271: /// Registers I/O resources.\n272: pub struct Registry {\n273:     selector: sys::Selector,\n274:     /// Whether this selector currently has an associated waker.\n275:     #[cfg(all(debug_assertions, not(target_os = \"wasi\")))]\n276:     has_waker: Arc<AtomicBool>,\n277: }\n278: \n279: impl Poll {\n280:     cfg_os_poll! {\n281:         /// Return a new `Poll` handle.\n282:         ///\n283:         /// This function will make a syscall to the operating system to create\n284:         /// the system selector. If this syscall fails, `Poll::new` will return\n285:         /// with the error.\n286:         ///\n287:         /// close-on-exec flag is set on the file descriptors used by the selector to prevent\n288:         /// leaking it to executed processes. However, on some systems such as\n289:         /// old Linux systems that don't support `epoll_create1` syscall it is done\n290:         /// non-atomically, so a separate thread executing in parallel to this\n291:         /// function may accidentally leak the file descriptor if it executes a\n292:         /// new process before this function returns.\n293:         ///\n294:         /// See [struct] level docs for more details.\n295:         ///\n296:         /// [struct]: struct.Poll.html\n297:         ///\n298:         /// # Examples\n299:         ///\n300:         /// ```\n301:         /// # use std::error::Error;\n302:         /// # fn main() -> Result<(), Box<dyn Error>> {\n303:         /// use mio::{Poll, Events};\n304:         /// use std::time::Duration;\n305:         ///\n306:         /// let mut poll = match Poll::new() {\n307:         ///     Ok(poll) => poll,\n308:         ///     Err(e) => panic!(\"failed to create Poll instance; err={:?}\", e),\n309:         /// };\n310:         ///",
+    "compiled_rustdoc_example": "use std::error::Error;\nfn main() -> Result<(), Box<dyn Error>> {\nuse mio::{Poll, Events};\nuse std::time::Duration;\n\nlet mut poll = match Poll::new() {\n    Ok(poll) => poll,\n    Err(e) => panic!(\"failed to create Poll instance; err={:?}\", e),\n};\n\n// Create a structure to receive polled events\nlet mut events = Events::with_capacity(1024);\n\n// Wait for events, but none will be received because no\n// `event::Source`s have been registered with this `Poll` instance.\npoll.poll(&mut events, Some(Duration::from_millis(500)))?;\nassert!(events.is_empty());\n    Ok(())\n}",
+    "visible_rustdoc_example": "use mio::{Poll, Events};\nuse std::time::Duration;\n\nlet mut poll = match Poll::new() {\n    Ok(poll) => poll,\n    Err(e) => panic!(\"failed to create Poll instance; err={:?}\", e),\n};\n\n// Create a structure to receive polled events\nlet mut events = Events::with_capacity(1024);\n\n// Wait for events, but none will be received because no\n// `event::Source`s have been registered with this `Poll` instance.\npoll.poll(&mut events, Some(Duration::from_millis(500)))?;\nassert!(events.is_empty());",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "4c965389a976c73d",
+    "crate": "poem",
+    "version": "3.1.12",
+    "path": "src/web/cookie.rs",
+    "line": 212,
+    "source_url": "https://docs.rs/crate/poem/3.1.12/source/src/web/cookie.rs",
+    "archive_sha256": "9f977080932c87287147dca052951c3e2696f8759863f6b4e4c0c9ffe7a4cc8b",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "acme",
+      "acme-base",
+      "acme-native-roots",
+      "acme-webpki-roots",
+      "compression",
+      "cookie",
+      "csrf",
+      "default",
+      "embed",
+      "i18n",
+      "multipart",
+      "native-tls",
+      "openssl-tls",
+      "opentelemetry",
+      "prometheus",
+      "redis-session",
+      "requestid",
+      "rustls",
+      "server",
+      "session",
+      "sonic-rs",
+      "sse",
+      "static-files",
+      "tempfile",
+      "test",
+      "tower-compat",
+      "websocket",
+      "xml",
+      "yaml"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "182:     /// # Example\n183:     ///\n184:     /// ```rust\n185:     /// use poem::web::cookie::Cookie;\n186:     ///\n187:     /// let cookie = Cookie::parse(\"foo=bar\").unwrap();\n188:     /// assert_eq!(cookie.name(), \"foo\");\n189:     /// ```\n190:     pub fn name(&self) -> &str {\n191:         self.0.name()\n192:     }\n193: \n194:     /// Returns the `Path` of the cookie if one was specified.\n195:     ///\n196:     /// # Example\n197:     ///\n198:     /// ```rust\n199:     /// use poem::web::cookie::Cookie;\n200:     ///\n201:     /// let cookie = Cookie::parse(\"foo=bar; path=/api\").unwrap();\n202:     /// assert_eq!(cookie.path(), Some(\"/api\"));\n203:     /// ```\n204:     pub fn path(&self) -> Option<&str> {\n205:         self.0.path()\n206:     }\n207: \n208:     /// Returns the `SameSite` attribute of this cookie if one was specified.\n209:     ///\n210:     /// # Example\n211:     ///\n212:     /// ```rust\n213:     /// use poem::web::cookie::{Cookie, SameSite};\n214:     ///\n215:     /// let cookie = Cookie::parse(\"foo=bar; SameSite=Strict\").unwrap();\n216:     /// assert_eq!(cookie.same_site(), Some(SameSite::Strict));\n217:     /// ```\n218:     pub fn same_site(&self) -> Option<SameSite> {\n219:         self.0.same_site()\n220:     }\n221: \n222:     /// Returns whether this cookie was marked `Secure` or not.",
+    "compiled_rustdoc_example": "use poem::web::cookie::{Cookie, SameSite};\n\nlet cookie = Cookie::parse(\"foo=bar; SameSite=Strict\").unwrap();\nassert_eq!(cookie.same_site(), Some(SameSite::Strict));",
+    "visible_rustdoc_example": "use poem::web::cookie::{Cookie, SameSite};\n\nlet cookie = Cookie::parse(\"foo=bar; SameSite=Strict\").unwrap();\nassert_eq!(cookie.same_site(), Some(SameSite::Strict));",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "ae307af9e659e67a",
+    "crate": "sea-query",
+    "version": "0.32.5",
+    "path": "src/expr.rs",
+    "line": 3228,
+    "source_url": "https://docs.rs/crate/sea-query/0.32.5/source/src/expr.rs",
+    "archive_sha256": "5506de3a33d9ee4ee161c5847acb87fe4f82ced6649afc9eabeb8df6f40ba94a",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "all-features",
+      "all-types",
+      "attr",
+      "backend-mysql",
+      "backend-postgres",
+      "backend-sqlite",
+      "default",
+      "derive",
+      "hashable-value",
+      "option-more-parentheses",
+      "option-sqlite-exact-column-type",
+      "postgres-array",
+      "postgres-interval",
+      "postgres-vector",
+      "tests-cfg",
+      "thread-safe",
+      "with-bigdecimal",
+      "with-chrono",
+      "with-ipnetwork",
+      "with-json",
+      "with-mac_address",
+      "with-rust_decimal",
+      "with-time",
+      "with-uuid"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "3198:     ///\n3199:     /// let query = Query::select()\n3200:     ///     .expr_as(Expr::exists(Query::select().column(Char::Id).from(Char::Table).take()), \"character_exists\")\n3201:     ///     .expr_as(Expr::exists(Query::select().column(Glyph::Id).from(Glyph::Table).take()), \"glyph_exists\")\n3202:     ///     .to_owned();\n3203:     ///\n3204:     /// assert_eq!(\n3205:     ///     query.to_string(MysqlQueryBuilder),\n3206:     ///     r#\"SELECT EXISTS(SELECT `id` FROM `character`) AS `character_exists`, EXISTS(SELECT `id` FROM `glyph`) AS `glyph_exists`\"#\n3207:     /// );\n3208:     /// assert_eq!(\n3209:     ///     query.to_string(PostgresQueryBuilder),\n3210:     ///     r#\"SELECT EXISTS(SELECT \"id\" FROM \"character\") AS \"character_exists\", EXISTS(SELECT \"id\" FROM \"glyph\") AS \"glyph_exists\"\"#\n3211:     /// );\n3212:     /// assert_eq!(\n3213:     ///     query.to_string(SqliteQueryBuilder),\n3214:     ///     r#\"SELECT EXISTS(SELECT \"id\" FROM \"character\") AS \"character_exists\", EXISTS(SELECT \"id\" FROM \"glyph\") AS \"glyph_exists\"\"#\n3215:     /// );\n3216:     /// ```\n3217:     pub fn exists(sel: SelectStatement) -> SimpleExpr {\n3218:         SimpleExpr::SubQuery(\n3219:             Some(SubQueryOper::Exists),\n3220:             Box::new(sel.into_sub_query_statement()),\n3221:         )\n3222:     }\n3223: \n3224:     /// Express a `ANY` sub-query expression.\n3225:     ///\n3226:     /// # Examples\n3227:     ///\n3228:     /// ```\n3229:     /// use sea_query::{tests_cfg::*, *};\n3230:     ///\n3231:     /// let query = Query::select()\n3232:     ///     .column(Char::Id)\n3233:     ///     .from(Char::Table)\n3234:     ///     .and_where(Expr::col(Char::Id).eq(Expr::any(\n3235:     ///         Query::select().column(Char::Id).from(Char::Table).take(),\n3236:     ///     )))\n3237:     ///     .to_owned();\n3238:     ///",
+    "compiled_rustdoc_example": "use sea_query::{tests_cfg::*, *};\n\nlet query = Query::select()\n    .column(Char::Id)\n    .from(Char::Table)\n    .and_where(Expr::col(Char::Id).eq(Expr::any(\n        Query::select().column(Char::Id).from(Char::Table).take(),\n    )))\n    .to_owned();\n\nassert_eq!(\n    query.to_string(MysqlQueryBuilder),\n    r#\"SELECT `id` FROM `character` WHERE `id` = ANY(SELECT `id` FROM `character`)\"#\n);\nassert_eq!(\n    query.to_string(PostgresQueryBuilder),\n    r#\"SELECT \"id\" FROM \"character\" WHERE \"id\" = ANY(SELECT \"id\" FROM \"character\")\"#\n);",
+    "visible_rustdoc_example": "use sea_query::{tests_cfg::*, *};\n\nlet query = Query::select()\n    .column(Char::Id)\n    .from(Char::Table)\n    .and_where(Expr::col(Char::Id).eq(Expr::any(\n        Query::select().column(Char::Id).from(Char::Table).take(),\n    )))\n    .to_owned();\n\nassert_eq!(\n    query.to_string(MysqlQueryBuilder),\n    r#\"SELECT `id` FROM `character` WHERE `id` = ANY(SELECT `id` FROM `character`)\"#\n);\nassert_eq!(\n    query.to_string(PostgresQueryBuilder),\n    r#\"SELECT \"id\" FROM \"character\" WHERE \"id\" = ANY(SELECT \"id\" FROM \"character\")\"#\n);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "15f58f7222bb9c01",
+    "crate": "sea-query",
+    "version": "0.32.5",
+    "path": "src/extension/postgres/func.rs",
+    "line": 485,
+    "source_url": "https://docs.rs/crate/sea-query/0.32.5/source/src/extension/postgres/func.rs",
+    "archive_sha256": "5506de3a33d9ee4ee161c5847acb87fe4f82ced6649afc9eabeb8df6f40ba94a",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "all-features",
+      "all-types",
+      "attr",
+      "backend-mysql",
+      "backend-postgres",
+      "backend-sqlite",
+      "default",
+      "derive",
+      "hashable-value",
+      "option-more-parentheses",
+      "option-sqlite-exact-column-type",
+      "postgres-array",
+      "postgres-interval",
+      "postgres-vector",
+      "tests-cfg",
+      "thread-safe",
+      "with-bigdecimal",
+      "with-chrono",
+      "with-ipnetwork",
+      "with-json",
+      "with-mac_address",
+      "with-rust_decimal",
+      "with-time",
+      "with-uuid"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "455: \n456:     /// Call the `ARRAY_AGG` function. Postgres only.\n457:     ///\n458:     /// # Examples\n459:     ///\n460:     /// ```\n461:     /// use sea_query::{tests_cfg::*, *};\n462:     ///\n463:     /// let query = Query::select()\n464:     ///     .from(Char::Table)\n465:     ///     .expr(PgFunc::array_agg(Expr::col(Char::Id)))\n466:     ///     .group_by_col(Char::Character)\n467:     ///     .to_owned();\n468:     ///\n469:     /// assert_eq!(\n470:     ///     query.to_string(PostgresQueryBuilder),\n471:     ///     r#\"SELECT ARRAY_AGG(\"id\") FROM \"character\" GROUP BY \"character\"\"#\n472:     /// );\n473:     /// ```\n474:     pub fn array_agg<T>(expr: T) -> FunctionCall\n475:     where\n476:         T: Into<SimpleExpr>,\n477:     {\n478:         FunctionCall::new(Function::PgFunction(PgFunction::ArrayAgg)).arg(expr)\n479:     }\n480: \n481:     /// Call the `ARRAY_AGG` function with the `DISTINCT` modifier. Postgres only.\n482:     ///\n483:     /// # Examples\n484:     ///\n485:     /// ```\n486:     /// use sea_query::{tests_cfg::*, *};\n487:     ///\n488:     /// let query = Query::select()\n489:     ///     .from(Char::Table)\n490:     ///     .expr(PgFunc::array_agg_distinct(Expr::col(Char::Id)))\n491:     ///     .group_by_col(Char::Character)\n492:     ///     .to_owned();\n493:     ///\n494:     /// assert_eq!(\n495:     ///     query.to_string(PostgresQueryBuilder),",
+    "compiled_rustdoc_example": "use sea_query::{tests_cfg::*, *};\n\nlet query = Query::select()\n    .from(Char::Table)\n    .expr(PgFunc::array_agg_distinct(Expr::col(Char::Id)))\n    .group_by_col(Char::Character)\n    .to_owned();\n\nassert_eq!(\n    query.to_string(PostgresQueryBuilder),\n    r#\"SELECT ARRAY_AGG(DISTINCT \"id\") FROM \"character\" GROUP BY \"character\"\"#\n);",
+    "visible_rustdoc_example": "use sea_query::{tests_cfg::*, *};\n\nlet query = Query::select()\n    .from(Char::Table)\n    .expr(PgFunc::array_agg_distinct(Expr::col(Char::Id)))\n    .group_by_col(Char::Character)\n    .to_owned();\n\nassert_eq!(\n    query.to_string(PostgresQueryBuilder),\n    r#\"SELECT ARRAY_AGG(DISTINCT \"id\") FROM \"character\" GROUP BY \"character\"\"#\n);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "6980eb1a861e443d",
+    "crate": "sqlparser",
+    "version": "0.56.0",
+    "path": "src/ast/visitor.rs",
+    "line": 135,
+    "source_url": "https://docs.rs/crate/sqlparser/0.56.0/source/src/ast/visitor.rs",
+    "archive_sha256": "e68feb51ffa54fc841e086f58da543facfe3d7ae2a60d69b0a8cbbd30d16ae8d",
+    "docs_rs_metadata": {
+      "features": [
+        "serde",
+        "visitor"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "json_example",
+      "recursive-protection",
+      "std",
+      "visitor"
+    ],
+    "nearby_source_mentions_feature_config": true,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "105:                ControlFlow::Continue(())\n106:             }\n107:         })+\n108:         $(impl VisitMut for $t {\n109:             fn visit<V: VisitorMut>(&mut self, _visitor: &mut V) -> ControlFlow<V::Break> {\n110:                ControlFlow::Continue(())\n111:             }\n112:         })+\n113:     };\n114: }\n115: \n116: visit_noop!(u8, u16, u32, u64, i8, i16, i32, i64, char, bool, String);\n117: \n118: #[cfg(feature = \"bigdecimal\")]\n119: visit_noop!(bigdecimal::BigDecimal);\n120: \n121: /// A visitor that can be used to walk an AST tree.\n122: ///\n123: /// `pre_visit_` methods are invoked before visiting all children of the\n124: /// node and `post_visit_` methods are invoked after visiting all\n125: /// children of the node.\n126: ///\n127: /// # See also\n128: ///\n129: /// These methods provide a more concise way of visiting nodes of a certain type:\n130: /// * [visit_relations]\n131: /// * [visit_expressions]\n132: /// * [visit_statements]\n133: ///\n134: /// # Example\n135: /// ```\n136: /// # use sqlparser::parser::Parser;\n137: /// # use sqlparser::dialect::GenericDialect;\n138: /// # use sqlparser::ast::{Visit, Visitor, ObjectName, Expr};\n139: /// # use core::ops::ControlFlow;\n140: /// // A structure that records statements and relations\n141: /// #[derive(Default)]\n142: /// struct V {\n143: ///    visited: Vec<String>,\n144: /// }\n145: ///",
+    "compiled_rustdoc_example": "use sqlparser::parser::Parser;\nuse sqlparser::dialect::GenericDialect;\nuse sqlparser::ast::{Visit, Visitor, ObjectName, Expr};\nuse core::ops::ControlFlow;\n// A structure that records statements and relations\n#[derive(Default)]\nstruct V {\n   visited: Vec<String>,\n}\n\n// Visit relations and exprs before children are visited (depth first walk)\n// Note you can also visit statements and visit exprs after children have been visited\nimpl Visitor for V {\n  type Break = ();\n\n  fn pre_visit_relation(&mut self, relation: &ObjectName) -> ControlFlow<Self::Break> {\n    self.visited.push(format!(\"PRE: RELATION: {}\", relation));\n    ControlFlow::Continue(())\n  }\n\n  fn pre_visit_expr(&mut self, expr: &Expr) -> ControlFlow<Self::Break> {\n    self.visited.push(format!(\"PRE: EXPR: {}\", expr));\n    ControlFlow::Continue(())\n  }\n}\n\nlet sql = \"SELECT a FROM foo where x IN (SELECT y FROM bar)\";\nlet statements = Parser::parse_sql(&GenericDialect{}, sql)\n   .unwrap();\n\n// Drive the visitor through the AST\nlet mut visitor = V::default();\nstatements.visit(&mut visitor);\n\n// The visitor has visited statements and expressions in pre-traversal order\nlet expected : Vec<_> = [\n  \"PRE: EXPR: a\",\n  \"PRE: RELATION: foo\",\n  \"PRE: EXPR: x IN (SELECT y FROM bar)\",\n  \"PRE: EXPR: x\",\n  \"PRE: EXPR: y\",\n  \"PRE: RELATION: bar\",\n]\n  .into_iter().map(|s| s.to_string()).collect();\n\nassert_eq!(visitor.visited, expected);",
+    "visible_rustdoc_example": "// A structure that records statements and relations\n#[derive(Default)]\nstruct V {\n   visited: Vec<String>,\n}\n\n// Visit relations and exprs before children are visited (depth first walk)\n// Note you can also visit statements and visit exprs after children have been visited\nimpl Visitor for V {\n  type Break = ();\n\n  fn pre_visit_relation(&mut self, relation: &ObjectName) -> ControlFlow<Self::Break> {\n    self.visited.push(format!(\"PRE: RELATION: {}\", relation));\n    ControlFlow::Continue(())\n  }\n\n  fn pre_visit_expr(&mut self, expr: &Expr) -> ControlFlow<Self::Break> {\n    self.visited.push(format!(\"PRE: EXPR: {}\", expr));\n    ControlFlow::Continue(())\n  }\n}\n\nlet sql = \"SELECT a FROM foo where x IN (SELECT y FROM bar)\";\nlet statements = Parser::parse_sql(&GenericDialect{}, sql)\n   .unwrap();\n\n// Drive the visitor through the AST\nlet mut visitor = V::default();\nstatements.visit(&mut visitor);\n\n// The visitor has visited statements and expressions in pre-traversal order\nlet expected : Vec<_> = [\n  \"PRE: EXPR: a\",\n  \"PRE: RELATION: foo\",\n  \"PRE: EXPR: x IN (SELECT y FROM bar)\",\n  \"PRE: EXPR: x\",\n  \"PRE: EXPR: y\",\n  \"PRE: RELATION: bar\",\n]\n  .into_iter().map(|s| s.to_string()).collect();\n\nassert_eq!(visitor.visited, expected);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "e65c2a180cd09a5c",
+    "crate": "sqlparser",
+    "version": "0.56.0",
+    "path": "src/ast/visitor.rs",
+    "line": 262,
+    "source_url": "https://docs.rs/crate/sqlparser/0.56.0/source/src/ast/visitor.rs",
+    "archive_sha256": "e68feb51ffa54fc841e086f58da543facfe3d7ae2a60d69b0a8cbbd30d16ae8d",
+    "docs_rs_metadata": {
+      "features": [
+        "serde",
+        "visitor"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "json_example",
+      "recursive-protection",
+      "std",
+      "visitor"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "232:     /// Invoked for any statements that appear in the AST after visiting children\n233:     fn post_visit_statement(&mut self, _statement: &Statement) -> ControlFlow<Self::Break> {\n234:         ControlFlow::Continue(())\n235:     }\n236: \n237:     /// Invoked for any Value that appear in the AST before visiting children\n238:     fn pre_visit_value(&mut self, _value: &Value) -> ControlFlow<Self::Break> {\n239:         ControlFlow::Continue(())\n240:     }\n241: \n242:     /// Invoked for any Value that appear in the AST after visiting children\n243:     fn post_visit_value(&mut self, _value: &Value) -> ControlFlow<Self::Break> {\n244:         ControlFlow::Continue(())\n245:     }\n246: }\n247: \n248: /// A visitor that can be used to mutate an AST tree.\n249: ///\n250: /// `pre_visit_` methods are invoked before visiting all children of the\n251: /// node and `post_visit_` methods are invoked after visiting all\n252: /// children of the node.\n253: ///\n254: /// # See also\n255: ///\n256: /// These methods provide a more concise way of visiting nodes of a certain type:\n257: /// * [visit_relations_mut]\n258: /// * [visit_expressions_mut]\n259: /// * [visit_statements_mut]\n260: ///\n261: /// # Example\n262: /// ```\n263: /// # use sqlparser::parser::Parser;\n264: /// # use sqlparser::dialect::GenericDialect;\n265: /// # use sqlparser::ast::{VisitMut, VisitorMut, ObjectName, Expr, Ident};\n266: /// # use core::ops::ControlFlow;\n267: ///\n268: /// // A visitor that replaces \"to_replace\" with \"replaced\" in all expressions\n269: /// struct Replacer;\n270: ///\n271: /// // Visit each expression after its children have been visited\n272: /// impl VisitorMut for Replacer {",
+    "compiled_rustdoc_example": "use sqlparser::parser::Parser;\nuse sqlparser::dialect::GenericDialect;\nuse sqlparser::ast::{VisitMut, VisitorMut, ObjectName, Expr, Ident};\nuse core::ops::ControlFlow;\n\n// A visitor that replaces \"to_replace\" with \"replaced\" in all expressions\nstruct Replacer;\n\n// Visit each expression after its children have been visited\nimpl VisitorMut for Replacer {\n  type Break = ();\n\n  fn post_visit_expr(&mut self, expr: &mut Expr) -> ControlFlow<Self::Break> {\n    if let Expr::Identifier(Ident{ value, ..}) = expr {\n        *value = value.replace(\"to_replace\", \"replaced\")\n    }\n    ControlFlow::Continue(())\n  }\n}\n\nlet sql = \"SELECT to_replace FROM foo where to_replace IN (SELECT to_replace FROM bar)\";\nlet mut statements = Parser::parse_sql(&GenericDialect{}, sql).unwrap();\n\n// Drive the visitor through the AST\nstatements.visit(&mut Replacer);\n\nassert_eq!(statements[0].to_string(), \"SELECT replaced FROM foo WHERE replaced IN (SELECT replaced FROM bar)\");",
+    "visible_rustdoc_example": "\n// A visitor that replaces \"to_replace\" with \"replaced\" in all expressions\nstruct Replacer;\n\n// Visit each expression after its children have been visited\nimpl VisitorMut for Replacer {\n  type Break = ();\n\n  fn post_visit_expr(&mut self, expr: &mut Expr) -> ControlFlow<Self::Break> {\n    if let Expr::Identifier(Ident{ value, ..}) = expr {\n        *value = value.replace(\"to_replace\", \"replaced\")\n    }\n    ControlFlow::Continue(())\n  }\n}\n\nlet sql = \"SELECT to_replace FROM foo where to_replace IN (SELECT to_replace FROM bar)\";\nlet mut statements = Parser::parse_sql(&GenericDialect{}, sql).unwrap();\n\n// Drive the visitor through the AST\nstatements.visit(&mut Replacer);\n\nassert_eq!(statements[0].to_string(), \"SELECT replaced FROM foo WHERE replaced IN (SELECT replaced FROM bar)\");",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "d54c39d20f74890a",
+    "crate": "sqlparser",
+    "version": "0.56.0",
+    "path": "src/ast/visitor.rs",
+    "line": 471,
+    "source_url": "https://docs.rs/crate/sqlparser/0.56.0/source/src/ast/visitor.rs",
+    "archive_sha256": "e68feb51ffa54fc841e086f58da543facfe3d7ae2a60d69b0a8cbbd30d16ae8d",
+    "docs_rs_metadata": {
+      "features": [
+        "serde",
+        "visitor"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "json_example",
+      "recursive-protection",
+      "std",
+      "visitor"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "441: where\n442:     V: VisitMut,\n443:     F: FnMut(&mut ObjectName) -> ControlFlow<E>,\n444: {\n445:     let mut visitor = RelationVisitor(f);\n446:     v.visit(&mut visitor)?;\n447:     ControlFlow::Continue(())\n448: }\n449: \n450: struct ExprVisitor<F>(F);\n451: \n452: impl<E, F: FnMut(&Expr) -> ControlFlow<E>> Visitor for ExprVisitor<F> {\n453:     type Break = E;\n454: \n455:     fn pre_visit_expr(&mut self, expr: &Expr) -> ControlFlow<Self::Break> {\n456:         self.0(expr)\n457:     }\n458: }\n459: \n460: impl<E, F: FnMut(&mut Expr) -> ControlFlow<E>> VisitorMut for ExprVisitor<F> {\n461:     type Break = E;\n462: \n463:     fn post_visit_expr(&mut self, expr: &mut Expr) -> ControlFlow<Self::Break> {\n464:         self.0(expr)\n465:     }\n466: }\n467: \n468: /// Invokes the provided closure on all expressions (e.g. `1 + 2`) present in `v`\n469: ///\n470: /// # Example\n471: /// ```\n472: /// # use sqlparser::parser::Parser;\n473: /// # use sqlparser::dialect::GenericDialect;\n474: /// # use sqlparser::ast::{visit_expressions};\n475: /// # use core::ops::ControlFlow;\n476: /// let sql = \"SELECT a FROM foo where x IN (SELECT y FROM bar)\";\n477: /// let statements = Parser::parse_sql(&GenericDialect{}, sql)\n478: ///    .unwrap();\n479: ///\n480: /// // visit all expressions\n481: /// let mut visited = vec![];",
+    "compiled_rustdoc_example": "use sqlparser::parser::Parser;\nuse sqlparser::dialect::GenericDialect;\nuse sqlparser::ast::{visit_expressions};\nuse core::ops::ControlFlow;\nlet sql = \"SELECT a FROM foo where x IN (SELECT y FROM bar)\";\nlet statements = Parser::parse_sql(&GenericDialect{}, sql)\n   .unwrap();\n\n// visit all expressions\nlet mut visited = vec![];\nvisit_expressions(&statements, |expr| {\n  visited.push(format!(\"EXPR: {}\", expr));\n  ControlFlow::<()>::Continue(())\n});\n\nlet expected : Vec<_> = [\n  \"EXPR: a\",\n  \"EXPR: x IN (SELECT y FROM bar)\",\n  \"EXPR: x\",\n  \"EXPR: y\",\n]\n  .into_iter().map(|s| s.to_string()).collect();\n\nassert_eq!(visited, expected);",
+    "visible_rustdoc_example": "let sql = \"SELECT a FROM foo where x IN (SELECT y FROM bar)\";\nlet statements = Parser::parse_sql(&GenericDialect{}, sql)\n   .unwrap();\n\n// visit all expressions\nlet mut visited = vec![];\nvisit_expressions(&statements, |expr| {\n  visited.push(format!(\"EXPR: {}\", expr));\n  ControlFlow::<()>::Continue(())\n});\n\nlet expected : Vec<_> = [\n  \"EXPR: a\",\n  \"EXPR: x IN (SELECT y FROM bar)\",\n  \"EXPR: x\",\n  \"EXPR: y\",\n]\n  .into_iter().map(|s| s.to_string()).collect();\n\nassert_eq!(visited, expected);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "f0d40d06dc5d38a8",
+    "crate": "figment",
+    "version": "0.10.19",
+    "path": "src/providers/env.rs",
+    "line": 213,
+    "source_url": "https://docs.rs/crate/figment/0.10.19/source/src/providers/env.rs",
+    "archive_sha256": "8cb01cd46b0cf372153850f4c6c272d9cbea2da513e07538405148f95bd789f3",
+    "docs_rs_metadata": {
+      "all-features": true
+    },
+    "candidate_feature_names": [
+      "env",
+      "json",
+      "parse-value",
+      "test",
+      "yaml"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "183:     /// struct Config {\n184:     ///     foo: usize,\n185:     ///     bar: String,\n186:     /// }\n187:     ///\n188:     /// Jail::expect_with(|jail| {\n189:     ///     jail.set_env(\"APP_FOO\", 100);\n190:     ///     jail.set_env(\"APP_BAR\", \"hi\");\n191:     ///\n192:     ///     let config: Config = Figment::from(Env::prefixed(\"APP_\")).extract()?;\n193:     ///     assert_eq!(config, Config { foo: 100, bar: \"hi\".into() });\n194:     ///\n195:     ///     Ok(())\n196:     /// });\n197:     /// ```\n198:     pub fn prefixed(prefix: &str) -> Self {\n199:         let owned_prefix = prefix.to_string();\n200:         let mut env = Env::new()\n201:             .filter_map(move |key| match key.starts_with(&owned_prefix) {\n202:                 true => Some(key[owned_prefix.len()..].into()),\n203:                 false => None\n204:             });\n205: \n206:         env.prefix = Some(prefix.into());\n207:         env\n208:     }\n209: \n210:     /// Applys an additional filter to the keys of environment variables being\n211:     /// considered.\n212:     ///\n213:     /// ```rust\n214:     /// use figment::{Jail, providers::Env};\n215:     ///\n216:     /// Jail::expect_with(|jail| {\n217:     ///     jail.set_env(\"FOO_FOO\", 100);\n218:     ///     jail.set_env(\"BAR_BAR\", \"hi\");\n219:     ///     jail.set_env(\"foobar\", \"hi\");\n220:     ///\n221:     ///     // We'll be left with `FOO_FOO=100` and `foobar=hi`.\n222:     ///     let env = Env::raw().filter(|k| k.starts_with(\"foo\"));\n223:     ///     assert_eq!(env.iter().count(), 2);",
+    "compiled_rustdoc_example": "use figment::{Jail, providers::Env};\n\nJail::expect_with(|jail| {\n    jail.set_env(\"FOO_FOO\", 100);\n    jail.set_env(\"BAR_BAR\", \"hi\");\n    jail.set_env(\"foobar\", \"hi\");\n\n    // We'll be left with `FOO_FOO=100` and `foobar=hi`.\n    let env = Env::raw().filter(|k| k.starts_with(\"foo\"));\n    assert_eq!(env.iter().count(), 2);\n\n    // Filters chain, like iterator adapters. `FOO_FOO=100` remains.\n    let env = env.filter(|k| k.as_str().contains('_'));\n    assert_eq!(env.iter().count(), 1);\n\n    Ok(())\n});",
+    "visible_rustdoc_example": "use figment::{Jail, providers::Env};\n\nJail::expect_with(|jail| {\n    jail.set_env(\"FOO_FOO\", 100);\n    jail.set_env(\"BAR_BAR\", \"hi\");\n    jail.set_env(\"foobar\", \"hi\");\n\n    // We'll be left with `FOO_FOO=100` and `foobar=hi`.\n    let env = Env::raw().filter(|k| k.starts_with(\"foo\"));\n    assert_eq!(env.iter().count(), 2);\n\n    // Filters chain, like iterator adapters. `FOO_FOO=100` remains.\n    let env = env.filter(|k| k.as_str().contains('_'));\n    assert_eq!(env.iter().count(), 1);\n\n    Ok(())\n});",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "69cf5018e5c5b0ab",
+    "crate": "ratatui",
+    "version": "0.29.0",
+    "path": "src/style/color.rs",
+    "line": 387,
+    "source_url": "https://docs.rs/crate/ratatui/0.29.0/source/src/style/color.rs",
+    "archive_sha256": "eabd94c2f37801c20583fc49dd5cd6b0ba68c716787c2dd6ed18571e1e63117b",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "cargo-args": [
+        "-Zunstable-options",
+        "-Zrustdoc-scrape-examples"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "all-widgets",
+      "crossterm",
+      "default",
+      "macros",
+      "palette",
+      "scrolling-regions",
+      "serde",
+      "termion",
+      "termwiz",
+      "underline-color",
+      "unstable",
+      "unstable-backend-writer",
+      "unstable-rendered-line-info",
+      "unstable-widget-ref",
+      "widget-calendar"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "357:             Self::LightBlue => write!(f, \"LightBlue\"),\n358:             Self::LightMagenta => write!(f, \"LightMagenta\"),\n359:             Self::LightCyan => write!(f, \"LightCyan\"),\n360:             Self::White => write!(f, \"White\"),\n361:             Self::Rgb(r, g, b) => write!(f, \"#{r:02X}{g:02X}{b:02X}\"),\n362:             Self::Indexed(i) => write!(f, \"{i}\"),\n363:         }\n364:     }\n365: }\n366: \n367: impl Color {\n368:     pub(crate) const fn stylize_debug(self, kind: ColorDebugKind) -> ColorDebug {\n369:         ColorDebug { kind, color: self }\n370:     }\n371: \n372:     /// Converts a HSL representation to a `Color::Rgb` instance.\n373:     ///\n374:     /// The `from_hsl` function converts the Hue, Saturation and Lightness values to a corresponding\n375:     /// `Color` RGB equivalent.\n376:     ///\n377:     /// Hue values should be in the range [-180..180]. Values outside this range are normalized by\n378:     /// wrapping.\n379:     ///\n380:     /// Saturation and L values should be in the range [0.0..1.0]. Values outside this range are\n381:     /// clamped.\n382:     ///\n383:     /// Clamping to valid ranges happens before conversion to RGB.\n384:     ///\n385:     /// # Examples\n386:     ///\n387:     /// ```\n388:     /// use ratatui::{palette::Hsl, style::Color};\n389:     ///\n390:     /// // Minimum Lightness is black\n391:     /// let color: Color = Color::from_hsl(Hsl::new(0.0, 0.0, 0.0));\n392:     /// assert_eq!(color, Color::Rgb(0, 0, 0));\n393:     ///\n394:     /// // Maximum Lightness is white\n395:     /// let color: Color = Color::from_hsl(Hsl::new(0.0, 0.0, 1.0));\n396:     /// assert_eq!(color, Color::Rgb(255, 255, 255));\n397:     ///",
+    "compiled_rustdoc_example": "use ratatui::{palette::Hsl, style::Color};\n\n// Minimum Lightness is black\nlet color: Color = Color::from_hsl(Hsl::new(0.0, 0.0, 0.0));\nassert_eq!(color, Color::Rgb(0, 0, 0));\n\n// Maximum Lightness is white\nlet color: Color = Color::from_hsl(Hsl::new(0.0, 0.0, 1.0));\nassert_eq!(color, Color::Rgb(255, 255, 255));\n\n// Minimum Saturation is fully desaturated red = gray\nlet color: Color = Color::from_hsl(Hsl::new(0.0, 0.0, 0.5));\nassert_eq!(color, Color::Rgb(128, 128, 128));\n\n// Bright red\nlet color: Color = Color::from_hsl(Hsl::new(0.0, 1.0, 0.5));\nassert_eq!(color, Color::Rgb(255, 0, 0));\n\n// Bright blue\nlet color: Color = Color::from_hsl(Hsl::new(-120.0, 1.0, 0.5));\nassert_eq!(color, Color::Rgb(0, 0, 255));",
+    "visible_rustdoc_example": "use ratatui::{palette::Hsl, style::Color};\n\n// Minimum Lightness is black\nlet color: Color = Color::from_hsl(Hsl::new(0.0, 0.0, 0.0));\nassert_eq!(color, Color::Rgb(0, 0, 0));\n\n// Maximum Lightness is white\nlet color: Color = Color::from_hsl(Hsl::new(0.0, 0.0, 1.0));\nassert_eq!(color, Color::Rgb(255, 255, 255));\n\n// Minimum Saturation is fully desaturated red = gray\nlet color: Color = Color::from_hsl(Hsl::new(0.0, 0.0, 0.5));\nassert_eq!(color, Color::Rgb(128, 128, 128));\n\n// Bright red\nlet color: Color = Color::from_hsl(Hsl::new(0.0, 1.0, 0.5));\nassert_eq!(color, Color::Rgb(255, 0, 0));\n\n// Bright blue\nlet color: Color = Color::from_hsl(Hsl::new(-120.0, 1.0, 0.5));\nassert_eq!(color, Color::Rgb(0, 0, 255));",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "2d53448333e48295",
+    "crate": "ratatui",
+    "version": "0.29.0",
+    "path": "src/style/color.rs",
+    "line": 439,
+    "source_url": "https://docs.rs/crate/ratatui/0.29.0/source/src/style/color.rs",
+    "archive_sha256": "eabd94c2f37801c20583fc49dd5cd6b0ba68c716787c2dd6ed18571e1e63117b",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "cargo-args": [
+        "-Zunstable-options",
+        "-Zrustdoc-scrape-examples"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "all-widgets",
+      "crossterm",
+      "default",
+      "macros",
+      "palette",
+      "scrolling-regions",
+      "serde",
+      "termion",
+      "termwiz",
+      "underline-color",
+      "unstable",
+      "unstable-backend-writer",
+      "unstable-rendered-line-info",
+      "unstable-widget-ref",
+      "widget-calendar"
+    ],
+    "nearby_source_mentions_feature_config": true,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "409:     /// ```\n410:     #[cfg(feature = \"palette\")]\n411:     pub fn from_hsl(hsl: palette::Hsl) -> Self {\n412:         use palette::{Clamp, FromColor, Srgb};\n413:         let hsl = hsl.clamp();\n414:         let Srgb {\n415:             red,\n416:             green,\n417:             blue,\n418:             standard: _,\n419:         }: Srgb<u8> = Srgb::from_color(hsl).into();\n420: \n421:         Self::Rgb(red, green, blue)\n422:     }\n423: \n424:     /// Converts a `HSLuv` representation to a `Color::Rgb` instance.\n425:     ///\n426:     /// The `from_hsluv` function converts the Hue, Saturation and Lightness values to a\n427:     /// corresponding `Color` RGB equivalent.\n428:     ///\n429:     /// Hue values should be in the range [-180.0..180.0]. Values outside this range are normalized\n430:     /// by wrapping.\n431:     ///\n432:     /// Saturation and L values should be in the range [0.0..100.0]. Values outside this range are\n433:     /// clamped.\n434:     ///\n435:     /// Clamping to valid ranges happens before conversion to RGB.\n436:     ///\n437:     /// # Examples\n438:     ///\n439:     /// ```\n440:     /// use ratatui::{palette::Hsluv, style::Color};\n441:     ///\n442:     /// // Minimum Lightness is black\n443:     /// let color: Color = Color::from_hsluv(Hsluv::new(0.0, 100.0, 0.0));\n444:     /// assert_eq!(color, Color::Rgb(0, 0, 0));\n445:     ///\n446:     /// // Maximum Lightness is white\n447:     /// let color: Color = Color::from_hsluv(Hsluv::new(0.0, 0.0, 100.0));\n448:     /// assert_eq!(color, Color::Rgb(255, 255, 255));\n449:     ///",
+    "compiled_rustdoc_example": "use ratatui::{palette::Hsluv, style::Color};\n\n// Minimum Lightness is black\nlet color: Color = Color::from_hsluv(Hsluv::new(0.0, 100.0, 0.0));\nassert_eq!(color, Color::Rgb(0, 0, 0));\n\n// Maximum Lightness is white\nlet color: Color = Color::from_hsluv(Hsluv::new(0.0, 0.0, 100.0));\nassert_eq!(color, Color::Rgb(255, 255, 255));\n\n// Minimum Saturation is fully desaturated red = gray\nlet color = Color::from_hsluv(Hsluv::new(0.0, 0.0, 50.0));\nassert_eq!(color, Color::Rgb(119, 119, 119));\n\n// Bright Red\nlet color = Color::from_hsluv(Hsluv::new(12.18, 100.0, 53.2));\nassert_eq!(color, Color::Rgb(255, 0, 0));\n\n// Bright Blue\nlet color = Color::from_hsluv(Hsluv::new(-94.13, 100.0, 32.3));\nassert_eq!(color, Color::Rgb(0, 0, 255));",
+    "visible_rustdoc_example": "use ratatui::{palette::Hsluv, style::Color};\n\n// Minimum Lightness is black\nlet color: Color = Color::from_hsluv(Hsluv::new(0.0, 100.0, 0.0));\nassert_eq!(color, Color::Rgb(0, 0, 0));\n\n// Maximum Lightness is white\nlet color: Color = Color::from_hsluv(Hsluv::new(0.0, 0.0, 100.0));\nassert_eq!(color, Color::Rgb(255, 255, 255));\n\n// Minimum Saturation is fully desaturated red = gray\nlet color = Color::from_hsluv(Hsluv::new(0.0, 0.0, 50.0));\nassert_eq!(color, Color::Rgb(119, 119, 119));\n\n// Bright Red\nlet color = Color::from_hsluv(Hsluv::new(12.18, 100.0, 53.2));\nassert_eq!(color, Color::Rgb(255, 0, 0));\n\n// Bright Blue\nlet color = Color::from_hsluv(Hsluv::new(-94.13, 100.0, 32.3));\nassert_eq!(color, Color::Rgb(0, 0, 255));",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "cc57460dbc68671e",
+    "crate": "sea-query",
+    "version": "0.32.5",
+    "path": "src/expr.rs",
+    "line": 3624,
+    "source_url": "https://docs.rs/crate/sea-query/0.32.5/source/src/expr.rs",
+    "archive_sha256": "5506de3a33d9ee4ee161c5847acb87fe4f82ced6649afc9eabeb8df6f40ba94a",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "all-features",
+      "all-types",
+      "attr",
+      "backend-mysql",
+      "backend-postgres",
+      "backend-sqlite",
+      "default",
+      "derive",
+      "hashable-value",
+      "option-more-parentheses",
+      "option-sqlite-exact-column-type",
+      "postgres-array",
+      "postgres-interval",
+      "postgres-vector",
+      "tests-cfg",
+      "thread-safe",
+      "with-bigdecimal",
+      "with-chrono",
+      "with-ipnetwork",
+      "with-json",
+      "with-mac_address",
+      "with-rust_decimal",
+      "with-time",
+      "with-uuid"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "3594:     /// use sea_query::{tests_cfg::*, *};\n3595:     ///\n3596:     /// let query = Query::select()\n3597:     ///     .column(Char::SizeW)\n3598:     ///     .from(Char::Table)\n3599:     ///     .and_where(Expr::col(Char::SizeW).eq(1).not())\n3600:     ///     .to_owned();\n3601:     ///\n3602:     /// assert_eq!(\n3603:     ///     query.to_string(MysqlQueryBuilder),\n3604:     ///     r#\"SELECT `size_w` FROM `character` WHERE NOT `size_w` = 1\"#\n3605:     /// );\n3606:     /// assert_eq!(\n3607:     ///     query.to_string(PostgresQueryBuilder),\n3608:     ///     r#\"SELECT \"size_w\" FROM \"character\" WHERE NOT \"size_w\" = 1\"#\n3609:     /// );\n3610:     /// assert_eq!(\n3611:     ///     query.to_string(SqliteQueryBuilder),\n3612:     ///     r#\"SELECT \"size_w\" FROM \"character\" WHERE NOT \"size_w\" = 1\"#\n3613:     /// );\n3614:     /// ```\n3615:     #[allow(clippy::should_implement_trait)]\n3616:     pub fn not(self) -> SimpleExpr {\n3617:         ExprTrait::not(self)\n3618:     }\n3619: \n3620:     /// Express a logical `AND` operation.\n3621:     ///\n3622:     /// # Examples\n3623:     ///\n3624:     /// ```\n3625:     /// use sea_query::{*, tests_cfg::*};\n3626:     ///\n3627:     /// let query = Query::select()\n3628:     ///     .columns([Char::Character, Char::SizeW, Char::SizeH])\n3629:     ///     .from(Char::Table)\n3630:     ///     .cond_where(any![\n3631:     ///         Expr::col(Char::SizeW).eq(1).and(Expr::col(Char::SizeH).eq(2)),\n3632:     ///         Expr::col(Char::SizeW).eq(3).and(Expr::col(Char::SizeH).eq(4)),\n3633:     ///     ])\n3634:     ///     .to_owned();",
+    "compiled_rustdoc_example": "use sea_query::{*, tests_cfg::*};\n\nlet query = Query::select()\n    .columns([Char::Character, Char::SizeW, Char::SizeH])\n    .from(Char::Table)\n    .cond_where(any![\n        Expr::col(Char::SizeW).eq(1).and(Expr::col(Char::SizeH).eq(2)),\n        Expr::col(Char::SizeW).eq(3).and(Expr::col(Char::SizeH).eq(4)),\n    ])\n    .to_owned();\n\nassert_eq!(\n    query.to_string(MysqlQueryBuilder),\n    r#\"SELECT `character`, `size_w`, `size_h` FROM `character` WHERE (`size_w` = 1 AND `size_h` = 2) OR (`size_w` = 3 AND `size_h` = 4)\"#\n);\nassert_eq!(\n    query.to_string(PostgresQueryBuilder),\n    r#\"SELECT \"character\", \"size_w\", \"size_h\" FROM \"character\" WHERE (\"size_w\" = 1 AND \"size_h\" = 2) OR (\"size_w\" = 3 AND \"size_h\" = 4)\"#\n);\nassert_eq!(\n    query.to_string(SqliteQueryBuilder),\n    r#\"SELECT \"character\", \"size_w\", \"size_h\" FROM \"character\" WHERE (\"size_w\" = 1 AND \"size_h\" = 2) OR (\"size_w\" = 3 AND \"size_h\" = 4)\"#\n);",
+    "visible_rustdoc_example": "use sea_query::{*, tests_cfg::*};\n\nlet query = Query::select()\n    .columns([Char::Character, Char::SizeW, Char::SizeH])\n    .from(Char::Table)\n    .cond_where(any![\n        Expr::col(Char::SizeW).eq(1).and(Expr::col(Char::SizeH).eq(2)),\n        Expr::col(Char::SizeW).eq(3).and(Expr::col(Char::SizeH).eq(4)),\n    ])\n    .to_owned();\n\nassert_eq!(\n    query.to_string(MysqlQueryBuilder),\n    r#\"SELECT `character`, `size_w`, `size_h` FROM `character` WHERE (`size_w` = 1 AND `size_h` = 2) OR (`size_w` = 3 AND `size_h` = 4)\"#\n);\nassert_eq!(\n    query.to_string(PostgresQueryBuilder),\n    r#\"SELECT \"character\", \"size_w\", \"size_h\" FROM \"character\" WHERE (\"size_w\" = 1 AND \"size_h\" = 2) OR (\"size_w\" = 3 AND \"size_h\" = 4)\"#\n);\nassert_eq!(\n    query.to_string(SqliteQueryBuilder),\n    r#\"SELECT \"character\", \"size_w\", \"size_h\" FROM \"character\" WHERE (\"size_w\" = 1 AND \"size_h\" = 2) OR (\"size_w\" = 3 AND \"size_h\" = 4)\"#\n);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "4aed0419ba60a037",
+    "crate": "sea-query",
+    "version": "0.32.5",
+    "path": "src/expr.rs",
+    "line": 2809,
+    "source_url": "https://docs.rs/crate/sea-query/0.32.5/source/src/expr.rs",
+    "archive_sha256": "5506de3a33d9ee4ee161c5847acb87fe4f82ced6649afc9eabeb8df6f40ba94a",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "all-features",
+      "all-types",
+      "attr",
+      "backend-mysql",
+      "backend-postgres",
+      "backend-sqlite",
+      "default",
+      "derive",
+      "hashable-value",
+      "option-more-parentheses",
+      "option-sqlite-exact-column-type",
+      "postgres-array",
+      "postgres-interval",
+      "postgres-vector",
+      "tests-cfg",
+      "thread-safe",
+      "with-bigdecimal",
+      "with-chrono",
+      "with-ipnetwork",
+      "with-json",
+      "with-mac_address",
+      "with-rust_decimal",
+      "with-time",
+      "with-uuid"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "2779:     ///\n2780:     /// ```\n2781:     /// use sea_query::{tests_cfg::*, *};\n2782:     ///\n2783:     /// let query = Query::select()\n2784:     ///     .expr(Expr::col((Char::Table, Char::SizeW)).max())\n2785:     ///     .from(Char::Table)\n2786:     ///     .to_owned();\n2787:     ///\n2788:     /// assert_eq!(\n2789:     ///     query.to_string(MysqlQueryBuilder),\n2790:     ///     r#\"SELECT MAX(`character`.`size_w`) FROM `character`\"#\n2791:     /// );\n2792:     /// assert_eq!(\n2793:     ///     query.to_string(PostgresQueryBuilder),\n2794:     ///     r#\"SELECT MAX(\"character\".\"size_w\") FROM \"character\"\"#\n2795:     /// );\n2796:     /// assert_eq!(\n2797:     ///     query.to_string(SqliteQueryBuilder),\n2798:     ///     r#\"SELECT MAX(\"character\".\"size_w\") FROM \"character\"\"#\n2799:     /// );\n2800:     /// ```\n2801:     pub fn max(self) -> SimpleExpr {\n2802:         Func::max(self.left).into()\n2803:     }\n2804: \n2805:     /// Express a `MIN` function.\n2806:     ///\n2807:     /// # Examples\n2808:     ///\n2809:     /// ```\n2810:     /// use sea_query::{tests_cfg::*, *};\n2811:     ///\n2812:     /// let query = Query::select()\n2813:     ///     .expr(Expr::col((Char::Table, Char::SizeW)).min())\n2814:     ///     .from(Char::Table)\n2815:     ///     .to_owned();\n2816:     ///\n2817:     /// assert_eq!(\n2818:     ///     query.to_string(MysqlQueryBuilder),\n2819:     ///     r#\"SELECT MIN(`character`.`size_w`) FROM `character`\"#",
+    "compiled_rustdoc_example": "use sea_query::{tests_cfg::*, *};\n\nlet query = Query::select()\n    .expr(Expr::col((Char::Table, Char::SizeW)).min())\n    .from(Char::Table)\n    .to_owned();\n\nassert_eq!(\n    query.to_string(MysqlQueryBuilder),\n    r#\"SELECT MIN(`character`.`size_w`) FROM `character`\"#\n);\nassert_eq!(\n    query.to_string(PostgresQueryBuilder),\n    r#\"SELECT MIN(\"character\".\"size_w\") FROM \"character\"\"#\n);\nassert_eq!(\n    query.to_string(SqliteQueryBuilder),\n    r#\"SELECT MIN(\"character\".\"size_w\") FROM \"character\"\"#\n);",
+    "visible_rustdoc_example": "use sea_query::{tests_cfg::*, *};\n\nlet query = Query::select()\n    .expr(Expr::col((Char::Table, Char::SizeW)).min())\n    .from(Char::Table)\n    .to_owned();\n\nassert_eq!(\n    query.to_string(MysqlQueryBuilder),\n    r#\"SELECT MIN(`character`.`size_w`) FROM `character`\"#\n);\nassert_eq!(\n    query.to_string(PostgresQueryBuilder),\n    r#\"SELECT MIN(\"character\".\"size_w\") FROM \"character\"\"#\n);\nassert_eq!(\n    query.to_string(SqliteQueryBuilder),\n    r#\"SELECT MIN(\"character\".\"size_w\") FROM \"character\"\"#\n);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "869b73b34d6f7326",
+    "crate": "time",
+    "version": "0.3.41",
+    "path": "src/utc_offset.rs",
+    "line": 331,
+    "source_url": "https://docs.rs/crate/time/0.3.41/source/src/utc_offset.rs",
+    "archive_sha256": "8a7619e19bc266e0f9c5e6686659d394bc57973859340060a69221e57dbc0c40",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "targets": [
+        "x86_64-unknown-linux-gnu"
+      ],
+      "rustdoc-args": [
+        "--generate-link-to-definition"
+      ]
+    },
+    "candidate_feature_names": [
+      "alloc",
+      "default",
+      "formatting",
+      "large-dates",
+      "local-offset",
+      "macros",
+      "parsing",
+      "quickcheck",
+      "rand",
+      "serde",
+      "serde-human-readable",
+      "serde-well-known",
+      "std",
+      "wasm-bindgen"
+    ],
+    "nearby_source_mentions_feature_config": true,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "301:         self.hours.get() == 0 && self.minutes.get() == 0 && self.seconds.get() == 0\n302:     }\n303: \n304:     /// Check if the offset is positive, or east of UTC.\n305:     ///\n306:     /// ```rust\n307:     /// # use time_macros::offset;\n308:     /// assert!(offset!(+1:02:03).is_positive());\n309:     /// assert!(!offset!(-1:02:03).is_positive());\n310:     /// assert!(!offset!(UTC).is_positive());\n311:     /// ```\n312:     pub const fn is_positive(self) -> bool {\n313:         self.hours.get() > 0 || self.minutes.get() > 0 || self.seconds.get() > 0\n314:     }\n315: \n316:     /// Check if the offset is negative, or west of UTC.\n317:     ///\n318:     /// ```rust\n319:     /// # use time_macros::offset;\n320:     /// assert!(!offset!(+1:02:03).is_negative());\n321:     /// assert!(offset!(-1:02:03).is_negative());\n322:     /// assert!(!offset!(UTC).is_negative());\n323:     /// ```\n324:     pub const fn is_negative(self) -> bool {\n325:         self.hours.get() < 0 || self.minutes.get() < 0 || self.seconds.get() < 0\n326:     }\n327: \n328:     /// Attempt to obtain the system's UTC offset at a known moment in time. If the offset cannot be\n329:     /// determined, an error is returned.\n330:     ///\n331:     /// ```rust\n332:     /// # use time::{UtcOffset, OffsetDateTime};\n333:     /// let local_offset = UtcOffset::local_offset_at(OffsetDateTime::UNIX_EPOCH);\n334:     /// # if false {\n335:     /// assert!(local_offset.is_ok());\n336:     /// # }\n337:     /// ```\n338:     #[cfg(feature = \"local-offset\")]\n339:     pub fn local_offset_at(datetime: OffsetDateTime) -> Result<Self, error::IndeterminateOffset> {\n340:         local_offset_at(datetime).ok_or(error::IndeterminateOffset)\n341:     }",
+    "compiled_rustdoc_example": "use time::{UtcOffset, OffsetDateTime};\nlet local_offset = UtcOffset::local_offset_at(OffsetDateTime::UNIX_EPOCH);\nif false {\nassert!(local_offset.is_ok());\n}",
+    "visible_rustdoc_example": "let local_offset = UtcOffset::local_offset_at(OffsetDateTime::UNIX_EPOCH);\nassert!(local_offset.is_ok());",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "292a6fb8e93f439c",
+    "crate": "figment",
+    "version": "0.10.19",
+    "path": "src/providers/env.rs",
+    "line": 557,
+    "source_url": "https://docs.rs/crate/figment/0.10.19/source/src/providers/env.rs",
+    "archive_sha256": "8cb01cd46b0cf372153850f4c6c272d9cbea2da513e07538405148f95bd789f3",
+    "docs_rs_metadata": {
+      "all-features": true
+    },
+    "candidate_feature_names": [
+      "env",
+      "json",
+      "parse-value",
+      "test",
+      "yaml"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "527:     /// let env = Env::raw();\n528:     /// assert_eq!(env.profile, Profile::Default);\n529:     ///\n530:     /// let env = env.profile(\"debug\");\n531:     /// assert_eq!(env.profile, Profile::from(\"debug\"));\n532:     /// ```\n533:     pub fn profile<P: Into<Profile>>(mut self, profile: P) -> Self {\n534:         self.profile = profile.into();\n535:         self\n536:     }\n537: \n538:     /// Sets the profile config data will be emitted to to `global`.\n539:     ///\n540:     /// ```rust\n541:     /// use figment::{Profile, providers::Env};\n542:     ///\n543:     /// let env = Env::raw();\n544:     /// assert_eq!(env.profile, Profile::Default);\n545:     ///\n546:     /// let env = env.global();\n547:     /// assert_eq!(env.profile, Profile::Global);\n548:     /// ```\n549:     pub fn global(mut self) -> Self {\n550:         self.profile = Profile::Global;\n551:         self\n552:     }\n553: \n554:     /// A convenience method to retrieve the value for an environment variable\n555:     /// with name `name`. Retrieval is case-insensitive.\n556:     ///\n557:     /// ```rust\n558:     /// use figment::{Jail, providers::Env};\n559:     ///\n560:     /// Jail::expect_with(|jail| {\n561:     ///     jail.set_env(\"TESTING\", 123);\n562:     ///     assert_eq!(Env::var(\"testing\"), Some(\"123\".to_string()));\n563:     ///     Ok(())\n564:     /// });\n565:     /// ```\n566:     pub fn var(name: &str) -> Option<String> {\n567:         for (env_key, val) in std::env::vars_os() {",
+    "compiled_rustdoc_example": "use figment::{Jail, providers::Env};\n\nJail::expect_with(|jail| {\n    jail.set_env(\"TESTING\", 123);\n    assert_eq!(Env::var(\"testing\"), Some(\"123\".to_string()));\n    Ok(())\n});",
+    "visible_rustdoc_example": "use figment::{Jail, providers::Env};\n\nJail::expect_with(|jail| {\n    jail.set_env(\"TESTING\", 123);\n    assert_eq!(Env::var(\"testing\"), Some(\"123\".to_string()));\n    Ok(())\n});",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "babba9f5f04cf89e",
+    "crate": "hyper-util",
+    "version": "0.1.15",
+    "path": "src/server/conn/auto/mod.rs",
+    "line": 174,
+    "source_url": "https://docs.rs/crate/hyper-util/0.1.15/source/src/server/conn/auto/mod.rs",
+    "archive_sha256": "7f66d5bd4c6f02bf0542fad85d626775bab9258cf795a4256dcaf3161114d1df",
+    "docs_rs_metadata": {
+      "features": [
+        "full"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "__internal_happy_eyeballs_tests",
+      "client",
+      "client-legacy",
+      "client-proxy",
+      "client-proxy-system",
+      "default",
+      "full",
+      "http1",
+      "http2",
+      "server",
+      "server-auto",
+      "server-graceful",
+      "service",
+      "tokio",
+      "tracing"
+    ],
+    "nearby_source_mentions_feature_config": true,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "144:             Some(Version::H1) => true,\n145:             #[cfg(feature = \"http2\")]\n146:             Some(Version::H2) => false,\n147:             #[cfg(any(feature = \"http1\", feature = \"http2\"))]\n148:             _ => true,\n149:         }\n150:     }\n151: \n152:     /// Returns `true` if this builder can serve an HTTP/2-based connection.\n153:     pub fn is_http2_available(&self) -> bool {\n154:         match self.version {\n155:             #[cfg(feature = \"http1\")]\n156:             Some(Version::H1) => false,\n157:             #[cfg(feature = \"http2\")]\n158:             Some(Version::H2) => true,\n159:             #[cfg(any(feature = \"http1\", feature = \"http2\"))]\n160:             _ => true,\n161:         }\n162:     }\n163: \n164:     /// Set whether HTTP/1 connections will write header names as title case at\n165:     /// the socket level.\n166:     ///\n167:     /// This setting only affects HTTP/1 connections. HTTP/2 connections are\n168:     /// not affected by this setting.\n169:     ///\n170:     /// Default is false.\n171:     ///\n172:     /// # Example\n173:     ///\n174:     /// ```\n175:     /// use hyper_util::{\n176:     ///     rt::TokioExecutor,\n177:     ///     server::conn::auto,\n178:     /// };\n179:     ///\n180:     /// auto::Builder::new(TokioExecutor::new())\n181:     ///     .title_case_headers(true);\n182:     /// ```\n183:     #[cfg(feature = \"http1\")]\n184:     pub fn title_case_headers(mut self, enabled: bool) -> Self {",
+    "compiled_rustdoc_example": "use hyper_util::{\n    rt::TokioExecutor,\n    server::conn::auto,\n};\n\nauto::Builder::new(TokioExecutor::new())\n    .title_case_headers(true);",
+    "visible_rustdoc_example": "use hyper_util::{\n    rt::TokioExecutor,\n    server::conn::auto,\n};\n\nauto::Builder::new(TokioExecutor::new())\n    .title_case_headers(true);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "fd02b052feef4504",
+    "crate": "poem",
+    "version": "3.1.12",
+    "path": "src/web/cookie.rs",
+    "line": 90,
+    "source_url": "https://docs.rs/crate/poem/3.1.12/source/src/web/cookie.rs",
+    "archive_sha256": "9f977080932c87287147dca052951c3e2696f8759863f6b4e4c0c9ffe7a4cc8b",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "acme",
+      "acme-base",
+      "acme-native-roots",
+      "acme-webpki-roots",
+      "compression",
+      "cookie",
+      "csrf",
+      "default",
+      "embed",
+      "i18n",
+      "multipart",
+      "native-tls",
+      "openssl-tls",
+      "opentelemetry",
+      "prometheus",
+      "redis-session",
+      "requestid",
+      "rustls",
+      "server",
+      "session",
+      "sonic-rs",
+      "sse",
+      "static-files",
+      "tempfile",
+      "test",
+      "tower-compat",
+      "websocket",
+      "xml",
+      "yaml"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "60:         Self(libcookie::Cookie::new(name.into(), value.into()))\n61:     }\n62: \n63:     /// Creates a new `Cookie` with the given name and an empty value.\n64:     ///\n65:     /// # Example\n66:     ///\n67:     /// ```rust\n68:     /// use poem::web::cookie::Cookie;\n69:     ///\n70:     /// let cookie = Cookie::named(\"foo\");\n71:     /// assert_eq!(cookie.name(), \"foo\");\n72:     /// assert!(cookie.value_str().is_empty());\n73:     /// ```\n74:     pub fn named(name: impl Into<String>) -> Self {\n75:         Self::new_with_str(name, \"\")\n76:     }\n77: \n78:     /// Parses a Cookie from the given HTTP cookie header value string.\n79:     pub fn parse(s: impl AsRef<str>) -> Result<Self, ParseCookieError> {\n80:         Ok(Self(\n81:             libcookie::Cookie::parse_encoded(s.as_ref().to_string())\n82:                 .map_err(|_| ParseCookieError::CookieIllegal)?,\n83:         ))\n84:     }\n85: \n86:     /// Returns the Domain of the cookie if one was specified.\n87:     ///\n88:     /// # Example\n89:     ///\n90:     /// ```rust\n91:     /// use poem::web::cookie::Cookie;\n92:     ///\n93:     /// let cookie = Cookie::parse(\"foo=bar; domain=example.com\").unwrap();\n94:     /// assert_eq!(cookie.domain(), Some(\"example.com\"));\n95:     /// ```\n96:     pub fn domain(&self) -> Option<&str> {\n97:         self.0.domain()\n98:     }\n99: \n100:     /// Returns the expiration date-time of the cookie if one was specified.",
+    "compiled_rustdoc_example": "use poem::web::cookie::Cookie;\n\nlet cookie = Cookie::parse(\"foo=bar; domain=example.com\").unwrap();\nassert_eq!(cookie.domain(), Some(\"example.com\"));",
+    "visible_rustdoc_example": "use poem::web::cookie::Cookie;\n\nlet cookie = Cookie::parse(\"foo=bar; domain=example.com\").unwrap();\nassert_eq!(cookie.domain(), Some(\"example.com\"));",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "8be82433cb971cda",
+    "crate": "poem",
+    "version": "3.1.12",
+    "path": "src/web/cookie.rs",
+    "line": 198,
+    "source_url": "https://docs.rs/crate/poem/3.1.12/source/src/web/cookie.rs",
+    "archive_sha256": "9f977080932c87287147dca052951c3e2696f8759863f6b4e4c0c9ffe7a4cc8b",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "acme",
+      "acme-base",
+      "acme-native-roots",
+      "acme-webpki-roots",
+      "compression",
+      "cookie",
+      "csrf",
+      "default",
+      "embed",
+      "i18n",
+      "multipart",
+      "native-tls",
+      "openssl-tls",
+      "opentelemetry",
+      "prometheus",
+      "redis-session",
+      "requestid",
+      "rustls",
+      "server",
+      "session",
+      "sonic-rs",
+      "sse",
+      "static-files",
+      "tempfile",
+      "test",
+      "tower-compat",
+      "websocket",
+      "xml",
+      "yaml"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "168:     ///\n169:     /// let cookie = Cookie::parse(\"foo=bar; Max-Age=3600\").unwrap();\n170:     /// assert_eq!(cookie.max_age(), Some(Duration::from_secs(3600)));\n171:     /// ```\n172:     pub fn max_age(&self) -> Option<Duration> {\n173:         self.0.max_age().map(|d| {\n174:             let seconds = d.whole_seconds().max(0) as u64;\n175:             let nano_seconds = d.subsec_nanoseconds().max(0) as u32;\n176:             Duration::new(seconds, nano_seconds)\n177:         })\n178:     }\n179: \n180:     /// Returns the name of `self`.\n181:     ///\n182:     /// # Example\n183:     ///\n184:     /// ```rust\n185:     /// use poem::web::cookie::Cookie;\n186:     ///\n187:     /// let cookie = Cookie::parse(\"foo=bar\").unwrap();\n188:     /// assert_eq!(cookie.name(), \"foo\");\n189:     /// ```\n190:     pub fn name(&self) -> &str {\n191:         self.0.name()\n192:     }\n193: \n194:     /// Returns the `Path` of the cookie if one was specified.\n195:     ///\n196:     /// # Example\n197:     ///\n198:     /// ```rust\n199:     /// use poem::web::cookie::Cookie;\n200:     ///\n201:     /// let cookie = Cookie::parse(\"foo=bar; path=/api\").unwrap();\n202:     /// assert_eq!(cookie.path(), Some(\"/api\"));\n203:     /// ```\n204:     pub fn path(&self) -> Option<&str> {\n205:         self.0.path()\n206:     }\n207: \n208:     /// Returns the `SameSite` attribute of this cookie if one was specified.",
+    "compiled_rustdoc_example": "use poem::web::cookie::Cookie;\n\nlet cookie = Cookie::parse(\"foo=bar; path=/api\").unwrap();\nassert_eq!(cookie.path(), Some(\"/api\"));",
+    "visible_rustdoc_example": "use poem::web::cookie::Cookie;\n\nlet cookie = Cookie::parse(\"foo=bar; path=/api\").unwrap();\nassert_eq!(cookie.path(), Some(\"/api\"));",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "bbe13d6ad3a253ac",
+    "crate": "poem",
+    "version": "3.1.12",
+    "path": "src/endpoint/static_files.rs",
+    "line": 88,
+    "source_url": "https://docs.rs/crate/poem/3.1.12/source/src/endpoint/static_files.rs",
+    "archive_sha256": "9f977080932c87287147dca052951c3e2696f8759863f6b4e4c0c9ffe7a4cc8b",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "acme",
+      "acme-base",
+      "acme-native-roots",
+      "acme-webpki-roots",
+      "compression",
+      "cookie",
+      "csrf",
+      "default",
+      "embed",
+      "i18n",
+      "multipart",
+      "native-tls",
+      "openssl-tls",
+      "opentelemetry",
+      "prometheus",
+      "redis-session",
+      "requestid",
+      "rustls",
+      "server",
+      "session",
+      "sonic-rs",
+      "sse",
+      "static-files",
+      "tempfile",
+      "test",
+      "tower-compat",
+      "websocket",
+      "xml",
+      "yaml"
+    ],
+    "nearby_source_mentions_feature_config": true,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "58:     }\n59: }\n60: \n61: struct FileRef {\n62:     url: String,\n63:     filename: String,\n64:     is_dir: bool,\n65: }\n66: \n67: /// Static files handling service.\n68: ///\n69: /// # Errors\n70: ///\n71: /// - [`StaticFileError`]\n72: #[cfg_attr(docsrs, doc(cfg(feature = \"static-files\")))]\n73: pub struct StaticFilesEndpoint {\n74:     path: PathBuf,\n75:     show_files_listing: bool,\n76:     index_file: Option<String>,\n77:     fallback_to_index: bool,\n78:     no_cache_index: bool,\n79:     prefer_utf8: bool,\n80:     redirect_to_slash: bool,\n81: }\n82: \n83: impl StaticFilesEndpoint {\n84:     /// Create new static files service for a specified base directory.\n85:     ///\n86:     /// # Example\n87:     ///\n88:     /// ```\n89:     /// use poem::{Route, endpoint::StaticFilesEndpoint};\n90:     ///\n91:     /// let app = Route::new().nest(\n92:     ///     \"/files\",\n93:     ///     StaticFilesEndpoint::new(\"/etc/www\")\n94:     ///         .show_files_listing()\n95:     ///         .index_file(\"index.html\"),\n96:     /// );\n97:     /// ```\n98:     pub fn new(path: impl Into<PathBuf>) -> Self {",
+    "compiled_rustdoc_example": "use poem::{Route, endpoint::StaticFilesEndpoint};\n\nlet app = Route::new().nest(\n    \"/files\",\n    StaticFilesEndpoint::new(\"/etc/www\")\n        .show_files_listing()\n        .index_file(\"index.html\"),\n);",
+    "visible_rustdoc_example": "use poem::{Route, endpoint::StaticFilesEndpoint};\n\nlet app = Route::new().nest(\n    \"/files\",\n    StaticFilesEndpoint::new(\"/etc/www\")\n        .show_files_listing()\n        .index_file(\"index.html\"),\n);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "1efe6e3161498bc9",
+    "crate": "sea-query",
+    "version": "0.32.5",
+    "path": "src/expr.rs",
+    "line": 3801,
+    "source_url": "https://docs.rs/crate/sea-query/0.32.5/source/src/expr.rs",
+    "archive_sha256": "5506de3a33d9ee4ee161c5847acb87fe4f82ced6649afc9eabeb8df6f40ba94a",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "all-features",
+      "all-types",
+      "attr",
+      "backend-mysql",
+      "backend-postgres",
+      "backend-sqlite",
+      "default",
+      "derive",
+      "hashable-value",
+      "option-more-parentheses",
+      "option-sqlite-exact-column-type",
+      "postgres-array",
+      "postgres-interval",
+      "postgres-vector",
+      "tests-cfg",
+      "thread-safe",
+      "with-bigdecimal",
+      "with-chrono",
+      "with-ipnetwork",
+      "with-json",
+      "with-mac_address",
+      "with-rust_decimal",
+      "with-time",
+      "with-uuid"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "3771:     ///     .from(Char::Table)\n3772:     ///     .to_owned();\n3773:     ///\n3774:     /// assert_eq!(\n3775:     ///     query.to_string(MysqlQueryBuilder),\n3776:     ///     r#\"SELECT MAX(`size_w`) + MAX(`size_h`) FROM `character`\"#\n3777:     /// );\n3778:     /// assert_eq!(\n3779:     ///     query.to_string(PostgresQueryBuilder),\n3780:     ///     r#\"SELECT MAX(\"size_w\") + MAX(\"size_h\") FROM \"character\"\"#\n3781:     /// );\n3782:     /// assert_eq!(\n3783:     ///     query.to_string(SqliteQueryBuilder),\n3784:     ///     r#\"SELECT MAX(\"size_w\") + MAX(\"size_h\") FROM \"character\"\"#\n3785:     /// );\n3786:     /// ```\n3787:     #[allow(clippy::should_implement_trait)]\n3788:     pub fn add<T>(self, right: T) -> Self\n3789:     where\n3790:         T: Into<SimpleExpr>,\n3791:     {\n3792:         ExprTrait::add(self, right)\n3793:     }\n3794: \n3795:     /// Perform multiplication with another [`SimpleExpr`].\n3796:     ///\n3797:     /// This is equivalent to a newer [ExprTrait::mul] and may require more some wrapping beforehand.\n3798:     ///\n3799:     /// # Examples\n3800:     ///\n3801:     /// ```\n3802:     /// use sea_query::{tests_cfg::*, *};\n3803:     ///\n3804:     /// let query = Query::select()\n3805:     ///     .expr(\n3806:     ///         Expr::col(Char::SizeW)\n3807:     ///             .max()\n3808:     ///             .mul(Expr::col(Char::SizeH).max()),\n3809:     ///     )\n3810:     ///     .from(Char::Table)\n3811:     ///     .to_owned();",
+    "compiled_rustdoc_example": "use sea_query::{tests_cfg::*, *};\n\nlet query = Query::select()\n    .expr(\n        Expr::col(Char::SizeW)\n            .max()\n            .mul(Expr::col(Char::SizeH).max()),\n    )\n    .from(Char::Table)\n    .to_owned();\n\nassert_eq!(\n    query.to_string(MysqlQueryBuilder),\n    r#\"SELECT MAX(`size_w`) * MAX(`size_h`) FROM `character`\"#\n);\nassert_eq!(\n    query.to_string(PostgresQueryBuilder),\n    r#\"SELECT MAX(\"size_w\") * MAX(\"size_h\") FROM \"character\"\"#\n);\nassert_eq!(\n    query.to_string(SqliteQueryBuilder),\n    r#\"SELECT MAX(\"size_w\") * MAX(\"size_h\") FROM \"character\"\"#\n);",
+    "visible_rustdoc_example": "use sea_query::{tests_cfg::*, *};\n\nlet query = Query::select()\n    .expr(\n        Expr::col(Char::SizeW)\n            .max()\n            .mul(Expr::col(Char::SizeH).max()),\n    )\n    .from(Char::Table)\n    .to_owned();\n\nassert_eq!(\n    query.to_string(MysqlQueryBuilder),\n    r#\"SELECT MAX(`size_w`) * MAX(`size_h`) FROM `character`\"#\n);\nassert_eq!(\n    query.to_string(PostgresQueryBuilder),\n    r#\"SELECT MAX(\"size_w\") * MAX(\"size_h\") FROM \"character\"\"#\n);\nassert_eq!(\n    query.to_string(SqliteQueryBuilder),\n    r#\"SELECT MAX(\"size_w\") * MAX(\"size_h\") FROM \"character\"\"#\n);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "a177aebdb27b5488",
+    "crate": "sea-query",
+    "version": "0.32.5",
+    "path": "src/query/select.rs",
+    "line": 17,
+    "source_url": "https://docs.rs/crate/sea-query/0.32.5/source/src/query/select.rs",
+    "archive_sha256": "5506de3a33d9ee4ee161c5847acb87fe4f82ced6649afc9eabeb8df6f40ba94a",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "all-features",
+      "all-types",
+      "attr",
+      "backend-mysql",
+      "backend-postgres",
+      "backend-sqlite",
+      "default",
+      "derive",
+      "hashable-value",
+      "option-more-parentheses",
+      "option-sqlite-exact-column-type",
+      "postgres-array",
+      "postgres-interval",
+      "postgres-vector",
+      "tests-cfg",
+      "thread-safe",
+      "with-bigdecimal",
+      "with-chrono",
+      "with-ipnetwork",
+      "with-json",
+      "with-mac_address",
+      "with-rust_decimal",
+      "with-time",
+      "with-uuid"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "1: use crate::{\n2:     backend::QueryBuilder,\n3:     expr::*,\n4:     prepare::*,\n5:     query::{condition::*, OrderedStatement},\n6:     types::*,\n7:     value::*,\n8:     FunctionCall, QueryStatementBuilder, QueryStatementWriter, SubQueryStatement, WindowStatement,\n9:     WithClause, WithQuery,\n10: };\n11: use inherent::inherent;\n12: \n13: /// Select rows from an existing table\n14: ///\n15: /// # Examples\n16: ///\n17: /// ```\n18: /// use sea_query::{*, tests_cfg::*};\n19: ///\n20: /// let query = Query::select()\n21: ///     .column(Char::Character)\n22: ///     .column((Font::Table, Font::Name))\n23: ///     .from(Char::Table)\n24: ///     .left_join(Font::Table, Expr::col((Char::Table, Char::FontId)).equals((Font::Table, Font::Id)))\n25: ///     .and_where(Expr::col(Char::SizeW).is_in([3, 4]))\n26: ///     .and_where(Expr::col(Char::Character).like(\"A%\"))\n27: ///     .to_owned();",
+    "compiled_rustdoc_example": "use sea_query::{*, tests_cfg::*};\n\nlet query = Query::select()\n    .column(Char::Character)\n    .column((Font::Table, Font::Name))\n    .from(Char::Table)\n    .left_join(Font::Table, Expr::col((Char::Table, Char::FontId)).equals((Font::Table, Font::Id)))\n    .and_where(Expr::col(Char::SizeW).is_in([3, 4]))\n    .and_where(Expr::col(Char::Character).like(\"A%\"))\n    .to_owned();\n\nassert_eq!(\n    query.to_string(MysqlQueryBuilder),\n    r#\"SELECT `character`, `font`.`name` FROM `character` LEFT JOIN `font` ON `character`.`font_id` = `font`.`id` WHERE `size_w` IN (3, 4) AND `character` LIKE 'A%'\"#\n);\nassert_eq!(\n    query.to_string(PostgresQueryBuilder),\n    r#\"SELECT \"character\", \"font\".\"name\" FROM \"character\" LEFT JOIN \"font\" ON \"character\".\"font_id\" = \"font\".\"id\" WHERE \"size_w\" IN (3, 4) AND \"character\" LIKE 'A%'\"#\n);\nassert_eq!(\n    query.to_string(SqliteQueryBuilder),\n    r#\"SELECT \"character\", \"font\".\"name\" FROM \"character\" LEFT JOIN \"font\" ON \"character\".\"font_id\" = \"font\".\"id\" WHERE \"size_w\" IN (3, 4) AND \"character\" LIKE 'A%'\"#\n);",
+    "visible_rustdoc_example": "use sea_query::{*, tests_cfg::*};\n\nlet query = Query::select()\n    .column(Char::Character)\n    .column((Font::Table, Font::Name))\n    .from(Char::Table)\n    .left_join(Font::Table, Expr::col((Char::Table, Char::FontId)).equals((Font::Table, Font::Id)))\n    .and_where(Expr::col(Char::SizeW).is_in([3, 4]))\n    .and_where(Expr::col(Char::Character).like(\"A%\"))\n    .to_owned();\n\nassert_eq!(\n    query.to_string(MysqlQueryBuilder),\n    r#\"SELECT `character`, `font`.`name` FROM `character` LEFT JOIN `font` ON `character`.`font_id` = `font`.`id` WHERE `size_w` IN (3, 4) AND `character` LIKE 'A%'\"#\n);\nassert_eq!(\n    query.to_string(PostgresQueryBuilder),\n    r#\"SELECT \"character\", \"font\".\"name\" FROM \"character\" LEFT JOIN \"font\" ON \"character\".\"font_id\" = \"font\".\"id\" WHERE \"size_w\" IN (3, 4) AND \"character\" LIKE 'A%'\"#\n);\nassert_eq!(\n    query.to_string(SqliteQueryBuilder),\n    r#\"SELECT \"character\", \"font\".\"name\" FROM \"character\" LEFT JOIN \"font\" ON \"character\".\"font_id\" = \"font\".\"id\" WHERE \"size_w\" IN (3, 4) AND \"character\" LIKE 'A%'\"#\n);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  }
+]

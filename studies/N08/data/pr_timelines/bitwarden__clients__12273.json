@@ -1,0 +1,77 @@
+{
+  "fetched_utc": "2026-11-14T17:12:16.460498+00:00",
+  "merged_at": "2025-01-07T15:25:31Z",
+  "opened_at": "2024-12-06T11:08:15-05:00",
+  "pr": 12273,
+  "raw_html_sha256": "ecf3a7336650d97b39c286fab7fff1528ebfa84f3e3e99f8c7052a73f48fd445",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 13,
+  "reviews": [
+    {
+      "login": "willmartian",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2024-12-09T16:40:19Z"
+    },
+    {
+      "login": "gbubemismith",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2024-12-11T16:56:58Z"
+    },
+    {
+      "login": "BTreston",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-06T19:06:40Z"
+    },
+    {
+      "login": "JaredSnider-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-06T19:12:06Z"
+    },
+    {
+      "login": "JaredSnider-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-06T20:23:52Z"
+    },
+    {
+      "login": "audreyality",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-06T20:25:40Z"
+    },
+    {
+      "login": "gbubemismith",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-06T20:33:21Z"
+    },
+    {
+      "login": "addisonbeck",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-06T20:52:02Z"
+    },
+    {
+      "login": "BTreston",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-06T21:01:00Z"
+    },
+    {
+      "login": "willmartian",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-06T22:48:01Z"
+    },
+    {
+      "login": "dani-garcia",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-07T11:17:03Z"
+    },
+    {
+      "login": "jonashendrickx",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-07T14:22:22Z"
+    },
+    {
+      "login": "jprusik",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-07T15:24:44Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/12273"
+}

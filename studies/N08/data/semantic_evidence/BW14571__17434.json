@@ -1,0 +1,184 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 16,
+  "bytes": 21887,
+  "control_flow_or_callback_lines": 35,
+  "event": "BW14571",
+  "examples": [
+    {
+      "change": "-",
+      "code": "getAllCiphers(): Promise<CipherView[]> {",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "return this.cipherService.getAllFromApiForOrganization(this.organization.id);",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "async getAllCiphers(): Promise<CipherView[]> {",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "const baseCiphers = await super.getAllCiphers();",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "const orgCiphers = await this.cipherService.getAllFromApiForOrganization(",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.organization.id,",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "true,",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": ");",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "const cipherMap = new Map<string, CipherView>();",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "[...baseCiphers, ...orgCiphers].forEach((cipher) => cipherMap.set(cipher.id, cipher));",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "return Array.from(cipherMap.values());",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "// FIXME: Update this file to be type safe and remove this and next line",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "// @ts-strict-ignore",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "export class CipherReportComponent implements OnDestroy {",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "export abstract class CipherReportComponent implements OnDestroy {",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "organization: Organization;",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "organizations: Organization[];",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "organization: Organization | undefined = undefined;",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "organizations: Organization[] = [];",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "currentFilterStatus: number | string;",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "currentFilterStatus: number | string = 0;",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "private destroyed$: Subject<void> = new Subject();",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected destroyed$: Subject<void> = new Subject();",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "cipherCount = this.allCiphers.filter((c) => c.organizationId === null).length;",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "cipherCount = this.allCiphers.filter((c) => !c.organizationId).length;",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "let filter = null;",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "let filter = (c: CipherView) => true;",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "const disableForm = cipher ? !cipher.edit && !this.organization.canEditAllCiphers : false;",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "const disableForm = cipher ? !cipher.edit && !this.organization?.canEditAllCiphers : false;",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "updatedCipher = await this.adminConsoleCipherFormConfigService.getCipher(",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "cipher.id as CipherId,",
+      "file": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:39.946684+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/14571",
+  "noncomment_nonimport_changed_lines": 101,
+  "pr": 17434,
+  "repository": "bitwarden/clients",
+  "sha256": "308620eff19532e3532152a8ed28f38117511f5777af0e97b1876e8694c82375",
+  "target_code_changed_lines": 132,
+  "target_files": [
+    "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/exposed-passwords-report.component.spec.ts",
+    "apps/web/src/app/dirt/reports/pages/inactive-two-factor-report.component.spec.ts",
+    "apps/web/src/app/dirt/reports/pages/inactive-two-factor-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/17434.patch"
+}

@@ -1,0 +1,7 @@
+argv: ["/workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/venvs/pypiserver_vulnerable/bin/python", "-c", "import importlib.metadata as m; print(m.version('webob'))"]
+
+[STDOUT]
+1.8.10
+
+
+[STDERR]

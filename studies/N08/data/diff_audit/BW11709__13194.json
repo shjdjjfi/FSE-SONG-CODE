@@ -1,0 +1,20 @@
+{
+  "changed_code_lines_under_target": 2,
+  "changed_files_in_whole_pr": 30,
+  "changed_files_under_target": 2,
+  "code_files_under_target": 1,
+  "code_touched": true,
+  "event": "BW11709",
+  "focused_code_touched": false,
+  "pr": 13194,
+  "raw_size_bytes": 56486,
+  "repo": "bitwarden/clients",
+  "sha256": "3c2b093f85a09bfa620ce2feae8d4d79ec3710f5dae5de76727fea93411475c5",
+  "target_file_fraction": 0.06667,
+  "target_paths": [
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+  ],
+  "test_files_under_target": 1,
+  "url": "https://github.com/bitwarden/clients/pull/13194.patch"
+}

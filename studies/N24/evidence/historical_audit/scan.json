@@ -1,0 +1,759 @@
+{
+  "date_utc": "2026-11-18",
+  "entries": [
+    {
+      "bytes": 369004,
+      "instances": [
+        {
+          "complete_hoisted": 10,
+          "declared": 10,
+          "family": "swc",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/@swc/core",
+          "parent_version": "1.15.11",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 11,
+          "declared": 11,
+          "family": "lightningcss",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/lightningcss",
+          "parent_version": "1.31.1",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 2,
+      "n_packages": 401,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "remarkablemark/npm-package-name-checker",
+      "sha": "0c8864fe7e5fff145c2b2cdd187dccdd0b15931b",
+      "sha256": "2ad762dfb4055f7c889c48efd1d24d0e405c2ee87d96209d7260352596b4a1ad",
+      "source_ref": "master",
+      "url": "https://raw.githubusercontent.com/remarkablemark/npm-package-name-checker/0c8864fe7e5fff145c2b2cdd187dccdd0b15931b/package-lock.json"
+    },
+    {
+      "bytes": 132145,
+      "instances": [
+        {
+          "complete_hoisted": 10,
+          "declared": 10,
+          "family": "swc",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/@swc/core",
+          "parent_version": "1.15.17",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 325,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "jquery/jquery-ui",
+      "sha": "dcf10556bbcfdf3e10e3ea30966482e201191411",
+      "sha256": "aa8d8debd3ff3fd9ca25cf5f43d210db4d2d9fb6bccd13fbb33529c13cfc648f",
+      "source_ref": "main",
+      "url": "https://raw.githubusercontent.com/jquery/jquery-ui/dcf10556bbcfdf3e10e3ea30966482e201191411/package-lock.json"
+    },
+    {
+      "bytes": 122689,
+      "instances": [
+        {
+          "complete_hoisted": 25,
+          "declared": 25,
+          "family": "esbuild",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/esbuild",
+          "parent_version": "0.25.5",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 20,
+          "declared": 20,
+          "family": "rollup",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/rollup",
+          "parent_version": "4.44.2",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 273,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "membranehq/mcp-server",
+      "sha": "81fa1a9baa55b1e82329b01c322f818682038568",
+      "sha256": "3fcffcc31e426a99509ee702d5fcc8c2adeb3a828dfdd95bef1a39c92b4fd9b1",
+      "source_ref": "main",
+      "url": "https://raw.githubusercontent.com/membranehq/mcp-server/81fa1a9baa55b1e82329b01c322f818682038568/package-lock.json"
+    },
+    {
+      "bytes": 347127,
+      "instances": [
+        {
+          "complete_hoisted": 10,
+          "declared": 10,
+          "family": "biome",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/@biomejs/biome",
+          "parent_version": "2.6.6",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 26,
+          "declared": 26,
+          "family": "esbuild",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/esbuild",
+          "parent_version": "0.28.2",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 11,
+          "declared": 11,
+          "family": "lightningcss",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/lightningcss",
+          "parent_version": "1.33.0",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 664,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "narumiruna/pi-extensions",
+      "sha": "f9a7cb390e34b76a8f8e768b44c88f737d0be039",
+      "sha256": "cf28440cf18573c3522b8a56c2e5a0c3937ec0666b8e78b47bd200968e5ab40d",
+      "source_ref": "main",
+      "url": "https://raw.githubusercontent.com/narumiruna/pi-extensions/f9a7cb390e34b76a8f8e768b44c88f737d0be039/package-lock.json"
+    },
+    {
+      "bytes": 175999,
+      "instances": [
+        {
+          "complete_hoisted": 26,
+          "declared": 26,
+          "family": "esbuild",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/esbuild",
+          "parent_version": "0.27.4",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 25,
+          "declared": 25,
+          "family": "rollup",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/rollup",
+          "parent_version": "4.59.0",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 23,
+          "declared": 23,
+          "family": "esbuild",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/vite-node/node_modules/esbuild",
+          "parent_version": "0.21.5",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 23,
+          "declared": 23,
+          "family": "esbuild",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/vitest/node_modules/esbuild",
+          "parent_version": "0.21.5",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 378,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "davidolrik/subspace",
+      "sha": "5926080f7d608407585760cfb3fd0bc42b7758de",
+      "sha256": "2a89b0c3ab36da5a43f929340fa3d2ce4a653f1e94f26dee4b303197a78b76b8",
+      "source_ref": "main",
+      "url": "https://raw.githubusercontent.com/davidolrik/subspace/5926080f7d608407585760cfb3fd0bc42b7758de/package-lock.json"
+    },
+    {
+      "bytes": 88636,
+      "instances": [
+        {
+          "complete_hoisted": 25,
+          "declared": 25,
+          "family": "esbuild",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/esbuild",
+          "parent_version": "0.24.2",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 20,
+          "declared": 20,
+          "family": "rollup",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/rollup",
+          "parent_version": "4.39.0",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 25,
+          "declared": 25,
+          "family": "esbuild",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/vite/node_modules/esbuild",
+          "parent_version": "0.25.2",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 192,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "cloudflare/pipelines-starter",
+      "sha": "9293022d398bd72131101829a9b0f5bdb20318eb",
+      "sha256": "7783119b1a371edccdbe118efcc80694b3d78d8b6ff2dcb7b94e2c5ec0d0511d",
+      "source_ref": "main",
+      "url": "https://raw.githubusercontent.com/cloudflare/pipelines-starter/9293022d398bd72131101829a9b0f5bdb20318eb/package-lock.json"
+    },
+    {
+      "bytes": 49444,
+      "instances": [
+        {
+          "complete_hoisted": 25,
+          "declared": 25,
+          "family": "rollup",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/rollup",
+          "parent_version": "4.60.4",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 100,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "concourse/docs",
+      "sha": "e26dd20c20619985bb447af0311c70bcb07728b3",
+      "sha256": "ed109324da293d7c97f5ecda5f2941912202593e98a9a56a03eee748585b552d",
+      "source_ref": "master",
+      "url": "https://raw.githubusercontent.com/concourse/docs/e26dd20c20619985bb447af0311c70bcb07728b3/package-lock.json"
+    },
+    {
+      "bytes": 361439,
+      "instances": [
+        {
+          "complete_hoisted": 6,
+          "declared": 8,
+          "family": "biome",
+          "incomplete_metadata": [
+            "@biomejs/cli-linux-x64",
+            "@biomejs/cli-linux-x64-musl"
+          ],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/@biomejs/biome",
+          "parent_version": "2.5.3",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 9,
+          "declared": 11,
+          "family": "lightningcss",
+          "incomplete_metadata": [
+            "lightningcss-linux-x64-gnu",
+            "lightningcss-linux-x64-musl"
+          ],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/lightningcss",
+          "parent_version": "1.32.0",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 998,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "invoiceninja/ui",
+      "sha": "50019241117dfbd82c833729d9787e672413cba4",
+      "sha256": "16b80bccd7ac725209c8e03e8c5352a9dd970381ac019300262d4b528bf192d4",
+      "source_ref": "main",
+      "url": "https://raw.githubusercontent.com/invoiceninja/ui/50019241117dfbd82c833729d9787e672413cba4/package-lock.json"
+    },
+    {
+      "bytes": 118278,
+      "instances": [
+        {
+          "complete_hoisted": 1,
+          "declared": 10,
+          "family": "swc",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [
+            "@swc/core-darwin-x64",
+            "@swc/core-linux-arm-gnueabihf",
+            "@swc/core-linux-arm64-gnu",
+            "@swc/core-linux-arm64-musl",
+            "@swc/core-linux-x64-gnu",
+            "@swc/core-linux-x64-musl",
+            "@swc/core-win32-arm64-msvc",
+            "@swc/core-win32-ia32-msvc",
+            "@swc/core-win32-x64-msvc"
+          ],
+          "parent_path": "node_modules/@swc/core",
+          "parent_version": "1.3.101",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 1,
+          "declared": 23,
+          "family": "esbuild",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [
+            "@esbuild/aix-ppc64",
+            "@esbuild/android-arm",
+            "@esbuild/android-arm64",
+            "@esbuild/android-x64",
+            "@esbuild/darwin-x64",
+            "@esbuild/freebsd-arm64",
+            "@esbuild/freebsd-x64",
+            "@esbuild/linux-arm",
+            "@esbuild/linux-arm64",
+            "@esbuild/linux-ia32",
+            "@esbuild/linux-loong64",
+            "@esbuild/linux-mips64el",
+            "@esbuild/linux-ppc64",
+            "@esbuild/linux-riscv64",
+            "@esbuild/linux-s390x",
+            "@esbuild/linux-x64",
+            "@esbuild/netbsd-x64",
+            "@esbuild/openbsd-x64",
+            "@esbuild/sunos-x64",
+            "@esbuild/win32-arm64",
+            "@esbuild/win32-ia32",
+            "@esbuild/win32-x64"
+          ],
+          "parent_path": "node_modules/esbuild",
+          "parent_version": "0.19.10",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 1,
+          "declared": 13,
+          "family": "rollup",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [
+            "@rollup/rollup-android-arm-eabi",
+            "@rollup/rollup-android-arm64",
+            "@rollup/rollup-darwin-x64",
+            "@rollup/rollup-linux-arm-gnueabihf",
+            "@rollup/rollup-linux-arm64-gnu",
+            "@rollup/rollup-linux-arm64-musl",
+            "@rollup/rollup-linux-riscv64-gnu",
+            "@rollup/rollup-linux-x64-gnu",
+            "@rollup/rollup-linux-x64-musl",
+            "@rollup/rollup-win32-arm64-msvc",
+            "@rollup/rollup-win32-ia32-msvc",
+            "@rollup/rollup-win32-x64-msvc"
+          ],
+          "parent_path": "node_modules/rollup",
+          "parent_version": "4.9.1",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 251,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "cloudreve/frontend",
+      "sha": "c7b6fa5288ed0490a5589ddff4f56ea1f96a5315",
+      "sha256": "81c770f2de8e9960312479ad77f1087274c2fe7a83d39f2d5b427a509b7a3f75",
+      "source_ref": "master",
+      "url": "https://raw.githubusercontent.com/cloudreve/frontend/c7b6fa5288ed0490a5589ddff4f56ea1f96a5315/package-lock.json"
+    },
+    {
+      "bytes": 130633,
+      "instances": [
+        {
+          "complete_hoisted": 8,
+          "declared": 8,
+          "family": "biome",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/@biomejs/biome",
+          "parent_version": "1.9.4",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 25,
+          "declared": 25,
+          "family": "esbuild",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/esbuild",
+          "parent_version": "0.24.2",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 19,
+          "declared": 19,
+          "family": "rollup",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/rollup",
+          "parent_version": "4.30.1",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 283,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "maptiler/leaflet-maptilersdk",
+      "sha": "eaf5a03e494655a21995636e0b8304b461edc7c1",
+      "sha256": "855aedd8a8f66a7faaa3bfef23ef45370fb427aa11c6165398861c7c62537fe5",
+      "source_ref": "main",
+      "url": "https://raw.githubusercontent.com/maptiler/leaflet-maptilersdk/eaf5a03e494655a21995636e0b8304b461edc7c1/package-lock.json"
+    },
+    {
+      "bytes": 135394,
+      "instances": [
+        {
+          "complete_hoisted": 0,
+          "declared": 8,
+          "family": "biome",
+          "incomplete_metadata": [
+            "@biomejs/cli-linux-x64"
+          ],
+          "missing_from_all_lock_nodes": [
+            "@biomejs/cli-darwin-arm64",
+            "@biomejs/cli-darwin-x64",
+            "@biomejs/cli-linux-arm64",
+            "@biomejs/cli-linux-arm64-musl",
+            "@biomejs/cli-linux-x64-musl",
+            "@biomejs/cli-win32-arm64",
+            "@biomejs/cli-win32-x64"
+          ],
+          "parent_path": "node_modules/@biomejs/biome",
+          "parent_version": "1.9.4",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 460,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "google/clasp",
+      "sha": "e9441e57b0ae398fdb8524dada9372c1ed8590e0",
+      "sha256": "64dd1ee23f4c88229a404b627d066b4fd3d48bf429282216c3eb3fb5224ffc8d",
+      "source_ref": "master",
+      "url": "https://raw.githubusercontent.com/google/clasp/e9441e57b0ae398fdb8524dada9372c1ed8590e0/package-lock.json"
+    },
+    {
+      "bytes": 316498,
+      "instances": [
+        {
+          "complete_hoisted": 10,
+          "declared": 10,
+          "family": "biome",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/@biomejs/biome",
+          "parent_version": "2.6.6",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 26,
+          "declared": 26,
+          "family": "esbuild",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/esbuild",
+          "parent_version": "0.28.2",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 11,
+          "declared": 11,
+          "family": "lightningcss",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/lightningcss",
+          "parent_version": "1.33.0",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 622,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "aws-actions/configure-aws-credentials",
+      "sha": "416c15366b69fd69e1df1513e25ba57af8e11d5f",
+      "sha256": "2d4ff30325fde173980ca3585f83f0110ce4e1f85fbd0ebfd9aaecd0f8c0b041",
+      "source_ref": "main",
+      "url": "https://raw.githubusercontent.com/aws-actions/configure-aws-credentials/416c15366b69fd69e1df1513e25ba57af8e11d5f/package-lock.json"
+    },
+    {
+      "bytes": 106429,
+      "instances": [
+        {
+          "complete_hoisted": 12,
+          "declared": 12,
+          "family": "swc",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/@swc/core",
+          "parent_version": "1.16.20",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 25,
+          "declared": 25,
+          "family": "rollup",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/rollup",
+          "parent_version": "4.65.1",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 223,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "hectorm/otpauth",
+      "sha": "bfac4efedee33ee87108e5ec96d43b15b168e7da",
+      "sha256": "554c30260399b59d63b91d56534d14430e0bfab0755851787dafe4a17edc9273",
+      "source_ref": "master",
+      "url": "https://raw.githubusercontent.com/hectorm/otpauth/bfac4efedee33ee87108e5ec96d43b15b168e7da/package-lock.json"
+    },
+    {
+      "bytes": 161956,
+      "instances": [
+        {
+          "complete_hoisted": 0,
+          "declared": 10,
+          "family": "swc",
+          "incomplete_metadata": [
+            "@swc/core-darwin-arm64"
+          ],
+          "missing_from_all_lock_nodes": [
+            "@swc/core-darwin-x64",
+            "@swc/core-linux-arm-gnueabihf",
+            "@swc/core-linux-arm64-gnu",
+            "@swc/core-linux-arm64-musl",
+            "@swc/core-linux-x64-gnu",
+            "@swc/core-linux-x64-musl",
+            "@swc/core-win32-arm64-msvc",
+            "@swc/core-win32-ia32-msvc",
+            "@swc/core-win32-x64-msvc"
+          ],
+          "parent_path": "node_modules/@swc/core",
+          "parent_version": "1.3.102",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 23,
+          "declared": 23,
+          "family": "esbuild",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/esbuild",
+          "parent_version": "0.19.12",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 23,
+          "declared": 23,
+          "family": "esbuild",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/vite/node_modules/esbuild",
+          "parent_version": "0.21.5",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 18,
+          "declared": 18,
+          "family": "rollup",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/vite/node_modules/rollup",
+          "parent_version": "4.28.0",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 426,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "ollama/ollama-js",
+      "sha": "c276d078eee37a0df003b9ee2120ec70327f32e9",
+      "sha256": "f10a56634daf7da7442990cb3dba3cbf3edf43310717a5d18be47ea02609b876",
+      "source_ref": "main",
+      "url": "https://raw.githubusercontent.com/ollama/ollama-js/c276d078eee37a0df003b9ee2120ec70327f32e9/package-lock.json"
+    },
+    {
+      "bytes": 410604,
+      "instances": [
+        {
+          "complete_hoisted": 12,
+          "declared": 12,
+          "family": "swc",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/@swc/core",
+          "parent_version": "1.16.18",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 11,
+          "declared": 11,
+          "family": "lightningcss",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/lightningcss",
+          "parent_version": "1.33.0",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 828,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "adonisjs/inertia",
+      "sha": "7b49d3debcb35f1856a119e9e1858287079aef2f",
+      "sha256": "72da230521ff6781b6b22d00f0460e9ff103591210897d09b882f38826467267",
+      "source_ref": "5.x",
+      "url": "https://raw.githubusercontent.com/adonisjs/inertia/7b49d3debcb35f1856a119e9e1858287079aef2f/package-lock.json"
+    },
+    {
+      "bytes": 282819,
+      "instances": [
+        {
+          "complete_hoisted": 10,
+          "declared": 10,
+          "family": "swc",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/@swc/core",
+          "parent_version": "1.15.13",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 743,
+      "parseable_packages": true,
+      "path": "package-lock.json",
+      "repo": "adonisjs/i18n",
+      "sha": "79c22bd2b472bfece976f855d6991607ad32678f",
+      "sha256": "ad695f0acc2c0a6453e3dc573638ee4be50721909dd6f0abb6da113efb75358e",
+      "source_ref": "3.x",
+      "url": "https://raw.githubusercontent.com/adonisjs/i18n/79c22bd2b472bfece976f855d6991607ad32678f/package-lock.json"
+    },
+    {
+      "bytes": 793336,
+      "instances": [
+        {
+          "complete_hoisted": 26,
+          "declared": 26,
+          "family": "esbuild",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/esbuild",
+          "parent_version": "0.25.9",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        },
+        {
+          "complete_hoisted": 20,
+          "declared": 20,
+          "family": "rollup",
+          "incomplete_metadata": [],
+          "missing_from_all_lock_nodes": [],
+          "parent_path": "node_modules/rollup",
+          "parent_version": "4.49.0",
+          "present_only_nested": [],
+          "scope": "structural lockfile audit only; not proof that a CI failure occurred"
+        }
+      ],
+      "lockfile_version": 3,
+      "n_packages": 1566,
+      "parseable_packages": true,
+      "path": "e2e/package-lock.json",
+      "repo": "stryker-mutator/stryker-js",
+      "sha": "43a4123db7a7a6112bb700fabe818d2a134cbdb2",
+      "sha256": "728586989118ecea19380cdb48405c40a91913f35e549b2f5ce8b9e072d21ce7",
+      "source_ref": "43a4123db7a7a6112bb700fabe818d2a134cbdb2",
+      "url": "https://raw.githubusercontent.com/stryker-mutator/stryker-js/43a4123db7a7a6112bb700fabe818d2a134cbdb2/e2e/package-lock.json"
+    }
+  ],
+  "limits": [
+    "No sampled GitHub lock is labeled a real CI failure without matching original CI logs",
+    "Missing optional variant entries are at-risk structural gaps, not demonstrated failed applications",
+    "Convenience sample is not an estimate of ecosystem prevalence",
+    "Public repo path/ref failures are recorded, not silently dropped"
+  ],
+  "n_failed_to_fetch_or_parse": 0,
+  "n_missing_variant_refs": 59,
+  "n_parents": 39,
+  "n_parents_with_missing_variants": 5,
+  "n_selected": 17,
+  "n_usable": 17,
+  "sample_class": "search-discovered public GitHub projects, convenience sample"
+}

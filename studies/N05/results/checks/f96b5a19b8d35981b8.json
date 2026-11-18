@@ -1,0 +1,46 @@
+{
+  "key": "f96b5a19b8d35981b8",
+  "args": {
+    "crate": "serde",
+    "version": "1.0.219",
+    "id": "f2fc76eda58e95e0",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 10.3127,
+  "errors": [
+    {
+      "code": null,
+      "message": "cannot find derive macro `Serialize` in this scope",
+      "rendered": "error: cannot find derive macro `Serialize` in this scope\n --> src/main.rs:3:10\n  |\n3 | #[derive(Serialize, Deserialize, Debug)]\n  |          ^^^^^^^^^\n  |\nnote: `Serialize` is imported here, but it is only a trait, without a derive macro\n --> src/main.rs:1:26\n  |\n1 | use serde::{Deserialize, Serialize};\n  |                          ^^^^^^^^^\n\n",
+      "line": 3
+    },
+    {
+      "code": null,
+      "message": "cannot find derive macro `Deserialize` in this scope",
+      "rendered": "error: cannot find derive macro `Deserialize` in this scope\n --> src/main.rs:3:21\n  |\n3 | #[derive(Serialize, Deserialize, Debug)]\n  |                     ^^^^^^^^^^^\n  |\nnote: `Deserialize` is imported here, but it is only a trait, without a derive macro\n --> src/main.rs:1:13\n  |\n1 | use serde::{Deserialize, Serialize};\n  |             ^^^^^^^^^^^\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:13:22\n   |\n13 |     let serialized = serde_json::to_string(&point).unwrap();\n   |                      ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 13
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:19:31\n   |\n19 |     let deserialized: Point = serde_json::from_str(&serialized).unwrap();\n   |                               ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 19
+    }
+  ],
+  "error_count": 4,
+  "stderr_excerpt": "error: could not compile `n05_serde_consumer` (bin \"n05_serde_consumer\") due to 4 previous errors\n",
+  "code_sha256": "e36ae2881d0c6f736115b790a53343457648c505fa434b84451c811b052bfe13",
+  "manifest_sha256": "40b5edda942f666e72083a19da7aa09db8e1689efaf9f5dc9c3ec39c3032260d",
+  "log_file": "results/check_logs/f96b5a19b8d35981b8.txt.gz"
+}

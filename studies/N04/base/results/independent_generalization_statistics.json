@@ -1,0 +1,96 @@
+{
+  "warning": "Independent RefactoringMiner method-refactoring TP labels, not quarantined test IDs or ground-truth industrial savings",
+  "no_training_on_external_projects": true,
+  "n_repositories": 4,
+  "n_positive_commits": 6,
+  "positive_pairs": 54,
+  "recovered_guarded": 40,
+  "recovered_strong_name_baseline": 39,
+  "distinct_old_test_ids": 53,
+  "one_to_many_split_old_ids": 1,
+  "split_case_ids": [
+    [
+      "https://github.com/checkstyle/checkstyle",
+      "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testIsProperUtilsClass"
+    ]
+  ],
+  "unique_target_only_cases": 52,
+  "unique_target_guarded_recall": 0.7692,
+  "unique_target_name_baseline_recall": 0.75,
+  "guarded_minus_name_percentage_points": 1.852,
+  "per_repository": [
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "n_tp": 21,
+      "n_commits": 3,
+      "guarded_recovered": 11,
+      "name_only_recovered": 10
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "n_tp": 24,
+      "n_commits": 1,
+      "guarded_recovered": 22,
+      "name_only_recovered": 22
+    },
+    {
+      "repository": "https://github.com/google/closure-compiler",
+      "n_tp": 7,
+      "n_commits": 1,
+      "guarded_recovered": 7,
+      "name_only_recovered": 7
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "n_tp": 2,
+      "n_commits": 1,
+      "guarded_recovered": 0,
+      "name_only_recovered": 0
+    }
+  ],
+  "event_bootstrap": {
+    "unit": "event",
+    "clusters": 6,
+    "draws_per_seed": 3000,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "guarded_recall_95_bootstrap": [
+      0.2667,
+      0.9375
+    ],
+    "name_only_recall_95_bootstrap": [
+      0.2439,
+      0.925
+    ],
+    "guarded_minus_name_95_bootstrap": [
+      0.0,
+      0.0652
+    ]
+  },
+  "repository_bootstrap": {
+    "unit": "repository",
+    "clusters": 4,
+    "draws_per_seed": 3000,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "guarded_recall_95_bootstrap": [
+      0.4783,
+      0.9355
+    ],
+    "name_only_recall_95_bootstrap": [
+      0.4348,
+      0.9355
+    ],
+    "guarded_minus_name_95_bootstrap": [
+      0.0,
+      0.0435
+    ]
+  }
+}

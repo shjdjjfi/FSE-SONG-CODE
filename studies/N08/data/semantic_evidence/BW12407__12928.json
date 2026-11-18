@@ -1,0 +1,19 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 59890,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW12407",
+  "examples": [],
+  "fetched_utc": "2026-11-14T23:56:53.602521+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/12407",
+  "noncomment_nonimport_changed_lines": 0,
+  "pr": 12928,
+  "repository": "bitwarden/clients",
+  "sha256": "806158af293ee00437fe3433dcbe153b88226b78bb46ecbaf02051bf11251cc8",
+  "target_code_changed_lines": 0,
+  "target_files": [
+    "libs/key-management/src/angular/lock/components/lock.component.html"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/12928.patch"
+}

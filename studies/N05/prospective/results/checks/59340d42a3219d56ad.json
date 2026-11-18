@@ -1,0 +1,46 @@
+{
+  "key": "59340d42a3219d56ad",
+  "args": {
+    "crate": "utoipa",
+    "version": "5.3.1",
+    "id": "d81575448e484b0d",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2148,
+  "errors": [
+    {
+      "code": "E0412",
+      "message": "cannot find type `Pet` in this scope",
+      "rendered": "error[E0412]: cannot find type `Pet` in this scope\n  --> src/main.rs:19:75\n   |\n19 |             (status = 200, description = \"Pet found successfully\", body = Pet),\n   |                                                                           ^^^ not found in this scope\n\n",
+      "line": 19
+    },
+    {
+      "code": "E0412",
+      "message": "cannot find type `Pet` in this scope",
+      "rendered": "error[E0412]: cannot find type `Pet` in this scope\n  --> src/main.rs:26:51\n   |\n26 |     async fn get_pet_by_id(pet_id: u64) -> Result<Pet, NotFound> {\n   |                                                   ^^^ not found in this scope\n   |\nhelp: you might be missing a type parameter\n   |\n26 |     async fn get_pet_by_id<Pet>(pet_id: u64) -> Result<Pet, NotFound> {\n   |                           +++++\n\n",
+      "line": 26
+    },
+    {
+      "code": "E0412",
+      "message": "cannot find type `NotFound` in this scope",
+      "rendered": "error[E0412]: cannot find type `NotFound` in this scope\n  --> src/main.rs:26:56\n   |\n26 |     async fn get_pet_by_id(pet_id: u64) -> Result<Pet, NotFound> {\n   |                                                        ^^^^^^^^ not found in this scope\n   |\nhelp: there is an enum variant `std::io::ErrorKind::NotFound`; try using the variant's enum\n   |\n26 -     async fn get_pet_by_id(pet_id: u64) -> Result<Pet, NotFound> {\n26 +     async fn get_pet_by_id(pet_id: u64) -> Result<Pet, std::io::ErrorKind> {\n   |\nhelp: you might be missing a type parameter\n   |\n26 |     async fn get_pet_by_id<NotFound>(pet_id: u64) -> Result<Pet, NotFound> {\n   |                           ++++++++++\n\n",
+      "line": 26
+    },
+    {
+      "code": "E0422",
+      "message": "cannot find struct, variant or union type `Pet` in this scope",
+      "rendered": "error[E0422]: cannot find struct, variant or union type `Pet` in this scope\n  --> src/main.rs:27:12\n   |\n27 |         Ok(Pet {\n   |            ^^^ not found in this scope\n\n",
+      "line": 27
+    }
+  ],
+  "error_count": 4,
+  "stderr_excerpt": "error: could not compile `n05_utoipa_consumer` (bin \"n05_utoipa_consumer\") due to 4 previous errors\n",
+  "code_sha256": "feb1dc2a70d17bfec59ded71cf7f63da41ec587a15c76d352ea5bc9c725f807b",
+  "manifest_sha256": "e213b22133b4fa99ce8160e3c8b8f44581c0392ff01453924af514817c24c48e",
+  "log_file": "prospective/results/check_logs/59340d42a3219d56ad.txt.gz"
+}

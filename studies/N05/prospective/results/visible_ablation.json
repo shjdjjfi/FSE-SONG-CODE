@@ -1,0 +1,299 @@
+[
+  {
+    "id": "9c7c6c1656f6e371",
+    "crate": "async-compression",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "docs",
+    "check": "4f5d8e0fb3719663ab"
+  },
+  {
+    "id": "010dbce71772c182",
+    "crate": "bincode",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "a90642a35ed1ff315a"
+  },
+  {
+    "id": "70798833637b1735",
+    "crate": "clap_complete",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "be07daa4a655e6257d"
+  },
+  {
+    "id": "65ebc46d47e2d9a8",
+    "crate": "config",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "2f4c865f8b32c7cbe5"
+  },
+  {
+    "id": "064c43018f90f22c",
+    "crate": "crossterm",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "42d151e230068ee550"
+  },
+  {
+    "id": "6620f6ed6d8e980d",
+    "crate": "deadpool",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "daddab394002e33c3c"
+  },
+  {
+    "id": "6b5b65a8fb8d0b43",
+    "crate": "figment",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "a56278b12bc7f8fa1e"
+  },
+  {
+    "id": "292a6fb8e93f439c",
+    "crate": "figment",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "docs",
+    "check": "058d737e810736b1de"
+  },
+  {
+    "id": "4334022af9b9728a",
+    "crate": "hyper-util",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "d3d282948ce2107ee6"
+  },
+  {
+    "id": "6414873f00061607",
+    "crate": "hyper-util",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "docs",
+    "check": "fcb28eb4b63108cac6"
+  },
+  {
+    "id": "6df7a86d8946351b",
+    "crate": "mio",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "8f0f1d7f87b8a8205c"
+  },
+  {
+    "id": "80079347bf9fae52",
+    "crate": "mio",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "docs",
+    "check": "d7ad6d18d353d50d96"
+  },
+  {
+    "id": "4f951365bc3190a2",
+    "crate": "notify",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "6cbdf8706741223c7c"
+  },
+  {
+    "id": "049a33b12f430c76",
+    "crate": "opentelemetry",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "63b910b7506a26b5ed"
+  },
+  {
+    "id": "ee0e42011170cc7a",
+    "crate": "poem",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "32e4ef69db852d242a"
+  },
+  {
+    "id": "4c965389a976c73d",
+    "crate": "poem",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "docs",
+    "check": "e73c813fae6f6c730f"
+  },
+  {
+    "id": "8f4798cca2422625",
+    "crate": "quick-xml",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "8f5c21cd5de0c8b12f"
+  },
+  {
+    "id": "34b3a6dccfa8d28c",
+    "crate": "ratatui",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "ade0150779027cb42b"
+  },
+  {
+    "id": "2d53448333e48295",
+    "crate": "ratatui",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "docs",
+    "check": "8de26c042cd15d2403"
+  },
+  {
+    "id": "77b8de4bea093de8",
+    "crate": "redis",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "fe758945b5cce88647"
+  },
+  {
+    "id": "06a278a11c651036",
+    "crate": "schemars",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "cd7dea6e320b25f228"
+  },
+  {
+    "id": "0ae873fbaea956bd",
+    "crate": "sea-query",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "3f9ca134082eafa8ee"
+  },
+  {
+    "id": "15f58f7222bb9c01",
+    "crate": "sea-query",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "docs",
+    "check": "9a9572d6fd19daff58"
+  },
+  {
+    "id": "1697c46b8963c202",
+    "crate": "semver",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "b498724f6a27b3ff70"
+  },
+  {
+    "id": "00f2a75f0816671b",
+    "crate": "serde_with",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "6acfad46af3951cceb"
+  },
+  {
+    "id": "0f6fa515a976ca60",
+    "crate": "slog",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "d81ea15d92859fd58c"
+  },
+  {
+    "id": "24b428c75e832135",
+    "crate": "sqlparser",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "10a64e62a73ffdf8a1"
+  },
+  {
+    "id": "6980eb1a861e443d",
+    "crate": "sqlparser",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "docs",
+    "check": "df5f85be070131b628"
+  },
+  {
+    "id": "b9b7088defcb01bd",
+    "crate": "time",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "9a7d6d94e5b0518fa9"
+  },
+  {
+    "id": "869b73b34d6f7326",
+    "crate": "time",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "docs",
+    "check": "95b6a85eced8a3bf05"
+  },
+  {
+    "id": "0bcf2f83eb8c3636",
+    "crate": "tonic",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "f7c244239bb6d8a19f"
+  },
+  {
+    "id": "0a9fcfd132a030a6",
+    "crate": "ulid",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "55b99fce4acab53605"
+  },
+  {
+    "id": "40d48e2554617077",
+    "crate": "utoipa",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "e9333274dedc302063"
+  }
+]

@@ -1,0 +1,182 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 7,
+  "bytes": 18579,
+  "control_flow_or_callback_lines": 17,
+  "event": "BW13285",
+  "examples": [
+    {
+      "change": "+",
+      "code": "import { PureCrypto } from \"@bitwarden/sdk-internal\";",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "import {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "DefaultFeatureFlagValue,",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "FeatureFlag,",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "getFeatureFlagValue,",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "} from \"../../../enums/feature-flag.enum\";",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected useSDKForDecryption: boolean = DefaultFeatureFlagValue[FeatureFlag.UseSDKForDecryption];",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "return;",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "const old = this.useSDKForDecryption;",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.useSDKForDecryption = getFeatureFlagValue(newConfig, FeatureFlag.UseSDKForDecryption);",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.logService.debug(\"updated sdk decryption flag\", old, this.useSDKForDecryption);",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (this.useSDKForDecryption) {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.logService.debug(\"decrypting with SDK\");",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (encString == null || encString.encryptedString == null) {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "throw new Error(\"encString is null or undefined\");",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "return PureCrypto.symmetric_decrypt(encString.encryptedString, key.key);",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.logService.debug(\"decrypting with javascript\");",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (this.useSDKForDecryption) {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.logService.debug(\"decrypting bytes with SDK\");",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "encThing.encryptionType == null ||",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "encThing.ivBytes == null ||",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "encThing.dataBytes == null",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": ") {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "throw new Error(\"Cannot decrypt, missing type, IV, or data bytes.\");",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "const buffer = EncArrayBuffer.fromParts(",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "encThing.encryptionType,",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:59.414361+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/13285",
+  "noncomment_nonimport_changed_lines": 64,
+  "pr": 14277,
+  "repository": "bitwarden/clients",
+  "sha256": "0408a6230e72bd129a55abdee51116731733b9fa7b1bf67b88d9886f54e0aa01",
+  "target_code_changed_lines": 73,
+  "target_files": [
+    "libs/common/src/key-management/crypto/services/bulk-encrypt.service.implementation.ts",
+    "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts",
+    "libs/common/src/key-management/crypto/services/multithread-encrypt.service.implementation.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/14277.patch"
+}

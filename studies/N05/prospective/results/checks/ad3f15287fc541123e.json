@@ -1,0 +1,28 @@
+{
+  "key": "ad3f15287fc541123e",
+  "args": {
+    "crate": "poem",
+    "version": "3.1.12",
+    "id": "fd02b052feef4504",
+    "profile": "candidate",
+    "features": [
+      "acme-webpki-roots",
+      "cookie",
+      "multipart",
+      "openssl-tls",
+      "sonic-rs",
+      "sse"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 3.1418,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "216647de2e0e69262032555f644644fb19df41c7fb32d9f934bb463713aa4a87",
+  "manifest_sha256": "a0954d0190db8b156aef5ef6bbaaf95a01bbb564fe7c0965ee3770019529768a",
+  "log_file": "prospective/results/check_logs/ad3f15287fc541123e.txt.gz"
+}

@@ -1,0 +1,40 @@
+{
+  "key": "6417c1d1f71c0e5378",
+  "args": {
+    "crate": "chrono-tz",
+    "version": "0.10.3",
+    "id": "d1d4e0125faa5cdb",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.073,
+  "errors": [
+    {
+      "code": "E0463",
+      "message": "can't find crate for `chrono`",
+      "rendered": "error[E0463]: can't find crate for `chrono`\n --> src/main.rs:1:1\n  |\n1 | extern crate chrono;\n  | ^^^^^^^^^^^^^^^^^^^^ can't find crate\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `ymd` found for enum `Tz` in the current scope",
+      "rendered": "error[E0599]: no method named `ymd` found for enum `Tz` in the current scope\n   --> src/main.rs:8:26\n    |\n  8 | let london_time = London.ymd(2016, 2, 10).and_hms(12, 0, 0);\n    |                          ^^^ method not found in `Tz`\n    |\n   ::: /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-0.4.45/src/offset/mod.rs:335:8\n    |\n335 |     fn ymd(&self, year: i32, month: u32, day: u32) -> Date<Self> {\n    |        --- the method is available for `Tz` here\n    |\n    = help: items from traits can only be used if the trait is in scope\nhelp: trait `TimeZone` which provides `ymd` is implemented but not in scope; perhaps you want to import it\n    |\n  1 + use chrono::offset::TimeZone;\n    |\n\n",
+      "line": 8
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `ymd` found for enum `Tz` in the current scope",
+      "rendered": "error[E0599]: no method named `ymd` found for enum `Tz` in the current scope\n   --> src/main.rs:13:33\n    |\n 13 | let london_summer_time = London.ymd(2016, 5, 10).and_hms(12, 0, 0);\n    |                                 ^^^ method not found in `Tz`\n    |\n   ::: /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-0.4.45/src/offset/mod.rs:335:8\n    |\n335 |     fn ymd(&self, year: i32, month: u32, day: u32) -> Date<Self> {\n    |        --- the method is available for `Tz` here\n    |\n    = help: items from traits can only be used if the trait is in scope\nhelp: trait `TimeZone` which provides `ymd` is implemented but not in scope; perhaps you want to import it\n    |\n  1 + use chrono::offset::TimeZone;\n    |\n\n",
+      "line": 13
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_chrono_tz_consumer` (bin \"n05_chrono_tz_consumer\") due to 3 previous errors\n",
+  "code_sha256": "62b9c512a79711e914b4e2a25e36159419aa999b4c51dd9c828b586c06865714",
+  "manifest_sha256": "7432d89ccd677d709a4bb05ef01af63296ae3943c0ef402d7f4773b6a78de0ee",
+  "log_file": "prospective/results/check_logs/6417c1d1f71c0e5378.txt.gz"
+}

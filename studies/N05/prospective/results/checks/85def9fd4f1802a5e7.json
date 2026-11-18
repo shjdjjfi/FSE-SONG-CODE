@@ -1,0 +1,21 @@
+{
+  "key": "85def9fd4f1802a5e7",
+  "args": {
+    "crate": "tonic",
+    "version": "0.13.1",
+    "id": "0bcf2f83eb8c3636",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.099,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "ef9840052bbe63c155a10042f07423a608628c282f82c823f2603a1fbbfb8576",
+  "manifest_sha256": "208e29c9ab575aaead866c9a6d666d4c94ba64eef853b291160860549c6b3322",
+  "log_file": "prospective/results/check_logs/85def9fd4f1802a5e7.txt.gz"
+}

@@ -1,0 +1,34 @@
+{
+  "key": "b6deacaa59b79def2a",
+  "args": {
+    "crate": "chrono-tz",
+    "version": "0.10.3",
+    "id": "60803ba4c9338143",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.131,
+  "errors": [
+    {
+      "code": "E0463",
+      "message": "can't find crate for `chrono`",
+      "rendered": "error[E0463]: can't find crate for `chrono`\n --> src/main.rs:1:1\n  |\n1 | extern crate chrono;\n  | ^^^^^^^^^^^^^^^^^^^^ can't find crate\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `ymd` found for enum `Tz` in the current scope",
+      "rendered": "error[E0599]: no method named `ymd` found for enum `Tz` in the current scope\n   --> src/main.rs:7:17\n    |\n  7 | let dt = London.ymd(2016, 5, 10).and_hms(12, 0, 0);\n    |                 ^^^ method not found in `Tz`\n    |\n   ::: /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-0.4.45/src/offset/mod.rs:335:8\n    |\n335 |     fn ymd(&self, year: i32, month: u32, day: u32) -> Date<Self> {\n    |        --- the method is available for `Tz` here\n    |\n    = help: items from traits can only be used if the trait is in scope\nhelp: trait `TimeZone` which provides `ymd` is implemented but not in scope; perhaps you want to import it\n    |\n  1 + use chrono::offset::TimeZone;\n    |\n\n",
+      "line": 7
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_chrono_tz_consumer` (bin \"n05_chrono_tz_consumer\") due to 2 previous errors\n",
+  "code_sha256": "16454585760ee64e6959c92cdaaba1921a228c949e7109841f970e66c661803d",
+  "manifest_sha256": "c148937b29ac8b366a8ae9b8c6793536da756bb7e6164bf363a4932bcb0e7e1c",
+  "log_file": "prospective/results/check_logs/b6deacaa59b79def2a.txt.gz"
+}

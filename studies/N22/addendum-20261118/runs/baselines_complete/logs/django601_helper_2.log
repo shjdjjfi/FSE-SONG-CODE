@@ -1,0 +1,4 @@
+$ ["/workspace/scratch/2881099d856a/n22_env_dj601/bin/python", "/workspace/scratch/2881099d856a/N22_FSE_Industry/code/baseline_django_test_migrations.py", "--db", "/workspace/scratch/2881099d856a/N22_FSE_Industry/runs/baselines_complete/databases/django601_helper_2.sqlite", "--out", "/workspace/scratch/2881099d856a/N22_FSE_Industry/runs/baselines_complete/json/django601_helper_2.json"]
+exit=0
+{"oracle": {"expected_songprofile_permission": true, "observed_songprofile_permission": true, "observed_son_permission": false}, "detected_violation": false}
+

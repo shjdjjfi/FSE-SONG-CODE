@@ -1,0 +1,42 @@
+{
+  "key": "8f129dc62dcef696bf",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "81a01fc7b68c2228",
+    "profile": "candidate",
+    "features": [
+      "fs",
+      "io-std",
+      "io-util",
+      "macros",
+      "net",
+      "process",
+      "sync"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 2.8329,
+  "errors": [
+    {
+      "code": null,
+      "message": "The #[tokio::main] macro requires rt or rt-multi-thread.",
+      "rendered": "error: The #[tokio::main] macro requires rt or rt-multi-thread.\n --> src/main.rs:3:1\n  |\n3 | #[tokio::main]\n  | ^^^^^^^^^^^^^^\n  |\n  = note: this error originates in the attribute macro `tokio::main` (in Nightly builds, run with -Z macro-backtrace for more info)\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0601",
+      "message": "`main` function not found in crate `n05_tokio_consumer`",
+      "rendered": "error[E0601]: `main` function not found in crate `n05_tokio_consumer`\n  --> src/main.rs:24:2\n   |\n24 | }\n   |  ^ consider adding a `main` function to `src/main.rs`\n\n",
+      "line": 24
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 2 previous errors; 1 warning emitted\n",
+  "code_sha256": "6184a0eb63db28f8117a827b1ee7bc8c2f8008366b90003a16de3e3c3dcdcbe3",
+  "manifest_sha256": "081c78b1dbddd258666967564293380f7a0bd50bc13dc2cec2659f2f01868dad",
+  "log_file": "results/check_logs/8f129dc62dcef696bf.txt.gz"
+}

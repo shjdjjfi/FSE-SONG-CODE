@@ -1,0 +1,34 @@
+{
+  "key": "177ee1e6546963033a",
+  "args": {
+    "crate": "opentelemetry",
+    "version": "0.29.1",
+    "id": "3aa0c62588f5cf8d",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0596,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `opentelemetry_sdk`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `opentelemetry_sdk`\n --> src/main.rs:9:5\n  |\n9 | use opentelemetry_sdk::propagation::{\n  |     ^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `opentelemetry_sdk`\n  |\nhelp: there is a crate or module with a similar name\n  |\n9 - use opentelemetry_sdk::propagation::{\n9 + use opentelemetry::propagation::{\n  |\n\n",
+      "line": 9
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `opentelemetry_sdk`",
+      "rendered": "error[E0432]: unresolved import `opentelemetry_sdk`\n  --> src/main.rs:12:5\n   |\n12 | use opentelemetry_sdk::trace as sdktrace;\n   |     ^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `opentelemetry_sdk`\n   |\nhelp: there is a crate or module with a similar name\n   |\n12 - use opentelemetry_sdk::trace as sdktrace;\n12 + use opentelemetry::trace as sdktrace;\n   |\n\n",
+      "line": 12
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_opentelemetry_consumer` (bin \"n05_opentelemetry_consumer\") due to 2 previous errors\n",
+  "code_sha256": "5a7b930fc1e7b42088b06f2e45378efef445fe54c073c1e9828159f8617f786f",
+  "manifest_sha256": "d58170bc288220d57170a9ea4f885676696fcb4fb462ae80256aad4d8ea261df",
+  "log_file": "prospective/results/check_logs/177ee1e6546963033a.txt.gz"
+}

@@ -1,0 +1,41 @@
+{
+  "key": "122d8fda496ef794a3",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "9de6c4abaf3d5e7d",
+    "profile": "candidate",
+    "features": [
+      "io-std",
+      "io-util",
+      "macros",
+      "process",
+      "test-util",
+      "time"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 3.6836,
+  "errors": [
+    {
+      "code": null,
+      "message": "The default runtime flavor is `multi_thread`, but the `rt-multi-thread` feature is disabled.",
+      "rendered": "error: The default runtime flavor is `multi_thread`, but the `rt-multi-thread` feature is disabled.\n --> src/main.rs:4:1\n  |\n4 | #[tokio::main]\n  | ^^^^^^^^^^^^^^\n  |\n  = note: this error originates in the attribute macro `tokio::main` (in Nightly builds, run with -Z macro-backtrace for more info)\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio::net::TcpListener`",
+      "rendered": "error[E0432]: unresolved import `tokio::net::TcpListener`\n  --> src/main.rs:1:5\n   |\n 1 | use tokio::net::TcpListener;\n   |     ^^^^^^^^^^^^^^^^^^^^^^^ no `TcpListener` in `net`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/net/mod.rs:43:28\n   |\n38 | / cfg_net! {\n39 | |     mod lookup_host;\n40 | |     pub use lookup_host::lookup_host;\n...  |\n43 | |     pub use tcp::listener::TcpListener;\n   | |                            ^^^^^^^^^^^\n...  |\n52 | | }\n   | |_- the item is gated behind the `net` feature\nhelp: consider importing this struct instead\n   |\n 1 - use tokio::net::TcpListener;\n 1 + use std::net::TcpListener;\n   |\n\n",
+      "line": 1
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 2 previous errors\n",
+  "code_sha256": "9ac5dc54edbe7435631fab5ed0ba7a8c682d905d3d74e6894a156d9d95faecdd",
+  "manifest_sha256": "12c54c570915365b5165f91708147cbe5883819c0f322c647a82c7cc3a66ebba",
+  "log_file": "results/check_logs/122d8fda496ef794a3.txt.gz"
+}

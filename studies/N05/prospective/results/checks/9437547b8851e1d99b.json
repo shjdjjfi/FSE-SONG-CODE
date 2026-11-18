@@ -1,0 +1,34 @@
+{
+  "key": "9437547b8851e1d99b",
+  "args": {
+    "crate": "figment",
+    "version": "0.10.19",
+    "id": "b4a5fd30e5a6cb70",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0716,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `figment::providers::Toml`",
+      "rendered": "error[E0432]: unresolved import `figment::providers::Toml`\n --> src/main.rs:2:44\n  |\n2 | use figment::{Figment, providers::{Format, Toml}};\n  |                                            ^^^^ no `Toml` in `providers`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: could not find `Jail` in `figment`",
+      "rendered": "error[E0433]: failed to resolve: could not find `Jail` in `figment`\n   --> src/main.rs:4:10\n    |\n  4 | figment::Jail::expect_with(|jail| {\n    |          ^^^^ could not find `Jail` in `figment`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/figment-0.10.19/src/lib.rs:594:51\n    |\n594 | #[cfg(any(test, feature = \"test\"))] pub use jail::Jail;\n    |          ------------------------                 ^^^^\n    |          |\n    |          the item is gated here\n\n",
+      "line": 4
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_figment_consumer` (bin \"n05_figment_consumer\") due to 2 previous errors; 1 warning emitted\n",
+  "code_sha256": "b6e93e60b012df3e43fc6f0b34d3739c85d9fc59ea011ca5c06f277e1540df60",
+  "manifest_sha256": "a48490f2efee29ea47ced65139c28fe37d0ba071363941ab6e4ee7c5c6de4622",
+  "log_file": "prospective/results/check_logs/9437547b8851e1d99b.txt.gz"
+}

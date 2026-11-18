@@ -1,0 +1,747 @@
+{
+  "body": [
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/2670567?v=4",
+        "events_url": "https://api.github.com/users/djsmith85/events{/privacy}",
+        "followers_url": "https://api.github.com/users/djsmith85/followers",
+        "following_url": "https://api.github.com/users/djsmith85/following{/other_user}",
+        "gists_url": "https://api.github.com/users/djsmith85/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/djsmith85",
+        "id": 2670567,
+        "login": "djsmith85",
+        "node_id": "MDQ6VXNlcjI2NzA1Njc=",
+        "organizations_url": "https://api.github.com/users/djsmith85/orgs",
+        "received_events_url": "https://api.github.com/users/djsmith85/received_events",
+        "repos_url": "https://api.github.com/users/djsmith85/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/djsmith85/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/djsmith85/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/djsmith85",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/0f6d4a92d7d269873d06b67029bedf87d4267614/comments",
+      "commit": {
+        "author": {
+          "date": "2025-05-30T07:37:08Z",
+          "email": "2670567+djsmith85@users.noreply.github.com",
+          "name": "Daniel James Smith"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-05-30T07:37:08Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Migrate libs/tools/card to be owned by DIRT (#14987)\n\nCo-authored-by: Daniel James Smith <djsmith85@users.noreply.github.com>",
+        "tree": {
+          "sha": "56963f94f18b33c9bbb689aeabd47b156bb4b0aa",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/56963f94f18b33c9bbb689aeabd47b156bb4b0aa"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/0f6d4a92d7d269873d06b67029bedf87d4267614",
+        "verification": {
+          "payload": "tree 56963f94f18b33c9bbb689aeabd47b156bb4b0aa\nparent 949e9b14ab6bacd5c18b06b4ad8b32ba4a655918\nauthor Daniel James Smith <2670567+djsmith85@users.noreply.github.com> 1748590628 +0200\ncommitter GitHub <noreply@github.com> 1748590628 +0000\n\nMigrate libs/tools/card to be owned by DIRT (#14987)\n\nCo-authored-by: Daniel James Smith <djsmith85@users.noreply.github.com>",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoOWAlCRC1aQ7uu5UhlAAA10oQAHYNgfJJv0ef7jTffHWoZd8K\nLxNBDj6mLrYrn+EX9Gxe2dS31OM/ckEmG7uwKJuyoMdWCqDGI3z1tTctseqHG3wx\nVwRTZJoAWgFLypN+T+iwaXNLujTV+CBAXXXjvmPjTdSadkKv6UQmpeJAZwemSfnf\nSTlcbLLufauOXY36bXC7qzRU5xc+l3hXqPkP7oSv8FMrjndFPtD1bCqL8i7Ln2Gj\nAKi+bCd2o37MZt5nxkVY1iRYfMBOtfoLhXfITRFCpgL8UmuqSWgppFenfxJbC7kP\niexBkNiZ5d1/IxCFz1AjtEkDUYZOlkT9zGt3T64n01ks/6fO2HeVh395Pfxga3cs\nmH9wst/ewFeV3pF4eU1UDkezSq6H7rx7Lzvu2EXIvIpaJYc6zMdKJienIWf6xijT\npZgozEq1CaLPLqRhn27vpyurkwGwFK73fxxNIVIcN+C7rpzc8eHnRk8Tsw5VNIF2\nHvF6aIDNE04SmAnNp9wV450YtJtEeFK5tCLQ7oZvFqVFQT2iEZOm/lYfHHcjaPCr\nYlK9VIOJTFecxGn41ybslzoLYlYqaiPIQBALze0YKO6v+82Dm7v4RoOZnCj3A0Bc\nITIs7iXzrHZ8mKDeM5MWCoICskxmHLXOwfO5rh1TpkX6D1TdogGo+O8w/54WSJRo\np5BDCM11C1keSt7ZwKjL\n=nTU/\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-05-30T07:37:24Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/0f6d4a92d7d269873d06b67029bedf87d4267614",
+      "node_id": "C_kwDOAzDwU9oAKDBmNmQ0YTkyZDdkMjY5ODczZDA2YjY3MDI5YmVkZjg3ZDQyNjc2MTQ",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/949e9b14ab6bacd5c18b06b4ad8b32ba4a655918",
+          "sha": "949e9b14ab6bacd5c18b06b4ad8b32ba4a655918",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/949e9b14ab6bacd5c18b06b4ad8b32ba4a655918"
+        }
+      ],
+      "sha": "0f6d4a92d7d269873d06b67029bedf87d4267614",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/0f6d4a92d7d269873d06b67029bedf87d4267614"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/137855?v=4",
+        "events_url": "https://api.github.com/users/Hinton/events{/privacy}",
+        "followers_url": "https://api.github.com/users/Hinton/followers",
+        "following_url": "https://api.github.com/users/Hinton/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Hinton/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/Hinton",
+        "id": 137855,
+        "login": "Hinton",
+        "node_id": "MDQ6VXNlcjEzNzg1NQ==",
+        "organizations_url": "https://api.github.com/users/Hinton/orgs",
+        "received_events_url": "https://api.github.com/users/Hinton/received_events",
+        "repos_url": "https://api.github.com/users/Hinton/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/Hinton/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Hinton/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/Hinton",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/cec117459bcb024520e420c255df6df594484845/comments",
+      "commit": {
+        "author": {
+          "date": "2025-02-25T22:02:19Z",
+          "email": "Hinton@users.noreply.github.com",
+          "name": "Oscar Hinton"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-02-25T22:02:19Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-18599] Forbid unknown property and element in tests (#13556)\n\nFail tests when relying on unknownProperties or unknownElements. Existing instances are whitelist and have tickets created and assigned to the relevant teams.",
+        "tree": {
+          "sha": "d742dd417d41641218b296924ed9a6369775fd74",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/d742dd417d41641218b296924ed9a6369775fd74"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/cec117459bcb024520e420c255df6df594484845",
+        "verification": {
+          "payload": "tree d742dd417d41641218b296924ed9a6369775fd74\nparent e6e6058f9e6ec0488dffeff80eec715b725febb5\nauthor Oscar Hinton <Hinton@users.noreply.github.com> 1740520939 +0100\ncommitter GitHub <noreply@github.com> 1740520939 -0800\n\n[PM-18599] Forbid unknown property and element in tests (#13556)\n\nFail tests when relying on unknownProperties or unknownElements. Existing instances are whitelist and have tickets created and assigned to the relevant teams.",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnvj3rCRC1aQ7uu5UhlAAAwKQQACjptn1p2L8YdAKDMvQS+6rl\no+XBXcC5sIru8iq9s8664MRJpc9GdQt3rlZbkPE+DT1n2YVS7PPKrI8Thd39nitw\nfoXrFQTDrABCTj1dR1A1PPFJJqQxTzwuhNiXz0fRq2tfAST0NqtxhmNXICD5wC0h\nzh/MwmEePS3/X4MZJrj56ipOfxKmflyyllVFNEODOicbSTKZX4qv5t8TAvGZekIq\nHNL7V8ic3c2aAdX0nA1eC/fyhcvzatm4eUKYpH62Elhl8SE11VMqneATsnwcq6B3\nZo8ln4DYdHNhnlONho9kATW2cVQaALBj4w7Trr5islCj36XQSbHj05e6cfqOc7rg\nMrhINEG8gpsqCZFeOxkk2okbYEebVnP95NMDHOCef76DLbWPn7FDslM3zJF8E2NF\nJfdrl6GPJfDlH5sKOL/A+uAkVoee5L2ZcnktIakZ34znj4mehZGuauM2d5bYHxVo\nO1L4fHdbR2jg9mFs/R3mYFcuHALvmmvx6dLpnVK1ioSwiyOzZ3IDUXQNZAaegtA1\nlFHS78ug17hvVZNGjMCPUEpTgIjsuwEEfASXiquE8BZHtWbs1x/LI7QGcZiVApYJ\nmBdviWUL8eFKkiF3ORQm4s8GYLGf/RKjPr54f6sdUREKCTNcW+5hOp2i45gJuvjj\n1vWKDRFA5MG7X6bCzAg8\n=Lu6b\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-02-25T22:02:22Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/cec117459bcb024520e420c255df6df594484845",
+      "node_id": "C_kwDOAzDwU9oAKGNlYzExNzQ1OWJjYjAyNDUyMGU0MjBjMjU1ZGY2ZGY1OTQ0ODQ4NDU",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/e6e6058f9e6ec0488dffeff80eec715b725febb5",
+          "sha": "e6e6058f9e6ec0488dffeff80eec715b725febb5",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/e6e6058f9e6ec0488dffeff80eec715b725febb5"
+        }
+      ],
+      "sha": "cec117459bcb024520e420c255df6df594484845",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/cec117459bcb024520e420c255df6df594484845"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/137855?v=4",
+        "events_url": "https://api.github.com/users/Hinton/events{/privacy}",
+        "followers_url": "https://api.github.com/users/Hinton/followers",
+        "following_url": "https://api.github.com/users/Hinton/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Hinton/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/Hinton",
+        "id": 137855,
+        "login": "Hinton",
+        "node_id": "MDQ6VXNlcjEzNzg1NQ==",
+        "organizations_url": "https://api.github.com/users/Hinton/orgs",
+        "received_events_url": "https://api.github.com/users/Hinton/received_events",
+        "repos_url": "https://api.github.com/users/Hinton/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/Hinton/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Hinton/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/Hinton",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/5d04efad2a3a503c92aa64a435ad2248d7b4596e/comments",
+      "commit": {
+        "author": {
+          "date": "2025-02-20T14:04:39Z",
+          "email": "Hinton@users.noreply.github.com",
+          "name": "Oscar Hinton"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-02-20T14:04:39Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-18363] Remove internal dependencies from package.json (#13448)\n\n* Remove internal dependencies from package.json\n\n* Update lockfile\n\n* Change workspace to include nested libs",
+        "tree": {
+          "sha": "5717274c91577c2b1fb64d0bdd41d11a51012bf2",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/5717274c91577c2b1fb64d0bdd41d11a51012bf2"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/5d04efad2a3a503c92aa64a435ad2248d7b4596e",
+        "verification": {
+          "payload": "tree 5717274c91577c2b1fb64d0bdd41d11a51012bf2\nparent 4a344582a9aa8d6cdb68c70b60c546582a9dc08b\nauthor Oscar Hinton <Hinton@users.noreply.github.com> 1740060279 +0100\ncommitter GitHub <noreply@github.com> 1740060279 +0100\n\n[PM-18363] Remove internal dependencies from package.json (#13448)\n\n* Remove internal dependencies from package.json\n\n* Update lockfile\n\n* Change workspace to include nested libs",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJntzZ3CRC1aQ7uu5UhlAAAntIQAG0bBWS1fCx3SEIkWiYMHqtG\nKuTB78FDPlIoWNWO9YSzoCKoxIXBvcw6OW+ceqJT3aoUGVlFV+A5nnavuLKzXArm\nlIz9DX0Vh6KlVtynhnzn1L97bp7aHTvfMynfN4bPgY4PeYuvm6eZss7uHro05dPA\nGBi9T6gG8jxhSUZVzCltZHn8DjSmp8PMljBv0KCIG3fN8c6uSEbQF2S2z3D+zUVT\n9lb4g/g0TQdC3ULQenDNjiS2XWyewllhOFWW5xNJmOKOeKzNRtLJoz3gQ+Vt+jen\nT7AAGJ+4EQAIYj68Q6pc/lZXXjUS1pzDY+37JshaReqRCIUjyFJ6tEKqQERKBts3\n9AbXw2D8pwEwUT7LlTU8WV9ZFXY7HaPwr4C1uhcGVbOldrA3q/ryT3SfHiW+j8am\nIy/bSd0tnLoRBkW5TA1oU3EglU7x4iAFYHSWPgovCzN38Pd9j3nf5iAlVIIc659L\nC9qeeTyKnJZAVsPCsA+L3awK+6ztUl6WqOr6puF4qD8mu26mz759ezM0UA3oqYhO\nMy3MnVx2b2c/E6hAnufHVjEwmTpjqrgDkKrVIhROE+2xM9RbIj3MqorbfhhsXI+M\ntn7y2CKJeSLnqFUb+VB6CazP90g0XbzqW5BzBjIC7Y41GiaOsBXqkor3qBJbLhrD\n4icPwpyGxaxHyUozKb0a\n=np2u\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-02-20T14:04:42Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/5d04efad2a3a503c92aa64a435ad2248d7b4596e",
+      "node_id": "C_kwDOAzDwU9oAKDVkMDRlZmFkMmEzYTUwM2M5MmFhNjRhNDM1YWQyMjQ4ZDdiNDU5NmU",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/4a344582a9aa8d6cdb68c70b60c546582a9dc08b",
+          "sha": "4a344582a9aa8d6cdb68c70b60c546582a9dc08b",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/4a344582a9aa8d6cdb68c70b60c546582a9dc08b"
+        }
+      ],
+      "sha": "5d04efad2a3a503c92aa64a435ad2248d7b4596e",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/5d04efad2a3a503c92aa64a435ad2248d7b4596e"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/137855?v=4",
+        "events_url": "https://api.github.com/users/Hinton/events{/privacy}",
+        "followers_url": "https://api.github.com/users/Hinton/followers",
+        "following_url": "https://api.github.com/users/Hinton/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Hinton/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/Hinton",
+        "id": 137855,
+        "login": "Hinton",
+        "node_id": "MDQ6VXNlcjEzNzg1NQ==",
+        "organizations_url": "https://api.github.com/users/Hinton/orgs",
+        "received_events_url": "https://api.github.com/users/Hinton/received_events",
+        "repos_url": "https://api.github.com/users/Hinton/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/Hinton/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Hinton/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/Hinton",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/e5f83ff08605424b6656d7b379fd1d95f3f4d1b5/comments",
+      "commit": {
+        "author": {
+          "date": "2025-01-17T15:42:31Z",
+          "email": "Hinton@users.noreply.github.com",
+          "name": "Oscar Hinton"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-01-17T15:42:31Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-17031] Create UI-common (#12831)\n\nExtract core functionality from `libs/angular` to allow teams to depend on `libs/ui-common` instead.\n\nMoves the following functionality to `ui-common`.\n- `I18nPipe`. `libs/angular` still has an old copy but `components` depends on the new variant from `ui-common`.\n- `safeProvider`, `SafeProvider` and `SafeInjectionToken`. `libs/angular`re-exports these to avoid needing to update all consumers.",
+        "tree": {
+          "sha": "fb463252dfbb834f4423edce50ac12efc18a1eab",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/fb463252dfbb834f4423edce50ac12efc18a1eab"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/e5f83ff08605424b6656d7b379fd1d95f3f4d1b5",
+        "verification": {
+          "payload": "tree fb463252dfbb834f4423edce50ac12efc18a1eab\nparent 87171289f028cec3a89188692cd5c6a374aeba70\nauthor Oscar Hinton <Hinton@users.noreply.github.com> 1737128551 +0100\ncommitter GitHub <noreply@github.com> 1737128551 -0500\n\n[PM-17031] Create UI-common (#12831)\n\nExtract core functionality from `libs/angular` to allow teams to depend on `libs/ui-common` instead.\n\nMoves the following functionality to `ui-common`.\n- `I18nPipe`. `libs/angular` still has an old copy but `components` depends on the new variant from `ui-common`.\n- `safeProvider`, `SafeProvider` and `SafeInjectionToken`. `libs/angular`re-exports these to avoid needing to update all consumers.",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJninpnCRC1aQ7uu5UhlAAAe0oQAKoR08iVrC0NJKVMDdAdgmhd\njE9/sYWgE2PKZ8f7qfzFJFsVpF0UmtRPGoJ+b6aKTWsAHlxdxap/oD4aH7qMFYVv\nshISWafIxW8qRY9MUWqkp2apk/fFJhde+VgcsTzST50aW6qSiA0n0c+spfS7i8Hh\nwjfGt3nUSU1f+9HVHwQChhriF5Wffz6JaPHUSjFdP2e9aDh9hq0mCmwSItSzl9Sk\ni6gqPZCeGRsvl394ZxHj5Y+Y3beIHRPLpqVITXXWR4ctnKp3Jkj/E4f+Yj+KuVrY\nzspRCrnWbE+Jgs7j8TmAIaj2bO4gYwlUc/LBUXsTFKHadIlJiogErYVgMqH/8FWG\nj5aVLvO1J4WUz1+TDzp1whddeRVwFdBcIZPaKA+2NvgsiyCRVJl+9V0hRIvHBLRG\nF7JgAWfeZo74pCCxJ5StSXxLlBMxUmyzZpVOur8SMOhFLGicuEb20nhzyut2zWBe\nT9sG9BVkq/q6CzD/qROvYbbVNnW+wKtu2EsGpQjP0hSLCIRaevsHYes4GaRHGvRi\nIX1+xJGQY833jDvTTkMljQtTcn3/wP5ppXZy8MnU/4RZIksznyq0gPOhXTMsJQzb\nBRODG4PUoLUH0hy357u6+xoZO2QAOuCtURLlwVWu76qmwRxiPGMLgslQ9pakjFQl\n0ffUsCgEpm+JnrNks7P9\n=HIfT\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-01-17T15:42:32Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/e5f83ff08605424b6656d7b379fd1d95f3f4d1b5",
+      "node_id": "C_kwDOAzDwU9oAKGU1ZjgzZmYwODYwNTQyNGI2NjU2ZDdiMzc5ZmQxZDk1ZjNmNGQxYjU",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/87171289f028cec3a89188692cd5c6a374aeba70",
+          "sha": "87171289f028cec3a89188692cd5c6a374aeba70",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/87171289f028cec3a89188692cd5c6a374aeba70"
+        }
+      ],
+      "sha": "e5f83ff08605424b6656d7b379fd1d95f3f4d1b5",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/e5f83ff08605424b6656d7b379fd1d95f3f4d1b5"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/137855?v=4",
+        "events_url": "https://api.github.com/users/Hinton/events{/privacy}",
+        "followers_url": "https://api.github.com/users/Hinton/followers",
+        "following_url": "https://api.github.com/users/Hinton/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Hinton/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/Hinton",
+        "id": 137855,
+        "login": "Hinton",
+        "node_id": "MDQ6VXNlcjEzNzg1NQ==",
+        "organizations_url": "https://api.github.com/users/Hinton/orgs",
+        "received_events_url": "https://api.github.com/users/Hinton/received_events",
+        "repos_url": "https://api.github.com/users/Hinton/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/Hinton/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Hinton/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/Hinton",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/653b730969fbf6aadf53f1653cd99ffce542d558/comments",
+      "commit": {
+        "author": {
+          "date": "2025-01-10T10:21:38Z",
+          "email": "Hinton@users.noreply.github.com",
+          "name": "Oscar Hinton"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-01-10T10:21:38Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-16872] Update libs to use explicit dependencies (#12770)\n\nUpdate all libs to use explicit dependencies rather than relying on tsconfig.libs.json. This allows us to more easily understand the dependencies between libs and prevent users from accidentally adding new dependencies.\n\nWe still use tsconfig.libs (now renamed tsconfig.spec) for tests.",
+        "tree": {
+          "sha": "b67522b366aa8e640d2020ad6138a6fab2174dd3",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/b67522b366aa8e640d2020ad6138a6fab2174dd3"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/653b730969fbf6aadf53f1653cd99ffce542d558",
+        "verification": {
+          "payload": "tree b67522b366aa8e640d2020ad6138a6fab2174dd3\nparent 138e07eaf7137f810c73cf33cfd010818c8a484f\nauthor Oscar Hinton <Hinton@users.noreply.github.com> 1736504498 +0100\ncommitter GitHub <noreply@github.com> 1736504498 +0100\n\n[PM-16872] Update libs to use explicit dependencies (#12770)\n\nUpdate all libs to use explicit dependencies rather than relying on tsconfig.libs.json. This allows us to more easily understand the dependencies between libs and prevent users from accidentally adding new dependencies.\n\nWe still use tsconfig.libs (now renamed tsconfig.spec) for tests.",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJngPSyCRC1aQ7uu5UhlAAAKxYQAJl7IJ5N3IZvvM7rP49dfVX/\nDC+UYiq5hFC7t62bpgHLbuoOMm/UY/Zgk+Fx5kptMd+Qt9THwTrt6UW0G/cDLqK6\niklFtxEwgpGlTvsxOxsjLFx24yT36dXiPd6+XNgh4vNf+gBs/7/FN64w9b8LaJms\n2OeXFwdaPsljS9d7Zk7WS5TYQsBHCgJ5cnEdbp+ys1d2DxCugj6ENMg6JrhjfKI9\ngnomOyiErczCOcZYBah2jIwx1lFN2kTFeIXOrBlGnJcVAqH5n5B9TSUs6nRcNJrL\nefdHEZrh3R2Ei+Nz6ecAce+hdeL+keheV1EEBJmUMgZtTcpsiLW35pXk79sGdM8Q\n+4Ui1vJXoPyuSIPe2Gu6RlUiwgMZsSBJdZyaflHwzLG1Nv6/urQyK4SLFqZA0/2/\nXAb+j7Lf3kx2AdGf+DpFkslpAEXjOUnyxstxSilyWVB8IU0oftLPQngY3jWH7iaY\nV4LG1dfX9a7bKqsqhqQLQ2MN57MgAQqQFRSU/Mv0NSxkdU1v07XIROKXDEP62/5U\nLKAdMCOVm+lYTVlZpb4g42D6YZhyBu48Nwyip4MOLgVFXyvJi9BK3f65MWr9hcD3\nBS8y9jgIdl469DeQcgt8K1cjGY7kpgATWZwH0AEQi85xSMb5AU1dKLe6fcD9q7xc\ngPrTTFQZ4sunN2x1Ibpk\n=7Vsd\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-01-10T10:21:41Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/653b730969fbf6aadf53f1653cd99ffce542d558",
+      "node_id": "C_kwDOAzDwU9oAKDY1M2I3MzA5NjlmYmY2YWFkZjUzZjE2NTNjZDk5ZmZjZTU0MmQ1NTg",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/138e07eaf7137f810c73cf33cfd010818c8a484f",
+          "sha": "138e07eaf7137f810c73cf33cfd010818c8a484f",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/138e07eaf7137f810c73cf33cfd010818c8a484f"
+        }
+      ],
+      "sha": "653b730969fbf6aadf53f1653cd99ffce542d558",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/653b730969fbf6aadf53f1653cd99ffce542d558"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/18214891?v=4",
+        "events_url": "https://api.github.com/users/MGibson1/events{/privacy}",
+        "followers_url": "https://api.github.com/users/MGibson1/followers",
+        "following_url": "https://api.github.com/users/MGibson1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/MGibson1/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/MGibson1",
+        "id": 18214891,
+        "login": "MGibson1",
+        "node_id": "MDQ6VXNlcjE4MjE0ODkx",
+        "organizations_url": "https://api.github.com/users/MGibson1/orgs",
+        "received_events_url": "https://api.github.com/users/MGibson1/received_events",
+        "repos_url": "https://api.github.com/users/MGibson1/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/MGibson1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/MGibson1/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/MGibson1",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9/comments",
+      "commit": {
+        "author": {
+          "date": "2024-12-09T19:58:50Z",
+          "email": "mgibson@bitwarden.com",
+          "name": "Matt Gibson"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-12-09T19:58:50Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Typescript-strict-plugin (#12235)\n\n* Use typescript-strict-plugin to iteratively turn on strict\r\n\r\n* Add strict testing to pipeline\r\n\r\nCan be executed locally through either `npm run test:types` for full type checking including spec files, or `npx tsc-strict` for only tsconfig.json included files.\r\n\r\n* turn on strict for scripts directory\r\n\r\n* Use plugin for all tsconfigs in monorepo\r\n\r\nvscode is capable of executing tsc with plugins, but uses the most relevant tsconfig to do so. If the plugin is not a part of that config, it is skipped and developers get no feedback of strict compile time issues. These updates remedy that at the cost of slightly more complex removal of the plugin when the time comes.\r\n\r\n* remove plugin from configs that extend one that already has it\r\n\r\n* Update workspace settings to honor strict plugin\r\n\r\n* Apply strict-plugin to native message test runner\r\n\r\n* Update vscode workspace to use root tsc version\r\n\r\n* `./node_modules/.bin/update-strict-comments` :robot:\r\n\r\nThis is a one-time operation. All future files should adhere to strict type checking.\r\n\r\n* Add fixme to `ts-strict-ignore` comments\r\n\r\n* `update-strict-comments` :robot:\r\n\r\nrepeated for new merge files",
+        "tree": {
+          "sha": "4784372a41bf8b4452f52ea7b37d92eef2a8fba6",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/4784372a41bf8b4452f52ea7b37d92eef2a8fba6"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+        "verification": {
+          "payload": "tree 4784372a41bf8b4452f52ea7b37d92eef2a8fba6\nparent 0906c503e1f35d264d5169df178dd5a46a39a9b7\nauthor Matt Gibson <mgibson@bitwarden.com> 1733774330 -0800\ncommitter GitHub <noreply@github.com> 1733774330 +0100\n\nTypescript-strict-plugin (#12235)\n\n* Use typescript-strict-plugin to iteratively turn on strict\r\n\r\n* Add strict testing to pipeline\r\n\r\nCan be executed locally through either `npm run test:types` for full type checking including spec files, or `npx tsc-strict` for only tsconfig.json included files.\r\n\r\n* turn on strict for scripts directory\r\n\r\n* Use plugin for all tsconfigs in monorepo\r\n\r\nvscode is capable of executing tsc with plugins, but uses the most relevant tsconfig to do so. If the plugin is not a part of that config, it is skipped and developers get no feedback of strict compile time issues. These updates remedy that at the cost of slightly more complex removal of the plugin when the time comes.\r\n\r\n* remove plugin from configs that extend one that already has it\r\n\r\n* Update workspace settings to honor strict plugin\r\n\r\n* Apply strict-plugin to native message test runner\r\n\r\n* Update vscode workspace to use root tsc version\r\n\r\n* `./node_modules/.bin/update-strict-comments` :robot:\r\n\r\nThis is a one-time operation. All future files should adhere to strict type checking.\r\n\r\n* Add fixme to `ts-strict-ignore` comments\r\n\r\n* `update-strict-comments` :robot:\r\n\r\nrepeated for new merge files",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnV0v6CRC1aQ7uu5UhlAAAPwwQABEtatQNxF1YgQIItkBsUdFm\nGZyQD9Qx7dU3BHOATCsTzg3Y+bqiYa+94nVQBRD12XQ6PhMBzuZ71sPB/cgcdXrB\nrTUxefh/v9o1wIZOHSHDpHLcFO+Z2I25jrSffLeYizb7y8gBehBUwJlM2HFwAtN3\ns/lqC9GK8d+w+4QpekgZD6TiXsLhSRx1IJjV8jnSa+Y7ToFD6UxSGRQIY173iuje\njyDlTBQRcI/zSSxxivtLJve9ngt6gdNWgxkOwp29tpnmWf2CiPWGy/08eU6qpET+\nlnmruRII2Hgw3+q/l1OqZtwmxb/UsPfpaja2iy9I36tkeu3FHv6uwKVEP+kJeZK7\nfhAcMciDHi34Vgo4MRApl1K5rnoeDty6/kdkTmaaidD2WjdpMyTTCRg46/PMW9dX\nj9dXaix2OxZbZVDn1Y7hQ9RqO1/dA+QAJkd8pEdeYRQVXBE0IsJiBUTR7HGOsmXB\nYPjmsi9so8Nw+bHFGZF9vMUI5bMct36M91SASl666QdPsc+zyljv5ArIfyLsfXN2\ndXbFMkg6Kj+BX6Gj9bjFC542P4oITZ9Wl8ggARa78/mQur4ZcwuvT4x7ZfPe1BVX\nlsjvbZKsk96Dxd1vULqJuQ7d10SmeHwO/BiWwXJKErjaGa2PtxcE9WzL6qkbKINK\nvu2s2kJpnHcmrHYk7Wnu\n=85PO\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-12-09T19:58:54Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+      "node_id": "C_kwDOAzDwU9oAKDljMWUyZWJkNjc3OWRkYTRiZDgxNzQ3MjJiOWMzOTc0ZjY3ZGM1Zjk",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/0906c503e1f35d264d5169df178dd5a46a39a9b7",
+          "sha": "0906c503e1f35d264d5169df178dd5a46a39a9b7",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/0906c503e1f35d264d5169df178dd5a46a39a9b7"
+        }
+      ],
+      "sha": "9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/166539328?v=4",
+        "events_url": "https://api.github.com/users/jaasen-livefront/events{/privacy}",
+        "followers_url": "https://api.github.com/users/jaasen-livefront/followers",
+        "following_url": "https://api.github.com/users/jaasen-livefront/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jaasen-livefront/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/jaasen-livefront",
+        "id": 166539328,
+        "login": "jaasen-livefront",
+        "node_id": "U_kgDOCe0wQA",
+        "organizations_url": "https://api.github.com/users/jaasen-livefront/orgs",
+        "received_events_url": "https://api.github.com/users/jaasen-livefront/received_events",
+        "repos_url": "https://api.github.com/users/jaasen-livefront/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/jaasen-livefront/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jaasen-livefront/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/jaasen-livefront",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/ad7fa71e76d0b9175a340c160af94babd528f87f/comments",
+      "commit": {
+        "author": {
+          "date": "2024-10-25T20:04:36Z",
+          "email": "166539328+jaasen-livefront@users.noreply.github.com",
+          "name": "Jordan Aasen"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-10-25T20:04:36Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-13931] - UI - All applications report table (#11678)\n\n* add remaining components to access intelligence page\r\n\r\n* Revert \"add remaining components to access intelligence page\"\r\n\r\nThis reverts commit cb8e8266561e32baa34a82241a05c5d38f1cdd97.\r\n\r\n* add remaining access intelligence table components",
+        "tree": {
+          "sha": "ca5f926fb736808096de204be93fb378d5aa2c40",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/ca5f926fb736808096de204be93fb378d5aa2c40"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/ad7fa71e76d0b9175a340c160af94babd528f87f",
+        "verification": {
+          "payload": "tree ca5f926fb736808096de204be93fb378d5aa2c40\nparent 418889446801d868c5fb1c40b277b8fcae01db96\nauthor Jordan Aasen <166539328+jaasen-livefront@users.noreply.github.com> 1729886676 -0700\ncommitter GitHub <noreply@github.com> 1729886676 -0700\n\n[PM-13931] - UI - All applications report table (#11678)\n\n* add remaining components to access intelligence page\r\n\r\n* Revert \"add remaining components to access intelligence page\"\r\n\r\nThis reverts commit cb8e8266561e32baa34a82241a05c5d38f1cdd97.\r\n\r\n* add remaining access intelligence table components",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnG/nUCRC1aQ7uu5UhlAAAxawQAAee7Px5+vZnyuwMkGT8Jxs+\ntUyxyUnlKaRzG9mPQ2Q/VONQc4Fbm0NoDBHtiSZPn4vD2lK0P1W5YuIVLwc8LbJf\nhrYygCtKhDiy3CHuCDt9hd1VN8tLhkwQ+9+Zx/Jc1EB5oXNLeR+f3hLAJDoT/wd0\ntskeNYUPmzRldlz6j8t0bKJt7snZf0LS9KoTF45unoezz5NH7Na9JNS71Ral0KtZ\nisyIrYCgH7P3aZGbWYyBN7nR/vql2H8h7E0fTTL11qzUtVf55X4ndr5ySBlPmMUs\npVLTsUTG1vZrRn3hQIKSMDF2i2eTpzZdVk60xQVi/G6nR6C57A2av7/ZQ1PoWlt3\nuRexsQAKncvqhmwceg3oQnhIpLzx0Kjzd3Si/yy3aZeS86iY34dJK5llwgfgOhLB\nTQhzQxc1EMn/+Vj56xQGB41/EuhZ3wKi0jCxGXH0J6kTw+zAK07MN3V50UkQXDsk\nYn/LZfksR6k68t9kmGJZNXkIC9glaYUv5lrnnYit8BHUzk/nYUmn753MdmQ2T4EA\nnDZmzo77aU6bKyUg9EupxtbsZXBvZA4+MsLDJAGw0ab1qUFk7TfM3AZlswci1r9s\ncAEW2iJCLrYxY0dxbBeXvg+2a4FJAvBjm6P2RzqQUNjEG7j9cQOCrSrL4sU8nq03\nL/rlKsUQ6Gn+7uya7URn\n=HCrL\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-05T18:02:41Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/ad7fa71e76d0b9175a340c160af94babd528f87f",
+      "node_id": "C_kwDOAzDwU9oAKGFkN2ZhNzFlNzZkMGI5MTc1YTM0MGMxNjBhZjk0YmFiZDUyOGY4N2Y",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/418889446801d868c5fb1c40b277b8fcae01db96",
+          "sha": "418889446801d868c5fb1c40b277b8fcae01db96",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/418889446801d868c5fb1c40b277b8fcae01db96"
+        }
+      ],
+      "sha": "ad7fa71e76d0b9175a340c160af94babd528f87f",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/ad7fa71e76d0b9175a340c160af94babd528f87f"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/2670567?v=4",
+        "events_url": "https://api.github.com/users/djsmith85/events{/privacy}",
+        "followers_url": "https://api.github.com/users/djsmith85/followers",
+        "following_url": "https://api.github.com/users/djsmith85/following{/other_user}",
+        "gists_url": "https://api.github.com/users/djsmith85/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/djsmith85",
+        "id": 2670567,
+        "login": "djsmith85",
+        "node_id": "MDQ6VXNlcjI2NzA1Njc=",
+        "organizations_url": "https://api.github.com/users/djsmith85/orgs",
+        "received_events_url": "https://api.github.com/users/djsmith85/received_events",
+        "repos_url": "https://api.github.com/users/djsmith85/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/djsmith85/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/djsmith85/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/djsmith85",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/783305696aac9b7abae9698b69760d58f120cd5f/comments",
+      "commit": {
+        "author": {
+          "date": "2024-10-17T13:22:56Z",
+          "email": "2670567+djsmith85@users.noreply.github.com",
+          "name": "Daniel James Smith"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-10-17T13:22:56Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Fix stories title for card-component (#11562)\n\nCo-authored-by: Daniel James Smith <djsmith85@users.noreply.github.com>",
+        "tree": {
+          "sha": "e640f6f733d962c8bf9b00f71ff4aa9fd6edd2a4",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/e640f6f733d962c8bf9b00f71ff4aa9fd6edd2a4"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/783305696aac9b7abae9698b69760d58f120cd5f",
+        "verification": {
+          "payload": "tree e640f6f733d962c8bf9b00f71ff4aa9fd6edd2a4\nparent 3a042ba80828bd7ef9d68aab58554ba0629733c1\nauthor Daniel James Smith <2670567+djsmith85@users.noreply.github.com> 1729171376 +0200\ncommitter GitHub <noreply@github.com> 1729171376 -0400\n\nFix stories title for card-component (#11562)\n\nCo-authored-by: Daniel James Smith <djsmith85@users.noreply.github.com>",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnEQ+wCRC1aQ7uu5UhlAAAz+EQADzgl+fvZ/BFB8+4suhDaIpD\n6PxclvUL6EjT9dg3IH/nLwPDJwx0Fk9+uSbqXFPUdjm2pGQ36tkhi9kp40+V8awL\nOgpev07OWJn9oORYVdBsX8xzWA5a4cqdHB/Kfd+0SFyXEjmanR+3yFPMEZEOGHRS\n+vbSAqWRkwse1dgiRoRUvNHIWK9p9ubTXekRTXaS1opNV2K3NeGab4ru0jTLjjpv\n1BQEO+9vW0pJuj4fmR5s7qcIL/u3pGwMr/xYLL+EVv85wHJIgYEmFQQoEgKs9TU1\n3lPnS3vgD/bnvuNdK3vi3rIpUFysh7m5eu+3NhUlPIB5kTIrEz2sVmeecGZa5MV0\nKuWWRjAEPrg70JmmV9e2zmip6G2bncNOeOxiYyGsv6ISX5J98lR8meap8qiTvaZ5\nJlu2RwWRciCSzt8TmuoAxE3NXAlGYfc3ik7/KqAYSNLdFqixQH/VCc+bRW7pNBjd\nrI0KubAWynL4SrSEwGi3VQnerKyMFUDytIrNpdn+8fbyLjp7Qi0Au4mBW8gLuBb+\nz16m8keL0m45eRV80Zo/gzCKhPtv8752cuFAqq5cGJA2YezyChFPLqMHJnY4Q2m6\n1hR3S0j1zferwmqUUwsGUc8pzJDFzYZM340ZW9K7SLkN6NfcR5jaFiSVCsiBELdL\neb885gSCZll5bmrXDiWh\n=eqmE\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-05T20:22:36Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/783305696aac9b7abae9698b69760d58f120cd5f",
+      "node_id": "C_kwDOAzDwU9oAKDc4MzMwNTY5NmFhYzliN2FiYWU5Njk4YjY5NzYwZDU4ZjEyMGNkNWY",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/3a042ba80828bd7ef9d68aab58554ba0629733c1",
+          "sha": "3a042ba80828bd7ef9d68aab58554ba0629733c1",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/3a042ba80828bd7ef9d68aab58554ba0629733c1"
+        }
+      ],
+      "sha": "783305696aac9b7abae9698b69760d58f120cd5f",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/783305696aac9b7abae9698b69760d58f120cd5f"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/166539328?v=4",
+        "events_url": "https://api.github.com/users/jaasen-livefront/events{/privacy}",
+        "followers_url": "https://api.github.com/users/jaasen-livefront/followers",
+        "following_url": "https://api.github.com/users/jaasen-livefront/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jaasen-livefront/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/jaasen-livefront",
+        "id": 166539328,
+        "login": "jaasen-livefront",
+        "node_id": "U_kgDOCe0wQA",
+        "organizations_url": "https://api.github.com/users/jaasen-livefront/orgs",
+        "received_events_url": "https://api.github.com/users/jaasen-livefront/received_events",
+        "repos_url": "https://api.github.com/users/jaasen-livefront/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/jaasen-livefront/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jaasen-livefront/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/jaasen-livefront",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/fa41f29fc40d4bac90090513b0386772476a3a0b/comments",
+      "commit": {
+        "author": {
+          "date": "2024-10-11T21:00:45Z",
+          "email": "166539328+jaasen-livefront@users.noreply.github.com",
+          "name": "Jordan Aasen"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-10-11T21:00:45Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[CL-425] - add tools card component (#11375)\n\n* add tools card component\r\n\r\n* rename to tools-card\r\n\r\n* whitelist readme\r\n\r\n* fix tw classes in card component\r\n\r\n* add RTL support.\r\n\r\n* add documentation. revert changes to settings\r\n\r\n* Revert vscode settings\r\n\r\n---------\r\n\r\nCo-authored-by: Daniel James Smith <djsmith85@users.noreply.github.com>",
+        "tree": {
+          "sha": "2dfb53e59455b0ed8f4a5ce5da65e42f615e7d98",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/2dfb53e59455b0ed8f4a5ce5da65e42f615e7d98"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/fa41f29fc40d4bac90090513b0386772476a3a0b",
+        "verification": {
+          "payload": "tree 2dfb53e59455b0ed8f4a5ce5da65e42f615e7d98\nparent 988c2b69e08e6d86566aef9b17aa0d87b0727098\nauthor Jordan Aasen <166539328+jaasen-livefront@users.noreply.github.com> 1728680445 -0700\ncommitter GitHub <noreply@github.com> 1728680445 +0200\n\n[CL-425] - add tools card component (#11375)\n\n* add tools card component\r\n\r\n* rename to tools-card\r\n\r\n* whitelist readme\r\n\r\n* fix tw classes in card component\r\n\r\n* add RTL support.\r\n\r\n* add documentation. revert changes to settings\r\n\r\n* Revert vscode settings\r\n\r\n---------\r\n\r\nCo-authored-by: Daniel James Smith <djsmith85@users.noreply.github.com>",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnCZH9CRC1aQ7uu5UhlAAAxqoQACy2tzWYsuscWTg4Ki9C/I9n\n5cpPZYxDTwNU7UZBCs7/dw8Z24ZViYmMjXfpcuiFhJB1syzWq2hkHWrqgMwl76ZR\n/arjTGuw4PyM12nvhSaToFV7cnMddWUkWh376PmXmvG8O6ZC1eQkrLfg32k7v5y+\nL2oPaolYz/akurKxiHZYB/RHEuCMQ2C+NP4cKuLVhVHghqHywYs8Faa7DbOCOrU+\nnCnCkKsF0XAdUD2lWjS3tsTuDKhkoKxmCAGk8gafitbx72vQs6DQ8CFvd97yZZrU\nTK3NPQHMXKbNwYFmPTrPTpyV9fd+BzVvfiNwjA1pwIIhVuNc2Wll17G9xnY9mnWs\nstH9HNJIimrPo7pni20oE9TZ7kUsxILL/RfZL3gBy7P9qlrzAmlYlxf9VkXMQGan\nJmz+VAITX5cXekcRfPJgv3jVPvxzvZiHUzQeNa62mkMRkTPI4mABo1iwZVUhNJ7W\nwrpR9GeJhSttluQC9hL4wFfP6O9AVcwAwJ5z2299h2SuQq6yQfwgB5Ftcv0qdPEb\nTYEKsjEFRSPWe+ER99yoVtYc/NI6/wuJKxw1whlofsbEAY4A7octKX6gv2GiiRBC\nrZgBpkodXgE7arZ8b0Jf0ST6zQfyNYACeX7qHEUv80bE0LRjM/KLi6TBBxrweoNH\nAHi1mILTOL6cVANs7SFr\n=Tq6X\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-05T18:02:41Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/fa41f29fc40d4bac90090513b0386772476a3a0b",
+      "node_id": "C_kwDOAzDwU9oAKGZhNDFmMjlmYzQwZDRiYWM5MDA5MDUxM2IwMzg2NzcyNDc2YTNhMGI",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/988c2b69e08e6d86566aef9b17aa0d87b0727098",
+          "sha": "988c2b69e08e6d86566aef9b17aa0d87b0727098",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/988c2b69e08e6d86566aef9b17aa0d87b0727098"
+        }
+      ],
+      "sha": "fa41f29fc40d4bac90090513b0386772476a3a0b",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/fa41f29fc40d4bac90090513b0386772476a3a0b"
+    }
+  ],
+  "fetched_utc": "2026-11-14T17:10:39.467096+00:00",
+  "link_header": null,
+  "rate_remaining": null,
+  "sha256": "3b68033561923bb1a77d22d1a50ff65d9bd991d7fba7eb7ec9b97dce69746ce9",
+  "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=libs%2Ftools%2Fcard%2F&since=2024-05-30T07%3A37%3A09Z&until=2025-05-30T07%3A37%3A08Z&per_page=100"
+}

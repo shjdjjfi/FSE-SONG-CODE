@@ -1,0 +1,22 @@
+{
+  "fetched_utc": "2026-11-14T17:12:50.512513+00:00",
+  "merged_at": "2025-04-04T18:58:29Z",
+  "opened_at": "2025-04-02T20:39:58Z",
+  "pr": 14102,
+  "raw_html_sha256": "cd86a13171d314d301c8e0c88be53652be96b91395aa993b0de2b9ba72d000f5",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 2,
+  "reviews": [
+    {
+      "login": "djsmith85",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2025-04-04T08:31:11Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-04T18:58:27Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/14102"
+}

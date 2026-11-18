@@ -1,0 +1,23 @@
+{
+  "key": "8d9cb4ba7d8b196886",
+  "args": {
+    "crate": "tower",
+    "version": "0.5.2",
+    "id": "5c9691fe1f14ac88",
+    "profile": "candidate",
+    "features": [
+      "util"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0637,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "17964b273a9588d1f252e83cca1db7a776bfb4e7f88583f8977498aac9e72f52",
+  "manifest_sha256": "953f279823f0a0ae504a65a448dea135d06910affcea2f9670326a0824388697",
+  "log_file": "holdout/results/check_logs/8d9cb4ba7d8b196886.txt.gz"
+}

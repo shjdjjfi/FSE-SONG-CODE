@@ -1,0 +1,60 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 2,
+  "bytes": 17428,
+  "control_flow_or_callback_lines": 2,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "+",
+      "code": "if (data.hideIcon !== undefined) {",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.hideIcon = data.hideIcon;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (data.maxWidth !== undefined) {",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.maxWidth = data.maxWidth;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:46.646597+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 6,
+  "pr": 15827,
+  "repository": "bitwarden/clients",
+  "sha256": "35534173e7a82704d2c2426037a97e893496a395fd0804897a3587846fba0025",
+  "target_code_changed_lines": 8,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15827.patch"
+}

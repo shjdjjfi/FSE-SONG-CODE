@@ -1,0 +1,61 @@
+{
+  "pr": 13093,
+  "pr_author": "hinton",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-01-27T18:14:41Z",
+      "requested_people": [
+        "hinton"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-27T18:14:41Z",
+      "requested_people": [
+        "hinton",
+        "justindbaur"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-28T08:37:14Z",
+      "requested_people": [
+        "hinton",
+        "thomas-avery"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-28T08:37:17Z",
+      "requested_people": [
+        "hinton"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-28T08:37:18Z",
+      "requested_people": [
+        "hinton",
+        "merissaacosta"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-28T15:48:50Z",
+      "requested_people": [
+        "hinton",
+        "thomas-avery"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "1fafd5c1b671ba1caf777d778ae28f1ce6f84093803b11d4f925cbb94d046382",
+  "url": "https://github.com/bitwarden/clients/pull/13093"
+}

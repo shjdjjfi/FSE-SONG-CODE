@@ -1,0 +1,62 @@
+{
+  "old_sha": "27e26758d6604f5d078709233028bb87b4a39e16",
+  "new_sha": "2ce6e6149d0ef44f4919e75326265c64c144a00f",
+  "runtime": "Java 21 Surefire on same host, old project compiled with JDK8 for Java 6 compatibility",
+  "complete_40_case_mapping": true,
+  "summaries": {
+    "Issue256Test": {
+      "mapped_cases": 20,
+      "all_30_repetitions_complete": true,
+      "pre_total_executions": 600,
+      "post_total_executions": 600,
+      "pre_nonpass": 11,
+      "post_nonpass": 6,
+      "pre_flaky_cases": 5,
+      "post_flaky_cases": 6
+    },
+    "Issue580Test": {
+      "mapped_cases": 20,
+      "all_30_repetitions_complete": true,
+      "pre_total_executions": 600,
+      "post_total_executions": 600,
+      "pre_nonpass": 0,
+      "post_nonpass": 0,
+      "pre_flaky_cases": 0,
+      "post_flaky_cases": 0
+    },
+    "ALL": {
+      "mapped_cases": 40,
+      "all_30_repetitions_complete": true,
+      "pre_total_executions": 1200,
+      "post_total_executions": 1200,
+      "pre_nonpass": 11,
+      "post_nonpass": 6,
+      "pre_flaky_cases": 5,
+      "post_flaky_cases": 6
+    }
+  },
+  "counterfactual_identity_decisions": [
+    {
+      "seed": 17,
+      "future_flaky_cases": 2,
+      "missed_preserved": 1,
+      "missed_reset": 2,
+      "stale_quarantine_proxy": 1
+    },
+    {
+      "seed": 29,
+      "future_flaky_cases": 2,
+      "missed_preserved": 1,
+      "missed_reset": 2,
+      "stale_quarantine_proxy": 2
+    },
+    {
+      "seed": 43,
+      "future_flaky_cases": 1,
+      "missed_preserved": 1,
+      "missed_reset": 1,
+      "stale_quarantine_proxy": 2
+    }
+  ],
+  "limitation": "One commit, shared services/socket scheduling, non-randomized run order, CI quarantine actions were not actually performed."
+}

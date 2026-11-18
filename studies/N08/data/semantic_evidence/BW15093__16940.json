@@ -1,0 +1,82 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 150223,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "+",
+      "code": "// FIXME(https://bitwarden.atlassian.net/browse/CL-764): Migrate to OnPush",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "// eslint-disable-next-line @angular-eslint/prefer-on-push-component-change-detection",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "// FIXME(https://bitwarden.atlassian.net/browse/CL-764): Migrate to OnPush",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "// eslint-disable-next-line @angular-eslint/prefer-on-push-component-change-detection",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "// FIXME(https://bitwarden.atlassian.net/browse/CL-764): Migrate to OnPush",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "// eslint-disable-next-line @angular-eslint/prefer-on-push-component-change-detection",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "// FIXME(https://bitwarden.atlassian.net/browse/CL-764): Migrate to OnPush",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "// eslint-disable-next-line @angular-eslint/prefer-on-push-component-change-detection",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "// FIXME(https://bitwarden.atlassian.net/browse/CL-764): Migrate to OnPush",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "// eslint-disable-next-line @angular-eslint/prefer-on-push-component-change-detection",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "// FIXME(https://bitwarden.atlassian.net/browse/CL-764): Migrate to OnPush",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "// eslint-disable-next-line @angular-eslint/prefer-on-push-component-change-detection",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:53.274507+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 0,
+  "pr": 16940,
+  "repository": "bitwarden/clients",
+  "sha256": "f8a2a5ac827cd7729f7b786703ffecd16d203f3b19d3128c9eba4596dc87f401",
+  "target_code_changed_lines": 12,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout-wrapper.component.ts",
+    "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts",
+    "libs/components/src/anon-layout/anon-layout.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/16940.patch"
+}

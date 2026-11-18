@@ -1,0 +1,64 @@
+{
+  "key": "93ef99836824f3e981",
+  "args": {
+    "crate": "tower-http",
+    "version": "0.6.6",
+    "id": "1d6373b4cc5c8b2a",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2053,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `http`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `http`\n --> src/main.rs:2:5\n  |\n2 | use http::{Request, Response, StatusCode, header::ACCEPT};\n  |     ^^^^ use of unresolved module or unlinked crate `http`\n  |\n  = help: if you wanted to use a crate named `http`, use `cargo add http` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `http`",
+      "rendered": "error[E0432]: unresolved import `http`\n --> src/main.rs:2:5\n  |\n2 | use http::{Request, Response, StatusCode, header::ACCEPT};\n  |     ^^^^ use of unresolved module or unlinked crate `http`\n  |\n  = help: if you wanted to use a crate named `http`, use `cargo add http` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `http_body_util`",
+      "rendered": "error[E0432]: unresolved import `http_body_util`\n --> src/main.rs:3:5\n  |\n3 | use http_body_util::Full;\n  |     ^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `http_body_util`\n  |\n  = help: if you wanted to use a crate named `http_body_util`, use `cargo add http_body_util` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `bytes`",
+      "rendered": "error[E0432]: unresolved import `bytes`\n --> src/main.rs:4:5\n  |\n4 | use bytes::Bytes;\n  |     ^^^^^ use of unresolved module or unlinked crate `bytes`\n  |\n  = help: if you wanted to use a crate named `bytes`, use `cargo add bytes` to add it to your `Cargo.toml`\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower`",
+      "rendered": "error[E0432]: unresolved import `tower`\n --> src/main.rs:5:5\n  |\n5 | use tower::{Service, ServiceExt, ServiceBuilder, service_fn, BoxError};\n  |     ^^^^^ use of unresolved module or unlinked crate `tower`\n  |\n  = help: if you wanted to use a crate named `tower`, use `cargo add tower` to add it to your `Cargo.toml`\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n  --> src/main.rs:11:3\n   |\n11 | #[tokio::main]\n   |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 11
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n  --> src/main.rs:12:1\n   |\n12 | async fn main() -> Result<(), BoxError> {\n   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 12
+    }
+  ],
+  "error_count": 7,
+  "stderr_excerpt": "error: could not compile `n05_tower_http_consumer` (bin \"n05_tower_http_consumer\") due to 7 previous errors\n",
+  "code_sha256": "f472db2ef3636efa372eea0b02eaca7b8dd7613b27b7ac8cdc2dca76e9b9226a",
+  "manifest_sha256": "dc57e4318cce77434e3d6edbdf89fdf42f3322950af93ac95dccbf47fad6fa31",
+  "log_file": "holdout/results/check_logs/93ef99836824f3e981.txt.gz"
+}

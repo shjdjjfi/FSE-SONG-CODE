@@ -1,0 +1,26 @@
+{
+  "pr": 117090,
+  "pr_author": "jacobsonmt",
+  "repo": "grafana/grafana",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2026-01-29T17:57:42Z",
+      "requested_people": [
+        "jacobsonmt"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2026-01-29T17:57:50Z",
+      "requested_people": [
+        "jacobsonmt",
+        "yuri-tceretian"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "c4e08c549d004c1e8870e432115d6d85a8817d94c8cf18a0b8988fad0cb3521f",
+  "url": "https://github.com/grafana/grafana/pull/117090"
+}

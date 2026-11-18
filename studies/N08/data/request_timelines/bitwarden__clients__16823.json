@@ -1,0 +1,62 @@
+{
+  "pr": 16823,
+  "pr_author": "voommen-livefront",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-10-10T14:07:34Z",
+      "requested_people": [
+        "voommen-livefront"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-27T15:48:57Z",
+      "requested_people": [
+        "voommen-livefront"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-27T15:48:58Z",
+      "requested_people": [
+        "btreston",
+        "voommen-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-27T15:53:45Z",
+      "requested_people": [
+        "prograhamming",
+        "voommen-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-27T16:21:38Z",
+      "requested_people": [
+        "btreston",
+        "prograhamming",
+        "voommen-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-27T16:42:13Z",
+      "requested_people": [
+        "btreston",
+        "voommen-livefront"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "c771e9f370b6455a84ee2be6b4a481eca92afd95a7e16b5bac57cc67b4a0d6b0",
+  "url": "https://github.com/bitwarden/clients/pull/16823"
+}

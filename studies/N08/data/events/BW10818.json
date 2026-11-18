@@ -1,0 +1,257 @@
+{
+  "after_codeowners_sha256": "f38fbf6c43a281202c0e22d6b3549012df787e9065fea5e5b1b21e138978c2f2",
+  "all_patch_renames": 23,
+  "base_sha": "f1b343e05663c7aacfa73680bc62d0b9dffaf3d0",
+  "before_codeowners_sha256": "d1899f6aacf3e7e6bfc55d545c23d12c7712e273ad6ea9a688d89d1473b7191f",
+  "expected_new_team": "@bitwarden/team-key-management-dev",
+  "expected_old_team": "@bitwarden/team-platform-dev",
+  "histories": {
+    "after": {
+      "commit_count": 15,
+      "pr_linked_count": 15,
+      "records": [
+        {
+          "date": "2024-12-09T19:58:50Z",
+          "pr": 12235,
+          "sha": "9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+          "title": "Typescript-strict-plugin (#12235)"
+        },
+        {
+          "date": "2024-12-11T15:10:06Z",
+          "pr": 12187,
+          "sha": "92a620dd9c06c46127164d3c7a103aeafff92708",
+          "title": "[BEEEP/PM-10534] Add snap biometric support (#12187)"
+        },
+        {
+          "date": "2025-01-08T09:46:00Z",
+          "pr": 10973,
+          "sha": "72121cda948f08fcf71f1a55220a29a482fda01c",
+          "title": "[PM-10741] Refactor biometrics interface & add dynamic status (#10973)"
+        },
+        {
+          "date": "2025-01-16T16:49:20Z",
+          "pr": 12907,
+          "sha": "97ee050e5dd9701cf9facbbf31fad160b6f066d2",
+          "title": "[PM-17113] Fix system authentication setup (#12907)"
+        },
+        {
+          "date": "2025-02-10T12:31:19Z",
+          "pr": 13039,
+          "sha": "7e2e60443933256aa613f07d02a82f86886ef3a4",
+          "title": "[PM-14445] TS strict for Key Management Biometrics (#13039)"
+        },
+        {
+          "date": "2025-02-28T13:05:16Z",
+          "pr": 13609,
+          "sha": "c80019e919798cfb9c61b8f7533caa40f6659aeb",
+          "title": "[PM-18680] biometric's no client key half provided for user (#13609)"
+        },
+        {
+          "date": "2025-03-31T14:59:01Z",
+          "pr": 13287,
+          "sha": "15738f16aee4d23e1e32d3c4634340b3bb8be46c",
+          "title": "[PM-18038] Fix safari using outdated biometrics protocol (#13287)"
+        },
+        {
+          "date": "2025-04-21T14:57:26Z",
+          "pr": 13598,
+          "sha": "43b1f5536024693c5de969b9109ae0f123d567d3",
+          "title": "[PM-18697] Remove old symmetric key representations in symmetriccryptokey (#13598)"
+        },
+        {
+          "date": "2025-06-03T20:12:11Z",
+          "pr": 15047,
+          "sha": "ce3ce17010f68fcd6de0e69e4806fcf92687b241",
+          "title": "[PM-21147] User key transferred over ipc within desktop app without its prototype (#15047)"
+        },
+        {
+          "date": "2025-06-17T11:12:15Z",
+          "pr": 15140,
+          "sha": "0ce4a2ce392c27afe3e06cfcf8aebba4334b1400",
+          "title": "[PM-22745] Move clientkeyhalf to os impl (#15140)"
+        },
+        {
+          "date": "2025-06-30T10:38:51Z",
+          "pr": 15070,
+          "sha": "8fec95671d1f39c863e9977542c95c80fc5957c2",
+          "title": "[PM-22090] Delete password on Windows desktop throws incorrect error (#15070)"
+        },
+        {
+          "date": "2025-07-15T09:53:58Z",
+          "pr": 15401,
+          "sha": "8250e40c6c19d1b1007b8e9ed152eabdda8c1ab8",
+          "title": "[PM-22271] Switch to SDK argon2 implementation, and drop other impls (#15401)"
+        },
+        {
+          "date": "2025-07-16T15:15:24Z",
+          "pr": 15457,
+          "sha": "60855c734fe34ed98ae321777266ededdb571e6d",
+          "title": "[PM-17666] Move Encstring to KM ownership (#15457)"
+        },
+        {
+          "date": "2025-07-21T17:35:31Z",
+          "pr": 14953,
+          "sha": "167fa9a7ab1456f8ea4e2933057dd370c42b83cc",
+          "title": "[PM-18054] Chrome extension biometric unlock not functioning correctly with Windows Hello. (#14953)"
+        },
+        {
+          "date": "2025-08-22T21:14:02Z",
+          "pr": 15957,
+          "sha": "5b402d9c3877d9f3d13080e7522fdabde6fa7ae4",
+          "title": "cleanup remove password on start for desktop (#15957)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=apps%2Fdesktop%2Fsrc%2Fkey-management%2Fbiometrics%2F&since=2024-09-30T16%3A14%3A34Z&until=2025-09-30T16%3A14%3A33Z&per_page=100",
+      "truncated": false
+    },
+    "before": {
+      "commit_count": 15,
+      "pr_linked_count": 15,
+      "records": [
+        {
+          "date": "2023-11-29T21:15:20Z",
+          "pr": 7014,
+          "sha": "28de9439beb87133c8683434df952a0c0be94100",
+          "title": "[deps] Autofill: Update prettier to v3 (#7014)"
+        },
+        {
+          "date": "2024-01-26T16:15:28Z",
+          "pr": 7559,
+          "sha": "53be4946de4c55c338c950c7043ead120ab0ceeb",
+          "title": "[PM-5717] Fix calling methods on undefined in biometrics service (#7559)"
+        },
+        {
+          "date": "2024-02-02T20:13:37Z",
+          "pr": 7789,
+          "sha": "cb8849c355d48bc1ab24a5b6e2398a01d2375961",
+          "title": "Add eslint rule no-floating-promises (#7789)"
+        },
+        {
+          "date": "2024-02-05T18:02:28Z",
+          "pr": 7761,
+          "sha": "414ee2563f250974f25aab8fad3446d1d3e12f0a",
+          "title": "[PM-5537] Biometric State Service (#7761)"
+        },
+        {
+          "date": "2024-02-15T20:29:29Z",
+          "pr": 7762,
+          "sha": "c8c1ed42baa2c665d6b98d7640c1e5910f35b4f1",
+          "title": "[PM-5537] Remove Unecessary Biometric State (#7762)"
+        },
+        {
+          "date": "2024-02-23T14:21:18Z",
+          "pr": 7771,
+          "sha": "9775e77079896d9b1e4e8242d8e0090f86e52600",
+          "title": "[PM-5537] Migrate Biometric Prompts (#7771)"
+        },
+        {
+          "date": "2024-02-28T17:13:48Z",
+          "pr": 8140,
+          "sha": "29a26266e5f38aa1d0a887228afe97734024d169",
+          "title": "Remove extra parameters in biometrics constructors (#8140)"
+        },
+        {
+          "date": "2024-03-28T11:01:09Z",
+          "pr": 8527,
+          "sha": "2edc156dd64544fb13b420d22e1a0151e491aaf8",
+          "title": "[STRICT TS] Migrate platform abstract services functions (#8527)"
+        },
+        {
+          "date": "2024-07-01T13:19:29Z",
+          "pr": 9682,
+          "sha": "33c985e00b981e7c6599166197ab91e3e16b4a5a",
+          "title": "[PM-8789] Move desktop_native into subcrate (#9682)"
+        },
+        {
+          "date": "2024-08-02T10:31:11Z",
+          "pr": 9851,
+          "sha": "1184c504d1ce825e05380136c419346d434b60ad",
+          "title": "[PM-6296] Fix biometrics error prompt when biometrics are temporarily unavailable in browser extension (#9851)"
+        },
+        {
+          "date": "2024-08-02T11:46:54Z",
+          "pr": 10373,
+          "sha": "cc45655b86149d32578e91a9be53b192d13cca02",
+          "title": "Revert \"[PM-6296] Fix biometrics error prompt when biometrics are temporarily…\" (#10373)"
+        },
+        {
+          "date": "2024-08-06T15:04:17Z",
+          "pr": 4586,
+          "sha": "2ce8500391fed075e2b55cbff0eded5371f114f7",
+          "title": "[PM-990] Unix biometrics unlock via Polkit (#4586)"
+        },
+        {
+          "date": "2024-08-27T06:25:20Z",
+          "pr": 10374,
+          "sha": "3c9b3ea2ccd22c3418458602b0c4b6a3f413c2be",
+          "title": "[PM-6296] Fix biometrics error prompt when biometrics are temporarily unavailable in browser extension (v2) (#10374)"
+        },
+        {
+          "date": "2024-09-18T14:41:23Z",
+          "pr": 11081,
+          "sha": "f6e51ef02447655b463644f0e7d7d99eaf71c5c1",
+          "title": "Don't process reload when cancelling biometrics (#11081)"
+        },
+        {
+          "date": "2024-09-30T16:14:32Z",
+          "pr": 10818,
+          "sha": "19f547e638742646a8faf05729139822a1acc73d",
+          "title": "[PM-8836] Move ownership of biometrics to key-management (#10818)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=apps%2Fdesktop%2Fsrc%2Fplatform%2Fmain%2Fbiometric%2F&since=2023-10-01T16%3A14%3A33Z&until=2024-09-30T16%3A14%3A32Z&per_page=100",
+      "truncated": false
+    }
+  },
+  "id": "BW10818",
+  "merge_sha": "19f547e638742646a8faf05729139822a1acc73d",
+  "merged_at": "2024-09-30T16:14:33Z",
+  "migration_patch_sha256": "8ef88726646ec18ee01180b891e310176840bb6b8ffb9dbda7b21dab6df5a885",
+  "migration_pr": 10818,
+  "new_owner": [
+    "@bitwarden/team-key-management-dev"
+  ],
+  "new_prefix": "apps/desktop/src/key-management/biometrics/",
+  "old_owner": [
+    "@bitwarden/team-platform-dev"
+  ],
+  "old_prefix": "apps/desktop/src/platform/main/biometric/",
+  "post_days": 365,
+  "pre_days": 365,
+  "rename_pairs": [
+    {
+      "new": "apps/desktop/src/key-management/biometrics/biometric.darwin.main.ts",
+      "old": "apps/desktop/src/platform/main/biometric/biometric.darwin.main.ts"
+    },
+    {
+      "new": "apps/desktop/src/key-management/biometrics/biometric.noop.main.ts",
+      "old": "apps/desktop/src/platform/main/biometric/biometric.noop.main.ts"
+    },
+    {
+      "new": "apps/desktop/src/key-management/biometrics/biometric.unix.main.ts",
+      "old": "apps/desktop/src/platform/main/biometric/biometric.unix.main.ts"
+    },
+    {
+      "new": "apps/desktop/src/key-management/biometrics/biometric.windows.main.ts",
+      "old": "apps/desktop/src/platform/main/biometric/biometric.windows.main.ts"
+    },
+    {
+      "new": "apps/desktop/src/key-management/biometrics/biometrics.service.spec.ts",
+      "old": "apps/desktop/src/platform/main/biometric/biometrics.service.spec.ts"
+    },
+    {
+      "new": "apps/desktop/src/key-management/biometrics/biometrics.service.ts",
+      "old": "apps/desktop/src/platform/main/biometric/biometrics.service.ts"
+    },
+    {
+      "new": "apps/desktop/src/key-management/biometrics/desktop.biometrics.service.ts",
+      "old": "apps/desktop/src/platform/main/biometric/desktop.biometrics.service.ts"
+    },
+    {
+      "new": "apps/desktop/src/key-management/biometrics/index.ts",
+      "old": "apps/desktop/src/platform/main/biometric/index.ts"
+    }
+  ],
+  "repo": "bitwarden/clients",
+  "valid": true
+}

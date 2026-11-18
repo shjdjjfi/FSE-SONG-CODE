@@ -1,0 +1,30 @@
+{
+  "key": "8f4812773c270b1fa5",
+  "args": {
+    "crate": "dashmap",
+    "version": "6.1.0",
+    "id": "d50530e0763f5f3a",
+    "profile": "candidate",
+    "features": [
+      "typesize"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 8.857,
+  "errors": [
+    {
+      "code": "E0599",
+      "message": "no method named `determine_map` found for struct `DashSet<K, S>` in the current scope",
+      "rendered": "error[E0599]: no method named `determine_map` found for struct `DashSet<K, S>` in the current scope\n --> src/main.rs:6:50\n  |\n6 | println!(\"coca-cola is stored in shard: {}\", set.determine_map(\"coca-cola\"));\n  |                                                  ^^^^^^^^^^^^^ method not found in `DashSet<&str>`\n\n",
+      "line": 6
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_dashmap_consumer` (bin \"n05_dashmap_consumer\") due to 1 previous error\n",
+  "code_sha256": "e91ffc98d4152e3b12dbfba920b57f58d22583defcc3386e4cea80b3b41aa74e",
+  "manifest_sha256": "1ab09bc612f4a1bfae6f83bd00be370d038686dec843d3f0c6b7037d3d600356",
+  "log_file": "holdout/results/check_logs/8f4812773c270b1fa5.txt.gz"
+}

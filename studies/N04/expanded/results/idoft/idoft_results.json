@@ -1,0 +1,69 @@
+{
+  "idoft": {
+    "maven": {
+      "all_flaky_test_records": 8075,
+      "labeled_moved_or_renamed": 245,
+      "repos_with_moved": 34,
+      "annotated_fix_links": 216,
+      "csv_sha256": "4d9a8b9a0cbb597792efe328f4bf29300de585681b77d97fdaa98c90d96f93fb"
+    },
+    "gradle": {
+      "all_flaky_test_records": 1029,
+      "labeled_moved_or_renamed": 1,
+      "repos_with_moved": 1,
+      "annotated_fix_links": 1,
+      "csv_sha256": "ad10192d4c691aad89fcbbf532aa5db1823f157f97720b036d55079875ed1ae9"
+    },
+    "pytest": {
+      "all_flaky_test_records": 1618,
+      "labeled_moved_or_renamed": 2,
+      "repos_with_moved": 2,
+      "annotated_fix_links": 0,
+      "csv_sha256": "a1cf7425cd23096ae653af275fbba6c82d7d72ce5e17bb3db754e46e0e4c3c32"
+    }
+  },
+  "java_websocket": {
+    "old_ids_annotated": 27,
+    "old_ids_with_actual_historical_outcomes": 27,
+    "test_commit_observations_before_refactoring": 2020,
+    "historical_commit_test_observations_with_flakiness": 102,
+    "refactoring_commit": "https://github.com/TooTallNate/Java-WebSocket/commit/2ce6e6149d0ef44f4919e75326265c64c144a00f",
+    "after_source_validation": {
+      "Issue256Test": {
+        "parameterized": true,
+        "range_10": true,
+        "methods": [
+          "onOpen",
+          "onClose",
+          "onMessage",
+          "onError",
+          "onStart",
+          "onOpen",
+          "onMessage",
+          "onClose",
+          "onError",
+          "runReconnectSocketClose",
+          "runReconnectCloseBlocking"
+        ]
+      },
+      "Issue580Test": {
+        "parameterized": true,
+        "range_10": true,
+        "methods": [
+          "onOpen",
+          "onClose",
+          "onMessage",
+          "onError",
+          "onStart",
+          "onOpen",
+          "onMessage",
+          "onClose",
+          "onError",
+          "runNoCloseBlockingTestScenario",
+          "runCloseBlockingTestScenario"
+        ]
+      }
+    },
+    "caveat": "Post-refactor JUnit executions were NOT observed in the historical FTW dataset; parameter mapping derives from this one source commit."
+  }
+}

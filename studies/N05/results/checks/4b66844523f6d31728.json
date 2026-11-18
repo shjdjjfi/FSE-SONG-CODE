@@ -1,0 +1,70 @@
+{
+  "key": "4b66844523f6d31728",
+  "args": {
+    "crate": "futures-util",
+    "version": "0.3.31",
+    "id": "5e6a4283cb14a9e9",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.08,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `futures`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`\n --> src/main.rs:3:5\n  |\n3 | use futures::task::SpawnExt;\n  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`\n  |\n  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `futures`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`\n --> src/main.rs:4:5\n  |\n4 | use futures::future::{FutureExt, TryFutureExt};\n  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`\n  |\n  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:6:5\n  |\n6 | use tokio::executor::DefaultExecutor;\n  |     ^^^^^ use of unresolved module or unlinked crate `tokio`\n  |\n  = help: if you wanted to use a crate named `tokio`, use `cargo add tokio` to add it to your `Cargo.toml`\n\n",
+      "line": 6
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `futures_util::compat`",
+      "rendered": "error[E0432]: unresolved import `futures_util::compat`\n   --> src/main.rs:5:19\n    |\n  5 | use futures_util::compat::Executor01CompatExt;\n    |                   ^^^^^^ could not find `compat` in `futures_util`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/futures-util-0.3.31/src/lib.rs:310:9\n    |\n308 | #[cfg(feature = \"compat\")]\n    |       ------------------ the item is gated behind the `compat` feature\n309 | #[cfg_attr(docsrs, doc(cfg(feature = \"compat\")))]\n310 | pub mod compat;\n    |         ^^^^^^\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `futures`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`\n --> src/main.rs:8:16\n  |\n8 | let (tx, rx) = futures::channel::oneshot::channel();\n  |                ^^^^^^^ use of unresolved module or unlinked crate `futures`\n  |\n  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`\n\n",
+      "line": 8
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `futures`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`\n  --> src/main.rs:22:1\n   |\n22 | futures::executor::block_on(rx).unwrap();\n   | ^^^^^^^ use of unresolved module or unlinked crate `futures`\n   |\n   = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`\n\n",
+      "line": 22
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `unit_error` found for `async` block `{async block@src/main.rs:11:16: 11:26}` in the current scope",
+      "rendered": "error[E0599]: no method named `unit_error` found for `async` block `{async block@src/main.rs:11:16: 11:26}` in the current scope\n   --> src/main.rs:19:25\n    |\n 19 | let future01 = future03.unit_error().boxed().compat();\n    |                         ^^^^^^^^^^ method not found in `{async block@src/main.rs:11:16: 11:26}`\n    |\n   ::: /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/futures-util-0.3.31/src/future/future/mod.rs:537:8\n    |\n537 |     fn unit_error(self) -> UnitError<Self>\n    |        ---------- the method is available for `{async block@src/main.rs:11:16: 11:26}` here\n    |\n    = help: items from traits can only be used if the trait is in scope\nhelp: trait `FutureExt` which provides `unit_error` is implemented but not in scope; perhaps you want to import it\n    |\n  1 + use futures_util::FutureExt;\n    |\n\n",
+      "line": 19
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n  --> src/main.rs:21:1\n   |\n21 | tokio::run(future01);\n   | ^^^^^ use of unresolved module or unlinked crate `tokio`\n   |\n   = help: if you wanted to use a crate named `tokio`, use `cargo add tokio` to add it to your `Cargo.toml`\n\n",
+      "line": 21
+    }
+  ],
+  "error_count": 8,
+  "stderr_excerpt": "error: could not compile `n05_futures_util_consumer` (bin \"n05_futures_util_consumer\") due to 8 previous errors\n",
+  "code_sha256": "2060bbac539aa455bb78fa4aac06630dacdf1068c0afac333175783cdd86b92a",
+  "manifest_sha256": "cd2b670a0a337cce1ec0336410fe7d595e313083be5023e2afd387b05aeb8e6c",
+  "log_file": "results/check_logs/4b66844523f6d31728.txt.gz"
+}

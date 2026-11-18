@@ -1,0 +1,186 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 131,
+  "bytes": 260642,
+  "control_flow_or_callback_lines": 591,
+  "event": "BW11709",
+  "examples": [
+    {
+      "change": "-",
+      "code": "import { firstValueFrom } from \"rxjs\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { firstValueFrom, Observable } from \"rxjs\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { HashPurpose } from \"@bitwarden/common/platform/enums\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { EncryptionType, HashPurpose } from \"@bitwarden/common/platform/enums\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { KeyService } from \"@bitwarden/key-management\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { KdfConfig, KdfConfigService, KeyService } from \"@bitwarden/key-management\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { CryptoFunctionService } from \"@bitwarden/common/key-management/crypto/abstractions/crypto-function.service\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "type MasterPasswordAuthenticationAndUnlockData = {",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "masterPassword: string;",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "masterKeySalt: string;",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "masterKeyKdfConfig: KdfConfig;",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "masterPasswordHint: string;",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "};",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "private cryptoFunctionService: CryptoFunctionService,",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "private kdfConfigService: KdfConfigService,",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "* @param oldMasterPassword: The current master password",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "* @param currentMasterPassword: The current master password",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "oldMasterPassword: string,",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "currentMasterPassword: string,",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.logService.info(\"[Userkey rotation] Starting user key rotation...\");",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "if (!newMasterPassword) {",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.logService.info(\"[Userkey rotation] Invalid master password provided. Aborting!\");",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "throw new Error(\"Invalid master password\");",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.logService.info(\"[UserKey Rotation] Starting user key rotation...\");",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "const upgradeToV2FeatureFlagEnabled = await this.configService.getFeatureFlag(",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "FeatureFlag.EnrollAeadOnKeyRotation,",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": ");",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "// Make sure all conditions match - e.g. account state is up to date",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:47.279778+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+  "noncomment_nonimport_changed_lines": 2716,
+  "pr": 14900,
+  "repository": "bitwarden/clients",
+  "sha256": "65677e036db6c64663d6f49641ad8ede89f5b39cdab1d6b717f6c0b163d91783",
+  "target_code_changed_lines": 3534,
+  "target_files": [
+    "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts",
+    "apps/web/src/app/key-management/key-rotation/testable-user-key-rotation.service.spec.ts",
+    "apps/web/src/app/key-management/key-rotation/testable-user-key-rotation.service.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation-api.service.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.module.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/14900.patch"
+}

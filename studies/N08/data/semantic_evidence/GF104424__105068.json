@@ -1,0 +1,192 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 6,
+  "bytes": 326963,
+  "control_flow_or_callback_lines": 14,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "-",
+      "code": "model \"github.com/grafana/grafana/apps/alerting/notifications/pkg/apis/receiver/v0alpha1\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "model \"github.com/grafana/grafana/apps/alerting/notifications/pkg/apis/alerting/v0alpha1\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "if selector != nil && !selector.Empty() && !selector.Matches(model.SelectableFields(k8sResource)) {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "if selector != nil && !selector.Empty() && !selector.Matches(model.ReceiverSelectableFields(k8sResource)) {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "spec := model.Spec{",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "spec := model.ReceiverSpec{",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "Integrations: make([]model.Integration, 0, len(receiver.Integrations)),",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "Integrations: make([]model.ReceiverIntegration, 0, len(receiver.Integrations)),",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "spec.Integrations = append(spec.Integrations, model.Integration{",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "spec.Integrations = append(spec.Integrations, model.ReceiverIntegration{",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "model \"github.com/grafana/grafana/apps/alerting/notifications/pkg/apis/receiver/v0alpha1\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "+",
+      "code": "model \"github.com/grafana/grafana/apps/alerting/notifications/pkg/apis/alerting/v0alpha1\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "model \"github.com/grafana/grafana/apps/alerting/notifications/pkg/apis/receiver/v0alpha1\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/type.go"
+    },
+    {
+      "change": "+",
+      "code": "model \"github.com/grafana/grafana/apps/alerting/notifications/pkg/apis/alerting/v0alpha1\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/type.go"
+    },
+    {
+      "change": "-",
+      "code": "var kind = model.Kind()",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/type.go"
+    },
+    {
+      "change": "+",
+      "code": "var kind = model.ReceiverKind()",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/type.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/grafana/apps/alerting/notifications/pkg/apis/alerting/v0alpha1\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "OpenAPIDefGetter:    notificationsResource.GetOpenAPIDefinitions,",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "OpenAPIDefGetter:    v0alpha1.GetOpenAPIDefinitions,",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "model \"github.com/grafana/grafana/apps/alerting/notifications/pkg/apis/routingtree/v0alpha1\"",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "model \"github.com/grafana/grafana/apps/alerting/notifications/pkg/apis/alerting/v0alpha1\"",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "spec := model.Spec{",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "Defaults: model.RouteDefaults{",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "spec := model.RoutingTreeSpec{",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "Defaults: model.RoutingTreeRouteDefaults{",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "func convertRouteToK8sSubRoute(r *definitions.Route) model.Route {",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "result := model.Route{",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "func convertRouteToK8sSubRoute(r *definitions.Route) model.RoutingTreeRoute {",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "result := model.RoutingTreeRoute{",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "Routes:            make([]model.Route, 0, len(r.Routes)),",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "Routes:            make([]model.RoutingTreeRoute, 0, len(r.Routes)),",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "result.Matchers = append(result.Matchers, model.Matcher{",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:53.287300+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 91,
+  "pr": 105068,
+  "repository": "grafana/grafana",
+  "sha256": "e80f1558ae7d38fa7972bd1e3c3d8da5c7b64b6c85b14edcb00a65454a14f74b",
+  "target_code_changed_lines": 91,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/receiver/conversions.go",
+    "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go",
+    "pkg/registry/apps/alerting/notifications/receiver/type.go",
+    "pkg/registry/apps/alerting/notifications/register.go",
+    "pkg/registry/apps/alerting/notifications/routingtree/conversions.go",
+    "pkg/registry/apps/alerting/notifications/routingtree/legacy_storage.go",
+    "pkg/registry/apps/alerting/notifications/routingtree/type.go",
+    "pkg/registry/apps/alerting/notifications/templategroup/conversions.go",
+    "pkg/registry/apps/alerting/notifications/templategroup/legacy_storage.go",
+    "pkg/registry/apps/alerting/notifications/templategroup/type.go",
+    "pkg/registry/apps/alerting/notifications/timeinterval/conversions.go",
+    "pkg/registry/apps/alerting/notifications/timeinterval/legacy_storage.go",
+    "pkg/registry/apps/alerting/notifications/timeinterval/type.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/105068.patch"
+}

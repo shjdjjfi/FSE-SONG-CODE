@@ -1,0 +1,67 @@
+{
+  "fetched_utc": "2026-11-14T17:11:50.383119+00:00",
+  "merged_at": "2024-04-26T10:57:26Z",
+  "opened_at": "2024-04-04T13:13:28Z",
+  "pr": 8612,
+  "raw_html_sha256": "c8793ad0018b494e6b7b4605ebb485e605767723a1ef9fdacc87e99e68deb7ec",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 11,
+  "reviews": [
+    {
+      "login": "Hinton",
+      "state": "COMMENTED",
+      "submitted_at": "2024-04-04T15:24:39Z"
+    },
+    {
+      "login": "coroiu",
+      "state": "COMMENTED",
+      "submitted_at": "2024-04-05T07:29:54Z"
+    },
+    {
+      "login": "coroiu",
+      "state": "COMMENTED",
+      "submitted_at": "2024-04-05T12:45:07Z"
+    },
+    {
+      "login": "audreyality",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-18T14:54:44Z"
+    },
+    {
+      "login": "r-tome",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-19T13:37:11Z"
+    },
+    {
+      "login": "MGibson1",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-19T17:05:17Z"
+    },
+    {
+      "login": "audreyality",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-19T17:22:13Z"
+    },
+    {
+      "login": "jlf0dev",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-23T12:40:02Z"
+    },
+    {
+      "login": "connerbw",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-23T17:57:46Z"
+    },
+    {
+      "login": "r-tome",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-24T09:00:35Z"
+    },
+    {
+      "login": "shane-melton",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-25T09:26:11Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/8612"
+}

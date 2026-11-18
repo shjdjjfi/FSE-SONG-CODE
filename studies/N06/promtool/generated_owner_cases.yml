@@ -1,0 +1,35 @@
+rule_files:
+- alert_rules.yml
+evaluation_interval: 15s
+tests:
+- name: N06 synthetic verified owner continuity
+  interval: 15s
+  input_series:
+  - series: n06_owner_unavailable{job="n06-relink",namespace="synthetic",service="checkout",owner_uid="deployment-A-0"}
+    values: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+  alert_rule_test:
+  - eval_time: 885s
+    alertname: N06OwnerRelinkDown
+    exp_alerts:
+    - exp_labels:
+        job: n06-relink
+        namespace: synthetic
+        service: checkout
+        owner_uid: deployment-A-0
+        severity: test
+- name: N06 synthetic unrelated owner reuse
+  interval: 15s
+  input_series:
+  - series: n06_owner_unavailable{job="n06-relink",namespace="synthetic",service="checkout",owner_uid="deployment-A-0"}
+    values: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      1 1 1 1 1 1 1 1 1 1 1 1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+      _ _ _
+  - series: n06_owner_unavailable{job="n06-relink",namespace="synthetic",service="checkout",owner_uid="deployment-B-0"}
+    values: _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+      _ _ _ _ _ _ _ _ _ _ _ _ _ _ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+      1 1 _
+  alert_rule_test:
+  - eval_time: 1125s
+    alertname: N06OwnerRelinkDown
+    exp_alerts: []

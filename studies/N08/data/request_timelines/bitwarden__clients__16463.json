@@ -1,0 +1,33 @@
+{
+  "pr": 16463,
+  "pr_author": "shane-melton",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-09-29T23:14:41Z",
+      "requested_people": [
+        "nick-livefront",
+        "nikwithak",
+        "shane-melton"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-06T21:50:17Z",
+      "requested_people": [
+        "banrion",
+        "btreston",
+        "dani-garcia",
+        "djsmith85",
+        "jprusik",
+        "nikwithak",
+        "shane-melton"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "aec8a949b7c59381c0ccd8b6892d2595219d3ac79b8a4c90dec2a6674549b0f8",
+  "url": "https://github.com/bitwarden/clients/pull/16463"
+}

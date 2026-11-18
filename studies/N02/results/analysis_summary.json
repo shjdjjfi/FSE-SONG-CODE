@@ -1,0 +1,760 @@
+{
+  "design": "exploratory, known migration case study; not independent deployment evidence",
+  "family_count": 5,
+  "cases": 27,
+  "positives": 8,
+  "negatives": 19,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "budget_per_family": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "bootstrap_clusters": "5 chart families, 5000 resamples; degenerate intervals reflect curated data only",
+  "threshold_scores": [
+    {
+      "method": "missing_new_default",
+      "selected": 11,
+      "tp": 8,
+      "fn": 0,
+      "fp": 3,
+      "tn": 16,
+      "recall": 1.0,
+      "fpr": 0.15789473684210525,
+      "threshold": 0.5
+    },
+    {
+      "method": "effect_without_literals",
+      "selected": 7,
+      "tp": 7,
+      "fn": 1,
+      "fp": 0,
+      "tn": 19,
+      "recall": 0.875,
+      "fpr": 0.0,
+      "threshold": 5.0
+    },
+    {
+      "method": "literal_only",
+      "selected": 5,
+      "tp": 5,
+      "fn": 3,
+      "fp": 0,
+      "tn": 19,
+      "recall": 0.625,
+      "fpr": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "method": "counterfactual",
+      "selected": 8,
+      "tp": 8,
+      "fn": 0,
+      "fp": 0,
+      "tn": 19,
+      "recall": 1.0,
+      "fpr": 0.0,
+      "threshold": 5.0
+    },
+    {
+      "method": "migration_docs",
+      "selected": 7,
+      "tp": 7,
+      "fn": 1,
+      "fp": 0,
+      "tn": 19,
+      "recall": 0.875,
+      "fpr": 0.0,
+      "threshold": 0.5
+    }
+  ],
+  "rankings": [
+    {
+      "method": "random",
+      "budget": 1,
+      "true_positives": 0.6667,
+      "false_positives": 4.3333,
+      "recall": 0.083333,
+      "false_positive_rate": 0.22807,
+      "recall_cluster_bootstrap_95": [
+        0.0,
+        0.22222
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.16667,
+        0.33333
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "random",
+      "budget": 2,
+      "true_positives": 1.3333,
+      "false_positives": 8.6667,
+      "recall": 0.166667,
+      "false_positive_rate": 0.45614,
+      "recall_cluster_bootstrap_95": [
+        0.0,
+        0.27778
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.29167,
+        0.69048
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "random",
+      "budget": 3,
+      "true_positives": 3.6667,
+      "false_positives": 10.3333,
+      "recall": 0.458333,
+      "false_positive_rate": 0.54386,
+      "recall_cluster_bootstrap_95": [
+        0.33333,
+        0.86667
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.42012,
+        0.7381
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "random",
+      "budget": 4,
+      "true_positives": 4.6667,
+      "false_positives": 13.3333,
+      "recall": 0.583333,
+      "false_positive_rate": 0.701754,
+      "recall_cluster_bootstrap_95": [
+        0.43333,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.54545,
+        0.92857
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "manifest_diff",
+      "budget": 1,
+      "true_positives": 3.3333,
+      "false_positives": 1.6667,
+      "recall": 0.416667,
+      "false_positive_rate": 0.087719,
+      "recall_cluster_bootstrap_95": [
+        0.20833,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.24444
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "manifest_diff",
+      "budget": 2,
+      "true_positives": 5,
+      "false_positives": 5,
+      "recall": 0.625,
+      "false_positive_rate": 0.263158,
+      "recall_cluster_bootstrap_95": [
+        0.5,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.08696,
+        0.53846
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "manifest_diff",
+      "budget": 3,
+      "true_positives": 7,
+      "false_positives": 7,
+      "recall": 0.875,
+      "false_positive_rate": 0.368421,
+      "recall_cluster_bootstrap_95": [
+        0.76923,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.13043,
+        0.71429
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "manifest_diff",
+      "budget": 4,
+      "true_positives": 7,
+      "false_positives": 11,
+      "recall": 0.875,
+      "false_positive_rate": 0.578947,
+      "recall_cluster_bootstrap_95": [
+        0.76923,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.33333,
+        0.92857
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "missing_new_default",
+      "budget": 1,
+      "true_positives": 2.6667,
+      "false_positives": 1.3333,
+      "recall": 0.333333,
+      "false_positive_rate": 0.070175,
+      "recall_cluster_bootstrap_95": [
+        0.2,
+        0.77778
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.14815
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "missing_new_default",
+      "budget": 2,
+      "true_positives": 5.3333,
+      "false_positives": 1.6667,
+      "recall": 0.666667,
+      "false_positive_rate": 0.087719,
+      "recall_cluster_bootstrap_95": [
+        0.53333,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.2037
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "missing_new_default",
+      "budget": 3,
+      "true_positives": 6.6667,
+      "false_positives": 2.3333,
+      "recall": 0.833333,
+      "false_positive_rate": 0.122807,
+      "recall_cluster_bootstrap_95": [
+        0.7037,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.01961,
+        0.22807
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "missing_new_default",
+      "budget": 4,
+      "true_positives": 7.3333,
+      "false_positives": 2.6667,
+      "recall": 0.916667,
+      "false_positive_rate": 0.140351,
+      "recall_cluster_bootstrap_95": [
+        0.85185,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.03922,
+        0.22921
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "effect_without_literals",
+      "budget": 1,
+      "true_positives": 4,
+      "false_positives": 0,
+      "recall": 0.5,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.30769,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "effect_without_literals",
+      "budget": 2,
+      "true_positives": 6,
+      "false_positives": 0,
+      "recall": 0.75,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.53846,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "effect_without_literals",
+      "budget": 3,
+      "true_positives": 7,
+      "false_positives": 0,
+      "recall": 0.875,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.77778,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "effect_without_literals",
+      "budget": 4,
+      "true_positives": 7,
+      "false_positives": 0,
+      "recall": 0.875,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.77778,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "literal_only",
+      "budget": 1,
+      "true_positives": 3,
+      "false_positives": 0,
+      "recall": 0.375,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.16667,
+        0.75
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "literal_only",
+      "budget": 2,
+      "true_positives": 4,
+      "false_positives": 0,
+      "recall": 0.5,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.25,
+        0.75
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "literal_only",
+      "budget": 3,
+      "true_positives": 5,
+      "false_positives": 0,
+      "recall": 0.625,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.25,
+        0.83333
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "literal_only",
+      "budget": 4,
+      "true_positives": 5,
+      "false_positives": 0,
+      "recall": 0.625,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.25,
+        0.83333
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "counterfactual",
+      "budget": 1,
+      "true_positives": 4,
+      "false_positives": 0,
+      "recall": 0.5,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.3,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "counterfactual",
+      "budget": 2,
+      "true_positives": 6,
+      "false_positives": 0,
+      "recall": 0.75,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.53846,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "counterfactual",
+      "budget": 3,
+      "true_positives": 7,
+      "false_positives": 0,
+      "recall": 0.875,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.76923,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "counterfactual",
+      "budget": 4,
+      "true_positives": 8,
+      "false_positives": 0,
+      "recall": 1.0,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        1.0,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "migration_docs",
+      "budget": 1,
+      "true_positives": 4,
+      "false_positives": 0,
+      "recall": 0.5,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.3,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "migration_docs",
+      "budget": 2,
+      "true_positives": 6,
+      "false_positives": 0,
+      "recall": 0.75,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.53846,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "migration_docs",
+      "budget": 3,
+      "true_positives": 7,
+      "false_positives": 0,
+      "recall": 0.875,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.76923,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    },
+    {
+      "method": "migration_docs",
+      "budget": 4,
+      "true_positives": 7,
+      "false_positives": 0,
+      "recall": 0.875,
+      "false_positive_rate": 0.0,
+      "recall_cluster_bootstrap_95": [
+        0.76923,
+        1.0
+      ],
+      "fpr_cluster_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "unit": "human-reviewed chart-value scenario",
+      "seeds": [
+        17,
+        29,
+        43
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "budget": 1,
+      "counterfactual_minus_missing_default_recall_pp": 16.667,
+      "vs_missing_default_cluster_bootstrap_delta_ci_pp": [
+        0.0,
+        50.0
+      ],
+      "counterfactual_minus_documentation_annotated_recall_pp": 0.0,
+      "vs_documentation_cluster_bootstrap_delta_ci_pp": [
+        0.0,
+        0.0
+      ],
+      "counterfactual_minus_manifest_diff_recall_pp": 8.333
+    },
+    {
+      "budget": 2,
+      "counterfactual_minus_missing_default_recall_pp": 8.333,
+      "vs_missing_default_cluster_bootstrap_delta_ci_pp": [
+        0.0,
+        28.571
+      ],
+      "counterfactual_minus_documentation_annotated_recall_pp": 0.0,
+      "vs_documentation_cluster_bootstrap_delta_ci_pp": [
+        0.0,
+        0.0
+      ],
+      "counterfactual_minus_manifest_diff_recall_pp": 12.5
+    },
+    {
+      "budget": 3,
+      "counterfactual_minus_missing_default_recall_pp": 4.167,
+      "vs_missing_default_cluster_bootstrap_delta_ci_pp": [
+        0.0,
+        7.692
+      ],
+      "counterfactual_minus_documentation_annotated_recall_pp": 0.0,
+      "vs_documentation_cluster_bootstrap_delta_ci_pp": [
+        0.0,
+        0.0
+      ],
+      "counterfactual_minus_manifest_diff_recall_pp": 0.0
+    },
+    {
+      "budget": 4,
+      "counterfactual_minus_missing_default_recall_pp": 8.333,
+      "vs_missing_default_cluster_bootstrap_delta_ci_pp": [
+        0.0,
+        14.815
+      ],
+      "counterfactual_minus_documentation_annotated_recall_pp": 12.5,
+      "vs_documentation_cluster_bootstrap_delta_ci_pp": [
+        0.0,
+        23.077
+      ],
+      "counterfactual_minus_manifest_diff_recall_pp": 12.5
+    }
+  ],
+  "limitations": [
+    "labels selected and constructed from official upgrade documentation",
+    "documentation-baseline annotation uses independent human source evidence; not a fully automated helm-diff tool",
+    "budget is scenarios for human review, not real reviewer minutes",
+    "same chart-family cases and tie-breaking seeds are not independent samples",
+    "all primary effects are manifest/application-parser-level, not observed Kubernetes runtime failures",
+    "no independently held-out chart family was available for a confirmatory conclusion"
+  ]
+}

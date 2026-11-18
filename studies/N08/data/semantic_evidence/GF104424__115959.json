@@ -1,0 +1,95 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 3,
+  "bytes": 28633,
+  "control_flow_or_callback_lines": 2,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "-",
+      "code": "\"github.com/grafana/grafana/pkg/services/ngalert/notifier/legacy_storage\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "GetReceiver(ctx context.Context, q ngmodels.GetReceiverQuery, user identity.Requester) (*ngmodels.Receiver, error)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "+",
+      "code": "GetReceiver(ctx context.Context, uid string, decrypt bool, user identity.Requester) (*ngmodels.Receiver, error)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "name, err := legacy_storage.UidToName(uid)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "if err != nil {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "return nil, apierrors.NewNotFound(ResourceInfo.GroupResource(), uid)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "q := ngmodels.GetReceiverQuery{",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "OrgID:   info.OrgID,",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "Name:    name,",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "Decrypt: false,",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "r, err := s.service.GetReceiver(ctx, q, user)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "+",
+      "code": "r, err := s.service.GetReceiver(ctx, uid, false, user)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:58:00.532776+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 14,
+  "pr": 115959,
+  "repository": "grafana/grafana",
+  "sha256": "2706e07d872b99c4195db1f048b3419a9b33bb59f9f1ba9cbdda9458ab59928a",
+  "target_code_changed_lines": 15,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/115959.patch"
+}

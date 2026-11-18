@@ -1,0 +1,32 @@
+{
+  "changed_code_lines_under_target": 4931,
+  "changed_files_in_whole_pr": 67,
+  "changed_files_under_target": 14,
+  "code_files_under_target": 12,
+  "code_touched": true,
+  "event": "BW11709",
+  "focused_code_touched": true,
+  "pr": 14942,
+  "raw_size_bytes": 736167,
+  "repo": "bitwarden/clients",
+  "sha256": "b435989932e123594e54c8b178364e32f8ffe0c0aab4753262e70d86f975110f",
+  "target_file_fraction": 0.20896,
+  "target_paths": [
+    "apps/web/src/app/key-management/key-rotation/model/public-key-encryption-key-pair-request.model.ts",
+    "apps/web/src/app/key-management/key-rotation/model/public-key-encryption-keypair-request.model.ts",
+    "apps/web/src/app/key-management/key-rotation/model/signature-key-pair-request-request.model.ts",
+    "apps/web/src/app/key-management/key-rotation/model/signature-keypair-request-request.model.ts",
+    "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts",
+    "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts",
+    "apps/web/src/app/key-management/key-rotation/testable-user-key-rotation.service.spec.ts",
+    "apps/web/src/app/key-management/key-rotation/testable-user-key-rotation.service.ts",
+    "apps/web/src/app/key-management/key-rotation/types/v1-cryptographic-state.ts",
+    "apps/web/src/app/key-management/key-rotation/types/v2-cryptographic-state.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation-api.service.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.module.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+  ],
+  "test_files_under_target": 2,
+  "url": "https://github.com/bitwarden/clients/pull/14942.patch"
+}

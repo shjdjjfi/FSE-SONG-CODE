@@ -1,0 +1,245 @@
+{
+  "interpretation": "Offline replay of measured FTW test outcomes at manually audited source-identity boundaries; NOT real CI/quarantine policy evidence",
+  "hypothetical_policy": {
+    "lookback_source_revisions": 5,
+    "quarantine_failure_fraction_threshold": 0.05,
+    "threshold_pre_registered_here": true
+  },
+  "no_independent_quarantine_labels": true,
+  "summary": {
+    "gold_source_events": 6,
+    "gold_transfer_events": 3,
+    "source_events_with_actual_pre_post_outcomes": 6,
+    "unique_evaluated_source_events": 6,
+    "observed_old_flaky_before_boundary": 0,
+    "hypothetical_policy_decision_differences": 0,
+    "unique_new_test_outcomes_observed": 3,
+    "duplicate_track_records_excluded": 1
+  },
+  "records": [
+    {
+      "label": {
+        "repository": "apereo/java-cas-client",
+        "before": "f915f55",
+        "after": "f59544c",
+        "old": "org.jasig.cas.client.session.SingleSignOutHandlerTests::backChannelLogoutDoesDoesNotRunIfLogoutPathDoesNotMatch",
+        "new": "org.jasig.cas.client.session.SingleSignOutHandlerTests::backChannelLogoutDoesNotRunIfPathIsNotEligibleForLogout",
+        "decision": "transfer",
+        "reason": "Git diff changes the JUnit method name only; assertions and statement bodies are unchanged"
+      },
+      "observations": [
+        {
+          "track": "apereo_5e3655",
+          "independent_track": true,
+          "n_history_source_revisions": 5,
+          "pre_old_test_at_boundary": {
+            "passed": 30,
+            "failed": 0,
+            "errored": 0,
+            "skipped": 0
+          },
+          "pre_history_failures": 0,
+          "pre_history_observations": 60,
+          "old_history_flake_signal": false,
+          "hypothetical_quarantine_from_old_history": false,
+          "hypothetical_quarantine_from_exact_new_id": false,
+          "new_test_at_boundary": {
+            "passed": 30,
+            "failed": 0,
+            "errored": 0,
+            "skipped": 0
+          },
+          "new_test_measured": true
+        }
+      ]
+    },
+    {
+      "label": {
+        "repository": "apereo/java-cas-client",
+        "before": "f915f55",
+        "after": "f59544c",
+        "old": "org.jasig.cas.client.session.SingleSignOutHandlerTests::backChannelLogoutRunsWhenLogoutPathDoesMatch",
+        "new": "org.jasig.cas.client.session.SingleSignOutHandlerTests::backChannelLogoutRunsIfPathEqualsLogoutPath",
+        "decision": "transfer",
+        "reason": "Git diff changes the method name only and preserves the body"
+      },
+      "observations": [
+        {
+          "track": "apereo_5e3655",
+          "independent_track": true,
+          "n_history_source_revisions": 5,
+          "pre_old_test_at_boundary": {
+            "passed": 30,
+            "failed": 0,
+            "errored": 0,
+            "skipped": 0
+          },
+          "pre_history_failures": 0,
+          "pre_history_observations": 60,
+          "old_history_flake_signal": false,
+          "hypothetical_quarantine_from_old_history": false,
+          "hypothetical_quarantine_from_exact_new_id": false,
+          "new_test_at_boundary": {
+            "passed": 30,
+            "failed": 0,
+            "errored": 0,
+            "skipped": 0
+          },
+          "new_test_measured": true
+        }
+      ]
+    },
+    {
+      "label": {
+        "repository": "javadelight/delight-nashorn-sandbox",
+        "before": "0f1fb57",
+        "after": "027c07a",
+        "old": "delight.nashornsandbox.TestExit::test",
+        "new": "delight.nashornsandbox.TestExit::testExit",
+        "decision": "transfer",
+        "reason": "Exactly one added test (testExit) preserves the old test body; other new tests exercise quit()"
+      },
+      "observations": [
+        {
+          "track": "javadelight_d0d651",
+          "independent_track": true,
+          "n_history_source_revisions": 5,
+          "pre_old_test_at_boundary": {
+            "passed": 30,
+            "failed": 0,
+            "errored": 0,
+            "skipped": 0
+          },
+          "pre_history_failures": 0,
+          "pre_history_observations": 150,
+          "old_history_flake_signal": false,
+          "hypothetical_quarantine_from_old_history": false,
+          "hypothetical_quarantine_from_exact_new_id": false,
+          "new_test_at_boundary": {
+            "passed": 30,
+            "failed": 0,
+            "errored": 0,
+            "skipped": 0
+          },
+          "new_test_measured": true
+        },
+        {
+          "track": "javadelight_d19eee",
+          "independent_track": false,
+          "n_history_source_revisions": 5,
+          "pre_old_test_at_boundary": {
+            "passed": 30,
+            "failed": 0,
+            "errored": 0,
+            "skipped": 0
+          },
+          "pre_history_failures": 0,
+          "pre_history_observations": 150,
+          "old_history_flake_signal": false,
+          "hypothetical_quarantine_from_old_history": false,
+          "hypothetical_quarantine_from_exact_new_id": false,
+          "new_test_at_boundary": {
+            "passed": 30,
+            "failed": 0,
+            "errored": 0,
+            "skipped": 0
+          },
+          "new_test_measured": true
+        }
+      ]
+    },
+    {
+      "label": {
+        "repository": "apereo/java-cas-client",
+        "before": "6e5be5b",
+        "after": "296b1fc",
+        "old": "org.jasig.cas.client.authentication.AuthenticationFilterTests::testRedirect",
+        "new": null,
+        "decision": "abstain_split",
+        "reason": "Old implementation moved into a helper, with two new configuration-specific wrapper tests; instance-level inherited history is ambiguous"
+      },
+      "observations": [
+        {
+          "track": "apereo_5e3655",
+          "independent_track": true,
+          "n_history_source_revisions": 5,
+          "pre_old_test_at_boundary": {
+            "passed": 30,
+            "failed": 0,
+            "errored": 0,
+            "skipped": 0
+          },
+          "pre_history_failures": 0,
+          "pre_history_observations": 150,
+          "old_history_flake_signal": false,
+          "hypothetical_quarantine_from_old_history": false,
+          "hypothetical_quarantine_from_exact_new_id": false,
+          "new_test_at_boundary": null,
+          "new_test_measured": false
+        }
+      ]
+    },
+    {
+      "label": {
+        "repository": "apereo/java-cas-client",
+        "before": "6e5be5b",
+        "after": "296b1fc",
+        "old": "org.jasig.cas.client.session.SingleSignOutHandlerTests::backChannelLogoutDoesNotRunIfPathIsNotEligibleForLogout",
+        "new": null,
+        "decision": "abstain_deleted",
+        "reason": "Method removed with no equivalent new test; earlier specialized assertions were removed"
+      },
+      "observations": [
+        {
+          "track": "apereo_5e3655",
+          "independent_track": true,
+          "n_history_source_revisions": 5,
+          "pre_old_test_at_boundary": {
+            "passed": 30,
+            "failed": 0,
+            "errored": 0,
+            "skipped": 0
+          },
+          "pre_history_failures": 0,
+          "pre_history_observations": 60,
+          "old_history_flake_signal": false,
+          "hypothetical_quarantine_from_old_history": false,
+          "hypothetical_quarantine_from_exact_new_id": false,
+          "new_test_at_boundary": null,
+          "new_test_measured": false
+        }
+      ]
+    },
+    {
+      "label": {
+        "repository": "apereo/java-cas-client",
+        "before": "6e5be5b",
+        "after": "296b1fc",
+        "old": "org.jasig.cas.client.session.SingleSignOutHandlerTests::backChannelLogoutRunsIfPathEqualsLogoutPath",
+        "new": null,
+        "decision": "abstain_deleted",
+        "reason": "Method deleted and only general back-channel logout behavior remains"
+      },
+      "observations": [
+        {
+          "track": "apereo_5e3655",
+          "independent_track": true,
+          "n_history_source_revisions": 5,
+          "pre_old_test_at_boundary": {
+            "passed": 30,
+            "failed": 0,
+            "errored": 0,
+            "skipped": 0
+          },
+          "pre_history_failures": 0,
+          "pre_history_observations": 60,
+          "old_history_flake_signal": false,
+          "hypothetical_quarantine_from_old_history": false,
+          "hypothetical_quarantine_from_exact_new_id": false,
+          "new_test_at_boundary": null,
+          "new_test_measured": false
+        }
+      ]
+    }
+  ]
+}

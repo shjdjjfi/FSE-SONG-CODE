@@ -1,0 +1,81 @@
+{
+  "computed_at_utc": "2026-11-15T00:02:43.513759+00:00",
+  "contacts_naturally_reviewing_not_causal_new_reviews": 17,
+  "original_confirmatory_expert_coverage_plus_10pp_gate_met": false,
+  "patches_downloaded": 93,
+  "patches_missing": 21,
+  "posthoc_single_researcher_yes_subset_vs_path": {
+    "delta": 0.04758297258297258,
+    "event_bootstrap_ci_95": [
+      -0.07817460317460317,
+      0.21504329004329004
+    ],
+    "n_events": 7,
+    "note": "Event-level clusters only. With two independent repositories these CIs do not support industry-level inference.",
+    "per_event": {
+      "BW10818": 0.0303030303030303,
+      "BW11709": 0.0,
+      "BW12407": 0.5,
+      "BW13285": -0.17222222222222222,
+      "BW14571": 0.0,
+      "BW15093": -0.125,
+      "GF104424": 0.1
+    },
+    "two_sided_exact_sign_flip_p": 0.75
+  },
+  "prequential_hybrid_vs_path": {
+    "delta": 0.049159305018008144,
+    "event_bootstrap_ci_95": [
+      -0.021241830065359475,
+      0.1309245335561125
+    ],
+    "n_events": 9,
+    "note": "Event-level clusters only. With two independent repositories these CIs do not support industry-level inference.",
+    "per_event": {
+      "BW10818": 0.13095238095238096,
+      "BW11709": -0.0261437908496732,
+      "BW12407": 0.3,
+      "BW12927": -0.10185185185185185,
+      "BW13285": 0.05555555555555555,
+      "BW14571": -0.007891414141414142,
+      "BW14987": 0.0,
+      "BW15093": 0.14736842105263157,
+      "GF104424": -0.05555555555555555
+    },
+    "two_sided_exact_sign_flip_p": 0.296875
+  },
+  "real_realized_industrial_roi_measured": false,
+  "researcher_labels": {
+    "no": 2,
+    "unknown": 66,
+    "yes": 46
+  },
+  "retrospective_180day_vs_path_all": {
+    "delta": 0.03199539707193646,
+    "event_bootstrap_ci_95": [
+      -0.018170140228103763,
+      0.1059304054187095
+    ],
+    "n_events": 9,
+    "note": "Event-level clusters only. With two independent repositories these CIs do not support industry-level inference.",
+    "per_event": {
+      "BW10818": 0.023809523809523808,
+      "BW11709": -0.0261437908496732,
+      "BW12407": 0.3,
+      "BW12927": 0.018518518518518517,
+      "BW13285": -0.04666666666666667,
+      "BW14571": 0.008207070707070706,
+      "BW14987": 0.0,
+      "BW15093": -0.04532163742690058,
+      "GF104424": 0.05555555555555555
+    },
+    "two_sided_exact_sign_flip_p": 0.5390625
+  },
+  "strict_independent_truth_n": 0,
+  "supplemental_shuffled_reviewer_contacts_not_actual_invites": 62,
+  "team_endpoint_status_codes": {
+    "401": 8,
+    "403": 2
+  },
+  "team_rosters_independently_verified_n": 0
+}

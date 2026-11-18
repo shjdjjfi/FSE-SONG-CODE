@@ -1,0 +1,19 @@
+{
+  "planned_cases": 1440,
+  "root_gates": {
+    "False": 523,
+    "True": 881,
+    "None": 36
+  },
+  "metadata_cases": {
+    "ok": 1404,
+    "http_404": 36
+  },
+  "root_failure_reasons": {
+    "no_wheel_for_release": 252,
+    "ok": 881,
+    "no_matching_platform_abi_wheel": 118,
+    "metadata_http_404": 36,
+    "requires_python_or_yanked": 153
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "turbo_version": "2.6.0",
+  "experiment_scope": "constructed workspace; real cache/task execution; synthetic fault",
+  "observations": [
+    {
+      "project": "ts-pattern",
+      "fault": "delete_js",
+      "cache": "available",
+      "target": "internals/helpers.js",
+      "cold": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-ts-pattern",
+          "--output-logs=full"
+        ],
+        "exit": 0,
+        "seconds": 2.584,
+        "stdout": "• Packages in scope: n21-ts-pattern\n• Running build in 1 packages\n• Remote caching disabled\nn21-ts-pattern:build: cache miss, executing 00a417ef34446fab\nn21-ts-pattern:build: \nn21-ts-pattern:build: > n21-ts-pattern@1.0.0 build\nn21-ts-pattern:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-ts-pattern:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    2.479s \n\n",
+        "stderr": ""
+      },
+      "recovery": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-ts-pattern",
+          "--output-logs=full"
+        ],
+        "exit": 0,
+        "seconds": 0.446,
+        "stdout": "• Packages in scope: n21-ts-pattern\n• Running build in 1 packages\n• Remote caching disabled\nn21-ts-pattern:build: cache miss, executing b2dd57526be5804c\nn21-ts-pattern:build: \nn21-ts-pattern:build: > n21-ts-pattern@1.0.0 build\nn21-ts-pattern:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-ts-pattern:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    304ms \n\n",
+        "stderr": ""
+      },
+      "correct": false,
+      "outputs": 36
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "delete_js",
+      "cache": "forced_miss",
+      "target": "internals/helpers.js",
+      "cold": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-ts-pattern",
+          "--output-logs=full"
+        ],
+        "exit": 0,
+        "seconds": 2.46,
+        "stdout": "• Packages in scope: n21-ts-pattern\n• Running build in 1 packages\n• Remote caching disabled\nn21-ts-pattern:build: cache miss, executing 00a417ef34446fab\nn21-ts-pattern:build: \nn21-ts-pattern:build: > n21-ts-pattern@1.0.0 build\nn21-ts-pattern:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-ts-pattern:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    2.356s \n\n",
+        "stderr": ""
+      },
+      "recovery": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-ts-pattern",
+          "--output-logs=full",
+          "--force"
+        ],
+        "exit": 0,
+        "seconds": 0.494,
+        "stdout": "• Packages in scope: n21-ts-pattern\n• Running build in 1 packages\n• Remote caching disabled\nn21-ts-pattern:build: cache bypass, force executing b2dd57526be5804c\nn21-ts-pattern:build: \nn21-ts-pattern:build: > n21-ts-pattern@1.0.0 build\nn21-ts-pattern:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-ts-pattern:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    382ms \n\n",
+        "stderr": ""
+      },
+      "correct": false,
+      "outputs": 36
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "corrupt_js",
+      "cache": "available",
+      "target": "internals/helpers.js",
+      "cold": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-ts-pattern",
+          "--output-logs=full"
+        ],
+        "exit": 0,
+        "seconds": 2.647,
+        "stdout": "• Packages in scope: n21-ts-pattern\n• Running build in 1 packages\n• Remote caching disabled\nn21-ts-pattern:build: cache miss, executing 00a417ef34446fab\nn21-ts-pattern:build: \nn21-ts-pattern:build: > n21-ts-pattern@1.0.0 build\nn21-ts-pattern:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-ts-pattern:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    2.553s \n\n",
+        "stderr": ""
+      },
+      "recovery": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-ts-pattern",
+          "--output-logs=full"
+        ],
+        "exit": 0,
+        "seconds": 0.405,
+        "stdout": "• Packages in scope: n21-ts-pattern\n• Running build in 1 packages\n• Remote caching disabled\nn21-ts-pattern:build: cache miss, executing f6fe6e7895baf6b1\nn21-ts-pattern:build: \nn21-ts-pattern:build: > n21-ts-pattern@1.0.0 build\nn21-ts-pattern:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-ts-pattern:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    291ms \n\n",
+        "stderr": ""
+      },
+      "correct": false,
+      "outputs": 36
+    },
+    {
+      "project": "ts-pattern",
+      "fault": "corrupt_js",
+      "cache": "forced_miss",
+      "target": "internals/helpers.js",
+      "cold": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-ts-pattern",
+          "--output-logs=full"
+        ],
+        "exit": 0,
+        "seconds": 2.016,
+        "stdout": "• Packages in scope: n21-ts-pattern\n• Running build in 1 packages\n• Remote caching disabled\nn21-ts-pattern:build: cache miss, executing 00a417ef34446fab\nn21-ts-pattern:build: \nn21-ts-pattern:build: > n21-ts-pattern@1.0.0 build\nn21-ts-pattern:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-ts-pattern:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    1.909s \n\n",
+        "stderr": ""
+      },
+      "recovery": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-ts-pattern",
+          "--output-logs=full",
+          "--force"
+        ],
+        "exit": 0,
+        "seconds": 0.438,
+        "stdout": "• Packages in scope: n21-ts-pattern\n• Running build in 1 packages\n• Remote caching disabled\nn21-ts-pattern:build: cache bypass, force executing f6fe6e7895baf6b1\nn21-ts-pattern:build: \nn21-ts-pattern:build: > n21-ts-pattern@1.0.0 build\nn21-ts-pattern:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-ts-pattern:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    326ms \n\n",
+        "stderr": ""
+      },
+      "correct": false,
+      "outputs": 36
+    },
+    {
+      "project": "zod",
+      "fault": "delete_js",
+      "cache": "available",
+      "target": "helpers/enumUtil.js",
+      "cold": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-zod",
+          "--output-logs=full"
+        ],
+        "exit": 0,
+        "seconds": 2.432,
+        "stdout": "• Packages in scope: n21-zod\n• Running build in 1 packages\n• Remote caching disabled\nn21-zod:build: cache miss, executing 904b8ad5d2ff1fbc\nn21-zod:build: \nn21-zod:build: > n21-zod@1.0.0 build\nn21-zod:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-zod:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    2.315s \n\n",
+        "stderr": ""
+      },
+      "recovery": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-zod",
+          "--output-logs=full"
+        ],
+        "exit": 0,
+        "seconds": 0.376,
+        "stdout": "• Packages in scope: n21-zod\n• Running build in 1 packages\n• Remote caching disabled\nn21-zod:build: cache miss, executing c3f105cc50c876b0\nn21-zod:build: \nn21-zod:build: > n21-zod@1.0.0 build\nn21-zod:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-zod:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    263ms \n\n",
+        "stderr": ""
+      },
+      "correct": false,
+      "outputs": 26
+    },
+    {
+      "project": "zod",
+      "fault": "delete_js",
+      "cache": "forced_miss",
+      "target": "helpers/enumUtil.js",
+      "cold": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-zod",
+          "--output-logs=full"
+        ],
+        "exit": 0,
+        "seconds": 2.283,
+        "stdout": "• Packages in scope: n21-zod\n• Running build in 1 packages\n• Remote caching disabled\nn21-zod:build: cache miss, executing 904b8ad5d2ff1fbc\nn21-zod:build: \nn21-zod:build: > n21-zod@1.0.0 build\nn21-zod:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-zod:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    2.182s \n\n",
+        "stderr": ""
+      },
+      "recovery": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-zod",
+          "--output-logs=full",
+          "--force"
+        ],
+        "exit": 0,
+        "seconds": 0.388,
+        "stdout": "• Packages in scope: n21-zod\n• Running build in 1 packages\n• Remote caching disabled\nn21-zod:build: cache bypass, force executing c3f105cc50c876b0\nn21-zod:build: \nn21-zod:build: > n21-zod@1.0.0 build\nn21-zod:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-zod:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    290ms \n\n",
+        "stderr": ""
+      },
+      "correct": false,
+      "outputs": 26
+    },
+    {
+      "project": "zod",
+      "fault": "corrupt_js",
+      "cache": "available",
+      "target": "helpers/enumUtil.js",
+      "cold": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-zod",
+          "--output-logs=full"
+        ],
+        "exit": 0,
+        "seconds": 2.248,
+        "stdout": "• Packages in scope: n21-zod\n• Running build in 1 packages\n• Remote caching disabled\nn21-zod:build: cache miss, executing 904b8ad5d2ff1fbc\nn21-zod:build: \nn21-zod:build: > n21-zod@1.0.0 build\nn21-zod:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-zod:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    2.149s \n\n",
+        "stderr": ""
+      },
+      "recovery": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-zod",
+          "--output-logs=full"
+        ],
+        "exit": 0,
+        "seconds": 0.419,
+        "stdout": "• Packages in scope: n21-zod\n• Running build in 1 packages\n• Remote caching disabled\nn21-zod:build: cache miss, executing 55d42592db53319c\nn21-zod:build: \nn21-zod:build: > n21-zod@1.0.0 build\nn21-zod:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-zod:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    294ms \n\n",
+        "stderr": ""
+      },
+      "correct": false,
+      "outputs": 26
+    },
+    {
+      "project": "zod",
+      "fault": "corrupt_js",
+      "cache": "forced_miss",
+      "target": "helpers/enumUtil.js",
+      "cold": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-zod",
+          "--output-logs=full"
+        ],
+        "exit": 0,
+        "seconds": 3.241,
+        "stdout": "• Packages in scope: n21-zod\n• Running build in 1 packages\n• Remote caching disabled\nn21-zod:build: cache miss, executing 904b8ad5d2ff1fbc\nn21-zod:build: \nn21-zod:build: > n21-zod@1.0.0 build\nn21-zod:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-zod:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    3.092s \n\n",
+        "stderr": ""
+      },
+      "recovery": {
+        "argv": [
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/turbo_template/node_modules/.bin/turbo",
+          "run",
+          "build",
+          "--filter=n21-zod",
+          "--output-logs=full",
+          "--force"
+        ],
+        "exit": 0,
+        "seconds": 0.432,
+        "stdout": "• Packages in scope: n21-zod\n• Running build in 1 packages\n• Remote caching disabled\nn21-zod:build: cache bypass, force executing 55d42592db53319c\nn21-zod:build: \nn21-zod:build: > n21-zod@1.0.0 build\nn21-zod:build: > node \"/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc\" -b\nn21-zod:build: \n\n Tasks:    1 successful, 1 total\nCached:    0 cached, 1 total\n  Time:    322ms \n\n",
+        "stderr": ""
+      },
+      "correct": false,
+      "outputs": 26
+    }
+  ]
+}

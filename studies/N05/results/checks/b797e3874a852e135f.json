@@ -1,0 +1,40 @@
+{
+  "key": "b797e3874a852e135f",
+  "args": {
+    "crate": "sqlx",
+    "version": "0.8.6",
+    "id": "4ec1d01865cb7837",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1982,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `sqlx::postgres`",
+      "rendered": "error[E0432]: unresolved import `sqlx::postgres`\n  --> src/main.rs:1:11\n   |\n 1 | use sqlx::postgres::PgPoolOptions;\n   |           ^^^^^^^^ could not find `postgres` in `sqlx`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-0.8.6/src/lib.rs:56:13\n   |\n52 | #[cfg(feature = \"postgres\")]\n   |       -------------------- the item is gated behind the `postgres` feature\n...\n56 |     self as postgres, PgConnection, PgExecutor, PgPool, PgTransaction, Postgres,\n   |             ^^^^^^^^\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `async_std`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `async_std`\n --> src/main.rs:5:3\n  |\n5 | #[async_std::main] // Requires the `attributes` feature of `async-std`\n  |   ^^^^^^^^^ use of unresolved module or unlinked crate `async_std`\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:8:1\n  |\n8 | async fn main() -> Result<(), sqlx::Error> {\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 8
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_sqlx_consumer` (bin \"n05_sqlx_consumer\") due to 3 previous errors\n",
+  "code_sha256": "4541751da60d84681b494389500eaf8920ef083772f473de2e834492b62ffcf4",
+  "manifest_sha256": "a37da12a3c6a302dcebc888dae63b1a2c4bd74e00e0e8a87f42c2f74f54cbfbb",
+  "log_file": "results/check_logs/b797e3874a852e135f.txt.gz"
+}

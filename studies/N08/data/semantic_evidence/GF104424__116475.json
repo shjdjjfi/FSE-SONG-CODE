@@ -1,0 +1,135 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 45111,
+  "control_flow_or_callback_lines": 0,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "-",
+      "code": "\"github.com/grafana/grafana-app-sdk/app\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "appsdkapiserver \"github.com/grafana/grafana-app-sdk/k8s/apiserver\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "\"github.com/grafana/grafana-app-sdk/simple\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/grafana-app-sdk/app\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "appsdkapiserver \"github.com/grafana/grafana-app-sdk/k8s/apiserver\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/grafana-app-sdk/simple\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "_ appsdkapiserver.AppInstaller       = (*AlertingNotificationsAppInstaller)(nil)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "_ appinstaller.LegacyStorageProvider = (*AlertingNotificationsAppInstaller)(nil)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "_ appinstaller.AuthorizerProvider    = (*AlertingNotificationsAppInstaller)(nil)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "_ appsdkapiserver.AppInstaller       = (*AppInstaller)(nil)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "_ appinstaller.LegacyStorageProvider = (*AppInstaller)(nil)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "_ appinstaller.AuthorizerProvider    = (*AppInstaller)(nil)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "type AlertingNotificationsAppInstaller struct {",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "type AppInstaller struct {",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": ") (*AlertingNotificationsAppInstaller, error) {",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": ") (*AppInstaller, error) {",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "installer := &AlertingNotificationsAppInstaller{",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "installer := &AppInstaller{",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "func (a AlertingNotificationsAppInstaller) GetAuthorizer() authorizer.Authorizer {",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "func (a AppInstaller) GetAuthorizer() authorizer.Authorizer {",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "func (a AlertingNotificationsAppInstaller) GetLegacyStorage(gvr schema.GroupVersionResource) grafanarest.Storage {",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "func (a AppInstaller) GetLegacyStorage(gvr schema.GroupVersionResource) grafanarest.Storage {",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:58:06.352528+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 22,
+  "pr": 116475,
+  "repository": "grafana/grafana",
+  "sha256": "a5486bcd0b0b5d363c6b4cae32f098846670466b060e0cf65acf638d43dcba6a",
+  "target_code_changed_lines": 23,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/register.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/116475.patch"
+}

@@ -1,0 +1,30 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 111032,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW12927",
+  "examples": [
+    {
+      "change": "+",
+      "code": "// FIXME(https://bitwarden.atlassian.net/browse/CL-764): Migrate to OnPush",
+      "file": "apps/desktop/src/billing/app/accounts/premium.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "// eslint-disable-next-line @angular-eslint/prefer-on-push-component-change-detection",
+      "file": "apps/desktop/src/billing/app/accounts/premium.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:59.438720+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/12927",
+  "noncomment_nonimport_changed_lines": 0,
+  "pr": 16944,
+  "repository": "bitwarden/clients",
+  "sha256": "daca3a5ac8545cc16535c4a23ce43d51ccef1da5cba6396c20ecf9d0c5495e2b",
+  "target_code_changed_lines": 2,
+  "target_files": [
+    "apps/desktop/src/billing/app/accounts/premium.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/16944.patch"
+}

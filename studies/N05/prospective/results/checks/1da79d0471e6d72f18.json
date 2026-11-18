@@ -1,0 +1,28 @@
+{
+  "key": "1da79d0471e6d72f18",
+  "args": {
+    "crate": "mio",
+    "version": "1.0.4",
+    "id": "80079347bf9fae52",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0635,
+  "errors": [
+    {
+      "code": "E0599",
+      "message": "no function or associated item named `new` found for struct `mio::Poll` in the current scope",
+      "rendered": "error[E0599]: no function or associated item named `new` found for struct `mio::Poll` in the current scope\n --> src/main.rs:6:28\n  |\n6 | let mut poll = match Poll::new() {\n  |                            ^^^ function or associated item not found in `mio::Poll`\n\n",
+      "line": 6
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_mio_consumer` (bin \"n05_mio_consumer\") due to 1 previous error\n",
+  "code_sha256": "345f227482cf4afb9f2921d215c02417584db98b9372c60a281ee2ad000a5577",
+  "manifest_sha256": "6889c95cde602fd8694d223215527b23ecc20baf1bce915676a1f8ad1b99cbb4",
+  "log_file": "prospective/results/check_logs/1da79d0471e6d72f18.txt.gz"
+}

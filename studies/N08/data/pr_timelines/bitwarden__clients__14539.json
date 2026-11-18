@@ -1,0 +1,32 @@
+{
+  "fetched_utc": "2026-11-14T17:12:00.015543+00:00",
+  "merged_at": "2025-05-20T19:25:15Z",
+  "opened_at": "2025-04-24T13:49:51+02:00",
+  "pr": 14539,
+  "raw_html_sha256": "e4a9e084a150824f2d2d17336ac752dcbd9e95c502582002b883f89e7e5fb8af",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 4,
+  "reviews": [
+    {
+      "login": "tangowithfoxtrot",
+      "state": "APPROVED",
+      "submitted_at": "2025-05-12T20:55:28Z"
+    },
+    {
+      "login": "mzieniukbw",
+      "state": "COMMENTED",
+      "submitted_at": "2025-05-16T07:33:58Z"
+    },
+    {
+      "login": "mzieniukbw",
+      "state": "APPROVED",
+      "submitted_at": "2025-05-19T11:02:02Z"
+    },
+    {
+      "login": "tangowithfoxtrot",
+      "state": "APPROVED",
+      "submitted_at": "2025-05-20T19:25:13Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/14539"
+}

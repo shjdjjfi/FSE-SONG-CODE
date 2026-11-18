@@ -1,0 +1,185 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 38,
+  "bytes": 43264,
+  "control_flow_or_callback_lines": 30,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "-",
+      "code": "import { AnonLayoutComponent } from \"./anon-layout.component\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { AnonLayoutComponent, AnonLayoutMaxWidths } from \"./anon-layout.component\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "maxWidth?: \"md\" | \"3xl\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "/**",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "* Optional flag to set the max-width of the title area. Defaults to null if not provided.",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "*/",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "titleAreaMaxWidth?: \"md\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "maxWidth?: AnonLayoutMaxWidths;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "protected maxWidth: \"md\" | \"3xl\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "protected titleAreaMaxWidth: \"md\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected maxWidth: AnonLayoutMaxWidths;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.titleAreaMaxWidth = firstChildRouteData[\"titleAreaMaxWidth\"];",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.titleAreaMaxWidth = null;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "export type AnonLayoutMaxWidths = \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "* Max width of the title area content",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "*",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "* @default null",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "*/",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "@Input() titleAreaMaxWidth?: \"md\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "/**",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "* Max width of the layout content",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "* Max width of the anon layout title, subtitle, and content areas.",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "@Input() maxWidth: \"md\" | \"3xl\" = \"md\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "@Input() maxWidth: AnonLayoutMaxWidths = \"md\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "protected year = \"2024\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected year: string;",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.titleAreaMaxWidth = this.titleAreaMaxWidth ?? null;",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "argTypes: {",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "title: { control: \"text\" },",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "subtitle: { control: \"text\" },",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:40.026919+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 487,
+  "pr": 15362,
+  "repository": "bitwarden/clients",
+  "sha256": "ddc084bbe048eef00a445053067f695cdbc649806947f5da1df85a4dab5d9a38",
+  "target_code_changed_lines": 552,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout-wrapper.component.html",
+    "libs/components/src/anon-layout/anon-layout-wrapper.component.ts",
+    "libs/components/src/anon-layout/anon-layout.component.html",
+    "libs/components/src/anon-layout/anon-layout.component.ts",
+    "libs/components/src/anon-layout/anon-layout.mdx",
+    "libs/components/src/anon-layout/anon-layout.stories.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15362.patch"
+}

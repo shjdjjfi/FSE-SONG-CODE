@@ -1,0 +1,7 @@
+argv: ["/workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/venvs/python_jose_latest/bin/python", "-c", "\nfrom jose import jwt\nbody={'sub':'public-cpu-smoke','iat':1234567}\ntoken=jwt.encode(body,'nonproduction-local-test-key',algorithm='HS256')\ndecoded=jwt.decode(token,'nonproduction-local-test-key',algorithms=['HS256'])\nassert decoded['sub']==body['sub']\nprint('python-jose: benign JWT roundtrip passed')\n"]
+
+[STDOUT]
+python-jose: benign JWT roundtrip passed
+
+
+[STDERR]

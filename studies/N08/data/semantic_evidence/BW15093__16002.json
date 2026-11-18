@@ -1,0 +1,149 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 185284,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "+",
+      "code": "import { LeftIllustration, RightIllustration } from \"./illustrations\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "readonly leftIllustration = LeftIllustration;",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "readonly rightIllustration = RightIllustration;",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "export * from \"./left-illustration\";",
+      "file": "libs/components/src/anon-layout/illustrations/index.ts"
+    },
+    {
+      "change": "+",
+      "code": "export * from \"./right-illustration\";",
+      "file": "libs/components/src/anon-layout/illustrations/index.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { svgIcon } from \"@bitwarden/components\";",
+      "file": "libs/components/src/anon-layout/illustrations/left-illustration.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/components/src/anon-layout/illustrations/left-illustration.ts"
+    },
+    {
+      "change": "+",
+      "code": "export const LeftIllustration = svgIcon`",
+      "file": "libs/components/src/anon-layout/illustrations/left-illustration.ts"
+    },
+    {
+      "change": "+",
+      "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 501 226\"><g clip-path=\"url(#left-a)\"><path class=\"tw-fill-illustration-primary\" d=\"M-71.691 6.821a4 4 0 0 1 4-4h296",
+      "file": "libs/components/src/anon-layout/illustrations/left-illustration.ts"
+    },
+    {
+      "change": "+",
+      "code": "`;",
+      "file": "libs/components/src/anon-layout/illustrations/left-illustration.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { svgIcon } from \"@bitwarden/components\";",
+      "file": "libs/components/src/anon-layout/illustrations/right-illustration.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/components/src/anon-layout/illustrations/right-illustration.ts"
+    },
+    {
+      "change": "+",
+      "code": "export const RightIllustration = svgIcon`",
+      "file": "libs/components/src/anon-layout/illustrations/right-illustration.ts"
+    },
+    {
+      "change": "+",
+      "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 506 297\"><g clip-path=\"url(#right-a)\"><path class=\"tw-fill-illustration-primary\" d=\"M45.673 294.742v-29.124l22.323 ",
+      "file": "libs/components/src/anon-layout/illustrations/right-illustration.ts"
+    },
+    {
+      "change": "+",
+      "code": "`;",
+      "file": "libs/components/src/anon-layout/illustrations/right-illustration.ts"
+    },
+    {
+      "change": "-",
+      "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 501 226\"><g clip-path=\"url(#left-a)\"><path class=\"tw-fill-illustration-primary\" d=\"M-71.691 6.821a4 4 0 0 1 4-4h296",
+      "file": "libs/components/src/anon-layout/illustrations/left-illustration.ts"
+    },
+    {
+      "change": "+",
+      "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 501 226\"><g clip-path=\"url(#left-a)\"><path class=\"tw-fill-illustration-bg-primary\" d=\"M-71.691 6.821a4 4 0 0 1 4-4h",
+      "file": "libs/components/src/anon-layout/illustrations/left-illustration.ts"
+    },
+    {
+      "change": "-",
+      "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 506 297\"><g clip-path=\"url(#right-a)\"><path class=\"tw-fill-illustration-primary\" d=\"M45.673 294.742v-29.124l22.323 ",
+      "file": "libs/components/src/anon-layout/illustrations/right-illustration.ts"
+    },
+    {
+      "change": "+",
+      "code": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 506 297\"><g clip-path=\"url(#right-a)\"><path class=\"tw-fill-illustration-bg-primary\" d=\"M45.673 294.742v-29.124l22.3",
+      "file": "libs/components/src/anon-layout/illustrations/right-illustration.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { svgIcon } from \"@bitwarden/components\";",
+      "file": "libs/components/src/anon-layout/illustrations/left-illustration.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { svgIcon } from \"../../icon\";",
+      "file": "libs/components/src/anon-layout/illustrations/left-illustration.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { svgIcon } from \"@bitwarden/components\";",
+      "file": "libs/components/src/anon-layout/illustrations/right-illustration.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { svgIcon } from \"../../icon\";",
+      "file": "libs/components/src/anon-layout/illustrations/right-illustration.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:46.614985+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 14,
+  "pr": 16002,
+  "repository": "bitwarden/clients",
+  "sha256": "2911e7ee76d38378c944f652daafa97f850aaf6b420e6e21d454074000c91256",
+  "target_code_changed_lines": 25,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout.component.html",
+    "libs/components/src/anon-layout/anon-layout.component.ts",
+    "libs/components/src/anon-layout/illustrations/index.ts",
+    "libs/components/src/anon-layout/illustrations/left-illustration.ts",
+    "libs/components/src/anon-layout/illustrations/right-illustration.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/16002.patch"
+}

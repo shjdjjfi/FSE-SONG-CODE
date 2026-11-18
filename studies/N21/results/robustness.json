@@ -1,0 +1,189 @@
+{
+  "design": "paired main seed-17 faults; descriptive only",
+  "n_settings": 77,
+  "n_projects": 13,
+  "n_workspaces": 4,
+  "overall": {
+    "settings": 77,
+    "median_saved_source_units": 3,
+    "median_saved_fraction": 0.5135,
+    "median_saved_seconds": 1.2306,
+    "settings_with_fewer_units": 67,
+    "settings_faster": 57
+  },
+  "by_workspace": {
+    "andrewthauer": {
+      "settings": 26,
+      "median_saved_source_units": 2.0,
+      "median_saved_fraction": 0.5,
+      "median_saved_seconds": 1.1338,
+      "settings_with_fewer_units": 26,
+      "settings_faster": 22
+    },
+    "libraries": {
+      "settings": 28,
+      "median_saved_source_units": 28.0,
+      "median_saved_fraction": 0.7568,
+      "median_saved_seconds": 1.8573,
+      "settings_with_fewer_units": 28,
+      "settings_faster": 27
+    },
+    "quramy": {
+      "settings": 14,
+      "median_saved_source_units": 0.5,
+      "median_saved_fraction": 0.125,
+      "median_saved_seconds": -0.3659,
+      "settings_with_fewer_units": 7,
+      "settings_faster": 1
+    },
+    "typescript": {
+      "settings": 9,
+      "median_saved_source_units": 78,
+      "median_saved_fraction": 0.3095,
+      "median_saved_seconds": 10.7278,
+      "settings_with_fewer_units": 6,
+      "settings_faster": 7
+    }
+  },
+  "by_project": {
+    "andrewthauer/api": {
+      "settings": 7,
+      "median_saved_source_units": 1,
+      "median_saved_fraction": 0.25,
+      "median_saved_seconds": -0.0703,
+      "settings_with_fewer_units": 7,
+      "settings_faster": 3
+    },
+    "andrewthauer/cli": {
+      "settings": 7,
+      "median_saved_source_units": 3,
+      "median_saved_fraction": 0.75,
+      "median_saved_seconds": 1.3656,
+      "settings_with_fewer_units": 7,
+      "settings_faster": 7
+    },
+    "andrewthauer/core": {
+      "settings": 7,
+      "median_saved_source_units": 2,
+      "median_saved_fraction": 0.5,
+      "median_saved_seconds": 0.7129,
+      "settings_with_fewer_units": 7,
+      "settings_faster": 7
+    },
+    "andrewthauer/web": {
+      "settings": 5,
+      "median_saved_source_units": 3,
+      "median_saved_fraction": 0.75,
+      "median_saved_seconds": 1.3437,
+      "settings_with_fewer_units": 5,
+      "settings_faster": 5
+    },
+    "libraries/mitt": {
+      "settings": 7,
+      "median_saved_source_units": 36,
+      "median_saved_fraction": 0.973,
+      "median_saved_seconds": 2.2587,
+      "settings_with_fewer_units": 7,
+      "settings_faster": 7
+    },
+    "libraries/neverthrow": {
+      "settings": 7,
+      "median_saved_source_units": 32,
+      "median_saved_fraction": 0.8649,
+      "median_saved_seconds": 1.9883,
+      "settings_with_fewer_units": 7,
+      "settings_faster": 7
+    },
+    "libraries/ts-pattern": {
+      "settings": 7,
+      "median_saved_source_units": 19,
+      "median_saved_fraction": 0.5135,
+      "median_saved_seconds": 0.4906,
+      "settings_with_fewer_units": 7,
+      "settings_faster": 6
+    },
+    "libraries/zod": {
+      "settings": 7,
+      "median_saved_source_units": 24,
+      "median_saved_fraction": 0.6486,
+      "median_saved_seconds": 0.8938,
+      "settings_with_fewer_units": 7,
+      "settings_faster": 7
+    },
+    "quramy/x-cli": {
+      "settings": 7,
+      "median_saved_source_units": 1,
+      "median_saved_fraction": 0.25,
+      "median_saved_seconds": -0.1916,
+      "settings_with_fewer_units": 7,
+      "settings_faster": 1
+    },
+    "quramy/x-core": {
+      "settings": 7,
+      "median_saved_source_units": 0,
+      "median_saved_fraction": 0.0,
+      "median_saved_seconds": -0.6049,
+      "settings_with_fewer_units": 0,
+      "settings_faster": 0
+    },
+    "typescript/compiler": {
+      "settings": 3,
+      "median_saved_source_units": 0,
+      "median_saved_fraction": 0.0,
+      "median_saved_seconds": -0.4689,
+      "settings_with_fewer_units": 0,
+      "settings_faster": 1
+    },
+    "typescript/jsTyping": {
+      "settings": 3,
+      "median_saved_source_units": 78,
+      "median_saved_fraction": 0.3095,
+      "median_saved_seconds": 10.7278,
+      "settings_with_fewer_units": 3,
+      "settings_faster": 3
+    },
+    "typescript/services": {
+      "settings": 3,
+      "median_saved_source_units": 84,
+      "median_saved_fraction": 0.3333,
+      "median_saved_seconds": 13.6401,
+      "settings_with_fewer_units": 3,
+      "settings_faster": 3
+    }
+  },
+  "leave_one_workspace_out": {
+    "andrewthauer": {
+      "settings": 51,
+      "median_saved_source_units": 24,
+      "median_saved_fraction": 0.5135,
+      "median_saved_seconds": 1.4418,
+      "settings_with_fewer_units": 41,
+      "settings_faster": 35
+    },
+    "libraries": {
+      "settings": 49,
+      "median_saved_source_units": 2,
+      "median_saved_fraction": 0.3095,
+      "median_saved_seconds": 0.5048,
+      "settings_with_fewer_units": 39,
+      "settings_faster": 30
+    },
+    "quramy": {
+      "settings": 63,
+      "median_saved_source_units": 19,
+      "median_saved_fraction": 0.6486,
+      "median_saved_seconds": 1.4453,
+      "settings_with_fewer_units": 60,
+      "settings_faster": 56
+    },
+    "typescript": {
+      "settings": 68,
+      "median_saved_source_units": 3.0,
+      "median_saved_fraction": 0.5135,
+      "median_saved_seconds": 0.9653,
+      "settings_with_fewer_units": 61,
+      "settings_faster": 50
+    }
+  },
+  "statistics_warning": "Four clusters, non-random faults, and shared fixtures: no CI or p-value about production populations is justified."
+}

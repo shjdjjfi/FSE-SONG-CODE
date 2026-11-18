@@ -1,0 +1,34 @@
+{
+  "key": "b3b39ad5d1524d44bb",
+  "args": {
+    "crate": "tokio-util",
+    "version": "0.7.15",
+    "id": "9cb479eb4e090bf4",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0632,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:6:3\n  |\n6 | #[tokio::main]\n  |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 6
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:7:1\n  |\n7 | async fn main() {\n  | ^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 7
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_tokio_util_consumer` (bin \"n05_tokio_util_consumer\") due to 2 previous errors\n",
+  "code_sha256": "e32fb57178f78f8fe982d5f77f2835dd266689cc963c9e0d4c6b064214f6e617",
+  "manifest_sha256": "85f7363a0fff6cf363d144fd8235895e33d8fec33b5b4d144fe0cc14bf1a160d",
+  "log_file": "results/check_logs/b3b39ad5d1524d44bb.txt.gz"
+}

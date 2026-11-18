@@ -1,0 +1,331 @@
+{
+  "n_bruteforce_cases": 4500,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "cases_per_seed": 1500,
+  "formula_vs_enumeration_disagreements": 0,
+  "world_witnesses_synthetic_only": [
+    {
+      "public_recommendation_A": [
+        "person1",
+        "person3"
+      ],
+      "public_recommendation_B": [
+        "person0",
+        "person2"
+      ],
+      "public_candidate_universe": [
+        "person0",
+        "person1",
+        "person2",
+        "person3"
+      ],
+      "private_expertise_world_A": [
+        "person1"
+      ],
+      "private_expertise_world_B": [
+        "person0"
+      ],
+      "same_public_observations": true,
+      "delta_A": -1.0,
+      "delta_B": 1.0
+    },
+    {
+      "public_recommendation_A": [
+        "person0",
+        "person4"
+      ],
+      "public_recommendation_B": [
+        "person1",
+        "person3"
+      ],
+      "public_candidate_universe": [
+        "person0",
+        "person1",
+        "person2",
+        "person3",
+        "person4"
+      ],
+      "private_expertise_world_A": [
+        "person0"
+      ],
+      "private_expertise_world_B": [
+        "person1"
+      ],
+      "same_public_observations": true,
+      "delta_A": -1.0,
+      "delta_B": 1.0
+    },
+    {
+      "public_recommendation_A": [
+        "person1",
+        "person6"
+      ],
+      "public_recommendation_B": [
+        "person2",
+        "person4"
+      ],
+      "public_candidate_universe": [
+        "person0",
+        "person1",
+        "person2",
+        "person3",
+        "person4",
+        "person5",
+        "person6"
+      ],
+      "private_expertise_world_A": [
+        "person1"
+      ],
+      "private_expertise_world_B": [
+        "person2"
+      ],
+      "same_public_observations": true,
+      "delta_A": -1.0,
+      "delta_B": 1.0
+    },
+    {
+      "public_recommendation_A": [
+        "person1",
+        "person2"
+      ],
+      "public_recommendation_B": [
+        "person0",
+        "person1"
+      ],
+      "public_candidate_universe": [
+        "person0",
+        "person1",
+        "person2"
+      ],
+      "private_expertise_world_A": [
+        "person2"
+      ],
+      "private_expertise_world_B": [
+        "person0"
+      ],
+      "same_public_observations": true,
+      "delta_A": -1.0,
+      "delta_B": 1.0
+    },
+    {
+      "public_recommendation_A": [
+        "person2",
+        "person4"
+      ],
+      "public_recommendation_B": [
+        "person1",
+        "person2"
+      ],
+      "public_candidate_universe": [
+        "person0",
+        "person1",
+        "person2",
+        "person3",
+        "person4",
+        "person5",
+        "person6"
+      ],
+      "private_expertise_world_A": [
+        "person4"
+      ],
+      "private_expertise_world_B": [
+        "person1"
+      ],
+      "same_public_observations": true,
+      "delta_A": -1.0,
+      "delta_B": 1.0
+    },
+    {
+      "public_recommendation_A": [
+        "person0",
+        "person4"
+      ],
+      "public_recommendation_B": [
+        "person3",
+        "person4"
+      ],
+      "public_candidate_universe": [
+        "person0",
+        "person1",
+        "person2",
+        "person3",
+        "person4"
+      ],
+      "private_expertise_world_A": [
+        "person0"
+      ],
+      "private_expertise_world_B": [
+        "person3"
+      ],
+      "same_public_observations": true,
+      "delta_A": -1.0,
+      "delta_B": 1.0
+    },
+    {
+      "public_recommendation_A": [
+        "person0",
+        "person1"
+      ],
+      "public_recommendation_B": [
+        "person0",
+        "person2"
+      ],
+      "public_candidate_universe": [
+        "person0",
+        "person1",
+        "person2",
+        "person3"
+      ],
+      "private_expertise_world_A": [
+        "person1"
+      ],
+      "private_expertise_world_B": [
+        "person2"
+      ],
+      "same_public_observations": true,
+      "delta_A": -1.0,
+      "delta_B": 1.0
+    },
+    {
+      "public_recommendation_A": [
+        "person0",
+        "person6"
+      ],
+      "public_recommendation_B": [
+        "person1",
+        "person6"
+      ],
+      "public_candidate_universe": [
+        "person0",
+        "person1",
+        "person2",
+        "person3",
+        "person4",
+        "person5",
+        "person6",
+        "person7",
+        "person8"
+      ],
+      "private_expertise_world_A": [
+        "person0"
+      ],
+      "private_expertise_world_B": [
+        "person1"
+      ],
+      "same_public_observations": true,
+      "delta_A": -1.0,
+      "delta_B": 1.0
+    },
+    {
+      "public_recommendation_A": [
+        "person0",
+        "person2"
+      ],
+      "public_recommendation_B": [
+        "person1",
+        "person2"
+      ],
+      "public_candidate_universe": [
+        "person0",
+        "person1",
+        "person2"
+      ],
+      "private_expertise_world_A": [
+        "person0"
+      ],
+      "private_expertise_world_B": [
+        "person1"
+      ],
+      "same_public_observations": true,
+      "delta_A": -1.0,
+      "delta_B": 1.0
+    },
+    {
+      "public_recommendation_A": [
+        "person0",
+        "person3"
+      ],
+      "public_recommendation_B": [
+        "person3",
+        "person5"
+      ],
+      "public_candidate_universe": [
+        "person0",
+        "person1",
+        "person2",
+        "person3",
+        "person4",
+        "person5"
+      ],
+      "private_expertise_world_A": [
+        "person0"
+      ],
+      "private_expertise_world_B": [
+        "person5"
+      ],
+      "same_public_observations": true,
+      "delta_A": -1.0,
+      "delta_B": 1.0
+    },
+    {
+      "public_recommendation_A": [
+        "person1",
+        "person3"
+      ],
+      "public_recommendation_B": [
+        "person0",
+        "person1"
+      ],
+      "public_candidate_universe": [
+        "person0",
+        "person1",
+        "person2",
+        "person3"
+      ],
+      "private_expertise_world_A": [
+        "person3"
+      ],
+      "private_expertise_world_B": [
+        "person0"
+      ],
+      "same_public_observations": true,
+      "delta_A": -1.0,
+      "delta_B": 1.0
+    },
+    {
+      "public_recommendation_A": [
+        "person0",
+        "person8"
+      ],
+      "public_recommendation_B": [
+        "person4",
+        "person8"
+      ],
+      "public_candidate_universe": [
+        "person0",
+        "person1",
+        "person2",
+        "person3",
+        "person4",
+        "person5",
+        "person6",
+        "person7",
+        "person8"
+      ],
+      "private_expertise_world_A": [
+        "person0"
+      ],
+      "private_expertise_world_B": [
+        "person4"
+      ],
+      "same_public_observations": true,
+      "delta_A": -1.0,
+      "delta_B": 1.0
+    }
+  ],
+  "claim_limit": "Synthetic tests validate closed-form sharp bounds, not actual company skills, membership or causal ROI"
+}

@@ -1,0 +1,3053 @@
+{
+  "gate_met_for_confirmatory_expert_gain": false,
+  "leave_one_event_out_retrospective": {
+    "event_macro_recall": 0.2877440107415168,
+    "folds": [
+      {
+        "current_path": 0.3,
+        "event": "BW10818",
+        "handoff_180d": 0.3238095238095238,
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "recency_follow": 0.28809523809523807,
+        "test_recall": 0.3238095238095238,
+        "tested_prs": 14,
+        "train_pr_events": 96
+      },
+      {
+        "current_path": 0.2746732026143791,
+        "event": "BW11709",
+        "handoff_180d": 0.2485294117647059,
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "recency_follow": 0.21911764705882353,
+        "test_recall": 0.25506535947712417,
+        "tested_prs": 17,
+        "train_pr_events": 93
+      },
+      {
+        "current_path": 0.2,
+        "event": "BW12407",
+        "handoff_180d": 0.5,
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.0
+        ],
+        "recency_follow": 0.5,
+        "test_recall": 0.2,
+        "tested_prs": 5,
+        "train_pr_events": 109
+      },
+      {
+        "current_path": 0.10185185185185185,
+        "event": "BW12927",
+        "handoff_180d": 0.12037037037037036,
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "recency_follow": 0.17592592592592593,
+        "test_recall": 0.037037037037037035,
+        "tested_prs": 6,
+        "train_pr_events": 107
+      },
+      {
+        "current_path": 0.46,
+        "event": "BW13285",
+        "handoff_180d": 0.41333333333333333,
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.25
+        ],
+        "recency_follow": 0.3688888888888889,
+        "test_recall": 0.3688888888888889,
+        "tested_prs": 15,
+        "train_pr_events": 95
+      },
+      {
+        "current_path": 0.25586219336219335,
+        "event": "BW14571",
+        "handoff_180d": 0.26406926406926406,
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "recency_follow": 0.26406926406926406,
+        "test_recall": 0.26059704184704185,
+        "tested_prs": 16,
+        "train_pr_events": 92
+      },
+      {
+        "current_path": 0.3333333333333333,
+        "event": "BW14987",
+        "handoff_180d": 0.3333333333333333,
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "recency_follow": 0.0,
+        "test_recall": 0.3333333333333333,
+        "tested_prs": 4,
+        "train_pr_events": 107
+      },
+      {
+        "current_path": 0.38187134502923975,
+        "event": "BW15093",
+        "handoff_180d": 0.33654970760233915,
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "recency_follow": 0.33654970760233915,
+        "test_recall": 0.408187134502924,
+        "tested_prs": 19,
+        "train_pr_events": 91
+      },
+      {
+        "current_path": 0.4027777777777778,
+        "event": "GF104424",
+        "handoff_180d": 0.4583333333333333,
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "recency_follow": 0.4027777777777778,
+        "test_recall": 0.4027777777777778,
+        "tested_prs": 18,
+        "train_pr_events": 96
+      }
+    ]
+  },
+  "leave_one_repo_out_underspecified": [
+    {
+      "chosen_params": [
+        0.5,
+        0.0,
+        0.25
+      ],
+      "heldout_repository": "bitwarden/clients",
+      "test_event_macro_recall": 0.2917004958549076,
+      "tested_prs": 96,
+      "train_event_count": 1
+    },
+    {
+      "chosen_params": [
+        0.5,
+        0.0,
+        0.0
+      ],
+      "heldout_repository": "grafana/grafana",
+      "test_event_macro_recall": 0.4027777777777778,
+      "tested_prs": 18,
+      "train_event_count": 8
+    }
+  ],
+  "n_events": 9,
+  "n_pr_event_pairs": 114,
+  "prequential_strict_time_replay": {
+    "comparisons": {
+      "baseline_current_path": {
+        "event_macro_delta": 0.049159305018008144,
+        "events_better": 4,
+        "events_worse": 4,
+        "two_sided_exact_event_sign_flip_p": 0.296875
+      },
+      "baseline_handoff": {
+        "event_macro_delta": 0.01716390794607169,
+        "events_better": 3,
+        "events_worse": 3,
+        "two_sided_exact_event_sign_flip_p": 0.75
+      },
+      "baseline_recency": {
+        "event_macro_delta": 0.06637544441251012,
+        "events_better": 5,
+        "events_worse": 3,
+        "two_sided_exact_event_sign_flip_p": 0.2578125
+      }
+    },
+    "event_macro_recall": 0.35031149434787207,
+    "rows": [
+      {
+        "baseline_current_path": 0.3333333333333333,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "justindbaur",
+          "mzieniukbw",
+          "rr-bw"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "pr": 11779,
+        "predicted": [
+          "jlf0dev",
+          "dani-garcia"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 0,
+        "training_pr_events_before_open": 0
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW10818",
+        "observed_reviewers": [
+          "mzieniukbw"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "pr": 12187,
+        "predicted": [
+          "jlf0dev",
+          "justindbaur"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 1,
+        "training_pr_events_before_open": 1
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW10818",
+        "observed_reviewers": [
+          "btreston",
+          "dani-garcia",
+          "djsmith85",
+          "jonashendrickx",
+          "jprusik",
+          "mzieniukbw",
+          "rr-bw",
+          "shane-melton",
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "pr": 12235,
+        "predicted": [
+          "jlf0dev",
+          "justindbaur"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 1,
+        "training_pr_events_before_open": 1
+      },
+      {
+        "baseline_current_path": 0.1111111111111111,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "btreston",
+          "dani-garcia",
+          "djsmith85",
+          "jonashendrickx",
+          "jprusik",
+          "mzieniukbw",
+          "rr-bw",
+          "shane-melton",
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "pr": 12235,
+        "predicted": [
+          "jlf0dev",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 1,
+        "training_pr_events_before_open": 1
+      },
+      {
+        "baseline_current_path": 0.3333333333333333,
+        "baseline_handoff": 0.3333333333333333,
+        "baseline_recency": 0.3333333333333333,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "jaredsnider-bitwarden",
+          "mzieniukbw",
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "pr": 12646,
+        "predicted": [
+          "jlf0dev",
+          "mzieniukbw"
+        ],
+        "recall": 0.3333333333333333,
+        "repo": "bitwarden/clients",
+        "training_events": 2,
+        "training_pr_events_before_open": 4
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "btreston",
+          "jingo88",
+          "patrick-pimentel-bitwarden",
+          "tangowithfoxtrot",
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "pr": 12655,
+        "predicted": [
+          "jlf0dev",
+          "mzieniukbw"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 2,
+        "training_pr_events_before_open": 4
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "BW12407",
+        "observed_reviewers": [
+          "mzieniukbw"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "pr": 12853,
+        "predicted": [
+          "mzieniukbw",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 2,
+        "training_pr_events_before_open": 4
+      },
+      {
+        "baseline_current_path": 0.5,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "BW12407",
+        "observed_reviewers": [
+          "jaredsnider-bitwarden",
+          "mzieniukbw"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "pr": 12854,
+        "predicted": [
+          "mzieniukbw",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 2,
+        "training_pr_events_before_open": 4
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW12407",
+        "observed_reviewers": [
+          "quexten",
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "pr": 12875,
+        "predicted": [
+          "mzieniukbw",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 5
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 0.0,
+        "event": "BW10818",
+        "observed_reviewers": [
+          "mzieniukbw"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "pr": 12907,
+        "predicted": [
+          "jlf0dev",
+          "mzieniukbw"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 7
+      },
+      {
+        "baseline_current_path": 0.5,
+        "baseline_handoff": 0.5,
+        "baseline_recency": 0.5,
+        "event": "BW12407",
+        "observed_reviewers": [
+          "addisonbeck",
+          "mzieniukbw"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "pr": 12928,
+        "predicted": [
+          "mzieniukbw",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.5,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 8
+      },
+      {
+        "baseline_current_path": 0.125,
+        "baseline_handoff": 0.125,
+        "baseline_recency": 0.125,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "connerbw",
+          "djsmith85",
+          "jaredsnider-bitwarden",
+          "jonashendrickx",
+          "mzieniukbw",
+          "r-tome",
+          "shane-melton",
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "pr": 12935,
+        "predicted": [
+          "jlf0dev",
+          "mzieniukbw"
+        ],
+        "recall": 0.125,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 8
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "coroiu",
+          "jrmccannon",
+          "patrick-pimentel-bitwarden",
+          "quexten",
+          "ttalty"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 13121,
+        "predicted": [
+          "shane-melton",
+          "djsmith85"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 10
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW10818",
+        "observed_reviewers": [
+          "audreyality",
+          "jingo88",
+          "justindbaur",
+          "quexten",
+          "tangowithfoxtrot",
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 13039,
+        "predicted": [
+          "dani-garcia",
+          "jprusik"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 10
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW12407",
+        "observed_reviewers": [
+          "coroiu",
+          "merissaacosta",
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 13093,
+        "predicted": [
+          "mzieniukbw",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 10
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "jaredsnider-bitwarden",
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 13576,
+        "predicted": [
+          "mzieniukbw",
+          "shane-melton"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 10
+      },
+      {
+        "baseline_current_path": 0.3333333333333333,
+        "baseline_handoff": 0.3333333333333333,
+        "baseline_recency": 0.3333333333333333,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "mzieniukbw",
+          "quexten",
+          "rr-bw"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 13194,
+        "predicted": [
+          "mzieniukbw",
+          "shane-melton"
+        ],
+        "recall": 0.3333333333333333,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 11
+      },
+      {
+        "baseline_current_path": 0.25,
+        "baseline_handoff": 0.25,
+        "baseline_recency": 0.25,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "coltonhurst",
+          "connerbw",
+          "coroiu",
+          "djsmith85",
+          "jimmyvo16",
+          "mzieniukbw",
+          "patrick-pimentel-bitwarden",
+          "shane-melton"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 13220,
+        "predicted": [
+          "mzieniukbw",
+          "shane-melton"
+        ],
+        "recall": 0.25,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 11
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW10818",
+        "observed_reviewers": [
+          "jaredsnider-bitwarden",
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 13287,
+        "predicted": [
+          "mzieniukbw",
+          "dani-garcia"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 12
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.3333333333333333,
+        "baseline_recency": 0.3333333333333333,
+        "event": "BW10818",
+        "observed_reviewers": [
+          "dani-garcia",
+          "jaredsnider-bitwarden",
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 13598,
+        "predicted": [
+          "mzieniukbw",
+          "dani-garcia"
+        ],
+        "recall": 0.3333333333333333,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 12
+      },
+      {
+        "baseline_current_path": 0.5,
+        "baseline_handoff": 0.5,
+        "baseline_recency": 0.5,
+        "event": "BW10818",
+        "observed_reviewers": [
+          "justindbaur",
+          "quexten"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 13609,
+        "predicted": [
+          "willmartian",
+          "justindbaur"
+        ],
+        "recall": 0.5,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 14
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "audreyality",
+          "connerbw",
+          "ike-kottlowski",
+          "jimmyvo16",
+          "jingo88",
+          "jonashendrickx",
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 14080,
+        "predicted": [
+          "mzieniukbw",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 19
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "rr-bw",
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 14945,
+        "predicted": [
+          "mzieniukbw",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 20
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.5,
+        "baseline_recency": 0.5,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "justindbaur",
+          "quexten"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 14277,
+        "predicted": [
+          "justindbaur",
+          "mzieniukbw"
+        ],
+        "recall": 0.5,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 20
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 14388,
+        "predicted": [
+          "justindbaur",
+          "mzieniukbw"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 3,
+        "training_pr_events_before_open": 22
+      },
+      {
+        "baseline_current_path": 0.5,
+        "baseline_handoff": 0.5,
+        "baseline_recency": 0.5,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "mzieniukbw",
+          "tangowithfoxtrot"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 14539,
+        "predicted": [
+          "mzieniukbw",
+          "thomas-avery"
+        ],
+        "recall": 0.5,
+        "repo": "bitwarden/clients",
+        "training_events": 4,
+        "training_pr_events_before_open": 23
+      },
+      {
+        "baseline_current_path": 0.3333333333333333,
+        "baseline_handoff": 0.3333333333333333,
+        "baseline_recency": 0.3333333333333333,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "addisonbeck",
+          "mzieniukbw",
+          "patrick-pimentel-bitwarden"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 14942,
+        "predicted": [
+          "mzieniukbw",
+          "thomas-avery"
+        ],
+        "recall": 0.3333333333333333,
+        "repo": "bitwarden/clients",
+        "training_events": 4,
+        "training_pr_events_before_open": 23
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.6666666666666666,
+        "baseline_recency": 0.3333333333333333,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "audreyality",
+          "justindbaur",
+          "mzieniukbw"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 14538,
+        "predicted": [
+          "justindbaur",
+          "thomas-avery"
+        ],
+        "recall": 0.3333333333333333,
+        "repo": "bitwarden/clients",
+        "training_events": 4,
+        "training_pr_events_before_open": 23
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.3333333333333333,
+        "baseline_recency": 0.0,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "addisonbeck",
+          "mzieniukbw",
+          "patrick-pimentel-bitwarden"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 14942,
+        "predicted": [
+          "justindbaur",
+          "thomas-avery"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 4,
+        "training_pr_events_before_open": 23
+      },
+      {
+        "baseline_current_path": 0.4,
+        "baseline_handoff": 0.2,
+        "baseline_recency": 0.2,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "djsmith85",
+          "gbubemismith",
+          "jaredsnider-bitwarden",
+          "justindbaur",
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 15153,
+        "predicted": [
+          "justindbaur",
+          "thomas-avery"
+        ],
+        "recall": 0.4,
+        "repo": "bitwarden/clients",
+        "training_events": 4,
+        "training_pr_events_before_open": 23
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 14398,
+        "predicted": [
+          "justindbaur",
+          "thomas-avery"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 4,
+        "training_pr_events_before_open": 23
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 14432,
+        "predicted": [
+          "justindbaur",
+          "thomas-avery"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 4,
+        "training_pr_events_before_open": 23
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 14434,
+        "predicted": [
+          "thomas-avery",
+          "justindbaur"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 4,
+        "training_pr_events_before_open": 24
+      },
+      {
+        "baseline_current_path": 0.18181818181818182,
+        "baseline_handoff": 0.09090909090909091,
+        "baseline_recency": 0.09090909090909091,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "amorask-bitwarden",
+          "banrion",
+          "btreston",
+          "coroiu",
+          "djsmith85",
+          "hinton",
+          "jaredsnider-bitwarden",
+          "jprusik",
+          "mzieniukbw",
+          "nick-livefront",
+          "vleague2"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 14650,
+        "predicted": [
+          "djsmith85",
+          "audreyality"
+        ],
+        "recall": 0.09090909090909091,
+        "repo": "bitwarden/clients",
+        "training_events": 4,
+        "training_pr_events_before_open": 27
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "yuri-tceretian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 105068,
+        "predicted": [
+          "jacobsonmt",
+          "johnnyqqqq"
+        ],
+        "recall": 0.0,
+        "repo": "grafana/grafana",
+        "training_events": 4,
+        "training_pr_events_before_open": 27
+      },
+      {
+        "baseline_current_path": 0.1111111111111111,
+        "baseline_handoff": 0.2222222222222222,
+        "baseline_recency": 0.2222222222222222,
+        "event": "BW12927",
+        "observed_reviewers": [
+          "amorask-bitwarden",
+          "banrion",
+          "btreston",
+          "dani-garcia",
+          "djsmith85",
+          "gbubemismith",
+          "jaredsnider-bitwarden",
+          "thomas-avery",
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.0,
+          0.5,
+          0.25
+        ],
+        "pr": 14797,
+        "predicted": [
+          "connerbw",
+          "jaasen-livefront"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 6,
+        "training_pr_events_before_open": 29
+      },
+      {
+        "baseline_current_path": 0.1111111111111111,
+        "baseline_handoff": 0.1111111111111111,
+        "baseline_recency": 0.1111111111111111,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "amorask-bitwarden",
+          "banrion",
+          "btreston",
+          "dani-garcia",
+          "djsmith85",
+          "gbubemismith",
+          "jaredsnider-bitwarden",
+          "thomas-avery",
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.0,
+          0.5,
+          0.25
+        ],
+        "pr": 14797,
+        "predicted": [
+          "patrick-pimentel-bitwarden",
+          "djsmith85"
+        ],
+        "recall": 0.1111111111111111,
+        "repo": "bitwarden/clients",
+        "training_events": 6,
+        "training_pr_events_before_open": 29
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "banrion",
+          "dani-garcia",
+          "nick-livefront"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          0.0,
+          0.5
+        ],
+        "pr": 14850,
+        "predicted": [
+          "djsmith85",
+          "audreyality"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 7,
+        "training_pr_events_before_open": 31
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 0.5,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "mzieniukbw",
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          0.0,
+          0.5
+        ],
+        "pr": 14900,
+        "predicted": [
+          "mzieniukbw",
+          "thomas-avery"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 7,
+        "training_pr_events_before_open": 32
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.5,
+        "event": "BW10818",
+        "observed_reviewers": [
+          "dani-garcia",
+          "quexten"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          0.0,
+          0.5
+        ],
+        "pr": 14953,
+        "predicted": [
+          "quexten",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.5,
+        "repo": "bitwarden/clients",
+        "training_events": 7,
+        "training_pr_events_before_open": 32
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.5,
+        "event": "BW10818",
+        "observed_reviewers": [
+          "dani-garcia",
+          "quexten"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          0.0,
+          0.5
+        ],
+        "pr": 15070,
+        "predicted": [
+          "quexten",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.5,
+        "repo": "bitwarden/clients",
+        "training_events": 7,
+        "training_pr_events_before_open": 32
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW14987",
+        "observed_reviewers": [
+          "ttalty"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          0.0,
+          0.5
+        ],
+        "pr": 15041,
+        "predicted": [
+          "audreyality",
+          "djsmith85"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 7,
+        "training_pr_events_before_open": 32
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.5,
+        "event": "BW10818",
+        "observed_reviewers": [
+          "dani-garcia",
+          "quexten"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          0.0,
+          0.5
+        ],
+        "pr": 15047,
+        "predicted": [
+          "quexten",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.5,
+        "repo": "bitwarden/clients",
+        "training_events": 7,
+        "training_pr_events_before_open": 32
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 0.0,
+        "event": "BW10818",
+        "observed_reviewers": [
+          "mzieniukbw"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          0.0,
+          0.5
+        ],
+        "pr": 15140,
+        "predicted": [
+          "mzieniukbw",
+          "dani-garcia"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 8,
+        "training_pr_events_before_open": 35
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "quexten"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          0.0,
+          0.5
+        ],
+        "pr": 15138,
+        "predicted": [
+          "justindbaur",
+          "quexten"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 8,
+        "training_pr_events_before_open": 36
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "arturwierzbicki"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          0.0,
+          0.5
+        ],
+        "pr": 107056,
+        "predicted": [
+          "jacobsonmt",
+          "yuri-tceretian"
+        ],
+        "recall": 0.0,
+        "repo": "grafana/grafana",
+        "training_events": 8,
+        "training_pr_events_before_open": 38
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "danielleflinn",
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          0.0,
+          0.5
+        ],
+        "pr": 15273,
+        "predicted": [
+          "rr-bw",
+          "patrick-pimentel-bitwarden"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 8,
+        "training_pr_events_before_open": 38
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "jingo88",
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 15340,
+        "predicted": [
+          "patrick-pimentel-bitwarden",
+          "rr-bw"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 8,
+        "training_pr_events_before_open": 39
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 15362,
+        "predicted": [
+          "willmartian",
+          "danielleflinn"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 40
+      },
+      {
+        "baseline_current_path": 0.25,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "addisonbeck",
+          "jaredsnider-bitwarden",
+          "jingo88",
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.0,
+          0.0
+        ],
+        "pr": 15375,
+        "predicted": [
+          "willmartian",
+          "danielleflinn"
+        ],
+        "recall": 0.25,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 40
+      },
+      {
+        "baseline_current_path": 0.5,
+        "baseline_handoff": 0.5,
+        "baseline_recency": 0.5,
+        "event": "BW10818",
+        "observed_reviewers": [
+          "addisonbeck",
+          "mzieniukbw"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          0.0,
+          0.5
+        ],
+        "pr": 15401,
+        "predicted": [
+          "mzieniukbw",
+          "dani-garcia"
+        ],
+        "recall": 0.5,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 41
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "addisonbeck",
+          "mzieniukbw"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          0.0,
+          0.5
+        ],
+        "pr": 15401,
+        "predicted": [
+          "justindbaur",
+          "coroiu"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 41
+      },
+      {
+        "baseline_current_path": 0.2,
+        "baseline_handoff": 0.2,
+        "baseline_recency": 0.2,
+        "event": "BW10818",
+        "observed_reviewers": [
+          "cyprain-okeke",
+          "dani-garcia",
+          "differsthecat",
+          "djsmith85",
+          "jaredsnider-bitwarden",
+          "jingo88",
+          "jrmccannon",
+          "mzieniukbw",
+          "r-tome",
+          "ttalty"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 15457,
+        "predicted": [
+          "mzieniukbw",
+          "dani-garcia"
+        ],
+        "recall": 0.2,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 43
+      },
+      {
+        "baseline_current_path": 0.1,
+        "baseline_handoff": 0.1,
+        "baseline_recency": 0.1,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "cyprain-okeke",
+          "dani-garcia",
+          "differsthecat",
+          "djsmith85",
+          "jaredsnider-bitwarden",
+          "jingo88",
+          "jrmccannon",
+          "mzieniukbw",
+          "r-tome",
+          "ttalty"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 15457,
+        "predicted": [
+          "mzieniukbw",
+          "thomas-avery"
+        ],
+        "recall": 0.1,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 43
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "cyprain-okeke",
+          "dani-garcia",
+          "differsthecat",
+          "djsmith85",
+          "jaredsnider-bitwarden",
+          "jingo88",
+          "jrmccannon",
+          "mzieniukbw",
+          "r-tome",
+          "ttalty"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 15457,
+        "predicted": [
+          "thomas-avery",
+          "justindbaur"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 43
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 15522,
+        "predicted": [
+          "willmartian",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 43
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "vleague2"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 15610,
+        "predicted": [
+          "willmartian",
+          "vleague2"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 44
+      },
+      {
+        "baseline_current_path": 0.5,
+        "baseline_handoff": 0.5,
+        "baseline_recency": 0.5,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "jingo88",
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 15620,
+        "predicted": [
+          "willmartian",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.5,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 47
+      },
+      {
+        "baseline_current_path": 0.25,
+        "baseline_handoff": 0.25,
+        "baseline_recency": 0.25,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "btreston",
+          "dereknance",
+          "jaredsnider-bitwarden",
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 15748,
+        "predicted": [
+          "mzieniukbw",
+          "thomas-avery"
+        ],
+        "recall": 0.25,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 48
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "gbubemismith",
+          "vleague2"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 15738,
+        "predicted": [
+          "vleague2",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.5,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 55
+      },
+      {
+        "baseline_current_path": 0.18181818181818182,
+        "baseline_handoff": 0.18181818181818182,
+        "baseline_recency": 0.18181818181818182,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "amorask-bitwarden",
+          "banrion",
+          "bensbits91",
+          "djsmith85",
+          "jaredsnider-bitwarden",
+          "jimmyvo16",
+          "justindbaur",
+          "mzieniukbw",
+          "nick-livefront",
+          "vleague2",
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 15750,
+        "predicted": [
+          "hinton",
+          "djsmith85"
+        ],
+        "recall": 0.09090909090909091,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 55
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "vleague2"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 15777,
+        "predicted": [
+          "willmartian",
+          "vleague2"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 55
+      },
+      {
+        "baseline_current_path": 0.5,
+        "baseline_handoff": 0.5,
+        "baseline_recency": 0.5,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "shane-melton",
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 15827,
+        "predicted": [
+          "willmartian",
+          "vleague2"
+        ],
+        "recall": 0.5,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 56
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 15892,
+        "predicted": [
+          "willmartian",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 57
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "moustafab",
+          "rwwiv"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 109309,
+        "predicted": [
+          "jacobsonmt",
+          "gillesdemey"
+        ],
+        "recall": 0.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 59
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "BW10818",
+        "observed_reviewers": [
+          "quexten"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 15957,
+        "predicted": [
+          "quexten",
+          "dani-garcia"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 59
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.5,
+        "baseline_recency": 0.5,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "danielleflinn",
+          "vleague2"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 16002,
+        "predicted": [
+          "willmartian",
+          "vleague2"
+        ],
+        "recall": 0.5,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 59
+      },
+      {
+        "baseline_current_path": 0.2222222222222222,
+        "baseline_handoff": 0.1111111111111111,
+        "baseline_recency": 0.1111111111111111,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "addisonbeck",
+          "audreyality",
+          "banrion",
+          "btreston",
+          "connerbw",
+          "jaredsnider-bitwarden",
+          "jprusik",
+          "shane-melton",
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 16020,
+        "predicted": [
+          "hinton",
+          "banrion"
+        ],
+        "recall": 0.1111111111111111,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 59
+      },
+      {
+        "baseline_current_path": 0.1111111111111111,
+        "baseline_handoff": 0.1111111111111111,
+        "baseline_recency": 0.1111111111111111,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "addisonbeck",
+          "audreyality",
+          "banrion",
+          "btreston",
+          "connerbw",
+          "jaredsnider-bitwarden",
+          "jprusik",
+          "shane-melton",
+          "willmartian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 16020,
+        "predicted": [
+          "willmartian",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.2222222222222222,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 59
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW12927",
+        "observed_reviewers": [
+          "cyprain-okeke",
+          "jprusik",
+          "neuronull"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 16042,
+        "predicted": [
+          "dani-garcia",
+          "willmartian"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 59
+      },
+      {
+        "baseline_current_path": 0.5,
+        "baseline_handoff": 0.5,
+        "baseline_recency": 0.5,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "banrion",
+          "ttalty"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 16353,
+        "predicted": [
+          "banrion",
+          "djsmith85"
+        ],
+        "recall": 0.5,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 61
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "alexander-akhmetov"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 109969,
+        "predicted": [
+          "jacobsonmt",
+          "gillesdemey"
+        ],
+        "recall": 0.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 62
+      },
+      {
+        "baseline_current_path": 0.1111111111111111,
+        "baseline_handoff": 0.1111111111111111,
+        "baseline_recency": 0.1111111111111111,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "banrion",
+          "bryancunningham",
+          "cyprain-okeke",
+          "dani-garcia",
+          "danielleflinn",
+          "harr1424",
+          "jimmyvo16",
+          "jingo88",
+          "rr-bw"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 16219,
+        "predicted": [
+          "banrion",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.1111111111111111,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 66
+      },
+      {
+        "baseline_current_path": 0.1111111111111111,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "banrion",
+          "bryancunningham",
+          "cyprain-okeke",
+          "dani-garcia",
+          "danielleflinn",
+          "harr1424",
+          "jimmyvo16",
+          "jingo88",
+          "rr-bw"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 16219,
+        "predicted": [
+          "willmartian",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 66
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.16666666666666666,
+        "baseline_recency": 0.16666666666666666,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "btreston",
+          "djsmith85",
+          "kdenney",
+          "rr-bw",
+          "shane-melton",
+          "ttalty"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 16227,
+        "predicted": [
+          "banrion",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 66
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "jacobsonmt"
+        ],
+        "params_alpha_beta_gamma": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "pr": 110619,
+        "predicted": [
+          "gillesdemey",
+          "alexander-akhmetov"
+        ],
+        "recall": 0.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 67
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "alexander-akhmetov"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          1.0,
+          0.25
+        ],
+        "pr": 110839,
+        "predicted": [
+          "jacobsonmt",
+          "gillesdemey"
+        ],
+        "recall": 0.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 68
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "vleague2"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          1.0,
+          0.25
+        ],
+        "pr": 16349,
+        "predicted": [
+          "willmartian",
+          "vleague2"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 68
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.3333333333333333,
+        "event": "BW12927",
+        "observed_reviewers": [
+          "gbubemismith",
+          "jimmyvo16",
+          "sbrown-livefront"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          1.0,
+          0.25
+        ],
+        "pr": 16373,
+        "predicted": [
+          "coltonhurst",
+          "jprusik"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 69
+      },
+      {
+        "baseline_current_path": 0.2,
+        "baseline_handoff": 0.2,
+        "baseline_recency": 0.2,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "bryancunningham",
+          "danielleflinn",
+          "djsmith85",
+          "jingo88",
+          "ttalty"
+        ],
+        "params_alpha_beta_gamma": [
+          2.0,
+          1.0,
+          0.25
+        ],
+        "pr": 16433,
+        "predicted": [
+          "willmartian",
+          "nick-livefront"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 72
+      },
+      {
+        "baseline_current_path": 0.16666666666666666,
+        "baseline_handoff": 0.3333333333333333,
+        "baseline_recency": 0.3333333333333333,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "banrion",
+          "btreston",
+          "dani-garcia",
+          "djsmith85",
+          "jprusik",
+          "nikwithak"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.25
+        ],
+        "pr": 16463,
+        "predicted": [
+          "djsmith85",
+          "banrion"
+        ],
+        "recall": 0.3333333333333333,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 74
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW12927",
+        "observed_reviewers": [
+          "harr1424",
+          "kdenney",
+          "nick-livefront"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.25
+        ],
+        "pr": 16461,
+        "predicted": [
+          "gbubemismith",
+          "jaredsnider-bitwarden"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 74
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "rodrigopk",
+          "titolins"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.25
+        ],
+        "pr": 111338,
+        "predicted": [
+          "jacobsonmt",
+          "alexander-akhmetov"
+        ],
+        "recall": 0.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 74
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW14987",
+        "observed_reviewers": [
+          "banrion"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "pr": 16562,
+        "predicted": [
+          "ttalty",
+          "audreyality"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 76
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "jacobsonmt"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "pr": 112010,
+        "predicted": [
+          "alexander-akhmetov",
+          "jacobsonmt"
+        ],
+        "recall": 1.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 79
+      },
+      {
+        "baseline_current_path": 0.25,
+        "baseline_handoff": 0.25,
+        "baseline_recency": 0.25,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "banrion",
+          "bryancunningham",
+          "danielleflinn",
+          "vleague2"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "pr": 16748,
+        "predicted": [
+          "vleague2",
+          "jingo88"
+        ],
+        "recall": 0.25,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 79
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "BW11709",
+        "observed_reviewers": [
+          "thomas-avery"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "pr": 16820,
+        "predicted": [
+          "mzieniukbw",
+          "thomas-avery"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 81
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "btreston",
+          "prograhamming"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "pr": 16823,
+        "predicted": [
+          "banrion",
+          "djsmith85"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 81
+      },
+      {
+        "baseline_current_path": 0.5,
+        "baseline_handoff": 0.5,
+        "baseline_recency": 0.5,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "coroiu",
+          "mzieniukbw"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 16865,
+        "predicted": [
+          "thomas-avery",
+          "mzieniukbw"
+        ],
+        "recall": 0.5,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 83
+      },
+      {
+        "baseline_current_path": 0.2857142857142857,
+        "baseline_handoff": 0.2857142857142857,
+        "baseline_recency": 0.2857142857142857,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "banrion",
+          "coroiu",
+          "cyprain-okeke",
+          "djsmith85",
+          "ike-kottlowski",
+          "jimmyvo16",
+          "nick-livefront"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 16911,
+        "predicted": [
+          "banrion",
+          "djsmith85"
+        ],
+        "recall": 0.2857142857142857,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 83
+      },
+      {
+        "baseline_current_path": 0.3333333333333333,
+        "baseline_handoff": 0.3333333333333333,
+        "baseline_recency": 0.3333333333333333,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "banrion",
+          "cyprain-okeke",
+          "vleague2"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 16952,
+        "predicted": [
+          "banrion",
+          "djsmith85"
+        ],
+        "recall": 0.3333333333333333,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 84
+      },
+      {
+        "baseline_current_path": 0.3333333333333333,
+        "baseline_handoff": 0.3333333333333333,
+        "baseline_recency": 0.0,
+        "event": "BW14987",
+        "observed_reviewers": [
+          "banrion",
+          "cyprain-okeke",
+          "vleague2"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 16952,
+        "predicted": [
+          "ttalty",
+          "banrion"
+        ],
+        "recall": 0.3333333333333333,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 84
+      },
+      {
+        "baseline_current_path": 0.3333333333333333,
+        "baseline_handoff": 0.3333333333333333,
+        "baseline_recency": 0.3333333333333333,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "banrion",
+          "cyprain-okeke",
+          "vleague2"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 16952,
+        "predicted": [
+          "willmartian",
+          "vleague2"
+        ],
+        "recall": 0.3333333333333333,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 84
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "banrion"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 16939,
+        "predicted": [
+          "banrion",
+          "djsmith85"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 86
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 0.0,
+        "event": "BW14987",
+        "observed_reviewers": [
+          "banrion"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 16939,
+        "predicted": [
+          "ttalty",
+          "banrion"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 86
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "BW15093",
+        "observed_reviewers": [
+          "vleague2"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 16940,
+        "predicted": [
+          "willmartian",
+          "vleague2"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 86
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW12927",
+        "observed_reviewers": [
+          "amorask-bitwarden",
+          "btreston"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 16944,
+        "predicted": [
+          "gbubemismith",
+          "jaasen-livefront"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 86
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "alexrubik",
+          "gbubemismith",
+          "voommen-livefront"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 16987,
+        "predicted": [
+          "banrion",
+          "djsmith85"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 88
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "yuri-tceretian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 112880,
+        "predicted": [
+          "yuri-tceretian",
+          "jacobsonmt"
+        ],
+        "recall": 1.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 88
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "alexrubik",
+          "reneelund08"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 17189,
+        "predicted": [
+          "banrion",
+          "btreston"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 98
+      },
+      {
+        "baseline_current_path": 0.5,
+        "baseline_handoff": 0.5,
+        "baseline_recency": 0.5,
+        "event": "BW12927",
+        "observed_reviewers": [
+          "amorask-bitwarden",
+          "cyprain-okeke"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 17393,
+        "predicted": [
+          "btreston",
+          "gbubemismith"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 99
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "BW14571",
+        "observed_reviewers": [
+          "banrion"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 17434,
+        "predicted": [
+          "banrion",
+          "btreston"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 99
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "titolins"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 114196,
+        "predicted": [
+          "jacobsonmt",
+          "alexander-akhmetov"
+        ],
+        "recall": 0.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 99
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "mzieniukbw"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 17742,
+        "predicted": [
+          "thomas-avery",
+          "mzieniukbw"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 100
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "mzieniukbw"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.25,
+          0.0
+        ],
+        "pr": 17771,
+        "predicted": [
+          "thomas-avery",
+          "mzieniukbw"
+        ],
+        "recall": 1.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 100
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "baldm0mma"
+        ],
+        "params_alpha_beta_gamma": [
+          1.0,
+          0.0,
+          0.25
+        ],
+        "pr": 115442,
+        "predicted": [
+          "jacobsonmt",
+          "alexander-akhmetov"
+        ],
+        "recall": 0.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 103
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "titolins"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "pr": 115959,
+        "predicted": [
+          "jacobsonmt",
+          "alexander-akhmetov"
+        ],
+        "recall": 0.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 105
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "yuri-tceretian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "pr": 116308,
+        "predicted": [
+          "yuri-tceretian",
+          "jacobsonmt"
+        ],
+        "recall": 1.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 106
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 0.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "alexander-akhmetov"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "pr": 116434,
+        "predicted": [
+          "jacobsonmt",
+          "alexander-akhmetov"
+        ],
+        "recall": 1.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 106
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "BW13285",
+        "observed_reviewers": [
+          "coroiu",
+          "quexten"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "pr": 18413,
+        "predicted": [
+          "mzieniukbw",
+          "justindbaur"
+        ],
+        "recall": 0.0,
+        "repo": "bitwarden/clients",
+        "training_events": 9,
+        "training_pr_events_before_open": 106
+      },
+      {
+        "baseline_current_path": 0.0,
+        "baseline_handoff": 0.0,
+        "baseline_recency": 0.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "ferruvich",
+          "macabu"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "pr": 116475,
+        "predicted": [
+          "yuri-tceretian",
+          "alexander-akhmetov"
+        ],
+        "recall": 0.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 107
+      },
+      {
+        "baseline_current_path": 0.25,
+        "baseline_handoff": 0.25,
+        "baseline_recency": 0.25,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "alexander-akhmetov",
+          "johnnyk-grafana",
+          "rodrigopk",
+          "soniaaguilarpeiron"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "pr": 116563,
+        "predicted": [
+          "alexander-akhmetov",
+          "jacobsonmt"
+        ],
+        "recall": 0.25,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 108
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "yuri-tceretian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "pr": 117061,
+        "predicted": [
+          "yuri-tceretian",
+          "alexander-akhmetov"
+        ],
+        "recall": 1.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 112
+      },
+      {
+        "baseline_current_path": 1.0,
+        "baseline_handoff": 1.0,
+        "baseline_recency": 1.0,
+        "event": "GF104424",
+        "observed_reviewers": [
+          "yuri-tceretian"
+        ],
+        "params_alpha_beta_gamma": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "pr": 117090,
+        "predicted": [
+          "yuri-tceretian",
+          "alexander-akhmetov"
+        ],
+        "recall": 1.0,
+        "repo": "grafana/grafana",
+        "training_events": 9,
+        "training_pr_events_before_open": 112
+      }
+    ]
+  },
+  "selection_risk": "Retrospective grid and cross-validation on previously explored migration events; not a new confirmatory cohort",
+  "target": "observed participants, NOT independent experts",
+  "tuning_grid_size": 80
+}

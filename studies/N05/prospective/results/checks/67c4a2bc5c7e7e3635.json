@@ -1,0 +1,28 @@
+{
+  "key": "67c4a2bc5c7e7e3635",
+  "args": {
+    "crate": "tonic",
+    "version": "0.13.1",
+    "id": "29ff6df4367c1399",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 17.7361,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower_service`",
+      "rendered": "error[E0432]: unresolved import `tower_service`\n --> src/main.rs:3:5\n  |\n3 | use tower_service::Service;\n  |     ^^^^^^^^^^^^^ use of unresolved module or unlinked crate `tower_service`\n  |\n  = help: if you wanted to use a crate named `tower_service`, use `cargo add tower_service` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tonic_consumer` (bin \"n05_tonic_consumer\") due to 1 previous error\n",
+  "code_sha256": "470f657de8ef8077378b31ab18848b19366e154c5ad03f642f0928f42cb1efd5",
+  "manifest_sha256": "208e29c9ab575aaead866c9a6d666d4c94ba64eef853b291160860549c6b3322",
+  "log_file": "prospective/results/check_logs/67c4a2bc5c7e7e3635.txt.gz"
+}

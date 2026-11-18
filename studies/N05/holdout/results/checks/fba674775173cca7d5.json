@@ -1,0 +1,46 @@
+{
+  "key": "fba674775173cca7d5",
+  "args": {
+    "crate": "tokio-stream",
+    "version": "0.1.17",
+    "id": "954c5f4a458cfd10",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.07,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:4:5\n  |\n4 | use tokio::sync::watch;\n  |     ^^^^^ use of unresolved module or unlinked crate `tokio`\n  |\n  = help: if you wanted to use a crate named `tokio`, use `cargo add tokio` to add it to your `Cargo.toml`\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio_stream::wrappers::WatchStream`",
+      "rendered": "error[E0432]: unresolved import `tokio_stream::wrappers::WatchStream`\n  --> src/main.rs:3:31\n   |\n 3 | use tokio_stream::{StreamExt, wrappers::WatchStream};\n   |                               ^^^^^^^^^^^^^^^^^^^^^ no `WatchStream` in `wrappers`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-stream-0.1.17/src/wrappers.rs:21:20\n   |\n16 | / cfg_sync! {\n17 | |     mod broadcast;\n18 | |     pub use broadcast::BroadcastStream;\n...  |\n21 | |     pub use watch::WatchStream;\n   | |                    ^^^^^^^^^^^\n22 | | }\n   | |_- the item is gated behind the `sync` feature\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:1:3\n  |\n1 | #[tokio::main]\n  |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:2:1\n  |\n2 | async fn main() {\n  | ^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 4,
+  "stderr_excerpt": "error: could not compile `n05_tokio_stream_consumer` (bin \"n05_tokio_stream_consumer\") due to 4 previous errors\n",
+  "code_sha256": "ead38d4c52d57e2ea1af5674833444d4062a9cf797931f67f88e0fd4c564b7d1",
+  "manifest_sha256": "711027aab25c69dcedcb516826b7ebcae3de548bb53c10a3b66699ab78e0df31",
+  "log_file": "holdout/results/check_logs/fba674775173cca7d5.txt.gz"
+}

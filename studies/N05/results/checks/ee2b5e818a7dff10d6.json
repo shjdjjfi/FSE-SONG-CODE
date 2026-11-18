@@ -1,0 +1,64 @@
+{
+  "key": "ee2b5e818a7dff10d6",
+  "args": {
+    "crate": "tokio-util",
+    "version": "0.7.15",
+    "id": "8dbc5eb2fec57ffd",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0984,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio_util::io`",
+      "rendered": "error[E0432]: unresolved import `tokio_util::io`\n  --> src/main.rs:3:17\n   |\n 3 | use tokio_util::io::StreamReader;\n   |                 ^^ could not find `io` in `tokio_util`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-util-0.7.15/src/lib.rs:45:13\n   |\n44 | / cfg_io! {\n45 | |     pub mod io;\n   | |             ^^\n46 | | }\n   | |_- the item is gated behind the `io` feature\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:2:5\n  |\n2 | use tokio::io::AsyncReadExt;\n  |     ^^^^^ use of unresolved module or unlinked crate `tokio`\n  |\n  = help: if you wanted to use a crate named `tokio`, use `cargo add tokio` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `bytes`",
+      "rendered": "error[E0432]: unresolved import `bytes`\n --> src/main.rs:1:5\n  |\n1 | use bytes::Bytes;\n  |     ^^^^^ help: a similar path exists: `tokio_util::bytes`\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio_stream`",
+      "rendered": "error[E0432]: unresolved import `tokio_stream`\n --> src/main.rs:4:5\n  |\n4 | use tokio_stream::StreamExt;\n  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `tokio_stream`\n  |\n  = help: if you wanted to use a crate named `tokio_stream`, use `cargo add tokio_stream` to add it to your `Cargo.toml`\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:5:3\n  |\n5 | #[tokio::main(flavor = \"current_thread\")]\n  |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio_stream`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio_stream`\n --> src/main.rs:9:14\n  |\n9 | let stream = tokio_stream::iter(vec![\n  |              ^^^^^^^^^^^^ use of unresolved module or unlinked crate `tokio_stream`\n  |\n  = help: if you wanted to use a crate named `tokio_stream`, use `cargo add tokio_stream` to add it to your `Cargo.toml`\n\n",
+      "line": 9
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:6:1\n  |\n6 | async fn main() -> std::io::Result<()> {\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 6
+    }
+  ],
+  "error_count": 7,
+  "stderr_excerpt": "error: could not compile `n05_tokio_util_consumer` (bin \"n05_tokio_util_consumer\") due to 7 previous errors\n",
+  "code_sha256": "0bf96e8baaa5e68014506ef8e99e7dc556a810f844873e78c66b4ef43c10f8a9",
+  "manifest_sha256": "85f7363a0fff6cf363d144fd8235895e33d8fec33b5b4d144fe0cc14bf1a160d",
+  "log_file": "results/check_logs/ee2b5e818a7dff10d6.txt.gz"
+}

@@ -1,0 +1,28 @@
+{
+  "cold_build": {
+    "argv": [
+      "node",
+      "/home/runner/work/FSE-EXP-1/FSE-EXP-1/n21_ci_deps/node_modules/typescript/bin/tsc",
+      "-b",
+      "tsconfig.json",
+      "--verbose"
+    ],
+    "exit": 0,
+    "seconds": 1.34346,
+    "stderr_tail": "",
+    "stdout_tail": "4:38:55 AM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n4:38:56 AM - Project 'packages/alpha/tsconfig.json' is out of date because output file 'packages/alpha/cache.tsbuildinfo' does not exist\n\n4:38:56 AM - Building project '/home/runner/work/FSE-EXP-1/FSE-EXP-1/n21_gha_fixture/packages/alpha/tsconfig.json'...\n\n4:38:56 AM - Project 'packages/beta/tsconfig.json' is out of date because output file 'packages/beta/cache.tsbuildinfo' does not exist\n\n4:38:56 AM - Building project '/home/runner/work/FSE-EXP-1/FSE-EXP-1/n21_gha_fixture/packages/beta/tsconfig.json'...\n\n"
+  },
+  "created_by": "isolated independent cold compile",
+  "expected": {
+    "alpha": {
+      "index.d.ts": "f18c39c484fd44ef7758a19025f6818f3df1de16e6628d2ef8a9994c20b99497",
+      "index.js": "e8233881868468806397ba84c96ad5a3683ead7e1b49d92b8566267eb5667848"
+    },
+    "beta": {
+      "index.d.ts": "bd65631248787dd2197eb34babdfc41630ff33d0fde6dbfa8cddc87bb1fa00bd",
+      "index.js": "377fd5467702edd84b6e68741b96a6e617e0202130ffec7671027a934edade65"
+    }
+  },
+  "source_hash": "325ae99dd6e8cdb5f37156522c392c0a56581f5e03374d37ea60b58f2c0be2a2",
+  "typescript": "5.9.3"
+}

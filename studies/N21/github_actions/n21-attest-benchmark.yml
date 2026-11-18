@@ -1,0 +1,130 @@
+# Executed on the authorized isolated shjdjjfi/FSE-EXP-1 research branch.
+# Valid remote runs: 44237916114, 44238758566, 44238773494.
+# Reproducible installation target: .github/workflows/n21-attest-benchmark.yml;
+# this source-copy differs from remote only by documentation comments.
+# The configured push paths cover the workflow and the harness, not README edits.
+name: N21 TypeScript cache completeness benchmark
+
+on:
+  push:
+    branches:
+      - n21-fse-benchmark
+    paths:
+      - .github/workflows/n21-attest-benchmark.yml
+      - n21_submission_experiments/github_actions/gha_n21.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  warm:
+    name: Generate trusted outputs and two caches
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install pinned compiler
+        run: npm install --prefix n21_ci_deps --no-save --no-package-lock --ignore-scripts --no-audit --no-fund typescript@5.9.3
+      - name: Compile fresh independent reference
+        env:
+          N21_TSC: ${{ github.workspace }}/n21_ci_deps/node_modules/typescript/bin/tsc
+        run: |
+          python3 n21_submission_experiments/github_actions/gha_n21.py init
+          python3 n21_submission_experiments/github_actions/gha_n21.py cold
+      - uses: actions/upload-artifact@v4
+        with:
+          name: n21-trusted-oracle
+          path: n21_gha_evidence/expected.json
+          retention-days: 30
+      - name: Save verified complete cache via real Attest action
+        uses: Attest/typescript-cache-action/save@7227052c996c38afb0aece6e05d185b2d45a28a5
+        with:
+          cache-base-key: n21-${{ github.run_id }}
+          cache-key: complete
+          files: |
+            n21_gha_fixture/packages/*/dist
+            n21_gha_fixture/packages/*/cache.tsbuildinfo
+      - name: Deliberately damage the second copy before caching
+        run: python3 n21_submission_experiments/github_actions/gha_n21.py partial
+      - name: Save deliberately incomplete cache via real Attest action
+        uses: Attest/typescript-cache-action/save@7227052c996c38afb0aece6e05d185b2d45a28a5
+        with:
+          cache-base-key: n21-${{ github.run_id }}
+          cache-key: partial
+          files: |
+            n21_gha_fixture/packages/*/dist
+            n21_gha_fixture/packages/*/cache.tsbuildinfo
+
+  verify:
+    needs: warm
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {cache_state: complete, fault: none, strategy: attest_only}
+          - {cache_state: complete, fault: none, strategy: guarded_sha}
+          - {cache_state: partial, fault: none, strategy: attest_only}
+          - {cache_state: partial, fault: none, strategy: guarded_sha}
+          - {cache_state: partial, fault: none, strategy: clean_all}
+          - {cache_state: partial, fault: none, strategy: force_all}
+          - {cache_state: complete, fault: corrupt_dts, strategy: attest_only}
+          - {cache_state: complete, fault: corrupt_dts, strategy: guarded_sha}
+          - {cache_state: complete, fault: corrupt_dts, strategy: clean_all}
+          - {cache_state: complete, fault: extra_stale, strategy: attest_only}
+          - {cache_state: complete, fault: extra_stale, strategy: guarded_sha}
+          - {cache_state: complete, fault: extra_stale, strategy: force_all}
+          - {cache_state: miss, fault: none, strategy: attest_only}
+          - {cache_state: miss, fault: none, strategy: guarded_sha}
+    name: ${{ matrix.cache_state }} / ${{ matrix.fault }} / ${{ matrix.strategy }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install pinned compiler
+        run: npm install --prefix n21_ci_deps --no-save --no-package-lock --ignore-scripts --no-audit --no-fund typescript@5.9.3
+      - name: Prepare identical source and config
+        run: python3 n21_submission_experiments/github_actions/gha_n21.py init
+      - uses: actions/download-artifact@v4
+        with:
+          name: n21-trusted-oracle
+          path: n21_gha_evidence
+      - name: Restore with actual Attest composite action
+        uses: Attest/typescript-cache-action@7227052c996c38afb0aece6e05d185b2d45a28a5
+        with:
+          cache-base-key: ${{ matrix.cache_state == 'miss' && format('n21-miss-{0}', github.run_id) || format('n21-{0}', github.run_id) }}
+          cache-key: ${{ matrix.cache_state }}
+          base-ref: ${{ github.event.repository.default_branch }}
+          files: |
+            n21_gha_fixture/packages/*/dist
+            n21_gha_fixture/packages/*/cache.tsbuildinfo
+      - name: Execute repair strategy and independent SHA oracle
+        env:
+          N21_TSC: ${{ github.workspace }}/n21_ci_deps/node_modules/typescript/bin/tsc
+        run: |
+          python3 n21_submission_experiments/github_actions/gha_n21.py experiment \
+            --cache-state '${{ matrix.cache_state }}' \
+            --fault '${{ matrix.fault }}' \
+            --strategy '${{ matrix.strategy }}' \
+            --metrics 'n21_gha_evidence/result.json'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: n21-result-${{ matrix.cache_state }}-${{ matrix.fault }}-${{ matrix.strategy }}
+          path: n21_gha_evidence/result.json
+          if-no-files-found: error
+          retention-days: 30

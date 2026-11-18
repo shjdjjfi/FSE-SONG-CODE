@@ -1,0 +1,34 @@
+{
+  "key": "f21c04e3730cdcc321",
+  "args": {
+    "crate": "tower",
+    "version": "0.5.2",
+    "id": "c7310a3265db2b24",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0772,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:4:3\n  |\n4 | #[tokio::main]\n  |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:5:1\n  |\n5 | async fn main() -> Result<(), BoxError> {\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 5
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_tower_consumer` (bin \"n05_tower_consumer\") due to 2 previous errors; 1 warning emitted\n",
+  "code_sha256": "0e5baa23a24cb5637f3ea061824250ae3c5a41a56116e5f15a77cc6a116a0d60",
+  "manifest_sha256": "bd645f89ecaac2a3980e78d9eda46be2738f29c34e7bad6f632626e3c930ddb6",
+  "log_file": "holdout/results/check_logs/f21c04e3730cdcc321.txt.gz"
+}

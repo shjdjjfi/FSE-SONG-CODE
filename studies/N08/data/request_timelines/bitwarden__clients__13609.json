@@ -1,0 +1,26 @@
+{
+  "pr": 13609,
+  "pr_author": "mzieniukbw",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-02-27T17:51:55Z",
+      "requested_people": [
+        "mzieniukbw"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-02-27T17:51:55Z",
+      "requested_people": [
+        "mzieniukbw",
+        "tangowithfoxtrot"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "d77573a5de48a6d8fd65e53235d7c1f94175136f3cefe99c880850ad0cfd3317",
+  "url": "https://github.com/bitwarden/clients/pull/13609"
+}

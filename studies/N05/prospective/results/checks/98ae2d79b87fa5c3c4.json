@@ -1,0 +1,28 @@
+{
+  "key": "98ae2d79b87fa5c3c4",
+  "args": {
+    "crate": "time",
+    "version": "0.3.41",
+    "id": "b1a8c2bff99e1723",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0477,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `time_macros`",
+      "rendered": "error[E0432]: unresolved import `time_macros`\n --> src/main.rs:3:5\n  |\n3 | use time_macros::date;\n  |     ^^^^^^^^^^^ use of unresolved module or unlinked crate `time_macros`\n  |\n  = help: if you wanted to use a crate named `time_macros`, use `cargo add time_macros` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_time_consumer` (bin \"n05_time_consumer\") due to 1 previous error\n",
+  "code_sha256": "f68ce890e0835ff89b1b7a9c7806cbb17b60f59f97014b06511f4afd7f1ae36d",
+  "manifest_sha256": "60f277b82543bdd9c96698f72dfa956042549dd4900b4d66ff53e380ee5fc78e",
+  "log_file": "prospective/results/check_logs/98ae2d79b87fa5c3c4.txt.gz"
+}

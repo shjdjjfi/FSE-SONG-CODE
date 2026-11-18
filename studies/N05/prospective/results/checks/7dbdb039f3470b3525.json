@@ -1,0 +1,40 @@
+{
+  "key": "7dbdb039f3470b3525",
+  "args": {
+    "crate": "ulid",
+    "version": "1.2.1",
+    "id": "060bd21396adf71e",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 14.985,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `ulid::serde`",
+      "rendered": "error[E0432]: unresolved import `ulid::serde`\n  --> src/main.rs:3:11\n   |\n 3 | use ulid::serde::ulid_as_uuid;\n   |           ^^^^^ could not find `serde` in `ulid`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/ulid-1.2.1/src/lib.rs:46:9\n   |\n45 | #[cfg(feature = \"serde\")]\n   |       ----------------- the item is gated behind the `serde` feature\n46 | pub mod serde;\n   |         ^^^^^\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde_derive`",
+      "rendered": "error[E0432]: unresolved import `serde_derive`\n --> src/main.rs:4:5\n  |\n4 | use serde_derive::{Serialize, Deserialize};\n  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `serde_derive`\n  |\n  = help: if you wanted to use a crate named `serde_derive`, use `cargo add serde_derive` to add it to your `Cargo.toml`\n\n",
+      "line": 4
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `serde` in this scope",
+      "rendered": "error: cannot find attribute `serde` in this scope\n --> src/main.rs:7:7\n  |\n7 |     #[serde(with = \"ulid_as_uuid\")]\n  |       ^^^^^\n\n",
+      "line": 7
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_ulid_consumer` (bin \"n05_ulid_consumer\") due to 3 previous errors\n",
+  "code_sha256": "adb85ba3254ea34ca5050387f75b6cfc8334398ef30547c183aeb494b9f0541d",
+  "manifest_sha256": "bdfcd9bbed4690d34e628106efc57a9d6c3289dc9bff36164af6bf6b39b2f32d",
+  "log_file": "prospective/results/check_logs/7dbdb039f3470b3525.txt.gz"
+}

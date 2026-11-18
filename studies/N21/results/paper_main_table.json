@@ -1,0 +1,200 @@
+{
+  "seed": 17,
+  "settings": 77,
+  "by_arm": {
+    "standard": {
+      "correct": 0,
+      "total": 77,
+      "median_rebuilt_units": 0,
+      "median_wall_seconds": 0.1818
+    },
+    "selective_path": {
+      "correct": 55,
+      "total": 77,
+      "median_rebuilt_units": 2,
+      "median_wall_seconds": 1.109
+    },
+    "selective_hash": {
+      "correct": 77,
+      "total": 77,
+      "median_rebuilt_units": 3,
+      "median_wall_seconds": 1.4844
+    },
+    "guarded_hash": {
+      "correct": 77,
+      "total": 77,
+      "median_rebuilt_units": 3,
+      "median_wall_seconds": 1.7371
+    },
+    "invalidate_all": {
+      "correct": 64,
+      "total": 77,
+      "median_rebuilt_units": 4,
+      "median_wall_seconds": 2.9999
+    },
+    "clean_all": {
+      "correct": 77,
+      "total": 77,
+      "median_rebuilt_units": 4,
+      "median_wall_seconds": 2.9787
+    },
+    "force_all": {
+      "correct": 64,
+      "total": 77,
+      "median_rebuilt_units": 4,
+      "median_wall_seconds": 3.0512
+    },
+    "full_cache": {
+      "correct": 77,
+      "total": 77,
+      "median_rebuilt_units": 0,
+      "median_wall_seconds": 0.0102
+    }
+  },
+  "by_project": [
+    {
+      "case": "typescript",
+      "project": "compiler",
+      "n": 3,
+      "sources": 78,
+      "outputs": 156,
+      "guarded_units": 252,
+      "clean_units": 252,
+      "median_saved_units": 0,
+      "median_time_saved_seconds": -0.46889999999999965
+    },
+    {
+      "case": "typescript",
+      "project": "jsTyping",
+      "n": 3,
+      "sources": 6,
+      "outputs": 12,
+      "guarded_units": 174,
+      "clean_units": 252,
+      "median_saved_units": 78,
+      "median_time_saved_seconds": 10.727800000000002
+    },
+    {
+      "case": "typescript",
+      "project": "services",
+      "n": 3,
+      "sources": 168,
+      "outputs": 336,
+      "guarded_units": 168,
+      "clean_units": 252,
+      "median_saved_units": 84,
+      "median_time_saved_seconds": 13.6401
+    },
+    {
+      "case": "libraries",
+      "project": "ts-pattern",
+      "n": 7,
+      "sources": 18,
+      "outputs": 36,
+      "guarded_units": 18,
+      "clean_units": 37,
+      "median_saved_units": 19,
+      "median_time_saved_seconds": 0.49060000000000015
+    },
+    {
+      "case": "libraries",
+      "project": "zod",
+      "n": 7,
+      "sources": 13,
+      "outputs": 26,
+      "guarded_units": 13,
+      "clean_units": 37,
+      "median_saved_units": 24,
+      "median_time_saved_seconds": 0.8938000000000001
+    },
+    {
+      "case": "libraries",
+      "project": "neverthrow",
+      "n": 7,
+      "sources": 5,
+      "outputs": 10,
+      "guarded_units": 5,
+      "clean_units": 37,
+      "median_saved_units": 32,
+      "median_time_saved_seconds": 1.9883000000000002
+    },
+    {
+      "case": "libraries",
+      "project": "mitt",
+      "n": 7,
+      "sources": 1,
+      "outputs": 2,
+      "guarded_units": 1,
+      "clean_units": 37,
+      "median_saved_units": 36,
+      "median_time_saved_seconds": 2.2587
+    },
+    {
+      "case": "andrewthauer",
+      "project": "core",
+      "n": 7,
+      "sources": 1,
+      "outputs": 4,
+      "guarded_units": 2,
+      "clean_units": 4,
+      "median_saved_units": 2,
+      "median_time_saved_seconds": 0.7128999999999999
+    },
+    {
+      "case": "andrewthauer",
+      "project": "api",
+      "n": 7,
+      "sources": 1,
+      "outputs": 4,
+      "guarded_units": 3,
+      "clean_units": 4,
+      "median_saved_units": 1,
+      "median_time_saved_seconds": -0.07030000000000003
+    },
+    {
+      "case": "andrewthauer",
+      "project": "cli",
+      "n": 7,
+      "sources": 1,
+      "outputs": 4,
+      "guarded_units": 1,
+      "clean_units": 4,
+      "median_saved_units": 3,
+      "median_time_saved_seconds": 1.3656
+    },
+    {
+      "case": "andrewthauer",
+      "project": "web",
+      "n": 5,
+      "sources": 1,
+      "outputs": 2,
+      "guarded_units": 1,
+      "clean_units": 4,
+      "median_saved_units": 3,
+      "median_time_saved_seconds": 1.3437
+    },
+    {
+      "case": "quramy",
+      "project": "x-core",
+      "n": 7,
+      "sources": 1,
+      "outputs": 3,
+      "guarded_units": 4,
+      "clean_units": 4,
+      "median_saved_units": 0,
+      "median_time_saved_seconds": -0.6049
+    },
+    {
+      "case": "quramy",
+      "project": "x-cli",
+      "n": 7,
+      "sources": 3,
+      "outputs": 9,
+      "guarded_units": 3,
+      "clean_units": 4,
+      "median_saved_units": 1,
+      "median_time_saved_seconds": -0.1916
+    }
+  ],
+  "note": "Exploratory local times; no independent industrial CI or prevalence claims."
+}

@@ -1,0 +1,124 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 7,
+  "bytes": 64824,
+  "control_flow_or_callback_lines": 1,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "+",
+      "code": "/**",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "* Hides the background illustration. Defaults to false.",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "*/",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "hideBackgroundIllustration?: boolean;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected hideBackgroundIllustration?: boolean | null;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.hideBackgroundIllustration = Boolean(firstChildRouteData[\"hideBackgroundIllustration\"]);",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (data.hideBackgroundIllustration !== undefined) {",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.hideBackgroundIllustration = data.hideBackgroundIllustration;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.hideBackgroundIllustration = null;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "readonly hideBackgroundIllustration = input<boolean>(false);",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "[hideBackgroundIllustration]=\"hideBackgroundIllustration\"",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "hideBackgroundIllustration: { control: \"boolean\" },",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "hideBackgroundIllustration: false,",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "export const NoBackgroundIllustration: Story = {",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "args: { hideBackgroundIllustration: true },",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "};",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "hideBackgroundIllustration: true,",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:53.244193+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 15,
+  "pr": 16748,
+  "repository": "bitwarden/clients",
+  "sha256": "bc82dec737df5aacb9f1b808c9310fb2bbbbd53fab69617aa00353c72c076bcd",
+  "target_code_changed_lines": 20,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout-wrapper.component.html",
+    "libs/components/src/anon-layout/anon-layout-wrapper.component.ts",
+    "libs/components/src/anon-layout/anon-layout.component.html",
+    "libs/components/src/anon-layout/anon-layout.component.ts",
+    "libs/components/src/anon-layout/anon-layout.stories.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/16748.patch"
+}

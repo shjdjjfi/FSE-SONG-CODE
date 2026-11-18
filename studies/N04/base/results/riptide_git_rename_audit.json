@@ -1,0 +1,68 @@
+{
+  "repository": "https://github.com/zalando/riptide",
+  "migration_commit": "cef45a1e325b5b1fdc4c47def3269ad3578b1fe1",
+  "migration_parent": "112fa8b570d0296c6efae332ce03e5a68786ac32",
+  "maintainer_commit_subject": "Reorganized starter",
+  "evidence_kind": "Git file similarity in release migration + existing equal method bodies; NOT independently human-adjudicated flaky-history identity",
+  "original_deleted_labels_kept": true,
+  "rename_confirmed": 4,
+  "total_disputed": 4,
+  "cases": [
+    {
+      "old_id": "org.zalando.riptide.spring.AccessTokensDefaultCredentialsDirectoryTest.shouldUseCredentialsDirectory",
+      "new_id": "org.zalando.riptide.autoconfigure.AccessTokensDefaultCredentialsDirectoryTest.shouldUseCredentialsDirectory",
+      "original_idoft_status": "Deleted",
+      "git_rename_matches": [
+        {
+          "rename_status": "R098",
+          "old_path": "riptide-spring-boot-starter/src/test/java/org/zalando/riptide/spring/AccessTokensDefaultCredentialsDirectoryTest.java",
+          "new_path": "riptide-spring-boot-autoconfigure/src/test/java/org/zalando/riptide/autoconfigure/AccessTokensDefaultCredentialsDirectoryTest.java",
+          "similarity_percent": 98
+        }
+      ],
+      "unique_rename": true
+    },
+    {
+      "old_id": "org.zalando.riptide.spring.AccessTokensMissingTest.shouldFailDueToMissingAccessTokenUrl",
+      "new_id": "org.zalando.riptide.autoconfigure.AccessTokensMissingTest.shouldFailDueToMissingAccessTokenUrl",
+      "original_idoft_status": "Deleted",
+      "git_rename_matches": [
+        {
+          "rename_status": "R096",
+          "old_path": "riptide-spring-boot-starter/src/test/java/org/zalando/riptide/spring/AccessTokensMissingTest.java",
+          "new_path": "riptide-spring-boot-autoconfigure/src/test/java/org/zalando/riptide/autoconfigure/AccessTokensMissingTest.java",
+          "similarity_percent": 96
+        }
+      ],
+      "unique_rename": true
+    },
+    {
+      "old_id": "org.zalando.riptide.spring.AccessTokensPropertiesTest.shouldRun",
+      "new_id": "org.zalando.riptide.autoconfigure.AccessTokensPropertiesTest.shouldRun",
+      "original_idoft_status": "Deleted",
+      "git_rename_matches": [
+        {
+          "rename_status": "R094",
+          "old_path": "riptide-spring-boot-starter/src/test/java/org/zalando/riptide/spring/AccessTokensPropertiesTest.java",
+          "new_path": "riptide-spring-boot-autoconfigure/src/test/java/org/zalando/riptide/autoconfigure/AccessTokensPropertiesTest.java",
+          "similarity_percent": 94
+        }
+      ],
+      "unique_rename": true
+    },
+    {
+      "old_id": "org.zalando.riptide.spring.LogbookCompatibilityTest.shouldUseInterceptors",
+      "new_id": "org.zalando.riptide.autoconfigure.LogbookCompatibilityTest.shouldUseInterceptors",
+      "original_idoft_status": "Deleted",
+      "git_rename_matches": [
+        {
+          "rename_status": "R096",
+          "old_path": "riptide-spring-boot-starter/src/test/java/org/zalando/riptide/spring/LogbookCompatibilityTest.java",
+          "new_path": "riptide-spring-boot-autoconfigure/src/test/java/org/zalando/riptide/autoconfigure/LogbookCompatibilityTest.java",
+          "similarity_percent": 96
+        }
+      ],
+      "unique_rename": true
+    }
+  ]
+}

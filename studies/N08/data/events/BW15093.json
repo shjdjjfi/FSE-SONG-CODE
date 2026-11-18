@@ -1,0 +1,433 @@
+{
+  "after_codeowners_sha256": "6422115b5bd25e181653f6398738cb616b1db64704116f5b6be956b5f8b16662",
+  "all_patch_renames": 19,
+  "base_sha": "50051e57a7d1c6b2cc09584290c6b365dd233524",
+  "before_codeowners_sha256": "c05140bdd3fb8dbbf5e040cecd35c49f873e7418dc52aa6fc8033db451b06660",
+  "expected_new_team": "@bitwarden/team-ui-foundation",
+  "expected_old_team": "@bitwarden/team-auth-dev",
+  "histories": {
+    "after": {
+      "commit_count": 29,
+      "pr_linked_count": 29,
+      "records": [
+        {
+          "date": "2025-06-26T21:09:25Z",
+          "pr": 15273,
+          "sha": "34a338930adaf100990264cc4238bb5abc631c63",
+          "title": "[CL-613] Support non-card primary content in anon-layout (#15273)"
+        },
+        {
+          "date": "2025-06-30T17:47:31Z",
+          "pr": 15362,
+          "sha": "64eb9b56d7634cc6804f3125b14781e363499f6e",
+          "title": "feat(anon-layout): [Auth/PM-17737] AnonLayout - Consolidate and extend max width control (#15362)"
+        },
+        {
+          "date": "2025-07-03T11:14:25Z",
+          "pr": 15375,
+          "sha": "ab4af7deedccd8d5b937a7c78d21c504edf47d44",
+          "title": "[PM-22179] Redirect user to `/setup-extension` (#15375)"
+        },
+        {
+          "date": "2025-07-03T20:12:56Z",
+          "pr": 15226,
+          "sha": "b4d87007baa2fc771fae5b19bfc218e4f2395a38",
+          "title": "[CL-718] nav updates (#15226)"
+        },
+        {
+          "date": "2025-07-10T21:02:42Z",
+          "pr": 15522,
+          "sha": "2f1ab48c37d93d2e22325ad65401327c4de382a0",
+          "title": "[CL-750][CL-751][CL-752] Fix nav item truncation, clickable area, and shield logo (#15522)"
+        },
+        {
+          "date": "2025-07-14T20:56:10Z",
+          "pr": 15610,
+          "sha": "b2c2bb4c5557485dc51395ee8c8ba024842d7e60",
+          "title": "CL-765 - AnonLayoutWrapperComponents - make hideIcon reset properly. (#15610)"
+        },
+        {
+          "date": "2025-07-16T12:39:37Z",
+          "pr": 15340,
+          "sha": "6811ea4c0b67329af8c39dcb8ee7a494ca140f78",
+          "title": "[CL-707] Migrate CL codebase to signals (#15340)"
+        },
+        {
+          "date": "2025-07-17T13:50:07Z",
+          "pr": 15620,
+          "sha": "6843e273b8d7a4848ab4a64807647138ebef8f40",
+          "title": "[PM-23689] Setup Extension Video tweaks (#15620)"
+        },
+        {
+          "date": "2025-07-29T08:17:30Z",
+          "pr": 15777,
+          "sha": "e3d53856615ee2e0ab15039439a2652831529c6d",
+          "title": "Migrate UIF to use takeuntilDestroyed (#15777)"
+        },
+        {
+          "date": "2025-08-05T13:42:05Z",
+          "pr": 15827,
+          "sha": "7145092889cf9808e26fa3ed2a69053176ca405b",
+          "title": "[PM-24119] Manually open extension message (#15827)"
+        },
+        {
+          "date": "2025-08-06T20:16:17Z",
+          "pr": 15892,
+          "sha": "8ae015f2d8463658ae605686dc68f70c15cf877a",
+          "title": "[CL-372] Add required type attr to buttons in stories (#15892)"
+        },
+        {
+          "date": "2025-08-18T19:36:45Z",
+          "pr": 15738,
+          "sha": "827c4c0301739e9644de79880d0d671fccdb92af",
+          "title": "[PM-15847] `libs/components` strict migration (#15738)"
+        },
+        {
+          "date": "2025-08-20T19:06:24Z",
+          "pr": 16002,
+          "sha": "3901cf2859706b8994c3f362ad9ef343a7c74785",
+          "title": "[CL-805] [CL-521] anon layout illustrations (#16002)"
+        },
+        {
+          "date": "2025-08-21T16:35:59Z",
+          "pr": 16020,
+          "sha": "805b6fe7aaf812fad0f9063023011223c01a85fc",
+          "title": "[CL-573] Move all svg icons to new libs/assets (#16020)"
+        },
+        {
+          "date": "2025-09-10T21:23:53Z",
+          "pr": 16219,
+          "sha": "926f587ea2e2a449aeb11e85e623356a596f96d3",
+          "title": "[CL-581] Update svgs to new designs and make responsive (#16219)"
+        },
+        {
+          "date": "2025-09-16T18:41:17Z",
+          "pr": 16349,
+          "sha": "4711e51de3e9ffd8d699cbbec3aa55ddf5992a90",
+          "title": "[CL-816] Anon layout icon sizing (#16349)"
+        },
+        {
+          "date": "2025-10-15T14:32:02Z",
+          "pr": 16748,
+          "sha": "0713f90a069d250f7cae3a9643048a8890611781",
+          "title": "[PM-25871] updated phishing warning UI (#16748)"
+        },
+        {
+          "date": "2025-10-20T18:07:48Z",
+          "pr": 16433,
+          "sha": "d2c6757626e135c1bf1d0e433b1e9dc4517d7126",
+          "title": "[CL-850] Remove anon layout default icon and require either icon or no icon (#16433)"
+        },
+        {
+          "date": "2025-10-21T16:52:40Z",
+          "pr": 16940,
+          "sha": "65da23feaaf3deef7c85443536298ea55e54da82",
+          "title": "UIF - Prefer signal & change detection (#16940)"
+        },
+        {
+          "date": "2025-10-27T15:14:42Z",
+          "pr": 16952,
+          "sha": "f452f39f3c1b6204876602e4212788241cea0c3d",
+          "title": "[CL-847] Card consolidation (#16952)"
+        },
+        {
+          "date": "2025-11-03T20:17:07Z",
+          "pr": 16782,
+          "sha": "cba47e4abd0d2509c3d49d168c7964c9e3f8f92b",
+          "title": "Update font to inter feature branch (#16782)"
+        },
+        {
+          "date": "2025-12-01T19:15:58Z",
+          "pr": 17638,
+          "sha": "10424e227b3bfc0749e7614d5bdaf6f56f4d22c7",
+          "title": "[CL-717][PM-27966] Update to Angular 20 and Storybook 9 (#17638)"
+        },
+        {
+          "date": "2025-12-11T18:56:13Z",
+          "pr": 17796,
+          "sha": "4c971c70c01de3bdab4ea0906abb7112461cc6a2",
+          "title": "[CL-927] anon layout header actions slot (#17796)"
+        },
+        {
+          "date": "2025-12-17T20:02:37Z",
+          "pr": 18023,
+          "sha": "5504d4975121be79c493caf10288030a53370f81",
+          "title": "[CL-927] add popup header back to extension layout for now (#18023)"
+        },
+        {
+          "date": "2026-01-23T16:57:55Z",
+          "pr": 17969,
+          "sha": "6cf434cf114834fea58f4e0171fa75b4b4716f78",
+          "title": "[CL-841] landing layout component (#17969)"
+        },
+        {
+          "date": "2026-01-28T16:36:27Z",
+          "pr": 18584,
+          "sha": "5dc49f21d2e5aa145fe9611222b4c0c5659db1c5",
+          "title": "[CL-82] rename `bit-icon` to `bit-svg`; create new `bit-icon` component for font icons (#18584)"
+        },
+        {
+          "date": "2026-02-26T17:48:41Z",
+          "pr": 19142,
+          "sha": "c5fa1a5b0432584fcf4354829233e3572f247bf6",
+          "title": "Eliminate standalone in libs/components (#19142)"
+        },
+        {
+          "date": "2026-03-03T16:53:45Z",
+          "pr": 19150,
+          "sha": "7bd41be29989778377bd059c1a04b8e932554817",
+          "title": "[CL-10739 Removing SharedModule from CL (#19150)"
+        },
+        {
+          "date": "2026-04-03T14:24:46Z",
+          "pr": 18975,
+          "sha": "3751227752e36236fd51a52ca19485cedaa53a49",
+          "title": "[CL-958] Update avatar component to new styles (#18975)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=libs%2Fcomponents%2Fsrc%2Fanon-layout%2F&since=2025-06-17T17%3A33%3A03Z&until=2026-06-17T17%3A33%3A02Z&per_page=100",
+      "truncated": false
+    },
+    "before": {
+      "commit_count": 30,
+      "pr_linked_count": 29,
+      "records": [
+        {
+          "date": "2024-07-09T16:11:21Z",
+          "pr": 9849,
+          "sha": "dd40faf72e43c38cb7be00de93a0cf0ebbdb3c0f",
+          "title": "[PM-9314] AnonLayout Logo and Storybook Doc updates (#9849)"
+        },
+        {
+          "date": "2024-07-25T20:16:54Z",
+          "pr": 10216,
+          "sha": "96648b48978465ae1a27e8c49239ac1daf930b66",
+          "title": "Auth/PM-9603 - AnonLayoutWrapper Dynamic content support (#10216)"
+        },
+        {
+          "date": "2024-07-30T12:11:40Z",
+          "pr": 9091,
+          "sha": "8f437dc77316dca31f16b2458916b2595ecc179d",
+          "title": "[PM-1655] Trial Registration Layout (#9091)"
+        },
+        {
+          "date": "2024-07-30T18:48:51Z",
+          "pr": 10166,
+          "sha": "18ef51449f4a31b6d3937f469b0ab117be0f9b9a",
+          "title": "[PM-8307] AnonLayout Design Changes (#10166)"
+        },
+        {
+          "date": "2024-08-06T23:02:47Z",
+          "pr": 10338,
+          "sha": "b2a995462f4537f18c5ebddd78c34a489aef9028",
+          "title": "[PM-9605] Extension AnonLayout wrapper component (#10338)"
+        },
+        {
+          "date": "2024-08-09T14:09:40Z",
+          "pr": 10459,
+          "sha": "46ecde5d63cd6460f5a295ea0f6121edb81f5c19",
+          "title": "PM-9603 - AnonLayout Dynamic Content Support - Add ability to avoid translating subtitle as we have designs where a user's email needs to go in the subtitle slot. (#10459)"
+        },
+        {
+          "date": "2024-08-13T19:18:04Z",
+          "pr": 10506,
+          "sha": "a6176aaf2ccfb5c05af5b1fe9e40c26fdf4b1ee7",
+          "title": "[PM-10799] Login UI Width (#10506)"
+        },
+        {
+          "date": "2024-08-14T18:24:29Z",
+          "pr": 10481,
+          "sha": "7571c766e0ac45f238d6e6b60175e68f964c7005",
+          "title": "[PM-10813] add eslint rule to restrict imports from `apps` in `libs` (#10481)"
+        },
+        {
+          "date": "2024-08-26T16:15:09Z",
+          "pr": 10286,
+          "sha": "9152c3203fd56dd74e442e8bb68e384d0d22a732",
+          "title": "[BEEEP] [PM-10117] Migrate index.html (#10286)"
+        },
+        {
+          "date": "2024-08-31T19:26:11Z",
+          "pr": 10549,
+          "sha": "c5a267baadc70f294467a6d7f48809431e308a54",
+          "title": "[PM-11000] AnonLayout Icon/Logo theme refactor (#10549)"
+        },
+        {
+          "date": "2024-08-31T20:19:48Z",
+          "pr": 10810,
+          "sha": "b339c01c20db6c6714e78294bfd90a43c9442087",
+          "title": "remove position on browser (#10810)"
+        },
+        {
+          "date": "2024-09-09T22:12:31Z",
+          "pr": 10939,
+          "sha": "12967b0c17643898a89d3f5f36b0914f4c8d55b9",
+          "title": "h3 typography on small screens, h2 on medium-large screens (#10939)"
+        },
+        {
+          "date": "2024-09-13T16:16:25Z",
+          "pr": 10492,
+          "sha": "96d116d643ce825477e9e88a223c246058c0c36e",
+          "title": "[PM-8116] Auth Browser Refresh: Password Hint Component (#10492)"
+        },
+        {
+          "date": "2024-09-19T17:39:16Z",
+          "pr": 11136,
+          "sha": "e1e772b0a28750db789a9c71be90290c19708268",
+          "title": "PM-12365 - AnonLayoutWrapperComp - When you use the AnonLayoutWrapperDataService to set data in the AnonLayoutWrapperComponent, I’m seeing an ExpressionChangedAfterItHasBeenCheckedError shown in the console quite often. We should update the wrapper component to fire change detection if the AnonLayoutWrapperDataService receives new information. (#11136)"
+        },
+        {
+          "date": "2024-10-02T13:00:37Z",
+          "pr": 11263,
+          "sha": "acd47c2b795615d8bbb20112398bb9c3b96eda46",
+          "title": "[PM-12694] Modify logo on AnonLayout to direct to base route on click (#11263)"
+        },
+        {
+          "date": "2024-10-02T20:17:20Z",
+          "pr": 11368,
+          "sha": "4bd2e158c01715e5a87680bd9551b5f7931cd5ee",
+          "title": "PM-12694 - Fix AnonLayoutStorybook to add router module and hideLogo toggling support (#11368)"
+        },
+        {
+          "date": "2024-10-08T18:51:08Z",
+          "pr": 11449,
+          "sha": "18522e5165357a9cb5827e5cbf26f822f569deb4",
+          "title": "PM-13252 - AnonLayout - Style tweaks to fix scrollbars on browser + add typography to footer content + misc minor refactors. (#11449)"
+        },
+        {
+          "date": "2024-10-11T20:02:47Z",
+          "pr": 11513,
+          "sha": "7297d0fccd0eb18aed721227f4dc70c937fe0afa",
+          "title": "Auth/PM-13318 - AnonLayoutWrapperData Refactor to add full Translation support (#11513)"
+        },
+        {
+          "date": "2024-10-21T22:52:07Z",
+          "pr": 11651,
+          "sha": "c16d1e0e74ef46c8020008707f9d29f812ac3c74",
+          "title": "AnonLayoutWrapperComponents - Add reset support for null values (#11651)"
+        },
+        {
+          "date": "2024-11-13T18:17:23Z",
+          "pr": 11869,
+          "sha": "204eb3105b9b4c8ed13ce3fece798e725bc3e35b",
+          "title": "update anon-layout and extension-anon-layout spacing (#11869)"
+        },
+        {
+          "date": "2024-12-09T19:58:50Z",
+          "pr": 12235,
+          "sha": "9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+          "title": "Typescript-strict-plugin (#12235)"
+        },
+        {
+          "date": "2025-01-10T15:37:34Z",
+          "pr": 12744,
+          "sha": "db84ccf935a1069234846b8ba92c72e8b293ac57",
+          "title": "[PM-16838] Forbid imports containing /src/ (#12744)"
+        },
+        {
+          "date": "2025-02-14T21:49:56Z",
+          "pr": 13360,
+          "sha": "07d6f9433fa7753ee807116b9f7b3aab6a69605f",
+          "title": "[CL-317][CL-502] Remove Storybook combined Light + Dark theme, Nord theme, and Solarized theme (#13360)"
+        },
+        {
+          "date": "2025-02-19T19:29:12Z",
+          "pr": 13475,
+          "sha": "04f5fe4da401fe15295a13d99bba5311b08f6bc6",
+          "title": "fix(AnonLayout): [PM-18408] - Extension - add responsive scaling to avoid scrollbars on login in new UI (#13475)"
+        },
+        {
+          "date": "2025-03-28T19:50:30Z",
+          "pr": 14045,
+          "sha": "66a914badfd65046ce5969163e957ef8f919f5a8",
+          "title": "[PM-19654] add hideIcon option to extension anon layout (#14045)"
+        },
+        {
+          "date": "2025-04-18T14:38:19Z",
+          "pr": 14295,
+          "sha": "cbab354c0eaecc461c33f6d616fcc212b519bca2",
+          "title": "Hide bit-icon component from screen readers by default (#14295)"
+        },
+        {
+          "date": "2025-05-23T12:01:25Z",
+          "pr": 14804,
+          "sha": "56a3b14583747a499d66960ac5b372ee0857246e",
+          "title": "Introduce eslint errors for risky/circular imports (#14804)"
+        },
+        {
+          "date": "2025-06-04T13:22:37Z",
+          "pr": 15035,
+          "sha": "8f74eaea1c406393cfafb5edd6027cc1a1b1dc04",
+          "title": "Remove standalone true from auth (#15035)"
+        },
+        {
+          "date": "2025-06-17T17:33:01Z",
+          "pr": 15093,
+          "sha": "df4aae2fb2134abfdbe323b42d84bbefbac3e85f",
+          "title": "[CL-700] Move auth-owned layout components to UIF ownership (#15093)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=libs%2Fauth%2Fsrc%2Fangular%2Fanon-layout%2F&since=2024-06-17T17%3A33%3A02Z&until=2025-06-17T17%3A33%3A01Z&per_page=100",
+      "truncated": false
+    }
+  },
+  "id": "BW15093",
+  "merge_sha": "df4aae2fb2134abfdbe323b42d84bbefbac3e85f",
+  "merged_at": "2025-06-17T17:33:02Z",
+  "migration_patch_sha256": "6f1a7f71a49e643b1f8141ed2afa142a018db9f58a70f475c2a0a55d40680796",
+  "migration_pr": 15093,
+  "new_owner": [
+    "@bitwarden/team-ui-foundation"
+  ],
+  "new_prefix": "libs/components/src/anon-layout/",
+  "old_owner": [
+    "@bitwarden/team-auth-dev"
+  ],
+  "old_prefix": "libs/auth/src/angular/anon-layout/",
+  "post_days": 365,
+  "pre_days": 365,
+  "rename_pairs": [
+    {
+      "new": "libs/components/src/anon-layout/anon-layout-wrapper-data.service.ts",
+      "old": "libs/auth/src/angular/anon-layout/anon-layout-wrapper-data.service.ts"
+    },
+    {
+      "new": "libs/components/src/anon-layout/anon-layout-wrapper.component.html",
+      "old": "libs/auth/src/angular/anon-layout/anon-layout-wrapper.component.html"
+    },
+    {
+      "new": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts",
+      "old": "libs/auth/src/angular/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "new": "libs/components/src/anon-layout/anon-layout-wrapper.mdx",
+      "old": "libs/auth/src/angular/anon-layout/anon-layout-wrapper.mdx"
+    },
+    {
+      "new": "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts",
+      "old": "libs/auth/src/angular/anon-layout/anon-layout-wrapper.stories.ts"
+    },
+    {
+      "new": "libs/components/src/anon-layout/anon-layout.component.html",
+      "old": "libs/auth/src/angular/anon-layout/anon-layout.component.html"
+    },
+    {
+      "new": "libs/components/src/anon-layout/anon-layout.component.ts",
+      "old": "libs/auth/src/angular/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "new": "libs/components/src/anon-layout/anon-layout.mdx",
+      "old": "libs/auth/src/angular/anon-layout/anon-layout.mdx"
+    },
+    {
+      "new": "libs/components/src/anon-layout/anon-layout.stories.ts",
+      "old": "libs/auth/src/angular/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "new": "libs/components/src/anon-layout/default-anon-layout-wrapper-data.service.ts",
+      "old": "libs/auth/src/angular/anon-layout/default-anon-layout-wrapper-data.service.ts"
+    }
+  ],
+  "repo": "bitwarden/clients",
+  "valid": true
+}

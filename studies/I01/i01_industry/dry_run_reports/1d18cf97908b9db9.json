@@ -1,0 +1,806 @@
+{
+  "version": "1",
+  "pip_version": "26.2.2",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/86/7d/3888833e4f5ea56af4a9935066ec09a83228e533d7b8877f65889d706ee4/hupper-1.12.1-py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "e872b959f09d90be5fb615bd2e62de89a0b57efc037bdf9637fb09cdf8552b19"
+          },
+          "hash": "sha256=e872b959f09d90be5fb615bd2e62de89a0b57efc037bdf9637fb09cdf8552b19"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "hupper",
+        "version": "1.12.1",
+        "summary": "Integrated process monitor for developing and reloading daemons.",
+        "description": "======\nhupper\n======\n\n.. image:: https://img.shields.io/pypi/v/hupper.svg\n    :target: https://pypi.python.org/pypi/hupper\n\n.. image:: https://github.com/Pylons/hupper/actions/workflows/ci-tests.yml/badge.svg?branch=main\n    :target: https://github.com/Pylons/hupper/actions/workflows/ci-tests.yml?query=branch%3Amain\n\n.. image:: https://readthedocs.org/projects/hupper/badge/?version=latest\n    :target: https://readthedocs.org/projects/hupper/?badge=latest\n    :alt: Documentation Status\n\n``hupper`` is an integrated process monitor that will track changes to\nany imported Python files in ``sys.modules`` as well as custom paths. When\nfiles are changed the process is restarted.\n\nCommand-line Usage\n==================\n\nHupper can load any Python code similar to ``python -m <module>`` by using the\n``hupper -m <module>`` program.\n\n.. code-block:: console\n\n   $ hupper -m myapp\n   Starting monitor for PID 23982.\n\nAPI Usage\n=========\n\nStart by defining an entry point for your process. This must be an importable\npath in string format. For example, ``myapp.scripts.serve.main``.\n\n.. code-block:: python\n\n    # myapp/scripts/serve.py\n\n    import sys\n    import hupper\n    import waitress\n\n\n    def wsgi_app(environ, start_response):\n        start_response('200 OK', [('Content-Type', 'text/plain')])\n        yield b'hello'\n\n\n    def main(args=sys.argv[1:]):\n        if '--reload' in args:\n            # start_reloader will only return in a monitored subprocess\n            reloader = hupper.start_reloader('myapp.scripts.serve.main')\n\n            # monitor an extra file\n            reloader.watch_files(['foo.ini'])\n\n        waitress.serve(wsgi_app)\n\nAcknowledgments\n===============\n\n``hupper`` is inspired by initial work done by Carl J Meyer and David Glick\nduring a Pycon sprint and is built to be a more robust and generic version of\nIan Bicking's excellent PasteScript ``paste serve --reload`` and Pyramid's\n``pserve --reload``.\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "server",
+          "daemon",
+          "autoreload",
+          "reloader",
+          "hup",
+          "file",
+          "watch",
+          "process"
+        ],
+        "home_page": "https://github.com/Pylons/hupper",
+        "author": "Michael Merickel",
+        "author_email": "pylons-discuss@googlegroups.com",
+        "license": "MIT",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Natural Language :: English",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy"
+        ],
+        "requires_dist": [
+          "watchdog ; extra == 'docs'",
+          "setuptools ; extra == 'docs'",
+          "Sphinx ; extra == 'docs'",
+          "pylons-sphinx-themes ; extra == 'docs'",
+          "watchdog ; extra == 'testing'",
+          "pytest ; extra == 'testing'",
+          "pytest-cov ; extra == 'testing'",
+          "mock ; extra == 'testing'"
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Documentation, https://docs.pylonsproject.org/projects/hupper/en/latest/",
+          "Changelog, https://docs.pylonsproject.org/projects/hupper/en/latest/changes.html",
+          "Issue Tracker, https://github.com/Pylons/hupper/issues"
+        ],
+        "provides_extra": [
+          "docs",
+          "testing"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/85/30/cdddd9a88969683a59222a6d61cd6dce923977f2e9f9ffba38e1324149cd/PasteDeploy-3.1.0-py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "76388ad53a661448d436df28c798063108f70e994ddc749540d733cdbd1b38cf"
+          },
+          "hash": "sha256=76388ad53a661448d436df28c798063108f70e994ddc749540d733cdbd1b38cf"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "PasteDeploy",
+        "version": "3.1.0",
+        "summary": "Load, configure, and compose WSGI applications and servers",
+        "description": "This tool provides code to load WSGI applications and servers from\nURIs. These URIs can refer to Python eggs for INI-style configuration\nfiles.  `Paste Script <https://github.com/cdent/pastescript>`_ provides\ncommands to serve applications based on this configuration file.\n\nThe latest version is available on `GitHub\n<https://github.com/Pylons/pastedeploy/>`_ (or download a wheel or tarball from\n`PyPI <https://pypi.org/project/PasteDeploy/#files>`_).\n\nFor the latest changes see the `news file\n<https://docs.pylonsproject.org/projects/pastedeploy/en/latest/news.html>`_.\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "web",
+          "wsgi",
+          "application",
+          "server"
+        ],
+        "home_page": "https://docs.pylonsproject.org/projects/pastedeploy/en/latest/",
+        "author": "Ian Bicking",
+        "author_email": "pylons-discuss@googlegroups.com",
+        "maintainer": "Michael Merickel",
+        "maintainer_email": "pylons-discuss@googlegroups.com",
+        "license": "MIT",
+        "classifier": [
+          "Development Status :: 6 - Mature",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Internet :: WWW/HTTP",
+          "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+          "Topic :: Internet :: WWW/HTTP :: WSGI",
+          "Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Framework :: Paste"
+        ],
+        "requires_dist": [
+          "importlib-metadata ; python_version < \"3.8\"",
+          "Sphinx >=1.7.5 ; extra == 'docs'",
+          "pylons-sphinx-themes ; extra == 'docs'",
+          "Paste ; extra == 'paste'",
+          "Paste ; extra == 'testing'",
+          "pytest ; extra == 'testing'",
+          "pytest-cov ; extra == 'testing'"
+        ],
+        "requires_python": ">=3.7",
+        "project_url": [
+          "Documentation, https://docs.pylonsproject.org/projects/pastedeploy/en/latest/",
+          "Changelog, https://docs.pylonsproject.org/projects/pastedeploy/en/latest/news.html",
+          "Issue Tracker, https://github.com/Pylons/pastedeploy/issues"
+        ],
+        "provides_extra": [
+          "config",
+          "docs",
+          "paste",
+          "testing"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e7/8b/3f98db1448e3b4d2d142716874a7e02f6101685fdaa0f55a8668e9ffa048/plaster-1.1.2-py2.py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "42992ab1f4865f1278e2ad740e8ad145683bb4022e03534265528f0c23c0df2d"
+          },
+          "hash": "sha256=42992ab1f4865f1278e2ad740e8ad145683bb4022e03534265528f0c23c0df2d"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "plaster",
+        "version": "1.1.2",
+        "summary": "A loader interface around multiple config file formats.",
+        "description": "=======\nplaster\n=======\n\n.. image:: https://img.shields.io/pypi/v/plaster.svg\n    :target: https://pypi.python.org/pypi/plaster\n\n.. image:: https://github.com/Pylons/plaster/workflows/Build%20and%20test/badge.svg?branch=master\n        :target: https://github.com/Pylons/plaster/actions?query=workflow%3A%22Build+and+test%22\n        :alt: master CI Status\n\n.. image:: https://readthedocs.org/projects/plaster/badge/?version=latest\n    :target: https://readthedocs.org/projects/plaster/?badge=latest\n    :alt: Documentation Status\n\n``plaster`` is a loader interface around multiple config file formats. It\nexists to define a common API for applications to use when they wish to load\nconfiguration. The library itself does not aim to handle anything except\na basic API that applications may use to find and load configuration settings.\nAny specific constraints should be implemented in a pluggable loader which can\nbe registered via an entrypoint.\n\nSee https://docs.pylonsproject.org/projects/plaster/en/latest/ or\n``docs/index.rst`` in this distribution for detailed documentation.\n\n1.1.2 (2022-11-20)\n==================\n\n- Fix a bug in which plaster would crash harder than expected if a URI\n  is specified to a distribution that does not have the specified entry points.\n  Now a LoaderNotFound exception will be raised instead of a bad unpacking\n  of tuples.\n\n1.1.1 (2022-11-20)\n==================\n\n- Add support for Python 3.11.\n\n- Fix an bug introduced in 1.1 on some systems where\n  ``plaster.exceptions.MultipleLoadersFound`` would be raised due to\n  ``lib`` and ``lib64`` being symlinked to each other and both added to the\n  ``sys.path``.\n  See https://github.com/Pylons/plaster/pull/27\n\n1.1 (2022-10-06)\n================\n\n- Drop support for Python 2.7, 3.4, 3.5, 3.6.\n\n- Add support for Python 3.8, 3.9, 3.10.\n\n- Drop runtime dependency on setuptools / pkg_resources by switching to\n  ``importlib.metadata``.\n\n1.0 (2017-10-11)\n================\n\n- Improve the exception message for ``InvalidURI`` to show the ``config_uri``.\n  See https://github.com/Pylons/plaster/pull/17\n\n0.5 (2017-06-02)\n================\n\n- When a scheme is not supplied, ``plaster.parse_uri`` will now autogenerate\n  a scheme from the file extension with the format ``file+<ext>`` instead of\n  simply ``<ext>`` (for example, ``file+ini`` instead of ``ini``).\n  See https://github.com/Pylons/plaster/pull/16\n\n- Absolute lookups are now pulled from the start of the scheme instead of\n  the end. This means that if you want to explicitly define the package that\n  the loader is pulled from, use ``package+scheme`` instead of\n  ``scheme+package``.\n  See https://github.com/Pylons/plaster/pull/16\n\n0.4 (2017-03-30)\n================\n\n- Removed the ``plaster.NoSectionError`` exception. It's expected that\n  individual loaders should return an empty dictionary of settings in the\n  case that a section cannot be found.\n  See https://github.com/Pylons/plaster/pull/12\n\n- Expect the ``wsgi`` protocol to raise ``LookupError`` exceptions when\n  a named wsgi component cannot be found.\n  See https://github.com/Pylons/plaster/pull/12\n\n0.3 (2017-03-27)\n================\n\n- Lookup now works differently. First \"foo+bar\" looks for an installed project\n  distribution named \"bar\" with a loader named \"foo\". If this fails then it\n  looks for any loader named \"foo+bar\".\n\n- Rename the loader entry point to ``plaster.loader_factory``.\n\n- Add the concept of protocols to ``plaster.get_loader`` and\n  ``plaster.find_loaders``.\n\n- ``plaster.find_loaders`` now works on just schemes and protocols\n  instead of full ``PlasterURL`` objects and implements the lookup\n  algorithm for finding loader factories.\n\n- Change the ``ILoaderInfo`` interface to avoid being coupled to a\n  particular uri. ``ILoaderInfo.load`` now takes a ``config_uri``\n  parameter.\n\n- Add a ``options`` dictionary to ``PlasterURL`` containing any arguments\n  decoded from the query string. Loaders may use these for whatever they wish\n  but one good option is default values in a config file.\n\n- Define the ``IWSGIProtocol`` interface which addons can use to implement\n  a loader that can return full wsgi apps, servers and filters.\n\n- The scheme is now case-insensitive.\n\n0.2 (2016-06-15)\n================\n\n- Allow ``config_uri`` syntax ``scheme:path`` alongside ``scheme://path``.\n  See https://github.com/Pylons/plaster/issues/3\n\n- Improve errors to show the user-supplied values in the error message.\n  See https://github.com/Pylons/plaster/pull/4\n\n- Add ``plaster.find_loaders`` which can be used by people who need a way\n  to recover when ambiguous loaders are discovered via ``plaster.get_loader``.\n  See https://github.com/Pylons/plaster/pull/5\n\n- Rename ``plaster.Loader`` to ``plaster.ILoader`` to signify its purpose\n  as an interface with no actual implementation.\n  See https://github.com/Pylons/plaster/pull/5\n\n- Introduce ``plaster.ILoaderFactory`` to document what the entry point targets\n  are expected to implement.\n  See https://github.com/Pylons/plaster/pull/5\n\n0.1 (2016-06-12)\n================\n\n- Initial release.\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "plaster",
+          "pastedeploy",
+          "ini",
+          "config"
+        ],
+        "home_page": "https://docs.pylonsproject.org/projects/plaster/en/latest/",
+        "author": "Michael Merickel",
+        "author_email": "pylons-discuss@googlegroups.com",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Natural Language :: English",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy"
+        ],
+        "requires_dist": [
+          "importlib-metadata ; python_version < \"3.8\"",
+          "Sphinx ; extra == 'docs'",
+          "pylons-sphinx-themes ; extra == 'docs'",
+          "pytest ; extra == 'testing'",
+          "pytest-cov ; extra == 'testing'"
+        ],
+        "requires_python": ">=3.7",
+        "provides_extra": [
+          "docs",
+          "testing"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/bd/30/2d4cf89035c22a89bf0e34dbc50fdc07c42c9bdc90fd972d495257ad2b6e/plaster_pastedeploy-1.0.1-py2.py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "ad3550cc744648969ed3b810f33c9344f515ee8d8a8cec18e8f2c4a643c2181f"
+          },
+          "hash": "sha256=ad3550cc744648969ed3b810f33c9344f515ee8d8a8cec18e8f2c4a643c2181f"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "plaster-pastedeploy",
+        "version": "1.0.1",
+        "summary": "A loader implementing the PasteDeploy syntax to be used by plaster.",
+        "description": "===================\nplaster_pastedeploy\n===================\n\n.. image:: https://img.shields.io/pypi/v/plaster_pastedeploy.svg\n        :target: https://pypi.python.org/pypi/plaster_pastedeploy\n\n.. image:: https://github.com/Pylons/plaster_pastedeploy/workflows/Build%20and%20test/badge.svg?branch=master\n        :target: https://github.com/Pylons/plaster_pastedeploy/actions?query=workflow%3A%22Build+and+test%22\n        :alt: master CI Status\n\n``plaster_pastedeploy`` is a plaster_ plugin that provides a ``plaster.Loader``\nthat can parse ini files according to the standard set by PasteDeploy_. It\nsupports the ``wsgi`` plaster protocol, implementing the\n``plaster.protocols.IWSGIProtocol`` interface.\n\nUsage\n=====\n\nApplications should use ``plaster_pastedeploy`` to load settings from named\nsections in a configuration source (usually a file).\n\n- Please look at the documentation for plaster_ on how to integrate this\n  loader into your application.\n\n- Please look at the documentation for PasteDeploy_ on the specifics of the\n  supported INI file format.\n\nMost applications will want to use\n``plaster.get_loader(uri, protocols=['wsgi'])`` to get this loader. It then\nexposes ``get_wsgi_app``, ``get_wsgi_app_settings``, ``get_wsgi_filter`` and\n``get_wsgi_server``.\n\n.. code-block:: python\n\n    import plaster\n\n    loader = plaster.get_loader('development.ini', protocols=['wsgi'])\n    # to get any section out of the config file\n    settings = loader.get_settings('app:main')\n\n    # to get settings for a WSGI app\n    app_config = loader.get_wsgi_app_settings()  # defaults to main\n\n    # to get an actual WSGI app\n    app = loader.get_wsgi_app()  # defaults to main\n\n    # to get a filter and compose it with an app\n    filter = loader.get_wsgi_filter('filt')\n    app = filter(app)\n\n    # to get a WSGI server\n    server = loader.get_wsgi_server()  # defaults to main\n\n    # to start the WSGI server\n    server(app)\n\nAny ``plaster.PlasterURL`` options are forwarded as defaults to the loader.\nSome examples are below:\n\n- ``development.ini#myapp``\n\n- ``development.ini?http_port=8080#main``\n\n- ``pastedeploy+ini:///path/to/development.ini``\n\n- ``pastedeploy+ini://development.ini#foo``\n\n- ``egg:MyApp?debug=false#foo``\n\n.. _PasteDeploy: https://pastedeploy.readthedocs.io/en/latest/\n.. _plaster: https://docs.pylonsproject.org/projects/plaster/en/latest/\n\n1.0.1 (2022-11-06)\n==================\n\n- Minor release to cleanup README.\n\n1.0 (2022-11-06)\n================\n\n- Drop support for Python 2.7, 3.4, 3.5, 3.6.\n\n- Add support for Python 3.8, 3.9, 3.10.\n\n- Blackify the codebase.\n\n- Switch CI to Github Actions.\n\n0.7 (2019-04-12)\n================\n\n- Support Python 3.7.\n\n- Depend on ``pastedeploy >= 2.0`` to enforce new behavior when overriding\n  defaults. Default values passed into the loader will now override values in\n  the ``[DEFAULT]`` section.\n  See https://github.com/Pylons/plaster_pastedeploy/pull/17\n\n0.6 (2018-07-11)\n================\n\n- Change ``setup_logging`` to invoke ``logging.config.fileConfig`` with\n  ``disable_existing_loggers=False`` to avoid disabling any loggers that were\n  imported prior to configuration of the logging system.\n  See https://github.com/Pylons/plaster_pastedeploy/pull/16\n\n0.5 (2018-03-29)\n================\n\n- Removed environment variable support entirely for now. The feature requires\n  bugfixes upstream in PasteDeploy which have not been done yet and this was\n  breaking people's environments so it is gone for now.\n  See https://github.com/Pylons/plaster_pastedeploy/pull/15\n\n0.4.2 (2017-11-20)\n==================\n\n- Fix ``ConfigDict.copy`` so that it works.\n  See https://github.com/Pylons/plaster_pastedeploy/pull/14\n\n0.4.1 (2017-07-10)\n==================\n\n- Disable environment variable support on Python 2. PasteDeploy does not\n  support escaping the contents on Python 2 which means any variable with\n  a value of the format %(foo)s would break the parser. Because this is\n  implicit behavior it was deemed too error prone to support.\n  See https://github.com/Pylons/plaster_pastedeploy/pull/10\n\n- Escape environment variables such that their contents are not subject to\n  interpolation. See https://github.com/Pylons/plaster_pastedeploy/pull/10\n\n- Invoke ``logging.basicConfig`` when ``setup_logging`` is called and the\n  config file doesn't contain any logging setup or the URI is using the\n  ``egg:`` protocol. See https://github.com/Pylons/plaster_pastedeploy/pull/11\n\n0.4 (2017-07-09)\n================\n\n- Fix ``get_settings`` for an arbitrary section to follow the same rules as\n  PasteDeploy with regards to the handling of defaults. The goal of this\n  package is to be compliant with PasteDeploy's format for all sections in\n  the file such that there are no surprising format changes in various\n  sections.\n\n  Supported added for ``set default_foo = bar`` and ``get foo = default_foo``\n  syntax to override a default value and to pull a default value into the\n  settings, respectively. In the above example the value ``foo = bar`` would\n  be returned. Any other defaults not pulled into the section via either\n  interpolation or the ``get`` syntax will be ignored.\n\n  See https://github.com/Pylons/plaster_pastedeploy/pull/6\n\n- Inject environment variables into the defaults automatically. These will\n  be available for interpolation as ``ENV_<foo>``. For example if environment\n  variable ``APP_DEBUG=true`` then ``%(ENV_APP_DEBUG)s`` will work within the\n  ini file. See https://github.com/Pylons/plaster_pastedeploy/pull/7\n\n- ``get_settings`` and ``get_wsgi_app_settings`` both return only the local\n  config now. However, the returned object has a ``global_conf`` attribute\n  containing the defaults as well as a ``loader`` attribute pointing at\n  the loader instance.\n  See https://github.com/Pylons/plaster_pastedeploy/pull/8\n\n0.3.2 (2017-07-01)\n==================\n\n- Resolve an issue in which ``NoSectionError`` would not be properly caught on\n  Python 2.7 if the ``configparser`` module was installed from PyPI.\n  See https://github.com/Pylons/plaster_pastedeploy/issues/5\n\n0.3.1 (2017-06-02)\n==================\n\n- Recognize the ``pastedeploy+egg`` scheme as an ``egg`` type.\n\n0.3 (2017-06-02)\n================\n\n- Drop the ``ini`` scheme and replace with ``file+ini`` and ``pastedeploy``.\n  Also rename ``ini+pastedeploy`` and ``egg+pastedeploy`` to\n  ``pastedeploy+ini`` and ``pastedeploy+egg`` respectively.\n  See https://github.com/Pylons/plaster_pastedeploy/pull/4\n\n0.2.1 (2017-03-29)\n==================\n\n- Fix a bug in 0.2 in which an exception was raised for an invalid section\n  if the a non-config-file-based protocol was used.\n\n0.2 (2017-03-29)\n================\n\n- No longer raise ``plaster.NoSectionError`` exceptions. Empty dictionaries\n  are returned for missing sections and a user should check ``get_sections``\n  for the list of valid sections.\n\n0.1 (2017-03-27)\n================\n\n- Initial release.\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "plaster",
+          "pastedeploy",
+          "plaster_pastedeploy",
+          "ini",
+          "config",
+          "egg"
+        ],
+        "home_page": "https://github.com/Pylons/plaster_pastedeploy",
+        "author": "Hunter Senft-Grupp",
+        "author_email": "pylons-discuss@googlegroups.com",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Natural Language :: English",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy"
+        ],
+        "requires_dist": [
+          "PasteDeploy (>=2.0)",
+          "plaster (>=0.5)",
+          "pytest ; extra == 'testing'",
+          "pytest-cov ; extra == 'testing'"
+        ],
+        "requires_python": ">=3.7",
+        "provides_extra": [
+          "testing"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/1f/d4/03a8f9b60b8f2a9198c962d08fd9b657c1c0797cbbde3793babbad200845/pyramid-2.1-py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "0aa62604221f6a8ac6e77a0faa02a5b7a294d6675f15581d8d416dffe2ac98e7"
+          },
+          "hash": "sha256=0aa62604221f6a8ac6e77a0faa02a5b7a294d6675f15581d8d416dffe2ac98e7"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pyramid",
+        "version": "2.1",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "The Pyramid Web Framework, a Pylons project",
+        "description": "Pyramid\n=======\n\n.. image:: https://github.com/Pylons/Pyramid/actions/workflows/ci-tests.yml/badge.svg?branch=2.1-branch\n        :target: https://github.com/Pylons/Pyramid/actions/workflows/ci-tests.yml\n        :alt: 2.1-branch CI Status\n\n.. image:: https://readthedocs.org/projects/pyramid/badge/?version=2.1-branch\n        :target: https://docs.pylonsproject.org/projects/pyramid/en/2.1-branch\n        :alt: main Documentation Status\n\n.. image:: https://img.shields.io/discord/1212201651218153582?label=Discord\n        :target: https://trypyramid.com/discord-invite.html\n        :alt: Discord Server\n\n.. image:: https://img.shields.io/badge/IRC-Libera.Chat-blue.svg\n        :target: https://web.libera.chat/#pyramid\n        :alt: IRC Libera.Chat\n\nPyramid is a small, fast, down-to-earth, open source Python web framework.\nIt makes real-world web application development\nand deployment more fun, more predictable, and more productive.\n`Try Pyramid <https://trypyramid.com/>`_, browse its add-ons and documentation, and get an overview.\n\n.. code-block:: python\n\n    from wsgiref.simple_server import make_server\n    from pyramid.config import Configurator\n    from pyramid.response import Response\n\n    def hello_world(request):\n        return Response('Hello World!')\n\n    if __name__ == '__main__':\n        with Configurator() as config:\n            config.add_route('hello', '/')\n            config.add_view(hello_world, route_name='hello')\n            app = config.make_wsgi_app()\n        server = make_server('0.0.0.0', 6543, app)\n        server.serve_forever()\n\nPyramid is a project of the `Pylons Project <https://pylonsproject.org>`_.\n\nSupport and Documentation\n-------------------------\n\nSee `Pyramid Support and Development\n<https://docs.pylonsproject.org/projects/pyramid/en/latest/#support-and-development>`_\nfor documentation, reporting bugs, and getting support.\n\nDeveloping and Contributing\n---------------------------\n\nSee `HACKING.txt <https://github.com/Pylons/pyramid/blob/main/HACKING.txt>`_ and\n`contributing.md <https://github.com/Pylons/pyramid/blob/main/contributing.md>`_\nfor guidelines on running tests, adding features, coding style, and updating\ndocumentation when developing in or contributing to Pyramid.\n\nLicense\n-------\n\nPyramid is offered under the BSD-derived `Repoze Public License\n<http://repoze.org/license.html>`_.\n\nAuthors\n-------\n\nPyramid is made available by `Agendaless Consulting <https://agendaless.com>`_\nand a team of `contributors\n<https://github.com/Pylons/pyramid/graphs/contributors>`_.\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "web",
+          "wsgi",
+          "pylons",
+          "pyramid"
+        ],
+        "author_email": "\"Chris McDonough, Agendaless Consulting\" <pylons-discuss@googlegroups.com>",
+        "license_expression": "LicenseRef-Repoze-BSD-derived",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 6 - Mature",
+          "Framework :: Pyramid",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Operating System :: OS Independent",
+          "Topic :: Internet :: WWW/HTTP",
+          "Topic :: Internet :: WWW/HTTP :: WSGI"
+        ],
+        "requires_dist": [
+          "hupper>=1.5",
+          "plaster",
+          "plaster_pastedeploy",
+          "setuptools<82",
+          "translationstring>=0.4",
+          "venusian>=1.0",
+          "webob>=1.8.3",
+          "zope.deprecation>=3.5.0",
+          "zope.interface>=3.8.0"
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://trypyramid.com",
+          "Repository, https://github.com/Pylons/pyramid",
+          "Issues, https://github.com/Pylons/pyramid/issues",
+          "Documentation, https://docs.pylonsproject.org/projects/pyramid/en/2.1-branch/",
+          "Changelog, https://docs.pylonsproject.org/projects/pyramid/en/2.1-branch/whatsnew-2.1.html"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/e1/e3/c164c88b2e5ce7b24d667b9bd83589cf4f3520d97cad01534cd3c4f55fdb/setuptools-81.0.0-py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "fdd925d5c5d9f62e4b74b30d6dd7828ce236fd6ed998a08d81de62ce5a6310d6"
+          },
+          "hash": "sha256=fdd925d5c5d9f62e4b74b30d6dd7828ce236fd6ed998a08d81de62ce5a6310d6"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "setuptools",
+        "version": "81.0.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Easily download, build, install, upgrade, and uninstall Python packages",
+        "description": ".. |pypi-version| image:: https://img.shields.io/pypi/v/setuptools.svg\n   :target: https://pypi.org/project/setuptools\n\n.. |py-version| image:: https://img.shields.io/pypi/pyversions/setuptools.svg\n\n.. |test-badge| image:: https://github.com/pypa/setuptools/actions/workflows/main.yml/badge.svg\n   :target: https://github.com/pypa/setuptools/actions?query=workflow%3A%22tests%22\n   :alt: tests\n\n.. |ruff-badge| image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v2.json\n   :target: https://github.com/astral-sh/ruff\n   :alt: Ruff\n\n.. |docs-badge| image:: https://img.shields.io/readthedocs/setuptools/latest.svg\n   :target: https://setuptools.pypa.io\n\n.. |skeleton-badge| image:: https://img.shields.io/badge/skeleton-2025-informational\n   :target: https://blog.jaraco.com/skeleton\n\n.. |codecov-badge| image:: https://img.shields.io/codecov/c/github/pypa/setuptools/master.svg?logo=codecov&logoColor=white\n   :target: https://codecov.io/gh/pypa/setuptools\n\n.. |tidelift-badge| image:: https://tidelift.com/badges/github/pypa/setuptools?style=flat\n   :target: https://tidelift.com/subscription/pkg/pypi-setuptools?utm_source=pypi-setuptools&utm_medium=readme\n\n.. |discord-badge| image:: https://img.shields.io/discord/803025117553754132\n   :target: https://discord.com/channels/803025117553754132/815945031150993468\n   :alt: Discord\n\n|pypi-version| |py-version| |test-badge| |ruff-badge| |docs-badge| |skeleton-badge| |codecov-badge| |discord-badge|\n\nSee the `Quickstart <https://setuptools.pypa.io/en/latest/userguide/quickstart.html>`_\nand the `User's Guide <https://setuptools.pypa.io/en/latest/userguide/>`_ for\ninstructions on how to use Setuptools.\n\nQuestions and comments should be directed to `GitHub Discussions\n<https://github.com/pypa/setuptools/discussions>`_.\nBug reports and especially tested patches may be\nsubmitted directly to the `bug tracker\n<https://github.com/pypa/setuptools/issues>`_.\n\n\nCode of Conduct\n===============\n\nEveryone interacting in the setuptools project's codebases, issue trackers,\nchat rooms, and fora is expected to follow the\n`PSF Code of Conduct <https://github.com/pypa/.github/blob/main/CODE_OF_CONDUCT.md>`_.\n\n\nFor Enterprise\n==============\n\nAvailable as part of the Tidelift Subscription.\n\nSetuptools and the maintainers of thousands of other packages are working with Tidelift to deliver one enterprise subscription that covers all of the open source you use.\n\n`Learn more <https://tidelift.com/subscription/pkg/pypi-setuptools?utm_source=pypi-setuptools&utm_medium=referral&utm_campaign=github>`_.\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "CPAN",
+          "PyPI",
+          "distutils",
+          "eggs",
+          "package",
+          "management"
+        ],
+        "author_email": "Python Packaging Authority <distutils-sig@python.org>",
+        "license_expression": "MIT",
+        "license_file": [
+          "LICENSE"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: System :: Archiving :: Packaging",
+          "Topic :: System :: Systems Administration",
+          "Topic :: Utilities"
+        ],
+        "requires_dist": [
+          "pytest!=8.1.*,>=6; extra == \"test\"",
+          "virtualenv>=13.0.0; extra == \"test\"",
+          "wheel>=0.44.0; extra == \"test\"",
+          "pip>=19.1; extra == \"test\"",
+          "packaging>=24.2; extra == \"test\"",
+          "jaraco.envs>=2.2; extra == \"test\"",
+          "pytest-xdist>=3; extra == \"test\"",
+          "jaraco.path>=3.7.2; extra == \"test\"",
+          "build[virtualenv]>=1.0.3; extra == \"test\"",
+          "filelock>=3.4.0; extra == \"test\"",
+          "ini2toml[lite]>=0.14; extra == \"test\"",
+          "tomli-w>=1.0.0; extra == \"test\"",
+          "pytest-timeout; extra == \"test\"",
+          "pytest-perf; sys_platform != \"cygwin\" and extra == \"test\"",
+          "jaraco.develop>=7.21; (python_version >= \"3.9\" and sys_platform != \"cygwin\") and extra == \"test\"",
+          "pytest-home>=0.5; extra == \"test\"",
+          "pytest-subprocess; extra == \"test\"",
+          "pyproject-hooks!=1.1; extra == \"test\"",
+          "jaraco.test>=5.5; extra == \"test\"",
+          "sphinx>=3.5; extra == \"doc\"",
+          "jaraco.packaging>=9.3; extra == \"doc\"",
+          "rst.linker>=1.9; extra == \"doc\"",
+          "furo; extra == \"doc\"",
+          "sphinx-lint; extra == \"doc\"",
+          "jaraco.tidelift>=1.4; extra == \"doc\"",
+          "pygments-github-lexers==0.0.5; extra == \"doc\"",
+          "sphinx-favicon; extra == \"doc\"",
+          "sphinx-inline-tabs; extra == \"doc\"",
+          "sphinx-reredirects; extra == \"doc\"",
+          "sphinxcontrib-towncrier; extra == \"doc\"",
+          "sphinx-notfound-page<2,>=1; extra == \"doc\"",
+          "pyproject-hooks!=1.1; extra == \"doc\"",
+          "towncrier<24.7; extra == \"doc\"",
+          "packaging>=24.2; extra == \"core\"",
+          "more_itertools>=8.8; extra == \"core\"",
+          "jaraco.text>=3.7; extra == \"core\"",
+          "importlib_metadata>=6; python_version < \"3.10\" and extra == \"core\"",
+          "tomli>=2.0.1; python_version < \"3.11\" and extra == \"core\"",
+          "wheel>=0.43.0; extra == \"core\"",
+          "platformdirs>=4.2.2; extra == \"core\"",
+          "jaraco.functools>=4; extra == \"core\"",
+          "more_itertools; extra == \"core\"",
+          "pytest-checkdocs>=2.4; extra == \"check\"",
+          "pytest-ruff>=0.2.1; sys_platform != \"cygwin\" and extra == \"check\"",
+          "ruff>=0.13.0; sys_platform != \"cygwin\" and extra == \"check\"",
+          "pytest-cov; extra == \"cover\"",
+          "pytest-enabler>=2.2; extra == \"enabler\"",
+          "pytest-mypy; extra == \"type\"",
+          "mypy==1.18.*; extra == \"type\"",
+          "importlib_metadata>=7.0.2; python_version < \"3.10\" and extra == \"type\"",
+          "jaraco.develop>=7.21; sys_platform != \"cygwin\" and extra == \"type\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Source, https://github.com/pypa/setuptools",
+          "Documentation, https://setuptools.pypa.io/",
+          "Changelog, https://setuptools.pypa.io/en/stable/history.html"
+        ],
+        "provides_extra": [
+          "test",
+          "doc",
+          "ssl",
+          "certs",
+          "core",
+          "check",
+          "cover",
+          "enabler",
+          "type"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/3b/98/36187601a15e3d37e9bfcf0e0e1055532b39d044353b06861c3a519737a9/translationstring-1.4-py2.py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "5f4dc4d939573db851c8d840551e1a0fb27b946afe3b95aafc22577eed2d6262"
+          },
+          "hash": "sha256=5f4dc4d939573db851c8d840551e1a0fb27b946afe3b95aafc22577eed2d6262"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "translationstring",
+        "version": "1.4",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "Utility library for i18n relied on by various Repoze and Pyramid packages",
+        "description": "translationstring\n=================\n\nA library used by various `Pylons Project <https://pylonsproject.org>`_ packages\nfor internationalization (i18n) duties related to translation.\n\nThis package provides a *translation string* class, a *translation string\nfactory* class, translation and pluralization primitives, and a utility that\nhelps `Chameleon <https://chameleon.readthedocs.io/en/latest/>`_ templates use\ntranslation facilities of this package.  It does not depend on `Babel\n<http://babel.pocoo.org/en/latest/>`_, but its translation and pluralization\nservices are meant to work best when provided with an instance of the\n``babel.support.Translations`` class.\n\nPlease see https://docs.pylonsproject.org/projects/translationstring/en/latest/\nfor the documentation.\n\n\ntranslationstring\n=================\n\n1.4 (2020-07-09)\n----------------\n\n- Drop support for Python 2.6, 3.2 and 3.\n- Update license classifiers\n\n\n1.3 (2014-11-05)\n----------------\n\n- Fix Python 3-specific test failures.\n\n- Restore compatibility with Python 3.2.\n\n1.2 (2014-11-04)\n----------------\n\n- Add support for message contexts.\n\n- If the object passed to a TranslationStringFactory ``__call__`` method is\n  itself a translation string, use the passed object's ``domain`` instead of\n  the domain passed to the factory's contstructor.  See\n  https://github.com/Pylons/translationstring/pull/12 .\n\n\n1.1 (2012-02-08)\n----------------\n\n- Add MANIFEST to make sure all files are present in a release. This fixes\n  `ticket 8 <https://github.com/Pylons/translationstring/issues/8>`_.\n\n\n1.0 (2012-02-04)\n----------------\n\n- coerce non-string values to a string during translation, except for None.\n\n- Honour mapping information passed to the translator, combining it with\n  mapping data already part of the translation string.\n\n- Support formatting of translation strings with %-operator.\n\n0.4 (09-22-2011)\n----------------\n\n- Python 3 compatibility (thanks to Joe Dallago, GSOC student).\n\n- Remove testing dependency on Babel.\n\n- Moved to GitHub (https://github.com/Pylons/translationstring).\n\n- Added tox.ini for testing purposes.\n\n0.3 (06-25-2010)\n----------------\n\n- Preserve default translations even if they are an empty string. This\n  fixes problems with Chameleon being unable to determine if a translation\n  is present or not.\n\n0.2 (04-25-2010)\n----------------\n\n- Add ``__getstate__`` and ``__reduce__`` methods to translation\n  string to allow for pickling.\n\n- Fix bug in ChameleonTranslate.  When ``i18n:translate`` was used in\n  templates, a translation string was inappropriately created with a\n  ``default`` value of the empty string.  Symptom: template text would\n  \"disappear\" rather than being returned untranslated.\n\n0.1 (04-24-2010)\n----------------\n\n- Initial release.\n\n\n",
+        "keywords": [
+          "i18n",
+          "l10n",
+          "internationalization",
+          "localization",
+          "gettext",
+          "chameleon"
+        ],
+        "home_page": "https://github.com/Pylons/translationstring",
+        "author": "Chris McDonough, Agendaless Consulting",
+        "author_email": "pylons-discuss@googlegroups.com",
+        "license": "BSD-like (http://repoze.org/license.html)",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Software Development :: Internationalization",
+          "Topic :: Software Development :: Localization",
+          "License :: Repoze Public License"
+        ],
+        "requires_dist": [
+          "Sphinx (>=1.3.1) ; extra == 'docs'",
+          "docutils ; extra == 'docs'",
+          "pylons-sphinx-themes ; extra == 'docs'"
+        ],
+        "provides_extra": [
+          "docs"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/2c/d7/36860f68eb977ad685d0f0fda733eca913dbda1bb29bbc5f1c5ba460201a/venusian-3.1.0-py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "d1fb1e49927f42573f6c9b7c4fcf61c892af8fdcaa2314daa01d9a560b23488d"
+          },
+          "hash": "sha256=d1fb1e49927f42573f6c9b7c4fcf61c892af8fdcaa2314daa01d9a560b23488d"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "venusian",
+        "version": "3.1.0",
+        "summary": "A library for deferring decorator actions",
+        "description": "venusian\n========\n\n.. image:: https://github.com/Pylons/venusian/workflows/Build%20and%20test/badge.svg\n    :target: https://github.com/Pylons/venusian/actions?query=workflow%3A%22Build+and+test%22\n\n.. image:: https://readthedocs.org/projects/venusian/badge/?version=latest\n        :target: https://docs.pylonsproject.org/projects/venusian/en/latest/\n        :alt: Documentation Status\n\nVenusian is a library which allows framework authors to defer\ndecorator actions.  Instead of taking actions when a function (or\nclass) decorator is executed at import time, you can defer the action\nusually taken by the decorator until a separate \"scan\" phase.\n\nSee the \"docs\" directory of the package or the online documentation at\nhttps://docs.pylonsproject.org/projects/venusian/en/latest/\n\n3.1.0 (2023-11-06)\n------------------\n\n- Remove support for Python 3.5 and 3.6\n\n- Add support for Python 3.9, 3.10, 3.11 and 3.12.\n\n- Use GitHub Actions instead of Travis.\n\n3.0.0 (2019-10-04)\n------------------\n\n- This release matches 2.0.0 other than in the version number. This fixes an\n  issue with Requires-Python metadata not being uploaded correctly to PyPi.\n\n  This version is only compatible with Python 3.5+\n\n2.0.0 (2019-10-04)\n------------------\n\n- Drop support for Python 2.7, 3.3, and 3.4\n\n- Removed the usage of the ``imp`` module to squelch the warnings regarding a\n  deprecated modules. See https://github.com/Pylons/venusian/pull/63 and\n  https://github.com/Pylons/venusian/issues/57\n\n1.2.0 (2019-01-08)\n------------------\n\n- Add support for Python 3.7.\n\n- Drop support for Python 3.3.\n\n1.1.0 (2017-04-24)\n------------------\n\n- Updated to using py.test instead of nosetest, and added support for Python\n  3.4 -> 3.6\n\n- Make scanning more resilient of metaclasses that return proxies for any\n  attribute access.\n\n- Fix bug where using the same venusian decorator on both a class and its\n  methods would cause the method decorations to be ignored. See\n  https://github.com/Pylons/venusian/issues/40\n\n- Drop support for Python 2.6.\n\n- Drop support for Python 3.2:  it is no longer supported by current\n  packaging / CI tools.\n\n- Support loaders that require the module name as argument to their\n  ``get_filename()`` method. This fixes problems with zipped packages\n  on Python 3.\n\n- Micro-optimization when ignores are used (see\n  https://github.com/Pylons/venusian/pull/20).\n\n- A tox run now combines coverage between Py2 and Py3.\n\n1.0 (2014-06-30)\n----------------\n\n- Fix an issue under PyPy > 2.0 where attached decorators may not be found.\n\n- Drop support of Python 2.4 / 2.5 / Jython.\n\n- Add ``lift`` and ``onlyliftedfrom`` class decorators to allow for inheritance\n  of venusian decorators attached to superclass methods.  See the API\n  documentation for more information.\n\n- Fix bug where otherwise undecorated subclass of a superclass that had\n  venusian decorators on it would inherit its superclass' decorations.\n  Venusian decorators should have never been inherited implicitly.  See\n  https://github.com/Pylons/venusian/issues/11#issuecomment-4977352\n\n1.0a8 (2013-04-15)\n------------------\n\n- Pass ``ignore`` argument along recursively to ``walk_packages`` so custom\n  ignore functions will ignore things recursively.  See\n  https://github.com/Pylons/venusian/pull/16\n\n- Don't run tox tests under Python 2.4 anymore (tox no longer supports 2.4).\n\n1.0a7 (2012-08-25)\n------------------\n\n- Venusian now works on Python 3.3b2+ (importlib-based).\n\n- Use nose-exclude instead of relying on fragile module-scope code to ensure\n  we don't get errors resulting from import of fixture code during\n  \"nosetests\".\n\n- Bug fix: no longer suppress ``ImportError`` while scanning by default.  If\n  you want to suppress ``ImportError`` while scanning, you'll now need use an\n  ``onerror`` callback as described in the documentation.\n\n1.0a6 (2012-04-23)\n------------------\n\n- Don't ignore decorated objects within their original locations if they\n  happen to be imported into another module (remove ``seen`` set from invoke\n  in venusian scanning).  See https://github.com/Pylons/venusian/pull/13 .\n\n1.0a5 (2012-04-21)\n------------------\n\n- Slightly less sucky way to ignore objects during scanning that are only\n  imported into a module but not actually defined there.  See 1.0a4 change\n  notes for rationale.  Now instead of checking whether the module of the\n  *scanned object* matches the module being scanned, we check whether the\n  module of the *Venusian attachment* matches the module being scanned.  This\n  allows some genuine uses of imported objects as Venusian scan targets while\n  preventing inappropriate double-scanning of objects that have a venusian\n  attachment which just happen to be imported into other scanned modules.\n\n- Add ``dev`` and ``docs`` setup.py commands (ala Pyramid).\n\n1.0a4 (2012-04-16)\n------------------\n\n- Attempt to ignore objects during scanning that are only imported into a\n  module but not actually defined there.  This is a semantics change, but\n  it's the right thing to do, because I found myself facing a situation like\n  this::\n\n    # in a module named \"one\"\n\n    from two import anotheradecoratedthing\n    @adecorator\n    def adecoratedthing(): pass\n\n    # and scanning both modules\n    scan('one')\n    scan('two')\n\n  In this case you'd wind up with two repeated registrations for\n  \"anotherdecoratedthing\", which isn't what anyone expects.\n\n1.0a3 (2012-02-08)\n------------------\n\n- Add an ``ignore`` argument to the ``scan`` method of a ``Scanner``.  This\n  argument allows a user to ignore packages, modules, and global objects by\n  name during a ``scan``.  See the \"ignore Scan Argument\" in the narrative\n  documentation for more details.\n\n1.0a2 (2011-09-02)\n------------------\n\n- Close ImpLoader file handle to avoid resource warnings on Python 3.\n\n1.0a1 (2011-08-27)\n------------------\n\n- Python 3 compatibility.\n\n- Allow an ``onerror`` callback to be passed to ``Scanner.scan()``.\n\n0.9 (2011-06-18)\n----------------\n\n- Prevent corner case scan-time exception when trying to introspect insane\n  module-scope objects.  See https://github.com/Pylons/venusian/issues/5 .\n\n0.8 (2011-04-30)\n----------------\n\n- Normal \"setup.py test\" can't support running the venusian tests under py\n  2.4 or 2.5; when it scans the 'classdecorators' fixture, it barfs.  To get\n  around this, we used to depend on ``nose`` in ``setup_requires`` and tell\n  \"setup.py test\" to use nose by setting test_suite to \"nose.collector\" but\n  we can't anymore because folks use Venusian in systems which install from\n  pip bundles; pip bundles do not support setup_requires.  So, sorry, we're\n  painted into a corner; at this point you just have to know to install nose\n  and run \"setup.py nosetests\" rather than \"setup.py test\".  Or just run\n  \"tox\" which tests it under all Pythons.\n\n0.7 (2011-03-16)\n----------------\n\n- Use Pylons theme in documentation.\n\n- Fix orphaned pyc test on pypy.\n\n- Fix GitHub Issue #1: subclasses of decorated classes that do not\n  have any decorations should not inherit the decorations of their\n  parent classes. \n\n- Fix GitHub Issue #2: scans should only \"find\" each object once per\n  scan, regardless of how many modules that object is imported into.\n\n0.6 (2011-01-09)\n----------------\n\n- Some metaclasses (Elixir's) don't raise an AttributeError when asked for a\n  nonexistent attribute during a scan.  We now catch all exceptions when\n  interrogating an object for ``__venusian_callbacks__`` rather than just\n  AttributeError.\n\n0.5 (2010-12-19)\n----------------\n\n- Make ``codeinfo`` attribute available as an attribute of the AttachInfo\n  object. It will be a tuple in the form ``(filename, lineno, function,\n  sourceline)`` representing the context of the venusian decorator.  Eg.\n  ``('/home/chrism/projects/venusian/tests/test_advice.py', 81,\n  'testCallInfo', 'add_handler(foo, bar)')``\n\n0.4 (2010-09-03)\n----------------\n\n- Bug fix: when a venusian decorator used as a class decorator was\n  used against both a class *and* a subclass of that class, the\n  superclass and subclass would effectively share the same set of\n  callbacks.  This was not the intent: each class declaration should\n  have its own local set of callbacks; callbacks added via decorations\n  should not be inherited, and a superclass should not receive its\n  subclass' decorations.\n\n- Arrange test fixtures into a single directory.\n\n0.3 (2010-06-24)\n----------------\n\n- Ignore orphaned modules (``.pyc`` or ``.pyo`` files without a\n  corresponding ``.py`` file) during a scan.\n\n0.2 (2010-04-18)\n----------------\n\n- Add the concept of scan categories (see the \"Scan Categories\"\n  section of the documentation) to allow an application to make use of\n  more than one Venusian-using framework simultaneously.\n\n0.1 (2010-02-15)\n----------------\n\n- Initial release.\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "web",
+          "wsgi",
+          "zope"
+        ],
+        "home_page": "https://pylonsproject.org/",
+        "author": "Chris McDonough, Agendaless Consulting",
+        "author_email": "pylons-devel@googlegroups.com",
+        "license": "BSD-derived (Repoze)",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 6 - Mature",
+          "Intended Audience :: Developers",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "License :: Repoze Public License"
+        ],
+        "requires_dist": [
+          "Sphinx >=4.3.2 ; extra == 'docs'",
+          "repoze.sphinx.autointerface ; extra == 'docs'",
+          "pylons-sphinx-themes ; extra == 'docs'",
+          "sphinx-copybutton ; extra == 'docs'",
+          "pytest ; extra == 'testing'",
+          "pytest-cov ; extra == 'testing'",
+          "coverage ; extra == 'testing'"
+        ],
+        "requires_python": ">=3.7",
+        "provides_extra": [
+          "docs",
+          "testing"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/c1/71/370a65bc7726a1cbf478445c898c7affe907aa42e2e9e5bb38319db74115/webob-1.8.11-py2.py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "4addd1d38d6a7fbe0eda22d45f25a40d74c8b290f3a99c0ac3d4023cf21f2da2"
+          },
+          "hash": "sha256=4addd1d38d6a7fbe0eda22d45f25a40d74c8b290f3a99c0ac3d4023cf21f2da2"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "WebOb",
+        "version": "1.8.11",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "home-page",
+          "keywords",
+          "license",
+          "license-file",
+          "maintainer",
+          "provides-extra",
+          "requires-dist",
+          "requires-python",
+          "summary"
+        ],
+        "summary": "WSGI request and response object",
+        "description": "WebOb\n=====\n\n.. image:: https://travis-ci.org/Pylons/webob.png?branch=master\n        :target: https://travis-ci.org/Pylons/webob\n\n.. image:: https://readthedocs.org/projects/webob/badge/?version=stable\n        :target: https://docs.pylonsproject.org/projects/webob/en/stable/\n        :alt: Documentation Status\n\nWebOb provides objects for HTTP requests and responses.  Specifically\nit does this by wrapping the `WSGI <http://wsgi.readthedocs.io/en/latest/>`_ request\nenvironment and response status/headers/app_iter(body).\n\nThe request and response objects provide many conveniences for parsing\nHTTP request and forming HTTP responses.  Both objects are read/write:\nas a result, WebOb is also a nice way to create HTTP requests and\nparse HTTP responses.\n\nSupport and Documentation\n-------------------------\n\nSee the `WebOb Documentation website <https://docs.pylonsproject.org/projects/webob/en/stable/>`_ to view\ndocumentation, report bugs, and obtain support.\n\nLicense\n-------\n\nWebOb is offered under the `MIT-license\n<https://docs.pylonsproject.org/projects/webob/en/stable/license.html>`_.\n\nAuthors\n-------\n\nWebOb was authored by Ian Bicking and is currently maintained by the `Pylons\nProject <https://pylonsproject.org/>`_ and a team of contributors.\n\n1.8.11 (2026-08-02)\n-------------------\n\nSecurity Fix\n~~~~~~~~~~~~\n\n- The fixes for CVE-2024-42353 and GHSA-fh3h-vg37-cc95 were still\n  incomplete: besides removing tab, CR, and LF, ``urllib.parse.urljoin``\n  also strips leading and trailing C0 control and space characters from a\n  URL before parsing it. A Location value such as\n  ``\" //www.example.com/test\"`` could therefore still be interpreted as a\n  protocol-relative URL (and ``\" https://www.example.com/test\"`` as an\n  absolute one), allowing an open redirect.\n\n  WebOb no longer uses ``urllib.parse.urljoin`` and instead ships its own\n  implementation of the RFC 3986 reference resolution algorithm,\n  ``webob.util.urljoin``, which resolves the URL exactly as given without\n  removing any characters. It is now used to make the Location header\n  absolute, by ``Request.relative_url``, and by the ``_HTTPMove`` based\n  HTTP exceptions, which normalize the Location header through the same\n  code path as the Response object (so a protocol-relative location\n  passed to e.g. ``HTTPFound`` no longer redirects off-host either).\n\n  See https://github.com/Pylons/webob/security/advisories/GHSA-6hx8-3wjj-gr8g\n\n1.8.10 (2026-06-02)\n-------------------\n\nSecurity Fix\n~~~~~~~~~~~~\n\n- The fix for CVE-2024-42353 was incomplete: a Location value containing\n  ASCII tab, carriage return, or line feed characters between consecutive\n  slashes could still be interpreted as a protocol-relative URL by\n  ``urllib.parse.urljoin`` on Python 3.10+, allowing an open redirect.\n\n  See https://github.com/Pylons/webob/security/advisories/GHSA-fh3h-vg37-cc95\n\n  Thanks to Caleb Brown of Google for the report.\n\n1.8.9 (2024-11-23)\n------------------\n\nBugfix\n~~~~~~\n\n- Add `legacy-cgi` to required packages to be installed for Python 3.13\n  compatibility. See https://github.com/Pylons/webob/pull/469\n\n1.8.8 (2024-08-13)\n------------------\n\nSecurity Fix\n~~~~~~~~~~~~\n\n- The use of WebOb's Response object to redirect a request to a new location\n  can lead to an open redirect if the Location header is not a full URI.\n\n  See https://github.com/Pylons/webob/security/advisories/GHSA-mg3v-6m49-jhp3\n  and CVE-2024-42353\n\n  Thanks to Sara Gao for the report\n\n1.8.7 (2021-02-17)\n------------------\n\nBugfix\n~~~~~~\n\n- Decoding deflate-encoded responses now supports data which is packed in\n  a zlib container as it is supposed to be. The old, non-standard behaviour\n  is still supported.\n\n  See https://github.com/Pylons/webob/pull/426\n\n\n1.8.6 (2020-01-21)\n------------------\n\nExperimental Features\n~~~~~~~~~~~~~~~~~~~~~\n\n- The SameSite value now includes a new option named \"None\", this is a new\n  change that was introduced in\n  https://tools.ietf.org/html/draft-west-cookie-incrementalism-00\n\n  Please be aware that older clients are incompatible with this change:\n  https://www.chromium.org/updates/same-site/incompatible-clients, WebOb does\n  not enable SameSite on cookies by default, so there is no backwards\n  incompatible change here.\n\n  See https://github.com/Pylons/webob/issues/406\n\n- Validation of SameSite values can be disabled by toggling a module flag. This\n  is in anticipation of future changes in evolving cookie standards.\n  The discussion in https://github.com/Pylons/webob/pull/407 (which initially\n  expanded the allowed options) notes the sudden change to browser cookie\n  implementation details may happen again.\n\n  In May 2019, Google announced a new model for privacy controls in their\n  browsers, which affected the list of valid options for the SameSite attribute\n  of cookies. In late 2019, the company began to roll out these changes to their\n  browsers to force developer adoption of the new specification.\n  See https://www.chromium.org/updates/same-site and\n  https://blog.chromium.org/2019/10/developers-get-ready-for-new.html for more\n  details on this change.\n\n  See https://github.com/Pylons/webob/pull/409\n\n1.8.5 (2019-01-03)\n------------------\n\nWarnings\n~~~~~~~~\n\n- Fixed one last remaining invalid escape sequence in a docstring.\n\n1.8.4 (2018-11-11)\n------------------\n\nBugfix\n~~~~~~\n\n- Response.content_type now accepts unicode strings on Python 2 and encodes\n  them to latin-1. See https://github.com/Pylons/webob/pull/389 and\n  https://github.com/Pylons/webob/issues/388\n\n- Accept header classes now support a .copy() function that may be used to\n  create a copy. This allows ``create_accept_header`` and other like functions\n  to accept an pre-existing Accept header. See\n  https://github.com/Pylons/webob/pull/386 and\n  https://github.com/Pylons/webob/issues/385\n\nWarnings\n~~~~~~~~\n\n- Some backslashes introduced with the new accept handling code were causing\n  DeprecationWarnings upon compiling the source to pyc files, all of the\n  backslashes have been reigned in as appropriate, and users should no longer\n  see DeprecationWarnings for invalid escape sequence. See\n  https://github.com/Pylons/webob/issues/384\n\n1.8.3 (2018-10-14)\n------------------\n\nBugfix\n~~~~~~\n\n- ``acceptparse.AcceptValidHeader``, ``acceptparse.AcceptInvalidHeader``, and\n  ``acceptparse.AcceptNoHeader`` will now always ignore offers that do not\n  match the required media type grammar when calling ``.acceptable_offers()``.\n  Previous versions raised a ``ValueError`` for invalid offers in\n  ``AcceptValidHeader`` and returned them as acceptable in the others.\n  See https://github.com/Pylons/webob/pull/372\n\nFeature\n~~~~~~~\n\n- Add Request.remote_host, exposing REMOTE_HOST environment variable.\n\n- Added ``acceptparse.Accept.parse_offer`` to codify what types of offers\n  are compatible with ``acceptparse.AcceptValidHeader.acceptable_offers``,\n  ``acceptparse.AcceptMissingHeader.acceptable_offers``, and\n  ``acceptparse.AcceptInvalidHeader.acceptable_offers``. This API also\n  normalizes the offer with lowercased type/subtype and parameter names.\n  See https://github.com/Pylons/webob/pull/376 and\n  https://github.com/Pylons/webob/pull/379\n\n1.8.2 (2018-06-05)\n------------------\n\nBugfix\n~~~~~~\n\n- SameSite may now be passed as str or bytes to `Response.set_cookie` and\n  `cookies.make_cookie`. This was an oversight as all other arguments would be\n  correctly coerced before being serialized. See\n  https://github.com/Pylons/webob/issues/361 and\n  https://github.com/Pylons/webob/pull/362\n\n\n1.8.1 (2018-04-10)\n------------------\n\nBugfix\n~~~~~~\n\n- acceptparse.MIMEAccept which is deprecated in WebOb 1.8.0 made a backwards\n  incompatible change that led to it raising on an invalid Accept header. This\n  behaviour has now been reversed, as well as some other fixes to allow\n  MIMEAccept to behave more like the old version. See\n  https://github.com/Pylons/webob/pull/356\n\n1.8.0 (2018-04-04)\n------------------\n\nFeature\n~~~~~~~\n\n- ``request.POST`` now supports any requests with the appropriate\n  Content-Type. Allowing any HTTP method to access form encoded content,\n  including DELETE, PUT, and others. See\n  https://github.com/Pylons/webob/pull/352\n\nCompatibility\n~~~~~~~~~~~~~\n\n- WebOb is no longer officially supported on Python 3.3 which was EOL'ed on\n  2017-09-29.\n\nBackwards Incompatibilities\n~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n- Many changes have been made to the way WebOb does Accept handling, not just\n  for the Accept header itself, but also for Accept-Charset, Accept-Encoding\n  and Accept-Language. This was a `Google Summer of Code\n  <https://developers.google.com/open-source/gsoc/>`_ project completed by\n  Whiteroses (https://github.com/whiteroses). Many thanks to Google for running\n  GSoC, the Python Software Foundation for organising and a huge thanks to Ira\n  for completing the work. See https://github.com/Pylons/webob/pull/338 and\n  https://github.com/Pylons/webob/pull/335. Documentation is available at\n  https://docs.pylonsproject.org/projects/webob/en/master/api/webob.html\n\n- When calling a ``@wsgify`` decorated function, the default arguments passed\n  to ``@wsgify`` are now used when called with the request, and not as a\n  `start_response`\n\n  .. code::\n\n     def hello(req, name):\n         return \"Hello, %s!\" % name\n     app = wsgify(hello, args=(\"Fred\",))\n\n     req = Request.blank('/')\n     resp = req.get_response(app)  # => \"Hello, Fred\"\n     resp2 = app(req) # => \"Hello, Fred\"\n\n  Previously the ``resp2`` line would have failed with a ``TypeError``. With\n  this change there is no way to override the default arguments with no\n  arguments. See https://github.com/Pylons/webob/pull/203\n\n- When setting ``app_iter`` on a ``Response`` object the ``content_md5`` header\n  is no longer cleared. This behaviour is odd and disallows setting the\n  ``content_md5`` and then returning an iterator for chunked content encoded\n  responses. See https://github.com/Pylons/webob/issues/86\n\nExperimental Features\n~~~~~~~~~~~~~~~~~~~~~\n\nThese features are experimental and may change at any point in the future.\n\n- The cookie APIs now have the ability to set the SameSite attribute on a\n  cookie in both ``webob.cookies.make_cookie`` and\n  ``webob.cookies.CookieProfile``. See https://github.com/Pylons/webob/pull/255\n\nBugfix\n~~~~~~\n\n- Exceptions now use string.Template.safe_substitute rather than\n  string.Template.substitute. The latter would raise for missing mappings, the\n  former will simply not substitute the missing variable. This is safer in case\n  the WSGI environ does not contain the keys necessary for the body template.\n  See https://github.com/Pylons/webob/issues/345.\n\n- Request.host_url, Request.host_port, Request.domain correctly parse IPv6 Host\n  headers as provided by a browser. See\n  https://github.com/Pylons/webob/pull/332\n\n- Request.authorization would raise ValueError for unusual or malformed header\n  values. See https://github.com/Pylons/webob/issues/231\n\n- Allow unnamed fields in form data to be properly transcoded when calling\n  request.decode with an alternate encoding. See\n  https://github.com/Pylons/webob/pull/309\n\n- ``Response.__init__`` would discard ``app_iter`` when a ``Response`` had no\n  body, this would cause issues when ``app_iter`` was an object that was tied\n  to the life-cycle of a web application and had to be properly closed.\n  ``app_iter`` is more advanced API for ``Response`` and thus even if it\n  contains a body and is thus against the HTTP RFC's, we should let the users\n  shoot themselves by returning a body. See\n  https://github.com/Pylons/webob/issues/305\n",
+        "keywords": [
+          "wsgi",
+          "request",
+          "web",
+          "http"
+        ],
+        "home_page": "http://webob.org/",
+        "author": "Ian Bicking",
+        "author_email": "ianb@colorstudy.com",
+        "maintainer": "Pylons Project",
+        "license": "MIT",
+        "license_file": [
+          "docs/license.txt"
+        ],
+        "classifier": [
+          "Development Status :: 6 - Mature",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Topic :: Internet :: WWW/HTTP :: WSGI",
+          "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
+          "Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy"
+        ],
+        "requires_dist": [
+          "legacy-cgi>=2.6; python_version >= \"3.13\"",
+          "pytest>=3.1.0; extra == \"testing\"",
+          "coverage; extra == \"testing\"",
+          "pytest-cov; extra == \"testing\"",
+          "pytest-xdist; extra == \"testing\"",
+          "Sphinx>=1.7.5; extra == \"docs\"",
+          "pylons-sphinx-themes; extra == \"docs\"",
+          "setuptools; extra == \"docs\""
+        ],
+        "requires_python": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*",
+        "provides_extra": [
+          "testing",
+          "docs"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/c8/7d/24a23d4d6d93744babfb99266eeb97a25ceae58c0f841a872b51c45ee214/zope.deprecation-5.0-py3-none-any.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "28c2ee983812efb4676d33c7a8c6ade0df191c1c6d652bbbfe6e2eeee067b2d4"
+          },
+          "hash": "sha256=28c2ee983812efb4676d33c7a8c6ade0df191c1c6d652bbbfe6e2eeee067b2d4"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "zope.deprecation",
+        "version": "5.0",
+        "summary": "Zope Deprecation Infrastructure",
+        "description": "======================\n ``zope.deprecation``\n======================\n\n.. image:: https://img.shields.io/pypi/v/zope.deprecation.svg\n        :target: https://pypi.python.org/pypi/zope.deprecation/\n        :alt: Latest release\n\n.. image:: https://img.shields.io/pypi/pyversions/zope.deprecation.svg\n        :target: https://pypi.org/project/zope.deprecation/\n        :alt: Supported Python versions\n\n.. image:: https://github.com/zopefoundation/zope.deprecation/actions/workflows/tests.yml/badge.svg\n        :target: https://github.com/zopefoundation/zope.deprecation/actions/workflows/tests.yml\n\n.. image:: https://coveralls.io/repos/github/zopefoundation/zope.deprecation/badge.svg?branch=master\n        :target: https://coveralls.io/github/zopefoundation/zope.deprecation?branch=master\n\n.. image:: https://readthedocs.org/projects/zopedeprecation/badge/?version=latest\n        :target: https://zopedeprecation.readthedocs.io/en/latest/\n        :alt: Documentation Status\n\n\nThis package provides a simple function called ``deprecated(names, reason)``\nto mark deprecated modules, classes, functions, methods and properties.\n\nPlease see https://zopedeprecation.readthedocs.io for the documentation.\n\n\n================================\n ``zope.deprecation`` Changelog\n================================\n\n5.0 (2023-03-29)\n================\n\n- Drop support for Python 2.7, 3.4, 3.5, 3.6.\n\n- Drop support for deprecated ``python setup.py test``.\n\n- Add support for Python 3.8, 3.9, 3.10, 3.11.\n\n\n4.4.0 (2018-12-03)\n==================\n\n- Add support for Python 3.7.\n\n\n4.3.0 (2017-08-07)\n==================\n\n- Allow custom warning classes to be specified to override the default\n  ``DeprecationWarning``.\n  See https://github.com/zopefoundation/zope.deprecation/pull/7\n\n- Add support for Python 3.6.\n\n- Drop support for Python 3.3.\n\n4.2.0 (2016-11-07)\n==================\n\n- Drop support for Python 2.6 and 3.2.\n\n- Add support for Python 3.5.\n\n4.1.2 (2015-01-13)\n==================\n\n- Do not require a ``self`` parameter for deprecated functions.  See:\n  https://github.com/zopefoundation/zope.deprecation/pull/1\n\n4.1.1 (2014-03-19)\n==================\n\n- Added explicit support for Python 3.4.\n\n4.1.0 (2013-12-20)\n==================\n\n- Added a ``Suppressor`` context manager, allowing scoped suppression of\n  deprecation warnings.\n\n- Updated ``boostrap.py`` to version 2.2.\n\n4.0.2 (2012-12-31)\n==================\n\n- Fleshed out PyPI Trove classifiers.\n\n4.0.1 (2012-11-21)\n==================\n\n- Added support for Python 3.3.\n\n4.0.0 (2012-05-16)\n==================\n\n- Automated build of Sphinx HTML docs and running doctest snippets via tox.\n\n- Added Sphinx documentation:\n\n  - API docs moved from package-data README into ``docs/api.rst``.\n\n  - Snippets can be tested by running 'make doctest'.\n\n- Updated support for continuous integration using ``tox`` and ``jenkins``.\n\n- 100% unit test coverage.\n\n- Added ``setup.py dev`` alias (runs ``setup.py develop`` plus installs\n  ``nose`` and ``coverage``).\n\n- Added ``setup.py docs`` alias (installs ``Sphinx`` and dependencies).\n\n- Removed spurious dependency on ``zope.testing``.\n\n- Dropped explicit support for Python 2.4 / 2.5 / 3.1.\n\n\n3.5.1 (2012-03-15)\n==================\n\n- Revert a move of `README.txt` to unbreak ``zope.app.apidoc``.\n\n\n3.5.0 (2011-09-05)\n==================\n\n- Replaced doctesting with unit testing.\n\n- Python 3 compatibility.\n\n\n3.4.1 (2011-06-07)\n==================\n\n- Removed import cycle for ``__show__`` by defining it in the\n  ``zope.deprecation.deprecation`` module.\n\n- Added support to bootstrap on Jython.\n\n- Fix ``zope.deprecation.warn()`` to make the signature identical to\n  ``warnings.warn()`` and to check for .pyc and .pyo files.\n\n\n3.4.0 (2007-07-19)\n==================\n\n- Release 3.4 final, corresponding to Zope 3.4.\n\n\n3.3.0 (2007-02-18)\n==================\n\n- Corresponds to the version of the ``zope.deprecation`` package shipped as\n  part of the Zope 3.3.0 release.\n",
+        "keywords": [
+          "deprecation",
+          "deprecated",
+          "warning"
+        ],
+        "home_page": "https://github.com/zopefoundation/zope.deprecation",
+        "author": "Zope Corporation and Contributors",
+        "author_email": "zope-dev@zope.org",
+        "license": "ZPL 2.1",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Zope Public License",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Framework :: Zope :: 3"
+        ],
+        "requires_dist": [
+          "setuptools",
+          "Sphinx ; extra == 'docs'",
+          "zope.testrunner ; extra == 'test'"
+        ],
+        "requires_python": ">= 3.7",
+        "provides_extra": [
+          "docs",
+          "test"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/fd/4f/8e80173ebcdefe0ff4164444c22b171cf8bd72533026befc2adf079f3ac8/zope.interface-6.1-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hashes": {
+            "sha256": "e30506bcb03de8983f78884807e4fd95d8db6e65b69257eea05d13d519b83ac0"
+          },
+          "hash": "sha256=e30506bcb03de8983f78884807e4fd95d8db6e65b69257eea05d13d519b83ac0"
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "zope.interface",
+        "version": "6.1",
+        "summary": "Interfaces for Python",
+        "description": "====================\n ``zope.interface``\n====================\n\n.. image:: https://img.shields.io/pypi/v/zope.interface.svg\n    :target: https://pypi.python.org/pypi/zope.interface/\n    :alt: Latest Version\n\n.. image:: https://img.shields.io/pypi/pyversions/zope.interface.svg\n        :target: https://pypi.org/project/zope.interface/\n        :alt: Supported Python versions\n\n.. image:: https://github.com/zopefoundation/zope.interface/actions/workflows/tests.yml/badge.svg\n        :target: https://github.com/zopefoundation/zope.interface/actions/workflows/tests.yml\n\n.. image:: https://readthedocs.org/projects/zopeinterface/badge/?version=latest\n        :target: https://zopeinterface.readthedocs.io/en/latest/\n        :alt: Documentation Status\n\nThis package is intended to be independently reusable in any Python\nproject. It is maintained by the `Zope Toolkit project\n<https://zopetoolkit.readthedocs.io/>`_.\n\nThis package provides an implementation of \"object interfaces\" for Python.\nInterfaces are a mechanism for labeling objects as conforming to a given\nAPI or contract. So, this package can be considered as implementation of\nthe `Design By Contract`_ methodology support in Python.\n\n.. _Design By Contract: http://en.wikipedia.org/wiki/Design_by_contract\n\nFor detailed documentation, please see https://zopeinterface.readthedocs.io/en/latest/\n\n=========\n Changes\n=========\n\n6.1 (2023-10-05)\n================\n\n- Build Linux binary wheels for Python 3.12.\n\n- Add support for Python 3.12.\n\n- Fix building of the docs for non-final versions.\n\n\n6.0 (2023-03-17)\n================\n\n- Build Linux binary wheels for Python 3.11.\n\n- Drop support for Python 2.7, 3.5, 3.6.\n\n- Fix test deprecation warning on Python 3.11.\n\n- Add preliminary support for Python 3.12 as of 3.12a5.\n\n- Drop:\n\n    + `zope.interface.implements`\n    + `zope.interface.implementsOnly`\n    + `zope.interface.classProvides`\n\n\n5.5.2 (2022-11-17)\n==================\n\n- Add support for building arm64 wheels on macOS.\n\n\n5.5.1 (2022-11-03)\n==================\n\n- Add support for final Python 3.11 release.\n\n\n5.5.0 (2022-10-10)\n==================\n\n- Add support for Python 3.10 and 3.11 (as of 3.11.0rc2).\n\n- Add missing Trove classifier showing support for Python 3.9.\n\n- Add some more entries to ``zope.interface.interfaces.__all__``.\n\n- Disable unsafe math optimizations in C code.  See `pull request 262\n  <https://github.com/zopefoundation/zope.interface/pull/262>`_.\n\n\n5.4.0 (2021-04-15)\n==================\n\n- Make the C implementation of the ``__providedBy__`` descriptor stop\n  ignoring all errors raised when accessing the instance's\n  ``__provides__``. Now it behaves like the Python version and only\n  catches ``AttributeError``. The previous behaviour could lead to\n  crashing the interpreter in cases of recursion and errors. See\n  `issue 239 <https://github.com/zopefoundation/zope.interface/issues>`_.\n\n- Update the ``repr()`` and ``str()`` of various objects to be shorter\n  and more informative. In many cases, the ``repr()`` is now something\n  that can be evaluated to produce an equal object. For example, what\n  was previously printed as ``<implementedBy builtins.list>`` is now\n  shown as ``classImplements(list, IMutableSequence, IIterable)``. See\n  `issue 236 <https://github.com/zopefoundation/zope.interface/issues/236>`_.\n\n- Make ``Declaration.__add__`` (as in ``implementedBy(Cls) +\n  ISomething``) try harder to preserve a consistent resolution order\n  when the two arguments share overlapping pieces of the interface\n  inheritance hierarchy. Previously, the right hand side was always\n  put at the end of the resolution order, which could easily produce\n  invalid orders. See `issue 193\n  <https://github.com/zopefoundation/zope.interface/issues/193>`_.\n\n5.3.0 (2020-03-21)\n==================\n\n- No changes from 5.3.0a1\n\n\n5.3.0a1 (2021-03-18)\n====================\n\n- Improve the repr of ``zope.interface.Provides`` to remove ambiguity\n  about what is being provided. This is especially helpful diagnosing\n  IRO issues.\n\n- Allow subclasses of ``BaseAdapterRegistry`` (including\n  ``AdapterRegistry`` and ``VerifyingAdapterRegistry``) to have\n  control over the data structures. This allows persistent\n  implementations such as those based on ZODB to choose more scalable\n  options (e.g., BTrees instead of dicts). See `issue 224\n  <https://github.com/zopefoundation/zope.interface/issues/224>`_.\n\n- Fix a reference counting issue in ``BaseAdapterRegistry`` that could\n  lead to references to interfaces being kept around even when all\n  utilities/adapters/subscribers providing that interface have been\n  removed. This is mostly an issue for persistent implementations.\n  Note that this only corrects the issue moving forward, it does not\n  solve any already corrupted reference counts. See `issue 227\n  <https://github.com/zopefoundation/zope.interface/issues/227>`_.\n\n- Add the method ``BaseAdapterRegistry.rebuild()``. This can be used\n  to fix the reference counting issue mentioned above, as well as to\n  update the data structures when custom data types have changed.\n\n- Add the interface method ``IAdapterRegistry.subscribed()`` and\n  implementation ``BaseAdapterRegistry.subscribed()`` for querying\n  directly registered subscribers. See `issue 230\n  <https://github.com/zopefoundation/zope.interface/issues/230>`_.\n\n- Add the maintenance method\n  ``Components.rebuildUtilityRegistryFromLocalCache()``. Most users\n  will not need this, but it can be useful if the ``Components.utilities``\n  registry is suspected to be out of sync with the ``Components``\n  object itself (this might happen to persistent ``Components``\n  implementations in the face of bugs).\n\n- Fix the ``Provides`` and ``ClassProvides`` descriptors to stop\n  allowing redundant interfaces (those already implemented by the\n  underlying class or meta class) to produce an inconsistent\n  resolution order. This is similar to the change in ``@implementer``\n  in 5.1.0, and resolves inconsistent resolution orders with\n  ``zope.proxy`` and ``zope.location``. See `issue 207\n  <https://github.com/zopefoundation/zope.interface/issues/207>`_.\n\n5.2.0 (2020-11-05)\n==================\n\n- Add documentation section ``Persistency and Equality``\n  (`#218 <https://github.com/zopefoundation/zope.interface/issues/218>`_).\n\n- Create arm64 wheels.\n\n- Add support for Python 3.9.\n\n\n5.1.2 (2020-10-01)\n==================\n\n- Make sure to call each invariant only once when validating invariants.\n  Previously, invariants could be called multiple times because when an\n  invariant is defined in an interface, it's found by in all interfaces\n  inheriting from that interface.  See `pull request 215\n  <https://github.com/zopefoundation/zope.interface/pull/215/>`_.\n\n5.1.1 (2020-09-30)\n==================\n\n- Fix the method definitions of ``IAdapterRegistry.subscribe``,\n  ``subscriptions`` and ``subscribers``. Previously, they all were\n  defined to accept a ``name`` keyword argument, but subscribers have\n  no names and the implementation of that interface did not accept\n  that argument. See `issue 208\n  <https://github.com/zopefoundation/zope.interface/issues/208>`_.\n\n- Fix a potential reference leak in the C optimizations. Previously,\n  applications that dynamically created unique ``Specification``\n  objects (e.g., used ``@implementer`` on dynamic classes) could\n  notice a growth of small objects over time leading to increased\n  garbage collection times. See `issue 216\n  <https://github.com/zopefoundation/zope.interface/issues/216>`_.\n\n  .. caution::\n\n     This leak could prevent interfaces used as the bases of\n     other interfaces from being garbage collected. Those interfaces\n     will now be collected.\n\n     One way in which this would manifest was that ``weakref.ref``\n     objects (and things built upon them, like\n     ``Weak[Key|Value]Dictionary``) would continue to have access to\n     the original object even if there were no other visible\n     references to Python and the original object *should* have been\n     collected. This could be especially problematic for the\n     ``WeakKeyDictionary`` when combined with dynamic or local\n     (created in the scope of a function) interfaces, since interfaces\n     are hashed based just on their name and module name. See the\n     linked issue for an example of a resulting ``KeyError``.\n\n     Note that such potential errors are not new, they are just once\n     again a possibility.\n\n5.1.0 (2020-04-08)\n==================\n\n- Make ``@implementer(*iface)`` and ``classImplements(cls, *iface)``\n  ignore redundant interfaces. If the class already implements an\n  interface through inheritance, it is no longer redeclared\n  specifically for *cls*. This solves many instances of inconsistent\n  resolution orders, while still allowing the interface to be declared\n  for readability and maintenance purposes. See `issue 199\n  <https://github.com/zopefoundation/zope.interface/issues/199>`_.\n\n- Remove all bare ``except:`` statements. Previously, when accessing\n  special attributes such as ``__provides__``, ``__providedBy__``,\n  ``__class__`` and ``__conform__``, this package wrapped such access\n  in a bare ``except:`` statement, meaning that many errors could pass\n  silently; typically this would result in a fallback path being taken\n  and sometimes (like with ``providedBy()``) the result would be\n  non-sensical. This is especially true when those attributes are\n  implemented with descriptors. Now, only ``AttributeError`` is\n  caught. This makes errors more obvious.\n\n  Obviously, this means that some exceptions will be propagated\n  differently than before. In particular, ``RuntimeError`` raised by\n  Acquisition in the case of circular containment will now be\n  propagated. Previously, when adapting such a broken object, a\n  ``TypeError`` would be the common result, but now it will be a more\n  informative ``RuntimeError``.\n\n  In addition, ZODB errors like ``POSKeyError`` could now be\n  propagated where previously they would ignored by this package.\n\n  See `issue 200 <https://github.com/zopefoundation/zope.interface/issues/200>`_.\n\n- Require that the second argument (*bases*) to ``InterfaceClass`` is\n  a tuple. This only matters when directly using ``InterfaceClass`` to\n  create new interfaces dynamically. Previously, an individual\n  interface was allowed, but did not work correctly. Now it is\n  consistent with ``type`` and requires a tuple.\n\n- Let interfaces define custom ``__adapt__`` methods. This implements\n  the other side of the :pep:`246` adaptation protocol: objects being\n  adapted could already implement ``__conform__`` if they know about\n  the interface, and now interfaces can implement ``__adapt__`` if\n  they know about particular objects. There is no performance penalty\n  for interfaces that do not supply custom ``__adapt__`` methods.\n\n  This includes the ability to add new methods, or override existing\n  interface methods using the new ``@interfacemethod`` decorator.\n\n  See `issue 3 <https://github.com/zopefoundation/zope.interface/issues/3>`_.\n\n- Make the internal singleton object returned by APIs like\n  ``implementedBy`` and ``directlyProvidedBy`` for objects that\n  implement or provide no interfaces more immutable. Previously an\n  internal cache could be mutated. See `issue 204\n  <https://github.com/zopefoundation/zope.interface/issues/204>`_.\n\n5.0.2 (2020-03-30)\n==================\n\n- Ensure that objects that implement no interfaces (such as direct\n  subclasses of ``object``) still include ``Interface`` itself in\n  their ``__iro___`` and ``__sro___``. This fixes adapter registry\n  lookups for such objects when the adapter is registered for\n  ``Interface``. See `issue 197\n  <https://github.com/zopefoundation/zope.interface/issues/197>`_.\n\n\n5.0.1 (2020-03-21)\n==================\n\n- Ensure the resolution order for ``InterfaceClass`` is consistent.\n  See `issue 192 <https://github.com/zopefoundation/zope.interface/issues/192>`_.\n\n- Ensure the resolution order for ``collections.OrderedDict`` is\n  consistent on CPython 2. (It was already consistent on Python 3 and PyPy).\n\n- Fix the handling of the ``ZOPE_INTERFACE_STRICT_IRO`` environment\n  variable. Previously, ``ZOPE_INTERFACE_STRICT_RO`` was read, in\n  contrast with the documentation. See `issue 194\n  <https://github.com/zopefoundation/zope.interface/issues/194>`_.\n\n\n5.0.0 (2020-03-19)\n==================\n\n- Make an internal singleton object returned by APIs like\n  ``implementedBy`` and ``directlyProvidedBy`` immutable. Previously,\n  it was fully mutable and allowed changing its ``__bases___``. That\n  could potentially lead to wrong results in pathological corner\n  cases. See `issue 158\n  <https://github.com/zopefoundation/zope.interface/issues/158>`_.\n\n- Support the ``PURE_PYTHON`` environment variable at runtime instead\n  of just at wheel build time. A value of 0 forces the C extensions to\n  be used (even on PyPy) failing if they aren't present. Any other\n  value forces the Python implementation to be used, ignoring the C\n  extensions. See `PR 151 <https://github.com/zopefoundation/zope.interface/pull/151>`_.\n\n- Cache the result of ``__hash__`` method in ``InterfaceClass`` as a\n  speed optimization. The method is called very often (i.e several\n  hundred thousand times during Plone 5.2 startup). Because the hash value never\n  changes it can be cached. This improves test performance from 0.614s\n  down to 0.575s (1.07x faster). In a real world Plone case a reindex\n  index came down from 402s to 320s (1.26x faster). See `PR 156\n  <https://github.com/zopefoundation/zope.interface/pull/156>`_.\n\n- Change the C classes ``SpecificationBase`` and its subclass\n  ``ClassProvidesBase`` to store implementation attributes in their structures\n  instead of their instance dictionaries. This eliminates the use of\n  an undocumented private C API function, and helps make some\n  instances require less memory. See `PR 154 <https://github.com/zopefoundation/zope.interface/pull/154>`_.\n\n- Reduce memory usage in other ways based on observations of usage\n  patterns in Zope (3) and Plone code bases.\n\n  - Specifications with no dependents are common (more than 50%) so\n    avoid allocating a ``WeakKeyDictionary`` unless we need it.\n  - Likewise, tagged values are relatively rare, so don't allocate a\n    dictionary to hold them until they are used.\n  - Use ``__slots___`` or the C equivalent ``tp_members`` in more\n    common places. Note that this removes the ability to set arbitrary\n    instance variables on certain objects.\n    See `PR 155 <https://github.com/zopefoundation/zope.interface/pull/155>`_.\n\n  The changes in this release resulted in a 7% memory reduction after\n  loading about 6,000 modules that define about 2,200 interfaces.\n\n  .. caution::\n\n     Details of many private attributes have changed, and external use\n     of those private attributes may break. In particular, the\n     lifetime and default value of ``_v_attrs`` has changed.\n\n- Remove support for hashing uninitialized interfaces. This could only\n  be done by subclassing ``InterfaceClass``. This has generated a\n  warning since it was first added in 2011 (3.6.5). Please call the\n  ``InterfaceClass`` constructor or otherwise set the appropriate\n  fields in your subclass before attempting to hash or sort it. See\n  `issue 157 <https://github.com/zopefoundation/zope.interface/issues/157>`_.\n\n- Remove unneeded override of the ``__hash__`` method from\n  ``zope.interface.declarations.Implements``. Watching a reindex index\n  process in ZCatalog with on a Py-Spy after 10k samples the time for\n  ``.adapter._lookup`` was reduced from 27.5s to 18.8s (~1.5x faster).\n  Overall reindex index time shrunk from 369s to 293s (1.26x faster).\n  See `PR 161\n  <https://github.com/zopefoundation/zope.interface/pull/161>`_.\n\n- Make the Python implementation closer to the C implementation by\n  ignoring all exceptions, not just ``AttributeError``, during (parts\n  of) interface adaptation. See `issue 163\n  <https://github.com/zopefoundation/zope.interface/issues/163>`_.\n\n- Micro-optimization in ``.adapter._lookup`` , ``.adapter._lookupAll``\n  and ``.adapter._subscriptions``: By loading ``components.get`` into\n  a local variable before entering the loop a bytcode \"LOAD_FAST 0\n  (components)\" in the loop can be eliminated. In Plone, while running\n  all tests, average speedup of the \"owntime\" of ``_lookup`` is ~5x.\n  See `PR 167\n  <https://github.com/zopefoundation/zope.interface/pull/167>`_.\n\n- Add ``__all__`` declarations to all modules. This helps tools that\n  do auto-completion and documentation and results in less cluttered\n  results. Wildcard (\"*\") are not recommended and may be affected. See\n  `issue 153\n  <https://github.com/zopefoundation/zope.interface/issues/153>`_.\n\n- Fix ``verifyClass`` and ``verifyObject`` for builtin types like\n  ``dict`` that have methods taking an optional, unnamed argument with\n  no default value like ``dict.pop``. On PyPy3, the verification is\n  strict, but on PyPy2 (as on all versions of CPython) those methods\n  cannot be verified and are ignored. See `issue 118\n  <https://github.com/zopefoundation/zope.interface/issues/118>`_.\n\n- Update the common interfaces ``IEnumerableMapping``,\n  ``IExtendedReadMapping``, ``IExtendedWriteMapping``,\n  ``IReadSequence`` and ``IUniqueMemberWriteSequence`` to no longer\n  require methods that were removed from Python 3 on Python 3, such as\n  ``__setslice___``. Now, ``dict``, ``list`` and ``tuple`` properly\n  verify as ``IFullMapping``, ``ISequence`` and ``IReadSequence,``\n  respectively on all versions of Python.\n\n- Add human-readable ``__str___`` and ``__repr___`` to ``Attribute``\n  and ``Method``. These contain the name of the defining interface\n  and the attribute. For methods, it also includes the signature.\n\n- Change the error strings raised by ``verifyObject`` and\n  ``verifyClass``. They now include more human-readable information\n  and exclude extraneous lines and spaces. See `issue 170\n  <https://github.com/zopefoundation/zope.interface/issues/170>`_.\n\n  .. caution:: This will break consumers (such as doctests) that\n               depended on the exact error messages.\n\n- Make ``verifyObject`` and ``verifyClass`` report all errors, if the\n  candidate object has multiple detectable violations. Previously they\n  reported only the first error. See `issue\n  <https://github.com/zopefoundation/zope.interface/issues/171>`_.\n\n  Like the above, this will break consumers depending on the exact\n  output of error messages if more than one error is present.\n\n- Add ``zope.interface.common.collections``,\n  ``zope.interface.common.numbers``, and ``zope.interface.common.io``.\n  These modules define interfaces based on the ABCs defined in the\n  standard library ``collections.abc``, ``numbers`` and ``io``\n  modules, respectively. Importing these modules will make the\n  standard library concrete classes that are registered with those\n  ABCs declare the appropriate interface. See `issue 138\n  <https://github.com/zopefoundation/zope.interface/issues/138>`_.\n\n- Add ``zope.interface.common.builtins``. This module defines\n  interfaces of common builtin types, such as ``ITextString`` and\n  ``IByteString``, ``IDict``, etc. These interfaces extend the\n  appropriate interfaces from ``collections`` and ``numbers``, and the\n  standard library classes implement them after importing this module.\n  This is intended as a replacement for third-party packages like\n  `dolmen.builtins <https://pypi.org/project/dolmen.builtins/>`_.\n  See `issue 138 <https://github.com/zopefoundation/zope.interface/issues/138>`_.\n\n- Make ``providedBy()`` and ``implementedBy()`` respect ``super``\n  objects. For instance, if class ``Derived`` implements ``IDerived``\n  and extends ``Base`` which in turn implements ``IBase``, then\n  ``providedBy(super(Derived, derived))`` will return ``[IBase]``.\n  Previously it would have returned ``[IDerived]`` (in general, it\n  would previously have returned whatever would have been returned\n  without ``super``).\n\n  Along with this change, adapter registries will unpack ``super``\n  objects into their ``__self___`` before passing it to the factory.\n  Together, this means that ``component.getAdapter(super(Derived,\n  self), ITarget)`` is now meaningful.\n\n  See `issue 11 <https://github.com/zopefoundation/zope.interface/issues/11>`_.\n\n- Fix a potential interpreter crash in the low-level adapter\n  registry lookup functions. See issue 11.\n\n- Adopt Python's standard `C3 resolution order\n  <https://www.python.org/download/releases/2.3/mro/>`_ to compute the\n  ``__iro__`` and ``__sro__`` of interfaces, with tweaks to support\n  additional cases that are common in interfaces but disallowed for\n  Python classes. Previously, an ad-hoc ordering that made no\n  particular guarantees was used.\n\n  This has many beneficial properties, including the fact that base\n  interface and base classes tend to appear near the end of the\n  resolution order instead of the beginning. The resolution order in\n  general should be more predictable and consistent.\n\n  .. caution::\n     In some cases, especially with complex interface inheritance\n     trees or when manually providing or implementing interfaces, the\n     resulting IRO may be quite different. This may affect adapter\n     lookup.\n\n  The C3 order enforces some constraints in order to be able to\n  guarantee a sensible ordering. Older versions of zope.interface did\n  not impose similar constraints, so it was possible to create\n  interfaces and declarations that are inconsistent with the C3\n  constraints. In that event, zope.interface will still produce a\n  resolution order equal to the old order, but it won't be guaranteed\n  to be fully C3 compliant. In the future, strict enforcement of C3\n  order may be the default.\n\n  A set of environment variables and module constants allows\n  controlling several aspects of this new behaviour. It is possible to\n  request warnings about inconsistent resolution orders encountered,\n  and even to forbid them. Differences between the C3 resolution order\n  and the previous order can be logged, and, in extreme cases, the\n  previous order can still be used (this ability will be removed in\n  the future). For details, see the documentation for\n  ``zope.interface.ro``.\n\n- Make inherited tagged values in interfaces respect the resolution\n  order (``__iro__``), as method and attribute lookup does. Previously\n  tagged values could give inconsistent results. See `issue 190\n  <https://github.com/zopefoundation/zope.interface/issues/190>`_.\n\n- Add ``getDirectTaggedValue`` (and related methods) to interfaces to\n  allow accessing tagged values irrespective of inheritance. See\n  `issue 190\n  <https://github.com/zopefoundation/zope.interface/issues/190>`_.\n\n- Ensure that ``Interface`` is always the last item in the ``__iro__``\n  and ``__sro__``. This is usually the case, but if classes that do\n  not implement any interfaces are part of a class inheritance\n  hierarchy, ``Interface`` could be assigned too high a priority.\n  See `issue 8 <https://github.com/zopefoundation/zope.interface/issues/8>`_.\n\n- Implement sorting, equality, and hashing in C for ``Interface``\n  objects. In micro benchmarks, this makes those operations 40% to 80%\n  faster. This translates to a 20% speed up in querying adapters.\n\n  Note that this changes certain implementation details. In\n  particular, ``InterfaceClass`` now has a non-default metaclass, and\n  it is enforced that ``__module__`` in instances of\n  ``InterfaceClass`` is read-only.\n\n  See `PR 183 <https://github.com/zopefoundation/zope.interface/pull/183>`_.\n\n\n4.7.2 (2020-03-10)\n==================\n\n- Remove deprecated use of setuptools features.  See `issue 30\n  <https://github.com/zopefoundation/zope.interface/issues/30>`_.\n\n\n4.7.1 (2019-11-11)\n==================\n\n- Use Python 3 syntax in the documentation.  See `issue 119\n  <https://github.com/zopefoundation/zope.interface/issues/119>`_.\n\n\n4.7.0 (2019-11-11)\n==================\n\n- Drop support for Python 3.4.\n\n- Change ``queryTaggedValue``, ``getTaggedValue``,\n  ``getTaggedValueTags`` in interfaces. They now include inherited\n  values by following ``__bases__``. See `PR 144\n  <https://github.com/zopefoundation/zope.interface/pull/144>`_.\n\n  .. caution:: This may be a breaking change.\n\n- Add support for Python 3.8.\n\n\n4.6.0 (2018-10-23)\n==================\n\n- Add support for Python 3.7\n\n- Fix ``verifyObject`` for class objects with staticmethods on\n  Python 3. See `issue 126\n  <https://github.com/zopefoundation/zope.interface/issues/126>`_.\n\n\n4.5.0 (2018-04-19)\n==================\n\n- Drop support for 3.3, avoid accidental dependence breakage via setup.py.\n  See `PR 110 <https://github.com/zopefoundation/zope.interface/pull/110>`_.\n- Allow registering and unregistering instance methods as listeners.\n  See `issue 12 <https://github.com/zopefoundation/zope.interface/issues/12>`_\n  and `PR 102 <https://github.com/zopefoundation/zope.interface/pull/102>`_.\n- Synchronize and simplify zope/__init__.py. See `issue 114\n  <https://github.com/zopefoundation/zope.interface/issues/114>`_\n\n\n4.4.3 (2017-09-22)\n==================\n\n- Avoid exceptions when the ``__annotations__`` attribute is added to\n  interface definitions with Python 3.x type hints. See `issue 98\n  <https://github.com/zopefoundation/zope.interface/issues/98>`_.\n- Fix the possibility of a rare crash in the C extension when\n  deallocating items. See `issue 100\n  <https://github.com/zopefoundation/zope.interface/issues/100>`_.\n\n\n4.4.2 (2017-06-14)\n==================\n\n- Fix a regression storing\n  ``zope.component.persistentregistry.PersistentRegistry`` instances.\n  See `issue 85 <https://github.com/zopefoundation/zope.interface/issues/85>`_.\n\n- Fix a regression that could lead to the utility registration cache\n  of ``Components`` getting out of sync. See `issue 93\n  <https://github.com/zopefoundation/zope.interface/issues/93>`_.\n\n4.4.1 (2017-05-13)\n==================\n\n- Simplify the caching of utility-registration data. In addition to\n  simplification, avoids spurious test failures when checking for\n  leaks in tests with persistent registries. See `pull 84\n  <https://github.com/zopefoundation/zope.interface/pull/84>`_.\n\n- Raise ``ValueError`` when non-text names are passed to adapter registry\n  methods:  prevents corruption of lookup caches.\n\n4.4.0 (2017-04-21)\n==================\n\n- Avoid a warning from the C compiler.\n  (https://github.com/zopefoundation/zope.interface/issues/71)\n\n- Add support for Python 3.6.\n\n4.3.3 (2016-12-13)\n==================\n\n- Correct typos and ReST formatting errors in documentation.\n\n- Add API documentation for the adapter registry.\n\n- Ensure that the ``LICENSE.txt`` file is included in built wheels.\n\n- Fix C optimizations broken on Py3k.  See the Python bug at:\n  http://bugs.python.org/issue15657\n  (https://github.com/zopefoundation/zope.interface/issues/60)\n\n\n4.3.2 (2016-09-05)\n==================\n\n- Fix equality testing of ``implementedBy`` objects and proxies.\n  (https://github.com/zopefoundation/zope.interface/issues/55)\n\n\n4.3.1 (2016-08-31)\n==================\n\n- Support Components subclasses that are not hashable.\n  (https://github.com/zopefoundation/zope.interface/issues/53)\n\n\n4.3.0 (2016-08-31)\n==================\n\n- Add the ability to sort the objects returned by ``implementedBy``.\n  This is compatible with the way interface classes sort so they can\n  be used together in ordered containers like BTrees.\n  (https://github.com/zopefoundation/zope.interface/issues/42)\n\n- Make ``setuptools`` a hard dependency of ``setup.py``.\n  (https://github.com/zopefoundation/zope.interface/issues/13)\n\n- Change a linear algorithm (O(n)) in ``Components.registerUtility`` and\n  ``Components.unregisterUtility`` into a dictionary lookup (O(1)) for\n  hashable components. This substantially improves the time taken to\n  manipulate utilities in large registries at the cost of some\n  additional memory usage. (https://github.com/zopefoundation/zope.interface/issues/46)\n\n\n4.2.0 (2016-06-10)\n==================\n\n- Add support for Python 3.5\n\n- Drop support for Python 2.6 and 3.2.\n\n\n4.1.3 (2015-10-05)\n==================\n\n- Fix installation without a C compiler on Python 3.5\n  (https://github.com/zopefoundation/zope.interface/issues/24).\n\n\n4.1.2 (2014-12-27)\n==================\n\n- Add support for PyPy3.\n\n- Remove unittest assertions deprecated in Python3.x.\n\n- Add ``zope.interface.document.asReStructuredText``, which formats the\n  generated text for an interface using ReST double-backtick markers.\n\n\n4.1.1 (2014-03-19)\n==================\n\n- Add support for Python 3.4.\n\n\n4.1.0 (2014-02-05)\n==================\n\n- Update ``boostrap.py`` to version 2.2.\n\n- Add ``@named(name)`` declaration, that specifies the component name, so it\n  does not have to be passed in during registration.\n\n\n4.0.5 (2013-02-28)\n==================\n\n- Fix a bug where a decorated method caused false positive failures on\n  ``verifyClass()``.\n\n\n4.0.4 (2013-02-21)\n==================\n\n- Fix a bug that was revealed by porting zope.traversing. During a loop, the\n  loop body modified a weakref dict causing a ``RuntimeError`` error.\n\n4.0.3 (2012-12-31)\n==================\n\n- Fleshed out PyPI Trove classifiers.\n\n4.0.2 (2012-11-21)\n==================\n\n- Add support for Python 3.3.\n\n- Restored ability to install the package in the absence of ``setuptools``.\n\n- LP #1055223:  Fix test which depended on dictionary order and failed randomly\n  in Python 3.3.\n\n4.0.1 (2012-05-22)\n==================\n\n- Drop explicit ``DeprecationWarnings`` for \"class advice\" APIS (these\n  APIs are still deprecated under Python 2.x, and still raise an exception\n  under Python 3.x, but no longer cause a warning to be emitted under\n  Python 2.x).\n\n4.0.0 (2012-05-16)\n==================\n\n- Automated build of Sphinx HTML docs and running doctest snippets via tox.\n\n- Deprecate the \"class advice\" APIs from ``zope.interface.declarations``:\n  ``implements``, ``implementsOnly``, and ``classProvides``.  In their place,\n  prefer the equivalent class decorators: ``@implementer``,\n  ``@implementer_only``, and ``@provider``.  Code which uses the deprecated\n  APIs will not work as expected under Py3k.\n\n- Remove use of '2to3' and associated fixers when installing under Py3k.\n  The code is now in a \"compatible subset\" which supports Python 2.6, 2.7,\n  and 3.2, including PyPy 1.8 (the version compatible with the 2.7 language\n  spec).\n\n- Drop explicit support for Python 2.4 / 2.5 / 3.1.\n\n- Add support for PyPy.\n\n- Add support for continuous integration using ``tox`` and ``jenkins``.\n\n- Add 'setup.py dev' alias (runs ``setup.py develop`` plus installs\n  ``nose`` and ``coverage``).\n\n- Add 'setup.py docs' alias (installs ``Sphinx`` and dependencies).\n\n- Replace all unittest coverage previously accomplished via doctests with\n  unittests.  The doctests have been moved into a ``docs`` section, managed\n  as a Sphinx collection.\n\n- LP #910987:  Ensure that the semantics of the ``lookup`` method of\n  ``zope.interface.adapter.LookupBase`` are the same in both the C and\n  Python implementations.\n\n- LP #900906:  Avoid exceptions due to tne new ``__qualname__`` attribute\n  added in Python 3.3 (see PEP 3155 for rationale).  Thanks to Antoine\n  Pitrou for the patch.\n\n3.8.0 (2011-09-22)\n==================\n\n- New module ``zope.interface.registry``.  This is code moved from\n  ``zope.component.registry`` which implements a basic nonperistent component\n  registry as ``zope.interface.registry.Components``.  This class was moved\n  from ``zope.component`` to make porting systems (such as Pyramid) that rely\n  only on a basic component registry to Python 3 possible without needing to\n  port the entirety of the ``zope.component`` package.  Backwards\n  compatibility import shims have been left behind in ``zope.component``, so\n  this change will not break any existing code.\n\n- New ``tests_require`` dependency: ``zope.event`` to test events sent by\n  Components implementation.  The ``zope.interface`` package does not have a\n  hard dependency on ``zope.event``, but if ``zope.event`` is importable, it\n  will send component registration events when methods of an instance of\n  ``zope.interface.registry.Components`` are called.\n\n- New interfaces added to support ``zope.interface.registry.Components``\n  addition: ``ComponentLookupError``, ``Invalid``, ``IObjectEvent``,\n  ``ObjectEvent``, ``IComponentLookup``, ``IRegistration``,\n  ``IUtilityRegistration``, ``IAdapterRegistration``,\n  ``ISubscriptionAdapterRegistration``, ``IHandlerRegistration``,\n  ``IRegistrationEvent``, ``RegistrationEvent``, ``IRegistered``,\n  ``Registered``, ``IUnregistered``, ``Unregistered``,\n  ``IComponentRegistry``, and ``IComponents``.\n\n- No longer Python 2.4 compatible (tested under 2.5, 2.6, 2.7, and 3.2).\n\n3.7.0 (2011-08-13)\n==================\n\n- Move changes from 3.6.2 - 3.6.5 to a new 3.7.x release line.\n\n3.6.7 (2011-08-20)\n==================\n\n- Fix sporadic failures on x86-64 platforms in tests of rich comparisons\n  of interfaces.\n\n3.6.6 (2011-08-13)\n==================\n\n- LP #570942:  Now correctly compare interfaces  from different modules but\n  with the same names.\n\n  N.B.: This is a less intrusive / destabilizing fix than the one applied in\n  3.6.3:  we only fix the underlying cmp-alike function, rather than adding\n  the other \"rich comparison\" functions.\n\n- Revert to software as released with 3.6.1 for \"stable\" 3.6 release branch.\n\n3.6.5 (2011-08-11)\n==================\n\n- LP #811792:  work around buggy behavior in some subclasses of\n  ``zope.interface.interface.InterfaceClass``, which invoke ``__hash__``\n  before initializing ``__module__`` and ``__name__``.  The workaround\n  returns a fixed constant hash in such cases, and issues a ``UserWarning``.\n\n- LP #804832:  Under PyPy, ``zope.interface`` should not build its C\n  extension.  Also, prevent attempting to build it under Jython.\n\n- Add a tox.ini for easier xplatform testing.\n\n- Fix testing deprecation warnings issued when tested under Py3K.\n\n3.6.4 (2011-07-04)\n==================\n\n- LP 804951:  InterfaceClass instances were unhashable under Python 3.x.\n\n3.6.3 (2011-05-26)\n==================\n\n- LP #570942:  Now correctly compare interfaces  from different modules but\n  with the same names.\n\n3.6.2 (2011-05-17)\n==================\n\n- Moved detailed documentation out-of-line from PyPI page, linking instead to\n  http://docs.zope.org/zope.interface .\n\n- Fixes for small issues when running tests under Python 3.2 using\n  ``zope.testrunner``.\n\n- LP # 675064:  Specify return value type for C optimizations module init\n  under Python 3:  undeclared value caused warnings, and segfaults on some\n  64 bit architectures.\n\n- setup.py now raises RuntimeError if you don't have Distutils installed when\n  running under Python 3.\n\n3.6.1 (2010-05-03)\n==================\n\n- A non-ASCII character in the changelog made 3.6.0 uninstallable on\n  Python 3 systems with another default encoding than UTF-8.\n\n- Fix compiler warnings under GCC 4.3.3.\n\n3.6.0 (2010-04-29)\n==================\n\n- LP #185974:  Clear the cache used by ``Specificaton.get`` inside\n  ``Specification.changed``.  Thanks to Jacob Holm for the patch.\n\n- Add support for Python 3.1. Contributors:\n\n    Lennart Regebro\n    Martin v Loewis\n    Thomas Lotze\n    Wolfgang Schnerring\n\n  The 3.1 support is completely backwards compatible. However, the implements\n  syntax used under Python 2.X does not work under 3.X, since it depends on\n  how metaclasses are implemented and this has changed. Instead it now supports\n  a decorator syntax (also under Python 2.X)::\n\n    class Foo:\n        implements(IFoo)\n        ...\n\n  can now also be written::\n\n    @implementer(IFoo):\n    class Foo:\n        ...\n\n  There are 2to3 fixers available to do this change automatically in the\n  zope.fixers package.\n\n- Python 2.3 is no longer supported.\n\n\n3.5.4 (2009-12-23)\n==================\n\n- Use the standard Python doctest module instead of zope.testing.doctest, which\n  has been deprecated.\n\n\n3.5.3 (2009-12-08)\n==================\n\n- Fix an edge case: make providedBy() work when a class has '__provides__' in\n  its __slots__ (see http://thread.gmane.org/gmane.comp.web.zope.devel/22490)\n\n\n3.5.2 (2009-07-01)\n==================\n\n- BaseAdapterRegistry.unregister, unsubscribe: Remove empty portions of\n  the data structures when something is removed.  This avoids leaving\n  references to global objects (interfaces) that may be slated for\n  removal from the calling application.\n\n\n3.5.1 (2009-03-18)\n==================\n\n- verifyObject: use getattr instead of hasattr to test for object attributes\n  in order to let exceptions other than AttributeError raised by properties\n  propagate to the caller\n\n- Add Sphinx-based documentation building to the package buildout\n  configuration. Use the ``bin/docs`` command after buildout.\n\n- Improve package description a bit. Unify changelog entries formatting.\n\n- Change package's mailing list address to zope-dev at zope.org as\n  zope3-dev at zope.org is now retired.\n\n\n3.5.0 (2008-10-26)\n==================\n\n- Fix declaration of _zope_interface_coptimizations, it's not a top level\n  package.\n\n- Add a DocTestSuite for odd.py module, so their tests are run.\n\n- Allow to bootstrap on Jython.\n\n- Fix https://bugs.launchpad.net/zope3/3.3/+bug/98388: ISpecification\n  was missing a declaration for __iro__.\n\n- Add optional code optimizations support, which allows the building\n  of C code optimizations to fail (Jython).\n\n- Replace `_flatten` with a non-recursive implementation, effectively making\n  it 3x faster.\n\n\n3.4.1 (2007-10-02)\n==================\n\n- Fix a setup bug that prevented installation from source on systems\n  without setuptools.\n\n\n3.4.0 (2007-07-19)\n==================\n\n- Final release for 3.4.0.\n\n\n3.4.0b3 (2007-05-22)\n====================\n\n\n- When checking whether an object is already registered, use identity\n  comparison, to allow adding registering with picky custom comparison methods.\n\n\n3.3.0.1 (2007-01-03)\n====================\n\n- Made a reference to OverflowWarning, which disappeared in Python\n  2.5, conditional.\n\n\n3.3.0 (2007/01/03)\n==================\n\nNew Features\n------------\n\n- Refactor the adapter-lookup algorithim to make it much simpler and faster.\n\n  Also, implement more of the adapter-lookup logic in C, making\n  debugging of application code easier, since there is less\n  infrastructre code to step through.\n\n- Treat objects without interface declarations as if they\n  declared that they provide ``zope.interface.Interface``.\n\n- Add a number of richer new adapter-registration interfaces\n  that provide greater control and introspection.\n\n- Add a new interface decorator to zope.interface that allows the\n  setting of tagged values on an interface at definition time (see\n  zope.interface.taggedValue).\n\nBug Fixes\n---------\n\n- A bug in multi-adapter lookup sometimes caused incorrect adapters to\n  be returned.\n\n\n3.2.0.2 (2006-04-15)\n====================\n\n- Fix packaging bug:  'package_dir' must be a *relative* path.\n\n\n3.2.0.1 (2006-04-14)\n====================\n\n- Packaging change:  suppress inclusion of 'setup.cfg' in 'sdist' builds.\n\n\n3.2.0 (2006-01-05)\n==================\n\n- Corresponds to the version of the zope.interface package shipped as part of\n  the Zope 3.2.0 release.\n\n\n3.1.0 (2005-10-03)\n==================\n\n- Corresponds to the version of the zope.interface package shipped as part of\n  the Zope 3.1.0 release.\n\n- Made attribute resolution order consistent with component lookup order,\n  i.e. new-style class MRO semantics.\n\n- Deprecate 'isImplementedBy' and 'isImplementedByInstancesOf' APIs in\n  favor of 'implementedBy' and 'providedBy'.\n\n\n3.0.1 (2005-07-27)\n==================\n\n- Corresponds to the version of the zope.interface package shipped as part of\n  the Zope X3.0.1 release.\n\n- Fix a bug reported by James Knight, which caused adapter registries\n  to fail occasionally to reflect declaration changes.\n\n\n3.0.0 (2004-11-07)\n==================\n\n- Corresponds to the version of the zope.interface package shipped as part of\n  the Zope X3.0.0 release.\n",
+        "keywords": [
+          "interface",
+          "components",
+          "plugins"
+        ],
+        "home_page": "https://github.com/zopefoundation/zope.interface",
+        "author": "Zope Foundation and Contributors",
+        "author_email": "zope-dev@zope.org",
+        "license": "ZPL 2.1",
+        "license_file": [
+          "LICENSE.txt"
+        ],
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: Zope Public License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Framework :: Zope :: 3",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "setuptools",
+          "Sphinx ; extra == 'docs'",
+          "repoze.sphinx.autointerface ; extra == 'docs'",
+          "sphinx-rtd-theme ; extra == 'docs'",
+          "coverage >=5.0.3 ; extra == 'test'",
+          "zope.event ; extra == 'test'",
+          "zope.testing ; extra == 'test'",
+          "coverage >=5.0.3 ; extra == 'testing'",
+          "zope.event ; extra == 'testing'",
+          "zope.testing ; extra == 'testing'"
+        ],
+        "requires_python": ">=3.7",
+        "provides_extra": [
+          "docs",
+          "test",
+          "testing"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.12.14",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "6.18.57",
+    "platform_system": "Linux",
+    "platform_version": "#1 SMP Tue Oct 20 21:56:04 UTC 2026",
+    "python_full_version": "3.12.14",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.12",
+    "sys_platform": "linux"
+  }
+}

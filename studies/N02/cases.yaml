@@ -1,0 +1,332 @@
+# Frozen, documentation-grounded *constructed* upgrade states.
+# These are NOT observed customer installations or runtime incident labels.
+# "positive" means that a manifest-level contract is lost under an old-key
+# reset-then-reuse rendering and restored by the stated manual migration.
+# "negative" means the chart templates preserve the tested override's effect.
+#
+# Case authors chose examples from official release migration documentation.
+# Consequently this corpus is exploratory and unsuitable as a held-out test
+# of discovery novelty versus an informed documentation reader.
+
+families:
+  argo:
+    project: argoproj/argo-helm
+    from: argo-cd-5.55.0.tgz
+    to: argo-cd-6.0.0.tgz
+    documentation: https://github.com/argoproj/argo-helm/blob/main/charts/argo-cd/README.md
+    release_note: "6.0.0 explicitly documents server.config, server.rbacConfig, server.ingress hosts; configEnabled loss is template-inferred"
+  tempo:
+    project: grafana/helm-charts
+    from: tempo-distributed-1.32.0.tgz
+    to: tempo-distributed-1.33.0.tgz
+    documentation: https://github.com/grafana/helm-charts/blob/main/charts/tempo-distributed/README.md
+    release_note: "from <1.33.0 global_overrides -> overrides; overrides -> per_tenant_overrides"
+  prometheus:
+    project: prometheus-community/helm-charts
+    from: prometheus-27.0.0.tgz
+    to: prometheus-28.0.0.tgz
+    documentation: https://github.com/prometheus-community/helm-charts/blob/main/charts/prometheus/README.md
+    release_note: "28.0 moves default scrape_configs array to scrapeConfigs map; legacy array requires clearing map"
+  ksm:
+    project: prometheus-community/helm-charts
+    from: kube-state-metrics-2.13.2.tgz
+    to: kube-state-metrics-3.0.0.tgz
+    documentation: https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-state-metrics/README.md
+    release_note: "application CLI renamed collectors to resources, but chart values interface is compatible"
+  certmanager:
+    project: cert-manager/cert-manager
+    from: cert-manager-v1.15.3.tgz
+    to: cert-manager-v1.16.0.tgz
+    documentation: https://cert-manager.io/docs/releases/upgrading/upgrading-1.15-1.16/
+    release_note: "Helm reuse-values may lack new expected defaults; official reset-then-reuse recommended"
+
+cases:
+  - id: A01_url_legacy
+    family: argo
+    label: positive
+    documentation_covered: true
+    documented_actionable_migration: true
+    intent: Preserve Argo CD external URL
+    old_user:
+      server:
+        config:
+          url: https://argo.example.invalid
+    migrated_user:
+      configs:
+        cm:
+          url: https://argo.example.invalid
+    contract: {type: argo_url, expected: https://argo.example.invalid}
+
+  - id: A02_rbac_legacy
+    family: argo
+    label: positive
+    documentation_covered: true
+    documented_actionable_migration: true
+    intent: Preserve explicitly set default RBAC role
+    old_user:
+      server:
+        rbacConfig:
+          policy.default: role:admin
+    migrated_user:
+      configs:
+        rbac:
+          policy.default: role:admin
+    contract: {type: argo_rbac_default, expected: role:admin}
+
+  - id: A03_ingress_hosts
+    family: argo
+    label: positive
+    documentation_covered: true
+    documented_actionable_migration: true
+    intent: Keep server ingress hostname
+    old_user:
+      server:
+        ingress:
+          enabled: true
+          hosts: [argo.example.invalid]
+    migrated_user:
+      server:
+        ingress:
+          enabled: true
+          hostname: argo.example.invalid
+    contract: {type: argo_ingress_host, expected: argo.example.invalid}
+
+  - id: A04_config_enabled
+    family: argo
+    label: positive
+    documentation_covered: false
+    intent: Continue managing argocd-cm externally
+    old_user:
+      server:
+        configEnabled: false
+    migrated_user:
+      configs:
+        cm:
+          create: false
+    contract: {type: argo_cm_exists, expected: false}
+
+  - id: A05_configs_cm_current
+    family: argo
+    label: negative
+    documentation_covered: true
+    old_user:
+      configs:
+        cm:
+          url: https://current.example.invalid
+
+  - id: A06_server_service_type
+    family: argo
+    label: negative
+    documentation_covered: true
+    old_user:
+      server:
+        service:
+          type: NodePort
+
+  - id: A07_server_replicas
+    family: argo
+    label: negative
+    documentation_covered: true
+    old_user:
+      server:
+        replicas: 2
+
+  - id: A08_rbac_current
+    family: argo
+    label: negative
+    documentation_covered: true
+    old_user:
+      configs:
+        rbac:
+          policy.default: role:readonly
+
+  - id: A09_unused_key
+    family: argo
+    label: negative
+    documentation_covered: false
+    old_user:
+      server:
+        n02_unused_sentinel: untouched
+
+  - id: T01_global_overrides
+    family: tempo
+    label: positive
+    documentation_covered: true
+    documented_actionable_migration: true
+    intent: Keep global service graph metric generator processor
+    old_user:
+      global_overrides:
+        defaults:
+          metrics_generator:
+            processors: [service-graphs]
+    migrated_user:
+      overrides:
+        defaults:
+          metrics_generator:
+            processors: [service-graphs]
+    contract: {type: tempo_global_processors, expected: [service-graphs]}
+
+  - id: T02_tenant_overrides
+    family: tempo
+    label: positive
+    documentation_covered: true
+    documented_actionable_migration: true
+    intent: Keep tenant-specific runtime override in runtime config, not static tempo.yaml
+    old_user:
+      overrides:
+        tenant_n02:
+          metrics_generator:
+            processors: [span-metrics]
+    migrated_user:
+      per_tenant_overrides:
+        tenant_n02:
+          metrics_generator:
+            processors: [span-metrics]
+    contract: {type: tempo_tenant_processors, expected: [span-metrics]}
+
+  - id: T03_memcached_enabled
+    family: tempo
+    label: negative
+    documentation_covered: true
+    old_user:
+      memcached:
+        enabled: false
+
+  - id: T04_ingester_replicas
+    family: tempo
+    label: negative
+    documentation_covered: true
+    old_user:
+      ingester:
+        replicas: 2
+
+  - id: T05_distributor_replicas
+    family: tempo
+    label: negative
+    documentation_covered: true
+    old_user:
+      distributor:
+        replicas: 2
+
+  - id: T06_storage_backend
+    family: tempo
+    label: negative
+    documentation_covered: true
+    old_user:
+      multitenancyEnabled: true
+
+  - id: T07_unused_key
+    family: tempo
+    label: negative
+    documentation_covered: false
+    old_user: {n02_unused_sentinel: untouched}
+
+  - id: P01_legacy_scrape_map
+    family: prometheus
+    label: positive
+    documentation_covered: true
+    documented_actionable_migration: true
+    intent: Preserve a sole custom scrape job without silently enabling all new defaults
+    old_user:
+      serverFiles:
+        prometheus.yml:
+          scrape_configs:
+            - job_name: n02-contract
+              static_configs:
+                - targets: [127.0.0.1:9090]
+    migrated_user:
+      scrapeConfigs: null
+      serverFiles:
+        prometheus.yml:
+          scrape_configs:
+            - job_name: n02-contract
+              static_configs:
+                - targets: [127.0.0.1:9090]
+    contract: {type: prometheus_job_names, expected: [n02-contract]}
+
+  - id: P02_scrape_interval
+    family: prometheus
+    label: negative
+    documentation_covered: true
+    old_user:
+      server:
+        global:
+          scrape_interval: 45s
+
+  - id: P03_server_replicas
+    family: prometheus
+    label: negative
+    documentation_covered: true
+    old_user:
+      server:
+        replicaCount: 2
+
+  - id: P04_no_persistence
+    family: prometheus
+    label: negative
+    documentation_covered: true
+    old_user:
+      server:
+        persistentVolume:
+          enabled: false
+
+  - id: P05_alertmanager_disabled
+    family: prometheus
+    label: negative
+    documentation_covered: true
+    old_user:
+      alertmanager:
+        enabled: false
+
+  - id: K01_pods_collector
+    family: ksm
+    label: negative
+    documentation_covered: true
+    old_user:
+      collectors:
+        pods: false
+
+  - id: K02_deployments_collector
+    family: ksm
+    label: negative
+    documentation_covered: true
+    old_user:
+      collectors:
+        deployments: false
+
+  - id: K03_container_requests
+    family: ksm
+    label: negative
+    documentation_covered: true
+    old_user:
+      resources:
+        requests:
+          cpu: 100m
+
+  - id: K04_namespace
+    family: ksm
+    label: positive
+    documentation_covered: true
+    documented_actionable_migration: true
+    intent: Preserve restricting kube-state-metrics to n02-tests namespace
+    old_user:
+      namespace: n02-tests
+    migrated_user:
+      namespaces: [n02-tests]
+    contract: {type: ksm_namespace_flag, expected: "--namespaces=n02-tests"}
+
+  - id: C01_webhook_replicas
+    family: certmanager
+    label: negative
+    documentation_covered: true
+    old_user:
+      webhook:
+        replicaCount: 2
+
+  - id: C02_crds_enabled
+    family: certmanager
+    label: negative
+    documentation_covered: true
+    old_user:
+      crds:
+        enabled: true

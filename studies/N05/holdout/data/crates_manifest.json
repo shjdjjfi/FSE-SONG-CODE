@@ -1,0 +1,713 @@
+[
+  {
+    "crate": "tower-http",
+    "version": "0.6.6",
+    "archive_url": "https://static.crates.io/crates/tower-http/tower-http-0.6.6.crate",
+    "archive_sha256": "adc82fd73de2a9722ac5da747f12383d2bfdb93591ee6c58486e0097890f05f2",
+    "size": 133515,
+    "edition": "2018",
+    "rust_version": "1.64",
+    "license": "MIT",
+    "license_file": null,
+    "repository": "https://github.com/tower-rs/tower-http",
+    "docs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "default_features": [],
+    "feature_names": [
+      "add-extension",
+      "auth",
+      "catch-panic",
+      "compression-br",
+      "compression-deflate",
+      "compression-full",
+      "compression-gzip",
+      "compression-zstd",
+      "cors",
+      "decompression-br",
+      "decompression-deflate",
+      "decompression-full",
+      "decompression-gzip",
+      "decompression-zstd",
+      "default",
+      "follow-redirect",
+      "fs",
+      "full",
+      "limit",
+      "map-request-body",
+      "map-response-body",
+      "metrics",
+      "normalize-path",
+      "propagate-header",
+      "redirect",
+      "request-id",
+      "sensitive-headers",
+      "set-header",
+      "set-status",
+      "timeout",
+      "trace",
+      "util",
+      "validate-request"
+    ],
+    "feature_map": {
+      "default": [],
+      "full": [
+        "add-extension",
+        "auth",
+        "catch-panic",
+        "compression-full",
+        "cors",
+        "decompression-full",
+        "follow-redirect",
+        "fs",
+        "limit",
+        "map-request-body",
+        "map-response-body",
+        "metrics",
+        "normalize-path",
+        "propagate-header",
+        "redirect",
+        "request-id",
+        "sensitive-headers",
+        "set-header",
+        "set-status",
+        "timeout",
+        "trace",
+        "util",
+        "validate-request"
+      ],
+      "add-extension": [],
+      "auth": [
+        "base64",
+        "validate-request"
+      ],
+      "catch-panic": [
+        "tracing",
+        "futures-util/std",
+        "dep:http-body",
+        "dep:http-body-util"
+      ],
+      "cors": [],
+      "follow-redirect": [
+        "futures-util",
+        "dep:http-body",
+        "iri-string",
+        "tower/util"
+      ],
+      "fs": [
+        "futures-core",
+        "futures-util",
+        "dep:http-body",
+        "dep:http-body-util",
+        "tokio/fs",
+        "tokio-util/io",
+        "tokio/io-util",
+        "dep:http-range-header",
+        "mime_guess",
+        "mime",
+        "percent-encoding",
+        "httpdate",
+        "set-status",
+        "futures-util/alloc",
+        "tracing"
+      ],
+      "limit": [
+        "dep:http-body",
+        "dep:http-body-util"
+      ],
+      "map-request-body": [],
+      "map-response-body": [],
+      "metrics": [
+        "dep:http-body",
+        "tokio/time"
+      ],
+      "normalize-path": [],
+      "propagate-header": [],
+      "redirect": [],
+      "request-id": [
+        "uuid"
+      ],
+      "sensitive-headers": [],
+      "set-header": [],
+      "set-status": [],
+      "timeout": [
+        "dep:http-body",
+        "tokio/time"
+      ],
+      "trace": [
+        "dep:http-body",
+        "tracing"
+      ],
+      "util": [
+        "tower"
+      ],
+      "validate-request": [
+        "mime"
+      ],
+      "compression-br": [
+        "async-compression/brotli",
+        "futures-core",
+        "dep:http-body",
+        "tokio-util",
+        "tokio"
+      ],
+      "compression-deflate": [
+        "async-compression/zlib",
+        "futures-core",
+        "dep:http-body",
+        "tokio-util",
+        "tokio"
+      ],
+      "compression-full": [
+        "compression-br",
+        "compression-deflate",
+        "compression-gzip",
+        "compression-zstd"
+      ],
+      "compression-gzip": [
+        "async-compression/gzip",
+        "futures-core",
+        "dep:http-body",
+        "tokio-util",
+        "tokio"
+      ],
+      "compression-zstd": [
+        "async-compression/zstd",
+        "futures-core",
+        "dep:http-body",
+        "tokio-util",
+        "tokio"
+      ],
+      "decompression-br": [
+        "async-compression/brotli",
+        "futures-core",
+        "dep:http-body",
+        "dep:http-body-util",
+        "tokio-util",
+        "tokio"
+      ],
+      "decompression-deflate": [
+        "async-compression/zlib",
+        "futures-core",
+        "dep:http-body",
+        "dep:http-body-util",
+        "tokio-util",
+        "tokio"
+      ],
+      "decompression-full": [
+        "decompression-br",
+        "decompression-deflate",
+        "decompression-gzip",
+        "decompression-zstd"
+      ],
+      "decompression-gzip": [
+        "async-compression/gzip",
+        "futures-core",
+        "dep:http-body",
+        "dep:http-body-util",
+        "tokio-util",
+        "tokio"
+      ],
+      "decompression-zstd": [
+        "async-compression/zstd",
+        "futures-core",
+        "dep:http-body",
+        "dep:http-body-util",
+        "tokio-util",
+        "tokio"
+      ]
+    },
+    "n_snippets": 74,
+    "n_explicit": 0
+  },
+  {
+    "crate": "tower",
+    "version": "0.5.2",
+    "archive_url": "https://static.crates.io/crates/tower/tower-0.5.2.crate",
+    "archive_sha256": "d039ad9159c98b70ecfd540b2573b97f7f52c3e8d9f8ad57a24b916a536975f9",
+    "size": 109417,
+    "edition": "2018",
+    "rust_version": "1.64.0",
+    "license": "MIT",
+    "license_file": null,
+    "repository": "https://github.com/tower-rs/tower",
+    "docs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "default_features": [],
+    "feature_names": [
+      "__common",
+      "balance",
+      "buffer",
+      "discover",
+      "filter",
+      "full",
+      "hedge",
+      "limit",
+      "load",
+      "load-shed",
+      "log",
+      "make",
+      "ready-cache",
+      "reconnect",
+      "retry",
+      "spawn-ready",
+      "steer",
+      "timeout",
+      "util"
+    ],
+    "feature_map": {
+      "__common": [
+        "futures-core",
+        "pin-project-lite"
+      ],
+      "full": [
+        "balance",
+        "buffer",
+        "discover",
+        "filter",
+        "hedge",
+        "limit",
+        "load",
+        "load-shed",
+        "make",
+        "ready-cache",
+        "reconnect",
+        "retry",
+        "spawn-ready",
+        "steer",
+        "timeout",
+        "util"
+      ],
+      "log": [
+        "tracing/log"
+      ],
+      "balance": [
+        "discover",
+        "load",
+        "ready-cache",
+        "make",
+        "slab",
+        "util"
+      ],
+      "buffer": [
+        "__common",
+        "tokio/sync",
+        "tokio/rt",
+        "tokio-util",
+        "tracing"
+      ],
+      "discover": [
+        "__common"
+      ],
+      "filter": [
+        "__common",
+        "futures-util"
+      ],
+      "hedge": [
+        "util",
+        "filter",
+        "futures-util",
+        "hdrhistogram",
+        "tokio/time",
+        "tracing"
+      ],
+      "limit": [
+        "__common",
+        "tokio/time",
+        "tokio/sync",
+        "tokio-util",
+        "tracing"
+      ],
+      "load": [
+        "__common",
+        "tokio/time",
+        "tracing"
+      ],
+      "load-shed": [
+        "__common"
+      ],
+      "make": [
+        "futures-util",
+        "pin-project-lite",
+        "tokio/io-std"
+      ],
+      "ready-cache": [
+        "futures-core",
+        "futures-util",
+        "indexmap",
+        "tokio/sync",
+        "tracing",
+        "pin-project-lite"
+      ],
+      "reconnect": [
+        "make",
+        "tokio/io-std",
+        "tracing"
+      ],
+      "retry": [
+        "__common",
+        "tokio/time",
+        "util"
+      ],
+      "spawn-ready": [
+        "__common",
+        "futures-util",
+        "tokio/sync",
+        "tokio/rt",
+        "util",
+        "tracing"
+      ],
+      "steer": [],
+      "timeout": [
+        "pin-project-lite",
+        "tokio/time"
+      ],
+      "util": [
+        "__common",
+        "futures-util",
+        "pin-project-lite",
+        "sync_wrapper"
+      ]
+    },
+    "n_snippets": 46,
+    "n_explicit": 1
+  },
+  {
+    "crate": "tokio-stream",
+    "version": "0.1.17",
+    "archive_url": "https://static.crates.io/crates/tokio-stream/tokio-stream-0.1.17.crate",
+    "archive_sha256": "eca58d7bba4a75707817a2c44174253f9236b2d5fbd055602e9d5c07c139a047",
+    "size": 38477,
+    "edition": "2021",
+    "rust_version": "1.70",
+    "license": "MIT",
+    "license_file": null,
+    "repository": "https://github.com/tokio-rs/tokio",
+    "docs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ],
+      "rustc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "default_features": [
+      "time"
+    ],
+    "feature_names": [
+      "default",
+      "fs",
+      "full",
+      "io-util",
+      "net",
+      "signal",
+      "sync",
+      "time"
+    ],
+    "feature_map": {
+      "default": [
+        "time"
+      ],
+      "full": [
+        "time",
+        "net",
+        "io-util",
+        "fs",
+        "sync",
+        "signal"
+      ],
+      "time": [
+        "tokio/time"
+      ],
+      "net": [
+        "tokio/net"
+      ],
+      "io-util": [
+        "tokio/io-util"
+      ],
+      "fs": [
+        "tokio/fs"
+      ],
+      "sync": [
+        "tokio/sync",
+        "tokio-util"
+      ],
+      "signal": [
+        "tokio/signal"
+      ]
+    },
+    "n_snippets": 53,
+    "n_explicit": 0
+  },
+  {
+    "crate": "bytes",
+    "version": "1.10.1",
+    "archive_url": "https://static.crates.io/crates/bytes/bytes-1.10.1.crate",
+    "archive_sha256": "d71b6127be86fdcfddb610f7182ac57211d4b18a3e9c82eb2d17662f2227ad6a",
+    "size": 76779,
+    "edition": "2018",
+    "rust_version": "1.39",
+    "license": "MIT",
+    "license_file": null,
+    "repository": "https://github.com/tokio-rs/bytes",
+    "docs_metadata": {
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "default_features": [
+      "std"
+    ],
+    "feature_names": [
+      "default",
+      "std"
+    ],
+    "feature_map": {
+      "default": [
+        "std"
+      ],
+      "std": []
+    },
+    "n_snippets": 242,
+    "n_explicit": 12
+  },
+  {
+    "crate": "dashmap",
+    "version": "6.1.0",
+    "archive_url": "https://static.crates.io/crates/dashmap/dashmap-6.1.0.crate",
+    "archive_sha256": "5041cc499144891f3790297212f32a74fb938e5136a14943f338ef9e0ae276cf",
+    "size": 24828,
+    "edition": "2018",
+    "rust_version": "1.65",
+    "license": "MIT",
+    "license_file": null,
+    "repository": "https://github.com/xacrimon/dashmap",
+    "docs_metadata": {
+      "features": [
+        "rayon",
+        "raw-api",
+        "serde"
+      ]
+    },
+    "default_features": [],
+    "feature_names": [
+      "inline",
+      "raw-api",
+      "typesize"
+    ],
+    "feature_map": {
+      "raw-api": [],
+      "typesize": [
+        "dep:typesize"
+      ],
+      "inline": [
+        "hashbrown/inline-more"
+      ]
+    },
+    "n_snippets": 54,
+    "n_explicit": 8
+  },
+  {
+    "crate": "miette",
+    "version": "7.6.0",
+    "archive_url": "https://static.crates.io/crates/miette/miette-7.6.0.crate",
+    "archive_sha256": "5f98efec8807c63c752b5bd61f862c165c115b0a35685bdcfd9238c7aeb592b7",
+    "size": 114499,
+    "edition": "2018",
+    "rust_version": "1.70.0",
+    "license": "Apache-2.0",
+    "license_file": null,
+    "repository": "https://github.com/zkat/miette",
+    "docs_metadata": {
+      "all-features": true
+    },
+    "default_features": [
+      "derive"
+    ],
+    "feature_names": [
+      "default",
+      "derive",
+      "fancy",
+      "fancy-base",
+      "fancy-no-backtrace",
+      "fancy-no-syscall",
+      "no-format-args-capture",
+      "syntect-highlighter"
+    ],
+    "feature_map": {
+      "default": [
+        "derive"
+      ],
+      "derive": [
+        "dep:miette-derive"
+      ],
+      "no-format-args-capture": [],
+      "fancy-base": [
+        "dep:owo-colors",
+        "dep:textwrap"
+      ],
+      "fancy-no-syscall": [
+        "fancy-base"
+      ],
+      "fancy-no-backtrace": [
+        "fancy-base",
+        "dep:terminal_size",
+        "dep:supports-hyperlinks",
+        "dep:supports-color",
+        "dep:supports-unicode"
+      ],
+      "fancy": [
+        "fancy-no-backtrace",
+        "dep:backtrace",
+        "dep:backtrace-ext"
+      ],
+      "syntect-highlighter": [
+        "fancy-no-backtrace",
+        "dep:syntect"
+      ]
+    },
+    "n_snippets": 63,
+    "n_explicit": 12
+  },
+  {
+    "crate": "serde_json",
+    "version": "1.0.140",
+    "archive_url": "https://static.crates.io/crates/serde_json/serde_json-1.0.140.crate",
+    "archive_sha256": "20068b6e96dc6c9bd23e01df8827e6c7e1f2fddd43c21810382803c136b99373",
+    "size": 154852,
+    "edition": "2021",
+    "rust_version": "1.56",
+    "license": "MIT OR Apache-2.0",
+    "license_file": null,
+    "repository": "https://github.com/serde-rs/json",
+    "docs_metadata": {
+      "features": [
+        "preserve_order",
+        "raw_value",
+        "unbounded_depth"
+      ],
+      "targets": [
+        "x86_64-unknown-linux-gnu"
+      ],
+      "rustdoc-args": [
+        "--generate-link-to-definition",
+        "--extern-html-root-url=core=https://doc.rust-lang.org",
+        "--extern-html-root-url=alloc=https://doc.rust-lang.org",
+        "--extern-html-root-url=std=https://doc.rust-lang.org"
+      ]
+    },
+    "default_features": [
+      "std"
+    ],
+    "feature_names": [
+      "alloc",
+      "arbitrary_precision",
+      "default",
+      "float_roundtrip",
+      "preserve_order",
+      "raw_value",
+      "std",
+      "unbounded_depth"
+    ],
+    "feature_map": {
+      "default": [
+        "std"
+      ],
+      "std": [
+        "memchr/std",
+        "serde/std"
+      ],
+      "alloc": [
+        "serde/alloc"
+      ],
+      "preserve_order": [
+        "indexmap",
+        "std"
+      ],
+      "float_roundtrip": [],
+      "arbitrary_precision": [],
+      "raw_value": [],
+      "unbounded_depth": []
+    },
+    "n_snippets": 110,
+    "n_explicit": 6
+  },
+  {
+    "crate": "hashbrown",
+    "version": "0.15.4",
+    "archive_url": "https://static.crates.io/crates/hashbrown/hashbrown-0.15.4.crate",
+    "archive_sha256": "5971ac85611da7067dbfcabef3c70ebb5606018acd9e2a3903a0da507521e0d5",
+    "size": 140447,
+    "edition": "2021",
+    "rust_version": "1.65.0",
+    "license": "MIT OR Apache-2.0",
+    "license_file": null,
+    "repository": "https://github.com/rust-lang/hashbrown",
+    "docs_metadata": {
+      "features": [
+        "nightly",
+        "rayon",
+        "serde",
+        "raw-entry"
+      ],
+      "rustdoc-args": [
+        "--generate-link-to-definition"
+      ]
+    },
+    "default_features": [
+      "default-hasher",
+      "inline-more",
+      "allocator-api2",
+      "equivalent",
+      "raw-entry"
+    ],
+    "feature_names": [
+      "default",
+      "default-hasher",
+      "inline-more",
+      "nightly",
+      "raw-entry",
+      "rustc-dep-of-std",
+      "rustc-internal-api"
+    ],
+    "feature_map": {
+      "default": [
+        "default-hasher",
+        "inline-more",
+        "allocator-api2",
+        "equivalent",
+        "raw-entry"
+      ],
+      "nightly": [
+        "bumpalo/allocator_api"
+      ],
+      "rustc-internal-api": [],
+      "rustc-dep-of-std": [
+        "nightly",
+        "core",
+        "alloc",
+        "rustc-internal-api"
+      ],
+      "raw-entry": [],
+      "default-hasher": [
+        "dep:foldhash"
+      ],
+      "inline-more": []
+    },
+    "n_snippets": 267,
+    "n_explicit": 0
+  }
+]

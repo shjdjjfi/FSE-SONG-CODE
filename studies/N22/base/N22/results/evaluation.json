@@ -1,0 +1,308 @@
+{
+  "scope": {
+    "unit": "controlled replay scenario; NOT an independent industrial incident",
+    "projects_total": 3,
+    "projects_with_same_schema_ledger_semantic_failures": 2,
+    "preregistered_independent_validation": false,
+    "strict_holdout": false,
+    "source_django_direct_failure_not_scored_as_silent_success": true,
+    "empty_json_none_semantics_excluded_as_undecidable": true,
+    "contract_alert_is_not_better_than_full_correct_application_tests": true,
+    "not_a_random_industrial_sample": true
+  },
+  "cases": [
+    {
+      "id": "openwebui:zero_users",
+      "project": "openwebui",
+      "label": 0,
+      "label_scope": "observed_issue_mechanism_or_legitimate_control",
+      "schema_and_ledger_equal": true,
+      "simple_schema_ledger_alert": false,
+      "schema_ledger_rowcount_alert": false,
+      "untyped_json_alert": false,
+      "raw_snapshot_diff_alert": false,
+      "contract_alert": false,
+      "source_file": "openwebui/zero_users__upstream.sqlite",
+      "migrator_success": true
+    },
+    {
+      "id": "openwebui:one_valid",
+      "project": "openwebui",
+      "label": 1,
+      "label_scope": "observed_issue_mechanism_or_legitimate_control",
+      "schema_and_ledger_equal": true,
+      "simple_schema_ledger_alert": false,
+      "schema_ledger_rowcount_alert": false,
+      "untyped_json_alert": false,
+      "raw_snapshot_diff_alert": true,
+      "contract_alert": true,
+      "source_file": "openwebui/one_valid__upstream.sqlite",
+      "migrator_success": true
+    },
+    {
+      "id": "openwebui:one_custom",
+      "project": "openwebui",
+      "label": 1,
+      "label_scope": "observed_issue_mechanism_or_legitimate_control",
+      "schema_and_ledger_equal": true,
+      "simple_schema_ledger_alert": false,
+      "schema_ledger_rowcount_alert": false,
+      "untyped_json_alert": false,
+      "raw_snapshot_diff_alert": true,
+      "contract_alert": true,
+      "source_file": "openwebui/one_custom__upstream.sqlite",
+      "migrator_success": true
+    },
+    {
+      "id": "openwebui:one_null",
+      "project": "openwebui",
+      "label": 0,
+      "label_scope": "observed_issue_mechanism_or_legitimate_control",
+      "schema_and_ledger_equal": true,
+      "simple_schema_ledger_alert": false,
+      "schema_ledger_rowcount_alert": false,
+      "untyped_json_alert": false,
+      "raw_snapshot_diff_alert": false,
+      "contract_alert": false,
+      "source_file": "openwebui/one_null__upstream.sqlite",
+      "migrator_success": true
+    },
+    {
+      "id": "openwebui:one_empty",
+      "project": "openwebui",
+      "label": null,
+      "label_scope": "ambiguous_not_scored",
+      "schema_and_ledger_equal": true,
+      "simple_schema_ledger_alert": false,
+      "schema_ledger_rowcount_alert": false,
+      "untyped_json_alert": false,
+      "raw_snapshot_diff_alert": true,
+      "contract_alert": false,
+      "source_file": "openwebui/one_empty__upstream.sqlite",
+      "migrator_success": true
+    },
+    {
+      "id": "drizzle:cascade_three",
+      "project": "drizzle",
+      "label": 1,
+      "label_scope": "observed_issue_mechanism_or_legitimate_control",
+      "schema_and_ledger_equal": true,
+      "simple_schema_ledger_alert": false,
+      "schema_ledger_rowcount_alert": true,
+      "untyped_json_alert": false,
+      "raw_snapshot_diff_alert": true,
+      "contract_alert": true,
+      "source_file": "drizzle/cascade_three__upstream.sqlite",
+      "migrator_success": true
+    },
+    {
+      "id": "drizzle:cascade_one",
+      "project": "drizzle",
+      "label": 1,
+      "label_scope": "observed_issue_mechanism_or_legitimate_control",
+      "schema_and_ledger_equal": true,
+      "simple_schema_ledger_alert": false,
+      "schema_ledger_rowcount_alert": true,
+      "untyped_json_alert": false,
+      "raw_snapshot_diff_alert": true,
+      "contract_alert": true,
+      "source_file": "drizzle/cascade_one__upstream.sqlite",
+      "migrator_success": true
+    },
+    {
+      "id": "drizzle:cascade_user_edit",
+      "project": "drizzle",
+      "label": 1,
+      "label_scope": "observed_issue_mechanism_or_legitimate_control",
+      "schema_and_ledger_equal": true,
+      "simple_schema_ledger_alert": false,
+      "schema_ledger_rowcount_alert": true,
+      "untyped_json_alert": false,
+      "raw_snapshot_diff_alert": true,
+      "contract_alert": true,
+      "source_file": "drizzle/cascade_user_edit__upstream.sqlite",
+      "migrator_success": true
+    },
+    {
+      "id": "drizzle:set_null_three",
+      "project": "drizzle",
+      "label": 1,
+      "label_scope": "observed_issue_mechanism_or_legitimate_control",
+      "schema_and_ledger_equal": true,
+      "simple_schema_ledger_alert": false,
+      "schema_ledger_rowcount_alert": false,
+      "untyped_json_alert": false,
+      "raw_snapshot_diff_alert": true,
+      "contract_alert": true,
+      "source_file": "drizzle/set_null_three__upstream.sqlite",
+      "migrator_success": true
+    },
+    {
+      "id": "drizzle:cascade_zero",
+      "project": "drizzle",
+      "label": 0,
+      "label_scope": "observed_issue_mechanism_or_legitimate_control",
+      "schema_and_ledger_equal": true,
+      "simple_schema_ledger_alert": false,
+      "schema_ledger_rowcount_alert": false,
+      "untyped_json_alert": false,
+      "raw_snapshot_diff_alert": false,
+      "contract_alert": false,
+      "source_file": "drizzle/cascade_zero__upstream.sqlite",
+      "migrator_success": true
+    },
+    {
+      "id": "django:sites_staged",
+      "project": "django",
+      "label": 0,
+      "label_scope": "observed_issue_mechanism_or_legitimate_control",
+      "schema_and_ledger_equal": true,
+      "simple_schema_ledger_alert": false,
+      "schema_ledger_rowcount_alert": false,
+      "untyped_json_alert": false,
+      "raw_snapshot_diff_alert": false,
+      "contract_alert": false,
+      "source_file": "django/django-sites-staged.sqlite",
+      "migrator_success": true
+    },
+    {
+      "id": "django:sites_staged_user",
+      "project": "django",
+      "label": 0,
+      "label_scope": "observed_issue_mechanism_or_legitimate_control",
+      "schema_and_ledger_equal": true,
+      "simple_schema_ledger_alert": false,
+      "schema_ledger_rowcount_alert": false,
+      "untyped_json_alert": false,
+      "raw_snapshot_diff_alert": true,
+      "contract_alert": false,
+      "source_file": "django/django-sites-staged-user-row.sqlite",
+      "migrator_success": true
+    },
+    {
+      "id": "django:petter_checkpoint",
+      "project": "django",
+      "label": 0,
+      "label_scope": "observed_issue_mechanism_or_legitimate_control",
+      "schema_and_ledger_equal": true,
+      "simple_schema_ledger_alert": false,
+      "schema_ledger_rowcount_alert": true,
+      "untyped_json_alert": false,
+      "raw_snapshot_diff_alert": true,
+      "contract_alert": false,
+      "source_file": "django/petter-checkpoint_direct.sqlite",
+      "migrator_success": true
+    }
+  ],
+  "methods": [
+    {
+      "method": "simple_schema_ledger_alert",
+      "tp": 0,
+      "fn": 6,
+      "fp": 0,
+      "tn": 6,
+      "recall": 0.0,
+      "false_positive_rate": 0.0,
+      "wilson95_recall_descriptive": [
+        0.0,
+        0.3903
+      ],
+      "wilson95_fpr_descriptive": [
+        0.0,
+        0.3903
+      ]
+    },
+    {
+      "method": "schema_ledger_rowcount_alert",
+      "tp": 3,
+      "fn": 3,
+      "fp": 1,
+      "tn": 5,
+      "recall": 0.5,
+      "false_positive_rate": 0.1667,
+      "wilson95_recall_descriptive": [
+        0.1876,
+        0.8124
+      ],
+      "wilson95_fpr_descriptive": [
+        0.0301,
+        0.5635
+      ]
+    },
+    {
+      "method": "untyped_json_alert",
+      "tp": 0,
+      "fn": 6,
+      "fp": 0,
+      "tn": 6,
+      "recall": 0.0,
+      "false_positive_rate": 0.0,
+      "wilson95_recall_descriptive": [
+        0.0,
+        0.3903
+      ],
+      "wilson95_fpr_descriptive": [
+        0.0,
+        0.3903
+      ]
+    },
+    {
+      "method": "raw_snapshot_diff_alert",
+      "tp": 6,
+      "fn": 0,
+      "fp": 2,
+      "tn": 4,
+      "recall": 1.0,
+      "false_positive_rate": 0.3333,
+      "wilson95_recall_descriptive": [
+        0.6097,
+        1
+      ],
+      "wilson95_fpr_descriptive": [
+        0.0968,
+        0.7
+      ]
+    },
+    {
+      "method": "contract_alert",
+      "tp": 6,
+      "fn": 0,
+      "fp": 0,
+      "tn": 6,
+      "recall": 1.0,
+      "false_positive_rate": 0.0,
+      "wilson95_recall_descriptive": [
+        0.6097,
+        1
+      ],
+      "wilson95_fpr_descriptive": [
+        0.0,
+        0.3903
+      ]
+    }
+  ],
+  "read_query_benchmark": {
+    "openwebui_one_valid": {
+      "iterations": 200,
+      "median_ms": 0.00478,
+      "p95_ms": 0.00506,
+      "max_ms": 0.02881
+    },
+    "drizzle_set_null": {
+      "iterations": 200,
+      "median_ms": 0.0055,
+      "p95_ms": 0.00675,
+      "max_ms": 0.09127
+    },
+    "django_user_site": {
+      "iterations": 200,
+      "median_ms": 0.00471,
+      "p95_ms": 0.0049,
+      "max_ms": 0.03749
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "sqlite": "3.53.1"
+  }
+}

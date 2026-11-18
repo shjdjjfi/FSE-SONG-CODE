@@ -1,0 +1,24 @@
+{
+  "key": "9db54e681ea31ed331",
+  "args": {
+    "crate": "time",
+    "version": "0.3.41",
+    "id": "869b73b34d6f7326",
+    "profile": "candidate",
+    "features": [
+      "local-offset",
+      "parsing"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 1.1285,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "59eddb0f63c425fad17b9af2abf72c5aed4feafa9bf99bade096571afce35bbf",
+  "manifest_sha256": "64dbb88000ef9d6f6c6e0c1ee5f7e1792b9b407fed5a99f8ddc026b56e2628c5",
+  "log_file": "prospective/results/check_logs/9db54e681ea31ed331.txt.gz"
+}

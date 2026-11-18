@@ -1,0 +1,21 @@
+{
+  "key": "9881a8f6ff411f2ca0",
+  "args": {
+    "crate": "dashmap",
+    "version": "6.1.0",
+    "id": "2cf6f63a284cdf09",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0534,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "46285ed07dda0957142ee099fa95f04a107a6a0e34c38d25a5cd9d458472407b",
+  "manifest_sha256": "5b4992df38b4031e12cb6d4aa02345c30fc1079b4c4123da5c2f7a67995f7ae5",
+  "log_file": "holdout/results/check_logs/9881a8f6ff411f2ca0.txt.gz"
+}

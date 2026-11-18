@@ -1,0 +1,85 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 2,
+  "bytes": 40814,
+  "control_flow_or_callback_lines": 4,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "-",
+      "code": "\"github.com/grafana/grafana/pkg/services/ngalert/api/tooling/definitions\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "DeleteReceiver(ctx context.Context, name string, provenance definitions.Provenance, version string, orgID int64, user identity.Requester) error",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "+",
+      "code": "DeleteReceiver(ctx context.Context, name string, provenance ngmodels.Provenance, version string, orgID int64, user identity.Requester) error",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "//Names:   ctx.QueryStrings(\"names\"), // TODO: Query params.",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "//Limit:   ctx.QueryInt(\"limit\"),",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "//Offset:  ctx.QueryInt(\"offset\"),",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "+",
+      "code": "// Names:   ctx.QueryStrings(\"names\"), // TODO: Query params.",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "+",
+      "code": "// Limit:   ctx.QueryInt(\"limit\"),",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "+",
+      "code": "// Offset:  ctx.QueryInt(\"offset\"),",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "err = s.service.DeleteReceiver(ctx, uid, definitions.Provenance(ngmodels.ProvenanceNone), version, info.OrgID, user) // TODO add support for dry-run option",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "return old, false, err                                                                                               // false - will be deleted async",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "+",
+      "code": "err = s.service.DeleteReceiver(ctx, uid, ngmodels.ProvenanceNone, version, info.OrgID, user) // TODO add support for dry-run option",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "change": "+",
+      "code": "return old, false, err                                                                       // false - will be deleted async",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:58:00.609619+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 7,
+  "pr": 110619,
+  "repository": "grafana/grafana",
+  "sha256": "4704ab0a7b49d273a5ac235633a64df1cba252fd375fbe18c8ff336c17517e3e",
+  "target_code_changed_lines": 13,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/110619.patch"
+}

@@ -1,0 +1,379 @@
+n02-test, n02-kube-state-metrics, ClusterRole (rbac.authorization.k8s.io) has changed:
+  # Source: kube-state-metrics/templates/role.yaml
+  apiVersion: rbac.authorization.k8s.io/v1
+  kind: ClusterRole
+  metadata:
+    labels:
+      app.kubernetes.io/name: kube-state-metrics
+-     helm.sh/chart: kube-state-metrics-2.13.2
++     helm.sh/chart: kube-state-metrics-3.0.0
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/instance: n02
+    name: n02-kube-state-metrics
+  rules:
+
+  - apiGroups: ["certificates.k8s.io"]
+    resources:
+    - certificatesigningrequests
+    verbs: ["list", "watch"]
+
+  - apiGroups: [""]
+    resources:
+    - configmaps
+    verbs: ["list", "watch"]
+
+  - apiGroups: ["batch"]
+    resources:
+    - cronjobs
+    verbs: ["list", "watch"]
+
+  - apiGroups: ["extensions", "apps"]
+    resources:
+    - daemonsets
+    verbs: ["list", "watch"]
+
+  - apiGroups: ["extensions", "apps"]
+    resources:
+    - deployments
+    verbs: ["list", "watch"]
+
+  - apiGroups: [""]
+    resources:
+    - endpoints
+    verbs: ["list", "watch"]
+
+  - apiGroups: ["autoscaling"]
+    resources:
+    - horizontalpodautoscalers
+    verbs: ["list", "watch"]
+
+  - apiGroups: ["extensions", "networking.k8s.io"]
+    resources:
+    - ingresses
+    verbs: ["list", "watch"]
+
+  - apiGroups: ["batch"]
+    resources:
+    - jobs
+    verbs: ["list", "watch"]
+
+  - apiGroups: [""]
+    resources:
+    - limitranges
+    verbs: ["list", "watch"]
+
+  - apiGroups: ["admissionregistration.k8s.io"]
+    resources:
+      - mutatingwebhookconfigurations
+    verbs: ["list", "watch"]
+
+  - apiGroups: [""]
+    resources:
+    - namespaces
+    verbs: ["list", "watch"]
+
+  - apiGroups: ["networking.k8s.io"]
+    resources:
+    - networkpolicies
+    verbs: ["list", "watch"]
+
+  - apiGroups: [""]
+    resources:
+    - nodes
+    verbs: ["list", "watch"]
+
+  - apiGroups: [""]
+    resources:
+    - persistentvolumeclaims
+    verbs: ["list", "watch"]
+
+  - apiGroups: [""]
+    resources:
+    - persistentvolumes
+    verbs: ["list", "watch"]
+
+  - apiGroups: ["policy"]
+    resources:
+      - poddisruptionbudgets
+    verbs: ["list", "watch"]
+
+  - apiGroups: [""]
+    resources:
+    - pods
+    verbs: ["list", "watch"]
+
+  - apiGroups: ["extensions", "apps"]
+    resources:
+    - replicasets
+    verbs: ["list", "watch"]
+
+  - apiGroups: [""]
+    resources:
+    - replicationcontrollers
+    verbs: ["list", "watch"]
+
+  - apiGroups: [""]
+    resources:
+    - resourcequotas
+    verbs: ["list", "watch"]
+
+  - apiGroups: [""]
+    resources:
+    - secrets
+    verbs: ["list", "watch"]
+
+  - apiGroups: [""]
+    resources:
+    - services
+    verbs: ["list", "watch"]
+
+  - apiGroups: ["apps"]
+    resources:
+    - statefulsets
+    verbs: ["list", "watch"]
+
+  - apiGroups: ["storage.k8s.io"]
+    resources:
+      - storageclasses
+    verbs: ["list", "watch"]
+
+  - apiGroups: ["admissionregistration.k8s.io"]
+    resources:
+      - validatingwebhookconfigurations
+    verbs: ["list", "watch"]
+
+  - apiGroups: ["storage.k8s.io"]
+    resources:
+      - volumeattachments
+    verbs: ["list", "watch"]
+n02-test, n02-kube-state-metrics, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+  # Source: kube-state-metrics/templates/clusterrolebinding.yaml
+  apiVersion: rbac.authorization.k8s.io/v1
+  kind: ClusterRoleBinding
+  metadata:
+    labels:
+      app.kubernetes.io/name: kube-state-metrics
+-     helm.sh/chart: kube-state-metrics-2.13.2
++     helm.sh/chart: kube-state-metrics-3.0.0
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/instance: n02
+    name: n02-kube-state-metrics
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+    kind: ClusterRole
+    name: n02-kube-state-metrics
+  subjects:
+  - kind: ServiceAccount
+    name: n02-kube-state-metrics
+    namespace: n02-test
+n02-test, n02-kube-state-metrics, Deployment (apps) has changed:
+  # Source: kube-state-metrics/templates/deployment.yaml
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: n02-kube-state-metrics
+    namespace: n02-test
+    labels:
+      app.kubernetes.io/name: kube-state-metrics
+-     helm.sh/chart: "kube-state-metrics-2.13.2"
++     helm.sh/chart: "kube-state-metrics-3.0.0"
+      app.kubernetes.io/instance: "n02"
+      app.kubernetes.io/managed-by: "Helm"
+-     app.kubernetes.io/version: "1.9.8"
++     app.kubernetes.io/version: "2.0.0"
+  spec:
+    selector:
+      matchLabels:
+        app.kubernetes.io/name: kube-state-metrics
+    replicas: 1
+    template:
+      metadata:
+        labels:
+          app.kubernetes.io/name: kube-state-metrics
+          app.kubernetes.io/instance: "n02"
+      spec:
+        hostNetwork: false
+        serviceAccountName: n02-kube-state-metrics
+        securityContext:
+          fsGroup: 65534
+          runAsGroup: 65534
+          runAsUser: 65534
+        containers:
+        - name: kube-state-metrics
+          args:
+
+
+-         - --collectors=certificatesigningrequests
++         - --resources=certificatesigningrequests
+
+
+-         - --collectors=configmaps
++         - --resources=configmaps
+
+
+-         - --collectors=cronjobs
++         - --resources=cronjobs
+
+
+-         - --collectors=daemonsets
++         - --resources=daemonsets
+
+
+-         - --collectors=deployments
++         - --resources=deployments
+
+
+-         - --collectors=endpoints
++         - --resources=endpoints
+
+
+-         - --collectors=horizontalpodautoscalers
++         - --resources=horizontalpodautoscalers
+
+
+-         - --collectors=ingresses
++         - --resources=ingresses
+
+
+-         - --collectors=jobs
++         - --resources=jobs
+
+
+-         - --collectors=limitranges
++         - --resources=limitranges
+
+
+-         - --collectors=mutatingwebhookconfigurations
++         - --resources=mutatingwebhookconfigurations
+
+
+-         - --collectors=namespaces
++         - --resources=namespaces
+
+
+-         - --collectors=networkpolicies
++         - --resources=networkpolicies
+
+
+-         - --collectors=nodes
++         - --resources=nodes
+
+
+-         - --collectors=persistentvolumeclaims
++         - --resources=persistentvolumeclaims
+
+
+-         - --collectors=persistentvolumes
++         - --resources=persistentvolumes
+
+
+-         - --collectors=poddisruptionbudgets
++         - --resources=poddisruptionbudgets
+
+
+-         - --collectors=pods
++         - --resources=pods
+
+
+-         - --collectors=replicasets
++         - --resources=replicasets
+
+
+-         - --collectors=replicationcontrollers
++         - --resources=replicationcontrollers
+
+
+-         - --collectors=resourcequotas
++         - --resources=resourcequotas
+
+
+-         - --collectors=secrets
++         - --resources=secrets
+
+
+-         - --collectors=services
++         - --resources=services
+
+
+-         - --collectors=statefulsets
++         - --resources=statefulsets
+
+
+-         - --collectors=storageclasses
++         - --resources=storageclasses
+
+
+-         - --collectors=validatingwebhookconfigurations
++         - --resources=validatingwebhookconfigurations
+
+
+
+-         - --collectors=volumeattachments
++         - --resources=volumeattachments
+
+
+
+
+
+          - --telemetry-port=8081
+          imagePullPolicy: IfNotPresent
+-         image: "k8s.gcr.io/kube-state-metrics/kube-state-metrics:v1.9.8"
++         image: "k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0"
+          ports:
+          - containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 8080
+            initialDelaySeconds: 5
+            timeoutSeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 5
+            timeoutSeconds: 5
+          resources:
+            requests:
+              cpu: 100m
+n02-test, n02-kube-state-metrics, Service (v1) has changed:
+  # Source: kube-state-metrics/templates/service.yaml
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: n02-kube-state-metrics
+    namespace: n02-test
+    labels:
+      app.kubernetes.io/name: kube-state-metrics
+-     helm.sh/chart: "kube-state-metrics-2.13.2"
++     helm.sh/chart: "kube-state-metrics-3.0.0"
+      app.kubernetes.io/instance: "n02"
+      app.kubernetes.io/managed-by: "Helm"
+    annotations:
+      prometheus.io/scrape: 'true'
+  spec:
+    type: "ClusterIP"
+    ports:
+    - name: "http"
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+    
+    selector:
+      app.kubernetes.io/name: kube-state-metrics
+      app.kubernetes.io/instance: n02
+n02-test, n02-kube-state-metrics, ServiceAccount (v1) has changed:
+  # Source: kube-state-metrics/templates/serviceaccount.yaml
+  apiVersion: v1
+  kind: ServiceAccount
+  metadata:
+    labels:
+      app.kubernetes.io/name: kube-state-metrics
+-     helm.sh/chart: kube-state-metrics-2.13.2
++     helm.sh/chart: kube-state-metrics-3.0.0
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/instance: n02
+    name: n02-kube-state-metrics
+    namespace: n02-test
+  imagePullSecrets:
+    []

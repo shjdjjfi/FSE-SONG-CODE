@@ -1,0 +1,46 @@
+{
+  "key": "e1650d3519b45b86b4",
+  "args": {
+    "crate": "chrono",
+    "version": "0.4.41",
+    "id": "56a70e1d3817880d",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1052,
+  "errors": [
+    {
+      "code": null,
+      "message": "expected `;`, found `Ok`",
+      "rendered": "error: expected `;`, found `Ok`\n  --> src/main.rs:13:32\n   |\n13 | Ok::<(), serde_json::Error>(())\n   |                                ^ help: add `;` here\n14 | Ok(())\n   | -- unexpected token\n\n",
+      "line": 14
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde_derive`",
+      "rendered": "error[E0432]: unresolved import `serde_derive`\n --> src/main.rs:3:5\n  |\n3 | use serde_derive::Deserialize;\n  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `serde_derive`\n  |\n  = help: if you wanted to use a crate named `serde_derive`, use `cargo add serde_derive` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `serde` in this scope",
+      "rendered": "error: cannot find attribute `serde` in this scope\n --> src/main.rs:7:7\n  |\n7 |     #[serde(deserialize_with = \"from_nano_tsopt\")]\n  |       ^^^^^\n\n",
+      "line": 7
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:11:15\n   |\n11 | let my_s: S = serde_json::from_str(r#\"{ \"time\": 1526522699918355733 }\"#)?;\n   |               ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 11
+    }
+  ],
+  "error_count": 4,
+  "stderr_excerpt": "error: could not compile `n05_chrono_consumer` (bin \"n05_chrono_consumer\") due to 4 previous errors; 1 warning emitted\n",
+  "code_sha256": "5227e00ae838ab4b77db2022cfd708724b996468e737ffbe2eb4235857d82b69",
+  "manifest_sha256": "1d431ffb60efcc4fc4f538497f887cd1c193798500ed5912e183965ac071e38d",
+  "log_file": "results/check_logs/e1650d3519b45b86b4.txt.gz"
+}

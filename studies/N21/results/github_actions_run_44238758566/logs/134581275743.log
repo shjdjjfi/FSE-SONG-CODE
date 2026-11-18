@@ -1,0 +1,360 @@
+﻿2026-11-18T04:39:05.7354413Z Current runner version: '2.338.2'
+2026-11-18T04:39:05.7373703Z ##[group]Runner Image Provisioner
+2026-11-18T04:39:05.7374213Z Hosted Compute Agent
+2026-11-18T04:39:05.7374600Z Version: 20261103.629
+2026-11-18T04:39:05.7374987Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-18T04:39:05.7375426Z Build Date: 2026-11-03T17:26:59Z
+2026-11-18T04:39:05.7375814Z Worker ID: {fd75ce67-aa9b-4c5b-a305-467a6e858912}
+2026-11-18T04:39:05.7376197Z Region: eastus2
+2026-11-18T04:39:05.7376520Z Cloud: Azure
+2026-11-18T04:39:05.7376816Z ##[endgroup]
+2026-11-18T04:39:05.7378280Z ##[group]Operating System
+2026-11-18T04:39:05.7378842Z Ubuntu
+2026-11-18T04:39:05.7379258Z 22.04.5
+2026-11-18T04:39:05.7379673Z LTS
+2026-11-18T04:39:05.7380222Z ##[endgroup]
+2026-11-18T04:39:05.7380639Z ##[group]Runner Image
+2026-11-18T04:39:05.7381176Z Image: ubuntu-22.04
+2026-11-18T04:39:05.7381623Z Version: 20261111.360.2
+2026-11-18T04:39:05.7382727Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20261111.360/images/ubuntu/Ubuntu2204-Readme.md
+2026-11-18T04:39:05.7384026Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20261111.360
+2026-11-18T04:39:05.7384835Z ##[endgroup]
+2026-11-18T04:39:05.7385731Z ##[group]GITHUB_TOKEN Permissions
+2026-11-18T04:39:05.7387607Z Contents: read
+2026-11-18T04:39:05.7388066Z Metadata: read
+2026-11-18T04:39:05.7388564Z ##[endgroup]
+2026-11-18T04:39:05.7390428Z Secret source: Actions
+2026-11-18T04:39:05.7391222Z Cache mode: write
+2026-11-18T04:39:05.7391963Z Prepare workflow directory
+2026-11-18T04:39:05.7628284Z Prepare all required actions
+2026-11-18T04:39:05.7659469Z Getting action download info
+2026-11-18T04:39:05.9713139Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-18T04:39:06.0378574Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-11-18T04:39:06.1266070Z Download action repository 'actions/download-artifact@v4' (SHA:d3f86a106a0bac45b974a628896c90dbdf5c8093)
+2026-11-18T04:39:06.3542370Z Download action repository 'Attest/typescript-cache-action@7227052c996c38afb0aece6e05d185b2d45a28a5' (SHA:7227052c996c38afb0aece6e05d185b2d45a28a5)
+2026-11-18T04:39:06.4814781Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-18T04:39:06.6587866Z Getting action download info
+2026-11-18T04:39:06.7549108Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+2026-11-18T04:39:06.8673346Z Download action repository 'tj-actions/changed-files@v45' (SHA:48d8f15b2aaa3d255ca5af3eba4870f807ce6b3c)
+2026-11-18T04:39:07.0987339Z Complete job name: partial / none / clean_all
+2026-11-18T04:39:07.1648445Z ##[group]Run actions/checkout@v4
+2026-11-18T04:39:07.1649203Z with:
+2026-11-18T04:39:07.1649737Z   ref: 403d5fd951750ce45714372ca69f0134d34305e3
+2026-11-18T04:39:07.1650557Z   fetch-depth: 0
+2026-11-18T04:39:07.1651092Z   persist-credentials: false
+2026-11-18T04:39:07.1651695Z   repository: shjdjjfi/FSE-EXP-1
+2026-11-18T04:39:07.1656338Z   token: ***
+2026-11-18T04:39:07.1656828Z   ssh-strict: true
+2026-11-18T04:39:07.1657370Z   ssh-user: git
+2026-11-18T04:39:07.1657861Z   clean: true
+2026-11-18T04:39:07.1658387Z   sparse-checkout-cone-mode: true
+2026-11-18T04:39:07.1658995Z   fetch-tags: false
+2026-11-18T04:39:07.1659511Z   show-progress: true
+2026-11-18T04:39:07.1660107Z   lfs: false
+2026-11-18T04:39:07.1660602Z   submodules: false
+2026-11-18T04:39:07.1661131Z   set-safe-directory: true
+2026-11-18T04:39:07.1661725Z   allow-unsafe-pr-checkout: false
+2026-11-18T04:39:07.1662451Z ##[endgroup]
+2026-11-18T04:39:07.2794561Z Syncing repository: shjdjjfi/FSE-EXP-1
+2026-11-18T04:39:07.2797379Z ##[group]Getting Git version info
+2026-11-18T04:39:07.2798790Z Working directory is '/home/runner/work/FSE-EXP-1/FSE-EXP-1'
+2026-11-18T04:39:07.2800902Z [command]/usr/bin/git version
+2026-11-18T04:39:07.2810894Z git version 2.56.1
+2026-11-18T04:39:07.2824897Z ##[endgroup]
+2026-11-18T04:39:07.2836133Z Temporarily overriding HOME='/home/runner/work/_temp/6577ffe1-2206-4c5f-9bcb-873ac3332a29' before making global git config changes
+2026-11-18T04:39:07.2838696Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T04:39:07.2842060Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/FSE-EXP-1/FSE-EXP-1
+2026-11-18T04:39:07.2864880Z Deleting the contents of '/home/runner/work/FSE-EXP-1/FSE-EXP-1'
+2026-11-18T04:39:07.2869171Z ##[group]Initializing the repository
+2026-11-18T04:39:07.2871937Z [command]/usr/bin/git init /home/runner/work/FSE-EXP-1/FSE-EXP-1
+2026-11-18T04:39:07.2928260Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-18T04:39:07.2930291Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-18T04:39:07.2932149Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-18T04:39:07.2933630Z hint: call:
+2026-11-18T04:39:07.2935019Z hint:
+2026-11-18T04:39:07.2936211Z hint: 	git config --global init.defaultBranch <name>
+2026-11-18T04:39:07.2937490Z hint:
+2026-11-18T04:39:07.2938594Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-18T04:39:07.2940279Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-18T04:39:07.2941586Z hint:
+2026-11-18T04:39:07.2942303Z hint: 	git branch -m <name>
+2026-11-18T04:39:07.2943321Z hint:
+2026-11-18T04:39:07.2944444Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-18T04:39:07.2946210Z Initialized empty Git repository in /home/runner/work/FSE-EXP-1/FSE-EXP-1/.git/
+2026-11-18T04:39:07.2949164Z [command]/usr/bin/git remote add origin https://github.com/shjdjjfi/FSE-EXP-1
+2026-11-18T04:39:07.2957955Z ##[endgroup]
+2026-11-18T04:39:07.2958838Z ##[group]Disabling automatic garbage collection
+2026-11-18T04:39:07.2961345Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-18T04:39:07.2986414Z ##[endgroup]
+2026-11-18T04:39:07.2987771Z ##[group]Setting up auth
+2026-11-18T04:39:07.2989102Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T04:39:07.3007899Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T04:39:07.3204968Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T04:39:07.3222672Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T04:39:07.3346358Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T04:39:07.3365878Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T04:39:07.3471710Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-18T04:39:07.3493935Z ##[endgroup]
+2026-11-18T04:39:07.3495131Z ##[group]Fetching the repository
+2026-11-18T04:39:07.3500020Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+2026-11-18T04:39:07.5765375Z From https://github.com/shjdjjfi/FSE-EXP-1
+2026-11-18T04:39:07.5766719Z  * [new branch]      main              -> origin/main
+2026-11-18T04:39:07.5767976Z  * [new branch]      n21-fse-benchmark -> origin/n21-fse-benchmark
+2026-11-18T04:39:07.5774800Z [command]/usr/bin/git rev-parse --verify --quiet 403d5fd951750ce45714372ca69f0134d34305e3^{object}
+2026-11-18T04:39:07.5788997Z 403d5fd951750ce45714372ca69f0134d34305e3
+2026-11-18T04:39:07.5791333Z ##[endgroup]
+2026-11-18T04:39:07.5792226Z ##[group]Determining the checkout info
+2026-11-18T04:39:07.5793160Z ##[endgroup]
+2026-11-18T04:39:07.5794967Z [command]/usr/bin/git sparse-checkout disable
+2026-11-18T04:39:07.5817528Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-18T04:39:07.5839267Z ##[group]Checking out the ref
+2026-11-18T04:39:07.5841065Z [command]/usr/bin/git checkout --progress --force 403d5fd951750ce45714372ca69f0134d34305e3
+2026-11-18T04:39:07.5859049Z Note: switching to '403d5fd951750ce45714372ca69f0134d34305e3'.
+2026-11-18T04:39:07.5859857Z 
+2026-11-18T04:39:07.5860547Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-11-18T04:39:07.5862283Z changes and commit them, and you can discard any commits you make in this
+2026-11-18T04:39:07.5864045Z state without impacting any branches by switching back to a branch.
+2026-11-18T04:39:07.5865063Z 
+2026-11-18T04:39:07.5865739Z If you want to create a new branch to retain commits you create, you may
+2026-11-18T04:39:07.5867295Z do so (now or later) by using -c with the switch command. Example:
+2026-11-18T04:39:07.5868205Z 
+2026-11-18T04:39:07.5868602Z   git switch -c <new-branch-name>
+2026-11-18T04:39:07.5869191Z 
+2026-11-18T04:39:07.5869439Z Or undo this operation with:
+2026-11-18T04:39:07.5869967Z 
+2026-11-18T04:39:07.5870184Z   git switch -
+2026-11-18T04:39:07.5870472Z 
+2026-11-18T04:39:07.5870941Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-11-18T04:39:07.5871759Z 
+2026-11-18T04:39:07.5872755Z HEAD is now at 403d5fd Repeat identical N21 benchmark matrix on independent hosted runners (replicate 2)
+2026-11-18T04:39:07.5874883Z ##[endgroup]
+2026-11-18T04:39:07.5882540Z [command]/usr/bin/git log -1 --format=%H
+2026-11-18T04:39:07.5895251Z 403d5fd951750ce45714372ca69f0134d34305e3
+2026-11-18T04:39:07.5901173Z ##[group]Removing auth
+2026-11-18T04:39:07.5903266Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T04:39:07.5919209Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T04:39:07.6025565Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T04:39:07.6057682Z http.https://github.com/.extraheader
+2026-11-18T04:39:07.6060520Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-18T04:39:07.6065000Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T04:39:07.6175442Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T04:39:07.6194454Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T04:39:07.6306388Z ##[endgroup]
+2026-11-18T04:39:07.6521292Z ##[group]Run actions/setup-node@v4
+2026-11-18T04:39:07.6521894Z with:
+2026-11-18T04:39:07.6522339Z   node-version: 24
+2026-11-18T04:39:07.6522827Z   always-auth: false
+2026-11-18T04:39:07.6523325Z   check-latest: false
+2026-11-18T04:39:07.6527415Z   token: ***
+2026-11-18T04:39:07.6527875Z ##[endgroup]
+2026-11-18T04:39:07.7399302Z (node:2022) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-18T04:39:07.7400809Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-18T04:39:07.7405405Z Found in cache @ /opt/hostedtoolcache/node/24.22.2/x64
+2026-11-18T04:39:07.7406535Z ##[group]Environment details
+2026-11-18T04:39:07.9264511Z node: v24.22.2
+2026-11-18T04:39:07.9265198Z npm: 11.19.1
+2026-11-18T04:39:07.9265689Z yarn: 1.22.22
+2026-11-18T04:39:07.9266773Z ##[endgroup]
+2026-11-18T04:39:07.9359065Z ##[group]Run npm install --prefix n21_ci_deps --no-save --no-package-lock --ignore-scripts --no-audit --no-fund typescript@5.9.3
+2026-11-18T04:39:07.9361033Z [36;1mnpm install --prefix n21_ci_deps --no-save --no-package-lock --ignore-scripts --no-audit --no-fund typescript@5.9.3[0m
+2026-11-18T04:39:07.9401082Z shell: /usr/bin/bash -e {0}
+2026-11-18T04:39:07.9401653Z ##[endgroup]
+2026-11-18T04:39:08.8902045Z 
+2026-11-18T04:39:08.8908588Z added 1 package in 912ms
+2026-11-18T04:39:08.9056626Z ##[group]Run python3 n21_submission_experiments/github_actions/gha_n21.py init
+2026-11-18T04:39:08.9057092Z [36;1mpython3 n21_submission_experiments/github_actions/gha_n21.py init[0m
+2026-11-18T04:39:08.9088226Z shell: /usr/bin/bash -e {0}
+2026-11-18T04:39:08.9088436Z ##[endgroup]
+2026-11-18T04:39:08.9455372Z ##[group]Run actions/download-artifact@v4
+2026-11-18T04:39:08.9455610Z with:
+2026-11-18T04:39:08.9455787Z   name: n21-trusted-oracle
+2026-11-18T04:39:08.9455984Z   path: n21_gha_evidence
+2026-11-18T04:39:08.9456184Z   merge-multiple: false
+2026-11-18T04:39:08.9456382Z   repository: shjdjjfi/FSE-EXP-1
+2026-11-18T04:39:08.9456582Z   run-id: 44238758566
+2026-11-18T04:39:08.9456759Z ##[endgroup]
+2026-11-18T04:39:09.0346183Z Downloading single artifact
+2026-11-18T04:39:09.0435944Z (node:2068) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-18T04:39:09.0436556Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-18T04:39:09.1309232Z Preparing to download the following artifacts:
+2026-11-18T04:39:09.1310048Z - n21-trusted-oracle (ID: 14399155185, Size: 807, Expected Digest: sha256:27f71e12c3cf460a970e194f0ff74e305493db3302e036f8f0d4e8a6479136c4)
+2026-11-18T04:39:09.2757733Z Redirecting to blob download url: https://productionresultssa13.blob.core.windows.net/actions-results/5423cbdb-caeb-887f-a2d8-93ce9a9016a6/workflow-job-run-8ed6465e-9452-5f71-ac2c-1affe8e0dbb0/artifacts/80cc29b4c2ce5e3cbee3c78b73dbcebd773c8beb068fc3b48a3d7c309e1fb8b4.zip
+2026-11-18T04:39:09.2758750Z Starting download of artifact to: /home/runner/work/FSE-EXP-1/FSE-EXP-1/n21_gha_evidence
+2026-11-18T04:39:09.3226248Z (node:2068) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-11-18T04:39:09.3247848Z SHA256 digest of downloaded artifact is 27f71e12c3cf460a970e194f0ff74e305493db3302e036f8f0d4e8a6479136c4
+2026-11-18T04:39:09.3260583Z Artifact download completed successfully.
+2026-11-18T04:39:09.3260992Z Total of 1 artifact(s) downloaded
+2026-11-18T04:39:09.3298336Z Download artifact has finished successfully
+2026-11-18T04:39:09.3385596Z ##[group]Run Attest/typescript-cache-action@7227052c996c38afb0aece6e05d185b2d45a28a5
+2026-11-18T04:39:09.3385950Z with:
+2026-11-18T04:39:09.3386164Z   cache-base-key: n21-44238758566
+2026-11-18T04:39:09.3386430Z   cache-key: partial
+2026-11-18T04:39:09.3386657Z   base-ref: main
+2026-11-18T04:39:09.3386995Z   files: n21_gha_fixture/packages/*/dist
+n21_gha_fixture/packages/*/cache.tsbuildinfo
+
+2026-11-18T04:39:09.3387343Z ##[endgroup]
+2026-11-18T04:39:09.3427681Z ##[start-action display=get ref;id=__Attest_typescript-cache-action.__run]
+2026-11-18T04:39:09.3448029Z ##[group]Run git fetch origin main:main
+2026-11-18T04:39:09.3448309Z [36;1mgit fetch origin main:main[0m
+2026-11-18T04:39:09.3479443Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-18T04:39:09.3479733Z ##[endgroup]
+2026-11-18T04:39:09.4483096Z From https://github.com/shjdjjfi/FSE-EXP-1
+2026-11-18T04:39:09.4483668Z  * [new branch]      main       -> main
+2026-11-18T04:39:09.4505464Z ##[end-action id=__Attest_typescript-cache-action.__run;outcome=success;conclusion=success;duration_ms=107]
+2026-11-18T04:39:09.4507729Z ##[start-action display=restore tsc build cache;id=__Attest_typescript-cache-action.tsc-build-cache]
+2026-11-18T04:39:09.4542163Z ##[group]Run actions/cache/restore@v4
+2026-11-18T04:39:09.4542411Z with:
+2026-11-18T04:39:09.4542714Z   path: n21_gha_fixture/packages/*/dist
+n21_gha_fixture/packages/*/cache.tsbuildinfo
+
+2026-11-18T04:39:09.4543067Z   key: n21-44238758566-partial
+2026-11-18T04:39:09.4543408Z   restore-keys: n21-44238758566-partial
+n21-44238758566
+
+2026-11-18T04:39:09.4543690Z   enableCrossOsArchive: false
+2026-11-18T04:39:09.4543922Z   fail-on-cache-miss: false
+2026-11-18T04:39:09.4544140Z   lookup-only: false
+2026-11-18T04:39:09.4544341Z ##[endgroup]
+2026-11-18T04:39:09.5165882Z (node:2086) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-18T04:39:09.5166581Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-18T04:39:09.5824476Z Cache hit for: n21-44238758566-partial
+2026-11-18T04:39:09.5893224Z (node:2086) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-18T04:39:09.6638760Z Received 3860 of 3860 (100.0%), 0.2 MBs/sec
+2026-11-18T04:39:09.6639279Z Cache Size: ~0 MB (3860 B)
+2026-11-18T04:39:09.6658651Z [command]/usr/bin/tar -xf /home/runner/work/_temp/7b872314-a64c-4db6-bb88-ccc71913be57/cache.tzst -P -C /home/runner/work/FSE-EXP-1/FSE-EXP-1 --use-compress-program unzstd
+2026-11-18T04:39:09.6690033Z Cache restored successfully
+2026-11-18T04:39:09.6738039Z Cache restored from key: n21-44238758566-partial
+2026-11-18T04:39:09.6792628Z ##[end-action id=__Attest_typescript-cache-action.tsc-build-cache;outcome=success;conclusion=success;duration_ms=228]
+2026-11-18T04:39:09.6799417Z ##[start-action display=restore timestamps of all files to base branch commit;id=__Attest_typescript-cache-action.__run_2]
+2026-11-18T04:39:09.6816801Z ##[group]Run find . -type f -exec touch -c -m -t $(git log -1 --format=%cd --date=format-local:%y%m%d%H%M.%S main) {} +
+2026-11-18T04:39:09.6817271Z [36;1mfind . -type f -exec touch -c -m -t $(git log -1 --format=%cd --date=format-local:%y%m%d%H%M.%S main) {} +[0m
+2026-11-18T04:39:09.6848599Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-18T04:39:09.6848830Z env:
+2026-11-18T04:39:09.6848993Z   TZ: UTC
+2026-11-18T04:39:09.6849137Z ##[endgroup]
+2026-11-18T04:39:09.6925723Z ##[end-action id=__Attest_typescript-cache-action.__run_2;outcome=success;conclusion=success;duration_ms=12]
+2026-11-18T04:39:09.6927369Z ##[start-action display=changed source files;id=__Attest_typescript-cache-action.changed-source-files]
+2026-11-18T04:39:09.7075669Z ##[group]Run tj-actions/changed-files@v45
+2026-11-18T04:39:09.7075876Z with:
+2026-11-18T04:39:09.7076023Z   base_sha: main
+2026-11-18T04:39:09.7076280Z   separator:  
+2026-11-18T04:39:09.7076451Z   include_all_old_new_renamed_files: false
+2026-11-18T04:39:09.7076648Z   old_new_separator: ,
+2026-11-18T04:39:09.7076815Z   old_new_files_separator:  
+2026-11-18T04:39:09.7077011Z   files_from_source_file_separator: 
+
+2026-11-18T04:39:09.7077205Z   files_separator: 
+
+2026-11-18T04:39:09.7077385Z   files_yaml_from_source_file_separator: 
+
+2026-11-18T04:39:09.7077609Z   files_ignore_yaml_from_source_file_separator: 
+
+2026-11-18T04:39:09.7077827Z   files_ignore_separator: 
+
+2026-11-18T04:39:09.7078033Z   files_ignore_from_source_file_separator: 
+
+2026-11-18T04:39:09.7078229Z   path: .
+2026-11-18T04:39:09.7078373Z   quotepath: true
+2026-11-18T04:39:09.7078527Z   diff_relative: true
+2026-11-18T04:39:09.7078683Z   dir_names: false
+2026-11-18T04:39:09.7078849Z   dir_names_exclude_current_dir: false
+2026-11-18T04:39:09.7079048Z   dir_names_include_files_separator: 
+
+2026-11-18T04:39:09.7079272Z   dir_names_deleted_files_include_only_deleted_dirs: false
+2026-11-18T04:39:09.7079496Z   json: false
+2026-11-18T04:39:09.7079643Z   escape_json: true
+2026-11-18T04:39:09.7079865Z   safe_output: true
+2026-11-18T04:39:09.7080019Z   fetch_depth: 25
+2026-11-18T04:39:09.7080176Z   skip_initial_fetch: false
+2026-11-18T04:39:09.7080364Z   fetch_additional_submodule_history: false
+2026-11-18T04:39:09.7080565Z   since_last_remote_commit: false
+2026-11-18T04:39:09.7080748Z   write_output_files: false
+2026-11-18T04:39:09.7080926Z   output_dir: .github/outputs
+2026-11-18T04:39:09.7081198Z   output_renamed_files_as_deleted_and_added: false
+2026-11-18T04:39:09.7081413Z   recover_deleted_files: false
+2026-11-18T04:39:09.7081596Z   recover_files_separator: 
+
+2026-11-18T04:39:09.7081784Z   recover_files_ignore_separator: 
+
+2026-11-18T04:39:09.7083225Z   token: ***
+2026-11-18T04:39:09.7083390Z   api_url: https://api.github.com
+2026-11-18T04:39:09.7083578Z   use_rest_api: false
+2026-11-18T04:39:09.7083745Z   fail_on_initial_diff_error: false
+2026-11-18T04:39:09.7083946Z   fail_on_submodule_diff_error: false
+2026-11-18T04:39:09.7084138Z   negation_patterns_first: false
+2026-11-18T04:39:09.7084316Z   matrix: false
+2026-11-18T04:39:09.7084476Z   exclude_submodules: false
+2026-11-18T04:39:09.7084655Z   fetch_missing_history_max_retries: 20
+2026-11-18T04:39:09.7084849Z   use_posix_path_separator: false
+2026-11-18T04:39:09.7085024Z   tags_pattern: *
+2026-11-18T04:39:09.7085180Z ##[endgroup]
+2026-11-18T04:39:09.7689300Z ##[group]changed-files
+2026-11-18T04:39:09.7769126Z Using local .git directory
+2026-11-18T04:39:09.7983998Z Running on a push event...
+2026-11-18T04:39:09.8116530Z Retrieving changes between 9c7b2475cfda46964ffdb00f62a94dc7ee1d017e (n21-fse-benchmark) → 403d5fd951750ce45714372ca69f0134d34305e3 (n21-fse-benchmark)
+2026-11-18T04:39:09.8139519Z All Done!
+2026-11-18T04:39:09.8140092Z ##[endgroup]
+2026-11-18T04:39:09.8140668Z ##[group]changed-files-all
+2026-11-18T04:39:09.8182349Z All Done!
+2026-11-18T04:39:09.8182777Z ##[endgroup]
+2026-11-18T04:39:09.8219169Z ##[end-action id=__Attest_typescript-cache-action.changed-source-files;outcome=success;conclusion=success;duration_ms=129]
+2026-11-18T04:39:09.8221622Z ##[start-action display=restore timestamps to source files with head ref timestamp;id=__Attest_typescript-cache-action.__run_3]
+2026-11-18T04:39:09.8250224Z ##[group]Run touch -c -m .github/workflows/n21-attest-benchmark.yml n21_submission_experiments/github_actions/gha_n21.py replications/runner-repeat-2.md replications/runner-repeat-3.md
+2026-11-18T04:39:09.8251742Z [36;1mtouch -c -m .github/workflows/n21-attest-benchmark.yml n21_submission_experiments/github_actions/gha_n21.py replications/runner-repeat-2.md replications/runner-repeat-3.md[0m
+2026-11-18T04:39:09.8287169Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-18T04:39:09.8287411Z ##[endgroup]
+2026-11-18T04:39:09.8339272Z ##[end-action id=__Attest_typescript-cache-action.__run_3;outcome=success;conclusion=success;duration_ms=11]
+2026-11-18T04:39:09.8370040Z ##[group]Run python3 n21_submission_experiments/github_actions/gha_n21.py experiment \
+2026-11-18T04:39:09.8370438Z [36;1mpython3 n21_submission_experiments/github_actions/gha_n21.py experiment \[0m
+2026-11-18T04:39:09.8370720Z [36;1m  --cache-state 'partial' \[0m
+2026-11-18T04:39:09.8370916Z [36;1m  --fault 'none' \[0m
+2026-11-18T04:39:09.8371103Z [36;1m  --strategy 'clean_all' \[0m
+2026-11-18T04:39:09.8371314Z [36;1m  --metrics 'n21_gha_evidence/result.json'[0m
+2026-11-18T04:39:09.8395108Z shell: /usr/bin/bash -e {0}
+2026-11-18T04:39:09.8395286Z env:
+2026-11-18T04:39:09.8395554Z   N21_TSC: /home/runner/work/FSE-EXP-1/FSE-EXP-1/n21_ci_deps/node_modules/typescript/bin/tsc
+2026-11-18T04:39:09.8395843Z ##[endgroup]
+2026-11-18T04:39:10.9225980Z {"after": {"altered": 0, "extra": 0, "missing": 0}, "before": {"altered": 0, "extra": 0, "missing": 1}, "cache_state": "partial", "correct_against_trusted_oracle": true, "fault": "none", "strategy": "clean_all", "work_seconds": 1.0584}
+2026-11-18T04:39:10.9304682Z ##[group]Run actions/upload-artifact@v4
+2026-11-18T04:39:10.9304856Z with:
+2026-11-18T04:39:10.9304997Z   name: n21-result-partial-none-clean_all
+2026-11-18T04:39:10.9305175Z   path: n21_gha_evidence/result.json
+2026-11-18T04:39:10.9305340Z   if-no-files-found: error
+2026-11-18T04:39:10.9305487Z   retention-days: 30
+2026-11-18T04:39:10.9305621Z   compression-level: 6
+2026-11-18T04:39:10.9305753Z   overwrite: false
+2026-11-18T04:39:10.9305888Z   include-hidden-files: false
+2026-11-18T04:39:10.9306039Z ##[endgroup]
+2026-11-18T04:39:11.0280154Z (node:2167) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-18T04:39:11.0280905Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-18T04:39:11.0306332Z With the provided path, there will be 1 file uploaded
+2026-11-18T04:39:11.0309625Z Artifact name is valid!
+2026-11-18T04:39:11.0310087Z Root directory input is valid!
+2026-11-18T04:39:11.2311200Z Beginning upload of artifact content to blob storage
+2026-11-18T04:39:11.2423700Z (node:2167) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-18T04:39:11.2878504Z Uploaded bytes 782
+2026-11-18T04:39:11.3053613Z Finished uploading artifact content to blob storage!
+2026-11-18T04:39:11.3054521Z SHA256 digest of uploaded artifact zip is 418a23e933ef98f18cba6f8b01d949f307511d0a62fc878db1105c9d723d9556
+2026-11-18T04:39:11.3055615Z Finalizing artifact upload
+2026-11-18T04:39:11.6386174Z Artifact n21-result-partial-none-clean_all.zip successfully finalized. Artifact ID 14398107778
+2026-11-18T04:39:11.6387006Z Artifact n21-result-partial-none-clean_all has been successfully uploaded! Final size is 782 bytes. Artifact ID is 14398107778
+2026-11-18T04:39:11.6391144Z Artifact download URL: https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/artifacts/14398107778
+2026-11-18T04:39:11.6488709Z Post job cleanup.
+2026-11-18T04:39:11.7210784Z (node:2179) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-18T04:39:11.7211247Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-18T04:39:11.7303894Z Post job cleanup.
+2026-11-18T04:39:11.7809924Z [command]/usr/bin/git version
+2026-11-18T04:39:11.7835497Z git version 2.56.1
+2026-11-18T04:39:11.7862890Z Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/2e8c6499-e193-44f8-95e5-f98fbedb0d04/.gitconfig'
+2026-11-18T04:39:11.7877853Z Temporarily overriding HOME='/home/runner/work/_temp/2e8c6499-e193-44f8-95e5-f98fbedb0d04' before making global git config changes
+2026-11-18T04:39:11.7878952Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T04:39:11.7883425Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/FSE-EXP-1/FSE-EXP-1
+2026-11-18T04:39:11.7911767Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T04:39:11.7935086Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T04:39:11.8133113Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T04:39:11.8182276Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T04:39:11.8359539Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T04:39:11.8382017Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T04:39:11.8594656Z Cleaning up orphan processes
+2026-11-18T04:39:11.8774335Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache/restore@v4, actions/checkout@v4, actions/download-artifact@v4, actions/setup-node@v4, actions/upload-artifact@v4, tj-actions/changed-files@v45. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

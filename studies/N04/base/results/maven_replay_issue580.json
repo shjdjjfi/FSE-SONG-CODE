@@ -1,0 +1,768 @@
+{
+  "type": "offline_CPU_only_Maven_reexecution",
+  "not_historical_CI": true,
+  "revisions": [
+    "2ce6e6149d0ef44f4919e75326265c64c144a00f^",
+    "2ce6e6149d0ef44f4919e75326265c64c144a00f"
+  ],
+  "maven_test": "Issue580Test",
+  "repeats": 3,
+  "outcomes": [
+    {
+      "git_sha": "2ce6e6149d0ef44f4919e75326265c64c144a00f^",
+      "returncode": 0,
+      "build_compatibility_adjustment": "build-only Java 6 to Java 8 compiler level adjustment; excluded unrelated CORBA-dependent test file; excluded its dependent suite aggregator; excluded top-level suite aggregator",
+      "elapsed_seconds": 8.854,
+      "test_executions": [
+        {
+          "path": "target/surefire-reports/TEST-org.java_websocket.issues.Issue580Test.xml",
+          "tests": [
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario0",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario1",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario2",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario3",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario4",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario5",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario6",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario7",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario8",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario9",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario0",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario1",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario2",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario3",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario4",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario5",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario6",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario7",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario8",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario9",
+              "status": "passed"
+            }
+          ],
+          "suite_attrs": {
+            "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd",
+            "version": "3.0",
+            "name": "org.java_websocket.issues.Issue580Test",
+            "time": "3.209",
+            "tests": "20",
+            "errors": "0",
+            "skipped": "0",
+            "failures": "0"
+          }
+        }
+      ],
+      "test_count": 20,
+      "log_tail": "[INFO] Scanning for projects...\n[INFO] \n[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------\n[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---\n[INFO] skip non existing resourceDirectory /tmp/n04-maven-mv5q05tt/src/main/resources\n[INFO] \n[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 70 source files to /tmp/n04-maven-mv5q05tt/target/classes\n[INFO] /tmp/n04-maven-mv5q05tt/src/main/java/org/java_websocket/server/WebSocketServer.java: Some input files use or override a deprecated API.\n[INFO] /tmp/n04-maven-mv5q05tt/src/main/java/org/java_websocket/server/WebSocketServer.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-mv5q05tt/src/main/java/org/java_websocket/drafts/Draft.java: /tmp/n04-maven-mv5q05tt/src/main/java/org/java_websocket/drafts/Draft.java uses or overrides a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-mv5q05tt/src/main/java/org/java_websocket/drafts/Draft.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---\n[INFO] Copying 1 resource from src/test/resources to target/test-classes\n[INFO] \n[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 52 source files to /tmp/n04-maven-mv5q05tt/target/test-classes\n[INFO] /tmp/n04-maven-mv5q05tt/src/test/java/org/java_websocket/util/ThreadCheck.java: /tmp/n04-maven-mv5q05tt/src/test/java/org/java_websocket/util/ThreadCheck.java uses or overrides a deprecated API.\n[INFO] /tmp/n04-maven-mv5q05tt/src/test/java/org/java_websocket/util/ThreadCheck.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-mv5q05tt/src/test/java/org/java_websocket/example/AutobahnSSLServerTest.java: Some input files use or override a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-mv5q05tt/src/test/java/org/java_websocket/example/AutobahnSSLServerTest.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- surefire:3.2.5:test (default-test) @ Java-WebSocket ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running org.java_websocket.issues.Issue580Test\n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.209 s -- in org.java_websocket.issues.Issue580Test\n[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  6.867 s\n[INFO] Finished at: 2026-11-15T02:52:25+09:00\n[INFO] ------------------------------------------------------------------------\n\n",
+      "repeat_index": 0
+    },
+    {
+      "git_sha": "2ce6e6149d0ef44f4919e75326265c64c144a00f^",
+      "returncode": 0,
+      "build_compatibility_adjustment": "build-only Java 6 to Java 8 compiler level adjustment; excluded unrelated CORBA-dependent test file; excluded its dependent suite aggregator; excluded top-level suite aggregator",
+      "elapsed_seconds": 8.268,
+      "test_executions": [
+        {
+          "path": "target/surefire-reports/TEST-org.java_websocket.issues.Issue580Test.xml",
+          "tests": [
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario0",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario1",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario2",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario3",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario4",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario5",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario6",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario7",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario8",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario9",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario0",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario1",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario2",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario3",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario4",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario5",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario6",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario7",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario8",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario9",
+              "status": "passed"
+            }
+          ],
+          "suite_attrs": {
+            "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd",
+            "version": "3.0",
+            "name": "org.java_websocket.issues.Issue580Test",
+            "time": "3.108",
+            "tests": "20",
+            "errors": "0",
+            "skipped": "0",
+            "failures": "0"
+          }
+        }
+      ],
+      "test_count": 20,
+      "log_tail": "[INFO] Scanning for projects...\n[INFO] \n[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------\n[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---\n[INFO] skip non existing resourceDirectory /tmp/n04-maven-1ex41iym/src/main/resources\n[INFO] \n[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 70 source files to /tmp/n04-maven-1ex41iym/target/classes\n[INFO] /tmp/n04-maven-1ex41iym/src/main/java/org/java_websocket/server/WebSocketServer.java: Some input files use or override a deprecated API.\n[INFO] /tmp/n04-maven-1ex41iym/src/main/java/org/java_websocket/server/WebSocketServer.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-1ex41iym/src/main/java/org/java_websocket/drafts/Draft.java: /tmp/n04-maven-1ex41iym/src/main/java/org/java_websocket/drafts/Draft.java uses or overrides a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-1ex41iym/src/main/java/org/java_websocket/drafts/Draft.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---\n[INFO] Copying 1 resource from src/test/resources to target/test-classes\n[INFO] \n[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 52 source files to /tmp/n04-maven-1ex41iym/target/test-classes\n[INFO] /tmp/n04-maven-1ex41iym/src/test/java/org/java_websocket/util/ThreadCheck.java: /tmp/n04-maven-1ex41iym/src/test/java/org/java_websocket/util/ThreadCheck.java uses or overrides a deprecated API.\n[INFO] /tmp/n04-maven-1ex41iym/src/test/java/org/java_websocket/util/ThreadCheck.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-1ex41iym/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Some input files use or override a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-1ex41iym/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- surefire:3.2.5:test (default-test) @ Java-WebSocket ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running org.java_websocket.issues.Issue580Test\n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.108 s -- in org.java_websocket.issues.Issue580Test\n[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  6.935 s\n[INFO] Finished at: 2026-11-15T02:52:34+09:00\n[INFO] ------------------------------------------------------------------------\n\n",
+      "repeat_index": 1
+    },
+    {
+      "git_sha": "2ce6e6149d0ef44f4919e75326265c64c144a00f^",
+      "returncode": 0,
+      "build_compatibility_adjustment": "build-only Java 6 to Java 8 compiler level adjustment; excluded unrelated CORBA-dependent test file; excluded its dependent suite aggregator; excluded top-level suite aggregator",
+      "elapsed_seconds": 8.673,
+      "test_executions": [
+        {
+          "path": "target/surefire-reports/TEST-org.java_websocket.issues.Issue580Test.xml",
+          "tests": [
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario0",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario1",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario2",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario3",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario4",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario5",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario6",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario7",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario8",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario9",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario0",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario1",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario2",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario3",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario4",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario5",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario6",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario7",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario8",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario9",
+              "status": "passed"
+            }
+          ],
+          "suite_attrs": {
+            "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd",
+            "version": "3.0",
+            "name": "org.java_websocket.issues.Issue580Test",
+            "time": "3.175",
+            "tests": "20",
+            "errors": "0",
+            "skipped": "0",
+            "failures": "0"
+          }
+        }
+      ],
+      "test_count": 20,
+      "log_tail": "[INFO] Scanning for projects...\n[INFO] \n[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------\n[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---\n[INFO] skip non existing resourceDirectory /tmp/n04-maven-d2_6u6uy/src/main/resources\n[INFO] \n[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 70 source files to /tmp/n04-maven-d2_6u6uy/target/classes\n[INFO] /tmp/n04-maven-d2_6u6uy/src/main/java/org/java_websocket/server/WebSocketServer.java: Some input files use or override a deprecated API.\n[INFO] /tmp/n04-maven-d2_6u6uy/src/main/java/org/java_websocket/server/WebSocketServer.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-d2_6u6uy/src/main/java/org/java_websocket/drafts/Draft.java: /tmp/n04-maven-d2_6u6uy/src/main/java/org/java_websocket/drafts/Draft.java uses or overrides a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-d2_6u6uy/src/main/java/org/java_websocket/drafts/Draft.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---\n[INFO] Copying 1 resource from src/test/resources to target/test-classes\n[INFO] \n[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 52 source files to /tmp/n04-maven-d2_6u6uy/target/test-classes\n[INFO] /tmp/n04-maven-d2_6u6uy/src/test/java/org/java_websocket/util/ThreadCheck.java: /tmp/n04-maven-d2_6u6uy/src/test/java/org/java_websocket/util/ThreadCheck.java uses or overrides a deprecated API.\n[INFO] /tmp/n04-maven-d2_6u6uy/src/test/java/org/java_websocket/util/ThreadCheck.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-d2_6u6uy/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Some input files use or override a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-d2_6u6uy/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- surefire:3.2.5:test (default-test) @ Java-WebSocket ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running org.java_websocket.issues.Issue580Test\n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.175 s -- in org.java_websocket.issues.Issue580Test\n[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  7.122 s\n[INFO] Finished at: 2026-11-15T02:52:42+09:00\n[INFO] ------------------------------------------------------------------------\n\n",
+      "repeat_index": 2
+    },
+    {
+      "git_sha": "2ce6e6149d0ef44f4919e75326265c64c144a00f",
+      "returncode": 0,
+      "build_compatibility_adjustment": "build-only Java 6 to Java 8 compiler level adjustment; excluded unrelated CORBA-dependent test file; excluded its dependent suite aggregator; excluded top-level suite aggregator",
+      "elapsed_seconds": 7.293,
+      "test_executions": [
+        {
+          "path": "target/surefire-reports/TEST-org.java_websocket.issues.Issue580Test.xml",
+          "tests": [
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[0]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[0]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[1]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[1]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[2]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[2]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[3]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[3]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[4]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[4]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[5]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[5]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[6]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[6]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[7]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[7]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[8]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[8]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[9]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[9]",
+              "status": "passed"
+            }
+          ],
+          "suite_attrs": {
+            "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd",
+            "version": "3.0",
+            "name": "org.java_websocket.issues.Issue580Test",
+            "time": "3.171",
+            "tests": "20",
+            "errors": "0",
+            "skipped": "0",
+            "failures": "0"
+          }
+        }
+      ],
+      "test_count": 20,
+      "log_tail": "[INFO] Scanning for projects...\n[INFO] \n[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------\n[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---\n[INFO] skip non existing resourceDirectory /tmp/n04-maven-q0etjp0c/src/main/resources\n[INFO] \n[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 70 source files to /tmp/n04-maven-q0etjp0c/target/classes\n[INFO] /tmp/n04-maven-q0etjp0c/src/main/java/org/java_websocket/server/WebSocketServer.java: Some input files use or override a deprecated API.\n[INFO] /tmp/n04-maven-q0etjp0c/src/main/java/org/java_websocket/server/WebSocketServer.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-q0etjp0c/src/main/java/org/java_websocket/drafts/Draft.java: /tmp/n04-maven-q0etjp0c/src/main/java/org/java_websocket/drafts/Draft.java uses or overrides a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-q0etjp0c/src/main/java/org/java_websocket/drafts/Draft.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---\n[INFO] Copying 1 resource from src/test/resources to target/test-classes\n[INFO] \n[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 52 source files to /tmp/n04-maven-q0etjp0c/target/test-classes\n[INFO] /tmp/n04-maven-q0etjp0c/src/test/java/org/java_websocket/util/ThreadCheck.java: /tmp/n04-maven-q0etjp0c/src/test/java/org/java_websocket/util/ThreadCheck.java uses or overrides a deprecated API.\n[INFO] /tmp/n04-maven-q0etjp0c/src/test/java/org/java_websocket/util/ThreadCheck.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-q0etjp0c/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Some input files use or override a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-q0etjp0c/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- surefire:3.2.5:test (default-test) @ Java-WebSocket ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running org.java_websocket.issues.Issue580Test\n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.171 s -- in org.java_websocket.issues.Issue580Test\n[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  6.107 s\n[INFO] Finished at: 2026-11-15T02:52:50+09:00\n[INFO] ------------------------------------------------------------------------\n\n",
+      "repeat_index": 0
+    },
+    {
+      "git_sha": "2ce6e6149d0ef44f4919e75326265c64c144a00f",
+      "returncode": 0,
+      "build_compatibility_adjustment": "build-only Java 6 to Java 8 compiler level adjustment; excluded unrelated CORBA-dependent test file; excluded its dependent suite aggregator; excluded top-level suite aggregator",
+      "elapsed_seconds": 7.057,
+      "test_executions": [
+        {
+          "path": "target/surefire-reports/TEST-org.java_websocket.issues.Issue580Test.xml",
+          "tests": [
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[0]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[0]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[1]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[1]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[2]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[2]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[3]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[3]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[4]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[4]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[5]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[5]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[6]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[6]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[7]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[7]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[8]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[8]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[9]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[9]",
+              "status": "passed"
+            }
+          ],
+          "suite_attrs": {
+            "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd",
+            "version": "3.0",
+            "name": "org.java_websocket.issues.Issue580Test",
+            "time": "3.123",
+            "tests": "20",
+            "errors": "0",
+            "skipped": "0",
+            "failures": "0"
+          }
+        }
+      ],
+      "test_count": 20,
+      "log_tail": "[INFO] Scanning for projects...\n[INFO] \n[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------\n[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---\n[INFO] skip non existing resourceDirectory /tmp/n04-maven-pp7omvmw/src/main/resources\n[INFO] \n[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 70 source files to /tmp/n04-maven-pp7omvmw/target/classes\n[INFO] /tmp/n04-maven-pp7omvmw/src/main/java/org/java_websocket/server/WebSocketServer.java: Some input files use or override a deprecated API.\n[INFO] /tmp/n04-maven-pp7omvmw/src/main/java/org/java_websocket/server/WebSocketServer.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-pp7omvmw/src/main/java/org/java_websocket/drafts/Draft.java: /tmp/n04-maven-pp7omvmw/src/main/java/org/java_websocket/drafts/Draft.java uses or overrides a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-pp7omvmw/src/main/java/org/java_websocket/drafts/Draft.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---\n[INFO] Copying 1 resource from src/test/resources to target/test-classes\n[INFO] \n[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 52 source files to /tmp/n04-maven-pp7omvmw/target/test-classes\n[INFO] /tmp/n04-maven-pp7omvmw/src/test/java/org/java_websocket/util/ThreadCheck.java: /tmp/n04-maven-pp7omvmw/src/test/java/org/java_websocket/util/ThreadCheck.java uses or overrides a deprecated API.\n[INFO] /tmp/n04-maven-pp7omvmw/src/test/java/org/java_websocket/util/ThreadCheck.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-pp7omvmw/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Some input files use or override a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-pp7omvmw/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- surefire:3.2.5:test (default-test) @ Java-WebSocket ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running org.java_websocket.issues.Issue580Test\n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.123 s -- in org.java_websocket.issues.Issue580Test\n[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  5.833 s\n[INFO] Finished at: 2026-11-15T02:52:57+09:00\n[INFO] ------------------------------------------------------------------------\n\n",
+      "repeat_index": 1
+    },
+    {
+      "git_sha": "2ce6e6149d0ef44f4919e75326265c64c144a00f",
+      "returncode": 0,
+      "build_compatibility_adjustment": "build-only Java 6 to Java 8 compiler level adjustment; excluded unrelated CORBA-dependent test file; excluded its dependent suite aggregator; excluded top-level suite aggregator",
+      "elapsed_seconds": 9.106,
+      "test_executions": [
+        {
+          "path": "target/surefire-reports/TEST-org.java_websocket.issues.Issue580Test.xml",
+          "tests": [
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[0]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[0]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[1]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[1]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[2]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[2]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[3]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[3]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[4]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[4]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[5]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[5]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[6]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[6]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[7]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[7]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[8]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[8]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runCloseBlockingTestScenario[9]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue580Test",
+              "name": "runNoCloseBlockingTestScenario[9]",
+              "status": "passed"
+            }
+          ],
+          "suite_attrs": {
+            "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd",
+            "version": "3.0",
+            "name": "org.java_websocket.issues.Issue580Test",
+            "time": "3.113",
+            "tests": "20",
+            "errors": "0",
+            "skipped": "0",
+            "failures": "0"
+          }
+        }
+      ],
+      "test_count": 20,
+      "log_tail": "[INFO] Scanning for projects...\n[INFO] \n[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------\n[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---\n[INFO] skip non existing resourceDirectory /tmp/n04-maven-agk6a6fd/src/main/resources\n[INFO] \n[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 70 source files to /tmp/n04-maven-agk6a6fd/target/classes\n[INFO] /tmp/n04-maven-agk6a6fd/src/main/java/org/java_websocket/server/WebSocketServer.java: Some input files use or override a deprecated API.\n[INFO] /tmp/n04-maven-agk6a6fd/src/main/java/org/java_websocket/server/WebSocketServer.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-agk6a6fd/src/main/java/org/java_websocket/drafts/Draft.java: /tmp/n04-maven-agk6a6fd/src/main/java/org/java_websocket/drafts/Draft.java uses or overrides a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-agk6a6fd/src/main/java/org/java_websocket/drafts/Draft.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---\n[INFO] Copying 1 resource from src/test/resources to target/test-classes\n[INFO] \n[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 52 source files to /tmp/n04-maven-agk6a6fd/target/test-classes\n[INFO] /tmp/n04-maven-agk6a6fd/src/test/java/org/java_websocket/util/ThreadCheck.java: /tmp/n04-maven-agk6a6fd/src/test/java/org/java_websocket/util/ThreadCheck.java uses or overrides a deprecated API.\n[INFO] /tmp/n04-maven-agk6a6fd/src/test/java/org/java_websocket/util/ThreadCheck.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-agk6a6fd/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Some input files use or override a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-agk6a6fd/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- surefire:3.2.5:test (default-test) @ Java-WebSocket ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running org.java_websocket.issues.Issue580Test\n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.113 s -- in org.java_websocket.issues.Issue580Test\n[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  7.500 s\n[INFO] Finished at: 2026-11-15T02:53:06+09:00\n[INFO] ------------------------------------------------------------------------\n\n",
+      "repeat_index": 2
+    }
+  ]
+}

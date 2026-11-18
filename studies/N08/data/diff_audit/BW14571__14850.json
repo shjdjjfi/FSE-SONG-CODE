@@ -1,0 +1,20 @@
+{
+  "changed_code_lines_under_target": 7,
+  "changed_files_in_whole_pr": 7,
+  "changed_files_under_target": 2,
+  "code_files_under_target": 2,
+  "code_touched": true,
+  "event": "BW14571",
+  "focused_code_touched": true,
+  "pr": 14850,
+  "raw_size_bytes": 17241,
+  "repo": "bitwarden/clients",
+  "sha256": "a7aac8ce6a123e17f16f339a85942c633c4851803fe0ec2e5b2d654627b8b46c",
+  "target_file_fraction": 0.28571,
+  "target_paths": [
+    "apps/web/src/app/dirt/reports/shared/report-card/report-card.stories.ts",
+    "apps/web/src/app/dirt/reports/shared/report-list/report-list.stories.ts"
+  ],
+  "test_files_under_target": 0,
+  "url": "https://github.com/bitwarden/clients/pull/14850.patch"
+}

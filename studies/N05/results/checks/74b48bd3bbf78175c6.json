@@ -1,0 +1,28 @@
+{
+  "key": "74b48bd3bbf78175c6",
+  "args": {
+    "crate": "reqwest",
+    "version": "0.12.19",
+    "id": "d105bdfc6df52f39",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2177,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: could not find `blocking` in `reqwest`",
+      "rendered": "error[E0433]: failed to resolve: could not find `blocking` in `reqwest`\n   --> src/main.rs:5:23\n    |\n  5 | let client = reqwest::blocking::Client::new();\n    |                       ^^^^^^^^ could not find `blocking` in `reqwest`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-0.12.19/src/lib.rs:366:13\n    |\n365 |     #[cfg(feature = \"blocking\")]\n    |           -------------------- the item is gated behind the `blocking` feature\n366 |     pub mod blocking;\n    |             ^^^^^^^^\nhelp: consider importing this struct\n    |\n  1 + use reqwest::Client;\n    |\nhelp: if you import `Client`, refer to it directly\n    |\n  5 - let client = reqwest::blocking::Client::new();\n  5 + let client = Client::new();\n    |\n\n",
+      "line": 5
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_reqwest_consumer` (bin \"n05_reqwest_consumer\") due to 1 previous error\n",
+  "code_sha256": "e33724acf7b846df2c4d30cc2522b71a10d901eb31dc1ece14ba19d87d2dbb78",
+  "manifest_sha256": "6ae11118f89c48e1404353ad362df548bcef5af7372b0ae8059b7b9091d56b4e",
+  "log_file": "results/check_logs/74b48bd3bbf78175c6.txt.gz"
+}

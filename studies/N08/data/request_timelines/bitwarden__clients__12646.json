@@ -1,0 +1,91 @@
+{
+  "pr": 12646,
+  "pr_author": "quexten",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-01-03T13:04:35Z",
+      "requested_people": [
+        "quexten"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-03T13:04:36Z",
+      "requested_people": [
+        "quexten",
+        "rr-bw"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-09T14:51:10Z",
+      "requested_people": [
+        "jaredsnider-bitwarden",
+        "quexten"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-21T12:18:33Z",
+      "requested_people": [
+        "jaredsnider-bitwarden",
+        "quexten"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-28T14:41:39Z",
+      "requested_people": [
+        "jaredsnider-bitwarden",
+        "mzieniukbw",
+        "quexten"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-02-05T20:14:44Z",
+      "requested_people": [
+        "quexten",
+        "thomas-avery"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-02-07T10:59:42Z",
+      "requested_people": [
+        "quexten",
+        "thomas-avery"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-03-03T13:03:07Z",
+      "requested_people": [
+        "jaredsnider-bitwarden",
+        "quexten",
+        "thomas-avery"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-03-24T10:27:41Z",
+      "requested_people": [
+        "mzieniukbw",
+        "quexten"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "f0f65e7100fe6622406c372bd386f5c22c8f52b5290890c1a520caf8ee195e73",
+  "url": "https://github.com/bitwarden/clients/pull/12646"
+}

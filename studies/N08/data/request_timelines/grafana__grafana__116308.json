@@ -1,0 +1,26 @@
+{
+  "pr": 116308,
+  "pr_author": "titolins",
+  "repo": "grafana/grafana",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2026-01-21T16:11:26Z",
+      "requested_people": [
+        "titolins"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2026-01-21T16:11:31Z",
+      "requested_people": [
+        "titolins",
+        "yuri-tceretian"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "dab83a2d7753f37158e56df0d489ad71d8741940137a475c89ef4859a6fae8b6",
+  "url": "https://github.com/grafana/grafana/pull/116308"
+}

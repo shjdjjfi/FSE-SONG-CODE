@@ -1,0 +1,76 @@
+{
+  "key": "2055ef4ded29326711",
+  "args": {
+    "crate": "tower",
+    "version": "0.5.2",
+    "id": "09806dfece38750d",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 7.4437,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower::steer`",
+      "rendered": "error[E0432]: unresolved import `tower::steer`\n   --> src/main.rs:4:12\n    |\n  4 | use tower::steer::Steer;\n    |            ^^^^^ could not find `steer` in `tower`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-0.5.2/src/lib.rs:193:9\n    |\n192 | #[cfg(feature = \"steer\")]\n    |       ----------------- the item is gated behind the `steer` feature\n193 | pub mod steer;\n    |         ^^^^^\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower::service_fn`",
+      "rendered": "error[E0432]: unresolved import `tower::service_fn`\n   --> src/main.rs:5:5\n    |\n  5 | use tower::service_fn;\n    |     ^^^^^^^^^^^^^^^^^ no `service_fn` in the root\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-0.5.2/src/lib.rs:205:22\n    |\n202 | #[cfg(feature = \"util\")]\n    |       ---------------- the item is gated behind the `util` feature\n...\n205 | pub use self::util::{service_fn, ServiceExt};\n    |                      ^^^^^^^^^^\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower::util`",
+      "rendered": "error[E0432]: unresolved import `tower::util`\n   --> src/main.rs:6:12\n    |\n  6 | use tower::util::BoxService;\n    |            ^^^^ could not find `util` in `tower`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-0.5.2/src/lib.rs:197:9\n    |\n196 | #[cfg(feature = \"util\")]\n    |       ---------------- the item is gated behind the `util` feature\n197 | pub mod util;\n    |         ^^^^\n\n",
+      "line": 6
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower::ServiceExt`",
+      "rendered": "error[E0432]: unresolved import `tower::ServiceExt`\n   --> src/main.rs:7:5\n    |\n  7 | use tower::ServiceExt;\n    |     ^^^^^^^----------\n    |     |      |\n    |     |      help: a similar name exists in the module: `Service`\n    |     no `ServiceExt` in the root\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-0.5.2/src/lib.rs:205:34\n    |\n202 | #[cfg(feature = \"util\")]\n    |       ---------------- the item is gated behind the `util` feature\n...\n205 | pub use self::util::{service_fn, ServiceExt};\n    |                                  ^^^^^^^^^^\n\n",
+      "line": 7
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `futures_util`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_util`\n --> src/main.rs:3:5\n  |\n3 | use futures_util::future::{ready, Ready, poll_fn};\n  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_util`\n  |\n  = help: if you wanted to use a crate named `futures_util`, use `cargo add futures_util` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower_service`",
+      "rendered": "error[E0432]: unresolved import `tower_service`\n --> src/main.rs:2:5\n  |\n2 | use tower_service::Service;\n  |     ^^^^^^^^^^^^^ use of unresolved module or unlinked crate `tower_service`\n  |\n  = help: if you wanted to use a crate named `tower_service`, use `cargo add tower_service` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `http`",
+      "rendered": "error[E0432]: unresolved import `http`\n --> src/main.rs:9:5\n  |\n9 | use http::{Request, Response, StatusCode, Method};\n  |     ^^^^ use of unresolved module or unlinked crate `http`\n  |\n  = help: if you wanted to use a crate named `http`, use `cargo add http` to add it to your `Cargo.toml`\n\n",
+      "line": 9
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n  --> src/main.rs:11:3\n   |\n11 | #[tokio::main]\n   |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 11
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n  --> src/main.rs:12:1\n   |\n12 | async fn main() -> Result<(), Box<dyn std::error::Error>> {\n   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 12
+    }
+  ],
+  "error_count": 9,
+  "stderr_excerpt": "error: could not compile `n05_tower_consumer` (bin \"n05_tower_consumer\") due to 9 previous errors; 1 warning emitted\n",
+  "code_sha256": "3a41ec2a2e680088bfde9143943db4d1ecaf5c7a072e1e3395334da4a2e7fe52",
+  "manifest_sha256": "26868b8190d1c863374370170f526108cc23ca34b421542d513c0830871fe22d",
+  "log_file": "holdout/results/check_logs/2055ef4ded29326711.txt.gz"
+}

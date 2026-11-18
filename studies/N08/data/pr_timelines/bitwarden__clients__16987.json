@@ -1,0 +1,27 @@
+{
+  "fetched_utc": "2026-11-14T17:13:11.139494+00:00",
+  "merged_at": "2025-10-23T16:54:52Z",
+  "opened_at": "2025-10-22T18:16:56Z",
+  "pr": 16987,
+  "raw_html_sha256": "59877042bc8dc217a3fb604c42244bd50a2e7eb3f67ee95987ecdd732ee09542",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 3,
+  "reviews": [
+    {
+      "login": "gbubemismith",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-22T18:43:29Z"
+    },
+    {
+      "login": "voommen-livefront",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-23T16:30:00Z"
+    },
+    {
+      "login": "AlexRubik",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-23T16:38:24Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/16987"
+}

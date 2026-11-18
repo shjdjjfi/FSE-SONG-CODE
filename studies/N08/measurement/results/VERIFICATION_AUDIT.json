@@ -1,0 +1,17 @@
+{
+  "api_team_identity_samples": 2,
+  "design": "frozen public repository measurement; no expertise oracle",
+  "historical_team_memberships_independently_observed": 0,
+  "human_expertise_independently_adjudicated": 0,
+  "industrial_causal_savings_measured": false,
+  "issue_events_normalized_sha256": {
+    "bitwarden__clients__12853.json": "a8255dc6e67e196929bdc0fd3fc26be5764422d719cde05391e0cafeb839cdd2",
+    "bitwarden__clients__12854.json": "6275b3f6835dac9421a702a33a38513dc567586cd20ff054b3462171b168b10c"
+  },
+  "n_event_clusters": 9,
+  "n_pr_event_pairs": 114,
+  "n_unique_prs": 103,
+  "synthetic_bound_test_errors": 0,
+  "synthetic_bound_tests": 4500,
+  "verified": true
+}

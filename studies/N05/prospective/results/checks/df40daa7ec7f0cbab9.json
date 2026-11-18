@@ -1,0 +1,28 @@
+{
+  "key": "df40daa7ec7f0cbab9",
+  "args": {
+    "crate": "opentelemetry",
+    "version": "0.29.1",
+    "id": "97b653fc9a9f0c3b",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0551,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `opentelemetry_sdk`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `opentelemetry_sdk`\n --> src/main.rs:4:5\n  |\n4 | use opentelemetry_sdk::logs::SdkLoggerProvider;\n  |     ^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `opentelemetry_sdk`\n  |\nhelp: there is a crate or module with a similar name\n  |\n4 - use opentelemetry_sdk::logs::SdkLoggerProvider;\n4 + use opentelemetry::logs::SdkLoggerProvider;\n  |\n\n",
+      "line": 4
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_opentelemetry_consumer` (bin \"n05_opentelemetry_consumer\") due to 1 previous error\n",
+  "code_sha256": "2265ea83012ea23f0b043d7f636fc3aa0e32ce84912d78e4c689190199622502",
+  "manifest_sha256": "8f6eb37dd5a36a4339eb8a30cb7cd46d8ad2a7281cf3f53f39aa9d5ed26dddbf",
+  "log_file": "prospective/results/check_logs/df40daa7ec7f0cbab9.txt.gz"
+}

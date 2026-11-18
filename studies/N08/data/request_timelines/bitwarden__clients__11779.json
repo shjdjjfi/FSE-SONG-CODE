@@ -1,0 +1,27 @@
+{
+  "pr": 11779,
+  "pr_author": "jaredsnider-bitwarden",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2024-10-29T19:42:48Z",
+      "requested_people": [
+        "jaredsnider-bitwarden"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2024-10-29T19:42:49Z",
+      "requested_people": [
+        "jaredsnider-bitwarden",
+        "justindbaur",
+        "rr-bw"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "d60bc949f05a8bee2e1b3a2a036614fc4b82b21c92e4fd4e1fd78119d0e42052",
+  "url": "https://github.com/bitwarden/clients/pull/11779"
+}

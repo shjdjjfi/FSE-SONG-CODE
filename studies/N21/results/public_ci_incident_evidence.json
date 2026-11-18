@@ -1,0 +1,40 @@
+{
+  "audit_date_utc": "2026-11-18",
+  "search_scope": "targeted TypeScript/Nx/Nest/Wireit public bug records and linked GitHub workflow history; not an exhaustive population sample",
+  "first_person_natural_ci_report": [
+    {
+      "source": "https://github.com/microsoft/TypeScript/issues/30602#issuecomment-478796641",
+      "issue": "microsoft/TypeScript#30602",
+      "reporter": "sdwvit",
+      "evidence_type": "first-person retrospective report of CI impact",
+      "paraphrase": "The reporter says that a removed-file import problem on one development branch propagated a different TypeScript error to parallel branch CI builds that cached buildinfo.",
+      "natural_as_reported": true,
+      "original_workflow_url_available": false,
+      "original_run_job_ids_available": false,
+      "complete_uncensored_log_available": false,
+      "cache_key_or_file_list_available": false,
+      "independent_output_sha_manifest_available": false,
+      "retrospective_primary_claim_only": true,
+      "cannot_use_for_incidence_denominator": true
+    }
+  ],
+  "other_public_mechanism_reports": [
+    {
+      "source": "https://github.com/nrwl/nx/issues/35079",
+      "classification": "maintainer-described Nx task-cache/tsc stale-output mechanism with reproduction steps",
+      "complete_natural_ci_job_trace": false
+    },
+    {
+      "source": "https://github.com/nestjs/nest-cli/issues/3312",
+      "classification": "real tooling failure report, not evidence of a sampled CI restoration incident",
+      "complete_natural_ci_job_trace": false
+    }
+  ],
+  "historical_log_retention_documentation": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository",
+  "default_log_retention_days": 90,
+  "strict_natural_ci_cases_with_complete_raw_logs": 0,
+  "natural_ci_first_person_reports_without_logs": 1,
+  "strict_n21_incidence_numerator": null,
+  "strict_n21_incidence_denominator": null,
+  "reason": "Case reports lack stable natural workflow runs with logs, cache snapshots and independent emitted-file manifests; the sampled public runner workflow has no N21 integrity checks. A count of all CI runs does not establish a valid at-risk denominator."
+}

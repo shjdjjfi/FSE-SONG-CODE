@@ -1,0 +1,548 @@
+{
+  "source": {
+    "crate": "tower-http",
+    "version": "0.6.6",
+    "archive_url": "https://static.crates.io/crates/tower-http/tower-http-0.6.6.crate",
+    "archive_sha256": "adc82fd73de2a9722ac5da747f12383d2bfdb93591ee6c58486e0097890f05f2",
+    "size": 133515,
+    "edition": "2018",
+    "rust_version": "1.64",
+    "license": "MIT",
+    "license_file": null,
+    "repository": "https://github.com/tower-rs/tower-http",
+    "docs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "default_features": [],
+    "feature_names": [
+      "add-extension",
+      "auth",
+      "catch-panic",
+      "compression-br",
+      "compression-deflate",
+      "compression-full",
+      "compression-gzip",
+      "compression-zstd",
+      "cors",
+      "decompression-br",
+      "decompression-deflate",
+      "decompression-full",
+      "decompression-gzip",
+      "decompression-zstd",
+      "default",
+      "follow-redirect",
+      "fs",
+      "full",
+      "limit",
+      "map-request-body",
+      "map-response-body",
+      "metrics",
+      "normalize-path",
+      "propagate-header",
+      "redirect",
+      "request-id",
+      "sensitive-headers",
+      "set-header",
+      "set-status",
+      "timeout",
+      "trace",
+      "util",
+      "validate-request"
+    ],
+    "feature_map": {
+      "default": [],
+      "full": [
+        "add-extension",
+        "auth",
+        "catch-panic",
+        "compression-full",
+        "cors",
+        "decompression-full",
+        "follow-redirect",
+        "fs",
+        "limit",
+        "map-request-body",
+        "map-response-body",
+        "metrics",
+        "normalize-path",
+        "propagate-header",
+        "redirect",
+        "request-id",
+        "sensitive-headers",
+        "set-header",
+        "set-status",
+        "timeout",
+        "trace",
+        "util",
+        "validate-request"
+      ],
+      "add-extension": [],
+      "auth": [
+        "base64",
+        "validate-request"
+      ],
+      "catch-panic": [
+        "tracing",
+        "futures-util/std",
+        "dep:http-body",
+        "dep:http-body-util"
+      ],
+      "cors": [],
+      "follow-redirect": [
+        "futures-util",
+        "dep:http-body",
+        "iri-string",
+        "tower/util"
+      ],
+      "fs": [
+        "futures-core",
+        "futures-util",
+        "dep:http-body",
+        "dep:http-body-util",
+        "tokio/fs",
+        "tokio-util/io",
+        "tokio/io-util",
+        "dep:http-range-header",
+        "mime_guess",
+        "mime",
+        "percent-encoding",
+        "httpdate",
+        "set-status",
+        "futures-util/alloc",
+        "tracing"
+      ],
+      "limit": [
+        "dep:http-body",
+        "dep:http-body-util"
+      ],
+      "map-request-body": [],
+      "map-response-body": [],
+      "metrics": [
+        "dep:http-body",
+        "tokio/time"
+      ],
+      "normalize-path": [],
+      "propagate-header": [],
+      "redirect": [],
+      "request-id": [
+        "uuid"
+      ],
+      "sensitive-headers": [],
+      "set-header": [],
+      "set-status": [],
+      "timeout": [
+        "dep:http-body",
+        "tokio/time"
+      ],
+      "trace": [
+        "dep:http-body",
+        "tracing"
+      ],
+      "util": [
+        "tower"
+      ],
+      "validate-request": [
+        "mime"
+      ],
+      "compression-br": [
+        "async-compression/brotli",
+        "futures-core",
+        "dep:http-body",
+        "tokio-util",
+        "tokio"
+      ],
+      "compression-deflate": [
+        "async-compression/zlib",
+        "futures-core",
+        "dep:http-body",
+        "tokio-util",
+        "tokio"
+      ],
+      "compression-full": [
+        "compression-br",
+        "compression-deflate",
+        "compression-gzip",
+        "compression-zstd"
+      ],
+      "compression-gzip": [
+        "async-compression/gzip",
+        "futures-core",
+        "dep:http-body",
+        "tokio-util",
+        "tokio"
+      ],
+      "compression-zstd": [
+        "async-compression/zstd",
+        "futures-core",
+        "dep:http-body",
+        "tokio-util",
+        "tokio"
+      ],
+      "decompression-br": [
+        "async-compression/brotli",
+        "futures-core",
+        "dep:http-body",
+        "dep:http-body-util",
+        "tokio-util",
+        "tokio"
+      ],
+      "decompression-deflate": [
+        "async-compression/zlib",
+        "futures-core",
+        "dep:http-body",
+        "dep:http-body-util",
+        "tokio-util",
+        "tokio"
+      ],
+      "decompression-full": [
+        "decompression-br",
+        "decompression-deflate",
+        "decompression-gzip",
+        "decompression-zstd"
+      ],
+      "decompression-gzip": [
+        "async-compression/gzip",
+        "futures-core",
+        "dep:http-body",
+        "dep:http-body-util",
+        "tokio-util",
+        "tokio"
+      ],
+      "decompression-zstd": [
+        "async-compression/zstd",
+        "futures-core",
+        "dep:http-body",
+        "dep:http-body-util",
+        "tokio-util",
+        "tokio"
+      ]
+    },
+    "n_snippets": 74,
+    "n_explicit": 0
+  },
+  "sample_method": "seeded fixed unordered sample; no learning",
+  "sampled": 2,
+  "candidate_mismatches": 1,
+  "industrial_adoption": false,
+  "semantic_defects_confirmed": 0,
+  "note": "Advisory only. A page may already display the feature prerequisite. Do not report candidate count as defects.",
+  "findings": [
+    {
+      "id": "5265b7d736b0bb6b",
+      "source": "src/auth/add_authorization.rs",
+      "line": 7,
+      "default_status": "fail",
+      "docs_status": "fail",
+      "candidate": null,
+      "label": "not_a_confirmed_mismatch"
+    },
+    {
+      "id": "aa3075d576525f77",
+      "source": "src/cors/mod.rs",
+      "line": 211,
+      "default_status": "fail",
+      "docs_status": "pass",
+      "candidate": {
+        "id": "aa3075d576525f77",
+        "crate": "tower-http",
+        "rank": [
+          "cors",
+          "add-extension",
+          "auth",
+          "catch-panic",
+          "compression-br",
+          "compression-deflate",
+          "compression-full",
+          "compression-gzip",
+          "compression-zstd",
+          "decompression-br",
+          "decompression-deflate",
+          "decompression-full",
+          "decompression-gzip",
+          "decompression-zstd",
+          "follow-redirect",
+          "fs",
+          "limit",
+          "map-request-body",
+          "map-response-body",
+          "metrics",
+          "normalize-path",
+          "propagate-header",
+          "redirect",
+          "request-id",
+          "sensitive-headers",
+          "set-header",
+          "set-status",
+          "timeout",
+          "trace",
+          "util",
+          "validate-request",
+          "full"
+        ],
+        "budget": 8,
+        "guided": {
+          "pass": true,
+          "features": [
+            "cors"
+          ],
+          "attempts": 1,
+          "history": [
+            {
+              "features": [
+                "cors"
+              ],
+              "status": "pass",
+              "check": "4a363187fb8fcaf5da"
+            }
+          ]
+        },
+        "explicit": {
+          "pass": true,
+          "features": [
+            "cors"
+          ],
+          "attempts": 1,
+          "history": [
+            {
+              "features": [
+                "cors"
+              ],
+              "status": "pass",
+              "check": "4a363187fb8fcaf5da"
+            }
+          ]
+        },
+        "random": [
+          {
+            "seed": 17,
+            "pass": true,
+            "features": [
+              "validate-request",
+              "request-id",
+              "cors"
+            ],
+            "attempts": 3,
+            "history": [
+              {
+                "features": [
+                  "validate-request"
+                ],
+                "status": "fail",
+                "check": "eed902c82d38422ac7"
+              },
+              {
+                "features": [
+                  "validate-request",
+                  "request-id"
+                ],
+                "status": "fail",
+                "check": "bc3950cbb9a7e9f590"
+              },
+              {
+                "features": [
+                  "validate-request",
+                  "request-id",
+                  "cors"
+                ],
+                "status": "pass",
+                "check": "b9868d0e9deef6d261"
+              }
+            ]
+          },
+          {
+            "seed": 29,
+            "pass": true,
+            "features": [
+              "decompression-br",
+              "compression-zstd",
+              "compression-full",
+              "follow-redirect",
+              "auth",
+              "fs",
+              "cors"
+            ],
+            "attempts": 7,
+            "history": [
+              {
+                "features": [
+                  "decompression-br"
+                ],
+                "status": "fail",
+                "check": "82ce476dccb61f89f4"
+              },
+              {
+                "features": [
+                  "decompression-br",
+                  "compression-zstd"
+                ],
+                "status": "fail",
+                "check": "87669d85d76eeea40b"
+              },
+              {
+                "features": [
+                  "decompression-br",
+                  "compression-zstd",
+                  "compression-full"
+                ],
+                "status": "fail",
+                "check": "f18c0005ded0bc2020"
+              },
+              {
+                "features": [
+                  "decompression-br",
+                  "compression-zstd",
+                  "compression-full",
+                  "follow-redirect"
+                ],
+                "status": "fail",
+                "check": "11f8f5fefc162f5fca"
+              },
+              {
+                "features": [
+                  "decompression-br",
+                  "compression-zstd",
+                  "compression-full",
+                  "follow-redirect",
+                  "auth"
+                ],
+                "status": "fail",
+                "check": "64dfb2a5a3e9b6aa1e"
+              },
+              {
+                "features": [
+                  "decompression-br",
+                  "compression-zstd",
+                  "compression-full",
+                  "follow-redirect",
+                  "auth",
+                  "fs"
+                ],
+                "status": "fail",
+                "check": "b90c995ba671c378ce"
+              },
+              {
+                "features": [
+                  "decompression-br",
+                  "compression-zstd",
+                  "compression-full",
+                  "follow-redirect",
+                  "auth",
+                  "fs",
+                  "cors"
+                ],
+                "status": "pass",
+                "check": "bd42df4599fd977d7e"
+              }
+            ]
+          },
+          {
+            "seed": 43,
+            "pass": false,
+            "features": [
+              "compression-full",
+              "decompression-deflate",
+              "limit",
+              "decompression-br",
+              "compression-br",
+              "fs",
+              "util",
+              "follow-redirect"
+            ],
+            "attempts": 8,
+            "history": [
+              {
+                "features": [
+                  "compression-full"
+                ],
+                "status": "fail",
+                "check": "0f4c5b4cffb8f441c9"
+              },
+              {
+                "features": [
+                  "compression-full",
+                  "decompression-deflate"
+                ],
+                "status": "fail",
+                "check": "45890ef0d168c94f5a"
+              },
+              {
+                "features": [
+                  "compression-full",
+                  "decompression-deflate",
+                  "limit"
+                ],
+                "status": "fail",
+                "check": "0cce70606568d3251b"
+              },
+              {
+                "features": [
+                  "compression-full",
+                  "decompression-deflate",
+                  "limit",
+                  "decompression-br"
+                ],
+                "status": "fail",
+                "check": "3ad9e31495793d8ef4"
+              },
+              {
+                "features": [
+                  "compression-full",
+                  "decompression-deflate",
+                  "limit",
+                  "decompression-br",
+                  "compression-br"
+                ],
+                "status": "fail",
+                "check": "8a5de2be0a46b859ca"
+              },
+              {
+                "features": [
+                  "compression-full",
+                  "decompression-deflate",
+                  "limit",
+                  "decompression-br",
+                  "compression-br",
+                  "fs"
+                ],
+                "status": "fail",
+                "check": "d7888078082fea9544"
+              },
+              {
+                "features": [
+                  "compression-full",
+                  "decompression-deflate",
+                  "limit",
+                  "decompression-br",
+                  "compression-br",
+                  "fs",
+                  "util"
+                ],
+                "status": "fail",
+                "check": "dfc3dc24d9c8dea820"
+              },
+              {
+                "features": [
+                  "compression-full",
+                  "decompression-deflate",
+                  "limit",
+                  "decompression-br",
+                  "compression-br",
+                  "fs",
+                  "util",
+                  "follow-redirect"
+                ],
+                "status": "fail",
+                "check": "59166a150193ffc01a"
+              }
+            ]
+          }
+        ]
+      },
+      "label": "feature_profile_mismatch"
+    }
+  ]
+}

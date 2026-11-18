@@ -1,0 +1,118 @@
+% N22 FSE 2027 Industry Track — truthful experimental RESULTS ONLY.
+% Exploratory retrospective results; not a finished, accepted, or submission-ready paper.
+% Requires: \usepackage{booktabs} in the parent ACM article preamble.
+\section{Exploratory Evaluation}
+\label{sec:n22-evaluation}
+
+\subsection{Research Questions and Method}
+We ask whether completed migration paths that converge to identical relational
+schemas and migration ledgers can nevertheless violate application-relevant
+data contracts (RQ1), whether contract-aware checks discriminate real defects
+from legitimate user modifications better than structural and untyped data
+comparisons (RQ2), and whether they add detection power over a \emph{fully
+asserted} migration-test baseline at equal replay budget (RQ3).
+
+We used the unmodified migration engines of Django 6.0.0, Django 6.0.1, Django
+5.1.8, and OpenCode v2.0.19 (Git revision
+\texttt{1fd016ef32286de9489b7b24f1029f52c49a27b3}). Each Django input
+was exercised in an independently created SQLite database through the genuine
+\texttt{manage.py migrate} command; OpenCode used the actual
+\texttt{V1Migration.run} entry point on a new in-memory database following its
+real schema migrations. We captured raw business data, schema DDL, migration
+ledger, and an application-level or source-projection oracle. Each of 46
+distinct case inputs was repeated three times: 138 observations generated in
+126 separate operating-system processes. We calculated predictions at the
+\emph{case} level, not the repeat level.
+
+Our primary sample consists of two retrospectively selected, independently
+reported positive defects from different upstream projects and 13 distinct
+negative scenarios. We separately report 30 correlated, legitimate site
+configuration variations; one mixed-writer scenario was excluded because the
+upstream support policy for continuing V1 writes after a completed V2
+checkpoint was not established. The experimental design and labels were
+\emph{not} prospectively preregistered or blind; no population prevalence or
+unbiased detector sensitivity can be inferred from the sample.
+
+\subsection{Convergent-Structure Failures (RQ1)}
+In Django 6.0.0, the \texttt{RenameModel(Song, Son)} migration accidentally
+rewrites the permission \texttt{view\_songprofile} held by an existing user
+to \texttt{view\_son}. The native \texttt{User.has\_perm} call therefore
+returns false after a staged upgrade, whereas granting the same logical
+permission after a fresh install succeeds. The staged and fresh databases have
+the same final schema checksum and migration-ledger checksum. The regression
+was independently reported as Django ticket \#36843 and is absent in the
+Django 6.0.1 fix \cite{django36843}.
+
+The second case is the OpenCode V1-to-V2 message conversion at v2.0.19. A
+historically valid V1 assistant message without a newly required
+\texttt{agent} field is omitted: one of two source messages is absent from the
+V2 message table although the migration checkpoint reads
+\texttt{\{"phase":"completed"\}}. A control with the current message
+shape copies both rows; the schema and migration ledgers match. Independent
+issue \#52226 describes the same historical-format incompatibility
+\cite{opencode52226}. We do not equate the reporter's production-scale count
+with our two-row synthetic reproduction.
+
+\subsection{Differential Comparators (RQ2--RQ3)}
+\begin{table}[t]
+  \centering
+  \caption{Case-level retrospective confusion matrices. Thirteen negative
+  inputs exclude the 30 correlated user-edit stress variants. A strong
+  baseline already given the same business contracts ties the approach.}
+  \label{tab:n22-confusion}
+  \begin{tabular}{lrrrr}
+    \toprule
+    Comparator & TP & FN & FP & TN \\
+    \midrule
+    Business data contract & 2 & 0 & 0 & 13 \\
+    Full baseline + same assertions & 2 & 0 & 0 & 13 \\
+    Schema equality only & 0 & 2 & 0 & 13 \\
+    Migration ledger only & 0 & 2 & 0 & 13 \\
+    Completed status only & 0 & 2 & 0 & 13 \\
+    Untyped row difference & 2 & 0 & 5 & 8 \\
+    Row-count difference only & 2 & 0 & 4 & 9 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Both confirmed defects were found by the contract check; no core-negative
+input was flagged. Neither checking schema equality, checking migration ledger
+equality, nor accepting a successful migration status detected either defect.
+Uninterpreted row differences flagged five legitimate cases, including
+preserved site edits and path-specific permission rows; row counts alone
+flagged four. Across 30 additional correlated user-controlled
+\texttt{Site.domain/name} configurations, the contract check flagged none,
+whereas the untyped row comparator flagged all 30. These are robustness
+observations, \emph{not} additional independent project-level negatives.
+
+The strong baseline receives exactly the same application contracts and
+replays exactly the same paths. It discovers both defects with zero false
+alarms, so the observed \emph{incremental recall is zero percentage points}.
+A more limited baseline using \texttt{django-test-migrations} 1.7.0 did not
+expose the Django permission bug because that helper mutes migration signals,
+not because developers could not write equivalent assertions. Likewise the
+unmodified OpenCode migration-test suite passed 26/26 tests across each of
+three runs but did not exercise the missing-\texttt{agent} historical shape.
+These results characterize specific test-coverage gaps, rather than proving
+superiority over complete existing testing \cite{djangoTestMigrations}.
+
+\subsection{Statistical Uncertainty, Threats, and Decision}
+The two defects are two selected historical incidents, not a probability
+sample. Even under an optimistic independent-binomial assumption, observing
+2/2 detected positives yields a one-sided exact 95\% recall lower bound of
+only 22.36\%; observing 0/13 false positives yields an upper bound of 20.58\%.
+Project clustering and retrospective case selection invalidate treating these
+bounds as population guarantees. We did not evaluate real production datasets,
+PostgreSQL/MySQL migrations, organization-specific rollback policy, developer
+effort, incident cost, or industrial ROI. Research prior art already includes
+fresh-versus-upgrade migration checks \cite{artemisMigrations}.
+
+The original research gate required at least two independent real defects,
+at least 15 percentage points of recall gain over the \emph{complete} baseline
+at equal replay budget, and at most 5\% false positives. The first condition
+is represented in this sample, but the second fails (0 pp gain), and the
+small sample cannot support the third with useful precision. Thus, we
+\emph{do not claim the proposed industrial-method contribution has been
+validated}. The artifact provides reproducible failure characterization and
+negative controls; an industry-impact claim requires a prospective,
+multi-project deployment evaluation and a measured operational advantage.

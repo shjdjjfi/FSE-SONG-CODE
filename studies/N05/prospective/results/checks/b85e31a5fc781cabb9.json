@@ -1,0 +1,34 @@
+{
+  "key": "b85e31a5fc781cabb9",
+  "args": {
+    "crate": "slog",
+    "version": "2.7.0",
+    "id": "d10479f5d1ee391b",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0634,
+  "errors": [
+    {
+      "code": "E0782",
+      "message": "expected a type, found a trait",
+      "rendered": "error[E0782]: expected a type, found a trait\n  --> src/main.rs:13:38\n   |\n13 |                     serializer: &mut Serializer)\n   |                                      ^^^^^^^^^^\n   |\nhelp: use a new generic type parameter, constrained by `Serializer`\n   |\n11 ~        fn serialize<T: Serializer>(&self,\n12 |                     _record: &Record,\n13 ~                     serializer: &mut T)\n   |\nhelp: you can also use an opaque type, but users won't be able to specify the type parameter when calling the `fn`, having to rely exclusively on type inference\n   |\n13 |                     serializer: &mut impl Serializer)\n   |                                      ++++\nhelp: alternatively, use a trait object to accept any type that implements `Serializer`, accessing its methods at runtime using dynamic dispatch\n   |\n13 |                     serializer: &mut dyn Serializer)\n   |                                      +++\n\n",
+      "line": 13
+    },
+    {
+      "code": "E0782",
+      "message": "expected a type, found a trait",
+      "rendered": "error[E0782]: expected a type, found a trait\n  --> src/main.rs:23:38\n   |\n23 |                     serializer: &mut Serializer)\n   |                                      ^^^^^^^^^^\n   |\nhelp: use a new generic type parameter, constrained by `Serializer`\n   |\n20 ~        fn serialize<T: Serializer>(&self,\n21 |                     _record: &Record,\n22 |                     key : Key,\n23 ~                     serializer: &mut T)\n   |\nhelp: you can also use an opaque type, but users won't be able to specify the type parameter when calling the `fn`, having to rely exclusively on type inference\n   |\n23 |                     serializer: &mut impl Serializer)\n   |                                      ++++\nhelp: alternatively, use a trait object to accept any type that implements `Serializer`, accessing its methods at runtime using dynamic dispatch\n   |\n23 |                     serializer: &mut dyn Serializer)\n   |                                      +++\n\n",
+      "line": 23
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_slog_consumer` (bin \"n05_slog_consumer\") due to 2 previous errors; 1 warning emitted\n",
+  "code_sha256": "55217e3d4a24d1a66f41d7bc301b0a40f92c464524be8950cec3c0bb4703129c",
+  "manifest_sha256": "b09bb3e9ca0c90ba11b595536331994707ae44aca1087a17d4f2428dd981a4c5",
+  "log_file": "prospective/results/check_logs/b85e31a5fc781cabb9.txt.gz"
+}

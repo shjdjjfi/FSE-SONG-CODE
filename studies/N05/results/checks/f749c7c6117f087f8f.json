@@ -1,0 +1,28 @@
+{
+  "key": "f749c7c6117f087f8f",
+  "args": {
+    "crate": "rand",
+    "version": "0.9.1",
+    "id": "bb612594fa05b615",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.9007,
+  "errors": [
+    {
+      "code": "E0554",
+      "message": "`#![feature]` may not be used on the stable release channel",
+      "rendered": "error[E0554]: `#![feature]` may not be used on the stable release channel\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/rand-0.9.1/src/lib.rs:51:39\n   |\n51 | #![cfg_attr(feature = \"simd_support\", feature(portable_simd))]\n   |                                       ^^^^^^^^^^^^^^^^^^^^^^\n\n",
+      "line": 51
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `rand` (lib) due to 1 previous error\n",
+  "code_sha256": "cc7d9bdb4ef56c06839e4e0b258b3bb65d793d71ea4ad7d36c8816a60bf6eb64",
+  "manifest_sha256": "7f8d5db46bbae89ff9f0b3612ac5730f9397155c2479bb29bb35b2cdf72a11d3",
+  "log_file": "results/check_logs/f749c7c6117f087f8f.txt.gz"
+}

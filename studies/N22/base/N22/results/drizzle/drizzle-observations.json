@@ -1,0 +1,1692 @@
+{
+  "input": {
+    "issue": "https://github.com/drizzle-team/drizzle-orm/issues/5782",
+    "runtime_version": "drizzle-orm@0.44.7",
+    "driver": "better-sqlite3@12.6.2",
+    "node": "v24.22.1",
+    "platform": "linux",
+    "sqlite": [
+      {
+        "integrity_check": "ok"
+      }
+    ],
+    "sql_sha256": "8e3bad00530411f18efa24a2cb6e93ee7c8a6a8919e2223c21b29bc89d351bc1",
+    "sql_template_transcribed_not_generated": true
+  },
+  "runs": [
+    {
+      "id": "cascade_three__upstream",
+      "project": "drizzle-orm",
+      "source_class": "real_drizzle_runtime_with_issue_derived_sqlite_rebuild",
+      "scenario": "cascade_three",
+      "arm": "upstream",
+      "policy": "CASCADE",
+      "input_children": 3,
+      "legitimate_user_edit": false,
+      "success": true,
+      "error": null,
+      "migration_ms": 9.277,
+      "sqlite_file": "cascade_three__upstream.sqlite",
+      "pre": {
+        "parent": [
+          {
+            "id": "parent-1",
+            "mode": "preview"
+          }
+        ],
+        "child": [
+          {
+            "id": "c0",
+            "parent_id": "parent-1",
+            "payload": "note-0"
+          },
+          {
+            "id": "c1",
+            "parent_id": "parent-1",
+            "payload": "note-1"
+          },
+          {
+            "id": "c2",
+            "parent_id": "parent-1",
+            "payload": "note-2"
+          }
+        ],
+        "grandchild": [
+          {
+            "id": "g0",
+            "child_id": "c0",
+            "payload": "attachment-0"
+          },
+          {
+            "id": "g1",
+            "child_id": "c1",
+            "payload": "attachment-1"
+          },
+          {
+            "id": "g2",
+            "child_id": "c2",
+            "payload": "attachment-2"
+          }
+        ]
+      },
+      "schema": [
+        {
+          "name": "__drizzle_migrations",
+          "sql": "CREATE TABLE \"__drizzle_migrations\" (\n\t\t\t\tid SERIAL PRIMARY KEY,\n\t\t\t\thash text NOT NULL,\n\t\t\t\tcreated_at numeric\n\t\t\t)"
+        },
+        {
+          "name": "child",
+          "sql": "CREATE TABLE child (id TEXT PRIMARY KEY NOT NULL, parent_id TEXT REFERENCES parent(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "grandchild",
+          "sql": "CREATE TABLE grandchild (id TEXT PRIMARY KEY NOT NULL, child_id TEXT NOT NULL REFERENCES child(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "parent",
+          "sql": "CREATE TABLE \"parent\" (\n    `id` TEXT PRIMARY KEY NOT NULL,\n    `mode` TEXT NOT NULL DEFAULT 'markup'\n)"
+        }
+      ],
+      "journal": [
+        {
+          "hash": "8e3bad00530411f18efa24a2cb6e93ee7c8a6a8919e2223c21b29bc89d351bc1",
+          "created_at": 1770000000000
+        }
+      ],
+      "parent": [
+        {
+          "id": "parent-1",
+          "mode": "preview"
+        }
+      ],
+      "child": [],
+      "grandchild": [],
+      "foreign_key_check": [],
+      "integrity_check": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "fk_setting": 1,
+      "data_contract_preserved": false,
+      "absent_or_mutated_children": [
+        {
+          "id": "c0",
+          "parent_id": "parent-1",
+          "payload": "note-0"
+        },
+        {
+          "id": "c1",
+          "parent_id": "parent-1",
+          "payload": "note-1"
+        },
+        {
+          "id": "c2",
+          "parent_id": "parent-1",
+          "payload": "note-2"
+        }
+      ],
+      "absent_or_mutated_attachments": [
+        {
+          "id": "g0",
+          "child_id": "c0",
+          "payload": "attachment-0"
+        },
+        {
+          "id": "g1",
+          "child_id": "c1",
+          "payload": "attachment-1"
+        },
+        {
+          "id": "g2",
+          "child_id": "c2",
+          "payload": "attachment-2"
+        }
+      ],
+      "application_lookup_success": false,
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_counts_as_reference": false
+    },
+    {
+      "id": "cascade_three__reference_fk_before_begin",
+      "project": "drizzle-orm",
+      "source_class": "real_drizzle_runtime_with_issue_derived_sqlite_rebuild",
+      "scenario": "cascade_three",
+      "arm": "reference_fk_before_begin",
+      "policy": "CASCADE",
+      "input_children": 3,
+      "legitimate_user_edit": false,
+      "success": true,
+      "error": null,
+      "migration_ms": 25.801,
+      "sqlite_file": "cascade_three__reference_fk_before_begin.sqlite",
+      "pre": {
+        "parent": [
+          {
+            "id": "parent-1",
+            "mode": "preview"
+          }
+        ],
+        "child": [
+          {
+            "id": "c0",
+            "parent_id": "parent-1",
+            "payload": "note-0"
+          },
+          {
+            "id": "c1",
+            "parent_id": "parent-1",
+            "payload": "note-1"
+          },
+          {
+            "id": "c2",
+            "parent_id": "parent-1",
+            "payload": "note-2"
+          }
+        ],
+        "grandchild": [
+          {
+            "id": "g0",
+            "child_id": "c0",
+            "payload": "attachment-0"
+          },
+          {
+            "id": "g1",
+            "child_id": "c1",
+            "payload": "attachment-1"
+          },
+          {
+            "id": "g2",
+            "child_id": "c2",
+            "payload": "attachment-2"
+          }
+        ]
+      },
+      "schema": [
+        {
+          "name": "__drizzle_migrations",
+          "sql": "CREATE TABLE \"__drizzle_migrations\" (\n\t\t\t\tid SERIAL PRIMARY KEY,\n\t\t\t\thash text NOT NULL,\n\t\t\t\tcreated_at numeric\n\t\t\t)"
+        },
+        {
+          "name": "child",
+          "sql": "CREATE TABLE child (id TEXT PRIMARY KEY NOT NULL, parent_id TEXT REFERENCES parent(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "grandchild",
+          "sql": "CREATE TABLE grandchild (id TEXT PRIMARY KEY NOT NULL, child_id TEXT NOT NULL REFERENCES child(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "parent",
+          "sql": "CREATE TABLE \"parent\" (\n    `id` TEXT PRIMARY KEY NOT NULL,\n    `mode` TEXT NOT NULL DEFAULT 'markup'\n)"
+        }
+      ],
+      "journal": [
+        {
+          "hash": "8e3bad00530411f18efa24a2cb6e93ee7c8a6a8919e2223c21b29bc89d351bc1",
+          "created_at": 1770000000000
+        }
+      ],
+      "parent": [
+        {
+          "id": "parent-1",
+          "mode": "preview"
+        }
+      ],
+      "child": [
+        {
+          "id": "c0",
+          "parent_id": "parent-1",
+          "payload": "note-0"
+        },
+        {
+          "id": "c1",
+          "parent_id": "parent-1",
+          "payload": "note-1"
+        },
+        {
+          "id": "c2",
+          "parent_id": "parent-1",
+          "payload": "note-2"
+        }
+      ],
+      "grandchild": [
+        {
+          "id": "g0",
+          "child_id": "c0",
+          "payload": "attachment-0"
+        },
+        {
+          "id": "g1",
+          "child_id": "c1",
+          "payload": "attachment-1"
+        },
+        {
+          "id": "g2",
+          "child_id": "c2",
+          "payload": "attachment-2"
+        }
+      ],
+      "foreign_key_check": [],
+      "integrity_check": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "fk_setting": 1,
+      "data_contract_preserved": true,
+      "absent_or_mutated_children": [],
+      "absent_or_mutated_attachments": [],
+      "application_lookup_success": true,
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_counts_as_reference": true
+    },
+    {
+      "id": "cascade_one__upstream",
+      "project": "drizzle-orm",
+      "source_class": "real_drizzle_runtime_with_issue_derived_sqlite_rebuild",
+      "scenario": "cascade_one",
+      "arm": "upstream",
+      "policy": "CASCADE",
+      "input_children": 1,
+      "legitimate_user_edit": false,
+      "success": true,
+      "error": null,
+      "migration_ms": 3.916,
+      "sqlite_file": "cascade_one__upstream.sqlite",
+      "pre": {
+        "parent": [
+          {
+            "id": "parent-1",
+            "mode": "preview"
+          }
+        ],
+        "child": [
+          {
+            "id": "c0",
+            "parent_id": "parent-1",
+            "payload": "note-0"
+          }
+        ],
+        "grandchild": [
+          {
+            "id": "g0",
+            "child_id": "c0",
+            "payload": "attachment-0"
+          }
+        ]
+      },
+      "schema": [
+        {
+          "name": "__drizzle_migrations",
+          "sql": "CREATE TABLE \"__drizzle_migrations\" (\n\t\t\t\tid SERIAL PRIMARY KEY,\n\t\t\t\thash text NOT NULL,\n\t\t\t\tcreated_at numeric\n\t\t\t)"
+        },
+        {
+          "name": "child",
+          "sql": "CREATE TABLE child (id TEXT PRIMARY KEY NOT NULL, parent_id TEXT REFERENCES parent(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "grandchild",
+          "sql": "CREATE TABLE grandchild (id TEXT PRIMARY KEY NOT NULL, child_id TEXT NOT NULL REFERENCES child(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "parent",
+          "sql": "CREATE TABLE \"parent\" (\n    `id` TEXT PRIMARY KEY NOT NULL,\n    `mode` TEXT NOT NULL DEFAULT 'markup'\n)"
+        }
+      ],
+      "journal": [
+        {
+          "hash": "8e3bad00530411f18efa24a2cb6e93ee7c8a6a8919e2223c21b29bc89d351bc1",
+          "created_at": 1770000000000
+        }
+      ],
+      "parent": [
+        {
+          "id": "parent-1",
+          "mode": "preview"
+        }
+      ],
+      "child": [],
+      "grandchild": [],
+      "foreign_key_check": [],
+      "integrity_check": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "fk_setting": 1,
+      "data_contract_preserved": false,
+      "absent_or_mutated_children": [
+        {
+          "id": "c0",
+          "parent_id": "parent-1",
+          "payload": "note-0"
+        }
+      ],
+      "absent_or_mutated_attachments": [
+        {
+          "id": "g0",
+          "child_id": "c0",
+          "payload": "attachment-0"
+        }
+      ],
+      "application_lookup_success": false,
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_counts_as_reference": false
+    },
+    {
+      "id": "cascade_one__reference_fk_before_begin",
+      "project": "drizzle-orm",
+      "source_class": "real_drizzle_runtime_with_issue_derived_sqlite_rebuild",
+      "scenario": "cascade_one",
+      "arm": "reference_fk_before_begin",
+      "policy": "CASCADE",
+      "input_children": 1,
+      "legitimate_user_edit": false,
+      "success": true,
+      "error": null,
+      "migration_ms": 4.205,
+      "sqlite_file": "cascade_one__reference_fk_before_begin.sqlite",
+      "pre": {
+        "parent": [
+          {
+            "id": "parent-1",
+            "mode": "preview"
+          }
+        ],
+        "child": [
+          {
+            "id": "c0",
+            "parent_id": "parent-1",
+            "payload": "note-0"
+          }
+        ],
+        "grandchild": [
+          {
+            "id": "g0",
+            "child_id": "c0",
+            "payload": "attachment-0"
+          }
+        ]
+      },
+      "schema": [
+        {
+          "name": "__drizzle_migrations",
+          "sql": "CREATE TABLE \"__drizzle_migrations\" (\n\t\t\t\tid SERIAL PRIMARY KEY,\n\t\t\t\thash text NOT NULL,\n\t\t\t\tcreated_at numeric\n\t\t\t)"
+        },
+        {
+          "name": "child",
+          "sql": "CREATE TABLE child (id TEXT PRIMARY KEY NOT NULL, parent_id TEXT REFERENCES parent(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "grandchild",
+          "sql": "CREATE TABLE grandchild (id TEXT PRIMARY KEY NOT NULL, child_id TEXT NOT NULL REFERENCES child(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "parent",
+          "sql": "CREATE TABLE \"parent\" (\n    `id` TEXT PRIMARY KEY NOT NULL,\n    `mode` TEXT NOT NULL DEFAULT 'markup'\n)"
+        }
+      ],
+      "journal": [
+        {
+          "hash": "8e3bad00530411f18efa24a2cb6e93ee7c8a6a8919e2223c21b29bc89d351bc1",
+          "created_at": 1770000000000
+        }
+      ],
+      "parent": [
+        {
+          "id": "parent-1",
+          "mode": "preview"
+        }
+      ],
+      "child": [
+        {
+          "id": "c0",
+          "parent_id": "parent-1",
+          "payload": "note-0"
+        }
+      ],
+      "grandchild": [
+        {
+          "id": "g0",
+          "child_id": "c0",
+          "payload": "attachment-0"
+        }
+      ],
+      "foreign_key_check": [],
+      "integrity_check": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "fk_setting": 1,
+      "data_contract_preserved": true,
+      "absent_or_mutated_children": [],
+      "absent_or_mutated_attachments": [],
+      "application_lookup_success": true,
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_counts_as_reference": true
+    },
+    {
+      "id": "cascade_zero__upstream",
+      "project": "drizzle-orm",
+      "source_class": "real_drizzle_runtime_with_issue_derived_sqlite_rebuild",
+      "scenario": "cascade_zero",
+      "arm": "upstream",
+      "policy": "CASCADE",
+      "input_children": 0,
+      "legitimate_user_edit": false,
+      "success": true,
+      "error": null,
+      "migration_ms": 4.725,
+      "sqlite_file": "cascade_zero__upstream.sqlite",
+      "pre": {
+        "parent": [
+          {
+            "id": "parent-1",
+            "mode": "preview"
+          }
+        ],
+        "child": [],
+        "grandchild": []
+      },
+      "schema": [
+        {
+          "name": "__drizzle_migrations",
+          "sql": "CREATE TABLE \"__drizzle_migrations\" (\n\t\t\t\tid SERIAL PRIMARY KEY,\n\t\t\t\thash text NOT NULL,\n\t\t\t\tcreated_at numeric\n\t\t\t)"
+        },
+        {
+          "name": "child",
+          "sql": "CREATE TABLE child (id TEXT PRIMARY KEY NOT NULL, parent_id TEXT REFERENCES parent(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "grandchild",
+          "sql": "CREATE TABLE grandchild (id TEXT PRIMARY KEY NOT NULL, child_id TEXT NOT NULL REFERENCES child(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "parent",
+          "sql": "CREATE TABLE \"parent\" (\n    `id` TEXT PRIMARY KEY NOT NULL,\n    `mode` TEXT NOT NULL DEFAULT 'markup'\n)"
+        }
+      ],
+      "journal": [
+        {
+          "hash": "8e3bad00530411f18efa24a2cb6e93ee7c8a6a8919e2223c21b29bc89d351bc1",
+          "created_at": 1770000000000
+        }
+      ],
+      "parent": [
+        {
+          "id": "parent-1",
+          "mode": "preview"
+        }
+      ],
+      "child": [],
+      "grandchild": [],
+      "foreign_key_check": [],
+      "integrity_check": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "fk_setting": 1,
+      "data_contract_preserved": true,
+      "absent_or_mutated_children": [],
+      "absent_or_mutated_attachments": [],
+      "application_lookup_success": true,
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_counts_as_reference": true
+    },
+    {
+      "id": "cascade_zero__reference_fk_before_begin",
+      "project": "drizzle-orm",
+      "source_class": "real_drizzle_runtime_with_issue_derived_sqlite_rebuild",
+      "scenario": "cascade_zero",
+      "arm": "reference_fk_before_begin",
+      "policy": "CASCADE",
+      "input_children": 0,
+      "legitimate_user_edit": false,
+      "success": true,
+      "error": null,
+      "migration_ms": 4.539,
+      "sqlite_file": "cascade_zero__reference_fk_before_begin.sqlite",
+      "pre": {
+        "parent": [
+          {
+            "id": "parent-1",
+            "mode": "preview"
+          }
+        ],
+        "child": [],
+        "grandchild": []
+      },
+      "schema": [
+        {
+          "name": "__drizzle_migrations",
+          "sql": "CREATE TABLE \"__drizzle_migrations\" (\n\t\t\t\tid SERIAL PRIMARY KEY,\n\t\t\t\thash text NOT NULL,\n\t\t\t\tcreated_at numeric\n\t\t\t)"
+        },
+        {
+          "name": "child",
+          "sql": "CREATE TABLE child (id TEXT PRIMARY KEY NOT NULL, parent_id TEXT REFERENCES parent(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "grandchild",
+          "sql": "CREATE TABLE grandchild (id TEXT PRIMARY KEY NOT NULL, child_id TEXT NOT NULL REFERENCES child(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "parent",
+          "sql": "CREATE TABLE \"parent\" (\n    `id` TEXT PRIMARY KEY NOT NULL,\n    `mode` TEXT NOT NULL DEFAULT 'markup'\n)"
+        }
+      ],
+      "journal": [
+        {
+          "hash": "8e3bad00530411f18efa24a2cb6e93ee7c8a6a8919e2223c21b29bc89d351bc1",
+          "created_at": 1770000000000
+        }
+      ],
+      "parent": [
+        {
+          "id": "parent-1",
+          "mode": "preview"
+        }
+      ],
+      "child": [],
+      "grandchild": [],
+      "foreign_key_check": [],
+      "integrity_check": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "fk_setting": 1,
+      "data_contract_preserved": true,
+      "absent_or_mutated_children": [],
+      "absent_or_mutated_attachments": [],
+      "application_lookup_success": true,
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_counts_as_reference": true
+    },
+    {
+      "id": "cascade_user_edit__upstream",
+      "project": "drizzle-orm",
+      "source_class": "real_drizzle_runtime_with_issue_derived_sqlite_rebuild",
+      "scenario": "cascade_user_edit",
+      "arm": "upstream",
+      "policy": "CASCADE",
+      "input_children": 3,
+      "legitimate_user_edit": true,
+      "success": true,
+      "error": null,
+      "migration_ms": 3.858,
+      "sqlite_file": "cascade_user_edit__upstream.sqlite",
+      "pre": {
+        "parent": [
+          {
+            "id": "parent-1",
+            "mode": "preview"
+          }
+        ],
+        "child": [
+          {
+            "id": "c0",
+            "parent_id": "parent-1",
+            "payload": "customer-changed"
+          },
+          {
+            "id": "c1",
+            "parent_id": "parent-1",
+            "payload": "note-1"
+          },
+          {
+            "id": "c2",
+            "parent_id": "parent-1",
+            "payload": "note-2"
+          }
+        ],
+        "grandchild": [
+          {
+            "id": "g0",
+            "child_id": "c0",
+            "payload": "attachment-0"
+          },
+          {
+            "id": "g1",
+            "child_id": "c1",
+            "payload": "attachment-1"
+          },
+          {
+            "id": "g2",
+            "child_id": "c2",
+            "payload": "attachment-2"
+          }
+        ]
+      },
+      "schema": [
+        {
+          "name": "__drizzle_migrations",
+          "sql": "CREATE TABLE \"__drizzle_migrations\" (\n\t\t\t\tid SERIAL PRIMARY KEY,\n\t\t\t\thash text NOT NULL,\n\t\t\t\tcreated_at numeric\n\t\t\t)"
+        },
+        {
+          "name": "child",
+          "sql": "CREATE TABLE child (id TEXT PRIMARY KEY NOT NULL, parent_id TEXT REFERENCES parent(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "grandchild",
+          "sql": "CREATE TABLE grandchild (id TEXT PRIMARY KEY NOT NULL, child_id TEXT NOT NULL REFERENCES child(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "parent",
+          "sql": "CREATE TABLE \"parent\" (\n    `id` TEXT PRIMARY KEY NOT NULL,\n    `mode` TEXT NOT NULL DEFAULT 'markup'\n)"
+        }
+      ],
+      "journal": [
+        {
+          "hash": "8e3bad00530411f18efa24a2cb6e93ee7c8a6a8919e2223c21b29bc89d351bc1",
+          "created_at": 1770000000000
+        }
+      ],
+      "parent": [
+        {
+          "id": "parent-1",
+          "mode": "preview"
+        }
+      ],
+      "child": [],
+      "grandchild": [],
+      "foreign_key_check": [],
+      "integrity_check": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "fk_setting": 1,
+      "data_contract_preserved": false,
+      "absent_or_mutated_children": [
+        {
+          "id": "c0",
+          "parent_id": "parent-1",
+          "payload": "customer-changed"
+        },
+        {
+          "id": "c1",
+          "parent_id": "parent-1",
+          "payload": "note-1"
+        },
+        {
+          "id": "c2",
+          "parent_id": "parent-1",
+          "payload": "note-2"
+        }
+      ],
+      "absent_or_mutated_attachments": [
+        {
+          "id": "g0",
+          "child_id": "c0",
+          "payload": "attachment-0"
+        },
+        {
+          "id": "g1",
+          "child_id": "c1",
+          "payload": "attachment-1"
+        },
+        {
+          "id": "g2",
+          "child_id": "c2",
+          "payload": "attachment-2"
+        }
+      ],
+      "application_lookup_success": false,
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_counts_as_reference": false
+    },
+    {
+      "id": "cascade_user_edit__reference_fk_before_begin",
+      "project": "drizzle-orm",
+      "source_class": "real_drizzle_runtime_with_issue_derived_sqlite_rebuild",
+      "scenario": "cascade_user_edit",
+      "arm": "reference_fk_before_begin",
+      "policy": "CASCADE",
+      "input_children": 3,
+      "legitimate_user_edit": true,
+      "success": true,
+      "error": null,
+      "migration_ms": 3.685,
+      "sqlite_file": "cascade_user_edit__reference_fk_before_begin.sqlite",
+      "pre": {
+        "parent": [
+          {
+            "id": "parent-1",
+            "mode": "preview"
+          }
+        ],
+        "child": [
+          {
+            "id": "c0",
+            "parent_id": "parent-1",
+            "payload": "customer-changed"
+          },
+          {
+            "id": "c1",
+            "parent_id": "parent-1",
+            "payload": "note-1"
+          },
+          {
+            "id": "c2",
+            "parent_id": "parent-1",
+            "payload": "note-2"
+          }
+        ],
+        "grandchild": [
+          {
+            "id": "g0",
+            "child_id": "c0",
+            "payload": "attachment-0"
+          },
+          {
+            "id": "g1",
+            "child_id": "c1",
+            "payload": "attachment-1"
+          },
+          {
+            "id": "g2",
+            "child_id": "c2",
+            "payload": "attachment-2"
+          }
+        ]
+      },
+      "schema": [
+        {
+          "name": "__drizzle_migrations",
+          "sql": "CREATE TABLE \"__drizzle_migrations\" (\n\t\t\t\tid SERIAL PRIMARY KEY,\n\t\t\t\thash text NOT NULL,\n\t\t\t\tcreated_at numeric\n\t\t\t)"
+        },
+        {
+          "name": "child",
+          "sql": "CREATE TABLE child (id TEXT PRIMARY KEY NOT NULL, parent_id TEXT REFERENCES parent(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "grandchild",
+          "sql": "CREATE TABLE grandchild (id TEXT PRIMARY KEY NOT NULL, child_id TEXT NOT NULL REFERENCES child(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "parent",
+          "sql": "CREATE TABLE \"parent\" (\n    `id` TEXT PRIMARY KEY NOT NULL,\n    `mode` TEXT NOT NULL DEFAULT 'markup'\n)"
+        }
+      ],
+      "journal": [
+        {
+          "hash": "8e3bad00530411f18efa24a2cb6e93ee7c8a6a8919e2223c21b29bc89d351bc1",
+          "created_at": 1770000000000
+        }
+      ],
+      "parent": [
+        {
+          "id": "parent-1",
+          "mode": "preview"
+        }
+      ],
+      "child": [
+        {
+          "id": "c0",
+          "parent_id": "parent-1",
+          "payload": "customer-changed"
+        },
+        {
+          "id": "c1",
+          "parent_id": "parent-1",
+          "payload": "note-1"
+        },
+        {
+          "id": "c2",
+          "parent_id": "parent-1",
+          "payload": "note-2"
+        }
+      ],
+      "grandchild": [
+        {
+          "id": "g0",
+          "child_id": "c0",
+          "payload": "attachment-0"
+        },
+        {
+          "id": "g1",
+          "child_id": "c1",
+          "payload": "attachment-1"
+        },
+        {
+          "id": "g2",
+          "child_id": "c2",
+          "payload": "attachment-2"
+        }
+      ],
+      "foreign_key_check": [],
+      "integrity_check": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "fk_setting": 1,
+      "data_contract_preserved": true,
+      "absent_or_mutated_children": [],
+      "absent_or_mutated_attachments": [],
+      "application_lookup_success": true,
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_counts_as_reference": true
+    },
+    {
+      "id": "set_null_three__upstream",
+      "project": "drizzle-orm",
+      "source_class": "real_drizzle_runtime_with_issue_derived_sqlite_rebuild",
+      "scenario": "set_null_three",
+      "arm": "upstream",
+      "policy": "SET NULL",
+      "input_children": 3,
+      "legitimate_user_edit": false,
+      "success": true,
+      "error": null,
+      "migration_ms": 3.596,
+      "sqlite_file": "set_null_three__upstream.sqlite",
+      "pre": {
+        "parent": [
+          {
+            "id": "parent-1",
+            "mode": "preview"
+          }
+        ],
+        "child": [
+          {
+            "id": "c0",
+            "parent_id": "parent-1",
+            "payload": "note-0"
+          },
+          {
+            "id": "c1",
+            "parent_id": "parent-1",
+            "payload": "note-1"
+          },
+          {
+            "id": "c2",
+            "parent_id": "parent-1",
+            "payload": "note-2"
+          }
+        ],
+        "grandchild": [
+          {
+            "id": "g0",
+            "child_id": "c0",
+            "payload": "attachment-0"
+          },
+          {
+            "id": "g1",
+            "child_id": "c1",
+            "payload": "attachment-1"
+          },
+          {
+            "id": "g2",
+            "child_id": "c2",
+            "payload": "attachment-2"
+          }
+        ]
+      },
+      "schema": [
+        {
+          "name": "__drizzle_migrations",
+          "sql": "CREATE TABLE \"__drizzle_migrations\" (\n\t\t\t\tid SERIAL PRIMARY KEY,\n\t\t\t\thash text NOT NULL,\n\t\t\t\tcreated_at numeric\n\t\t\t)"
+        },
+        {
+          "name": "child",
+          "sql": "CREATE TABLE child (id TEXT PRIMARY KEY NOT NULL, parent_id TEXT REFERENCES parent(id) ON DELETE SET NULL, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "grandchild",
+          "sql": "CREATE TABLE grandchild (id TEXT PRIMARY KEY NOT NULL, child_id TEXT NOT NULL REFERENCES child(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "parent",
+          "sql": "CREATE TABLE \"parent\" (\n    `id` TEXT PRIMARY KEY NOT NULL,\n    `mode` TEXT NOT NULL DEFAULT 'markup'\n)"
+        }
+      ],
+      "journal": [
+        {
+          "hash": "8e3bad00530411f18efa24a2cb6e93ee7c8a6a8919e2223c21b29bc89d351bc1",
+          "created_at": 1770000000000
+        }
+      ],
+      "parent": [
+        {
+          "id": "parent-1",
+          "mode": "preview"
+        }
+      ],
+      "child": [
+        {
+          "id": "c0",
+          "parent_id": null,
+          "payload": "note-0"
+        },
+        {
+          "id": "c1",
+          "parent_id": null,
+          "payload": "note-1"
+        },
+        {
+          "id": "c2",
+          "parent_id": null,
+          "payload": "note-2"
+        }
+      ],
+      "grandchild": [
+        {
+          "id": "g0",
+          "child_id": "c0",
+          "payload": "attachment-0"
+        },
+        {
+          "id": "g1",
+          "child_id": "c1",
+          "payload": "attachment-1"
+        },
+        {
+          "id": "g2",
+          "child_id": "c2",
+          "payload": "attachment-2"
+        }
+      ],
+      "foreign_key_check": [],
+      "integrity_check": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "fk_setting": 1,
+      "data_contract_preserved": false,
+      "absent_or_mutated_children": [
+        {
+          "id": "c0",
+          "parent_id": "parent-1",
+          "payload": "note-0"
+        },
+        {
+          "id": "c1",
+          "parent_id": "parent-1",
+          "payload": "note-1"
+        },
+        {
+          "id": "c2",
+          "parent_id": "parent-1",
+          "payload": "note-2"
+        }
+      ],
+      "absent_or_mutated_attachments": [],
+      "application_lookup_success": false,
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_counts_as_reference": true
+    },
+    {
+      "id": "set_null_three__reference_fk_before_begin",
+      "project": "drizzle-orm",
+      "source_class": "real_drizzle_runtime_with_issue_derived_sqlite_rebuild",
+      "scenario": "set_null_three",
+      "arm": "reference_fk_before_begin",
+      "policy": "SET NULL",
+      "input_children": 3,
+      "legitimate_user_edit": false,
+      "success": true,
+      "error": null,
+      "migration_ms": 3.806,
+      "sqlite_file": "set_null_three__reference_fk_before_begin.sqlite",
+      "pre": {
+        "parent": [
+          {
+            "id": "parent-1",
+            "mode": "preview"
+          }
+        ],
+        "child": [
+          {
+            "id": "c0",
+            "parent_id": "parent-1",
+            "payload": "note-0"
+          },
+          {
+            "id": "c1",
+            "parent_id": "parent-1",
+            "payload": "note-1"
+          },
+          {
+            "id": "c2",
+            "parent_id": "parent-1",
+            "payload": "note-2"
+          }
+        ],
+        "grandchild": [
+          {
+            "id": "g0",
+            "child_id": "c0",
+            "payload": "attachment-0"
+          },
+          {
+            "id": "g1",
+            "child_id": "c1",
+            "payload": "attachment-1"
+          },
+          {
+            "id": "g2",
+            "child_id": "c2",
+            "payload": "attachment-2"
+          }
+        ]
+      },
+      "schema": [
+        {
+          "name": "__drizzle_migrations",
+          "sql": "CREATE TABLE \"__drizzle_migrations\" (\n\t\t\t\tid SERIAL PRIMARY KEY,\n\t\t\t\thash text NOT NULL,\n\t\t\t\tcreated_at numeric\n\t\t\t)"
+        },
+        {
+          "name": "child",
+          "sql": "CREATE TABLE child (id TEXT PRIMARY KEY NOT NULL, parent_id TEXT REFERENCES parent(id) ON DELETE SET NULL, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "grandchild",
+          "sql": "CREATE TABLE grandchild (id TEXT PRIMARY KEY NOT NULL, child_id TEXT NOT NULL REFERENCES child(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "parent",
+          "sql": "CREATE TABLE \"parent\" (\n    `id` TEXT PRIMARY KEY NOT NULL,\n    `mode` TEXT NOT NULL DEFAULT 'markup'\n)"
+        }
+      ],
+      "journal": [
+        {
+          "hash": "8e3bad00530411f18efa24a2cb6e93ee7c8a6a8919e2223c21b29bc89d351bc1",
+          "created_at": 1770000000000
+        }
+      ],
+      "parent": [
+        {
+          "id": "parent-1",
+          "mode": "preview"
+        }
+      ],
+      "child": [
+        {
+          "id": "c0",
+          "parent_id": "parent-1",
+          "payload": "note-0"
+        },
+        {
+          "id": "c1",
+          "parent_id": "parent-1",
+          "payload": "note-1"
+        },
+        {
+          "id": "c2",
+          "parent_id": "parent-1",
+          "payload": "note-2"
+        }
+      ],
+      "grandchild": [
+        {
+          "id": "g0",
+          "child_id": "c0",
+          "payload": "attachment-0"
+        },
+        {
+          "id": "g1",
+          "child_id": "c1",
+          "payload": "attachment-1"
+        },
+        {
+          "id": "g2",
+          "child_id": "c2",
+          "payload": "attachment-2"
+        }
+      ],
+      "foreign_key_check": [],
+      "integrity_check": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "fk_setting": 1,
+      "data_contract_preserved": true,
+      "absent_or_mutated_children": [],
+      "absent_or_mutated_attachments": [],
+      "application_lookup_success": true,
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_counts_as_reference": true
+    },
+    {
+      "id": "no_action_three__upstream",
+      "project": "drizzle-orm",
+      "source_class": "real_drizzle_runtime_with_issue_derived_sqlite_rebuild",
+      "scenario": "no_action_three",
+      "arm": "upstream",
+      "policy": "NO ACTION",
+      "input_children": 3,
+      "legitimate_user_edit": false,
+      "success": false,
+      "error": "DrizzleError: Failed to run the query '\nDROP TABLE `parent`;\n'",
+      "migration_ms": 2.122,
+      "sqlite_file": "no_action_three__upstream.sqlite",
+      "pre": {
+        "parent": [
+          {
+            "id": "parent-1",
+            "mode": "preview"
+          }
+        ],
+        "child": [
+          {
+            "id": "c0",
+            "parent_id": "parent-1",
+            "payload": "note-0"
+          },
+          {
+            "id": "c1",
+            "parent_id": "parent-1",
+            "payload": "note-1"
+          },
+          {
+            "id": "c2",
+            "parent_id": "parent-1",
+            "payload": "note-2"
+          }
+        ],
+        "grandchild": [
+          {
+            "id": "g0",
+            "child_id": "c0",
+            "payload": "attachment-0"
+          },
+          {
+            "id": "g1",
+            "child_id": "c1",
+            "payload": "attachment-1"
+          },
+          {
+            "id": "g2",
+            "child_id": "c2",
+            "payload": "attachment-2"
+          }
+        ]
+      },
+      "schema": [
+        {
+          "name": "__drizzle_migrations",
+          "sql": "CREATE TABLE \"__drizzle_migrations\" (\n\t\t\t\tid SERIAL PRIMARY KEY,\n\t\t\t\thash text NOT NULL,\n\t\t\t\tcreated_at numeric\n\t\t\t)"
+        },
+        {
+          "name": "child",
+          "sql": "CREATE TABLE child (id TEXT PRIMARY KEY NOT NULL, parent_id TEXT REFERENCES parent(id) ON DELETE NO ACTION, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "grandchild",
+          "sql": "CREATE TABLE grandchild (id TEXT PRIMARY KEY NOT NULL, child_id TEXT NOT NULL REFERENCES child(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "parent",
+          "sql": "CREATE TABLE parent (id TEXT PRIMARY KEY NOT NULL, mode TEXT NOT NULL DEFAULT 'preview')"
+        }
+      ],
+      "journal": [],
+      "parent": [
+        {
+          "id": "parent-1",
+          "mode": "preview"
+        }
+      ],
+      "child": [
+        {
+          "id": "c0",
+          "parent_id": "parent-1",
+          "payload": "note-0"
+        },
+        {
+          "id": "c1",
+          "parent_id": "parent-1",
+          "payload": "note-1"
+        },
+        {
+          "id": "c2",
+          "parent_id": "parent-1",
+          "payload": "note-2"
+        }
+      ],
+      "grandchild": [
+        {
+          "id": "g0",
+          "child_id": "c0",
+          "payload": "attachment-0"
+        },
+        {
+          "id": "g1",
+          "child_id": "c1",
+          "payload": "attachment-1"
+        },
+        {
+          "id": "g2",
+          "child_id": "c2",
+          "payload": "attachment-2"
+        }
+      ],
+      "foreign_key_check": [],
+      "integrity_check": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "fk_setting": 1,
+      "data_contract_preserved": true,
+      "absent_or_mutated_children": [],
+      "absent_or_mutated_attachments": [],
+      "application_lookup_success": true,
+      "same_schema_as_reference": false,
+      "same_ledger_as_reference": false,
+      "same_row_counts_as_reference": true
+    },
+    {
+      "id": "no_action_three__reference_fk_before_begin",
+      "project": "drizzle-orm",
+      "source_class": "real_drizzle_runtime_with_issue_derived_sqlite_rebuild",
+      "scenario": "no_action_three",
+      "arm": "reference_fk_before_begin",
+      "policy": "NO ACTION",
+      "input_children": 3,
+      "legitimate_user_edit": false,
+      "success": true,
+      "error": null,
+      "migration_ms": 4.971,
+      "sqlite_file": "no_action_three__reference_fk_before_begin.sqlite",
+      "pre": {
+        "parent": [
+          {
+            "id": "parent-1",
+            "mode": "preview"
+          }
+        ],
+        "child": [
+          {
+            "id": "c0",
+            "parent_id": "parent-1",
+            "payload": "note-0"
+          },
+          {
+            "id": "c1",
+            "parent_id": "parent-1",
+            "payload": "note-1"
+          },
+          {
+            "id": "c2",
+            "parent_id": "parent-1",
+            "payload": "note-2"
+          }
+        ],
+        "grandchild": [
+          {
+            "id": "g0",
+            "child_id": "c0",
+            "payload": "attachment-0"
+          },
+          {
+            "id": "g1",
+            "child_id": "c1",
+            "payload": "attachment-1"
+          },
+          {
+            "id": "g2",
+            "child_id": "c2",
+            "payload": "attachment-2"
+          }
+        ]
+      },
+      "schema": [
+        {
+          "name": "__drizzle_migrations",
+          "sql": "CREATE TABLE \"__drizzle_migrations\" (\n\t\t\t\tid SERIAL PRIMARY KEY,\n\t\t\t\thash text NOT NULL,\n\t\t\t\tcreated_at numeric\n\t\t\t)"
+        },
+        {
+          "name": "child",
+          "sql": "CREATE TABLE child (id TEXT PRIMARY KEY NOT NULL, parent_id TEXT REFERENCES parent(id) ON DELETE NO ACTION, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "grandchild",
+          "sql": "CREATE TABLE grandchild (id TEXT PRIMARY KEY NOT NULL, child_id TEXT NOT NULL REFERENCES child(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "parent",
+          "sql": "CREATE TABLE \"parent\" (\n    `id` TEXT PRIMARY KEY NOT NULL,\n    `mode` TEXT NOT NULL DEFAULT 'markup'\n)"
+        }
+      ],
+      "journal": [
+        {
+          "hash": "8e3bad00530411f18efa24a2cb6e93ee7c8a6a8919e2223c21b29bc89d351bc1",
+          "created_at": 1770000000000
+        }
+      ],
+      "parent": [
+        {
+          "id": "parent-1",
+          "mode": "preview"
+        }
+      ],
+      "child": [
+        {
+          "id": "c0",
+          "parent_id": "parent-1",
+          "payload": "note-0"
+        },
+        {
+          "id": "c1",
+          "parent_id": "parent-1",
+          "payload": "note-1"
+        },
+        {
+          "id": "c2",
+          "parent_id": "parent-1",
+          "payload": "note-2"
+        }
+      ],
+      "grandchild": [
+        {
+          "id": "g0",
+          "child_id": "c0",
+          "payload": "attachment-0"
+        },
+        {
+          "id": "g1",
+          "child_id": "c1",
+          "payload": "attachment-1"
+        },
+        {
+          "id": "g2",
+          "child_id": "c2",
+          "payload": "attachment-2"
+        }
+      ],
+      "foreign_key_check": [],
+      "integrity_check": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "fk_setting": 1,
+      "data_contract_preserved": true,
+      "absent_or_mutated_children": [],
+      "absent_or_mutated_attachments": [],
+      "application_lookup_success": true,
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_counts_as_reference": true
+    },
+    {
+      "id": "restrict_three__upstream",
+      "project": "drizzle-orm",
+      "source_class": "real_drizzle_runtime_with_issue_derived_sqlite_rebuild",
+      "scenario": "restrict_three",
+      "arm": "upstream",
+      "policy": "RESTRICT",
+      "input_children": 3,
+      "legitimate_user_edit": false,
+      "success": false,
+      "error": "DrizzleError: Failed to run the query '\nDROP TABLE `parent`;\n'",
+      "migration_ms": 2.193,
+      "sqlite_file": "restrict_three__upstream.sqlite",
+      "pre": {
+        "parent": [
+          {
+            "id": "parent-1",
+            "mode": "preview"
+          }
+        ],
+        "child": [
+          {
+            "id": "c0",
+            "parent_id": "parent-1",
+            "payload": "note-0"
+          },
+          {
+            "id": "c1",
+            "parent_id": "parent-1",
+            "payload": "note-1"
+          },
+          {
+            "id": "c2",
+            "parent_id": "parent-1",
+            "payload": "note-2"
+          }
+        ],
+        "grandchild": [
+          {
+            "id": "g0",
+            "child_id": "c0",
+            "payload": "attachment-0"
+          },
+          {
+            "id": "g1",
+            "child_id": "c1",
+            "payload": "attachment-1"
+          },
+          {
+            "id": "g2",
+            "child_id": "c2",
+            "payload": "attachment-2"
+          }
+        ]
+      },
+      "schema": [
+        {
+          "name": "__drizzle_migrations",
+          "sql": "CREATE TABLE \"__drizzle_migrations\" (\n\t\t\t\tid SERIAL PRIMARY KEY,\n\t\t\t\thash text NOT NULL,\n\t\t\t\tcreated_at numeric\n\t\t\t)"
+        },
+        {
+          "name": "child",
+          "sql": "CREATE TABLE child (id TEXT PRIMARY KEY NOT NULL, parent_id TEXT REFERENCES parent(id) ON DELETE RESTRICT, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "grandchild",
+          "sql": "CREATE TABLE grandchild (id TEXT PRIMARY KEY NOT NULL, child_id TEXT NOT NULL REFERENCES child(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "parent",
+          "sql": "CREATE TABLE parent (id TEXT PRIMARY KEY NOT NULL, mode TEXT NOT NULL DEFAULT 'preview')"
+        }
+      ],
+      "journal": [],
+      "parent": [
+        {
+          "id": "parent-1",
+          "mode": "preview"
+        }
+      ],
+      "child": [
+        {
+          "id": "c0",
+          "parent_id": "parent-1",
+          "payload": "note-0"
+        },
+        {
+          "id": "c1",
+          "parent_id": "parent-1",
+          "payload": "note-1"
+        },
+        {
+          "id": "c2",
+          "parent_id": "parent-1",
+          "payload": "note-2"
+        }
+      ],
+      "grandchild": [
+        {
+          "id": "g0",
+          "child_id": "c0",
+          "payload": "attachment-0"
+        },
+        {
+          "id": "g1",
+          "child_id": "c1",
+          "payload": "attachment-1"
+        },
+        {
+          "id": "g2",
+          "child_id": "c2",
+          "payload": "attachment-2"
+        }
+      ],
+      "foreign_key_check": [],
+      "integrity_check": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "fk_setting": 1,
+      "data_contract_preserved": true,
+      "absent_or_mutated_children": [],
+      "absent_or_mutated_attachments": [],
+      "application_lookup_success": true,
+      "same_schema_as_reference": false,
+      "same_ledger_as_reference": false,
+      "same_row_counts_as_reference": true
+    },
+    {
+      "id": "restrict_three__reference_fk_before_begin",
+      "project": "drizzle-orm",
+      "source_class": "real_drizzle_runtime_with_issue_derived_sqlite_rebuild",
+      "scenario": "restrict_three",
+      "arm": "reference_fk_before_begin",
+      "policy": "RESTRICT",
+      "input_children": 3,
+      "legitimate_user_edit": false,
+      "success": true,
+      "error": null,
+      "migration_ms": 3.539,
+      "sqlite_file": "restrict_three__reference_fk_before_begin.sqlite",
+      "pre": {
+        "parent": [
+          {
+            "id": "parent-1",
+            "mode": "preview"
+          }
+        ],
+        "child": [
+          {
+            "id": "c0",
+            "parent_id": "parent-1",
+            "payload": "note-0"
+          },
+          {
+            "id": "c1",
+            "parent_id": "parent-1",
+            "payload": "note-1"
+          },
+          {
+            "id": "c2",
+            "parent_id": "parent-1",
+            "payload": "note-2"
+          }
+        ],
+        "grandchild": [
+          {
+            "id": "g0",
+            "child_id": "c0",
+            "payload": "attachment-0"
+          },
+          {
+            "id": "g1",
+            "child_id": "c1",
+            "payload": "attachment-1"
+          },
+          {
+            "id": "g2",
+            "child_id": "c2",
+            "payload": "attachment-2"
+          }
+        ]
+      },
+      "schema": [
+        {
+          "name": "__drizzle_migrations",
+          "sql": "CREATE TABLE \"__drizzle_migrations\" (\n\t\t\t\tid SERIAL PRIMARY KEY,\n\t\t\t\thash text NOT NULL,\n\t\t\t\tcreated_at numeric\n\t\t\t)"
+        },
+        {
+          "name": "child",
+          "sql": "CREATE TABLE child (id TEXT PRIMARY KEY NOT NULL, parent_id TEXT REFERENCES parent(id) ON DELETE RESTRICT, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "grandchild",
+          "sql": "CREATE TABLE grandchild (id TEXT PRIMARY KEY NOT NULL, child_id TEXT NOT NULL REFERENCES child(id) ON DELETE CASCADE, payload TEXT NOT NULL)"
+        },
+        {
+          "name": "parent",
+          "sql": "CREATE TABLE \"parent\" (\n    `id` TEXT PRIMARY KEY NOT NULL,\n    `mode` TEXT NOT NULL DEFAULT 'markup'\n)"
+        }
+      ],
+      "journal": [
+        {
+          "hash": "8e3bad00530411f18efa24a2cb6e93ee7c8a6a8919e2223c21b29bc89d351bc1",
+          "created_at": 1770000000000
+        }
+      ],
+      "parent": [
+        {
+          "id": "parent-1",
+          "mode": "preview"
+        }
+      ],
+      "child": [
+        {
+          "id": "c0",
+          "parent_id": "parent-1",
+          "payload": "note-0"
+        },
+        {
+          "id": "c1",
+          "parent_id": "parent-1",
+          "payload": "note-1"
+        },
+        {
+          "id": "c2",
+          "parent_id": "parent-1",
+          "payload": "note-2"
+        }
+      ],
+      "grandchild": [
+        {
+          "id": "g0",
+          "child_id": "c0",
+          "payload": "attachment-0"
+        },
+        {
+          "id": "g1",
+          "child_id": "c1",
+          "payload": "attachment-1"
+        },
+        {
+          "id": "g2",
+          "child_id": "c2",
+          "payload": "attachment-2"
+        }
+      ],
+      "foreign_key_check": [],
+      "integrity_check": [
+        {
+          "integrity_check": "ok"
+        }
+      ],
+      "fk_setting": 1,
+      "data_contract_preserved": true,
+      "absent_or_mutated_children": [],
+      "absent_or_mutated_attachments": [],
+      "application_lookup_success": true,
+      "same_schema_as_reference": true,
+      "same_ledger_as_reference": true,
+      "same_row_counts_as_reference": true
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "fetched_utc": "2026-11-14T17:11:19.340412+00:00",
+  "merged_at": "2024-08-02T10:31:11Z",
+  "opened_at": "2024-06-27T11:50:16Z",
+  "pr": 9851,
+  "raw_html_sha256": "85d54068d5c7a66daacc1ed5a5757e56674360289423e51db12090bf5f6026dc",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 9,
+  "reviews": [
+    {
+      "login": "MGibson1",
+      "state": "COMMENTED",
+      "submitted_at": "2024-07-01T16:31:36Z"
+    },
+    {
+      "login": "jlf0dev",
+      "state": "COMMENTED",
+      "submitted_at": "2024-07-03T18:10:28Z"
+    },
+    {
+      "login": "jlf0dev",
+      "state": "COMMENTED",
+      "submitted_at": "2024-07-08T13:05:23Z"
+    },
+    {
+      "login": "jprusik",
+      "state": "APPROVED",
+      "submitted_at": "2024-07-22T16:49:56Z"
+    },
+    {
+      "login": "jprusik",
+      "state": "APPROVED",
+      "submitted_at": "2024-07-23T15:54:41Z"
+    },
+    {
+      "login": "jlf0dev",
+      "state": "COMMENTED",
+      "submitted_at": "2024-07-24T18:03:00Z"
+    },
+    {
+      "login": "jprusik",
+      "state": "APPROVED",
+      "submitted_at": "2024-07-25T14:05:30Z"
+    },
+    {
+      "login": "jlf0dev",
+      "state": "APPROVED",
+      "submitted_at": "2024-07-29T13:31:40Z"
+    },
+    {
+      "login": "MGibson1",
+      "state": "APPROVED",
+      "submitted_at": "2024-08-01T23:53:24Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/9851"
+}

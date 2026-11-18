@@ -1,0 +1,26 @@
+{
+  "changed_code_lines_under_target": 359,
+  "changed_files_in_whole_pr": 30,
+  "changed_files_under_target": 8,
+  "code_files_under_target": 7,
+  "code_touched": true,
+  "event": "BW11709",
+  "focused_code_touched": true,
+  "pr": 13576,
+  "raw_size_bytes": 113964,
+  "repo": "bitwarden/clients",
+  "sha256": "82532b0a96b4508384260b59d9144836f99c0784809dced0bea8186ec8a59b61",
+  "target_file_fraction": 0.26667,
+  "target_paths": [
+    "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts",
+    "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts",
+    "apps/web/src/app/key-management/key-rotation/request/rotate-user-account-keys.request.ts",
+    "apps/web/src/app/key-management/key-rotation/request/unlock-data.request.ts",
+    "apps/web/src/app/key-management/key-rotation/request/userdata.request.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation-api.service.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+  ],
+  "test_files_under_target": 1,
+  "url": "https://github.com/bitwarden/clients/pull/13576.patch"
+}

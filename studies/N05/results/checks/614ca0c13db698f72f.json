@@ -1,0 +1,34 @@
+{
+  "key": "614ca0c13db698f72f",
+  "args": {
+    "crate": "tinyvec",
+    "version": "1.9.0",
+    "id": "21c6a67eeaea12a8",
+    "profile": "candidate",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0953,
+  "errors": [
+    {
+      "code": null,
+      "message": "cannot find macro `tiny_vec` in this scope",
+      "rendered": "error: cannot find macro `tiny_vec` in this scope\n --> src/main.rs:3:14\n  |\n3 | let mut tv = tiny_vec!([i32; 4] => 1, 2, 3);\n  |              ^^^^^^^^\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0412",
+      "message": "cannot find type `TinyVec` in this scope",
+      "rendered": "error[E0412]: cannot find type `TinyVec` in this scope\n --> src/main.rs:4:10\n  |\n4 | let tv2: TinyVec<[i32; 4]> = tv.drain(1..).collect();\n  |          ^^^^^^^ not found in this scope\n\n",
+      "line": 4
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_tinyvec_consumer` (bin \"n05_tinyvec_consumer\") due to 2 previous errors\n",
+  "code_sha256": "8fa0119c510bd1cdc597202c46986323e067fc3aa4b920ea3552cb6731b67365",
+  "manifest_sha256": "0007d09df4993aa205a1fe389ad78c0a3b89190126ca8659de851655e6931e11",
+  "log_file": "results/check_logs/614ca0c13db698f72f.txt.gz"
+}

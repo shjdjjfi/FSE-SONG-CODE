@@ -1,0 +1,76 @@
+{
+  "key": "9eccd5afebcdddaba0",
+  "args": {
+    "crate": "hyper",
+    "version": "1.6.0",
+    "id": "a1601de600a18ac6",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1345,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `pin_project_lite`",
+      "rendered": "error[E0432]: unresolved import `pin_project_lite`\n --> src/main.rs:9:5\n  |\n9 | use pin_project_lite::pin_project;\n  |     ^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `pin_project_lite`\n  |\n  = help: if you wanted to use a crate named `pin_project_lite`, use `cargo add pin_project_lite` to add it to your `Cargo.toml`\n\n",
+      "line": 9
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n  --> src/main.rs:18:20\n   |\n18 |             inner: tokio::time::sleep(duration),\n   |                    ^^^^^ use of unresolved module or unlinked crate `tokio`\n   |\n   = help: if you wanted to use a crate named `tokio`, use `cargo add tokio` to add it to your `Cargo.toml`\n\n",
+      "line": 18
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n  --> src/main.rs:24:20\n   |\n24 |             inner: tokio::time::sleep_until(deadline.into()),\n   |                    ^^^^^ use of unresolved module or unlinked crate `tokio`\n   |\n   = help: if you wanted to use a crate named `tokio`, use `cargo add tokio` to add it to your `Cargo.toml`\n\n",
+      "line": 24
+    },
+    {
+      "code": "E0422",
+      "message": "cannot find struct, variant or union type `TokioSleep` in this scope",
+      "rendered": "error[E0422]: cannot find struct, variant or union type `TokioSleep` in this scope\n  --> src/main.rs:17:18\n   |\n17 |         Box::pin(TokioSleep {\n   |                  ^^^^^^^^^^ not found in this scope\n\n",
+      "line": 17
+    },
+    {
+      "code": "E0422",
+      "message": "cannot find struct, variant or union type `TokioSleep` in this scope",
+      "rendered": "error[E0422]: cannot find struct, variant or union type `TokioSleep` in this scope\n  --> src/main.rs:23:18\n   |\n23 |         Box::pin(TokioSleep {\n   |                  ^^^^^^^^^^ not found in this scope\n\n",
+      "line": 23
+    },
+    {
+      "code": "E0412",
+      "message": "cannot find type `TokioSleep` in this scope",
+      "rendered": "error[E0412]: cannot find type `TokioSleep` in this scope\n  --> src/main.rs:29:64\n   |\n29 |         if let Some(sleep) = sleep.as_mut().downcast_mut_pin::<TokioSleep>() {\n   |                                                                ^^^^^^^^^^ not found in this scope\n   |\nhelp: you might be missing a type parameter\n   |\n15 | impl<TokioSleep> Timer for TokioTimer {\n   |     ++++++++++++\n\n",
+      "line": 29
+    },
+    {
+      "code": "E0412",
+      "message": "cannot find type `TokioSleep` in this scope",
+      "rendered": "error[E0412]: cannot find type `TokioSleep` in this scope\n  --> src/main.rs:42:17\n   |\n42 | impl Future for TokioSleep {\n   |                 ^^^^^^^^^^ not found in this scope\n\n",
+      "line": 42
+    },
+    {
+      "code": "E0412",
+      "message": "cannot find type `TokioSleep` in this scope",
+      "rendered": "error[E0412]: cannot find type `TokioSleep` in this scope\n  --> src/main.rs:50:16\n   |\n50 | impl Sleep for TokioSleep {}\n   |                ^^^^^^^^^^ not found in this scope\n\n",
+      "line": 50
+    },
+    {
+      "code": "E0412",
+      "message": "cannot find type `TokioSleep` in this scope",
+      "rendered": "error[E0412]: cannot find type `TokioSleep` in this scope\n  --> src/main.rs:52:6\n   |\n52 | impl TokioSleep {\n   |      ^^^^^^^^^^ not found in this scope\n\n",
+      "line": 52
+    }
+  ],
+  "error_count": 9,
+  "stderr_excerpt": "error: could not compile `n05_hyper_consumer` (bin \"n05_hyper_consumer\") due to 9 previous errors\n",
+  "code_sha256": "7897a10c8c55db4962e7f6e36147682bc5b6364cbb870934be58f82eb40ceb82",
+  "manifest_sha256": "b210c38e9ef45eb59082b79c2c0dddcfff3c85527f37df6221b2657ac8923b7a",
+  "log_file": "results/check_logs/9eccd5afebcdddaba0.txt.gz"
+}

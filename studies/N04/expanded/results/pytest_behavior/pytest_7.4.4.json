@@ -1,0 +1,566 @@
+{
+  "pytest_version": "7.4.4",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "result_type": "real pytest executions of controlled fixtures",
+  "scenarios": [
+    {
+      "scenario": "function_rename",
+      "pytest_version": "7.4.4",
+      "first_run": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no"
+        ],
+        "exit_code": 1,
+        "stdout": ".F.                                                                      [100%]\n=========================== short test summary info ============================\nFAILED test_original.py::test_old - assert False\n1 failed, 2 passed in 0.01s\n",
+        "stderr": "",
+        "collected_count": null,
+        "elapsed_seconds": 0.46029085599730024
+      },
+      "same_identity_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 0,
+        "stdout": "test_original.py::test_old\n\n1 test collected in 0.00s\n",
+        "stderr": "",
+        "collected_count": 1,
+        "elapsed_seconds": 0.5085691770000267
+      },
+      "after_edit_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 0,
+        "stdout": "test_original.py::test_stable\ntest_original.py::test_new\ntest_original.py::test_other\n\n3 tests collected in 0.00s\n",
+        "stderr": "",
+        "collected_count": 3,
+        "elapsed_seconds": 0.5104027070046868
+      },
+      "bridge_audit": {
+        "examined": 3,
+        "new_tests": 3,
+        "safe_links": 1,
+        "changed_semantics": 0,
+        "split_ambiguous": 0,
+        "unmatched_or_ambiguous": 2,
+        "param_id_pairs": 0,
+        "reason": "completed",
+        "cache_entries": 1,
+        "transferred": 1,
+        "discarded": 0,
+        "transfer_details": [
+          {
+            "from": "test_original.py::test_old",
+            "to": "test_original.py::test_new"
+          }
+        ],
+        "discarded_entries": []
+      },
+      "after_bridge_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 0,
+        "stdout": "test_original.py::test_new\n\n1 test collected in 0.00s\n",
+        "stderr": "",
+        "collected_count": 1,
+        "elapsed_seconds": 0.7385877010019612
+      },
+      "empty_cache_control": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only",
+          "-o",
+          "cache_dir=empty-cache"
+        ],
+        "exit_code": 5,
+        "stdout": "\nno tests collected (3 deselected) in 0.00s\n",
+        "stderr": "",
+        "collected_count": 0,
+        "elapsed_seconds": 0.4248886819987092
+      },
+      "expectation": "Controlled mechanism check only; failure not stochastic"
+    },
+    {
+      "scenario": "file_move",
+      "pytest_version": "7.4.4",
+      "first_run": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no"
+        ],
+        "exit_code": 1,
+        "stdout": ".F.                                                                      [100%]\n=========================== short test summary info ============================\nFAILED test_original.py::test_old - assert False\n1 failed, 2 passed in 0.01s\n",
+        "stderr": "",
+        "collected_count": null,
+        "elapsed_seconds": 0.4889851589978207
+      },
+      "same_identity_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 0,
+        "stdout": "test_original.py::test_old\n\n1 test collected in 0.00s\n",
+        "stderr": "",
+        "collected_count": 1,
+        "elapsed_seconds": 0.5038511700040544
+      },
+      "after_edit_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 0,
+        "stdout": "test_moved.py::test_stable\ntest_moved.py::test_old\ntest_moved.py::test_other\n\n3 tests collected in 0.00s\n",
+        "stderr": "",
+        "collected_count": 3,
+        "elapsed_seconds": 0.45463012499385513
+      },
+      "bridge_audit": {
+        "examined": 3,
+        "new_tests": 3,
+        "safe_links": 1,
+        "changed_semantics": 0,
+        "split_ambiguous": 0,
+        "unmatched_or_ambiguous": 2,
+        "param_id_pairs": 0,
+        "reason": "completed",
+        "cache_entries": 1,
+        "transferred": 1,
+        "discarded": 0,
+        "transfer_details": [
+          {
+            "from": "test_original.py::test_old",
+            "to": "test_moved.py::test_old"
+          }
+        ],
+        "discarded_entries": []
+      },
+      "after_bridge_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 0,
+        "stdout": "test_moved.py::test_old\n\n1 test collected in 0.00s\n",
+        "stderr": "",
+        "collected_count": 1,
+        "elapsed_seconds": 0.7056772980067763
+      },
+      "empty_cache_control": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only",
+          "-o",
+          "cache_dir=empty-cache"
+        ],
+        "exit_code": 5,
+        "stdout": "\nno tests collected (3 deselected) in 0.00s\n",
+        "stderr": "",
+        "collected_count": 0,
+        "elapsed_seconds": 0.48234189699724084
+      },
+      "expectation": "Controlled mechanism check only; failure not stochastic"
+    },
+    {
+      "scenario": "parameter_ids",
+      "pytest_version": "7.4.4",
+      "first_run": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no"
+        ],
+        "exit_code": 1,
+        "stdout": "F..                                                                      [100%]\n=========================== short test summary info ============================\nFAILED test_original.py::test_parameter[alpha] - assert 0 > 0\n1 failed, 2 passed in 0.01s\n",
+        "stderr": "",
+        "collected_count": null,
+        "elapsed_seconds": 0.8134588040047674
+      },
+      "same_identity_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 0,
+        "stdout": "test_original.py::test_parameter[alpha]\n\n1 test collected in 0.00s\n",
+        "stderr": "",
+        "collected_count": 1,
+        "elapsed_seconds": 0.43945738099864684
+      },
+      "after_edit_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 0,
+        "stdout": "test_original.py::test_parameter[one]\ntest_original.py::test_parameter[two]\ntest_original.py::test_unrelated\n\n3 tests collected in 0.00s\n",
+        "stderr": "",
+        "collected_count": 3,
+        "elapsed_seconds": 0.4205319119937485
+      },
+      "bridge_audit": {
+        "examined": 2,
+        "new_tests": 2,
+        "safe_links": 2,
+        "changed_semantics": 0,
+        "split_ambiguous": 0,
+        "unmatched_or_ambiguous": 0,
+        "param_id_pairs": 2,
+        "reason": "completed",
+        "cache_entries": 1,
+        "transferred": 1,
+        "discarded": 0,
+        "transfer_details": [
+          {
+            "from": "test_original.py::test_parameter[alpha]",
+            "to": "test_original.py::test_parameter[one]"
+          }
+        ],
+        "discarded_entries": []
+      },
+      "after_bridge_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 0,
+        "stdout": "test_original.py::test_parameter[one]\n\n1 test collected in 0.01s\n",
+        "stderr": "",
+        "collected_count": 1,
+        "elapsed_seconds": 0.43873425500351004
+      },
+      "empty_cache_control": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only",
+          "-o",
+          "cache_dir=empty-cache"
+        ],
+        "exit_code": 5,
+        "stdout": "\nno tests collected (3 deselected) in 0.01s\n",
+        "stderr": "",
+        "collected_count": 0,
+        "elapsed_seconds": 0.8182359760030522
+      },
+      "expectation": "Controlled mechanism check only; failure not stochastic"
+    },
+    {
+      "scenario": "semantic_change",
+      "pytest_version": "7.4.4",
+      "first_run": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no"
+        ],
+        "exit_code": 1,
+        "stdout": ".F.                                                                      [100%]\n=========================== short test summary info ============================\nFAILED test_original.py::test_old - assert False\n1 failed, 2 passed in 0.01s\n",
+        "stderr": "",
+        "collected_count": null,
+        "elapsed_seconds": 0.4380260570032988
+      },
+      "same_identity_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 0,
+        "stdout": "test_original.py::test_old\n\n1 test collected in 0.00s\n",
+        "stderr": "",
+        "collected_count": 1,
+        "elapsed_seconds": 0.5063397510020877
+      },
+      "after_edit_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 0,
+        "stdout": "test_original.py::test_old\n\n1 test collected in 0.00s\n",
+        "stderr": "",
+        "collected_count": 1,
+        "elapsed_seconds": 0.4545490489981603
+      },
+      "bridge_audit": {
+        "examined": 3,
+        "new_tests": 3,
+        "safe_links": 0,
+        "changed_semantics": 1,
+        "split_ambiguous": 0,
+        "unmatched_or_ambiguous": 2,
+        "param_id_pairs": 0,
+        "reason": "completed",
+        "cache_entries": 1,
+        "transferred": 0,
+        "discarded": 1,
+        "transfer_details": [],
+        "discarded_entries": [
+          "test_original.py::test_old"
+        ]
+      },
+      "after_bridge_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 5,
+        "stdout": "\nno tests collected (3 deselected) in 0.00s\n",
+        "stderr": "",
+        "collected_count": 0,
+        "elapsed_seconds": 0.5500646849977784
+      },
+      "empty_cache_control": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only",
+          "-o",
+          "cache_dir=empty-cache"
+        ],
+        "exit_code": 5,
+        "stdout": "\nno tests collected (3 deselected) in 0.00s\n",
+        "stderr": "",
+        "collected_count": 0,
+        "elapsed_seconds": 0.5043090420003864
+      },
+      "expectation": "Controlled mechanism check only; failure not stochastic"
+    },
+    {
+      "scenario": "split",
+      "pytest_version": "7.4.4",
+      "first_run": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no"
+        ],
+        "exit_code": 1,
+        "stdout": ".F.                                                                      [100%]\n=========================== short test summary info ============================\nFAILED test_original.py::test_old - assert False\n1 failed, 2 passed in 0.00s\n",
+        "stderr": "",
+        "collected_count": null,
+        "elapsed_seconds": 0.5227868230067543
+      },
+      "same_identity_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 0,
+        "stdout": "test_original.py::test_old\n\n1 test collected in 0.00s\n",
+        "stderr": "",
+        "collected_count": 1,
+        "elapsed_seconds": 0.4735019680010737
+      },
+      "after_edit_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 0,
+        "stdout": "test_original.py::test_stable\ntest_original.py::test_old_part_a\ntest_original.py::test_old_part_b\ntest_original.py::test_other\n\n4 tests collected in 0.00s\n",
+        "stderr": "",
+        "collected_count": 4,
+        "elapsed_seconds": 0.5221178499996313
+      },
+      "bridge_audit": {
+        "examined": 3,
+        "new_tests": 4,
+        "safe_links": 0,
+        "changed_semantics": 0,
+        "split_ambiguous": 1,
+        "unmatched_or_ambiguous": 2,
+        "param_id_pairs": 0,
+        "reason": "completed",
+        "cache_entries": 1,
+        "transferred": 0,
+        "discarded": 1,
+        "transfer_details": [],
+        "discarded_entries": [
+          "test_original.py::test_old"
+        ]
+      },
+      "after_bridge_selection": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "exit_code": 5,
+        "stdout": "\nno tests collected (4 deselected) in 0.00s\n",
+        "stderr": "",
+        "collected_count": 0,
+        "elapsed_seconds": 0.7237255620057113
+      },
+      "empty_cache_control": {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only",
+          "-o",
+          "cache_dir=empty-cache"
+        ],
+        "exit_code": 5,
+        "stdout": "\nno tests collected (4 deselected) in 0.00s\n",
+        "stderr": "",
+        "collected_count": 0,
+        "elapsed_seconds": 0.5337413219967857
+      },
+      "expectation": "Controlled mechanism check only; failure not stochastic"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# Small, synthetic unit-test rules. Not copies of production configurations.
+# An actual `promtool test rules tests.yml` execution is required on a host
+# with the official Prometheus binary.  These are for mechanism checks only.
+groups:
+  - name: n06-identity
+    rules:
+      - alert: N06InstanceDown
+        expr: up{job="n06"} == 0
+        for: 10m
+        labels:
+          severity: test
+      - alert: N06ServiceDown
+        expr: (sum by(namespace, service) (up{job="n06"} == bool 0) / count by(namespace, service) (up{job="n06"})) > 0.1
+        for: 10m
+        labels:
+          severity: test
+      - alert: N06InstanceWithKeepFiring
+        expr: up{job="n06-keep"} == 0
+        for: 10m
+        keep_firing_for: 5m
+        labels:
+          severity: test
+      - alert: N06OwnerRelinkDown
+        expr: n06_owner_unavailable{job="n06-relink"} == 1
+        for: 10m
+        labels:
+          severity: test

@@ -1,0 +1,24 @@
+{
+  "key": "fb4449c2cc9e8afa2c",
+  "args": {
+    "crate": "hyper-util",
+    "version": "0.1.15",
+    "id": "6414873f00061607",
+    "profile": "candidate",
+    "features": [
+      "server-auto",
+      "server-graceful"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0868,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "57ab7fad8a8d9a1d1f0da46c617ef89d0c575b24bf075d7053f1177929da13aa",
+  "manifest_sha256": "be1471f7146b388574ced84cae5b904abee6cab63dba35dbae9e5fe4bf0ab8b7",
+  "log_file": "prospective/results/check_logs/fb4449c2cc9e8afa2c.txt.gz"
+}

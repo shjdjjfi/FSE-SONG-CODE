@@ -1,0 +1,50 @@
+{
+  "scope": "Four pre-selected already-known independent-holdout examples; descriptive verification, not an unbiased prevalence estimate.",
+  "classification": "Feature requirement is disclosed on user-facing docs; consumer default-fail is not a demonstrated docs omission.",
+  "cases": [
+    {
+      "crate": "tower-http",
+      "version": "0.6.6",
+      "source_url": "https://docs.rs/tower-http/0.6.6/tower_http/cors/struct.CorsLayer.html",
+      "retrieved_utc": "2026-11-15T00:11:05.296366+00:00",
+      "effective_url": "https://docs.rs/tower-http/0.6.6/tower_http/cors/struct.CorsLayer.html",
+      "html_sha256": "73757122d58b82622a131c8ad3abb873e595de653ce5a97e35f2b050eb9bbb41",
+      "expected_explicit_feature_statement": "feature cors only",
+      "matched_in_version_specific_rendered_text": true,
+      "context_excerpt": "er_ http:: cors tower_http :: cors Struct Cors Layer Copy item path Source pub struct CorsLayer { /* private fields */ } Available on crate feature cors only. Expand description Layer that applies the Cors middleware which adds headers for CORS . See the module docs for an example. Implementations \u00a7 Source \u00a7 impl CorsLayer Source pub fn new () -> Self Create a new CorsLayer . N"
+    },
+    {
+      "crate": "tower-http",
+      "version": "0.6.6",
+      "source_url": "https://docs.rs/tower-http/0.6.6/tower_http/services/struct.ServeDir.html",
+      "retrieved_utc": "2026-11-15T00:11:09.707839+00:00",
+      "effective_url": "https://docs.rs/tower-http/0.6.6/tower_http/services/struct.ServeDir.html",
+      "html_sha256": "d8b8ea3841e2fdf85d46c600f68eec6d44ee51c078ae99bf72b4d2fd2300a0de",
+      "expected_explicit_feature_statement": "feature fs only",
+      "matched_in_version_specific_rendered_text": true,
+      "context_excerpt": "rvices Struct Serve Dir Copy item path Source pub struct ServeDir<F = DefaultServeDirFallback > { /* private fields */ } Available on crate feature fs only. Expand description Service that serves files from a given directory and all its sub directories. The Content-Type will be guessed from the file extension. An empty response with status 404 Not Found will be returned if: The"
+    },
+    {
+      "crate": "tower",
+      "version": "0.5.2",
+      "source_url": "https://docs.rs/tower/0.5.2/tower/trait.ServiceExt.html",
+      "retrieved_utc": "2026-11-15T00:11:16.029622+00:00",
+      "effective_url": "https://docs.rs/tower/0.5.2/tower/trait.ServiceExt.html",
+      "html_sha256": "89ae0b9866ffbd14b08034200f393e8cfa0db5f03ee8e272ee939bfcbf9b4aeb",
+      "expected_explicit_feature_statement": "feature util only",
+      "matched_in_version_specific_rendered_text": true,
+      "context_excerpt": "t, Self:: Response , Self:: Error > where Self: Clone + Sized + Send + 'static, Self:: Future : Send + 'static { ... } } Available on crate feature util only. Expand description An extension trait for Service s that provides a variety of convenient adapters Provided Methods \u00a7 Source fn ready (&mut self) -> Ready <'_, Self, Request> \u24d8 where Self: Sized , Yields a mutable referen"
+    },
+    {
+      "crate": "dashmap",
+      "version": "6.1.0",
+      "source_url": "https://docs.rs/dashmap/6.1.0/dashmap/struct.DashSet.html",
+      "retrieved_utc": "2026-11-15T00:11:19.254761+00:00",
+      "effective_url": "https://docs.rs/dashmap/6.1.0/dashmap/struct.DashSet.html",
+      "html_sha256": "02bb9471ad73b97ab96b88e16e707b21db82b72149e21168297da15a8e7e631a",
+      "expected_explicit_feature_statement": "Requires the raw-api feature",
+      "matched_in_version_specific_rendered_text": true,
+      "context_excerpt": "() >)>>>] Allows you to peek at the inner shards that store your data. You should probably not use this unless you know what you are doing. Requires the raw-api feature to be enabled. \u00a7 Examples use dashmap::DashSet; let set = DashSet::<()>::new(); println! ( \"Amount of shards: {}\" , set.shards().len()); Source pub fn determine_map <Q>(&self, key: &Q ) -> usize where K: Borrow "
+    }
+  ]
+}

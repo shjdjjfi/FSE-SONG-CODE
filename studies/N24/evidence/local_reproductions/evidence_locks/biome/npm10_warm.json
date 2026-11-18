@@ -1,0 +1,65 @@
+{
+  "lockfileVersion": 3,
+  "name": "n24-biome",
+  "packages": {
+    "": {
+      "dependencies": {
+        "@biomejs/biome": "1.9.4",
+        "picocolors": "^1.0.0"
+      },
+      "name": "n24-biome",
+      "version": "1.0.0"
+    },
+    "node_modules/@biomejs/biome": {
+      "bin": {
+        "biome": "bin/biome"
+      },
+      "engines": {
+        "node": ">=14.21.3"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/biome"
+      },
+      "hasInstallScript": true,
+      "integrity": "sha512-1rkd7G70+o9KkTn5KLmDYXihGoTaIGO9PIIN2ZB7UJxFrWw04CZHPYiMRjYsaDvVV7hP1dYNRLxSANLaBFGpog==",
+      "license": "MIT OR Apache-2.0",
+      "optionalDependencies": {
+        "@biomejs/cli-darwin-arm64": "1.9.4",
+        "@biomejs/cli-darwin-x64": "1.9.4",
+        "@biomejs/cli-linux-arm64": "1.9.4",
+        "@biomejs/cli-linux-arm64-musl": "1.9.4",
+        "@biomejs/cli-linux-x64": "1.9.4",
+        "@biomejs/cli-linux-x64-musl": "1.9.4",
+        "@biomejs/cli-win32-arm64": "1.9.4",
+        "@biomejs/cli-win32-x64": "1.9.4"
+      },
+      "resolved": "https://registry.npmjs.org/@biomejs/biome/-/biome-1.9.4.tgz",
+      "version": "1.9.4"
+    },
+    "node_modules/@biomejs/cli-linux-x64": {
+      "cpu": [
+        "x64"
+      ],
+      "engines": {
+        "node": ">=14.21.3"
+      },
+      "integrity": "sha512-lRCJv/Vi3Vlwmbd6K+oQ0KhLHMAysN8lXoCI7XeHlxaajk06u7G+UsFSO01NAs5iYuWKmVZjmiOzJ0OJmGsMwg==",
+      "license": "MIT OR Apache-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "resolved": "https://registry.npmjs.org/@biomejs/cli-linux-x64/-/cli-linux-x64-1.9.4.tgz",
+      "version": "1.9.4"
+    },
+    "node_modules/picocolors": {
+      "integrity": "sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==",
+      "license": "ISC",
+      "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.0.0.tgz",
+      "version": "1.0.0"
+    }
+  },
+  "requires": true,
+  "version": "1.0.0"
+}

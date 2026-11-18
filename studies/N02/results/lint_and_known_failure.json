@@ -1,0 +1,108 @@
+{
+  "helm_chart_lint": [
+    {
+      "family": "argo",
+      "stage": "old",
+      "filename": "argo-cd-5.55.0.tgz",
+      "success": true,
+      "exit_code": 0,
+      "stdout_tail": "==> Linting /workspace/scratch/39d4249dd99a/N02_experiments/charts/argo-cd-5.55.0.tgz\n\n1 chart(s) linted, 0 chart(s) failed\n",
+      "stderr_tail": ""
+    },
+    {
+      "family": "argo",
+      "stage": "new",
+      "filename": "argo-cd-6.0.0.tgz",
+      "success": true,
+      "exit_code": 0,
+      "stdout_tail": "==> Linting /workspace/scratch/39d4249dd99a/N02_experiments/charts/argo-cd-6.0.0.tgz\n\n1 chart(s) linted, 0 chart(s) failed\n",
+      "stderr_tail": ""
+    },
+    {
+      "family": "tempo",
+      "stage": "old",
+      "filename": "tempo-distributed-1.32.0.tgz",
+      "success": true,
+      "exit_code": 0,
+      "stdout_tail": "==> Linting /workspace/scratch/39d4249dd99a/N02_experiments/charts/tempo-distributed-1.32.0.tgz\n\n1 chart(s) linted, 0 chart(s) failed\n",
+      "stderr_tail": ""
+    },
+    {
+      "family": "tempo",
+      "stage": "new",
+      "filename": "tempo-distributed-1.33.0.tgz",
+      "success": true,
+      "exit_code": 0,
+      "stdout_tail": "==> Linting /workspace/scratch/39d4249dd99a/N02_experiments/charts/tempo-distributed-1.33.0.tgz\n\n1 chart(s) linted, 0 chart(s) failed\n",
+      "stderr_tail": ""
+    },
+    {
+      "family": "prometheus",
+      "stage": "old",
+      "filename": "prometheus-27.0.0.tgz",
+      "success": true,
+      "exit_code": 0,
+      "stdout_tail": "==> Linting /workspace/scratch/39d4249dd99a/N02_experiments/charts/prometheus-27.0.0.tgz\n\n1 chart(s) linted, 0 chart(s) failed\n",
+      "stderr_tail": ""
+    },
+    {
+      "family": "prometheus",
+      "stage": "new",
+      "filename": "prometheus-28.0.0.tgz",
+      "success": true,
+      "exit_code": 0,
+      "stdout_tail": "==> Linting /workspace/scratch/39d4249dd99a/N02_experiments/charts/prometheus-28.0.0.tgz\n\n1 chart(s) linted, 0 chart(s) failed\n",
+      "stderr_tail": ""
+    },
+    {
+      "family": "ksm",
+      "stage": "old",
+      "filename": "kube-state-metrics-2.13.2.tgz",
+      "success": true,
+      "exit_code": 0,
+      "stdout_tail": "==> Linting /workspace/scratch/39d4249dd99a/N02_experiments/charts/kube-state-metrics-2.13.2.tgz\n[INFO] Chart.yaml: icon is recommended\n\n1 chart(s) linted, 0 chart(s) failed\n",
+      "stderr_tail": ""
+    },
+    {
+      "family": "ksm",
+      "stage": "new",
+      "filename": "kube-state-metrics-3.0.0.tgz",
+      "success": true,
+      "exit_code": 0,
+      "stdout_tail": "==> Linting /workspace/scratch/39d4249dd99a/N02_experiments/charts/kube-state-metrics-3.0.0.tgz\n[INFO] Chart.yaml: icon is recommended\n\n1 chart(s) linted, 0 chart(s) failed\n",
+      "stderr_tail": ""
+    },
+    {
+      "family": "certmanager",
+      "stage": "old",
+      "filename": "cert-manager-v1.15.3.tgz",
+      "success": true,
+      "exit_code": 0,
+      "stdout_tail": "==> Linting /workspace/scratch/39d4249dd99a/N02_experiments/charts/cert-manager-v1.15.3.tgz\n\n1 chart(s) linted, 0 chart(s) failed\n",
+      "stderr_tail": ""
+    },
+    {
+      "family": "certmanager",
+      "stage": "new",
+      "filename": "cert-manager-v1.16.0.tgz",
+      "success": true,
+      "exit_code": 0,
+      "stdout_tail": "==> Linting /workspace/scratch/39d4249dd99a/N02_experiments/charts/cert-manager-v1.16.0.tgz\n\n1 chart(s) linted, 0 chart(s) failed\n",
+      "stderr_tail": ""
+    }
+  ],
+  "known_hard_failure_control": {
+    "source": "https://github.com/cert-manager/cert-manager/issues/7352",
+    "intervention": "explicit webhook.config=null on v1.16.0",
+    "result": {
+      "ok": false,
+      "exit_code": 1,
+      "seconds": 0.0944,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "error": "Error: template: cert-manager/templates/webhook-rbac.yaml:19:19: executing \"cert-manager/templates/webhook-rbac.yaml\" at <.Values.webhook.config.metricsTLSConfig>: nil pointer evaluating interface {}.metricsTLSConfig\n\nUse --debug flag to render out invalid YAML\n"
+    },
+    "is_silent": false,
+    "label": "render error, not a runnable application-regression witness"
+  }
+}

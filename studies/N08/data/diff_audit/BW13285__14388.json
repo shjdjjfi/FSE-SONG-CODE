@@ -1,0 +1,20 @@
+{
+  "changed_code_lines_under_target": 14,
+  "changed_files_in_whole_pr": 2,
+  "changed_files_under_target": 2,
+  "code_files_under_target": 1,
+  "code_touched": true,
+  "event": "BW13285",
+  "focused_code_touched": true,
+  "pr": 14388,
+  "raw_size_bytes": 5007,
+  "repo": "bitwarden/clients",
+  "sha256": "6f1b0b0839d7d7fe6cae34e6adfd929d490d591260ed8283d80122af9371f571",
+  "target_file_fraction": 1.0,
+  "target_paths": [
+    "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts",
+    "libs/common/src/key-management/crypto/services/encrypt.service.spec.ts"
+  ],
+  "test_files_under_target": 1,
+  "url": "https://github.com/bitwarden/clients/pull/14388.patch"
+}

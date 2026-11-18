@@ -1,0 +1,6 @@
+COMMAND: ["/workspace/scratch/2881099d856a/n22_env_dj518/bin/python", "/workspace/scratch/2881099d856a/N22_FSE_Industry/code/replay_django_sites.py", "--db", "/workspace/scratch/2881099d856a/N22_FSE_Industry/runs/full/databases/sites_user_variant_026__r01.sqlite", "--out", "/workspace/scratch/2881099d856a/N22_FSE_Industry/runs/full/raw_json/sites_user_variant_026__r01.json", "--mode", "staged_user", "--domain", "customer-026.example", "--name", "Owner's site setting 26: \u5317\u4eac\u30fbM\u00fcnchen"]
+RETURN CODE: 0
+STDOUT:
+{"case_id": "staged_user-customer-026.example", "oracle": {"site_id": 1, "site_domain": "customer-026.example", "site_name": "Owner's site setting 26: \u5317\u4eac\u30fbM\u00fcnchen", "redirect_count": 0, "expected_domain": "customer-026.example", "expected_name": "Owner's site setting 26: \u5317\u4eac\u30fbM\u00fcnchen", "expected_redirect_count": 0, "contract_violation": false}, "schema_sha256": "d3e4edd2d961f5cf532d07bbe55c86b41c2895f363e03fafad9a9800ceb34e49", "migration_ledger_sha256": "83c2f480d606beed3e53afc45b8ef14a2c04278ff320c6365f29be615df06662"}
+
+STDERR:

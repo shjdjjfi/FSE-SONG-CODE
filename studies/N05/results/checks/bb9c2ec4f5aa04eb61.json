@@ -1,0 +1,27 @@
+{
+  "key": "bb9c2ec4f5aa04eb61",
+  "args": {
+    "crate": "tracing-subscriber",
+    "version": "0.3.19",
+    "id": "7cf792d58ba414b7",
+    "profile": "candidate",
+    "features": [
+      "alloc",
+      "ansi",
+      "env-filter",
+      "fmt",
+      "json"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 1.1867,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "a3a5400c83ea95027bf2472938feb81e4a3d549d738a025aa5ebf9cd4925d82e",
+  "manifest_sha256": "078aac6c7f2d6a64228c900d6d9ceedc8d53364504242730de6c32c71a82d2b0",
+  "log_file": "results/check_logs/bb9c2ec4f5aa04eb61.txt.gz"
+}

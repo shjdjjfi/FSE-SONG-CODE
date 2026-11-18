@@ -1,0 +1,23 @@
+argv: ["/workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/venvs/python_jose_latest/bin/python", "-m", "pip", "install", "--no-input", "--disable-pip-version-check", "--only-binary=:all:", "--progress-bar", "off", "--timeout", "12", "--retries", "1", "--index-url", "https://pypi.org/simple", "python-jose==3.5.0"]
+
+[STDOUT]
+Collecting python-jose==3.5.0
+  Using cached python_jose-3.5.0-py2.py3-none-any.whl.metadata (5.5 kB)
+Collecting ecdsa!=0.15 (from python-jose==3.5.0)
+  Using cached ecdsa-0.19.2-py2.py3-none-any.whl.metadata (29 kB)
+Collecting rsa!=4.1.1,!=4.4,<5.0,>=4.0 (from python-jose==3.5.0)
+  Using cached rsa-4.9.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting pyasn1>=0.5.0 (from python-jose==3.5.0)
+  Using cached pyasn1-0.6.5-py3-none-any.whl.metadata (8.4 kB)
+Collecting six>=1.9.0 (from ecdsa!=0.15->python-jose==3.5.0)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading python_jose-3.5.0-py2.py3-none-any.whl (34 kB)
+Using cached rsa-4.9.1-py3-none-any.whl (34 kB)
+Using cached ecdsa-0.19.2-py2.py3-none-any.whl (150 kB)
+Using cached pyasn1-0.6.5-py3-none-any.whl (84 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: six, pyasn1, rsa, ecdsa, python-jose
+Successfully installed ecdsa-0.19.2 pyasn1-0.6.5 python-jose-3.5.0 rsa-4.9.1 six-1.17.0
+
+
+[STDERR]

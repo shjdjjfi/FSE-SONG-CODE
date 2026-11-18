@@ -1,0 +1,75 @@
+{
+  "pr": 16042,
+  "pr_author": "coltonhurst",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-08-22T15:43:07Z",
+      "requested_people": [
+        "coltonhurst"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-08-22T15:48:18Z",
+      "requested_people": [
+        "coltonhurst",
+        "jprusik"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-08-25T23:25:01Z",
+      "requested_people": [
+        "coltonhurst",
+        "cyprain-okeke",
+        "neuronull"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-08-26T15:50:03Z",
+      "requested_people": [
+        "coltonhurst"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-08-26T15:50:04Z",
+      "requested_people": [
+        "coltonhurst",
+        "jprusik"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-08-29T21:10:57Z",
+      "requested_people": [
+        "coltonhurst",
+        "cyprain-okeke",
+        "jprusik",
+        "neuronull"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-09-04T16:19:16Z",
+      "requested_people": [
+        "coltonhurst",
+        "cyprain-okeke",
+        "jprusik",
+        "neuronull"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "398a4c43965e2cc1435c110e75909a827ec743803405c80a613f3ec69e1eded4",
+  "url": "https://github.com/bitwarden/clients/pull/16042"
+}

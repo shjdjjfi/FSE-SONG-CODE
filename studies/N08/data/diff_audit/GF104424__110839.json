@@ -1,0 +1,19 @@
+{
+  "changed_code_lines_under_target": 2,
+  "changed_files_in_whole_pr": 11,
+  "changed_files_under_target": 1,
+  "code_files_under_target": 1,
+  "code_touched": true,
+  "event": "GF104424",
+  "focused_code_touched": false,
+  "pr": 110839,
+  "raw_size_bytes": 31532,
+  "repo": "grafana/grafana",
+  "sha256": "4050376d2e5a30323376a39bc994060960cb5df846ab6af4786baeadca1819bd",
+  "target_file_fraction": 0.09091,
+  "target_paths": [
+    "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+  ],
+  "test_files_under_target": 0,
+  "url": "https://github.com/grafana/grafana/pull/110839.patch"
+}

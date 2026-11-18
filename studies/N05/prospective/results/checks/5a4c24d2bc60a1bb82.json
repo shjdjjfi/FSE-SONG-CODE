@@ -1,0 +1,31 @@
+{
+  "key": "5a4c24d2bc60a1bb82",
+  "args": {
+    "crate": "mio",
+    "version": "1.0.4",
+    "id": "a108262e04d9c2c7",
+    "profile": "candidate",
+    "features": [
+      "os-ext",
+      "os-poll"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.259,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `mio::net`",
+      "rendered": "error[E0432]: unresolved import `mio::net`\n  --> src/main.rs:3:10\n   |\n 3 | use mio::net::{TcpListener, TcpStream};\n   |          ^^^ could not find `net` in `mio`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/mio-1.0.4/src/lib.rs:64:13\n   |\n63 | / cfg_net! {\n64 | |     pub mod net;\n   | |             ^^^\n65 | | }\n   | |_- the item is gated behind the `net` feature\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_mio_consumer` (bin \"n05_mio_consumer\") due to 1 previous error\n",
+  "code_sha256": "abf70bc87413feee8c2d72f4d2f1a602093fcb8aa44fb7cde9bbb66ba8affdaf",
+  "manifest_sha256": "f1e1d594a3b40e8287803b22fe4b63136e7990c1725051c16c5b2a8286144423",
+  "log_file": "prospective/results/check_logs/5a4c24d2bc60a1bb82.txt.gz"
+}

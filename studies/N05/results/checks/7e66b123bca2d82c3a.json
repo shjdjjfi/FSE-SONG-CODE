@@ -1,0 +1,37 @@
+{
+  "key": "7e66b123bca2d82c3a",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "81a01fc7b68c2228",
+    "profile": "candidate",
+    "features": [
+      "macros",
+      "rt-multi-thread"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.9093,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio::sync::mpsc`",
+      "rendered": "error[E0432]: unresolved import `tokio::sync::mpsc`\n --> src/main.rs:1:5\n  |\n1 | use tokio::sync::mpsc;\n  |     ^^^^^^^^^^^^^^^^^ no `mpsc` in `sync`\n  |\nhelp: consider importing this module instead\n  |\n1 - use tokio::sync::mpsc;\n1 + use std::sync::mpsc;\n  |\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0603",
+      "message": "module `sync` is private",
+      "rendered": "error[E0603]: module `sync` is private\n   --> src/main.rs:1:12\n    |\n  1 | use tokio::sync::mpsc;\n    |            ^^^^ private module\n    |\nnote: the module `sync` is defined here\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/lib.rs:546:5\n    |\n546 |     mod sync;\n    |     ^^^^^^^^\n\n",
+      "line": 1
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 2 previous errors\n",
+  "code_sha256": "6184a0eb63db28f8117a827b1ee7bc8c2f8008366b90003a16de3e3c3dcdcbe3",
+  "manifest_sha256": "70f884ddd2606859bdd1cd92d057463fbb96e0da2549d2ebfee2c42947f81b8a",
+  "log_file": "results/check_logs/7e66b123bca2d82c3a.txt.gz"
+}

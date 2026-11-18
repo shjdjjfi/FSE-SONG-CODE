@@ -1,0 +1,44 @@
+{
+  "pr": 16944,
+  "pr_author": "hinton",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-10-20T20:04:45Z",
+      "requested_people": [
+        "hinton"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-20T20:04:45Z",
+      "requested_people": [
+        "cyprain-okeke",
+        "hinton"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-22T20:48:18Z",
+      "requested_people": [
+        "hinton"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-22T20:48:19Z",
+      "requested_people": [
+        "amorask-bitwarden",
+        "btreston",
+        "hinton"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "548758cedc49694f8d820f8cbf99e40eff0007a68e7bde2a2cca3c81ee5c5623",
+  "url": "https://github.com/bitwarden/clients/pull/16944"
+}

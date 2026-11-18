@@ -1,0 +1,21 @@
+{
+  "key": "b60264be22e9f91afe",
+  "args": {
+    "crate": "serde_json",
+    "version": "1.0.140",
+    "id": "e8cb42b050b87312",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0498,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "46eb66f0f3beafed7dfa4ba9224f69caff9bc1565edbe9999ed48cc2a49a1cf9",
+  "manifest_sha256": "a897ce8f2eb7416e83e720437ceea15f5f4378e7dece5d03e8f78e64706e38fa",
+  "log_file": "holdout/results/check_logs/b60264be22e9f91afe.txt.gz"
+}

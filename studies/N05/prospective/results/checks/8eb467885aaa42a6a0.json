@@ -1,0 +1,21 @@
+{
+  "key": "8eb467885aaa42a6a0",
+  "args": {
+    "crate": "sqlparser",
+    "version": "0.56.0",
+    "id": "24b428c75e832135",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.1029,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "dd9ffcdf5c833d9aca863e7fa940c7efc00f1a485918ca49ac212db18ee9d40d",
+  "manifest_sha256": "acdb168c706aea22a036f610169d5067563234d202e06316f4d8055ed2c915d8",
+  "log_file": "prospective/results/check_logs/8eb467885aaa42a6a0.txt.gz"
+}

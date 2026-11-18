@@ -1,0 +1,1239 @@
+{
+  "body": [
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/167752252?v=4",
+        "events_url": "https://api.github.com/users/mzieniukbw/events{/privacy}",
+        "followers_url": "https://api.github.com/users/mzieniukbw/followers",
+        "following_url": "https://api.github.com/users/mzieniukbw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mzieniukbw/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/mzieniukbw",
+        "id": 167752252,
+        "login": "mzieniukbw",
+        "node_id": "U_kgDOCf-yPA",
+        "organizations_url": "https://api.github.com/users/mzieniukbw/orgs",
+        "received_events_url": "https://api.github.com/users/mzieniukbw/received_events",
+        "repos_url": "https://api.github.com/users/mzieniukbw/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/mzieniukbw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mzieniukbw/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/mzieniukbw",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/5b402d9c3877d9f3d13080e7522fdabde6fa7ae4/comments",
+      "commit": {
+        "author": {
+          "date": "2025-08-22T21:14:02Z",
+          "email": "167752252+mzieniukbw@users.noreply.github.com",
+          "name": "Maciej Zieniuk"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-08-22T21:14:02Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "cleanup remove password on start for desktop (#15957)",
+        "tree": {
+          "sha": "83ad40609ad5b8007de8aba4ce8a7de2fa12e517",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/83ad40609ad5b8007de8aba4ce8a7de2fa12e517"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/5b402d9c3877d9f3d13080e7522fdabde6fa7ae4",
+        "verification": {
+          "payload": "tree 83ad40609ad5b8007de8aba4ce8a7de2fa12e517\nparent 65230a9c3e7c03cdaecb166df20073d5c7dcc64f\nauthor Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com> 1755897242 +0200\ncommitter GitHub <noreply@github.com> 1755897242 +0200\n\ncleanup remove password on start for desktop (#15957)\n\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoqN2aCRC1aQ7uu5UhlAAAem4QAKCBbvYjV/V6g+kzS2IpVPQG\n/KP3bjFbVPRsHQiHKiw03TZCa5BhqzUYbGpy3DOjQ792l35S78jPBlR5DpYR0Vg3\nfgZqR/sSh+HwGH68GQ6FZ0637BZQL/l/C8iOOA2SVPp+N/5oaSnLJqWp9AJ13H9g\nMLb364wXndeLUsB71ymmt9tEZoxqSuPTi5D/xmigVS4t4OsGDwOLAmyHlFCuZAqh\nD4XwXWunnY4aCBaK6fjh0uvnTDEc4NSVcyn8HMCblRn2No+iOhk8lGlfQ0e0EJoD\n1fAZe0ThefaahC4QeTrJNTkkS+tEru96mOgPdcLnJ3bPmNz8Ld6ATNz4Xtf0PWLb\nI8CPivPP2WH7lPnIk8gCLcuYhUFFXAs+vUfk0Y/PF0SE1IOm1ZA7vvQLmhoVJ1tD\nUVrYZar39cXrovH/JbHEbQeOtC+MtjGvQ4M8bbivQMK0TEQBOz/06PuhjKK1xyvD\neTOzoegFVIaWzMQf2r4zV81P4+b7iVFsXSqGb5vWgigJ5fh9F2MnLMtc6um4Jxv+\netq9g+9QSkNdWO0gyFlZ1MsVc7yUUCdqKnPjYxGXMHKsfOMfSeFc0XeX3HtsKcwC\nXz/lUutx7zI6CjX9qvx6b3LagEpRQQSYBmEeOri3h53W6g3MIMbglI5O6ARkey8u\nU5EGwRYxhl7KK/3WO3a8\n=PkeD\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-08-22T21:14:03Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/5b402d9c3877d9f3d13080e7522fdabde6fa7ae4",
+      "node_id": "C_kwDOAzDwU9oAKDViNDAyZDljMzg3N2Q5ZjNkMTMwODBlNzUyMmZkYWJkZTZmYTdhZTQ",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/65230a9c3e7c03cdaecb166df20073d5c7dcc64f",
+          "sha": "65230a9c3e7c03cdaecb166df20073d5c7dcc64f",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/65230a9c3e7c03cdaecb166df20073d5c7dcc64f"
+        }
+      ],
+      "sha": "5b402d9c3877d9f3d13080e7522fdabde6fa7ae4",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/5b402d9c3877d9f3d13080e7522fdabde6fa7ae4"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/167752252?v=4",
+        "events_url": "https://api.github.com/users/mzieniukbw/events{/privacy}",
+        "followers_url": "https://api.github.com/users/mzieniukbw/followers",
+        "following_url": "https://api.github.com/users/mzieniukbw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mzieniukbw/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/mzieniukbw",
+        "id": 167752252,
+        "login": "mzieniukbw",
+        "node_id": "U_kgDOCf-yPA",
+        "organizations_url": "https://api.github.com/users/mzieniukbw/orgs",
+        "received_events_url": "https://api.github.com/users/mzieniukbw/received_events",
+        "repos_url": "https://api.github.com/users/mzieniukbw/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/mzieniukbw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mzieniukbw/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/mzieniukbw",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/167fa9a7ab1456f8ea4e2933057dd370c42b83cc/comments",
+      "commit": {
+        "author": {
+          "date": "2025-07-21T17:35:31Z",
+          "email": "167752252+mzieniukbw@users.noreply.github.com",
+          "name": "Maciej Zieniuk"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-07-21T17:35:31Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-18054] Chrome extension biometric unlock not functioning correctly with Windows Hello. (#14953)\n\n* Chrome extension biometric unlock not functioning correctly with Windows Hello.\n\nWhen unlocking via Windows Hello prompt, the popup have to be in the foreground. If it is not, even for short amount of time (few seconds), if later prompt confirmed, it won't return success when returning signed os key half.\n\n* unit test coverage\n\n* unit test coverage\n\n* exclude test files from build\n\n* use electron `setAlwaysOnTop` instead of toggle\n\n* remove Windows os key half created with derive_key_material biometric function, that prompted Windows Hello.\n\nMoves Windows hello prompt into getBiometricKey.\nWitness key no longer needed.\n\n* windows crate formatting\n\n* remove biometric on app start for windows\n\n* failing os biometrics windows unit tests\n\n* cleanup of os biometrics windows unit tests\n\n* increased coverage of os biometrics windows unit tests\n\n* open Windows Hello prompt in the currently focused window, instead of always desktop app\n\n* conflict resolution after merge, typescript lint issues, increased test coverage.\n\n* backwards compatibility when require password on start was disabled\n\n* biometric unlock cancellation and error handling\n\n* biometric settings simplifications",
+        "tree": {
+          "sha": "38302959d828a6569e0d559a8d93cb5f2dead80b",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/38302959d828a6569e0d559a8d93cb5f2dead80b"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/167fa9a7ab1456f8ea4e2933057dd370c42b83cc",
+        "verification": {
+          "payload": "tree 38302959d828a6569e0d559a8d93cb5f2dead80b\nparent 8b5e6adc376d21552137e31ca63b8939f343f447\nauthor Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com> 1753119331 +0200\ncommitter GitHub <noreply@github.com> 1753119331 +0200\n\n[PM-18054] Chrome extension biometric unlock not functioning correctly with Windows Hello. (#14953)\n\n* Chrome extension biometric unlock not functioning correctly with Windows Hello.\n\nWhen unlocking via Windows Hello prompt, the popup have to be in the foreground. If it is not, even for short amount of time (few seconds), if later prompt confirmed, it won't return success when returning signed os key half.\n\n* unit test coverage\n\n* unit test coverage\n\n* exclude test files from build\n\n* use electron `setAlwaysOnTop` instead of toggle\n\n* remove Windows os key half created with derive_key_material biometric function, that prompted Windows Hello.\n\nMoves Windows hello prompt into getBiometricKey.\nWitness key no longer needed.\n\n* windows crate formatting\n\n* remove biometric on app start for windows\n\n* failing os biometrics windows unit tests\n\n* cleanup of os biometrics windows unit tests\n\n* increased coverage of os biometrics windows unit tests\n\n* open Windows Hello prompt in the currently focused window, instead of always desktop app\n\n* conflict resolution after merge, typescript lint issues, increased test coverage.\n\n* backwards compatibility when require password on start was disabled\n\n* biometric unlock cancellation and error handling\n\n* biometric settings simplifications",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJofnpjCRC1aQ7uu5UhlAAAn4EQAFt7a8WIa17Lw00B1iptWYfv\nij2+vZXVY5ZrCAar4qnBAPGOvOID+vtXePZ0dg7Ke+ZlWiPM9nlRQhwf9CV8KoM3\nX9DFzfqorZovAmWX3BiMqx5vHX82mdYTxHIlX+uImrxVSkoZwuNt1Q38sYB3UI13\nqOxxWotqL6KGgJ8oYRXW6bHCAEL0BI1UgRboc/w1VJSyniTtpQviSIhX8idIIFnn\n9zE6MwNvUnlFABM8179K5Fzfn5OnOEHcWudCJXZTSXyNEnhY2P8jZAfOrIijy5r2\nsZxcHGFToXAus5pWwwJgm2h9P2BuXxu6CVICghvzofjUrvnOfXZZN8UHzFy2JaT+\n5nXwc/8hIUxpDLZKLtrdD5wCkufYy2GqYhq1c3GkDWiqWgZh5rWSrbo2TDNRdDY1\nHNA35sYtGErFhFl7VmL+UHKe8XYSyyTagnfBulYfcfBKHzoIrj606MTXceoEyS5z\nHB0sqCwjfLsdJ6hfYCMRgMmIF1b4SZ22C4PwTPm2Mdb+r2YojrSLznk8enT4gBL6\nL5UeCgmwDrf48XWZ6Bx3K6EAQDoFGYm2jI47i8CdB+iRcJcakpVY/0LyfRZzfT65\nljWkBx/l0tCrgAaX649+8zb5lCehkSz6E8gfLnAcxcpOl/PwDCJRCnUwpyYjW9Gh\nGbJP7MKbEzjHX4qKkYKi\n=ObCG\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-07-21T17:35:31Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/167fa9a7ab1456f8ea4e2933057dd370c42b83cc",
+      "node_id": "C_kwDOAzDwU9oAKDE2N2ZhOWE3YWIxNDU2ZjhlYTRlMjkzMzA1N2RkMzcwYzQyYjgzY2M",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/8b5e6adc376d21552137e31ca63b8939f343f447",
+          "sha": "8b5e6adc376d21552137e31ca63b8939f343f447",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/8b5e6adc376d21552137e31ca63b8939f343f447"
+        }
+      ],
+      "sha": "167fa9a7ab1456f8ea4e2933057dd370c42b83cc",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/167fa9a7ab1456f8ea4e2933057dd370c42b83cc"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/11866552?v=4",
+        "events_url": "https://api.github.com/users/quexten/events{/privacy}",
+        "followers_url": "https://api.github.com/users/quexten/followers",
+        "following_url": "https://api.github.com/users/quexten/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quexten/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/quexten",
+        "id": 11866552,
+        "login": "quexten",
+        "node_id": "MDQ6VXNlcjExODY2NTUy",
+        "organizations_url": "https://api.github.com/users/quexten/orgs",
+        "received_events_url": "https://api.github.com/users/quexten/received_events",
+        "repos_url": "https://api.github.com/users/quexten/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/quexten/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quexten/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/quexten",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/60855c734fe34ed98ae321777266ededdb571e6d/comments",
+      "commit": {
+        "author": {
+          "date": "2025-07-16T15:15:24Z",
+          "email": "mail@quexten.com",
+          "name": "Bernd Schoolmann"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-07-16T15:15:24Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-17666] Move Encstring to KM ownership (#15457)\n\n* Move Encstring to KM ownership\n\n* Fix wrong import\n\n* Fix build\n\n* Fix remaining imports\n\n* Fix tests",
+        "tree": {
+          "sha": "e045c1b183dbd27a93a34bbcfe4faa53dc6bbba8",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/e045c1b183dbd27a93a34bbcfe4faa53dc6bbba8"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/60855c734fe34ed98ae321777266ededdb571e6d",
+        "verification": {
+          "payload": "tree e045c1b183dbd27a93a34bbcfe4faa53dc6bbba8\nparent ee598288d4648426e0aeaa95c42efca05d3e1291\nauthor Bernd Schoolmann <mail@quexten.com> 1752678924 +0200\ncommitter GitHub <noreply@github.com> 1752678924 -0400\n\n[PM-17666] Move Encstring to KM ownership (#15457)\n\n* Move Encstring to KM ownership\n\n* Fix wrong import\n\n* Fix build\n\n* Fix remaining imports\n\n* Fix tests",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJod8IMCRC1aQ7uu5UhlAAACNUQAIh3y0pYSGCBsRIW5QUzkdnc\nCVrOYaAiyPJ4Z2xiB690q8WjIVpcqfvvQUjrDR7KUx6SEVelMnHDEqWgPQmbaBmW\n0XF6zJZbjXqKj+E9J5rXQvFm+vbxV2Bp6nEf0TFdXsuYf7B9AuVE+OZY9sMUJp53\nWqrFMg/+jsWM1fZQ8fa72VEcMJcKc/254z3aiavLiMFatUiOGA13VRdjMIDUUH65\nlpd2Z7/nGDuQ/FG2+iwvUje6//nl0mZFZbZBLnRv+bIye25yjwNT1X5GjsOMyOpY\nUFGqjvjUWzspf2EcZWfcA14OrRCP0FaeJddweYnIyN0tT8GAW+tnqkRf9N6ZK8er\n9Q0FTi+SDT8ih17nIzXYMmkfs/sTn8HWb8cVi7VcnQVBa+hRoODGZ/Tq5t/R/0gY\njSdBudkzLxoDDjiGAVp9FZ1VtRemdkdhLuXvYJnEYisd3IXmGSMZiMX2SnNKj7GM\nv6CDq285uAwHMcGwXyF+Sv1Uliq3UR2mwUpQcrHcvbn6GtYsQb/AP9LaxEXs6tt5\nbAmMgNSyFypEL/DKgdcgdfp9vSq5/26j7O3kB8PN5ePj+R58JN8zr9sYW35I7GKK\nFak2rOwcGzQJWkPgYVPRcmrP7I7xkHWg6yBOWf17S7wHlvRCIurdsp9/vuzdL6HG\ntF37rlROqrFMI68Xjt6r\n=n/RJ\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-07-16T15:15:24Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/60855c734fe34ed98ae321777266ededdb571e6d",
+      "node_id": "C_kwDOAzDwU9oAKDYwODU1YzczNGZlMzRlZDk4YWUzMjE3NzcyNjZlZGVkZGI1NzFlNmQ",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/ee598288d4648426e0aeaa95c42efca05d3e1291",
+          "sha": "ee598288d4648426e0aeaa95c42efca05d3e1291",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/ee598288d4648426e0aeaa95c42efca05d3e1291"
+        }
+      ],
+      "sha": "60855c734fe34ed98ae321777266ededdb571e6d",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/60855c734fe34ed98ae321777266ededdb571e6d"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/11866552?v=4",
+        "events_url": "https://api.github.com/users/quexten/events{/privacy}",
+        "followers_url": "https://api.github.com/users/quexten/followers",
+        "following_url": "https://api.github.com/users/quexten/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quexten/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/quexten",
+        "id": 11866552,
+        "login": "quexten",
+        "node_id": "MDQ6VXNlcjExODY2NTUy",
+        "organizations_url": "https://api.github.com/users/quexten/orgs",
+        "received_events_url": "https://api.github.com/users/quexten/received_events",
+        "repos_url": "https://api.github.com/users/quexten/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/quexten/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quexten/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/quexten",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/8250e40c6c19d1b1007b8e9ed152eabdda8c1ab8/comments",
+      "commit": {
+        "author": {
+          "date": "2025-07-15T09:53:58Z",
+          "email": "mail@quexten.com",
+          "name": "Bernd Schoolmann"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-07-15T09:53:58Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-22271] Switch to SDK argon2 implementation, and drop other impls (#15401)\n\n* Switch to SDK argon2 implementation\n\n* Cleanup and update to the latest sdk\n\n* Update package lock\n\n* Remove copy patch\n\n* Fix builds\n\n* Fix test build\n\n* Remove error\n\n* Fix tests\n\n* Fix build\n\n* Run prettier\n\n* Remove argon2 references\n\n* Regenerate index.d.ts for desktop_native napi\n\n* Replace mocked crypto function service type",
+        "tree": {
+          "sha": "bfb8afe8ed0a1af4baee205ad3c6150db3bba699",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/bfb8afe8ed0a1af4baee205ad3c6150db3bba699"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/8250e40c6c19d1b1007b8e9ed152eabdda8c1ab8",
+        "verification": {
+          "payload": "tree bfb8afe8ed0a1af4baee205ad3c6150db3bba699\nparent 1315e7c37c121b9570fc83dcfd9e11a2d89299a0\nauthor Bernd Schoolmann <mail@quexten.com> 1752573238 +0200\ncommitter GitHub <noreply@github.com> 1752573238 +0200\n\n[PM-22271] Switch to SDK argon2 implementation, and drop other impls (#15401)\n\n* Switch to SDK argon2 implementation\n\n* Cleanup and update to the latest sdk\n\n* Update package lock\n\n* Remove copy patch\n\n* Fix builds\n\n* Fix test build\n\n* Remove error\n\n* Fix tests\n\n* Fix build\n\n* Run prettier\n\n* Remove argon2 references\n\n* Regenerate index.d.ts for desktop_native napi\n\n* Replace mocked crypto function service type",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJodiU2CRC1aQ7uu5UhlAAAHi4QADlZRObSzrYpIHZPbNIxPYzI\nyKPDLELBhEv5McPS4M+M8Oo8Es3k5jghbWVoDmmXhwe1TPWOHg33E+axc8ojEOYJ\nwXb9P/aAitOo+yUrC+rO+IBBywkbPjImtlPxNoBfC5GMlUD5Y73iDUIwNSBlFBVZ\nIyS9eyxPNWdE62dntuBRD7QGXUIS3ZMahwXmanK6zNG5DtFQQMpBM5FTwTt+iwC2\nR6WVBXW8o1ncMYnUuLW0uc9go1+Scm/cXE+q36vi4oPLd9GKAWZYybcGgSlvWyBc\n0qmybGd0+c4iP8lu4QaM2BU2GcFmQCRfZs9I2qlI9fJbpU8cjeahzp/sqXAEcUVS\nVicJ/VhOoltaCT7ov6zdqpm6c8OCXj7IQanoQAy18JhgAMxb5+PVI9D5d0lFFPaD\nxwdvdIBte0cJWxOdNxBupLMGeSX0JhFQcqldJTE1iRh8Elgu1cVX/ylpurA/nfsM\nMi0CmUXxe8sGzgwSN/SQXFBa8eKYvnQqYyhG+MTMrWyQiqnpArtqS2X1qMInzWBg\nsLeXe8fKCnu4WAMDsVGKXVJvSMWqm60hVZWZBpBHwmQhLCCgANVoLV30DaUTgnLA\nhKROdq2cqps357HuXMT851w2aHm0qGT/sr7vAtmxrx5wWrZMAe+p82uVsGG62zXY\ninTIt+fkOVoy0SV9P1GB\n=W6Kd\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-07-15T09:53:59Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/8250e40c6c19d1b1007b8e9ed152eabdda8c1ab8",
+      "node_id": "C_kwDOAzDwU9oAKDgyNTBlNDBjNmMxOWQxYjEwMDdiOGU5ZWQxNTJlYWJkZGE4YzFhYjg",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/1315e7c37c121b9570fc83dcfd9e11a2d89299a0",
+          "sha": "1315e7c37c121b9570fc83dcfd9e11a2d89299a0",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/1315e7c37c121b9570fc83dcfd9e11a2d89299a0"
+        }
+      ],
+      "sha": "8250e40c6c19d1b1007b8e9ed152eabdda8c1ab8",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/8250e40c6c19d1b1007b8e9ed152eabdda8c1ab8"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/167752252?v=4",
+        "events_url": "https://api.github.com/users/mzieniukbw/events{/privacy}",
+        "followers_url": "https://api.github.com/users/mzieniukbw/followers",
+        "following_url": "https://api.github.com/users/mzieniukbw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mzieniukbw/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/mzieniukbw",
+        "id": 167752252,
+        "login": "mzieniukbw",
+        "node_id": "U_kgDOCf-yPA",
+        "organizations_url": "https://api.github.com/users/mzieniukbw/orgs",
+        "received_events_url": "https://api.github.com/users/mzieniukbw/received_events",
+        "repos_url": "https://api.github.com/users/mzieniukbw/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/mzieniukbw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mzieniukbw/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/mzieniukbw",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/8fec95671d1f39c863e9977542c95c80fc5957c2/comments",
+      "commit": {
+        "author": {
+          "date": "2025-06-30T10:38:51Z",
+          "email": "167752252+mzieniukbw@users.noreply.github.com",
+          "name": "Maciej Zieniuk"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-06-30T10:38:51Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-22090] Delete password on Windows desktop throws incorrect error (#15070)\n\n* delete password on Windows desktop throws incorrect error\n\n* delete password on Windows desktop throws incorrect error\n\n* napi documentation improvements\n\n* napi documentation update\n\n* better logging verbosity\n\n* desktop native clippy errors\n\n* unit test coverage\n\n* napi TS documentation JS language friendly\n\n* fixing merge conflicts",
+        "tree": {
+          "sha": "a28217cfb21347f19e0c7914484582e05af452cc",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/a28217cfb21347f19e0c7914484582e05af452cc"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/8fec95671d1f39c863e9977542c95c80fc5957c2",
+        "verification": {
+          "payload": "tree a28217cfb21347f19e0c7914484582e05af452cc\nparent a05776c989f2d9839eb66bdf6715eb2b7a8c1b73\nauthor Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com> 1751279931 +0200\ncommitter GitHub <noreply@github.com> 1751279931 +0200\n\n[PM-22090] Delete password on Windows desktop throws incorrect error (#15070)\n\n* delete password on Windows desktop throws incorrect error\n\n* delete password on Windows desktop throws incorrect error\n\n* napi documentation improvements\n\n* napi documentation update\n\n* better logging verbosity\n\n* desktop native clippy errors\n\n* unit test coverage\n\n* napi TS documentation JS language friendly\n\n* fixing merge conflicts",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoYmk8CRC1aQ7uu5UhlAAAIUAQABUcpEUedbQVX3buL7n6YzwW\nj470XblwI5ji4DybGjoh7ewppEPDMA5zFJR5UeOhJpSgoPkzO79ZbcRYPsbbVlsJ\nvZHr10yyuunsEb451OZPK2zNGPk0RRz4J4SMrCzD4oku05iOPqbNRjd0b5CFmksI\nT0RlD2XNiFp9rTD4STpV1kjBzXGquslJlXjZOeWujqhY+ZENQ9xPhK95g+5tPESk\nl3He/Tdya/K2V5tVM4BMn6WZs5XQDwpV61R2eN0pt3gUTP78rqvrVdQ+IO6FhdvG\njCNhXWJI3iAtoVrqGye5GqViqJpQ4+xwytKe+kH3pWJZvhC4qidHug4RzC8X7WWB\nvH1qF+2kw2gVKd3bFq+rZwbqZUqCWYcfyAJUFR4zT5d6iHmIie/Ko24IPSS7p5ah\nEr+mD5slAC3BXKXHwPXRRuWYOPAAwqGIE0dad/wtxdOkbsDdZrxYiuBoClYqD7Mn\n8SJkVgjeYiS/6d8B77+3sYzFyflMfEVnvIJDhQjAYtU7Iky/J3iJ2ISm5xDRZSIN\nTN9t3tCtbpyl2kNFn2VpdOgfx5Ub6y+eAORcDL87/szgGTi5G2ORdQfk7aMp6uC6\nHNcm81O3RzuT1uYI+NEqd5KQNDE+G3S1ZhGAe624DrzPAWdGwWBqplhYQKBfYTtZ\nTMmuQIGdPp7a60gAMhgC\n=nk2D\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-06-30T10:38:52Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/8fec95671d1f39c863e9977542c95c80fc5957c2",
+      "node_id": "C_kwDOAzDwU9oAKDhmZWM5NTY3MWQxZjM5Yzg2M2U5OTc3NTQyYzk1YzgwZmM1OTU3YzI",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/a05776c989f2d9839eb66bdf6715eb2b7a8c1b73",
+          "sha": "a05776c989f2d9839eb66bdf6715eb2b7a8c1b73",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/a05776c989f2d9839eb66bdf6715eb2b7a8c1b73"
+        }
+      ],
+      "sha": "8fec95671d1f39c863e9977542c95c80fc5957c2",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/8fec95671d1f39c863e9977542c95c80fc5957c2"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/11866552?v=4",
+        "events_url": "https://api.github.com/users/quexten/events{/privacy}",
+        "followers_url": "https://api.github.com/users/quexten/followers",
+        "following_url": "https://api.github.com/users/quexten/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quexten/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/quexten",
+        "id": 11866552,
+        "login": "quexten",
+        "node_id": "MDQ6VXNlcjExODY2NTUy",
+        "organizations_url": "https://api.github.com/users/quexten/orgs",
+        "received_events_url": "https://api.github.com/users/quexten/received_events",
+        "repos_url": "https://api.github.com/users/quexten/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/quexten/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quexten/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/quexten",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/0ce4a2ce392c27afe3e06cfcf8aebba4334b1400/comments",
+      "commit": {
+        "author": {
+          "date": "2025-06-17T11:12:15Z",
+          "email": "mail@quexten.com",
+          "name": "Bernd Schoolmann"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-06-17T11:12:15Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-22745] Move clientkeyhalf to os impl (#15140)\n\n* Move clientkeyhalf to main\n\n* Move clientkeyhalf to os platform implementation\n\n* Cleanup\n\n* Fix tests\n\n* Tests\n\n* Add tests\n\n* Add tests\n\n* Fix types\n\n* Undo linux debugging changes\n\n* Fix typo\n\n* Update apps/desktop/src/key-management/biometrics/os-biometrics.service.ts\n\nCo-authored-by: Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com>\n\n* Update apps/desktop/src/key-management/biometrics/os-biometrics.service.ts\n\nCo-authored-by: Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com>\n\n* Update apps/desktop/src/key-management/biometrics/os-biometrics.service.ts\n\nCo-authored-by: Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com>\n\n* Update apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts\n\nCo-authored-by: Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com>\n\n* Fix build\n\n---------\n\nCo-authored-by: Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com>",
+        "tree": {
+          "sha": "5971b53abf812836d152e56ce663f011f9606a58",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/5971b53abf812836d152e56ce663f011f9606a58"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/0ce4a2ce392c27afe3e06cfcf8aebba4334b1400",
+        "verification": {
+          "payload": "tree 5971b53abf812836d152e56ce663f011f9606a58\nparent 1dd7eae466b745dbf34e69b1ef8172f12927dfc1\nauthor Bernd Schoolmann <mail@quexten.com> 1750158735 +0200\ncommitter GitHub <noreply@github.com> 1750158735 +0200\n\n[PM-22745] Move clientkeyhalf to os impl (#15140)\n\n* Move clientkeyhalf to main\n\n* Move clientkeyhalf to os platform implementation\n\n* Cleanup\n\n* Fix tests\n\n* Tests\n\n* Add tests\n\n* Add tests\n\n* Fix types\n\n* Undo linux debugging changes\n\n* Fix typo\n\n* Update apps/desktop/src/key-management/biometrics/os-biometrics.service.ts\n\nCo-authored-by: Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com>\n\n* Update apps/desktop/src/key-management/biometrics/os-biometrics.service.ts\n\nCo-authored-by: Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com>\n\n* Update apps/desktop/src/key-management/biometrics/os-biometrics.service.ts\n\nCo-authored-by: Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com>\n\n* Update apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts\n\nCo-authored-by: Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com>\n\n* Fix build\n\n---------\n\nCo-authored-by: Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com>",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoUU2PCRC1aQ7uu5UhlAAA0CcQAD5j8pIHdSMXFncn9elzm2u5\n8jijmuNsVL4c84Ex5Hk/jJMs2831lXdhWTCGfTlmwy2d5hYfvRpwkf07nqR0OWit\nDn9SgFthTsRGl8qqjbqe1cPnDKGTJj2fWSwTCnQVTcDt0GPu3BjlD999c1bfWuZe\n6QzN5Bx46QGRpR5CgQY2WqO3wRQyFvglQa16u1IXxVzvca/1M0b2obUjQ+wJ4cjr\nYMptzz0459jz/gi1nBpq9+NZdkaAgsNnOoyEJ+x4f2Bq2ebnqUICySu2M2rR16d3\nAVBQFRWdbHt6ImRk6/m0JInsOHDXKodIkS+VkkJSSnuRXts4DTliv55DsI5U/o29\n9HWJDFeTPG795z63ey/u9XfNs2VCljoCYbWiwgTBUWQm6Tm7GSfMpSaX0+asbWXL\nCE+3co7mqiP4d6jtDIK9UDEDUN9CySLBpcn1kGZRd2voKttVDPWWnDJ/yhu8BxvF\nsaym/+YnF9bdmolfJBTkraYOBNqe4LpEZSXxBF2xgjqR1AFtqgiZcXqcs7zmrsZZ\n1F0dJE1fMfY47rtuyt6BI9JfWWbi6l8TcNsa44Ka8uBEUxE9fmLViHhChwO4z87D\nfb5ki3aK2g12cBZL36ZMk9hbcOPt9DteODIbroQXcsKgIKvZDv+VLrf/KPhesdDw\nsAJfhT8vcLx2rrc4/umN\n=Vs4D\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-06-17T11:12:17Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/0ce4a2ce392c27afe3e06cfcf8aebba4334b1400",
+      "node_id": "C_kwDOAzDwU9oAKDBjZTRhMmNlMzkyYzI3YWZlM2UwNmNmY2Y4YWViYmE0MzM0YjE0MDA",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/1dd7eae466b745dbf34e69b1ef8172f12927dfc1",
+          "sha": "1dd7eae466b745dbf34e69b1ef8172f12927dfc1",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/1dd7eae466b745dbf34e69b1ef8172f12927dfc1"
+        }
+      ],
+      "sha": "0ce4a2ce392c27afe3e06cfcf8aebba4334b1400",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/0ce4a2ce392c27afe3e06cfcf8aebba4334b1400"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/167752252?v=4",
+        "events_url": "https://api.github.com/users/mzieniukbw/events{/privacy}",
+        "followers_url": "https://api.github.com/users/mzieniukbw/followers",
+        "following_url": "https://api.github.com/users/mzieniukbw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mzieniukbw/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/mzieniukbw",
+        "id": 167752252,
+        "login": "mzieniukbw",
+        "node_id": "U_kgDOCf-yPA",
+        "organizations_url": "https://api.github.com/users/mzieniukbw/orgs",
+        "received_events_url": "https://api.github.com/users/mzieniukbw/received_events",
+        "repos_url": "https://api.github.com/users/mzieniukbw/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/mzieniukbw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mzieniukbw/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/mzieniukbw",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/ce3ce17010f68fcd6de0e69e4806fcf92687b241/comments",
+      "commit": {
+        "author": {
+          "date": "2025-06-03T20:12:11Z",
+          "email": "167752252+mzieniukbw@users.noreply.github.com",
+          "name": "Maciej Zieniuk"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-06-03T20:12:11Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-21147] User key transferred over ipc within desktop app without its prototype (#15047)\n\n* user key transferred over ipc within desktop app without its prototype.\n\n`UserKey` object was transferred over IPC as regular `Object` type and not recreated as `SymmetricCryptoKey` type, losing its original functions and properties. As a result `inner` method did not exist and user key silently failed during decryption of encrypted client key halves during biometric unlock.\n\n* ipc biometrics serializable user key type\n\n* use encrypt service directly for decryption\n\n* moving electron key service to KM\n\n* log error when unlock via biometrics fails with exception in lock component\n\n* bring back tech debt comment\n\n* lock component logging prefix",
+        "tree": {
+          "sha": "f832aa2da09ef719d58283d2a2bafd871d41058c",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/f832aa2da09ef719d58283d2a2bafd871d41058c"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/ce3ce17010f68fcd6de0e69e4806fcf92687b241",
+        "verification": {
+          "payload": "tree f832aa2da09ef719d58283d2a2bafd871d41058c\nparent 5fd7c181de95ebdcea30b8129e106ae7da070bde\nauthor Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com> 1748981531 +0200\ncommitter GitHub <noreply@github.com> 1748981531 +0200\n\n[PM-21147] User key transferred over ipc within desktop app without its prototype (#15047)\n\n* user key transferred over ipc within desktop app without its prototype.\n\n`UserKey` object was transferred over IPC as regular `Object` type and not recreated as `SymmetricCryptoKey` type, losing its original functions and properties. As a result `inner` method did not exist and user key silently failed during decryption of encrypted client key halves during biometric unlock.\n\n* ipc biometrics serializable user key type\n\n* use encrypt service directly for decryption\n\n* moving electron key service to KM\n\n* log error when unlock via biometrics fails with exception in lock component\n\n* bring back tech debt comment\n\n* lock component logging prefix",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoP1cbCRC1aQ7uu5UhlAAA3RYQAKiacTTFPnnzDDH0C6L+C2yY\n+eABC6B9u1FpkCC8GYtJlk43Exezc3MvBxog4XkhdrrFRIWjennrZ6S1wmAFbjIE\n+D2zB9Coxl+6mBKm1FdxzC9niYg84LvLgWzP/cGfUHn0plxffJTX+JfQz8Inxq5u\nlrHS9rFGB9ut2V62HcQxHZPnPGH8DtNtJRn0uKX6t1edGtrjxSI1ekshgTVul65p\nmLifDuLEzx0tkEcDx/qjW/7pRs2cAQculfbmz09l7APHOxO8eFWkeWyDq6DLldU7\nLFStNak514o6BlZ+mm6tPiJhicZwZ+kCCanG+uWM1DO6IjxcAd6HMsLlqo+UYQBy\n++20oersXbFvrDq7Wd5uztDx58kZGjRQbH09JAuUN9r4oZhNd+J5Yc1FKXt+5Nof\n3bkGbpJ7WKjlT9fjfZJH4uRZ7qiJ9TxMLm2ZsjMTxjF9VHfQvaunDNpSaRwxYhUx\n2AAXJCNqC88iu+lGl+E+bpv3vZX5iPymbMGpOxJLHX9JaCAFk68cv2P2OTGHiPft\n3Qjm8bplsGRgtyO4VE6gr6TJ93NRy2JG6ycadYckx0XXA+Hb/m+/4qUzNVOdv9GX\n14BLxhrFoXc+2YEpNsg8nFH3uvCFO5bI0a5v7MdlyTs09gMteWLAkOACR5i2qvW1\nItaPXwInNT8pxN5MILmZ\n=yZXv\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-06-03T20:12:14Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/ce3ce17010f68fcd6de0e69e4806fcf92687b241",
+      "node_id": "C_kwDOAzDwU9oAKGNlM2NlMTcwMTBmNjhmY2Q2ZGUwZTY5ZTQ4MDZmY2Y5MjY4N2IyNDE",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/5fd7c181de95ebdcea30b8129e106ae7da070bde",
+          "sha": "5fd7c181de95ebdcea30b8129e106ae7da070bde",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/5fd7c181de95ebdcea30b8129e106ae7da070bde"
+        }
+      ],
+      "sha": "ce3ce17010f68fcd6de0e69e4806fcf92687b241",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/ce3ce17010f68fcd6de0e69e4806fcf92687b241"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/11866552?v=4",
+        "events_url": "https://api.github.com/users/quexten/events{/privacy}",
+        "followers_url": "https://api.github.com/users/quexten/followers",
+        "following_url": "https://api.github.com/users/quexten/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quexten/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/quexten",
+        "id": 11866552,
+        "login": "quexten",
+        "node_id": "MDQ6VXNlcjExODY2NTUy",
+        "organizations_url": "https://api.github.com/users/quexten/orgs",
+        "received_events_url": "https://api.github.com/users/quexten/received_events",
+        "repos_url": "https://api.github.com/users/quexten/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/quexten/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quexten/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/quexten",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/43b1f5536024693c5de969b9109ae0f123d567d3/comments",
+      "commit": {
+        "author": {
+          "date": "2025-04-21T14:57:26Z",
+          "email": "mail@quexten.com",
+          "name": "Bernd Schoolmann"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-04-21T14:57:26Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-18697] Remove old symmetric key representations in symmetriccryptokey (#13598)\n\n* Remove AES128CBC-HMAC encryption\n\n* Increase test coverage\n\n* Refactor symmetric keys and increase test coverage\n\n* Re-add type 0 encryption\n\n* Fix ts strict warning\n\n* Remove old symmetric key representations in symmetriccryptokey\n\n* Fix desktop build\n\n* Fix test\n\n* Fix build\n\n* Update libs/common/src/key-management/crypto/services/web-crypto-function.service.ts\n\nCo-authored-by: Thomas Avery <43214426+Thomas-Avery@users.noreply.github.com>\n\n* Update libs/node/src/services/node-crypto-function.service.ts\n\nCo-authored-by: Thomas Avery <43214426+Thomas-Avery@users.noreply.github.com>\n\n* Undo changes\n\n* Remove cast\n\n* Undo changes to tests\n\n* Fix linting\n\n* Undo removing new Uint8Array in aesDecryptFastParameters\n\n* Fix merge conflicts\n\n* Fix test\n\n* Fix another test\n\n* Fix test\n\n---------\n\nCo-authored-by: Thomas Avery <43214426+Thomas-Avery@users.noreply.github.com>",
+        "tree": {
+          "sha": "fcdefc99e589e78992750ab5bd14fe37892872c3",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/fcdefc99e589e78992750ab5bd14fe37892872c3"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/43b1f5536024693c5de969b9109ae0f123d567d3",
+        "verification": {
+          "payload": "tree fcdefc99e589e78992750ab5bd14fe37892872c3\nparent a250395e6d0e4efb9404a120a30c5e9730f1bae0\nauthor Bernd Schoolmann <mail@quexten.com> 1745247446 +0200\ncommitter GitHub <noreply@github.com> 1745247446 +0000\n\n[PM-18697] Remove old symmetric key representations in symmetriccryptokey (#13598)\n\n* Remove AES128CBC-HMAC encryption\n\n* Increase test coverage\n\n* Refactor symmetric keys and increase test coverage\n\n* Re-add type 0 encryption\n\n* Fix ts strict warning\n\n* Remove old symmetric key representations in symmetriccryptokey\n\n* Fix desktop build\n\n* Fix test\n\n* Fix build\n\n* Update libs/common/src/key-management/crypto/services/web-crypto-function.service.ts\n\nCo-authored-by: Thomas Avery <43214426+Thomas-Avery@users.noreply.github.com>\n\n* Update libs/node/src/services/node-crypto-function.service.ts\n\nCo-authored-by: Thomas Avery <43214426+Thomas-Avery@users.noreply.github.com>\n\n* Undo changes\n\n* Remove cast\n\n* Undo changes to tests\n\n* Fix linting\n\n* Undo removing new Uint8Array in aesDecryptFastParameters\n\n* Fix merge conflicts\n\n* Fix test\n\n* Fix another test\n\n* Fix test\n\n---------\n\nCo-authored-by: Thomas Avery <43214426+Thomas-Avery@users.noreply.github.com>",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoBlzWCRC1aQ7uu5UhlAAAMLIQAD2FTYOVdyf1my2k03REIGSo\nkfUkcXs6hG06HZc5yuZdkbnR0xRS34XCn+/XmmuZa8HVqTK5+ERJl3oJSqhmajxy\nRM53DL7tIEtZkGj9BTCepFqa92/Co550fDRmaddSjm5Dmrf5qZUKxs5hBf2uyygj\nf+ATFeIiI6VYEeP2YoMDZQGLTxP7OUt0jxjAP5rOmZ4Ott+IFdsFMi1NaiVDQVed\nljKHAnTICMo0E1+tqKqsAOylaCKO3MRkO7GOa/qmDW8IEgLAVAVHNkNUdAd/ivqE\nORDcd7oWP/2k4jt76ltgzLoAlsvIMS1pl1yfdRfgYerqu2bG0xKNWf9XqXQatDMO\nm+NhYdVoaMqLfhFzgzHdRKUePmVlKT+HsZUoprFzGePXczAvceT+2mPOSlWtBm1G\nL//hEupVQrenopY5/CGx5VPoa382UYSubtkzdqxjVI239usyiK0twED6K7JH2gbT\nwxsvD4+neIBdv5RfraYyj9Pii8g4opOIPV+spSx0PhNI9wvrPRydQJ+NdAm1ZFgb\n907FOolxDZtGJrm1bwPPiA4vFSNRxajhad1mdlgFdAhDkXQfdXnrRlrje/o8YMQ4\n0YclMl/x735VU5sUvyfnr5McGqDC/6g5JrnqXPCKhMm2na5ufHpoEAJwnatT1ZgX\nR8ORanHIKwWFBMcwWP/B\n=lqbr\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-04-21T14:57:27Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/43b1f5536024693c5de969b9109ae0f123d567d3",
+      "node_id": "C_kwDOAzDwU9oAKDQzYjFmNTUzNjAyNDY5M2M1ZGU5NjliOTEwOWFlMGYxMjNkNTY3ZDM",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/a250395e6d0e4efb9404a120a30c5e9730f1bae0",
+          "sha": "a250395e6d0e4efb9404a120a30c5e9730f1bae0",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/a250395e6d0e4efb9404a120a30c5e9730f1bae0"
+        }
+      ],
+      "sha": "43b1f5536024693c5de969b9109ae0f123d567d3",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/43b1f5536024693c5de969b9109ae0f123d567d3"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/11866552?v=4",
+        "events_url": "https://api.github.com/users/quexten/events{/privacy}",
+        "followers_url": "https://api.github.com/users/quexten/followers",
+        "following_url": "https://api.github.com/users/quexten/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quexten/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/quexten",
+        "id": 11866552,
+        "login": "quexten",
+        "node_id": "MDQ6VXNlcjExODY2NTUy",
+        "organizations_url": "https://api.github.com/users/quexten/orgs",
+        "received_events_url": "https://api.github.com/users/quexten/received_events",
+        "repos_url": "https://api.github.com/users/quexten/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/quexten/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quexten/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/quexten",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/15738f16aee4d23e1e32d3c4634340b3bb8be46c/comments",
+      "commit": {
+        "author": {
+          "date": "2025-03-31T14:59:01Z",
+          "email": "mail@quexten.com",
+          "name": "Bernd Schoolmann"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-03-31T14:59:01Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-18038] Fix safari using outdated biometrics protocol (#13287)\n\n* Fix safari using outdated biometrics protocol\n\n* Remove logging\n\n* Remove log\n\n* Move canEnableBiometricUnlock to biometric service\n\n* Fix build\n\n* Add tests\n\n* Fix type error\n\n* Attempt to fix build\n\n* Fix build\n\n* Fix test failure",
+        "tree": {
+          "sha": "73b86df58d2dd20c6403a3e64a57ca9f8f846dfb",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/73b86df58d2dd20c6403a3e64a57ca9f8f846dfb"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/15738f16aee4d23e1e32d3c4634340b3bb8be46c",
+        "verification": {
+          "payload": "tree 73b86df58d2dd20c6403a3e64a57ca9f8f846dfb\nparent 22039d038d7d88c92247c856f9358fb8e11c018b\nauthor Bernd Schoolmann <mail@quexten.com> 1743433141 +0200\ncommitter GitHub <noreply@github.com> 1743433141 +0200\n\n[PM-18038] Fix safari using outdated biometrics protocol (#13287)\n\n* Fix safari using outdated biometrics protocol\n\n* Remove logging\n\n* Remove log\n\n* Move canEnableBiometricUnlock to biometric service\n\n* Fix build\n\n* Add tests\n\n* Fix type error\n\n* Attempt to fix build\n\n* Fix build\n\n* Fix test failure",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJn6q21CRC1aQ7uu5UhlAAAvLcQAFS6uSdgptXznh34StXDbVTs\nOFSs/vbwPyXjlO/HLBau+Zumz6jXxfxyGLSKGyf7ajyrt1pMxodcmMORfM0KajTE\nw2RzL0jFnNJTAVZNh24C9Kv0wHZz0z6OeZVHwfmgsecucAArg79wGr9ONp5/Glgk\n90uh5cQg4Vg5NxW9XKgcSVu59tRdfFR/UG7wz9u61D5Xo8XoOAw6eaQVVcjBk2Hq\n5cHmeQmEkwqrHYx5v4HiGR7rzve6/2uS+DRo8BtOi26K6g4PwPfEFmA9QtOsds0Y\na52tD7k6y6So8IgfaVWJ5A1MLf7mcaQzBktM7B5x/TdN0sAmQDmVfyC/6pLfQ4nz\nTEplY8lxII1F5d3wPPTRa3Hn4/Rgzp1KfzEawX/nk4F2pQnvHg62RcVBvKqn2jrN\nxSpa5AxjWb3i1oJL72c8odhwyBMybMFzw809457ys6MyKOr1U6lY5kiFlHolFNUT\n3m9fzUz3kQK9bK/mEdeIItY0unXujzOcOt+rWGFnv1Gpc9ptDCRgcRn1qmt2tc6e\ndTDzd8yAXu7eFoLgD/loMVsU2MbsJJ86IC9dOKiy00hYzFh3a63Anz2u4G5azSMv\nYK5t3S3A6/p64KpdSnZ3ThGIkGY9iflQyXwCFJ7Pm5VENLP/SIQfiSKd5LBou6dM\nYYe9RWDPKASoFlBMg93X\n=mR32\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-03-31T14:59:05Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/15738f16aee4d23e1e32d3c4634340b3bb8be46c",
+      "node_id": "C_kwDOAzDwU9oAKDE1NzM4ZjE2YWVlNGQyM2UxZTMyZDNjNDYzNDM0MGIzYmI4YmU0NmM",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/22039d038d7d88c92247c856f9358fb8e11c018b",
+          "sha": "22039d038d7d88c92247c856f9358fb8e11c018b",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/22039d038d7d88c92247c856f9358fb8e11c018b"
+        }
+      ],
+      "sha": "15738f16aee4d23e1e32d3c4634340b3bb8be46c",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/15738f16aee4d23e1e32d3c4634340b3bb8be46c"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/167752252?v=4",
+        "events_url": "https://api.github.com/users/mzieniukbw/events{/privacy}",
+        "followers_url": "https://api.github.com/users/mzieniukbw/followers",
+        "following_url": "https://api.github.com/users/mzieniukbw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mzieniukbw/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/mzieniukbw",
+        "id": 167752252,
+        "login": "mzieniukbw",
+        "node_id": "U_kgDOCf-yPA",
+        "organizations_url": "https://api.github.com/users/mzieniukbw/orgs",
+        "received_events_url": "https://api.github.com/users/mzieniukbw/received_events",
+        "repos_url": "https://api.github.com/users/mzieniukbw/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/mzieniukbw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mzieniukbw/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/mzieniukbw",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/c80019e919798cfb9c61b8f7533caa40f6659aeb/comments",
+      "commit": {
+        "author": {
+          "date": "2025-02-28T13:05:16Z",
+          "email": "167752252+mzieniukbw@users.noreply.github.com",
+          "name": "Maciej Zieniuk"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-02-28T13:05:16Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-18680] biometric's no client key half provided for user (#13609)\n\n* biometric's no client key half provided for user\n\nBiometric's client key half can be optional (null) when the password is not required on start of the application\n\n* improved unit test coverage\n\n* ipc setClientKeyHalf can be null",
+        "tree": {
+          "sha": "ee9c1705b57cca40f9ae0f070825a7874839aa32",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/ee9c1705b57cca40f9ae0f070825a7874839aa32"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/c80019e919798cfb9c61b8f7533caa40f6659aeb",
+        "verification": {
+          "payload": "tree ee9c1705b57cca40f9ae0f070825a7874839aa32\nparent 8176515c57749133a4908302bfb0a5cf11c37651\nauthor Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com> 1740747916 +0100\ncommitter GitHub <noreply@github.com> 1740747916 +0100\n\n[PM-18680] biometric's no client key half provided for user (#13609)\n\n* biometric's no client key half provided for user\n\nBiometric's client key half can be optional (null) when the password is not required on start of the application\n\n* improved unit test coverage\n\n* ipc setClientKeyHalf can be null",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnwbSMCRC1aQ7uu5UhlAAA5sUQAGMK8wJHqP+zSQvuUFdo9+LZ\n5VPolq9iyJ2Tgkr6XaLyffYt/A6Dm+IVseCSw8nyH77/ntOX4BCpwYiVYUkRL6gh\ngU5XY+pXzizASigfvganF9UoOoBftU+3JhxSqbdA3vNd0IYiR3EigwQnPnTnONc2\n1flb0EZKAtVrk8g7VsZsGb/PLyyFS74MPM+wtsHjg5uh7tao1be90+pvlbJ1/6Lo\n6oyZFiSk+zFQIC0BEmLpxkVJrMf/8+npa/lbpHxUzhAcfe8q58kxv7NIidjBqmJR\nqG2pVJaJXgPs2ojJAdGh69SE/3mFHnUUVxjpKTpnFrSQ4HK8JfDzs8j8FIS6X3Vo\nDHiiRSygyuIlah4Z00zPtCXi/+KD8Lk1ThcilPORnPOBMbgfw3+gw6tnRuU6E++g\nWjViBXaIWonTdzfyyKARYRdEZxz5Ony/N6QhjBMP/GzZ/HS+5IBGceDCYwicOdRL\n5djAflVZgvq8McbZ5ctPLfS6D0xCcoVPKRv2QXfl5xVPJZX7RrufG29N2f028oz5\nIwqDMK0GJLfKAw86BLsmpmRFPacjBxu9h2A9w3wa9hnqls7lEGxJD0AIoaDqb43I\n7MgsaV4QJGs7pRjZNvP+jc2AIaWPZ7/x6L3DB9umrdtiSX8JMSdogtiAGvgQ5u0J\nIHAGb7cxwN54UmMJoycd\n=Aq67\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-02-28T13:05:19Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/c80019e919798cfb9c61b8f7533caa40f6659aeb",
+      "node_id": "C_kwDOAzDwU9oAKGM4MDAxOWU5MTk3OThjZmI5YzYxYjhmNzUzM2NhYTQwZjY2NTlhZWI",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/8176515c57749133a4908302bfb0a5cf11c37651",
+          "sha": "8176515c57749133a4908302bfb0a5cf11c37651",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/8176515c57749133a4908302bfb0a5cf11c37651"
+        }
+      ],
+      "sha": "c80019e919798cfb9c61b8f7533caa40f6659aeb",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/c80019e919798cfb9c61b8f7533caa40f6659aeb"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/167752252?v=4",
+        "events_url": "https://api.github.com/users/mzieniukbw/events{/privacy}",
+        "followers_url": "https://api.github.com/users/mzieniukbw/followers",
+        "following_url": "https://api.github.com/users/mzieniukbw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/mzieniukbw/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/mzieniukbw",
+        "id": 167752252,
+        "login": "mzieniukbw",
+        "node_id": "U_kgDOCf-yPA",
+        "organizations_url": "https://api.github.com/users/mzieniukbw/orgs",
+        "received_events_url": "https://api.github.com/users/mzieniukbw/received_events",
+        "repos_url": "https://api.github.com/users/mzieniukbw/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/mzieniukbw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/mzieniukbw/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/mzieniukbw",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/7e2e60443933256aa613f07d02a82f86886ef3a4/comments",
+      "commit": {
+        "author": {
+          "date": "2025-02-10T12:31:19Z",
+          "email": "167752252+mzieniukbw@users.noreply.github.com",
+          "name": "Maciej Zieniuk"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-02-10T12:31:19Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-14445] TS strict for Key Management Biometrics (#13039)\n\n* PM-14445: TS strict for Key Management Biometrics\n\n* formatting\n\n* callbacks not null expectations\n\n* state nullability expectations updates\n\n* unit tests fix\n\n* secure channel naming, explicit null check on messageId\n\n* revert null for getUser, getGlobal in state.provider.ts\n\n* revert null for getUser, getGlobal in state.provider.ts",
+        "tree": {
+          "sha": "5158daf2dfc7a7fbced24a67ed7caa62bde3c035",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/5158daf2dfc7a7fbced24a67ed7caa62bde3c035"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/7e2e60443933256aa613f07d02a82f86886ef3a4",
+        "verification": {
+          "payload": "tree 5158daf2dfc7a7fbced24a67ed7caa62bde3c035\nparent 40e8c88d778acaa5f972fc0abee85b56c2dd7701\nauthor Maciej Zieniuk <167752252+mzieniukbw@users.noreply.github.com> 1739190679 +0100\ncommitter GitHub <noreply@github.com> 1739190679 +0100\n\n[PM-14445] TS strict for Key Management Biometrics (#13039)\n\n* PM-14445: TS strict for Key Management Biometrics\n\n* formatting\n\n* callbacks not null expectations\n\n* state nullability expectations updates\n\n* unit tests fix\n\n* secure channel naming, explicit null check on messageId\n\n* revert null for getUser, getGlobal in state.provider.ts\n\n* revert null for getUser, getGlobal in state.provider.ts",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnqfGXCRC1aQ7uu5UhlAAAjk4QAFtxBZTy3JOvBM6b1N9SJsq4\nxL8n8hZR3j1KSdW+16e7LfEFg7NWbcRxUQqHZyCO7o8xalTTaCCg2nVEQOgFmRVm\nV5EPxoivkUThl+c43HLzRo755mVW9K+9yvwuhFZJ0ue+tVXYsCUojPXo2icT3AEv\nMjfLZlNHSTbehz8H7IMZm2ISnwy5lKVofyDCR7xObebDm/iNBxSSmR44aIo3Ckfd\nazXjkRV5RcQ4W/9xIcc89SNiLiSyZRezkPHgTpkazy4skB3/8dFwqKTiCNYrR6DX\nUUx4iAm/bS54BtVu/WnZslg6L3xAxxJy+9enkDxNTF+4E05E+O66FYiybUMbPBSG\n7LtmG/SExUNjdJbE7Mkt2S2VjL83fgmEvN1orZ8DKS++95PNr40uRbQVoEWiF3W4\n1i41bCBdEnRk+OF20LPFxUhx6lM98lAPiF381WbQTkKaiEX49SpLnir8mphPpY05\nkc43Xe/5jOmbVz/EYS0VmZDRJ9A5b1JBm34f1nUxScncuPi895sn7WFqc8T/fmy8\nHRmRd7TJbP4i7GXlpahageZbgEgjoWnis6xSSBJndPE06Q+GnG3Mj9aAsSvlEsRP\nl/DF4NHMfn9zNgBPGWr1HH3hlNxSv24lmYI99G3dmBl933W1n2yONHMxXXDAiMzB\nRUk/FLbAuHF4TcXlYXB5\n=FAJV\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-02-10T12:31:22Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/7e2e60443933256aa613f07d02a82f86886ef3a4",
+      "node_id": "C_kwDOAzDwU9oAKDdlMmU2MDQ0MzkzMzI1NmFhNjEzZjA3ZDAyYTgyZjg2ODg2ZWYzYTQ",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/40e8c88d778acaa5f972fc0abee85b56c2dd7701",
+          "sha": "40e8c88d778acaa5f972fc0abee85b56c2dd7701",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/40e8c88d778acaa5f972fc0abee85b56c2dd7701"
+        }
+      ],
+      "sha": "7e2e60443933256aa613f07d02a82f86886ef3a4",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/7e2e60443933256aa613f07d02a82f86886ef3a4"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/11866552?v=4",
+        "events_url": "https://api.github.com/users/quexten/events{/privacy}",
+        "followers_url": "https://api.github.com/users/quexten/followers",
+        "following_url": "https://api.github.com/users/quexten/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quexten/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/quexten",
+        "id": 11866552,
+        "login": "quexten",
+        "node_id": "MDQ6VXNlcjExODY2NTUy",
+        "organizations_url": "https://api.github.com/users/quexten/orgs",
+        "received_events_url": "https://api.github.com/users/quexten/received_events",
+        "repos_url": "https://api.github.com/users/quexten/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/quexten/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quexten/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/quexten",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/97ee050e5dd9701cf9facbbf31fad160b6f066d2/comments",
+      "commit": {
+        "author": {
+          "date": "2025-01-16T16:49:20Z",
+          "email": "mail@quexten.com",
+          "name": "Bernd Schoolmann"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-01-16T16:49:20Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-17113] Fix system authentication setup (#12907)\n\n* Fix system authentication setup\n\n* Fix biometric status\n\n* Remove debug log\n\n* Fix tests",
+        "tree": {
+          "sha": "56e0716120e79bd5a4a88e5dd5df6bdd81127fe0",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/56e0716120e79bd5a4a88e5dd5df6bdd81127fe0"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/97ee050e5dd9701cf9facbbf31fad160b6f066d2",
+        "verification": {
+          "payload": "tree 56e0716120e79bd5a4a88e5dd5df6bdd81127fe0\nparent ca9bb52a899d1feda8ed8c6db3c62e4bc873fab4\nauthor Bernd Schoolmann <mail@quexten.com> 1737046160 +0100\ncommitter GitHub <noreply@github.com> 1737046160 +0100\n\n[PM-17113] Fix system authentication setup (#12907)\n\n* Fix system authentication setup\n\n* Fix biometric status\n\n* Remove debug log\n\n* Fix tests",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJniTiQCRC1aQ7uu5UhlAAAxz4QAKFGLGUNzsdXR6ChlAm9RikI\nVWWLaxx/z6FkmAjDIrO9HCfPFaRz0ZrXtu7/ilZhwuHLABuDHOITpPKdu1YPNADc\nhVEPGmV4GAeqGNivMBingwT2LKxgvX41u7H6LWlYkf7PGKcfCLjeqDoGAuAb6XZ3\nqEOSVwpCjwnZTWeb/1ZTLR5Rj3QKwdXbqr4kI14EdT5vyBuvk7jc9zAGpYavKswd\nTFCmT+TT6yJu4M2YdXBiL5RsMsppgIdl8RzDV558tgy3bBTJ8tKvLFkaj2pBSBCm\n8gAXlnlyQrXRj6IRSINOc0LSFQ3yLlsIfOUrH4CYmmd+vvG0UzGSX8/LGCLCy1tI\np1IP0lsSnUBzlEmxQ3E1NBCIcrE9xZIFs5LFilh22EOVo6AQyGmlyvASwJCqdVfq\nvr9F0QuVhLoX7FZ7xB4W230dQT8cd3VEHS05rviInNmJTP7ytqbiY1Si5qFuFd60\nlaPO6kNlSN/YyGucgm0+EIxCneMqQpIbhh61nW51jicUVb7yi9W07hKUUUh2xura\npeJhPDQMt7z7UN+USonSAJagqa9k96ULIfVF9h0GXFzQTniuayF+DPVO3kbRlY4C\nqjAKUTZu5S66waQIyHE/6Sze1CYABmJEDuN47ZH7RqlxSf+kbQJidnvh4+ZeHXVH\njEN2HdRR1dFDADzflvqH\n=UONq\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-01-16T16:49:23Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/97ee050e5dd9701cf9facbbf31fad160b6f066d2",
+      "node_id": "C_kwDOAzDwU9oAKDk3ZWUwNTBlNWRkOTcwMWNmOWZhY2JiZjMxZmFkMTYwYjZmMDY2ZDI",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/ca9bb52a899d1feda8ed8c6db3c62e4bc873fab4",
+          "sha": "ca9bb52a899d1feda8ed8c6db3c62e4bc873fab4",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/ca9bb52a899d1feda8ed8c6db3c62e4bc873fab4"
+        }
+      ],
+      "sha": "97ee050e5dd9701cf9facbbf31fad160b6f066d2",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/97ee050e5dd9701cf9facbbf31fad160b6f066d2"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/11866552?v=4",
+        "events_url": "https://api.github.com/users/quexten/events{/privacy}",
+        "followers_url": "https://api.github.com/users/quexten/followers",
+        "following_url": "https://api.github.com/users/quexten/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quexten/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/quexten",
+        "id": 11866552,
+        "login": "quexten",
+        "node_id": "MDQ6VXNlcjExODY2NTUy",
+        "organizations_url": "https://api.github.com/users/quexten/orgs",
+        "received_events_url": "https://api.github.com/users/quexten/received_events",
+        "repos_url": "https://api.github.com/users/quexten/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/quexten/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quexten/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/quexten",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/72121cda948f08fcf71f1a55220a29a482fda01c/comments",
+      "commit": {
+        "author": {
+          "date": "2025-01-08T09:46:00Z",
+          "email": "mail@quexten.com",
+          "name": "Bernd Schoolmann"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-01-08T09:46:00Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-10741] Refactor biometrics interface & add dynamic status (#10973)",
+        "tree": {
+          "sha": "bb63adede81c55ae3bf1e32738f114d0c70b2284",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/bb63adede81c55ae3bf1e32738f114d0c70b2284"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/72121cda948f08fcf71f1a55220a29a482fda01c",
+        "verification": {
+          "payload": "tree bb63adede81c55ae3bf1e32738f114d0c70b2284\nparent 0bd988dac88d26667e04eea6e79067adb3a64e04\nauthor Bernd Schoolmann <mail@quexten.com> 1736329560 +0100\ncommitter GitHub <noreply@github.com> 1736329560 +0100\n\n[PM-10741] Refactor biometrics interface & add dynamic status (#10973)\n\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnfklYCRC1aQ7uu5UhlAAA/0sQAHRB2opHprhtmGvmDdx7HMiw\nnkYgeGvBEKyPdul6nSfIl8+G8mIhYwdLSaHywfldFMviByQoHiRSGVWi7dmwqW9L\nggC9lMuCoXTVdhyhc69JWY/qdaZob3ZTVv7IoFEjbPxDs3e6NTQMm3DqAyEA6IYM\n3uI92BOkk77uebNVZJL/w8c0jBo+SpNoYaz/sBXUrK8ZTps0wy2unf5WGZI4mlsU\nNAqRpfruUubUedf3CwN4iO417Qh4OaAxQx21vNCkifS4p8C36bosKET2bauD/1rn\n73sSx7RGL8YhacmBIeyUCgMSUVm04rPBUA/00RfTkt5yZVwEWAlcxkQQpIZaRsEE\nVvqOCmqaYyi98Xy7TT1L+UEkWymNAPZwYbYq7yUAh+QkMYcQZ5yeAc+faYhhC2Us\nEDij7B3nZmVcFjpOerYUFc0CEUVrlka3Swoktm+52OhzdLwnKiFpyjCyA+CaPspp\ncwki74WbEIDkPTagiT+kmFWHvBwZWQpDfUplD6dz4u7vQlYnxFYePQ/wuuN32nfD\nVqH4hBcqYFuVTOmmJ6tFvw/bgOvWNNS9SbxhG+blNWb2kS1c1qyQ5u1wf8l1QHQG\n92QlPtHqiCHqsJBd6+qXkT/uiCvJRZZOLutiloNQfmbnOCQX6Qt+NN5aw6a5HGnl\nPxIz1P5wPgoTHU0oGkiZ\n=qeBo\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-01-08T09:46:04Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/72121cda948f08fcf71f1a55220a29a482fda01c",
+      "node_id": "C_kwDOAzDwU9oAKDcyMTIxY2RhOTQ4ZjA4ZmNmNzFmMWE1NTIyMGEyOWE0ODJmZGEwMWM",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/0bd988dac88d26667e04eea6e79067adb3a64e04",
+          "sha": "0bd988dac88d26667e04eea6e79067adb3a64e04",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/0bd988dac88d26667e04eea6e79067adb3a64e04"
+        }
+      ],
+      "sha": "72121cda948f08fcf71f1a55220a29a482fda01c",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/72121cda948f08fcf71f1a55220a29a482fda01c"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/11866552?v=4",
+        "events_url": "https://api.github.com/users/quexten/events{/privacy}",
+        "followers_url": "https://api.github.com/users/quexten/followers",
+        "following_url": "https://api.github.com/users/quexten/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quexten/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/quexten",
+        "id": 11866552,
+        "login": "quexten",
+        "node_id": "MDQ6VXNlcjExODY2NTUy",
+        "organizations_url": "https://api.github.com/users/quexten/orgs",
+        "received_events_url": "https://api.github.com/users/quexten/received_events",
+        "repos_url": "https://api.github.com/users/quexten/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/quexten/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quexten/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/quexten",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/92a620dd9c06c46127164d3c7a103aeafff92708/comments",
+      "commit": {
+        "author": {
+          "date": "2024-12-11T15:10:06Z",
+          "email": "mail@quexten.com",
+          "name": "Bernd Schoolmann"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-12-11T15:10:06Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[BEEEP/PM-10534] Add snap biometric support (#12187)\n\n* Add snap biometric support\r\n\r\n* Fix linting\r\n\r\n* Remove unused message\r\n\r\n* Disable snap browser integration again",
+        "tree": {
+          "sha": "96cd245535c9f2a8f702c43bd44ab22bfa3c1b34",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/96cd245535c9f2a8f702c43bd44ab22bfa3c1b34"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/92a620dd9c06c46127164d3c7a103aeafff92708",
+        "verification": {
+          "payload": "tree 96cd245535c9f2a8f702c43bd44ab22bfa3c1b34\nparent b2ee27c02f5d416107864f7818d635d1e55dc163\nauthor Bernd Schoolmann <mail@quexten.com> 1733929806 -0800\ncommitter GitHub <noreply@github.com> 1733929806 +0100\n\n[BEEEP/PM-10534] Add snap biometric support (#12187)\n\n* Add snap biometric support\r\n\r\n* Fix linting\r\n\r\n* Remove unused message\r\n\r\n* Disable snap browser integration again",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnWatOCRC1aQ7uu5UhlAAAcBQQAIDk11dVNDgxbpKwdjq48GXA\naH4FOhFD92CxacOL00D1SrhS/fdE3uiVY7lWGuKiHGyzZ1wj9BpwTVGEKx1wqTr0\nor2fthzQ5bV5jxn3VcR8Y0NkFSwOV2IQMQvTdYfvWrgUd9iyEKnu7v2EcO0CtYof\n47DtRV4IT2rk0SHUy8ojbpBARcajG6YE9jVExyerS1mh35EFfFjD8lh1KqIjsIpI\naD2Cn5JIMbBBIevRIQYrQygKwr0MzsUvcRKTiNGYnYkK5e+8vIXhb1uwW2Iq7p6I\nMy9u/BQSZa2Rtw9x/j5THWmweQbjwOsc4i2ZbQumYRD77rV/go/c7iEzQB2MeWUK\nkJe7bwGYZOnMdqYW4aRbkwWjXHxps7+GlNMCSrE1WsqbXQLur4I9aY1AjkyV6+fv\nnPzxpqZSAYFftWQiV9b2i38oFTEhJJsP9hRv9VNrX85tTupJv/n7v5qrABXmfz4T\nK2SUnloSe4kh8KAZ7lzlzoM+yGSi6ppKvijL6FEsHZzmmXs8dEL7wzwIhVL+CmwB\nc3uc9jLRWxeKetFJQu8ntnDy2ZQZgVoSB8bo7kE45CxvQ89skE6cVlW6FCweTPQG\ni1b/iqTCj1T7VrAs4mi5XFhbGaeWvFrmCYTYBsJw5vVuVlWwiDgz2vqP/WDUcnx3\nVXbPw6X91EYudu/iiyQc\n=uqxk\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-12-11T15:10:09Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/92a620dd9c06c46127164d3c7a103aeafff92708",
+      "node_id": "C_kwDOAzDwU9oAKDkyYTYyMGRkOWMwNmM0NjEyNzE2NGQzYzdhMTAzYWVhZmZmOTI3MDg",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/b2ee27c02f5d416107864f7818d635d1e55dc163",
+          "sha": "b2ee27c02f5d416107864f7818d635d1e55dc163",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/b2ee27c02f5d416107864f7818d635d1e55dc163"
+        }
+      ],
+      "sha": "92a620dd9c06c46127164d3c7a103aeafff92708",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/92a620dd9c06c46127164d3c7a103aeafff92708"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/18214891?v=4",
+        "events_url": "https://api.github.com/users/MGibson1/events{/privacy}",
+        "followers_url": "https://api.github.com/users/MGibson1/followers",
+        "following_url": "https://api.github.com/users/MGibson1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/MGibson1/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/MGibson1",
+        "id": 18214891,
+        "login": "MGibson1",
+        "node_id": "MDQ6VXNlcjE4MjE0ODkx",
+        "organizations_url": "https://api.github.com/users/MGibson1/orgs",
+        "received_events_url": "https://api.github.com/users/MGibson1/received_events",
+        "repos_url": "https://api.github.com/users/MGibson1/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/MGibson1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/MGibson1/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/MGibson1",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9/comments",
+      "commit": {
+        "author": {
+          "date": "2024-12-09T19:58:50Z",
+          "email": "mgibson@bitwarden.com",
+          "name": "Matt Gibson"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-12-09T19:58:50Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Typescript-strict-plugin (#12235)\n\n* Use typescript-strict-plugin to iteratively turn on strict\r\n\r\n* Add strict testing to pipeline\r\n\r\nCan be executed locally through either `npm run test:types` for full type checking including spec files, or `npx tsc-strict` for only tsconfig.json included files.\r\n\r\n* turn on strict for scripts directory\r\n\r\n* Use plugin for all tsconfigs in monorepo\r\n\r\nvscode is capable of executing tsc with plugins, but uses the most relevant tsconfig to do so. If the plugin is not a part of that config, it is skipped and developers get no feedback of strict compile time issues. These updates remedy that at the cost of slightly more complex removal of the plugin when the time comes.\r\n\r\n* remove plugin from configs that extend one that already has it\r\n\r\n* Update workspace settings to honor strict plugin\r\n\r\n* Apply strict-plugin to native message test runner\r\n\r\n* Update vscode workspace to use root tsc version\r\n\r\n* `./node_modules/.bin/update-strict-comments` :robot:\r\n\r\nThis is a one-time operation. All future files should adhere to strict type checking.\r\n\r\n* Add fixme to `ts-strict-ignore` comments\r\n\r\n* `update-strict-comments` :robot:\r\n\r\nrepeated for new merge files",
+        "tree": {
+          "sha": "4784372a41bf8b4452f52ea7b37d92eef2a8fba6",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/4784372a41bf8b4452f52ea7b37d92eef2a8fba6"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+        "verification": {
+          "payload": "tree 4784372a41bf8b4452f52ea7b37d92eef2a8fba6\nparent 0906c503e1f35d264d5169df178dd5a46a39a9b7\nauthor Matt Gibson <mgibson@bitwarden.com> 1733774330 -0800\ncommitter GitHub <noreply@github.com> 1733774330 +0100\n\nTypescript-strict-plugin (#12235)\n\n* Use typescript-strict-plugin to iteratively turn on strict\r\n\r\n* Add strict testing to pipeline\r\n\r\nCan be executed locally through either `npm run test:types` for full type checking including spec files, or `npx tsc-strict` for only tsconfig.json included files.\r\n\r\n* turn on strict for scripts directory\r\n\r\n* Use plugin for all tsconfigs in monorepo\r\n\r\nvscode is capable of executing tsc with plugins, but uses the most relevant tsconfig to do so. If the plugin is not a part of that config, it is skipped and developers get no feedback of strict compile time issues. These updates remedy that at the cost of slightly more complex removal of the plugin when the time comes.\r\n\r\n* remove plugin from configs that extend one that already has it\r\n\r\n* Update workspace settings to honor strict plugin\r\n\r\n* Apply strict-plugin to native message test runner\r\n\r\n* Update vscode workspace to use root tsc version\r\n\r\n* `./node_modules/.bin/update-strict-comments` :robot:\r\n\r\nThis is a one-time operation. All future files should adhere to strict type checking.\r\n\r\n* Add fixme to `ts-strict-ignore` comments\r\n\r\n* `update-strict-comments` :robot:\r\n\r\nrepeated for new merge files",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnV0v6CRC1aQ7uu5UhlAAAPwwQABEtatQNxF1YgQIItkBsUdFm\nGZyQD9Qx7dU3BHOATCsTzg3Y+bqiYa+94nVQBRD12XQ6PhMBzuZ71sPB/cgcdXrB\nrTUxefh/v9o1wIZOHSHDpHLcFO+Z2I25jrSffLeYizb7y8gBehBUwJlM2HFwAtN3\ns/lqC9GK8d+w+4QpekgZD6TiXsLhSRx1IJjV8jnSa+Y7ToFD6UxSGRQIY173iuje\njyDlTBQRcI/zSSxxivtLJve9ngt6gdNWgxkOwp29tpnmWf2CiPWGy/08eU6qpET+\nlnmruRII2Hgw3+q/l1OqZtwmxb/UsPfpaja2iy9I36tkeu3FHv6uwKVEP+kJeZK7\nfhAcMciDHi34Vgo4MRApl1K5rnoeDty6/kdkTmaaidD2WjdpMyTTCRg46/PMW9dX\nj9dXaix2OxZbZVDn1Y7hQ9RqO1/dA+QAJkd8pEdeYRQVXBE0IsJiBUTR7HGOsmXB\nYPjmsi9so8Nw+bHFGZF9vMUI5bMct36M91SASl666QdPsc+zyljv5ArIfyLsfXN2\ndXbFMkg6Kj+BX6Gj9bjFC542P4oITZ9Wl8ggARa78/mQur4ZcwuvT4x7ZfPe1BVX\nlsjvbZKsk96Dxd1vULqJuQ7d10SmeHwO/BiWwXJKErjaGa2PtxcE9WzL6qkbKINK\nvu2s2kJpnHcmrHYk7Wnu\n=85PO\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-12-09T19:58:54Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+      "node_id": "C_kwDOAzDwU9oAKDljMWUyZWJkNjc3OWRkYTRiZDgxNzQ3MjJiOWMzOTc0ZjY3ZGM1Zjk",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/0906c503e1f35d264d5169df178dd5a46a39a9b7",
+          "sha": "0906c503e1f35d264d5169df178dd5a46a39a9b7",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/0906c503e1f35d264d5169df178dd5a46a39a9b7"
+        }
+      ],
+      "sha": "9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9"
+    }
+  ],
+  "fetched_utc": "2026-11-14T17:08:08.214016+00:00",
+  "link_header": null,
+  "rate_remaining": null,
+  "sha256": "f2f428dc9ef87f59519e1d0e7028b7b242d48d7c8c95e2f871aa9169a39497dc",
+  "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=apps%2Fdesktop%2Fsrc%2Fkey-management%2Fbiometrics%2F&since=2024-09-30T16%3A14%3A34Z&until=2025-09-30T16%3A14%3A33Z&per_page=100"
+}

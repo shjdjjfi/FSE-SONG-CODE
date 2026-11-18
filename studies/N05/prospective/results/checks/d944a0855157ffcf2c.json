@@ -1,0 +1,24 @@
+{
+  "key": "d944a0855157ffcf2c",
+  "args": {
+    "crate": "sea-query",
+    "version": "0.32.5",
+    "id": "ae307af9e659e67a",
+    "profile": "candidate",
+    "features": [
+      "tests-cfg",
+      "with-uuid"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 1.2072,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "7f51542c42dfb5cd5377e8579d8589eb4aa3fa4f35b7f645813d393b196cfb13",
+  "manifest_sha256": "03ccef4bfb1ad6a2c5a58a447a175b43bc0f5780374c836df48bbd9a935a12a7",
+  "log_file": "prospective/results/check_logs/d944a0855157ffcf2c.txt.gz"
+}

@@ -1,0 +1,462 @@
+{
+  "source_commit": "27e26758d6604f5d078709233028bb87b4a39e16",
+  "maven_goal": "surefire:test",
+  "source_unmodified": true,
+  "java": "openjdk version \"21.0.13\" 2026-10-20",
+  "network_proxy_configured": true,
+  "results": [
+    {
+      "iteration": 1,
+      "return_code": 0,
+      "elapsed_seconds": 6.363,
+      "log_filename": "attempt_01.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 2,
+      "return_code": 0,
+      "elapsed_seconds": 6.207,
+      "log_filename": "attempt_02.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 3,
+      "return_code": 1,
+      "elapsed_seconds": 7.43,
+      "log_filename": "attempt_03.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 4,
+      "return_code": 1,
+      "elapsed_seconds": 12.472,
+      "log_filename": "attempt_04.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "iteration": 5,
+      "return_code": 1,
+      "elapsed_seconds": 11.456,
+      "log_filename": "attempt_05.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "iteration": 6,
+      "return_code": 1,
+      "elapsed_seconds": 7.563,
+      "log_filename": "attempt_06.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 7,
+      "return_code": 1,
+      "elapsed_seconds": 7.119,
+      "log_filename": "attempt_07.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 8,
+      "return_code": 0,
+      "elapsed_seconds": 5.963,
+      "log_filename": "attempt_08.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 9,
+      "return_code": 0,
+      "elapsed_seconds": 6.333,
+      "log_filename": "attempt_09.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 10,
+      "return_code": 0,
+      "elapsed_seconds": 6.236,
+      "log_filename": "attempt_10.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 11,
+      "return_code": 1,
+      "elapsed_seconds": 11.026,
+      "log_filename": "attempt_11.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "iteration": 12,
+      "return_code": 0,
+      "elapsed_seconds": 6.24,
+      "log_filename": "attempt_12.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 13,
+      "return_code": 0,
+      "elapsed_seconds": 6.02,
+      "log_filename": "attempt_13.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 14,
+      "return_code": 0,
+      "elapsed_seconds": 6.293,
+      "log_filename": "attempt_14.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 15,
+      "return_code": 0,
+      "elapsed_seconds": 6.871,
+      "log_filename": "attempt_15.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 16,
+      "return_code": 0,
+      "elapsed_seconds": 6.448,
+      "log_filename": "attempt_16.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 17,
+      "return_code": 0,
+      "elapsed_seconds": 6.514,
+      "log_filename": "attempt_17.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 18,
+      "return_code": 0,
+      "elapsed_seconds": 6.255,
+      "log_filename": "attempt_18.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 19,
+      "return_code": 0,
+      "elapsed_seconds": 6.319,
+      "log_filename": "attempt_19.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 20,
+      "return_code": 0,
+      "elapsed_seconds": 5.93,
+      "log_filename": "attempt_20.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 21,
+      "return_code": 0,
+      "elapsed_seconds": 6.08,
+      "log_filename": "attempt_21.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 22,
+      "return_code": 1,
+      "elapsed_seconds": 12.135,
+      "log_filename": "attempt_22.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "iteration": 23,
+      "return_code": 1,
+      "elapsed_seconds": 11.109,
+      "log_filename": "attempt_23.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "iteration": 24,
+      "return_code": 0,
+      "elapsed_seconds": 6.546,
+      "log_filename": "attempt_24.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 25,
+      "return_code": 1,
+      "elapsed_seconds": 10.73,
+      "log_filename": "attempt_25.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "iteration": 26,
+      "return_code": 0,
+      "elapsed_seconds": 6.434,
+      "log_filename": "attempt_26.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 27,
+      "return_code": 0,
+      "elapsed_seconds": 6.482,
+      "log_filename": "attempt_27.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 28,
+      "return_code": 1,
+      "elapsed_seconds": 7.275,
+      "log_filename": "attempt_28.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 29,
+      "return_code": 0,
+      "elapsed_seconds": 6.119,
+      "log_filename": "attempt_29.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "iteration": 30,
+      "return_code": 0,
+      "elapsed_seconds": 5.649,
+      "log_filename": "attempt_30.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "attempted_post_refactor_test_execution": true,
+  "successful_maven_invocations": 20,
+  "collected_junit_case_rows": 1200
+}

@@ -1,0 +1,21 @@
+{
+  "key": "ee9004cfc1895f506f",
+  "args": {
+    "crate": "axum",
+    "version": "0.8.4",
+    "id": "664dca3e05a99f5b",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.5557,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "f0d1cc884f78f8534d30bb5e75853eaade6df555ee4a00299844fb6558389337",
+  "manifest_sha256": "ebf1efb0ee64c02db360c0a89f864bbd65f361c6bcc530fddb42ca177b23b9f8",
+  "log_file": "results/check_logs/ee9004cfc1895f506f.txt.gz"
+}

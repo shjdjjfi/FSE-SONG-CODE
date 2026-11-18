@@ -1,0 +1,42 @@
+{
+  "after": {
+    "altered": 0,
+    "extra": 0,
+    "missing": 0
+  },
+  "before": {
+    "altered": 0,
+    "extra": 0,
+    "missing": 1
+  },
+  "build": {
+    "argv": [
+      "node",
+      "/home/runner/work/FSE-EXP-1/FSE-EXP-1/n21_ci_deps/node_modules/typescript/bin/tsc",
+      "-b",
+      "tsconfig.json",
+      "--verbose"
+    ],
+    "exit": 0,
+    "seconds": 0.96292,
+    "stderr_tail": "",
+    "stdout_tail": "4:39:23 AM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n4:39:23 AM - Project 'packages/alpha/tsconfig.json' is out of date because output file 'packages/alpha/cache.tsbuildinfo' does not exist\n\n4:39:23 AM - Building project '/home/runner/work/FSE-EXP-1/FSE-EXP-1/n21_gha_fixture/packages/alpha/tsconfig.json'...\n\n4:39:24 AM - Project 'packages/beta/tsconfig.json' is up to date because newest input 'packages/beta/src/index.ts' is older than output 'packages/beta/cache.tsbuildinfo'\n\n"
+  },
+  "build_child_cpu_system_seconds": 0.17015,
+  "build_child_cpu_user_seconds": 1.67152,
+  "cache_state": "partial",
+  "correct_against_trusted_oracle": true,
+  "detected_projects": [
+    "alpha"
+  ],
+  "fault": "none",
+  "github_run_id": "44238758566",
+  "input_rejected": false,
+  "observed_in_github_actions": true,
+  "output_sha_scanned_bytes": 209,
+  "runner_name": "GitHub Actions 1000000314",
+  "runner_os": "Linux",
+  "strategy": "guarded_sha",
+  "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+  "work_seconds": 0.9636
+}

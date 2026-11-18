@@ -1,0 +1,31 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 56486,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW11709",
+  "examples": [
+    {
+      "change": "-",
+      "code": "import { DeviceTrustServiceAbstraction } from \"@bitwarden/common/auth/abstractions/device-trust.service.abstraction\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { DeviceTrustServiceAbstraction } from \"@bitwarden/common/key-management/device-trust/abstractions/device-trust.service.abstraction\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:47.240911+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+  "noncomment_nonimport_changed_lines": 0,
+  "pr": 13194,
+  "repository": "bitwarden/clients",
+  "sha256": "3c2b093f85a09bfa620ce2feae8d4d79ec3710f5dae5de76727fea93411475c5",
+  "target_code_changed_lines": 2,
+  "target_files": [
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/13194.patch"
+}

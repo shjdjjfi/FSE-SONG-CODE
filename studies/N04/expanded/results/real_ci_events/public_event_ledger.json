@@ -1,0 +1,618 @@
+{
+  "fetched_utc": "2026-11-14T23:55:40.756284+00:00",
+  "definition": "Developer-authored source quarantine transitions and published CI-run statistics; not a rename-specific deployment outcome",
+  "gitlab": {
+    "project": "gitlab-org/gitlab",
+    "merge_requests": [
+      {
+        "iid": 162803,
+        "title": "Quarantine a flaky test",
+        "state": "merged",
+        "merged_at": "2024-08-19T08:44:16.397Z",
+        "merge_sha": "d1b6fd6f5d958c748d3196c38825aaa45302ef34",
+        "web_url": "https://gitlab.com/gitlab-org/gitlab/-/merge_requests/162803",
+        "description_has_run_link": false,
+        "metadata_provenance": {
+          "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/merge_requests/162803",
+          "sha256": "bb51e1fbae6d04d8207abbd5b48efa29608a6de8066688d7fb4e3c163a9c5014",
+          "response_bytes": 5230,
+          "access": "public"
+        },
+        "changes_provenance": {
+          "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/merge_requests/162803/changes",
+          "sha256": "1d0d99900b12e78996f37f24ffa14e7e82578d93a92fd60e5b89d031cfb5c2a6",
+          "response_bytes": 6116,
+          "access": "public"
+        },
+        "files": [
+          {
+            "path_before": "spec/features/merge_request/user_reverts_merge_request_spec.rb",
+            "path_after": "spec/features/merge_request/user_reverts_merge_request_spec.rb",
+            "old_file_deleted": false,
+            "file_renamed": false,
+            "quarantine_lines_added": 1,
+            "quarantine_lines_removed": 0,
+            "added_test_descriptions": [
+              "reverts a merge request in a new merge request"
+            ],
+            "removed_test_descriptions": [],
+            "issue_refs_in_quarantine_additions": [
+              "https://gitlab.com/gitlab-org/gitlab/-/issues/457549"
+            ],
+            "issue_refs_in_quarantine_removals": [],
+            "diff_sha256": "e307a566e24f1a45e0b351214c11588ac0a58509dc1c0835ebd8d5a042cf04de",
+            "diff_was_truncated": false
+          }
+        ],
+        "quarantine_additions": 1,
+        "quarantine_removals": 0
+      },
+      {
+        "iid": 164022,
+        "title": "Revert d1b6fd6f - remove quarantine user_reverts_merge_request_spec.rb",
+        "state": "merged",
+        "merged_at": "2024-08-27T08:08:06.376Z",
+        "merge_sha": "8f19f872c5b316ecff7ce10df24634e785cfd8b3",
+        "web_url": "https://gitlab.com/gitlab-org/gitlab/-/merge_requests/164022",
+        "description_has_run_link": false,
+        "metadata_provenance": {
+          "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/merge_requests/164022",
+          "sha256": "b7b2a75347863201e872c1440fdac4a3e3c5f931a8a03aeb5eca583682a399ad",
+          "response_bytes": 6682,
+          "access": "public"
+        },
+        "changes_provenance": {
+          "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/merge_requests/164022/changes",
+          "sha256": "27d8ea593fc012e56c07648babe867916e6fb65a4e7ca8778f42e94b154b3e17",
+          "response_bytes": 7568,
+          "access": "public"
+        },
+        "files": [
+          {
+            "path_before": "spec/features/merge_request/user_reverts_merge_request_spec.rb",
+            "path_after": "spec/features/merge_request/user_reverts_merge_request_spec.rb",
+            "old_file_deleted": false,
+            "file_renamed": false,
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "added_test_descriptions": [],
+            "removed_test_descriptions": [
+              "reverts a merge request in a new merge request"
+            ],
+            "issue_refs_in_quarantine_additions": [],
+            "issue_refs_in_quarantine_removals": [
+              "https://gitlab.com/gitlab-org/gitlab/-/issues/457549"
+            ],
+            "diff_sha256": "407006b9802e5569273f02c827b0c2c1a92d108211efd597308ec9eca9334137",
+            "diff_was_truncated": false
+          }
+        ],
+        "quarantine_additions": 0,
+        "quarantine_removals": 1
+      },
+      {
+        "iid": 195179,
+        "title": "Remove quarantine and fix loose foreign key test expectations",
+        "state": "merged",
+        "merged_at": "2025-06-23T08:33:28.550Z",
+        "merge_sha": "ba0aedc85ac5f4b2a7f2c4d7c08a0510676c2656",
+        "web_url": "https://gitlab.com/gitlab-org/gitlab/-/merge_requests/195179",
+        "description_has_run_link": true,
+        "metadata_provenance": {
+          "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/merge_requests/195179",
+          "sha256": "5cb6af5db7cb5f8016b0d09412901b19f33e9d902c5583c66df2b965ee4f1a12",
+          "response_bytes": 6517,
+          "access": "public"
+        },
+        "changes_provenance": {
+          "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/merge_requests/195179/changes",
+          "sha256": "5ddd1b8d7d62c7230fc6128776e7a5c4c4a8a161434b82252fa14fc3ec326374",
+          "response_bytes": 8084,
+          "access": "public"
+        },
+        "files": [
+          {
+            "path_before": "spec/models/project_spec.rb",
+            "path_after": "spec/models/project_spec.rb",
+            "old_file_deleted": false,
+            "file_renamed": false,
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "added_test_descriptions": [],
+            "removed_test_descriptions": [],
+            "issue_refs_in_quarantine_additions": [],
+            "issue_refs_in_quarantine_removals": [
+              "https://gitlab.com/gitlab-org/gitlab/-/issues/526190"
+            ],
+            "diff_sha256": "34603007a4aa705b1a9451b0fbbe0cdff479d7472e093ab1c7ae04b64159a4cd",
+            "diff_was_truncated": false
+          },
+          {
+            "path_before": "spec/support/shared_examples/loose_foreign_keys/have_loose_foreign_key.rb",
+            "path_after": "spec/support/shared_examples/loose_foreign_keys/have_loose_foreign_key.rb",
+            "old_file_deleted": false,
+            "file_renamed": false,
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 0,
+            "added_test_descriptions": [],
+            "removed_test_descriptions": [],
+            "issue_refs_in_quarantine_additions": [],
+            "issue_refs_in_quarantine_removals": [],
+            "diff_sha256": "063fb72461bf5a1b50a8d4cbfffc7c5dfedc9cfa34779cbf2e90b8528f753dc2",
+            "diff_was_truncated": false
+          }
+        ],
+        "quarantine_additions": 0,
+        "quarantine_removals": 1
+      },
+      {
+        "iid": 228726,
+        "title": "Fix flaky new_project_spec.rb by scoping within pane",
+        "state": "merged",
+        "merged_at": "2026-03-26T13:01:39.889Z",
+        "merge_sha": "9867919b6b58ce7b1b5b219aa4eb25295e16ba70",
+        "web_url": "https://gitlab.com/gitlab-org/gitlab/-/merge_requests/228726",
+        "description_has_run_link": false,
+        "metadata_provenance": {
+          "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/merge_requests/228726",
+          "sha256": "3c2a4389b27124ae2e0c7176168cbcbea7b3e033658615578987cd43c671da25",
+          "response_bytes": 6075,
+          "access": "public"
+        },
+        "changes_provenance": {
+          "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/merge_requests/228726/changes",
+          "sha256": "9a6c449cc5c8eed42a63e7b715770b1a759ffc06b140ffb12001b8e4a08d174c",
+          "response_bytes": 8291,
+          "access": "public"
+        },
+        "files": [
+          {
+            "path_before": "ee/spec/features/projects/new_project_spec.rb",
+            "path_after": "ee/spec/features/projects/new_project_spec.rb",
+            "old_file_deleted": false,
+            "file_renamed": false,
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 3,
+            "added_test_descriptions": [],
+            "removed_test_descriptions": [],
+            "issue_refs_in_quarantine_additions": [],
+            "issue_refs_in_quarantine_removals": [],
+            "diff_sha256": "bb57dd57bb78ec2ea6b41e324518f6a90b853b37635f597115cbaf2221e08b2f",
+            "diff_was_truncated": false
+          }
+        ],
+        "quarantine_additions": 0,
+        "quarantine_removals": 3
+      },
+      {
+        "iid": 149942,
+        "title": "Remove the quarantine flag for auto merge feature tests",
+        "state": "merged",
+        "merged_at": "2024-04-18T07:16:31.100Z",
+        "merge_sha": "08c33604d79ed1439a06c95d3078b83c4df4cd43",
+        "web_url": "https://gitlab.com/gitlab-org/gitlab/-/merge_requests/149942",
+        "description_has_run_link": false,
+        "metadata_provenance": {
+          "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/merge_requests/149942",
+          "sha256": "6db728c8f770fcddc65d776814680a6458a28c98235539f0cc79e7dc5247d361",
+          "response_bytes": 4490,
+          "access": "public"
+        },
+        "changes_provenance": {
+          "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/merge_requests/149942/changes",
+          "sha256": "84c77c96324cfa41cccd07e97b4f48ebfa2ea8d9d3a26c7a884be15da594d98d",
+          "response_bytes": 9678,
+          "access": "public"
+        },
+        "files": [
+          {
+            "path_before": "spec/features/merge_request/user_sets_to_auto_merge_spec.rb",
+            "path_after": "spec/features/merge_request/user_sets_to_auto_merge_spec.rb",
+            "old_file_deleted": false,
+            "file_renamed": false,
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 2,
+            "added_test_descriptions": [],
+            "removed_test_descriptions": [
+              "activates auto-merge feature",
+              "allows to cancel the auto-merge"
+            ],
+            "issue_refs_in_quarantine_additions": [],
+            "issue_refs_in_quarantine_removals": [
+              "https://gitlab.com/gitlab-org/gitlab/-/issues/410055"
+            ],
+            "diff_sha256": "d3b024f9b9ecfc3a7ac3f2c210e62c8b09f40dd4c5d1cebb7b9c8a4d9dee55df",
+            "diff_was_truncated": false
+          }
+        ],
+        "quarantine_additions": 0,
+        "quarantine_removals": 2
+      },
+      {
+        "iid": 155883,
+        "title": "Long-term quarantine a fast-quarantined spec",
+        "state": "merged",
+        "merged_at": "2024-06-11T14:19:01.479Z",
+        "merge_sha": "1e3f48ab1486cac33496b1566e3f3d7b54766692",
+        "web_url": "https://gitlab.com/gitlab-org/gitlab/-/merge_requests/155883",
+        "description_has_run_link": false,
+        "metadata_provenance": {
+          "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/merge_requests/155883",
+          "sha256": "a78fae81bc19058b3baa69d5a518628a59edc6bd6ef74ab484b96484807d664c",
+          "response_bytes": 6201,
+          "access": "public"
+        },
+        "changes_provenance": {
+          "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/merge_requests/155883/changes",
+          "sha256": "9e9f9600b2418f26f2a374d2a7f9638dceb70dd2596a4e53b7e983629fe590fe",
+          "response_bytes": 6833,
+          "access": "public"
+        },
+        "files": [
+          {
+            "path_before": "ee/spec/models/elastic/migration_record_spec.rb",
+            "path_after": "ee/spec/models/elastic/migration_record_spec.rb",
+            "old_file_deleted": false,
+            "file_renamed": false,
+            "quarantine_lines_added": 1,
+            "quarantine_lines_removed": 0,
+            "added_test_descriptions": [
+              "changes on first save to the index"
+            ],
+            "removed_test_descriptions": [],
+            "issue_refs_in_quarantine_additions": [
+              "https://gitlab.com/gitlab-org/gitlab/-/issues/438942"
+            ],
+            "issue_refs_in_quarantine_removals": [],
+            "diff_sha256": "f0c3166030b36ac3f81730be03010ac356c4e7d3591e34f01539e37a204ea91d",
+            "diff_was_truncated": false
+          }
+        ],
+        "quarantine_additions": 1,
+        "quarantine_removals": 0
+      }
+    ],
+    "independent_issue": {
+      "provenance": {
+        "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/issues/457549",
+        "sha256": "9205f33504009034f3bf583591ca4b9381f01f40dc4aa30f91a1fe974dde2a6f",
+        "response_bytes": 4288,
+        "access": "public"
+      },
+      "iid": 457549,
+      "title": "[Test] spec/features/merge_request/user_reverts_merge_request_spec.rb | User reverts a merge request reverts a merge request in a new merge request",
+      "created_at": "2024-04-22T16:47:48.356Z",
+      "closed_at": "2025-01-05T22:36:02.698Z",
+      "state": "closed",
+      "web_url": "https://gitlab.com/gitlab-org/gitlab/-/work_items/457549",
+      "documented_test_hash": null
+    }
+  },
+  "github": {
+    "project": "microsoft/aspire",
+    "pull_requests": [
+      {
+        "number": 13874,
+        "title": "Unquarantine 25 stable tests with zero failures in 159 runs",
+        "merged_at": "2026-01-13T21:40:13Z",
+        "merge_commit_sha": "8a013dd803bc9efa8928d7d817056c7d5cd37376",
+        "url": "https://github.com/microsoft/aspire/pull/13874",
+        "claimed_runs_in_description": [
+          159,
+          150
+        ],
+        "quarantine_additions": 0,
+        "quarantine_removals": 17,
+        "changed_quarantine_files": [
+          {
+            "path": "tests/Aspire.Cli.Tests/Commands/NewCommandTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 3,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "0ca71984c16320051bc60150ec3252ae1efc073ba6d188542ff49cf02ef3cdbf"
+          },
+          {
+            "path": "tests/Aspire.Cli.Tests/Commands/PublishCommandTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "174be42f8d604db0a86ac04b541b1c640ea35ccd985e084e88aeb5838dbf2e60"
+          },
+          {
+            "path": "tests/Aspire.Cli.Tests/Commands/RunCommandTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "f5e23336e2e2b47aceb2601849287552d492d2459dcf4b50c8ca5b0b697ed566"
+          },
+          {
+            "path": "tests/Aspire.Dashboard.Components.Tests/Pages/ConsoleLogsTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "bf92b5a4241ba0695e2fb1e8641290045616922f5cf5846e0ccf3138bc7be675"
+          },
+          {
+            "path": "tests/Aspire.Dashboard.Tests/Integration/Playwright/BrowserTokenAuthenticationTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "016112401879651862c91fe0adb38a7871fab6235e3c2c1b4550632fddb2fe40"
+          },
+          {
+            "path": "tests/Aspire.Hosting.Azure.Tests/AzureServiceBusExtensionsTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "87d934e1537cbfdad7cdc727e4550549d852493342223583fa0f831d04eedc3b"
+          },
+          {
+            "path": "tests/Aspire.Hosting.Azure.Tests/AzureStorageEmulatorFunctionalTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "3668961e4417900f08b75312a00a5ea932ade6606b7366e8aa9acb369887a0d4"
+          },
+          {
+            "path": "tests/Aspire.Hosting.JavaScript.Tests/NodeFunctionalTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "665f795bc87091e31c3f7ee067878fe63de1cefac198fe27da9ae9384a81622b"
+          },
+          {
+            "path": "tests/Aspire.Hosting.Testing.Tests/TestingBuilderTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "2d3068928b872e1e1aaa30ba8c6cd9bc4d539d8cc2c491ff8b3f228c8f2534a1"
+          },
+          {
+            "path": "tests/Aspire.Hosting.Tests/DistributedApplicationTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "4cb80914d9c5e698ee93eb7bc74203bddc5abca654f1e75c459dbbd6c2cee843"
+          },
+          {
+            "path": "tests/Aspire.Hosting.Tests/ResourceCommandServiceTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "4ea4094b90ddbd26e5510093af122a140cc19ccb81132b7c2e875a22eb8aa23f"
+          },
+          {
+            "path": "tests/Aspire.Hosting.Tests/WithHttpCommandTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 4,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "96469960c1340354b439f03bc7cfcf9d26c8db6816ca6e6bb69b2cf04c9c66b1"
+          }
+        ],
+        "provenance": {
+          "source_url": "https://api.github.com/repos/microsoft/aspire/pulls/13874",
+          "sha256": "109c5df5fb5acd7de0b2a900c74660a8e3ba1e96a7542ed7db2ae99b63109130",
+          "response_bytes": 33489,
+          "access": "public"
+        },
+        "files_provenance": {
+          "source_url": "https://api.github.com/repos/microsoft/aspire/pulls/13874/files?per_page=100",
+          "sha256": "0a78a538e8a447b1c214eeb775457a571444e8bee1cd1bf637941b1ac041e3cd",
+          "response_bytes": 18425,
+          "access": "public"
+        }
+      },
+      {
+        "number": 14040,
+        "title": "[automated] Unquarantine 11 stable tests with zero failures in 215 runs",
+        "merged_at": "2026-01-21T23:41:16Z",
+        "merge_commit_sha": "9606d1d966f0c4e7fb26336b95af12b4cb9955af",
+        "url": "https://github.com/microsoft/aspire/pull/14040",
+        "claimed_runs_in_description": [
+          215,
+          215,
+          180
+        ],
+        "quarantine_additions": 0,
+        "quarantine_removals": 11,
+        "changed_quarantine_files": [
+          {
+            "path": "tests/Aspire.Azure.AI.OpenAI.Tests/ConformanceTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "3a3643cd01b1648d2b7d4415b15ff9f4b34cd345cc4e48ac8e5df5f7f91f054c"
+          },
+          {
+            "path": "tests/Aspire.Cli.Tests/Commands/NewCommandTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 5,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "0f837f76f772c8cb98ab9314a696037b843b307f26acd7b1ec25f5c04c872202"
+          },
+          {
+            "path": "tests/Aspire.Hosting.JavaScript.Tests/NodeFunctionalTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "f33bf0c4ad37fa8c7522540497820e403d1644ca43eb4c7264f61bda7c3f07dc"
+          },
+          {
+            "path": "tests/Aspire.Hosting.Tests/DistributedApplicationTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "e5f6e5191089704114ae76a1aa52ad7bde459f0e58bd01bea3f91ba03023b69a"
+          },
+          {
+            "path": "tests/Aspire.Hosting.Tests/ResourceCommandServiceTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "dd436cb32224034b0378eb89a225ce0c5895e801431f6bfb29e976b16421bd38"
+          },
+          {
+            "path": "tests/Aspire.Hosting.Tests/WithHttpCommandTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 2,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "1c6e21efd1aa1528b69eaab41e187e4abce6bb9da3382f5cfb0d76da3a8675b3"
+          }
+        ],
+        "provenance": {
+          "source_url": "https://api.github.com/repos/microsoft/aspire/pulls/14040",
+          "sha256": "92332ce7d729991579e2ed73ad71d07cb742de7a8a8e1cf54be6904ad55302cd",
+          "response_bytes": 31741,
+          "access": "public"
+        },
+        "files_provenance": {
+          "source_url": "https://api.github.com/repos/microsoft/aspire/pulls/14040/files?per_page=100",
+          "sha256": "47426f8a6845c3b8c186eed85c4226480a267e20f4b7df8385684c4f86175148",
+          "response_bytes": 8861,
+          "access": "public"
+        }
+      },
+      {
+        "number": 9023,
+        "title": "Unquarantine some tests",
+        "merged_at": "2025-04-29T20:16:31Z",
+        "merge_commit_sha": "10f02bbb66a82f17ba7b4e3d58b42167c76a9d3c",
+        "url": "https://github.com/microsoft/aspire/pull/9023",
+        "claimed_runs_in_description": [
+          100
+        ],
+        "quarantine_additions": 0,
+        "quarantine_removals": 4,
+        "changed_quarantine_files": [
+          {
+            "path": "tests/Aspire.Hosting.Redis.Tests/RedisFunctionalTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "7f0cb627d635a88f859bfd3ce029dada022d4bc6b18cf50d93e79d42b69a0c2b"
+          },
+          {
+            "path": "tests/Aspire.Hosting.Tests/DistributedApplicationTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "19aa418ba300cb5de814d8f6b2d9ed949864a0efd3e5cae4747b3619c44da060"
+          },
+          {
+            "path": "tests/Aspire.Hosting.Tests/OperationModesTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "f84a18249a35993a6a0ef5d4306eab95a4e3ee66e3efa54ad6f627be7ec4b007"
+          },
+          {
+            "path": "tests/Aspire.Hosting.Tests/WithHttpCommandTests.cs",
+            "status": "modified",
+            "quarantine_lines_added": 0,
+            "quarantine_lines_removed": 1,
+            "issue_ids_added": [],
+            "issue_ids_removed": [],
+            "patch_sha256": "e39ac98bf5a2d208824abd5083441a35ced1a04dfc1764b52154f89898175796"
+          }
+        ],
+        "provenance": {
+          "source_url": "https://api.github.com/repos/microsoft/aspire/pulls/9023",
+          "sha256": "3fa9cd0679093d9e542f36ced68eb65039e7ef2dee713d5bb5b9d164c6738836",
+          "response_bytes": 20239,
+          "access": "public"
+        },
+        "files_provenance": {
+          "source_url": "https://api.github.com/repos/microsoft/aspire/pulls/9023/files?per_page=100",
+          "sha256": "3d65340154d17cc5dc9e43ed48fc773d57385095a12a6ba903d56d6bd5c8ce30",
+          "response_bytes": 4485,
+          "access": "public"
+        }
+      }
+    ],
+    "issues": [
+      {
+        "number": 9712,
+        "error": {
+          "source_url": "https://api.github.com/repos/microsoft/aspire/issues/9712",
+          "error_type": "HTTPError",
+          "http_status": 403,
+          "access": "not_observed"
+        }
+      },
+      {
+        "number": 9670,
+        "error": {
+          "source_url": "https://api.github.com/repos/microsoft/aspire/issues/9670",
+          "error_type": "HTTPError",
+          "http_status": 403,
+          "access": "not_observed"
+        }
+      },
+      {
+        "number": 9789,
+        "error": {
+          "source_url": "https://api.github.com/repos/microsoft/aspire/issues/9789",
+          "error_type": "HTTPError",
+          "http_status": 403,
+          "access": "not_observed"
+        }
+      },
+      {
+        "number": 8728,
+        "error": {
+          "source_url": "https://api.github.com/repos/microsoft/aspire/issues/8728",
+          "error_type": "HTTPError",
+          "http_status": 403,
+          "access": "not_observed"
+        }
+      }
+    ]
+  },
+  "cautions": [
+    "A merged source metadata change is real but is not, by itself, a measured CI outcome.",
+    "A maintainer's claimed repeated-run count is recorded as a claim unless raw job-level artifacts are independently obtained.",
+    "Issues and source changes are public; private/test-level CI dashboards may be inaccessible."
+  ]
+}

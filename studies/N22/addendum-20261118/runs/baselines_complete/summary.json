@@ -1,0 +1,106 @@
+{
+  "created_utc": "2026-11-18T05:34:25.949198+00:00",
+  "characterization": "The helper baseline mutes Django signals. It is not a fair complete contract baseline; see metrics.json for that strong baseline.",
+  "replications": 3,
+  "cases": [
+    {
+      "case": "django600_helper",
+      "replication": 1,
+      "source": "django-test-migrations 1.7.0",
+      "wall_milliseconds": 628.787,
+      "detected_violation": false,
+      "oracle": {
+        "expected_songprofile_permission": true,
+        "observed_songprofile_permission": true,
+        "observed_son_permission": false
+      }
+    },
+    {
+      "case": "django601_helper",
+      "replication": 1,
+      "source": "django-test-migrations 1.7.0",
+      "wall_milliseconds": 558.501,
+      "detected_violation": false,
+      "oracle": {
+        "expected_songprofile_permission": true,
+        "observed_songprofile_permission": true,
+        "observed_son_permission": false
+      }
+    },
+    {
+      "case": "opencode_native_v1_migration_suite",
+      "replication": 1,
+      "source": "unchanged upstream suite, 26 tests",
+      "wall_milliseconds": 938.395,
+      "passed_tests": 26,
+      "failed_tests": 0,
+      "legacy_agent_missing_case_in_shipped_tests": false
+    },
+    {
+      "case": "django600_helper",
+      "replication": 2,
+      "source": "django-test-migrations 1.7.0",
+      "wall_milliseconds": 580.145,
+      "detected_violation": false,
+      "oracle": {
+        "expected_songprofile_permission": true,
+        "observed_songprofile_permission": true,
+        "observed_son_permission": false
+      }
+    },
+    {
+      "case": "django601_helper",
+      "replication": 2,
+      "source": "django-test-migrations 1.7.0",
+      "wall_milliseconds": 565.696,
+      "detected_violation": false,
+      "oracle": {
+        "expected_songprofile_permission": true,
+        "observed_songprofile_permission": true,
+        "observed_son_permission": false
+      }
+    },
+    {
+      "case": "opencode_native_v1_migration_suite",
+      "replication": 2,
+      "source": "unchanged upstream suite, 26 tests",
+      "wall_milliseconds": 941.696,
+      "passed_tests": 26,
+      "failed_tests": 0,
+      "legacy_agent_missing_case_in_shipped_tests": false
+    },
+    {
+      "case": "django600_helper",
+      "replication": 3,
+      "source": "django-test-migrations 1.7.0",
+      "wall_milliseconds": 634.953,
+      "detected_violation": false,
+      "oracle": {
+        "expected_songprofile_permission": true,
+        "observed_songprofile_permission": true,
+        "observed_son_permission": false
+      }
+    },
+    {
+      "case": "django601_helper",
+      "replication": 3,
+      "source": "django-test-migrations 1.7.0",
+      "wall_milliseconds": 654.884,
+      "detected_violation": false,
+      "oracle": {
+        "expected_songprofile_permission": true,
+        "observed_songprofile_permission": true,
+        "observed_son_permission": false
+      }
+    },
+    {
+      "case": "opencode_native_v1_migration_suite",
+      "replication": 3,
+      "source": "unchanged upstream suite, 26 tests",
+      "wall_milliseconds": 835.246,
+      "passed_tests": 26,
+      "failed_tests": 0,
+      "legacy_agent_missing_case_in_shipped_tests": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "changed_code_lines_under_target": 3,
+  "changed_files_in_whole_pr": 57,
+  "changed_files_under_target": 1,
+  "code_files_under_target": 1,
+  "code_touched": true,
+  "event": "BW14571",
+  "focused_code_touched": false,
+  "pr": 16463,
+  "raw_size_bytes": 127928,
+  "repo": "bitwarden/clients",
+  "sha256": "481a6f1786c3592013fc41c206e7856442b36615e5ead87324c8dd588ec59e56",
+  "target_file_fraction": 0.01754,
+  "target_paths": [
+    "apps/web/src/app/dirt/reports/pages/exposed-passwords-report.component.ts"
+  ],
+  "test_files_under_target": 0,
+  "url": "https://github.com/bitwarden/clients/pull/16463.patch"
+}

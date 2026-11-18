@@ -1,0 +1,652 @@
+n02-test, argocd-application-controller, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-application-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: argocd-application-controller
+    namespace: n02-test
+
+n02-test, argocd-applicationset-controller, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-applicationset-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: argocd-applicationset-controller
+    namespace: n02-test
+
+n02-test, argocd-cm, ConfigMap (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-cm
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: argocd-cm
+    namespace: n02-test
+
+n02-test, argocd-cmd-params-cm, ConfigMap (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-cmd-params-cm
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: argocd-cmd-params-cm
+    namespace: n02-test
+
+n02-test, argocd-dex-server, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-dex-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: argocd-dex-server
+    namespace: n02-test
+
+n02-test, argocd-gpg-keys-cm, ConfigMap (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-gpg-keys-cm
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: argocd-gpg-keys-cm
+    namespace: n02-test
+
+n02-test, argocd-notifications-cm, ConfigMap (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-notifications-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: argocd-notifications-cm
+    namespace: n02-test
+
+n02-test, argocd-notifications-controller, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-notifications-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: argocd-notifications-controller
+    namespace: n02-test
+
+n02-test, argocd-notifications-secret, Secret (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-notifications-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: argocd-notifications-secret
+    namespace: n02-test
+  type: Opaque
+...
+n02-test, argocd-rbac-cm, ConfigMap (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-rbac-cm
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: argocd-rbac-cm
+    namespace: n02-test
+
+n02-test, argocd-secret, Secret (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-secret
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: argocd-secret
+    namespace: n02-test
+  type: Opaque
+...
+n02-test, argocd-server, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: argocd-server
+    namespace: n02-test
+
+n02-test, argocd-ssh-known-hosts-cm, ConfigMap (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-ssh-known-hosts-cm
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: argocd-ssh-known-hosts-cm
+    namespace: n02-test
+
+n02-test, argocd-tls-certs-cm, ConfigMap (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-tls-certs-cm
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: argocd-tls-certs-cm
+    namespace: n02-test
+
+n02-test, n02-argocd-application-controller, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-application-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-application-controller
+  rules:
+  - apiGroups:
+...
+n02-test, n02-argocd-application-controller, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-application-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-application-controller
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-argocd-application-controller, Role (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-application-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-application-controller
+    namespace: n02-test
+  rules:
+...
+n02-test, n02-argocd-application-controller, RoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-application-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-application-controller
+    namespace: n02-test
+  roleRef:
+...
+n02-test, n02-argocd-application-controller, StatefulSet (apps) has changed:
+...
+      app.kubernetes.io/name: argocd-application-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-application-controller
+    namespace: n02-test
+  spec:
+...
+    template:
+      metadata:
+        annotations:
+-         checksum/cm: 35b83f6af75f4bcc7e081c508459b3209b7f90f7a409d3a18af329b1538473a0
+-         checksum/cmd-params: e539bc1a56a05d98337aece80d2327d9163294835477bf7862738897b5efa123
++         checksum/cm: c437b13ff43a28e5fa4ee47f684c1946594059a0685b50faf6c80c8c9ea31541
++         checksum/cmd-params: 9029a67b4c115961d773ab959555b66ab21b43b7131ea8563e11faf90374b06f
+        labels:
+          app.kubernetes.io/component: application-controller
+          app.kubernetes.io/instance: n02
+...
+          app.kubernetes.io/name: argocd-application-controller
+          app.kubernetes.io/part-of: argocd
+          app.kubernetes.io/version: v2.10.0
+-         helm.sh/chart: argo-cd-5.55.0
++         helm.sh/chart: argo-cd-6.0.0
+      spec:
+        affinity:
+          podAntiAffinity:
+...
+n02-test, n02-argocd-applicationset-controller, Deployment (apps) has changed:
+...
+      app.kubernetes.io/name: argocd-applicationset-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-applicationset-controller
+    namespace: n02-test
+  spec:
+...
+    template:
+      metadata:
+        annotations:
+-         checksum/cmd-params: e539bc1a56a05d98337aece80d2327d9163294835477bf7862738897b5efa123
++         checksum/cmd-params: 9029a67b4c115961d773ab959555b66ab21b43b7131ea8563e11faf90374b06f
+        labels:
+          app.kubernetes.io/component: applicationset-controller
+          app.kubernetes.io/instance: n02
+...
+          app.kubernetes.io/name: argocd-applicationset-controller
+          app.kubernetes.io/part-of: argocd
+          app.kubernetes.io/version: v2.10.0
+-         helm.sh/chart: argo-cd-5.55.0
++         helm.sh/chart: argo-cd-6.0.0
+      spec:
+        affinity:
+          podAntiAffinity:
+...
+n02-test, n02-argocd-applicationset-controller, Role (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-applicationset-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-applicationset-controller
+    namespace: n02-test
+  rules:
+...
+n02-test, n02-argocd-applicationset-controller, RoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-applicationset-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-applicationset-controller
+    namespace: n02-test
+  roleRef:
+...
+n02-test, n02-argocd-applicationset-controller, Service (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-applicationset-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-applicationset-controller
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-argocd-dex-server, Deployment (apps) has changed:
+...
+      app.kubernetes.io/name: argocd-dex-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-dex-server
+    namespace: n02-test
+  spec:
+...
+    template:
+      metadata:
+        annotations:
+-         checksum/cmd-params: e539bc1a56a05d98337aece80d2327d9163294835477bf7862738897b5efa123
++         checksum/cmd-params: 9029a67b4c115961d773ab959555b66ab21b43b7131ea8563e11faf90374b06f
+        labels:
+          app.kubernetes.io/component: dex-server
+          app.kubernetes.io/instance: n02
+...
+          app.kubernetes.io/name: argocd-dex-server
+          app.kubernetes.io/part-of: argocd
+          app.kubernetes.io/version: v2.10.0
+-         helm.sh/chart: argo-cd-5.55.0
++         helm.sh/chart: argo-cd-6.0.0
+      spec:
+        affinity:
+          podAntiAffinity:
+...
+n02-test, n02-argocd-dex-server, Role (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-dex-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-dex-server
+    namespace: n02-test
+  rules:
+...
+n02-test, n02-argocd-dex-server, RoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-dex-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-dex-server
+    namespace: n02-test
+  roleRef:
+...
+n02-test, n02-argocd-dex-server, Service (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-dex-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-dex-server
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-argocd-notifications-controller, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-notifications-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-notifications-controller
+  rules:
+  - apiGroups:
+...
+n02-test, n02-argocd-notifications-controller, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-notifications-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-notifications-controller
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-argocd-notifications-controller, Deployment (apps) has changed:
+...
+      app.kubernetes.io/name: argocd-notifications-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-notifications-controller
+    namespace: n02-test
+  spec:
+...
+          app.kubernetes.io/name: argocd-notifications-controller
+          app.kubernetes.io/part-of: argocd
+          app.kubernetes.io/version: v2.10.0
+-         helm.sh/chart: argo-cd-5.55.0
++         helm.sh/chart: argo-cd-6.0.0
+      spec:
+        affinity:
+          podAntiAffinity:
+...
+n02-test, n02-argocd-notifications-controller, Role (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-notifications-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-notifications-controller
+    namespace: n02-test
+  rules:
+...
+n02-test, n02-argocd-notifications-controller, RoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-notifications-controller
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-notifications-controller
+    namespace: n02-test
+  roleRef:
+...
+n02-test, n02-argocd-redis, Deployment (apps) has changed:
+...
+      app.kubernetes.io/name: argocd-redis
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-redis
+    namespace: n02-test
+  spec:
+...
+          app.kubernetes.io/name: argocd-redis
+          app.kubernetes.io/part-of: argocd
+          app.kubernetes.io/version: v2.10.0
+-         helm.sh/chart: argo-cd-5.55.0
++         helm.sh/chart: argo-cd-6.0.0
+      spec:
+        affinity:
+          podAntiAffinity:
+...
+n02-test, n02-argocd-redis, Service (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-redis
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-redis
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-argocd-redis-health-configmap, ConfigMap (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-redis
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-redis-health-configmap
+    namespace: n02-test
+
+n02-test, n02-argocd-repo-server, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-repo-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-repo-server
+  rules:
+  - apiGroups:
+...
+n02-test, n02-argocd-repo-server, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-repo-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-repo-server
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-argocd-repo-server, Deployment (apps) has changed:
+...
+      app.kubernetes.io/name: argocd-repo-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-repo-server
+    namespace: n02-test
+  spec:
+...
+    template:
+      metadata:
+        annotations:
+-         checksum/cm: 35b83f6af75f4bcc7e081c508459b3209b7f90f7a409d3a18af329b1538473a0
+-         checksum/cmd-params: e539bc1a56a05d98337aece80d2327d9163294835477bf7862738897b5efa123
++         checksum/cm: c437b13ff43a28e5fa4ee47f684c1946594059a0685b50faf6c80c8c9ea31541
++         checksum/cmd-params: 9029a67b4c115961d773ab959555b66ab21b43b7131ea8563e11faf90374b06f
+        labels:
+          app.kubernetes.io/component: repo-server
+          app.kubernetes.io/instance: n02
+...
+          app.kubernetes.io/name: argocd-repo-server
+          app.kubernetes.io/part-of: argocd
+          app.kubernetes.io/version: v2.10.0
+-         helm.sh/chart: argo-cd-5.55.0
++         helm.sh/chart: argo-cd-6.0.0
+      spec:
+        affinity:
+          podAntiAffinity:
+...
+n02-test, n02-argocd-repo-server, Role (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-repo-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-repo-server
+    namespace: n02-test
+  rules: null
+...
+n02-test, n02-argocd-repo-server, RoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-repo-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-repo-server
+    namespace: n02-test
+  roleRef:
+...
+n02-test, n02-argocd-repo-server, Service (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-repo-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-repo-server
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-argocd-repo-server, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-repo-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-repo-server
+    namespace: n02-test
+
+n02-test, n02-argocd-server, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-server
+  rules:
+  - apiGroups:
+...
+n02-test, n02-argocd-server, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-server
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-argocd-server, Deployment (apps) has changed:
+...
+      app.kubernetes.io/name: argocd-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-server
+    namespace: n02-test
+  spec:
+...
+    template:
+      metadata:
+        annotations:
+-         checksum/cm: 35b83f6af75f4bcc7e081c508459b3209b7f90f7a409d3a18af329b1538473a0
+-         checksum/cmd-params: e539bc1a56a05d98337aece80d2327d9163294835477bf7862738897b5efa123
++         checksum/cm: c437b13ff43a28e5fa4ee47f684c1946594059a0685b50faf6c80c8c9ea31541
++         checksum/cmd-params: 9029a67b4c115961d773ab959555b66ab21b43b7131ea8563e11faf90374b06f
+        labels:
+          app.kubernetes.io/component: server
+          app.kubernetes.io/instance: n02
+...
+          app.kubernetes.io/name: argocd-server
+          app.kubernetes.io/part-of: argocd
+          app.kubernetes.io/version: v2.10.0
+-         helm.sh/chart: argo-cd-5.55.0
++         helm.sh/chart: argo-cd-6.0.0
+      spec:
+        affinity:
+          podAntiAffinity:
+...
+n02-test, n02-argocd-server, Ingress (networking.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-server
+    namespace: n02-test
+  spec:
+    rules:
+-   - host: argo.example.invalid
++   - host: argocd.example.com
+      http:
+        paths:
+        - backend:
+            service:
+              name: n02-argocd-server
+              port:
+-               number: 80
++               number: 443
+          path: /
+          pathType: Prefix
+
+n02-test, n02-argocd-server, Role (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-server
+    namespace: n02-test
+  rules:
+...
+n02-test, n02-argocd-server, RoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/name: argocd-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-server
+    namespace: n02-test
+  roleRef:
+...
+n02-test, n02-argocd-server, Service (v1) has changed:
+...
+      app.kubernetes.io/name: argocd-server
+      app.kubernetes.io/part-of: argocd
+      app.kubernetes.io/version: v2.10.0
+-     helm.sh/chart: argo-cd-5.55.0
++     helm.sh/chart: argo-cd-6.0.0
+    name: n02-argocd-server
+    namespace: n02-test
+  spec:
+...

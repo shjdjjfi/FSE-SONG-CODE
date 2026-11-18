@@ -1,0 +1,60 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 44857,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW14987",
+  "examples": [
+    {
+      "change": "+",
+      "code": "// FIXME(https://bitwarden.atlassian.net/browse/CL-764): Migrate to OnPush",
+      "file": "libs/dirt/card/src/card.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "// eslint-disable-next-line @angular-eslint/prefer-on-push-component-change-detection",
+      "file": "libs/dirt/card/src/card.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "// FIXME(https://bitwarden.atlassian.net/browse/CL-903): Migrate to Signals",
+      "file": "libs/dirt/card/src/card.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "// eslint-disable-next-line @angular-eslint/prefer-signals",
+      "file": "libs/dirt/card/src/card.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "// FIXME(https://bitwarden.atlassian.net/browse/CL-903): Migrate to Signals",
+      "file": "libs/dirt/card/src/card.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "// eslint-disable-next-line @angular-eslint/prefer-signals",
+      "file": "libs/dirt/card/src/card.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "// FIXME(https://bitwarden.atlassian.net/browse/CL-903): Migrate to Signals",
+      "file": "libs/dirt/card/src/card.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "// eslint-disable-next-line @angular-eslint/prefer-signals",
+      "file": "libs/dirt/card/src/card.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:39.962562+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/14987",
+  "noncomment_nonimport_changed_lines": 0,
+  "pr": 16939,
+  "repository": "bitwarden/clients",
+  "sha256": "766554845882e9d05bbc9fc6c52e18d48371cdf97cce03c40de1c43d71b76fcb",
+  "target_code_changed_lines": 8,
+  "target_files": [
+    "libs/dirt/card/src/card.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/16939.patch"
+}

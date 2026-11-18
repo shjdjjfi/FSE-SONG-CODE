@@ -1,0 +1,23 @@
+{
+  "pr": 109419,
+  "pr_author": "alerting-team[bot]",
+  "repo": "grafana/grafana",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-08-08T16:48:32Z",
+      "requested_people": [],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-08-08T17:00:02Z",
+      "requested_people": [
+        "yuri-tceretian"
+      ],
+      "team_request_anonymized": true
+    }
+  ],
+  "sha256": "cd9d132cffacdaea2557bf5171ed3b4c9455d01446743c6d92ab012df22d540e",
+  "url": "https://github.com/grafana/grafana/pull/109419"
+}

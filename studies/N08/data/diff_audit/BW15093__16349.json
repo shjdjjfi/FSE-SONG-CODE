@@ -1,0 +1,19 @@
+{
+  "changed_code_lines_under_target": 0,
+  "changed_files_in_whole_pr": 1,
+  "changed_files_under_target": 1,
+  "code_files_under_target": 0,
+  "code_touched": false,
+  "event": "BW15093",
+  "focused_code_touched": false,
+  "pr": 16349,
+  "raw_size_bytes": 3147,
+  "repo": "bitwarden/clients",
+  "sha256": "0bd24aeebc25311f2c8ef460e10224248c1c5b7b84dabfdaaf7905d2f0522786",
+  "target_file_fraction": 1.0,
+  "target_paths": [
+    "libs/components/src/anon-layout/anon-layout.component.html"
+  ],
+  "test_files_under_target": 0,
+  "url": "https://github.com/bitwarden/clients/pull/16349.patch"
+}

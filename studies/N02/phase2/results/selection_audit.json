@@ -1,0 +1,1374 @@
+[
+  {
+    "family": "grafana",
+    "attempt": 1,
+    "path": "imageRenderer.service.portName",
+    "original_default": "http",
+    "injected": "n02-73a610b52-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 2,
+    "path": "sidecar.plugins.label",
+    "original_default": "grafana_plugin",
+    "injected": "n02-cb6a68879-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 3,
+    "path": "imageRenderer.autoscaling.targetCPU",
+    "original_default": "60",
+    "injected": "n02-cd83c0eac-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 4,
+    "path": "sidecar.plugins.reloadURL",
+    "original_default": "http://localhost:3000/api/admin/provisioning/plugins/reload",
+    "injected": "https://n02-b099b1ea3-probe.example.invalid",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 5,
+    "path": "podPortName",
+    "original_default": "grafana",
+    "injected": "n02-912b6e541-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "grafana",
+    "attempt": 6,
+    "path": "adminUser",
+    "original_default": "admin",
+    "injected": "n02-7a8c7fd4d-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 7,
+    "path": "grafana.ini.paths.provisioning",
+    "original_default": "/etc/grafana/provisioning",
+    "injected": "n02-d576e1a3f-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "grafana",
+    "attempt": 8,
+    "path": "testFramework.image.registry",
+    "original_default": "docker.io",
+    "injected": "example.invalid/n02-5e8eeb00a-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "grafana",
+    "attempt": 9,
+    "path": "sidecar.dashboards.watchMethod",
+    "original_default": "WATCH",
+    "injected": "n02-a21b28bc1-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 10,
+    "path": "downloadDashboardsImage.tag",
+    "original_default": "7.85.0",
+    "injected": "n02-3ae52952f-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 11,
+    "path": "sidecar.datasources.reloadURL",
+    "original_default": "http://localhost:3000/api/admin/provisioning/datasources/reload",
+    "injected": "https://n02-b03f46282-probe.example.invalid",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 12,
+    "path": "grafana.ini.paths.plugins",
+    "original_default": "/var/lib/grafana/plugins",
+    "injected": "n02-3ce6b6305-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "grafana",
+    "attempt": 13,
+    "path": "downloadDashboardsImage.registry",
+    "original_default": "docker.io",
+    "injected": "example.invalid/n02-a54f14a36-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 14,
+    "path": "service.type",
+    "original_default": "ClusterIP",
+    "injected": "n02-daefc088f-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "grafana",
+    "attempt": 15,
+    "path": "autoscaling.targetCPU",
+    "original_default": "60",
+    "injected": "n02-eb62f0fce-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 16,
+    "path": "downloadDashboardsImage.repository",
+    "original_default": "curlimages/curl",
+    "injected": "example.invalid/n02-97bf771ce-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 17,
+    "path": "sidecar.image.repository",
+    "original_default": "kiwigrid/k8s-sidecar",
+    "injected": "example.invalid/n02-d96c5fe3d-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 18,
+    "path": "sidecar.dashboards.label",
+    "original_default": "grafana_dashboard",
+    "injected": "n02-bb4b819bc-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 19,
+    "path": "sidecar.plugins.watchMethod",
+    "original_default": "WATCH",
+    "injected": "n02-a594e85c5-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 20,
+    "path": "imageRenderer.serviceMonitor.scrapeTimeout",
+    "original_default": "30s",
+    "injected": "n02-c2ebf3232-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 21,
+    "path": "sidecar.notifiers.label",
+    "original_default": "grafana_notifier",
+    "injected": "n02-70721705e-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 22,
+    "path": "initChownData.image.registry",
+    "original_default": "docker.io",
+    "injected": "example.invalid/n02-a738f9bb9-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 23,
+    "path": "serviceMonitor.scheme",
+    "original_default": "http",
+    "injected": "n02-9afa80f1e-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 24,
+    "path": "imageRenderer.grafanaProtocol",
+    "original_default": "http",
+    "injected": "n02-9a8b55dca-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 25,
+    "path": "grafana.ini.log.mode",
+    "original_default": "console",
+    "injected": "n02-311987b44-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "grafana",
+    "attempt": 26,
+    "path": "imageRenderer.containerSecurityContext.seccompProfile.type",
+    "original_default": "RuntimeDefault",
+    "injected": "https://n02-f970b1afa-probe.example.invalid",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 27,
+    "path": "persistence.size",
+    "original_default": "10Gi",
+    "injected": "n02-7f44a3544-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 28,
+    "path": "gossipPortName",
+    "original_default": "gossip",
+    "injected": "n02-0da7e39a3-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "grafana",
+    "attempt": 29,
+    "path": "initChownData.image.tag",
+    "original_default": "1.31.1",
+    "injected": "n02-ad52ad127-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 30,
+    "path": "sidecar.dashboards.reloadURL",
+    "original_default": "http://localhost:3000/api/admin/provisioning/dashboards/reload",
+    "injected": "https://n02-b1c91caf7-probe.example.invalid",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 31,
+    "path": "grafana.ini.paths.logs",
+    "original_default": "/var/log/grafana",
+    "injected": "n02-d6f4bf3da-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "grafana",
+    "attempt": 32,
+    "path": "livenessProbe.httpGet.path",
+    "original_default": "/api/health",
+    "injected": "n02-e799de86b-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "grafana",
+    "attempt": 33,
+    "path": "initChownData.image.repository",
+    "original_default": "library/busybox",
+    "injected": "example.invalid/n02-72433607a-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 34,
+    "path": "service.portName",
+    "original_default": "service",
+    "injected": "n02-d3a38397e-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "grafana",
+    "attempt": 35,
+    "path": "imageRenderer.serviceMonitor.path",
+    "original_default": "/metrics",
+    "injected": "n02-5d243eb86-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 36,
+    "path": "testFramework.image.tag",
+    "original_default": "v1.4.1",
+    "injected": "n02-7bb616e62-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "grafana",
+    "attempt": 37,
+    "path": "persistence.type",
+    "original_default": "pvc",
+    "injected": "n02-91edf2a15-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 38,
+    "path": "serviceMonitor.interval",
+    "original_default": "30s",
+    "injected": "n02-c7c9e4c74-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 39,
+    "path": "sidecar.notifiers.watchMethod",
+    "original_default": "WATCH",
+    "injected": "n02-bb6e33c28-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "grafana",
+    "attempt": 40,
+    "path": "testFramework.image.repository",
+    "original_default": "bats/bats",
+    "injected": "example.invalid/n02-232198709-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 1,
+    "path": "controller.opentelemetry.image.registry",
+    "original_default": "registry.k8s.io",
+    "injected": "example.invalid/n02-0e9aed032-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 2,
+    "path": "controller.opentelemetry.image.tag",
+    "original_default": "v20230721-3e2062ee5",
+    "injected": "n02-e00921edd-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 3,
+    "path": "controller.readinessProbe.httpGet.path",
+    "original_default": "/healthz",
+    "injected": "n02-34dfe0856-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 4,
+    "path": "controller.admissionWebhooks.failurePolicy",
+    "original_default": "Fail",
+    "injected": "n02-f049e135d-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 5,
+    "path": "controller.opentelemetry.name",
+    "original_default": "opentelemetry",
+    "injected": "n02-21c0d5555-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 6,
+    "path": "controller.image.registry",
+    "original_default": "registry.k8s.io",
+    "injected": "example.invalid/n02-de0de0919-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 7,
+    "path": "controller.ingressClassResource.name",
+    "original_default": "nginx",
+    "injected": "n02-4d6c9a805-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 8,
+    "path": "controller.admissionWebhooks.patch.image.digest",
+    "original_default": "sha256:44d1d0e9f19c63f58b380c5fddaca7cf22c7cee564adeff365225a5df5ef3334",
+    "injected": "n02-369e8c58a-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 9,
+    "path": "controller.dnsPolicy",
+    "original_default": "ClusterFirst",
+    "injected": "n02-0aeb827e9-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 10,
+    "path": "controller.service.targetPorts.http",
+    "original_default": "http",
+    "injected": "n02-196dbe8b3-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 11,
+    "path": "defaultBackend.image.registry",
+    "original_default": "registry.k8s.io",
+    "injected": "example.invalid/n02-04c43e997-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 12,
+    "path": "controller.metrics.serviceMonitor.scrapeInterval",
+    "original_default": "30s",
+    "injected": "n02-5928067ef-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 13,
+    "path": "controller.service.targetPorts.https",
+    "original_default": "https",
+    "injected": "n02-43f4ad8dc-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 14,
+    "path": "controller.admissionWebhooks.patchWebhookJob.name",
+    "original_default": "patch",
+    "injected": "n02-8e1cb849a-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 15,
+    "path": "defaultBackend.image.tag",
+    "original_default": "1.5",
+    "injected": "n02-75c787dcd-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 16,
+    "path": "controller.admissionWebhooks.patch.image.pullPolicy",
+    "original_default": "IfNotPresent",
+    "injected": "n02-6104f7509-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 17,
+    "path": "controller.livenessProbe.httpGet.scheme",
+    "original_default": "HTTP",
+    "injected": "n02-858d48895-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "ingress-nginx",
+    "attempt": 18,
+    "path": "controller.image.image",
+    "original_default": "ingress-nginx/controller",
+    "injected": "n02-bc4b400b5-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 1,
+    "path": "resources.requests.memory",
+    "original_default": "200Mi",
+    "injected": "n02-57d9c36a7-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 2,
+    "path": "readinessProbe.httpGet.scheme",
+    "original_default": "HTTPS",
+    "injected": "n02-4e30ec1b9-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 3,
+    "path": "priorityClassName",
+    "original_default": "system-cluster-critical",
+    "injected": "n02-c80df725c-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 4,
+    "path": "livenessProbe.httpGet.path",
+    "original_default": "/livez",
+    "injected": "n02-c8a932af3-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 5,
+    "path": "addonResizer.nanny.cpu",
+    "original_default": "0m",
+    "injected": "n02-c6c4abd03-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 6,
+    "path": "image.pullPolicy",
+    "original_default": "IfNotPresent",
+    "injected": "n02-2765fb104-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 7,
+    "path": "service.type",
+    "original_default": "ClusterIP",
+    "injected": "n02-e62ed97ba-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 8,
+    "path": "addonResizer.nanny.memory",
+    "original_default": "0Mi",
+    "injected": "n02-7c1265c7d-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 9,
+    "path": "addonResizer.nanny.extraMemory",
+    "original_default": "2Mi",
+    "injected": "n02-c9ba5cc5e-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 10,
+    "path": "addonResizer.nanny.extraCpu",
+    "original_default": "1m",
+    "injected": "n02-dc837b2ac-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 11,
+    "path": "readinessProbe.httpGet.port",
+    "original_default": "https",
+    "injected": "n02-606b16e63-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 12,
+    "path": "livenessProbe.httpGet.scheme",
+    "original_default": "HTTPS",
+    "injected": "n02-6620e667e-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 13,
+    "path": "securityContext.seccompProfile.type",
+    "original_default": "RuntimeDefault",
+    "injected": "https://n02-1e74a4702-probe.example.invalid",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 14,
+    "path": "addonResizer.resources.requests.cpu",
+    "original_default": "40m",
+    "injected": "n02-4c2ad83f1-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 15,
+    "path": "serviceMonitor.interval",
+    "original_default": "1m",
+    "injected": "n02-0aaac82ae-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 16,
+    "path": "serviceMonitor.scrapeTimeout",
+    "original_default": "10s",
+    "injected": "n02-bf9740826-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 17,
+    "path": "addonResizer.resources.limits.memory",
+    "original_default": "25Mi",
+    "injected": "n02-1678f6d61-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 18,
+    "path": "addonResizer.resources.requests.memory",
+    "original_default": "25Mi",
+    "injected": "n02-0b4fe0d27-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 19,
+    "path": "image.repository",
+    "original_default": "registry.k8s.io/metrics-server/metrics-server",
+    "injected": "example.invalid/n02-a0d9c6a0b-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 20,
+    "path": "addonResizer.image.tag",
+    "original_default": "1.8.19",
+    "injected": "n02-2570647c3-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 21,
+    "path": "addonResizer.resources.limits.cpu",
+    "original_default": "40m",
+    "injected": "n02-0de802b96-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 22,
+    "path": "livenessProbe.httpGet.port",
+    "original_default": "https",
+    "injected": "n02-c1fe065c7-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "metrics-server",
+    "attempt": 23,
+    "path": "resources.requests.cpu",
+    "original_default": "100m",
+    "injected": "n02-f0300c37c-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "vault",
+    "attempt": 1,
+    "path": "injector.failurePolicy",
+    "original_default": "Ignore",
+    "injected": "n02-420d77de5-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 2,
+    "path": "server.enabled",
+    "original_default": "-",
+    "injected": "n02-bbe3c47e1-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 3,
+    "path": "csi.image.pullPolicy",
+    "original_default": "IfNotPresent",
+    "injected": "n02-92a9a200c-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 4,
+    "path": "ui.externalTrafficPolicy",
+    "original_default": "Cluster",
+    "injected": "n02-ef99b3b72-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 5,
+    "path": "csi.image.tag",
+    "original_default": "1.4.1",
+    "injected": "n02-3eff6510c-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 6,
+    "path": "server.updateStrategyType",
+    "original_default": "OnDelete",
+    "injected": "n02-e895a693a-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "vault",
+    "attempt": 7,
+    "path": "server.auditStorage.accessMode",
+    "original_default": "ReadWriteOnce",
+    "injected": "n02-f4510e549-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 8,
+    "path": "server.standalone.enabled",
+    "original_default": "-",
+    "injected": "n02-d57fe4b6b-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 9,
+    "path": "server.dataStorage.accessMode",
+    "original_default": "ReadWriteOnce",
+    "injected": "n02-59a8840dc-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "vault",
+    "attempt": 10,
+    "path": "server.ingress.pathType",
+    "original_default": "Prefix",
+    "injected": "n02-9a4d20dd4-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 11,
+    "path": "server.image.repository",
+    "original_default": "hashicorp/vault",
+    "injected": "example.invalid/n02-bc5eb0d2e-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "vault",
+    "attempt": 12,
+    "path": "server.auditStorage.mountPath",
+    "original_default": "/vault/audit",
+    "injected": "n02-ebc6de365-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 13,
+    "path": "csi.agent.image.repository",
+    "original_default": "hashicorp/vault",
+    "injected": "example.invalid/n02-ac6d81f63-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 14,
+    "path": "injector.logFormat",
+    "original_default": "standard",
+    "injected": "n02-ce0aba872-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "vault",
+    "attempt": 15,
+    "path": "injector.logLevel",
+    "original_default": "info",
+    "injected": "n02-aac55c361-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "vault",
+    "attempt": 16,
+    "path": "server.image.tag",
+    "original_default": "1.15.2",
+    "injected": "n02-56696d9ae-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "vault",
+    "attempt": 17,
+    "path": "server.route.host",
+    "original_default": "chart-example.local",
+    "injected": "n02-9e76008fa-probe.example.invalid",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 18,
+    "path": "server.auditStorage.size",
+    "original_default": "10Gi",
+    "injected": "n02-89ed4e413-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 19,
+    "path": "injector.image.pullPolicy",
+    "original_default": "IfNotPresent",
+    "injected": "n02-31b2ec5eb-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "vault",
+    "attempt": 20,
+    "path": "csi.agent.logLevel",
+    "original_default": "info",
+    "injected": "n02-ec61c6735-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 21,
+    "path": "csi.agent.logFormat",
+    "original_default": "standard",
+    "injected": "n02-8bce221ba-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 22,
+    "path": "csi.daemonSet.providersDir",
+    "original_default": "/etc/kubernetes/secrets-store-csi-providers",
+    "injected": "n02-1b6ec9652-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 23,
+    "path": "csi.agent.image.tag",
+    "original_default": "1.15.2",
+    "injected": "n02-638300f8f-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 24,
+    "path": "injector.agentImage.tag",
+    "original_default": "1.15.2",
+    "injected": "n02-0eac6faf2-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "vault",
+    "attempt": 25,
+    "path": "server.image.pullPolicy",
+    "original_default": "IfNotPresent",
+    "injected": "n02-2b5fcd40b-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "vault",
+    "attempt": 26,
+    "path": "injector.webhook.matchPolicy",
+    "original_default": "Exact",
+    "injected": "n02-8bb92510f-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "vault",
+    "attempt": 27,
+    "path": "injector.image.tag",
+    "original_default": "1.3.1",
+    "injected": "n02-23c6ac55d-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "vault",
+    "attempt": 28,
+    "path": "ui.serviceType",
+    "original_default": "ClusterIP",
+    "injected": "n02-dfb1f7a53-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 29,
+    "path": "injector.enabled",
+    "original_default": "-",
+    "injected": "n02-7a7148f7e-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 30,
+    "path": "csi.image.repository",
+    "original_default": "hashicorp/vault-csi-provider",
+    "injected": "example.invalid/n02-89e5243bf-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "vault",
+    "attempt": 31,
+    "path": "injector.agentImage.repository",
+    "original_default": "hashicorp/vault",
+    "injected": "example.invalid/n02-35cfd9cc7-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "traefik",
+    "attempt": 1,
+    "path": "ports.traefik.protocol",
+    "original_default": "TCP",
+    "injected": "n02-9e92667a8-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "traefik",
+    "attempt": 2,
+    "path": "logs.access.fields.general.defaultmode",
+    "original_default": "keep",
+    "injected": "n02-700258035-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "traefik",
+    "attempt": 3,
+    "path": "ingressRoute.dashboard.matchRule",
+    "original_default": "PathPrefix(`/dashboard`) || PathPrefix(`/api`)",
+    "injected": "n02-75f1826e4-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "traefik",
+    "attempt": 4,
+    "path": "logs.general.level",
+    "original_default": "ERROR",
+    "injected": "n02-ceb6e1dfb-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "traefik",
+    "attempt": 5,
+    "path": "podSecurityContext.fsGroupChangePolicy",
+    "original_default": "OnRootMismatch",
+    "injected": "https://n02-6b5cd468f-probe.example.invalid",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "traefik",
+    "attempt": 6,
+    "path": "ports.web.protocol",
+    "original_default": "TCP",
+    "injected": "n02-64495171a-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "traefik",
+    "attempt": 7,
+    "path": "metrics.prometheus.entryPoint",
+    "original_default": "metrics",
+    "injected": "n02-ce02d6e65-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "traefik",
+    "attempt": 8,
+    "path": "ports.metrics.protocol",
+    "original_default": "TCP",
+    "injected": "n02-9b8a14ae1-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "traefik",
+    "attempt": 9,
+    "path": "persistence.name",
+    "original_default": "data",
+    "injected": "n02-c1dd57115-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "traefik",
+    "attempt": 10,
+    "path": "persistence.path",
+    "original_default": "/data",
+    "injected": "n02-2d4c15d06-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "traefik",
+    "attempt": 11,
+    "path": "logs.access.fields.headers.defaultmode",
+    "original_default": "drop",
+    "injected": "n02-6d3c5df2c-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "traefik",
+    "attempt": 12,
+    "path": "image.repository",
+    "original_default": "traefik",
+    "injected": "example.invalid/n02-531bd4251-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "traefik",
+    "attempt": 13,
+    "path": "deployment.kind",
+    "original_default": "Deployment",
+    "injected": "n02-9bed9cb98-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "traefik",
+    "attempt": 14,
+    "path": "updateStrategy.type",
+    "original_default": "RollingUpdate",
+    "injected": "n02-ed642f2be-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "traefik",
+    "attempt": 15,
+    "path": "persistence.accessMode",
+    "original_default": "ReadWriteOnce",
+    "injected": "n02-36a40b000-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "traefik",
+    "attempt": 16,
+    "path": "ports.websecure.protocol",
+    "original_default": "TCP",
+    "injected": "n02-09a8274ca-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "traefik",
+    "attempt": 17,
+    "path": "service.type",
+    "original_default": "LoadBalancer",
+    "injected": "n02-16cb7dbad-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "external-dns",
+    "attempt": 1,
+    "path": "policy",
+    "original_default": "upsert-only",
+    "injected": "n02-39f46a121-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "external-dns",
+    "attempt": 2,
+    "path": "podSecurityContext.seccompProfile.type",
+    "original_default": "RuntimeDefault",
+    "injected": "https://n02-6cc6ec501-probe.example.invalid",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "external-dns",
+    "attempt": 3,
+    "path": "registry",
+    "original_default": "txt",
+    "injected": "example.invalid/n02-9b47542ee-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "external-dns",
+    "attempt": 4,
+    "path": "interval",
+    "original_default": "1m",
+    "injected": "n02-98725bfb6-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "external-dns",
+    "attempt": 5,
+    "path": "logLevel",
+    "original_default": "info",
+    "injected": "n02-3833c1d9c-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "external-dns",
+    "attempt": 6,
+    "path": "provider.webhook.readinessProbe.httpGet.port",
+    "original_default": "http-webhook",
+    "injected": "n02-9e8913292-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "external-dns",
+    "attempt": 7,
+    "path": "image.repository",
+    "original_default": "registry.k8s.io/external-dns/external-dns",
+    "injected": "example.invalid/n02-e81158cb8-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "external-dns",
+    "attempt": 8,
+    "path": "provider.webhook.readinessProbe.httpGet.path",
+    "original_default": "/healthz",
+    "injected": "n02-7f6bdcaba-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "external-dns",
+    "attempt": 9,
+    "path": "readinessProbe.httpGet.path",
+    "original_default": "/healthz",
+    "injected": "n02-011609a93-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "external-dns",
+    "attempt": 10,
+    "path": "image.pullPolicy",
+    "original_default": "IfNotPresent",
+    "injected": "n02-669df4a31-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "external-dns",
+    "attempt": 11,
+    "path": "provider.name",
+    "original_default": "aws",
+    "injected": "n02-c28cc3f40-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "external-dns",
+    "attempt": 12,
+    "path": "deploymentStrategy.type",
+    "original_default": "Recreate",
+    "injected": "n02-5b7f4dd25-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "external-dns",
+    "attempt": 13,
+    "path": "livenessProbe.httpGet.path",
+    "original_default": "/healthz",
+    "injected": "n02-5a2475a03-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "external-dns",
+    "attempt": 14,
+    "path": "provider.webhook.image.pullPolicy",
+    "original_default": "IfNotPresent",
+    "injected": "n02-272f3071b-probe",
+    "old_template_ok": true,
+    "decision": "excluded_old_render_failed_or_value_not_exposed",
+    "error": ""
+  },
+  {
+    "family": "external-dns",
+    "attempt": 15,
+    "path": "livenessProbe.httpGet.port",
+    "original_default": "http",
+    "injected": "n02-cc5105099-probe",
+    "old_template_ok": true,
+    "decision": "included_old_only"
+  },
+  {
+    "family": "sealed-secrets",
+    "status": "archive_unavailable_prespecified_no_replacement"
+  }
+]

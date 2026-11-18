@@ -1,0 +1,41 @@
+{
+  "after": {
+    "altered": 0,
+    "extra": 0,
+    "missing": 0
+  },
+  "before": {
+    "altered": 0,
+    "extra": 0,
+    "missing": 1
+  },
+  "build": {
+    "argv": [
+      "node",
+      "/home/runner/work/FSE-EXP-1/FSE-EXP-1/n21_ci_deps/node_modules/typescript/bin/tsc",
+      "-b",
+      "tsconfig.json",
+      "--verbose",
+      "--force"
+    ],
+    "exit": 0,
+    "seconds": 1.35521,
+    "stderr_tail": "",
+    "stdout_tail": "4:32:04 AM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n4:32:04 AM - Project 'packages/alpha/tsconfig.json' is being forcibly rebuilt\n\n4:32:04 AM - Building project '/home/runner/work/FSE-EXP-1/FSE-EXP-1/n21_gha_fixture/packages/alpha/tsconfig.json'...\n\n4:32:04 AM - Project 'packages/beta/tsconfig.json' is being forcibly rebuilt\n\n4:32:04 AM - Building project '/home/runner/work/FSE-EXP-1/FSE-EXP-1/n21_gha_fixture/packages/beta/tsconfig.json'...\n\n"
+  },
+  "build_child_cpu_system_seconds": 0.24277,
+  "build_child_cpu_user_seconds": 2.48663,
+  "cache_state": "partial",
+  "correct_against_trusted_oracle": true,
+  "detected_projects": [],
+  "fault": "none",
+  "github_run_id": "44237916114",
+  "input_rejected": false,
+  "observed_in_github_actions": true,
+  "output_sha_scanned_bytes": 0,
+  "runner_name": "GitHub Actions 1000000299",
+  "runner_os": "Linux",
+  "strategy": "force_all",
+  "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+  "work_seconds": 1.35532
+}

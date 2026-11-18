@@ -1,0 +1,82 @@
+{
+  "key": "e0026cf332eb82d023",
+  "args": {
+    "crate": "validator",
+    "version": "0.20.0",
+    "id": "b50059a3785d647d",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1065,
+  "errors": [
+    {
+      "code": null,
+      "message": "`match` arm body without braces",
+      "rendered": "error: `match` arm body without braces\n  --> src/main.rs:33:13\n   |\n33 |   Err(e) => return e;\n   |          -- ^^^^^^^^ this statement is not surrounded by a body\n   |          |\n   |          while parsing the `match` arm starting here\n   |\nhelp: replace `;` with `,` to end a `match` arm expression\n   |\n33 -   Err(e) => return e;\n33 +   Err(e) => return e,\n   |\n\n",
+      "line": 33
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde`",
+      "rendered": "error[E0432]: unresolved import `serde`\n --> src/main.rs:2:5\n  |\n2 | use serde::Deserialize;\n  |     ^^^^^ use of unresolved module or unlinked crate `serde`\n  |\n  = help: if you wanted to use a crate named `serde`, use `cargo add serde` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": null,
+      "message": "cannot find derive macro `Validate` in this scope",
+      "rendered": "error: cannot find derive macro `Validate` in this scope\n --> src/main.rs:7:17\n  |\n7 | #[derive(Debug, Validate, Deserialize)]\n  |                 ^^^^^^^^\n  |\nnote: `Validate` is imported here, but it is only a trait, without a derive macro\n --> src/main.rs:5:17\n  |\n5 | use validator::{Validate, ValidationError};\n  |                 ^^^^^^^^\n\n",
+      "line": 7
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `validate` in this scope",
+      "rendered": "error: cannot find attribute `validate` in this scope\n --> src/main.rs:9:7\n  |\n9 |     #[validate(email)]\n  |       ^^^^^^^^\n\n",
+      "line": 9
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `validate` in this scope",
+      "rendered": "error: cannot find attribute `validate` in this scope\n  --> src/main.rs:11:7\n   |\n11 |     #[validate(url)]\n   |       ^^^^^^^^\n\n",
+      "line": 11
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `validate` in this scope",
+      "rendered": "error: cannot find attribute `validate` in this scope\n  --> src/main.rs:13:7\n   |\n13 |     #[validate(length(min = 1), custom(function = \"validate_unique_username\"))]\n   |       ^^^^^^^^\n\n",
+      "line": 13
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `serde` in this scope",
+      "rendered": "error: cannot find attribute `serde` in this scope\n  --> src/main.rs:14:7\n   |\n14 |     #[serde(rename = \"firstName\")]\n   |       ^^^^^\n   |\n   = note: `serde` is an attribute that can be used by the derive macros `Deserialize` and `Serialize`, you might be missing a `derive` attribute\n\n",
+      "line": 14
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `validate` in this scope",
+      "rendered": "error: cannot find attribute `validate` in this scope\n  --> src/main.rs:16:7\n   |\n16 |     #[validate(range(min = 18, max = 20))]\n   |       ^^^^^^^^\n\n",
+      "line": 16
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `validate` in this scope",
+      "rendered": "error: cannot find attribute `validate` in this scope\n  --> src/main.rs:18:7\n   |\n18 |     #[validate(range(exclusive_min = 0.0, max = 100.0))]\n   |       ^^^^^^^^\n\n",
+      "line": 18
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find value `signup_data` in this scope",
+      "rendered": "error[E0425]: cannot find value `signup_data` in this scope\n  --> src/main.rs:31:7\n   |\n31 | match signup_data.validate() {\n   |       ^^^^^^^^^^^ not found in this scope\n\n",
+      "line": 31
+    }
+  ],
+  "error_count": 10,
+  "stderr_excerpt": "error: could not compile `n05_validator_consumer` (bin \"n05_validator_consumer\") due to 10 previous errors\n",
+  "code_sha256": "0f1782304bd8538c98f0b99b6c8d398fe32a8abe3dbec283c6e9e8718538f115",
+  "manifest_sha256": "2aa2f15e9c0020389c7a72fbb506dda19fd624635cf25ac0ac4172f7a7feb93a",
+  "log_file": "prospective/results/check_logs/e0026cf332eb82d023.txt.gz"
+}

@@ -1,0 +1,21 @@
+{
+  "key": "c3e7a1301096f78c3c",
+  "args": {
+    "crate": "itertools",
+    "version": "0.14.0",
+    "id": "2b54f5fa3f49a42b",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0625,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "358e0d23ebd77b9d4ecbbc3ec7dc6d08108bccece00908fb14f754ac16fca958",
+  "manifest_sha256": "7e01cbf171a4753e51bac210181275e8cb7875a26396cbd9f098fc1998f5c479",
+  "log_file": "results/check_logs/c3e7a1301096f78c3c.txt.gz"
+}

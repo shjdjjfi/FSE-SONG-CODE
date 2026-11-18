@@ -1,0 +1,21 @@
+{
+  "key": "7ae69d93a32cdd7668",
+  "args": {
+    "crate": "chrono",
+    "version": "0.4.41",
+    "id": "8a96b8f2b8ad565a",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0667,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "5f73c4f6b61fc660eeaf62e6550a8865ab711016359ac472d6aed8170b21234a",
+  "manifest_sha256": "00f35cfcd2c609637cd7ad32face70d294e7724d471d8bec6da4256c5a4df9ae",
+  "log_file": "results/check_logs/7ae69d93a32cdd7668.txt.gz"
+}

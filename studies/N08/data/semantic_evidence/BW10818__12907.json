@@ -1,0 +1,41 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 0,
+  "bytes": 6115,
+  "control_flow_or_callback_lines": 3,
+  "event": "BW10818",
+  "examples": [
+    {
+      "change": "+",
+      "code": "return BiometricsStatus.HardwareUnavailable;",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "} else {",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "return BiometricsStatus.HardwareUnavailable;",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:34.550957+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+  "noncomment_nonimport_changed_lines": 3,
+  "pr": 12907,
+  "repository": "bitwarden/clients",
+  "sha256": "9394aafd194cd9a7642a15ae1067a3faffec345ef0754a6d867a758bc4cfcc32",
+  "target_code_changed_lines": 4,
+  "target_files": [
+    "apps/desktop/src/key-management/biometrics/biometrics.service.spec.ts",
+    "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/12907.patch"
+}

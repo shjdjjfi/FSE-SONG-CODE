@@ -1,0 +1,77 @@
+{
+  "case": "quramy",
+  "kind": "native, checked-in project-reference example (npm ci dependencies)",
+  "source_units": {
+    "x-core": 1,
+    "x-cli": 3
+  },
+  "outputs": {
+    "x-core": 3,
+    "x-cli": 9
+  },
+  "expected_digests": {
+    "x-core": {
+      "index.d.ts": "9fff6c6db1251bf678fcc7c23a6436a603b9fd904ab1d169bbaceca5e5ebf33e",
+      "index.js": "4283a49cafa78b57916294c431285d69c8d37496e01a7e0951206f6dbf9d24e8",
+      "index.js.map": "7d1627c86c44871c1431b279bb930fdb992c75234a3fbc157c910a37e95b6d7f"
+    },
+    "x-cli": {
+      "cli.d.ts": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "cli.js": "91f2bad67aa69aa1af73314d7505e3af45b104c89242cabd1a1d5c1487186a5a",
+      "cli.js.map": "7a76af40a173f005386c3bd6d24090c8ba5513c4ece8957d83ad1c9464fb1eb1",
+      "main.d.ts": "786b385a7845271916210201619f4ad30428ba404b2de674637865ffccfcab63",
+      "main.js": "69ac5fb539ae4f60bd0c10e332480b816a92ad63f931073cd6dcc9be84eabdfa",
+      "main.js.map": "739b0b921235799a87374eaaa1d15e0567ef156ce85399f4a74c91fde7d33710",
+      "main.spec.d.ts": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "main.spec.js": "76d6c6ecd055ca44e93d7abff23c528e4019215e02fde66c91af0c77dda86291",
+      "main.spec.js.map": "f96d416f09e354806449ba0a0f60079d87d773a8a015b37bb369a991396d33b3"
+    }
+  },
+  "compiler": "typescript@5.9.3",
+  "initial_build": {
+    "argv": [
+      "node",
+      "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+      "--build",
+      "tsconfig.build.json",
+      "--verbose"
+    ],
+    "exit": 0,
+    "seconds": 1.3949,
+    "compiled_projects": [
+      "x-core",
+      "x-cli"
+    ],
+    "stdout": "12:02:22 PM - Projects in this build: \n    * packages/x-core/tsconfig.json\n    * packages/x-cli/tsconfig.json\n    * tsconfig.build.json\n\n12:02:22 PM - Project 'packages/x-core/tsconfig.json' is out of date because output 'packages/x-core/tsconfig.tsbuildinfo' is older than input 'packages/x-core/tsconfig.json'\n\n12:02:22 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/templates/quramy/packages/x-core/tsconfig.json'...\n\n12:02:23 PM - Updating unchanged output timestamps of project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/templates/quramy/packages/x-core/tsconfig.json'...\n\n12:02:23 PM - Project 'packages/x-cli/tsconfig.json' is out of date because buildinfo file 'packages/x-cli/tsconfig.tsbuildinfo' indicates that program needs to report errors.\n\n12:02:23 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/templates/quramy/packages/x-cli/tsconfig.json'...\n\n",
+    "stderr": ""
+  },
+  "independent_clean_build": {
+    "argv": [
+      "node",
+      "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+      "--build",
+      "tsconfig.build.json",
+      "--verbose"
+    ],
+    "exit": 0,
+    "seconds": 0.9741,
+    "compiled_projects": [
+      "x-core",
+      "x-cli"
+    ],
+    "stdout": "12:02:23 PM - Projects in this build: \n    * packages/x-core/tsconfig.json\n    * packages/x-cli/tsconfig.json\n    * tsconfig.build.json\n\n12:02:23 PM - Project 'packages/x-core/tsconfig.json' is out of date because output file 'packages/x-core/tsconfig.tsbuildinfo' does not exist\n\n12:02:23 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/oracles/quramy/packages/x-core/tsconfig.json'...\n\n12:02:24 PM - Project 'packages/x-cli/tsconfig.json' is out of date because output file 'packages/x-cli/tsconfig.tsbuildinfo' does not exist\n\n12:02:24 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/oracles/quramy/packages/x-cli/tsconfig.json'...\n\n",
+    "stderr": ""
+  },
+  "oracle_exact_match": true,
+  "extra": {
+    "extracted_files": 21,
+    "npm_ci": {
+      "argv": [
+        "npm",
+        "ci"
+      ],
+      "exit": 0,
+      "reused": true
+    }
+  }
+}

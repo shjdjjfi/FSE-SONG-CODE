@@ -1,0 +1,35 @@
+{
+  "key": "28f7be6b955e29cbf2",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "089aafa8ca1f9b01",
+    "profile": "candidate",
+    "features": [
+      "io-util",
+      "macros",
+      "process",
+      "signal",
+      "test-util",
+      "time"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0757,
+  "errors": [
+    {
+      "code": null,
+      "message": "The default runtime flavor is `multi_thread`, but the `rt-multi-thread` feature is disabled.",
+      "rendered": "error: The default runtime flavor is `multi_thread`, but the `rt-multi-thread` feature is disabled.\n --> src/main.rs:3:1\n  |\n3 | #[tokio::main]\n  | ^^^^^^^^^^^^^^\n  |\n  = note: this error originates in the attribute macro `tokio::main` (in Nightly builds, run with -Z macro-backtrace for more info)\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 1 previous error\n",
+  "code_sha256": "c2de536ae7c2ea007691d6542a892cdd17dc249bfcf10d1555d9e7081299bf6a",
+  "manifest_sha256": "1c68334e9f5ba2cf9c649d320a22fee8c6307929f25944a709eeab410b121af0",
+  "log_file": "results/check_logs/28f7be6b955e29cbf2.txt.gz"
+}

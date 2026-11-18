@@ -1,0 +1,76 @@
+{
+  "key": "df5f85be070131b628",
+  "args": {
+    "crate": "sqlparser",
+    "version": "0.56.0",
+    "id": "6980eb1a861e443d",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1606,
+  "errors": [
+    {
+      "code": "E0405",
+      "message": "cannot find trait `Visitor` in this scope",
+      "rendered": "error[E0405]: cannot find trait `Visitor` in this scope\n  --> src/main.rs:10:6\n   |\n10 | impl Visitor for V {\n   |      ^^^^^^^ not found in this scope\n   |\nhelp: consider importing this trait\n   |\n 1 + use sqlparser::ast::Visitor;\n   |\n\n",
+      "line": 10
+    },
+    {
+      "code": "E0412",
+      "message": "cannot find type `ObjectName` in this scope",
+      "rendered": "error[E0412]: cannot find type `ObjectName` in this scope\n  --> src/main.rs:13:47\n   |\n13 |   fn pre_visit_relation(&mut self, relation: &ObjectName) -> ControlFlow<Self::Break> {\n   |                                               ^^^^^^^^^^ not found in this scope\n   |\nhelp: consider importing this struct\n   |\n 1 + use sqlparser::ast::ObjectName;\n   |\n\n",
+      "line": 13
+    },
+    {
+      "code": "E0412",
+      "message": "cannot find type `ControlFlow` in this scope",
+      "rendered": "error[E0412]: cannot find type `ControlFlow` in this scope\n  --> src/main.rs:13:62\n   |\n13 |   fn pre_visit_relation(&mut self, relation: &ObjectName) -> ControlFlow<Self::Break> {\n   |                                                              ^^^^^^^^^^^ not found in this scope\n   |\nhelp: consider importing this enum\n   |\n 1 + use std::ops::ControlFlow;\n   |\n\n",
+      "line": 13
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `ControlFlow`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `ControlFlow`\n  --> src/main.rs:15:5\n   |\n15 |     ControlFlow::Continue(())\n   |     ^^^^^^^^^^^ use of undeclared type `ControlFlow`\n   |\nhelp: consider importing this enum\n   |\n 1 + use std::ops::ControlFlow;\n   |\n\n",
+      "line": 15
+    },
+    {
+      "code": "E0412",
+      "message": "cannot find type `Expr` in this scope",
+      "rendered": "error[E0412]: cannot find type `Expr` in this scope\n  --> src/main.rs:18:39\n   |\n18 |   fn pre_visit_expr(&mut self, expr: &Expr) -> ControlFlow<Self::Break> {\n   |                                       ^^^^ not found in this scope\n   |\nhelp: consider importing this enum\n   |\n 1 + use sqlparser::ast::Expr;\n   |\n\n",
+      "line": 18
+    },
+    {
+      "code": "E0412",
+      "message": "cannot find type `ControlFlow` in this scope",
+      "rendered": "error[E0412]: cannot find type `ControlFlow` in this scope\n  --> src/main.rs:18:48\n   |\n18 |   fn pre_visit_expr(&mut self, expr: &Expr) -> ControlFlow<Self::Break> {\n   |                                                ^^^^^^^^^^^ not found in this scope\n   |\nhelp: consider importing this enum\n   |\n 1 + use std::ops::ControlFlow;\n   |\n\n",
+      "line": 18
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `ControlFlow`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `ControlFlow`\n  --> src/main.rs:20:5\n   |\n20 |     ControlFlow::Continue(())\n   |     ^^^^^^^^^^^ use of undeclared type `ControlFlow`\n   |\nhelp: consider importing this enum\n   |\n 1 + use std::ops::ControlFlow;\n   |\n\n",
+      "line": 20
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Parser`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Parser`\n  --> src/main.rs:25:18\n   |\n25 | let statements = Parser::parse_sql(&GenericDialect{}, sql)\n   |                  ^^^^^^ use of undeclared type `Parser`\n   |\nhelp: consider importing this struct\n   |\n 1 + use sqlparser::parser::Parser;\n   |\n\n",
+      "line": 25
+    },
+    {
+      "code": "E0422",
+      "message": "cannot find struct, variant or union type `GenericDialect` in this scope",
+      "rendered": "error[E0422]: cannot find struct, variant or union type `GenericDialect` in this scope\n  --> src/main.rs:25:37\n   |\n25 | let statements = Parser::parse_sql(&GenericDialect{}, sql)\n   |                                     ^^^^^^^^^^^^^^ not found in this scope\n   |\nhelp: consider importing this struct\n   |\n 1 + use sqlparser::dialect::GenericDialect;\n   |\n\n",
+      "line": 25
+    }
+  ],
+  "error_count": 9,
+  "stderr_excerpt": "error: could not compile `n05_sqlparser_consumer` (bin \"n05_sqlparser_consumer\") due to 9 previous errors\n",
+  "code_sha256": "92a8436d964f0fcceccc02fe4c438cc71207f2849918f8de687a82c1f60df4a8",
+  "manifest_sha256": "acdb168c706aea22a036f610169d5067563234d202e06316f4d8055ed2c915d8",
+  "log_file": "prospective/results/check_logs/df5f85be070131b628.txt.gz"
+}

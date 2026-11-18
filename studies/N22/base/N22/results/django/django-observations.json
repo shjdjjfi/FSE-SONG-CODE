@@ -1,0 +1,1205 @@
+{
+  "environment": {
+    "django": "5.1.8",
+    "python": "3.12.14",
+    "sqlite": "3.53.1"
+  },
+  "petter": {
+    "source": "https://github.com/PetterS/django-demo-app",
+    "issue": "https://code.djangoproject.com/ticket/29843",
+    "commit": "8c62fd7c54a894d251679ab2b2f27138166380f9",
+    "observations": [
+      {
+        "scenario": "direct",
+        "success": false,
+        "steps": [
+          {
+            "argv": [
+              "python",
+              "manage.py",
+              "migrate",
+              "auth",
+              "--noinput",
+              "--verbosity",
+              "0"
+            ],
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "System check identified some issues:\n\nWARNINGS:\nmyapp.MyModel: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.\n\tHINT: Configure the DEFAULT_AUTO_FIELD setting or the MyappConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.\n",
+            "ms": 635.804
+          },
+          {
+            "argv": [
+              "python",
+              "manage.py",
+              "migrate",
+              "myapp",
+              "--noinput",
+              "--verbosity",
+              "0"
+            ],
+            "return_code": 1,
+            "stdout": "",
+            "stderr": "System check identified some issues:\n\nWARNINGS:\nmyapp.MyModel: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.\n\tHINT: Configure the DEFAULT_AUTO_FIELD setting or the MyappConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.\nTraceback (most recent call last):\n  File \"/tmp/n22-petter-c68he_n7/source/manage.py\", line 15, in <module>\n    execute_from_command_line(sys.argv)\n  File \"/workspace/scratch/6053d4dcc858/n22_vendor/django/core/management/__init__.py\", line 442, in execute_from_command_line\n    utility.execute()\n  File \"/workspace/scratch/6053d4dcc858/n22_vendor/django/core/management/__init__.py\", line 436, in execute\n    self.fetch_command(subcommand).run_from_argv(self.argv)\n  File \"/workspace/scratch/6053d4dcc858/n22_vendor/django/core/management/base.py\", line 413, in run_from_argv\n    self.execute(*args, **cmd_options)\n  File \"/workspace/scratch/6053d4dcc858/n22_vendor/django/core/management/base.py\", line 459, in execute\n    output = self.handle(*args, **options)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/6053d4dcc858/n22_vendor/django/core/management/base.py\", line 107, in wrapper\n    res = handle_func(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/6053d4dcc858/n22_vendor/django/core/management/commands/migrate.py\", line 357, in handle\n    post_migrate_state = executor.migrate(\n                         ^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/6053d4dcc858/n22_vendor/django/db/migrations/executor.py\", line 135, in migrate\n    state = self._migrate_all_forwards(\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/6053d4dcc858/n22_vendor/django/db/migrations/executor.py\", line 167, in _migrate_all_forwards\n    state = self.apply_migration(\n            ^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/6053d4dcc858/n22_vendor/django/db/migrations/executor.py\", line 255, in apply_migration\n    state = migration.apply(state, schema_editor)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/6053d4dcc858/n22_vendor/django/db/migrations/migration.py\", line 132, in apply\n    operation.database_forwards(\n  File \"/workspace/scratch/6053d4dcc858/n22_vendor/django/db/migrations/operations/special.py\", line 196, in database_forwards\n    self.code(from_state.apps, schema_editor)\n  File \"/tmp/n22-petter-c68he_n7/source/myapp/migrations/0003_auto_20181012_1054.py\", line 19, in apply_migration\n    permission = Permission.objects.get(codename=permission_code)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/6053d4dcc858/n22_vendor/django/db/models/manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/6053d4dcc858/n22_vendor/django/db/models/query.py\", line 649, in get\n    raise self.model.DoesNotExist(\ndjango.contrib.auth.models.Permission.DoesNotExist: Permission matching query does not exist.\n",
+            "ms": 422.402
+          }
+        ],
+        "database": "petter-direct.sqlite",
+        "schema": [
+          [
+            "auth_group",
+            "CREATE TABLE \"auth_group\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"name\" varchar(150) NOT NULL UNIQUE)"
+          ],
+          [
+            "auth_group_permissions",
+            "CREATE TABLE \"auth_group_permissions\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"group_id\" integer NOT NULL REFERENCES \"auth_group\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"permission_id\" integer NOT NULL REFERENCES \"auth_permission\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "auth_group_permissions_group_id_b120cbf9",
+            "CREATE INDEX \"auth_group_permissions_group_id_b120cbf9\" ON \"auth_group_permissions\" (\"group_id\")"
+          ],
+          [
+            "auth_group_permissions_group_id_permission_id_0cd325b0_uniq",
+            "CREATE UNIQUE INDEX \"auth_group_permissions_group_id_permission_id_0cd325b0_uniq\" ON \"auth_group_permissions\" (\"group_id\", \"permission_id\")"
+          ],
+          [
+            "auth_group_permissions_permission_id_84c5c92e",
+            "CREATE INDEX \"auth_group_permissions_permission_id_84c5c92e\" ON \"auth_group_permissions\" (\"permission_id\")"
+          ],
+          [
+            "auth_permission",
+            "CREATE TABLE \"auth_permission\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"content_type_id\" integer NOT NULL REFERENCES \"django_content_type\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"codename\" varchar(100) NOT NULL, \"name\" varchar(255) NOT NULL)"
+          ],
+          [
+            "auth_permission_content_type_id_2f476e4b",
+            "CREATE INDEX \"auth_permission_content_type_id_2f476e4b\" ON \"auth_permission\" (\"content_type_id\")"
+          ],
+          [
+            "auth_permission_content_type_id_codename_01ab375a_uniq",
+            "CREATE UNIQUE INDEX \"auth_permission_content_type_id_codename_01ab375a_uniq\" ON \"auth_permission\" (\"content_type_id\", \"codename\")"
+          ],
+          [
+            "auth_user",
+            "CREATE TABLE \"auth_user\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"password\" varchar(128) NOT NULL, \"last_login\" datetime NULL, \"is_superuser\" bool NOT NULL, \"username\" varchar(150) NOT NULL UNIQUE, \"last_name\" varchar(150) NOT NULL, \"email\" varchar(254) NOT NULL, \"is_staff\" bool NOT NULL, \"is_active\" bool NOT NULL, \"date_joined\" datetime NOT NULL, \"first_name\" varchar(150) NOT NULL)"
+          ],
+          [
+            "auth_user_groups",
+            "CREATE TABLE \"auth_user_groups\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"user_id\" integer NOT NULL REFERENCES \"auth_user\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"group_id\" integer NOT NULL REFERENCES \"auth_group\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "auth_user_groups_group_id_97559544",
+            "CREATE INDEX \"auth_user_groups_group_id_97559544\" ON \"auth_user_groups\" (\"group_id\")"
+          ],
+          [
+            "auth_user_groups_user_id_6a12ed8b",
+            "CREATE INDEX \"auth_user_groups_user_id_6a12ed8b\" ON \"auth_user_groups\" (\"user_id\")"
+          ],
+          [
+            "auth_user_groups_user_id_group_id_94350c0c_uniq",
+            "CREATE UNIQUE INDEX \"auth_user_groups_user_id_group_id_94350c0c_uniq\" ON \"auth_user_groups\" (\"user_id\", \"group_id\")"
+          ],
+          [
+            "auth_user_user_permissions",
+            "CREATE TABLE \"auth_user_user_permissions\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"user_id\" integer NOT NULL REFERENCES \"auth_user\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"permission_id\" integer NOT NULL REFERENCES \"auth_permission\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "auth_user_user_permissions_permission_id_1fbb5f2c",
+            "CREATE INDEX \"auth_user_user_permissions_permission_id_1fbb5f2c\" ON \"auth_user_user_permissions\" (\"permission_id\")"
+          ],
+          [
+            "auth_user_user_permissions_user_id_a95ead1b",
+            "CREATE INDEX \"auth_user_user_permissions_user_id_a95ead1b\" ON \"auth_user_user_permissions\" (\"user_id\")"
+          ],
+          [
+            "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq",
+            "CREATE UNIQUE INDEX \"auth_user_user_permissions_user_id_permission_id_14a6b632_uniq\" ON \"auth_user_user_permissions\" (\"user_id\", \"permission_id\")"
+          ],
+          [
+            "django_content_type",
+            "CREATE TABLE \"django_content_type\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"app_label\" varchar(100) NOT NULL, \"model\" varchar(100) NOT NULL)"
+          ],
+          [
+            "django_content_type_app_label_model_76bd3d3b_uniq",
+            "CREATE UNIQUE INDEX \"django_content_type_app_label_model_76bd3d3b_uniq\" ON \"django_content_type\" (\"app_label\", \"model\")"
+          ],
+          [
+            "django_migrations",
+            "CREATE TABLE \"django_migrations\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"app\" varchar(255) NOT NULL, \"name\" varchar(255) NOT NULL, \"applied\" datetime NOT NULL)"
+          ],
+          [
+            "myapp_mymodel",
+            "CREATE TABLE \"myapp_mymodel\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"data\" integer NOT NULL)"
+          ]
+        ],
+        "ledger": [
+          [
+            "auth",
+            "0001_initial"
+          ],
+          [
+            "auth",
+            "0002_alter_permission_name_max_length"
+          ],
+          [
+            "auth",
+            "0003_alter_user_email_max_length"
+          ],
+          [
+            "auth",
+            "0004_alter_user_username_opts"
+          ],
+          [
+            "auth",
+            "0005_alter_user_last_login_null"
+          ],
+          [
+            "auth",
+            "0006_require_contenttypes_0002"
+          ],
+          [
+            "auth",
+            "0007_alter_validators_add_error_messages"
+          ],
+          [
+            "auth",
+            "0008_alter_user_username_max_length"
+          ],
+          [
+            "auth",
+            "0009_alter_user_last_name_max_length"
+          ],
+          [
+            "auth",
+            "0010_alter_group_name_max_length"
+          ],
+          [
+            "auth",
+            "0011_update_proxy_permissions"
+          ],
+          [
+            "auth",
+            "0012_alter_user_first_name_max_length"
+          ],
+          [
+            "contenttypes",
+            "0001_initial"
+          ],
+          [
+            "contenttypes",
+            "0002_remove_content_type_name"
+          ],
+          [
+            "myapp",
+            "0001_initial"
+          ],
+          [
+            "myapp",
+            "0002_auto_20181012_1052"
+          ]
+        ],
+        "content": {
+          "custom_permissions": [],
+          "employee_group": []
+        }
+      },
+      {
+        "scenario": "staged",
+        "success": true,
+        "steps": [
+          {
+            "argv": [
+              "python",
+              "manage.py",
+              "migrate",
+              "auth",
+              "--noinput",
+              "--verbosity",
+              "0"
+            ],
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "System check identified some issues:\n\nWARNINGS:\nmyapp.MyModel: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.\n\tHINT: Configure the DEFAULT_AUTO_FIELD setting or the MyappConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.\n",
+            "ms": 381.18
+          },
+          {
+            "argv": [
+              "python",
+              "manage.py",
+              "migrate",
+              "myapp",
+              "0001_initial",
+              "--noinput",
+              "--verbosity",
+              "0"
+            ],
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "System check identified some issues:\n\nWARNINGS:\nmyapp.MyModel: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.\n\tHINT: Configure the DEFAULT_AUTO_FIELD setting or the MyappConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.\n",
+            "ms": 349.826
+          },
+          {
+            "argv": [
+              "python",
+              "manage.py",
+              "migrate",
+              "myapp",
+              "0002_auto_20181012_1052",
+              "--noinput",
+              "--verbosity",
+              "0"
+            ],
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "System check identified some issues:\n\nWARNINGS:\nmyapp.MyModel: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.\n\tHINT: Configure the DEFAULT_AUTO_FIELD setting or the MyappConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.\n",
+            "ms": 319.701
+          },
+          {
+            "argv": [
+              "python",
+              "manage.py",
+              "migrate",
+              "myapp",
+              "0003_auto_20181012_1054",
+              "--noinput",
+              "--verbosity",
+              "0"
+            ],
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "System check identified some issues:\n\nWARNINGS:\nmyapp.MyModel: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.\n\tHINT: Configure the DEFAULT_AUTO_FIELD setting or the MyappConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.\n",
+            "ms": 368.632
+          }
+        ],
+        "database": "petter-staged.sqlite",
+        "schema": [
+          [
+            "auth_group",
+            "CREATE TABLE \"auth_group\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"name\" varchar(150) NOT NULL UNIQUE)"
+          ],
+          [
+            "auth_group_permissions",
+            "CREATE TABLE \"auth_group_permissions\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"group_id\" integer NOT NULL REFERENCES \"auth_group\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"permission_id\" integer NOT NULL REFERENCES \"auth_permission\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "auth_group_permissions_group_id_b120cbf9",
+            "CREATE INDEX \"auth_group_permissions_group_id_b120cbf9\" ON \"auth_group_permissions\" (\"group_id\")"
+          ],
+          [
+            "auth_group_permissions_group_id_permission_id_0cd325b0_uniq",
+            "CREATE UNIQUE INDEX \"auth_group_permissions_group_id_permission_id_0cd325b0_uniq\" ON \"auth_group_permissions\" (\"group_id\", \"permission_id\")"
+          ],
+          [
+            "auth_group_permissions_permission_id_84c5c92e",
+            "CREATE INDEX \"auth_group_permissions_permission_id_84c5c92e\" ON \"auth_group_permissions\" (\"permission_id\")"
+          ],
+          [
+            "auth_permission",
+            "CREATE TABLE \"auth_permission\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"content_type_id\" integer NOT NULL REFERENCES \"django_content_type\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"codename\" varchar(100) NOT NULL, \"name\" varchar(255) NOT NULL)"
+          ],
+          [
+            "auth_permission_content_type_id_2f476e4b",
+            "CREATE INDEX \"auth_permission_content_type_id_2f476e4b\" ON \"auth_permission\" (\"content_type_id\")"
+          ],
+          [
+            "auth_permission_content_type_id_codename_01ab375a_uniq",
+            "CREATE UNIQUE INDEX \"auth_permission_content_type_id_codename_01ab375a_uniq\" ON \"auth_permission\" (\"content_type_id\", \"codename\")"
+          ],
+          [
+            "auth_user",
+            "CREATE TABLE \"auth_user\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"password\" varchar(128) NOT NULL, \"last_login\" datetime NULL, \"is_superuser\" bool NOT NULL, \"username\" varchar(150) NOT NULL UNIQUE, \"last_name\" varchar(150) NOT NULL, \"email\" varchar(254) NOT NULL, \"is_staff\" bool NOT NULL, \"is_active\" bool NOT NULL, \"date_joined\" datetime NOT NULL, \"first_name\" varchar(150) NOT NULL)"
+          ],
+          [
+            "auth_user_groups",
+            "CREATE TABLE \"auth_user_groups\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"user_id\" integer NOT NULL REFERENCES \"auth_user\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"group_id\" integer NOT NULL REFERENCES \"auth_group\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "auth_user_groups_group_id_97559544",
+            "CREATE INDEX \"auth_user_groups_group_id_97559544\" ON \"auth_user_groups\" (\"group_id\")"
+          ],
+          [
+            "auth_user_groups_user_id_6a12ed8b",
+            "CREATE INDEX \"auth_user_groups_user_id_6a12ed8b\" ON \"auth_user_groups\" (\"user_id\")"
+          ],
+          [
+            "auth_user_groups_user_id_group_id_94350c0c_uniq",
+            "CREATE UNIQUE INDEX \"auth_user_groups_user_id_group_id_94350c0c_uniq\" ON \"auth_user_groups\" (\"user_id\", \"group_id\")"
+          ],
+          [
+            "auth_user_user_permissions",
+            "CREATE TABLE \"auth_user_user_permissions\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"user_id\" integer NOT NULL REFERENCES \"auth_user\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"permission_id\" integer NOT NULL REFERENCES \"auth_permission\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "auth_user_user_permissions_permission_id_1fbb5f2c",
+            "CREATE INDEX \"auth_user_user_permissions_permission_id_1fbb5f2c\" ON \"auth_user_user_permissions\" (\"permission_id\")"
+          ],
+          [
+            "auth_user_user_permissions_user_id_a95ead1b",
+            "CREATE INDEX \"auth_user_user_permissions_user_id_a95ead1b\" ON \"auth_user_user_permissions\" (\"user_id\")"
+          ],
+          [
+            "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq",
+            "CREATE UNIQUE INDEX \"auth_user_user_permissions_user_id_permission_id_14a6b632_uniq\" ON \"auth_user_user_permissions\" (\"user_id\", \"permission_id\")"
+          ],
+          [
+            "django_content_type",
+            "CREATE TABLE \"django_content_type\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"app_label\" varchar(100) NOT NULL, \"model\" varchar(100) NOT NULL)"
+          ],
+          [
+            "django_content_type_app_label_model_76bd3d3b_uniq",
+            "CREATE UNIQUE INDEX \"django_content_type_app_label_model_76bd3d3b_uniq\" ON \"django_content_type\" (\"app_label\", \"model\")"
+          ],
+          [
+            "django_migrations",
+            "CREATE TABLE \"django_migrations\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"app\" varchar(255) NOT NULL, \"name\" varchar(255) NOT NULL, \"applied\" datetime NOT NULL)"
+          ],
+          [
+            "myapp_mymodel",
+            "CREATE TABLE \"myapp_mymodel\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"data\" integer NOT NULL)"
+          ]
+        ],
+        "ledger": [
+          [
+            "auth",
+            "0001_initial"
+          ],
+          [
+            "auth",
+            "0002_alter_permission_name_max_length"
+          ],
+          [
+            "auth",
+            "0003_alter_user_email_max_length"
+          ],
+          [
+            "auth",
+            "0004_alter_user_username_opts"
+          ],
+          [
+            "auth",
+            "0005_alter_user_last_login_null"
+          ],
+          [
+            "auth",
+            "0006_require_contenttypes_0002"
+          ],
+          [
+            "auth",
+            "0007_alter_validators_add_error_messages"
+          ],
+          [
+            "auth",
+            "0008_alter_user_username_max_length"
+          ],
+          [
+            "auth",
+            "0009_alter_user_last_name_max_length"
+          ],
+          [
+            "auth",
+            "0010_alter_group_name_max_length"
+          ],
+          [
+            "auth",
+            "0011_update_proxy_permissions"
+          ],
+          [
+            "auth",
+            "0012_alter_user_first_name_max_length"
+          ],
+          [
+            "contenttypes",
+            "0001_initial"
+          ],
+          [
+            "contenttypes",
+            "0002_remove_content_type_name"
+          ],
+          [
+            "myapp",
+            "0001_initial"
+          ],
+          [
+            "myapp",
+            "0002_auto_20181012_1052"
+          ],
+          [
+            "myapp",
+            "0003_auto_20181012_1054"
+          ]
+        ],
+        "content": {
+          "custom_permissions": [
+            [
+              "can_hear"
+            ],
+            [
+              "can_smell"
+            ]
+          ],
+          "employee_group": [
+            [
+              "employees",
+              "can_hear"
+            ]
+          ]
+        }
+      },
+      {
+        "scenario": "checkpoint_direct",
+        "success": true,
+        "steps": [
+          {
+            "argv": [
+              "python",
+              "manage.py",
+              "migrate",
+              "auth",
+              "--noinput",
+              "--verbosity",
+              "0"
+            ],
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "System check identified some issues:\n\nWARNINGS:\nmyapp.MyModel: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.\n\tHINT: Configure the DEFAULT_AUTO_FIELD setting or the MyappConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.\n",
+            "ms": 445.508
+          },
+          {
+            "argv": [
+              "python",
+              "manage.py",
+              "migrate",
+              "myapp",
+              "0002_auto_20181012_1052",
+              "--noinput",
+              "--verbosity",
+              "0"
+            ],
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "System check identified some issues:\n\nWARNINGS:\nmyapp.MyModel: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.\n\tHINT: Configure the DEFAULT_AUTO_FIELD setting or the MyappConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.\n",
+            "ms": 313.068
+          }
+        ],
+        "database": "petter-checkpoint_direct.sqlite",
+        "schema": [
+          [
+            "auth_group",
+            "CREATE TABLE \"auth_group\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"name\" varchar(150) NOT NULL UNIQUE)"
+          ],
+          [
+            "auth_group_permissions",
+            "CREATE TABLE \"auth_group_permissions\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"group_id\" integer NOT NULL REFERENCES \"auth_group\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"permission_id\" integer NOT NULL REFERENCES \"auth_permission\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "auth_group_permissions_group_id_b120cbf9",
+            "CREATE INDEX \"auth_group_permissions_group_id_b120cbf9\" ON \"auth_group_permissions\" (\"group_id\")"
+          ],
+          [
+            "auth_group_permissions_group_id_permission_id_0cd325b0_uniq",
+            "CREATE UNIQUE INDEX \"auth_group_permissions_group_id_permission_id_0cd325b0_uniq\" ON \"auth_group_permissions\" (\"group_id\", \"permission_id\")"
+          ],
+          [
+            "auth_group_permissions_permission_id_84c5c92e",
+            "CREATE INDEX \"auth_group_permissions_permission_id_84c5c92e\" ON \"auth_group_permissions\" (\"permission_id\")"
+          ],
+          [
+            "auth_permission",
+            "CREATE TABLE \"auth_permission\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"content_type_id\" integer NOT NULL REFERENCES \"django_content_type\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"codename\" varchar(100) NOT NULL, \"name\" varchar(255) NOT NULL)"
+          ],
+          [
+            "auth_permission_content_type_id_2f476e4b",
+            "CREATE INDEX \"auth_permission_content_type_id_2f476e4b\" ON \"auth_permission\" (\"content_type_id\")"
+          ],
+          [
+            "auth_permission_content_type_id_codename_01ab375a_uniq",
+            "CREATE UNIQUE INDEX \"auth_permission_content_type_id_codename_01ab375a_uniq\" ON \"auth_permission\" (\"content_type_id\", \"codename\")"
+          ],
+          [
+            "auth_user",
+            "CREATE TABLE \"auth_user\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"password\" varchar(128) NOT NULL, \"last_login\" datetime NULL, \"is_superuser\" bool NOT NULL, \"username\" varchar(150) NOT NULL UNIQUE, \"last_name\" varchar(150) NOT NULL, \"email\" varchar(254) NOT NULL, \"is_staff\" bool NOT NULL, \"is_active\" bool NOT NULL, \"date_joined\" datetime NOT NULL, \"first_name\" varchar(150) NOT NULL)"
+          ],
+          [
+            "auth_user_groups",
+            "CREATE TABLE \"auth_user_groups\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"user_id\" integer NOT NULL REFERENCES \"auth_user\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"group_id\" integer NOT NULL REFERENCES \"auth_group\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "auth_user_groups_group_id_97559544",
+            "CREATE INDEX \"auth_user_groups_group_id_97559544\" ON \"auth_user_groups\" (\"group_id\")"
+          ],
+          [
+            "auth_user_groups_user_id_6a12ed8b",
+            "CREATE INDEX \"auth_user_groups_user_id_6a12ed8b\" ON \"auth_user_groups\" (\"user_id\")"
+          ],
+          [
+            "auth_user_groups_user_id_group_id_94350c0c_uniq",
+            "CREATE UNIQUE INDEX \"auth_user_groups_user_id_group_id_94350c0c_uniq\" ON \"auth_user_groups\" (\"user_id\", \"group_id\")"
+          ],
+          [
+            "auth_user_user_permissions",
+            "CREATE TABLE \"auth_user_user_permissions\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"user_id\" integer NOT NULL REFERENCES \"auth_user\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"permission_id\" integer NOT NULL REFERENCES \"auth_permission\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "auth_user_user_permissions_permission_id_1fbb5f2c",
+            "CREATE INDEX \"auth_user_user_permissions_permission_id_1fbb5f2c\" ON \"auth_user_user_permissions\" (\"permission_id\")"
+          ],
+          [
+            "auth_user_user_permissions_user_id_a95ead1b",
+            "CREATE INDEX \"auth_user_user_permissions_user_id_a95ead1b\" ON \"auth_user_user_permissions\" (\"user_id\")"
+          ],
+          [
+            "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq",
+            "CREATE UNIQUE INDEX \"auth_user_user_permissions_user_id_permission_id_14a6b632_uniq\" ON \"auth_user_user_permissions\" (\"user_id\", \"permission_id\")"
+          ],
+          [
+            "django_content_type",
+            "CREATE TABLE \"django_content_type\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"app_label\" varchar(100) NOT NULL, \"model\" varchar(100) NOT NULL)"
+          ],
+          [
+            "django_content_type_app_label_model_76bd3d3b_uniq",
+            "CREATE UNIQUE INDEX \"django_content_type_app_label_model_76bd3d3b_uniq\" ON \"django_content_type\" (\"app_label\", \"model\")"
+          ],
+          [
+            "django_migrations",
+            "CREATE TABLE \"django_migrations\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"app\" varchar(255) NOT NULL, \"name\" varchar(255) NOT NULL, \"applied\" datetime NOT NULL)"
+          ],
+          [
+            "myapp_mymodel",
+            "CREATE TABLE \"myapp_mymodel\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"data\" integer NOT NULL)"
+          ]
+        ],
+        "ledger": [
+          [
+            "auth",
+            "0001_initial"
+          ],
+          [
+            "auth",
+            "0002_alter_permission_name_max_length"
+          ],
+          [
+            "auth",
+            "0003_alter_user_email_max_length"
+          ],
+          [
+            "auth",
+            "0004_alter_user_username_opts"
+          ],
+          [
+            "auth",
+            "0005_alter_user_last_login_null"
+          ],
+          [
+            "auth",
+            "0006_require_contenttypes_0002"
+          ],
+          [
+            "auth",
+            "0007_alter_validators_add_error_messages"
+          ],
+          [
+            "auth",
+            "0008_alter_user_username_max_length"
+          ],
+          [
+            "auth",
+            "0009_alter_user_last_name_max_length"
+          ],
+          [
+            "auth",
+            "0010_alter_group_name_max_length"
+          ],
+          [
+            "auth",
+            "0011_update_proxy_permissions"
+          ],
+          [
+            "auth",
+            "0012_alter_user_first_name_max_length"
+          ],
+          [
+            "contenttypes",
+            "0001_initial"
+          ],
+          [
+            "contenttypes",
+            "0002_remove_content_type_name"
+          ],
+          [
+            "myapp",
+            "0001_initial"
+          ],
+          [
+            "myapp",
+            "0002_auto_20181012_1052"
+          ]
+        ],
+        "content": {
+          "custom_permissions": [
+            [
+              "can_hear"
+            ]
+          ],
+          "employee_group": []
+        },
+        "same_schema_as_staged": true,
+        "same_ledger_as_staged": true
+      },
+      {
+        "scenario": "checkpoint_staged",
+        "success": true,
+        "steps": [
+          {
+            "argv": [
+              "python",
+              "manage.py",
+              "migrate",
+              "auth",
+              "--noinput",
+              "--verbosity",
+              "0"
+            ],
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "System check identified some issues:\n\nWARNINGS:\nmyapp.MyModel: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.\n\tHINT: Configure the DEFAULT_AUTO_FIELD setting or the MyappConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.\n",
+            "ms": 380.885
+          },
+          {
+            "argv": [
+              "python",
+              "manage.py",
+              "migrate",
+              "myapp",
+              "0001_initial",
+              "--noinput",
+              "--verbosity",
+              "0"
+            ],
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "System check identified some issues:\n\nWARNINGS:\nmyapp.MyModel: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.\n\tHINT: Configure the DEFAULT_AUTO_FIELD setting or the MyappConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.\n",
+            "ms": 336.269
+          },
+          {
+            "argv": [
+              "python",
+              "manage.py",
+              "migrate",
+              "myapp",
+              "0002_auto_20181012_1052",
+              "--noinput",
+              "--verbosity",
+              "0"
+            ],
+            "return_code": 0,
+            "stdout": "",
+            "stderr": "System check identified some issues:\n\nWARNINGS:\nmyapp.MyModel: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.\n\tHINT: Configure the DEFAULT_AUTO_FIELD setting or the MyappConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.\n",
+            "ms": 329.693
+          }
+        ],
+        "database": "petter-checkpoint_staged.sqlite",
+        "schema": [
+          [
+            "auth_group",
+            "CREATE TABLE \"auth_group\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"name\" varchar(150) NOT NULL UNIQUE)"
+          ],
+          [
+            "auth_group_permissions",
+            "CREATE TABLE \"auth_group_permissions\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"group_id\" integer NOT NULL REFERENCES \"auth_group\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"permission_id\" integer NOT NULL REFERENCES \"auth_permission\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "auth_group_permissions_group_id_b120cbf9",
+            "CREATE INDEX \"auth_group_permissions_group_id_b120cbf9\" ON \"auth_group_permissions\" (\"group_id\")"
+          ],
+          [
+            "auth_group_permissions_group_id_permission_id_0cd325b0_uniq",
+            "CREATE UNIQUE INDEX \"auth_group_permissions_group_id_permission_id_0cd325b0_uniq\" ON \"auth_group_permissions\" (\"group_id\", \"permission_id\")"
+          ],
+          [
+            "auth_group_permissions_permission_id_84c5c92e",
+            "CREATE INDEX \"auth_group_permissions_permission_id_84c5c92e\" ON \"auth_group_permissions\" (\"permission_id\")"
+          ],
+          [
+            "auth_permission",
+            "CREATE TABLE \"auth_permission\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"content_type_id\" integer NOT NULL REFERENCES \"django_content_type\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"codename\" varchar(100) NOT NULL, \"name\" varchar(255) NOT NULL)"
+          ],
+          [
+            "auth_permission_content_type_id_2f476e4b",
+            "CREATE INDEX \"auth_permission_content_type_id_2f476e4b\" ON \"auth_permission\" (\"content_type_id\")"
+          ],
+          [
+            "auth_permission_content_type_id_codename_01ab375a_uniq",
+            "CREATE UNIQUE INDEX \"auth_permission_content_type_id_codename_01ab375a_uniq\" ON \"auth_permission\" (\"content_type_id\", \"codename\")"
+          ],
+          [
+            "auth_user",
+            "CREATE TABLE \"auth_user\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"password\" varchar(128) NOT NULL, \"last_login\" datetime NULL, \"is_superuser\" bool NOT NULL, \"username\" varchar(150) NOT NULL UNIQUE, \"last_name\" varchar(150) NOT NULL, \"email\" varchar(254) NOT NULL, \"is_staff\" bool NOT NULL, \"is_active\" bool NOT NULL, \"date_joined\" datetime NOT NULL, \"first_name\" varchar(150) NOT NULL)"
+          ],
+          [
+            "auth_user_groups",
+            "CREATE TABLE \"auth_user_groups\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"user_id\" integer NOT NULL REFERENCES \"auth_user\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"group_id\" integer NOT NULL REFERENCES \"auth_group\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "auth_user_groups_group_id_97559544",
+            "CREATE INDEX \"auth_user_groups_group_id_97559544\" ON \"auth_user_groups\" (\"group_id\")"
+          ],
+          [
+            "auth_user_groups_user_id_6a12ed8b",
+            "CREATE INDEX \"auth_user_groups_user_id_6a12ed8b\" ON \"auth_user_groups\" (\"user_id\")"
+          ],
+          [
+            "auth_user_groups_user_id_group_id_94350c0c_uniq",
+            "CREATE UNIQUE INDEX \"auth_user_groups_user_id_group_id_94350c0c_uniq\" ON \"auth_user_groups\" (\"user_id\", \"group_id\")"
+          ],
+          [
+            "auth_user_user_permissions",
+            "CREATE TABLE \"auth_user_user_permissions\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"user_id\" integer NOT NULL REFERENCES \"auth_user\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"permission_id\" integer NOT NULL REFERENCES \"auth_permission\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "auth_user_user_permissions_permission_id_1fbb5f2c",
+            "CREATE INDEX \"auth_user_user_permissions_permission_id_1fbb5f2c\" ON \"auth_user_user_permissions\" (\"permission_id\")"
+          ],
+          [
+            "auth_user_user_permissions_user_id_a95ead1b",
+            "CREATE INDEX \"auth_user_user_permissions_user_id_a95ead1b\" ON \"auth_user_user_permissions\" (\"user_id\")"
+          ],
+          [
+            "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq",
+            "CREATE UNIQUE INDEX \"auth_user_user_permissions_user_id_permission_id_14a6b632_uniq\" ON \"auth_user_user_permissions\" (\"user_id\", \"permission_id\")"
+          ],
+          [
+            "django_content_type",
+            "CREATE TABLE \"django_content_type\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"app_label\" varchar(100) NOT NULL, \"model\" varchar(100) NOT NULL)"
+          ],
+          [
+            "django_content_type_app_label_model_76bd3d3b_uniq",
+            "CREATE UNIQUE INDEX \"django_content_type_app_label_model_76bd3d3b_uniq\" ON \"django_content_type\" (\"app_label\", \"model\")"
+          ],
+          [
+            "django_migrations",
+            "CREATE TABLE \"django_migrations\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"app\" varchar(255) NOT NULL, \"name\" varchar(255) NOT NULL, \"applied\" datetime NOT NULL)"
+          ],
+          [
+            "myapp_mymodel",
+            "CREATE TABLE \"myapp_mymodel\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"data\" integer NOT NULL)"
+          ]
+        ],
+        "ledger": [
+          [
+            "auth",
+            "0001_initial"
+          ],
+          [
+            "auth",
+            "0002_alter_permission_name_max_length"
+          ],
+          [
+            "auth",
+            "0003_alter_user_email_max_length"
+          ],
+          [
+            "auth",
+            "0004_alter_user_username_opts"
+          ],
+          [
+            "auth",
+            "0005_alter_user_last_login_null"
+          ],
+          [
+            "auth",
+            "0006_require_contenttypes_0002"
+          ],
+          [
+            "auth",
+            "0007_alter_validators_add_error_messages"
+          ],
+          [
+            "auth",
+            "0008_alter_user_username_max_length"
+          ],
+          [
+            "auth",
+            "0009_alter_user_last_name_max_length"
+          ],
+          [
+            "auth",
+            "0010_alter_group_name_max_length"
+          ],
+          [
+            "auth",
+            "0011_update_proxy_permissions"
+          ],
+          [
+            "auth",
+            "0012_alter_user_first_name_max_length"
+          ],
+          [
+            "contenttypes",
+            "0001_initial"
+          ],
+          [
+            "contenttypes",
+            "0002_remove_content_type_name"
+          ],
+          [
+            "myapp",
+            "0001_initial"
+          ],
+          [
+            "myapp",
+            "0002_auto_20181012_1052"
+          ]
+        ],
+        "content": {
+          "custom_permissions": [
+            [
+              "can_hear"
+            ],
+            [
+              "can_smell"
+            ]
+          ],
+          "employee_group": []
+        }
+      }
+    ],
+    "positive_scope": "real_migration_failure_not_silent_success"
+  },
+  "builtin_sites": {
+    "observations": [
+      {
+        "scenario": "fresh",
+        "success": true,
+        "step": {
+          "argv": [
+            "python",
+            "-c",
+            "\nimport json\nimport sys\nfrom django.conf import settings\nsettings.configure(\n    DATABASES={\"default\": {\"ENGINE\": \"django.db.backends.sqlite3\", \"NAME\": sys.argv[1]}},\n    INSTALLED_APPS=[\"django.contrib.sites\", \"django.contrib.redirects\", \"django.contrib.flatpages\"],\n    SITE_ID=1, SECRET_KEY=\"n22-internal-sample-only\", USE_TZ=True,\n)\nimport django\ndjango.setup()\nfrom django.core.management import call_command\nfrom django.contrib.sites.models import Site\n\nmode=sys.argv[2]\nif mode == \"fresh\":\n    call_command(\"migrate\", interactive=False, verbosity=0)\nelse:\n    call_command(\"migrate\", \"sites\", \"0001\", interactive=False, verbosity=0)\n    if mode == \"staged-user-row\":\n        Site.objects.filter(pk=1).update(domain=\"customer.example\", name=\"Customer\")\n    call_command(\"migrate\", interactive=False, verbosity=0)\n\ngot = Site.objects.get_current()\nprint(json.dumps({\"application_site_lookup\": {\n    \"pk\": got.pk, \"domain\": got.domain, \"name\": got.name,\n    \"valid\": bool(got.domain and got.name)\n}}))\n",
+            "/workspace/scratch/6053d4dcc858/n22_repo/N22/results/django/django-sites-fresh.sqlite",
+            "fresh"
+          ],
+          "return_code": 0,
+          "stdout": "{\"application_site_lookup\": {\"pk\": 1, \"domain\": \"example.com\", \"name\": \"example.com\", \"valid\": true}}\n",
+          "stderr": "",
+          "ms": 321.661
+        },
+        "database": "django-sites-fresh.sqlite",
+        "application_probe": {
+          "application_site_lookup": {
+            "pk": 1,
+            "domain": "example.com",
+            "name": "example.com",
+            "valid": true
+          }
+        },
+        "schema": [
+          [
+            "django_flatpage",
+            "CREATE TABLE \"django_flatpage\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"url\" varchar(100) NOT NULL, \"title\" varchar(200) NOT NULL, \"content\" text NOT NULL, \"enable_comments\" bool NOT NULL, \"template_name\" varchar(70) NOT NULL, \"registration_required\" bool NOT NULL)"
+          ],
+          [
+            "django_flatpage_sites",
+            "CREATE TABLE \"django_flatpage_sites\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"flatpage_id\" integer NOT NULL REFERENCES \"django_flatpage\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"site_id\" integer NOT NULL REFERENCES \"django_site\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "django_flatpage_sites_flatpage_id_078bbc8b",
+            "CREATE INDEX \"django_flatpage_sites_flatpage_id_078bbc8b\" ON \"django_flatpage_sites\" (\"flatpage_id\")"
+          ],
+          [
+            "django_flatpage_sites_flatpage_id_site_id_0d29d9d1_uniq",
+            "CREATE UNIQUE INDEX \"django_flatpage_sites_flatpage_id_site_id_0d29d9d1_uniq\" ON \"django_flatpage_sites\" (\"flatpage_id\", \"site_id\")"
+          ],
+          [
+            "django_flatpage_sites_site_id_bfd8ea84",
+            "CREATE INDEX \"django_flatpage_sites_site_id_bfd8ea84\" ON \"django_flatpage_sites\" (\"site_id\")"
+          ],
+          [
+            "django_flatpage_url_41612362",
+            "CREATE INDEX \"django_flatpage_url_41612362\" ON \"django_flatpage\" (\"url\")"
+          ],
+          [
+            "django_migrations",
+            "CREATE TABLE \"django_migrations\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"app\" varchar(255) NOT NULL, \"name\" varchar(255) NOT NULL, \"applied\" datetime NOT NULL)"
+          ],
+          [
+            "django_redirect",
+            "CREATE TABLE \"django_redirect\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"site_id\" integer NOT NULL REFERENCES \"django_site\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"old_path\" varchar(200) NOT NULL, \"new_path\" varchar(200) NOT NULL)"
+          ],
+          [
+            "django_redirect_old_path_c6cc94d3",
+            "CREATE INDEX \"django_redirect_old_path_c6cc94d3\" ON \"django_redirect\" (\"old_path\")"
+          ],
+          [
+            "django_redirect_site_id_c3e37341",
+            "CREATE INDEX \"django_redirect_site_id_c3e37341\" ON \"django_redirect\" (\"site_id\")"
+          ],
+          [
+            "django_redirect_site_id_old_path_ac5dd16b_uniq",
+            "CREATE UNIQUE INDEX \"django_redirect_site_id_old_path_ac5dd16b_uniq\" ON \"django_redirect\" (\"site_id\", \"old_path\")"
+          ],
+          [
+            "django_site",
+            "CREATE TABLE \"django_site\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"name\" varchar(50) NOT NULL, \"domain\" varchar(100) NOT NULL UNIQUE)"
+          ]
+        ],
+        "ledger": [
+          [
+            "flatpages",
+            "0001_initial"
+          ],
+          [
+            "redirects",
+            "0001_initial"
+          ],
+          [
+            "redirects",
+            "0002_alter_redirect_new_path_help_text"
+          ],
+          [
+            "sites",
+            "0001_initial"
+          ],
+          [
+            "sites",
+            "0002_alter_domain_unique"
+          ]
+        ],
+        "content": {
+          "django_site": [
+            [
+              1,
+              "example.com",
+              "example.com"
+            ]
+          ]
+        },
+        "same_schema_as_fresh": true,
+        "same_ledger_as_fresh": true,
+        "same_rows_as_fresh": true,
+        "contract_valid": true
+      },
+      {
+        "scenario": "staged",
+        "success": true,
+        "step": {
+          "argv": [
+            "python",
+            "-c",
+            "\nimport json\nimport sys\nfrom django.conf import settings\nsettings.configure(\n    DATABASES={\"default\": {\"ENGINE\": \"django.db.backends.sqlite3\", \"NAME\": sys.argv[1]}},\n    INSTALLED_APPS=[\"django.contrib.sites\", \"django.contrib.redirects\", \"django.contrib.flatpages\"],\n    SITE_ID=1, SECRET_KEY=\"n22-internal-sample-only\", USE_TZ=True,\n)\nimport django\ndjango.setup()\nfrom django.core.management import call_command\nfrom django.contrib.sites.models import Site\n\nmode=sys.argv[2]\nif mode == \"fresh\":\n    call_command(\"migrate\", interactive=False, verbosity=0)\nelse:\n    call_command(\"migrate\", \"sites\", \"0001\", interactive=False, verbosity=0)\n    if mode == \"staged-user-row\":\n        Site.objects.filter(pk=1).update(domain=\"customer.example\", name=\"Customer\")\n    call_command(\"migrate\", interactive=False, verbosity=0)\n\ngot = Site.objects.get_current()\nprint(json.dumps({\"application_site_lookup\": {\n    \"pk\": got.pk, \"domain\": got.domain, \"name\": got.name,\n    \"valid\": bool(got.domain and got.name)\n}}))\n",
+            "/workspace/scratch/6053d4dcc858/n22_repo/N22/results/django/django-sites-staged.sqlite",
+            "staged"
+          ],
+          "return_code": 0,
+          "stdout": "{\"application_site_lookup\": {\"pk\": 1, \"domain\": \"example.com\", \"name\": \"example.com\", \"valid\": true}}\n",
+          "stderr": "",
+          "ms": 298.044
+        },
+        "database": "django-sites-staged.sqlite",
+        "application_probe": {
+          "application_site_lookup": {
+            "pk": 1,
+            "domain": "example.com",
+            "name": "example.com",
+            "valid": true
+          }
+        },
+        "schema": [
+          [
+            "django_flatpage",
+            "CREATE TABLE \"django_flatpage\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"url\" varchar(100) NOT NULL, \"title\" varchar(200) NOT NULL, \"content\" text NOT NULL, \"enable_comments\" bool NOT NULL, \"template_name\" varchar(70) NOT NULL, \"registration_required\" bool NOT NULL)"
+          ],
+          [
+            "django_flatpage_sites",
+            "CREATE TABLE \"django_flatpage_sites\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"flatpage_id\" integer NOT NULL REFERENCES \"django_flatpage\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"site_id\" integer NOT NULL REFERENCES \"django_site\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "django_flatpage_sites_flatpage_id_078bbc8b",
+            "CREATE INDEX \"django_flatpage_sites_flatpage_id_078bbc8b\" ON \"django_flatpage_sites\" (\"flatpage_id\")"
+          ],
+          [
+            "django_flatpage_sites_flatpage_id_site_id_0d29d9d1_uniq",
+            "CREATE UNIQUE INDEX \"django_flatpage_sites_flatpage_id_site_id_0d29d9d1_uniq\" ON \"django_flatpage_sites\" (\"flatpage_id\", \"site_id\")"
+          ],
+          [
+            "django_flatpage_sites_site_id_bfd8ea84",
+            "CREATE INDEX \"django_flatpage_sites_site_id_bfd8ea84\" ON \"django_flatpage_sites\" (\"site_id\")"
+          ],
+          [
+            "django_flatpage_url_41612362",
+            "CREATE INDEX \"django_flatpage_url_41612362\" ON \"django_flatpage\" (\"url\")"
+          ],
+          [
+            "django_migrations",
+            "CREATE TABLE \"django_migrations\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"app\" varchar(255) NOT NULL, \"name\" varchar(255) NOT NULL, \"applied\" datetime NOT NULL)"
+          ],
+          [
+            "django_redirect",
+            "CREATE TABLE \"django_redirect\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"site_id\" integer NOT NULL REFERENCES \"django_site\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"old_path\" varchar(200) NOT NULL, \"new_path\" varchar(200) NOT NULL)"
+          ],
+          [
+            "django_redirect_old_path_c6cc94d3",
+            "CREATE INDEX \"django_redirect_old_path_c6cc94d3\" ON \"django_redirect\" (\"old_path\")"
+          ],
+          [
+            "django_redirect_site_id_c3e37341",
+            "CREATE INDEX \"django_redirect_site_id_c3e37341\" ON \"django_redirect\" (\"site_id\")"
+          ],
+          [
+            "django_redirect_site_id_old_path_ac5dd16b_uniq",
+            "CREATE UNIQUE INDEX \"django_redirect_site_id_old_path_ac5dd16b_uniq\" ON \"django_redirect\" (\"site_id\", \"old_path\")"
+          ],
+          [
+            "django_site",
+            "CREATE TABLE \"django_site\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"name\" varchar(50) NOT NULL, \"domain\" varchar(100) NOT NULL UNIQUE)"
+          ]
+        ],
+        "ledger": [
+          [
+            "flatpages",
+            "0001_initial"
+          ],
+          [
+            "redirects",
+            "0001_initial"
+          ],
+          [
+            "redirects",
+            "0002_alter_redirect_new_path_help_text"
+          ],
+          [
+            "sites",
+            "0001_initial"
+          ],
+          [
+            "sites",
+            "0002_alter_domain_unique"
+          ]
+        ],
+        "content": {
+          "django_site": [
+            [
+              1,
+              "example.com",
+              "example.com"
+            ]
+          ]
+        },
+        "same_schema_as_fresh": true,
+        "same_ledger_as_fresh": true,
+        "same_rows_as_fresh": true,
+        "contract_valid": true
+      },
+      {
+        "scenario": "staged-user-row",
+        "success": true,
+        "step": {
+          "argv": [
+            "python",
+            "-c",
+            "\nimport json\nimport sys\nfrom django.conf import settings\nsettings.configure(\n    DATABASES={\"default\": {\"ENGINE\": \"django.db.backends.sqlite3\", \"NAME\": sys.argv[1]}},\n    INSTALLED_APPS=[\"django.contrib.sites\", \"django.contrib.redirects\", \"django.contrib.flatpages\"],\n    SITE_ID=1, SECRET_KEY=\"n22-internal-sample-only\", USE_TZ=True,\n)\nimport django\ndjango.setup()\nfrom django.core.management import call_command\nfrom django.contrib.sites.models import Site\n\nmode=sys.argv[2]\nif mode == \"fresh\":\n    call_command(\"migrate\", interactive=False, verbosity=0)\nelse:\n    call_command(\"migrate\", \"sites\", \"0001\", interactive=False, verbosity=0)\n    if mode == \"staged-user-row\":\n        Site.objects.filter(pk=1).update(domain=\"customer.example\", name=\"Customer\")\n    call_command(\"migrate\", interactive=False, verbosity=0)\n\ngot = Site.objects.get_current()\nprint(json.dumps({\"application_site_lookup\": {\n    \"pk\": got.pk, \"domain\": got.domain, \"name\": got.name,\n    \"valid\": bool(got.domain and got.name)\n}}))\n",
+            "/workspace/scratch/6053d4dcc858/n22_repo/N22/results/django/django-sites-staged-user-row.sqlite",
+            "staged-user-row"
+          ],
+          "return_code": 0,
+          "stdout": "{\"application_site_lookup\": {\"pk\": 1, \"domain\": \"customer.example\", \"name\": \"Customer\", \"valid\": true}}\n",
+          "stderr": "",
+          "ms": 318.036
+        },
+        "database": "django-sites-staged-user-row.sqlite",
+        "application_probe": {
+          "application_site_lookup": {
+            "pk": 1,
+            "domain": "customer.example",
+            "name": "Customer",
+            "valid": true
+          }
+        },
+        "schema": [
+          [
+            "django_flatpage",
+            "CREATE TABLE \"django_flatpage\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"url\" varchar(100) NOT NULL, \"title\" varchar(200) NOT NULL, \"content\" text NOT NULL, \"enable_comments\" bool NOT NULL, \"template_name\" varchar(70) NOT NULL, \"registration_required\" bool NOT NULL)"
+          ],
+          [
+            "django_flatpage_sites",
+            "CREATE TABLE \"django_flatpage_sites\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"flatpage_id\" integer NOT NULL REFERENCES \"django_flatpage\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"site_id\" integer NOT NULL REFERENCES \"django_site\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+          ],
+          [
+            "django_flatpage_sites_flatpage_id_078bbc8b",
+            "CREATE INDEX \"django_flatpage_sites_flatpage_id_078bbc8b\" ON \"django_flatpage_sites\" (\"flatpage_id\")"
+          ],
+          [
+            "django_flatpage_sites_flatpage_id_site_id_0d29d9d1_uniq",
+            "CREATE UNIQUE INDEX \"django_flatpage_sites_flatpage_id_site_id_0d29d9d1_uniq\" ON \"django_flatpage_sites\" (\"flatpage_id\", \"site_id\")"
+          ],
+          [
+            "django_flatpage_sites_site_id_bfd8ea84",
+            "CREATE INDEX \"django_flatpage_sites_site_id_bfd8ea84\" ON \"django_flatpage_sites\" (\"site_id\")"
+          ],
+          [
+            "django_flatpage_url_41612362",
+            "CREATE INDEX \"django_flatpage_url_41612362\" ON \"django_flatpage\" (\"url\")"
+          ],
+          [
+            "django_migrations",
+            "CREATE TABLE \"django_migrations\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"app\" varchar(255) NOT NULL, \"name\" varchar(255) NOT NULL, \"applied\" datetime NOT NULL)"
+          ],
+          [
+            "django_redirect",
+            "CREATE TABLE \"django_redirect\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"site_id\" integer NOT NULL REFERENCES \"django_site\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"old_path\" varchar(200) NOT NULL, \"new_path\" varchar(200) NOT NULL)"
+          ],
+          [
+            "django_redirect_old_path_c6cc94d3",
+            "CREATE INDEX \"django_redirect_old_path_c6cc94d3\" ON \"django_redirect\" (\"old_path\")"
+          ],
+          [
+            "django_redirect_site_id_c3e37341",
+            "CREATE INDEX \"django_redirect_site_id_c3e37341\" ON \"django_redirect\" (\"site_id\")"
+          ],
+          [
+            "django_redirect_site_id_old_path_ac5dd16b_uniq",
+            "CREATE UNIQUE INDEX \"django_redirect_site_id_old_path_ac5dd16b_uniq\" ON \"django_redirect\" (\"site_id\", \"old_path\")"
+          ],
+          [
+            "django_site",
+            "CREATE TABLE \"django_site\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"name\" varchar(50) NOT NULL, \"domain\" varchar(100) NOT NULL UNIQUE)"
+          ]
+        ],
+        "ledger": [
+          [
+            "flatpages",
+            "0001_initial"
+          ],
+          [
+            "redirects",
+            "0001_initial"
+          ],
+          [
+            "redirects",
+            "0002_alter_redirect_new_path_help_text"
+          ],
+          [
+            "sites",
+            "0001_initial"
+          ],
+          [
+            "sites",
+            "0002_alter_domain_unique"
+          ]
+        ],
+        "content": {
+          "django_site": [
+            [
+              1,
+              "customer.example",
+              "Customer"
+            ]
+          ]
+        },
+        "same_schema_as_fresh": true,
+        "same_ledger_as_fresh": true,
+        "same_rows_as_fresh": false,
+        "contract_valid": true
+      }
+    ],
+    "negative_scope": "legitimate_site_customization"
+  }
+}

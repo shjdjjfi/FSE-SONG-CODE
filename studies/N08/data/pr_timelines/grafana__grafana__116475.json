@@ -1,0 +1,27 @@
+{
+  "fetched_utc": "2026-11-14T17:20:56.217372+00:00",
+  "merged_at": "2026-01-19T09:30:47Z",
+  "opened_at": "2026-01-19T08:41:36Z",
+  "pr": 116475,
+  "raw_html_sha256": "0cbb8c48e93f7763ebf640fd630038a7d8620d81e41ad3ba6847f39b0d93751d",
+  "repo": "grafana/grafana",
+  "review_count_visible": 3,
+  "reviews": [
+    {
+      "login": "ryantxu",
+      "state": "COMMENTED",
+      "submitted_at": "2026-01-19T08:42:38Z"
+    },
+    {
+      "login": "ferruvich",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-19T08:46:26Z"
+    },
+    {
+      "login": "macabu",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-19T09:00:10Z"
+    }
+  ],
+  "source_url": "https://github.com/grafana/grafana/pull/116475"
+}

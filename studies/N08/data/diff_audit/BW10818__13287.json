@@ -1,0 +1,21 @@
+{
+  "changed_code_lines_under_target": 13,
+  "changed_files_in_whole_pr": 19,
+  "changed_files_under_target": 3,
+  "code_files_under_target": 2,
+  "code_touched": true,
+  "event": "BW10818",
+  "focused_code_touched": true,
+  "pr": 13287,
+  "raw_size_bytes": 41032,
+  "repo": "bitwarden/clients",
+  "sha256": "af8a9534d69ba982317520346cb28943d02a3faaaeb564a79beb68963a8a8975",
+  "target_file_fraction": 0.15789,
+  "target_paths": [
+    "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts",
+    "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.spec.ts",
+    "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+  ],
+  "test_files_under_target": 1,
+  "url": "https://github.com/bitwarden/clients/pull/13287.patch"
+}

@@ -1,0 +1,81 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 41461,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "+",
+      "code": "import { BaseCardComponent } from \"../card/base-card.component\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "imports: [IconModule, CommonModule, TypographyModule, SharedModule, RouterModule],",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "imports: [",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "IconModule,",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "CommonModule,",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "TypographyModule,",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "SharedModule,",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "RouterModule,",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "BaseCardComponent,",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "],",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { BaseCardComponent } from \"../card/base-card.component\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { BaseCardComponent } from \"../card\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:53.074782+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 9,
+  "pr": 16952,
+  "repository": "bitwarden/clients",
+  "sha256": "d9da1b7f011de68890651ed1f650ca002d14dd2615647e19db4b4460591d9bbd",
+  "target_code_changed_lines": 12,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout.component.html",
+    "libs/components/src/anon-layout/anon-layout.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/16952.patch"
+}

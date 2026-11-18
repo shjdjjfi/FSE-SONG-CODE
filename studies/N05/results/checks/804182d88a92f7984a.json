@@ -1,0 +1,42 @@
+{
+  "key": "804182d88a92f7984a",
+  "args": {
+    "crate": "tinyvec",
+    "version": "1.9.0",
+    "id": "57ff1aff71a9024b",
+    "profile": "candidate",
+    "features": [
+      "alloc",
+      "debugger_visualizer",
+      "experimental_write_impl",
+      "grab_spare_slice",
+      "latest_stable_rust",
+      "nightly_slice_partition_dedup",
+      "real_blackbox"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2858,
+  "errors": [
+    {
+      "code": "E0554",
+      "message": "`#![feature]` may not be used on the stable release channel",
+      "rendered": "error[E0554]: `#![feature]` may not be used on the stable release channel\n --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tinyvec-1.9.0/src/lib.rs:5:3\n  |\n5 |   feature(slice_partition_dedup)\n  |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0554",
+      "message": "`#![feature]` may not be used on the stable release channel",
+      "rendered": "error[E0554]: `#![feature]` may not be used on the stable release channel\n --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tinyvec-1.9.0/src/lib.rs:9:3\n  |\n9 |   feature(debugger_visualizer),\n  |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: remove the attribute\n  |\n  = help: the feature `debugger_visualizer` has been stable since `1.71.0` and no longer requires an attribute to enable\n\n",
+      "line": 9
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `tinyvec` (lib) due to 2 previous errors\n",
+  "code_sha256": "6790e2f93f757e5ff70afdc23962cf1913a761625a43f7a68e87de5545a32a1d",
+  "manifest_sha256": "f77b07fd7525f134b27aceb3a4ec6324a73bfc118c1da26aff1d9b6852e4d767",
+  "log_file": "results/check_logs/804182d88a92f7984a.txt.gz"
+}

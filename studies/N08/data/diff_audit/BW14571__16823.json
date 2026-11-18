@@ -1,0 +1,20 @@
+{
+  "changed_code_lines_under_target": 11,
+  "changed_files_in_whole_pr": 2,
+  "changed_files_under_target": 2,
+  "code_files_under_target": 1,
+  "code_touched": true,
+  "event": "BW14571",
+  "focused_code_touched": true,
+  "pr": 16823,
+  "raw_size_bytes": 7252,
+  "repo": "bitwarden/clients",
+  "sha256": "cb495bee9cc824b138962be78e9339ea831b8504d2db509d194d0cbaed25d4ce",
+  "target_file_fraction": 1.0,
+  "target_paths": [
+    "apps/web/src/app/dirt/reports/pages/inactive-two-factor-report.component.spec.ts",
+    "apps/web/src/app/dirt/reports/pages/inactive-two-factor-report.component.ts"
+  ],
+  "test_files_under_target": 1,
+  "url": "https://github.com/bitwarden/clients/pull/16823.patch"
+}

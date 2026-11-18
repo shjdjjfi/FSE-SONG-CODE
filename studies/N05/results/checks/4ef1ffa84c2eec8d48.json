@@ -1,0 +1,34 @@
+{
+  "key": "4ef1ffa84c2eec8d48",
+  "args": {
+    "crate": "tokio-util",
+    "version": "0.7.15",
+    "id": "2955b2048716f133",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 8.3121,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:1:5\n  |\n1 | use tokio::io::AsyncRead;\n  |     ^^^^^ use of unresolved module or unlinked crate `tokio`\n  |\n  = help: if you wanted to use a crate named `tokio`, use `cargo add tokio` to add it to your `Cargo.toml`\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio_util::codec`",
+      "rendered": "error[E0432]: unresolved import `tokio_util::codec`\n  --> src/main.rs:2:17\n   |\n 2 | use tokio_util::codec::LengthDelimitedCodec;\n   |                 ^^^^^ could not find `codec` in `tokio_util`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-util-0.7.15/src/lib.rs:31:13\n   |\n27 | / cfg_codec! {\n28 | |     #[macro_use]\n29 | |     mod tracing;\n30 | |\n31 | |     pub mod codec;\n   | |             ^^^^^\n32 | | }\n   | |_- the item is gated behind the `codec` feature\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_tokio_util_consumer` (bin \"n05_tokio_util_consumer\") due to 2 previous errors\n",
+  "code_sha256": "3d14459d691747c9a9df4de1a53f0819a92699eebf5e458d1b745c346279cdf9",
+  "manifest_sha256": "85f7363a0fff6cf363d144fd8235895e33d8fec33b5b4d144fe0cc14bf1a160d",
+  "log_file": "results/check_logs/4ef1ffa84c2eec8d48.txt.gz"
+}

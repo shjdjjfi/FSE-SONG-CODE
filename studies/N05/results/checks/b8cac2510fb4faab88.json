@@ -1,0 +1,29 @@
+{
+  "key": "b8cac2510fb4faab88",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "9de6c4abaf3d5e7d",
+    "profile": "candidate",
+    "features": [
+      "full",
+      "io-std",
+      "net",
+      "rt",
+      "sync",
+      "test-util",
+      "time"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.1119,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "9ac5dc54edbe7435631fab5ed0ba7a8c682d905d3d74e6894a156d9d95faecdd",
+  "manifest_sha256": "e01d5d62aff2e38f7b4b5ec011d753f76e1871841e465a141a4f971d4d8a00c0",
+  "log_file": "results/check_logs/b8cac2510fb4faab88.txt.gz"
+}

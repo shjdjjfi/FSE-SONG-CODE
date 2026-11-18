@@ -1,0 +1,159 @@
+{
+  "after_codeowners_sha256": "89352904f3bb3bdae59c221fa80997cc100d8acf1ea99563011ac271418818e3",
+  "all_patch_renames": 25,
+  "base_sha": "91d696307445c81b6c2441de7a75fba9a426cd31",
+  "before_codeowners_sha256": "53129f0802e32c1155dcad824e063d0f33b07877694be405dba6267e7fd98772",
+  "expected_new_team": "@bitwarden/team-key-management-dev",
+  "expected_old_team": "@bitwarden/team-auth-dev",
+  "histories": {
+    "after": {
+      "commit_count": 7,
+      "pr_linked_count": 7,
+      "records": [
+        {
+          "date": "2025-01-08T09:46:00Z",
+          "pr": 10973,
+          "sha": "72121cda948f08fcf71f1a55220a29a482fda01c",
+          "title": "[PM-10741] Refactor biometrics interface & add dynamic status (#10973)"
+        },
+        {
+          "date": "2025-01-09T12:01:49Z",
+          "pr": 12352,
+          "sha": "67a59b60726dc7979685712315af582e55183e06",
+          "title": "[PM-15584] Fix autoprompt safari process reload (#12352)"
+        },
+        {
+          "date": "2025-01-14T17:29:52Z",
+          "pr": 12853,
+          "sha": "318a3ac6a9718e8cde7455095fb441fd7344031a",
+          "title": "[PM-17038] Fix biometrics autoprompt in firefox and chrome (#12853)"
+        },
+        {
+          "date": "2025-01-15T16:59:39Z",
+          "pr": 12854,
+          "sha": "a5dce0535433c5ff5afff3b025260be9b9cee883",
+          "title": "[PM-17035] Fix biometric unlock badge in mv2 (#12854)"
+        },
+        {
+          "date": "2025-01-15T18:22:50Z",
+          "pr": 12875,
+          "sha": "494d349b579d6dfc016b23289bdc7da1428684d1",
+          "title": "prevent bio prompt when switching to unlocked account (#12875)"
+        },
+        {
+          "date": "2025-01-21T20:26:34Z",
+          "pr": 12928,
+          "sha": "ef20ca83b60ab5561fb11977bb632a7923d1130e",
+          "title": "[PM-17121/17204] Fix fingerprint dialogs and disabled active biometric lock component (#12928)"
+        },
+        {
+          "date": "2025-01-30T10:20:17Z",
+          "pr": 13093,
+          "sha": "f8bdd66fbbac49679be3c224d0ddb6e5e90c5b41",
+          "title": "[PM-17629] Split up KM lib to km and km-ui (#13093)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=libs%2Fkey-management%2Fsrc%2Fangular%2Flock%2F&since=2025-01-07T15%3A47%3A52Z&until=2026-01-07T15%3A47%3A51Z&per_page=100",
+      "truncated": false
+    },
+    "before": {
+      "commit_count": 10,
+      "pr_linked_count": 10,
+      "records": [
+        {
+          "date": "2024-10-01T20:06:18Z",
+          "pr": 10451,
+          "sha": "9ff1db757318a81c594d40849c4bbe01ab5d8193",
+          "title": "Auth/PM-9449 - UI Refresh + Client component consolidation into new LockV2 Component (#10451)"
+        },
+        {
+          "date": "2024-10-11T20:02:47Z",
+          "pr": 11513,
+          "sha": "7297d0fccd0eb18aed721227f4dc70c937fe0afa",
+          "title": "Auth/PM-13318 - AnonLayoutWrapperData Refactor to add full Translation support (#11513)"
+        },
+        {
+          "date": "2024-10-24T17:41:30Z",
+          "pr": 11358,
+          "sha": "b486fcc689bb6eedf61a1949887a66568f9b1b50",
+          "title": "[Pm-13097] Rename cryptoservice to keyservice and move it to km ownership (#11358)"
+        },
+        {
+          "date": "2024-10-30T21:54:39Z",
+          "pr": 11779,
+          "sha": "4de7cb8012a0716d0c834d279a04fc4fd62c5112",
+          "title": "BEEEP - Auth AccountService Improvements (#11779)"
+        },
+        {
+          "date": "2024-11-01T15:21:18Z",
+          "pr": 11560,
+          "sha": "a049b553a66ee618f8f50239d3b0809a417c806b",
+          "title": "Update decryptUserKeyWithMasterKey to requireUserId (#11560)"
+        },
+        {
+          "date": "2024-11-25T19:34:53Z",
+          "pr": 12144,
+          "sha": "820b03dd49e3160d343970d6a96d4d6f4caead7e",
+          "title": "fix(biometrics): [PM-13901] Bugfix for \"Ask for biometrics on launch does not auto prompt biometrics\" (#12144)"
+        },
+        {
+          "date": "2024-12-09T19:58:50Z",
+          "pr": 12235,
+          "sha": "9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+          "title": "Typescript-strict-plugin (#12235)"
+        },
+        {
+          "date": "2024-12-12T21:10:54Z",
+          "pr": 12363,
+          "sha": "8ec75613dcb05a931db366b5600c3df8f9654b15",
+          "title": "fix(passkeys): [PM-13932] Fix passkey flow incorrect routing (#12363)"
+        },
+        {
+          "date": "2024-12-16T18:00:17Z",
+          "pr": 11829,
+          "sha": "971c157f564793aafbd62884e39d4f9f0dafbeac",
+          "title": "[PM-12700] Add private key regeneration process (#11829)"
+        },
+        {
+          "date": "2024-12-20T18:23:03Z",
+          "pr": 12453,
+          "sha": "d209da4c945b9fddbc480c779150989596bfd90f",
+          "title": "feat(auth): [PM-9674] Remove Deprecated LockComponents (#12453)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=libs%2Fauth%2Fsrc%2Fangular%2Flock%2F&since=2024-01-08T15%3A47%3A51Z&until=2025-01-07T15%3A47%3A50Z&per_page=100",
+      "truncated": false
+    }
+  },
+  "id": "BW12407",
+  "merge_sha": "c0d3fe15d10300353e435a1d524c287dc05b60d4",
+  "merged_at": "2025-01-07T15:47:51Z",
+  "migration_patch_sha256": "2b3a9be5449f6b02e36f8d9485e5fd095470e2b06e8c34e69933601df2fe3d56",
+  "migration_pr": 12407,
+  "new_owner": [
+    "@bitwarden/team-key-management-dev"
+  ],
+  "new_prefix": "libs/key-management/src/angular/lock/",
+  "old_owner": [
+    "@bitwarden/team-auth-dev"
+  ],
+  "old_prefix": "libs/auth/src/angular/lock/",
+  "post_days": 365,
+  "pre_days": 365,
+  "rename_pairs": [
+    {
+      "new": "libs/key-management/src/angular/lock/components/lock.component.html",
+      "old": "libs/auth/src/angular/lock/lock.component.html"
+    },
+    {
+      "new": "libs/key-management/src/angular/lock/components/lock.component.ts",
+      "old": "libs/auth/src/angular/lock/lock.component.ts"
+    },
+    {
+      "new": "libs/key-management/src/angular/lock/services/lock-component.service.ts",
+      "old": "libs/auth/src/angular/lock/lock-component.service.ts"
+    }
+  ],
+  "repo": "bitwarden/clients",
+  "valid": true
+}

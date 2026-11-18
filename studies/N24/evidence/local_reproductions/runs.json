@@ -1,0 +1,4479 @@
+{
+  "errors": [],
+  "evidence_class": "controlled npm-induced fault, not natural CI incident",
+  "families": [
+    "rollup",
+    "esbuild",
+    "biome",
+    "swc",
+    "lightningcss"
+  ],
+  "github_run_id": null,
+  "github_sha": null,
+  "host": {
+    "cpu": "x64",
+    "libc": "glibc",
+    "node": "v24.22.1",
+    "os": "linux",
+    "runner": "local",
+    "runner_arch": "x86_64"
+  },
+  "results": [
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "npm10_warm_defect",
+      "family": "rollup",
+      "fault_present": true,
+      "lock_sha256": "89d0430cca0d94cd8efc01df2024e38a090d6fda1070dcae25518f5271733868",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 2687,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('rollup').rollup({input:'virtual',plugins:[{name:'inline',resolveId(id){return id==='virtual'?id:null},load(id){return id==='virtual'?'export const n=3':null}}]}).then(b=>b.generate({format:'esm'})).then(x=>{if(!Array.isArray(x.output)||!x.output[0].code)throw Error('empty output')}).catch(e=>{console.error(e);process.exit(1)})"
+        ],
+        "returncode": 0,
+        "seconds": 0.1444,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4041,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 4 packages in 291ms\n"
+      },
+      "parent": "rollup",
+      "pin": "4.18.1",
+      "platform_coverage": {
+        "expected_portable_variants": 16,
+        "host_expected": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "present_portable_variants": 1
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "unmodified",
+      "treatment": {
+        "command": [
+          "unmodified"
+        ],
+        "returncode": 0,
+        "seconds": 0.0,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "npm10_warm_defect",
+      "family": "rollup",
+      "fault_present": true,
+      "lock_sha256": "f67a0dacc5ffa36aba6532eb558f85ca4a4c06dd05bd1faff3d5e1295fc30b60",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 2687,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('rollup').rollup({input:'virtual',plugins:[{name:'inline',resolveId(id){return id==='virtual'?id:null},load(id){return id==='virtual'?'export const n=3':null}}]}).then(b=>b.generate({format:'esm'})).then(x=>{if(!Array.isArray(x.output)||!x.output[0].code)throw Error('empty output')}).catch(e=>{console.error(e);process.exit(1)})"
+        ],
+        "returncode": 0,
+        "seconds": 0.1269,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4079,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 4 packages in 298ms\n"
+      },
+      "parent": "rollup",
+      "pin": "4.18.1",
+      "platform_coverage": {
+        "expected_portable_variants": 16,
+        "host_expected": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "present_portable_variants": 1
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm11-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3013,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 195ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 16
+      },
+      "condition": "npm10_warm_defect",
+      "family": "rollup",
+      "fault_present": true,
+      "lock_sha256": "0f9b1dd2a31d43bb45d14b2d7e554abbbf759bdcdcb31ccbe032284460991fc3",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 10177,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('rollup').rollup({input:'virtual',plugins:[{name:'inline',resolveId(id){return id==='virtual'?id:null},load(id){return id==='virtual'?'export const n=3':null}}]}).then(b=>b.generate({format:'esm'})).then(x=>{if(!Array.isArray(x.output)||!x.output[0].code)throw Error('empty output')}).catch(e=>{console.error(e);process.exit(1)})"
+        ],
+        "returncode": 0,
+        "seconds": 0.1201,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4647,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 20 packages in 325ms\n"
+      },
+      "parent": "rollup",
+      "pin": "4.18.1",
+      "platform_coverage": {
+        "expected_portable_variants": 16,
+        "host_expected": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "present_portable_variants": 16
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm12-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm12/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.5564,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will error in a future major version of npm. See `npm help npmrc` for supported config options.\n",
+        "stdout_tail": "\nup to date in 384ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 15
+      },
+      "condition": "npm10_warm_defect",
+      "family": "rollup",
+      "fault_present": true,
+      "lock_sha256": "4b30837c3176726b3361d5214b50950a64c215d38c128abdce96891f0c1c3ffb",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 9396,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('rollup').rollup({input:'virtual',plugins:[{name:'inline',resolveId(id){return id==='virtual'?id:null},load(id){return id==='virtual'?'export const n=3':null}}]}).then(b=>b.generate({format:'esm'})).then(x=>{if(!Array.isArray(x.output)||!x.output[0].code)throw Error('empty output')}).catch(e=>{console.error(e);process.exit(1)})"
+        ],
+        "returncode": 0,
+        "seconds": 0.1372,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4462,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 19 packages in 345ms\n"
+      },
+      "parent": "rollup",
+      "pin": "4.18.1",
+      "platform_coverage": {
+        "expected_portable_variants": 16,
+        "host_expected": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "present_portable_variants": 16
+      },
+      "reference_usable": true,
+      "repair_audit": {
+        "added": [
+          "@rollup/rollup-android-arm-eabi",
+          "@rollup/rollup-android-arm64",
+          "@rollup/rollup-darwin-arm64",
+          "@rollup/rollup-darwin-x64",
+          "@rollup/rollup-linux-arm-gnueabihf",
+          "@rollup/rollup-linux-arm-musleabihf",
+          "@rollup/rollup-linux-arm64-gnu",
+          "@rollup/rollup-linux-arm64-musl",
+          "@rollup/rollup-linux-powerpc64le-gnu",
+          "@rollup/rollup-linux-riscv64-gnu",
+          "@rollup/rollup-linux-s390x-gnu",
+          "@rollup/rollup-linux-x64-musl",
+          "@rollup/rollup-win32-arm64-msvc",
+          "@rollup/rollup-win32-ia32-msvc",
+          "@rollup/rollup-win32-x64-msvc"
+        ],
+        "already_present": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "changed_existing_paths": [],
+        "changed_non_target_versions": 0,
+        "expected_optional_count": 17,
+        "parent": "rollup",
+        "parent_version": "4.18.1",
+        "skipped": {
+          "fsevents": "missing platform, exact version, resolved URL or integrity"
+        }
+      },
+      "repaired_runtime_ok": true,
+      "strategy": "strict-donor",
+      "treatment": {
+        "command": [
+          "strict-donor"
+        ],
+        "returncode": 0,
+        "seconds": 0.564,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [
+          "node_modules/picocolors"
+        ],
+        "changed_non_target_versions": 1,
+        "modified_existing_lock_nodes": [
+          "node_modules/picocolors"
+        ],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 17
+      },
+      "condition": "npm10_warm_defect",
+      "family": "rollup",
+      "fault_present": true,
+      "lock_sha256": "d36c56b01d44bffc2b7e01abfd1a2222d588540752a97e025ea03691b857c94c",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 9852,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('rollup').rollup({input:'virtual',plugins:[{name:'inline',resolveId(id){return id==='virtual'?id:null},load(id){return id==='virtual'?'export const n=3':null}}]}).then(b=>b.generate({format:'esm'})).then(x=>{if(!Array.isArray(x.output)||!x.output[0].code)throw Error('empty output')}).catch(e=>{console.error(e);process.exit(1)})"
+        ],
+        "returncode": 0,
+        "seconds": 0.1221,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 4.4277,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 20 packages in 4s\n"
+      },
+      "parent": "rollup",
+      "pin": "4.18.1",
+      "platform_coverage": {
+        "expected_portable_variants": 16,
+        "host_expected": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "present_portable_variants": 16
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "clean-regenerate",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.643,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 514ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "rollup",
+      "fault_present": false,
+      "lock_sha256": "0b2305740992eef9f316a6db1c0f9d516d4a56b3bdeca5373893907a6137f9cb",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 9852,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('rollup').rollup({input:'virtual',plugins:[{name:'inline',resolveId(id){return id==='virtual'?id:null},load(id){return id==='virtual'?'export const n=3':null}}]}).then(b=>b.generate({format:'esm'})).then(x=>{if(!Array.isArray(x.output)||!x.output[0].code)throw Error('empty output')}).catch(e=>{console.error(e);process.exit(1)})"
+        ],
+        "returncode": 0,
+        "seconds": 0.1182,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4303,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 20 packages in 321ms\n"
+      },
+      "parent": "rollup",
+      "pin": "4.18.1",
+      "platform_coverage": {
+        "expected_portable_variants": 16,
+        "host_expected": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "present_portable_variants": 16
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "unmodified",
+      "treatment": {
+        "command": [
+          "unmodified"
+        ],
+        "returncode": 0,
+        "seconds": 0.0,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "rollup",
+      "fault_present": false,
+      "lock_sha256": "ac908870a0d5ca33fd5c149767feb4b967057841d84a0d3b2420495504264aba",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 9852,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('rollup').rollup({input:'virtual',plugins:[{name:'inline',resolveId(id){return id==='virtual'?id:null},load(id){return id==='virtual'?'export const n=3':null}}]}).then(b=>b.generate({format:'esm'})).then(x=>{if(!Array.isArray(x.output)||!x.output[0].code)throw Error('empty output')}).catch(e=>{console.error(e);process.exit(1)})"
+        ],
+        "returncode": 0,
+        "seconds": 0.1086,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4042,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 20 packages in 293ms\n"
+      },
+      "parent": "rollup",
+      "pin": "4.18.1",
+      "platform_coverage": {
+        "expected_portable_variants": 16,
+        "host_expected": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "present_portable_variants": 16
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm11-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3145,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 209ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "rollup",
+      "fault_present": false,
+      "lock_sha256": "ac908870a0d5ca33fd5c149767feb4b967057841d84a0d3b2420495504264aba",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 9852,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('rollup').rollup({input:'virtual',plugins:[{name:'inline',resolveId(id){return id==='virtual'?id:null},load(id){return id==='virtual'?'export const n=3':null}}]}).then(b=>b.generate({format:'esm'})).then(x=>{if(!Array.isArray(x.output)||!x.output[0].code)throw Error('empty output')}).catch(e=>{console.error(e);process.exit(1)})"
+        ],
+        "returncode": 0,
+        "seconds": 0.1765,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3805,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 20 packages in 288ms\n"
+      },
+      "parent": "rollup",
+      "pin": "4.18.1",
+      "platform_coverage": {
+        "expected_portable_variants": 16,
+        "host_expected": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "present_portable_variants": 16
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm12-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm12/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3626,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will error in a future major version of npm. See `npm help npmrc` for supported config options.\n",
+        "stdout_tail": "\nup to date in 252ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "rollup",
+      "fault_present": false,
+      "lock_sha256": "0b2305740992eef9f316a6db1c0f9d516d4a56b3bdeca5373893907a6137f9cb",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 9852,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('rollup').rollup({input:'virtual',plugins:[{name:'inline',resolveId(id){return id==='virtual'?id:null},load(id){return id==='virtual'?'export const n=3':null}}]}).then(b=>b.generate({format:'esm'})).then(x=>{if(!Array.isArray(x.output)||!x.output[0].code)throw Error('empty output')}).catch(e=>{console.error(e);process.exit(1)})"
+        ],
+        "returncode": 0,
+        "seconds": 0.1274,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4326,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 20 packages in 305ms\n"
+      },
+      "parent": "rollup",
+      "pin": "4.18.1",
+      "platform_coverage": {
+        "expected_portable_variants": 16,
+        "host_expected": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "present_portable_variants": 16
+      },
+      "reference_usable": true,
+      "repair_audit": {
+        "added": [],
+        "already_present": [
+          "@rollup/rollup-android-arm-eabi",
+          "@rollup/rollup-android-arm64",
+          "@rollup/rollup-darwin-arm64",
+          "@rollup/rollup-darwin-x64",
+          "@rollup/rollup-linux-arm-gnueabihf",
+          "@rollup/rollup-linux-arm-musleabihf",
+          "@rollup/rollup-linux-arm64-gnu",
+          "@rollup/rollup-linux-arm64-musl",
+          "@rollup/rollup-linux-powerpc64le-gnu",
+          "@rollup/rollup-linux-riscv64-gnu",
+          "@rollup/rollup-linux-s390x-gnu",
+          "@rollup/rollup-linux-x64-gnu",
+          "@rollup/rollup-linux-x64-musl",
+          "@rollup/rollup-win32-arm64-msvc",
+          "@rollup/rollup-win32-ia32-msvc",
+          "@rollup/rollup-win32-x64-msvc",
+          "fsevents"
+        ],
+        "changed_existing_paths": [],
+        "changed_non_target_versions": 0,
+        "expected_optional_count": 17,
+        "parent": "rollup",
+        "parent_version": "4.18.1",
+        "skipped": {}
+      },
+      "repaired_runtime_ok": true,
+      "strategy": "strict-donor",
+      "treatment": {
+        "command": [
+          "strict-donor"
+        ],
+        "returncode": 0,
+        "seconds": 0.564,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [
+          "node_modules/picocolors"
+        ],
+        "changed_non_target_versions": 1,
+        "modified_existing_lock_nodes": [
+          "node_modules/picocolors"
+        ],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 1
+      },
+      "condition": "intact_negative_control",
+      "family": "rollup",
+      "fault_present": false,
+      "lock_sha256": "d36c56b01d44bffc2b7e01abfd1a2222d588540752a97e025ea03691b857c94c",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 9852,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('rollup').rollup({input:'virtual',plugins:[{name:'inline',resolveId(id){return id==='virtual'?id:null},load(id){return id==='virtual'?'export const n=3':null}}]}).then(b=>b.generate({format:'esm'})).then(x=>{if(!Array.isArray(x.output)||!x.output[0].code)throw Error('empty output')}).catch(e=>{console.error(e);process.exit(1)})"
+        ],
+        "returncode": 0,
+        "seconds": 0.1297,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.446,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 20 packages in 333ms\n"
+      },
+      "parent": "rollup",
+      "pin": "4.18.1",
+      "platform_coverage": {
+        "expected_portable_variants": 16,
+        "host_expected": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "present_portable_variants": 16
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "clean-regenerate",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.5925,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 474ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "npm10_warm_defect",
+      "family": "esbuild",
+      "fault_present": true,
+      "lock_sha256": "4a96cac01d2be7dcbe54f66e7137ed261e69c12ff4042ac2c615917b91f7bfe0",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 2538,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('esbuild').transformSync('const x = 3')"
+        ],
+        "returncode": 0,
+        "seconds": 0.1807,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.5572,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 3 packages in 397ms\n"
+      },
+      "parent": "esbuild",
+      "pin": "0.25.2",
+      "platform_coverage": {
+        "expected_portable_variants": 25,
+        "host_expected": [
+          "@esbuild/linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@esbuild/linux-x64"
+        ],
+        "present_portable_variants": 1
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "unmodified",
+      "treatment": {
+        "command": [
+          "unmodified"
+        ],
+        "returncode": 0,
+        "seconds": 0.0,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "npm10_warm_defect",
+      "family": "esbuild",
+      "fault_present": true,
+      "lock_sha256": "1b28d90b875e62ee6588e6d71970a577dc60b878c1b36d50467a10f25ced7f83",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 2538,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('esbuild').transformSync('const x = 3')"
+        ],
+        "returncode": 0,
+        "seconds": 0.1954,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.499,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 3 packages in 340ms\n"
+      },
+      "parent": "esbuild",
+      "pin": "0.25.2",
+      "platform_coverage": {
+        "expected_portable_variants": 25,
+        "host_expected": [
+          "@esbuild/linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@esbuild/linux-x64"
+        ],
+        "present_portable_variants": 1
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm11-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3018,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 199ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 24
+      },
+      "condition": "npm10_warm_defect",
+      "family": "esbuild",
+      "fault_present": true,
+      "lock_sha256": "0ddefacbfc3eaa1cb36f3f407173792ac994a612dd07097052aded6c8c9a67cc",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 13734,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('esbuild').transformSync('const x = 3')"
+        ],
+        "returncode": 0,
+        "seconds": 0.262,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.581,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 27 packages in 467ms\n"
+      },
+      "parent": "esbuild",
+      "pin": "0.25.2",
+      "platform_coverage": {
+        "expected_portable_variants": 25,
+        "host_expected": [
+          "@esbuild/linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@esbuild/linux-x64"
+        ],
+        "present_portable_variants": 25
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm12-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm12/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.6603,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will error in a future major version of npm. See `npm help npmrc` for supported config options.\n",
+        "stdout_tail": "\nup to date in 543ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 24
+      },
+      "condition": "npm10_warm_defect",
+      "family": "esbuild",
+      "fault_present": true,
+      "lock_sha256": "ad231b6f1ea0b5de573fb42fbc599cf96e9946350e3c6505e38fb543d36039ae",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 13734,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('esbuild').transformSync('const x = 3')"
+        ],
+        "returncode": 0,
+        "seconds": 0.19,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4889,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 27 packages in 370ms\n"
+      },
+      "parent": "esbuild",
+      "pin": "0.25.2",
+      "platform_coverage": {
+        "expected_portable_variants": 25,
+        "host_expected": [
+          "@esbuild/linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@esbuild/linux-x64"
+        ],
+        "present_portable_variants": 25
+      },
+      "reference_usable": true,
+      "repair_audit": {
+        "added": [
+          "@esbuild/aix-ppc64",
+          "@esbuild/android-arm",
+          "@esbuild/android-arm64",
+          "@esbuild/android-x64",
+          "@esbuild/darwin-arm64",
+          "@esbuild/darwin-x64",
+          "@esbuild/freebsd-arm64",
+          "@esbuild/freebsd-x64",
+          "@esbuild/linux-arm",
+          "@esbuild/linux-arm64",
+          "@esbuild/linux-ia32",
+          "@esbuild/linux-loong64",
+          "@esbuild/linux-mips64el",
+          "@esbuild/linux-ppc64",
+          "@esbuild/linux-riscv64",
+          "@esbuild/linux-s390x",
+          "@esbuild/netbsd-arm64",
+          "@esbuild/netbsd-x64",
+          "@esbuild/openbsd-arm64",
+          "@esbuild/openbsd-x64",
+          "@esbuild/sunos-x64",
+          "@esbuild/win32-arm64",
+          "@esbuild/win32-ia32",
+          "@esbuild/win32-x64"
+        ],
+        "already_present": [
+          "@esbuild/linux-x64"
+        ],
+        "changed_existing_paths": [],
+        "changed_non_target_versions": 0,
+        "expected_optional_count": 25,
+        "parent": "esbuild",
+        "parent_version": "0.25.2",
+        "skipped": {}
+      },
+      "repaired_runtime_ok": true,
+      "strategy": "strict-donor",
+      "treatment": {
+        "command": [
+          "strict-donor"
+        ],
+        "returncode": 0,
+        "seconds": 0.4557,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [
+          "node_modules/picocolors"
+        ],
+        "changed_non_target_versions": 1,
+        "modified_existing_lock_nodes": [
+          "node_modules/picocolors"
+        ],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 25
+      },
+      "condition": "npm10_warm_defect",
+      "family": "esbuild",
+      "fault_present": true,
+      "lock_sha256": "e7973e21c6e1c677f6980b63a2c701c97330dec5a0b1ea44ec9d49993ce14726",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 13734,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('esbuild').transformSync('const x = 3')"
+        ],
+        "returncode": 0,
+        "seconds": 0.1631,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4805,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 27 packages in 377ms\n"
+      },
+      "parent": "esbuild",
+      "pin": "0.25.2",
+      "platform_coverage": {
+        "expected_portable_variants": 25,
+        "host_expected": [
+          "@esbuild/linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@esbuild/linux-x64"
+        ],
+        "present_portable_variants": 25
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "clean-regenerate",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4131,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 320ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "esbuild",
+      "fault_present": false,
+      "lock_sha256": "ad231b6f1ea0b5de573fb42fbc599cf96e9946350e3c6505e38fb543d36039ae",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 13734,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('esbuild').transformSync('const x = 3')"
+        ],
+        "returncode": 0,
+        "seconds": 0.176,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4615,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 27 packages in 362ms\n"
+      },
+      "parent": "esbuild",
+      "pin": "0.25.2",
+      "platform_coverage": {
+        "expected_portable_variants": 25,
+        "host_expected": [
+          "@esbuild/linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@esbuild/linux-x64"
+        ],
+        "present_portable_variants": 25
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "unmodified",
+      "treatment": {
+        "command": [
+          "unmodified"
+        ],
+        "returncode": 0,
+        "seconds": 0.0,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "esbuild",
+      "fault_present": false,
+      "lock_sha256": "0ddefacbfc3eaa1cb36f3f407173792ac994a612dd07097052aded6c8c9a67cc",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 13734,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('esbuild').transformSync('const x = 3')"
+        ],
+        "returncode": 0,
+        "seconds": 0.1708,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.5067,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 27 packages in 394ms\n"
+      },
+      "parent": "esbuild",
+      "pin": "0.25.2",
+      "platform_coverage": {
+        "expected_portable_variants": 25,
+        "host_expected": [
+          "@esbuild/linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@esbuild/linux-x64"
+        ],
+        "present_portable_variants": 25
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm11-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3335,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 225ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "esbuild",
+      "fault_present": false,
+      "lock_sha256": "0ddefacbfc3eaa1cb36f3f407173792ac994a612dd07097052aded6c8c9a67cc",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 13734,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('esbuild').transformSync('const x = 3')"
+        ],
+        "returncode": 0,
+        "seconds": 0.1749,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4834,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 27 packages in 374ms\n"
+      },
+      "parent": "esbuild",
+      "pin": "0.25.2",
+      "platform_coverage": {
+        "expected_portable_variants": 25,
+        "host_expected": [
+          "@esbuild/linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@esbuild/linux-x64"
+        ],
+        "present_portable_variants": 25
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm12-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm12/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4827,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will error in a future major version of npm. See `npm help npmrc` for supported config options.\n",
+        "stdout_tail": "\nup to date in 275ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "esbuild",
+      "fault_present": false,
+      "lock_sha256": "ad231b6f1ea0b5de573fb42fbc599cf96e9946350e3c6505e38fb543d36039ae",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 13734,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('esbuild').transformSync('const x = 3')"
+        ],
+        "returncode": 0,
+        "seconds": 0.1687,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4649,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 27 packages in 354ms\n"
+      },
+      "parent": "esbuild",
+      "pin": "0.25.2",
+      "platform_coverage": {
+        "expected_portable_variants": 25,
+        "host_expected": [
+          "@esbuild/linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@esbuild/linux-x64"
+        ],
+        "present_portable_variants": 25
+      },
+      "reference_usable": true,
+      "repair_audit": {
+        "added": [],
+        "already_present": [
+          "@esbuild/aix-ppc64",
+          "@esbuild/android-arm",
+          "@esbuild/android-arm64",
+          "@esbuild/android-x64",
+          "@esbuild/darwin-arm64",
+          "@esbuild/darwin-x64",
+          "@esbuild/freebsd-arm64",
+          "@esbuild/freebsd-x64",
+          "@esbuild/linux-arm",
+          "@esbuild/linux-arm64",
+          "@esbuild/linux-ia32",
+          "@esbuild/linux-loong64",
+          "@esbuild/linux-mips64el",
+          "@esbuild/linux-ppc64",
+          "@esbuild/linux-riscv64",
+          "@esbuild/linux-s390x",
+          "@esbuild/linux-x64",
+          "@esbuild/netbsd-arm64",
+          "@esbuild/netbsd-x64",
+          "@esbuild/openbsd-arm64",
+          "@esbuild/openbsd-x64",
+          "@esbuild/sunos-x64",
+          "@esbuild/win32-arm64",
+          "@esbuild/win32-ia32",
+          "@esbuild/win32-x64"
+        ],
+        "changed_existing_paths": [],
+        "changed_non_target_versions": 0,
+        "expected_optional_count": 25,
+        "parent": "esbuild",
+        "parent_version": "0.25.2",
+        "skipped": {}
+      },
+      "repaired_runtime_ok": true,
+      "strategy": "strict-donor",
+      "treatment": {
+        "command": [
+          "strict-donor"
+        ],
+        "returncode": 0,
+        "seconds": 0.4556,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [
+          "node_modules/picocolors"
+        ],
+        "changed_non_target_versions": 1,
+        "modified_existing_lock_nodes": [
+          "node_modules/picocolors"
+        ],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 1
+      },
+      "condition": "intact_negative_control",
+      "family": "esbuild",
+      "fault_present": false,
+      "lock_sha256": "e7973e21c6e1c677f6980b63a2c701c97330dec5a0b1ea44ec9d49993ce14726",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 13734,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('esbuild').transformSync('const x = 3')"
+        ],
+        "returncode": 0,
+        "seconds": 0.201,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4453,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 27 packages in 342ms\n"
+      },
+      "parent": "esbuild",
+      "pin": "0.25.2",
+      "platform_coverage": {
+        "expected_portable_variants": 25,
+        "host_expected": [
+          "@esbuild/linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@esbuild/linux-x64"
+        ],
+        "present_portable_variants": 25
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "clean-regenerate",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.5237,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 419ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "npm10_warm_defect",
+      "family": "biome",
+      "fault_present": true,
+      "lock_sha256": "7d0a0eae51f1248b61c6fab2f1e86d7e617331f06fe9fa576b13dae1793f2014",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 2019,
+      "native_execution": {
+        "command": [
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/results/local_all_with_npm12/biome/npm10_warm_defect_unmodified/node_modules/.bin/biome",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.0944,
+        "stderr_tail": "",
+        "stdout_tail": "Version: 1.9.4\n\n"
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.5797,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 3 packages in 466ms\n"
+      },
+      "parent": "@biomejs/biome",
+      "pin": "1.9.4",
+      "platform_coverage": {
+        "expected_portable_variants": 8,
+        "host_expected": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "present_portable_variants": 1
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "unmodified",
+      "treatment": {
+        "command": [
+          "unmodified"
+        ],
+        "returncode": 0,
+        "seconds": 0.0,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "npm10_warm_defect",
+      "family": "biome",
+      "fault_present": true,
+      "lock_sha256": "65c3fd55ec43cad5e51b105bd300fb92a7b5fc37f7738d1c3caf28069c5cef33",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 2019,
+      "native_execution": {
+        "command": [
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/results/local_all_with_npm12/biome/npm10_warm_defect_npm11-in-place/node_modules/.bin/biome",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.1014,
+        "stderr_tail": "",
+        "stdout_tail": "Version: 1.9.4\n\n"
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.699,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 3 packages in 566ms\n"
+      },
+      "parent": "@biomejs/biome",
+      "pin": "1.9.4",
+      "platform_coverage": {
+        "expected_portable_variants": 8,
+        "host_expected": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "present_portable_variants": 1
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm11-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.2968,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 194ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 7
+      },
+      "condition": "npm10_warm_defect",
+      "family": "biome",
+      "fault_present": true,
+      "lock_sha256": "17f58d9b3962c634a61b2181e726cab2a08fd125fe3b257aeb55fbb9c76629b1",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 5619,
+      "native_execution": {
+        "command": [
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/results/local_all_with_npm12/biome/npm10_warm_defect_npm12-in-place/node_modules/.bin/biome",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.0792,
+        "stderr_tail": "",
+        "stdout_tail": "Version: 1.9.4\n\n"
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.577,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 10 packages in 463ms\n"
+      },
+      "parent": "@biomejs/biome",
+      "pin": "1.9.4",
+      "platform_coverage": {
+        "expected_portable_variants": 8,
+        "host_expected": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "present_portable_variants": 8
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm12-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm12/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4969,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will error in a future major version of npm. See `npm help npmrc` for supported config options.\n",
+        "stdout_tail": "\nup to date in 388ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 7
+      },
+      "condition": "npm10_warm_defect",
+      "family": "biome",
+      "fault_present": true,
+      "lock_sha256": "bd199d31c71f8ba285cfebbcddda65795a4e1b5b0258e8f49aaf1740c581c8c9",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 5498,
+      "native_execution": {
+        "command": [
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/results/local_all_with_npm12/biome/npm10_warm_defect_strict-donor/node_modules/.bin/biome",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.0871,
+        "stderr_tail": "",
+        "stdout_tail": "Version: 1.9.4\n\n"
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.804,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 10 packages in 699ms\n"
+      },
+      "parent": "@biomejs/biome",
+      "pin": "1.9.4",
+      "platform_coverage": {
+        "expected_portable_variants": 8,
+        "host_expected": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "present_portable_variants": 8
+      },
+      "reference_usable": true,
+      "repair_audit": {
+        "added": [
+          "@biomejs/cli-darwin-arm64",
+          "@biomejs/cli-darwin-x64",
+          "@biomejs/cli-linux-arm64",
+          "@biomejs/cli-linux-arm64-musl",
+          "@biomejs/cli-linux-x64-musl",
+          "@biomejs/cli-win32-arm64",
+          "@biomejs/cli-win32-x64"
+        ],
+        "already_present": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "changed_existing_paths": [],
+        "changed_non_target_versions": 0,
+        "expected_optional_count": 8,
+        "parent": "@biomejs/biome",
+        "parent_version": "1.9.4",
+        "skipped": {}
+      },
+      "repaired_runtime_ok": true,
+      "strategy": "strict-donor",
+      "treatment": {
+        "command": [
+          "strict-donor"
+        ],
+        "returncode": 0,
+        "seconds": 0.4411,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [
+          "node_modules/picocolors"
+        ],
+        "changed_non_target_versions": 1,
+        "modified_existing_lock_nodes": [
+          "node_modules/picocolors"
+        ],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 8
+      },
+      "condition": "npm10_warm_defect",
+      "family": "biome",
+      "fault_present": true,
+      "lock_sha256": "77f1895c662f37433f127021ac5738bff17bc59cf80ec8f0c13524dbf4177a11",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 5498,
+      "native_execution": {
+        "command": [
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/results/local_all_with_npm12/biome/npm10_warm_defect_clean-regenerate/node_modules/.bin/biome",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.0779,
+        "stderr_tail": "",
+        "stdout_tail": "Version: 1.9.4\n\n"
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.6745,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 10 packages in 569ms\n"
+      },
+      "parent": "@biomejs/biome",
+      "pin": "1.9.4",
+      "platform_coverage": {
+        "expected_portable_variants": 8,
+        "host_expected": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "present_portable_variants": 8
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "clean-regenerate",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.384,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 274ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "biome",
+      "fault_present": false,
+      "lock_sha256": "bd199d31c71f8ba285cfebbcddda65795a4e1b5b0258e8f49aaf1740c581c8c9",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 5498,
+      "native_execution": {
+        "command": [
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/results/local_all_with_npm12/biome/intact_negative_control_unmodified/node_modules/.bin/biome",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.0927,
+        "stderr_tail": "",
+        "stdout_tail": "Version: 1.9.4\n\n"
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.868,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 10 packages in 751ms\n"
+      },
+      "parent": "@biomejs/biome",
+      "pin": "1.9.4",
+      "platform_coverage": {
+        "expected_portable_variants": 8,
+        "host_expected": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "present_portable_variants": 8
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "unmodified",
+      "treatment": {
+        "command": [
+          "unmodified"
+        ],
+        "returncode": 0,
+        "seconds": 0.0,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "biome",
+      "fault_present": false,
+      "lock_sha256": "4ecf6f10e5868b53ecc0ddf07dbf527586f23acad31489b9d86acd463e98e489",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 5498,
+      "native_execution": {
+        "command": [
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/results/local_all_with_npm12/biome/intact_negative_control_npm11-in-place/node_modules/.bin/biome",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.0848,
+        "stderr_tail": "",
+        "stdout_tail": "Version: 1.9.4\n\n"
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.7098,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 10 packages in 611ms\n"
+      },
+      "parent": "@biomejs/biome",
+      "pin": "1.9.4",
+      "platform_coverage": {
+        "expected_portable_variants": 8,
+        "host_expected": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "present_portable_variants": 8
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm11-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.2935,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 188ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "biome",
+      "fault_present": false,
+      "lock_sha256": "4ecf6f10e5868b53ecc0ddf07dbf527586f23acad31489b9d86acd463e98e489",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 5498,
+      "native_execution": {
+        "command": [
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/results/local_all_with_npm12/biome/intact_negative_control_npm12-in-place/node_modules/.bin/biome",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.0873,
+        "stderr_tail": "",
+        "stdout_tail": "Version: 1.9.4\n\n"
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.7625,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 10 packages in 651ms\n"
+      },
+      "parent": "@biomejs/biome",
+      "pin": "1.9.4",
+      "platform_coverage": {
+        "expected_portable_variants": 8,
+        "host_expected": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "present_portable_variants": 8
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm12-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm12/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4295,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will error in a future major version of npm. See `npm help npmrc` for supported config options.\n",
+        "stdout_tail": "\nup to date in 310ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "biome",
+      "fault_present": false,
+      "lock_sha256": "bd199d31c71f8ba285cfebbcddda65795a4e1b5b0258e8f49aaf1740c581c8c9",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 5498,
+      "native_execution": {
+        "command": [
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/results/local_all_with_npm12/biome/intact_negative_control_strict-donor/node_modules/.bin/biome",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.0867,
+        "stderr_tail": "",
+        "stdout_tail": "Version: 1.9.4\n\n"
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.6971,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 10 packages in 593ms\n"
+      },
+      "parent": "@biomejs/biome",
+      "pin": "1.9.4",
+      "platform_coverage": {
+        "expected_portable_variants": 8,
+        "host_expected": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "present_portable_variants": 8
+      },
+      "reference_usable": true,
+      "repair_audit": {
+        "added": [],
+        "already_present": [
+          "@biomejs/cli-darwin-arm64",
+          "@biomejs/cli-darwin-x64",
+          "@biomejs/cli-linux-arm64",
+          "@biomejs/cli-linux-arm64-musl",
+          "@biomejs/cli-linux-x64",
+          "@biomejs/cli-linux-x64-musl",
+          "@biomejs/cli-win32-arm64",
+          "@biomejs/cli-win32-x64"
+        ],
+        "changed_existing_paths": [],
+        "changed_non_target_versions": 0,
+        "expected_optional_count": 8,
+        "parent": "@biomejs/biome",
+        "parent_version": "1.9.4",
+        "skipped": {}
+      },
+      "repaired_runtime_ok": true,
+      "strategy": "strict-donor",
+      "treatment": {
+        "command": [
+          "strict-donor"
+        ],
+        "returncode": 0,
+        "seconds": 0.4411,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [
+          "node_modules/picocolors"
+        ],
+        "changed_non_target_versions": 1,
+        "modified_existing_lock_nodes": [
+          "node_modules/picocolors"
+        ],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 1
+      },
+      "condition": "intact_negative_control",
+      "family": "biome",
+      "fault_present": false,
+      "lock_sha256": "77f1895c662f37433f127021ac5738bff17bc59cf80ec8f0c13524dbf4177a11",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 5498,
+      "native_execution": {
+        "command": [
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/results/local_all_with_npm12/biome/intact_negative_control_clean-regenerate/node_modules/.bin/biome",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.085,
+        "stderr_tail": "",
+        "stdout_tail": "Version: 1.9.4\n\n"
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.7228,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 10 packages in 620ms\n"
+      },
+      "parent": "@biomejs/biome",
+      "pin": "1.9.4",
+      "platform_coverage": {
+        "expected_portable_variants": 8,
+        "host_expected": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "present_portable_variants": 8
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "clean-regenerate",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.5149,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 400ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "npm10_warm_defect",
+      "family": "swc",
+      "fault_present": true,
+      "lock_sha256": "883b935718288fa92951014a6d6447c2fc045ffa38c07b25e7c3337e9599d6f6",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 2979,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('@swc/core').transformSync('const x = 3', {jsc:{parser:{syntax:'ecmascript'}}})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0773,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.7361,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 5 packages in 627ms\n"
+      },
+      "parent": "@swc/core",
+      "pin": "1.10.14",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "present_portable_variants": 1
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "unmodified",
+      "treatment": {
+        "command": [
+          "unmodified"
+        ],
+        "returncode": 0,
+        "seconds": 0.0,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "npm10_warm_defect",
+      "family": "swc",
+      "fault_present": true,
+      "lock_sha256": "2ce4d0d65d6a9740a4de60b2e1e8b7de3374a09e87053e2fde3e60e33a2872df",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 2979,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('@swc/core').transformSync('const x = 3', {jsc:{parser:{syntax:'ecmascript'}}})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0872,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.725,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 5 packages in 624ms\n"
+      },
+      "parent": "@swc/core",
+      "pin": "1.10.14",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "present_portable_variants": 1
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm11-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3545,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 259ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 9
+      },
+      "condition": "npm10_warm_defect",
+      "family": "swc",
+      "fault_present": true,
+      "lock_sha256": "f7964717122cd67ac02ed8486f4e81b0a52067e1e7d38135ee8cbf8b822c6e80",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 7591,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('@swc/core').transformSync('const x = 3', {jsc:{parser:{syntax:'ecmascript'}}})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0801,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.8967,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 14 packages in 765ms\n"
+      },
+      "parent": "@swc/core",
+      "pin": "1.10.14",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm12-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm12/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.5766,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will error in a future major version of npm. See `npm help npmrc` for supported config options.\n",
+        "stdout_tail": "\nup to date in 463ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 9
+      },
+      "condition": "npm10_warm_defect",
+      "family": "swc",
+      "fault_present": true,
+      "lock_sha256": "89b4dd0952a25dfc738ff1d6b542318876d0ffb3b43c75fd38e49b59b0cf6583",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 7470,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('@swc/core').transformSync('const x = 3', {jsc:{parser:{syntax:'ecmascript'}}})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0816,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 1.0291,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 14 packages in 928ms\n"
+      },
+      "parent": "@swc/core",
+      "pin": "1.10.14",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": {
+        "added": [
+          "@swc/core-darwin-arm64",
+          "@swc/core-darwin-x64",
+          "@swc/core-linux-arm-gnueabihf",
+          "@swc/core-linux-arm64-gnu",
+          "@swc/core-linux-arm64-musl",
+          "@swc/core-linux-x64-musl",
+          "@swc/core-win32-arm64-msvc",
+          "@swc/core-win32-ia32-msvc",
+          "@swc/core-win32-x64-msvc"
+        ],
+        "already_present": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "changed_existing_paths": [],
+        "changed_non_target_versions": 0,
+        "expected_optional_count": 10,
+        "parent": "@swc/core",
+        "parent_version": "1.10.14",
+        "skipped": {}
+      },
+      "repaired_runtime_ok": true,
+      "strategy": "strict-donor",
+      "treatment": {
+        "command": [
+          "strict-donor"
+        ],
+        "returncode": 0,
+        "seconds": 0.6079,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [
+          "node_modules/picocolors"
+        ],
+        "changed_non_target_versions": 1,
+        "modified_existing_lock_nodes": [
+          "node_modules/picocolors"
+        ],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 10
+      },
+      "condition": "npm10_warm_defect",
+      "family": "swc",
+      "fault_present": true,
+      "lock_sha256": "41ecc23a17febd2fb038f3d9811b364237ec5d5fc3dd0578ef63724d91b11f61",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 7470,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('@swc/core').transformSync('const x = 3', {jsc:{parser:{syntax:'ecmascript'}}})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0763,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 1.2169,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 14 packages in 1s\n"
+      },
+      "parent": "@swc/core",
+      "pin": "1.10.14",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "clean-regenerate",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.491,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 393ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "swc",
+      "fault_present": false,
+      "lock_sha256": "89b4dd0952a25dfc738ff1d6b542318876d0ffb3b43c75fd38e49b59b0cf6583",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 7470,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('@swc/core').transformSync('const x = 3', {jsc:{parser:{syntax:'ecmascript'}}})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0861,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 1.2255,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 14 packages in 1s\n"
+      },
+      "parent": "@swc/core",
+      "pin": "1.10.14",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "unmodified",
+      "treatment": {
+        "command": [
+          "unmodified"
+        ],
+        "returncode": 0,
+        "seconds": 0.0,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "swc",
+      "fault_present": false,
+      "lock_sha256": "97a863fe527a7a10682b33d3c59ed5d789e50aaadd3ef3e3b113d0e76b727417",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 7470,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('@swc/core').transformSync('const x = 3', {jsc:{parser:{syntax:'ecmascript'}}})"
+        ],
+        "returncode": 0,
+        "seconds": 0.1184,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 1.2211,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 14 packages in 1s\n"
+      },
+      "parent": "@swc/core",
+      "pin": "1.10.14",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm11-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3405,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 218ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "swc",
+      "fault_present": false,
+      "lock_sha256": "97a863fe527a7a10682b33d3c59ed5d789e50aaadd3ef3e3b113d0e76b727417",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 7470,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('@swc/core').transformSync('const x = 3', {jsc:{parser:{syntax:'ecmascript'}}})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0926,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 1.4772,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 14 packages in 1s\n"
+      },
+      "parent": "@swc/core",
+      "pin": "1.10.14",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm12-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm12/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3343,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will error in a future major version of npm. See `npm help npmrc` for supported config options.\n",
+        "stdout_tail": "\nup to date in 238ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "swc",
+      "fault_present": false,
+      "lock_sha256": "89b4dd0952a25dfc738ff1d6b542318876d0ffb3b43c75fd38e49b59b0cf6583",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 7470,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('@swc/core').transformSync('const x = 3', {jsc:{parser:{syntax:'ecmascript'}}})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0845,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 1.3107,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 14 packages in 1s\n"
+      },
+      "parent": "@swc/core",
+      "pin": "1.10.14",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": {
+        "added": [],
+        "already_present": [
+          "@swc/core-darwin-arm64",
+          "@swc/core-darwin-x64",
+          "@swc/core-linux-arm-gnueabihf",
+          "@swc/core-linux-arm64-gnu",
+          "@swc/core-linux-arm64-musl",
+          "@swc/core-linux-x64-gnu",
+          "@swc/core-linux-x64-musl",
+          "@swc/core-win32-arm64-msvc",
+          "@swc/core-win32-ia32-msvc",
+          "@swc/core-win32-x64-msvc"
+        ],
+        "changed_existing_paths": [],
+        "changed_non_target_versions": 0,
+        "expected_optional_count": 10,
+        "parent": "@swc/core",
+        "parent_version": "1.10.14",
+        "skipped": {}
+      },
+      "repaired_runtime_ok": true,
+      "strategy": "strict-donor",
+      "treatment": {
+        "command": [
+          "strict-donor"
+        ],
+        "returncode": 0,
+        "seconds": 0.6078,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [
+          "node_modules/picocolors"
+        ],
+        "changed_non_target_versions": 1,
+        "modified_existing_lock_nodes": [
+          "node_modules/picocolors"
+        ],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 1
+      },
+      "condition": "intact_negative_control",
+      "family": "swc",
+      "fault_present": false,
+      "lock_sha256": "41ecc23a17febd2fb038f3d9811b364237ec5d5fc3dd0578ef63724d91b11f61",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 7470,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('@swc/core').transformSync('const x = 3', {jsc:{parser:{syntax:'ecmascript'}}})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0818,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 1.1315,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 14 packages in 1s\n"
+      },
+      "parent": "@swc/core",
+      "pin": "1.10.14",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "clean-regenerate",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.5269,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 416ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "npm10_warm_defect",
+      "family": "lightningcss",
+      "fault_present": true,
+      "lock_sha256": "a20c9526bfc233eaace75ef7a9a7cdcbf9799b1f7b84144139fad1e10f5b0090",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 2609,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('lightningcss').transform({filename:'a.css',code:Buffer.from('a{color:red}')})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0733,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3776,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 4 packages in 285ms\n"
+      },
+      "parent": "lightningcss",
+      "pin": "1.29.3",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "present_portable_variants": 1
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "unmodified",
+      "treatment": {
+        "command": [
+          "unmodified"
+        ],
+        "returncode": 0,
+        "seconds": 0.0,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "npm10_warm_defect",
+      "family": "lightningcss",
+      "fault_present": true,
+      "lock_sha256": "97bfb566e73e40ad618bfadadcf3be0282b590b4c1474579e6587329388ecef7",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 2609,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('lightningcss').transform({filename:'a.css',code:Buffer.from('a{color:red}')})"
+        ],
+        "returncode": 0,
+        "seconds": 0.084,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4702,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 4 packages in 306ms\n"
+      },
+      "parent": "lightningcss",
+      "pin": "1.29.3",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "present_portable_variants": 1
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm11-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3175,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 212ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 9
+      },
+      "condition": "npm10_warm_defect",
+      "family": "lightningcss",
+      "fault_present": true,
+      "lock_sha256": "c88eb2eebaa649d0d98cccdb0bd37c8dc0f253f9433b58dac8382e82a5194923",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 8289,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('lightningcss').transform({filename:'a.css',code:Buffer.from('a{color:red}')})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0843,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4226,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 13 packages in 319ms\n"
+      },
+      "parent": "lightningcss",
+      "pin": "1.29.3",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm12-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm12/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3954,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will error in a future major version of npm. See `npm help npmrc` for supported config options.\n",
+        "stdout_tail": "\nup to date in 299ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 9
+      },
+      "condition": "npm10_warm_defect",
+      "family": "lightningcss",
+      "fault_present": true,
+      "lock_sha256": "da65b9b49bba3f92da214bbf8d81e94aafcbbdac7f1cbcbba8b9f595e84f98dc",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 8168,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('lightningcss').transform({filename:'a.css',code:Buffer.from('a{color:red}')})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0853,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4228,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 13 packages in 330ms\n"
+      },
+      "parent": "lightningcss",
+      "pin": "1.29.3",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": {
+        "added": [
+          "lightningcss-darwin-arm64",
+          "lightningcss-darwin-x64",
+          "lightningcss-freebsd-x64",
+          "lightningcss-linux-arm-gnueabihf",
+          "lightningcss-linux-arm64-gnu",
+          "lightningcss-linux-arm64-musl",
+          "lightningcss-linux-x64-musl",
+          "lightningcss-win32-arm64-msvc",
+          "lightningcss-win32-x64-msvc"
+        ],
+        "already_present": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "changed_existing_paths": [],
+        "changed_non_target_versions": 0,
+        "expected_optional_count": 10,
+        "parent": "lightningcss",
+        "parent_version": "1.29.3",
+        "skipped": {}
+      },
+      "repaired_runtime_ok": true,
+      "strategy": "strict-donor",
+      "treatment": {
+        "command": [
+          "strict-donor"
+        ],
+        "returncode": 0,
+        "seconds": 0.3596,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [
+          "node_modules/picocolors"
+        ],
+        "changed_non_target_versions": 1,
+        "modified_existing_lock_nodes": [
+          "node_modules/picocolors"
+        ],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 10
+      },
+      "condition": "npm10_warm_defect",
+      "family": "lightningcss",
+      "fault_present": true,
+      "lock_sha256": "fe846b3cee515a11a350450dabb0e07ef4fe9ded398c0b89c0e92a805648eeb8",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 8168,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('lightningcss').transform({filename:'a.css',code:Buffer.from('a{color:red}')})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0723,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4412,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 13 packages in 342ms\n"
+      },
+      "parent": "lightningcss",
+      "pin": "1.29.3",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "clean-regenerate",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.407,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 305ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "lightningcss",
+      "fault_present": false,
+      "lock_sha256": "da65b9b49bba3f92da214bbf8d81e94aafcbbdac7f1cbcbba8b9f595e84f98dc",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 8168,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('lightningcss').transform({filename:'a.css',code:Buffer.from('a{color:red}')})"
+        ],
+        "returncode": 0,
+        "seconds": 0.085,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4769,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 13 packages in 378ms\n"
+      },
+      "parent": "lightningcss",
+      "pin": "1.29.3",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "unmodified",
+      "treatment": {
+        "command": [
+          "unmodified"
+        ],
+        "returncode": 0,
+        "seconds": 0.0,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "lightningcss",
+      "fault_present": false,
+      "lock_sha256": "127c584281ff00a96006ccdd7b98fbd24ff9a7b12723437ef96419a564d88e1b",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 8168,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('lightningcss').transform({filename:'a.css',code:Buffer.from('a{color:red}')})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0928,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.647,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 13 packages in 533ms\n"
+      },
+      "parent": "lightningcss",
+      "pin": "1.29.3",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm11-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.2933,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 188ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "lightningcss",
+      "fault_present": false,
+      "lock_sha256": "127c584281ff00a96006ccdd7b98fbd24ff9a7b12723437ef96419a564d88e1b",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 8168,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('lightningcss').transform({filename:'a.css',code:Buffer.from('a{color:red}')})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0719,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4706,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 13 packages in 371ms\n"
+      },
+      "parent": "lightningcss",
+      "pin": "1.29.3",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "npm12-in-place",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm12/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3674,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will error in a future major version of npm. See `npm help npmrc` for supported config options.\n",
+        "stdout_tail": "\nup to date in 250ms\n"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [],
+        "changed_non_target_versions": 0,
+        "modified_existing_lock_nodes": [],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 0
+      },
+      "condition": "intact_negative_control",
+      "family": "lightningcss",
+      "fault_present": false,
+      "lock_sha256": "da65b9b49bba3f92da214bbf8d81e94aafcbbdac7f1cbcbba8b9f595e84f98dc",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 8168,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('lightningcss').transform({filename:'a.css',code:Buffer.from('a{color:red}')})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0753,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4632,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 13 packages in 352ms\n"
+      },
+      "parent": "lightningcss",
+      "pin": "1.29.3",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": {
+        "added": [],
+        "already_present": [
+          "lightningcss-darwin-arm64",
+          "lightningcss-darwin-x64",
+          "lightningcss-freebsd-x64",
+          "lightningcss-linux-arm-gnueabihf",
+          "lightningcss-linux-arm64-gnu",
+          "lightningcss-linux-arm64-musl",
+          "lightningcss-linux-x64-gnu",
+          "lightningcss-linux-x64-musl",
+          "lightningcss-win32-arm64-msvc",
+          "lightningcss-win32-x64-msvc"
+        ],
+        "changed_existing_paths": [],
+        "changed_non_target_versions": 0,
+        "expected_optional_count": 10,
+        "parent": "lightningcss",
+        "parent_version": "1.29.3",
+        "skipped": {}
+      },
+      "repaired_runtime_ok": true,
+      "strategy": "strict-donor",
+      "treatment": {
+        "command": [
+          "strict-donor"
+        ],
+        "returncode": 0,
+        "seconds": 0.3596,
+        "stderr_tail": "",
+        "stdout_tail": "no modification"
+      }
+    },
+    {
+      "comparison": {
+        "changed_non_target_version_keys": [
+          "node_modules/picocolors"
+        ],
+        "changed_non_target_versions": 1,
+        "modified_existing_lock_nodes": [
+          "node_modules/picocolors"
+        ],
+        "new_non_target_lock_nodes": [],
+        "removed_non_target_lock_nodes": [],
+        "total_lock_nodes_changed_or_added": 1
+      },
+      "condition": "intact_negative_control",
+      "family": "lightningcss",
+      "fault_present": false,
+      "lock_sha256": "fe846b3cee515a11a350450dabb0e07ef4fe9ded398c0b89c0e92a805648eeb8",
+      "lock_sha256_unchanged_by_ci": true,
+      "lockfile_bytes": 8168,
+      "native_execution": {
+        "command": [
+          "node",
+          "-e",
+          "require('lightningcss').transform({filename:'a.css',code:Buffer.from('a{color:red}')})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0806,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "npm_ci": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4795,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 13 packages in 377ms\n"
+      },
+      "parent": "lightningcss",
+      "pin": "1.29.3",
+      "platform_coverage": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "reference_usable": true,
+      "repair_audit": null,
+      "repaired_runtime_ok": true,
+      "strategy": "clean-regenerate",
+      "treatment": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4566,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 341ms\n"
+      }
+    }
+  ],
+  "setup": {
+    "biome": {
+      "broken_host": {
+        "expected_portable_variants": 8,
+        "host_expected": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "present_portable_variants": 1
+      },
+      "complete_host": {
+        "expected_portable_variants": 8,
+        "host_expected": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "present_portable_variants": 8
+      },
+      "full_lock_generation": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 8.0982,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 8s\n"
+      },
+      "independent_donor_generation": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4407,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 323ms\n"
+      },
+      "input_hashes_sha256": {
+        "complete": "bd199d31c71f8ba285cfebbcddda65795a4e1b5b0258e8f49aaf1740c581c8c9",
+        "donor": "17fc294b984a9162defddb0b9778aac366e5fd72856242ee3fbb90deccfb4fc0",
+        "npm10_warm": "7d0a0eae51f1248b61c6fab2f1e86d7e617331f06fe9fa576b13dae1793f2014"
+      },
+      "input_source": "current native host",
+      "local_npm10_warm_sha256": "7d0a0eae51f1248b61c6fab2f1e86d7e617331f06fe9fa576b13dae1793f2014",
+      "old_cold_host": {
+        "expected_portable_variants": 8,
+        "host_expected": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@biomejs/cli-linux-x64"
+        ],
+        "present_portable_variants": 8
+      },
+      "old_cold_install": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm10/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 5.1787,
+        "stderr_tail": "",
+        "stdout_tail": "\nadded 3 packages in 5s\n"
+      },
+      "old_warm_regeneration": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm10/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4138,
+        "stderr_tail": "",
+        "stdout_tail": "\nup to date in 294ms\n"
+      },
+      "reference_install": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 4.352,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 10 packages in 4s\n"
+      },
+      "reference_runtime": {
+        "command": [
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/results/local_all_with_npm12/biome/independent_reference/node_modules/.bin/biome",
+          "--version"
+        ],
+        "returncode": 0,
+        "seconds": 0.0896,
+        "stderr_tail": "",
+        "stdout_tail": "Version: 1.9.4\n\n"
+      },
+      "reference_usable": true,
+      "reproduced_defect": true
+    },
+    "esbuild": {
+      "broken_host": {
+        "expected_portable_variants": 25,
+        "host_expected": [
+          "@esbuild/linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@esbuild/linux-x64"
+        ],
+        "present_portable_variants": 1
+      },
+      "complete_host": {
+        "expected_portable_variants": 25,
+        "host_expected": [
+          "@esbuild/linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@esbuild/linux-x64"
+        ],
+        "present_portable_variants": 25
+      },
+      "full_lock_generation": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 8.5641,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 8s\n"
+      },
+      "independent_donor_generation": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4549,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 352ms\n"
+      },
+      "input_hashes_sha256": {
+        "complete": "ad231b6f1ea0b5de573fb42fbc599cf96e9946350e3c6505e38fb543d36039ae",
+        "donor": "750b61e540d735ad47f85868c0ec32498da304fde23d1a57539ae615180f4028",
+        "npm10_warm": "4a96cac01d2be7dcbe54f66e7137ed261e69c12ff4042ac2c615917b91f7bfe0"
+      },
+      "input_source": "current native host",
+      "local_npm10_warm_sha256": "4a96cac01d2be7dcbe54f66e7137ed261e69c12ff4042ac2c615917b91f7bfe0",
+      "old_cold_host": {
+        "expected_portable_variants": 25,
+        "host_expected": [
+          "@esbuild/linux-x64"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@esbuild/linux-x64"
+        ],
+        "present_portable_variants": 25
+      },
+      "old_cold_install": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm10/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 3.9971,
+        "stderr_tail": "",
+        "stdout_tail": "\nadded 3 packages in 4s\n"
+      },
+      "old_warm_regeneration": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm10/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3268,
+        "stderr_tail": "",
+        "stdout_tail": "\nup to date in 212ms\n"
+      },
+      "reference_install": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.4484,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 27 packages in 346ms\n"
+      },
+      "reference_runtime": {
+        "command": [
+          "node",
+          "-e",
+          "require('esbuild').transformSync('const x = 3')"
+        ],
+        "returncode": 0,
+        "seconds": 0.1667,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "reference_usable": true,
+      "reproduced_defect": true
+    },
+    "lightningcss": {
+      "broken_host": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "present_portable_variants": 1
+      },
+      "complete_host": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "full_lock_generation": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 7.4483,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 7s\n"
+      },
+      "independent_donor_generation": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.3591,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 263ms\n"
+      },
+      "input_hashes_sha256": {
+        "complete": "da65b9b49bba3f92da214bbf8d81e94aafcbbdac7f1cbcbba8b9f595e84f98dc",
+        "donor": "cba78bf13a2d41320e5d23f5cef041e188151d9eefa67d4aa27d6ab914fbcab5",
+        "npm10_warm": "a20c9526bfc233eaace75ef7a9a7cdcbf9799b1f7b84144139fad1e10f5b0090"
+      },
+      "input_source": "current native host",
+      "local_npm10_warm_sha256": "a20c9526bfc233eaace75ef7a9a7cdcbf9799b1f7b84144139fad1e10f5b0090",
+      "old_cold_host": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "lightningcss-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "old_cold_install": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm10/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 8.3242,
+        "stderr_tail": "",
+        "stdout_tail": "\nadded 4 packages in 8s\n"
+      },
+      "old_warm_regeneration": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm10/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.2964,
+        "stderr_tail": "",
+        "stdout_tail": "\nup to date in 197ms\n"
+      },
+      "reference_install": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 4.1808,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 13 packages in 4s\n"
+      },
+      "reference_runtime": {
+        "command": [
+          "node",
+          "-e",
+          "require('lightningcss').transform({filename:'a.css',code:Buffer.from('a{color:red}')})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0936,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "reference_usable": true,
+      "reproduced_defect": true
+    },
+    "rollup": {
+      "broken_host": {
+        "expected_portable_variants": 16,
+        "host_expected": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "present_portable_variants": 1
+      },
+      "complete_host": {
+        "expected_portable_variants": 16,
+        "host_expected": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "present_portable_variants": 16
+      },
+      "full_lock_generation": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 8.9784,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 9s\n"
+      },
+      "independent_donor_generation": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.5629,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 449ms\n"
+      },
+      "input_hashes_sha256": {
+        "complete": "0b2305740992eef9f316a6db1c0f9d516d4a56b3bdeca5373893907a6137f9cb",
+        "donor": "a79ababc60675ace49cf27937174610a335a5362515bbcffb561d66b7c9b11bd",
+        "npm10_warm": "89d0430cca0d94cd8efc01df2024e38a090d6fda1070dcae25518f5271733868"
+      },
+      "input_source": "current native host",
+      "local_npm10_warm_sha256": "89d0430cca0d94cd8efc01df2024e38a090d6fda1070dcae25518f5271733868",
+      "old_cold_host": {
+        "expected_portable_variants": 16,
+        "host_expected": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@rollup/rollup-linux-x64-gnu"
+        ],
+        "present_portable_variants": 16
+      },
+      "old_cold_install": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm10/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 6.3839,
+        "stderr_tail": "",
+        "stdout_tail": "\nadded 4 packages in 6s\n"
+      },
+      "old_warm_regeneration": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm10/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.2942,
+        "stderr_tail": "",
+        "stdout_tail": "\nup to date in 193ms\n"
+      },
+      "reference_install": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 6.4081,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 20 packages in 6s\n"
+      },
+      "reference_runtime": {
+        "command": [
+          "node",
+          "-e",
+          "require('rollup').rollup({input:'virtual',plugins:[{name:'inline',resolveId(id){return id==='virtual'?id:null},load(id){return id==='virtual'?'export const n=3':null}}]}).then(b=>b.generate({format:'esm'})).then(x=>{if(!Array.isArray(x.output)||!x.output[0].code)throw Error('empty output')}).catch(e=>{console.error(e);process.exit(1)})"
+        ],
+        "returncode": 0,
+        "seconds": 0.1222,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "reference_usable": true,
+      "reproduced_defect": true
+    },
+    "swc": {
+      "broken_host": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "present_portable_variants": 1
+      },
+      "complete_host": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "full_lock_generation": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 10.3471,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 10s\n"
+      },
+      "independent_donor_generation": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.6074,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nup to date in 502ms\n"
+      },
+      "input_hashes_sha256": {
+        "complete": "89b4dd0952a25dfc738ff1d6b542318876d0ffb3b43c75fd38e49b59b0cf6583",
+        "donor": "c9f1b6b554bc9ae9a85096565fcaa412d76cf131c8d8ae28209326969edd0e0d",
+        "npm10_warm": "883b935718288fa92951014a6d6447c2fc045ffa38c07b25e7c3337e9599d6f6"
+      },
+      "input_source": "current native host",
+      "local_npm10_warm_sha256": "883b935718288fa92951014a6d6447c2fc045ffa38c07b25e7c3337e9599d6f6",
+      "old_cold_host": {
+        "expected_portable_variants": 10,
+        "host_expected": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "host_missing": [],
+        "host_present": [
+          "@swc/core-linux-x64-gnu"
+        ],
+        "present_portable_variants": 10
+      },
+      "old_cold_install": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm10/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 6.314,
+        "stderr_tail": "",
+        "stdout_tail": "\nadded 5 packages in 6s\n"
+      },
+      "old_warm_regeneration": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm10/node_modules/npm/bin/npm-cli.js",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 0.289,
+        "stderr_tail": "",
+        "stdout_tail": "\nup to date in 181ms\n"
+      },
+      "reference_install": {
+        "command": [
+          "node",
+          "/workspace/scratch/0d59e3890b67/n24-paper/n24_submission_experiments/tools/npm11/node_modules/npm/bin/npm-cli.js",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund"
+        ],
+        "returncode": 0,
+        "seconds": 4.7588,
+        "stderr_tail": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n",
+        "stdout_tail": "\nadded 14 packages in 5s\n"
+      },
+      "reference_runtime": {
+        "command": [
+          "node",
+          "-e",
+          "require('@swc/core').transformSync('const x = 3', {jsc:{parser:{syntax:'ecmascript'}}})"
+        ],
+        "returncode": 0,
+        "seconds": 0.0868,
+        "stderr_tail": "",
+        "stdout_tail": ""
+      },
+      "reference_usable": true,
+      "reproduced_defect": true
+    }
+  },
+  "source_date_utc": "2026-11-18",
+  "strategies": [
+    "unmodified",
+    "npm11-in-place",
+    "npm12-in-place",
+    "strict-donor",
+    "clean-regenerate"
+  ],
+  "study": "N24"
+}

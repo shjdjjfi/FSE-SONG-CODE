@@ -1,0 +1,51 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 0,
+  "bytes": 60472,
+  "control_flow_or_callback_lines": 4,
+  "event": "BW11709",
+  "examples": [
+    {
+      "change": "-",
+      "code": "(await this.encryptService.encrypt(privateKey, newUnencryptedUserKey)).encryptedString!,",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "(",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "await this.encryptService.wrapDecapsulationKey(privateKey, newUnencryptedUserKey)",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": ").encryptedString!,",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "return (await this.encryptService.encrypt(privateKey, newUserKey)).encryptedString;",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "return (await this.encryptService.wrapDecapsulationKey(privateKey, newUserKey)).encryptedString;",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:47.261937+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+  "noncomment_nonimport_changed_lines": 6,
+  "pr": 14080,
+  "repository": "bitwarden/clients",
+  "sha256": "3d2c724b14190139d77f0ba01c177b893336b8e2ad656d132df10a22180d1536",
+  "target_code_changed_lines": 6,
+  "target_files": [
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/14080.patch"
+}

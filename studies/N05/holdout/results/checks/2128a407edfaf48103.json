@@ -1,0 +1,46 @@
+{
+  "key": "2128a407edfaf48103",
+  "args": {
+    "crate": "miette",
+    "version": "7.6.0",
+    "id": "f1c56b6f4feba3c8",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 16.1867,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `thiserror`",
+      "rendered": "error[E0432]: unresolved import `thiserror`\n --> src/main.rs:3:5\n  |\n3 | use thiserror::Error;\n  |     ^^^^^^^^^ use of unresolved module or unlinked crate `thiserror`\n  |\n  = help: if you wanted to use a crate named `thiserror`, use `cargo add thiserror` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `error` in this scope",
+      "rendered": "error: cannot find attribute `error` in this scope\n --> src/main.rs:6:3\n  |\n6 | #[error(\"kaboom\")]\n  |   ^^^^^\n  |\n  = note: `error` is an attribute that can be used by the derive macro `Error`, you might be missing a `derive` attribute\n\n",
+      "line": 6
+    },
+    {
+      "code": "E0277",
+      "message": "the trait bound `MyErr: std::error::Error` is not satisfied",
+      "rendered": "error[E0277]: the trait bound `MyErr: std::error::Error` is not satisfied\n  --> src/main.rs:12:8\n   |\n12 | struct MyErr;\n   |        ^^^^^ unsatisfied trait bound\n   |\nhelp: the trait `std::error::Error` is not implemented for `MyErr`\n  --> src/main.rs:12:1\n   |\n12 | struct MyErr;\n   | ^^^^^^^^^^^^\nnote: required by a bound in `Diagnostic`\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/miette-7.6.0/src/protocol.rs:20:23\n   |\n20 | pub trait Diagnostic: std::error::Error {\n   |                       ^^^^^^^^^^^^^^^^^ required by this bound in `Diagnostic`\n\n",
+      "line": 12
+    },
+    {
+      "code": "E0277",
+      "message": "the trait bound `MyErr: std::error::Error` is not satisfied",
+      "rendered": "error[E0277]: the trait bound `MyErr: std::error::Error` is not satisfied\n  --> src/main.rs:10:55\n   |\n10 |     url(\"https://my_website.com/error_codes#{}\", self.code().unwrap())\n   |                                                       ^^^^ unsatisfied trait bound\n   |\nhelp: the trait `std::error::Error` is not implemented for `MyErr`\n  --> src/main.rs:12:1\n   |\n12 | struct MyErr;\n   | ^^^^^^^^^^^^\nnote: required by a bound in `code`\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/miette-7.6.0/src/protocol.rs:20:23\n   |\n20 | pub trait Diagnostic: std::error::Error {\n   |                       ^^^^^^^^^^^^^^^^^ required by this bound in `Diagnostic::code`\n...\n26 |     fn code<'a>(&'a self) -> Option<Box<dyn Display + 'a>> {\n   |        ---- required by a bound in this associated function\n\n",
+      "line": 10
+    }
+  ],
+  "error_count": 4,
+  "stderr_excerpt": "error: could not compile `n05_miette_consumer` (bin \"n05_miette_consumer\") due to 4 previous errors\n",
+  "code_sha256": "d37d4001bc9287e315756234fe76d0d4374ab036727ae3a888cd10dda2b61435",
+  "manifest_sha256": "ba6b5da671ee0fa1466c82363064ff4804fad51e35f15a34f72402f84483ed15",
+  "log_file": "holdout/results/check_logs/2128a407edfaf48103.txt.gz"
+}

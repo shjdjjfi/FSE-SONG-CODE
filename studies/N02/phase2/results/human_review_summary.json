@@ -1,0 +1,30 @@
+{
+  "observations": 0,
+  "actual_human_participants": 0,
+  "arms": {
+    "diff_docs": {
+      "judgments": 0,
+      "positive_judgments": 0,
+      "negative_judgments": 0,
+      "tp": 0,
+      "fp": 0,
+      "recall": null,
+      "false_alarm_rate": null,
+      "median_review_seconds": null,
+      "sum_review_minutes": null
+    },
+    "diff_docs_plus_cid": {
+      "judgments": 0,
+      "positive_judgments": 0,
+      "negative_judgments": 0,
+      "tp": 0,
+      "fp": 0,
+      "recall": null,
+      "false_alarm_rate": null,
+      "median_review_seconds": null,
+      "sum_review_minutes": null
+    }
+  },
+  "status": "NO_HUMAN_PARTICIPANTS; no human-time evidence",
+  "comparative_claim_allowed": false
+}

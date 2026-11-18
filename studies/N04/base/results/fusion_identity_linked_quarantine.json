@@ -1,0 +1,50 @@
+{
+  "repository": "https://github.com/Runfusion/Fusion",
+  "migration_commit": "b5450832494d24e4171acea606b4c022a5a8475b",
+  "parent": "ed5417a341f577f7d3fc8a68b6d964bb9ecd1bfb",
+  "maintainer_commit_subject": "FN-7530: isolate flaky dist-barrel extension test",
+  "source_paths": {
+    "before_quarantined": "packages/cli/src/__tests__/extension.test.ts",
+    "after_quarantined": "packages/cli/src/__tests__/extension-dist-barrel.test.ts",
+    "after_restored": "packages/cli/src/__tests__/extension.test.ts"
+  },
+  "decision_provenance": {
+    "ledger_before": {
+      "file": "packages/cli/src/__tests__/extension.test.ts",
+      "quarantinedAt": "2026-07-04"
+    },
+    "ledger_after": {
+      "file": "packages/cli/src/__tests__/extension-dist-barrel.test.ts",
+      "quarantinedAt": "2026-07-04"
+    },
+    "same_action_run_in_reasons": true,
+    "linked_actions_run": "https://github.com/Runfusion/Fusion/actions/runs/28697507894",
+    "actual_before_excluded": true,
+    "actual_after_new_excluded": true,
+    "actual_after_old_not_excluded": true
+  },
+  "identity_confirmation": {
+    "same_single_test_title_before_after": true,
+    "source_assertion_lines_equal": true,
+    "assertion_statement_lines": 13,
+    "new_file_contains_single_it_declaration": true
+  },
+  "source_declared_test_counts": {
+    "old_file_before": 155,
+    "old_file_after": 154,
+    "new_file_after": 1
+  },
+  "reported_by_maintainer": {
+    "approximately_stable_tests_collaterally_excluded": 68,
+    "loaded_shard_timeout_ms": 5000,
+    "local_runtime_approx_ms": 1200,
+    "passes_in_nearby_four_ci_runs": 3,
+    "source": "Git commit b545083 and source-controlled ledger notes; not independently downloaded CI job results"
+  },
+  "policy_counterfactual": {
+    "exact_file_id_without_manual_update": "Would leave the new file without matched old exclusion, unless explicitly re-quarantined",
+    "observed_actual_policy": "Quarantine moved to new file and original file re-admitted",
+    "not_observed": "No matched GitHub Actions full workflow timeline, rerun count, build spend, or before-after CI duration obtained"
+  },
+  "scope_limit": "One source-controlled, file-level split/partial quarantine, not an independently replicated N04 Java method-history deployment"
+}

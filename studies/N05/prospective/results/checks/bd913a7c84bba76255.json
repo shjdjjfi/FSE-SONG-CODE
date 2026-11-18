@@ -1,0 +1,25 @@
+{
+  "key": "bd913a7c84bba76255",
+  "args": {
+    "crate": "figment",
+    "version": "0.10.19",
+    "id": "292a6fb8e93f439c",
+    "profile": "candidate",
+    "features": [
+      "env",
+      "parse-value",
+      "test"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.086,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "d192937ca747b1b0680a9b09e1c864453d964811c90088007209f997ada3dae4",
+  "manifest_sha256": "f1a0a45be59e62e817b3d13ae8d9bb75aba4953654f3feb5c9bdc0a4b1cc0750",
+  "log_file": "prospective/results/check_logs/bd913a7c84bba76255.txt.gz"
+}

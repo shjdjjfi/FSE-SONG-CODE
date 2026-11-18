@@ -1,0 +1,60 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 1,
+  "bytes": 22707,
+  "control_flow_or_callback_lines": 1,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "+",
+      "code": "Version:               integration.Config.Version,",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "config, err := ngmodels.IntegrationConfigFromType(integration.Type)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "version := &integration.Version",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "if *version == \"\" {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "version = nil",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "config, err := ngmodels.IntegrationConfigFromType(integration.Type, version)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:53.278708+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 7,
+  "pr": 109969,
+  "repository": "grafana/grafana",
+  "sha256": "74fc2dd418d480038e36b5f1adc2671ab8bb7a3b4812b241b678fa434568ec28",
+  "target_code_changed_lines": 8,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/109969.patch"
+}

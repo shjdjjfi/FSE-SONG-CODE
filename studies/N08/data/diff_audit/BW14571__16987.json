@@ -1,0 +1,22 @@
+{
+  "changed_code_lines_under_target": 8,
+  "changed_files_in_whole_pr": 8,
+  "changed_files_under_target": 4,
+  "code_files_under_target": 4,
+  "code_touched": true,
+  "event": "BW14571",
+  "focused_code_touched": true,
+  "pr": 16987,
+  "raw_size_bytes": 7616,
+  "repo": "bitwarden/clients",
+  "sha256": "029171f93e43996b89889ae3e20806b7cc4602624b53877358b8262571fca213",
+  "target_file_fraction": 0.5,
+  "target_paths": [
+    "apps/web/src/app/dirt/reports/pages/organizations/exposed-passwords-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/organizations/reused-passwords-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/organizations/unsecured-websites-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/organizations/weak-passwords-report.component.ts"
+  ],
+  "test_files_under_target": 0,
+  "url": "https://github.com/bitwarden/clients/pull/16987.patch"
+}

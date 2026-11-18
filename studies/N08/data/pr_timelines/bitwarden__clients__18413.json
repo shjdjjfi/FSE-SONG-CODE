@@ -1,0 +1,27 @@
+{
+  "fetched_utc": "2026-11-14T17:12:45.354381+00:00",
+  "merged_at": "2026-01-23T17:10:00Z",
+  "opened_at": "2026-01-16T20:36:07Z",
+  "pr": 18413,
+  "raw_html_sha256": "02b036a883cc19f906b6937ce150bf054445fa1b51bae8b27c4bb86864f3e9ab",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 3,
+  "reviews": [
+    {
+      "login": "coroiu",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-19T08:01:18Z"
+    },
+    {
+      "login": "quexten",
+      "state": "COMMENTED",
+      "submitted_at": "2026-01-19T11:31:08Z"
+    },
+    {
+      "login": "quexten",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-19T11:31:13Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/18413"
+}

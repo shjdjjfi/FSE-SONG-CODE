@@ -1,0 +1,94 @@
+{
+  "binary": "official prometheus v3.8.1",
+  "verification": "real localhost process /-/ready and /api/v1/status/config",
+  "scope_limit": "exact original chart configs cannot start off-cluster; successful probes use a transparently sanitized job-inventory-only adaptation",
+  "results": [
+    {
+      "arm": "new_reset_then_reuse_emulated",
+      "original_exact_config": {
+        "started": false,
+        "elapsed_s": 0.128,
+        "error": "<urlopen error [Errno 111] Connection refused>",
+        "process_exit": 1,
+        "log_tail": "time=2026-11-15T01:38:01.569+09:00 level=ERROR source=manager.go:484 msg=\"Cannot create service discovery\" component=\"discovery manager scrape\" err=\"unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined\" type=kubernetes config=kubernetes-nodes\ntime=2026-11-15T01:38:01.569+09:00 level=ERROR source=manager.go:484 msg=\"Cannot create service discovery\" component=\"discovery manager scrape\" err=\"unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined\" type=kubernetes config=kubernetes-nodes-cadvisor\ntime=2026-11-15T01:38:01.569+09:00 level=ERROR source=manager.go:484 msg=\"Cannot create service discovery\" component=\"discovery manager scrape\" err=\"unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined\" type=kubernetes config=kubernetes-pods-slow\ntime=2026-11-15T01:38:01.569+09:00 level=ERROR source=manager.go:484 msg=\"Cannot create service discovery\" component=\"discovery manager scrape\" err=\"unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined\" type=kubernetes config=kubernetes-service-endpoints\ntime=2026-11-15T01:38:01.569+09:00 level=ERROR source=manager.go:484 msg=\"Cannot create service discovery\" component=\"discovery manager scrape\" err=\"unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined\" type=kubernetes config=kubernetes-service-endpoints-slow\ntime=2026-11-15T01:38:01.569+09:00 level=ERROR source=manager.go:484 msg=\"Cannot create service discovery\" component=\"discovery manager scrape\" err=\"unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined\" type=kubernetes config=kubernetes-services\ntime=2026-11-15T01:38:01.569+09:00 level=ERROR source=manager.go:484 msg=\"Cannot create service discovery\" component=\"discovery manager scrape\" err=\"unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined\" type=kubernetes config=prometheus-pushgateway\ntime=2026-11-15T01:38:01.569+09:00 level=ERROR source=manager.go:484 msg=\"Cannot create service discovery\" component=\"discovery manager scrape\" err=\"unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined\" type=kubernetes config=kubernetes-api-servers\ntime=2026-11-15T01:38:01.569+09:00 level=ERROR source=manager.go:484 msg=\"Cannot create service discovery\" component=\"discovery manager scrape\" err=\"unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined\" type=kubernetes config=kubernetes-pods\ntime=2026-11-15T01:38:01.569+09:00 level=ERROR source=main.go:1538 msg=\"Failed to apply configuration\" err=\"unable to read CA cert: unable to read file /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory\"\ntime=2026-11-15T01:38:01.569+09:00 level=ERROR source=manager.go:484 msg=\"Cannot create service discovery\" component=\"discovery manager notify\" err=\"unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined\" type=kubernetes config=config-0\ntime=2026-11-15T01:38:01.570+09:00 level=ERROR source=main.go:1444 msg=\"Fatal error\" err=\"error loading config from \\\"/workspace/scratch/39d4249dd99a/N02_experiments/results/prometheus_configs/new_reset_then_reuse_emulated.yml\\\": one or more errors occurred while applying the new configuration (--config.file=\\\"/workspace/scratch/39d4249dd99a/N02_experiments/results/prometheus_configs/new_reset_then_reuse_emulated.yml\\\")\"\n"
+      },
+      "local_probe_transformations": {
+        "sanitized_jobs": 11,
+        "transformations": [
+          "removed cluster-dependent discovery and credential file fields",
+          "replaced each discovery target with unreachable loopback address",
+          "disabled rule file loading and alertmanager discovery",
+          "preserved each job_name; not an exact chart workload"
+        ]
+      },
+      "local_probe_config": "results/prometheus_configs/new_reset_then_reuse_emulated_local_probe.yml",
+      "adapted_probe": {
+        "started": true,
+        "readiness_http_status": 200,
+        "elapsed_s": 0.154,
+        "loaded_scrape_jobs": [
+          "kubernetes-api-servers",
+          "kubernetes-nodes",
+          "kubernetes-nodes-cadvisor",
+          "kubernetes-pods",
+          "kubernetes-pods-slow",
+          "kubernetes-service-endpoints",
+          "kubernetes-service-endpoints-slow",
+          "kubernetes-services",
+          "prometheus",
+          "prometheus-pushgateway",
+          "n02-contract"
+        ],
+        "job_count": 11,
+        "custom_job_present": true,
+        "extra_jobs": [
+          "kubernetes-api-servers",
+          "kubernetes-nodes",
+          "kubernetes-nodes-cadvisor",
+          "kubernetes-pods",
+          "kubernetes-pods-slow",
+          "kubernetes-service-endpoints",
+          "kubernetes-service-endpoints-slow",
+          "kubernetes-services",
+          "prometheus",
+          "prometheus-pushgateway"
+        ],
+        "api": "GET /api/v1/status/config",
+        "endpoint_bound_to_loopback_only": true
+      }
+    },
+    {
+      "arm": "new_manually_migrated",
+      "original_exact_config": {
+        "started": false,
+        "elapsed_s": 0.121,
+        "error": "<urlopen error [Errno 111] Connection refused>",
+        "process_exit": 1,
+        "log_tail": "time=2026-11-15T01:38:01.859+09:00 level=ERROR source=main.go:1538 msg=\"Failed to apply configuration\" err=\"unable to read CA cert: unable to read file /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: open /var/run/secrets/kubernetes.io/serviceaccount/ca.crt: no such file or directory\"\ntime=2026-11-15T01:38:01.859+09:00 level=ERROR source=manager.go:484 msg=\"Cannot create service discovery\" component=\"discovery manager notify\" err=\"unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined\" type=kubernetes config=config-0\ntime=2026-11-15T01:38:01.860+09:00 level=ERROR source=main.go:1444 msg=\"Fatal error\" err=\"error loading config from \\\"/workspace/scratch/39d4249dd99a/N02_experiments/results/prometheus_configs/new_manually_migrated.yml\\\": one or more errors occurred while applying the new configuration (--config.file=\\\"/workspace/scratch/39d4249dd99a/N02_experiments/results/prometheus_configs/new_manually_migrated.yml\\\")\"\n"
+      },
+      "local_probe_transformations": {
+        "sanitized_jobs": 1,
+        "transformations": [
+          "removed cluster-dependent discovery and credential file fields",
+          "replaced each discovery target with unreachable loopback address",
+          "disabled rule file loading and alertmanager discovery",
+          "preserved each job_name; not an exact chart workload"
+        ]
+      },
+      "local_probe_config": "results/prometheus_configs/new_manually_migrated_local_probe.yml",
+      "adapted_probe": {
+        "started": true,
+        "readiness_http_status": 200,
+        "elapsed_s": 0.125,
+        "loaded_scrape_jobs": [
+          "n02-contract"
+        ],
+        "job_count": 1,
+        "custom_job_present": true,
+        "extra_jobs": [],
+        "api": "GET /api/v1/status/config",
+        "endpoint_bound_to_loopback_only": true
+      }
+    }
+  ]
+}

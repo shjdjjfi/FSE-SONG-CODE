@@ -1,0 +1,40 @@
+{
+  "key": "b5eb439a1f9d082806",
+  "args": {
+    "crate": "quick-xml",
+    "version": "0.37.5",
+    "id": "d0b8c69df7d4f1f0",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1186,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `pretty_assertions`",
+      "rendered": "error[E0432]: unresolved import `pretty_assertions`\n --> src/main.rs:2:5\n  |\n2 | use pretty_assertions::assert_eq;\n  |     ^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `pretty_assertions`\n  |\n  = help: if you wanted to use a crate named `pretty_assertions`, use `cargo add pretty_assertions` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde`",
+      "rendered": "error[E0432]: unresolved import `serde`\n --> src/main.rs:3:5\n  |\n3 | use serde::Deserialize;\n  |     ^^^^^ use of unresolved module or unlinked crate `serde`\n  |\n  = help: if you wanted to use a crate named `serde`, use `cargo add serde` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `serde` in this scope",
+      "rendered": "error: cannot find attribute `serde` in this scope\n --> src/main.rs:6:5\n  |\n6 |   #[serde(rename = \"@attribute\")]\n  |     ^^^^^\n  |\n  = note: `serde` is an attribute that can be used by the derive macros `Deserialize` and `Serialize`, you might be missing a `derive` attribute\n\n",
+      "line": 6
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_quick_xml_consumer` (bin \"n05_quick_xml_consumer\") due to 3 previous errors\n",
+  "code_sha256": "faa90ebafc3be6642df6d2dc424cef8397b79804bc4b89383475e82347630b2e",
+  "manifest_sha256": "f50233056604ef0a2ec493df83a3d1aee84fd8e447da16a524a0ef732c8899b7",
+  "log_file": "prospective/results/check_logs/b5eb439a1f9d082806.txt.gz"
+}

@@ -1,0 +1,46 @@
+argv: ["/workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/venvs/pypiserver_first_fixed/bin/python", "-m", "pytest", "-q", "tests/test_config.py", "tests/test_core.py", "tests/test_app.py"]
+
+[STDOUT]
+........................................................................ [ 22%]
+........................................................................ [ 45%]
+........................................................................ [ 68%]
+........................................................................ [ 91%]
+............................                                             [100%]
+=============================== warnings summary ===============================
+pypiserver/bottle_wrapper/bottle.py:48
+  /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/sources/pypiserver/pypiserver/bottle_wrapper/bottle.py:48: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+    import cgi
+
+../../venvs/pypiserver_first_fixed/lib/python3.12/site-packages/passlib/utils/__init__.py:854
+  /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/venvs/pypiserver_first_fixed/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+    from crypt import crypt as _crypt
+
+../../venvs/pypiserver_first_fixed/lib/python3.12/site-packages/_pytest/python.py:144
+  /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/venvs/pypiserver_first_fixed/lib/python3.12/site-packages/_pytest/python.py:144: PytestRemovedIn10Warning: Passing a non-Collection iterable to parametrize is deprecated.
+  Test: tests/test_config.py::test_config, argvalues type: generator
+  Please convert to a list or tuple.
+  See https://docs.pytest.org/en/stable/deprecations.html#parametrize-iterators
+    metafunc.parametrize(*marker.args, **marker.kwargs, _param_mark=marker)
+
+../../venvs/pypiserver_first_fixed/lib/python3.12/site-packages/_pytest/python.py:144
+  /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/venvs/pypiserver_first_fixed/lib/python3.12/site-packages/_pytest/python.py:144: PytestRemovedIn10Warning: Passing a non-Collection iterable to parametrize is deprecated.
+  Test: tests/test_config.py::test_config_error, argvalues type: generator
+  Please convert to a list or tuple.
+  See https://docs.pytest.org/en/stable/deprecations.html#parametrize-iterators
+    metafunc.parametrize(*marker.args, **marker.kwargs, _param_mark=marker)
+
+tests/test_app.py::test_root_count
+tests/test_app.py::test_nonroot_simple_index
+tests/test_app.py::test_nonroot_simple_index_with_x_forwarded_host
+tests/test_app.py::test_nonroot_simple_packages
+tests/test_app.py::test_nonroot_simple_packages_with_x_forwarded_host
+tests/test_app.py::test_json_info_url_points_to_packages
+tests/test_app.py::test_nonroot_json_info_url_stays_under_prefix
+  /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/sources/pypiserver/tests/test_app.py:110: DeprecationWarning: Attribute access is deprecated.
+    backend = app.config.backend
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+316 passed, 11 warnings in 3.02s
+
+
+[STDERR]

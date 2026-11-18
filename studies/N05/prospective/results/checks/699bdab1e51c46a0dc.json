@@ -1,0 +1,23 @@
+{
+  "key": "699bdab1e51c46a0dc",
+  "args": {
+    "crate": "sea-query",
+    "version": "0.32.5",
+    "id": "15f58f7222bb9c01",
+    "profile": "candidate",
+    "features": [
+      "tests-cfg"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0613,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "264242e4fc3da025fa3dc45eedd1ee0cdbdcf8fa40e5c500a4e095a439034aa3",
+  "manifest_sha256": "b1c4a56f0bc77ba224a271466eb20f9eb8a18c055a677e9d4e13f6ef16d2afc0",
+  "log_file": "prospective/results/check_logs/699bdab1e51c46a0dc.txt.gz"
+}

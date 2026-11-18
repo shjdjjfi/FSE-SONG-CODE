@@ -1,0 +1,28 @@
+{
+  "key": "0abddcfdd37eb301db",
+  "args": {
+    "crate": "schemars",
+    "version": "0.8.22",
+    "id": "a7d1571819409df8",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0792,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:18:16\n   |\n18 | println!(\"{}\", serde_json::to_string_pretty(&schema).unwrap());\n   |                ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 18
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_schemars_consumer` (bin \"n05_schemars_consumer\") due to 1 previous error\n",
+  "code_sha256": "5b2726ec05c3533cc860cbf561ef85dd6f2f166e124ca5d82a0f3313f0b551aa",
+  "manifest_sha256": "cefb1dd23018b6fd6998d55883b019cb521264dcf1f68024f1ffddc25914cf16",
+  "log_file": "prospective/results/check_logs/0abddcfdd37eb301db.txt.gz"
+}

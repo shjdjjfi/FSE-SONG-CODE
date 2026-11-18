@@ -1,0 +1,60 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 0,
+  "bytes": 16555,
+  "control_flow_or_callback_lines": 2,
+  "event": "BW11709",
+  "examples": [
+    {
+      "change": "+",
+      "code": "import { LogoutService } from \"@bitwarden/auth/common\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { VaultTimeoutService } from \"@bitwarden/common/key-management/vault-timeout\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "private vaultTimeoutService: VaultTimeoutService,",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "private logoutService: LogoutService,",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "// temporary until userkey can be better verified",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "await this.vaultTimeoutService.logOut();",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "await this.logoutService.logout(user.id);",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { firstValueFromOrThrow } from \"@bitwarden/common/key-management/utils\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:53.582501+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+  "noncomment_nonimport_changed_lines": 4,
+  "pr": 16820,
+  "repository": "bitwarden/clients",
+  "sha256": "f7c9eb6419d76d4cc869f2cdd9cb15d651cf27a2ffb8fd6d966bdfc828063f2f",
+  "target_code_changed_lines": 8,
+  "target_files": [
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/16820.patch"
+}

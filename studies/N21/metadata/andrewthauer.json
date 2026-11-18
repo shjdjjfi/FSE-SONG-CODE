@@ -1,0 +1,83 @@
+{
+  "case": "andrewthauer",
+  "kind": "native, checked-in project-reference example (source unchanged)",
+  "source_units": {
+    "core": 1,
+    "api": 1,
+    "cli": 1,
+    "web": 1
+  },
+  "outputs": {
+    "core": 4,
+    "api": 4,
+    "cli": 4,
+    "web": 2
+  },
+  "expected_digests": {
+    "core": {
+      "index.d.ts": "658ba783deccc5ac2795abec24fe3e84f7cc46d3cd3ca587f19aa49ca5e4bad2",
+      "index.d.ts.map": "57a638bbcaebdf5e2696f5708781964e34e07e10f6767c929e177db08936d984",
+      "index.js": "60b779731dbf741cf2b85e78827d630748a4b9930d29b29bebb6ef996c7a7c06",
+      "index.js.map": "b32ed6c75b33a6b79446b55983ee190475277770d46f54e1dea597e1c4aec43f"
+    },
+    "api": {
+      "index.d.ts": "a574f17b95fe83ac91037b83b61b8f76c6b5f4e942426bed5e881e2539c27195",
+      "index.d.ts.map": "fd54c02aa95004eb1d77f2a0c2e84638164d3dee468e26a126fa171787dffece",
+      "index.js": "2266b033fe1c94f89252e2ae52fed6cbdc5754de204ec282f1d3828886115d6b",
+      "index.js.map": "8cd4469b036f4feb705a945073522a1c59e14d9bca84dd44f5a02521668e646b"
+    },
+    "cli": {
+      "index.d.ts": "1709e51949ed953b479c83cfcb5ee5da4f0fef96bbb1de5ce1b73255ab030db4",
+      "index.d.ts.map": "ccafc7016cc5f39f418b8d6219c6ddcf4ffa0b7c2ffc5e80965fe02c95421097",
+      "index.js": "d981574fda04064c3247394988915a40199df5f6e6098947389ea061aa551c76",
+      "index.js.map": "2dd1ef39d893e6f1a462a0315946227f90197690fdf0cc05140a6a1afeb30889"
+    },
+    "web": {
+      "index.js": "2a7d156c62bdfb2172f254ed50dc207cf033804c33e9a27a34869d514f1d9469",
+      "index.js.map": "a80b53cb9a67ff0b409e7c0758c9a84ac717b5c53ff03cac35e0a2d948d9af0c"
+    }
+  },
+  "compiler": "typescript@5.9.3",
+  "initial_build": {
+    "argv": [
+      "node",
+      "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+      "--build",
+      "packages/tsconfig.json",
+      "--verbose"
+    ],
+    "exit": 0,
+    "seconds": 1.9493,
+    "compiled_projects": [
+      "core",
+      "api",
+      "cli",
+      "web"
+    ],
+    "stdout": "12:01:50 PM - Projects in this build: \n    * packages/core/tsconfig.json\n    * packages/api/tsconfig.json\n    * packages/cli/tsconfig.json\n    * packages/web/tsconfig.json\n    * packages/tsconfig.json\n\n12:01:50 PM - Project 'packages/core/tsconfig.json' is out of date because output file '.build-cache/core.tsbuildinfo' does not exist\n\n12:01:50 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/templates/andrewthauer/packages/core/tsconfig.json'...\n\n12:01:51 PM - Project 'packages/api/tsconfig.json' is out of date because output file '.build-cache/api.tsbuildinfo' does not exist\n\n12:01:51 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/templates/andrewthauer/packages/api/tsconfig.json'...\n\n12:01:51 PM - Project 'packages/cli/tsconfig.json' is out of date because output file '.build-cache/cli.tsbuildinfo' does not exist\n\n12:01:51 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/templates/andrewthauer/packages/cli/tsconfig.json'...\n\n12:01:52 PM - Project 'packages/web/tsconfig.json' is out of date because output file '.build-cache/web.tsbuildinfo' does not exist\n\n12:01:52 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/templates/andrewthauer/packages/web/tsconfig.json'...\n\n",
+    "stderr": ""
+  },
+  "independent_clean_build": {
+    "argv": [
+      "node",
+      "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+      "--build",
+      "packages/tsconfig.json",
+      "--verbose"
+    ],
+    "exit": 0,
+    "seconds": 1.8885,
+    "compiled_projects": [
+      "core",
+      "api",
+      "cli",
+      "web"
+    ],
+    "stdout": "12:01:52 PM - Projects in this build: \n    * packages/core/tsconfig.json\n    * packages/api/tsconfig.json\n    * packages/cli/tsconfig.json\n    * packages/web/tsconfig.json\n    * packages/tsconfig.json\n\n12:01:52 PM - Project 'packages/core/tsconfig.json' is out of date because output file '.build-cache/core.tsbuildinfo' does not exist\n\n12:01:52 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/oracles/andrewthauer/packages/core/tsconfig.json'...\n\n12:01:53 PM - Project 'packages/api/tsconfig.json' is out of date because output file '.build-cache/api.tsbuildinfo' does not exist\n\n12:01:53 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/oracles/andrewthauer/packages/api/tsconfig.json'...\n\n12:01:53 PM - Project 'packages/cli/tsconfig.json' is out of date because output file '.build-cache/cli.tsbuildinfo' does not exist\n\n12:01:53 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/oracles/andrewthauer/packages/cli/tsconfig.json'...\n\n12:01:54 PM - Project 'packages/web/tsconfig.json' is out of date because output file '.build-cache/web.tsbuildinfo' does not exist\n\n12:01:54 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/oracles/andrewthauer/packages/web/tsconfig.json'...\n\n",
+    "stderr": ""
+  },
+  "oracle_exact_match": true,
+  "extra": {
+    "extracted_files": 32
+  }
+}

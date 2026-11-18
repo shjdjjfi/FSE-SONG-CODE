@@ -1,0 +1,58 @@
+{
+  "key": "6fafc9f8b78a8369e5",
+  "args": {
+    "crate": "indicatif",
+    "version": "0.17.11",
+    "id": "1fa0440330abb332",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0932,
+  "errors": [
+    {
+      "code": "E0425",
+      "message": "cannot find function, tuple struct or tuple variant `HumanBytes` in this scope",
+      "rendered": "error[E0425]: cannot find function, tuple struct or tuple variant `HumanBytes` in this scope\n --> src/main.rs:2:38\n  |\n2 | assert_eq!(\"15 B\",     format!(\"{}\", HumanBytes(15)));\n  |                                      ^^^^^^^^^^ not found in this scope\n  |\nhelp: consider importing this tuple struct\n  |\n1 + use indicatif::HumanBytes;\n  |\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find function, tuple struct or tuple variant `HumanBytes` in this scope",
+      "rendered": "error[E0425]: cannot find function, tuple struct or tuple variant `HumanBytes` in this scope\n --> src/main.rs:3:38\n  |\n3 | assert_eq!(\"1.46 KiB\", format!(\"{}\", HumanBytes(1_500)));\n  |                                      ^^^^^^^^^^ not found in this scope\n  |\nhelp: consider importing this tuple struct\n  |\n1 + use indicatif::HumanBytes;\n  |\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find function, tuple struct or tuple variant `HumanBytes` in this scope",
+      "rendered": "error[E0425]: cannot find function, tuple struct or tuple variant `HumanBytes` in this scope\n --> src/main.rs:4:38\n  |\n4 | assert_eq!(\"1.43 MiB\", format!(\"{}\", HumanBytes(1_500_000)));\n  |                                      ^^^^^^^^^^ not found in this scope\n  |\nhelp: consider importing this tuple struct\n  |\n1 + use indicatif::HumanBytes;\n  |\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find function, tuple struct or tuple variant `HumanBytes` in this scope",
+      "rendered": "error[E0425]: cannot find function, tuple struct or tuple variant `HumanBytes` in this scope\n --> src/main.rs:5:38\n  |\n5 | assert_eq!(\"1.40 GiB\", format!(\"{}\", HumanBytes(1_500_000_000)));\n  |                                      ^^^^^^^^^^ not found in this scope\n  |\nhelp: consider importing this tuple struct\n  |\n1 + use indicatif::HumanBytes;\n  |\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find function, tuple struct or tuple variant `HumanBytes` in this scope",
+      "rendered": "error[E0425]: cannot find function, tuple struct or tuple variant `HumanBytes` in this scope\n --> src/main.rs:6:38\n  |\n6 | assert_eq!(\"1.36 TiB\", format!(\"{}\", HumanBytes(1_500_000_000_000)));\n  |                                      ^^^^^^^^^^ not found in this scope\n  |\nhelp: consider importing this tuple struct\n  |\n1 + use indicatif::HumanBytes;\n  |\n\n",
+      "line": 6
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find function, tuple struct or tuple variant `HumanBytes` in this scope",
+      "rendered": "error[E0425]: cannot find function, tuple struct or tuple variant `HumanBytes` in this scope\n --> src/main.rs:7:38\n  |\n7 | assert_eq!(\"1.33 PiB\", format!(\"{}\", HumanBytes(1_500_000_000_000_000)));\n  |                                      ^^^^^^^^^^ not found in this scope\n  |\nhelp: consider importing this tuple struct\n  |\n1 + use indicatif::HumanBytes;\n  |\n\n",
+      "line": 7
+    }
+  ],
+  "error_count": 6,
+  "stderr_excerpt": "error: could not compile `n05_indicatif_consumer` (bin \"n05_indicatif_consumer\") due to 6 previous errors\n",
+  "code_sha256": "8be6f934c7e9d27ef64f097b38c9409804debe814d880ed7e0a220c75ba56671",
+  "manifest_sha256": "4e691b7677a326f521280bcf981b2052934cf95252aef8e3b3a32d35a9c739f2",
+  "log_file": "results/check_logs/6fafc9f8b78a8369e5.txt.gz"
+}

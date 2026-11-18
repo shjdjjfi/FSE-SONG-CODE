@@ -1,0 +1,2078 @@
+[
+  {
+    "project": "pykerberos",
+    "osv_id": "GHSA-mffc-9gx5-99g3",
+    "published": "2022-05-14T01:46:42Z",
+    "modified": "2024-09-27T16:13:38.329787Z",
+    "summary": "python-kerberos vulnerable to KDC spoofing attacks",
+    "aliases": [
+      "CVE-2015-3206",
+      "PYSEC-2017-49",
+      "PYSEC-2017-66"
+    ],
+    "all_final_fixes": [
+      "1.1.6"
+    ],
+    "fixed_version": "1.1.6",
+    "stratum": "early",
+    "sampling_hash": "00df34b8e91c3b9d51977460fc43cae5e159cad19c069490b6b7b565db3e5679"
+  },
+  {
+    "project": "flask-restx",
+    "osv_id": "PYSEC-2021-325",
+    "published": "2021-09-20T18:15:00Z",
+    "modified": "2023-11-08T04:06:01.923801Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2021-32838",
+      "GHSA-3q6g-vf58-7m4g"
+    ],
+    "all_final_fixes": [
+      "0.5.1"
+    ],
+    "fixed_version": "0.5.1",
+    "stratum": "early",
+    "sampling_hash": "018d24a42fffae759ae8a05d6f7d01a291105b53aa8271a7e39592ed762b4b91"
+  },
+  {
+    "project": "py-mini-racer",
+    "osv_id": "GHSA-vwcg-7xqw-qcxw",
+    "published": "2020-09-18T18:03:59Z",
+    "modified": "2024-10-21T20:32:52.020144Z",
+    "summary": "Heap Overflow in PyMiniRacer",
+    "aliases": [
+      "CVE-2020-25489",
+      "PYSEC-2020-93"
+    ],
+    "all_final_fixes": [
+      "0.3.0"
+    ],
+    "fixed_version": "0.3.0",
+    "stratum": "early",
+    "sampling_hash": "037674f7cfe264c4d5cce8950749ff26a0acbaf004bb4b2718c6e8da98b46b9b"
+  },
+  {
+    "project": "srp",
+    "osv_id": "GHSA-xmc3-9m9j-w9x4",
+    "published": "2022-12-27T12:30:20Z",
+    "modified": "2024-10-28T14:52:55.614843Z",
+    "summary": "cocagne pysrp vulnerable to side channel leaks",
+    "aliases": [
+      "CVE-2021-4286",
+      "PYSEC-2022-43014"
+    ],
+    "all_final_fixes": [
+      "1.0.17"
+    ],
+    "fixed_version": "1.0.17",
+    "stratum": "early",
+    "sampling_hash": "04a900febc10f54ea9e3d8f1c5037c057c2b739ca060af6a640bd71a2103f880"
+  },
+  {
+    "project": "scrapy-splash",
+    "osv_id": "GHSA-823f-cwm9-4g74",
+    "published": "2021-10-06T17:49:23Z",
+    "modified": "2026-07-08T06:27:36.138107661Z",
+    "summary": "Splash authentication credentials potentially leaked to target websites ",
+    "aliases": [
+      "CVE-2021-41124",
+      "PYSEC-2021-364"
+    ],
+    "all_final_fixes": [
+      "0.8.0"
+    ],
+    "fixed_version": "0.8.0",
+    "stratum": "early",
+    "sampling_hash": "04abbdb304e63e2c1415648a06f2e38223e411bd639f0faf52ad671bfa016de3"
+  },
+  {
+    "project": "sqla-yaml-fixtures",
+    "osv_id": "PYSEC-2019-122",
+    "published": "2019-01-03T19:29:00Z",
+    "modified": "2023-11-08T04:01:33.915521Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2019-3575",
+      "GHSA-2x54-j4m3-r6wx"
+    ],
+    "all_final_fixes": [
+      "1.0.0"
+    ],
+    "fixed_version": "1.0.0",
+    "stratum": "early",
+    "sampling_hash": "04e3ccd8268b5ddc6d957347299acdaf1ea0f3fa1624b62344c7c39c296deab5"
+  },
+  {
+    "project": "python-jwt",
+    "osv_id": "GHSA-5p8v-58qm-c7fp",
+    "published": "2022-09-21T21:33:22Z",
+    "modified": "2024-07-10T21:46:12.326522Z",
+    "summary": "python-jwt vulnerable to token forgery with new claims",
+    "aliases": [
+      "CVE-2022-39227",
+      "PYSEC-2022-259"
+    ],
+    "all_final_fixes": [
+      "3.3.4"
+    ],
+    "fixed_version": "3.3.4",
+    "stratum": "early",
+    "sampling_hash": "050078d2ba58541a1ec50193cdefeca25dc1c6a0c10741aee01caef8cf79d60e"
+  },
+  {
+    "project": "global-workqueue",
+    "osv_id": "GHSA-4vq7-8699-4xgc",
+    "published": "2022-07-29T00:00:17Z",
+    "modified": "2026-06-29T12:26:22.121568254Z",
+    "summary": "WMAgent arbitrary code execution via a crafted dbs-client package",
+    "aliases": [
+      "CVE-2022-34558",
+      "PYSEC-2022-43136",
+      "PYSEC-2022-43163",
+      "PYSEC-2022-43174",
+      "PYSEC-2026-523"
+    ],
+    "all_final_fixes": [
+      "2.0.4"
+    ],
+    "fixed_version": "2.0.4",
+    "stratum": "early",
+    "sampling_hash": "061e8fedcf8372e88c4aa62ce1d91b72020fc95f632a891424c31268487dd149"
+  },
+  {
+    "project": "suds-py3",
+    "osv_id": "GHSA-vpqp-hx68-p2wx",
+    "published": "2022-05-14T01:08:23Z",
+    "modified": "2024-10-28T14:53:28.149849Z",
+    "summary": "Improper Link Resolution Before File Access in Suds",
+    "aliases": [
+      "CVE-2013-2217",
+      "PYSEC-2013-32",
+      "PYSEC-2013-33"
+    ],
+    "all_final_fixes": [
+      "1.4.4.1"
+    ],
+    "fixed_version": "1.4.4.1",
+    "stratum": "early",
+    "sampling_hash": "06416e4b90a3c8581dfb000b7a5115d5c167e4c862af18ee69e950fe84b25b00"
+  },
+  {
+    "project": "mechanicalsoup",
+    "osv_id": "GHSA-x456-3ccm-m6j4",
+    "published": "2023-07-05T21:35:54Z",
+    "modified": "2026-09-10T03:49:57.413581751Z",
+    "summary": "MechanicalSoup vulnerable to malicious web server reading arbitrary files on client using file input inside HTML form",
+    "aliases": [
+      "CVE-2023-34457",
+      "PYSEC-2023-108"
+    ],
+    "all_final_fixes": [
+      "1.3.0"
+    ],
+    "fixed_version": "1.3.0",
+    "stratum": "early",
+    "sampling_hash": "06ad65f4ee9f07237a39e7d7e923556d27c0bccaadda3ea4fe62d357473d140d"
+  },
+  {
+    "project": "aws-encryption-sdk-cli",
+    "osv_id": "GHSA-89v2-g37m-g3ff",
+    "published": "2021-06-01T21:18:53Z",
+    "modified": "2024-12-02T05:44:49.918561Z",
+    "summary": "Improper Verification of Cryptographic Signature in aws-encryption-sdk-cli",
+    "aliases": [],
+    "all_final_fixes": [
+      "1.9.0",
+      "2.2.0"
+    ],
+    "fixed_version": "1.9.0",
+    "stratum": "early",
+    "sampling_hash": "0742e92a380349d96506aa2bb8665c8ccaf569d27a408b8508c42a5cf5607f3a"
+  },
+  {
+    "project": "netius",
+    "osv_id": "GHSA-wm2m-xrrp-j74c",
+    "published": "2021-06-18T18:31:40Z",
+    "modified": "2026-09-10T03:49:27.161288701Z",
+    "summary": "HTTP Request Smuggling in netius",
+    "aliases": [
+      "CVE-2020-7655",
+      "PYSEC-2020-242",
+      "SNYK-PYTHON-NETIUS-569141"
+    ],
+    "all_final_fixes": [
+      "1.17.58"
+    ],
+    "fixed_version": "1.17.58",
+    "stratum": "early",
+    "sampling_hash": "088dba62642edb0da7b01c5202b7afdca44afa64dfb2edbc2ffefb8c32efbe90"
+  },
+  {
+    "project": "wmagent",
+    "osv_id": "GHSA-4vq7-8699-4xgc",
+    "published": "2022-07-29T00:00:17Z",
+    "modified": "2026-06-29T12:26:22.121568254Z",
+    "summary": "WMAgent arbitrary code execution via a crafted dbs-client package",
+    "aliases": [
+      "CVE-2022-34558",
+      "PYSEC-2022-43136",
+      "PYSEC-2022-43163",
+      "PYSEC-2022-43174",
+      "PYSEC-2026-523"
+    ],
+    "all_final_fixes": [
+      "2.0.4"
+    ],
+    "fixed_version": "2.0.4",
+    "stratum": "early",
+    "sampling_hash": "0959bdc09deb8c3e6b8623184f716d8cfb1278f7b65b363ed9bba6e3739563c9"
+  },
+  {
+    "project": "libtaxii",
+    "osv_id": "GHSA-836c-xg97-8p4h",
+    "published": "2021-04-30T17:34:48Z",
+    "modified": "2025-02-18T05:28:32.695791Z",
+    "summary": "libtaxii Server-Side Request Forgery vulnerability",
+    "aliases": [
+      "CVE-2020-27197",
+      "PYSEC-2020-59"
+    ],
+    "all_final_fixes": [
+      "1.1.118"
+    ],
+    "fixed_version": "1.1.118",
+    "stratum": "early",
+    "sampling_hash": "0b1d1be028c86bfd2c8973f720e16fe008d413f8e8acaf5c541a71a336baa6a4"
+  },
+  {
+    "project": "azure-cli",
+    "osv_id": "GHSA-47xc-9rr2-q7p4",
+    "published": "2022-10-25T19:56:51Z",
+    "modified": "2026-06-10T17:14:17.513031176Z",
+    "summary": "Improper Control of Generation of Code ('Code Injection') in Azure CLI",
+    "aliases": [
+      "BIT-azure-cli-2022-39327",
+      "CVE-2022-39327",
+      "PYSEC-2022-43177"
+    ],
+    "all_final_fixes": [
+      "2.40.0"
+    ],
+    "fixed_version": "2.40.0",
+    "stratum": "early",
+    "sampling_hash": "0bf1bda805d497fc0df889042464d7d707a53468f38706c23813120321703231"
+  },
+  {
+    "project": "perdido",
+    "osv_id": "PYSEC-2022-216",
+    "published": "2022-06-24T21:15:00Z",
+    "modified": "2023-11-08T04:09:41.369674Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2022-34054"
+    ],
+    "all_final_fixes": [
+      "0.0.3"
+    ],
+    "fixed_version": "0.0.3",
+    "stratum": "early",
+    "sampling_hash": "0c8489ed780eefcf44ba6a4163b9371826b1a23ddd0468117cc37cacc2f19999"
+  },
+  {
+    "project": "beginner",
+    "osv_id": "PYSEC-2022-214",
+    "published": "2022-06-24T21:15:00Z",
+    "modified": "2023-11-08T04:09:38.558680Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2022-33004"
+    ],
+    "all_final_fixes": [
+      "0.0.5"
+    ],
+    "fixed_version": "0.0.5",
+    "stratum": "early",
+    "sampling_hash": "0cf6d153161e507bb6e5dcf79328ab5c602172a93ae6efc822faba5dfe83a698"
+  },
+  {
+    "project": "pacparser",
+    "osv_id": "PYSEC-2023-93",
+    "published": "2023-06-30T18:15:00Z",
+    "modified": "2025-10-09T08:27:13.313334Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2023-37360",
+      "GHSA-62q6-v997-f7v9"
+    ],
+    "all_final_fixes": [
+      "1.4.2"
+    ],
+    "fixed_version": "1.4.2",
+    "stratum": "early",
+    "sampling_hash": "0cf9bb726cb8580a23b70d64ab242b72f9cac08a475f10f7055c5315526024be"
+  },
+  {
+    "project": "rply",
+    "osv_id": "GHSA-9gcf-pq99-rjw3",
+    "published": "2022-05-17T01:27:10Z",
+    "modified": "2026-07-09T16:56:20.570841183Z",
+    "summary": "RPLY Predictable Tmpfile Names Allows Cache Spoofing",
+    "aliases": [
+      "CVE-2014-1604",
+      "PYSEC-2014-17"
+    ],
+    "all_final_fixes": [
+      "0.7.1"
+    ],
+    "fixed_version": "0.7.1",
+    "stratum": "early",
+    "sampling_hash": "0d0b1fbe8c746d262460cbbe33d2c4056a35b3aaee14bb215d831152c78fc7c6"
+  },
+  {
+    "project": "kdcproxy",
+    "osv_id": "GHSA-j7c4-2xj8-wm7r",
+    "published": "2018-11-01T14:49:30Z",
+    "modified": "2024-09-24T19:02:54.635379Z",
+    "summary": "Improper Input Validation in kdcproxy",
+    "aliases": [
+      "CVE-2015-5159",
+      "PYSEC-2018-85"
+    ],
+    "all_final_fixes": [
+      "0.3.2"
+    ],
+    "fixed_version": "0.3.2",
+    "stratum": "early",
+    "sampling_hash": "0d572dfcc65902c751f45d3e8d5717a3fb04964b38a0dbb9c94620360c95ae27"
+  },
+  {
+    "project": "openssh-key-parser",
+    "osv_id": "GHSA-hm37-9xh2-q499",
+    "published": "2022-07-06T19:24:12Z",
+    "modified": "2024-10-07T21:25:25.797866Z",
+    "summary": "Possible leak of key's raw field if declared length is incorrect",
+    "aliases": [
+      "CVE-2022-31124",
+      "PYSEC-2022-233"
+    ],
+    "all_final_fixes": [
+      "0.0.6"
+    ],
+    "fixed_version": "0.0.6",
+    "stratum": "early",
+    "sampling_hash": "0d6c0d23989b317ce97d99638a2ec27fc1b1a5ac0b276f11f7e0a4bea4588369"
+  },
+  {
+    "project": "flower",
+    "osv_id": "GHSA-q4qm-xhf9-4p8f",
+    "published": "2022-06-03T00:01:07Z",
+    "modified": "2024-09-20T20:22:45.629356Z",
+    "summary": "Flower OAuth authentication bypass",
+    "aliases": [
+      "CVE-2022-30034",
+      "PYSEC-2022-42973"
+    ],
+    "all_final_fixes": [
+      "1.2.0"
+    ],
+    "fixed_version": "1.2.0",
+    "stratum": "early",
+    "sampling_hash": "0d88da2db6c0794013005d6f32cc8aa562166a4abf12a0644d06c4f5cff59209"
+  },
+  {
+    "project": "freetakserver",
+    "osv_id": "GHSA-hggv-mcp4-vxc5",
+    "published": "2022-03-12T00:00:37Z",
+    "modified": "2026-06-10T18:46:33Z",
+    "summary": "Improper Authentication in FreeTAKServer",
+    "aliases": [
+      "CVE-2022-25508",
+      "PYSEC-2022-43054"
+    ],
+    "all_final_fixes": [
+      "1.9.8.5"
+    ],
+    "fixed_version": "1.9.8.5",
+    "stratum": "early",
+    "sampling_hash": "0e7d8e0681b38eeccfa138da2f7f69adc00e8b6535c63cabdca6a1434d1bafed"
+  },
+  {
+    "project": "django-grappelli",
+    "osv_id": "GHSA-9x43-5qcq-h79q",
+    "published": "2023-10-22T21:36:10Z",
+    "modified": "2024-09-13T20:24:36.552132Z",
+    "summary": "Django Grappelli Open Redirect vulnerability",
+    "aliases": [
+      "CVE-2021-46898",
+      "PYSEC-2023-211"
+    ],
+    "all_final_fixes": [
+      "2.15.2"
+    ],
+    "fixed_version": "2.15.2",
+    "stratum": "early",
+    "sampling_hash": "0ed502d3fee2e431cf8da13b43cd6b1900044777021c47a2a7bb06e39f5f1148"
+  },
+  {
+    "project": "pwntools",
+    "osv_id": "GHSA-7xc5-ggpp-g249",
+    "published": "2021-04-20T16:13:24Z",
+    "modified": "2024-10-18T22:22:40.219895Z",
+    "summary": "pwntools Server-Side Template Injection (SSTI) vulnerability",
+    "aliases": [
+      "CVE-2020-28468",
+      "PYSEC-2021-72",
+      "SNYK-PYTHON-PWNTOOLS-1047345"
+    ],
+    "all_final_fixes": [
+      "4.3.1"
+    ],
+    "fixed_version": "4.3.1",
+    "stratum": "early",
+    "sampling_hash": "0ed554be6b8c4f6a29dc37b4d934272dcb3e388b2d19316ebedfcf75d931cc77"
+  },
+  {
+    "project": "transifex-client",
+    "osv_id": "GHSA-jf99-2rj4-jxrm",
+    "published": "2022-05-17T04:45:17Z",
+    "modified": "2024-11-18T22:08:15.585051Z",
+    "summary": "Transifex command-line client has improper certificate validation",
+    "aliases": [
+      "CVE-2013-7110",
+      "PYSEC-2014-72"
+    ],
+    "all_final_fixes": [
+      "0.10"
+    ],
+    "fixed_version": "0.10",
+    "stratum": "early",
+    "sampling_hash": "0faec6ad50f42507837aadf78fb509631a0590930b123d1ab39aedaeed217e8f"
+  },
+  {
+    "project": "locust",
+    "osv_id": "GHSA-vqxw-9pg7-v7v9",
+    "published": "2022-05-24T17:34:03Z",
+    "modified": "2024-09-30T17:00:13.368522Z",
+    "summary": "Locust Stored Cross-site Scripting Vulnerability",
+    "aliases": [
+      "CVE-2020-28364",
+      "PYSEC-2020-60"
+    ],
+    "all_final_fixes": [
+      "1.3.2"
+    ],
+    "fixed_version": "1.3.2",
+    "stratum": "early",
+    "sampling_hash": "102555a11cedd2d811a6ff9100da2a87f9e4380a6c76d789a8c754057ace5084"
+  },
+  {
+    "project": "django-mfa3",
+    "osv_id": "GHSA-3r7g-wrpr-j5g4",
+    "published": "2022-04-22T20:48:28Z",
+    "modified": "2024-09-16T22:07:21.925490Z",
+    "summary": "Improper Authentication in django-mfa3",
+    "aliases": [
+      "CVE-2022-24857",
+      "PYSEC-2022-192"
+    ],
+    "all_final_fixes": [
+      "0.5.0"
+    ],
+    "fixed_version": "0.5.0",
+    "stratum": "early",
+    "sampling_hash": "109736bf992203d1ab98c1143516355e349415daa548567290dca1becaa44965"
+  },
+  {
+    "project": "novajoin",
+    "osv_id": "GHSA-xf8c-3cgx-fcwm",
+    "published": "2020-03-12T16:54:06Z",
+    "modified": "2024-09-26T15:06:44.021682Z",
+    "summary": "Improper Access Control in novajoin",
+    "aliases": [
+      "CVE-2019-10138",
+      "PYSEC-2019-192"
+    ],
+    "all_final_fixes": [
+      "1.1.1"
+    ],
+    "fixed_version": "1.1.1",
+    "stratum": "early",
+    "sampling_hash": "110a187b07989c5a5b946b4d29605d5fea933ffb7f0812611837f8e00ecbacee"
+  },
+  {
+    "project": "in-toto",
+    "osv_id": "GHSA-wc64-c5rv-32pf",
+    "published": "2023-05-11T20:47:56Z",
+    "modified": "2026-02-04T04:31:45.728286Z",
+    "summary": "in-toto vulnerable to Configuration Read From Local Directory",
+    "aliases": [
+      "CVE-2023-32076",
+      "GHSA-p86f-xmg6-9q4x",
+      "PYSEC-2023-63"
+    ],
+    "all_final_fixes": [
+      "2.0.0"
+    ],
+    "fixed_version": "2.0.0",
+    "stratum": "early",
+    "sampling_hash": "111f50bb9649bf0e9b1656deed27660b2696ee69f94aa017795dd142dcfa5ed4"
+  },
+  {
+    "project": "mage-ai",
+    "osv_id": "PYSEC-2023-64",
+    "published": "2023-05-09T15:15:00Z",
+    "modified": "2023-11-08T04:12:29.944518Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2023-31143",
+      "GHSA-c6mm-2g84-v4m7"
+    ],
+    "all_final_fixes": [
+      "0.8.72"
+    ],
+    "fixed_version": "0.8.72",
+    "stratum": "early",
+    "sampling_hash": "12866c1c852657f209969a6a7d1925cce136d7ba754a2ff57ea668d072f7eecf"
+  },
+  {
+    "project": "tortoise-orm",
+    "osv_id": "PYSEC-2020-144",
+    "published": "2020-04-20T22:15:00Z",
+    "modified": "2023-11-08T04:02:03.112341Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2020-11010",
+      "GHSA-9j2c-x8qm-qmjq"
+    ],
+    "all_final_fixes": [
+      "0.15.23",
+      "0.16.6"
+    ],
+    "fixed_version": "0.15.23",
+    "stratum": "early",
+    "sampling_hash": "1295d7808e31e31de91d4c350eac02703f5be6de07b5f80e32ce17cce65ddefd"
+  },
+  {
+    "project": "petl",
+    "osv_id": "GHSA-f5gc-p5m3-v347",
+    "published": "2020-12-02T18:28:30Z",
+    "modified": "2026-09-10T03:49:00.212553421Z",
+    "summary": "XXE in petl",
+    "aliases": [
+      "CVE-2020-29128",
+      "GHSA-69q2-p9xp-739v",
+      "PYSEC-2020-75"
+    ],
+    "all_final_fixes": [
+      "1.6.8"
+    ],
+    "fixed_version": "1.6.8",
+    "stratum": "early",
+    "sampling_hash": "135e6ee487fb79290acfdab59d1c9b8ee99fa2f5b35e3a71c260b9b0abbfb38d"
+  },
+  {
+    "project": "python-gnupg",
+    "osv_id": "GHSA-2fch-jvg5-crf6",
+    "published": "2019-03-25T16:17:53Z",
+    "modified": "2024-02-22T05:23:39.176453Z",
+    "summary": "Improper Input Validation python-gnupg",
+    "aliases": [
+      "CVE-2019-6690",
+      "GHSA-qh62-ch95-63wh",
+      "PYSEC-2019-115"
+    ],
+    "all_final_fixes": [
+      "0.4.4"
+    ],
+    "fixed_version": "0.4.4",
+    "stratum": "early",
+    "sampling_hash": "13854602030b7b00e9e14eb315ef7b30ef82cd259270255eea23a2bc2d345d5f"
+  },
+  {
+    "project": "collective-task",
+    "osv_id": "GHSA-4r9h-x77w-mffv",
+    "published": "2022-12-15T21:30:26Z",
+    "modified": "2024-09-13T20:22:54.883764Z",
+    "summary": "collective.task Cross-site Scripting vulnerability",
+    "aliases": [
+      "CVE-2022-4527",
+      "PYSEC-2022-42990"
+    ],
+    "all_final_fixes": [
+      "3.0.9"
+    ],
+    "fixed_version": "3.0.9",
+    "stratum": "early",
+    "sampling_hash": "13a7af607ec61a348ca3461d57c6de5a67a6875f011f88f90340194eb81d8f56"
+  },
+  {
+    "project": "scipy",
+    "osv_id": "PYSEC-2023-114",
+    "published": "2023-07-06T21:15:00Z",
+    "modified": "2026-06-10T17:11:12.706043830Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2023-29824",
+      "GHSA-jrfm-2h82-xg28"
+    ],
+    "all_final_fixes": [
+      "1.8.0"
+    ],
+    "fixed_version": "1.8.0",
+    "stratum": "early",
+    "sampling_hash": "1423613d2db27c7656b73a4517c0b0e6d608e2517d05feabb4859898fe85493a"
+  },
+  {
+    "project": "docassemble",
+    "osv_id": "GHSA-qrmm-w4v4-q7f8",
+    "published": "2021-05-06T15:27:22Z",
+    "modified": "2026-09-10T03:49:14.990661136Z",
+    "summary": "Unauthorized access through URL manipulation",
+    "aliases": [],
+    "all_final_fixes": [
+      "1.2.65"
+    ],
+    "fixed_version": "1.2.65",
+    "stratum": "early",
+    "sampling_hash": "17194d808bad3af8cc0f71274bc35315ccf794e88e5a05074095bf40bb5def26"
+  },
+  {
+    "project": "swauth",
+    "osv_id": "GHSA-qhq8-xwqv-pvv9",
+    "published": "2022-05-17T00:16:14Z",
+    "modified": "2024-10-28T14:53:45.092254Z",
+    "summary": "OpenStack Swauth object/proxy server writing Auth Token to log file",
+    "aliases": [
+      "CVE-2017-16613",
+      "PYSEC-2017-84"
+    ],
+    "all_final_fixes": [
+      "1.3.0"
+    ],
+    "fixed_version": "1.3.0",
+    "stratum": "early",
+    "sampling_hash": "18349822b908e80ffa31a52899e29c53863e937d9481dc8f01f69078168a395b"
+  },
+  {
+    "project": "ldapcherry",
+    "osv_id": "GHSA-vq8w-x8v7-f88m",
+    "published": "2023-01-05T09:30:28Z",
+    "modified": "2024-09-27T22:05:07.232424Z",
+    "summary": "LdapCherry Cross-site Scripting vulnerbaility",
+    "aliases": [
+      "CVE-2019-25095",
+      "PYSEC-2023-19"
+    ],
+    "all_final_fixes": [
+      "1.0.0"
+    ],
+    "fixed_version": "1.0.0",
+    "stratum": "early",
+    "sampling_hash": "1a52a86b6328263bee72a4b0359999b684c0744ee45f26f7442a15f367c7c295"
+  },
+  {
+    "project": "fedmsg",
+    "osv_id": "GHSA-p7xc-35m8-57pr",
+    "published": "2018-07-13T15:17:14Z",
+    "modified": "2024-09-20T17:48:38.486496Z",
+    "summary": "FedMsg not properly completing message validation",
+    "aliases": [
+      "CVE-2017-1000001",
+      "PYSEC-2017-13"
+    ],
+    "all_final_fixes": [
+      "0.18.2"
+    ],
+    "fixed_version": "0.18.2",
+    "stratum": "early",
+    "sampling_hash": "1bb1dc07530554f83eb9c13d1fbe6c6f6cfe9b359c8285b6ab2df42319d33745"
+  },
+  {
+    "project": "case-utils",
+    "osv_id": "GHSA-rgrf-6mf5-m882",
+    "published": "2024-01-11T15:18:51Z",
+    "modified": "2026-09-10T03:50:05.372413008Z",
+    "summary": "cdo-local-uuid vulnerable to insertion of artifact derived from developer's Present Working Directory into demonstration code",
+    "aliases": [
+      "CVE-2024-22194",
+      "PYSEC-2024-5",
+      "PYSEC-2024-6"
+    ],
+    "all_final_fixes": [
+      "0.5.1",
+      "0.6.1",
+      "0.7.1",
+      "0.8.1",
+      "0.9.1",
+      "0.10.1",
+      "0.11.1",
+      "0.12.1",
+      "0.13.1",
+      "0.14.1"
+    ],
+    "fixed_version": "0.5.1",
+    "stratum": "middle",
+    "sampling_hash": "02bad3fbac9d1d42911639d604809bc057aea29d0c1fee4967bd1e2eb1bf9dd5"
+  },
+  {
+    "project": "mezzanine",
+    "osv_id": "GHSA-7pr5-w74r-jjj7",
+    "published": "2025-06-17T12:31:15Z",
+    "modified": "2026-07-20T21:30:35.952363668Z",
+    "summary": "Mezzanine CMS has a Stored Cross-Site Scripting (XSS) vulnerability in the displayable_links_js function",
+    "aliases": [
+      "CVE-2025-6050",
+      "PYSEC-2025-236"
+    ],
+    "all_final_fixes": [
+      "6.1.1"
+    ],
+    "fixed_version": "6.1.1",
+    "stratum": "middle",
+    "sampling_hash": "049faedf0a14194a9cd9d169ccd9a705e466091882721fb49bfbcd012661a497"
+  },
+  {
+    "project": "embedchain",
+    "osv_id": "GHSA-rhhj-5436-95vf",
+    "published": "2024-01-21T18:30:34Z",
+    "modified": "2024-02-16T08:14:04.089449Z",
+    "summary": "Code execution in Embedchain",
+    "aliases": [
+      "CVE-2024-23731",
+      "PYSEC-2024-7"
+    ],
+    "all_final_fixes": [
+      "0.1.57"
+    ],
+    "fixed_version": "0.1.57",
+    "stratum": "middle",
+    "sampling_hash": "0ead51e9c3d977da0251ecb2c66d7f96230fb5fcc0b23dc3718680a0cb8a519d"
+  },
+  {
+    "project": "django-helpdesk",
+    "osv_id": "GHSA-m4jx-m5hg-qrxx",
+    "published": "2025-05-31T03:30:33Z",
+    "modified": "2025-06-04T02:12:10.723839Z",
+    "summary": "django-helpdesk Allows Sensitive Data Exposure",
+    "aliases": [
+      "CVE-2018-25111",
+      "PYSEC-2025-44"
+    ],
+    "all_final_fixes": [
+      "1.0.0"
+    ],
+    "fixed_version": "1.0.0",
+    "stratum": "middle",
+    "sampling_hash": "13f08ce10e5708c8da91e465c8f2857d716f6eff00298e2df551cf08f13a4d30"
+  },
+  {
+    "project": "gradio-pdf",
+    "osv_id": "GHSA-4m3g-6r7g-jv4f",
+    "published": "2024-06-05T14:15:50Z",
+    "modified": "2024-12-02T05:49:21.567066Z",
+    "summary": "Arbitrary JavaScript execution due to using outdated libraries",
+    "aliases": [],
+    "all_final_fixes": [
+      "0.0.10"
+    ],
+    "fixed_version": "0.0.10",
+    "stratum": "middle",
+    "sampling_hash": "152b2b220d28f4fc616a1cdce393d8c9124f12e57cda38adfd0b8a223824480b"
+  },
+  {
+    "project": "djoser",
+    "osv_id": "GHSA-v49p-m6gh-747c",
+    "published": "2024-12-13T06:30:58Z",
+    "modified": "2025-02-21T16:41:32.920740Z",
+    "summary": "djoser Authentication Bypass",
+    "aliases": [
+      "CVE-2024-21543",
+      "PYSEC-2024-158"
+    ],
+    "all_final_fixes": [
+      "2.3.0"
+    ],
+    "fixed_version": "2.3.0",
+    "stratum": "middle",
+    "sampling_hash": "1833fd3160c3572f020a4f5557ccce0c3a20ee9733d59f84112ee5b3515fb040"
+  },
+  {
+    "project": "lti-consumer-xblock",
+    "osv_id": "GHSA-7j9p-67mm-5g87",
+    "published": "2024-08-30T18:47:14Z",
+    "modified": "2026-09-10T03:50:17.345516829Z",
+    "summary": "LTI 1.3 Grade Pass Back Implementation has Missing Authorization Vulnerability",
+    "aliases": [
+      "CVE-2023-23611",
+      "PYSEC-2023-21"
+    ],
+    "all_final_fixes": [
+      "7.2.2"
+    ],
+    "fixed_version": "7.2.2",
+    "stratum": "middle",
+    "sampling_hash": "19f54aa3664945f05eb1693cdd3372b71af950cb28eaf26a11ec35ea6a3e618d"
+  },
+  {
+    "project": "couchbase",
+    "osv_id": "PYSEC-2025-101",
+    "published": "2025-07-29T20:15:27.870Z",
+    "modified": "2026-06-25T23:11:26.742449174Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2025-52490",
+      "GHSA-pqhp-4xfc-hjgq",
+      "GO-2026-5550"
+    ],
+    "all_final_fixes": [
+      "3.2.6"
+    ],
+    "fixed_version": "3.2.6",
+    "stratum": "middle",
+    "sampling_hash": "1d08acee2043a215923d7ead6546b886c98dee0f6ebd6a9f6e4caab8985a2198"
+  },
+  {
+    "project": "python-jose",
+    "osv_id": "GHSA-cjwg-qfpm-7377",
+    "published": "2024-04-26T00:30:35Z",
+    "modified": "2026-05-11T00:41:14.854282197Z",
+    "summary": "python-jose denial of service via compressed JWE content",
+    "aliases": [
+      "CVE-2024-33664",
+      "PYSEC-2024-233"
+    ],
+    "all_final_fixes": [
+      "3.4.0"
+    ],
+    "fixed_version": "3.4.0",
+    "stratum": "middle",
+    "sampling_hash": "1e2be545f717c8c5727f8570268e4aad46708bcfc1872127ef693b8d9ca557a0"
+  },
+  {
+    "project": "torch-npu",
+    "osv_id": "PYSEC-2024-328",
+    "published": "2024-04-17T19:15:07.783Z",
+    "modified": "2026-07-27T12:26:34.306757669Z",
+    "summary": "",
+    "aliases": [
+      "BIT-pytorch-2024-31580",
+      "CVE-2024-31580",
+      "GHSA-5pcm-hx3q-hm94",
+      "PYSEC-2024-252"
+    ],
+    "all_final_fixes": [
+      "2.2.0"
+    ],
+    "fixed_version": "2.2.0",
+    "stratum": "middle",
+    "sampling_hash": "1f677614c47224de771df77be1045c3a927d6b97bd08e3136f868d05fb05c1f7"
+  },
+  {
+    "project": "wordops",
+    "osv_id": "GHSA-23qq-p4gq-gc2g",
+    "published": "2024-05-06T00:30:52Z",
+    "modified": "2025-01-21T18:36:27.337547Z",
+    "summary": "WordOps has TOCTOU race condition",
+    "aliases": [
+      "CVE-2024-34528",
+      "PYSEC-2024-175"
+    ],
+    "all_final_fixes": [
+      "3.21.0"
+    ],
+    "fixed_version": "3.21.0",
+    "stratum": "middle",
+    "sampling_hash": "3ce5905d59c5983315e347106881d0071162670a487e0c3edd4451000e849f5d"
+  },
+  {
+    "project": "indy-node",
+    "osv_id": "GHSA-wh2w-39f4-rpv2",
+    "published": "2024-08-30T18:41:16Z",
+    "modified": "2026-07-08T06:00:56.218192793Z",
+    "summary": "Hyperledger Indy's update process of a DID does not check who signs the request",
+    "aliases": [
+      "CVE-2020-11093",
+      "PYSEC-2020-48"
+    ],
+    "all_final_fixes": [
+      "1.12.4"
+    ],
+    "fixed_version": "1.12.4",
+    "stratum": "middle",
+    "sampling_hash": "4030588a04702c7da815e855e7d59ece54bee3595a8dab3aedf7c1d73a6808e6"
+  },
+  {
+    "project": "lektor",
+    "osv_id": "GHSA-wv28-7fpw-fj49",
+    "published": "2024-03-27T06:30:33Z",
+    "modified": "2024-08-06T19:00:46.448640Z",
+    "summary": "Lektor does not sanitize database path traversal",
+    "aliases": [
+      "CVE-2024-28335",
+      "PYSEC-2024-49"
+    ],
+    "all_final_fixes": [
+      "3.3.11"
+    ],
+    "fixed_version": "3.3.11",
+    "stratum": "middle",
+    "sampling_hash": "48ede427592d6f09c2aa1e1a35500ef9bb18f57773094297f866d428c4c45cbe"
+  },
+  {
+    "project": "streampipes",
+    "osv_id": "GHSA-vm7w-2724-5m23",
+    "published": "2025-03-03T12:30:31Z",
+    "modified": "2025-07-09T16:44:40.385704Z",
+    "summary": "Apache StreamPipes has improper privilege management in a REST interface",
+    "aliases": [
+      "CVE-2024-24778",
+      "PYSEC-2025-66"
+    ],
+    "all_final_fixes": [
+      "0.97.0"
+    ],
+    "fixed_version": "0.97.0",
+    "stratum": "middle",
+    "sampling_hash": "4a91a5a1408b0bec261b7c1006d653954c5ceb3a65afe9526d3d5c07115073e6"
+  },
+  {
+    "project": "freewvs",
+    "osv_id": "GHSA-9cfv-9463-8gqv",
+    "published": "2024-08-30T18:43:57Z",
+    "modified": "2026-07-08T06:28:47.953359951Z",
+    "summary": "freewvs vulnerable to denial of service through large files",
+    "aliases": [
+      "CVE-2020-15100",
+      "PYSEC-2020-232"
+    ],
+    "all_final_fixes": [
+      "0.1.1"
+    ],
+    "fixed_version": "0.1.1",
+    "stratum": "middle",
+    "sampling_hash": "4d735f7b3f5398e7b5c3c238be9d10e7dbaf47fff5a72d0f0a4f2624d2a3bc46"
+  },
+  {
+    "project": "pycryptodomex",
+    "osv_id": "GHSA-j225-cvw7-qrx7",
+    "published": "2024-01-05T06:30:19Z",
+    "modified": "2026-09-10T03:50:04.975951117Z",
+    "summary": "PyCryptodome and pycryptodomex side-channel leakage for OAEP decryption",
+    "aliases": [
+      "CVE-2023-52323",
+      "PYSEC-2024-3",
+      "PYSEC-2026-1811"
+    ],
+    "all_final_fixes": [
+      "3.19.1"
+    ],
+    "fixed_version": "3.19.1",
+    "stratum": "middle",
+    "sampling_hash": "4e7bc8fa71a616a73a815ee926dfa5786bf9a24a32f6e8daa795b0a7d3dc5eac"
+  },
+  {
+    "project": "plotai",
+    "osv_id": "GHSA-2hmp-5wqg-f24h",
+    "published": "2025-03-10T15:30:47Z",
+    "modified": "2025-10-03T13:48:07.558391Z",
+    "summary": "PlotAI eval vulnerability",
+    "aliases": [
+      "CVE-2025-1497",
+      "PYSEC-2025-22"
+    ],
+    "all_final_fixes": [
+      "0.0.7"
+    ],
+    "fixed_version": "0.0.7",
+    "stratum": "middle",
+    "sampling_hash": "51771dd3b77f4378eb44c478b9708c8abae356480ac85e8927119ac30042bc1b"
+  },
+  {
+    "project": "mlx",
+    "osv_id": "PYSEC-2025-139",
+    "published": "2025-11-21T19:16:02.467Z",
+    "modified": "2026-05-20T09:19:08.526846Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2025-62609",
+      "GHSA-j842-xgm4-wf88"
+    ],
+    "all_final_fixes": [
+      "0.29.4"
+    ],
+    "fixed_version": "0.29.4",
+    "stratum": "middle",
+    "sampling_hash": "540ee1d9cf8723b06af52ea07a40642a39dde9a982784a51b661394d53a7691f"
+  },
+  {
+    "project": "max",
+    "osv_id": "PYSEC-2025-253",
+    "published": "2025-11-18T19:15:49.800Z",
+    "modified": "2026-07-13T07:26:46.166540840Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2025-60455",
+      "GHSA-7xcv-9j6c-2fmc",
+      "PYSEC-2026-427"
+    ],
+    "all_final_fixes": [
+      "25.6.0"
+    ],
+    "fixed_version": "25.6.0",
+    "stratum": "middle",
+    "sampling_hash": "5426e8e9804e3fc8232cb60b48f043fd42231e2759741bd0eb050fde8837623d"
+  },
+  {
+    "project": "django-tomselect",
+    "osv_id": "GHSA-785h-76cm-cpmf",
+    "published": "2025-03-26T20:34:02Z",
+    "modified": "2025-04-06T05:50:54.756672Z",
+    "summary": "Django TomSelect incomplete escaping of dangerous characters in widget attributes",
+    "aliases": [],
+    "all_final_fixes": [
+      "2025.3.3"
+    ],
+    "fixed_version": "2025.3.3",
+    "stratum": "middle",
+    "sampling_hash": "56babe9cb627ea84fe6ea1148fb09b416064259fa5332902bcfd97161f5e8a9d"
+  },
+  {
+    "project": "dash",
+    "osv_id": "GHSA-547x-748v-vp6p",
+    "published": "2024-02-02T06:30:31Z",
+    "modified": "2026-07-20T13:45:33.730508170Z",
+    "summary": "Dash apps vulnerable to Cross-site Scripting",
+    "aliases": [
+      "CVE-2024-21485",
+      "PYSEC-2024-35",
+      "PYSEC-2026-219",
+      "PYSEC-2026-220"
+    ],
+    "all_final_fixes": [
+      "2.15.0"
+    ],
+    "fixed_version": "2.15.0",
+    "stratum": "middle",
+    "sampling_hash": "5a859e176649dda0949b732ace0db254b6d42ef85250ed77d8839e3803c79e16"
+  },
+  {
+    "project": "deepspeed",
+    "osv_id": "GHSA-8cp5-3rf8-8gfh",
+    "published": "2024-10-08T18:33:15Z",
+    "modified": "2024-10-18T16:22:48.470963Z",
+    "summary": "DeepSpeed Remote Code Execution Vulnerability",
+    "aliases": [
+      "CVE-2024-43497",
+      "PYSEC-2024-109"
+    ],
+    "all_final_fixes": [
+      "0.15.1"
+    ],
+    "fixed_version": "0.15.1",
+    "stratum": "middle",
+    "sampling_hash": "5b6daded3483724addf38e0b85ee3886ac22502db2200c208d334521ee00267f"
+  },
+  {
+    "project": "nonebot2",
+    "osv_id": "PYSEC-2024-37",
+    "published": "2024-02-09T23:15:00Z",
+    "modified": "2024-02-16T16:41:43.954924Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2024-21624",
+      "GHSA-59j8-776v-xxxg"
+    ],
+    "all_final_fixes": [
+      "2.2.0"
+    ],
+    "fixed_version": "2.2.0",
+    "stratum": "middle",
+    "sampling_hash": "5bbd29c2a02b3373b97c3ca763547ebba8ea7762500a5cda0cefd815a1f6583e"
+  },
+  {
+    "project": "ultralytics",
+    "osv_id": "PYSEC-2024-154",
+    "published": "2024-12-10T19:19:10Z",
+    "modified": "2026-06-28T22:30:11.689251300Z",
+    "summary": "A number of releases of ultralytics contained malicious crypto miner software.",
+    "aliases": [],
+    "all_final_fixes": [
+      "8.3.47"
+    ],
+    "fixed_version": "8.3.47",
+    "stratum": "middle",
+    "sampling_hash": "5eb3be360822b11db31c1ad6426e278cfa9e8678390b2d70670392e89400152b"
+  },
+  {
+    "project": "datasette",
+    "osv_id": "GHSA-w832-gg5g-x44m",
+    "published": "2025-11-06T15:13:33Z",
+    "modified": "2026-05-19T20:30:23.793299560Z",
+    "summary": "Open redirect endpoint in Datasette",
+    "aliases": [
+      "CVE-2025-64481",
+      "PYSEC-2025-73"
+    ],
+    "all_final_fixes": [
+      "0.65.2"
+    ],
+    "fixed_version": "0.65.2",
+    "stratum": "middle",
+    "sampling_hash": "5fa722bc82e9d14a371b7120240d76cfe4841f0fa73c9e3f8653d740e4850515"
+  },
+  {
+    "project": "webssh",
+    "osv_id": "GHSA-9cg4-9hv5-3376",
+    "published": "2025-07-20T12:30:27Z",
+    "modified": "2026-06-08T20:00:14.508064757Z",
+    "summary": "WebSSH Cross-site Scripting vulnerability",
+    "aliases": [
+      "CVE-2025-7885",
+      "PYSEC-2025-234"
+    ],
+    "all_final_fixes": [
+      "1.6.3"
+    ],
+    "fixed_version": "1.6.3",
+    "stratum": "middle",
+    "sampling_hash": "60bd7be7b5bf2868a69875945bf5d26fc2e1b158903d128d80c0945982f05fc5"
+  },
+  {
+    "project": "cg",
+    "osv_id": "GHSA-w228-rfpx-fhm4",
+    "published": "2024-04-23T16:21:22Z",
+    "modified": "2024-12-06T05:43:58.698245Z",
+    "summary": "cg vulnerable to an Open Redirect Vulnerability on Referer Header",
+    "aliases": [],
+    "all_final_fixes": [
+      "60.2.12"
+    ],
+    "fixed_version": "60.2.12",
+    "stratum": "middle",
+    "sampling_hash": "6303035d2b4a221f2473bbd3ff120ae449889f50117831a96567785ed54e6728"
+  },
+  {
+    "project": "fastapi",
+    "osv_id": "PYSEC-2024-38",
+    "published": "2024-02-05T15:15:00Z",
+    "modified": "2026-07-07T17:56:49.144644089Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2024-24762",
+      "GHSA-2jv5-9r88-3w3p",
+      "GHSA-qf9m-vfgh-m389",
+      "PYSEC-2026-1850"
+    ],
+    "all_final_fixes": [
+      "0.109.1"
+    ],
+    "fixed_version": "0.109.1",
+    "stratum": "middle",
+    "sampling_hash": "6a892ebfaa3bc6866baae5625ccea9923bc4df87680a5f58d9c264aa5b94ea0e"
+  },
+  {
+    "project": "diffoscope",
+    "osv_id": "GHSA-33w6-hvmq-gh4x",
+    "published": "2024-02-27T03:31:03Z",
+    "modified": "2024-12-05T05:37:11.490459Z",
+    "summary": "diffoscope Path Traversal vulnerability",
+    "aliases": [
+      "CVE-2024-25711",
+      "PYSEC-2024-41"
+    ],
+    "all_final_fixes": [
+      "256"
+    ],
+    "fixed_version": "256",
+    "stratum": "middle",
+    "sampling_hash": "6fd360bbace946cf265d3885a51cd528bdf7693110fcb3eb86651eda35c9e7e9"
+  },
+  {
+    "project": "waitress",
+    "osv_id": "PYSEC-2024-211",
+    "published": "2024-10-29T15:15:12Z",
+    "modified": "2025-01-19T19:56:44.597517Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2024-49769",
+      "GHSA-3f84-rpwh-47g6"
+    ],
+    "all_final_fixes": [
+      "3.0.1"
+    ],
+    "fixed_version": "3.0.1",
+    "stratum": "middle",
+    "sampling_hash": "72bb4c7759e262a2ee125418256068663b1091620d541e787a678cf5a37723e6"
+  },
+  {
+    "project": "galaxy-auth",
+    "osv_id": "PYSEC-2024-272",
+    "published": "2024-09-20T19:15:15.547Z",
+    "modified": "2026-05-20T09:19:00.780385Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2024-42346",
+      "GHSA-x6w7-3gwf-qr9r",
+      "PYSEC-2024-273"
+    ],
+    "all_final_fixes": [
+      "24.1.1"
+    ],
+    "fixed_version": "24.1.1",
+    "stratum": "middle",
+    "sampling_hash": "74d58a778e6bacd11341f4733b4ec001208532872c7c9879570c492095ee124a"
+  },
+  {
+    "project": "ekuiper",
+    "osv_id": "GHSA-r5ph-4jxm-6j9p",
+    "published": "2024-08-20T20:04:31Z",
+    "modified": "2026-09-10T03:50:55.394825658Z",
+    "summary": "LF Edge eKuiper has a SQL Injection in sqlKvStore",
+    "aliases": [
+      "CVE-2024-43406",
+      "GO-2024-3078",
+      "PYSEC-2024-72"
+    ],
+    "all_final_fixes": [
+      "1.14.2"
+    ],
+    "fixed_version": "1.14.2",
+    "stratum": "middle",
+    "sampling_hash": "76da291299c889c76509c50b025b4b886a3627a2587e769d4dae0c7d1f12b093"
+  },
+  {
+    "project": "mayan-edms",
+    "osv_id": "GHSA-x37w-7p52-8f49",
+    "published": "2025-12-15T00:30:25Z",
+    "modified": "2026-06-06T00:45:49.190901799Z",
+    "summary": "Mayan EDMS has an Open Redirect through the /authentication/ file",
+    "aliases": [
+      "CVE-2025-14692",
+      "PYSEC-2025-135"
+    ],
+    "all_final_fixes": [
+      "4.6.12",
+      "4.7.8",
+      "4.8.10",
+      "4.9.7",
+      "4.10.2"
+    ],
+    "fixed_version": "4.6.12",
+    "stratum": "middle",
+    "sampling_hash": "82557fccef373d74818733e3e4e08d0b3aa45e04b741c19ed2b6ea853aeae7df"
+  },
+  {
+    "project": "sagemaker-training",
+    "osv_id": "GHSA-635v-pc42-fr74",
+    "published": "2024-09-11T19:20:42Z",
+    "modified": "2024-12-03T06:05:38.861223Z",
+    "summary": "AWS SageMaker Training Toolkit logs CodeArtifact Authorization token",
+    "aliases": [],
+    "all_final_fixes": [
+      "4.8.0"
+    ],
+    "fixed_version": "4.8.0",
+    "stratum": "middle",
+    "sampling_hash": "86b46e012c87823d437045c70bbf2b09d07ae6ae830262af8d1ea9d79fda7750"
+  },
+  {
+    "project": "pypqc",
+    "osv_id": "GHSA-rc4p-p3j9-6577",
+    "published": "2024-02-22T21:41:47Z",
+    "modified": "2024-11-28T05:32:10.128115Z",
+    "summary": "pypqc private key retrieval vulnerability",
+    "aliases": [],
+    "all_final_fixes": [
+      "0.0.6.1"
+    ],
+    "fixed_version": "0.0.6.1",
+    "stratum": "middle",
+    "sampling_hash": "9388de893464bee425826c9d70abdc3f2ef14292434bfdad2ce07d3e6402afb6"
+  },
+  {
+    "project": "python-a2a",
+    "osv_id": "GHSA-rp38-pj7h-r8q2",
+    "published": "2025-06-17T09:31:05Z",
+    "modified": "2025-07-03T12:54:41.116302Z",
+    "summary": "python-a2a has a path traversal in the create_workflow function",
+    "aliases": [
+      "CVE-2025-6167",
+      "PYSEC-2025-64"
+    ],
+    "all_final_fixes": [
+      "0.5.6"
+    ],
+    "fixed_version": "0.5.6",
+    "stratum": "middle",
+    "sampling_hash": "9933c37c2a2563bc535fb41546d40209e74bf9843aba40ed27219db115258df8"
+  },
+  {
+    "project": "cadwyn",
+    "osv_id": "PYSEC-2025-71",
+    "published": "2025-07-21T21:15:25Z",
+    "modified": "2025-07-23T16:12:16.996891Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2025-53528",
+      "GHSA-2gxp-6r36-m97r"
+    ],
+    "all_final_fixes": [
+      "5.4.3"
+    ],
+    "fixed_version": "5.4.3",
+    "stratum": "middle",
+    "sampling_hash": "9d36d10c128da29f76f871635a5857f9aa9c2ecef0d8416c7bc3f709e9ef540b"
+  },
+  {
+    "project": "galaxy-data",
+    "osv_id": "PYSEC-2024-273",
+    "published": "2024-09-20T19:15:15.547Z",
+    "modified": "2026-05-20T09:19:00.901252Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2024-42346",
+      "GHSA-x6w7-3gwf-qr9r",
+      "PYSEC-2024-272"
+    ],
+    "all_final_fixes": [
+      "24.1.1"
+    ],
+    "fixed_version": "24.1.1",
+    "stratum": "middle",
+    "sampling_hash": "9eaa55a5eb74797fe3806ebeb6c185e8d98b2bb745da6f2c46b50cd5f27f770f"
+  },
+  {
+    "project": "opencanary",
+    "osv_id": "GHSA-pf5v-pqfv-x8jj",
+    "published": "2024-10-14T21:16:12Z",
+    "modified": "2025-05-16T22:39:09.404195Z",
+    "summary": "OpenCanary Executes Commands From Potentially Writable Config File",
+    "aliases": [
+      "CVE-2024-48911",
+      "PYSEC-2024-248"
+    ],
+    "all_final_fixes": [
+      "0.9.5"
+    ],
+    "fixed_version": "0.9.5",
+    "stratum": "middle",
+    "sampling_hash": "a0024e3db3995c2a88d655066b0c9256cd6eaaa0d12e40216187379c193b17ff"
+  },
+  {
+    "project": "duckdb",
+    "osv_id": "PYSEC-2025-112",
+    "published": "2025-11-12T22:15:49.813Z",
+    "modified": "2026-05-20T09:18:59.601738Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2025-64429",
+      "GHSA-vmp8-hg63-v2hp"
+    ],
+    "all_final_fixes": [
+      "1.4.2"
+    ],
+    "fixed_version": "1.4.2",
+    "stratum": "middle",
+    "sampling_hash": "a2e7aa48d219b29958c258921e5859d4f8159c1fb958eec072d4865739f07801"
+  },
+  {
+    "project": "ansibleguy-webui",
+    "osv_id": "PYSEC-2026-1126",
+    "published": "2026-07-07T11:45:43.764203Z",
+    "modified": "2026-07-07T17:46:20.960532229Z",
+    "summary": "ansibleguy-webui Cross-site Scripting vulnerability",
+    "aliases": [
+      "CVE-2024-36110",
+      "GHSA-927p-xrc2-x2gj"
+    ],
+    "all_final_fixes": [
+      "0.0.21"
+    ],
+    "fixed_version": "0.0.21",
+    "stratum": "recent",
+    "sampling_hash": "001b457d2cd6a9a4fe61a0b63c44efa997d297a5a54919b4f796e89e2b59c909"
+  },
+  {
+    "project": "paramiko",
+    "osv_id": "PYSEC-2026-1758",
+    "published": "2026-07-07T11:45:28.710643Z",
+    "modified": "2026-07-07T17:57:21.107610647Z",
+    "summary": "Prefix Truncation Attack against ChaCha20-Poly1305 and Encrypt-then-MAC aka Terrapin",
+    "aliases": [
+      "CVE-2023-48795",
+      "GHSA-45x7-px36-x8w8",
+      "GO-2023-2402"
+    ],
+    "all_final_fixes": [
+      "3.4.0"
+    ],
+    "fixed_version": "3.4.0",
+    "stratum": "recent",
+    "sampling_hash": "0054bb5692a0a6bc9d4df6299436a0ffd7073ae79a8301c6003ffc0a5c6ca17a"
+  },
+  {
+    "project": "langroid",
+    "osv_id": "PYSEC-2026-2576",
+    "published": "2026-07-13T15:46:28.872674Z",
+    "modified": "2026-07-13T16:31:49.700234825Z",
+    "summary": "Langroid: Neo4jChatAgent executes LLM-generated Cypher without validation (prompt-to-Cypher injection; config-conditional RCE), mirroring the SQLChatAgent bug fixed in CVE-2026-25879",
+    "aliases": [
+      "CVE-2026-55615",
+      "GHSA-2pq5-3q89-j7cc"
+    ],
+    "all_final_fixes": [
+      "0.65.5"
+    ],
+    "fixed_version": "0.65.5",
+    "stratum": "recent",
+    "sampling_hash": "007d5057cab5e0e361d40e213ae6f8fd9cc81c2cbc4f9a5177681142d37e72be"
+  },
+  {
+    "project": "weblate",
+    "osv_id": "PYSEC-2026-3942",
+    "published": "2026-09-10T09:44:58.607082Z",
+    "modified": "2026-09-10T12:15:14.167450674Z",
+    "summary": "Weblate has IDOR in GroupViewSet that allows authenticated project manager to gain unauthorized read access to any private project",
+    "aliases": [
+      "CVE-2026-55228",
+      "GHSA-2q2q-jr9g-v9rf"
+    ],
+    "all_final_fixes": [
+      "2026.7"
+    ],
+    "fixed_version": "2026.7",
+    "stratum": "recent",
+    "sampling_hash": "00ddeba980cea4d4d3383998b1b67f234ccdba8ac22a43e6393045c26e4d51b8"
+  },
+  {
+    "project": "lief",
+    "osv_id": "PYSEC-2026-1538",
+    "published": "2026-07-07T16:03:17.881535Z",
+    "modified": "2026-07-07T17:46:51.327249675Z",
+    "summary": "LIEF is vulnerable to segmentation fault",
+    "aliases": [
+      "CVE-2025-15504",
+      "GHSA-mjjp-xjfg-97wg"
+    ],
+    "all_final_fixes": [
+      "0.17.2"
+    ],
+    "fixed_version": "0.17.2",
+    "stratum": "recent",
+    "sampling_hash": "01079f06777ffb1db62bc24c120211c2de9ce036a9f55537c197ff9430023f45"
+  },
+  {
+    "project": "pydantic-ai",
+    "osv_id": "PYSEC-2026-4276",
+    "published": "2026-10-15T10:22:52.847519Z",
+    "modified": "2026-10-15T14:55:42.276272043Z",
+    "summary": "Pydantic AI: Concurrency-limited models can keep their slot when a streamed request ends early",
+    "aliases": [
+      "CVE-2026-107286",
+      "GHSA-6fqq-452j-qhrp",
+      "PYSEC-2026-4285"
+    ],
+    "all_final_fixes": [
+      "2.53.0"
+    ],
+    "fixed_version": "2.53.0",
+    "stratum": "recent",
+    "sampling_hash": "02225a991e296211c53a8f5f9bb34ad2c795bdffaff03a602cd7f745858df70a"
+  },
+  {
+    "project": "decepticon-sdk",
+    "osv_id": "PYSEC-2026-4034",
+    "published": "2026-10-01T16:38:39.038969Z",
+    "modified": "2026-10-01T17:55:53.306958453Z",
+    "summary": "Decepticon: Role-boundary forgery via ChatML special-token literals in web crawl output composed into LLM context",
+    "aliases": [
+      "CVE-2026-61732",
+      "GHSA-g5f9-3xfg-p9mf",
+      "PYSEC-2026-4032",
+      "PYSEC-2026-4033"
+    ],
+    "all_final_fixes": [
+      "1.1.17"
+    ],
+    "fixed_version": "1.1.17",
+    "stratum": "recent",
+    "sampling_hash": "02bb35b1d6d2d91a51f811b4cfb254e2d221906d900f299ccc4f9511e24f5eae"
+  },
+  {
+    "project": "lnbits",
+    "osv_id": "PYSEC-2026-1580",
+    "published": "2026-07-07T14:34:34.796839Z",
+    "modified": "2026-07-07T17:46:55.139639205Z",
+    "summary": "LNbits improperly handles potential network and payment failures when using Eclair backend",
+    "aliases": [
+      "CVE-2024-34694",
+      "GHSA-3j4h-h3fp-vwww"
+    ],
+    "all_final_fixes": [
+      "0.12.6"
+    ],
+    "fixed_version": "0.12.6",
+    "stratum": "recent",
+    "sampling_hash": "030683c0bc048db778ad4717372939d9040b92767701016ed18ff848c84825e3"
+  },
+  {
+    "project": "promptflow-core",
+    "osv_id": "PYSEC-2026-1804",
+    "published": "2026-07-07T14:34:50.579144Z",
+    "modified": "2026-07-13T16:43:17.482107065Z",
+    "summary": "Azure PromptFlow remote code execution related to Jinja templates",
+    "aliases": [
+      "CVE-2025-24986",
+      "GHSA-gprr-v9f2-px3c",
+      "PYSEC-2026-2968"
+    ],
+    "all_final_fixes": [
+      "1.17.2"
+    ],
+    "fixed_version": "1.17.2",
+    "stratum": "recent",
+    "sampling_hash": "03ab2465bb93cbbe3a518716bba4eb82f65784156a07dd7d610884e2750bff71"
+  },
+  {
+    "project": "ms-swift",
+    "osv_id": "PYSEC-2026-1682",
+    "published": "2026-07-07T16:02:59.379580Z",
+    "modified": "2026-07-07T17:47:17.642006930Z",
+    "summary": "MS SWIFT WEB-UI RCE Vulnerability",
+    "aliases": [
+      "CVE-2025-41419",
+      "GHSA-7c78-rm87-5673"
+    ],
+    "all_final_fixes": [
+      "3.7.0"
+    ],
+    "fixed_version": "3.7.0",
+    "stratum": "recent",
+    "sampling_hash": "03b29e527751da7d8226b35266c65136f355c4af596376b58d14bccf7e497726"
+  },
+  {
+    "project": "zenml",
+    "osv_id": "PYSEC-2026-2071",
+    "published": "2026-07-07T16:03:06.450033Z",
+    "modified": "2026-07-07T17:48:17.160627575Z",
+    "summary": "ZenML is vulnerable to Path Traversal through its `PathMaterializer` class",
+    "aliases": [
+      "CVE-2025-8406",
+      "GHSA-q92x-2x5g-h365"
+    ],
+    "all_final_fixes": [
+      "0.84.2"
+    ],
+    "fixed_version": "0.84.2",
+    "stratum": "recent",
+    "sampling_hash": "03dae951e05add2bbd6631f2c7dad23e15d22601114c4f26ef3d666abc8ec3b3"
+  },
+  {
+    "project": "ray",
+    "osv_id": "GHSA-hhrp-gw25-jr43",
+    "published": "2026-07-24T15:47:38Z",
+    "modified": "2026-09-10T03:50:52.427940507Z",
+    "summary": "Ray: Arbitrary code execution via ray.data.read_webdataset default decoder: pickle.loads(value) and torch.load(weights_only=False)",
+    "aliases": [
+      "CVE-2026-57516",
+      "PYSEC-2026-2273"
+    ],
+    "all_final_fixes": [
+      "2.56.0"
+    ],
+    "fixed_version": "2.56.0",
+    "stratum": "recent",
+    "sampling_hash": "03f74fd21fe80e43ff499411bf1deb4a8acc7c037673db0ff9f34f08eec9c361"
+  },
+  {
+    "project": "protobuf",
+    "osv_id": "PYSEC-2026-1805",
+    "published": "2026-07-07T16:03:20.164682Z",
+    "modified": "2026-07-07T17:48:07.140464416Z",
+    "summary": "protobuf affected by a JSON recursion depth bypass",
+    "aliases": [
+      "CVE-2026-0994",
+      "GHSA-7gcm-g887-7qv7"
+    ],
+    "all_final_fixes": [
+      "5.29.6",
+      "6.33.5"
+    ],
+    "fixed_version": "5.29.6",
+    "stratum": "recent",
+    "sampling_hash": "04122accd8ef9776782df995999aace1e189ab8fc0a19c05f9d16e262c50c59e"
+  },
+  {
+    "project": "apache-airflow-providers-mysql",
+    "osv_id": "PYSEC-2026-1151",
+    "published": "2026-07-07T14:34:50.999793Z",
+    "modified": "2026-07-07T17:46:28.398718438Z",
+    "summary": "Apache Airflow MySQL Provider is Vulnerable to SQL Injection",
+    "aliases": [
+      "CVE-2025-27018",
+      "GHSA-hhm6-jjf4-6pm3"
+    ],
+    "all_final_fixes": [
+      "6.2.0"
+    ],
+    "fixed_version": "6.2.0",
+    "stratum": "recent",
+    "sampling_hash": "0441eebc996be377f0b0426a822385ee4044fe96eea23c6b38ec4c49e512a8ca"
+  },
+  {
+    "project": "snowflake-connector-python",
+    "osv_id": "PYSEC-2026-4301",
+    "published": "2026-10-15T10:22:44.618980Z",
+    "modified": "2026-10-15T14:55:36.220385453Z",
+    "summary": "Snowflake drivers writes sensitive information to logs",
+    "aliases": [
+      "CVE-2026-86597",
+      "GHSA-qqj6-54q6-cxv6",
+      "GO-2026-6665"
+    ],
+    "all_final_fixes": [
+      "4.7.3"
+    ],
+    "fixed_version": "4.7.3",
+    "stratum": "recent",
+    "sampling_hash": "044d29e29b0e86c995d91cb907e8ce5bb98ae66591b695a18affbcbfb73721ef"
+  },
+  {
+    "project": "langgraph-store-mongodb",
+    "osv_id": "PYSEC-2026-3860",
+    "published": "2026-09-10T09:44:52.300898Z",
+    "modified": "2026-09-10T12:26:05.292311514Z",
+    "summary": "LangChain MongoDB has NoSQL Operator Injection in MongoDBSaver.list() leading to cross-tenant data exposure",
+    "aliases": [
+      "CVE-2026-55253",
+      "GHSA-533j-2v4q-mw5h",
+      "PYSEC-2026-3859"
+    ],
+    "all_final_fixes": [
+      "0.4.0"
+    ],
+    "fixed_version": "0.4.0",
+    "stratum": "recent",
+    "sampling_hash": "04625aa392bf407c104c41b28fc3975b924b47996b5105b4636cb0a0b567ba20"
+  },
+  {
+    "project": "pycti",
+    "osv_id": "PYSEC-2026-3446",
+    "published": "2026-07-08T21:16:48.630Z",
+    "modified": "2026-07-14T10:45:07.665536135Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2026-35211",
+      "GHSA-qpp6-p693-rmm4"
+    ],
+    "all_final_fixes": [
+      "7.260401.0"
+    ],
+    "fixed_version": "7.260401.0",
+    "stratum": "recent",
+    "sampling_hash": "0472a6ce997bacd560bcf9afb8e0d097fecd8344e137c1a4a6c294258b674330"
+  },
+  {
+    "project": "pretix",
+    "osv_id": "PYSEC-2026-2960",
+    "published": "2026-07-13T15:19:12.644765Z",
+    "modified": "2026-07-13T16:33:06.704465567Z",
+    "summary": "pretix vulnerable to Authorization Bypass Through User-Controlled Key",
+    "aliases": [
+      "CVE-2026-9712",
+      "GHSA-72p9-6vv6-gvqh"
+    ],
+    "all_final_fixes": [
+      "2026.4.2"
+    ],
+    "fixed_version": "2026.4.2",
+    "stratum": "recent",
+    "sampling_hash": "0476d4d33641bbcc429a237a32836b41ba3eeb2484c1444b9a1b6bff1f3fbbcf"
+  },
+  {
+    "project": "fast-mcp-telegram",
+    "osv_id": "PYSEC-2026-2473",
+    "published": "2026-07-13T15:46:27.565228Z",
+    "modified": "2026-07-13T16:31:55.165460679Z",
+    "summary": "fast-mcp-telegram: Bearer token path traversal bypasses reserved Telegram session protection",
+    "aliases": [
+      "CVE-2026-52830",
+      "GHSA-rxw2-pc8j-vxwm"
+    ],
+    "all_final_fixes": [
+      "0.19.1"
+    ],
+    "fixed_version": "0.19.1",
+    "stratum": "recent",
+    "sampling_hash": "047ce4b6ace075220fab5aec75a69a3b25cc06089ac7f42822b7236f7941af38"
+  },
+  {
+    "project": "mpxj",
+    "osv_id": "PYSEC-2026-4108",
+    "published": "2026-10-01T16:38:34.692777Z",
+    "modified": "2026-10-01T17:45:10.038217678Z",
+    "summary": "MPXJ: Potential Path Traversal Vulnerability in Primavera P3 PRX and SureTrak STX readers",
+    "aliases": [
+      "CVE-2026-65829",
+      "GHSA-7952-gx68-cjqr"
+    ],
+    "all_final_fixes": [
+      "16.5.0"
+    ],
+    "fixed_version": "16.5.0",
+    "stratum": "recent",
+    "sampling_hash": "04855335f5b88293405a8e558a1b99b81763739c1b0ca90c6b4aa0b683309de5"
+  },
+  {
+    "project": "crawl4ai",
+    "osv_id": "PYSEC-2026-3449",
+    "published": "2026-07-12T12:16:45.153Z",
+    "modified": "2026-07-23T15:11:34.813972531Z",
+    "summary": "",
+    "aliases": [
+      "CVE-2026-56260",
+      "CVE-2026-56261",
+      "CVE-2026-56262",
+      "CVE-2026-56263",
+      "CVE-2026-56264",
+      "CVE-2026-56265",
+      "CVE-2026-56266",
+      "GHSA-365w-hqf6-vxfg",
+      "GHSA-53rg-46cm-4g2v",
+      "GHSA-8qrg-7j2f-rf2h",
+      "GHSA-f23g-2f38-gg94",
+      "GHSA-g2pv-76hm-j4x9",
+      "GHSA-r9hw-78q5-478g",
+      "GHSA-xrfj-6m49-wfmm",
+      "PYSEC-2026-229",
+      "PYSEC-2026-230",
+      "PYSEC-2026-239",
+      "PYSEC-2026-3443",
+      "PYSEC-2026-596",
+      "PYSEC-2026-798"
+    ],
+    "all_final_fixes": [
+      "0.8.7"
+    ],
+    "fixed_version": "0.8.7",
+    "stratum": "recent",
+    "sampling_hash": "04ba51ed26da956824644b7de43e95ce550acea7e783bcd11107634a67b7cd75"
+  },
+  {
+    "project": "pheonixappapi",
+    "osv_id": "PYSEC-2026-1779",
+    "published": "2026-07-07T14:34:38.210438Z",
+    "modified": "2026-07-07T17:48:01.192234284Z",
+    "summary": "PheonixAppAPI has visible Encoding Maps",
+    "aliases": [
+      "CVE-2024-41951",
+      "GHSA-258h-f687-4226"
+    ],
+    "all_final_fixes": [
+      "0.2.5"
+    ],
+    "fixed_version": "0.2.5",
+    "stratum": "recent",
+    "sampling_hash": "04f3440bc3fdf5dbac1629c16bc7c17eddfe53c6bb08072bd330306d521d9e79"
+  },
+  {
+    "project": "nemo-toolkit",
+    "osv_id": "PYSEC-2026-2674",
+    "published": "2026-07-13T14:36:44.629509Z",
+    "modified": "2026-07-13T16:32:48.197483531Z",
+    "summary": "NVIDIA NeMo Framework contains an RCE vulnerability in checkpoint loading",
+    "aliases": [
+      "CVE-2026-24157",
+      "GHSA-m4jw-wgmf-889x"
+    ],
+    "all_final_fixes": [
+      "2.6.2"
+    ],
+    "fixed_version": "2.6.2",
+    "stratum": "recent",
+    "sampling_hash": "05419a032340f0fc0c0cc6ecfc7f40b4697bc58f087e9196efeba0f10b7f3087"
+  },
+  {
+    "project": "webob",
+    "osv_id": "PYSEC-2026-3943",
+    "published": "2026-09-10T09:44:57.798668Z",
+    "modified": "2026-09-10T12:15:13.320787314Z",
+    "summary": "WebOb: Open redirect in Location header normalization via leading C0 control / space characters",
+    "aliases": [
+      "CVE-2026-54770",
+      "GHSA-6hx8-3wjj-gr8g"
+    ],
+    "all_final_fixes": [
+      "1.8.11"
+    ],
+    "fixed_version": "1.8.11",
+    "stratum": "recent",
+    "sampling_hash": "058fcd4565e9488bef84dbc185d6a8b86368eb2e89f6b6a94ab071fd27a022b3"
+  },
+  {
+    "project": "homeassistant-cli",
+    "osv_id": "PYSEC-2026-2518",
+    "published": "2026-07-13T15:02:49.084753Z",
+    "modified": "2026-07-13T16:31:57.119350248Z",
+    "summary": "Home Assistant Command-line Interface: Handling of user-supplied Jinja2 templates",
+    "aliases": [
+      "CVE-2026-40602",
+      "GHSA-33qf-q99x-wpm8"
+    ],
+    "all_final_fixes": [
+      "1.0.0"
+    ],
+    "fixed_version": "1.0.0",
+    "stratum": "recent",
+    "sampling_hash": "05a88b925c2574ad2d64c0690d0a810a0d1f936b880e06de8b0b51fb8bc0e2ae"
+  },
+  {
+    "project": "bedrock-agentcore-starter-toolkit",
+    "osv_id": "PYSEC-2026-2396",
+    "published": "2026-07-13T14:36:43.194243Z",
+    "modified": "2026-07-13T16:31:38.515142521Z",
+    "summary": "Improper S3 ownership verification in Bedrock AgentCore Starter Toolkit",
+    "aliases": [
+      "CVE-2026-4269",
+      "GHSA-xfhr-q72q-jcrj"
+    ],
+    "all_final_fixes": [
+      "0.1.13"
+    ],
+    "fixed_version": "0.1.13",
+    "stratum": "recent",
+    "sampling_hash": "064041cb1edbf49eac8847659f16f517ce2a63ecc7a76850ca70684bd302c163"
+  },
+  {
+    "project": "nono-py",
+    "osv_id": "GHSA-m8j6-rc5x-wv36",
+    "published": "2026-06-26T20:41:59Z",
+    "modified": "2026-06-26T20:45:12.226949946Z",
+    "summary": "nono-py's policy JSON accepts unknown security fields",
+    "aliases": [],
+    "all_final_fixes": [
+      "0.10.1"
+    ],
+    "fixed_version": "0.10.1",
+    "stratum": "recent",
+    "sampling_hash": "0658d969b41e395432277d61a4ac63882e090c60ffe5779035e4b67c826d79ac"
+  },
+  {
+    "project": "nanobot-ai",
+    "osv_id": "PYSEC-2026-3580",
+    "published": "2026-08-04T11:34:41.109875Z",
+    "modified": "2026-08-04T14:30:27.312345511Z",
+    "summary": "Nanobot contains a server-side request forgery vulnerability in the web_fetch tool",
+    "aliases": [
+      "CVE-2026-49138",
+      "GHSA-434r-7c99-hwf3"
+    ],
+    "all_final_fixes": [
+      "0.2.1"
+    ],
+    "fixed_version": "0.2.1",
+    "stratum": "recent",
+    "sampling_hash": "0685e2f33093563078a2f7e0d3f74a4e6164593c7c41132a7c3df4ac507d734b"
+  },
+  {
+    "project": "guarddog",
+    "osv_id": "PYSEC-2026-1430",
+    "published": "2026-07-07T16:03:18.620405Z",
+    "modified": "2026-07-07T17:47:38.871040180Z",
+    "summary": "GuardDog Path Traversal Vulnerability Leads to Arbitrary File Overwrite and RCE",
+    "aliases": [
+      "CVE-2026-22871",
+      "GHSA-xg9w-vg3g-6m68"
+    ],
+    "all_final_fixes": [
+      "2.7.1"
+    ],
+    "fixed_version": "2.7.1",
+    "stratum": "recent",
+    "sampling_hash": "068b193bc99568b1f2df7a5508a9e66b5098f71883740608c06bc1718075edaa"
+  },
+  {
+    "project": "libosdp",
+    "osv_id": "PYSEC-2026-1535",
+    "published": "2026-07-07T11:45:34.816291Z",
+    "modified": "2026-07-07T17:46:51.306852532Z",
+    "summary": "LibOSDP RMAC revert to the beginning of the session",
+    "aliases": [
+      "CVE-2024-52288",
+      "GHSA-xhjw-7vh5-qxqm"
+    ],
+    "all_final_fixes": [
+      "3.0.0"
+    ],
+    "fixed_version": "3.0.0",
+    "stratum": "recent",
+    "sampling_hash": "06a64a7b62fdb198c421b21082fe63770ff03237c7c87bbbccffaf8c6945cd1c"
+  },
+  {
+    "project": "cognee",
+    "osv_id": "PYSEC-2026-3816",
+    "published": "2026-09-10T09:44:50.382766Z",
+    "modified": "2026-09-10T12:15:03.031246070Z",
+    "summary": "Cognee allows non-superusers to overwrite global LLM configuration",
+    "aliases": [
+      "CVE-2026-58473",
+      "GHSA-49f7-whx5-4256"
+    ],
+    "all_final_fixes": [
+      "1.5.0"
+    ],
+    "fixed_version": "1.5.0",
+    "stratum": "recent",
+    "sampling_hash": "070c5c8a5d732473710bb2b7acfdb9dc464188d0700284174e988b1bd0b3b1f6"
+  },
+  {
+    "project": "jupyterlab",
+    "osv_id": "GHSA-jwrc-gm9j-263p",
+    "published": "2026-10-15T20:22:13Z",
+    "modified": "2026-10-15T20:30:07.110246844Z",
+    "summary": "JupyterLab: Command link trust prompt in JupyterLab can trust a document other than the one clicked",
+    "aliases": [
+      "CVE-2026-102832"
+    ],
+    "all_final_fixes": [
+      "4.5.11",
+      "4.6.4"
+    ],
+    "fixed_version": "4.5.11",
+    "stratum": "recent",
+    "sampling_hash": "07ac27387aee47fb0a732b6af5ce95ff3a8d1bd31e5ac2c1599ba739164034d3"
+  },
+  {
+    "project": "codechecker",
+    "osv_id": "PYSEC-2026-1259",
+    "published": "2026-07-07T14:34:50.383247Z",
+    "modified": "2026-07-07T17:47:26.783433258Z",
+    "summary": "CodeChecker open redirect when URL contains multiple slashes after the product name",
+    "aliases": [
+      "CVE-2025-1300",
+      "GHSA-g839-x3p3-g5fm"
+    ],
+    "all_final_fixes": [
+      "6.24.6"
+    ],
+    "fixed_version": "6.24.6",
+    "stratum": "recent",
+    "sampling_hash": "07b257748ff6b8780f4bddaea084b3f919f7980b783e1e9b953dabea805a18b0"
+  },
+  {
+    "project": "jupyterlite-core",
+    "osv_id": "GHSA-jwrc-gm9j-263p",
+    "published": "2026-10-15T20:22:13Z",
+    "modified": "2026-10-15T20:30:07.110246844Z",
+    "summary": "JupyterLab: Command link trust prompt in JupyterLab can trust a document other than the one clicked",
+    "aliases": [
+      "CVE-2026-102832"
+    ],
+    "all_final_fixes": [
+      "0.8.4"
+    ],
+    "fixed_version": "0.8.4",
+    "stratum": "recent",
+    "sampling_hash": "07c9c771be19ffd5018dfef74fca88eeaa3676eb1d23ad9e11afdd30bf9cba9e"
+  },
+  {
+    "project": "dydx-v4-client",
+    "osv_id": "GHSA-4f84-67cv-qrv3",
+    "published": "2026-02-06T19:37:26Z",
+    "modified": "2026-09-10T03:50:34.127000093Z",
+    "summary": "A single post-release of dydx-v4-client contained obfuscated multi-stage loader",
+    "aliases": [],
+    "all_final_fixes": [
+      "1.1.5"
+    ],
+    "fixed_version": "1.1.5",
+    "stratum": "recent",
+    "sampling_hash": "07d8fb7f91cb012bf20ea0a9c088bb919075747c098c846cc1b73afbd57d09a3"
+  },
+  {
+    "project": "py7zr",
+    "osv_id": "PYSEC-2026-2973",
+    "published": "2026-07-13T15:46:22.282856Z",
+    "modified": "2026-07-13T16:32:08.005149350Z",
+    "summary": "py7zr: O(n^2) algorithmic complexity DoS in PackInfo._read()",
+    "aliases": [
+      "CVE-2026-55206",
+      "GHSA-h4gh-22qq-72r7"
+    ],
+    "all_final_fixes": [
+      "1.1.3"
+    ],
+    "fixed_version": "1.1.3",
+    "stratum": "recent",
+    "sampling_hash": "07f678debffc2e15bc8e29d5c3a19c059c47f3e46521f2ac239d4d3e30585558"
+  },
+  {
+    "project": "llama-stack",
+    "osv_id": "PYSEC-2026-1572",
+    "published": "2026-07-07T16:03:21.074750Z",
+    "modified": "2026-07-07T17:46:54.130219843Z",
+    "summary": "Llama Stack exposes secret in initialization log",
+    "aliases": [
+      "CVE-2026-25211",
+      "GHSA-xmfj-7pp5-fxr6"
+    ],
+    "all_final_fixes": [
+      "0.4.4"
+    ],
+    "fixed_version": "0.4.4",
+    "stratum": "recent",
+    "sampling_hash": "085b74fd7264390c51145d1c6cc77fde74e7fc1a5784657975c2605e81039e2a"
+  },
+  {
+    "project": "llama-index-readers-obsidian",
+    "osv_id": "PYSEC-2026-1567",
+    "published": "2026-07-07T16:02:56.964090Z",
+    "modified": "2026-07-13T07:26:33.207198286Z",
+    "summary": "LlamaIndex vulnerability in its ObsidianReader class can lead to Path Traversal exploit",
+    "aliases": [
+      "CVE-2025-6210",
+      "GHSA-3j8r-jf9w-5cmh",
+      "PYSEC-2025-252"
+    ],
+    "all_final_fixes": [
+      "0.5.2"
+    ],
+    "fixed_version": "0.5.2",
+    "stratum": "recent",
+    "sampling_hash": "087f4ced2922085a097ce773813968658a6193d8614712d2006bfd70dec633c4"
+  },
+  {
+    "project": "mocodo",
+    "osv_id": "PYSEC-2026-426",
+    "published": "2026-06-29T11:50:40.115425Z",
+    "modified": "2026-07-13T16:15:28.556127462Z",
+    "summary": "Mocodo vulnerable to SQL injection in `/web/generate.php`",
+    "aliases": [
+      "CVE-2024-35374",
+      "GHSA-j6cv-98jx-mrwr"
+    ],
+    "all_final_fixes": [
+      "4.2.7"
+    ],
+    "fixed_version": "4.2.7",
+    "stratum": "recent",
+    "sampling_hash": "08f420dde36bd964bb57010e72187bec26a83cac65d4add4ce8b13e20651a9e4"
+  },
+  {
+    "project": "python-liquid",
+    "osv_id": "PYSEC-2026-3035",
+    "published": "2026-07-13T15:46:21.968216Z",
+    "modified": "2026-07-13T16:33:29.033510918Z",
+    "summary": "Python Liquid: Infinite loop when parsing malformed `{% case %}` tags",
+    "aliases": [
+      "CVE-2026-55865",
+      "GHSA-vq2f-vcc9-j8mv"
+    ],
+    "all_final_fixes": [
+      "2.2.1"
+    ],
+    "fixed_version": "2.2.1",
+    "stratum": "recent",
+    "sampling_hash": "0912d09cf40f406a8be2b69203105583da06ff9079bf45e6337a2bd1f4107ee9"
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 50484,
+  "control_flow_or_callback_lines": 0,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/grafana/pkg/services/apiserver/builder\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "Authorizer:          getAuthorizer(ng.Api.AccessControl),",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "LegacyStorageGetter: getLegacyStorage(request.GetNamespaceMapper(cfg), ng),",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "OpenAPIDefGetter:    v0alpha1.GetOpenAPIDefinitions,",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "ManagedKinds:        notificationsResource.GetKinds(),",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "Authorizer:               getAuthorizer(ng.Api.AccessControl),",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "LegacyStorageGetter:      getLegacyStorage(request.GetNamespaceMapper(cfg), ng),",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "OpenAPIDefGetter:         v0alpha1.GetOpenAPIDefinitions,",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "ManagedKinds:             notificationsResource.GetKinds(),",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "AllowedV0Alpha1Resources: []string{builder.AllResourcesAllowed},",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:53.262767+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 10,
+  "pr": 107056,
+  "repository": "grafana/grafana",
+  "sha256": "8819f0426ee830b5b3064010cc67d61ff9c3ad3260761bc47905726ae2285683",
+  "target_code_changed_lines": 10,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/register.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/107056.patch"
+}

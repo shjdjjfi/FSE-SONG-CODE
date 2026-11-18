@@ -1,0 +1,88 @@
+{
+  "key": "148bb986c579f983e5",
+  "args": {
+    "crate": "figment",
+    "version": "0.10.19",
+    "id": "29125e14c2c92ee8",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1448,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `figment::Jail`",
+      "rendered": "error[E0432]: unresolved import `figment::Jail`\n   --> src/main.rs:5:55\n    |\n  5 | use figment::{Figment, value::magic::RelativePathBuf, Jail};\n    |                                                       ^^^^ no `Jail` in the root\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/figment-0.10.19/src/lib.rs:594:51\n    |\n594 | #[cfg(any(test, feature = \"test\"))] pub use jail::Jail;\n    |          ------------------------                 ^^^^\n    |          |\n    |          the item is gated here\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved imports `figment::providers::Env`, `figment::providers::Toml`",
+      "rendered": "error[E0432]: unresolved imports `figment::providers::Env`, `figment::providers::Toml`\n  --> src/main.rs:6:26\n   |\n 6 | use figment::providers::{Env, Format, Toml, Serialized};\n   |                          ^^^          ^^^^ no `Toml` in `providers`\n   |                          |\n   |                          no `Env` in `providers`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/figment-0.10.19/src/providers/mod.rs:10:44\n   |\n10 | #[cfg(feature = \"env\")] pub use self::env::Env;\n   |       ---------------                      ^^^\n   |       |\n   |       the item is gated behind the `env` feature\n\n",
+      "line": 6
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde`",
+      "rendered": "error[E0432]: unresolved import `serde`\n --> src/main.rs:4:5\n  |\n4 | use serde::{Deserialize, Serialize};\n  |     ^^^^^ use of unresolved module or unlinked crate `serde`\n  |\n  = help: if you wanted to use a crate named `serde`, use `cargo add serde` to add it to your `Cargo.toml`\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0277",
+      "message": "the trait bound `Config: serde::Deserialize<'de>` is not satisfied",
+      "rendered": "error[E0277]: the trait bound `Config: serde::Deserialize<'de>` is not satisfied\n   --> src/main.rs:20:62\n    |\n 20 |     let c: Config = Figment::from(Toml::file(\"Config.toml\")).extract()?;\n    |                                                              ^^^^^^^ unsatisfied trait bound\n    |\nhelp: the trait `serde_core::de::Deserialize<'_>` is not implemented for `Config`\n   --> src/main.rs:9:1\n    |\n  9 | struct Config {\n    | ^^^^^^^^^^^^^\n    = note: for local types consider adding `#[derive(serde::Deserialize)]` to your `Config` type\n    = note: for types from other crates check whether the crate offers a `serde` feature flag\n    = help: the following other types implement trait `serde_core::de::Deserialize<'de>`:\n              &'a Path\n              &'a [u8]\n              &'a str\n              ()\n              (T,)\n              (T0, T1)\n              (T0, T1, T2)\n              (T0, T1, T2, T3)\n            and 144 others\nnote: required by a bound in `Figment::extract`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/figment-0.10.19/src/figment.rs:484:27\n    |\n484 |     pub fn extract<'a, T: Deserialize<'a>>(&self) -> Resu",
+      "line": 20
+    },
+    {
+      "code": "E0277",
+      "message": "the trait bound `Config: serde::Serialize` is not satisfied",
+      "rendered": "error[E0277]: the trait bound `Config: serde::Serialize` is not satisfied\n   --> src/main.rs:26:35\n    |\n 26 |     let c: Config = Figment::from(Serialized::defaults(&c)).extract()?;\n    |                     ------------- ^^^^^^^^^^^^^^^^^^^^^^^^ unsatisfied trait bound\n    |                     |\n    |                     required by a bound introduced by this call\n    |\nhelp: the trait `serde_core::ser::Serialize` is not implemented for `Config`\n   --> src/main.rs:9:1\n    |\n  9 | struct Config {\n    | ^^^^^^^^^^^^^\n    = note: for local types consider adding `#[derive(serde::Serialize)]` to your `Config` type\n    = note: for types from other crates check whether the crate offers a `serde` feature flag\n    = help: the following other types implement trait `serde_core::ser::Serialize`:\n              &'a T\n              &'a mut T\n              ()\n              (T,)\n              (T0, T1)\n              (T0, T1, T2)\n              (T0, T1, T2, T3)\n              (T0, T1, T2, T3, T4)\n            and 134 others\n    = note: required for `&Config` to implement `serde_core::ser::Serialize`\n    = note: required for `Serialized<&Config>` to implement `Provider`\nnote: required by a bound in `F",
+      "line": 26
+    },
+    {
+      "code": "E0277",
+      "message": "the trait bound `Config: serde::Deserialize<'de>` is not satisfied",
+      "rendered": "error[E0277]: the trait bound `Config: serde::Deserialize<'de>` is not satisfied\n   --> src/main.rs:26:61\n    |\n 26 |     let c: Config = Figment::from(Serialized::defaults(&c)).extract()?;\n    |                                                             ^^^^^^^ unsatisfied trait bound\n    |\nhelp: the trait `serde_core::de::Deserialize<'_>` is not implemented for `Config`\n   --> src/main.rs:9:1\n    |\n  9 | struct Config {\n    | ^^^^^^^^^^^^^\n    = note: for local types consider adding `#[derive(serde::Deserialize)]` to your `Config` type\n    = note: for types from other crates check whether the crate offers a `serde` feature flag\n    = help: the following other types implement trait `serde_core::de::Deserialize<'de>`:\n              &'a Path\n              &'a [u8]\n              &'a str\n              ()\n              (T,)\n              (T0, T1)\n              (T0, T1, T2)\n              (T0, T1, T2, T3)\n            and 144 others\nnote: required by a bound in `Figment::extract`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/figment-0.10.19/src/figment.rs:484:27\n    |\n484 |     pub fn extract<'a, T: Deserialize<'a>>(&self) -> Result",
+      "line": 26
+    },
+    {
+      "code": "E0277",
+      "message": "the trait bound `Config: serde::Deserialize<'de>` is not satisfied",
+      "rendered": "error[E0277]: the trait bound `Config: serde::Deserialize<'de>` is not satisfied\n   --> src/main.rs:35:10\n    |\n 35 |         .extract()?;\n    |          ^^^^^^^ unsatisfied trait bound\n    |\nhelp: the trait `serde_core::de::Deserialize<'_>` is not implemented for `Config`\n   --> src/main.rs:9:1\n    |\n  9 | struct Config {\n    | ^^^^^^^^^^^^^\n    = note: for local types consider adding `#[derive(serde::Deserialize)]` to your `Config` type\n    = note: for types from other crates check whether the crate offers a `serde` feature flag\n    = help: the following other types implement trait `serde_core::de::Deserialize<'de>`:\n              &'a Path\n              &'a [u8]\n              &'a str\n              ()\n              (T,)\n              (T0, T1)\n              (T0, T1, T2)\n              (T0, T1, T2, T3)\n            and 144 others\nnote: required by a bound in `Figment::extract`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/figment-0.10.19/src/figment.rs:484:27\n    |\n484 |     pub fn extract<'a, T: Deserialize<'a>>(&self) -> Result<T> {\n    |                           ^^^^^^^^^^^^^^^ required by this bound in `Figment::extract`\n\n",
+      "line": 35
+    },
+    {
+      "code": "E0277",
+      "message": "the trait bound `Config: serde::Deserialize<'de>` is not satisfied",
+      "rendered": "error[E0277]: the trait bound `Config: serde::Deserialize<'de>` is not satisfied\n   --> src/main.rs:42:62\n    |\n 42 |     let c: Config = Figment::from(Toml::file(\"Config.toml\")).extract()?;\n    |                                                              ^^^^^^^ unsatisfied trait bound\n    |\nhelp: the trait `serde_core::de::Deserialize<'_>` is not implemented for `Config`\n   --> src/main.rs:9:1\n    |\n  9 | struct Config {\n    | ^^^^^^^^^^^^^\n    = note: for local types consider adding `#[derive(serde::Deserialize)]` to your `Config` type\n    = note: for types from other crates check whether the crate offers a `serde` feature flag\n    = help: the following other types implement trait `serde_core::de::Deserialize<'de>`:\n              &'a Path\n              &'a [u8]\n              &'a str\n              ()\n              (T,)\n              (T0, T1)\n              (T0, T1, T2)\n              (T0, T1, T2, T3)\n            and 144 others\nnote: required by a bound in `Figment::extract`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/figment-0.10.19/src/figment.rs:484:27\n    |\n484 |     pub fn extract<'a, T: Deserialize<'a>>(&self) -> Resu",
+      "line": 42
+    },
+    {
+      "code": "E0277",
+      "message": "the trait bound `Config: serde::Serialize` is not satisfied",
+      "rendered": "error[E0277]: the trait bound `Config: serde::Serialize` is not satisfied\n   --> src/main.rs:47:33\n    |\n 47 |       let figment = Figment::from(Serialized::defaults(Config {\n    |  ___________________-------------_^\n    | |                   |\n    | |                   required by a bound introduced by this call\n 48 | |         path: \"some/default/path\".into()\n 49 | |     }));\n    | |______^ unsatisfied trait bound\n    |\nhelp: the trait `serde_core::ser::Serialize` is not implemented for `Config`\n   --> src/main.rs:9:1\n    |\n  9 | struct Config {\n    | ^^^^^^^^^^^^^\n    = note: for local types consider adding `#[derive(serde::Serialize)]` to your `Config` type\n    = note: for types from other crates check whether the crate offers a `serde` feature flag\n    = help: the following other types implement trait `serde_core::ser::Serialize`:\n              &'a T\n              &'a mut T\n              ()\n              (T,)\n              (T0, T1)\n              (T0, T1, T2)\n              (T0, T1, T2, T3)\n              (T0, T1, T2, T3, T4)\n            and 134 others\n    = note: required for `Serialized<Config>` to implement `Provider`\nnote: required by a bound in `Figment::from`\n   --> /worksp",
+      "line": 47
+    },
+    {
+      "code": "E0277",
+      "message": "the trait bound `Config: serde::Deserialize<'de>` is not satisfied",
+      "rendered": "error[E0277]: the trait bound `Config: serde::Deserialize<'de>` is not satisfied\n   --> src/main.rs:51:35\n    |\n 51 |     let default: Config = figment.extract()?;\n    |                                   ^^^^^^^ unsatisfied trait bound\n    |\nhelp: the trait `serde_core::de::Deserialize<'_>` is not implemented for `Config`\n   --> src/main.rs:9:1\n    |\n  9 | struct Config {\n    | ^^^^^^^^^^^^^\n    = note: for local types consider adding `#[derive(serde::Deserialize)]` to your `Config` type\n    = note: for types from other crates check whether the crate offers a `serde` feature flag\n    = help: the following other types implement trait `serde_core::de::Deserialize<'de>`:\n              &'a Path\n              &'a [u8]\n              &'a str\n              ()\n              (T,)\n              (T0, T1)\n              (T0, T1, T2)\n              (T0, T1, T2, T3)\n            and 144 others\nnote: required by a bound in `Figment::extract`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/figment-0.10.19/src/figment.rs:484:27\n    |\n484 |     pub fn extract<'a, T: Deserialize<'a>>(&self) -> Result<T> {\n    |                           ^^^^^^^^^^^^^^",
+      "line": 51
+    },
+    {
+      "code": "E0277",
+      "message": "the trait bound `Config: serde::Deserialize<'de>` is not satisfied",
+      "rendered": "error[E0277]: the trait bound `Config: serde::Deserialize<'de>` is not satisfied\n   --> src/main.rs:56:70\n    |\n 56 |     let overriden: Config = figment.merge(Toml::file(\"Config.toml\")).extract()?;\n    |                                                                      ^^^^^^^ unsatisfied trait bound\n    |\nhelp: the trait `serde_core::de::Deserialize<'_>` is not implemented for `Config`\n   --> src/main.rs:9:1\n    |\n  9 | struct Config {\n    | ^^^^^^^^^^^^^\n    = note: for local types consider adding `#[derive(serde::Deserialize)]` to your `Config` type\n    = note: for types from other crates check whether the crate offers a `serde` feature flag\n    = help: the following other types implement trait `serde_core::de::Deserialize<'de>`:\n              &'a Path\n              &'a [u8]\n              &'a str\n              ()\n              (T,)\n              (T0, T1)\n              (T0, T1, T2)\n              (T0, T1, T2, T3)\n            and 144 others\nnote: required by a bound in `Figment::extract`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/figment-0.10.19/src/figment.rs:484:27\n    |\n484 |     pub fn extract<'a, T: Deserialize<'a>",
+      "line": 56
+    }
+  ],
+  "error_count": 11,
+  "stderr_excerpt": "error: could not compile `n05_figment_consumer` (bin \"n05_figment_consumer\") due to 11 previous errors; 1 warning emitted\n",
+  "code_sha256": "783dcf37556a5e245b7a08960b3e5141021c0307dd84e967b56ffcf49775f744",
+  "manifest_sha256": "a48490f2efee29ea47ced65139c28fe37d0ba071363941ab6e4ee7c5c6de4622",
+  "log_file": "prospective/results/check_logs/148bb986c579f983e5.txt.gz"
+}

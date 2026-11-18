@@ -1,0 +1,915 @@
+n02-test, n02-alertmanager, ConfigMap (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: alertmanager
+-     app.kubernetes.io/version: v0.27.0
+-     helm.sh/chart: alertmanager-1.13.1
++     app.kubernetes.io/version: v0.30.0
++     helm.sh/chart: alertmanager-1.30.0
+    name: n02-alertmanager
+    namespace: n02-test
+
+n02-test, n02-alertmanager, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: alertmanager
+-     app.kubernetes.io/version: v0.27.0
+-     helm.sh/chart: alertmanager-1.13.1
++     app.kubernetes.io/version: v0.30.0
++     helm.sh/chart: alertmanager-1.30.0
+    name: n02-alertmanager
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-alertmanager, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: alertmanager
+-     app.kubernetes.io/version: v0.27.0
+-     helm.sh/chart: alertmanager-1.13.1
++     app.kubernetes.io/version: v0.30.0
++     helm.sh/chart: alertmanager-1.30.0
+    name: n02-alertmanager
+    namespace: n02-test
+
+n02-test, n02-alertmanager, StatefulSet (apps) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: alertmanager
+-     app.kubernetes.io/version: v0.27.0
+-     helm.sh/chart: alertmanager-1.13.1
++     app.kubernetes.io/version: v0.30.0
++     helm.sh/chart: alertmanager-1.30.0
+    name: n02-alertmanager
+    namespace: n02-test
+  spec:
+...
+    template:
+      metadata:
+        annotations:
+-         checksum/config: 32fdc8fd1520a0b03e38b907ec8c0c50005ae098b68b827f722eb279e1bad907
++         checksum/config: 8d5f7605a6739b900c250972f5d5a33c85165352d65ad62e2ff4b820cfb570f4
+        labels:
+          app.kubernetes.io/instance: n02
+          app.kubernetes.io/name: alertmanager
+...
+              fieldRef:
+                apiVersion: v1
+                fieldPath: status.podIP
+-         image: quay.io/prometheus/alertmanager:v0.27.0
++         image: quay.io/prometheus/alertmanager:v0.30.0
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            httpGet:
+...
+n02-test, n02-alertmanager-headless, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: alertmanager
+-     app.kubernetes.io/version: v0.27.0
+-     helm.sh/chart: alertmanager-1.13.1
++     app.kubernetes.io/version: v0.30.0
++     helm.sh/chart: alertmanager-1.30.0
+    name: n02-alertmanager-headless
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-kube-state-metrics, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kube-state-metrics
+      app.kubernetes.io/part-of: kube-state-metrics
+-     app.kubernetes.io/version: 2.14.0
+-     helm.sh/chart: kube-state-metrics-5.28.0
++     app.kubernetes.io/version: 2.17.0
++     helm.sh/chart: kube-state-metrics-7.0.0
+    name: n02-kube-state-metrics
+  rules:
+  - apiGroups:
+...
+    - list
+    - watch
+  - apiGroups:
+-   - extensions
+    - apps
+    resources:
+    - daemonsets
+...
+    - list
+    - watch
+  - apiGroups:
+-   - extensions
+    - apps
+    resources:
+    - deployments
+...
+    - list
+    - watch
+  - apiGroups:
+-   - ""
++   - discovery.k8s.io
+    resources:
+-   - endpoints
++   - endpointslices
+    verbs:
+    - list
+    - watch
+...
+    - list
+    - watch
+  - apiGroups:
+-   - extensions
+    - networking.k8s.io
+    resources:
+    - ingresses
+...
+    - list
+    - watch
+  - apiGroups:
+-   - extensions
+    - apps
+    resources:
+    - replicasets
+...
+n02-test, n02-kube-state-metrics, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kube-state-metrics
+      app.kubernetes.io/part-of: kube-state-metrics
+-     app.kubernetes.io/version: 2.14.0
+-     helm.sh/chart: kube-state-metrics-5.28.0
++     app.kubernetes.io/version: 2.17.0
++     helm.sh/chart: kube-state-metrics-7.0.0
+    name: n02-kube-state-metrics
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-kube-state-metrics, Deployment (apps) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kube-state-metrics
+      app.kubernetes.io/part-of: kube-state-metrics
+-     app.kubernetes.io/version: 2.14.0
+-     helm.sh/chart: kube-state-metrics-5.28.0
++     app.kubernetes.io/version: 2.17.0
++     helm.sh/chart: kube-state-metrics-7.0.0
+    name: n02-kube-state-metrics
+    namespace: n02-test
+  spec:
+...
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: kube-state-metrics
+          app.kubernetes.io/part-of: kube-state-metrics
+-         app.kubernetes.io/version: 2.14.0
+-         helm.sh/chart: kube-state-metrics-5.28.0
++         app.kubernetes.io/version: 2.17.0
++         helm.sh/chart: kube-state-metrics-7.0.0
+      spec:
+        automountServiceAccountToken: true
+        containers:
+        - args:
+          - --port=8080
+-         - --resources=certificatesigningrequests,configmaps,cronjobs,daemonsets,deployments,endpoints,horizontalpodautoscalers,ingresses,jobs,leases,limitranges,mutatingwebhookconfigurations,namespaces,networkpolicies,nodes,persistentvolumeclaims,persistentvolumes,poddisruptionbudgets,pods,replicasets,replicationcontrollers,resourcequotas,secrets,services,statefulsets,storageclasses,validatingwebhookconfigurations,volumeattachments
+-         image: registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.14.0
++         - --resources=certificatesigningrequests,configmaps,cronjobs,daemonsets,deployments,endpointslices,horizontalpodautoscalers,ingresses,jobs,leases,limitranges,mutatingwebhookconfigurations,namespaces,networkpolicies,nodes,persistentvolumeclaims,persistentvolumes,poddisruptionbudgets,pods,replicasets,replicationcontrollers,resourcequotas,secrets,services,statefulsets,storageclasses,validatingwebhookconfigurations,volumeattachments
++         image: registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.17.0
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            failureThreshold: 3
+...
+              drop:
+              - ALL
+            readOnlyRootFilesystem: true
++       dnsPolicy: ClusterFirst
+        hostNetwork: false
+        securityContext:
+          fsGroup: 65534
+...
+n02-test, n02-kube-state-metrics, Service (v1) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kube-state-metrics
+      app.kubernetes.io/part-of: kube-state-metrics
+-     app.kubernetes.io/version: 2.14.0
+-     helm.sh/chart: kube-state-metrics-5.28.0
++     app.kubernetes.io/version: 2.17.0
++     helm.sh/chart: kube-state-metrics-7.0.0
+    name: n02-kube-state-metrics
+    namespace: n02-test
+  spec:
+...
+    - name: http
+      port: 8080
+      protocol: TCP
+-     targetPort: 8080
++     targetPort: http
+    selector:
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/name: kube-state-metrics
+...
+n02-test, n02-kube-state-metrics, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kube-state-metrics
+      app.kubernetes.io/part-of: kube-state-metrics
+-     app.kubernetes.io/version: 2.14.0
+-     helm.sh/chart: kube-state-metrics-5.28.0
++     app.kubernetes.io/version: 2.17.0
++     helm.sh/chart: kube-state-metrics-7.0.0
+    name: n02-kube-state-metrics
+    namespace: n02-test
+
+n02-test, n02-prometheus-node-exporter, DaemonSet (apps) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: prometheus-node-exporter
+      app.kubernetes.io/part-of: prometheus-node-exporter
+-     app.kubernetes.io/version: 1.8.2
+-     helm.sh/chart: prometheus-node-exporter-4.43.1
++     app.kubernetes.io/version: 1.10.2
++     helm.sh/chart: prometheus-node-exporter-4.49.2
+    name: n02-prometheus-node-exporter
+    namespace: n02-test
+  spec:
+...
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: prometheus-node-exporter
+          app.kubernetes.io/part-of: prometheus-node-exporter
+-         app.kubernetes.io/version: 1.8.2
+-         helm.sh/chart: prometheus-node-exporter-4.43.1
++         app.kubernetes.io/version: 1.10.2
++         helm.sh/chart: prometheus-node-exporter-4.49.2
+      spec:
+        affinity:
+          nodeAffinity:
+...
+          env:
+          - name: HOST_IP
+            value: 0.0.0.0
+-         image: quay.io/prometheus/node-exporter:v1.8.2
++         image: quay.io/prometheus/node-exporter:v1.10.2
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              httpHeaders: null
+              path: /
+-             port: 9100
++             port: metrics
+              scheme: HTTP
+            initialDelaySeconds: 0
+            periodSeconds: 10
+...
+            httpGet:
+              httpHeaders: null
+              path: /
+-             port: 9100
++             port: metrics
+              scheme: HTTP
+            initialDelaySeconds: 0
+            periodSeconds: 10
+...
+n02-test, n02-prometheus-node-exporter, Service (v1) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: prometheus-node-exporter
+      app.kubernetes.io/part-of: prometheus-node-exporter
+-     app.kubernetes.io/version: 1.8.2
+-     helm.sh/chart: prometheus-node-exporter-4.43.1
++     app.kubernetes.io/version: 1.10.2
++     helm.sh/chart: prometheus-node-exporter-4.49.2
+    name: n02-prometheus-node-exporter
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-prometheus-node-exporter, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: prometheus-node-exporter
+      app.kubernetes.io/part-of: prometheus-node-exporter
+-     app.kubernetes.io/version: 1.8.2
+-     helm.sh/chart: prometheus-node-exporter-4.43.1
++     app.kubernetes.io/version: 1.10.2
++     helm.sh/chart: prometheus-node-exporter-4.49.2
+    name: n02-prometheus-node-exporter
+    namespace: n02-test
+
+n02-test, n02-prometheus-pushgateway, Deployment (apps) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: prometheus-pushgateway
+-     app.kubernetes.io/version: v1.10.0
+-     helm.sh/chart: prometheus-pushgateway-2.16.0
++     app.kubernetes.io/version: v1.11.2
++     helm.sh/chart: prometheus-pushgateway-3.6.0
+    name: n02-prometheus-pushgateway
+    namespace: n02-test
+  spec:
+...
+          app.kubernetes.io/instance: n02
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: prometheus-pushgateway
+-         app.kubernetes.io/version: v1.10.0
+-         helm.sh/chart: prometheus-pushgateway-2.16.0
++         app.kubernetes.io/version: v1.11.2
++         helm.sh/chart: prometheus-pushgateway-3.6.0
+      spec:
+        automountServiceAccountToken: true
+        containers:
+-       - image: quay.io/prometheus/pushgateway:v1.10.0
++       - image: quay.io/prometheus/pushgateway:v1.11.2
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            httpGet:
+              path: /-/healthy
+              port: 9091
++             scheme: HTTP
+            initialDelaySeconds: 10
+            timeoutSeconds: 10
+          name: pushgateway
+...
+            httpGet:
+              path: /-/ready
+              port: 9091
++             scheme: HTTP
+            initialDelaySeconds: 10
+            timeoutSeconds: 10
+          volumeMounts:
+...
+n02-test, n02-prometheus-pushgateway, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: prometheus-pushgateway
+-     app.kubernetes.io/version: v1.10.0
+-     helm.sh/chart: prometheus-pushgateway-2.16.0
++     app.kubernetes.io/version: v1.11.2
++     helm.sh/chart: prometheus-pushgateway-3.6.0
+    name: n02-prometheus-pushgateway
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-prometheus-pushgateway, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: prometheus-pushgateway
+-     app.kubernetes.io/version: v1.10.0
+-     helm.sh/chart: prometheus-pushgateway-2.16.0
++     app.kubernetes.io/version: v1.11.2
++     helm.sh/chart: prometheus-pushgateway-3.6.0
+    name: n02-prometheus-pushgateway
+    namespace: n02-test
+
+n02-test, n02-prometheus-server, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/name: prometheus
+      app.kubernetes.io/part-of: prometheus
+-     app.kubernetes.io/version: v3.1.0
+-     helm.sh/chart: prometheus-27.0.0
++     app.kubernetes.io/version: v3.8.1
++     helm.sh/chart: prometheus-28.0.0
+    name: n02-prometheus-server
+  rules:
+  - apiGroups:
+...
+    - list
+    - watch
+  - apiGroups:
+-   - extensions
+    - networking.k8s.io
+    resources:
+    - ingresses/status
+...
+n02-test, n02-prometheus-server, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/name: prometheus
+      app.kubernetes.io/part-of: prometheus
+-     app.kubernetes.io/version: v3.1.0
+-     helm.sh/chart: prometheus-27.0.0
++     app.kubernetes.io/version: v3.8.1
++     helm.sh/chart: prometheus-28.0.0
+    name: n02-prometheus-server
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-prometheus-server, ConfigMap (v1) has changed:
+...
+        evaluation_interval: 1m
+        scrape_interval: 45s
+        scrape_timeout: 10s
+-     rule_files:
+-     - /etc/config/recording_rules.yml
+-     - /etc/config/alerting_rules.yml
+-     - /etc/config/rules
+-     - /etc/config/alerts
+      scrape_configs:
+-     - job_name: prometheus
+-       static_configs:
+-       - targets:
+-         - localhost:9090
+-     - bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+-       job_name: kubernetes-apiservers
++     - job_name: kubernetes-api-servers
++       bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+        kubernetes_sd_configs:
+        - role: endpoints
+        relabel_configs:
+...
+        scheme: https
+        tls_config:
+          ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+-     - bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+-       job_name: kubernetes-nodes
++     - job_name: kubernetes-nodes
++       bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+        kubernetes_sd_configs:
+        - role: node
+        relabel_configs:
+...
+        scheme: https
+        tls_config:
+          ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+-     - bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+-       job_name: kubernetes-nodes-cadvisor
++     - job_name: kubernetes-nodes-cadvisor
++       bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+        kubernetes_sd_configs:
+        - role: node
+        relabel_configs:
+...
+        scheme: https
+        tls_config:
+          ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+-     - honor_labels: true
+-       job_name: kubernetes-service-endpoints
++     - job_name: kubernetes-pods
++       honor_labels: true
+        kubernetes_sd_configs:
+-       - role: endpoints
++       - role: pod
+        relabel_configs:
+        - action: keep
+          regex: true
+          source_labels:
+-         - __meta_kubernetes_service_annotation_prometheus_io_scrape
++         - __meta_kubernetes_pod_annotation_prometheus_io_scrape
+        - action: drop
+          regex: true
+          source_labels:
+-         - __meta_kubernetes_service_annotation_prometheus_io_scrape_slow
++         - __meta_kubernetes_pod_annotation_prometheus_io_scrape_slow
+        - action: replace
+          regex: (https?)
+          source_labels:
+-         - __meta_kubernetes_service_annotation_prometheus_io_scheme
++         - __meta_kubernetes_pod_annotation_prometheus_io_scheme
+          target_label: __scheme__
+        - action: replace
+          regex: (.+)
+          source_labels:
+-         - __meta_kubernetes_service_annotation_prometheus_io_path
++         - __meta_kubernetes_pod_annotation_prometheus_io_path
+          target_label: __metrics_path__
++       - action: replace
++         regex: (\d+);(([A-Fa-f0-9]{1,4}::?){1,7}[A-Fa-f0-9]{1,4})
++         replacement: '[$2]:$1'
++         source_labels:
++         - __meta_kubernetes_pod_annotation_prometheus_io_port
++         - __meta_kubernetes_pod_ip
++         target_label: __address__
+        - action: replace
+-         regex: (.+?)(?::\d+)?;(\d+)
+-         replacement: $1:$2
++         regex: (\d+);((([0-9]+?)(\.|$)){4})
++         replacement: $2:$1
+          source_labels:
+-         - __address__
+-         - __meta_kubernetes_service_annotation_prometheus_io_port
++         - __meta_kubernetes_pod_annotation_prometheus_io_port
++         - __meta_kubernetes_pod_ip
+          target_label: __address__
+        - action: labelmap
+-         regex: __meta_kubernetes_service_annotation_prometheus_io_param_(.+)
++         regex: __meta_kubernetes_pod_annotation_prometheus_io_param_(.+)
+          replacement: __param_$1
+        - action: labelmap
+-         regex: __meta_kubernetes_service_label_(.+)
++         regex: __meta_kubernetes_pod_label_(.+)
+        - action: replace
+          source_labels:
+          - __meta_kubernetes_namespace
+          target_label: namespace
+        - action: replace
++         source_labels:
++         - __meta_kubernetes_pod_name
++         target_label: pod
++       - action: drop
++         regex: Pending|Succeeded|Failed|Completed
+          source_labels:
+-         - __meta_kubernetes_service_name
+-         target_label: service
++         - __meta_kubernetes_pod_phase
+        - action: replace
+          source_labels:
+          - __meta_kubernetes_pod_node_name
+          target_label: node
+-     - honor_labels: true
+-       job_name: kubernetes-service-endpoints-slow
++     - job_name: kubernetes-pods-slow
++       honor_labels: true
+        kubernetes_sd_configs:
+-       - role: endpoints
++       - role: pod
+        relabel_configs:
+        - action: keep
+          regex: true
+          source_labels:
+-         - __meta_kubernetes_service_annotation_prometheus_io_scrape_slow
++         - __meta_kubernetes_pod_annotation_prometheus_io_scrape_slow
+        - action: replace
+          regex: (https?)
+          source_labels:
+-         - __meta_kubernetes_service_annotation_prometheus_io_scheme
++         - __meta_kubernetes_pod_annotation_prometheus_io_scheme
+          target_label: __scheme__
+        - action: replace
+          regex: (.+)
+          source_labels:
+-         - __meta_kubernetes_service_annotation_prometheus_io_path
++         - __meta_kubernetes_pod_annotation_prometheus_io_path
+          target_label: __metrics_path__
++       - action: replace
++         regex: (\d+);(([A-Fa-f0-9]{1,4}::?){1,7}[A-Fa-f0-9]{1,4})
++         replacement: '[$2]:$1'
++         source_labels:
++         - __meta_kubernetes_pod_annotation_prometheus_io_port
++         - __meta_kubernetes_pod_ip
++         target_label: __address__
+        - action: replace
+-         regex: (.+?)(?::\d+)?;(\d+)
+-         replacement: $1:$2
++         regex: (\d+);((([0-9]+?)(\.|$)){4})
++         replacement: $2:$1
+          source_labels:
+-         - __address__
+-         - __meta_kubernetes_service_annotation_prometheus_io_port
++         - __meta_kubernetes_pod_annotation_prometheus_io_port
++         - __meta_kubernetes_pod_ip
+          target_label: __address__
+        - action: labelmap
+-         regex: __meta_kubernetes_service_annotation_prometheus_io_param_(.+)
++         regex: __meta_kubernetes_pod_annotation_prometheus_io_param_(.+)
+          replacement: __param_$1
+        - action: labelmap
+-         regex: __meta_kubernetes_service_label_(.+)
++         regex: __meta_kubernetes_pod_label_(.+)
+        - action: replace
+          source_labels:
+          - __meta_kubernetes_namespace
+          target_label: namespace
+        - action: replace
++         source_labels:
++         - __meta_kubernetes_pod_name
++         target_label: pod
++       - action: drop
++         regex: Pending|Succeeded|Failed|Completed
+          source_labels:
+-         - __meta_kubernetes_service_name
+-         target_label: service
++         - __meta_kubernetes_pod_phase
+        - action: replace
+          source_labels:
+          - __meta_kubernetes_pod_node_name
+          target_label: node
+        scrape_interval: 5m
+        scrape_timeout: 30s
+-     - honor_labels: true
+-       job_name: prometheus-pushgateway
+-       kubernetes_sd_configs:
+-       - role: service
+-       relabel_configs:
+-       - action: keep
+-         regex: pushgateway
+-         source_labels:
+-         - __meta_kubernetes_service_annotation_prometheus_io_probe
+-     - honor_labels: true
+-       job_name: kubernetes-services
+-       kubernetes_sd_configs:
+-       - role: service
+-       metrics_path: /probe
+-       params:
+-         module:
+-         - http_2xx
+-       relabel_configs:
+-       - action: keep
+-         regex: true
+-         source_labels:
+-         - __meta_kubernetes_service_annotation_prometheus_io_probe
+-       - source_labels:
+-         - __address__
+-         target_label: __param_target
+-       - replacement: blackbox
+-         target_label: __address__
+-       - source_labels:
+-         - __param_target
+-         target_label: instance
+-       - action: labelmap
+-         regex: __meta_kubernetes_service_label_(.+)
+-       - source_labels:
+-         - __meta_kubernetes_namespace
+-         target_label: namespace
+-       - source_labels:
+-         - __meta_kubernetes_service_name
+-         target_label: service
+-     - honor_labels: true
+-       job_name: kubernetes-pods
++     - job_name: kubernetes-service-endpoints
++       honor_labels: true
+        kubernetes_sd_configs:
+-       - role: pod
++       - role: endpoints
+        relabel_configs:
+        - action: keep
+          regex: true
+          source_labels:
+-         - __meta_kubernetes_pod_annotation_prometheus_io_scrape
++         - __meta_kubernetes_service_annotation_prometheus_io_scrape
+        - action: drop
+          regex: true
+          source_labels:
+-         - __meta_kubernetes_pod_annotation_prometheus_io_scrape_slow
++         - __meta_kubernetes_service_annotation_prometheus_io_scrape_slow
+        - action: replace
+          regex: (https?)
+          source_labels:
+-         - __meta_kubernetes_pod_annotation_prometheus_io_scheme
++         - __meta_kubernetes_service_annotation_prometheus_io_scheme
+          target_label: __scheme__
+        - action: replace
+          regex: (.+)
+          source_labels:
+-         - __meta_kubernetes_pod_annotation_prometheus_io_path
++         - __meta_kubernetes_service_annotation_prometheus_io_path
+          target_label: __metrics_path__
+-       - action: replace
+-         regex: (\d+);(([A-Fa-f0-9]{1,4}::?){1,7}[A-Fa-f0-9]{1,4})
+-         replacement: '[$2]:$1'
+-         source_labels:
+-         - __meta_kubernetes_pod_annotation_prometheus_io_port
+-         - __meta_kubernetes_pod_ip
+-         target_label: __address__
+        - action: replace
+-         regex: (\d+);((([0-9]+?)(\.|$)){4})
+-         replacement: $2:$1
++         regex: (.+?)(?::\d+)?;(\d+)
++         replacement: $1:$2
+          source_labels:
+-         - __meta_kubernetes_pod_annotation_prometheus_io_port
+-         - __meta_kubernetes_pod_ip
++         - __address__
++         - __meta_kubernetes_service_annotation_prometheus_io_port
+          target_label: __address__
+        - action: labelmap
+-         regex: __meta_kubernetes_pod_annotation_prometheus_io_param_(.+)
++         regex: __meta_kubernetes_service_annotation_prometheus_io_param_(.+)
+          replacement: __param_$1
+        - action: labelmap
+-         regex: __meta_kubernetes_pod_label_(.+)
++         regex: __meta_kubernetes_service_label_(.+)
+        - action: replace
+          source_labels:
+          - __meta_kubernetes_namespace
+          target_label: namespace
+        - action: replace
+-         source_labels:
+-         - __meta_kubernetes_pod_name
+-         target_label: pod
+-       - action: drop
+-         regex: Pending|Succeeded|Failed|Completed
+          source_labels:
+-         - __meta_kubernetes_pod_phase
++         - __meta_kubernetes_service_name
++         target_label: service
+        - action: replace
+          source_labels:
+          - __meta_kubernetes_pod_node_name
+          target_label: node
+-     - honor_labels: true
+-       job_name: kubernetes-pods-slow
++     - job_name: kubernetes-service-endpoints-slow
++       honor_labels: true
+        kubernetes_sd_configs:
+-       - role: pod
++       - role: endpoints
+        relabel_configs:
+        - action: keep
+          regex: true
+          source_labels:
+-         - __meta_kubernetes_pod_annotation_prometheus_io_scrape_slow
++         - __meta_kubernetes_service_annotation_prometheus_io_scrape_slow
+        - action: replace
+          regex: (https?)
+          source_labels:
+-         - __meta_kubernetes_pod_annotation_prometheus_io_scheme
++         - __meta_kubernetes_service_annotation_prometheus_io_scheme
+          target_label: __scheme__
+        - action: replace
+          regex: (.+)
+          source_labels:
+-         - __meta_kubernetes_pod_annotation_prometheus_io_path
++         - __meta_kubernetes_service_annotation_prometheus_io_path
+          target_label: __metrics_path__
+-       - action: replace
+-         regex: (\d+);(([A-Fa-f0-9]{1,4}::?){1,7}[A-Fa-f0-9]{1,4})
+-         replacement: '[$2]:$1'
+-         source_labels:
+-         - __meta_kubernetes_pod_annotation_prometheus_io_port
+-         - __meta_kubernetes_pod_ip
+-         target_label: __address__
+        - action: replace
+-         regex: (\d+);((([0-9]+?)(\.|$)){4})
+-         replacement: $2:$1
++         regex: (.+?)(?::\d+)?;(\d+)
++         replacement: $1:$2
+          source_labels:
+-         - __meta_kubernetes_pod_annotation_prometheus_io_port
+-         - __meta_kubernetes_pod_ip
++         - __address__
++         - __meta_kubernetes_service_annotation_prometheus_io_port
+          target_label: __address__
+        - action: labelmap
+-         regex: __meta_kubernetes_pod_annotation_prometheus_io_param_(.+)
++         regex: __meta_kubernetes_service_annotation_prometheus_io_param_(.+)
+          replacement: __param_$1
+        - action: labelmap
+-         regex: __meta_kubernetes_pod_label_(.+)
++         regex: __meta_kubernetes_service_label_(.+)
+        - action: replace
+          source_labels:
+          - __meta_kubernetes_namespace
+          target_label: namespace
+        - action: replace
+-         source_labels:
+-         - __meta_kubernetes_pod_name
+-         target_label: pod
+-       - action: drop
+-         regex: Pending|Succeeded|Failed|Completed
+          source_labels:
+-         - __meta_kubernetes_pod_phase
++         - __meta_kubernetes_service_name
++         target_label: service
+        - action: replace
+          source_labels:
+          - __meta_kubernetes_pod_node_name
+          target_label: node
+        scrape_interval: 5m
+        scrape_timeout: 30s
++     - job_name: kubernetes-services
++       honor_labels: true
++       kubernetes_sd_configs:
++       - role: service
++       metrics_path: /probe
++       params:
++         module:
++         - http_2xx
++       relabel_configs:
++       - action: keep
++         regex: true
++         source_labels:
++         - __meta_kubernetes_service_annotation_prometheus_io_probe
++       - source_labels:
++         - __address__
++         target_label: __param_target
++       - replacement: blackbox
++         target_label: __address__
++       - source_labels:
++         - __param_target
++         target_label: instance
++       - action: labelmap
++         regex: __meta_kubernetes_service_label_(.+)
++       - source_labels:
++         - __meta_kubernetes_namespace
++         target_label: namespace
++       - source_labels:
++         - __meta_kubernetes_service_name
++         target_label: service
++     - job_name: prometheus
++       static_configs:
++       - targets:
++         - localhost:9090
++     - job_name: prometheus-pushgateway
++       honor_labels: true
++       kubernetes_sd_configs:
++       - role: service
++       relabel_configs:
++       - action: keep
++         regex: pushgateway
++         source_labels:
++         - __meta_kubernetes_service_annotation_prometheus_io_probe
++     rule_files:
++     - /etc/config/recording_rules.yml
++     - /etc/config/alerting_rules.yml
++     - /etc/config/rules
++     - /etc/config/alerts
+      alerting:
+        alertmanagers:
+        - kubernetes_sd_configs:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/name: prometheus
+      app.kubernetes.io/part-of: prometheus
+-     app.kubernetes.io/version: v3.1.0
+-     helm.sh/chart: prometheus-27.0.0
++     app.kubernetes.io/version: v3.8.1
++     helm.sh/chart: prometheus-28.0.0
+    name: n02-prometheus-server
+    namespace: n02-test
+
+n02-test, n02-prometheus-server, Deployment (apps) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/name: prometheus
+      app.kubernetes.io/part-of: prometheus
+-     app.kubernetes.io/version: v3.1.0
+-     helm.sh/chart: prometheus-27.0.0
++     app.kubernetes.io/version: v3.8.1
++     helm.sh/chart: prometheus-28.0.0
+    name: n02-prometheus-server
+    namespace: n02-test
+  spec:
+...
+          app.kubernetes.io/instance: n02
+          app.kubernetes.io/name: prometheus
+          app.kubernetes.io/part-of: prometheus
+-         app.kubernetes.io/version: v3.1.0
+-         helm.sh/chart: prometheus-27.0.0
++         app.kubernetes.io/version: v3.8.1
++         helm.sh/chart: prometheus-28.0.0
+      spec:
+        containers:
+        - args:
+          - --watched-dir=/etc/config
+          - --listen-address=0.0.0.0:8080
+          - --reload-url=http://127.0.0.1:9090/-/reload
+-         image: quay.io/prometheus-operator/prometheus-config-reloader:v0.78.2
++         image: quay.io/prometheus-operator/prometheus-config-reloader:v0.87.1
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            httpGet:
+...
+          - --web.console.libraries=/etc/prometheus/console_libraries
+          - --web.console.templates=/etc/prometheus/consoles
+          - --web.enable-lifecycle
+-         image: quay.io/prometheus/prometheus:v3.1.0
++         image: quay.io/prometheus/prometheus:v3.8.1
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            failureThreshold: 3
+...
+n02-test, n02-prometheus-server, PersistentVolumeClaim (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/name: prometheus
+      app.kubernetes.io/part-of: prometheus
+-     app.kubernetes.io/version: v3.1.0
+-     helm.sh/chart: prometheus-27.0.0
++     app.kubernetes.io/version: v3.8.1
++     helm.sh/chart: prometheus-28.0.0
+    name: n02-prometheus-server
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-prometheus-server, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/name: prometheus
+      app.kubernetes.io/part-of: prometheus
+-     app.kubernetes.io/version: v3.1.0
+-     helm.sh/chart: prometheus-27.0.0
++     app.kubernetes.io/version: v3.8.1
++     helm.sh/chart: prometheus-28.0.0
+    name: n02-prometheus-server
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-prometheus-server, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/name: prometheus
+      app.kubernetes.io/part-of: prometheus
+-     app.kubernetes.io/version: v3.1.0
+-     helm.sh/chart: prometheus-27.0.0
++     app.kubernetes.io/version: v3.8.1
++     helm.sh/chart: prometheus-28.0.0
+    name: n02-prometheus-server
+    namespace: n02-test
+

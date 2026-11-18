@@ -1,0 +1,25 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 1,
+  "bytes": 9157,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW14987",
+  "examples": [
+    {
+      "change": "-",
+      "code": "standalone: true,",
+      "file": "libs/dirt/card/src/card.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:39.938777+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/14987",
+  "noncomment_nonimport_changed_lines": 1,
+  "pr": 15041,
+  "repository": "bitwarden/clients",
+  "sha256": "df0709da695db46d408562ea905c9344cc75dcff5db46750a6ed340c910ff394",
+  "target_code_changed_lines": 1,
+  "target_files": [
+    "libs/dirt/card/src/card.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15041.patch"
+}

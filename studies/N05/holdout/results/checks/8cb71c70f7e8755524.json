@@ -1,0 +1,34 @@
+{
+  "key": "8cb71c70f7e8755524",
+  "args": {
+    "crate": "serde_json",
+    "version": "1.0.140",
+    "id": "79e42f84bff21af0",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1081,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde`",
+      "rendered": "error[E0432]: unresolved import `serde`\n --> src/main.rs:2:5\n  |\n2 | use serde::Deserialize;\n  |     ^^^^^ use of unresolved module or unlinked crate `serde`\n  |\n  = help: if you wanted to use a crate named `serde`, use `cargo add serde` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `serde` in this scope",
+      "rendered": "error: cannot find attribute `serde` in this scope\n --> src/main.rs:7:7\n  |\n7 |     #[serde(borrow)]\n  |       ^^^^^\n\n",
+      "line": 7
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_serde_json_consumer` (bin \"n05_serde_json_consumer\") due to 2 previous errors\n",
+  "code_sha256": "a988b8d71cd4097cc91bd79a0d02077ab1fe556dc134cc004482c7afdfc2ba20",
+  "manifest_sha256": "071e37976f6cbd403c7235163f6e6d73746bd477ec5f714b735d162e8222915d",
+  "log_file": "holdout/results/check_logs/8cb71c70f7e8755524.txt.gz"
+}

@@ -1,0 +1,40 @@
+{
+  "key": "2a8b55a2cb09d6d9e8",
+  "args": {
+    "crate": "tower-http",
+    "version": "0.6.6",
+    "id": "2d6fe3e2e2f7a46b",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1017,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `http`",
+      "rendered": "error[E0432]: unresolved import `http`\n --> src/main.rs:6:5\n  |\n6 | use http::{Response, StatusCode};\n  |     ^^^^ use of unresolved module or unlinked crate `http`\n  |\n  = help: if you wanted to use a crate named `http`, use `cargo add http` to add it to your `Cargo.toml`\n\n",
+      "line": 6
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `http_body_util`",
+      "rendered": "error[E0432]: unresolved import `http_body_util`\n --> src/main.rs:7:5\n  |\n7 | use http_body_util::Empty;\n  |     ^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `http_body_util`\n  |\n  = help: if you wanted to use a crate named `http_body_util`, use `cargo add http_body_util` to add it to your `Cargo.toml`\n\n",
+      "line": 7
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `bytes`",
+      "rendered": "error[E0432]: unresolved import `bytes`\n --> src/main.rs:8:5\n  |\n8 | use bytes::Bytes;\n  |     ^^^^^ use of unresolved module or unlinked crate `bytes`\n  |\n  = help: if you wanted to use a crate named `bytes`, use `cargo add bytes` to add it to your `Cargo.toml`\n\n",
+      "line": 8
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_tower_http_consumer` (bin \"n05_tower_http_consumer\") due to 3 previous errors\n",
+  "code_sha256": "349ce515abffe4a6c75ae91d76b07259d6ef25e8cfadca21a4908bc22ad0449d",
+  "manifest_sha256": "dc57e4318cce77434e3d6edbdf89fdf42f3322950af93ac95dccbf47fad6fa31",
+  "log_file": "holdout/results/check_logs/2a8b55a2cb09d6d9e8.txt.gz"
+}

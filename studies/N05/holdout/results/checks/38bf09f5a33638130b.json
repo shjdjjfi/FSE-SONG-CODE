@@ -1,0 +1,37 @@
+{
+  "key": "38bf09f5a33638130b",
+  "args": {
+    "crate": "tower-http",
+    "version": "0.6.6",
+    "id": "94bbf0761db099ce",
+    "profile": "candidate",
+    "features": [
+      "add-extension",
+      "auth",
+      "catch-panic",
+      "compression-br",
+      "compression-deflate",
+      "compression-full",
+      "compression-gzip",
+      "compression-zstd"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.091,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower_http::services::ServeDir`",
+      "rendered": "error[E0432]: unresolved import `tower_http::services::ServeDir`\n  --> src/main.rs:2:5\n   |\n 2 | use tower_http::services::ServeDir;\n   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ no `ServeDir` in `services`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-http-0.6.6/src/services/mod.rs:21:20\n   |\n19 | #[cfg(feature = \"fs\")]\n   |       -------------- the item is gated behind the `fs` feature\n20 | #[doc(inline)]\n21 | pub use self::fs::{ServeDir, ServeFile};\n   |                    ^^^^^^^^\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tower_http_consumer` (bin \"n05_tower_http_consumer\") due to 1 previous error\n",
+  "code_sha256": "7601df69f7a4738ade81518b981860e56b3f4f52608e1dba49919e273793414e",
+  "manifest_sha256": "04a3f57223f7018eb7893a348f277825c1c2595b029753ba264e689de75a0298",
+  "log_file": "holdout/results/check_logs/38bf09f5a33638130b.txt.gz"
+}

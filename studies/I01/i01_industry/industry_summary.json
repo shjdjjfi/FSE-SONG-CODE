@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-14",
+  "n_real_repositories": 7,
+  "n_consumer_dryruns_total": 23,
+  "consumer_pip_status_counts": {
+    "unsat_or_no_wheel": 9,
+    "success": 14
+  },
+  "n_install_test_environments": 10,
+  "install_test_status_counts": {
+    "installed_and_tests_passed": 9,
+    "dependency_install_failed_or_timeout": 1
+  },
+  "n_existing_pytest_runs": 4,
+  "documented_suse_oldbase_backports": 2,
+  "alternatives": {
+    "multi_fixed_projects": 6,
+    "osv_fixed_events": 23,
+    "additional_fixed_events": 17,
+    "extra_actual_uv_calls": 204,
+    "additional_uv_resolvable_cells": 0,
+    "additional_root_compatible_cells": 0
+  }
+}

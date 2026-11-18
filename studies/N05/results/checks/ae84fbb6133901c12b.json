@@ -1,0 +1,21 @@
+{
+  "key": "ae84fbb6133901c12b",
+  "args": {
+    "crate": "flate2",
+    "version": "1.1.2",
+    "id": "d7c3292b7588df81",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0886,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "56bc8464ae58a5a1d5e7109184ad244d8abc60f43cb7b6dad855feaa5098466b",
+  "manifest_sha256": "4aa859e7b0880e92779dff6cc401f8e2882be94afcafe1cc09d2bfa4f255a4b6",
+  "log_file": "results/check_logs/ae84fbb6133901c12b.txt.gz"
+}

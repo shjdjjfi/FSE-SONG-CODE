@@ -1,0 +1,40 @@
+{
+  "key": "dc6852ba01a3b978e9",
+  "args": {
+    "crate": "time",
+    "version": "0.3.41",
+    "id": "574d3f181057c775",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0793,
+  "errors": [
+    {
+      "code": null,
+      "message": "expected `;`, found `Ok`",
+      "rendered": "error: expected `;`, found `Ok`\n  --> src/main.rs:12:25\n   |\n12 | Ok::<_, time::Error>(())\n   |                         ^ help: add `;` here\n13 | Ok(())\n   | -- unexpected token\n\n",
+      "line": 13
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `time::format_description`",
+      "rendered": "error[E0432]: unresolved import `time::format_description`\n  --> src/main.rs:2:5\n   |\n 2 | use time::format_description;\n   |     ^^^^^^^^^^^^^^^^^^^^^^^^ no `format_description` in the root\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/time-0.3.41/src/lib.rs:88:9\n   |\n87 | #[cfg(any(feature = \"formatting\", feature = \"parsing\"))]\n   |          --------------------------------------------- the item is gated here\n88 | pub mod format_description;\n   |         ^^^^^^^^^^^^^^^^^^\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `time_macros`",
+      "rendered": "error[E0432]: unresolved import `time_macros`\n --> src/main.rs:3:5\n  |\n3 | use time_macros::utc_datetime;\n  |     ^^^^^^^^^^^ use of unresolved module or unlinked crate `time_macros`\n  |\n  = help: if you wanted to use a crate named `time_macros`, use `cargo add time_macros` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_time_consumer` (bin \"n05_time_consumer\") due to 3 previous errors\n",
+  "code_sha256": "ff05b41e65efda0fb6b0f2c90faac490a1c6cd4d29d29441b555eed7147667da",
+  "manifest_sha256": "60f277b82543bdd9c96698f72dfa956042549dd4900b4d66ff53e380ee5fc78e",
+  "log_file": "prospective/results/check_logs/dc6852ba01a3b978e9.txt.gz"
+}

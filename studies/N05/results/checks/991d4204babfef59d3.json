@@ -1,0 +1,40 @@
+{
+  "key": "991d4204babfef59d3",
+  "args": {
+    "crate": "tokio-util",
+    "version": "0.7.15",
+    "id": "95e089a1e3849206",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0524,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio_util::time`",
+      "rendered": "error[E0432]: unresolved import `tokio_util::time`\n  --> src/main.rs:1:17\n   |\n 1 | use tokio_util::time::DelayQueue;\n   |                 ^^^^ could not find `time` in `tokio_util`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-util-0.7.15/src/lib.rs:54:13\n   |\n53 | / cfg_time! {\n54 | |     pub mod time;\n   | |             ^^^^\n55 | | }\n   | |_- the item is gated behind the `time` feature\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:4:3\n  |\n4 | #[tokio::main]\n  |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:5:1\n  |\n5 | async fn main() {\n  | ^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 5
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_tokio_util_consumer` (bin \"n05_tokio_util_consumer\") due to 3 previous errors\n",
+  "code_sha256": "2974144a9328d42e1b2f085c695fe044968e7c4f340a37e594f2ab36f1db9bff",
+  "manifest_sha256": "85f7363a0fff6cf363d144fd8235895e33d8fec33b5b4d144fe0cc14bf1a160d",
+  "log_file": "results/check_logs/991d4204babfef59d3.txt.gz"
+}

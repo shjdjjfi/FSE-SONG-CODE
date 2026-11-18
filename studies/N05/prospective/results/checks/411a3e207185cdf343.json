@@ -1,0 +1,28 @@
+{
+  "key": "411a3e207185cdf343",
+  "args": {
+    "crate": "async-compression",
+    "version": "0.4.23",
+    "id": "ead852b963b2db7d",
+    "profile": "candidate",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.088,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `async_compression::brotli`",
+      "rendered": "error[E0432]: unresolved import `async_compression::brotli`\n   --> src/main.rs:2:5\n    |\n  2 | use async_compression::brotli;\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^ no `brotli` in the root\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/async-compression-0.4.23/src/lib.rs:171:9\n    |\n170 | #[cfg(feature = \"brotli\")]\n    |       ------------------ the item is gated behind the `brotli` feature\n171 | pub mod brotli;\n    |         ^^^^^^\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_async_compression_consumer` (bin \"n05_async_compression_consumer\") due to 1 previous error\n",
+  "code_sha256": "8844e12da94dc8b8ee9f19f3c35c15ad40a1b936d54d1c20d7e8dfea7bec0095",
+  "manifest_sha256": "06ac9bf58afe86fdfa21538522b2aa1bc4c0727604cff00ef11e58566dbbdc9d",
+  "log_file": "prospective/results/check_logs/411a3e207185cdf343.txt.gz"
+}

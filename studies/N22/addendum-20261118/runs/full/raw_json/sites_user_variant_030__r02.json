@@ -1,0 +1,132 @@
+{
+  "case_id": "staged_user-customer-030.example",
+  "project": "django.contrib.sites/redirects/flatpages",
+  "source": {
+    "django_version": "5.1.8",
+    "python": "3.12.14",
+    "sqlite_version": "3.53.1"
+  },
+  "schema_sha256": "d3e4edd2d961f5cf532d07bbe55c86b41c2895f363e03fafad9a9800ceb34e49",
+  "migration_ledger_sha256": "83c2f480d606beed3e53afc45b8ef14a2c04278ff320c6365f29be615df06662",
+  "schema": [
+    [
+      "index",
+      "django_flatpage_sites_flatpage_id_078bbc8b",
+      "django_flatpage_sites",
+      "CREATE INDEX \"django_flatpage_sites_flatpage_id_078bbc8b\" ON \"django_flatpage_sites\" (\"flatpage_id\")"
+    ],
+    [
+      "index",
+      "django_flatpage_sites_flatpage_id_site_id_0d29d9d1_uniq",
+      "django_flatpage_sites",
+      "CREATE UNIQUE INDEX \"django_flatpage_sites_flatpage_id_site_id_0d29d9d1_uniq\" ON \"django_flatpage_sites\" (\"flatpage_id\", \"site_id\")"
+    ],
+    [
+      "index",
+      "django_flatpage_sites_site_id_bfd8ea84",
+      "django_flatpage_sites",
+      "CREATE INDEX \"django_flatpage_sites_site_id_bfd8ea84\" ON \"django_flatpage_sites\" (\"site_id\")"
+    ],
+    [
+      "index",
+      "django_flatpage_url_41612362",
+      "django_flatpage",
+      "CREATE INDEX \"django_flatpage_url_41612362\" ON \"django_flatpage\" (\"url\")"
+    ],
+    [
+      "index",
+      "django_redirect_old_path_c6cc94d3",
+      "django_redirect",
+      "CREATE INDEX \"django_redirect_old_path_c6cc94d3\" ON \"django_redirect\" (\"old_path\")"
+    ],
+    [
+      "index",
+      "django_redirect_site_id_c3e37341",
+      "django_redirect",
+      "CREATE INDEX \"django_redirect_site_id_c3e37341\" ON \"django_redirect\" (\"site_id\")"
+    ],
+    [
+      "index",
+      "django_redirect_site_id_old_path_ac5dd16b_uniq",
+      "django_redirect",
+      "CREATE UNIQUE INDEX \"django_redirect_site_id_old_path_ac5dd16b_uniq\" ON \"django_redirect\" (\"site_id\", \"old_path\")"
+    ],
+    [
+      "table",
+      "django_flatpage",
+      "django_flatpage",
+      "CREATE TABLE \"django_flatpage\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"url\" varchar(100) NOT NULL, \"title\" varchar(200) NOT NULL, \"content\" text NOT NULL, \"enable_comments\" bool NOT NULL, \"template_name\" varchar(70) NOT NULL, \"registration_required\" bool NOT NULL)"
+    ],
+    [
+      "table",
+      "django_flatpage_sites",
+      "django_flatpage_sites",
+      "CREATE TABLE \"django_flatpage_sites\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"flatpage_id\" integer NOT NULL REFERENCES \"django_flatpage\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"site_id\" integer NOT NULL REFERENCES \"django_site\" (\"id\") DEFERRABLE INITIALLY DEFERRED)"
+    ],
+    [
+      "table",
+      "django_migrations",
+      "django_migrations",
+      "CREATE TABLE \"django_migrations\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"app\" varchar(255) NOT NULL, \"name\" varchar(255) NOT NULL, \"applied\" datetime NOT NULL)"
+    ],
+    [
+      "table",
+      "django_redirect",
+      "django_redirect",
+      "CREATE TABLE \"django_redirect\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"site_id\" integer NOT NULL REFERENCES \"django_site\" (\"id\") DEFERRABLE INITIALLY DEFERRED, \"old_path\" varchar(200) NOT NULL, \"new_path\" varchar(200) NOT NULL)"
+    ],
+    [
+      "table",
+      "django_site",
+      "django_site",
+      "CREATE TABLE \"django_site\" (\"id\" integer NOT NULL PRIMARY KEY AUTOINCREMENT, \"name\" varchar(50) NOT NULL, \"domain\" varchar(100) NOT NULL UNIQUE)"
+    ]
+  ],
+  "migration_ledger": [
+    [
+      "flatpages",
+      "0001_initial"
+    ],
+    [
+      "redirects",
+      "0001_initial"
+    ],
+    [
+      "redirects",
+      "0002_alter_redirect_new_path_help_text"
+    ],
+    [
+      "sites",
+      "0001_initial"
+    ],
+    [
+      "sites",
+      "0002_alter_domain_unique"
+    ]
+  ],
+  "site_rows": [
+    [
+      1,
+      "customer-030.example",
+      "Owner's site setting 30: 北京・München"
+    ]
+  ],
+  "redirect_rows": [],
+  "contract_input": {
+    "site_id": 1,
+    "user_owned_domain": "customer-030.example",
+    "user_owned_name": "Owner's site setting 30: 北京・München",
+    "expected_redirect_count": 0
+  },
+  "business_oracle": {
+    "site_id": 1,
+    "site_domain": "customer-030.example",
+    "site_name": "Owner's site setting 30: 北京・München",
+    "redirect_count": 0,
+    "expected_domain": "customer-030.example",
+    "expected_name": "Owner's site setting 30: 北京・München",
+    "expected_redirect_count": 0,
+    "contract_violation": false
+  },
+  "classification": "legitimate_user_configuration"
+}

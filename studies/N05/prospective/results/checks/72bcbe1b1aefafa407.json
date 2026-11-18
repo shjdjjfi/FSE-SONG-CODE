@@ -1,0 +1,40 @@
+{
+  "key": "72bcbe1b1aefafa407",
+  "args": {
+    "crate": "quick-xml",
+    "version": "0.37.5",
+    "id": "586961fbe13a263a",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1253,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `pretty_assertions`",
+      "rendered": "error[E0432]: unresolved import `pretty_assertions`\n --> src/main.rs:1:5\n  |\n1 | use pretty_assertions::assert_eq;\n  |     ^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `pretty_assertions`\n  |\n  = help: if you wanted to use a crate named `pretty_assertions`, use `cargo add pretty_assertions` to add it to your `Cargo.toml`\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde`",
+      "rendered": "error[E0432]: unresolved import `serde`\n --> src/main.rs:2:5\n  |\n2 | use serde::Serialize;\n  |     ^^^^^ use of unresolved module or unlinked crate `serde`\n  |\n  = help: if you wanted to use a crate named `serde`, use `cargo add serde` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0277",
+      "message": "the trait bound `MyData: serde::Serialize` is not satisfied",
+      "rendered": "error[E0277]: the trait bound `MyData: serde::Serialize` is not satisfied\n   --> src/main.rs:25:38\n    |\n 25 | writer.write_serializable(\"my_data\", &data)?;\n    |        ------------------            ^^^^^ unsatisfied trait bound\n    |        |\n    |        required by a bound introduced by this call\n    |\nhelp: the trait `serde_core::ser::Serialize` is not implemented for `MyData`\n   --> src/main.rs:8:1\n    |\n  8 | struct MyData {\n    | ^^^^^^^^^^^^^\n    = note: for local types consider adding `#[derive(serde::Serialize)]` to your `MyData` type\n    = note: for types from other crates check whether the crate offers a `serde` feature flag\n    = help: the following other types implement trait `serde_core::ser::Serialize`:\n              &'a T\n              &'a mut T\n              ()\n              (T,)\n              (T0, T1)\n              (T0, T1, T2)\n              (T0, T1, T2, T3)\n              (T0, T1, T2, T3, T4)\n            and 133 others\nnote: required by a bound in `Writer::<W>::write_serializable`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/quick-xml-0.37.5/src/writer.rs:317:34\n    |\n317 |     pub fn write_serializable<T:",
+      "line": 25
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_quick_xml_consumer` (bin \"n05_quick_xml_consumer\") due to 3 previous errors\n",
+  "code_sha256": "2612242ca402769921261fe873dd4b4f22fa728f4ffa2a0b8c4acf8d97dfc9ce",
+  "manifest_sha256": "f50233056604ef0a2ec493df83a3d1aee84fd8e447da16a524a0ef732c8899b7",
+  "log_file": "prospective/results/check_logs/72bcbe1b1aefafa407.txt.gz"
+}

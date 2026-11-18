@@ -1,0 +1,9 @@
+argv: ["/workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/venvs/ai_npc_vulnerable/bin/python", "-c", "\nimport os\nassert os.environ.get('DEMO_MODE','').lower()=='true'\nfrom fastapi.testclient import TestClient\nfrom app.main import app\nwith TestClient(app) as client:\n    response = client.get('/')\n    assert response.status_code == 200, (response.status_code, response.text)\n    payload = response.json()\n    assert payload.get('status') == 'online', payload\n    schema=client.get('/openapi.json')\n    assert schema.status_code == 200\n    assert '/npc' in schema.json().get('paths', {}), schema.text[:400]\nprint('AI-NPC: root endpoint, OpenAPI route and in-process HTTP smoke passed')\n"]
+
+[STDOUT]
+🚀 Starting AI NPC System...
+👋 Shutting down AI NPC System...
+AI-NPC: root endpoint, OpenAPI route and in-process HTTP smoke passed
+
+
+[STDERR]

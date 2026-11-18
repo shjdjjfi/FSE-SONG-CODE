@@ -1,0 +1,535 @@
+{
+  "description": "Paired real-code identity-linking benchmark; target removal is controlled",
+  "dataset": "data/TestMigrationsInPy/projects",
+  "dataset_readme_sha256": "724cbb7305bc653228f0b36da21beff25be31aa105e99cb7a99df174c9f1cc73",
+  "timestamp_utc": "2026-11-14T17:29:31.408012+00:00",
+  "audit": {
+    "counts": {
+      "parsed_pairs": 877,
+      "non_single_test_snippet": 55,
+      "ambiguous_duplicate_identity": 2,
+      "unique_pairs": 875,
+      "unique_projects": 13,
+      "unique_commits": 108
+    },
+    "exclusions_sample": [
+      {
+        "file": "aiohttp/2/diff/mig1-before-test_helpers.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "aiohttp/2/diff/mig12-before-test_helpers.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "aiohttp/2/diff/mig13-before-test_helpers.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "aiohttp/2/diff/mig2-before-test_helpers.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "aiohttp/2/diff/mig8-before-test_helpers.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "aiohttp/3/diff/mig1-before-test_connector.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "aiohttp/34/diff/mig2-before-test_client_functional_oldstyle.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "aiohttp/42/diff/mig2-before-test_web_sendfile_functional.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "aiohttp/5/diff/mig1-before-test_client_request.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "aiohttp/5/diff/mig4-before-test_client_request.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "aiohttp/51/diff/mig9-before-test_client_response.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "aiohttp/7/diff/mig2-before-test_web_request.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "airflow/10/diff/mig1-before-test_s3_to_hive.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "airflow/10/diff/mig3-before-test_compression.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "airflow/3/diff/mig1-before-test_pod_template_file.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "airflow/4/diff/mig1-before-test_scheduler_job.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "airflow/4/diff/mig2-before-test_scheduler_job.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "airflow/6/diff/mig1-before-test_base.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "airflow/7/diff/mig1-before-test_backfill_job.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "airflow/8/diff/mig1-before-test_webserver_command.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "airflow/9/diff/mig1-before-test_task_handler_with_custom_formatter.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "ansible/5/diff/mig1-before-test_apt.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "beets/1/diff/mig1-before-test_importadded.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "cookiecutter/10/diff/mig1-before-test_examples.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "cookiecutter/12/diff/mig1-before-test_main.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "cookiecutter/13/diff/mig1-before-test_main.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "cookiecutter/15/diff/mig1-before-test_utils.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "dash/1/diff/mig1-before-test_configs.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "dash/2/diff/mig24-before-test_base_component.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "dash/2/diff/mig25-before-test_base_component.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "dash/2/diff/mig26-before-test_base_component.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "dash/2/diff/mig36-before-test_base_component.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "dash/2/diff/mig38-before-test_base_component.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "dash/2/diff/mig39-before-test_base_component.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "dash/2/diff/mig41-before-test_base_component.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "dash/3/diff/mig1-before-test_component_loader.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "dash/3/diff/mig3-before-test_component_loader.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "pandas/1/diff/mig1-before-test_internals.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "pandas/4/diff/mig4-before-test_dtypes.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "pandas/4/diff/mig6-before-test_dtypes.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "ray/4/diff/mig10-before-test_wheels.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "ray/4/diff/mig3-before-test_run_script.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "ray/4/diff/mig6-before-test_wheels.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "redis-py/1/diff/mig24-before-server_commands.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "redis-py/1/diff/mig26-before-server_commands.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "redis-py/1/diff/mig63-before-server_commands.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "redis-py/1/diff/mig70-before-server_commands.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "redis-py/1/diff/mig78-before-server_commands.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "requests/1/diff/mig1-before-test_requests.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "requests/1/diff/mig19-before-test_requests.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "sentry/1/diff/mig1-before-tests.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "sentry/2/diff/mig1-before-test_acceptance.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "sentry/2/diff/mig2-before-test_acceptance.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "sentry/3/diff/mig1-before-test_redis.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "sentry/4/diff/mig1-before-test_tasks.py",
+        "reason": "not_one_test_per_side"
+      },
+      {
+        "file": "pandas/1/3",
+        "reason": "duplicate_identity_in_commit"
+      },
+      {
+        "file": "pandas/1/4",
+        "reason": "duplicate_identity_in_commit"
+      }
+    ]
+  },
+  "per_seed": [
+    {
+      "seed": 17,
+      "queries": 842,
+      "projects": 13,
+      "commits": 75,
+      "candidate_count_min": 2,
+      "candidate_count_max": 20,
+      "candidate_count_mean": 14.504750593824228
+    }
+  ],
+  "summary": {
+    "exact_node_id": {
+      "pairs": 842,
+      "recovered": 259,
+      "recovery_rate": 0.30760095011876487,
+      "wrong_matched": 0,
+      "wrong_absent": 0,
+      "absent_false_transfer_rate": 0.0,
+      "combined_false_transfer_rate": 0.0,
+      "selective_precision": 1.0,
+      "cost_ratio_5": 0.6923990498812351,
+      "cost_ratio_10": 0.6923990498812351,
+      "recovery_by_project": {
+        "aiohttp": 0.08351648351648351,
+        "airflow": 0.68,
+        "ansible": 0.5,
+        "beets": 1.0,
+        "cookiecutter": 0.0,
+        "dash": 0.8043478260869565,
+        "httpie": 1.0,
+        "pandas": 1.0,
+        "ray": 0.2,
+        "redis-py": 0.0,
+        "requests": 1.0,
+        "saleor": 0.0,
+        "streamlit": 1.0
+      }
+    },
+    "method_name": {
+      "pairs": 842,
+      "recovered": 812,
+      "recovery_rate": 0.9643705463182898,
+      "wrong_matched": 1,
+      "wrong_absent": 11,
+      "absent_false_transfer_rate": 0.013064133016627079,
+      "combined_false_transfer_rate": 0.007125890736342043,
+      "selective_precision": 0.9854368932038835,
+      "cost_ratio_5": 0.10688836104513064,
+      "cost_ratio_10": 0.17814726840855108,
+      "recovery_by_project": {
+        "aiohttp": 0.978021978021978,
+        "airflow": 1.0,
+        "ansible": 1.0,
+        "beets": 1.0,
+        "cookiecutter": 1.0,
+        "dash": 0.9130434782608695,
+        "httpie": 1.0,
+        "pandas": 0.9555555555555556,
+        "ray": 0.2,
+        "redis-py": 0.9495798319327731,
+        "requests": 1.0,
+        "saleor": 1.0,
+        "streamlit": 1.0
+      }
+    },
+    "file_method": {
+      "pairs": 842,
+      "recovered": 806,
+      "recovery_rate": 0.9572446555819477,
+      "wrong_matched": 1,
+      "wrong_absent": 11,
+      "absent_false_transfer_rate": 0.013064133016627079,
+      "combined_false_transfer_rate": 0.007125890736342043,
+      "selective_precision": 0.9853300733496333,
+      "cost_ratio_5": 0.11401425178147269,
+      "cost_ratio_10": 0.18527315914489312,
+      "recovery_by_project": {
+        "aiohttp": 0.9648351648351648,
+        "airflow": 1.0,
+        "ansible": 1.0,
+        "beets": 1.0,
+        "cookiecutter": 1.0,
+        "dash": 0.9130434782608695,
+        "httpie": 1.0,
+        "pandas": 0.9555555555555556,
+        "ray": 0.2,
+        "redis-py": 0.9495798319327731,
+        "requests": 1.0,
+        "saleor": 1.0,
+        "streamlit": 1.0
+      }
+    },
+    "source_similarity": {
+      "pairs": 842,
+      "recovered": 433,
+      "recovery_rate": 0.5142517814726841,
+      "wrong_matched": 0,
+      "wrong_absent": 53,
+      "absent_false_transfer_rate": 0.06294536817102138,
+      "combined_false_transfer_rate": 0.03147268408551069,
+      "selective_precision": 0.8909465020576132,
+      "cost_ratio_5": 0.8004750593824228,
+      "cost_ratio_10": 1.1152019002375297,
+      "recovery_by_project": {
+        "aiohttp": 0.45714285714285713,
+        "airflow": 0.76,
+        "ansible": 0.8461538461538461,
+        "beets": 1.0,
+        "cookiecutter": 0.8,
+        "dash": 0.5869565217391305,
+        "httpie": 0.5,
+        "pandas": 0.8222222222222222,
+        "ray": 0.7,
+        "redis-py": 0.11764705882352941,
+        "requests": 0.8734177215189873,
+        "saleor": 0.5,
+        "streamlit": 0.8695652173913043
+      }
+    },
+    "semantic_anchor": {
+      "pairs": 842,
+      "recovered": 413,
+      "recovery_rate": 0.49049881235154397,
+      "wrong_matched": 1,
+      "wrong_absent": 53,
+      "absent_false_transfer_rate": 0.06294536817102138,
+      "combined_false_transfer_rate": 0.032066508313539195,
+      "selective_precision": 0.8843683083511777,
+      "cost_ratio_5": 0.830166270783848,
+      "cost_ratio_10": 1.1508313539192399,
+      "recovery_by_project": {
+        "aiohttp": 0.5208791208791209,
+        "airflow": 0.2,
+        "ansible": 0.5384615384615384,
+        "beets": 0.3333333333333333,
+        "cookiecutter": 0.8,
+        "dash": 0.2608695652173913,
+        "httpie": 0.5,
+        "pandas": 0.8,
+        "ray": 0.8,
+        "redis-py": 0.09243697478991597,
+        "requests": 0.8227848101265823,
+        "saleor": 0.75,
+        "streamlit": 0.6956521739130435
+      }
+    },
+    "ablate_assertions": {
+      "pairs": 842,
+      "recovered": 544,
+      "recovery_rate": 0.6460807600950119,
+      "wrong_matched": 0,
+      "wrong_absent": 36,
+      "absent_false_transfer_rate": 0.04275534441805225,
+      "combined_false_transfer_rate": 0.021377672209026127,
+      "selective_precision": 0.9379310344827586,
+      "cost_ratio_5": 0.5676959619952494,
+      "cost_ratio_10": 0.7814726840855107,
+      "recovery_by_project": {
+        "aiohttp": 0.6483516483516484,
+        "airflow": 0.48,
+        "ansible": 0.7692307692307693,
+        "beets": 1.0,
+        "cookiecutter": 1.0,
+        "dash": 0.6956521739130435,
+        "httpie": 1.0,
+        "pandas": 0.8888888888888888,
+        "ray": 0.9,
+        "redis-py": 0.25210084033613445,
+        "requests": 0.8987341772151899,
+        "saleor": 1.0,
+        "streamlit": 0.9130434782608695
+      }
+    },
+    "ablate_context": {
+      "pairs": 842,
+      "recovered": 338,
+      "recovery_rate": 0.4014251781472684,
+      "wrong_matched": 1,
+      "wrong_absent": 48,
+      "absent_false_transfer_rate": 0.057007125890736345,
+      "combined_false_transfer_rate": 0.029097387173396674,
+      "selective_precision": 0.8733850129198967,
+      "cost_ratio_5": 0.8895486935866983,
+      "cost_ratio_10": 1.180522565320665,
+      "recovery_by_project": {
+        "aiohttp": 0.42637362637362636,
+        "airflow": 0.16,
+        "ansible": 0.34615384615384615,
+        "beets": 0.0,
+        "cookiecutter": 0.2,
+        "dash": 0.15217391304347827,
+        "httpie": 0.5,
+        "pandas": 0.7333333333333333,
+        "ray": 0.6,
+        "redis-py": 0.08403361344537816,
+        "requests": 0.7088607594936709,
+        "saleor": 0.75,
+        "streamlit": 0.6086956521739131
+      }
+    },
+    "hybrid_posthoc": {
+      "pairs": 842,
+      "recovered": 806,
+      "recovery_rate": 0.9572446555819477,
+      "wrong_matched": 0,
+      "wrong_absent": 22,
+      "absent_false_transfer_rate": 0.026128266033254157,
+      "combined_false_transfer_rate": 0.013064133016627079,
+      "selective_precision": 0.9734299516908212,
+      "cost_ratio_5": 0.17339667458432304,
+      "cost_ratio_10": 0.30403800475059384,
+      "recovery_by_project": {
+        "aiohttp": 0.9406593406593406,
+        "airflow": 1.0,
+        "ansible": 1.0,
+        "beets": 1.0,
+        "cookiecutter": 1.0,
+        "dash": 0.8913043478260869,
+        "httpie": 1.0,
+        "pandas": 1.0,
+        "ray": 0.9,
+        "redis-py": 0.9747899159663865,
+        "requests": 1.0,
+        "saleor": 1.0,
+        "streamlit": 1.0
+      }
+    }
+  },
+  "bootstrap_differences": {
+    "exact_node_id": {
+      "cluster_count": 13,
+      "diff": 0.1828978622327791,
+      "ci95": [
+        -0.25257731958762886,
+        0.36205787781350485
+      ]
+    },
+    "method_name": {
+      "cluster_count": 13,
+      "diff": -0.47387173396674587,
+      "ci95": [
+        -0.6882217090069284,
+        -0.26666666666666666
+      ]
+    },
+    "file_method": {
+      "cluster_count": 13,
+      "diff": -0.4667458432304038,
+      "ci95": [
+        -0.6882217090069284,
+        -0.26666666666666666
+      ]
+    },
+    "source_similarity": {
+      "cluster_count": 13,
+      "diff": -0.023752969121140142,
+      "ci95": [
+        -0.24342105263157895,
+        0.03827160493827161
+      ]
+    },
+    "ablate_assertions": {
+      "cluster_count": 13,
+      "diff": -0.15558194774346792,
+      "ci95": [
+        -0.2765273311897106,
+        -0.1261682242990654
+      ]
+    },
+    "ablate_context": {
+      "cluster_count": 13,
+      "diff": 0.08907363420427554,
+      "ci95": [
+        0.050966608084358524,
+        0.132890365448505
+      ]
+    },
+    "hybrid_posthoc": {
+      "cluster_count": 13,
+      "diff": -0.4667458432304038,
+      "ci95": [
+        -0.7248995983935743,
+        -0.3076923076923077
+      ]
+    }
+  },
+  "total_runtime_seconds": 25.816687575003016,
+  "statistical_unit": "project; seeds are repeated random candidate samplings"
+}

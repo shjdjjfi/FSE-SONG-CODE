@@ -1,0 +1,21 @@
+{
+  "key": "852c90dc32b62d2fda",
+  "args": {
+    "crate": "tokio-stream",
+    "version": "0.1.17",
+    "id": "42b0485d06b6145e",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.1104,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "91c052a8b3ced41537cb688ad583803dd57f1c2597d6b8dbb7a9ea153f902d43",
+  "manifest_sha256": "e8b584b96d260651c77a36ab8d6cddf72bb8d196079ffeb95d9505c05bdf8858",
+  "log_file": "holdout/results/check_logs/852c90dc32b62d2fda.txt.gz"
+}

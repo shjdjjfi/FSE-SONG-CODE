@@ -1,0 +1,77 @@
+{
+  "body_sha256": "b0dbef52cdade04d879c5ecd50297b2a1801deff09a8f425ed3f7a507b7a49bc",
+  "fetched_utc": "2026-11-15T00:16:55.163016+00:00",
+  "http_status": 200,
+  "pagination_link": null,
+  "pr": 12853,
+  "rate_remaining": "41",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "quexten",
+      "at": "2025-01-14T12:16:25Z",
+      "event": "ready_for_review",
+      "reviewer": null,
+      "team_slug": null,
+      "team_url": null
+    },
+    {
+      "actor": "quexten",
+      "at": "2025-01-14T12:16:25Z",
+      "event": "review_requested",
+      "reviewer": null,
+      "team_slug": "team-key-management-dev",
+      "team_url": "https://github.com/orgs/bitwarden/teams/team-key-management-dev"
+    },
+    {
+      "actor": "quexten",
+      "at": "2025-01-14T15:20:21Z",
+      "event": "review_requested",
+      "reviewer": null,
+      "team_slug": "team-auth-dev",
+      "team_url": "https://github.com/orgs/bitwarden/teams/team-auth-dev"
+    },
+    {
+      "actor": "quexten",
+      "at": "2025-01-14T15:20:22Z",
+      "event": "review_requested",
+      "reviewer": "ike-kottlowski",
+      "team_slug": null,
+      "team_url": null
+    },
+    {
+      "actor": "quexten",
+      "at": "2025-01-14T15:28:11Z",
+      "event": "review_request_removed",
+      "reviewer": null,
+      "team_slug": "team-auth-dev",
+      "team_url": "https://github.com/orgs/bitwarden/teams/team-auth-dev"
+    },
+    {
+      "actor": "quexten",
+      "at": "2025-01-14T15:28:12Z",
+      "event": "review_request_removed",
+      "reviewer": "ike-kottlowski",
+      "team_slug": null,
+      "team_url": null
+    },
+    {
+      "actor": "quexten",
+      "at": "2025-01-14T15:53:08Z",
+      "event": "review_requested",
+      "reviewer": "mzieniukbw",
+      "team_slug": null,
+      "team_url": null
+    },
+    {
+      "actor": "quexten",
+      "at": "2025-01-14T17:05:04Z",
+      "event": "review_requested",
+      "reviewer": "mzieniukbw",
+      "team_slug": null,
+      "team_url": null
+    }
+  ],
+  "source_url": "https://api.github.com/repos/bitwarden/clients/issues/12853/events?per_page=100",
+  "total_issue_events_first_page": 16
+}

@@ -1,0 +1,19 @@
+{
+  "changed_code_lines_under_target": 3,
+  "changed_files_in_whole_pr": 5,
+  "changed_files_under_target": 1,
+  "code_files_under_target": 1,
+  "code_touched": true,
+  "event": "GF104424",
+  "focused_code_touched": true,
+  "pr": 109419,
+  "raw_size_bytes": 6240,
+  "repo": "grafana/grafana",
+  "sha256": "f11c5c81212fae5fc5c85b4d050f878045b2d5e3a7a17c372c5bf5d601685131",
+  "target_file_fraction": 0.2,
+  "target_paths": [
+    "pkg/registry/apps/alerting/notifications/templategroup/legacy_storage.go"
+  ],
+  "test_files_under_target": 0,
+  "url": "https://github.com/grafana/grafana/pull/109419.patch"
+}

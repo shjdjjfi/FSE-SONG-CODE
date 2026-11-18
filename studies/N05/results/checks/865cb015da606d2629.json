@@ -1,0 +1,28 @@
+{
+  "key": "865cb015da606d2629",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "c2b72ca2b38fbc45",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.106,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: could not find `windows` in `net`",
+      "rendered": "error[E0433]: failed to resolve: could not find `windows` in `net`\n  --> src/main.rs:1:17\n   |\n 1 | use tokio::net::windows::named_pipe::ServerOptions;\n   |                 ^^^^^^^ could not find `windows` in `net`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/net/mod.rs:63:13\n   |\n62 | / cfg_net_windows! {\n63 | |     pub mod windows;\n   | |             ^^^^^^^\n64 | | }\n   | |_- the item is gated here\n\n",
+      "line": 1
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 1 previous error\n",
+  "code_sha256": "a78c7acdf487c0cd454e9d7dd979c7e77a6d3abffee5ed6fa9a83c0b462ce381",
+  "manifest_sha256": "bc124f4f3c283e58f179902b408755b7b4a8509f353fc55cd281cb1afbc9efaf",
+  "log_file": "results/check_logs/865cb015da606d2629.txt.gz"
+}

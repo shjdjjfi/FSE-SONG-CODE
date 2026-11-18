@@ -1,0 +1,19 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 10050,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW14571",
+  "examples": [],
+  "fetched_utc": "2026-11-14T23:57:39.942567+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/14571",
+  "noncomment_nonimport_changed_lines": 0,
+  "pr": 17189,
+  "repository": "bitwarden/clients",
+  "sha256": "257939234eb2446c9fcb495f70f2c72ef8a8541284a670081f4de15c48cd46b9",
+  "target_code_changed_lines": 0,
+  "target_files": [
+    "apps/web/src/app/dirt/reports/shared/report-card/report-card.component.html"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/17189.patch"
+}

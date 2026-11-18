@@ -1,0 +1,47 @@
+{
+  "fetched_utc": "2026-11-14T17:12:20.645886+00:00",
+  "merged_at": "2025-09-11T19:15:30Z",
+  "opened_at": "2025-09-10T12:41:35-07:00",
+  "pr": 16373,
+  "raw_html_sha256": "bf77e25c287d4789386434f94ff2aafc7714c4a3854fd838568a729e5fa801f1",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 7,
+  "reviews": [
+    {
+      "login": "jaasen-livefront",
+      "state": "COMMENTED",
+      "submitted_at": "2025-09-10T21:28:41Z"
+    },
+    {
+      "login": "sbrown-livefront",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-11T14:05:18Z"
+    },
+    {
+      "login": "JimmyVo16",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-11T14:54:55Z"
+    },
+    {
+      "login": "gbubemismith",
+      "state": "COMMENTED",
+      "submitted_at": "2025-09-11T17:54:20Z"
+    },
+    {
+      "login": "sbrown-livefront",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-11T18:23:05Z"
+    },
+    {
+      "login": "JimmyVo16",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-11T18:24:52Z"
+    },
+    {
+      "login": "gbubemismith",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-11T18:25:59Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/16373"
+}

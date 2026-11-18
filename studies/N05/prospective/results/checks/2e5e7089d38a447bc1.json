@@ -1,0 +1,34 @@
+{
+  "key": "2e5e7089d38a447bc1",
+  "args": {
+    "crate": "tonic",
+    "version": "0.13.1",
+    "id": "87c6bddd15b15228",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0952,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tower`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tower`\n --> src/main.rs:4:5\n  |\n4 | use tower::timeout::TimeoutLayer;\n  |     ^^^^^ use of unresolved module or unlinked crate `tower`\n  |\n  = help: if you wanted to use a crate named `tower`, use `cargo add tower` to add it to your `Cargo.toml`\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower_service`",
+      "rendered": "error[E0432]: unresolved import `tower_service`\n --> src/main.rs:3:5\n  |\n3 | use tower_service::Service;\n  |     ^^^^^^^^^^^^^ use of unresolved module or unlinked crate `tower_service`\n  |\n  = help: if you wanted to use a crate named `tower_service`, use `cargo add tower_service` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_tonic_consumer` (bin \"n05_tonic_consumer\") due to 2 previous errors\n",
+  "code_sha256": "d8c44aa2c340b58506a65a9c37726f48642b7f3a5bffd8260e8642a6a8aea7b4",
+  "manifest_sha256": "208e29c9ab575aaead866c9a6d666d4c94ba64eef853b291160860549c6b3322",
+  "log_file": "prospective/results/check_logs/2e5e7089d38a447bc1.txt.gz"
+}

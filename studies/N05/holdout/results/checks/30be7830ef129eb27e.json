@@ -1,0 +1,46 @@
+{
+  "key": "30be7830ef129eb27e",
+  "args": {
+    "crate": "tower",
+    "version": "0.5.2",
+    "id": "0b9a0622b2b03524",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1677,
+  "errors": [
+    {
+      "code": "E0425",
+      "message": "cannot find value `timeout` in this scope",
+      "rendered": "error[E0425]: cannot find value `timeout` in this scope\n --> src/main.rs:4:34\n  |\n4 | let maybe_timeout = option_layer(timeout.map(TimeoutLayer::new));\n  |                                  ^^^^^^^ not found in this scope\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `TimeoutLayer`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `TimeoutLayer`\n --> src/main.rs:4:46\n  |\n4 | let maybe_timeout = option_layer(timeout.map(TimeoutLayer::new));\n  |                                              ^^^^^^^^^^^^ use of undeclared type `TimeoutLayer`\n  |\nhelp: consider importing this struct\n  |\n1 + use tower::timeout::TimeoutLayer;\n  |\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `ServiceBuilder`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `ServiceBuilder`\n --> src/main.rs:6:1\n  |\n6 | ServiceBuilder::new()\n  | ^^^^^^^^^^^^^^ use of undeclared type `ServiceBuilder`\n  |\nhelp: consider importing this struct\n  |\n1 + use tower::ServiceBuilder;\n  |\n\n",
+      "line": 6
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find value `svc` in this scope",
+      "rendered": "error[E0425]: cannot find value `svc` in this scope\n --> src/main.rs:8:14\n  |\n8 |     .service(svc);\n  |              ^^^ not found in this scope\n\n",
+      "line": 8
+    }
+  ],
+  "error_count": 4,
+  "stderr_excerpt": "error: could not compile `n05_tower_consumer` (bin \"n05_tower_consumer\") due to 4 previous errors\n",
+  "code_sha256": "5acaaf96eb89312eeaeb36f9af50946c369b619660563d9e93011f8db8148629",
+  "manifest_sha256": "bd645f89ecaac2a3980e78d9eda46be2738f29c34e7bad6f632626e3c930ddb6",
+  "log_file": "holdout/results/check_logs/30be7830ef129eb27e.txt.gz"
+}

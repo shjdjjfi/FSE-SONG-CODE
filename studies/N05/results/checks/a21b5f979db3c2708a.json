@@ -1,0 +1,21 @@
+{
+  "key": "a21b5f979db3c2708a",
+  "args": {
+    "crate": "uuid",
+    "version": "1.17.0",
+    "id": "88fe8ee22c2585f0",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0971,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "610cf6d7f3e03e7021d688bd63facaaa7a13ac823069758f3becb7dd55ab04e5",
+  "manifest_sha256": "f4eb37902674756ec6cbd6bf1f2ed1cdd370e9467989e26623855657c42abe09",
+  "log_file": "results/check_logs/a21b5f979db3c2708a.txt.gz"
+}

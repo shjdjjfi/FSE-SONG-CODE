@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\begin{tabular}{lllrrr}
+\toprule
+Cache & Fault & Strategy & Exact & Work (s) & Cache (s) \\
+\midrule
+complete & corrupt\_dts & attest\_only & 0/3 & 0.145 & 0.583 \\
+complete & corrupt\_dts & clean\_all & 3/3 & 1.594 & 0.470 \\
+complete & corrupt\_dts & guarded\_sha & 3/3 & 0.901 & 0.385 \\
+complete & extra\_stale & attest\_only & 0/3 & 0.608 & 0.606 \\
+complete & extra\_stale & force\_all & 0/3 & 1.833 & 0.464 \\
+complete & extra\_stale & guarded\_sha & 3/3 & 0.972 & 0.412 \\
+complete & none & attest\_only & 3/3 & 0.143 & 0.721 \\
+complete & none & guarded\_sha & 3/3 & 0.222 & 0.398 \\
+miss & none & attest\_only & 3/3 & 1.928 & 0.304 \\
+miss & none & guarded\_sha & 3/3 & 1.607 & 0.252 \\
+partial & none & attest\_only & 0/3 & 0.204 & 0.789 \\
+partial & none & clean\_all & 3/3 & 1.702 & 0.485 \\
+partial & none & force\_all & 3/3 & 1.355 & 0.705 \\
+partial & none & guarded\_sha & 3/3 & 1.254 & 0.714 \\
+\bottomrule
+\end{tabular}
+\caption{Actual GitHub-hosted Attest cache restoration: medians over three independently provisioned runs per controlled case. The exactness oracle checks all emitted paths and SHA-256 values. Faults are injected, not naturally observed; no industry incidence or deployment ROI is inferred. Work excludes cache restoration.}
+\label{tab:n21-gha-attest}
+\end{table}

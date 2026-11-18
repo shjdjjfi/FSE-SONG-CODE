@@ -1,0 +1,141 @@
+{
+  "case": "libraries",
+  "kind": "constructed workspace of four independent real OSS packages",
+  "source_units": {
+    "ts-pattern": 18,
+    "zod": 13,
+    "neverthrow": 5,
+    "mitt": 1
+  },
+  "outputs": {
+    "ts-pattern": 36,
+    "zod": 26,
+    "neverthrow": 10,
+    "mitt": 2
+  },
+  "expected_digests": {
+    "ts-pattern": {
+      "errors.d.ts": "aeeb57810a75f7ebd8259fd0fdcd5c99f5e73d74c0f3cee6ad22df06f9883f1b",
+      "errors.js": "1c61446648a2e6d7afff25d57e64b3f07a5852640073fd77a37131458874c5e2",
+      "index.d.ts": "60ae6a816e4c8e24ff566d16f2062276b12773fac9ae7dd66e9094fc34a52032",
+      "index.js": "bcf3a9a33acc4aa43cf7dfdddd6f6c5c6359887357d0abb5fdc82a707646deec",
+      "internals/helpers.d.ts": "5e0b440cb3f4aff09e9229a60e53739dbf5812e233e93b385c1c889af1e0d2b5",
+      "internals/helpers.js": "1982ca87858cb865e4e3e9ac3dde63def307733c027d554a80bd6610b15ee11f",
+      "internals/symbols.d.ts": "d0112c7965d438d2018bf4f25a59b98b1a9a49809560a1c6130ab83f530c91c9",
+      "internals/symbols.js": "b44f499a0770ebf0f9c9fbc709a2c779661a84048b9af3b67245a60ba99633a9",
+      "is-matching.d.ts": "4cbc4ee9241a22c081556e88925c9886279b53ab892f5837385db4005751ce17",
+      "is-matching.js": "94ee73093e6747738fdcd3191aa7677e3eea3101e5c49c2339c242271b3a4ea3",
+      "match.d.ts": "6d822407985074971d4ae696cf7bdc3d8853a0a18129db47f77f2a2646ab7b06",
+      "match.js": "edd1e3c2f9ac8be28aa0e35ccc60092d5c14527561d7777c63e418f3b0f401a2",
+      "patterns.d.ts": "ea03da42d223ab7a30eae2027acab08b49f5135ec43c6284a16eda873c4457b8",
+      "patterns.js": "4d1787d97379ed7ff08da5363a2f8c4c18d8664de11d048ff8f74373382cd071",
+      "types/BuildMany.d.ts": "29425cf1512ea1e56d029b54f79711db608d4532fbf78833a07b42444c62bdd6",
+      "types/BuildMany.js": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "types/DeepExclude.d.ts": "3704edf0ef0438988164a1306fd2f089fcd355128bce453d4add004ab6277804",
+      "types/DeepExclude.js": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "types/DistributeUnions.d.ts": "75fb739f2dd41e83ce6aa7bfb37791d958e14505fae5516ccaa931f968de76c1",
+      "types/DistributeUnions.js": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "types/ExtractPreciseValue.d.ts": "8f7d09f5cf1676df73d36a3f4490b1a03ea37e5c09fbe294ab5371f13407d99f",
+      "types/ExtractPreciseValue.js": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "types/FindSelected.d.ts": "141cc2c95b543a525ad9928006c375f57028b171e3565c038ddb25bbe0541c7a",
+      "types/FindSelected.js": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "types/InvertPattern.d.ts": "a74d886f9696151f62a03213c9cde65c4fe2fe80501c2e700918f7906289632c",
+      "types/InvertPattern.js": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "types/IsMatching.d.ts": "2149fbcda5c19c1f1eca676489913287ac19045870d731cc0c9f30ca04a0d6bb",
+      "types/IsMatching.js": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "types/Match.d.ts": "7410127a981b5f23da1b60be8d6b37e7258c4c019afaa0b045e275743d759e27",
+      "types/Match.js": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "types/Pattern.d.ts": "befc22ba3b538d4cf80e0af21957bed1642c531b129b415d510395e3d99ab3fc",
+      "types/Pattern.js": "073d67350cec89917d4b492c70cfcbb970cde19a0b7671cb010d1e87c20997f0",
+      "types/helpers.d.ts": "c3ee8faa46cd9a2e3762a7fe25806772aac5cdf888960dc8fed2c7674569afdc",
+      "types/helpers.js": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "types/index.d.ts": "7e812778db142ec787282db0e96103e6c096b143e348702ab1ac0efe96b37c6c",
+      "types/index.js": "805c32f53e527b0d599300e41d1bfc5b99586ff8325d67f6a1b42aa2278f83cf"
+    },
+    "zod": {
+      "ZodError.d.ts": "54f6ec6ea75acea6eb23635617252d249145edbc7bcd9d53f2d70280d2aef953",
+      "ZodError.js": "c64ce2e4a6c1b967519fcfee35b5cc25619957133a31e66ba94866c1c52b086b",
+      "errors.d.ts": "8e71e53b02c152a38af6aec45e288cc65bede077b92b9b43b3cb54a37978bb33",
+      "errors.js": "967771f010315d1da099743627da8402fe5bff0a080e31304520e1fc538498ba",
+      "external.d.ts": "5d26d2e47e2352def36f89a3e8bf8581da22b7f857e07ef3114cd52cf4813445",
+      "external.js": "c7d9711975a6f0af62ad0cf48561088a9ec6e92e76d43532c573a996d2b91c13",
+      "helpers/enumUtil.d.ts": "f672c876c1a04a223cf2023b3d91e8a52bb1544c576b81bf64a8fec82be9969c",
+      "helpers/enumUtil.js": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "helpers/errorUtil.d.ts": "e4b03ddcf8563b1c0aee782a185286ed85a255ce8a30df8453aade2188bbc904",
+      "helpers/errorUtil.js": "9c9e5dec7d1e9fce6a967735adf0333abd44d5e94a0225537c60ceed0c4f606a",
+      "helpers/parseUtil.d.ts": "754a9396b14ca3a4241591afb4edc644b293ccc8a3397f49be4dfd520c08acb3",
+      "helpers/parseUtil.js": "18133eff0dbfd5934b1939dec10c8c0fe387d7e08cffe75115ec4c079a3f2205",
+      "helpers/partialUtil.d.ts": "de2316e90fc6d379d83002f04ad9698bc1e5285b4d52779778f454dd12ce9f44",
+      "helpers/partialUtil.js": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "helpers/typeAliases.d.ts": "d3cfde44f8089768ebb08098c96d01ca260b88bccf238d55eee93f1c620ff5a5",
+      "helpers/typeAliases.js": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "helpers/util.d.ts": "293eadad9dead44c6fd1db6de552663c33f215c55a1bfa2802a1bceed88ff0ec",
+      "helpers/util.js": "9b75d4955de684d11371054bbf8e4d747cb1ad7284ae1eda85d4c188b84c47fc",
+      "index.d.ts": "3db2efd285e7328d8014b54a7fce3f4861ebcdc655df40517092ed0050983617",
+      "index.js": "a68c3f50425552a5ba225401aeff1c4dbfdee9ad01cc70be4e7795bb0149a8e0",
+      "locales/en.d.ts": "c25ce98cca43a3bfa885862044be0d59557be4ecd06989b2001a83dcf69620fd",
+      "locales/en.js": "3c8bb6ddb0e679f6e03efa83acbe5701be9e14aaf003a1fae3868dec5bbfcca5",
+      "standard-schema.d.ts": "25b3f581e12ede11e5739f57a86e8668fbc0124f6649506def306cad2c59d262",
+      "standard-schema.js": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+      "types.d.ts": "2da997a01a6aa5c5c09de5d28f0f4407b597c5e1aecfd32f1815809c532650a2",
+      "types.js": "c77dcf0fe109659c0d63dc707ce60886dad700ac6e60b1b3826ffdf5c2d2c824"
+    },
+    "neverthrow": {
+      "_internals/error.d.ts": "12b4c9ce14bbc2c23393b8a6f0d101ff4548f601786c76ef36a02a70bb822918",
+      "_internals/error.js": "68dbc13153ec4dbd8aacd08b5c84e61d39501fc57ead013de7bce4b47bbc4e88",
+      "_internals/utils.d.ts": "ad56ee35e0a1f866164d3e5d65508c803f37e709978540fd976870cc9bcb6bfc",
+      "_internals/utils.js": "0a9f6a563e70860a298fd9ddc7bda4aac780df1aff29223be320de50f6ed8a61",
+      "index.d.ts": "649d2258661ac37bac02ef28fa355a94ae7360e9fa86c9537b9238e581197233",
+      "index.js": "1e8c3708f0b4936a8c67ca33f138a01a232995dea42b882ea119f38ba0f5c8f3",
+      "result-async.d.ts": "a6caad6c6ee5249dfe3f95afa328473ec50b2129bc2eac921915ead1a5f34b76",
+      "result-async.js": "4270a85afd6546453042126036213db0b4ef5bade032a632f364dc820a7b1065",
+      "result.d.ts": "40e0dc1e645a5ea817312c5f2862312efd70a1301ba23a65d26676f74e31c65d",
+      "result.js": "39fc718cb57e68aebc9b457b7a1e968c61f5340ff9a0633e608ecc7d9b674737"
+    },
+    "mitt": {
+      "index.d.ts": "b55d63cfd2ba5cc013980284fe155690573fe48511bf33ea07acd71280736478",
+      "index.js": "2b0c8f487da0d17f426ee1d0dbda8d5f16aae7bee86b87ca0ddcd2cefbf337e5"
+    }
+  },
+  "compiler": "typescript@5.9.3",
+  "initial_build": {
+    "argv": [
+      "node",
+      "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+      "--build",
+      "tsconfig.json",
+      "--verbose"
+    ],
+    "exit": 0,
+    "seconds": 2.4544,
+    "compiled_projects": [
+      "ts-pattern",
+      "zod",
+      "neverthrow",
+      "mitt"
+    ],
+    "stdout": "12:01:45 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:01:45 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because buildinfo file 'packages/ts-pattern/cache.tsbuildinfo' indicates that program needs to report errors.\n\n12:01:45 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/templates/libraries/packages/ts-pattern/tsconfig.json'...\n\n12:01:47 PM - Project 'packages/zod/tsconfig.json' is out of date because output 'packages/zod/cache.tsbuildinfo' is older than input 'packages/zod/tsconfig.json'\n\n12:01:47 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/templates/libraries/packages/zod/tsconfig.json'...\n\n12:01:47 PM - Updating unchanged output timestamps of project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/templates/libraries/packages/zod/tsconfig.json'...\n\n12:01:47 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because buildinfo file 'packages/neverthrow/cache.tsbuildinfo' indicates that program needs to report errors.\n\n12:01:47 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/templates/libraries/packages/neverthrow/tsconfig.json'...\n\n12:01:47 PM - Project 'packages/mitt/tsconfig.json' is out of date because output 'packages/mitt/cache.tsbuildinfo' is older than input 'packages/mitt/tsconfig.json'\n\n12:01:47 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/templates/libraries/packages/mitt/tsconfig.json'...\n\n12:01:47 PM - Updating unchanged output timestamps of project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/templates/libraries/packages/mitt/tsconfig.json'...\n\n",
+    "stderr": ""
+  },
+  "independent_clean_build": {
+    "argv": [
+      "node",
+      "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+      "--build",
+      "tsconfig.json",
+      "--verbose"
+    ],
+    "exit": 0,
+    "seconds": 2.7096,
+    "compiled_projects": [
+      "ts-pattern",
+      "zod",
+      "neverthrow",
+      "mitt"
+    ],
+    "stdout": "12:01:48 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:01:48 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:01:48 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/oracles/libraries/packages/ts-pattern/tsconfig.json'...\n\n12:01:49 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:01:49 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/oracles/libraries/packages/zod/tsconfig.json'...\n\n12:01:50 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:01:50 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/oracles/libraries/packages/neverthrow/tsconfig.json'...\n\n12:01:50 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:01:50 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/oracles/libraries/packages/mitt/tsconfig.json'...\n\n",
+    "stderr": ""
+  },
+  "oracle_exact_match": true,
+  "extra": {}
+}

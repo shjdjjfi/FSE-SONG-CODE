@@ -1,0 +1,71 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 1,
+  "bytes": 68328,
+  "control_flow_or_callback_lines": 3,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "-",
+      "code": "return timeinterval.NewStorage(api.MuteTimings, namespacer)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "srv := api.MuteTimings",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "//nolint:staticcheck // not yet migrated to OpenFeature",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "if a.ng.FeatureToggles.IsEnabledGlobally(featuremgmt.FlagAlertingImportAlertmanagerAPI) {",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "srv = srv.WithIncludeImported()",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "return timeinterval.NewStorage(srv, namespacer)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "pkg/registry/apps/alerting/notifications/timeinterval/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "i.SetCanUse(ngmodels.Provenance(interval.Provenance) != ngmodels.ProvenanceConvertedPrometheus)",
+      "file": "pkg/registry/apps/alerting/notifications/timeinterval/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "pkg/registry/apps/alerting/notifications/timeinterval/conversions.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:58:00.547246+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 7,
+  "pr": 116308,
+  "repository": "grafana/grafana",
+  "sha256": "8447354296ab3cd28dd11ac43f64a485c4c34bafcd35d1c967dadb4f2ed64d2c",
+  "target_code_changed_lines": 10,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/register.go",
+    "pkg/registry/apps/alerting/notifications/timeinterval/conversions.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/116308.patch"
+}

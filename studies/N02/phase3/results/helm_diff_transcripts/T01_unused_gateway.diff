@@ -1,0 +1,94 @@
+n02-test, n02-traefik, Deployment (apps) has changed:
+...
+      app.kubernetes.io/instance: n02-n02-test
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: traefik
+-     helm.sh/chart: traefik-24.0.0
++     helm.sh/chart: traefik-25.0.0
+    name: n02-traefik
+    namespace: n02-test
+  spec:
+...
+          app.kubernetes.io/instance: n02-n02-test
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: traefik
+-         helm.sh/chart: traefik-24.0.0
++         helm.sh/chart: traefik-25.0.0
+      spec:
+        containers:
+        - args:
+...
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.namespace
+-         image: docker.io/traefik:v2.10.4
++         image: docker.io/traefik:v2.10.5
+          imagePullPolicy: IfNotPresent
+          lifecycle: null
+          livenessProbe:
+...
+n02-test, n02-traefik, IngressClass (networking.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02-n02-test
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: traefik
+-     helm.sh/chart: traefik-24.0.0
++     helm.sh/chart: traefik-25.0.0
+    name: n02-traefik
+  spec:
+    controller: traefik.io/ingress-controller
+...
+n02-test, n02-traefik, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02-n02-test
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: traefik
+-     helm.sh/chart: traefik-24.0.0
++     helm.sh/chart: traefik-25.0.0
+    name: n02-traefik
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-traefik, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/instance: n02-n02-test
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: traefik
+-     helm.sh/chart: traefik-24.0.0
++     helm.sh/chart: traefik-25.0.0
+    name: n02-traefik
+    namespace: n02-test
+
+n02-test, n02-traefik-dashboard, IngressRoute (traefik.io) has changed:
+...
+      app.kubernetes.io/instance: n02-n02-test
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: traefik
+-     helm.sh/chart: traefik-24.0.0
++     helm.sh/chart: traefik-25.0.0
+    name: n02-traefik-dashboard
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-traefik-n02-test, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02-n02-test
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: traefik
+-     helm.sh/chart: traefik-24.0.0
++     helm.sh/chart: traefik-25.0.0
+    name: n02-traefik-n02-test
+  rules:
+  - apiGroups:
+...
+n02-test, n02-traefik-n02-test, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02-n02-test
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: traefik
+-     helm.sh/chart: traefik-24.0.0
++     helm.sh/chart: traefik-25.0.0
+    name: n02-traefik-n02-test
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...

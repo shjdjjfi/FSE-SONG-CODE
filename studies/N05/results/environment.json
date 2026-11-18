@@ -1,0 +1,173 @@
+{
+  "study": "N05-v1",
+  "host_os": "Linux",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "architecture": "x86_64",
+  "python": "3.12.14",
+  "logical_cpus": 9,
+  "cargo": "cargo 1.91.0 (ea2d97820 2025-10-10)",
+  "rustc": "rustc 1.91.0 (f8297e351 2025-10-28)",
+  "gcc": "gcc (Debian 14.2.0-19) 14.2.0",
+  "target": "x86_64-unknown-linux-gnu",
+  "cargo_build_jobs": 4,
+  "toolchain_pinned": "1.91.0",
+  "per_invocation_timeout_seconds": 180,
+  "source_archive_count": 24,
+  "lockfiles": [
+    {
+      "crate": "axum",
+      "file": "data/locks/axum.lock",
+      "sha256": "c02a83f63dae9a4d91715526e007b89a5d8fec3bc1920c5197b057ce3c0587dd"
+    },
+    {
+      "crate": "bitflags",
+      "file": "data/locks/bitflags.lock",
+      "sha256": "e050c8495ebb013d6a207c5933a70dfa8cec1dbff3dd2c179bb35ae255389222"
+    },
+    {
+      "crate": "bytes",
+      "file": "data/locks/bytes.lock",
+      "sha256": "4151e6c4018578a9f3ef40be72f137606c7e110548574b868ca474d0db9ea4c4"
+    },
+    {
+      "crate": "chrono",
+      "file": "data/locks/chrono.lock",
+      "sha256": "b46f1f906691f9e231558f69dde189d6848df31495b8bd3f28e2817dc9d7319e"
+    },
+    {
+      "crate": "clap",
+      "file": "data/locks/clap.lock",
+      "sha256": "4a1cda070522fae1b059f7691174fd66d1c780d2faa47e3240b9a0b166367e84"
+    },
+    {
+      "crate": "dashmap",
+      "file": "data/locks/dashmap.lock",
+      "sha256": "dbffce167b201cf998f1cab74f94a8d5ea0b9ef653ed0760a7e9aa9bd6f7d120"
+    },
+    {
+      "crate": "flate2",
+      "file": "data/locks/flate2.lock",
+      "sha256": "0819624ee63f43a0eca6f0b9ee9b38055759d8a7089752057f1c197e56fbbac7"
+    },
+    {
+      "crate": "futures-util",
+      "file": "data/locks/futures-util.lock",
+      "sha256": "73d4c15f2cda5b53a3127bca92a68f06ad32f9c0d2fa5e73dbc4178e194f1a45"
+    },
+    {
+      "crate": "hashbrown",
+      "file": "data/locks/hashbrown.lock",
+      "sha256": "2d6f79ee65df30bfc17b4be60df7cbcf4eabc25511aa8c49aa57fba1dc26b400"
+    },
+    {
+      "crate": "hyper",
+      "file": "data/locks/hyper.lock",
+      "sha256": "8c4d7bfd1b4b0458105d840324b152777dd79ce12752ac4dd81331fe9721140c"
+    },
+    {
+      "crate": "indexmap",
+      "file": "data/locks/indexmap.lock",
+      "sha256": "039bdb8b51682a994be0645f44f718846a025c64ec0c91e9626f28973f0d9c23"
+    },
+    {
+      "crate": "indicatif",
+      "file": "data/locks/indicatif.lock",
+      "sha256": "bd1212f90d7bb6f6beb1524e69b4828033747e738d334e834f0a4422ff2cf0b1"
+    },
+    {
+      "crate": "itertools",
+      "file": "data/locks/itertools.lock",
+      "sha256": "4220feb01e636f9051e2a361728c4a208f2fa36dc54904faf1ee418067cc6b6a"
+    },
+    {
+      "crate": "miette",
+      "file": "data/locks/miette.lock",
+      "sha256": "949d2baf5c214c5988031d7c064fa5bd9cd8ca313224cf007d75dc3577744267"
+    },
+    {
+      "crate": "petgraph",
+      "file": "data/locks/petgraph.lock",
+      "sha256": "58cb5dace93f1313e3f094e6f20097dbeb02ab5dde6ce590484ea1765e173154"
+    },
+    {
+      "crate": "rand",
+      "file": "data/locks/rand.lock",
+      "sha256": "d47babbef4d7403013013ef6e76fc03acc0f9bdc22a442135826bc32756adc46"
+    },
+    {
+      "crate": "rayon",
+      "file": "data/locks/rayon.lock",
+      "sha256": "6879433816e6ba8419b4f859b5afc8acd2eadd16a6658757e4797537e9d5e2db"
+    },
+    {
+      "crate": "regex",
+      "file": "data/locks/regex.lock",
+      "sha256": "c41bc9ceb28bab260b71c5dab93bed56f650af0bbefcc028d2c5f5c6b87dbb5f"
+    },
+    {
+      "crate": "reqwest",
+      "file": "data/locks/reqwest.lock",
+      "sha256": "a256067e7c3cd148876a6ce043e2d48ee8877abe8e051bcf55bb9b9825e09d24"
+    },
+    {
+      "crate": "serde",
+      "file": "data/locks/serde.lock",
+      "sha256": "d7027013aee19808f013625deaa30458b7fe25c326ba8d5266ec0c1a974d3793"
+    },
+    {
+      "crate": "serde_json",
+      "file": "data/locks/serde_json.lock",
+      "sha256": "98c231c28cfd4989edbf4a427934a94fcf3a7a122a7a8d28170644689f09b684"
+    },
+    {
+      "crate": "sqlx",
+      "file": "data/locks/sqlx.lock",
+      "sha256": "5fa235da3bd17793a33e2e932523e7afce8caa5e0f40a1da9a43543cfe6692ca"
+    },
+    {
+      "crate": "strum",
+      "file": "data/locks/strum.lock",
+      "sha256": "92e7f00f6fafd1d9d64b88ca9512f21013a844e5a7a6352448dffd4913bab945"
+    },
+    {
+      "crate": "tinyvec",
+      "file": "data/locks/tinyvec.lock",
+      "sha256": "4438a89f4893c7fc4a05337f25169862dce5c1af4f319f779ecb47a6c5bfb72a"
+    },
+    {
+      "crate": "tokio",
+      "file": "data/locks/tokio.lock",
+      "sha256": "eda85064339e42cd6bda7db6854b2a14d89005db7eec183c7599ab7db3cf4bf6"
+    },
+    {
+      "crate": "tokio-stream",
+      "file": "data/locks/tokio-stream.lock",
+      "sha256": "343e99182cbcf0610022d086e4f49bc5bb4a0f13bae43a04ae78f091cbce7c1a"
+    },
+    {
+      "crate": "tokio-util",
+      "file": "data/locks/tokio-util.lock",
+      "sha256": "3fe8cf94d9e2611583f48c1a1da49fa69bff3c3c9417d75c1e714a8d7ca346a5"
+    },
+    {
+      "crate": "tower",
+      "file": "data/locks/tower.lock",
+      "sha256": "3b9b141719081a0a19890d4579e1cb6cb6cf98a66cc5e867f208ea93eafb76b9"
+    },
+    {
+      "crate": "tower-http",
+      "file": "data/locks/tower-http.lock",
+      "sha256": "465d0847d0bae89402ed8ed65f931e82d1612f1dfad826fa78195cfb7504762a"
+    },
+    {
+      "crate": "tracing-subscriber",
+      "file": "data/locks/tracing-subscriber.lock",
+      "sha256": "ae25435f40f324d7f081f917bb24bfb8f20d9f6e3414522a767dd41357df343e"
+    },
+    {
+      "crate": "uuid",
+      "file": "data/locks/uuid.lock",
+      "sha256": "f32b4d7a83c6f17f5cb3d89e8a5090e627bbcfa63851d6ebeef18ea6fa7744fe"
+    }
+  ]
+}

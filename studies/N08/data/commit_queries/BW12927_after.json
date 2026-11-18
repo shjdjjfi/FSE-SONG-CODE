@@ -1,0 +1,501 @@
+{
+  "body": [
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/219033447?v=4",
+        "events_url": "https://api.github.com/users/sbrown-livefront/events{/privacy}",
+        "followers_url": "https://api.github.com/users/sbrown-livefront/followers",
+        "following_url": "https://api.github.com/users/sbrown-livefront/following{/other_user}",
+        "gists_url": "https://api.github.com/users/sbrown-livefront/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/sbrown-livefront",
+        "id": 219033447,
+        "login": "sbrown-livefront",
+        "node_id": "U_kgDODQ4vZw",
+        "organizations_url": "https://api.github.com/users/sbrown-livefront/orgs",
+        "received_events_url": "https://api.github.com/users/sbrown-livefront/received_events",
+        "repos_url": "https://api.github.com/users/sbrown-livefront/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/sbrown-livefront/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/sbrown-livefront/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/sbrown-livefront",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/a9bf66e689c33451f9014108ffb7d44655b49516/comments",
+      "commit": {
+        "author": {
+          "date": "2025-12-02T15:49:55Z",
+          "email": "sbrown@livefront.com",
+          "name": "Stephon Brown"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-12-02T15:49:55Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-27600] Replace Hard-Coded Storage amount (#17393)\n\n* feat(billing): add provided as a required property to premium response\n\n* fix(billing): replace hard coded storage variables with retrieved plan\n\n* tests(billing): add tests to pricing-summary service\n\n* feat(billing): add optional property.\n\n* fix(billing): update storage logic\n\n* fix(billing): remove optional check\n\n* fix(billing): remove optionality\n\n* fix(billing): remove optionality\n\n* fix(billing): refactored storage calculation logic\n\n* feat(billing): add provided amounts to subscription-pricing-service\n\n* fix(billing): update cloud premium component\n\n* fix(billing): update desktop premium component\n\n* fix(billing): update org plans component\n\n* fix(billing) update stories and tests\n\n* fix(billing): update messages\n\n* fix(billing): replace storage sizes\n\n* fix(billing): update messages\n\n* fix(billing): update components\n\n* fix(billing): update components for pricing and storage retrieval\n\n* fix(billing): revert self-hosted change",
+        "tree": {
+          "sha": "1801d560c8baec5ca3b5dbfaf91d9a3790ecb1aa",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/1801d560c8baec5ca3b5dbfaf91d9a3790ecb1aa"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/a9bf66e689c33451f9014108ffb7d44655b49516",
+        "verification": {
+          "payload": "tree 1801d560c8baec5ca3b5dbfaf91d9a3790ecb1aa\nparent 049acf1e12f4841d867d11c959a3224748a1f87a\nauthor Stephon Brown <sbrown@livefront.com> 1764690595 -0500\ncommitter GitHub <noreply@github.com> 1764690595 -0500\n\n[PM-27600] Replace Hard-Coded Storage amount (#17393)\n\n* feat(billing): add provided as a required property to premium response\n\n* fix(billing): replace hard coded storage variables with retrieved plan\n\n* tests(billing): add tests to pricing-summary service\n\n* feat(billing): add optional property.\n\n* fix(billing): update storage logic\n\n* fix(billing): remove optional check\n\n* fix(billing): remove optionality\n\n* fix(billing): remove optionality\n\n* fix(billing): refactored storage calculation logic\n\n* feat(billing): add provided amounts to subscription-pricing-service\n\n* fix(billing): update cloud premium component\n\n* fix(billing): update desktop premium component\n\n* fix(billing): update org plans component\n\n* fix(billing) update stories and tests\n\n* fix(billing): update messages\n\n* fix(billing): replace storage sizes\n\n* fix(billing): update messages\n\n* fix(billing): update components\n\n* fix(billing): update components for pricing and storage retrieval\n\n* fix(billing): revert self-hosted change",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpLwqjCRC1aQ7uu5UhlAAAmaIQAKSLhDKH55Vb8UCkfrUHgUFg\nGWWpaPBFW3uzQrOHzEgg9cBgmxwdjSgiBKkdVCFAWfVBICTumj70AyH3/YUYkQmC\n4/BHAJtQLSNRH+DawcuWnHoM83jeafk1VCeNr+443yBngXVDbo/a6Gt7PJxO7FZD\nC1ZZnr/0HfuR32apT+p5pCClVxv3vftcKVnRE277BUV20DKnJ/zJfqD/BOhVirw3\nZROGAtyS+zwIBgUlm/+vJI+zYeDkwtISGwhDpLhncIV8hxS73i0LwWbT5McYZ+GK\na/VdZRFn7W8m+mbhE8QTd0k78jaJG4m8JA3+YRgzM47P6VYY/EXbWXaNoOxiuZF1\nQf1pNXVLSDySSorK1/PRoNxr7Rt6S4BZtGE7kAlTZDtFCluE4Ht/DtOcEXntuoWv\nsmUGgOGKIBNJvurIZiBNoZij9s55tsQUTjjK6ttuAYOadtpbxz4T7N6eNuYSMVlJ\n+l0IWuNPIU3GJT67qsyGp25rkLBbB40kcLgKfu+qtpZWHb8YxSLVo3ghUe2CJW8x\nZvljv4Hl0598nu47PnclNo2cO1U422MBX/WdBdJQM90RJK92ORBud1OXNvgrSWRC\nlfaNWeUpBmXHdCu6/+4I6LsXCgcbWsbn5ewiVQa/3GbeFCLeoNlBM52pNE1mJ/WH\nyW9+Oe6NIgJRPvJkL4Mg\n=JNyD\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-12-02T15:49:55Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/a9bf66e689c33451f9014108ffb7d44655b49516",
+      "node_id": "C_kwDOAzDwU9oAKGE5YmY2NmU2ODljMzM0NTFmOTAxNDEwOGZmYjdkNDQ2NTViNDk1MTY",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/049acf1e12f4841d867d11c959a3224748a1f87a",
+          "sha": "049acf1e12f4841d867d11c959a3224748a1f87a",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/049acf1e12f4841d867d11c959a3224748a1f87a"
+        }
+      ],
+      "sha": "a9bf66e689c33451f9014108ffb7d44655b49516",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/a9bf66e689c33451f9014108ffb7d44655b49516"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/137855?v=4",
+        "events_url": "https://api.github.com/users/Hinton/events{/privacy}",
+        "followers_url": "https://api.github.com/users/Hinton/followers",
+        "following_url": "https://api.github.com/users/Hinton/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Hinton/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/Hinton",
+        "id": 137855,
+        "login": "Hinton",
+        "node_id": "MDQ6VXNlcjEzNzg1NQ==",
+        "organizations_url": "https://api.github.com/users/Hinton/orgs",
+        "received_events_url": "https://api.github.com/users/Hinton/received_events",
+        "repos_url": "https://api.github.com/users/Hinton/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/Hinton/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Hinton/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/Hinton",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/e3f943364f519e4d3d5465b783100d35d3beeab7/comments",
+      "commit": {
+        "author": {
+          "date": "2025-10-23T20:02:01Z",
+          "email": "Hinton@users.noreply.github.com",
+          "name": "Oscar Hinton"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-10-23T20:02:01Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Billing - Prefer signal & change detection (#16944)",
+        "tree": {
+          "sha": "dd8eb208dee74a442c01d2ea2066152d6faca8e2",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/dd8eb208dee74a442c01d2ea2066152d6faca8e2"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/e3f943364f519e4d3d5465b783100d35d3beeab7",
+        "verification": {
+          "payload": "tree dd8eb208dee74a442c01d2ea2066152d6faca8e2\nparent a592f2b866f8f7fc3a905a27d9b1f2cd8225db97\nauthor Oscar Hinton <Hinton@users.noreply.github.com> 1761249721 +0200\ncommitter GitHub <noreply@github.com> 1761249721 -0500\n\nBilling - Prefer signal & change detection (#16944)\n\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJo+om6CRC1aQ7uu5UhlAAA3JsQAEV9zzjQxsoy8/Gqm7q/1hpk\n6jED+ggJEkYS7br+uG4mlTYMtTLfcoECnsQ4i4D/jJK434uAH2D+FbC+WNAnk/Lv\nQe3Sd90xoGpuC6jfE80ys/5SxpoZ30fhiwZECjOcyy9be1aVidKMukf/AdwmZm0R\n6tpVvINy7BFz3MvBFx6rWGEBH084/xwJjKyAEs+jqlePrK7eL6zZdpMi4GT/mZ+E\nuPCVqys5sk6AdVcn6SwYeho0e7CjMieP++XhAhXkAN07a84MTKJbeMau4mVG99Hn\nsgC9b/9MW9R82S9z7vYFGdH+bAlVBHJYQ7uMkLcI2Tnsb7Ml9rdFkAPA9sLLw1O0\nDS9LIOYCtzsKUWNPChwq5WStqUOaRn9tBpiIel0sxN5Wsnbu85W8ODrW35jWM/lo\n6QoFf0YGvQZ/58Bh3q/fVVCydxxESdvnrerLZsForElHlCBUicpIHMknOM80w1EL\nLKVdoN1bBlhePDuco4TdZiLXM80e+z1YgCwffRCkKSTfWVdyiNlMJgzkKI5JwI+K\nKMSjsTGRBGOe55XMfXGQ4X9BPjlJJKp2Jz0WzPx/aMBzKaOgJcVJalgyk8aphS7w\n+OtYgOEoJkGglS2o0djZPfVO+li7Fbm7cbMgI6N165o+w1JVzRxFmwhxqXuOB7y2\nCCJvpNF1nY7UOCysJTGh\n=58mk\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-10-23T20:02:02Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/e3f943364f519e4d3d5465b783100d35d3beeab7",
+      "node_id": "C_kwDOAzDwU9oAKGUzZjk0MzM2NGY1MTllNGQzZDU0NjViNzgzMTAwZDM1ZDNiZWVhYjc",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/a592f2b866f8f7fc3a905a27d9b1f2cd8225db97",
+          "sha": "a592f2b866f8f7fc3a905a27d9b1f2cd8225db97",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/a592f2b866f8f7fc3a905a27d9b1f2cd8225db97"
+        }
+      ],
+      "sha": "e3f943364f519e4d3d5465b783100d35d3beeab7",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/e3f943364f519e4d3d5465b783100d35d3beeab7"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/166539328?v=4",
+        "events_url": "https://api.github.com/users/jaasen-livefront/events{/privacy}",
+        "followers_url": "https://api.github.com/users/jaasen-livefront/followers",
+        "following_url": "https://api.github.com/users/jaasen-livefront/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jaasen-livefront/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/jaasen-livefront",
+        "id": 166539328,
+        "login": "jaasen-livefront",
+        "node_id": "U_kgDOCe0wQA",
+        "organizations_url": "https://api.github.com/users/jaasen-livefront/orgs",
+        "received_events_url": "https://api.github.com/users/jaasen-livefront/received_events",
+        "repos_url": "https://api.github.com/users/jaasen-livefront/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/jaasen-livefront/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jaasen-livefront/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/jaasen-livefront",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/6024f6eef21c8c6e6502a562ae7a5acc5ee23d7a/comments",
+      "commit": {
+        "author": {
+          "date": "2025-09-23T16:32:45Z",
+          "email": "166539328+jaasen-livefront@users.noreply.github.com",
+          "name": "Jordan Aasen"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-09-23T16:32:45Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-25879][PM-25881] - [Defect] Premium badges missing reusable component (#16461)\n\n* clean up premium badge component\n\n* add provider to desktop settings\n\n* rename prop.\n\n* add provider to send component\n\n* fix storybook\n\n* fix test\n\n* move dependency to new send dropdown component\n\n* Revert \"move dependency to new send dropdown component\"\n\nThis reverts commit f134526279c78c38c1621e308d8e07da63f697f4.\n\n* remove hasPremium",
+        "tree": {
+          "sha": "beef7f46c8d383a202ad1bdb6bb89d9b4241682b",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/beef7f46c8d383a202ad1bdb6bb89d9b4241682b"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/6024f6eef21c8c6e6502a562ae7a5acc5ee23d7a",
+        "verification": {
+          "payload": "tree beef7f46c8d383a202ad1bdb6bb89d9b4241682b\nparent 7313a5f2a38264e9f904079b81cf476f9d6928c3\nauthor Jordan Aasen <166539328+jaasen-livefront@users.noreply.github.com> 1758645165 -0700\ncommitter GitHub <noreply@github.com> 1758645165 -0700\n\n[PM-25879][PM-25881] - [Defect] Premium badges missing reusable component (#16461)\n\n* clean up premium badge component\n\n* add provider to desktop settings\n\n* rename prop.\n\n* add provider to send component\n\n* fix storybook\n\n* fix test\n\n* move dependency to new send dropdown component\n\n* Revert \"move dependency to new send dropdown component\"\n\nThis reverts commit f134526279c78c38c1621e308d8e07da63f697f4.\n\n* remove hasPremium",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJo0sutCRC1aQ7uu5UhlAAAk9UQAAsbXkFX1ZdBqrPUDpYESaJG\nEQQ20DdxS5J4N6G5I/pnYgWY2fOepdUY85026PmvqFMaJnZyRZYHroEFkDK5kr6I\nrHjLVqQ8xRI7yAF1AcWgHGwqZF3xGFY36WQovVj1dtwP+c0wGKqNhJUzvgNhvCGH\nujiNbMdKAIWRd0v67nysKdfdA8WEAqg3r+2VUOI+1n595wfHTwhWiKlFHgZV9eVY\nwEU34DFvU3E1m+P2C6qVyEyPhkr7ZTrXlQNPb14WeRRLzoRvjO7OK6LSwgCRScwI\nJz5jZYOfXTz50aHtBdVO8aJsnFmrfheHs/4Cz/YQWHxgWylDmMVZOL32ZwZxc1sa\n47/OMS68UVCioWBxlv6djcXXZ8c0jyXeMtA9mP1ORFIyd3pduIAS2pr/AWKEPmrd\n5pPEtWRouB89QGkONFJGUdJwNc5jwGnTv5MISLL9QUht30FaR/Ma6+JdaPPcgbXf\nFvGZ0Q+fEp+eL6bnip20j5f1cDxYSNZWupifXxwmrWDiwbM6cndyhXfjXMn9HxIr\nf+jMNv+rF9OWljU55Kr/lUqPEvSXt9NcPkv1KlfAztAFVGg0TmK+4F+U8Q9Sfqfa\n+JtB74OctCZTBykhySkpw9Xr2gBkG9N8M5cnOnKFziv6y24hk+rHDIN4eh/EnHEN\nMMGvg7/9wBHxdSii4h0/\n=B59H\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-09-23T16:32:46Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/6024f6eef21c8c6e6502a562ae7a5acc5ee23d7a",
+      "node_id": "C_kwDOAzDwU9oAKDYwMjRmNmVlZjIxYzhjNmU2NTAyYTU2MmFlN2E1YWNjNWVlMjNkN2E",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/7313a5f2a38264e9f904079b81cf476f9d6928c3",
+          "sha": "7313a5f2a38264e9f904079b81cf476f9d6928c3",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/7313a5f2a38264e9f904079b81cf476f9d6928c3"
+        }
+      ],
+      "sha": "6024f6eef21c8c6e6502a562ae7a5acc5ee23d7a",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/6024f6eef21c8c6e6502a562ae7a5acc5ee23d7a"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/166539328?v=4",
+        "events_url": "https://api.github.com/users/jaasen-livefront/events{/privacy}",
+        "followers_url": "https://api.github.com/users/jaasen-livefront/followers",
+        "following_url": "https://api.github.com/users/jaasen-livefront/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jaasen-livefront/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/jaasen-livefront",
+        "id": 166539328,
+        "login": "jaasen-livefront",
+        "node_id": "U_kgDOCe0wQA",
+        "organizations_url": "https://api.github.com/users/jaasen-livefront/orgs",
+        "received_events_url": "https://api.github.com/users/jaasen-livefront/received_events",
+        "repos_url": "https://api.github.com/users/jaasen-livefront/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/jaasen-livefront/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jaasen-livefront/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/jaasen-livefront",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/db9061d120441a6f7cff5aba72e97ee65fef87a6/comments",
+      "commit": {
+        "author": {
+          "date": "2025-09-11T19:15:29Z",
+          "email": "166539328+jaasen-livefront@users.noreply.github.com",
+          "name": "Jordan Aasen"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-09-11T19:15:29Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-25633] - [Defect] Fix premium badge in totp (#16373)\n\n* fixes to premium upgrade\n\n* revert change to dialog\n\n* handle premium upgrade prompt redirect in AC\n\n* use new input/output api",
+        "tree": {
+          "sha": "76dd0e8a0b6f74795a68d28572646960a4254c12",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/76dd0e8a0b6f74795a68d28572646960a4254c12"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/db9061d120441a6f7cff5aba72e97ee65fef87a6",
+        "verification": {
+          "payload": "tree 76dd0e8a0b6f74795a68d28572646960a4254c12\nparent 31d5b639e948635863b9b305db0806fb54f35e82\nauthor Jordan Aasen <166539328+jaasen-livefront@users.noreply.github.com> 1757618129 -0700\ncommitter GitHub <noreply@github.com> 1757618129 -0700\n\n[PM-25633] - [Defect] Fix premium badge in totp (#16373)\n\n* fixes to premium upgrade\n\n* revert change to dialog\n\n* handle premium upgrade prompt redirect in AC\n\n* use new input/output api",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJowx/RCRC1aQ7uu5UhlAAALpsQAJTpQrvAri/S/gut49MGb1rg\nEij0GRr2Xa3XUZ8M78M+1XabQDlbU8EZvkCoHl0aKzRqPvyGN/QbnKCWpX8Ngz0l\nzD0fjSiUGlwDNbMkkBxlxrPcRA8LxdlxcjrrrPn49phICsDwdxojhmUCrsoxvn36\nNrErjpxuxon+dF1ruE3u7BXkg6kViz4XltWIdNBW/HhZkRQTx1g0548IFlovE+R5\n/Mz+SRSW4xNGYETEaWi9OyFJOaEn79S+kGb2SImN21CSG3xbLOLt5kYC1C+nKQAV\nXgEl9EMBRGkog7mGJgZwlpgs3FJ06Oe/Vg6GnyRx96mAhuV2NSFe6MTT9K0bc4Bj\nM534Kkq/7ePDFapgX6t24B9NH7jw5YCxYaPdjo6scjX8Mdo+huCgeS+WZ0lFrEly\nyoEKcSy5J5juRWcQUFdo9cCClkJGW2YSmf//T4ftcwz/ggIDXKrCjLQiBXz2oacC\nOdBw6Qu8TRs86N9cWh9lig1LdOLhujQIOthFqh5Gfo/hyGNRGXflb9Dt7U6qveqT\nz+2x22d03UHFpNs6Npk810uxpRHq8mLsgrVOxV3RxIGx+I2EzMSvqc4IH22Pg61+\nwFhGzr+KsVfQIE0PiMKMGNskAkFcrTAa/odYMGWJcZ9on33NKAHY5oya5tSMfKk0\nhmffk6pZEpwEDiWkifV9\n=9x+h\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-09-11T19:15:30Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/db9061d120441a6f7cff5aba72e97ee65fef87a6",
+      "node_id": "C_kwDOAzDwU9oAKGRiOTA2MWQxMjA0NDFhNmY3Y2ZmNWFiYTcyZTk3ZWU2NWZlZjg3YTY",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/31d5b639e948635863b9b305db0806fb54f35e82",
+          "sha": "31d5b639e948635863b9b305db0806fb54f35e82",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/31d5b639e948635863b9b305db0806fb54f35e82"
+        }
+      ],
+      "sha": "db9061d120441a6f7cff5aba72e97ee65fef87a6",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/db9061d120441a6f7cff5aba72e97ee65fef87a6"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/5691612?v=4",
+        "events_url": "https://api.github.com/users/coltonhurst/events{/privacy}",
+        "followers_url": "https://api.github.com/users/coltonhurst/followers",
+        "following_url": "https://api.github.com/users/coltonhurst/following{/other_user}",
+        "gists_url": "https://api.github.com/users/coltonhurst/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/coltonhurst",
+        "id": 5691612,
+        "login": "coltonhurst",
+        "node_id": "MDQ6VXNlcjU2OTE2MTI=",
+        "organizations_url": "https://api.github.com/users/coltonhurst/orgs",
+        "received_events_url": "https://api.github.com/users/coltonhurst/received_events",
+        "repos_url": "https://api.github.com/users/coltonhurst/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/coltonhurst/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/coltonhurst/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/coltonhurst",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/896f54696b1dd8891d90e884476768a9004d7aee/comments",
+      "commit": {
+        "author": {
+          "date": "2025-09-04T16:33:39Z",
+          "email": "colton@coltonhurst.com",
+          "name": "Colton Hurst"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-09-04T16:33:39Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-24158] Add Premium Check (#16042)\n\n* [PM-24158] Add initial premium check\n\n* [PM-24158] Add premium membership dialog fix\n\n* [PM-24158] Small updates\n\n* [PM-24158] Set hasPremium to false upon initialization\n\n* [PM-24158] Partial update to settings component tests\n\n* [PM-24158] Fix billing mocked return value and add mac OS autotype test\n\n* [PM-24158] Add missing premium checks\n\n* [PM-24158] Update provider\n\n* [PM-24158] Renamed autotype resolved value\n\n* [PM-24158] Update missed resolvedAutotypeEnabled refactor\n\n* [PM-24158] Fix tests",
+        "tree": {
+          "sha": "d91ea781ff0fccf9b88d80f47040ce7a7b8b570d",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/d91ea781ff0fccf9b88d80f47040ce7a7b8b570d"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/896f54696b1dd8891d90e884476768a9004d7aee",
+        "verification": {
+          "payload": "tree d91ea781ff0fccf9b88d80f47040ce7a7b8b570d\nparent 10a5eba05f193ea695918aad2e737cee21eff68f\nauthor Colton Hurst <colton@coltonhurst.com> 1757003619 -0700\ncommitter GitHub <noreply@github.com> 1757003619 -0400\n\n[PM-24158] Add Premium Check (#16042)\n\n* [PM-24158] Add initial premium check\n\n* [PM-24158] Add premium membership dialog fix\n\n* [PM-24158] Small updates\n\n* [PM-24158] Set hasPremium to false upon initialization\n\n* [PM-24158] Partial update to settings component tests\n\n* [PM-24158] Fix billing mocked return value and add mac OS autotype test\n\n* [PM-24158] Add missing premium checks\n\n* [PM-24158] Update provider\n\n* [PM-24158] Renamed autotype resolved value\n\n* [PM-24158] Update missed resolvedAutotypeEnabled refactor\n\n* [PM-24158] Fix tests",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoub9jCRC1aQ7uu5UhlAAAb58QAJGnXDBlHgupnj5axRj6GTt/\na5Y8pnCuewkRla8JFVEvyFGyczAkpDnZ4tqhc9soXSFk3jf54Za6770SKKH3DEyl\nqO6xxed13x2xcukybLdS3iYntkhqYGKEpkXUU2fSaRX1O3qXNb/BR/XEeLzdln68\nOVKIVdJwmnothirkz98B5teBu0QS4VEUfHfgW9bh/fHkCqyJulsqeiaZuPrJt8fd\n1MoIHOpIjmKBxR6cK6453enkxOPac6wdA1ajSsNYqb5BQxpyeT125Bexow6QiRGQ\nImJmZnOyX507lKjBmJXebgDXFn9mV9u3kEzjmzM8o9VVQidZJKrakpdBwJeL/SAE\n2IsapP/+fthL5M0O/cSIegm8gDBMvZKE6a5YFMxSaV9AZUwCniea6ZBP3QfOnSgx\nqeWQEJp0teQCW2W3eOTJr764ddZh4Gg1DNk03yxK501zTuscrCWERRJDTggK/562\nLryKULvDb8bfNU43hAAYi49Bf34yS/+jikI3HCCw1o11qWI1YKRCI+t8C/RUBfcI\nUnkw9imXRWR+5TrlqKjKUqhlE1fXunExxmOYVON43/7qQzGBINjZBAQRVueMR6jo\nh2ynQ4wgnaZ7J3+JC5KWdHIbAm4BHlTHURAccclDg81tirziaVibhapJfCFYODM/\nSE9H9r7oP8iug6UUubZD\n=EL0V\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-09-04T16:33:40Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/896f54696b1dd8891d90e884476768a9004d7aee",
+      "node_id": "C_kwDOAzDwU9oAKDg5NmY1NDY5NmIxZGQ4ODkxZDkwZTg4NDQ3Njc2OGE5MDA0ZDdhZWU",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/10a5eba05f193ea695918aad2e737cee21eff68f",
+          "sha": "10a5eba05f193ea695918aad2e737cee21eff68f",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/10a5eba05f193ea695918aad2e737cee21eff68f"
+        }
+      ],
+      "sha": "896f54696b1dd8891d90e884476768a9004d7aee",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/896f54696b1dd8891d90e884476768a9004d7aee"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/137855?v=4",
+        "events_url": "https://api.github.com/users/Hinton/events{/privacy}",
+        "followers_url": "https://api.github.com/users/Hinton/followers",
+        "following_url": "https://api.github.com/users/Hinton/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Hinton/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/Hinton",
+        "id": 137855,
+        "login": "Hinton",
+        "node_id": "MDQ6VXNlcjEzNzg1NQ==",
+        "organizations_url": "https://api.github.com/users/Hinton/orgs",
+        "received_events_url": "https://api.github.com/users/Hinton/received_events",
+        "repos_url": "https://api.github.com/users/Hinton/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/Hinton/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Hinton/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/Hinton",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/ac49e594c1957734bfc14b5d0c04738d501d65f9/comments",
+      "commit": {
+        "author": {
+          "date": "2025-05-15T14:44:07Z",
+          "email": "Hinton@users.noreply.github.com",
+          "name": "Oscar Hinton"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-05-15T14:44:07Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Add standalone false to all non migrated (#14797)\n\nAdds standalone: false to all components since Angular is changing the default to true and we'd rather not have the angular PR change 300+ files.",
+        "tree": {
+          "sha": "2a625af77814cae4643b8504fe0f93369bd864e9",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/2a625af77814cae4643b8504fe0f93369bd864e9"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/ac49e594c1957734bfc14b5d0c04738d501d65f9",
+        "verification": {
+          "payload": "tree 2a625af77814cae4643b8504fe0f93369bd864e9\nparent 623deea4fcf6543e34b95950ee2b5d6eb0893e56\nauthor Oscar Hinton <Hinton@users.noreply.github.com> 1747320247 +0200\ncommitter GitHub <noreply@github.com> 1747320247 -0400\n\nAdd standalone false to all non migrated (#14797)\n\nAdds standalone: false to all components since Angular is changing the default to true and we'd rather not have the angular PR change 300+ files.\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoJf23CRC1aQ7uu5UhlAAAPBcQAKXg2Hj/4xl2gbakuhkeCl83\n9uPpSsZ+6yLMBV9BEgnQLxI+e4TvqC4e/exTrvumRptNZdfuRd99Z7CVgLG57pb2\n5eHjUk9N85bu55XDTOuhhes9ebgmztVCXD5zrE1OUEXCfGDknkhBHEP/pLpLUMJe\n2mpw+hY3Dg3Rt9JiiQQ2mG0m1Hv+NV5h+0h0+0zE79qc6OjwgGrRREne15/1utkj\nYx1PCQzZUsZ1d7SI5gdzpmrqtIb/naZGTKowE+8ZEkfPE6ibvmE9hagZ/sMRJ/Pu\nSD2MtU4ocZFsfCTO2CEoZtcFDZNf+4ZujW23MEpqc+eNSUgauXXY8MGsaO1LL/EU\nLgmRiXGekVFaA2gAfstTIkJ36vFZi1o7KkBZlDkB5/0qXi5r4gQzEk4igrE7UR46\nanntl0O1n5vhi/tBwzZ3NBaypFpPelmhGYq7UpyzQqES3EaIxTT9WKRPgoz1J0dk\n7WjD8qEeOnXavrC+Y4SSqK0keZJR8SaFIW2HvmpKMqHGf3pow7QtQJaG1K8W//wV\ne0sq0wybbYnNTpTk8wTkKmC7Xy6DjTjaaKGYqnCufT78dyaZwfAYaH2FZuL/Tx2w\nmwXaRFI5SuNl0BrFBD9gv2wRFMwCqBSHWd4vhIGwb/kSb1AQ5PLLM54WSyk8+td2\nsWdjIxNvcB+KWzyKhd5j\n=ehIU\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-05-15T14:44:11Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/ac49e594c1957734bfc14b5d0c04738d501d65f9",
+      "node_id": "C_kwDOAzDwU9oAKGFjNDllNTk0YzE5NTc3MzRiZmMxNGI1ZDBjMDQ3MzhkNTAxZDY1Zjk",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/623deea4fcf6543e34b95950ee2b5d6eb0893e56",
+          "sha": "623deea4fcf6543e34b95950ee2b5d6eb0893e56",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/623deea4fcf6543e34b95950ee2b5d6eb0893e56"
+        }
+      ],
+      "sha": "ac49e594c1957734bfc14b5d0c04738d501d65f9",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/ac49e594c1957734bfc14b5d0c04738d501d65f9"
+    }
+  ],
+  "fetched_utc": "2026-11-14T17:09:28.066456+00:00",
+  "link_header": null,
+  "rate_remaining": null,
+  "sha256": "952daac9d8651ee11196c7d9b765e6e45a9a5de30426f08a3d133c4383a48fb3",
+  "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=apps%2Fdesktop%2Fsrc%2Fbilling%2Fapp%2Faccounts%2F&since=2025-01-29T16%3A09%3A21Z&until=2026-01-29T16%3A09%3A20Z&per_page=100"
+}

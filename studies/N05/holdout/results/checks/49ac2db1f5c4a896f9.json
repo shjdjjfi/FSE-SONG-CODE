@@ -1,0 +1,30 @@
+{
+  "key": "49ac2db1f5c4a896f9",
+  "args": {
+    "crate": "tower",
+    "version": "0.5.2",
+    "id": "0b9a0622b2b03524",
+    "profile": "candidate",
+    "features": [
+      "buffer",
+      "discover",
+      "filter",
+      "hedge",
+      "load",
+      "load-shed",
+      "log",
+      "timeout"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.7456,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "0c6ae8709237ed757eb684107ae52707de3a52bb839d0ba3fc8b30aa6675bda8",
+  "manifest_sha256": "c0e31ac473bf273bc98149ac3b03d18253449e9ddc21f14cf29881ec54037747",
+  "log_file": "holdout/results/check_logs/49ac2db1f5c4a896f9.txt.gz"
+}

@@ -1,0 +1,25 @@
+{
+  "key": "d6f63c2a3325db697f",
+  "args": {
+    "crate": "ratatui",
+    "version": "0.29.0",
+    "id": "69cf5018e5c5b0ab",
+    "profile": "candidate",
+    "features": [
+      "all-widgets",
+      "palette",
+      "termion"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 1.7575,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "2f5b2dc52bbf66bd5823771969fb01dce6cf668373cc3d640aada5f129da5ae3",
+  "manifest_sha256": "fc8d6879be2c306bd76c77c91d4f2b3f83d0b8d4845c1c7692e26ba1655f1543",
+  "log_file": "prospective/results/check_logs/d6f63c2a3325db697f.txt.gz"
+}

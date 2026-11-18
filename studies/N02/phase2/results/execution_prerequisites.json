@@ -1,0 +1,19 @@
+{
+  "environment": "this isolated execution workspace, NOT user's own host",
+  "docker_cli": false,
+  "podman_cli": false,
+  "kubectl_cli": false,
+  "kind_cli": false,
+  "k3s_cli": false,
+  "minikube_cli": false,
+  "docker_socket": false,
+  "cgroup2_mount": false,
+  "effective_capabilities_hex": "0000000000000000",
+  "user_namespace_available": {
+    "exit_code": 0,
+    "stderr_last": ""
+  },
+  "configured_kubeconfig": false,
+  "actual_k8s_cluster_available": false,
+  "interpretation": "No real Pod / native kubelet experiment conducted if actual_k8s_cluster_available=false"
+}

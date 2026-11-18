@@ -1,0 +1,24 @@
+{
+  "idea": "N04 — Recovering Flaky Test History Across Test Identity Changes",
+  "date": "2026-11-15",
+  "submission_claims_complete": false,
+  "reasons_not_complete": [
+    "No source-linked independently observed production test-quarantine actions",
+    "No independent maintainer-adjudicated successor-instance oracle for the IDoFT sample",
+    "Raw IDoFT Deleted-label false transfer = 4/9, violating the prespecified <=2% safety constraint",
+    "Project holdout has zero independently adjudicated successor-FQN positives",
+    "No identifiable production CI wall-clock, cost or quarantine policy improvement"
+  ],
+  "completed": [
+    "FTW 11 tracks and 4,654,230 repeated outcomes, aligned by Git ancestor order",
+    "Six manually audited natural source boundary test cases",
+    "IDoFT 74 cases from 7 repositories with 8 baselines/ablations",
+    "Three-seed, event-cluster confidence audit",
+    "240 real pre/post Java-WebSocket testcase results and 27 source/runtime parameter candidate links",
+    "Three actual pytest 8.4.2 lastfailed cache replays",
+    "62 deduplicated real Actions failed-candidate runs independently audited",
+    "Offline hypothetical quarantine policy feasibility replay"
+  ],
+  "status": "PILOT_COMPLETED_STOP_LOSS_TRIPPED",
+  "primary_reporting_rule": "Do not claim FSE Industry Track research is empirically complete. Keep raw original Deleted labels and filtered sensitivity analysis side-by-side."
+}

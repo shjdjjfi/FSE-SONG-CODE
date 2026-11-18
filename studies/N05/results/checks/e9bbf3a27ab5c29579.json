@@ -1,0 +1,48 @@
+{
+  "key": "e9bbf3a27ab5c29579",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "81a01fc7b68c2228",
+    "profile": "candidate",
+    "features": [
+      "net"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.8463,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio::sync::mpsc`",
+      "rendered": "error[E0432]: unresolved import `tokio::sync::mpsc`\n --> src/main.rs:1:5\n  |\n1 | use tokio::sync::mpsc;\n  |     ^^^^^^^^^^^^^^^^^ no `mpsc` in `sync`\n  |\nhelp: consider importing this module instead\n  |\n1 - use tokio::sync::mpsc;\n1 + use std::sync::mpsc;\n  |\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: could not find `main` in `tokio`",
+      "rendered": "error[E0433]: failed to resolve: could not find `main` in `tokio`\n --> src/main.rs:3:10\n  |\n3 | #[tokio::main]\n  |          ^^^^ could not find `main` in `tokio`\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0603",
+      "message": "module `sync` is private",
+      "rendered": "error[E0603]: module `sync` is private\n   --> src/main.rs:1:12\n    |\n  1 | use tokio::sync::mpsc;\n    |            ^^^^ private module\n    |\nnote: the module `sync` is defined here\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/lib.rs:546:5\n    |\n546 |     mod sync;\n    |     ^^^^^^^^\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:4:1\n  |\n4 | async fn main() {\n  | ^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 4
+    }
+  ],
+  "error_count": 4,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 4 previous errors\n",
+  "code_sha256": "6184a0eb63db28f8117a827b1ee7bc8c2f8008366b90003a16de3e3c3dcdcbe3",
+  "manifest_sha256": "25dd4a18b533cfd0d2e6e3b9fe191cfdf89bb83d0a4659124b0ed8efefbdb11b",
+  "log_file": "results/check_logs/e9bbf3a27ab5c29579.txt.gz"
+}

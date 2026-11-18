@@ -1,0 +1,40 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 0,
+  "bytes": 31943,
+  "control_flow_or_callback_lines": 2,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "-",
+      "code": "export type AnonLayoutMaxWidth = \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "export type AnonLayoutMaxWidth = \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "case \"4xl\":",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "return \"tw-max-w-4xl\";",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:46.635363+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 4,
+  "pr": 15620,
+  "repository": "bitwarden/clients",
+  "sha256": "b5843f10fa31c7305181ca4f6b1853f52b23b4aa10f7460b0a9fcc4ef3bf2e51",
+  "target_code_changed_lines": 4,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15620.patch"
+}

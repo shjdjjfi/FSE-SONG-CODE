@@ -1,0 +1,123 @@
+$ ["/workspace/scratch/2881099d856a/n22_tooling/node_modules/@oven/bun-linux-x64/bin/bun", "test", "test/v1-migration.test.ts", "--timeout", "30000"]
+exit=0
+bun test v1.3.1 (89fa0f34)
+[05:34:23.555] INFO (#152): database schema bootstrap started {
+  migrations: 48,
+}
+[05:34:23.573] INFO (#152): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 19,
+}
+[05:34:23.596] INFO (#158): database schema bootstrap started {
+  migrations: 48,
+}
+[05:34:23.601] INFO (#158): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 5,
+}
+[05:34:23.623] INFO (#165): database schema bootstrap started {
+  migrations: 48,
+}
+[05:34:23.628] INFO (#165): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 5,
+}
+[05:34:23.635] WARN (#165): Reassigned previous V2 session with missing project {
+  sessionID: "ses_orphan",
+  projectID: "missing-project",
+}
+[05:34:23.652] INFO (#171): database schema bootstrap started {
+  migrations: 48,
+}
+[05:34:23.656] INFO (#171): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 4,
+}
+[05:34:23.668] INFO (#177): database schema bootstrap started {
+  migrations: 48,
+}
+[05:34:23.672] INFO (#177): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 4,
+}
+[05:34:23.675] INFO (#183): database schema bootstrap started {
+  migrations: 48,
+}
+[05:34:23.682] INFO (#183): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 7,
+}
+[05:34:23.688] WARN (#183): Reassigned V1 session with missing project {
+  sessionID: "ses_orphan",
+  projectID: "missing-project",
+}
+[05:34:23.701] INFO (#189): database schema bootstrap started {
+  migrations: 48,
+}
+[05:34:23.706] INFO (#189): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 5,
+}
+[05:34:23.723] INFO (#197): database schema bootstrap started {
+  migrations: 48,
+}
+[05:34:23.729] INFO (#197): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 6,
+}
+[05:34:23.745] ERROR (#204): V1 migration failed {
+  cause: {
+    _id: "Cause",
+    failures: [
+      [Object ...]
+    ],
+  },
+}
+[05:34:23.760] INFO (#207): database schema bootstrap started {
+  migrations: 48,
+}
+[05:34:23.763] INFO (#207): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 3,
+}
+[05:34:23.791] INFO (#218): database schema bootstrap started {
+  migrations: 48,
+}
+[05:34:23.796] INFO (#218): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 5,
+}
+
+
+test/v1-migration.test.ts:
+(pass) V1Migration.transformSession > maps ordinary user text, agents, ignored fields, order, and timestamps [20.53ms]
+(pass) V1Migration.transformSession > maps embedded files and deterministic placeholders without external IO [3.28ms]
+(pass) V1Migration.transformSession > maps attachment-only source variants and uses resource URIs as unavailable labels [1.52ms]
+(pass) V1Migration.transformSession > splits mixed synthetic content deterministically and preserves adjacency [4.10ms]
+(pass) V1Migration.transformSession > preserves assistant content, model, usage, finish, snapshots, and marker filtering [4.36ms]
+(pass) V1Migration.transformSession > normalizes every tool state [3.80ms]
+(pass) V1Migration.transformSession > appends a legacy tool notice naming only the renamed or removed tools that were called [1.29ms]
+(pass) V1Migration.transformSession > omits the legacy tool notice when no legacy tools were called or they precede a compaction [2.57ms]
+(pass) V1Migration.transformSession > normalizes assistant errors and finish reasons [2.39ms]
+(pass) V1Migration.transformSession > preserves every supported finish reason and omits an absent finish [1.14ms]
+(pass) V1Migration.transformSession > filters subtasks, collapses compactions, and keeps contiguous sequences [0.97ms]
+(pass) V1Migration.transformSession > serializes the retained compaction tail and preserves existing session selections [1.69ms]
+(pass) V1Migration.transformSession > skips malformed rows, reports exact identifiers, and still backfills session aggregates [1.97ms]
+(pass) V1Migration.transformSession > retains empty ordinary messages and omits failed compactions [0.70ms]
+(pass) V1Migration.transformSession > orders equal-time rows by ID and keeps SQL and payload timestamps consistent [0.44ms]
+(pass) V1Migration.transformSession > omits incomplete compactions and subtask assistants while retaining their aggregate usage [0.60ms]
+(pass) V1Migration database workflow > reports required and completed status and completes an empty database idempotently [43.88ms]
+(pass) V1Migration database workflow > yields while clearing stale events in batches [34.74ms]
+(pass) V1Migration database workflow > imports previous V2 sessions and messages containing apostrophes [29.87ms]
+(pass) V1Migration database workflow > imports previous V2 databases missing newer nullable columns [16.29ms]
+(pass) V1Migration database workflow > derives required status from the durable cursor [7.18ms]
+(pass) V1Migration database workflow > reassigns V1 sessions whose projects are missing to the global project [26.11ms]
+(pass) V1Migration database workflow > replaces projections containing apostrophes and checkpoints completion [20.94ms]
+(pass) V1Migration database workflow > rolls back one session atomically and resumes from the committed cursor [37.75ms]
+(pass) V1Migration database workflow > processes root, child, archived, empty, malformed-only, subtask-only, and incomplete-compaction sessions [30.91ms]
+(pass) V1Migration database workflow > serializes concurrent callers and migrates each session once [16.79ms]
+
+ 26 pass
+ 0 fail
+ 124 expect() calls
+Ran 26 tests across 1 file. [923.00ms]

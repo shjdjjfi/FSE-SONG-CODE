@@ -1,0 +1,21 @@
+{
+  "key": "7cfa18e45cbe27ad4b",
+  "args": {
+    "crate": "petgraph",
+    "version": "0.8.1",
+    "id": "3c140f56681561cd",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0971,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "7fd63bd875175c19e3e2a6547b7ea49ed82396b000dfd8a6eb1ec58a93c7e9f2",
+  "manifest_sha256": "174562d40673c3d058dcfea660521558917f3fbecfc3c570655e433528651c72",
+  "log_file": "results/check_logs/7cfa18e45cbe27ad4b.txt.gz"
+}

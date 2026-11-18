@@ -1,0 +1,29 @@
+{
+  "key": "b9cf00049a3ee629d3",
+  "args": {
+    "crate": "tower-http",
+    "version": "0.6.6",
+    "id": "0351acaee18dfeba",
+    "profile": "candidate",
+    "features": [
+      "compression-zstd",
+      "cors",
+      "fs",
+      "limit",
+      "map-request-body",
+      "propagate-header",
+      "util"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.9313,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "cdf48144aa8b86c11e5af4275ed08d00871d085183e64fd340b28376d4a24267",
+  "manifest_sha256": "76a67da69db7d8001129c3b7f129b6cfc1236a389e2e49d6de9d2caf8588e232",
+  "log_file": "holdout/results/check_logs/b9cf00049a3ee629d3.txt.gz"
+}

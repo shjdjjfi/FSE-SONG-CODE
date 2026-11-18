@@ -1,0 +1,67 @@
+{
+  "pr": 14850,
+  "pr_author": "hinton",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-05-20T09:29:39Z",
+      "requested_people": [
+        "hinton"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-05-20T09:29:39Z",
+      "requested_people": [
+        "dani-garcia",
+        "hinton",
+        "nick-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-05-27T08:58:05Z",
+      "requested_people": [
+        "dani-garcia",
+        "hinton",
+        "nick-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-06-23T10:29:03Z",
+      "requested_people": [
+        "dani-garcia",
+        "hinton"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-06-23T10:29:05Z",
+      "requested_people": [
+        "banrion",
+        "hinton",
+        "nick-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-10T15:41:26Z",
+      "requested_people": [
+        "banrion",
+        "dani-garcia",
+        "hinton",
+        "nick-livefront"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "50b6f0e05797e1719999223e8c0111a5747d270e765ef81c634c4e72e53387cc",
+  "url": "https://github.com/bitwarden/clients/pull/14850"
+}

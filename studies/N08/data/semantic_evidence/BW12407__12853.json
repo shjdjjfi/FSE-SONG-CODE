@@ -1,0 +1,60 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 3,
+  "bytes": 34228,
+  "control_flow_or_callback_lines": 3,
+  "event": "BW12407",
+  "examples": [
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "const lastProcessReload = await this.biometricStateService.getLastProcessReload();",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "(await this.biometricStateService.getLastProcessReload()) == null ||",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "Date.now() - (await this.biometricStateService.getLastProcessReload()).getTime() >",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "AUTOPROMPT_BIOMETRICS_PROCESS_RELOAD_DELAY",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "lastProcessReload == null ||",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "isNaN(lastProcessReload.getTime()) ||",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "Date.now() - lastProcessReload.getTime() > AUTOPROMPT_BIOMETRICS_PROCESS_RELOAD_DELAY",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:53.631915+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/12407",
+  "noncomment_nonimport_changed_lines": 7,
+  "pr": 12853,
+  "repository": "bitwarden/clients",
+  "sha256": "17d6458fab848053ef6b6d43c17d7e4a0a883a5b424191514a6e2cbdd0a4cfd9",
+  "target_code_changed_lines": 8,
+  "target_files": [
+    "libs/key-management/src/angular/lock/components/lock.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/12853.patch"
+}

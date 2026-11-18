@@ -1,0 +1,21 @@
+{
+  "key": "93f9c83459cf8832ab",
+  "args": {
+    "crate": "serde_with",
+    "version": "3.12.0",
+    "id": "06ed065aeebdaaa3",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.1556,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "a59e68caacfa9588a651508dc454ebe6998fb57798b61bc8395b5426a87617dd",
+  "manifest_sha256": "3ba2ae6b3f0e29f2e17cea600835e14736a5461c6af3efa26b8d74df510cdf1b",
+  "log_file": "prospective/results/check_logs/93f9c83459cf8832ab.txt.gz"
+}

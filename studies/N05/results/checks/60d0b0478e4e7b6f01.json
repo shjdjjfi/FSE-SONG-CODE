@@ -1,0 +1,21 @@
+{
+  "key": "60d0b0478e4e7b6f01",
+  "args": {
+    "crate": "hyper",
+    "version": "1.6.0",
+    "id": "cc50713a62b46ad7",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0651,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "2556bfcf96e5edf775c9ea63147a58d499e25ab41d3f28f4cb06cad7a2853935",
+  "manifest_sha256": "b210c38e9ef45eb59082b79c2c0dddcfff3c85527f37df6221b2657ac8923b7a",
+  "log_file": "results/check_logs/60d0b0478e4e7b6f01.txt.gz"
+}

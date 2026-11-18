@@ -1,0 +1,63 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 4,
+  "bytes": 7616,
+  "control_flow_or_callback_lines": 8,
+  "event": "BW14571",
+  "examples": [
+    {
+      "change": "-",
+      "code": "return this.cipherService.getAllFromApiForOrganization(this.organization.id);",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/exposed-passwords-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "return this.cipherService.getAllFromApiForOrganization(this.organization.id, true);",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/exposed-passwords-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "return this.cipherService.getAllFromApiForOrganization(this.organization.id);",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/reused-passwords-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "return this.cipherService.getAllFromApiForOrganization(this.organization.id, true);",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/reused-passwords-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "return this.cipherService.getAllFromApiForOrganization(this.organization.id);",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/unsecured-websites-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "return this.cipherService.getAllFromApiForOrganization(this.organization.id, true);",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/unsecured-websites-report.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "return this.cipherService.getAllFromApiForOrganization(this.organization.id);",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/weak-passwords-report.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "return this.cipherService.getAllFromApiForOrganization(this.organization.id, true);",
+      "file": "apps/web/src/app/dirt/reports/pages/organizations/weak-passwords-report.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:39.974346+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/14571",
+  "noncomment_nonimport_changed_lines": 8,
+  "pr": 16987,
+  "repository": "bitwarden/clients",
+  "sha256": "029171f93e43996b89889ae3e20806b7cc4602624b53877358b8262571fca213",
+  "target_code_changed_lines": 8,
+  "target_files": [
+    "apps/web/src/app/dirt/reports/pages/organizations/exposed-passwords-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/organizations/reused-passwords-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/organizations/unsecured-websites-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/organizations/weak-passwords-report.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/16987.patch"
+}

@@ -1,0 +1,42 @@
+{
+  "fetched_utc": "2026-11-14T17:12:15.763084+00:00",
+  "merged_at": "2025-01-30T10:20:17Z",
+  "opened_at": "2025-01-27T18:14:40Z",
+  "pr": 13093,
+  "raw_html_sha256": "c3a8d250f48e3c0c19106614dfaa2f9779e3f6c02488768b8b26ce0d8d4adf43",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 6,
+  "reviews": [
+    {
+      "login": "Thomas-Avery",
+      "state": "COMMENTED",
+      "submitted_at": "2025-01-27T21:11:24Z"
+    },
+    {
+      "login": "Thomas-Avery",
+      "state": "COMMENTED",
+      "submitted_at": "2025-01-28T15:43:07Z"
+    },
+    {
+      "login": "merissaacosta",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-28T16:26:42Z"
+    },
+    {
+      "login": "merissaacosta",
+      "state": "COMMENTED",
+      "submitted_at": "2025-01-28T16:27:31Z"
+    },
+    {
+      "login": "Thomas-Avery",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-28T16:32:59Z"
+    },
+    {
+      "login": "coroiu",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-30T10:12:14Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/13093"
+}

@@ -1,0 +1,28 @@
+{
+  "key": "1881cc840b75042844",
+  "args": {
+    "crate": "clap_complete",
+    "version": "4.5.55",
+    "id": "4e95fa47b597a0db",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0564,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `clap`",
+      "rendered": "error[E0432]: unresolved import `clap`\n --> src/main.rs:3:5\n  |\n3 | use clap::Command;\n  |     ^^^^ use of unresolved module or unlinked crate `clap`\n  |\n  = help: if you wanted to use a crate named `clap`, use `cargo add clap` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_clap_complete_consumer` (bin \"n05_clap_complete_consumer\") due to 1 previous error; 1 warning emitted\n",
+  "code_sha256": "a496ddae686f81674538cf204b52bdbd5256c6d04eeaddd24f608422c901b13d",
+  "manifest_sha256": "619307c0d259f4794c8295864ec3a2b91a8719b735cbe36a2c24cd3b3694ce5c",
+  "log_file": "prospective/results/check_logs/1881cc840b75042844.txt.gz"
+}

@@ -1,0 +1,22 @@
+{
+  "fetched_utc": "2026-11-14T17:21:01.741677+00:00",
+  "merged_at": "2026-01-29T18:45:50Z",
+  "opened_at": "2026-01-29T12:03:40-05:00",
+  "pr": 117090,
+  "raw_html_sha256": "f76a1abe1f0ce6d998dd582376c44610e7a8e8e51e0694cef04fbdea8dcd3d82",
+  "repo": "grafana/grafana",
+  "review_count_visible": 2,
+  "reviews": [
+    {
+      "login": "yuri-tceretian",
+      "state": "COMMENTED",
+      "submitted_at": "2026-01-29T18:00:15Z"
+    },
+    {
+      "login": "yuri-tceretian",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-29T18:06:41Z"
+    }
+  ],
+  "source_url": "https://github.com/grafana/grafana/pull/117090"
+}

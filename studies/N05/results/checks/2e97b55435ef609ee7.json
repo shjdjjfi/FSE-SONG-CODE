@@ -1,0 +1,34 @@
+{
+  "key": "2e97b55435ef609ee7",
+  "args": {
+    "crate": "sqlx",
+    "version": "0.8.6",
+    "id": "4ec1d01865cb7837",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2345,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `async_std`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `async_std`\n --> src/main.rs:5:3\n  |\n5 | #[async_std::main] // Requires the `attributes` feature of `async-std`\n  |   ^^^^^^^^^ use of unresolved module or unlinked crate `async_std`\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:8:1\n  |\n8 | async fn main() -> Result<(), sqlx::Error> {\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 8
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_sqlx_consumer` (bin \"n05_sqlx_consumer\") due to 2 previous errors\n",
+  "code_sha256": "4541751da60d84681b494389500eaf8920ef083772f473de2e834492b62ffcf4",
+  "manifest_sha256": "21a8c3a1b68180287b8a95913faa53343d0edf5b4ac1fcdc3565a6eda228f5fc",
+  "log_file": "results/check_logs/2e97b55435ef609ee7.txt.gz"
+}

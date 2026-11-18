@@ -1,0 +1,135 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 2,
+  "bytes": 43065,
+  "control_flow_or_callback_lines": 5,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "+",
+      "code": "alertingNotify \"github.com/grafana/alerting/notify\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/alerting/receivers/schema\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "Type:                  integration.Config.Type,",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "Type:                  string(integration.Config.Type()),",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "Version:               string(integration.Config.Version),",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "Version:               integration.Config.Version,",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "version := &integration.Version",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "if *version == \"\" {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "version = nil",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "config, err := ngmodels.IntegrationConfigFromType(integration.Type, version)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "t, err := alertingNotify.IntegrationTypeFromString(integration.Type)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "var config schema.IntegrationSchemaVersion",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "typeSchema, _ := alertingNotify.GetSchemaForIntegration(t)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "if integration.Version != \"\" {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "var ok bool",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "config, ok = typeSchema.GetVersion(schema.Version(integration.Version))",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "if !ok {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "return nil, nil, fmt.Errorf(\"invalid version %s for integration type %s\", integration.Version, integration.Type)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "} else {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "config = typeSchema.GetCurrentVersion()",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:58:00.578514+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 23,
+  "pr": 112010,
+  "repository": "grafana/grafana",
+  "sha256": "dda2aa1135d21844d8affaef5396fd8e22e14d929cc9e5b0cce37167f15956b9",
+  "target_code_changed_lines": 23,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/112010.patch"
+}

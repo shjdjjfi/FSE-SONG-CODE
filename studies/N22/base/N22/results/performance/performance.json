@@ -1,0 +1,106 @@
+{
+  "scope": "synthetic local scale, not real projects or industrial ROI",
+  "environment": {
+    "python": "3.12.14",
+    "sqlite": "3.53.1",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "sizes": [
+    {
+      "rows_per_application_table": 0,
+      "db_bytes": 24576,
+      "gates": {
+        "schema_plus_ledger": {
+          "rounds": 30,
+          "median_ms": 0.0106,
+          "p95_ms": 0.0114,
+          "max_ms": 0.0133
+        },
+        "row_count": {
+          "rounds": 30,
+          "median_ms": 0.0084,
+          "p95_ms": 0.027,
+          "max_ms": 0.0413
+        },
+        "contract_type_and_links": {
+          "rounds": 30,
+          "median_ms": 0.0086,
+          "p95_ms": 0.0088,
+          "max_ms": 0.0088
+        }
+      }
+    },
+    {
+      "rows_per_application_table": 100,
+      "db_bytes": 24576,
+      "gates": {
+        "schema_plus_ledger": {
+          "rounds": 30,
+          "median_ms": 0.0105,
+          "p95_ms": 0.011,
+          "max_ms": 0.011
+        },
+        "row_count": {
+          "rounds": 30,
+          "median_ms": 0.0084,
+          "p95_ms": 0.0087,
+          "max_ms": 0.1297
+        },
+        "contract_type_and_links": {
+          "rounds": 30,
+          "median_ms": 0.0226,
+          "p95_ms": 0.0243,
+          "max_ms": 0.043
+        }
+      }
+    },
+    {
+      "rows_per_application_table": 1000,
+      "db_bytes": 86016,
+      "gates": {
+        "schema_plus_ledger": {
+          "rounds": 30,
+          "median_ms": 0.0107,
+          "p95_ms": 0.0135,
+          "max_ms": 0.0367
+        },
+        "row_count": {
+          "rounds": 30,
+          "median_ms": 0.0089,
+          "p95_ms": 0.0091,
+          "max_ms": 0.0092
+        },
+        "contract_type_and_links": {
+          "rounds": 30,
+          "median_ms": 0.1436,
+          "p95_ms": 0.1637,
+          "max_ms": 0.1648
+        }
+      }
+    },
+    {
+      "rows_per_application_table": 10000,
+      "db_bytes": 593920,
+      "gates": {
+        "schema_plus_ledger": {
+          "rounds": 30,
+          "median_ms": 0.0106,
+          "p95_ms": 0.0109,
+          "max_ms": 0.0111
+        },
+        "row_count": {
+          "rounds": 30,
+          "median_ms": 0.0126,
+          "p95_ms": 0.0327,
+          "max_ms": 0.3637
+        },
+        "contract_type_and_links": {
+          "rounds": 30,
+          "median_ms": 1.372,
+          "p95_ms": 1.5853,
+          "max_ms": 1.9082
+        }
+      }
+    }
+  ]
+}

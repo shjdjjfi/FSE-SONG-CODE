@@ -1,0 +1,34 @@
+{
+  "key": "fe02e250c6d71ef0ef",
+  "args": {
+    "crate": "schemars",
+    "version": "0.8.22",
+    "id": "21a8defbe31833fe",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 8.6927,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde`",
+      "rendered": "error[E0432]: unresolved import `serde`\n --> src/main.rs:3:5\n  |\n3 | use serde::{Deserialize, Serialize};\n  |     ^^^^^ use of unresolved module or unlinked crate `serde`\n  |\n  = help: if you wanted to use a crate named `serde`, use `cargo add serde` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:23:16\n   |\n23 | println!(\"{}\", serde_json::to_string_pretty(&schema).unwrap());\n   |                ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 23
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_schemars_consumer` (bin \"n05_schemars_consumer\") due to 2 previous errors\n",
+  "code_sha256": "fc14333c54b6863f4bad25dd8f22f9a86c44997790bb28df3cfa3b40bc224832",
+  "manifest_sha256": "cefb1dd23018b6fd6998d55883b019cb521264dcf1f68024f1ffddc25914cf16",
+  "log_file": "prospective/results/check_logs/fe02e250c6d71ef0ef.txt.gz"
+}

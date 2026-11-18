@@ -1,0 +1,42 @@
+# Optional workflow template: place under .github/workflows/consumer-examples.yml
+# in a fork/collaborating repository. THIS PACKAGE HAS NOT DEPLOYED IT.
+name: Rust release example feature audit (advisory)
+on:
+  workflow_dispatch:
+    inputs:
+      package:
+        description: "crates.io published package name"
+        required: true
+        type: string
+      version:
+        description: "exact released package version"
+        required: true
+        type: string
+jobs:
+  advisory-release-check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.91.0
+      - uses: Swatinem/rust-cache@v2
+      - name: Check independent consumer snippets (does not fail the build)
+        env:
+          RELEASE_PACKAGE: ${{ inputs.package }}
+          RELEASE_VERSION: ${{ inputs.version }}
+        run: |
+          python3 industrial/consumer_gate.py \
+            --crate "$RELEASE_PACKAGE" \
+            --version "$RELEASE_VERSION" \
+            --limit 12
+      - name: Attach report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: consumer-example-audit
+          path: industrial/local_ci_runs/
+          if-no-files-found: warn

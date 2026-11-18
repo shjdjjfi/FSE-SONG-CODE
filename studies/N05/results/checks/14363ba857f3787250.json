@@ -1,0 +1,28 @@
+{
+  "key": "14363ba857f3787250",
+  "args": {
+    "crate": "serde",
+    "version": "1.0.219",
+    "id": "f2fc76eda58e95e0",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 1.8342,
+  "errors": [
+    {
+      "code": "E0554",
+      "message": "`#![feature]` may not be used on the stable release channel",
+      "rendered": "error[E0554]: `#![feature]` may not be used on the stable release channel\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.219/src/lib.rs:108:35\n    |\n108 | #![cfg_attr(feature = \"unstable\", feature(never_type))]\n    |                                   ^^^^^^^^^^^^^^^^^^^\n\n",
+      "line": 108
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `serde` (lib) due to 1 previous error\n",
+  "code_sha256": "e36ae2881d0c6f736115b790a53343457648c505fa434b84451c811b052bfe13",
+  "manifest_sha256": "231489c8d294a0c482edd468aa6cc5fc61c59b343313672fbba65de5eabcd4b3",
+  "log_file": "results/check_logs/14363ba857f3787250.txt.gz"
+}

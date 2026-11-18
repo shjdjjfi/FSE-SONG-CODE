@@ -1,0 +1,477 @@
+{
+  "N21": {
+    "metric": "recovery_source_units",
+    "seed_results": {
+      "17": {
+        "baseline": {
+          "independent_metric": 62,
+          "status": "SUCCEEDED",
+          "process_seconds": 27.095,
+          "event_file": "jobs/N21/17/baseline/attempt-1/events.json",
+          "event_sha256": "48b531b1c7a6cfd5f26b0c6bd7ac8337fb3825a3591a45ca9b6930bba7138989",
+          "details": {
+            "precise_artifacts_before_fallback": 2,
+            "precise_artifacts_after_fallback": 2,
+            "compile_seconds": 11.492,
+            "fault_cases": 2,
+            "negative_control": true
+          }
+        },
+        "method": {
+          "independent_metric": 31,
+          "status": "SUCCEEDED",
+          "process_seconds": 24.893,
+          "event_file": "jobs/N21/17/method/attempt-1/events.json",
+          "event_sha256": "a06b43da346496a0280cd65b509e0261a6b89bce2a5d16c01a8e4bc28715d95b",
+          "details": {
+            "precise_artifacts_before_fallback": 2,
+            "precise_artifacts_after_fallback": 2,
+            "compile_seconds": 8.039,
+            "fault_cases": 2,
+            "negative_control": true
+          }
+        },
+        "ablation": {
+          "independent_metric": 62,
+          "status": "SUCCEEDED",
+          "process_seconds": 28.543,
+          "event_file": "jobs/N21/17/ablation/attempt-1/events.json",
+          "event_sha256": "31cf57ab59d969d7c58f34e63c65b4004679951c2c918d7ebfd64b1076b77c2a",
+          "details": {
+            "precise_artifacts_before_fallback": 0,
+            "precise_artifacts_after_fallback": 2,
+            "compile_seconds": 13.334,
+            "fault_cases": 2,
+            "negative_control": true
+          }
+        }
+      },
+      "29": {
+        "baseline": {
+          "independent_metric": 62,
+          "status": "SUCCEEDED",
+          "process_seconds": 27.715,
+          "event_file": "jobs/N21/29/baseline/attempt-1/events.json",
+          "event_sha256": "214de35540a7be4cc4367446eb8762f7fd4641e21a922f92ada9dda1c8cb1681",
+          "details": {
+            "precise_artifacts_before_fallback": 2,
+            "precise_artifacts_after_fallback": 2,
+            "compile_seconds": 14.125,
+            "fault_cases": 2,
+            "negative_control": true
+          }
+        },
+        "method": {
+          "independent_metric": 31,
+          "status": "SUCCEEDED",
+          "process_seconds": 20.55,
+          "event_file": "jobs/N21/29/method/attempt-1/events.json",
+          "event_sha256": "fe6a3ff739366a70ef081a36b126a0e7f51fd78ba222a66563082250cc8d54a4",
+          "details": {
+            "precise_artifacts_before_fallback": 2,
+            "precise_artifacts_after_fallback": 2,
+            "compile_seconds": 7.663,
+            "fault_cases": 2,
+            "negative_control": true
+          }
+        },
+        "ablation": {
+          "independent_metric": 62,
+          "status": "SUCCEEDED",
+          "process_seconds": 26.749,
+          "event_file": "jobs/N21/29/ablation/attempt-1/events.json",
+          "event_sha256": "ee5e073f40b56fc204a96b788235a63e03d0502565992f22471d0dcb0da46c16",
+          "details": {
+            "precise_artifacts_before_fallback": 0,
+            "precise_artifacts_after_fallback": 2,
+            "compile_seconds": 10.556,
+            "fault_cases": 2,
+            "negative_control": true
+          }
+        }
+      },
+      "43": {
+        "baseline": {
+          "independent_metric": 62,
+          "status": "SUCCEEDED",
+          "process_seconds": 22.195,
+          "event_file": "jobs/N21/43/baseline/attempt-1/events.json",
+          "event_sha256": "826f9140042fa90211e1afa7bcacd957d1168d91f023c60880ebed73163d4bff",
+          "details": {
+            "precise_artifacts_before_fallback": 2,
+            "precise_artifacts_after_fallback": 2,
+            "compile_seconds": 9.916,
+            "fault_cases": 2,
+            "negative_control": true
+          }
+        },
+        "method": {
+          "independent_metric": 31,
+          "status": "SUCCEEDED",
+          "process_seconds": 20.127,
+          "event_file": "jobs/N21/43/method/attempt-1/events.json",
+          "event_sha256": "59726b03b2741d09fed7ef4394b31a872bdcc29c13e920aa63d20d688dec1dd5",
+          "details": {
+            "precise_artifacts_before_fallback": 2,
+            "precise_artifacts_after_fallback": 2,
+            "compile_seconds": 7.992,
+            "fault_cases": 2,
+            "negative_control": true
+          }
+        },
+        "ablation": {
+          "independent_metric": 62,
+          "status": "SUCCEEDED",
+          "process_seconds": 22.305,
+          "event_file": "jobs/N21/43/ablation/attempt-1/events.json",
+          "event_sha256": "835051becdf3a7229d59b5d1a30a027c2357c5b2032f3a666507f7b971c6076f",
+          "details": {
+            "precise_artifacts_before_fallback": 0,
+            "precise_artifacts_after_fallback": 2,
+            "compile_seconds": 9.908,
+            "fault_cases": 2,
+            "negative_control": true
+          }
+        }
+      }
+    },
+    "numeric_screen_pass": true,
+    "supplemental_wireit": {
+      "version": "0.14.12",
+      "unregistered_followup": true,
+      "oracle_clean_equivalent": {
+        "local": 2,
+        "none": 0,
+        "always": 2
+      },
+      "projects": 2,
+      "all_exit_zero": true,
+      "conditions": {
+        "local": "local cache with clean=if-file-deleted",
+        "none": "no cache with clean=if-file-deleted",
+        "always": "no cache with clean=true"
+      }
+    }
+  },
+  "N23": {
+    "metric": "triage_errors",
+    "seed_results": {
+      "17": {
+        "baseline": {
+          "independent_metric": 4,
+          "status": "SUCCEEDED",
+          "process_seconds": 13.932,
+          "event_file": "jobs/N23/17/baseline/attempt-1/events.json",
+          "event_sha256": "2943ab86db9dc55f9c40d88539a6c74c3cdf443c61cfda6555ceb98dada533a1",
+          "details": {
+            "n_probes": 12,
+            "reflective_changes": 4,
+            "customers": "controlled fixtures; modes repeated across seeds"
+          }
+        },
+        "method": {
+          "independent_metric": 0,
+          "status": "SUCCEEDED",
+          "process_seconds": 15.09,
+          "event_file": "jobs/N23/17/method/attempt-1/events.json",
+          "event_sha256": "edb435d9d78ed5123a4847780d23f6d7dc810049c7cafbf4dc102428e6b14044",
+          "details": {
+            "n_probes": 12,
+            "reflective_changes": 4,
+            "customers": "controlled fixtures; modes repeated across seeds"
+          }
+        },
+        "ablation": {
+          "independent_metric": 2,
+          "status": "SUCCEEDED",
+          "process_seconds": 15.18,
+          "event_file": "jobs/N23/17/ablation/attempt-1/events.json",
+          "event_sha256": "a1b3c9891e1ed3bdc5901e138a47bae8d961d5ba5190e42cf8e0d1ed43b5cb60",
+          "details": {
+            "n_probes": 12,
+            "reflective_changes": 4,
+            "customers": "controlled fixtures; modes repeated across seeds"
+          }
+        }
+      },
+      "29": {
+        "baseline": {
+          "independent_metric": 4,
+          "status": "SUCCEEDED",
+          "process_seconds": 14.356,
+          "event_file": "jobs/N23/29/baseline/attempt-1/events.json",
+          "event_sha256": "2665dedd1df9584c8b75d4266146f4283a2a220c7fcf8e63fbc88ac955626cd5",
+          "details": {
+            "n_probes": 12,
+            "reflective_changes": 4,
+            "customers": "controlled fixtures; modes repeated across seeds"
+          }
+        },
+        "method": {
+          "independent_metric": 0,
+          "status": "SUCCEEDED",
+          "process_seconds": 16.928,
+          "event_file": "jobs/N23/29/method/attempt-1/events.json",
+          "event_sha256": "e7dab246a60890d3d90e242f0feb8b6ea5ce4f18f7cbe017565f2545f262a3cc",
+          "details": {
+            "n_probes": 12,
+            "reflective_changes": 4,
+            "customers": "controlled fixtures; modes repeated across seeds"
+          }
+        },
+        "ablation": {
+          "independent_metric": 2,
+          "status": "SUCCEEDED",
+          "process_seconds": 16.265,
+          "event_file": "jobs/N23/29/ablation/attempt-1/events.json",
+          "event_sha256": "4cce12bf67c1b8387f109fca36c31e647c5e908d9fb7d0cf946ae2108bf4eb50",
+          "details": {
+            "n_probes": 12,
+            "reflective_changes": 4,
+            "customers": "controlled fixtures; modes repeated across seeds"
+          }
+        }
+      },
+      "43": {
+        "baseline": {
+          "independent_metric": 4,
+          "status": "SUCCEEDED",
+          "process_seconds": 16.616,
+          "event_file": "jobs/N23/43/baseline/attempt-1/events.json",
+          "event_sha256": "0fc3111ce6bd173ae61873f91ef53f6085056c30f6b38a02761019d8962506a8",
+          "details": {
+            "n_probes": 12,
+            "reflective_changes": 4,
+            "customers": "controlled fixtures; modes repeated across seeds"
+          }
+        },
+        "method": {
+          "independent_metric": 0,
+          "status": "SUCCEEDED",
+          "process_seconds": 15.8,
+          "event_file": "jobs/N23/43/method/attempt-1/events.json",
+          "event_sha256": "023e907acd84ac0f9147303555a40cd459a43d995f88f1abb2ce5550afdb0632",
+          "details": {
+            "n_probes": 12,
+            "reflective_changes": 4,
+            "customers": "controlled fixtures; modes repeated across seeds"
+          }
+        },
+        "ablation": {
+          "independent_metric": 2,
+          "status": "SUCCEEDED",
+          "process_seconds": 15.139,
+          "event_file": "jobs/N23/43/ablation/attempt-1/events.json",
+          "event_sha256": "96b8d53d660a6f5d22aafc2e797b55fa36bde9f33ea36c8d7c96846e1fd4cc17",
+          "details": {
+            "n_probes": 12,
+            "reflective_changes": 4,
+            "customers": "controlled fixtures; modes repeated across seeds"
+          }
+        }
+      }
+    },
+    "numeric_screen_pass": true
+  },
+  "N24": {
+    "metric": "decision_loss",
+    "seed_results": {
+      "17": {
+        "baseline": {
+          "independent_metric": 2,
+          "status": "SUCCEEDED",
+          "process_seconds": 48.655,
+          "event_file": "jobs/N24/17/baseline/attempt-1/events.json",
+          "event_sha256": "00e4a04e8b6e347ce14b6d113a4c76e69a83b0a79fba45b8610c26273f5a9146",
+          "details": {
+            "packages": {
+              "esbuild": {
+                "binary_exists": false,
+                "non_target_pin": "1.0.0",
+                "requested_variant_removed_in_old_npm": true
+              },
+              "@biomejs/biome": {
+                "binary_exists": false,
+                "non_target_pin": "1.0.0",
+                "requested_variant_removed_in_old_npm": true
+              }
+            }
+          }
+        },
+        "method": {
+          "independent_metric": 0,
+          "status": "SUCCEEDED",
+          "process_seconds": 75.424,
+          "event_file": "jobs/N24/17/method/attempt-1/events.json",
+          "event_sha256": "9a31395184eb890629854d2b7e0b1f79096e03c2403bb8efd918f35c78fc9b8b",
+          "details": {
+            "packages": {
+              "esbuild": {
+                "binary_exists": true,
+                "non_target_pin": "1.0.0",
+                "requested_variant_removed_in_old_npm": true
+              },
+              "@biomejs/biome": {
+                "binary_exists": true,
+                "non_target_pin": "1.0.0",
+                "requested_variant_removed_in_old_npm": true
+              }
+            }
+          }
+        },
+        "ablation": {
+          "independent_metric": 2,
+          "status": "SUCCEEDED",
+          "process_seconds": 31.141,
+          "event_file": "jobs/N24/17/ablation/attempt-1/events.json",
+          "event_sha256": "0eab9a6b5e29155c8a2cd9a03fe202c23d7281fbb6e97a77575ce5cbab958749",
+          "details": {
+            "packages": {
+              "esbuild": {
+                "binary_exists": true,
+                "non_target_pin": "1.1.1",
+                "requested_variant_removed_in_old_npm": true
+              },
+              "@biomejs/biome": {
+                "binary_exists": true,
+                "non_target_pin": "1.1.1",
+                "requested_variant_removed_in_old_npm": true
+              }
+            }
+          }
+        }
+      },
+      "29": {
+        "baseline": {
+          "independent_metric": 2,
+          "status": "SUCCEEDED",
+          "process_seconds": 38.063,
+          "event_file": "jobs/N24/29/baseline/attempt-1/events.json",
+          "event_sha256": "3120dce87a23eac0c1a60af8273aafb27f7f5cd3e22915e4cb2a1e0d8fbcd50c",
+          "details": {
+            "packages": {
+              "@biomejs/biome": {
+                "binary_exists": false,
+                "non_target_pin": "1.0.0",
+                "requested_variant_removed_in_old_npm": true
+              },
+              "rollup": {
+                "binary_exists": false,
+                "non_target_pin": "1.0.0",
+                "requested_variant_removed_in_old_npm": true
+              }
+            }
+          }
+        },
+        "method": {
+          "independent_metric": 0,
+          "status": "SUCCEEDED",
+          "process_seconds": 38.378,
+          "event_file": "jobs/N24/29/method/attempt-1/events.json",
+          "event_sha256": "78eb7b4982d3a5100b7cec037b1b0d2a1b17c7d94e52486e024158d57623d982",
+          "details": {
+            "packages": {
+              "@biomejs/biome": {
+                "binary_exists": true,
+                "non_target_pin": "1.0.0",
+                "requested_variant_removed_in_old_npm": true
+              },
+              "rollup": {
+                "binary_exists": true,
+                "non_target_pin": "1.0.0",
+                "requested_variant_removed_in_old_npm": true
+              }
+            }
+          }
+        },
+        "ablation": {
+          "independent_metric": 2,
+          "status": "SUCCEEDED",
+          "process_seconds": 30.191,
+          "event_file": "jobs/N24/29/ablation/attempt-1/events.json",
+          "event_sha256": "4db8144d3462818236efccd39ea4a477ed0ba7c1b2073d20c9bcbacb894106b9",
+          "details": {
+            "packages": {
+              "@biomejs/biome": {
+                "binary_exists": true,
+                "non_target_pin": "1.1.1",
+                "requested_variant_removed_in_old_npm": true
+              },
+              "rollup": {
+                "binary_exists": true,
+                "non_target_pin": "1.1.1",
+                "requested_variant_removed_in_old_npm": true
+              }
+            }
+          }
+        }
+      },
+      "43": {
+        "baseline": {
+          "independent_metric": 2,
+          "status": "SUCCEEDED",
+          "process_seconds": 29.724,
+          "event_file": "jobs/N24/43/baseline/attempt-1/events.json",
+          "event_sha256": "c6b5954742e3db58bbb433117f48dea1a8bc4d7386ec0cbb0367e2af2a546624",
+          "details": {
+            "packages": {
+              "esbuild": {
+                "binary_exists": false,
+                "non_target_pin": "1.0.0",
+                "requested_variant_removed_in_old_npm": true
+              },
+              "rollup": {
+                "binary_exists": false,
+                "non_target_pin": "1.0.0",
+                "requested_variant_removed_in_old_npm": true
+              }
+            }
+          }
+        },
+        "method": {
+          "independent_metric": 0,
+          "status": "SUCCEEDED",
+          "process_seconds": 31.024,
+          "event_file": "jobs/N24/43/method/attempt-1/events.json",
+          "event_sha256": "77e20892018d23fb8b0044eea5750bb97f2ce6a03e08fafa35928fda38381bfc",
+          "details": {
+            "packages": {
+              "esbuild": {
+                "binary_exists": true,
+                "non_target_pin": "1.0.0",
+                "requested_variant_removed_in_old_npm": true
+              },
+              "rollup": {
+                "binary_exists": true,
+                "non_target_pin": "1.0.0",
+                "requested_variant_removed_in_old_npm": true
+              }
+            }
+          }
+        },
+        "ablation": {
+          "independent_metric": 2,
+          "status": "SUCCEEDED",
+          "process_seconds": 33.841,
+          "event_file": "jobs/N24/43/ablation/attempt-1/events.json",
+          "event_sha256": "ff45b19aed9d4222530739d7b104bf3adb97352734559c6879f530106fe44adc",
+          "details": {
+            "packages": {
+              "esbuild": {
+                "binary_exists": true,
+                "non_target_pin": "1.1.1",
+                "requested_variant_removed_in_old_npm": true
+              },
+              "rollup": {
+                "binary_exists": true,
+                "non_target_pin": "1.1.1",
+                "requested_variant_removed_in_old_npm": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "numeric_screen_pass": true
+  }
+}

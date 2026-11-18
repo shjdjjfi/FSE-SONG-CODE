@@ -1,0 +1,26 @@
+{
+  "key": "d1b4b970a88f8d7777",
+  "args": {
+    "crate": "sqlparser",
+    "version": "0.56.0",
+    "id": "6980eb1a861e443d",
+    "profile": "candidate",
+    "features": [
+      "json_example",
+      "recursive-protection",
+      "std",
+      "visitor"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 18.7249,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "999a19c40c098a4170ea5704efd8d006a4c8314ae58a1073e43e24ece592e954",
+  "manifest_sha256": "14e35b6e058276bb2fdb3aa282fc57c679cefa10becd5375e70835e9be129d41",
+  "log_file": "prospective/results/check_logs/d1b4b970a88f8d7777.txt.gz"
+}

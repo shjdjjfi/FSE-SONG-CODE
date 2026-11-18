@@ -1,0 +1,1891 @@
+{
+  "collected": 93,
+  "entries": [
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 2,
+      "bytes": 10836,
+      "control_flow_or_callback_lines": 6,
+      "event": "BW10818",
+      "fetched_utc": "2026-11-14T23:56:34.555170+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+      "noncomment_nonimport_changed_lines": 9,
+      "pr": 12187,
+      "repository": "bitwarden/clients",
+      "sha256": "08d4ac3df2dcfcc616ff1acbc3a451f2ab1977601ed0bf024bcf001bc399e50e",
+      "target_code_changed_lines": 10,
+      "target_files": [
+        "apps/desktop/src/key-management/biometrics/biometric.unix.main.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/12187.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 1794233,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW10818",
+      "fetched_utc": "2026-11-14T23:56:35.001282+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 12235,
+      "repository": "bitwarden/clients",
+      "sha256": "48a603b8062ac9d434671e35c1467a7c98fa8e4a459124abb8e895b89a41b0a4",
+      "target_code_changed_lines": 8,
+      "target_files": [
+        "apps/desktop/src/key-management/biometrics/biometric.renderer-ipc.listener.ts",
+        "apps/desktop/src/key-management/biometrics/biometric.unix.main.ts",
+        "apps/desktop/src/key-management/biometrics/biometric.windows.main.ts",
+        "apps/desktop/src/key-management/biometrics/biometrics.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/12235.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 0,
+      "bytes": 6115,
+      "control_flow_or_callback_lines": 3,
+      "event": "BW10818",
+      "fetched_utc": "2026-11-14T23:56:34.550957+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+      "noncomment_nonimport_changed_lines": 3,
+      "pr": 12907,
+      "repository": "bitwarden/clients",
+      "sha256": "9394aafd194cd9a7642a15ae1067a3faffec345ef0754a6d867a758bc4cfcc32",
+      "target_code_changed_lines": 4,
+      "target_files": [
+        "apps/desktop/src/key-management/biometrics/biometrics.service.spec.ts",
+        "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/12907.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 17,
+      "bytes": 85087,
+      "control_flow_or_callback_lines": 16,
+      "event": "BW10818",
+      "fetched_utc": "2026-11-14T23:56:34.522433+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+      "noncomment_nonimport_changed_lines": 51,
+      "pr": 13039,
+      "repository": "bitwarden/clients",
+      "sha256": "4c3dc1a3568c9121d17c071e022e32f4cfc942b7448021d109984006690ac678",
+      "target_code_changed_lines": 61,
+      "target_files": [
+        "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts",
+        "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/13039.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 1,
+      "bytes": 41032,
+      "control_flow_or_callback_lines": 3,
+      "event": "BW10818",
+      "fetched_utc": "2026-11-14T23:56:34.472533+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+      "noncomment_nonimport_changed_lines": 11,
+      "pr": 13287,
+      "repository": "bitwarden/clients",
+      "sha256": "af8a9534d69ba982317520346cb28943d02a3faaaeb564a79beb68963a8a8975",
+      "target_code_changed_lines": 13,
+      "target_files": [
+        "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts",
+        "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.spec.ts",
+        "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/13287.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 3,
+      "bytes": 100016,
+      "control_flow_or_callback_lines": 2,
+      "event": "BW10818",
+      "fetched_utc": "2026-11-14T23:56:34.626920+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+      "noncomment_nonimport_changed_lines": 8,
+      "pr": 13598,
+      "repository": "bitwarden/clients",
+      "sha256": "350657fe450971f0c3065509ab724f08e8ac1cc8b83801f8e6d9df24a6562662",
+      "target_code_changed_lines": 10,
+      "target_files": [
+        "apps/desktop/src/key-management/biometrics/main-biometrics.service.spec.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/13598.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 7,
+      "bytes": 30094,
+      "control_flow_or_callback_lines": 2,
+      "event": "BW10818",
+      "fetched_utc": "2026-11-14T23:56:34.506909+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+      "noncomment_nonimport_changed_lines": 15,
+      "pr": 13609,
+      "repository": "bitwarden/clients",
+      "sha256": "11839e72ff72d30b36ba7be2928e25a2f65fc973059cdc731c9209ae07495b1f",
+      "target_code_changed_lines": 15,
+      "target_files": [
+        "apps/desktop/src/key-management/biometrics/biometrics.service.spec.ts",
+        "apps/desktop/src/key-management/biometrics/desktop.biometrics.service.ts",
+        "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts",
+        "apps/desktop/src/key-management/biometrics/main-biometrics.service.spec.ts",
+        "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts",
+        "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/13609.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 39,
+      "bytes": 108796,
+      "control_flow_or_callback_lines": 76,
+      "event": "BW10818",
+      "fetched_utc": "2026-11-14T23:56:34.566800+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+      "noncomment_nonimport_changed_lines": 217,
+      "pr": 14953,
+      "repository": "bitwarden/clients",
+      "sha256": "9cb2c804ec8699b53da2861d1d6d201e00e24b7c3f157fdf740cd213bd6cbede",
+      "target_code_changed_lines": 289,
+      "target_files": [
+        "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.spec.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/14953.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 2,
+      "bytes": 24510,
+      "control_flow_or_callback_lines": 5,
+      "event": "BW10818",
+      "fetched_utc": "2026-11-14T23:56:34.551285+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+      "noncomment_nonimport_changed_lines": 6,
+      "pr": 15047,
+      "repository": "bitwarden/clients",
+      "sha256": "d2b738f5ddbbac956ba0a9bb768fd6f59566c0c8adfbe4b317c98402c201d25f",
+      "target_code_changed_lines": 8,
+      "target_files": [
+        "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.spec.ts",
+        "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15047.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 5,
+      "bytes": 59479,
+      "control_flow_or_callback_lines": 55,
+      "event": "BW10818",
+      "fetched_utc": "2026-11-14T23:56:34.500394+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+      "noncomment_nonimport_changed_lines": 123,
+      "pr": 15070,
+      "repository": "bitwarden/clients",
+      "sha256": "7fd22ce9abab968a470288c905c77e4465839d3977ed999f7d46d2bc7a271622",
+      "target_code_changed_lines": 128,
+      "target_files": [
+        "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts",
+        "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.spec.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-mac.service.spec.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-mac.service.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.spec.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15070.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 68,
+      "bytes": 102814,
+      "control_flow_or_callback_lines": 167,
+      "event": "BW10818",
+      "fetched_utc": "2026-11-14T23:56:41.038903+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+      "noncomment_nonimport_changed_lines": 479,
+      "pr": 15140,
+      "repository": "bitwarden/clients",
+      "sha256": "8b50172ba546a25df9c5c3270f8cf48bd42d2a5c9ff21822d3fdc87eceeec883",
+      "target_code_changed_lines": 555,
+      "target_files": [
+        "apps/desktop/src/key-management/biometrics/desktop.biometrics.service.ts",
+        "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts",
+        "apps/desktop/src/key-management/biometrics/main-biometrics.service.spec.ts",
+        "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-mac.service.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.spec.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics.service.ts",
+        "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15140.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 67733,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW10818",
+      "fetched_utc": "2026-11-14T23:56:41.036887+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 15401,
+      "repository": "bitwarden/clients",
+      "sha256": "4f1c840e4152bbd5ad7beab155bc873b0d6534a4c1352fc7dcf73cc20a4b5641",
+      "target_code_changed_lines": 0,
+      "target_files": [
+        "apps/desktop/src/key-management/biometrics/main-biometrics.service.spec.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15401.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 208984,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW10818",
+      "fetched_utc": "2026-11-14T23:56:41.070417+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 15457,
+      "repository": "bitwarden/clients",
+      "sha256": "cc83edf64be624bf59938910662e61f784ba84243206e8e3ad6e514c4465de50",
+      "target_code_changed_lines": 4,
+      "target_files": [
+        "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts",
+        "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15457.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 2,
+      "bytes": 27541,
+      "control_flow_or_callback_lines": 9,
+      "event": "BW10818",
+      "fetched_utc": "2026-11-14T23:56:41.006569+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+      "noncomment_nonimport_changed_lines": 12,
+      "pr": 15957,
+      "repository": "bitwarden/clients",
+      "sha256": "85e28cb659a4cd395f076a786c9949ea900eaebb3f379a717daf11a2218da135",
+      "target_code_changed_lines": 13,
+      "target_files": [
+        "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15957.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 24181,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:41.008722+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 5,
+      "pr": 11779,
+      "repository": "bitwarden/clients",
+      "sha256": "b736977c92e473e4f0f9de82d9e7f35d7cfceac20f870af896da7ab18235395a",
+      "target_code_changed_lines": 7,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/11779.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 1794233,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:40.963402+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 12235,
+      "repository": "bitwarden/clients",
+      "sha256": "48a603b8062ac9d434671e35c1467a7c98fa8e4a459124abb8e895b89a41b0a4",
+      "target_code_changed_lines": 4,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/12235.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 17,
+      "bytes": 83946,
+      "control_flow_or_callback_lines": 38,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:41.004139+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 251,
+      "pr": 12646,
+      "repository": "bitwarden/clients",
+      "sha256": "a4eb371899dc11231128ffd32754e4618c7a4e07333bc3c5c4c0637d424b636c",
+      "target_code_changed_lines": 339,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts",
+        "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts",
+        "apps/web/src/app/key-management/key-rotation/request/rotate-user-account-keys.request.ts",
+        "apps/web/src/app/key-management/key-rotation/request/unlock-data.request.ts",
+        "apps/web/src/app/key-management/key-rotation/request/userdata.request.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation-api.service.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/12646.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 18,
+      "bytes": 231821,
+      "control_flow_or_callback_lines": 58,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:41.062496+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 346,
+      "pr": 12655,
+      "repository": "bitwarden/clients",
+      "sha256": "de91f413d1cf3c57051fedcb377b8074764a9b3a2892ae809ed5d0835b99acac",
+      "target_code_changed_lines": 438,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts",
+        "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts",
+        "apps/web/src/app/key-management/key-rotation/request/rotate-user-account-keys.request.ts",
+        "apps/web/src/app/key-management/key-rotation/request/unlock-data.request.ts",
+        "apps/web/src/app/key-management/key-rotation/request/userdata.request.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation-api.service.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/12655.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 26118,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:41.002856+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 12935,
+      "repository": "bitwarden/clients",
+      "sha256": "aae4e9ff62cc970203ee707ed8130544c50476d289bfecf98806473199ee0d68",
+      "target_code_changed_lines": 6,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/12935.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 6,
+      "bytes": 188763,
+      "control_flow_or_callback_lines": 8,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:41.054494+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 22,
+      "pr": 13121,
+      "repository": "bitwarden/clients",
+      "sha256": "375c342d059109486a6b98850f44ec99fba6bfd0158e08b821f7278b02499d35",
+      "target_code_changed_lines": 45,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/13121.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 56486,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:47.240911+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 13194,
+      "repository": "bitwarden/clients",
+      "sha256": "3c2b093f85a09bfa620ce2feae8d4d79ec3710f5dae5de76727fea93411475c5",
+      "target_code_changed_lines": 2,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/13194.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 211266,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:47.298526+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 13220,
+      "repository": "bitwarden/clients",
+      "sha256": "88cd971d0ce9bb7ab0900206392ba34ded46b97417be316319ce9d944ceb728a",
+      "target_code_changed_lines": 2,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/13220.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 17,
+      "bytes": 113964,
+      "control_flow_or_callback_lines": 40,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:47.274425+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 267,
+      "pr": 13576,
+      "repository": "bitwarden/clients",
+      "sha256": "82532b0a96b4508384260b59d9144836f99c0784809dced0bea8186ec8a59b61",
+      "target_code_changed_lines": 359,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts",
+        "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts",
+        "apps/web/src/app/key-management/key-rotation/request/rotate-user-account-keys.request.ts",
+        "apps/web/src/app/key-management/key-rotation/request/unlock-data.request.ts",
+        "apps/web/src/app/key-management/key-rotation/request/userdata.request.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation-api.service.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/13576.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 0,
+      "bytes": 60472,
+      "control_flow_or_callback_lines": 4,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:47.261937+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 6,
+      "pr": 14080,
+      "repository": "bitwarden/clients",
+      "sha256": "3d2c724b14190139d77f0ba01c177b893336b8e2ad656d132df10a22180d1536",
+      "target_code_changed_lines": 6,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/14080.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 0,
+      "bytes": 64705,
+      "control_flow_or_callback_lines": 3,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:47.386697+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 24,
+      "pr": 14539,
+      "repository": "bitwarden/clients",
+      "sha256": "df1d4441b6e3998b0ce49d3e985bc4e6de7ce3a111ef35c204fc9b8bc8284e91",
+      "target_code_changed_lines": 31,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/14539.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 131,
+      "bytes": 260642,
+      "control_flow_or_callback_lines": 591,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:47.279778+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 2716,
+      "pr": 14900,
+      "repository": "bitwarden/clients",
+      "sha256": "65677e036db6c64663d6f49641ad8ede89f5b39cdab1d6b717f6c0b163d91783",
+      "target_code_changed_lines": 3534,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts",
+        "apps/web/src/app/key-management/key-rotation/testable-user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/testable-user-key-rotation.service.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation-api.service.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.module.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/14900.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 238,
+      "bytes": 736167,
+      "control_flow_or_callback_lines": 726,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:47.482587+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 3886,
+      "pr": 14942,
+      "repository": "bitwarden/clients",
+      "sha256": "b435989932e123594e54c8b178364e32f8ffe0c0aab4753262e70d86f975110f",
+      "target_code_changed_lines": 4931,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/model/public-key-encryption-key-pair-request.model.ts",
+        "apps/web/src/app/key-management/key-rotation/model/public-key-encryption-keypair-request.model.ts",
+        "apps/web/src/app/key-management/key-rotation/model/signature-key-pair-request-request.model.ts",
+        "apps/web/src/app/key-management/key-rotation/model/signature-keypair-request-request.model.ts",
+        "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts",
+        "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts",
+        "apps/web/src/app/key-management/key-rotation/testable-user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/testable-user-key-rotation.service.ts",
+        "apps/web/src/app/key-management/key-rotation/types/v1-cryptographic-state.ts",
+        "apps/web/src/app/key-management/key-rotation/types/v2-cryptographic-state.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation-api.service.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.module.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/14942.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 12,
+      "bytes": 59375,
+      "control_flow_or_callback_lines": 37,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:47.278751+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 110,
+      "pr": 14945,
+      "repository": "bitwarden/clients",
+      "sha256": "ae7b012bd8fd23dcd778b47b33127365d22240944306894046bd03b968735487",
+      "target_code_changed_lines": 153,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/14945.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 208984,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:47.270512+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 15457,
+      "repository": "bitwarden/clients",
+      "sha256": "cc83edf64be624bf59938910662e61f784ba84243206e8e3ad6e514c4465de50",
+      "target_code_changed_lines": 2,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15457.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 1,
+      "bytes": 277403,
+      "control_flow_or_callback_lines": 10,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:47.382743+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 13,
+      "pr": 15748,
+      "repository": "bitwarden/clients",
+      "sha256": "fe54cfec394c1ef6b6ce1424ac6d137b08b41a9166b57c67e9a59e273d8fc249",
+      "target_code_changed_lines": 17,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15748.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 0,
+      "bytes": 16555,
+      "control_flow_or_callback_lines": 2,
+      "event": "BW11709",
+      "fetched_utc": "2026-11-14T23:56:53.582501+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+      "noncomment_nonimport_changed_lines": 4,
+      "pr": 16820,
+      "repository": "bitwarden/clients",
+      "sha256": "f7c9eb6419d76d4cc869f2cdd9cb15d651cf27a2ffb8fd6d966bdfc828063f2f",
+      "target_code_changed_lines": 8,
+      "target_files": [
+        "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16820.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 3,
+      "bytes": 34228,
+      "control_flow_or_callback_lines": 3,
+      "event": "BW12407",
+      "fetched_utc": "2026-11-14T23:56:53.631915+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/12407",
+      "noncomment_nonimport_changed_lines": 7,
+      "pr": 12853,
+      "repository": "bitwarden/clients",
+      "sha256": "17d6458fab848053ef6b6d43c17d7e4a0a883a5b424191514a6e2cbdd0a4cfd9",
+      "target_code_changed_lines": 8,
+      "target_files": [
+        "libs/key-management/src/angular/lock/components/lock.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/12853.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 4,
+      "bytes": 37709,
+      "control_flow_or_callback_lines": 5,
+      "event": "BW12407",
+      "fetched_utc": "2026-11-14T23:56:53.486690+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/12407",
+      "noncomment_nonimport_changed_lines": 10,
+      "pr": 12854,
+      "repository": "bitwarden/clients",
+      "sha256": "23eba9ca8a15bdfff3c82e9d2999deea60beaba7dfcfcb903c9115cd90763903",
+      "target_code_changed_lines": 15,
+      "target_files": [
+        "libs/key-management/src/angular/lock/components/lock.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/12854.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 0,
+      "bytes": 1033,
+      "control_flow_or_callback_lines": 2,
+      "event": "BW12407",
+      "fetched_utc": "2026-11-14T23:56:53.464482+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/12407",
+      "noncomment_nonimport_changed_lines": 3,
+      "pr": 12875,
+      "repository": "bitwarden/clients",
+      "sha256": "c876c162758249e69290ce398f26c67a41598e2576f529114355e3d22d4bf3f7",
+      "target_code_changed_lines": 4,
+      "target_files": [
+        "libs/key-management/src/angular/lock/components/lock.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/12875.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 59890,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW12407",
+      "fetched_utc": "2026-11-14T23:56:53.602521+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/12407",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 12928,
+      "repository": "bitwarden/clients",
+      "sha256": "806158af293ee00437fe3433dcbe153b88226b78bb46ecbaf02051bf11251cc8",
+      "target_code_changed_lines": 0,
+      "target_files": [
+        "libs/key-management/src/angular/lock/components/lock.component.html"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/12928.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 37119,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW12407",
+      "fetched_utc": "2026-11-14T23:56:53.646822+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/12407",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 13093,
+      "repository": "bitwarden/clients",
+      "sha256": "2f8bff490aeb73d25f446c4dd3d6ed71f5819350940d20fb79097dc266f72e99",
+      "target_code_changed_lines": 0,
+      "target_files": [],
+      "url": "https://github.com/bitwarden/clients/pull/13093.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 1,
+      "bytes": 232158,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW12927",
+      "fetched_utc": "2026-11-14T23:56:53.632589+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/12927",
+      "noncomment_nonimport_changed_lines": 1,
+      "pr": 14797,
+      "repository": "bitwarden/clients",
+      "sha256": "fa5377c39e1099c523879706f7d85176aeca732786eaa0b795af72cb51bec40d",
+      "target_code_changed_lines": 1,
+      "target_files": [
+        "apps/desktop/src/billing/app/accounts/premium.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/14797.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 29164,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW12927",
+      "fetched_utc": "2026-11-14T23:56:53.634069+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/12927",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 16042,
+      "repository": "bitwarden/clients",
+      "sha256": "8d63ef3a32279835ab05385f6dbbe5089c15d403b1305cb54201979474f99c4e",
+      "target_code_changed_lines": 0,
+      "target_files": [
+        "apps/desktop/src/billing/app/accounts/premium.component.html"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16042.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 10348,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW12927",
+      "fetched_utc": "2026-11-14T23:56:53.554900+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/12927",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 16373,
+      "repository": "bitwarden/clients",
+      "sha256": "777724fe09459cd0bf3785f9c70fa2b2b694f989b815379390dbf235282099bf",
+      "target_code_changed_lines": 0,
+      "target_files": [
+        "apps/desktop/src/billing/app/accounts/premium.component.html"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16373.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 36728,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW12927",
+      "fetched_utc": "2026-11-14T23:56:53.594724+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/12927",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 16461,
+      "repository": "bitwarden/clients",
+      "sha256": "1eb909c0585010740939c33699e417fb2ed512e5848edcd2724ce1bf0340ffa1",
+      "target_code_changed_lines": 0,
+      "target_files": [
+        "apps/desktop/src/billing/app/accounts/premium.component.html"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16461.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 111032,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW12927",
+      "fetched_utc": "2026-11-14T23:56:59.438720+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/12927",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 16944,
+      "repository": "bitwarden/clients",
+      "sha256": "daca3a5ac8545cc16535c4a23ce43d51ccef1da5cba6396c20ecf9d0c5495e2b",
+      "target_code_changed_lines": 2,
+      "target_files": [
+        "apps/desktop/src/billing/app/accounts/premium.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16944.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 7,
+      "bytes": 18579,
+      "control_flow_or_callback_lines": 17,
+      "event": "BW13285",
+      "fetched_utc": "2026-11-14T23:56:59.414361+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/13285",
+      "noncomment_nonimport_changed_lines": 64,
+      "pr": 14277,
+      "repository": "bitwarden/clients",
+      "sha256": "0408a6230e72bd129a55abdee51116731733b9fa7b1bf67b88d9886f54e0aa01",
+      "target_code_changed_lines": 73,
+      "target_files": [
+        "libs/common/src/key-management/crypto/services/bulk-encrypt.service.implementation.ts",
+        "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts",
+        "libs/common/src/key-management/crypto/services/multithread-encrypt.service.implementation.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/14277.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 3,
+      "bytes": 5007,
+      "control_flow_or_callback_lines": 7,
+      "event": "BW13285",
+      "fetched_utc": "2026-11-14T23:56:59.446683+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/13285",
+      "noncomment_nonimport_changed_lines": 11,
+      "pr": 14388,
+      "repository": "bitwarden/clients",
+      "sha256": "6f1b0b0839d7d7fe6cae34e6adfd929d490d591260ed8283d80122af9371f571",
+      "target_code_changed_lines": 14,
+      "target_files": [
+        "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts",
+        "libs/common/src/key-management/crypto/services/encrypt.service.spec.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/14388.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 12,
+      "bytes": 28677,
+      "control_flow_or_callback_lines": 37,
+      "event": "BW13285",
+      "fetched_utc": "2026-11-14T23:56:59.378716+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/13285",
+      "noncomment_nonimport_changed_lines": 84,
+      "pr": 14398,
+      "repository": "bitwarden/clients",
+      "sha256": "dca22e45d31d143b9ce7d68ba221bf102c5b4fabc78324deee511dff69482dc8",
+      "target_code_changed_lines": 96,
+      "target_files": [
+        "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts",
+        "libs/common/src/key-management/crypto/services/encrypt.service.spec.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/14398.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 2,
+      "bytes": 1100,
+      "control_flow_or_callback_lines": 2,
+      "event": "BW13285",
+      "fetched_utc": "2026-11-14T23:56:59.364961+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/13285",
+      "noncomment_nonimport_changed_lines": 2,
+      "pr": 14432,
+      "repository": "bitwarden/clients",
+      "sha256": "19961897a8745a988460f9228cbdf62a9fe7676bad220c9404a84ff55912e783",
+      "target_code_changed_lines": 2,
+      "target_files": [
+        "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/14432.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 2166,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW13285",
+      "fetched_utc": "2026-11-14T23:56:59.339394+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/13285",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 14434,
+      "repository": "bitwarden/clients",
+      "sha256": "69061590aa9c2630abf12fba9c14ecd9461bf0d3e310f7d93c18f163ac700925",
+      "target_code_changed_lines": 0,
+      "target_files": [
+        "libs/common/src/key-management/crypto/services/encrypt.service.spec.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/14434.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 88,
+      "bytes": 156906,
+      "control_flow_or_callback_lines": 259,
+      "event": "BW13285",
+      "fetched_utc": "2026-11-14T23:56:59.494936+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/13285",
+      "noncomment_nonimport_changed_lines": 736,
+      "pr": 14538,
+      "repository": "bitwarden/clients",
+      "sha256": "c33da8351b5e4132d5506078c3273f4ce27fe6aa728ac0ee8a4a5705920c070f",
+      "target_code_changed_lines": 870,
+      "target_files": [
+        "libs/common/src/key-management/crypto/services/bulk-encrypt.service.impementation.spec.ts",
+        "libs/common/src/key-management/crypto/services/bulk-encrypt.service.implementation.ts",
+        "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts",
+        "libs/common/src/key-management/crypto/services/encrypt.service.spec.ts",
+        "libs/common/src/key-management/crypto/services/fallback-bulk-encrypt.service.spec.ts",
+        "libs/common/src/key-management/crypto/services/fallback-bulk-encrypt.service.ts",
+        "libs/common/src/key-management/crypto/services/multithread-encrypt.service.implementation.spec.ts",
+        "libs/common/src/key-management/crypto/services/multithread-encrypt.service.implementation.ts",
+        "libs/common/src/key-management/crypto/services/web-crypto-function.service.spec.ts",
+        "libs/common/src/key-management/crypto/services/web-crypto-function.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/14538.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 35,
+      "bytes": 736167,
+      "control_flow_or_callback_lines": 155,
+      "event": "BW13285",
+      "fetched_utc": "2026-11-14T23:56:59.351657+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/13285",
+      "noncomment_nonimport_changed_lines": 295,
+      "pr": 14942,
+      "repository": "bitwarden/clients",
+      "sha256": "b435989932e123594e54c8b178364e32f8ffe0c0aab4753262e70d86f975110f",
+      "target_code_changed_lines": 325,
+      "target_files": [
+        "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts",
+        "libs/common/src/key-management/crypto/services/encrypt.service.spec.ts",
+        "libs/common/src/key-management/crypto/services/web-crypto-function.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/14942.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 105,
+      "bytes": 242613,
+      "control_flow_or_callback_lines": 303,
+      "event": "BW13285",
+      "fetched_utc": "2026-11-14T23:56:59.518677+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/13285",
+      "noncomment_nonimport_changed_lines": 910,
+      "pr": 15153,
+      "repository": "bitwarden/clients",
+      "sha256": "6d9130d0879b4ea4d50026d94ac3dc03852e0a6236d73794c6fc3282111f1d83",
+      "target_code_changed_lines": 1162,
+      "target_files": [
+        "libs/common/src/key-management/crypto/services/bulk-encrypt.service.impementation.spec.ts",
+        "libs/common/src/key-management/crypto/services/bulk-encrypt.service.implementation.ts",
+        "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts",
+        "libs/common/src/key-management/crypto/services/encrypt.service.spec.ts",
+        "libs/common/src/key-management/crypto/services/encrypt.worker.ts",
+        "libs/common/src/key-management/crypto/services/fallback-bulk-encrypt.service.spec.ts",
+        "libs/common/src/key-management/crypto/services/fallback-bulk-encrypt.service.ts",
+        "libs/common/src/key-management/crypto/services/multithread-encrypt.service.implementation.spec.ts",
+        "libs/common/src/key-management/crypto/services/multithread-encrypt.service.implementation.ts",
+        "libs/common/src/key-management/crypto/services/web-crypto-function.service.spec.ts",
+        "libs/common/src/key-management/crypto/services/web-crypto-function.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15153.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 4,
+      "bytes": 7616,
+      "control_flow_or_callback_lines": 8,
+      "event": "BW14571",
+      "fetched_utc": "2026-11-14T23:57:39.974346+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/14571",
+      "noncomment_nonimport_changed_lines": 8,
+      "pr": 16987,
+      "repository": "bitwarden/clients",
+      "sha256": "029171f93e43996b89889ae3e20806b7cc4602624b53877358b8262571fca213",
+      "target_code_changed_lines": 8,
+      "target_files": [
+        "apps/web/src/app/dirt/reports/pages/organizations/exposed-passwords-report.component.ts",
+        "apps/web/src/app/dirt/reports/pages/organizations/reused-passwords-report.component.ts",
+        "apps/web/src/app/dirt/reports/pages/organizations/unsecured-websites-report.component.ts",
+        "apps/web/src/app/dirt/reports/pages/organizations/weak-passwords-report.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16987.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 10050,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW14571",
+      "fetched_utc": "2026-11-14T23:57:39.942567+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/14571",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 17189,
+      "repository": "bitwarden/clients",
+      "sha256": "257939234eb2446c9fcb495f70f2c72ef8a8541284a670081f4de15c48cd46b9",
+      "target_code_changed_lines": 0,
+      "target_files": [
+        "apps/web/src/app/dirt/reports/shared/report-card/report-card.component.html"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/17189.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 16,
+      "bytes": 21887,
+      "control_flow_or_callback_lines": 35,
+      "event": "BW14571",
+      "fetched_utc": "2026-11-14T23:57:39.946684+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/14571",
+      "noncomment_nonimport_changed_lines": 101,
+      "pr": 17434,
+      "repository": "bitwarden/clients",
+      "sha256": "308620eff19532e3532152a8ed28f38117511f5777af0e97b1876e8694c82375",
+      "target_code_changed_lines": 132,
+      "target_files": [
+        "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts",
+        "apps/web/src/app/dirt/reports/pages/exposed-passwords-report.component.spec.ts",
+        "apps/web/src/app/dirt/reports/pages/inactive-two-factor-report.component.spec.ts",
+        "apps/web/src/app/dirt/reports/pages/inactive-two-factor-report.component.ts",
+        "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/17434.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 1,
+      "bytes": 9157,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW14987",
+      "fetched_utc": "2026-11-14T23:57:39.938777+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/14987",
+      "noncomment_nonimport_changed_lines": 1,
+      "pr": 15041,
+      "repository": "bitwarden/clients",
+      "sha256": "df0709da695db46d408562ea905c9344cc75dcff5db46750a6ed340c910ff394",
+      "target_code_changed_lines": 1,
+      "target_files": [
+        "libs/dirt/card/src/card.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15041.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 1977,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW14987",
+      "fetched_utc": "2026-11-14T23:57:39.954508+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/14987",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 16562,
+      "repository": "bitwarden/clients",
+      "sha256": "f76c73f5885d7ed0ccca9dc4ecf52557b7987412a0bcc0f432020a5d8b3e0fa7",
+      "target_code_changed_lines": 0,
+      "target_files": [
+        "libs/dirt/card/package.json",
+        "libs/dirt/card/project.json"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16562.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 44857,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW14987",
+      "fetched_utc": "2026-11-14T23:57:39.962562+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/14987",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 16939,
+      "repository": "bitwarden/clients",
+      "sha256": "766554845882e9d05bbc9fc6c52e18d48371cdf97cce03c40de1c43d71b76fcb",
+      "target_code_changed_lines": 8,
+      "target_files": [
+        "libs/dirt/card/src/card.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16939.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 41461,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW14987",
+      "fetched_utc": "2026-11-14T23:57:39.887822+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/14987",
+      "noncomment_nonimport_changed_lines": 6,
+      "pr": 16952,
+      "repository": "bitwarden/clients",
+      "sha256": "d9da1b7f011de68890651ed1f650ca002d14dd2615647e19db4b4460591d9bbd",
+      "target_code_changed_lines": 8,
+      "target_files": [
+        "libs/dirt/card/src/card.component.html",
+        "libs/dirt/card/src/card.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16952.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 5,
+      "bytes": 16720,
+      "control_flow_or_callback_lines": 2,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:39.966447+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 40,
+      "pr": 15273,
+      "repository": "bitwarden/clients",
+      "sha256": "e142e7d2d73fad7db482e7673c257086f0e7f716f2da34ad6878fe6bb3bd27f0",
+      "target_code_changed_lines": 45,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.html",
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.ts",
+        "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts",
+        "libs/components/src/anon-layout/anon-layout.component.html",
+        "libs/components/src/anon-layout/anon-layout.component.ts",
+        "libs/components/src/anon-layout/anon-layout.stories.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15273.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 13,
+      "bytes": 389508,
+      "control_flow_or_callback_lines": 4,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:40.046864+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 62,
+      "pr": 15340,
+      "repository": "bitwarden/clients",
+      "sha256": "eb980fe143e2694ccaa9f475812f208ba3dfc006acef21a8daa933418b35b143",
+      "target_code_changed_lines": 93,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout.component.html",
+        "libs/components/src/anon-layout/anon-layout.component.ts",
+        "libs/components/src/anon-layout/anon-layout.stories.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15340.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 38,
+      "bytes": 43264,
+      "control_flow_or_callback_lines": 30,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:40.026919+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 487,
+      "pr": 15362,
+      "repository": "bitwarden/clients",
+      "sha256": "ddc084bbe048eef00a445053067f695cdbc649806947f5da1df85a4dab5d9a38",
+      "target_code_changed_lines": 552,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.html",
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.ts",
+        "libs/components/src/anon-layout/anon-layout.component.html",
+        "libs/components/src/anon-layout/anon-layout.component.ts",
+        "libs/components/src/anon-layout/anon-layout.mdx",
+        "libs/components/src/anon-layout/anon-layout.stories.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15362.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 2,
+      "bytes": 1123989,
+      "control_flow_or_callback_lines": 1,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:46.755747+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 5,
+      "pr": 15375,
+      "repository": "bitwarden/clients",
+      "sha256": "5194077d24ee87d0e55852c71ab278a7d0dfc8c80205e6e803157709967eef5c",
+      "target_code_changed_lines": 9,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.html",
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15375.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 28095,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:46.559010+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 2,
+      "pr": 15522,
+      "repository": "bitwarden/clients",
+      "sha256": "aaafafae7482d40599b72a400f8ee1ba76d0494382a689bb70a44927281cadda",
+      "target_code_changed_lines": 4,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15522.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 1,
+      "bytes": 1740,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:46.572911+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 1,
+      "pr": 15610,
+      "repository": "bitwarden/clients",
+      "sha256": "64111a5b126c17aca7081d8831337e94e70626eb0d20258fa188a288fe13fde0",
+      "target_code_changed_lines": 1,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15610.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 0,
+      "bytes": 31943,
+      "control_flow_or_callback_lines": 2,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:46.635363+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 4,
+      "pr": 15620,
+      "repository": "bitwarden/clients",
+      "sha256": "b5843f10fa31c7305181ca4f6b1853f52b23b4aa10f7460b0a9fcc4ef3bf2e51",
+      "target_code_changed_lines": 4,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15620.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 12,
+      "bytes": 173046,
+      "control_flow_or_callback_lines": 2,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:46.636452+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 22,
+      "pr": 15738,
+      "repository": "bitwarden/clients",
+      "sha256": "7d318b7221dbefabc7adf9a22f93367f7c3a9f94b931bf79330fec6a7cf4a524",
+      "target_code_changed_lines": 28,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.ts",
+        "libs/components/src/anon-layout/anon-layout.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15738.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 14925,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:46.606450+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 12,
+      "pr": 15777,
+      "repository": "bitwarden/clients",
+      "sha256": "b77b6eec59c3b54ccf46d57b6bb40668be25e94eca8cfbcc2b699d3b666ae357",
+      "target_code_changed_lines": 20,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15777.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 2,
+      "bytes": 17428,
+      "control_flow_or_callback_lines": 2,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:46.646597+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 6,
+      "pr": 15827,
+      "repository": "bitwarden/clients",
+      "sha256": "35534173e7a82704d2c2426037a97e893496a395fd0804897a3587846fba0025",
+      "target_code_changed_lines": 8,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15827.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 45388,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:46.640133+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 2,
+      "pr": 15892,
+      "repository": "bitwarden/clients",
+      "sha256": "7c9d9c2c412f26f60c3015ba9a364694218d4616000702891b38ac0bb759b22a",
+      "target_code_changed_lines": 2,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout.stories.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/15892.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 185284,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:46.614985+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 14,
+      "pr": 16002,
+      "repository": "bitwarden/clients",
+      "sha256": "2911e7ee76d38378c944f652daafa97f850aaf6b420e6e21d454074000c91256",
+      "target_code_changed_lines": 25,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout.component.html",
+        "libs/components/src/anon-layout/anon-layout.component.ts",
+        "libs/components/src/anon-layout/illustrations/index.ts",
+        "libs/components/src/anon-layout/illustrations/left-illustration.ts",
+        "libs/components/src/anon-layout/illustrations/right-illustration.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16002.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 626097,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:46.767824+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 12,
+      "pr": 16020,
+      "repository": "bitwarden/clients",
+      "sha256": "f59b3bed24791370027d9f2cd55582f5148f21fff031c6184ecc589906be42fc",
+      "target_code_changed_lines": 38,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.ts",
+        "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts",
+        "libs/components/src/anon-layout/anon-layout.component.ts",
+        "libs/components/src/anon-layout/anon-layout.mdx",
+        "libs/components/src/anon-layout/anon-layout.stories.ts",
+        "libs/components/src/anon-layout/illustrations/index.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16020.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 442239,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:53.217085+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 16219,
+      "repository": "bitwarden/clients",
+      "sha256": "28f6d32bb58fc824e54a58dd77fe062aab42431ed09ac36221c14385d1820c96",
+      "target_code_changed_lines": 0,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout.component.html"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16219.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 3147,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:53.259150+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 16349,
+      "repository": "bitwarden/clients",
+      "sha256": "0bd24aeebc25311f2c8ef460e10224248c1c5b7b84dabfdaaf7905d2f0522786",
+      "target_code_changed_lines": 0,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout.component.html"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16349.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 21,
+      "bytes": 49365,
+      "control_flow_or_callback_lines": 5,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:53.042787+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 59,
+      "pr": 16433,
+      "repository": "bitwarden/clients",
+      "sha256": "ea21a0123993f63532200e0e1765be4433bd19a11ddfd5eba6587c0d5bfc9f27",
+      "target_code_changed_lines": 69,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout-wrapper-data.service.ts",
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.html",
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.ts",
+        "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts",
+        "libs/components/src/anon-layout/anon-layout.component.html",
+        "libs/components/src/anon-layout/anon-layout.component.ts",
+        "libs/components/src/anon-layout/anon-layout.stories.ts",
+        "libs/components/src/anon-layout/default-anon-layout-wrapper-data.service.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16433.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 7,
+      "bytes": 64824,
+      "control_flow_or_callback_lines": 1,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:53.244193+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 15,
+      "pr": 16748,
+      "repository": "bitwarden/clients",
+      "sha256": "bc82dec737df5aacb9f1b808c9310fb2bbbbd53fab69617aa00353c72c076bcd",
+      "target_code_changed_lines": 20,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.html",
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.ts",
+        "libs/components/src/anon-layout/anon-layout.component.html",
+        "libs/components/src/anon-layout/anon-layout.component.ts",
+        "libs/components/src/anon-layout/anon-layout.stories.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16748.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 150223,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:53.274507+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 0,
+      "pr": 16940,
+      "repository": "bitwarden/clients",
+      "sha256": "f8a2a5ac827cd7729f7b786703ffecd16d203f3b19d3128c9eba4596dc87f401",
+      "target_code_changed_lines": 12,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout-wrapper.component.ts",
+        "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts",
+        "libs/components/src/anon-layout/anon-layout.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16940.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 41461,
+      "control_flow_or_callback_lines": 0,
+      "event": "BW15093",
+      "fetched_utc": "2026-11-14T23:57:53.074782+00:00",
+      "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+      "noncomment_nonimport_changed_lines": 9,
+      "pr": 16952,
+      "repository": "bitwarden/clients",
+      "sha256": "d9da1b7f011de68890651ed1f650ca002d14dd2615647e19db4b4460591d9bbd",
+      "target_code_changed_lines": 12,
+      "target_files": [
+        "libs/components/src/anon-layout/anon-layout.component.html",
+        "libs/components/src/anon-layout/anon-layout.component.ts"
+      ],
+      "url": "https://github.com/bitwarden/clients/pull/16952.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 6,
+      "bytes": 326963,
+      "control_flow_or_callback_lines": 14,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:57:53.287300+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 91,
+      "pr": 105068,
+      "repository": "grafana/grafana",
+      "sha256": "e80f1558ae7d38fa7972bd1e3c3d8da5c7b64b6c85b14edcb00a65454a14f74b",
+      "target_code_changed_lines": 91,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/receiver/conversions.go",
+        "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go",
+        "pkg/registry/apps/alerting/notifications/receiver/type.go",
+        "pkg/registry/apps/alerting/notifications/register.go",
+        "pkg/registry/apps/alerting/notifications/routingtree/conversions.go",
+        "pkg/registry/apps/alerting/notifications/routingtree/legacy_storage.go",
+        "pkg/registry/apps/alerting/notifications/routingtree/type.go",
+        "pkg/registry/apps/alerting/notifications/templategroup/conversions.go",
+        "pkg/registry/apps/alerting/notifications/templategroup/legacy_storage.go",
+        "pkg/registry/apps/alerting/notifications/templategroup/type.go",
+        "pkg/registry/apps/alerting/notifications/timeinterval/conversions.go",
+        "pkg/registry/apps/alerting/notifications/timeinterval/legacy_storage.go",
+        "pkg/registry/apps/alerting/notifications/timeinterval/type.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/105068.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 50484,
+      "control_flow_or_callback_lines": 0,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:57:53.262767+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 10,
+      "pr": 107056,
+      "repository": "grafana/grafana",
+      "sha256": "8819f0426ee830b5b3064010cc67d61ff9c3ad3260761bc47905726ae2285683",
+      "target_code_changed_lines": 10,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/register.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/107056.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 9,
+      "bytes": 495157,
+      "control_flow_or_callback_lines": 23,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:57:53.290475+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 106,
+      "pr": 109309,
+      "repository": "grafana/grafana",
+      "sha256": "a5d702e023de025465f96ec62c2c0148896e467e99fd68c2eba47770784fefe8",
+      "target_code_changed_lines": 128,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/receiver/conversions.go",
+        "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go",
+        "pkg/registry/apps/alerting/notifications/receiver/type.go",
+        "pkg/registry/apps/alerting/notifications/register.go",
+        "pkg/registry/apps/alerting/notifications/routingtree/conversions.go",
+        "pkg/registry/apps/alerting/notifications/routingtree/legacy_storage.go",
+        "pkg/registry/apps/alerting/notifications/routingtree/type.go",
+        "pkg/registry/apps/alerting/notifications/templategroup/conversions.go",
+        "pkg/registry/apps/alerting/notifications/templategroup/legacy_storage.go",
+        "pkg/registry/apps/alerting/notifications/templategroup/type.go",
+        "pkg/registry/apps/alerting/notifications/timeinterval/conversions.go",
+        "pkg/registry/apps/alerting/notifications/timeinterval/legacy_storage.go",
+        "pkg/registry/apps/alerting/notifications/timeinterval/type.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/109309.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 1,
+      "bytes": 22707,
+      "control_flow_or_callback_lines": 1,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:57:53.278708+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 7,
+      "pr": 109969,
+      "repository": "grafana/grafana",
+      "sha256": "74fc2dd418d480038e36b5f1adc2671ab8bb7a3b4812b241b678fa434568ec28",
+      "target_code_changed_lines": 8,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/109969.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 2,
+      "bytes": 40814,
+      "control_flow_or_callback_lines": 4,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:58:00.609619+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 7,
+      "pr": 110619,
+      "repository": "grafana/grafana",
+      "sha256": "4704ab0a7b49d273a5ac235633a64df1cba252fd375fbe18c8ff336c17517e3e",
+      "target_code_changed_lines": 13,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/110619.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 31532,
+      "control_flow_or_callback_lines": 0,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:58:00.535826+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 2,
+      "pr": 110839,
+      "repository": "grafana/grafana",
+      "sha256": "4050376d2e5a30323376a39bc994060960cb5df846ab6af4786baeadca1819bd",
+      "target_code_changed_lines": 2,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/110839.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 47,
+      "bytes": 186928,
+      "control_flow_or_callback_lines": 132,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:58:00.615110+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 638,
+      "pr": 111338,
+      "repository": "grafana/grafana",
+      "sha256": "700cc87440c11b02bdedaf26b2b4409e8176ca5262c88018f5b91ac0fa1e790e",
+      "target_code_changed_lines": 683,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/receiver/authorize.go",
+        "pkg/registry/apps/alerting/notifications/receiver/subresource.go",
+        "pkg/registry/apps/alerting/notifications/receiver/subresource_test.go",
+        "pkg/registry/apps/alerting/notifications/register.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/111338.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 2,
+      "bytes": 43065,
+      "control_flow_or_callback_lines": 5,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:58:00.578514+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 23,
+      "pr": 112010,
+      "repository": "grafana/grafana",
+      "sha256": "dda2aa1135d21844d8affaef5396fd8e22e14d929cc9e5b0cce37167f15956b9",
+      "target_code_changed_lines": 23,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/112010.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 1019,
+      "control_flow_or_callback_lines": 0,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:58:00.411575+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 1,
+      "pr": 112880,
+      "repository": "grafana/grafana",
+      "sha256": "0cc7493d7a2ae459541968e2f31849ca61c3fe50d7482b19f1ba4bc5b3f822c4",
+      "target_code_changed_lines": 1,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/112880.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 0,
+      "bytes": 89097,
+      "control_flow_or_callback_lines": 3,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:58:00.621412+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 14,
+      "pr": 114196,
+      "repository": "grafana/grafana",
+      "sha256": "c0f4b06017fee6c96a880890b6559aea2490eaf0ad6c1e0cb245ee2ac7927483",
+      "target_code_changed_lines": 15,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/register.go",
+        "pkg/registry/apps/alerting/notifications/templategroup/conversions.go",
+        "pkg/registry/apps/alerting/notifications/templategroup/legacy_storage.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/114196.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 114304,
+      "control_flow_or_callback_lines": 0,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:58:00.552960+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 9,
+      "pr": 115442,
+      "repository": "grafana/grafana",
+      "sha256": "cf58488669df79d96e7b7fdb5c2260ce5781fa1ba31d226e477c86a6d0ecd341",
+      "target_code_changed_lines": 9,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/115442.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 3,
+      "bytes": 28633,
+      "control_flow_or_callback_lines": 2,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:58:00.532776+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 14,
+      "pr": 115959,
+      "repository": "grafana/grafana",
+      "sha256": "2706e07d872b99c4195db1f048b3419a9b33bb59f9f1ba9cbdda9458ab59928a",
+      "target_code_changed_lines": 15,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/115959.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 1,
+      "bytes": 68328,
+      "control_flow_or_callback_lines": 3,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:58:00.547246+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 7,
+      "pr": 116308,
+      "repository": "grafana/grafana",
+      "sha256": "8447354296ab3cd28dd11ac43f64a485c4c34bafcd35d1c967dadb4f2ed64d2c",
+      "target_code_changed_lines": 10,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/register.go",
+        "pkg/registry/apps/alerting/notifications/timeinterval/conversions.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/116308.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 9,
+      "bytes": 33034,
+      "control_flow_or_callback_lines": 29,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:58:00.591960+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 78,
+      "pr": 116434,
+      "repository": "grafana/grafana",
+      "sha256": "2121909aa7025ca203cecf8cd27906d2681fd204fa1cadb1740ffac5e2c1cf34",
+      "target_code_changed_lines": 83,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/116434.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 45111,
+      "control_flow_or_callback_lines": 0,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:58:06.352528+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 22,
+      "pr": 116475,
+      "repository": "grafana/grafana",
+      "sha256": "a5486bcd0b0b5d363c6b4cae32f098846670466b060e0cf65acf638d43dcba6a",
+      "target_code_changed_lines": 23,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/register.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/116475.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 118448,
+      "control_flow_or_callback_lines": 0,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:58:06.353583+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 1,
+      "pr": 116563,
+      "repository": "grafana/grafana",
+      "sha256": "69e90f42eed059c7a3bfb2c2945a1b84d09fd908fafcd58f3adda1150487b43b",
+      "target_code_changed_lines": 1,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/116563.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "present",
+      "branch_or_comparison_lines": 15,
+      "bytes": 157574,
+      "control_flow_or_callback_lines": 40,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:58:06.518812+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 141,
+      "pr": 117061,
+      "repository": "grafana/grafana",
+      "sha256": "b0f6c471584bf8a4eacd520129cd5d255e95d5a952328b756e4c45eb13eacb04",
+      "target_code_changed_lines": 145,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/register.go",
+        "pkg/registry/apps/alerting/notifications/routingtree/conversions.go",
+        "pkg/registry/apps/alerting/notifications/routingtree/legacy_storage.go",
+        "pkg/registry/apps/alerting/notifications/routingtree/type.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/117061.patch"
+    },
+    {
+      "automated_code_semantic_signal_only": "undetermined",
+      "branch_or_comparison_lines": 0,
+      "bytes": 85232,
+      "control_flow_or_callback_lines": 0,
+      "event": "GF104424",
+      "fetched_utc": "2026-11-14T23:58:06.430550+00:00",
+      "migration_url": "https://github.com/grafana/grafana/pull/104424",
+      "noncomment_nonimport_changed_lines": 3,
+      "pr": 117090,
+      "repository": "grafana/grafana",
+      "sha256": "9ae994db2bcfac95527c127319809f914e3354a112802192cf9d38109c854ec8",
+      "target_code_changed_lines": 3,
+      "target_files": [
+        "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+      ],
+      "url": "https://github.com/grafana/grafana/pull/117090.patch"
+    }
+  ],
+  "errors": {
+    "BW12927__17393": "Fetch failed https://github.com/bitwarden/clients/pull/17393.patch: HTTP Error 429: Too Many Requests",
+    "BW13285__15138": "Fetch failed https://github.com/bitwarden/clients/pull/15138.patch: HTTP Error 429: Too Many Requests",
+    "BW13285__15401": "Fetch failed https://github.com/bitwarden/clients/pull/15401.patch: HTTP Error 429: Too Many Requests",
+    "BW13285__15457": "Fetch failed https://github.com/bitwarden/clients/pull/15457.patch: HTTP Error 429: Too Many Requests",
+    "BW13285__16865": "Fetch failed https://github.com/bitwarden/clients/pull/16865.patch: HTTP Error 429: Too Many Requests",
+    "BW13285__17742": "Fetch failed https://github.com/bitwarden/clients/pull/17742.patch: HTTP Error 429: Too Many Requests",
+    "BW13285__17771": "Fetch failed https://github.com/bitwarden/clients/pull/17771.patch: HTTP Error 429: Too Many Requests",
+    "BW13285__18413": "Fetch failed https://github.com/bitwarden/clients/pull/18413.patch: HTTP Error 429: Too Many Requests",
+    "BW14571__14650": "Fetch failed https://github.com/bitwarden/clients/pull/14650.patch: HTTP Error 429: Too Many Requests",
+    "BW14571__14797": "Fetch failed https://github.com/bitwarden/clients/pull/14797.patch: HTTP Error 429: Too Many Requests",
+    "BW14571__14850": "Fetch failed https://github.com/bitwarden/clients/pull/14850.patch: HTTP Error 429: Too Many Requests",
+    "BW14571__15750": "Fetch failed https://github.com/bitwarden/clients/pull/15750.patch: HTTP Error 429: Too Many Requests",
+    "BW14571__16020": "Fetch failed https://github.com/bitwarden/clients/pull/16020.patch: HTTP Error 429: Too Many Requests",
+    "BW14571__16219": "Fetch failed https://github.com/bitwarden/clients/pull/16219.patch: HTTP Error 429: Too Many Requests",
+    "BW14571__16227": "Fetch failed https://github.com/bitwarden/clients/pull/16227.patch: HTTP Error 429: Too Many Requests",
+    "BW14571__16353": "Fetch failed https://github.com/bitwarden/clients/pull/16353.patch: HTTP Error 429: Too Many Requests",
+    "BW14571__16463": "Fetch failed https://github.com/bitwarden/clients/pull/16463.patch: HTTP Error 429: Too Many Requests",
+    "BW14571__16823": "Fetch failed https://github.com/bitwarden/clients/pull/16823.patch: HTTP Error 429: Too Many Requests",
+    "BW14571__16911": "Fetch failed https://github.com/bitwarden/clients/pull/16911.patch: HTTP Error 429: Too Many Requests",
+    "BW14571__16939": "Fetch failed https://github.com/bitwarden/clients/pull/16939.patch: HTTP Error 429: Too Many Requests",
+    "BW14571__16952": "Fetch failed https://github.com/bitwarden/clients/pull/16952.patch: HTTP Error 429: Too Many Requests"
+  },
+  "interpretation": "Source-grounded code snippets for one researcher; never independent human expert truth",
+  "total": 114
+}

@@ -1,0 +1,621 @@
+[
+  {
+    "status": "ok",
+    "project": "aws-encryption-sdk-cli",
+    "version": "1.9.0",
+    "files": [
+      {
+        "filename": "aws_encryption_sdk_cli-1.9.0-py2.py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": null,
+        "yanked": false
+      },
+      {
+        "filename": "aws-encryption-sdk-cli-1.9.0.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": null,
+        "yanked": false
+      }
+    ],
+    "requires_python": "",
+    "raw_path": "alternative_raw_pypi/aws-encryption-sdk-cli/1.9.0.json",
+    "raw_sha256": "a0bc40bb2e1975da54d509664776e310f3a2d6b2a3b2735737a000392359b32d",
+    "source_url": "https://pypi.org/pypi/aws-encryption-sdk-cli/1.9.0/json"
+  },
+  {
+    "status": "ok",
+    "project": "aws-encryption-sdk-cli",
+    "version": "2.2.0",
+    "files": [
+      {
+        "filename": "aws_encryption_sdk_cli-2.2.0-py2.py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": null,
+        "yanked": false
+      },
+      {
+        "filename": "aws-encryption-sdk-cli-2.2.0.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": null,
+        "yanked": false
+      }
+    ],
+    "requires_python": "",
+    "raw_path": "alternative_raw_pypi/aws-encryption-sdk-cli/2.2.0.json",
+    "raw_sha256": "9e999f0e0c9c18c9dde00cab24473599e17947f0615eb0d2aef8cb2c889df1c8",
+    "source_url": "https://pypi.org/pypi/aws-encryption-sdk-cli/2.2.0/json"
+  },
+  {
+    "status": "ok",
+    "project": "case-utils",
+    "version": "0.5.1",
+    "files": [
+      {
+        "filename": "case_utils-0.5.1-py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "case_utils-0.5.1.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.8",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.8",
+    "raw_path": "alternative_raw_pypi/case-utils/0.5.1.json",
+    "raw_sha256": "aa8310012fc3f9dea215e3939296f34dbb3dd3624b6a7b257783b8b6df5b6a3b",
+    "source_url": "https://pypi.org/pypi/case-utils/0.5.1/json"
+  },
+  {
+    "status": "ok",
+    "project": "case-utils",
+    "version": "0.6.1",
+    "files": [
+      {
+        "filename": "case_utils-0.6.1-py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "case_utils-0.6.1.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.8",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.8",
+    "raw_path": "alternative_raw_pypi/case-utils/0.6.1.json",
+    "raw_sha256": "a2d410a011f1651d2900871e209dec26fd024c0ccd2910d8335117faebf441da",
+    "source_url": "https://pypi.org/pypi/case-utils/0.6.1/json"
+  },
+  {
+    "status": "ok",
+    "project": "case-utils",
+    "version": "0.7.1",
+    "files": [
+      {
+        "filename": "case_utils-0.7.1-py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "case_utils-0.7.1.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.8",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.8",
+    "raw_path": "alternative_raw_pypi/case-utils/0.7.1.json",
+    "raw_sha256": "f59a72fd3f2505740ce674d6b868461ff5d571ee7c6b5de5f19f6c00d0d4f93f",
+    "source_url": "https://pypi.org/pypi/case-utils/0.7.1/json"
+  },
+  {
+    "status": "ok",
+    "project": "case-utils",
+    "version": "0.8.1",
+    "files": [
+      {
+        "filename": "case_utils-0.8.1-py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "case_utils-0.8.1.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.8",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.8",
+    "raw_path": "alternative_raw_pypi/case-utils/0.8.1.json",
+    "raw_sha256": "b4ec6da60c19964fb316020ff69880f91c7784dbbe7fcd909b576f4449b53533",
+    "source_url": "https://pypi.org/pypi/case-utils/0.8.1/json"
+  },
+  {
+    "status": "ok",
+    "project": "case-utils",
+    "version": "0.9.1",
+    "files": [
+      {
+        "filename": "case_utils-0.9.1-py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "case_utils-0.9.1.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.8",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.8",
+    "raw_path": "alternative_raw_pypi/case-utils/0.9.1.json",
+    "raw_sha256": "435061e94a08db7114af3b542ee531f9f000bb0b893fc29e2d3fa63ff78258ac",
+    "source_url": "https://pypi.org/pypi/case-utils/0.9.1/json"
+  },
+  {
+    "status": "ok",
+    "project": "case-utils",
+    "version": "0.10.1",
+    "files": [
+      {
+        "filename": "case_utils-0.10.1-py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "case_utils-0.10.1.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.8",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.8",
+    "raw_path": "alternative_raw_pypi/case-utils/0.10.1.json",
+    "raw_sha256": "7e319ea85d89dd85c60bff38d4be85872e80032f67d35ce562a143cde2196e1a",
+    "source_url": "https://pypi.org/pypi/case-utils/0.10.1/json"
+  },
+  {
+    "status": "ok",
+    "project": "case-utils",
+    "version": "0.11.1",
+    "files": [
+      {
+        "filename": "case_utils-0.11.1-py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "case_utils-0.11.1.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.8",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.8",
+    "raw_path": "alternative_raw_pypi/case-utils/0.11.1.json",
+    "raw_sha256": "116a8713aff7f94246dded113807acf218f82844cc86350742363f56f19a71bb",
+    "source_url": "https://pypi.org/pypi/case-utils/0.11.1/json"
+  },
+  {
+    "status": "ok",
+    "project": "case-utils",
+    "version": "0.12.1",
+    "files": [
+      {
+        "filename": "case_utils-0.12.1-py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "case_utils-0.12.1.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.8",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.8",
+    "raw_path": "alternative_raw_pypi/case-utils/0.12.1.json",
+    "raw_sha256": "9161fb2780975e5d762a2090315f0a33ac674b43043de5d1c2aeead452d91bec",
+    "source_url": "https://pypi.org/pypi/case-utils/0.12.1/json"
+  },
+  {
+    "status": "ok",
+    "project": "case-utils",
+    "version": "0.13.1",
+    "files": [
+      {
+        "filename": "case_utils-0.13.1-py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "case_utils-0.13.1.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.9",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.9",
+    "raw_path": "alternative_raw_pypi/case-utils/0.13.1.json",
+    "raw_sha256": "2c2ebd4afbed7b22a849875be3f7c474107483af0d99b1228c33b0d01060725f",
+    "source_url": "https://pypi.org/pypi/case-utils/0.13.1/json"
+  },
+  {
+    "status": "ok",
+    "project": "case-utils",
+    "version": "0.14.1",
+    "files": [
+      {
+        "filename": "case_utils-0.14.1-py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "case_utils-0.14.1.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.9",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.9",
+    "raw_path": "alternative_raw_pypi/case-utils/0.14.1.json",
+    "raw_sha256": "569a0a837e71a83898a811d83c8317e17debe7258919379aaf40815caf298351",
+    "source_url": "https://pypi.org/pypi/case-utils/0.14.1/json"
+  },
+  {
+    "status": "ok",
+    "project": "jupyterlab",
+    "version": "4.5.11",
+    "files": [
+      {
+        "filename": "jupyterlab-4.5.11-py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "jupyterlab-4.5.11.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.9",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.9",
+    "raw_path": "alternative_raw_pypi/jupyterlab/4.5.11.json",
+    "raw_sha256": "7395f098c4b20c28d4927ece64e80f00d25f77fe00ad68512d9fed4fd17549ae",
+    "source_url": "https://pypi.org/pypi/jupyterlab/4.5.11/json"
+  },
+  {
+    "status": "ok",
+    "project": "jupyterlab",
+    "version": "4.6.4",
+    "files": [
+      {
+        "filename": "jupyterlab-4.6.4-py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.10",
+        "yanked": false
+      },
+      {
+        "filename": "jupyterlab-4.6.4.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.10",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.10",
+    "raw_path": "alternative_raw_pypi/jupyterlab/4.6.4.json",
+    "raw_sha256": "a8c823a5d33b68c0b7b8973db046f3777c7f4b6e6cc260166b7e63a5872077c5",
+    "source_url": "https://pypi.org/pypi/jupyterlab/4.6.4/json"
+  },
+  {
+    "status": "ok",
+    "project": "mayan-edms",
+    "version": "4.6.12",
+    "files": [
+      {
+        "filename": "mayan_edms-4.6.12-py2.py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "mayan_edms-4.6.12.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.9",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.9",
+    "raw_path": "alternative_raw_pypi/mayan-edms/4.6.12.json",
+    "raw_sha256": "65e730c48cb5a3c5c2b0402b028a2397b2d80ad98ddc931453ce418b7eea1937",
+    "source_url": "https://pypi.org/pypi/mayan-edms/4.6.12/json"
+  },
+  {
+    "status": "ok",
+    "project": "mayan-edms",
+    "version": "4.7.8",
+    "files": [
+      {
+        "filename": "mayan_edms-4.7.8-py2.py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "mayan_edms-4.7.8.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.9",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.9",
+    "raw_path": "alternative_raw_pypi/mayan-edms/4.7.8.json",
+    "raw_sha256": "bed675f3a6d6b71ea471f82857b50a7c8aa713291baecb59a0dcf72584e4d9e8",
+    "source_url": "https://pypi.org/pypi/mayan-edms/4.7.8/json"
+  },
+  {
+    "status": "ok",
+    "project": "mayan-edms",
+    "version": "4.8.10",
+    "files": [
+      {
+        "filename": "mayan_edms-4.8.10-py2.py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "mayan_edms-4.8.10.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.9",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.9",
+    "raw_path": "alternative_raw_pypi/mayan-edms/4.8.10.json",
+    "raw_sha256": "e97b5946944ad3a930b94efa3fcc82b44ee1a5c9365bb71398c36d859cc124f2",
+    "source_url": "https://pypi.org/pypi/mayan-edms/4.8.10/json"
+  },
+  {
+    "status": "ok",
+    "project": "mayan-edms",
+    "version": "4.9.7",
+    "files": [
+      {
+        "filename": "mayan_edms-4.9.7-py2.py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "mayan_edms-4.9.7.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.9",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.9",
+    "raw_path": "alternative_raw_pypi/mayan-edms/4.9.7.json",
+    "raw_sha256": "1b4cc7b050160283ec85f85d704b2290d4717f960d11d57c0f149e75eab79627",
+    "source_url": "https://pypi.org/pypi/mayan-edms/4.9.7/json"
+  },
+  {
+    "status": "ok",
+    "project": "mayan-edms",
+    "version": "4.10.2",
+    "files": [
+      {
+        "filename": "mayan_edms-4.10.2-py2.py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "mayan_edms-4.10.2.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.9",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.9",
+    "raw_path": "alternative_raw_pypi/mayan-edms/4.10.2.json",
+    "raw_sha256": "c8581425a61418e3eb507e0e0961fd915d2ad940d36f5c43369a14a5e1d07275",
+    "source_url": "https://pypi.org/pypi/mayan-edms/4.10.2/json"
+  },
+  {
+    "status": "ok",
+    "project": "protobuf",
+    "version": "5.29.6",
+    "files": [
+      {
+        "filename": "protobuf-5.29.6-cp310-abi3-win32.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-5.29.6-cp310-abi3-win_amd64.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-5.29.6-cp38-abi3-macosx_10_9_universal2.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-5.29.6-cp38-abi3-manylinux2014_aarch64.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-5.29.6-cp38-abi3-manylinux2014_x86_64.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-5.29.6-cp38-cp38-win32.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-5.29.6-cp38-cp38-win_amd64.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-5.29.6-cp39-cp39-win32.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-5.29.6-cp39-cp39-win_amd64.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-5.29.6-py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.8",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-5.29.6.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.8",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.8",
+    "raw_path": "alternative_raw_pypi/protobuf/5.29.6.json",
+    "raw_sha256": "8b4d30edf7050d01f012bc69acf49ab0459c44158929f867ce241fc6b65a0d94",
+    "source_url": "https://pypi.org/pypi/protobuf/5.29.6/json"
+  },
+  {
+    "status": "ok",
+    "project": "protobuf",
+    "version": "6.33.5",
+    "files": [
+      {
+        "filename": "protobuf-6.33.5-cp310-abi3-win32.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-6.33.5-cp310-abi3-win_amd64.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-6.33.5-cp39-abi3-macosx_10_9_universal2.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-6.33.5-cp39-abi3-manylinux2014_aarch64.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-6.33.5-cp39-abi3-manylinux2014_s390x.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-6.33.5-cp39-abi3-manylinux2014_x86_64.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-6.33.5-cp39-cp39-win32.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-6.33.5-cp39-cp39-win_amd64.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-6.33.5-py3-none-any.whl",
+        "packagetype": "bdist_wheel",
+        "requires_python": ">=3.9",
+        "yanked": false
+      },
+      {
+        "filename": "protobuf-6.33.5.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": ">=3.9",
+        "yanked": false
+      }
+    ],
+    "requires_python": ">=3.9",
+    "raw_path": "alternative_raw_pypi/protobuf/6.33.5.json",
+    "raw_sha256": "4961c92a4631a94610e367bf739247e32bda7af53e0d8f0f0323b8804500a73a",
+    "source_url": "https://pypi.org/pypi/protobuf/6.33.5/json"
+  },
+  {
+    "status": "ok",
+    "project": "tortoise-orm",
+    "version": "0.15.23",
+    "files": [
+      {
+        "filename": "tortoise-orm-0.15.23.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": null,
+        "yanked": false
+      }
+    ],
+    "requires_python": "",
+    "raw_path": "alternative_raw_pypi/tortoise-orm/0.15.23.json",
+    "raw_sha256": "a8168ef35acf8f15df4094cdb1b3488eb326a1dd70ba66a4aa6f325aeb9fedf4",
+    "source_url": "https://pypi.org/pypi/tortoise-orm/0.15.23/json"
+  },
+  {
+    "status": "ok",
+    "project": "tortoise-orm",
+    "version": "0.16.6",
+    "files": [
+      {
+        "filename": "tortoise-orm-0.16.6.tar.gz",
+        "packagetype": "sdist",
+        "requires_python": null,
+        "yanked": false
+      }
+    ],
+    "requires_python": "",
+    "raw_path": "alternative_raw_pypi/tortoise-orm/0.16.6.json",
+    "raw_sha256": "a28f576d2920e0f438999503245a58215a6c8996fa4db1f23dea05126d7eb91e",
+    "source_url": "https://pypi.org/pypi/tortoise-orm/0.16.6/json"
+  }
+]

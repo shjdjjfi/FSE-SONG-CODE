@@ -1,0 +1,76 @@
+{
+  "key": "17e26167a61d0f2c75",
+  "args": {
+    "crate": "tracing-subscriber",
+    "version": "0.3.19",
+    "id": "7cf792d58ba414b7",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1916,
+  "errors": [
+    {
+      "code": "E0425",
+      "message": "cannot find value `config` in this scope",
+      "rendered": "error[E0425]: cannot find value `config` in this scope\n --> src/main.rs:2:23\n  |\n2 | let log_layer = match config {\n  |                       ^^^^^^ not found in this scope\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `File`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `File`\n --> src/main.rs:4:20\n  |\n4 |         let file = File::create(path)?;\n  |                    ^^^^ use of undeclared type `File`\n  |\nhelp: consider importing this struct\n  |\n1 + use std::fs::File;\n  |\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `io`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `io`\n  --> src/main.rs:17:22\n   |\n17 |         .with_writer(io::stdout)\n   |                      ^^ use of unresolved module or unlinked crate `io`\n   |\n   = help: if you wanted to use a crate named `io`, use `cargo add io` to add it to your `Cargo.toml`\nhelp: a builtin type with a similar name exists\n   |\n17 -         .with_writer(io::stdout)\n17 +         .with_writer(i8::stdout)\n   |\nhelp: consider importing this module\n   |\n 1 + use std::io;\n   |\n\n",
+      "line": 17
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `io`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `io`\n  --> src/main.rs:23:22\n   |\n23 |         .with_writer(io::stderr)\n   |                      ^^ use of unresolved module or unlinked crate `io`\n   |\n   = help: if you wanted to use a crate named `io`, use `cargo add io` to add it to your `Cargo.toml`\nhelp: a builtin type with a similar name exists\n   |\n23 -         .with_writer(io::stderr)\n23 +         .with_writer(i8::stderr)\n   |\nhelp: consider importing this module\n   |\n 1 + use std::io;\n   |\n\n",
+      "line": 23
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `LevelFilter`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `LevelFilter`\n  --> src/main.rs:24:22\n   |\n24 |         .with_filter(LevelFilter::WARN)\n   |                      ^^^^^^^^^^^ use of undeclared type `LevelFilter`\n   |\nhelp: consider importing this struct\n   |\n 1 + use tracing_subscriber::filter::LevelFilter;\n   |\n\n",
+      "line": 24
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `with` found for struct `Registry` in the current scope",
+      "rendered": "error[E0599]: no method named `with` found for struct `Registry` in the current scope\n    --> src/main.rs:30:6\n     |\n  29 | / tracing_subscriber::registry()\n  30 | |     .with(log_layer)\n     | |     -^^^^ method not found in `Registry`\n     | |_____|\n     |\n     |\n    ::: /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tracing-subscriber-0.3.19/src/layer/mod.rs:1502:8\n     |\n1502 |       fn with<L>(self, layer: L) -> Layered<L, Self>\n     |          ---- the method is available for `Registry` here\n     |\n     = help: items from traits can only be used if the trait is in scope\nhelp: trait `SubscriberExt` which provides `with` is implemented but not in scope; perhaps you want to import it\n     |\n   1 + use tracing_subscriber::prelude::__tracing_subscriber_SubscriberExt;\n     |\n\n",
+      "line": 29
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `LogConfig`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `LogConfig`\n --> src/main.rs:3:5\n  |\n3 |     LogConfig::File(path) => {\n  |     ^^^^^^^^^ use of undeclared type `LogConfig`\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `LogConfig`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `LogConfig`\n  --> src/main.rs:15:5\n   |\n15 |     LogConfig::Stdout => tracing_subscriber::fmt::layer()\n   |     ^^^^^^^^^ use of undeclared type `LogConfig`\n\n",
+      "line": 15
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `LogConfig`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `LogConfig`\n  --> src/main.rs:22:5\n   |\n22 |     LogConfig::Stderr => tracing_subscriber::fmt::layer()\n   |     ^^^^^^^^^ use of undeclared type `LogConfig`\n\n",
+      "line": 22
+    }
+  ],
+  "error_count": 9,
+  "stderr_excerpt": "error: could not compile `n05_tracing_subscriber_consumer` (bin \"n05_tracing_subscriber_consumer\") due to 9 previous errors\n",
+  "code_sha256": "92b7f7e6d8814552852b243c9a46f490bc07b3414e98fb70b42a1f44b83ebbe5",
+  "manifest_sha256": "9d051edaf1bfed636c4fca37ddcc0f24c8d2f5fe1437acbe72ab360adc95f0cc",
+  "log_file": "results/check_logs/17e26167a61d0f2c75.txt.gz"
+}

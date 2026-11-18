@@ -1,0 +1,177 @@
+{
+  "after_codeowners_sha256": "fa999760e2522a0cc192aa9c6b9b9ebca8930f934c92623003ea0ed15eb4f2eb",
+  "all_patch_renames": 9,
+  "base_sha": "949e9b14ab6bacd5c18b06b4ad8b32ba4a655918",
+  "before_codeowners_sha256": "d03f568c5c4415ee8d081662b135f3c90dc58b2aa1c18dade72d7305ed62c103",
+  "expected_new_team": "@bitwarden/team-data-insights-and-reporting-dev",
+  "expected_old_team": "@bitwarden/team-tools-dev",
+  "histories": {
+    "after": {
+      "commit_count": 8,
+      "pr_linked_count": 7,
+      "records": [
+        {
+          "date": "2025-06-02T17:13:31Z",
+          "pr": 14815,
+          "sha": "2fbc4c1578b92ae100468aa97a02771bbf1235c1",
+          "title": "[CL-525] Upgrade angular to v19 (#14815)"
+        },
+        {
+          "date": "2025-06-02T20:38:17Z",
+          "pr": 14554,
+          "sha": "26caeb3083fcfdcf0b598a99d58285b1dc9e4bf9",
+          "title": "Implement and extend tsconfig.base across projects (#14554)"
+        },
+        {
+          "date": "2025-06-03T17:57:17Z",
+          "pr": 15041,
+          "sha": "5fd7c181de95ebdcea30b8129e106ae7da070bde",
+          "title": "Remove standalone true from dirt (#15041)"
+        },
+        {
+          "date": "2025-06-05T18:20:23Z",
+          "pr": 14992,
+          "sha": "e8224fdbe3084cde9d400f73396b7794ee73b828",
+          "title": "feat(nx): add basic-lib generator for streamlined library creation  (#14992)"
+        },
+        {
+          "date": "2025-09-23T17:13:52Z",
+          "pr": 16562,
+          "sha": "e1f32bdd4b94bf12cc6fa226ed53b8ecaacd81f1",
+          "title": "build: add nx configuration in libs/dirt/card (#16562)"
+        },
+        {
+          "date": "2025-10-24T16:17:58Z",
+          "pr": 16939,
+          "sha": "fc26a21b85c6c61231c7efefb069208cb27635c0",
+          "title": "DIRT - Prefer signal & change detection (#16939)"
+        },
+        {
+          "date": "2025-10-27T15:14:42Z",
+          "pr": 16952,
+          "sha": "f452f39f3c1b6204876602e4212788241cea0c3d",
+          "title": "[CL-847] Card consolidation (#16952)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=libs%2Fdirt%2Fcard%2F&since=2025-05-30T07%3A37%3A10Z&until=2026-05-30T07%3A37%3A09Z&per_page=100",
+      "truncated": false
+    },
+    "before": {
+      "commit_count": 9,
+      "pr_linked_count": 9,
+      "records": [
+        {
+          "date": "2024-10-11T21:00:45Z",
+          "pr": 11375,
+          "sha": "fa41f29fc40d4bac90090513b0386772476a3a0b",
+          "title": "[CL-425] - add tools card component (#11375)"
+        },
+        {
+          "date": "2024-10-17T13:22:56Z",
+          "pr": 11562,
+          "sha": "783305696aac9b7abae9698b69760d58f120cd5f",
+          "title": "Fix stories title for card-component (#11562)"
+        },
+        {
+          "date": "2024-10-25T20:04:36Z",
+          "pr": 11678,
+          "sha": "ad7fa71e76d0b9175a340c160af94babd528f87f",
+          "title": "[PM-13931] - UI - All applications report table (#11678)"
+        },
+        {
+          "date": "2024-12-09T19:58:50Z",
+          "pr": 12235,
+          "sha": "9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+          "title": "Typescript-strict-plugin (#12235)"
+        },
+        {
+          "date": "2025-01-10T10:21:38Z",
+          "pr": 12770,
+          "sha": "653b730969fbf6aadf53f1653cd99ffce542d558",
+          "title": "[PM-16872] Update libs to use explicit dependencies (#12770)"
+        },
+        {
+          "date": "2025-01-17T15:42:31Z",
+          "pr": 12831,
+          "sha": "e5f83ff08605424b6656d7b379fd1d95f3f4d1b5",
+          "title": "[PM-17031] Create UI-common (#12831)"
+        },
+        {
+          "date": "2025-02-20T14:04:39Z",
+          "pr": 13448,
+          "sha": "5d04efad2a3a503c92aa64a435ad2248d7b4596e",
+          "title": "[PM-18363] Remove internal dependencies from package.json (#13448)"
+        },
+        {
+          "date": "2025-02-25T22:02:19Z",
+          "pr": 13556,
+          "sha": "cec117459bcb024520e420c255df6df594484845",
+          "title": "[PM-18599] Forbid unknown property and element in tests (#13556)"
+        },
+        {
+          "date": "2025-05-30T07:37:08Z",
+          "pr": 14987,
+          "sha": "0f6d4a92d7d269873d06b67029bedf87d4267614",
+          "title": "Migrate libs/tools/card to be owned by DIRT (#14987)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=libs%2Ftools%2Fcard%2F&since=2024-05-30T07%3A37%3A09Z&until=2025-05-30T07%3A37%3A08Z&per_page=100",
+      "truncated": false
+    }
+  },
+  "id": "BW14987",
+  "merge_sha": "0f6d4a92d7d269873d06b67029bedf87d4267614",
+  "merged_at": "2025-05-30T07:37:09Z",
+  "migration_patch_sha256": "5dc51975d1742249fdb8b5392299b563296d46c1be342ba16468d1158f7495a5",
+  "migration_pr": 14987,
+  "new_owner": [
+    "@bitwarden/team-data-insights-and-reporting-dev"
+  ],
+  "new_prefix": "libs/dirt/card/",
+  "old_owner": [
+    "@bitwarden/team-tools-dev"
+  ],
+  "old_prefix": "libs/tools/card/",
+  "post_days": 365,
+  "pre_days": 365,
+  "rename_pairs": [
+    {
+      "new": "libs/dirt/card/jest.config.js",
+      "old": "libs/tools/card/jest.config.js"
+    },
+    {
+      "new": "libs/dirt/card/package.json",
+      "old": "libs/tools/card/package.json"
+    },
+    {
+      "new": "libs/dirt/card/src/card.component.html",
+      "old": "libs/tools/card/src/card.component.html"
+    },
+    {
+      "new": "libs/dirt/card/src/card.component.ts",
+      "old": "libs/tools/card/src/card.component.ts"
+    },
+    {
+      "new": "libs/dirt/card/src/card.stories.ts",
+      "old": "libs/tools/card/src/card.stories.ts"
+    },
+    {
+      "new": "libs/dirt/card/src/index.ts",
+      "old": "libs/tools/card/src/index.ts"
+    },
+    {
+      "new": "libs/dirt/card/test.setup.ts",
+      "old": "libs/tools/card/test.setup.ts"
+    },
+    {
+      "new": "libs/dirt/card/tsconfig.json",
+      "old": "libs/tools/card/tsconfig.json"
+    },
+    {
+      "new": "libs/dirt/card/tsconfig.spec.json",
+      "old": "libs/tools/card/tsconfig.spec.json"
+    }
+  ],
+  "repo": "bitwarden/clients",
+  "valid": true
+}

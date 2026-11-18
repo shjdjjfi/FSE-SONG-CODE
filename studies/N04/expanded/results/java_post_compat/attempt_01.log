@@ -1,0 +1,54 @@
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective settings
+[WARNING] 'proxies.proxy.id' must be unique but found duplicate proxy with id configured-network-route @ /tmp/n04-maven-settings-45xnilnn/settings.xml
+[WARNING] 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------
+[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---
+[INFO] skip non existing resourceDirectory /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 70 source files to /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/target/classes
+[INFO] /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/src/main/java/org/java_websocket/server/WebSocketServer.java: Some input files use or override a deprecated API.
+[INFO] /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/src/main/java/org/java_websocket/server/WebSocketServer.java: Recompile with -Xlint:deprecation for details.
+[INFO] /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/src/main/java/org/java_websocket/drafts/Draft.java: /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/src/main/java/org/java_websocket/drafts/Draft.java uses or overrides a deprecated API that is marked for removal.
+[INFO] /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/src/main/java/org/java_websocket/drafts/Draft.java: Recompile with -Xlint:removal for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 55 source files to /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/target/test-classes
+[INFO] /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/src/test/java/org/java_websocket/util/ThreadCheck.java: /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/src/test/java/org/java_websocket/util/ThreadCheck.java uses or overrides a deprecated API.
+[INFO] /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/src/test/java/org/java_websocket/util/ThreadCheck.java: Recompile with -Xlint:deprecation for details.
+[INFO] /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Some input files use or override a deprecated API that is marked for removal.
+[INFO] /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Recompile with -Xlint:removal for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/src/test/java/org/java_websocket/exceptions/InvalidEncodingExceptionTest.java:[32,35] package org.omg.CORBA.DynAnyPackage does not exist
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.948 s
+[INFO] Finished at: 2026-11-15T02:22:05+09:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.7.0:testCompile (default-testCompile) on project Java-WebSocket: Compilation failure
+[ERROR] /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/src/test/java/org/java_websocket/exceptions/InvalidEncodingExceptionTest.java:[32,35] package org.omg.CORBA.DynAnyPackage does not exist
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+

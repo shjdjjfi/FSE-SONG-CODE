@@ -1,0 +1,91 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 3,
+  "bytes": 5007,
+  "control_flow_or_callback_lines": 7,
+  "event": "BW13285",
+  "examples": [
+    {
+      "change": "+",
+      "code": "if (this.blockType0) {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (key.inner().type === EncryptionType.AesCbc256_B64 || key.key.byteLength < 64) {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "throw new Error(\"Type 0 encryption is not supported.\");",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (key == null) {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "throw new Error(\"No encryption key provided.\");",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "if (key == null) {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "throw new Error(\"No encryption key provided.\");",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:59.446683+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/13285",
+  "noncomment_nonimport_changed_lines": 11,
+  "pr": 14388,
+  "repository": "bitwarden/clients",
+  "sha256": "6f1b0b0839d7d7fe6cae34e6adfd929d490d591260ed8283d80122af9371f571",
+  "target_code_changed_lines": 14,
+  "target_files": [
+    "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts",
+    "libs/common/src/key-management/crypto/services/encrypt.service.spec.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/14388.patch"
+}

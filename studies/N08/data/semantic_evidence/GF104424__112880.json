@@ -1,0 +1,25 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 1019,
+  "control_flow_or_callback_lines": 0,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "+",
+      "code": "Routes: make([]model.RoutingTreeRoute, 0, len(r.Routes)),",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:58:00.411575+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 1,
+  "pr": 112880,
+  "repository": "grafana/grafana",
+  "sha256": "0cc7493d7a2ae459541968e2f31849ca61c3fe50d7482b19f1ba4bc5b3f822c4",
+  "target_code_changed_lines": 1,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/112880.patch"
+}

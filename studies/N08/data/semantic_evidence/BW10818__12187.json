@@ -1,0 +1,70 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 2,
+  "bytes": 10836,
+  "control_flow_or_callback_lines": 6,
+  "event": "BW10818",
+  "examples": [
+    {
+      "change": "-",
+      "code": "const hwnd = this.windowMain.win.getNativeWindowHandle();",
+      "file": "apps/desktop/src/key-management/biometrics/biometric.unix.main.ts"
+    },
+    {
+      "change": "+",
+      "code": "const hwnd = Buffer.from(\"\");",
+      "file": "apps/desktop/src/key-management/biometrics/biometric.unix.main.ts"
+    },
+    {
+      "change": "-",
+      "code": "return (await passwords.isAvailable()) && !isSnapStore();",
+      "file": "apps/desktop/src/key-management/biometrics/biometric.unix.main.ts"
+    },
+    {
+      "change": "+",
+      "code": "return await passwords.isAvailable();",
+      "file": "apps/desktop/src/key-management/biometrics/biometric.unix.main.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (isSnapStore()) {",
+      "file": "apps/desktop/src/key-management/biometrics/biometric.unix.main.ts"
+    },
+    {
+      "change": "+",
+      "code": "return false;",
+      "file": "apps/desktop/src/key-management/biometrics/biometric.unix.main.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "apps/desktop/src/key-management/biometrics/biometric.unix.main.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/desktop/src/key-management/biometrics/biometric.unix.main.ts"
+    },
+    {
+      "change": "-",
+      "code": "return await biometrics.prompt(hwnd, this.i18nservice.t(\"polkitConsentMessage\"));",
+      "file": "apps/desktop/src/key-management/biometrics/biometric.unix.main.ts"
+    },
+    {
+      "change": "+",
+      "code": "return await biometrics.prompt(hwnd, \"\");",
+      "file": "apps/desktop/src/key-management/biometrics/biometric.unix.main.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:34.555170+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+  "noncomment_nonimport_changed_lines": 9,
+  "pr": 12187,
+  "repository": "bitwarden/clients",
+  "sha256": "08d4ac3df2dcfcc616ff1acbc3a451f2ab1977601ed0bf024bcf001bc399e50e",
+  "target_code_changed_lines": 10,
+  "target_files": [
+    "apps/desktop/src/key-management/biometrics/biometric.unix.main.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/12187.patch"
+}

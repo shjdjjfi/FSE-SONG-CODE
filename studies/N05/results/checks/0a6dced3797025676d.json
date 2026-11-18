@@ -1,0 +1,21 @@
+{
+  "key": "0a6dced3797025676d",
+  "args": {
+    "crate": "petgraph",
+    "version": "0.8.1",
+    "id": "3c140f56681561cd",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0746,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "7fd63bd875175c19e3e2a6547b7ea49ed82396b000dfd8a6eb1ec58a93c7e9f2",
+  "manifest_sha256": "c5a0fdf8fa55bc9c0d200819bb5ae94660917ef1a0a20b0e754a1f977a01f3c1",
+  "log_file": "results/check_logs/0a6dced3797025676d.txt.gz"
+}

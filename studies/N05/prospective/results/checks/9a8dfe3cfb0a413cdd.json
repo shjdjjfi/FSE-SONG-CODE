@@ -1,0 +1,40 @@
+{
+  "key": "9a8dfe3cfb0a413cdd",
+  "args": {
+    "crate": "clap_complete",
+    "version": "4.5.55",
+    "id": "a9cb13c2e11b8bc4",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0706,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `clap`",
+      "rendered": "error[E0432]: unresolved import `clap`\n --> src/main.rs:2:5\n  |\n2 | use clap::Parser;\n  |     ^^^^ use of unresolved module or unlinked crate `clap`\n  |\n  = help: if you wanted to use a crate named `clap`, use `cargo add clap` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `clap` in this scope",
+      "rendered": "error: cannot find attribute `clap` in this scope\n --> src/main.rs:5:3\n  |\n5 | #[clap(name = \"cli\", add = SubcommandCandidates::new(|| { vec![\n  |   ^^^^\n\n",
+      "line": 5
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `arg` in this scope",
+      "rendered": "error: cannot find attribute `arg` in this scope\n  --> src/main.rs:10:7\n   |\n10 |     #[arg(long)]\n   |       ^^^\n\n",
+      "line": 10
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_clap_complete_consumer` (bin \"n05_clap_complete_consumer\") due to 3 previous errors; 1 warning emitted\n",
+  "code_sha256": "1b3d6e1782fe6aa93f0501396092663fde2bf349cf4b838ff69ff53ebf61cf6e",
+  "manifest_sha256": "7fb31d40776b2a233e30bf87eba5c7d80213f12b91ba9592480e88890fc030e8",
+  "log_file": "prospective/results/check_logs/9a8dfe3cfb0a413cdd.txt.gz"
+}

@@ -1,0 +1,185 @@
+{
+  "intervals_note": "Exact binomial intervals are descriptive and optimistic if cases cluster; migration/event-cluster bootstrap is reported separately",
+  "calibration_target": {
+    "maximum_false_inheritance_rate": 0.02,
+    "meets_target_on_raw_IDoFT_deleted_labels": false,
+    "meets_target_on_uncontested_point_estimate": true,
+    "statistically_certifies_target_with_95_percent_confidence": false,
+    "interpretation": "FAILED: 4/9 raw false transfers, and 0/5 filtered has an upper 95% bound far above 2%"
+  },
+  "binomial_intervals": [
+    {
+      "arm": "exact_node_id",
+      "positive_recall_exact_95": [
+        0.0,
+        0.1028
+      ],
+      "all_deleted_false_rate_exact_95": [
+        0.0,
+        0.3363
+      ],
+      "uncontested_deleted_false_rate_exact_95": [
+        0.0,
+        0.5218
+      ]
+    },
+    {
+      "arm": "git_path_same_method",
+      "positive_recall_exact_95": [
+        0.2465,
+        0.593
+      ],
+      "all_deleted_false_rate_exact_95": [
+        0.137,
+        0.788
+      ],
+      "uncontested_deleted_false_rate_exact_95": [
+        0.0,
+        0.5218
+      ]
+    },
+    {
+      "arm": "name_similarity",
+      "positive_recall_exact_95": [
+        0.8467,
+        0.9993
+      ],
+      "all_deleted_false_rate_exact_95": [
+        0.5175,
+        0.9972
+      ],
+      "uncontested_deleted_false_rate_exact_95": [
+        0.2836,
+        0.9949
+      ]
+    },
+    {
+      "arm": "exact_body",
+      "positive_recall_exact_95": [
+        0.1739,
+        0.5053
+      ],
+      "all_deleted_false_rate_exact_95": [
+        0.0281,
+        0.6001
+      ],
+      "uncontested_deleted_false_rate_exact_95": [
+        0.0,
+        0.5218
+      ]
+    },
+    {
+      "arm": "name_and_context",
+      "positive_recall_exact_95": [
+        0.5564,
+        0.8712
+      ],
+      "all_deleted_false_rate_exact_95": [
+        0.137,
+        0.788
+      ],
+      "uncontested_deleted_false_rate_exact_95": [
+        0.0,
+        0.5218
+      ]
+    },
+    {
+      "arm": "guarded_lineage",
+      "positive_recall_exact_95": [
+        0.5883,
+        0.8925
+      ],
+      "all_deleted_false_rate_exact_95": [
+        0.137,
+        0.788
+      ],
+      "uncontested_deleted_false_rate_exact_95": [
+        0.0,
+        0.5218
+      ]
+    },
+    {
+      "arm": "ablation_no_body",
+      "positive_recall_exact_95": [
+        0.8467,
+        0.9993
+      ],
+      "all_deleted_false_rate_exact_95": [
+        0.5175,
+        0.9972
+      ],
+      "uncontested_deleted_false_rate_exact_95": [
+        0.2836,
+        0.9949
+      ]
+    },
+    {
+      "arm": "ablation_no_group_guard",
+      "positive_recall_exact_95": [
+        0.5883,
+        0.8925
+      ],
+      "all_deleted_false_rate_exact_95": [
+        0.137,
+        0.788
+      ],
+      "uncontested_deleted_false_rate_exact_95": [
+        0.0,
+        0.5218
+      ]
+    }
+  ],
+  "paired_effects": [
+    {
+      "focus": "guarded_lineage",
+      "baseline": "git_path_same_method",
+      "paired_positive_instances": 34,
+      "independent_migration_clusters": 7,
+      "delta_recall": 0.3529,
+      "event_bootstrap_95": [
+        0.1081,
+        0.6667
+      ],
+      "bootstrap_seeds": [
+        17,
+        29,
+        43
+      ],
+      "draws_per_seed": 3000
+    },
+    {
+      "focus": "guarded_lineage",
+      "baseline": "name_and_context",
+      "paired_positive_instances": 34,
+      "independent_migration_clusters": 7,
+      "delta_recall": 0.0294,
+      "event_bootstrap_95": [
+        0.0,
+        0.1429
+      ],
+      "bootstrap_seeds": [
+        17,
+        29,
+        43
+      ],
+      "draws_per_seed": 3000
+    },
+    {
+      "focus": "guarded_lineage",
+      "baseline": "exact_body",
+      "paired_positive_instances": 34,
+      "independent_migration_clusters": 7,
+      "delta_recall": 0.4412,
+      "event_bootstrap_95": [
+        0.12,
+        0.7143
+      ],
+      "bootstrap_seeds": [
+        17,
+        29,
+        43
+      ],
+      "draws_per_seed": 3000
+    }
+  ]
+}

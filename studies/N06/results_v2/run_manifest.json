@@ -1,0 +1,51 @@
+{
+  "generated_at_utc": "2026-11-14T17:14:34.468698+00:00",
+  "benchmark_version": "N06-controlled-v1",
+  "episodes": 1980,
+  "paired_policy_episode_rows": 19800,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "replicates_per_profile_family_seed": 30,
+  "families": [
+    "no_churn_outage",
+    "churn_outage",
+    "rollout_clock_skew",
+    "long_gap_outage",
+    "missing_owner",
+    "scrape_gap_outage",
+    "owner_reuse",
+    "recovery_reset",
+    "silent_recovery_no_rollout",
+    "healthy_rollout",
+    "partial_replica"
+  ],
+  "profiles_hold_ticks": {
+    "kube_prometheus_targetdown_10m": 40,
+    "ftw_podnotready_15m": 60
+  },
+  "policies": [
+    "instance",
+    "service",
+    "targetdown10",
+    "service_grace",
+    "targetdown10_grace",
+    "owner_no_gap",
+    "owner_lookback",
+    "owner_relink",
+    "owner_no_probe",
+    "probe_latch"
+  ],
+  "seconds_per_tick": 15,
+  "default_relink_grace_ticks": 6,
+  "blackbox_probe_missing_rate": 0.12,
+  "blackbox_probe_noise": 0.0,
+  "data_origin": "entirely synthetic and algorithmically generated",
+  "production_data_used": false,
+  "native_prometheus_engine_used": false,
+  "platform": "linux",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "runtime_seconds": 40.3298
+}

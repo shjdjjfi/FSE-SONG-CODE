@@ -1,0 +1,951 @@
+{
+  "scope": "Minimized successfully compiled fixes on frozen source releases",
+  "method": "Cargo.toml feature graph closure; external dependencies not counted; alternative recompilation required before accepting a replacement.",
+  "cases": [
+    {
+      "dataset": ".",
+      "crate": "axum",
+      "id": "54004c2631eefe66",
+      "requested_flags": [
+        "ws"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "ws"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "axum",
+      "id": "664dca3e05a99f5b",
+      "requested_flags": [
+        "ws"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "ws"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "clap",
+      "id": "b74f305275415e6b",
+      "requested_flags": [
+        "derive"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "derive"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "clap",
+      "id": "febca273195721c4",
+      "requested_flags": [
+        "derive"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "derive"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "clap",
+      "id": "a1a1a5743fad4e89",
+      "requested_flags": [
+        "derive"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "derive"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "strum",
+      "id": "f76f735b2f324842",
+      "requested_flags": [
+        "derive"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "derive"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "strum",
+      "id": "4479ab5fc6d4ba3f",
+      "requested_flags": [
+        "derive"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "derive"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "strum",
+      "id": "59c54a68094a4178",
+      "requested_flags": [
+        "derive"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "derive"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "tinyvec",
+      "id": "43d3d6bbc0f68d92",
+      "requested_flags": [
+        "grab_spare_slice"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "grab_spare_slice"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "tinyvec",
+      "id": "57ff1aff71a9024b",
+      "requested_flags": [
+        "grab_spare_slice"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "grab_spare_slice"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "tinyvec",
+      "id": "21c6a67eeaea12a8",
+      "requested_flags": [
+        "alloc"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "alloc"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "tokio",
+      "id": "81a01fc7b68c2228",
+      "requested_flags": [
+        "sync",
+        "macros",
+        "rt-multi-thread"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "macros",
+        "rt",
+        "rt-multi-thread",
+        "sync"
+      ],
+      "activated_extra_internal_feature_count": 4,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "tokio",
+      "id": "cd28cf9ef0f1f8e2",
+      "requested_flags": [
+        "time"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "time"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "tokio",
+      "id": "4de8032810115862",
+      "requested_flags": [
+        "macros",
+        "io-util",
+        "rt-multi-thread"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "io-util",
+        "macros",
+        "rt",
+        "rt-multi-thread"
+      ],
+      "activated_extra_internal_feature_count": 4,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "uuid",
+      "id": "f235f93ca230a419",
+      "requested_flags": [
+        "v1"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "atomic",
+        "v1"
+      ],
+      "activated_extra_internal_feature_count": 2,
+      "narrower_structural_subfeature_candidates": [
+        {
+          "alternative_feature_flag": "atomic",
+          "alternative_activated_feature_count": 1,
+          "saved_activated_feature_count": 1,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        }
+      ],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "uuid",
+      "id": "6f8f25468af9f32d",
+      "requested_flags": [
+        "v1"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "atomic",
+        "v1"
+      ],
+      "activated_extra_internal_feature_count": 2,
+      "narrower_structural_subfeature_candidates": [
+        {
+          "alternative_feature_flag": "atomic",
+          "alternative_activated_feature_count": 1,
+          "saved_activated_feature_count": 1,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        }
+      ],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "tokio",
+      "id": "9de6c4abaf3d5e7d",
+      "requested_flags": [
+        "net",
+        "macros",
+        "io-util",
+        "rt-multi-thread"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "io-util",
+        "macros",
+        "net",
+        "rt",
+        "rt-multi-thread"
+      ],
+      "activated_extra_internal_feature_count": 5,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "tokio",
+      "id": "7b7e8b78670012f6",
+      "requested_flags": [
+        "macros",
+        "io-util",
+        "rt-multi-thread"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "io-util",
+        "macros",
+        "rt",
+        "rt-multi-thread"
+      ],
+      "activated_extra_internal_feature_count": 4,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "tracing-subscriber",
+      "id": "7cf792d58ba414b7",
+      "requested_flags": [
+        "env-filter",
+        "json"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "env-filter",
+        "json"
+      ],
+      "activated_extra_internal_feature_count": 2,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "uuid",
+      "id": "81fe659e70e253fb",
+      "requested_flags": [
+        "v5"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "sha1",
+        "v5"
+      ],
+      "activated_extra_internal_feature_count": 2,
+      "narrower_structural_subfeature_candidates": [
+        {
+          "alternative_feature_flag": "sha1",
+          "alternative_activated_feature_count": 1,
+          "saved_activated_feature_count": 1,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        }
+      ],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "uuid",
+      "id": "88fe8ee22c2585f0",
+      "requested_flags": [
+        "v8"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "v8"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "tokio",
+      "id": "6dabd92fe51ac316",
+      "requested_flags": [
+        "sync",
+        "macros",
+        "rt-multi-thread"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "macros",
+        "rt",
+        "rt-multi-thread",
+        "sync"
+      ],
+      "activated_extra_internal_feature_count": 4,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "tokio",
+      "id": "089aafa8ca1f9b01",
+      "requested_flags": [
+        "macros",
+        "io-util",
+        "rt-multi-thread"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "io-util",
+        "macros",
+        "rt",
+        "rt-multi-thread"
+      ],
+      "activated_extra_internal_feature_count": 4,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "tokio-util",
+      "id": "fc2ecf8ee46e4641",
+      "requested_flags": [
+        "codec"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "codec"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": ".",
+      "crate": "tokio-util",
+      "id": "b567f72ae45aedf4",
+      "requested_flags": [
+        "codec"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "codec"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "holdout",
+      "crate": "tower-http",
+      "id": "0351acaee18dfeba",
+      "requested_flags": [
+        "cors"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "cors"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "holdout",
+      "crate": "dashmap",
+      "id": "d50530e0763f5f3a",
+      "requested_flags": [
+        "raw-api"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "raw-api"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "holdout",
+      "crate": "tower",
+      "id": "0b9a0622b2b03524",
+      "requested_flags": [
+        "timeout",
+        "util"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "__common",
+        "timeout",
+        "util"
+      ],
+      "activated_extra_internal_feature_count": 3,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "holdout",
+      "crate": "tower",
+      "id": "c67ede2141155902",
+      "requested_flags": [
+        "util"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "__common",
+        "util"
+      ],
+      "activated_extra_internal_feature_count": 2,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "holdout",
+      "crate": "tower",
+      "id": "5c9691fe1f14ac88",
+      "requested_flags": [
+        "util"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "__common",
+        "util"
+      ],
+      "activated_extra_internal_feature_count": 2,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "holdout",
+      "crate": "tower",
+      "id": "70f8633f0aab478c",
+      "requested_flags": [
+        "balance"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "__common",
+        "balance",
+        "discover",
+        "load",
+        "make",
+        "ready-cache",
+        "util"
+      ],
+      "activated_extra_internal_feature_count": 7,
+      "narrower_structural_subfeature_candidates": [
+        {
+          "alternative_feature_flag": "discover",
+          "alternative_activated_feature_count": 2,
+          "saved_activated_feature_count": 5,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        },
+        {
+          "alternative_feature_flag": "load",
+          "alternative_activated_feature_count": 2,
+          "saved_activated_feature_count": 5,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        },
+        {
+          "alternative_feature_flag": "make",
+          "alternative_activated_feature_count": 1,
+          "saved_activated_feature_count": 6,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        },
+        {
+          "alternative_feature_flag": "ready-cache",
+          "alternative_activated_feature_count": 1,
+          "saved_activated_feature_count": 6,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        },
+        {
+          "alternative_feature_flag": "util",
+          "alternative_activated_feature_count": 2,
+          "saved_activated_feature_count": 5,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        }
+      ],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "async-compression",
+      "id": "9c7c6c1656f6e371",
+      "requested_flags": [
+        "lz4"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "lz4"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "async-compression",
+      "id": "ead852b963b2db7d",
+      "requested_flags": [
+        "all-algorithms"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "all-algorithms",
+        "deflate",
+        "deflate64",
+        "gzip",
+        "lz4",
+        "lzma",
+        "xz",
+        "zlib",
+        "zstd"
+      ],
+      "activated_extra_internal_feature_count": 9,
+      "narrower_structural_subfeature_candidates": [
+        {
+          "alternative_feature_flag": "deflate",
+          "alternative_activated_feature_count": 1,
+          "saved_activated_feature_count": 8,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        },
+        {
+          "alternative_feature_flag": "deflate64",
+          "alternative_activated_feature_count": 1,
+          "saved_activated_feature_count": 8,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        },
+        {
+          "alternative_feature_flag": "gzip",
+          "alternative_activated_feature_count": 1,
+          "saved_activated_feature_count": 8,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        },
+        {
+          "alternative_feature_flag": "lz4",
+          "alternative_activated_feature_count": 1,
+          "saved_activated_feature_count": 8,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        },
+        {
+          "alternative_feature_flag": "lzma",
+          "alternative_activated_feature_count": 1,
+          "saved_activated_feature_count": 8,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        },
+        {
+          "alternative_feature_flag": "xz",
+          "alternative_activated_feature_count": 2,
+          "saved_activated_feature_count": 7,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        },
+        {
+          "alternative_feature_flag": "zlib",
+          "alternative_activated_feature_count": 1,
+          "saved_activated_feature_count": 8,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        },
+        {
+          "alternative_feature_flag": "zstd",
+          "alternative_activated_feature_count": 1,
+          "saved_activated_feature_count": 8,
+          "same_consumer_compilation_status": "NOT_TESTED"
+        }
+      ],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "hyper-util",
+      "id": "6414873f00061607",
+      "requested_flags": [
+        "server-auto",
+        "server-graceful"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "http1",
+        "http2",
+        "server",
+        "server-auto",
+        "server-graceful"
+      ],
+      "activated_extra_internal_feature_count": 5,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "mio",
+      "id": "a108262e04d9c2c7",
+      "requested_flags": [
+        "net",
+        "os-poll"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "net",
+        "os-poll"
+      ],
+      "activated_extra_internal_feature_count": 2,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "mio",
+      "id": "80079347bf9fae52",
+      "requested_flags": [
+        "os-poll"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "os-poll"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "poem",
+      "id": "4c965389a976c73d",
+      "requested_flags": [
+        "cookie"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "cookie"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "sea-query",
+      "id": "ae307af9e659e67a",
+      "requested_flags": [
+        "tests-cfg"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "tests-cfg"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "sea-query",
+      "id": "15f58f7222bb9c01",
+      "requested_flags": [
+        "tests-cfg"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "tests-cfg"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "sqlparser",
+      "id": "6980eb1a861e443d",
+      "requested_flags": [
+        "visitor"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "visitor"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "sqlparser",
+      "id": "e65c2a180cd09a5c",
+      "requested_flags": [
+        "visitor"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "visitor"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "sqlparser",
+      "id": "d54c39d20f74890a",
+      "requested_flags": [
+        "visitor"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "visitor"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "figment",
+      "id": "f0d40d06dc5d38a8",
+      "requested_flags": [
+        "env",
+        "test"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "env",
+        "parse-value",
+        "test"
+      ],
+      "activated_extra_internal_feature_count": 3,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "ratatui",
+      "id": "69cf5018e5c5b0ab",
+      "requested_flags": [
+        "palette"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "palette"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "ratatui",
+      "id": "2d53448333e48295",
+      "requested_flags": [
+        "palette"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "palette"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "sea-query",
+      "id": "cc57460dbc68671e",
+      "requested_flags": [
+        "tests-cfg"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "tests-cfg"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "sea-query",
+      "id": "4aed0419ba60a037",
+      "requested_flags": [
+        "tests-cfg"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "tests-cfg"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "time",
+      "id": "869b73b34d6f7326",
+      "requested_flags": [
+        "local-offset"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "local-offset"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "figment",
+      "id": "292a6fb8e93f439c",
+      "requested_flags": [
+        "env",
+        "test"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "env",
+        "parse-value",
+        "test"
+      ],
+      "activated_extra_internal_feature_count": 3,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "hyper-util",
+      "id": "babba9f5f04cf89e",
+      "requested_flags": [
+        "server-auto",
+        "server-graceful"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "http1",
+        "http2",
+        "server",
+        "server-auto",
+        "server-graceful"
+      ],
+      "activated_extra_internal_feature_count": 5,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "poem",
+      "id": "fd02b052feef4504",
+      "requested_flags": [
+        "cookie"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "cookie"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "poem",
+      "id": "8be82433cb971cda",
+      "requested_flags": [
+        "cookie"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "cookie"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "poem",
+      "id": "bbe13d6ad3a253ac",
+      "requested_flags": [
+        "static-files"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "static-files"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "sea-query",
+      "id": "1efe6e3161498bc9",
+      "requested_flags": [
+        "tests-cfg"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "tests-cfg"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    },
+    {
+      "dataset": "prospective",
+      "crate": "sea-query",
+      "id": "a177aebdb27b5488",
+      "requested_flags": [
+        "tests-cfg"
+      ],
+      "activated_extra_internal_feature_flags": [
+        "tests-cfg"
+      ],
+      "activated_extra_internal_feature_count": 1,
+      "narrower_structural_subfeature_candidates": [],
+      "claim": "structural footprint only, not yet an alternative compiling fix"
+    }
+  ]
+}

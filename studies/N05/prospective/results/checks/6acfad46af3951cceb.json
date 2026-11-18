@@ -1,0 +1,190 @@
+{
+  "key": "6acfad46af3951cceb",
+  "args": {
+    "crate": "serde_with",
+    "version": "3.12.0",
+    "id": "00f2a75f0816671b",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2336,
+  "errors": [
+    {
+      "code": null,
+      "message": "cannot find derive macro `Deserialize` in this scope",
+      "rendered": "error: cannot find derive macro `Deserialize` in this scope\n --> src/main.rs:3:10\n  |\n3 | #[derive(Deserialize, Serialize)]\n  |          ^^^^^^^^^^^\n\n",
+      "line": 3
+    },
+    {
+      "code": null,
+      "message": "cannot find derive macro `Serialize` in this scope",
+      "rendered": "error: cannot find derive macro `Serialize` in this scope\n --> src/main.rs:3:23\n  |\n3 | #[derive(Deserialize, Serialize)]\n  |                       ^^^^^^^^^\n\n",
+      "line": 3
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `serde_as` in this scope",
+      "rendered": "error: cannot find attribute `serde_as` in this scope\n --> src/main.rs:2:3\n  |\n2 | #[serde_as]\n  |   ^^^^^^^^\n  |\nhelp: consider importing this attribute macro\n  |\n1 + use serde_with::serde_as;\n  |\n\n",
+      "line": 2
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `serde_as` in this scope",
+      "rendered": "error: cannot find attribute `serde_as` in this scope\n --> src/main.rs:6:7\n  |\n6 |     #[serde_as(as = \"serde_with::hex::Hex\")]\n  |       ^^^^^^^^\n  |\nhelp: consider importing this attribute macro\n  |\n1 + use serde_with::serde_as;\n  |\n\n",
+      "line": 6
+    },
+    {
+      "code": null,
+      "message": "cannot find derive macro `Deserialize` in this scope",
+      "rendered": "error: cannot find derive macro `Deserialize` in this scope\n  --> src/main.rs:11:10\n   |\n11 | #[derive(Deserialize, Serialize)]\n   |          ^^^^^^^^^^^\n\n",
+      "line": 11
+    },
+    {
+      "code": null,
+      "message": "cannot find derive macro `Serialize` in this scope",
+      "rendered": "error: cannot find derive macro `Serialize` in this scope\n  --> src/main.rs:11:23\n   |\n11 | #[derive(Deserialize, Serialize)]\n   |                       ^^^^^^^^^\n\n",
+      "line": 11
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `serde_as` in this scope",
+      "rendered": "error: cannot find attribute `serde_as` in this scope\n  --> src/main.rs:10:3\n   |\n10 | #[serde_as]\n   |   ^^^^^^^^\n   |\nhelp: consider importing this attribute macro\n   |\n 1 + use serde_with::serde_as;\n   |\n\n",
+      "line": 10
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `serde_as` in this scope",
+      "rendered": "error: cannot find attribute `serde_as` in this scope\n  --> src/main.rs:13:7\n   |\n13 |     #[serde_as(as = \"serde_with::hex::Hex<serde_with::formats::Uppercase>\")]\n   |       ^^^^^^^^\n   |\nhelp: consider importing this attribute macro\n   |\n 1 + use serde_with::serde_as;\n   |\n\n",
+      "line": 13
+    },
+    {
+      "code": null,
+      "message": "cannot find macro `json` in this scope",
+      "rendered": "error: cannot find macro `json` in this scope\n  --> src/main.rs:21:5\n   |\n21 |     json!(\"48656c6c6f20576f726c6421\"),\n   |     ^^^^\n\n",
+      "line": 21
+    },
+    {
+      "code": null,
+      "message": "cannot find macro `json` in this scope",
+      "rendered": "error: cannot find macro `json` in this scope\n  --> src/main.rs:26:5\n   |\n26 |     json!(\"48656C6C6F20576F726C6421\"),\n   |     ^^^^\n\n",
+      "line": 26
+    },
+    {
+      "code": null,
+      "message": "cannot find macro `json` in this scope",
+      "rendered": "error: cannot find macro `json` in this scope\n  --> src/main.rs:33:28\n   |\n33 |     serde_json::from_value(json!(\"00aAbc99FF\")).unwrap()\n   |                            ^^^^\n\n",
+      "line": 33
+    },
+    {
+      "code": null,
+      "message": "cannot find macro `json` in this scope",
+      "rendered": "error: cannot find macro `json` in this scope\n  --> src/main.rs:37:28\n   |\n37 |     serde_json::from_value(json!(\"00aAbc99FF\")).unwrap()\n   |                            ^^^^\n\n",
+      "line": 37
+    },
+    {
+      "code": null,
+      "message": "cannot find derive macro `Deserialize` in this scope",
+      "rendered": "error: cannot find derive macro `Deserialize` in this scope\n  --> src/main.rs:41:10\n   |\n41 | #[derive(Deserialize, Serialize)]\n   |          ^^^^^^^^^^^\n\n",
+      "line": 41
+    },
+    {
+      "code": null,
+      "message": "cannot find derive macro `Serialize` in this scope",
+      "rendered": "error: cannot find derive macro `Serialize` in this scope\n  --> src/main.rs:41:23\n   |\n41 | #[derive(Deserialize, Serialize)]\n   |                       ^^^^^^^^^\n\n",
+      "line": 41
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `serde_as` in this scope",
+      "rendered": "error: cannot find attribute `serde_as` in this scope\n  --> src/main.rs:40:3\n   |\n40 | #[serde_as]\n   |   ^^^^^^^^\n   |\nhelp: consider importing this attribute macro\n   |\n 1 + use serde_with::serde_as;\n   |\n\n",
+      "line": 40
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `serde_as` in this scope",
+      "rendered": "error: cannot find attribute `serde_as` in this scope\n  --> src/main.rs:44:7\n   |\n44 |     #[serde_as(as = \"serde_with::hex::Hex\")]\n   |       ^^^^^^^^\n   |\nhelp: consider importing this attribute macro\n   |\n 1 + use serde_with::serde_as;\n   |\n\n",
+      "line": 44
+    },
+    {
+      "code": null,
+      "message": "cannot find macro `json` in this scope",
+      "rendered": "error: cannot find macro `json` in this scope\n  --> src/main.rs:51:5\n   |\n51 |     json!(\"48656c6c6f20576f726c6421\"),\n   |     ^^^^\n\n",
+      "line": 51
+    },
+    {
+      "code": null,
+      "message": "cannot find macro `json` in this scope",
+      "rendered": "error: cannot find macro `json` in this scope\n  --> src/main.rs:58:28\n   |\n58 |     serde_json::from_value(json!(\"0011223344556677aAbc99FF\")).unwrap()\n   |                            ^^^^\n\n",
+      "line": 58
+    },
+    {
+      "code": null,
+      "message": "cannot find macro `json` in this scope",
+      "rendered": "error: cannot find macro `json` in this scope\n  --> src/main.rs:62:65\n   |\n62 | let error_result: Result<ByteArray, _> = serde_json::from_value(json!(\"42\")); // Too short\n   |                                                                 ^^^^\n\n",
+      "line": 62
+    },
+    {
+      "code": null,
+      "message": "cannot find macro `json` in this scope",
+      "rendered": "error: cannot find macro `json` in this scope\n  --> src/main.rs:66:28\n   |\n66 |     serde_json::from_value(json!(\"000000000000000000000000000000\")); // Too long\n   |                            ^^^^\n\n",
+      "line": 66
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:22:5\n   |\n22 |     serde_json::to_value(BytesLowercase(b.to_vec())).unwrap()\n   |     ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 22
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:27:5\n   |\n27 |     serde_json::to_value(BytesUppercase(b.to_vec())).unwrap()\n   |     ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 27
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:33:5\n   |\n33 |     serde_json::from_value(json!(\"00aAbc99FF\")).unwrap()\n   |     ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 33
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:37:5\n   |\n37 |     serde_json::from_value(json!(\"00aAbc99FF\")).unwrap()\n   |     ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 37
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:52:5\n   |\n52 |     serde_json::to_value(ByteArray(b)).unwrap()\n   |     ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 52
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:58:5\n   |\n58 |     serde_json::from_value(json!(\"0011223344556677aAbc99FF\")).unwrap()\n   |     ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 58
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:62:42\n   |\n62 | let error_result: Result<ByteArray, _> = serde_json::from_value(json!(\"42\")); // Too short\n   |                                          ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 62
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:66:5\n   |\n66 |     serde_json::from_value(json!(\"000000000000000000000000000000\")); // Too long\n   |     ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 66
+    }
+  ],
+  "error_count": 28,
+  "stderr_excerpt": "error: could not compile `n05_serde_with_consumer` (bin \"n05_serde_with_consumer\") due to 28 previous errors\n",
+  "code_sha256": "1fa2803c90ddef1b087ce821a39aa10acc07385234c9ac9b18fd6f649cb6fe03",
+  "manifest_sha256": "3ba2ae6b3f0e29f2e17cea600835e14736a5461c6af3efa26b8d74df510cdf1b",
+  "log_file": "prospective/results/check_logs/6acfad46af3951cceb.txt.gz"
+}

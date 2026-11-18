@@ -1,0 +1,95 @@
+{
+  "phase": "post-hoc policy on new synthetic seeds 101,211,307",
+  "industrial_data": false,
+  "promtool_run": false,
+  "pairs": {
+    "owner_lookback": {
+      "any_correct_page": {
+        "paired_episodes": 1080,
+        "v2_minus_baseline": 0.019444,
+        "mc95_low": 0.012037,
+        "mc95_high": 0.026852,
+        "scope": "stratified Monte Carlo over synthetic generator only"
+      },
+      "any_false_page": {
+        "paired_episodes": 900,
+        "v2_minus_baseline": -0.005556,
+        "mc95_low": -0.011111,
+        "mc95_high": -0.001111,
+        "scope": "stratified Monte Carlo over synthetic generator only"
+      },
+      "timeliness": {
+        "rescued_positives_v2_only": 21,
+        "lost_positives_baseline_only": 0,
+        "both_detected": 996,
+        "v2_earlier_by_at_least_one_15_second_evaluation": 30
+      }
+    },
+    "owner_relink": {
+      "any_correct_page": {
+        "paired_episodes": 1080,
+        "v2_minus_baseline": 0.172222,
+        "mc95_low": 0.15463,
+        "mc95_high": 0.190741,
+        "scope": "stratified Monte Carlo over synthetic generator only"
+      },
+      "any_false_page": {
+        "paired_episodes": 900,
+        "v2_minus_baseline": 0.078889,
+        "mc95_low": 0.065556,
+        "mc95_high": 0.093333,
+        "scope": "stratified Monte Carlo over synthetic generator only"
+      },
+      "timeliness": {
+        "rescued_positives_v2_only": 186,
+        "lost_positives_baseline_only": 0,
+        "both_detected": 831,
+        "v2_earlier_by_at_least_one_15_second_evaluation": 173
+      }
+    },
+    "service_grace": {
+      "any_correct_page": {
+        "paired_episodes": 1080,
+        "v2_minus_baseline": -0.058333,
+        "mc95_low": -0.069444,
+        "mc95_high": -0.047222,
+        "scope": "stratified Monte Carlo over synthetic generator only"
+      },
+      "any_false_page": {
+        "paired_episodes": 900,
+        "v2_minus_baseline": -0.205556,
+        "mc95_low": -0.211111,
+        "mc95_high": -0.201111,
+        "scope": "stratified Monte Carlo over synthetic generator only"
+      },
+      "timeliness": {
+        "rescued_positives_v2_only": 0,
+        "lost_positives_baseline_only": 63,
+        "both_detected": 1017,
+        "v2_earlier_by_at_least_one_15_second_evaluation": 0
+      }
+    },
+    "probe_latch": {
+      "any_correct_page": {
+        "paired_episodes": 1080,
+        "v2_minus_baseline": -0.022222,
+        "mc95_low": -0.037037,
+        "mc95_high": -0.006481,
+        "scope": "stratified Monte Carlo over synthetic generator only"
+      },
+      "any_false_page": {
+        "paired_episodes": 900,
+        "v2_minus_baseline": -0.151111,
+        "mc95_low": -0.171111,
+        "mc95_high": -0.13,
+        "scope": "stratified Monte Carlo over synthetic generator only"
+      },
+      "timeliness": {
+        "rescued_positives_v2_only": 34,
+        "lost_positives_baseline_only": 58,
+        "both_detected": 983,
+        "v2_earlier_by_at_least_one_15_second_evaluation": 640
+      }
+    }
+  }
+}

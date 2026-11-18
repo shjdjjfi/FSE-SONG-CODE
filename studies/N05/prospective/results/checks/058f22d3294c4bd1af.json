@@ -1,0 +1,34 @@
+{
+  "key": "058f22d3294c4bd1af",
+  "args": {
+    "crate": "redis",
+    "version": "0.32.1",
+    "id": "0ef961ca072cf45c",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 18.8723,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `redis::JsonCommands`",
+      "rendered": "error[E0432]: unresolved import `redis::JsonCommands`\n   --> src/main.rs:2:5\n    |\n  2 | use redis::JsonCommands;\n    |     ^^^^^^^------------\n    |     |      |\n    |     |      help: a similar name exists in the module: `Commands`\n    |     no `JsonCommands` in the root\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/redis-0.32.1/src/lib.rs:658:26\n    |\n656 | #[cfg(feature = \"json\")]\n    |       ---------------- the item is gated behind the `json` feature\n657 | #[cfg_attr(docsrs, doc(cfg(feature = \"json\")))]\n658 | pub use crate::commands::JsonCommands;\n    |                          ^^^^^^^^^^^^\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde_json`",
+      "rendered": "error[E0432]: unresolved import `serde_json`\n --> src/main.rs:3:5\n  |\n3 | use serde_json::json;\n  |     ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n  |\n  = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_redis_consumer` (bin \"n05_redis_consumer\") due to 2 previous errors\n",
+  "code_sha256": "6b008fbf96a443f3ed0fe7c6cc0a6803ae5a762bd8a5190ba1412900d29b390f",
+  "manifest_sha256": "5c2057a3e4fac2ad0526d11aa2287ac877f0da879fa70488b773b6f1d03fb340",
+  "log_file": "prospective/results/check_logs/058f22d3294c4bd1af.txt.gz"
+}

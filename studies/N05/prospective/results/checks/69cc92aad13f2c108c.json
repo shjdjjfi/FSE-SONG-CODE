@@ -1,0 +1,34 @@
+{
+  "key": "69cc92aad13f2c108c",
+  "args": {
+    "crate": "rand_distr",
+    "version": "0.5.1",
+    "id": "84f7c0142f6567a4",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0698,
+  "errors": [
+    {
+      "code": null,
+      "message": "expected `;`, found `Ok`",
+      "rendered": "error: expected `;`, found `Ok`\n --> src/main.rs:5:43\n  |\n5 | println!(\"{:?} is from the unit Disc.\", v)\n  |                                           ^ help: add `;` here\n6 | Ok(())\n  | -- unexpected token\n\n",
+      "line": 6
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `rand`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rand`\n --> src/main.rs:4:40\n  |\n4 | let v: [f64; 2] = UnitDisc.sample(&mut rand::rng());\n  |                                        ^^^^ use of unresolved module or unlinked crate `rand`\n  |\n  = help: if you wanted to use a crate named `rand`, use `cargo add rand` to add it to your `Cargo.toml`\n\n",
+      "line": 4
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_rand_distr_consumer` (bin \"n05_rand_distr_consumer\") due to 2 previous errors\n",
+  "code_sha256": "74bedb2eacadbfd7b34362ee43d53c95431574f0ad17d795fdd89a55b65d1ea0",
+  "manifest_sha256": "b1de49da3a4a5e519384a5511f5f25268e96fbf9d26ea630120e38175f981405",
+  "log_file": "prospective/results/check_logs/69cc92aad13f2c108c.txt.gz"
+}

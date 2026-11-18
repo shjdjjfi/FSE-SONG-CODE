@@ -1,0 +1,26 @@
+{
+  "pr": 16987,
+  "pr_author": "ttalty",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-10-22T18:16:57Z",
+      "requested_people": [
+        "ttalty"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-22T18:16:57Z",
+      "requested_people": [
+        "gbubemismith",
+        "ttalty"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "1c97b493571e7f46ed01f2e993e9b50deb0b365a3a66cd70f9de66d96b8429bd",
+  "url": "https://github.com/bitwarden/clients/pull/16987"
+}

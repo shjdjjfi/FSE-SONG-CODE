@@ -1,0 +1,28 @@
+{
+  "key": "64be05ed43c6ca2cea",
+  "args": {
+    "crate": "sqlparser",
+    "version": "0.56.0",
+    "id": "d54c39d20f74890a",
+    "profile": "candidate",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0951,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `sqlparser::ast::visit_expressions`",
+      "rendered": "error[E0432]: unresolved import `sqlparser::ast::visit_expressions`\n --> src/main.rs:4:22\n  |\n4 | use sqlparser::ast::{visit_expressions};\n  |                      ^^^^^^^^^^^^^^^^^ no `visit_expressions` in `ast`\n\n",
+      "line": 4
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_sqlparser_consumer` (bin \"n05_sqlparser_consumer\") due to 1 previous error\n",
+  "code_sha256": "e9e9f3ccaa5e4ee2e4876b33ae168fac181541d00f723f66494e3273729f34aa",
+  "manifest_sha256": "3448fa11d3cca660bf6962a5f7e1c4d436e75726090d429c20cb7e5de60b5cc7",
+  "log_file": "prospective/results/check_logs/64be05ed43c6ca2cea.txt.gz"
+}

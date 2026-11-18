@@ -1,0 +1,32 @@
+{
+  "key": "22a1dd171f2d0e2059",
+  "args": {
+    "crate": "sea-query",
+    "version": "0.32.5",
+    "id": "4aed0419ba60a037",
+    "profile": "candidate",
+    "features": [
+      "all-features",
+      "all-types",
+      "attr"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0929,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `sea_query::tests_cfg`",
+      "rendered": "error[E0432]: unresolved import `sea_query::tests_cfg`\n --> src/main.rs:2:17\n  |\n2 | use sea_query::{tests_cfg::*, *};\n  |                 ^^^^^^^^^ could not find `tests_cfg` in `sea_query`\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_sea_query_consumer` (bin \"n05_sea_query_consumer\") due to 1 previous error\n",
+  "code_sha256": "8f58ac66c40f3be54b474d1df1a091763d97dea6fe2b7c8e82919ecc748803fc",
+  "manifest_sha256": "4b62a370e7c3f40c69dafacc16cc2f243dd4422bce05b478c6b4d24c27ddac50",
+  "log_file": "prospective/results/check_logs/22a1dd171f2d0e2059.txt.gz"
+}

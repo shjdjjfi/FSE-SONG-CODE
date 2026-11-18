@@ -1,0 +1,34 @@
+{
+  "key": "07e5cf149385ed7f18",
+  "args": {
+    "crate": "clap_complete",
+    "version": "4.5.55",
+    "id": "c68a6a444920d5f0",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0764,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `clap`",
+      "rendered": "error[E0432]: unresolved import `clap`\n --> src/main.rs:2:5\n  |\n2 | use clap::Parser;\n  |     ^^^^ use of unresolved module or unlinked crate `clap`\n  |\n  = help: if you wanted to use a crate named `clap`, use `cargo add clap` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `arg` in this scope",
+      "rendered": "error: cannot find attribute `arg` in this scope\n --> src/main.rs:7:7\n  |\n7 |     #[arg(long, add = ArgValueCompleter::new(PathCompleter::file()))]\n  |       ^^^\n\n",
+      "line": 7
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_clap_complete_consumer` (bin \"n05_clap_complete_consumer\") due to 2 previous errors; 1 warning emitted\n",
+  "code_sha256": "dab9f3f3cef4eac21d7e6e0115d3ee6a3ff58da4c235d8ebdb9854a11e14afae",
+  "manifest_sha256": "7fb31d40776b2a233e30bf87eba5c7d80213f12b91ba9592480e88890fc030e8",
+  "log_file": "prospective/results/check_logs/07e5cf149385ed7f18.txt.gz"
+}

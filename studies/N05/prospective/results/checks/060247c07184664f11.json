@@ -1,0 +1,21 @@
+{
+  "key": "060247c07184664f11",
+  "args": {
+    "crate": "redis",
+    "version": "0.32.1",
+    "id": "b3802180cd27c67f",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0844,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "875f3e300343ebe8e6ed834f52f043df77347b4463de7e011e80956689fd5af2",
+  "manifest_sha256": "5c2057a3e4fac2ad0526d11aa2287ac877f0da879fa70488b773b6f1d03fb340",
+  "log_file": "prospective/results/check_logs/060247c07184664f11.txt.gz"
+}

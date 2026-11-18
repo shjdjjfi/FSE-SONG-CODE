@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "dataset_sha256": "36ae5b4ce853c68634a8acaf6ea129f1d53028b62b1ef3b945b805813f4b3d15",
+  "verified_sqlite_database_count": 123,
+  "verified_raw_json_count": 123,
+  "unique_case_inputs": 46,
+  "observations": 138,
+  "verified_upstream_baseline_tests": 78,
+  "verified_helper_baseline_runs": 6,
+  "original_scientific_stopping_rule_passed": false
+}

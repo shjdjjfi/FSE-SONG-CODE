@@ -1,0 +1,1567 @@
+{
+  "body": [
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/11866552?v=4",
+        "events_url": "https://api.github.com/users/quexten/events{/privacy}",
+        "followers_url": "https://api.github.com/users/quexten/followers",
+        "following_url": "https://api.github.com/users/quexten/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quexten/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/quexten",
+        "id": 11866552,
+        "login": "quexten",
+        "node_id": "MDQ6VXNlcjExODY2NTUy",
+        "organizations_url": "https://api.github.com/users/quexten/orgs",
+        "received_events_url": "https://api.github.com/users/quexten/received_events",
+        "repos_url": "https://api.github.com/users/quexten/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/quexten/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quexten/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/quexten",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/9264e6775ca73c3883c0f8363269006d30df5895/comments",
+      "commit": {
+        "author": {
+          "date": "2024-10-24T17:54:39Z",
+          "email": "mail@quexten.com",
+          "name": "Bernd Schoolmann"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-10-24T17:54:39Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Add logging for userkey / device trust rotation (#11682)\n\n* Add logging for userkey rotation\r\n\r\n* Fix tests",
+        "tree": {
+          "sha": "514064ec39dc3d8e8c81b26aede86ba26e89bbcd",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/514064ec39dc3d8e8c81b26aede86ba26e89bbcd"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/9264e6775ca73c3883c0f8363269006d30df5895",
+        "verification": {
+          "payload": "tree 514064ec39dc3d8e8c81b26aede86ba26e89bbcd\nparent a9d9130f01c00703a2557f9de192bee41798fbad\nauthor Bernd Schoolmann <mail@quexten.com> 1729792479 +0200\ncommitter GitHub <noreply@github.com> 1729792479 +0200\n\nAdd logging for userkey / device trust rotation (#11682)\n\n* Add logging for userkey rotation\r\n\r\n* Fix tests",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnGonfCRC1aQ7uu5UhlAAAfHkQAImdOtU2EmtADHA+SOT8CvLO\nwiJ4fp/B4gFj8YfCmWRdaZ6EE9lIuRzDsKG+B4Kmhp/FQUvUm+TmCZyrzG4nvN7y\nvN1d38WyVdkyvdIKVXD0w0mOvgrl+KdQbbH+egRVHSSNsQb7J0kOOG6FBYbnY+PH\nD4kw6fUjq79ugVwnoSyEzK4JgoYv1LlWzLcbkoUyJCicqfusW4DOcTxGYetcJHI3\n8pdA9bKDEyIDrK2Fn+dDq/rANLZfIh+DoariXW2l/HK6CIrjUoUY9tlP7No17aaF\ndJ21yj3lg9hIlODIByqrBKHNi4McBzsRai/QCqxsE/FQYCUeYpryxGu668jHNRZN\nWd52al85GheRddPnnZqa09efBGgxQYcinZGQleSXYcwS0CSeyztWQxfS/Q+6NF2H\nBTIccnBM560TPOX4prBwbuQGvHLtr9AI5yGB/MisWLJgphlu8s5S/9f6n7diizkN\nOKxkP7N/MnS1UaPg+v/jxJq0ImxxGmml8M/QLifl4YecFZvfLJRab6BgwX2khIy7\neY8Ioo4yyOOF7gvhB5GSVKu866qxsVS3Me+JbcEYjhenvJg/GE9dQNkq6u2zbiqW\nIVUsLr9cgdaWhj3EX1/un665fLHeH8AkHHoy+Z5JVXclF93gFis0eUG8jodJJigu\nyU4qyhRZX8xaBaZTJ2M1\n=JvHT\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-05T20:22:35Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/9264e6775ca73c3883c0f8363269006d30df5895",
+      "node_id": "C_kwDOAzDwU9oAKDkyNjRlNjc3NWNhNzNjMzg4M2MwZjgzNjMyNjkwMDZkMzBkZjU4OTU",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/a9d9130f01c00703a2557f9de192bee41798fbad",
+          "sha": "a9d9130f01c00703a2557f9de192bee41798fbad",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/a9d9130f01c00703a2557f9de192bee41798fbad"
+        }
+      ],
+      "sha": "9264e6775ca73c3883c0f8363269006d30df5895",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/9264e6775ca73c3883c0f8363269006d30df5895"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/11866552?v=4",
+        "events_url": "https://api.github.com/users/quexten/events{/privacy}",
+        "followers_url": "https://api.github.com/users/quexten/followers",
+        "following_url": "https://api.github.com/users/quexten/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quexten/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/quexten",
+        "id": 11866552,
+        "login": "quexten",
+        "node_id": "MDQ6VXNlcjExODY2NTUy",
+        "organizations_url": "https://api.github.com/users/quexten/orgs",
+        "received_events_url": "https://api.github.com/users/quexten/received_events",
+        "repos_url": "https://api.github.com/users/quexten/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/quexten/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quexten/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/quexten",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/b486fcc689bb6eedf61a1949887a66568f9b1b50/comments",
+      "commit": {
+        "author": {
+          "date": "2024-10-24T17:41:30Z",
+          "email": "mail@quexten.com",
+          "name": "Bernd Schoolmann"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-10-24T17:41:30Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[Pm-13097] Rename cryptoservice to keyservice and move it to km ownership (#11358)\n\n* Rename cryptoservice to keyservice\r\n\r\n* Rename cryptoservice to keyservice\r\n\r\n* Move key service to key management ownership\r\n\r\n* Remove accidentally added file\r\n\r\n* Fix cli build\r\n\r\n* Fix browser build\r\n\r\n* Run prettier\r\n\r\n* Fix builds\r\n\r\n* Fix cli build\r\n\r\n* Fix tests\r\n\r\n* Fix incorrect renames\r\n\r\n* Rename webauthn-login-crypto-service\r\n\r\n* Fix build errors due to merge conflicts\r\n\r\n* Fix linting",
+        "tree": {
+          "sha": "8e31b23ceb26cac3a634f86a88ee05f872d73e3c",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/8e31b23ceb26cac3a634f86a88ee05f872d73e3c"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/b486fcc689bb6eedf61a1949887a66568f9b1b50",
+        "verification": {
+          "payload": "tree 8e31b23ceb26cac3a634f86a88ee05f872d73e3c\nparent 554171b6882d71c9a0e0e5cbb49f88f93c867f4d\nauthor Bernd Schoolmann <mail@quexten.com> 1729791690 +0200\ncommitter GitHub <noreply@github.com> 1729791690 +0200\n\n[Pm-13097] Rename cryptoservice to keyservice and move it to km ownership (#11358)\n\n* Rename cryptoservice to keyservice\r\n\r\n* Rename cryptoservice to keyservice\r\n\r\n* Move key service to key management ownership\r\n\r\n* Remove accidentally added file\r\n\r\n* Fix cli build\r\n\r\n* Fix browser build\r\n\r\n* Run prettier\r\n\r\n* Fix builds\r\n\r\n* Fix cli build\r\n\r\n* Fix tests\r\n\r\n* Fix incorrect renames\r\n\r\n* Rename webauthn-login-crypto-service\r\n\r\n* Fix build errors due to merge conflicts\r\n\r\n* Fix linting",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnGobKCRC1aQ7uu5UhlAAAvo0QAFftNRGs9Ep1DX1mYPniLUG2\n2QxUVPyWeYKJZ2Awr4nOUjaeq4J4xKTlNcVVPpGibN9+RAGkEGPFRewHCxSGk4Sn\nfmr9LpR9Fbz617Uo3Qj+4wVgVLf1qZIsyoSiPN5hSFmaulXAlR8Eq4boC0qzt+BK\nmFhfU5OmG1ZuQRw0ee4ggSPB89u5phFNZh/VhvbWVGCGJRAiVxZz3qtyAVy9mLNh\nL1an+eSBJsHxBFLRPndyWSCUffauJr86BTB6BoYI3/WVlmau9UflXXqOZuFC/yQ8\n/0iyRksKPdNmxGM0Xi041viFHrUOeexlwZ2KIV4KkfB1rhKwv3lYqmI0vlf8zzmr\nWzQeXG47Ar/g2KfRutVWIVrIoE7kUR4tq7pZUOJwCZlCXJaVKv0I36W5U4zpo6oz\nAQhKWOfLqmp2tT00Mhnrz/HAQ+pxs5cvY+PqTZqa6LS5VWQm81rhztu8K6WsYgi9\n2/Fe/c6d0wNDnAzxi/PYIl/j7e3CvfGPV59M3V+hzJmw5bJvpKG9zHvjfeRqMhay\ndNMgU2qg+hH+aidceIMRcAZcjtl8OiG9E6AX27p2KcSTegn6sgBzx7PvVKY3Y8T9\nezQH21qkBH+PAmUbw98upj9BKUaHEZ8rp3hOkpaNiPwhIQM9XkuZ3cicFq0kSleu\nIDHl3K7pjz/b02KG4hKJ\n=elQC\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-05T20:22:35Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/b486fcc689bb6eedf61a1949887a66568f9b1b50",
+      "node_id": "C_kwDOAzDwU9oAKGI0ODZmY2M2ODliYjZlZWRmNjFhMTk0OTg4N2E2NjU2OGY5YjFiNTA",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/554171b6882d71c9a0e0e5cbb49f88f93c867f4d",
+          "sha": "554171b6882d71c9a0e0e5cbb49f88f93c867f4d",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/554171b6882d71c9a0e0e5cbb49f88f93c867f4d"
+        }
+      ],
+      "sha": "b486fcc689bb6eedf61a1949887a66568f9b1b50",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/b486fcc689bb6eedf61a1949887a66568f9b1b50"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/31796059?v=4",
+        "events_url": "https://api.github.com/users/eliykat/events{/privacy}",
+        "followers_url": "https://api.github.com/users/eliykat/followers",
+        "following_url": "https://api.github.com/users/eliykat/following{/other_user}",
+        "gists_url": "https://api.github.com/users/eliykat/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/eliykat",
+        "id": 31796059,
+        "login": "eliykat",
+        "node_id": "MDQ6VXNlcjMxNzk2MDU5",
+        "organizations_url": "https://api.github.com/users/eliykat/orgs",
+        "received_events_url": "https://api.github.com/users/eliykat/received_events",
+        "repos_url": "https://api.github.com/users/eliykat/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/eliykat/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/eliykat/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/eliykat",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/834462318505e8dfb140499b2c4658283d97f1ee/comments",
+      "commit": {
+        "author": {
+          "date": "2024-09-04T22:21:26Z",
+          "email": "31796059+eliykat@users.noreply.github.com",
+          "name": "Thomas Rittson"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-09-04T22:21:26Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-11450] Move organization-user domain to admin-console lib (#10785)\n\n- move organization-user files from libs/common/src/admin-console into libs/admin-console/src/common\r\n- add barrel files and update imports to use barrel files\r\n- rename OrganizationUserService to OrganizationUserApiService\r\n- rename OrganizationUserServiceImplementation to DefaultOrganizationUserApiService",
+        "tree": {
+          "sha": "4863e6f9e4db1a826d46a6676bc43dfbdfa03210",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/4863e6f9e4db1a826d46a6676bc43dfbdfa03210"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/834462318505e8dfb140499b2c4658283d97f1ee",
+        "verification": {
+          "payload": "tree 4863e6f9e4db1a826d46a6676bc43dfbdfa03210\nparent 2f69228c2181b27dd311b3010c12bb8c712441da\nauthor Thomas Rittson <31796059+eliykat@users.noreply.github.com> 1725488486 +1000\ncommitter GitHub <noreply@github.com> 1725488486 -0400\n\n[PM-11450] Move organization-user domain to admin-console lib (#10785)\n\n- move organization-user files from libs/common/src/admin-console into libs/admin-console/src/common\r\n- add barrel files and update imports to use barrel files\r\n- rename OrganizationUserService to OrganizationUserApiService\r\n- rename OrganizationUserServiceImplementation to DefaultOrganizationUserApiService",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJm2N1mCRC1aQ7uu5UhlAAAkhEQAF8Tk4Y23+Qtg7Cl1OBfv8+q\nhIs32eOik/0L2HNrhMfik42pGFK0xR+96GLVXq7SAdT5/AFU94sUjyVap4D0qLnq\nWKs9rWpPhRp5U763G3KsLMMJzegQP3vR33jJodByRnxwokKZF2lrVCLEIGxf30K3\nwW5vfJDuJe0XKPdpXPvJ7r39CBOBtgt9R6NQL8d3If7RZT3iqic4ClfiQLXXoRPf\nz/lsrq+zB5wv0MZajFV8UBTAIk1CotJIhznhxEef6qvdnoVCYRlUXuBJwB0ZQuqL\nGvrUT6nzCKdcjMOzM1qrlHM2F0pL6Ju5QuFQKX2o8Bl0ary6A026wCGa0JSteB1d\nFoqEBaD2qGelChic1LyDSfvmgqDiFIgBVWjdZahUqKY/BQgN+httW8Yzy7txZ8v4\n4idGc67Fh/P+tTMab98GBN78/3Baz9KjVrUaGTEUbzzlWpn20BNik11KfTv2oP7I\n5cul9JGBq/6G8SGQeiW0ew8qC7Gj3LpdTWDOftYH5XiT9dTDBDo349FY+65SDxkB\n32NdAdOITVV5xjkM83ADW6aCdSlE/xGUQYucbFkIfxD672ceT9vJ/MsAqbeS0sNM\noO1x82Yy2YbK06hoKHtVLaXPrQmT5hueobhmiUZc4RZDWEumbGOUlPs4TGzpwYXw\nxVlo6qzFVn57WKeJjGow\n=7Rmv\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-07T10:04:36Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/834462318505e8dfb140499b2c4658283d97f1ee",
+      "node_id": "C_kwDOAzDwU9oAKDgzNDQ2MjMxODUwNWU4ZGZiMTQwNDk5YjJjNDY1ODI4M2Q5N2YxZWU",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/2f69228c2181b27dd311b3010c12bb8c712441da",
+          "sha": "2f69228c2181b27dd311b3010c12bb8c712441da",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/2f69228c2181b27dd311b3010c12bb8c712441da"
+        }
+      ],
+      "sha": "834462318505e8dfb140499b2c4658283d97f1ee",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/834462318505e8dfb140499b2c4658283d97f1ee"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/24985544?v=4",
+        "events_url": "https://api.github.com/users/jlf0dev/events{/privacy}",
+        "followers_url": "https://api.github.com/users/jlf0dev/followers",
+        "following_url": "https://api.github.com/users/jlf0dev/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jlf0dev/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/jlf0dev",
+        "id": 24985544,
+        "login": "jlf0dev",
+        "node_id": "MDQ6VXNlcjI0OTg1NTQ0",
+        "organizations_url": "https://api.github.com/users/jlf0dev/orgs",
+        "received_events_url": "https://api.github.com/users/jlf0dev/received_events",
+        "repos_url": "https://api.github.com/users/jlf0dev/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/jlf0dev/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jlf0dev/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/jlf0dev",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/9531d1c6557453f10a1d162b2e33ac67237f3500/comments",
+      "commit": {
+        "author": {
+          "date": "2024-07-01T15:15:18Z",
+          "email": "jfink@bitwarden.com",
+          "name": "Jake Fink"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-07-01T15:15:18Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "use user verification as a part of key rotation (#9722)",
+        "tree": {
+          "sha": "58f430e2de2eb3107f3ec389371208ad60a51edb",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/58f430e2de2eb3107f3ec389371208ad60a51edb"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/9531d1c6557453f10a1d162b2e33ac67237f3500",
+        "verification": {
+          "payload": "tree 58f430e2de2eb3107f3ec389371208ad60a51edb\nparent 5965f779b9f9c181bc18026478746fac14b94033\nauthor Jake Fink <jfink@bitwarden.com> 1719846918 -0400\ncommitter GitHub <noreply@github.com> 1719846918 -0400\n\nuse user verification as a part of key rotation (#9722)\n\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmgsgGCRC1aQ7uu5UhlAAA1iYQAKIRjYJeMLYRv/v/+YkwLBqN\nPMjUKwmzLAVYXTZgD4afGsUJ7t9F6AEx2k5RK4eDEYNbovL1M7r3egrOBs/h7Tag\n3l2L4XvDeS9RXSwfGTuSSI+iu3kze6kXMhzBFLYYLe/YnYMf7KJ8zXmPiIjwRNNZ\nIsBRwBUvuvDc6Fm6Q8c3lx95YcfvW3fuMDho9NJKEPf6BOsixUszGi37lr3Kq5YG\nuPSoPibX3oWLWeiY86z5d4TkWOS541EdiLe2lR4cu6qw4yNTPu1YeeEPMsWUAKiQ\nTFozcSwi34LVfwYp6qkaGpU3dVqsKcYTsTGCEZ+tCy+czRHgZQnxq1/YFwrYG8Bj\nieobhQxZiWYXh/soCCZ7RGBF5hvx33lU6jonzcpURf1QNPPthZY3CKdtTMhFu8C8\nqoiyufJngZhbVP9QiYKJbfF4cQoOADVa5WGchiFnm87p5+ZZ3EHxk6jD0aOcxZlY\nOzljXu4KX7jgQmnreCiOdSU2j5q/BUSDyfyRuVBnI5PzDDVrB7Apn5dwogWa4K/R\nj4prDbF/4Ak+qbC7OuKEMdaHO56KC4aaBJAxAGikSzXrq+EsaOMhLDP3pvqhjJ2S\nzL3vVJBSvtoafLivhAh2pvactJkQhe7z8fl/YU3tubQCH9/I/+Ym/7KXerQ/qV1o\nBda8hnR1HUSl6vLN1Qiv\n=1QMg\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-06T16:13:21Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/9531d1c6557453f10a1d162b2e33ac67237f3500",
+      "node_id": "C_kwDOAzDwU9oAKDk1MzFkMWM2NTU3NDUzZjEwYTFkMTYyYjJlMzNhYzY3MjM3ZjM1MDA",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/5965f779b9f9c181bc18026478746fac14b94033",
+          "sha": "5965f779b9f9c181bc18026478746fac14b94033",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/5965f779b9f9c181bc18026478746fac14b94033"
+        }
+      ],
+      "sha": "9531d1c6557453f10a1d162b2e33ac67237f3500",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/9531d1c6557453f10a1d162b2e33ac67237f3500"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/24985544?v=4",
+        "events_url": "https://api.github.com/users/jlf0dev/events{/privacy}",
+        "followers_url": "https://api.github.com/users/jlf0dev/followers",
+        "following_url": "https://api.github.com/users/jlf0dev/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jlf0dev/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/jlf0dev",
+        "id": 24985544,
+        "login": "jlf0dev",
+        "node_id": "MDQ6VXNlcjI0OTg1NTQ0",
+        "organizations_url": "https://api.github.com/users/jlf0dev/orgs",
+        "received_events_url": "https://api.github.com/users/jlf0dev/received_events",
+        "repos_url": "https://api.github.com/users/jlf0dev/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/jlf0dev/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jlf0dev/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/jlf0dev",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/b3065546756c9671252782affa207e4c25d717e4/comments",
+      "commit": {
+        "author": {
+          "date": "2024-06-20T15:36:24Z",
+          "email": "jfink@bitwarden.com",
+          "name": "Jake Fink"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-06-20T15:36:24Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-6789] finish key rotation distribution and fix legacy user (#9498)\n\n* finish key rotation distribution and fix legacy user\r\n\r\n* add ticket to TODO\r\n\r\n* PR feedback: docs and renaming\r\n\r\n* fix webauthn tests\r\n\r\n* add test for send service\r\n\r\n* add await to test",
+        "tree": {
+          "sha": "a0c2a7f896b68f14c1e8c4ec554706556496da71",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/a0c2a7f896b68f14c1e8c4ec554706556496da71"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/b3065546756c9671252782affa207e4c25d717e4",
+        "verification": {
+          "payload": "tree a0c2a7f896b68f14c1e8c4ec554706556496da71\nparent eadb1fa4efda44ec1e28cd105212a8e20bb13afe\nauthor Jake Fink <jfink@bitwarden.com> 1718897784 -0400\ncommitter GitHub <noreply@github.com> 1718897784 -0400\n\n[PM-6789] finish key rotation distribution and fix legacy user (#9498)\n\n* finish key rotation distribution and fix legacy user\r\n\r\n* add ticket to TODO\r\n\r\n* PR feedback: docs and renaming\r\n\r\n* fix webauthn tests\r\n\r\n* add test for send service\r\n\r\n* add await to test",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmdEx4CRC1aQ7uu5UhlAAAepYQAFkJIQSW9e/kKYGXdHKRSpS/\nNuRgfGq78jG19hAircc9cPjFArRI60+Ni6u2MGbIDhYr2WL9QwVRrq4Fd48ciD6J\nmrJEiVnJHO1vSuqqP+wyM/bZtaI3OW61BnUPDijPRRVWeJ4rxnSeRPZ7a0T8Si9j\n1CrleK0U+5kukSPmtlfqfTO2LE5mMAVIgWLPtdFXITtCcYqLZmpQF3bTZ9HecJzA\ng28GWsTnVSEQcN3EcHm9uyNhZx+FOj7v9CeaaN488Iqz/xtmQWLvt90YFriEQzF5\nfqxMz3oiB0kKcONzPNCDytVUorG7D0Bha8fykNd7Otj5DhZ26/sGNi2jfuANC8cH\nYJK68kky6XDAmJIH3UUgMAmyLwpk+WRuDhJ0MW0lkBrssFhYWe6s0H1rROeDenUB\nKONg94w1Y2xp7469bzpGTqCkvkbqMgo2vPIcCfH9otxV3DCyL/6f7agS7M5cDk0y\nJNrw1o/LmW702PD7Ty9ae5/3sm2nInXILFCSr25+rl2wfqVSdleLuJ2bbYguVAmr\nH6Yg5gdD/tcXBj7v8Uk6ERwPS/JQGXIPEhYf6p1bG4jIFc5nYWQbyh7lw1CsTGlu\nwkyzwXK4bPpqFpjTKC+B5ThwpgM8hxRzoDIK7BqpzTGJCeK6oFmgXw1NvM4cyyAV\nDM7qKw4PzM2BSg/6i45q\n=PDQF\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-05T20:42:07Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/b3065546756c9671252782affa207e4c25d717e4",
+      "node_id": "C_kwDOAzDwU9oAKGIzMDY1NTQ2NzU2Yzk2NzEyNTI3ODJhZmZhMjA3ZTRjMjVkNzE3ZTQ",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/eadb1fa4efda44ec1e28cd105212a8e20bb13afe",
+          "sha": "eadb1fa4efda44ec1e28cd105212a8e20bb13afe",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/eadb1fa4efda44ec1e28cd105212a8e20bb13afe"
+        }
+      ],
+      "sha": "b3065546756c9671252782affa207e4c25d717e4",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/b3065546756c9671252782affa207e4c25d717e4"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/11866552?v=4",
+        "events_url": "https://api.github.com/users/quexten/events{/privacy}",
+        "followers_url": "https://api.github.com/users/quexten/followers",
+        "following_url": "https://api.github.com/users/quexten/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quexten/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/quexten",
+        "id": 11866552,
+        "login": "quexten",
+        "node_id": "MDQ6VXNlcjExODY2NTUy",
+        "organizations_url": "https://api.github.com/users/quexten/orgs",
+        "received_events_url": "https://api.github.com/users/quexten/received_events",
+        "repos_url": "https://api.github.com/users/quexten/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/quexten/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quexten/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/quexten",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/1970abf723a147dc93d85fb300029f614830c1ff/comments",
+      "commit": {
+        "author": {
+          "date": "2024-06-17T18:47:06Z",
+          "email": "mail@quexten.com",
+          "name": "Bernd Schoolmann"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-06-17T18:47:06Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-4370] Implement PRF key rotation (#9517)\n\n* Add prf key rotation\r\n\r\n* Fix tests\r\n\r\n* Re-add comment\r\n\r\n* Remove encrypted private key from webauthnlogincredentialresponse\r\n\r\n* Refactor to use rotateablekeyset\r\n\r\n* Move key rotation logic to webauthn-login-admin service\r\n\r\n* Fix type error\r\n\r\n* Add parameter validation\r\n\r\n* Add documentation\r\n\r\n* Add input validation\r\n\r\n* Add tests",
+        "tree": {
+          "sha": "054122e8c26380c9b3b5a81d79fc9c7311ee3bed",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/054122e8c26380c9b3b5a81d79fc9c7311ee3bed"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/1970abf723a147dc93d85fb300029f614830c1ff",
+        "verification": {
+          "payload": "tree 054122e8c26380c9b3b5a81d79fc9c7311ee3bed\nparent 06410a06332d07e75be9d97c0258dea0c7b2c0da\nauthor Bernd Schoolmann <mail@quexten.com> 1718650026 +0200\ncommitter GitHub <noreply@github.com> 1718650026 +0200\n\n[PM-4370] Implement PRF key rotation (#9517)\n\n* Add prf key rotation\r\n\r\n* Fix tests\r\n\r\n* Re-add comment\r\n\r\n* Remove encrypted private key from webauthnlogincredentialresponse\r\n\r\n* Refactor to use rotateablekeyset\r\n\r\n* Move key rotation logic to webauthn-login-admin service\r\n\r\n* Fix type error\r\n\r\n* Add parameter validation\r\n\r\n* Add documentation\r\n\r\n* Add input validation\r\n\r\n* Add tests",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmcISqCRC1aQ7uu5UhlAAAFx8QAF9voCKN0vlpkCAboT6AHYjq\nOWaWsQkH25K/lSl1nLgnIGHUYRgZ273Es5y+rx9v/DMgqc3Jmp/tOFOXhKrUU8Ms\nVzEKS7ufTywXNTL/Y48mxaSyppQg5jPFLMqUapOK4IKLOnf1NFC/umNUdvwkWXFj\nxc8qOUzvIxUqeVa8mPHbL/4DNccJ3LXwsF1PNLoq+FnHOl06aNcozorTmibSlCt7\nWubm44LmRNZrXZnIYrPfx/g+k0ts1049zgb0eNAwX9SSgs5mEghr36WjI334D4ks\nKyh6KiLqv3q5u44s099qI/wxLy7V3r71ojo7B1t95MFnXCgiHRiM+w8yfGgSJkH9\n1/8SxWpPRlPsCw8Aam+BcW0YOMZYxNZZ5bqNu6BTBWITOk16RM94z2Kxf4t7iBJm\nSvI5AqujIWPYehLEeehihUIigu0S4ers0YPW/x7ZJsoBKBVBVFPQFk84ahDKPVIV\nE5wBERbmEsxdzUoUy4NbtnwAoseYz1OcXPut6Cvm8ohuQ8ES60KKOEhf9a5tatyK\nh/2LnvicMcpWxmbSc4wvTRssKziaKPMgUdU3YgSRembPMewc+FPLQC6NQ0HLJDFs\nf306g1nJcaP2DRBQTNz+QKIyA1mFFISQD6MzNIPCiqXU/BXWEQmObIPrKX2t3nW5\nBu1heLccfOnF7l4eyvDR\n=tWmb\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-05T20:42:07Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/1970abf723a147dc93d85fb300029f614830c1ff",
+      "node_id": "C_kwDOAzDwU9oAKDE5NzBhYmY3MjNhMTQ3ZGM5M2Q4NWZiMzAwMDI5ZjYxNDgzMGMxZmY",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/06410a06332d07e75be9d97c0258dea0c7b2c0da",
+          "sha": "06410a06332d07e75be9d97c0258dea0c7b2c0da",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/06410a06332d07e75be9d97c0258dea0c7b2c0da"
+        }
+      ],
+      "sha": "1970abf723a147dc93d85fb300029f614830c1ff",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/1970abf723a147dc93d85fb300029f614830c1ff"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/11866552?v=4",
+        "events_url": "https://api.github.com/users/quexten/events{/privacy}",
+        "followers_url": "https://api.github.com/users/quexten/followers",
+        "following_url": "https://api.github.com/users/quexten/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quexten/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/quexten",
+        "id": 11866552,
+        "login": "quexten",
+        "node_id": "MDQ6VXNlcjExODY2NTUy",
+        "organizations_url": "https://api.github.com/users/quexten/orgs",
+        "received_events_url": "https://api.github.com/users/quexten/received_events",
+        "repos_url": "https://api.github.com/users/quexten/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/quexten/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quexten/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/quexten",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/6d0ef650941edd03445439a29cd5601d6fe705e0/comments",
+      "commit": {
+        "author": {
+          "date": "2024-05-30T09:08:47Z",
+          "email": "mail@quexten.com",
+          "name": "Bernd Schoolmann"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-05-30T09:08:47Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-5938] Prevent vault coruption on key-rotation on desycned vault (#9235)\n\n* Prevent key-rotation when local vault is desynced\r\n\r\n* Prevent key-rotation on non-decrypted vault\r\n\r\n* Remove cipher check that is done on server side",
+        "tree": {
+          "sha": "5a757cdb4ae5356fad96fd3090a3b663518a7879",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/5a757cdb4ae5356fad96fd3090a3b663518a7879"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/6d0ef650941edd03445439a29cd5601d6fe705e0",
+        "verification": {
+          "payload": "tree 5a757cdb4ae5356fad96fd3090a3b663518a7879\nparent fb7273beb894b33db8b62f853b3d056656342856\nauthor Bernd Schoolmann <mail@quexten.com> 1717060127 +0200\ncommitter GitHub <noreply@github.com> 1717060127 +0200\n\n[PM-5938] Prevent vault coruption on key-rotation on desycned vault (#9235)\n\n* Prevent key-rotation when local vault is desynced\r\n\r\n* Prevent key-rotation on non-decrypted vault\r\n\r\n* Remove cipher check that is done on server side",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmWEIfCRC1aQ7uu5UhlAAAaNgQAJ0Wh5TVGWWSMAIKbeGkd47N\nVY2j2QdWH4TythPxqTQr/gHlWQQOJXEkgQ66wIKZsYfSRO1epAVjVlP/5ES0dJzD\nHzI1kcT+cpjiOTh2EP8O9S1giSiT79JZEEkiLTKwCI13uTl4WnIJ+IJj18Kdfigp\nnpY7H7qdRfZ3hEJRHGr63aGWCokq8dVaItBpP9R25rW+gY2nf7ykz29DiDjGRcms\n/4eUYQ7YerQiSr+lAFgF+8X8uvVI3h0pVkhFKKgUXq0ClP4cL+YwyfBSXXG49/XA\nW58Qr5ie14sE0xXSqgsBUBIDmiJxVaE69dh9ceYuNtpYXXoGtgpS7tOIoIVmaveK\nogG55dxDTAtd4IJLEimejPKco5BJP/k+KVpyaZUSV0UXE0YQZHRLK9fDTmChZnGk\nAELMfmwuu7VpaAjEuElvgSN7546XHXa2OLImoTEuaMfvM7M5WujiaBzZszRdMzbo\nhU3vwVV8yeuyIsb1PcGXsUNRMEwkeNoEAP0BJxyL4d4p2BBQMejRF7evVT+KGvXj\nJ+ockF6GZwx3i0LesUn+FDE9dFCvVESYxtq01H0ZStddpgzBRGDKkqhpSg/xqtDl\nrfV5Wh+TobGT7wdZQir/sJZSfTl9W/zWErzI+o0CXwpKZHtK2BfjQzOSMDxm5lCY\nDTnSCOad15+9umcmTFou\n=wtBV\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-06T04:02:21Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/6d0ef650941edd03445439a29cd5601d6fe705e0",
+      "node_id": "C_kwDOAzDwU9oAKDZkMGVmNjUwOTQxZWRkMDM0NDU0MzlhMjljZDU2MDFkNmZlNzA1ZTA",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/fb7273beb894b33db8b62f853b3d056656342856",
+          "sha": "fb7273beb894b33db8b62f853b3d056656342856",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/fb7273beb894b33db8b62f853b3d056656342856"
+        }
+      ],
+      "sha": "6d0ef650941edd03445439a29cd5601d6fe705e0",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/6d0ef650941edd03445439a29cd5601d6fe705e0"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/18214891?v=4",
+        "events_url": "https://api.github.com/users/MGibson1/events{/privacy}",
+        "followers_url": "https://api.github.com/users/MGibson1/followers",
+        "following_url": "https://api.github.com/users/MGibson1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/MGibson1/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/MGibson1",
+        "id": 18214891,
+        "login": "MGibson1",
+        "node_id": "MDQ6VXNlcjE4MjE0ODkx",
+        "organizations_url": "https://api.github.com/users/MGibson1/orgs",
+        "received_events_url": "https://api.github.com/users/MGibson1/received_events",
+        "repos_url": "https://api.github.com/users/MGibson1/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/MGibson1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/MGibson1/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/MGibson1",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/ee690cd1efbe758d7dd60bb6695f2fa5e16b8b6c/comments",
+      "commit": {
+        "author": {
+          "date": "2024-05-16T22:21:00Z",
+          "email": "mgibson@bitwarden.com",
+          "name": "Matt Gibson"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-05-16T22:21:00Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Use account service for getting account profile data. (#9133)\n\n* Use account service for getting account profile data.\r\n\r\n* desktop build fixes\r\n\r\n* CLI build fixes\r\n\r\n* Remove state service methods",
+        "tree": {
+          "sha": "d7010a101bbc492cffec9964cec02feed2097cda",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/d7010a101bbc492cffec9964cec02feed2097cda"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/ee690cd1efbe758d7dd60bb6695f2fa5e16b8b6c",
+        "verification": {
+          "payload": "tree d7010a101bbc492cffec9964cec02feed2097cda\nparent ff15b05d2d05147cbaeb2f5fce3cf515d209eb3f\nauthor Matt Gibson <mgibson@bitwarden.com> 1715898060 -0400\ncommitter GitHub <noreply@github.com> 1715898060 +0200\n\nUse account service for getting account profile data. (#9133)\n\n* Use account service for getting account profile data.\r\n\r\n* desktop build fixes\r\n\r\n* CLI build fixes\r\n\r\n* Remove state service methods",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmRobMCRC1aQ7uu5UhlAAAMnEQAEstb2S59odpKKJCK61Jj+qx\nGrdWAknSyyr4csM+ln4SniLfiHqdLHqRsnadmdG0IftxyoAEEfrcy1tV8MFJpJ26\nwAm8pzt9xrYw/eUfXUqc1MXWlozCsZilRz9VRSe3opf6jIWNQiH84PXG8ltXD1no\nf4hrbMwvfH22AI7t2ajEvivEDpskquvENpck2/wijwTO8GzXaPvndto29DVZdBCa\nXjyL7IqmCDtTmNtbKbg2c6ErsQ5CPejnnKyaYkqWf7R4TLk85/GJ0u55tV4pb1wn\nnc0fq8PbF8ydGZjTGSgjgbmxJD9GdAdzGel0cT/Ep9z4usTpVZjWtJpfhm8yfCOS\nFCA9f44r6hiogFaXeVqU8QabrVN8g5z/HRPy1Co+wsKAVE1y97Zzsydl2KgexGPR\ntrYUSK7Mg/LlZO6eXpdEFZiNXvtamDi8YitfBXu4UdkIWQ9LrMT/UbY/vofh2q9n\n9dCyMU2Tn9ivpQLjrEh3cUn/08/uPRkiy/B0rFrdxlxWdrcdOAClBkvLE1hFhB2/\nVaIrV+tBNRRxUkd3XRMxDZ0lb3bNiGrIjvz/d6eCE6ekfR5WpR+iB6YZ2P+zmT2z\nLSFgh+cyk8hjUw+ysGOnvoA7hOjfxug6afbngnJmBnzSEMZauvTz/oihJYuRRkDJ\njOWphUCQoVkuTjGzD9Ay\n=ytNq\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-06T04:02:21Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/ee690cd1efbe758d7dd60bb6695f2fa5e16b8b6c",
+      "node_id": "C_kwDOAzDwU9oAKGVlNjkwY2QxZWZiZTc1OGQ3ZGQ2MGJiNjY5NWYyZmE1ZTE2YjhiNmM",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/ff15b05d2d05147cbaeb2f5fce3cf515d209eb3f",
+          "sha": "ff15b05d2d05147cbaeb2f5fce3cf515d209eb3f",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/ff15b05d2d05147cbaeb2f5fce3cf515d209eb3f"
+        }
+      ],
+      "sha": "ee690cd1efbe758d7dd60bb6695f2fa5e16b8b6c",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/ee690cd1efbe758d7dd60bb6695f2fa5e16b8b6c"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/106564991?v=4",
+        "events_url": "https://api.github.com/users/trmartin4/events{/privacy}",
+        "followers_url": "https://api.github.com/users/trmartin4/followers",
+        "following_url": "https://api.github.com/users/trmartin4/following{/other_user}",
+        "gists_url": "https://api.github.com/users/trmartin4/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/trmartin4",
+        "id": 106564991,
+        "login": "trmartin4",
+        "node_id": "U_kgDOBloNfw",
+        "organizations_url": "https://api.github.com/users/trmartin4/orgs",
+        "received_events_url": "https://api.github.com/users/trmartin4/received_events",
+        "repos_url": "https://api.github.com/users/trmartin4/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/trmartin4/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/trmartin4/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/trmartin4",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/a89e148804e20467c350e1f5b4ab91da9c58e65d/comments",
+      "commit": {
+        "author": {
+          "date": "2024-05-09T17:24:11Z",
+          "email": "106564991+trmartin4@users.noreply.github.com",
+          "name": "Todd Martin"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-05-09T17:24:11Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-7029] Remove key-rotation-feature-flag (#8816)\n\n* Removed key rotation feature flag.\r\n\r\n* Fixed tests\r\n\r\n* Removed unused dependency.\r\n\r\n* Remove KeyRotationImprovements from default const",
+        "tree": {
+          "sha": "cab347a0e3b408376291b9c2f910043f8d836e60",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/cab347a0e3b408376291b9c2f910043f8d836e60"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/a89e148804e20467c350e1f5b4ab91da9c58e65d",
+        "verification": {
+          "payload": "tree cab347a0e3b408376291b9c2f910043f8d836e60\nparent ff3b6f52ee518109e497c1d9f0b06016a66dd08d\nauthor Todd Martin <106564991+trmartin4@users.noreply.github.com> 1715275451 -0400\ncommitter GitHub <noreply@github.com> 1715275451 -0400\n\n[PM-7029] Remove key-rotation-feature-flag (#8816)\n\n* Removed key rotation feature flag.\r\n\r\n* Fixed tests\r\n\r\n* Removed unused dependency.\r\n\r\n* Remove KeyRotationImprovements from default const",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmPQa7CRC1aQ7uu5UhlAAAFkEQABjLBC57lfTPCEtLwUCwLr4Q\nwN/UXCAL0s2Ep8B2cYBhwsY1Dnj27iTXff7x7eGnTIw03kMsB6ZSy3kXROVdZfKT\nifap7DB7rvMh7eDjrvowmiN+43wKg74mNk/q3AJbmCzP3pivRAR0sS42Bma4oT2m\ngceYJW80TqAdPNjvXKkEq4opun+LcZM3N1VDWi8vAATfcf0OOG45/Yg+hMgKVy0C\nITZLVUNDyM3R6y7lROt0Yjew7E4cfTUZprbplKSTbGP5ofH5sUeBgnm6pKXkP0d+\ntMgT6mEL7vZvWH7/ch/1tX4dvQOSAXPi+a7EwMGrDoRx+cI5/0Ei5U3UShSstG6K\nwgMPaqoK/JMAKHLa1guJ2F52yPuURM7NGzqHQZmNY3sLhL9dc9qSP9JWXimr3l6N\nF90Fq6KWcgB2S4rWxWX5uzzmLR1tqMGBgWfhpHwGn19MFMkIiO6OMiQpfD82IIOI\nEbkCUtkNC8zjhrWWnRv0Q/4HtJwTzU8ZOT5Ftr4V+bXy2AcVkmCHGk95nee5x2zo\nOTT+SCwWFREt9O4nGtXsD80ax6Mt9SymSHnD5kEO4SWgKt8kq+DMjUfskK4sReq1\ng0pyM9kK7AncPN/DGBov+WY43Rc8E21lvQ2wM4F+VNIkJiycDIA6EyFA4iNjhGtd\nbQxI5xDD5Vcv1PKUpyfD\n=lCzK\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-06T04:02:21Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/a89e148804e20467c350e1f5b4ab91da9c58e65d",
+      "node_id": "C_kwDOAzDwU9oAKGE4OWUxNDg4MDRlMjA0NjdjMzUwZTFmNWI0YWI5MWRhOWM1OGU2NWQ",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/ff3b6f52ee518109e497c1d9f0b06016a66dd08d",
+          "sha": "ff3b6f52ee518109e497c1d9f0b06016a66dd08d",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/ff3b6f52ee518109e497c1d9f0b06016a66dd08d"
+        }
+      ],
+      "sha": "a89e148804e20467c350e1f5b4ab91da9c58e65d",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/a89e148804e20467c350e1f5b4ab91da9c58e65d"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/137855?v=4",
+        "events_url": "https://api.github.com/users/Hinton/events{/privacy}",
+        "followers_url": "https://api.github.com/users/Hinton/followers",
+        "following_url": "https://api.github.com/users/Hinton/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Hinton/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/Hinton",
+        "id": 137855,
+        "login": "Hinton",
+        "node_id": "MDQ6VXNlcjEzNzg1NQ==",
+        "organizations_url": "https://api.github.com/users/Hinton/orgs",
+        "received_events_url": "https://api.github.com/users/Hinton/received_events",
+        "repos_url": "https://api.github.com/users/Hinton/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/Hinton/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Hinton/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/Hinton",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/14b2eb99a2baa74279036b412ad174b31bdc8ef8/comments",
+      "commit": {
+        "author": {
+          "date": "2024-04-26T10:57:26Z",
+          "email": "Hinton@users.noreply.github.com",
+          "name": "Oscar Hinton"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-04-26T10:57:26Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-2282] Make feature flags type safe (#8612)\n\nRefactors the feature flags in ConfigService to be type safe. It also moves the default value to a centralized location rather than the caller defining it. This ensures consistency across the various places they are used.",
+        "tree": {
+          "sha": "d86d120e2fdb6fb541cf2e30fa084cd6c1cc7fc6",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/d86d120e2fdb6fb541cf2e30fa084cd6c1cc7fc6"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/14b2eb99a2baa74279036b412ad174b31bdc8ef8",
+        "verification": {
+          "payload": "tree d86d120e2fdb6fb541cf2e30fa084cd6c1cc7fc6\nparent c7fa376be36a865b5ed9a6d758e9a80ce07a0ca8\nauthor Oscar Hinton <Hinton@users.noreply.github.com> 1714129046 +0200\ncommitter GitHub <noreply@github.com> 1714129046 +0200\n\n[PM-2282] Make feature flags type safe (#8612)\n\nRefactors the feature flags in ConfigService to be type safe. It also moves the default value to a centralized location rather than the caller defining it. This ensures consistency across the various places they are used.",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmK4iWCRC1aQ7uu5UhlAAAWXoQAK4WCjvUV42nBzfx2dl9Ywf9\nnvyPjEc7CVZZGvj4Htz6KqWh1+7SSh1LFsIaLs1FSWTebFhzsqH3Qj83Qog5TXGm\nx8LmkDfxEvKnDUXNnSzWaQ3ZQHyyaLxfquNq8CabBHG2hybilf4BU3arcxxRGJBS\nksHHaR3r2J+jSA7oieEaMRYeG3dIj0VZ+uzmaHuLZksdYs66sEnnw/zjWh9+oTGd\nskzk1YJLA63VOAB0RQW6h4kavStjs7SGkZODotm7anWq3eNnqqSBzzZDWlMmM0P/\nhMwGxGyg0yT1M2BVFITLl6uJcvhc2rvEwaRWYb718i6RbjY7iXf7reniA1J0Xim2\npXV+h4LMawMnXXETqEnpLQEXIu5LNXpHEfunSF8poRHQBn3FrU4oagEL5wRuv0KM\nthvh1INCyIBcHgeyFyCPmRX4GKHx4ynthVgHRhuS5v+5ltqIhIQGePaQF0jZiSyN\nnQllHrHPbG1VwzLyV/7chdtUWdBxboAKRec53/gzxB9wFaGMauYtD2RTJrY/WPwa\ned9ZuwM4M5jhwcfsAAqmQAKo59euKwgoU2Gmz+Qy2VRaGE5cvVSjHsaGeCIcglzY\nqac+9KYiMBnMOPNLhgiN6nUUXWuXWAvkJaxTJIplTvtc4t5hM6buw+Al4oukx2n6\n0BW9vZIwcXu6ZZlxwsGn\n=JwcV\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-05T16:59:00Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/14b2eb99a2baa74279036b412ad174b31bdc8ef8",
+      "node_id": "C_kwDOAzDwU9oAKDE0YjJlYjk5YTJiYWE3NDI3OTAzNmI0MTJhZDE3NGIzMWJkYzhlZjg",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/c7fa376be36a865b5ed9a6d758e9a80ce07a0ca8",
+          "sha": "c7fa376be36a865b5ed9a6d758e9a80ce07a0ca8",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/c7fa376be36a865b5ed9a6d758e9a80ce07a0ca8"
+        }
+      ],
+      "sha": "14b2eb99a2baa74279036b412ad174b31bdc8ef8",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/14b2eb99a2baa74279036b412ad174b31bdc8ef8"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/137194738?v=4",
+        "events_url": "https://api.github.com/users/ike-kottlowski/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ike-kottlowski/followers",
+        "following_url": "https://api.github.com/users/ike-kottlowski/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ike-kottlowski/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ike-kottlowski",
+        "id": 137194738,
+        "login": "ike-kottlowski",
+        "node_id": "U_kgDOCC1s8g",
+        "organizations_url": "https://api.github.com/users/ike-kottlowski/orgs",
+        "received_events_url": "https://api.github.com/users/ike-kottlowski/received_events",
+        "repos_url": "https://api.github.com/users/ike-kottlowski/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ike-kottlowski/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ike-kottlowski/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ike-kottlowski",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/1e4158fd878994093710db9d072f356a9fc8bdc8/comments",
+      "commit": {
+        "author": {
+          "date": "2024-04-25T18:26:01Z",
+          "email": "137194738+ike-kottlowski@users.noreply.github.com",
+          "name": "Ike"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-04-25T18:26:01Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-5735] Create kdf Service (#8715)\n\n* key connector migration initial\r\n\r\n* migrator complete\r\n\r\n* fix dependencies\r\n\r\n* finalized tests\r\n\r\n* fix deps and sync main\r\n\r\n* clean up definition file\r\n\r\n* fixing tests\r\n\r\n* fixed tests\r\n\r\n* fixing CLI, Browser, Desktop builds\r\n\r\n* fixed factory options\r\n\r\n* reverting exports\r\n\r\n* implemented UserKeyDefinition clearOn\r\n\r\n* Initial Kdf Service Changes\r\n\r\n* rename and account setting kdfconfig\r\n\r\n* fixing tests and renaming migration\r\n\r\n* fixed DI ordering for browser\r\n\r\n* rename and fix DI\r\n\r\n* Clean up Migrations\r\n\r\n* fixing migrations\r\n\r\n* begin data structure changes for kdf config\r\n\r\n* Make KDF more type safe; co-author: jlf0dev\r\n\r\n* fixing tests\r\n\r\n* Fixed CLI login and comments\r\n\r\n* set now accepts userId and test updates\r\n\r\n---------\r\n\r\nCo-authored-by: Jake Fink <jfink@bitwarden.com>",
+        "tree": {
+          "sha": "4e3f0423eadb26ea0b2d60b53522d64f138e54a4",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/4e3f0423eadb26ea0b2d60b53522d64f138e54a4"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/1e4158fd878994093710db9d072f356a9fc8bdc8",
+        "verification": {
+          "payload": "tree 4e3f0423eadb26ea0b2d60b53522d64f138e54a4\nparent dba910d0b946176344f13f55e081b3a7965ee9f4\nauthor Ike <137194738+ike-kottlowski@users.noreply.github.com> 1714069561 -0700\ncommitter GitHub <noreply@github.com> 1714069561 -0700\n\n[PM-5735] Create kdf Service (#8715)\n\n* key connector migration initial\r\n\r\n* migrator complete\r\n\r\n* fix dependencies\r\n\r\n* finalized tests\r\n\r\n* fix deps and sync main\r\n\r\n* clean up definition file\r\n\r\n* fixing tests\r\n\r\n* fixed tests\r\n\r\n* fixing CLI, Browser, Desktop builds\r\n\r\n* fixed factory options\r\n\r\n* reverting exports\r\n\r\n* implemented UserKeyDefinition clearOn\r\n\r\n* Initial Kdf Service Changes\r\n\r\n* rename and account setting kdfconfig\r\n\r\n* fixing tests and renaming migration\r\n\r\n* fixed DI ordering for browser\r\n\r\n* rename and fix DI\r\n\r\n* Clean up Migrations\r\n\r\n* fixing migrations\r\n\r\n* begin data structure changes for kdf config\r\n\r\n* Make KDF more type safe; co-author: jlf0dev\r\n\r\n* fixing tests\r\n\r\n* Fixed CLI login and comments\r\n\r\n* set now accepts userId and test updates\r\n\r\n---------\r\n\r\nCo-authored-by: Jake Fink <jfink@bitwarden.com>",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmKqA5CRC1aQ7uu5UhlAAAn4cQAIQHOU7RpOz8cuEAFT71AyT9\ncKF2uBjVkYG+atPIChyYT0jTa7zGsbuD42VbGSz8Dkey/6zIN1nm1bpjZa9aj/P4\nf75pi6HMX+bl2lA8k9ocRcLAKwvXtMtUZuzE+XvP1nhZ16UPdzaZ0kDl3m0y/x43\n0+m13YvfoK1KVebTF5ASLLX7yfLtJzoDvA6zXWmM66Ge8CyFnmfoUg1n4B0KXHcH\nPx8IO1w10vnjjZ0aj7PbFwstx6JJGwIdZe/w7JWJnjYsl/xSugigAdq76x7q+pQ4\nAn5nOILY8DKqQTBWt+3w1jB+YKZbwSdxwSrTBovBm5qyD+d0nn04OzUWcbHhlF1J\nUu7djeg2mvMTm0Pje0MPlK4kox3qKS7LZWFDb2k0lsJXJ3UwCpKidBhluRM8EjVx\npoWosTPbUSxxkleVv+bQ7DhUut/aejL7rjXbxeoIKKSHtxws6W25Q3o0wAZFXsVM\n8+KF04sZy3GZiO0Jv4C6vZ4t6xG1F2HOW5OlZP6FPIwV2JDZQwyuFKupcqcMPEnE\nnHKUtou1VkC3neAb7cE+po/po+Zz52xFoD4F4HHr7w6+jwzCHCHOj7gcL7z6rsxa\njtjqSXMeKWbiwYt7w8fQ3xFYpeL7LubZwedW04duThXgVJvdCkqmxYGUBVnjOojI\nDuiNNvQ5ArN4U4js9kFb\n=ApFm\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-12T06:25:25Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/1e4158fd878994093710db9d072f356a9fc8bdc8",
+      "node_id": "C_kwDOAzDwU9oAKDFlNDE1OGZkODc4OTk0MDkzNzEwZGI5ZDA3MmYzNTZhOWZjOGJkYzg",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/dba910d0b946176344f13f55e081b3a7965ee9f4",
+          "sha": "dba910d0b946176344f13f55e081b3a7965ee9f4",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/dba910d0b946176344f13f55e081b3a7965ee9f4"
+        }
+      ],
+      "sha": "1e4158fd878994093710db9d072f356a9fc8bdc8",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/1e4158fd878994093710db9d072f356a9fc8bdc8"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/116684653?v=4",
+        "events_url": "https://api.github.com/users/JaredSnider-Bitwarden/events{/privacy}",
+        "followers_url": "https://api.github.com/users/JaredSnider-Bitwarden/followers",
+        "following_url": "https://api.github.com/users/JaredSnider-Bitwarden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JaredSnider-Bitwarden/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/JaredSnider-Bitwarden",
+        "id": 116684653,
+        "login": "JaredSnider-Bitwarden",
+        "node_id": "U_kgDOBvR3bQ",
+        "organizations_url": "https://api.github.com/users/JaredSnider-Bitwarden/orgs",
+        "received_events_url": "https://api.github.com/users/JaredSnider-Bitwarden/received_events",
+        "repos_url": "https://api.github.com/users/JaredSnider-Bitwarden/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/JaredSnider-Bitwarden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JaredSnider-Bitwarden/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/JaredSnider-Bitwarden",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/5dc83cd34c9a5e93f1fce7a614af6af11b3e383e/comments",
+      "commit": {
+        "author": {
+          "date": "2024-04-24T16:54:54Z",
+          "email": "116684653+JaredSnider-Bitwarden@users.noreply.github.com",
+          "name": "Jared Snider"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-04-24T16:54:54Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "PM-6787 - Rename DeviceTrustCryptoService to DeviceTrustService (#8819)",
+        "tree": {
+          "sha": "86431dbe6e4cd317a0f4114abe6d5d65a9016b9e",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/86431dbe6e4cd317a0f4114abe6d5d65a9016b9e"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/5dc83cd34c9a5e93f1fce7a614af6af11b3e383e",
+        "verification": {
+          "payload": "tree 86431dbe6e4cd317a0f4114abe6d5d65a9016b9e\nparent a12c140792c708073623356b45f0dfef58566cb0\nauthor Jared Snider <116684653+JaredSnider-Bitwarden@users.noreply.github.com> 1713977694 -0400\ncommitter GitHub <noreply@github.com> 1713977694 -0400\n\nPM-6787 - Rename DeviceTrustCryptoService to DeviceTrustService (#8819)\n\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmKTleCRC1aQ7uu5UhlAAAFsAQAE5Ii3UUVTwAyQdPCsCW2bOu\nIcbnTgw50uLR5nTVS4J+wxl5ecSV/kj8OOLzKdzncex1M5SaRv6JYyCEMiI+6lI+\n9f6KLYN0E45CHu/ZJXnmfXGyY0hIFuLaniIRN7JZeyWTsew/IyuPGSJ2iqpsDH4S\n7Twt7fnn3Gz+bCab5JvGoMlHf8ectzl4fbGI0I1nmKFH5WhJEbMBLPcc6emGu5Ow\nXv/T/4orLU/dn5gBJqI3GkKwu0CK1X/70wo1gTA6uCaIwsswjXvTmf2nk/QxPXSX\niTRWhRBR0ykg4FzwHY64e/NFTmZvgjsrn134xjHjbWoH6resQbaEBQVJSRZtA65G\nlNM3D3nuazNQQoZ+Bn4hd4HUxDnXf4tWU4rTAobYXTyvSKDw3exzXbmI3FDsM98u\nqGffg5yltAJDWdkWIFgr1OWCEru9CfvK9dMeDcHWhxhmwMtIHe+JepkydMs5QoIS\nKWKvwBmpUmRACrXMMCzDwUjxuplCrattHPiOFzu1JBih/ofy4aSUYdp8Dvo35c/P\n1yOJX10lLm5ai2TXRtacqgUUONwpiMwQc44BFrOtNaSj0QmYZsAu4crzAdSr+/hF\nQlbH4KkttnmhBhIQOhdxvUZRwP5u6PIJzCuxU05BkywkY7Zm5rUAj5TFiVScVB9t\nrW/LkfNSTMDzATKgJO/M\n=eMhW\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-12T02:25:58Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/5dc83cd34c9a5e93f1fce7a614af6af11b3e383e",
+      "node_id": "C_kwDOAzDwU9oAKDVkYzgzY2QzNGM5YTVlOTNmMWZjZTdhNjE0YWY2YWYxMWIzZTM4M2U",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/a12c140792c708073623356b45f0dfef58566cb0",
+          "sha": "a12c140792c708073623356b45f0dfef58566cb0",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/a12c140792c708073623356b45f0dfef58566cb0"
+        }
+      ],
+      "sha": "5dc83cd34c9a5e93f1fce7a614af6af11b3e383e",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/5dc83cd34c9a5e93f1fce7a614af6af11b3e383e"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/24985544?v=4",
+        "events_url": "https://api.github.com/users/jlf0dev/events{/privacy}",
+        "followers_url": "https://api.github.com/users/jlf0dev/followers",
+        "following_url": "https://api.github.com/users/jlf0dev/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jlf0dev/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/jlf0dev",
+        "id": 24985544,
+        "login": "jlf0dev",
+        "node_id": "MDQ6VXNlcjI0OTg1NTQ0",
+        "organizations_url": "https://api.github.com/users/jlf0dev/orgs",
+        "received_events_url": "https://api.github.com/users/jlf0dev/received_events",
+        "repos_url": "https://api.github.com/users/jlf0dev/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/jlf0dev/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jlf0dev/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/jlf0dev",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/9d10825dbd891c0f41fe1b4c4dd3ca4171f63be5/comments",
+      "commit": {
+        "author": {
+          "date": "2024-04-10T00:50:20Z",
+          "email": "jfink@bitwarden.com",
+          "name": "Jake Fink"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-04-10T00:50:20Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-5362] Add MP Service (attempt #2) (#8619)\n\n* create mp and kdf service\r\n\r\n* update mp service interface to not rely on active user\r\n\r\n* rename observable methods\r\n\r\n* update crypto service with new MP service\r\n\r\n* add master password service to login strategies\r\n- make fake service for easier testing\r\n- fix crypto service tests\r\n\r\n* update auth service and finish strategies\r\n\r\n* auth request refactors\r\n\r\n* more service refactors and constructor updates\r\n\r\n* setMasterKey refactors\r\n\r\n* remove master key methods from crypto service\r\n\r\n* remove master key and hash from state service\r\n\r\n* missed fixes\r\n\r\n* create migrations and fix references\r\n\r\n* fix master key imports\r\n\r\n* default force set password reason to none\r\n\r\n* add password reset reason observable factory to service\r\n\r\n* remove kdf changes and migrate only disk data\r\n\r\n* update migration number\r\n\r\n* fix sync service deps\r\n\r\n* use disk for force set password state\r\n\r\n* fix desktop migration\r\n\r\n* fix sso test\r\n\r\n* fix tests\r\n\r\n* fix more tests\r\n\r\n* fix even more tests\r\n\r\n* fix even more tests\r\n\r\n* fix cli\r\n\r\n* remove kdf service abstraction\r\n\r\n* add missing deps for browser\r\n\r\n* fix merge conflicts\r\n\r\n* clear reset password reason on lock or logout\r\n\r\n* fix tests\r\n\r\n* fix other tests\r\n\r\n* add jsdocs to abstraction\r\n\r\n* use state provider in crypto service\r\n\r\n* inverse master password service factory\r\n\r\n* add clearOn to master password service\r\n\r\n* add parameter validation to master password service\r\n\r\n* add component level userId\r\n\r\n* add missed userId\r\n\r\n* migrate key hash\r\n\r\n* fix login strategy service\r\n\r\n* delete crypto master key from account\r\n\r\n* migrate master key encrypted user key\r\n\r\n* rename key hash to master key hash\r\n\r\n* use mp service for getMasterKeyEncryptedUserKey\r\n\r\n* fix tests\r\n\r\n* fix user key decryption logic\r\n\r\n* add clear methods to mp service\r\n\r\n* fix circular dep and encryption issue\r\n\r\n* fix test\r\n\r\n* remove extra account service call\r\n\r\n* use EncString in state provider\r\n\r\n* fix tests\r\n\r\n* return to using encrypted string for serialization",
+        "tree": {
+          "sha": "d905c5a74b1fc9d5ad3a0ed47bfabb65d61eb975",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/d905c5a74b1fc9d5ad3a0ed47bfabb65d61eb975"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/9d10825dbd891c0f41fe1b4c4dd3ca4171f63be5",
+        "verification": {
+          "payload": "tree d905c5a74b1fc9d5ad3a0ed47bfabb65d61eb975\nparent c02723d6a6ef1b61644f39babdeeec436632391f\nauthor Jake Fink <jfink@bitwarden.com> 1712710220 -0400\ncommitter GitHub <noreply@github.com> 1712710220 -0400\n\n[PM-5362] Add MP Service (attempt #2) (#8619)\n\n* create mp and kdf service\r\n\r\n* update mp service interface to not rely on active user\r\n\r\n* rename observable methods\r\n\r\n* update crypto service with new MP service\r\n\r\n* add master password service to login strategies\r\n- make fake service for easier testing\r\n- fix crypto service tests\r\n\r\n* update auth service and finish strategies\r\n\r\n* auth request refactors\r\n\r\n* more service refactors and constructor updates\r\n\r\n* setMasterKey refactors\r\n\r\n* remove master key methods from crypto service\r\n\r\n* remove master key and hash from state service\r\n\r\n* missed fixes\r\n\r\n* create migrations and fix references\r\n\r\n* fix master key imports\r\n\r\n* default force set password reason to none\r\n\r\n* add password reset reason observable factory to service\r\n\r\n* remove kdf changes and migrate only disk data\r\n\r\n* update migration number\r\n\r\n* fix sync service deps\r\n\r\n* use disk for force set password state\r\n\r\n* fix desktop migration\r\n\r\n* fix sso test\r\n\r\n* fix tests\r\n\r\n* fix more tests\r\n\r\n* fix even more tests\r\n\r\n* fix even more tests\r\n\r\n* fix cli\r\n\r\n* remove kdf service abstraction\r\n\r\n* add missing deps for browser\r\n\r\n* fix merge conflicts\r\n\r\n* clear reset password reason on lock or logout\r\n\r\n* fix tests\r\n\r\n* fix other tests\r\n\r\n* add jsdocs to abstraction\r\n\r\n* use state provider in crypto service\r\n\r\n* inverse master password service factory\r\n\r\n* add clearOn to master password service\r\n\r\n* add parameter validation to master password service\r\n\r\n* add component level userId\r\n\r\n* add missed userId\r\n\r\n* migrate key hash\r\n\r\n* fix login strategy service\r\n\r\n* delete crypto master key from account\r\n\r\n* migrate master key encrypted user key\r\n\r\n* rename key hash to master key hash\r\n\r\n* use mp service for getMasterKeyEncryptedUserKey\r\n\r\n* fix tests\r\n\r\n* fix user key decryption logic\r\n\r\n* add clear methods to mp service\r\n\r\n* fix circular dep and encryption issue\r\n\r\n* fix test\r\n\r\n* remove extra account service call\r\n\r\n* use EncString in state provider\r\n\r\n* fix tests\r\n\r\n* return to using encrypted string for serialization",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmFeJMCRC1aQ7uu5UhlAAAAdIQAH9h+talz1RslXmIZG5kV7ch\n8lDJqUMwWK6t2sSlIG8jKorZRyA4LAPuYqI/mAVHm7DLq7xmlB5ouHmRDCWjB481\n693j/dRYjnGaWv7H3AVLEwBD27VYY+Qdu+JJj/SCDOiiQseZqpQmpf76Rw5/Q00z\nHxDLIoBo+TPSyt/QX8k3agK+082n/E8lMHKHUTcGGBVYDOJo8nd9odlP/BIdR72S\nqq3ia1eAOzGzKoXzT2AUIkgba0BjutOMiUOb8jD9aS6o6GCuNk2T/MfSkB+tIHt9\nITjh69gJBKCAMk+PMhSHcSwO+Hhp9FdyGxka1W4Hl6wL6YIimDrzg4U4QgZ/K5VC\nvHWcT98s+QTIQMeBLobkJO6k11qjm7y0r5jfDqhyChyDIey6SKqUa7Ss1onfAydB\nWEJarziNcx28YREgA9tu2EsvLBJ/wanV+TvQ/P6ypFe2C04ubBVTGFu/hUs9CMKc\nLuJ6IraGjDQ9W0CxRVm4A1QSCIuXTwKp896FlH7Y3wGK2Dn0Eq+7iagwJ8WvypDk\nKJcIaA0ksS/NpIGRDFQAtibWY8WaJ/XiehcyD49uyXF/6l58F502JlB3kU8rPtbH\nCtsv7Yyl8Po5kZqEffOSFaHAxNhCtSZq916csVhFOxX795/Pj+OjhrBsDS/YgFK2\njy3YBsRTh0r7U4ToQwtq\n=rtmX\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-12T14:13:55Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/9d10825dbd891c0f41fe1b4c4dd3ca4171f63be5",
+      "node_id": "C_kwDOAzDwU9oAKDlkMTA4MjVkYmQ4OTFjMGY0MWZlMWI0YzRkZDNjYTQxNzFmNjNiZTU",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/c02723d6a6ef1b61644f39babdeeec436632391f",
+          "sha": "c02723d6a6ef1b61644f39babdeeec436632391f",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/c02723d6a6ef1b61644f39babdeeec436632391f"
+        }
+      ],
+      "sha": "9d10825dbd891c0f41fe1b4c4dd3ca4171f63be5",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/9d10825dbd891c0f41fe1b4c4dd3ca4171f63be5"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/24985544?v=4",
+        "events_url": "https://api.github.com/users/jlf0dev/events{/privacy}",
+        "followers_url": "https://api.github.com/users/jlf0dev/followers",
+        "following_url": "https://api.github.com/users/jlf0dev/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jlf0dev/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/jlf0dev",
+        "id": 24985544,
+        "login": "jlf0dev",
+        "node_id": "MDQ6VXNlcjI0OTg1NTQ0",
+        "organizations_url": "https://api.github.com/users/jlf0dev/orgs",
+        "received_events_url": "https://api.github.com/users/jlf0dev/received_events",
+        "repos_url": "https://api.github.com/users/jlf0dev/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/jlf0dev/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jlf0dev/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/jlf0dev",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/775c8a1bbe2c71d7c1b66c3645766412bd505fa2/comments",
+      "commit": {
+        "author": {
+          "date": "2024-04-04T16:17:09Z",
+          "email": "jfink@bitwarden.com",
+          "name": "Jake Fink"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-04-04T16:17:09Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Revert \"[PM-5362]Create MP Service for state provider migration (#7623)\" (#8617)\n\nThis reverts commit b1abfb0a5cd48c23affb1bd52e7d17e361037ff6.",
+        "tree": {
+          "sha": "75667205e3e011a575c4a8fd4055fa4b2b9b4363",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/75667205e3e011a575c4a8fd4055fa4b2b9b4363"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/775c8a1bbe2c71d7c1b66c3645766412bd505fa2",
+        "verification": {
+          "payload": "tree 75667205e3e011a575c4a8fd4055fa4b2b9b4363\nparent e2e593c0fe0e5b8048e5bf2542a8f5b8d6d2a0fa\nauthor Jake Fink <jfink@bitwarden.com> 1712247429 -0400\ncommitter GitHub <noreply@github.com> 1712247429 +0000\n\nRevert \"[PM-5362]Create MP Service for state provider migration (#7623)\" (#8617)\n\nThis reverts commit b1abfb0a5cd48c23affb1bd52e7d17e361037ff6.",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmDtKFCRC1aQ7uu5UhlAAA2IoQAGnT0SxSRrgqyiQzMLN33Nlm\nYmX/MhyzyNVTZAeXJBOkXGwoAbR4iKUdIhaiYHiiwGwZtn36LYW7JUh//2JhAbz8\n/LGb9YOL73sTRHpsNw+KKRliQeYYaX3Iqa8qCDiCskeXbBxp7Q3lZiyCWVDKivtu\n5zZwB9P1WroK1Mn5xzW6CNPeSaKpPQtYyRZpUBwMH454eBHYKU662bDR2cSrlfbW\nOByzE9W1B+BLcvayH51qs+qHrryApQh++zSsdWBd6FTxwF01xfsrDxhPFqOOC473\n8BN6BeyiNeAsTTgFYzSHP1sCG/v/OQVuY+LodbLRUJlRl4OvSAtiyoXQt05ivXjG\npaB4z9xvWuY8+H3Mcpmj5EB5j5C1Vyh/UO9bIpt98wBYqia1PNxZy86W6LnZBAGT\n4RSRHfEtWkXtTOQlbSJcVofpwo3GrW2jNAoe1F9cSRn2zxdAiTx4l5Fx6pUAIOAF\nB9Sxi/5FqsTys/fmghTjrYYDveaC/4kvpHYqpjm2IIi4xCYQ86ZZbfP+WbJjsn7q\n+7frg3GAwtgOkYCt1WGxXG4uLnBLnVcUxnPU0eLxA8tG47aX/hwLg7eGFmqQS0T6\n3Bb0biMJU/UvuIm+ChPrC05V5ZbUg85SPhgZOe4IZY8vFSCEx1yKu1bqhcpO81zv\nkYr9Tz/UOYiTWjvxwjV6\n=SJgB\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-11T23:34:05Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/775c8a1bbe2c71d7c1b66c3645766412bd505fa2",
+      "node_id": "C_kwDOAzDwU9oAKDc3NWM4YTFiYmUyYzcxZDdjMWI2NmMzNjQ1NzY2NDEyYmQ1MDVmYTI",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/e2e593c0fe0e5b8048e5bf2542a8f5b8d6d2a0fa",
+          "sha": "e2e593c0fe0e5b8048e5bf2542a8f5b8d6d2a0fa",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/e2e593c0fe0e5b8048e5bf2542a8f5b8d6d2a0fa"
+        }
+      ],
+      "sha": "775c8a1bbe2c71d7c1b66c3645766412bd505fa2",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/775c8a1bbe2c71d7c1b66c3645766412bd505fa2"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/24985544?v=4",
+        "events_url": "https://api.github.com/users/jlf0dev/events{/privacy}",
+        "followers_url": "https://api.github.com/users/jlf0dev/followers",
+        "following_url": "https://api.github.com/users/jlf0dev/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jlf0dev/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/jlf0dev",
+        "id": 24985544,
+        "login": "jlf0dev",
+        "node_id": "MDQ6VXNlcjI0OTg1NTQ0",
+        "organizations_url": "https://api.github.com/users/jlf0dev/orgs",
+        "received_events_url": "https://api.github.com/users/jlf0dev/received_events",
+        "repos_url": "https://api.github.com/users/jlf0dev/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/jlf0dev/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jlf0dev/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/jlf0dev",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/b1abfb0a5cd48c23affb1bd52e7d17e361037ff6/comments",
+      "commit": {
+        "author": {
+          "date": "2024-04-04T14:22:41Z",
+          "email": "jfink@bitwarden.com",
+          "name": "Jake Fink"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-04-04T14:22:41Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-5362]Create MP Service for state provider migration (#7623)\n\n* create mp and kdf service\r\n\r\n* update mp service interface to not rely on active user\r\n\r\n* rename observable methods\r\n\r\n* update crypto service with new MP service\r\n\r\n* add master password service to login strategies\r\n- make fake service for easier testing\r\n- fix crypto service tests\r\n\r\n* update auth service and finish strategies\r\n\r\n* auth request refactors\r\n\r\n* more service refactors and constructor updates\r\n\r\n* setMasterKey refactors\r\n\r\n* remove master key methods from crypto service\r\n\r\n* remove master key and hash from state service\r\n\r\n* missed fixes\r\n\r\n* create migrations and fix references\r\n\r\n* fix master key imports\r\n\r\n* default force set password reason to none\r\n\r\n* add password reset reason observable factory to service\r\n\r\n* remove kdf changes and migrate only disk data\r\n\r\n* update migration number\r\n\r\n* fix sync service deps\r\n\r\n* use disk for force set password state\r\n\r\n* fix desktop migration\r\n\r\n* fix sso test\r\n\r\n* fix tests\r\n\r\n* fix more tests\r\n\r\n* fix even more tests\r\n\r\n* fix even more tests\r\n\r\n* fix cli\r\n\r\n* remove kdf service abstraction\r\n\r\n* add missing deps for browser\r\n\r\n* fix merge conflicts\r\n\r\n* clear reset password reason on lock or logout\r\n\r\n* fix tests\r\n\r\n* fix other tests\r\n\r\n* add jsdocs to abstraction\r\n\r\n* use state provider in crypto service\r\n\r\n* inverse master password service factory\r\n\r\n* add clearOn to master password service\r\n\r\n* add parameter validation to master password service\r\n\r\n* add component level userId\r\n\r\n* add missed userId\r\n\r\n* migrate key hash\r\n\r\n* fix login strategy service\r\n\r\n* delete crypto master key from account\r\n\r\n* migrate master key encrypted user key\r\n\r\n* rename key hash to master key hash\r\n\r\n* use mp service for getMasterKeyEncryptedUserKey\r\n\r\n* fix tests",
+        "tree": {
+          "sha": "18cccfe5c9fe08253b88b3539d05cf55e58c5cfe",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/18cccfe5c9fe08253b88b3539d05cf55e58c5cfe"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/b1abfb0a5cd48c23affb1bd52e7d17e361037ff6",
+        "verification": {
+          "payload": "tree 18cccfe5c9fe08253b88b3539d05cf55e58c5cfe\nparent df25074bdfaafb51add323c9db7e22ecd7de52f9\nauthor Jake Fink <jfink@bitwarden.com> 1712240561 -0400\ncommitter GitHub <noreply@github.com> 1712240561 +0000\n\n[PM-5362]Create MP Service for state provider migration (#7623)\n\n* create mp and kdf service\r\n\r\n* update mp service interface to not rely on active user\r\n\r\n* rename observable methods\r\n\r\n* update crypto service with new MP service\r\n\r\n* add master password service to login strategies\r\n- make fake service for easier testing\r\n- fix crypto service tests\r\n\r\n* update auth service and finish strategies\r\n\r\n* auth request refactors\r\n\r\n* more service refactors and constructor updates\r\n\r\n* setMasterKey refactors\r\n\r\n* remove master key methods from crypto service\r\n\r\n* remove master key and hash from state service\r\n\r\n* missed fixes\r\n\r\n* create migrations and fix references\r\n\r\n* fix master key imports\r\n\r\n* default force set password reason to none\r\n\r\n* add password reset reason observable factory to service\r\n\r\n* remove kdf changes and migrate only disk data\r\n\r\n* update migration number\r\n\r\n* fix sync service deps\r\n\r\n* use disk for force set password state\r\n\r\n* fix desktop migration\r\n\r\n* fix sso test\r\n\r\n* fix tests\r\n\r\n* fix more tests\r\n\r\n* fix even more tests\r\n\r\n* fix even more tests\r\n\r\n* fix cli\r\n\r\n* remove kdf service abstraction\r\n\r\n* add missing deps for browser\r\n\r\n* fix merge conflicts\r\n\r\n* clear reset password reason on lock or logout\r\n\r\n* fix tests\r\n\r\n* fix other tests\r\n\r\n* add jsdocs to abstraction\r\n\r\n* use state provider in crypto service\r\n\r\n* inverse master password service factory\r\n\r\n* add clearOn to master password service\r\n\r\n* add parameter validation to master password service\r\n\r\n* add component level userId\r\n\r\n* add missed userId\r\n\r\n* migrate key hash\r\n\r\n* fix login strategy service\r\n\r\n* delete crypto master key from account\r\n\r\n* migrate master key encrypted user key\r\n\r\n* rename key hash to master key hash\r\n\r\n* use mp service for getMasterKeyEncryptedUserKey\r\n\r\n* fix tests",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmDrexCRC1aQ7uu5UhlAAA9h8QAI8oh+oXy3zm//wDm6NMyzxD\nsX+ApT1bwNMwTbyOekxYZQGKNo+s4g9dSyDhX31Bqc+BPcRQoatdrT2cuJyGI11A\nKsjNqQONz1x68YkZ3jYRj0OloKplN3riLf376tAGg5HXl7i8awbDrJFXfS6ElEqI\nofISX6bVTw0TLenYLrR//cdmegaURcxrg1WW0cqBenn/bGkQWBug0nAJiioEQ7JH\n9rG6OnXY3bPtXVZZbS/0Q4Kq31ehTamjxuTqpfwg4M6LZ+jM43ZfQKZkPIwEXwl3\nkViENfo81/V+c1gROCUOWS9UcMAhfJmf6MRdBiL1ScKSF6SSO2TQixq4UUburIwo\n7/SLupkcBUPWZ0Tu64Nmd9mvcI4bxmxpQcS9E+Cu8MZsPfZo71thdqTuPA8HLY8h\nOe3zg0TJA3ba7x5gReHk75ccRTSxFhFhcTC9RVfPY8GvOm4lPpumQk/CdanJyuB7\nF5iO4r/dpYPJPKeiB3JHS1JZ4FvEKuFS9640Wh7+GwsGqCCjOCc1UKjTkAAewbdD\nfRPvqumeg6pI0efew/BhiCKGpXHa71jz32HEKYO19Oo2gvHydywSvKeaISUP0XM8\ndpsBiN7wAWTSKCkmJAdvX04wYfcPc9swtsN6mSHEXwkp6eia4eCkVlN3AMlsjk0X\nTQvqERKO0su7rc2FaSYb\n=E9lU\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-12T19:26:39Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/b1abfb0a5cd48c23affb1bd52e7d17e361037ff6",
+      "node_id": "C_kwDOAzDwU9oAKGIxYWJmYjBhNWNkNDhjMjNhZmZiMWJkNTJlN2QxN2UzNjEwMzdmZjY",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/df25074bdfaafb51add323c9db7e22ecd7de52f9",
+          "sha": "df25074bdfaafb51add323c9db7e22ecd7de52f9",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/df25074bdfaafb51add323c9db7e22ecd7de52f9"
+        }
+      ],
+      "sha": "b1abfb0a5cd48c23affb1bd52e7d17e361037ff6",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/b1abfb0a5cd48c23affb1bd52e7d17e361037ff6"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/116684653?v=4",
+        "events_url": "https://api.github.com/users/JaredSnider-Bitwarden/events{/privacy}",
+        "followers_url": "https://api.github.com/users/JaredSnider-Bitwarden/followers",
+        "following_url": "https://api.github.com/users/JaredSnider-Bitwarden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JaredSnider-Bitwarden/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/JaredSnider-Bitwarden",
+        "id": 116684653,
+        "login": "JaredSnider-Bitwarden",
+        "node_id": "U_kgDOBvR3bQ",
+        "organizations_url": "https://api.github.com/users/JaredSnider-Bitwarden/orgs",
+        "received_events_url": "https://api.github.com/users/JaredSnider-Bitwarden/received_events",
+        "repos_url": "https://api.github.com/users/JaredSnider-Bitwarden/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/JaredSnider-Bitwarden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JaredSnider-Bitwarden/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/JaredSnider-Bitwarden",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/c202c93378f1d48e15767d74e902e4888210cf26/comments",
+      "commit": {
+        "author": {
+          "date": "2024-04-01T20:02:58Z",
+          "email": "116684653+JaredSnider-Bitwarden@users.noreply.github.com",
+          "name": "Jared Snider"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-04-01T20:02:58Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Auth/PM-5268 - DeviceTrustCryptoService state provider migration (#7882)\n\n* PM-5268 - Add DEVICE_TRUST_DISK to state definitions\r\n\r\n* PM-5268 - DeviceTrustCryptoService - Get most of state provider refactor done - WIP - commented out stuff for now.\r\n\r\n* PM-5268 - DeviceTrustCryptoServiceStateProviderMigrator - WIP - got first draft of migrator in place and working on tests. Rollback tests are failing for some reason TBD.\r\n\r\n* PM-5268 - more WIP on device trust crypto service migrator tests\r\n\r\n* PM-5268 - DeviceTrustCryptoServiceStateProviderMigrator - Refactor based on call with platform\r\n\r\n* PM-5268 - DeviceTrustCryptoServiceStateProviderMigrator - tests passing\r\n\r\n* PM-5268 - Update DeviceTrustCryptoService to convert over to state providers + update all service instantiations / dependencies to ensure state provider is passed in or injected.\r\n\r\n* PM-5268 - Register new migration\r\n\r\n* PM-5268 - Temporarily remove device trust crypto service from migrator to ease merge conflicts as there are 6 more migrators before I can apply mine in main.\r\n\r\n* PM-5268 - Update migration numbers of DeviceTrustCryptoServiceStateProviderMigrator based on latest migrations from main.\r\n\r\n* PM-5268 - (1) Export new KeyDefinitions from DeviceTrustCryptoService for use in test suite (2) Update DeviceTrustCryptoService test file to use state provider.\r\n\r\n* PM-5268 - Fix DeviceTrustCryptoServiceStateProviderMigrator tests to use proper versions\r\n\r\n* PM-5268 - Actually fix all instances of DeviceTrustCryptoServiceStateProviderMigrator test failures\r\n\r\n* PM-5268 - Clean up state service, account, and login strategy of all migrated references\r\n\r\n* PM-5268 - Account - finish cleaning up device key\r\n\r\n* PM-5268 - StateService - clean up last reference to device key\r\n\r\n* PM-5268 - Remove even more device key refs. *facepalm*\r\n\r\n* PM-5268 - Finish resolving merge conflicts by incrementing migration version from 22 to 23\r\n\r\n* PM-5268 - bump migration versions\r\n\r\n* PM-5268 - DeviceTrustCryptoService - Implement secure storage functionality for getDeviceKey and setDeviceKey (to achieve feature parity with the ElectronStateService implementation prior to the state provider migration). Tests to follow shortly.\r\n\r\n* PM-5268 - DeviceTrustCryptoService tests - getDeviceKey now tested with all new secure storage scenarios. SetDeviceKey tests to follow.\r\n\r\n* PM-5268 - DeviceTrustCryptoService tests - test all setDeviceKey scenarios with state provider & secure storage\r\n\r\n* PM-5268 - Update DeviceTrustCryptoService deps to actually use secure storage svc on platforms that support it.\r\n\r\n* PM-5268 - Bump migration version due to merge conflicts.\r\n\r\n* PM-5268 - Bump migration version\r\n\r\n* PM-5268 - tweak jsdocs to be single line per PR feedback\r\n\r\n* PM-5268 - DeviceTrustCryptoSvc - improve debuggability.\r\n\r\n* PM-5268 - Remove state service as a dependency on the device trust crypto service (woo!)\r\n\r\n* PM-5268 - Update migration test json to correctly reflect reality.\r\n\r\n* PM-5268 - DeviceTrustCryptoSvc - getDeviceKey - add throw error for active user id missing.\r\n\r\n* PM-5268 - Fix tests\r\n\r\n* PM-5268 - WIP start on adding user id to every method on device trust crypto service.\r\n\r\n* PM-5268 - Update lock comp dependencies across clients\r\n\r\n* PM-5268 - Update login via auth request deps across clients to add acct service.\r\n\r\n* PM-5268 - UserKeyRotationSvc - add acct service to get active acct id for call to rotateDevicesTrust and then update tests.\r\n\r\n* PM-5268 - WIP on trying to fix device trust crypto svc tests.\r\n\r\n* PM-5268 - More WIP device trust crypto svc tests passing\r\n\r\n* PM-5268 - Device Trust crypto service - get all tests passing\r\n\r\n* PM-5268 - DeviceTrustCryptoService.getDeviceKey - fix secure storage b64 to symmetric crypto key conversion\r\n\r\n* PM-5268 - Add more tests and update test names\r\n\r\n* PM-5268 - rename state to indicate it was disk local\r\n\r\n* PM-5268 - DeviceTrustCryptoService - save symmetric key in JSON format\r\n\r\n* PM-5268 - Fix lock comp tests by adding acct service dep\r\n\r\n* PM-5268 - Update set device key tests to pass\r\n\r\n* PM-5268 - Bump migration versions again\r\n\r\n* PM-5268 - Fix user key rotation svc tests\r\n\r\n* PM-5268 - Update web jest config to allow use of common spec in user-key-rotation-svc tests\r\n\r\n* PM-5268 - Bump migration version\r\n\r\n* PM-5268 - Per PR feedback, save off user id\r\n\r\n* PM-5268 - bump migration version\r\n\r\n* PM-5268 - Per PR feedback, remove unnecessary await.\r\n\r\n* PM-5268 - Bump migration verson",
+        "tree": {
+          "sha": "6dfe9f0889a4ff1ee6a3ae30d393ef1c74e1d540",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/6dfe9f0889a4ff1ee6a3ae30d393ef1c74e1d540"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/c202c93378f1d48e15767d74e902e4888210cf26",
+        "verification": {
+          "payload": "tree 6dfe9f0889a4ff1ee6a3ae30d393ef1c74e1d540\nparent 94843bdd8b1101faddf0c385db827b77d05294c8\nauthor Jared Snider <116684653+JaredSnider-Bitwarden@users.noreply.github.com> 1712001778 -0400\ncommitter GitHub <noreply@github.com> 1712001778 -0400\n\nAuth/PM-5268 - DeviceTrustCryptoService state provider migration (#7882)\n\n* PM-5268 - Add DEVICE_TRUST_DISK to state definitions\r\n\r\n* PM-5268 - DeviceTrustCryptoService - Get most of state provider refactor done - WIP - commented out stuff for now.\r\n\r\n* PM-5268 - DeviceTrustCryptoServiceStateProviderMigrator - WIP - got first draft of migrator in place and working on tests. Rollback tests are failing for some reason TBD.\r\n\r\n* PM-5268 - more WIP on device trust crypto service migrator tests\r\n\r\n* PM-5268 - DeviceTrustCryptoServiceStateProviderMigrator - Refactor based on call with platform\r\n\r\n* PM-5268 - DeviceTrustCryptoServiceStateProviderMigrator - tests passing\r\n\r\n* PM-5268 - Update DeviceTrustCryptoService to convert over to state providers + update all service instantiations / dependencies to ensure state provider is passed in or injected.\r\n\r\n* PM-5268 - Register new migration\r\n\r\n* PM-5268 - Temporarily remove device trust crypto service from migrator to ease merge conflicts as there are 6 more migrators before I can apply mine in main.\r\n\r\n* PM-5268 - Update migration numbers of DeviceTrustCryptoServiceStateProviderMigrator based on latest migrations from main.\r\n\r\n* PM-5268 - (1) Export new KeyDefinitions from DeviceTrustCryptoService for use in test suite (2) Update DeviceTrustCryptoService test file to use state provider.\r\n\r\n* PM-5268 - Fix DeviceTrustCryptoServiceStateProviderMigrator tests to use proper versions\r\n\r\n* PM-5268 - Actually fix all instances of DeviceTrustCryptoServiceStateProviderMigrator test failures\r\n\r\n* PM-5268 - Clean up state service, account, and login strategy of all migrated references\r\n\r\n* PM-5268 - Account - finish cleaning up device key\r\n\r\n* PM-5268 - StateService - clean up last reference to device key\r\n\r\n* PM-5268 - Remove even more device key refs. *facepalm*\r\n\r\n* PM-5268 - Finish resolving merge conflicts by incrementing migration version from 22 to 23\r\n\r\n* PM-5268 - bump migration versions\r\n\r\n* PM-5268 - DeviceTrustCryptoService - Implement secure storage functionality for getDeviceKey and setDeviceKey (to achieve feature parity with the ElectronStateService implementation prior to the state provider migration). Tests to follow shortly.\r\n\r\n* PM-5268 - DeviceTrustCryptoService tests - getDeviceKey now tested with all new secure storage scenarios. SetDeviceKey tests to follow.\r\n\r\n* PM-5268 - DeviceTrustCryptoService tests - test all setDeviceKey scenarios with state provider & secure storage\r\n\r\n* PM-5268 - Update DeviceTrustCryptoService deps to actually use secure storage svc on platforms that support it.\r\n\r\n* PM-5268 - Bump migration version due to merge conflicts.\r\n\r\n* PM-5268 - Bump migration version\r\n\r\n* PM-5268 - tweak jsdocs to be single line per PR feedback\r\n\r\n* PM-5268 - DeviceTrustCryptoSvc - improve debuggability.\r\n\r\n* PM-5268 - Remove state service as a dependency on the device trust crypto service (woo!)\r\n\r\n* PM-5268 - Update migration test json to correctly reflect reality.\r\n\r\n* PM-5268 - DeviceTrustCryptoSvc - getDeviceKey - add throw error for active user id missing.\r\n\r\n* PM-5268 - Fix tests\r\n\r\n* PM-5268 - WIP start on adding user id to every method on device trust crypto service.\r\n\r\n* PM-5268 - Update lock comp dependencies across clients\r\n\r\n* PM-5268 - Update login via auth request deps across clients to add acct service.\r\n\r\n* PM-5268 - UserKeyRotationSvc - add acct service to get active acct id for call to rotateDevicesTrust and then update tests.\r\n\r\n* PM-5268 - WIP on trying to fix device trust crypto svc tests.\r\n\r\n* PM-5268 - More WIP device trust crypto svc tests passing\r\n\r\n* PM-5268 - Device Trust crypto service - get all tests passing\r\n\r\n* PM-5268 - DeviceTrustCryptoService.getDeviceKey - fix secure storage b64 to symmetric crypto key conversion\r\n\r\n* PM-5268 - Add more tests and update test names\r\n\r\n* PM-5268 - rename state to indicate it was disk local\r\n\r\n* PM-5268 - DeviceTrustCryptoService - save symmetric key in JSON format\r\n\r\n* PM-5268 - Fix lock comp tests by adding acct service dep\r\n\r\n* PM-5268 - Update set device key tests to pass\r\n\r\n* PM-5268 - Bump migration versions again\r\n\r\n* PM-5268 - Fix user key rotation svc tests\r\n\r\n* PM-5268 - Update web jest config to allow use of common spec in user-key-rotation-svc tests\r\n\r\n* PM-5268 - Bump migration version\r\n\r\n* PM-5268 - Per PR feedback, save off user id\r\n\r\n* PM-5268 - bump migration version\r\n\r\n* PM-5268 - Per PR feedback, remove unnecessary await.\r\n\r\n* PM-5268 - Bump migration verson",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmCxLyCRC1aQ7uu5UhlAAA/VMQABLiNvFolfzX9TdZSuh3gM2Y\nKRREh0uAZDQjLEsuFEJy4cbV0Xh8DPBRlz3K6mey/0087p23QzKla53ZAIjtqexI\n0VPxmN1mB8xc7QmBt2Z/ZDoxACqkb6xkhRARfVbzcOyNTv8iEA9bYiZPcH9IKTBH\neto1NFqI1auXxUJo4ZXUjSwUFk+n0ZhC5H45BKk739ArYnL+9Zge6tV/+9GILYEt\ndYpkBqnLngQCWb2RCWLdHsLjAfMDijfyx4CkCMAgL+ezIq4uhyD0wm7CUGghPSjz\nc4IxonwbCaKVcEDBafF3NfU0Y+2eFR+RKSAuSxkKMGnO57vOga1E2q+tkaZdol7J\nePRVJNfy34cMMX3ppyQJpMF2hgYuzEgmKbNRRXZ38KOeQALK70PQRPzraVURQGmK\n6YtnfrMO7qH76To/O2oQevrS5GWfCCLHaVxDM+ukm1aFAw5GmGQod5RzSDlohFMg\nUhOu7Xjnb2MtdOp1Av78piMCiFSGqKJWtlqDxHQTM1p7GW6xN36x1Al8Zbl5p+bS\n2UsvYFDdKvopFkrErE/31vr6gI/kVcjkjd6qKNsg70uBDNy/U+PApP4ZuAJTdB3m\noGncfESZTSDPwYv3I+oDqigSxw4kZbWuFzCo81NXyYfuslSVxxtVyUnqAMyxrHS4\nHbSgl699cgtSrVjjnT6n\n=ewJS\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-12T12:34:38Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/c202c93378f1d48e15767d74e902e4888210cf26",
+      "node_id": "C_kwDOAzDwU9oAKGMyMDJjOTMzNzhmMWQ0OGUxNTc2N2Q3NGU5MDJlNDg4ODIxMGNmMjY",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/94843bdd8b1101faddf0c385db827b77d05294c8",
+          "sha": "94843bdd8b1101faddf0c385db827b77d05294c8",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/94843bdd8b1101faddf0c385db827b77d05294c8"
+        }
+      ],
+      "sha": "c202c93378f1d48e15767d74e902e4888210cf26",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/c202c93378f1d48e15767d74e902e4888210cf26"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/18214891?v=4",
+        "events_url": "https://api.github.com/users/MGibson1/events{/privacy}",
+        "followers_url": "https://api.github.com/users/MGibson1/followers",
+        "following_url": "https://api.github.com/users/MGibson1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/MGibson1/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/MGibson1",
+        "id": 18214891,
+        "login": "MGibson1",
+        "node_id": "MDQ6VXNlcjE4MjE0ODkx",
+        "organizations_url": "https://api.github.com/users/MGibson1/orgs",
+        "received_events_url": "https://api.github.com/users/MGibson1/received_events",
+        "repos_url": "https://api.github.com/users/MGibson1/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/MGibson1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/MGibson1/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/MGibson1",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/62ad39e697a617b07a7beb21081ea4db301703a7/comments",
+      "commit": {
+        "author": {
+          "date": "2024-03-27T17:03:09Z",
+          "email": "mgibson@bitwarden.com",
+          "name": "Matt Gibson"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-03-27T17:03:09Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Ps/pm 5965/better config polling (#8325)\n\n* Create tracker that can await until expected observables are received.\r\n\r\n* Test dates are almost equal\r\n\r\n* Remove unused class method\r\n\r\n* Allow for updating active account in accout service fake\r\n\r\n* Correct observable tracker behavior\r\n\r\nClarify documentation\r\n\r\n* Transition config service to state provider\r\n\r\nUpdates the config fetching behavior to be lazy and ensure that any emitted value has been updated if older than a configurable value (statically compiled).\r\n\r\nIf desired, config fetching can be ensured fresh through an async.\r\n\r\n* Update calls to config service in DI and bootstrapping\r\n\r\n* Migrate account server configs\r\n\r\n* Fix global config fetching\r\n\r\n* Test migration rollback\r\n\r\n* Adhere to implementation naming convention\r\n\r\n* Adhere to abstract class naming convention\r\n\r\n* Complete config abstraction rename\r\n\r\n* Remove unnecessary cli config service\r\n\r\n* Fix builds\r\n\r\n* Validate observable does not complete\r\n\r\n* Use token service to determine authed or unauthed config pull\r\n\r\n* Remove superfluous factory config\r\n\r\n* Name describe blocks after the thing they test\r\n\r\n* Remove implementation documentation\r\n\r\nUnfortunately the experience when linking to external documentation is quite poor. Instead of following the link and retrieving docs, you get a link that can be clicked to take you out of context to the docs. No link _does_ retrieve docs, but lacks indication in the implementation that documentation exists at all.\r\n\r\nOn the balance, removing the link is the better experience.\r\n\r\n* Fix storybook",
+        "tree": {
+          "sha": "87734c40388b20be759238d81a1b20ab8a767a23",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/87734c40388b20be759238d81a1b20ab8a767a23"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/62ad39e697a617b07a7beb21081ea4db301703a7",
+        "verification": {
+          "payload": "tree 87734c40388b20be759238d81a1b20ab8a767a23\nparent 64d6f6fef3a5cf4e1d505e9ac1f67862bf1b16d7\nauthor Matt Gibson <mgibson@bitwarden.com> 1711558989 -0500\ncommitter GitHub <noreply@github.com> 1711558989 -0700\n\nPs/pm 5965/better config polling (#8325)\n\n* Create tracker that can await until expected observables are received.\r\n\r\n* Test dates are almost equal\r\n\r\n* Remove unused class method\r\n\r\n* Allow for updating active account in accout service fake\r\n\r\n* Correct observable tracker behavior\r\n\r\nClarify documentation\r\n\r\n* Transition config service to state provider\r\n\r\nUpdates the config fetching behavior to be lazy and ensure that any emitted value has been updated if older than a configurable value (statically compiled).\r\n\r\nIf desired, config fetching can be ensured fresh through an async.\r\n\r\n* Update calls to config service in DI and bootstrapping\r\n\r\n* Migrate account server configs\r\n\r\n* Fix global config fetching\r\n\r\n* Test migration rollback\r\n\r\n* Adhere to implementation naming convention\r\n\r\n* Adhere to abstract class naming convention\r\n\r\n* Complete config abstraction rename\r\n\r\n* Remove unnecessary cli config service\r\n\r\n* Fix builds\r\n\r\n* Validate observable does not complete\r\n\r\n* Use token service to determine authed or unauthed config pull\r\n\r\n* Remove superfluous factory config\r\n\r\n* Name describe blocks after the thing they test\r\n\r\n* Remove implementation documentation\r\n\r\nUnfortunately the experience when linking to external documentation is quite poor. Instead of following the link and retrieving docs, you get a link that can be clicked to take you out of context to the docs. No link _does_ retrieve docs, but lacks indication in the implementation that documentation exists at all.\r\n\r\nOn the balance, removing the link is the better experience.\r\n\r\n* Fix storybook",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJmBFFNCRC1aQ7uu5UhlAAA2RIQAJkaR79TUkXBdmpiP7GJFY0v\nhl1TAAVPztUYQXiGrY+8cFuDGkaTNzLGRh8DsN4St0ML/YhP5Vyv9Jxbs7glEVhB\nGEHc6Bh1XUhknd4DALdobie2XFgY+hCpAXrymRIErlgdIU+Lw/7Lr0qP2SldhKIZ\nsujoX8mGG1xZNsoBp2X4iRBOovddsO/p8bxDTlNZ8+LRlI3DQRvwJjQrVZU/IW9c\nHLm6bhrLfvCW/llBxZOXaccQEhh4J+7QNKhH/g6g36PySkRSDojOxJl3A2n0iPX4\nDvA8+41nQn7uoSCJyeOtY52Un35d6Eop+wkunIBLiBWCNCK62cKETjWZRgVwj2xY\n7sJji5mymJqL3wcKhbH8L2Y91OVv/EBiwSG3JHrYhfGs+/D5d43PmGVtv6O1ItHr\n5OjI6Mh8Vw+S8lgoTM+WBATllLDdUq4BVFtGzh062bwKevD/sLd0K4Gin9rDX9+b\ncDQi/fHl3V9PuEHVvTm1hDqo4cO7qg31S5wop9rXL+2MfBdgHKoI5Ot+Cj6rxUMr\nSJui18JEvIYpL8QzszCQllxovLjA9a2gQItVtMepjHQCgyegZymT8AZWNWWCaZ+0\n5tyOQk9nEygumAj6QU2Kf9Cp14uyXj/OUOpnT04aOaRzJbGSOX3bWdxV+POUsk8z\nWCRZ90wXODXHihAh8iZQ\n=fl/W\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-05T22:07:00Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/62ad39e697a617b07a7beb21081ea4db301703a7",
+      "node_id": "C_kwDOAzDwU9oAKDYyYWQzOWU2OTdhNjE3YjA3YTdiZWIyMTA4MWVhNGRiMzAxNzAzYTc",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/64d6f6fef3a5cf4e1d505e9ac1f67862bf1b16d7",
+          "sha": "64d6f6fef3a5cf4e1d505e9ac1f67862bf1b16d7",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/64d6f6fef3a5cf4e1d505e9ac1f67862bf1b16d7"
+        }
+      ],
+      "sha": "62ad39e697a617b07a7beb21081ea4db301703a7",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/62ad39e697a617b07a7beb21081ea4db301703a7"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/18214891?v=4",
+        "events_url": "https://api.github.com/users/MGibson1/events{/privacy}",
+        "followers_url": "https://api.github.com/users/MGibson1/followers",
+        "following_url": "https://api.github.com/users/MGibson1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/MGibson1/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/MGibson1",
+        "id": 18214891,
+        "login": "MGibson1",
+        "node_id": "MDQ6VXNlcjE4MjE0ODkx",
+        "organizations_url": "https://api.github.com/users/MGibson1/orgs",
+        "received_events_url": "https://api.github.com/users/MGibson1/received_events",
+        "repos_url": "https://api.github.com/users/MGibson1/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/MGibson1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/MGibson1/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/MGibson1",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/160a636fa0463a365fb405dc2e0a057e578ca9f1/comments",
+      "commit": {
+        "author": {
+          "date": "2024-01-17T12:27:44Z",
+          "email": "mgibson@bitwarden.com",
+          "name": "Matt Gibson"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-01-17T12:27:44Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Move key types to central location (#7531)",
+        "tree": {
+          "sha": "96e62fb22aaac1bac4e81bdaf29c5cfb606c5e41",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/96e62fb22aaac1bac4e81bdaf29c5cfb606c5e41"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/160a636fa0463a365fb405dc2e0a057e578ca9f1",
+        "verification": {
+          "payload": "tree 96e62fb22aaac1bac4e81bdaf29c5cfb606c5e41\nparent 5906a3633554206e6e17e5b93beb9c7585605384\nauthor Matt Gibson <mgibson@bitwarden.com> 1705494464 -0500\ncommitter GitHub <noreply@github.com> 1705494464 -0500\n\nMove key types to central location (#7531)\n\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJlp8fACRC1aQ7uu5UhlAAA+/wQAEI5mSuhO9pZKFExswYI+85E\ncJNWFK/YJi+eZvg/jaCoWRVDwXpmZwUfweDQO1IVg8MNOD6w+qJDgllTuz8ipU9V\nmSvIniyXB2j3o3/aByk8yQoblSmOPcHn0Asetobz09w5aG9inQx/G/OdP4JEANJs\nvYULIqdBGXjFp2oH9drlB/6ZxIpNAJhRM3yXTIzt0MWtLIvxtVxaDU3WasePKNXz\nsaH5OjY5HMOF7S7yGDdzotVPXuK1mHyXz08t5VKzxR+4TA4PLaBgba/YPInt/0pA\n9du4BgFv1ZpeW1pCXHBK16nSPXW22tVDDG857m0VKO7uPSXrd/ktulBjOGUPw84Q\nNKa4jejNhIFTLZppghX0FlG2sdEFBvPtTcNbnoiKbaZtJqwcUETI5+1BEtLlBFMe\nwTUaoQtqhhc9qWcKjhjQslecdOPGKBREjrXxfDHOGuMS6cYUYKiRThfvqHWS66+M\nPzBBsB4R83O/iXD4TjMstXWXRrRlpBtp+nIoi5zjQv+klZMOmRoF7fYxaBHBcYKD\nm4hhDOFM8LdsGkt3DDqync+bM1JphQAIIBIcX4eb7ug04ciw5ZQ009VdSLdWNl+o\nBUZtM2rxSiel+DfojIE0BxfEUiaM6DPO9kERx7b+ZrBTNwp7FJws8AYyDOFJ9sGi\nsokh03Ct6wlFKGZVPop1\n=T4mN\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-07T19:12:24Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/160a636fa0463a365fb405dc2e0a057e578ca9f1",
+      "node_id": "C_kwDOAzDwU9oAKDE2MGE2MzZmYTA0NjNhMzY1ZmI0MDVkYzJlMGEwNTdlNTc4Y2E5ZjE",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/5906a3633554206e6e17e5b93beb9c7585605384",
+          "sha": "5906a3633554206e6e17e5b93beb9c7585605384",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/5906a3633554206e6e17e5b93beb9c7585605384"
+        }
+      ],
+      "sha": "160a636fa0463a365fb405dc2e0a057e578ca9f1",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/160a636fa0463a365fb405dc2e0a057e578ca9f1"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/24985544?v=4",
+        "events_url": "https://api.github.com/users/jlf0dev/events{/privacy}",
+        "followers_url": "https://api.github.com/users/jlf0dev/followers",
+        "following_url": "https://api.github.com/users/jlf0dev/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jlf0dev/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/jlf0dev",
+        "id": 24985544,
+        "login": "jlf0dev",
+        "node_id": "MDQ6VXNlcjI0OTg1NTQ0",
+        "organizations_url": "https://api.github.com/users/jlf0dev/orgs",
+        "received_events_url": "https://api.github.com/users/jlf0dev/received_events",
+        "repos_url": "https://api.github.com/users/jlf0dev/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/jlf0dev/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jlf0dev/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/jlf0dev",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/a62f8cd6522eec49d84d0f7c18cf315a8603edac/comments",
+      "commit": {
+        "author": {
+          "date": "2023-12-22T15:31:24Z",
+          "email": "jfink@bitwarden.com",
+          "name": "Jake Fink"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2023-12-22T15:31:24Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-3797] Client changes to use new key rotation process (#6881)\n\n## Type of change\r\n\r\n<!-- (mark with an `X`) -->\r\n\r\n```\r\n- [ ] Bug fix\r\n- [ ] New feature development\r\n- [x] Tech debt (refactoring, code cleanup, dependency upgrades, etc)\r\n- [ ] Build/deploy pipeline (DevOps)\r\n- [ ] Other\r\n```\r\n\r\n## Objective\r\n\r\n<!--Describe what the purpose of this PR is. For example: what bug you're fixing or what new feature you're adding-->\r\nFinal Client changes for Key Rotation Improvements. \r\n\r\n- Introduces a new `KeyRotationService` that is responsible for owning rotation process.\r\n- Moves `Send` re-encryption to the `SendService` (`KeyRotationService` shouldn't have knowledge about how domains are encrypted).\r\n- Moves `EmergencyAccess` re-encryption to the `EmergencyAccessService`.\r\n- Renames `AccountRecoveryService` to `OrganizationUserResetPasswordService` after feedback from Admin Console\r\n\r\n\r\n## Code changes\r\n\r\n<!--Explain the changes you've made to each file or major component. This should help the reviewer understand your changes-->\r\n<!--Also refer to any related changes or PRs in other repositories-->\r\n\r\nAuth\r\n- **emergency-access-update.request.ts:** New request model for domain updates that includes Id\r\n- **emergency-access.service.ts:** Moved `EmergencyAccess` re-encryption to the `EmergencyAccessService`. Add deprecated method for legacy key rotations if feature flag is off\r\n- **key-rotation.service/api/spec/module:** New key rotation service for owning the rotation process. Added api service, module, and spec file.\r\n- **update-key.request.ts:** Moved to Auth ownership. Also added new properties for including other domains.\r\n- **migrate-legacy-encryption.component.ts:** Use new key rotation service instead of old component specific service. Delete old service.\r\n- **change-password.component.ts:** Use new key rotation service.\r\n- **settings.module.ts:** Import key rotation module.\r\n\r\nAdmin Console\r\n- **organization-user-reset-password.service.ts/spec:** Responsible for re-encryption of reset password keys during key rotation. Added tests.\r\n- **organization-user-reset-password-enrollment.request.ts:** New request model for key rotations\r\n- **reset-password.component.ts:** Update `AccountRecoveryService` to `OrganizationUserResetPasswordService`\r\n- **enroll-master-password-reset.component.ts:** Update `AccountRecoveryService` to `OrganizationUserResetPasswordService`\r\n\r\nTools\r\n- **send.service/spec.ts:** Responsible only for re-encryption of sends during key rotation. Added tests.\r\n\r\nOther\r\n- **api.service.ts:** Move `postAccountKey` to `KeyRotationApiService`\r\n- **feature-flag.enum.ts:** add new feature flag\r\n\r\n## Screenshots\r\n\r\n<!--Required for any UI changes. Delete if not applicable-->\r\n\r\n## Before you submit\r\n\r\n- Please add **unit tests** where it makes sense to do so (encouraged but not required)\r\n- If this change requires a **documentation update** - notify the documentation team\r\n- If this change has particular **deployment requirements** - notify the DevOps team\r\n- Ensure that all UI additions follow [WCAG AA requirements](https://contributing.bitwarden.com/contributing/accessibility/)",
+        "tree": {
+          "sha": "ac59d43d912f17a9bc38814c3a4493757daa4ea4",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/ac59d43d912f17a9bc38814c3a4493757daa4ea4"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/a62f8cd6522eec49d84d0f7c18cf315a8603edac",
+        "verification": {
+          "payload": "tree ac59d43d912f17a9bc38814c3a4493757daa4ea4\nparent e079fb4ab60c24585c34822b2d0246bd1b814f35\nauthor Jake Fink <jfink@bitwarden.com> 1703259084 -0500\ncommitter GitHub <noreply@github.com> 1703259084 -0500\n\n[PM-3797] Client changes to use new key rotation process (#6881)\n\n## Type of change\r\n\r\n<!-- (mark with an `X`) -->\r\n\r\n```\r\n- [ ] Bug fix\r\n- [ ] New feature development\r\n- [x] Tech debt (refactoring, code cleanup, dependency upgrades, etc)\r\n- [ ] Build/deploy pipeline (DevOps)\r\n- [ ] Other\r\n```\r\n\r\n## Objective\r\n\r\n<!--Describe what the purpose of this PR is. For example: what bug you're fixing or what new feature you're adding-->\r\nFinal Client changes for Key Rotation Improvements. \r\n\r\n- Introduces a new `KeyRotationService` that is responsible for owning rotation process.\r\n- Moves `Send` re-encryption to the `SendService` (`KeyRotationService` shouldn't have knowledge about how domains are encrypted).\r\n- Moves `EmergencyAccess` re-encryption to the `EmergencyAccessService`.\r\n- Renames `AccountRecoveryService` to `OrganizationUserResetPasswordService` after feedback from Admin Console\r\n\r\n\r\n## Code changes\r\n\r\n<!--Explain the changes you've made to each file or major component. This should help the reviewer understand your changes-->\r\n<!--Also refer to any related changes or PRs in other repositories-->\r\n\r\nAuth\r\n- **emergency-access-update.request.ts:** New request model for domain updates that includes Id\r\n- **emergency-access.service.ts:** Moved `EmergencyAccess` re-encryption to the `EmergencyAccessService`. Add deprecated method for legacy key rotations if feature flag is off\r\n- **key-rotation.service/api/spec/module:** New key rotation service for owning the rotation process. Added api service, module, and spec file.\r\n- **update-key.request.ts:** Moved to Auth ownership. Also added new properties for including other domains.\r\n- **migrate-legacy-encryption.component.ts:** Use new key rotation service instead of old component specific service. Delete old service.\r\n- **change-password.component.ts:** Use new key rotation service.\r\n- **settings.module.ts:** Import key rotation module.\r\n\r\nAdmin Console\r\n- **organization-user-reset-password.service.ts/spec:** Responsible for re-encryption of reset password keys during key rotation. Added tests.\r\n- **organization-user-reset-password-enrollment.request.ts:** New request model for key rotations\r\n- **reset-password.component.ts:** Update `AccountRecoveryService` to `OrganizationUserResetPasswordService`\r\n- **enroll-master-password-reset.component.ts:** Update `AccountRecoveryService` to `OrganizationUserResetPasswordService`\r\n\r\nTools\r\n- **send.service/spec.ts:** Responsible only for re-encryption of sends during key rotation. Added tests.\r\n\r\nOther\r\n- **api.service.ts:** Move `postAccountKey` to `KeyRotationApiService`\r\n- **feature-flag.enum.ts:** add new feature flag\r\n\r\n## Screenshots\r\n\r\n<!--Required for any UI changes. Delete if not applicable-->\r\n\r\n## Before you submit\r\n\r\n- Please add **unit tests** where it makes sense to do so (encouraged but not required)\r\n- If this change requires a **documentation update** - notify the documentation team\r\n- If this change has particular **deployment requirements** - notify the DevOps team\r\n- Ensure that all UI additions follow [WCAG AA requirements](https://contributing.bitwarden.com/contributing/accessibility/)\r\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJlhavMCRBK7hj4Ov3rIwAAlfsIAKUdc5oO3GNx77OPUB/b9nLX\nRBCTy//fMbdAdDcfcTjbDq67c9zbPWdfnGwWHQqHbUHcsx/fWSug+F24+TvO1KCX\n/HChAwyqBMQRTtG4ZVfzyROqzkugRYg6sWAmJQWG9vv6BYKEK4HKoRLSPTIbe51a\nbpCS2iF2IjAzugcmDysr5HTTeD+Zfc8OFFv2oIgnPH6zp+Bc8L5C2JvkW+pEP7R0\n62GzNnnjpdRe6weDOcIhKsLNP3iXIeqIQSw/1sXpzZsD0XgyKfavgkgz+FNFwCCo\n+v4KnLmi9aN0N65++UW41qskWoJV6h/u2PyrTeIL0RcqWZWprBP5fpDl62XjwJQ=\n=kCQY\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-01-16T19:59:59Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/a62f8cd6522eec49d84d0f7c18cf315a8603edac",
+      "node_id": "C_kwDOAzDwU9oAKGE2MmY4Y2Q2NTIyZWVjNDlkODRkMGY3YzE4Y2YzMTVhODYwM2VkYWM",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/e079fb4ab60c24585c34822b2d0246bd1b814f35",
+          "sha": "e079fb4ab60c24585c34822b2d0246bd1b814f35",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/e079fb4ab60c24585c34822b2d0246bd1b814f35"
+        }
+      ],
+      "sha": "a62f8cd6522eec49d84d0f7c18cf315a8603edac",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/a62f8cd6522eec49d84d0f7c18cf315a8603edac"
+    }
+  ],
+  "fetched_utc": "2026-11-14T17:08:33.683534+00:00",
+  "link_header": null,
+  "rate_remaining": null,
+  "sha256": "518240d386527cb950d98b5307b1fd257631fb7e6be82a214559106d5ceddac7",
+  "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=apps%2Fweb%2Fsrc%2Fapp%2Fauth%2Fkey-rotation%2F&since=2023-10-27T11%3A47%3A40Z&until=2024-10-26T11%3A47%3A39Z&per_page=100"
+}

@@ -1,0 +1,40 @@
+{
+  "key": "8671dd258008d4a711",
+  "args": {
+    "crate": "axum",
+    "version": "0.8.4",
+    "id": "6323bcc67dd1eee3",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0808,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio_stream`",
+      "rendered": "error[E0432]: unresolved import `tokio_stream`\n --> src/main.rs:8:5\n  |\n8 | use tokio_stream::StreamExt as _ ;\n  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `tokio_stream`\n  |\n  = help: if you wanted to use a crate named `tokio_stream`, use `cargo add tokio_stream` to add it to your `Cargo.toml`\n\n",
+      "line": 8
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `futures_util`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_util`\n --> src/main.rs:9:5\n  |\n9 | use futures_util::stream::{self, Stream};\n  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_util`\n  |\n  = help: if you wanted to use a crate named `futures_util`, use `cargo add futures_util` to add it to your `Cargo.toml`\n\n",
+      "line": 9
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `futures_util`",
+      "rendered": "error[E0432]: unresolved import `futures_util`\n --> src/main.rs:9:5\n  |\n9 | use futures_util::stream::{self, Stream};\n  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_util`\n  |\n  = help: if you wanted to use a crate named `futures_util`, use `cargo add futures_util` to add it to your `Cargo.toml`\n\n",
+      "line": 9
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_axum_consumer` (bin \"n05_axum_consumer\") due to 3 previous errors\n",
+  "code_sha256": "e33902cd43f960819e36e6156464d4ea851b8d16b272042013727aa72abc045a",
+  "manifest_sha256": "1a08b2dcf1c48f38e1c32ef3858db3a81b3ef7a397dc1bcdc4a31d82be49ebd7",
+  "log_file": "results/check_logs/8671dd258008d4a711.txt.gz"
+}

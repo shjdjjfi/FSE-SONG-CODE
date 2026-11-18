@@ -1,0 +1,65 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 114304,
+  "control_flow_or_callback_lines": 0,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "-",
+      "code": "ngmodels.ReceiverPermissionReadSecret: \"canReadSecrets\",",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "ngmodels.ReceiverPermissionAdmin:      \"canAdmin\",",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "ngmodels.ReceiverPermissionWrite:      \"canWrite\",",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "ngmodels.ReceiverPermissionDelete:     \"canDelete\",",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "ngmodels.ReceiverPermissionReadSecret:      \"canReadSecrets\",",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "ngmodels.ReceiverPermissionAdmin:           \"canAdmin\",",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "ngmodels.ReceiverPermissionWrite:           \"canWrite\",",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "ngmodels.ReceiverPermissionDelete:          \"canDelete\",",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "ngmodels.ReceiverPermissionModifyProtected: \"canModifyProtected\",",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:58:00.552960+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 9,
+  "pr": 115442,
+  "repository": "grafana/grafana",
+  "sha256": "cf58488669df79d96e7b7fdb5c2260ce5781fa1ba31d226e477c86a6d0ecd341",
+  "target_code_changed_lines": 9,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/115442.patch"
+}

@@ -1,0 +1,27 @@
+{
+  "fetched_utc": "2026-11-14T17:20:56.877919+00:00",
+  "merged_at": "2026-01-27T21:41:16Z",
+  "opened_at": "2025-09-18T21:02:47Z",
+  "pr": 111338,
+  "raw_html_sha256": "b48de59872329f015f9c328f85256a4600e3042c7d2c37e816b62492b8c6521f",
+  "repo": "grafana/grafana",
+  "review_count_visible": 3,
+  "reviews": [
+    {
+      "login": "titolins",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-23T17:39:05Z"
+    },
+    {
+      "login": "rodrigopk",
+      "state": "APPROVED",
+      "submitted_at": "2026-01-23T21:06:13Z"
+    },
+    {
+      "login": "titolins",
+      "state": "COMMENTED",
+      "submitted_at": "2026-01-26T14:29:06Z"
+    }
+  ],
+  "source_url": "https://github.com/grafana/grafana/pull/111338"
+}

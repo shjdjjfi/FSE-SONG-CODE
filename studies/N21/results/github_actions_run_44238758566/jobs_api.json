@@ -1,0 +1,1865 @@
+{
+  "total_count": 15,
+  "jobs": [
+    {
+      "id": 134581183082,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVaniag",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581183082",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581183082",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:38:47Z",
+      "started_at": "2026-11-18T04:38:49Z",
+      "completed_at": "2026-11-18T04:39:02Z",
+      "name": "Generate trusted outputs and two caches",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:38:50Z",
+          "completed_at": "2026-11-18T04:38:53Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:38:53Z",
+          "completed_at": "2026-11-18T04:38:54Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:38:54Z",
+          "completed_at": "2026-11-18T04:38:54Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:38:54Z",
+          "completed_at": "2026-11-18T04:38:55Z"
+        },
+        {
+          "name": "Compile fresh independent reference",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:38:55Z",
+          "completed_at": "2026-11-18T04:38:57Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:38:57Z",
+          "completed_at": "2026-11-18T04:38:58Z"
+        },
+        {
+          "name": "Save verified complete cache via real Attest action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:38:58Z",
+          "completed_at": "2026-11-18T04:38:59Z"
+        },
+        {
+          "name": "Deliberately damage the second copy before caching",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:38:59Z",
+          "completed_at": "2026-11-18T04:38:59Z"
+        },
+        {
+          "name": "Save deliberately incomplete cache via real Attest action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:38:59Z",
+          "completed_at": "2026-11-18T04:39:00Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:39:00Z",
+          "completed_at": "2026-11-18T04:39:00Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:39:00Z",
+          "completed_at": "2026-11-18T04:39:00Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:39:00Z",
+          "completed_at": "2026-11-18T04:39:00Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581183082",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000300,
+      "runner_name": "GitHub Actions 1000000300",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 134581275677,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVatMHQ",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581275677",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581275677",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:39:03Z",
+      "started_at": "2026-11-18T04:39:06Z",
+      "completed_at": "2026-11-18T04:39:39Z",
+      "name": "complete / extra_stale / guarded_sha",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:39:07Z",
+          "completed_at": "2026-11-18T04:39:12Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:39:12Z",
+          "completed_at": "2026-11-18T04:39:19Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:39:19Z",
+          "completed_at": "2026-11-18T04:39:25Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:39:25Z",
+          "completed_at": "2026-11-18T04:39:30Z"
+        },
+        {
+          "name": "Prepare identical source and config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:39:30Z",
+          "completed_at": "2026-11-18T04:39:30Z"
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:39:30Z",
+          "completed_at": "2026-11-18T04:39:31Z"
+        },
+        {
+          "name": "Restore with actual Attest composite action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:39:31Z",
+          "completed_at": "2026-11-18T04:39:33Z"
+        },
+        {
+          "name": "Execute repair strategy and independent SHA oracle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:39:33Z",
+          "completed_at": "2026-11-18T04:39:35Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:39:35Z",
+          "completed_at": "2026-11-18T04:39:36Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:39:36Z",
+          "completed_at": "2026-11-18T04:39:36Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:39:36Z",
+          "completed_at": "2026-11-18T04:39:36Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:39:36Z",
+          "completed_at": "2026-11-18T04:39:37Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581275677",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000304,
+      "runner_name": "GitHub Actions 1000000304",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 134581275682,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVatMIg",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581275682",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581275682",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:39:03Z",
+      "started_at": "2026-11-18T04:39:05Z",
+      "completed_at": "2026-11-18T04:39:17Z",
+      "name": "complete / corrupt_dts / attest_only",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:39:06Z",
+          "completed_at": "2026-11-18T04:39:08Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:39:08Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Prepare identical source and config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:12Z"
+        },
+        {
+          "name": "Restore with actual Attest composite action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:39:12Z",
+          "completed_at": "2026-11-18T04:39:13Z"
+        },
+        {
+          "name": "Execute repair strategy and independent SHA oracle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:39:13Z",
+          "completed_at": "2026-11-18T04:39:13Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:39:13Z",
+          "completed_at": "2026-11-18T04:39:14Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:39:14Z",
+          "completed_at": "2026-11-18T04:39:14Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:39:14Z",
+          "completed_at": "2026-11-18T04:39:14Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:39:14Z",
+          "completed_at": "2026-11-18T04:39:14Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581275682",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000303,
+      "runner_name": "GitHub Actions 1000000303",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 134581275688,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVatMKA",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581275688",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581275688",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:39:03Z",
+      "started_at": "2026-11-18T04:39:06Z",
+      "completed_at": "2026-11-18T04:40:03Z",
+      "name": "complete / none / attest_only",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:39:07Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:10Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:39:10Z",
+          "completed_at": "2026-11-18T04:39:24Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:39:24Z",
+          "completed_at": "2026-11-18T04:39:34Z"
+        },
+        {
+          "name": "Prepare identical source and config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:39:34Z",
+          "completed_at": "2026-11-18T04:39:34Z"
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:39:34Z",
+          "completed_at": "2026-11-18T04:39:55Z"
+        },
+        {
+          "name": "Restore with actual Attest composite action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:39:55Z",
+          "completed_at": "2026-11-18T04:39:56Z"
+        },
+        {
+          "name": "Execute repair strategy and independent SHA oracle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:39:56Z",
+          "completed_at": "2026-11-18T04:39:58Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:39:58Z",
+          "completed_at": "2026-11-18T04:40:00Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:40:00Z",
+          "completed_at": "2026-11-18T04:40:00Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:40:00Z",
+          "completed_at": "2026-11-18T04:40:00Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:40:00Z",
+          "completed_at": "2026-11-18T04:40:00Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581275688",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000302,
+      "runner_name": "GitHub Actions 1000000302",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 134581275695,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVatMLw",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581275695",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581275695",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:39:03Z",
+      "started_at": "2026-11-18T04:39:05Z",
+      "completed_at": "2026-11-18T04:39:19Z",
+      "name": "complete / corrupt_dts / clean_all",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:39:06Z",
+          "completed_at": "2026-11-18T04:39:08Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:39:08Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:13Z"
+        },
+        {
+          "name": "Prepare identical source and config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:39:13Z",
+          "completed_at": "2026-11-18T04:39:13Z"
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:39:13Z",
+          "completed_at": "2026-11-18T04:39:14Z"
+        },
+        {
+          "name": "Restore with actual Attest composite action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:39:14Z",
+          "completed_at": "2026-11-18T04:39:15Z"
+        },
+        {
+          "name": "Execute repair strategy and independent SHA oracle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:39:15Z",
+          "completed_at": "2026-11-18T04:39:16Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:39:16Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:39:17Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:39:17Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:39:17Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581275695",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000309,
+      "runner_name": "GitHub Actions 1000000309",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 134581275703,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVatMNw",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581275703",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581275703",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:39:03Z",
+      "started_at": "2026-11-18T04:39:05Z",
+      "completed_at": "2026-11-18T04:39:19Z",
+      "name": "partial / none / force_all",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:39:06Z",
+          "completed_at": "2026-11-18T04:39:07Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:39:07Z",
+          "completed_at": "2026-11-18T04:39:08Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:39:08Z",
+          "completed_at": "2026-11-18T04:39:08Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:39:08Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Prepare identical source and config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:10Z"
+        },
+        {
+          "name": "Restore with actual Attest composite action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:39:10Z",
+          "completed_at": "2026-11-18T04:39:15Z"
+        },
+        {
+          "name": "Execute repair strategy and independent SHA oracle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:39:15Z",
+          "completed_at": "2026-11-18T04:39:16Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:39:16Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:39:17Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:39:17Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:39:17Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581275703",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000306,
+      "runner_name": "GitHub Actions 1000000306",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 134581275739,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVatMWw",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581275739",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581275739",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:39:03Z",
+      "started_at": "2026-11-18T04:39:05Z",
+      "completed_at": "2026-11-18T04:39:20Z",
+      "name": "complete / none / guarded_sha",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:39:06Z",
+          "completed_at": "2026-11-18T04:39:08Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:39:08Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:13Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:39:13Z",
+          "completed_at": "2026-11-18T04:39:15Z"
+        },
+        {
+          "name": "Prepare identical source and config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:39:15Z",
+          "completed_at": "2026-11-18T04:39:15Z"
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:39:15Z",
+          "completed_at": "2026-11-18T04:39:16Z"
+        },
+        {
+          "name": "Restore with actual Attest composite action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:39:16Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        },
+        {
+          "name": "Execute repair strategy and independent SHA oracle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:39:17Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:39:17Z",
+          "completed_at": "2026-11-18T04:39:18Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:39:18Z",
+          "completed_at": "2026-11-18T04:39:18Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:39:18Z",
+          "completed_at": "2026-11-18T04:39:18Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:39:18Z",
+          "completed_at": "2026-11-18T04:39:19Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581275739",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000305,
+      "runner_name": "GitHub Actions 1000000305",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 134581275743,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVatMXw",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581275743",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581275743",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:39:03Z",
+      "started_at": "2026-11-18T04:39:05Z",
+      "completed_at": "2026-11-18T04:39:13Z",
+      "name": "partial / none / clean_all",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:39:05Z",
+          "completed_at": "2026-11-18T04:39:07Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:39:07Z",
+          "completed_at": "2026-11-18T04:39:07Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:39:07Z",
+          "completed_at": "2026-11-18T04:39:07Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:39:07Z",
+          "completed_at": "2026-11-18T04:39:08Z"
+        },
+        {
+          "name": "Prepare identical source and config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:39:08Z",
+          "completed_at": "2026-11-18T04:39:08Z"
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:39:08Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Restore with actual Attest composite action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Execute repair strategy and independent SHA oracle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:10Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:39:10Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581275743",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000311,
+      "runner_name": "GitHub Actions 1000000311",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 134581275747,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVatMYw",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581275747",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581275747",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:39:03Z",
+      "started_at": "2026-11-18T04:39:05Z",
+      "completed_at": "2026-11-18T04:39:27Z",
+      "name": "complete / extra_stale / force_all",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:39:06Z",
+          "completed_at": "2026-11-18T04:39:08Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:39:08Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Prepare identical source and config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Restore with actual Attest composite action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:12Z"
+        },
+        {
+          "name": "Execute repair strategy and independent SHA oracle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:39:12Z",
+          "completed_at": "2026-11-18T04:39:14Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:39:14Z",
+          "completed_at": "2026-11-18T04:39:20Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:39:20Z",
+          "completed_at": "2026-11-18T04:39:20Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:39:20Z",
+          "completed_at": "2026-11-18T04:39:21Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:39:21Z",
+          "completed_at": "2026-11-18T04:39:21Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581275747",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000310,
+      "runner_name": "GitHub Actions 1000000310",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 134581275749,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVatMZQ",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581275749",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581275749",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:39:03Z",
+      "started_at": "2026-11-18T04:39:05Z",
+      "completed_at": "2026-11-18T04:39:21Z",
+      "name": "partial / none / attest_only",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:39:06Z",
+          "completed_at": "2026-11-18T04:39:08Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:39:08Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:10Z"
+        },
+        {
+          "name": "Prepare identical source and config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:39:10Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Restore with actual Attest composite action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        },
+        {
+          "name": "Execute repair strategy and independent SHA oracle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:39:17Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:39:17Z",
+          "completed_at": "2026-11-18T04:39:18Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:39:18Z",
+          "completed_at": "2026-11-18T04:39:18Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:39:18Z",
+          "completed_at": "2026-11-18T04:39:18Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:39:18Z",
+          "completed_at": "2026-11-18T04:39:19Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581275749",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000312,
+      "runner_name": "GitHub Actions 1000000312",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 134581275762,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVatMcg",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581275762",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581275762",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:39:03Z",
+      "started_at": "2026-11-18T04:39:06Z",
+      "completed_at": "2026-11-18T04:39:43Z",
+      "name": "complete / extra_stale / attest_only",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:39:07Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:19Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:39:19Z",
+          "completed_at": "2026-11-18T04:39:30Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:39:30Z",
+          "completed_at": "2026-11-18T04:39:34Z"
+        },
+        {
+          "name": "Prepare identical source and config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:39:34Z",
+          "completed_at": "2026-11-18T04:39:34Z"
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:39:34Z",
+          "completed_at": "2026-11-18T04:39:35Z"
+        },
+        {
+          "name": "Restore with actual Attest composite action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:39:35Z",
+          "completed_at": "2026-11-18T04:39:37Z"
+        },
+        {
+          "name": "Execute repair strategy and independent SHA oracle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:39:37Z",
+          "completed_at": "2026-11-18T04:39:38Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:39:38Z",
+          "completed_at": "2026-11-18T04:39:40Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:39:40Z",
+          "completed_at": "2026-11-18T04:39:40Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:39:40Z",
+          "completed_at": "2026-11-18T04:39:40Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:39:40Z",
+          "completed_at": "2026-11-18T04:39:40Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581275762",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000313,
+      "runner_name": "GitHub Actions 1000000313",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 134581275764,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVatMdA",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581275764",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581275764",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:39:03Z",
+      "started_at": "2026-11-18T04:39:05Z",
+      "completed_at": "2026-11-18T04:39:28Z",
+      "name": "partial / none / guarded_sha",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:39:06Z",
+          "completed_at": "2026-11-18T04:39:08Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:39:08Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:10Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:39:10Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Prepare identical source and config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:22Z"
+        },
+        {
+          "name": "Restore with actual Attest composite action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:39:22Z",
+          "completed_at": "2026-11-18T04:39:23Z"
+        },
+        {
+          "name": "Execute repair strategy and independent SHA oracle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:39:23Z",
+          "completed_at": "2026-11-18T04:39:24Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:39:24Z",
+          "completed_at": "2026-11-18T04:39:26Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:39:26Z",
+          "completed_at": "2026-11-18T04:39:26Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:39:26Z",
+          "completed_at": "2026-11-18T04:39:26Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:39:26Z",
+          "completed_at": "2026-11-18T04:39:26Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581275764",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000314,
+      "runner_name": "GitHub Actions 1000000314",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 134581275767,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVatMdw",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581275767",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581275767",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:39:03Z",
+      "started_at": "2026-11-18T04:39:05Z",
+      "completed_at": "2026-11-18T04:39:19Z",
+      "name": "miss / none / attest_only",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:39:06Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:10Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:39:10Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:12Z"
+        },
+        {
+          "name": "Prepare identical source and config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:39:12Z",
+          "completed_at": "2026-11-18T04:39:12Z"
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:39:12Z",
+          "completed_at": "2026-11-18T04:39:13Z"
+        },
+        {
+          "name": "Restore with actual Attest composite action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:39:13Z",
+          "completed_at": "2026-11-18T04:39:14Z"
+        },
+        {
+          "name": "Execute repair strategy and independent SHA oracle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:39:14Z",
+          "completed_at": "2026-11-18T04:39:15Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:39:15Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:39:17Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:39:17Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:39:17Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581275767",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000308,
+      "runner_name": "GitHub Actions 1000000308",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 134581275777,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVatMgQ",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581275777",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581275777",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:39:03Z",
+      "started_at": "2026-11-18T04:39:06Z",
+      "completed_at": "2026-11-18T04:39:22Z",
+      "name": "miss / none / guarded_sha",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:39:06Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:10Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:39:10Z",
+          "completed_at": "2026-11-18T04:39:13Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:39:13Z",
+          "completed_at": "2026-11-18T04:39:15Z"
+        },
+        {
+          "name": "Prepare identical source and config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:39:15Z",
+          "completed_at": "2026-11-18T04:39:15Z"
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:39:15Z",
+          "completed_at": "2026-11-18T04:39:16Z"
+        },
+        {
+          "name": "Restore with actual Attest composite action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:39:16Z",
+          "completed_at": "2026-11-18T04:39:17Z"
+        },
+        {
+          "name": "Execute repair strategy and independent SHA oracle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:39:17Z",
+          "completed_at": "2026-11-18T04:39:18Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:39:18Z",
+          "completed_at": "2026-11-18T04:39:19Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:39:19Z",
+          "completed_at": "2026-11-18T04:39:20Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:39:20Z",
+          "completed_at": "2026-11-18T04:39:20Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:39:20Z",
+          "completed_at": "2026-11-18T04:39:20Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581275777",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000315,
+      "runner_name": "GitHub Actions 1000000315",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 134581275785,
+      "run_id": 44238758566,
+      "workflow_name": "N21 TypeScript cache completeness benchmark",
+      "head_branch": "n21-fse-benchmark",
+      "run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/runs/44238758566",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVykKOM8AAAAfVatMiQ",
+      "head_sha": "403d5fd951750ce45714372ca69f0134d34305e3",
+      "url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/actions/jobs/134581275785",
+      "html_url": "https://github.com/shjdjjfi/FSE-EXP-1/actions/runs/44238758566/job/134581275785",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T04:39:03Z",
+      "started_at": "2026-11-18T04:39:05Z",
+      "completed_at": "2026-11-18T04:39:17Z",
+      "name": "complete / corrupt_dts / guarded_sha",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-18T04:39:06Z",
+          "completed_at": "2026-11-18T04:39:08Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-18T04:39:08Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:09Z"
+        },
+        {
+          "name": "Install pinned compiler",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-18T04:39:09Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Prepare identical source and config",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:11Z"
+        },
+        {
+          "name": "Run actions/download-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-11-18T04:39:11Z",
+          "completed_at": "2026-11-18T04:39:12Z"
+        },
+        {
+          "name": "Restore with actual Attest composite action",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-11-18T04:39:12Z",
+          "completed_at": "2026-11-18T04:39:13Z"
+        },
+        {
+          "name": "Execute repair strategy and independent SHA oracle",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-11-18T04:39:13Z",
+          "completed_at": "2026-11-18T04:39:14Z"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-18T04:39:14Z",
+          "completed_at": "2026-11-18T04:39:15Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 17,
+          "started_at": "2026-11-18T04:39:15Z",
+          "completed_at": "2026-11-18T04:39:15Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 18,
+          "started_at": "2026-11-18T04:39:15Z",
+          "completed_at": "2026-11-18T04:39:15Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-11-18T04:39:15Z",
+          "completed_at": "2026-11-18T04:39:15Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/shjdjjfi/FSE-EXP-1/check-runs/134581275785",
+      "labels": [
+        "ubuntu-22.04"
+      ],
+      "runner_id": 1000000307,
+      "runner_name": "GitHub Actions 1000000307",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

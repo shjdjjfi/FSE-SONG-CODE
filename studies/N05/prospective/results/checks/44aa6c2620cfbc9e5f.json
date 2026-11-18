@@ -1,0 +1,66 @@
+{
+  "key": "44aa6c2620cfbc9e5f",
+  "args": {
+    "crate": "ratatui",
+    "version": "0.29.0",
+    "id": "2d53448333e48295",
+    "profile": "candidate",
+    "features": [
+      "all-widgets",
+      "crossterm",
+      "macros",
+      "scrolling-regions",
+      "termion",
+      "underline-color",
+      "unstable"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1965,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `ratatui::palette`",
+      "rendered": "error[E0432]: unresolved import `ratatui::palette`\n   --> src/main.rs:2:15\n    |\n  2 | use ratatui::{palette::Hsluv, style::Color};\n    |               ^^^^^^^ could not find `palette` in `ratatui`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/ratatui-0.29.0/src/lib.rs:333:9\n    |\n332 | #[cfg(feature = \"palette\")]\n    |       ------------------- the item is gated behind the `palette` feature\n333 | pub use palette;\n    |         ^^^^^^^\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0599",
+      "message": "no variant or associated item named `from_hsluv` found for enum `ratatui::prelude::Color` in the current scope",
+      "rendered": "error[E0599]: no variant or associated item named `from_hsluv` found for enum `ratatui::prelude::Color` in the current scope\n   --> src/main.rs:5:27\n    |\n  5 | let color: Color = Color::from_hsluv(Hsluv::new(0.0, 100.0, 0.0));\n    |                           ^^^^^^^^^^ variant or associated item not found in `ratatui::prelude::Color`\n    |\nnote: if you're trying to build a new `ratatui::prelude::Color`, consider using `ratatui::prelude::Color::from_u32` which returns `ratatui::prelude::Color`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/ratatui-0.29.0/src/style/color.rs:134:5\n    |\n134 |     pub const fn from_u32(u: u32) -> Self {\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nhelp: there is an associated function `from_str` with a similar name\n    |\n  5 - let color: Color = Color::from_hsluv(Hsluv::new(0.0, 100.0, 0.0));\n  5 + let color: Color = Color::from_str(Hsluv::new(0.0, 100.0, 0.0));\n    |\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0599",
+      "message": "no variant or associated item named `from_hsluv` found for enum `ratatui::prelude::Color` in the current scope",
+      "rendered": "error[E0599]: no variant or associated item named `from_hsluv` found for enum `ratatui::prelude::Color` in the current scope\n   --> src/main.rs:9:27\n    |\n  9 | let color: Color = Color::from_hsluv(Hsluv::new(0.0, 0.0, 100.0));\n    |                           ^^^^^^^^^^ variant or associated item not found in `ratatui::prelude::Color`\n    |\nnote: if you're trying to build a new `ratatui::prelude::Color`, consider using `ratatui::prelude::Color::from_u32` which returns `ratatui::prelude::Color`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/ratatui-0.29.0/src/style/color.rs:134:5\n    |\n134 |     pub const fn from_u32(u: u32) -> Self {\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nhelp: there is an associated function `from_str` with a similar name\n    |\n  9 - let color: Color = Color::from_hsluv(Hsluv::new(0.0, 0.0, 100.0));\n  9 + let color: Color = Color::from_str(Hsluv::new(0.0, 0.0, 100.0));\n    |\n\n",
+      "line": 9
+    },
+    {
+      "code": "E0599",
+      "message": "no variant or associated item named `from_hsluv` found for enum `ratatui::prelude::Color` in the current scope",
+      "rendered": "error[E0599]: no variant or associated item named `from_hsluv` found for enum `ratatui::prelude::Color` in the current scope\n   --> src/main.rs:13:20\n    |\n 13 | let color = Color::from_hsluv(Hsluv::new(0.0, 0.0, 50.0));\n    |                    ^^^^^^^^^^ variant or associated item not found in `ratatui::prelude::Color`\n    |\nnote: if you're trying to build a new `ratatui::prelude::Color`, consider using `ratatui::prelude::Color::from_u32` which returns `ratatui::prelude::Color`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/ratatui-0.29.0/src/style/color.rs:134:5\n    |\n134 |     pub const fn from_u32(u: u32) -> Self {\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nhelp: there is an associated function `from_str` with a similar name\n    |\n 13 - let color = Color::from_hsluv(Hsluv::new(0.0, 0.0, 50.0));\n 13 + let color = Color::from_str(Hsluv::new(0.0, 0.0, 50.0));\n    |\n\n",
+      "line": 13
+    },
+    {
+      "code": "E0599",
+      "message": "no variant or associated item named `from_hsluv` found for enum `ratatui::prelude::Color` in the current scope",
+      "rendered": "error[E0599]: no variant or associated item named `from_hsluv` found for enum `ratatui::prelude::Color` in the current scope\n   --> src/main.rs:17:20\n    |\n 17 | let color = Color::from_hsluv(Hsluv::new(12.18, 100.0, 53.2));\n    |                    ^^^^^^^^^^ variant or associated item not found in `ratatui::prelude::Color`\n    |\nnote: if you're trying to build a new `ratatui::prelude::Color`, consider using `ratatui::prelude::Color::from_u32` which returns `ratatui::prelude::Color`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/ratatui-0.29.0/src/style/color.rs:134:5\n    |\n134 |     pub const fn from_u32(u: u32) -> Self {\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nhelp: there is an associated function `from_str` with a similar name\n    |\n 17 - let color = Color::from_hsluv(Hsluv::new(12.18, 100.0, 53.2));\n 17 + let color = Color::from_str(Hsluv::new(12.18, 100.0, 53.2));\n    |\n\n",
+      "line": 17
+    },
+    {
+      "code": "E0599",
+      "message": "no variant or associated item named `from_hsluv` found for enum `ratatui::prelude::Color` in the current scope",
+      "rendered": "error[E0599]: no variant or associated item named `from_hsluv` found for enum `ratatui::prelude::Color` in the current scope\n   --> src/main.rs:21:20\n    |\n 21 | let color = Color::from_hsluv(Hsluv::new(-94.13, 100.0, 32.3));\n    |                    ^^^^^^^^^^ variant or associated item not found in `ratatui::prelude::Color`\n    |\nnote: if you're trying to build a new `ratatui::prelude::Color`, consider using `ratatui::prelude::Color::from_u32` which returns `ratatui::prelude::Color`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/ratatui-0.29.0/src/style/color.rs:134:5\n    |\n134 |     pub const fn from_u32(u: u32) -> Self {\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nhelp: there is an associated function `from_str` with a similar name\n    |\n 21 - let color = Color::from_hsluv(Hsluv::new(-94.13, 100.0, 32.3));\n 21 + let color = Color::from_str(Hsluv::new(-94.13, 100.0, 32.3));\n    |\n\n",
+      "line": 21
+    }
+  ],
+  "error_count": 6,
+  "stderr_excerpt": "error: could not compile `n05_ratatui_consumer` (bin \"n05_ratatui_consumer\") due to 6 previous errors\n",
+  "code_sha256": "433291f8e06ab366966195f654c64089e8b4481979019cbac4a6f1c4c24d93e0",
+  "manifest_sha256": "180374e774f6893068f328d58429f6aa0dad25aa3687ee32618ba8858dfb3080",
+  "log_file": "prospective/results/check_logs/44aa6c2620cfbc9e5f.txt.gz"
+}

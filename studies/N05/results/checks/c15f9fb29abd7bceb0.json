@@ -1,0 +1,28 @@
+{
+  "key": "c15f9fb29abd7bceb0",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "cd28cf9ef0f1f8e2",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0528,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio::time`",
+      "rendered": "error[E0432]: unresolved import `tokio::time`\n   --> src/main.rs:2:12\n    |\n  2 | use tokio::time::Instant;\n    |            ^^^^ could not find `time` in `tokio`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/lib.rs:555:13\n    |\n554 | / cfg_time! {\n555 | |     pub mod time;\n    | |             ^^^^\n556 | | }\n    | |_- the item is gated behind the `time` feature\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 1 previous error\n",
+  "code_sha256": "756341febeeec5c3f924da605f51e0bb0f9ca150a5a8bacd5e4eb0fbb025af4d",
+  "manifest_sha256": "c0fd14620f954d7ba10a88fd6edf9b99ca0ab9a3b720432264b3664dc401a7fc",
+  "log_file": "results/check_logs/c15f9fb29abd7bceb0.txt.gz"
+}

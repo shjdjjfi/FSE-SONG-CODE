@@ -1,0 +1,30 @@
+{
+  "key": "860b1c4849ddf2cafe",
+  "args": {
+    "crate": "sqlparser",
+    "version": "0.56.0",
+    "id": "6980eb1a861e443d",
+    "profile": "candidate",
+    "features": [
+      "recursive-protection"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1058,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved imports `sqlparser::ast::Visit`, `sqlparser::ast::Visitor`",
+      "rendered": "error[E0432]: unresolved imports `sqlparser::ast::Visit`, `sqlparser::ast::Visitor`\n  --> src/main.rs:4:22\n   |\n 4 | use sqlparser::ast::{Visit, Visitor, ObjectName, Expr};\n   |                      ^^^^^  ^^^^^^^ no `Visitor` in `ast`\n   |                      |\n   |                      no `Visit` in `ast`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/sqlparser-0.56.0/src/ast/mod.rs:41:24\n   |\n40 | #[cfg(feature = \"visitor\")]\n   |       ------------------- the item is gated behind the `visitor` feature\n41 | use sqlparser_derive::{Visit, VisitMut};\n   |                        ^^^^^\n\n",
+      "line": 4
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_sqlparser_consumer` (bin \"n05_sqlparser_consumer\") due to 1 previous error\n",
+  "code_sha256": "999a19c40c098a4170ea5704efd8d006a4c8314ae58a1073e43e24ece592e954",
+  "manifest_sha256": "b2c524ebf9096d2cf0538ce8d64ca199ff67b06bdb16cf4b12048f4437bae720",
+  "log_file": "prospective/results/check_logs/860b1c4849ddf2cafe.txt.gz"
+}

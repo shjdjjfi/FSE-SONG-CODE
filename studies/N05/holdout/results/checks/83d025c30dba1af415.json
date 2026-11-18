@@ -1,0 +1,52 @@
+{
+  "key": "83d025c30dba1af415",
+  "args": {
+    "crate": "tower",
+    "version": "0.5.2",
+    "id": "b482fede975ff41d",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0844,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower::ServiceExt`",
+      "rendered": "error[E0432]: unresolved import `tower::ServiceExt`\n   --> src/main.rs:2:5\n    |\n  2 | use tower::ServiceExt;\n    |     ^^^^^^^----------\n    |     |      |\n    |     |      help: a similar name exists in the module: `Service`\n    |     no `ServiceExt` in the root\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-0.5.2/src/lib.rs:205:34\n    |\n202 | #[cfg(feature = \"util\")]\n    |       ---------------- the item is gated behind the `util` feature\n...\n205 | pub use self::util::{service_fn, ServiceExt};\n    |                                  ^^^^^^^^^^\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:4:3\n  |\n4 | #[tokio::main]\n  |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find function `service_fn` in crate `tower`",
+      "rendered": "error[E0425]: cannot find function `service_fn` in crate `tower`\n   --> src/main.rs:7:18\n    |\n  7 | let svc = tower::service_fn(|request: usize| async move {\n    |                  ^^^^^^^^^^ not found in `tower`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-0.5.2/src/lib.rs:205:22\n    |\n202 | #[cfg(feature = \"util\")]\n    |       ---------------- the item is gated behind the `util` feature\n...\n205 | pub use self::util::{service_fn, ServiceExt};\n    |                      ^^^^^^^^^^\n\n",
+      "line": 7
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `map_request` found for struct `ServiceBuilder<L>` in the current scope",
+      "rendered": "error[E0599]: no method named `map_request` found for struct `ServiceBuilder<L>` in the current scope\n  --> src/main.rs:13:6\n   |\n11 |   let svc = ServiceBuilder::new()\n   |  ___________-\n12 | |      // Add a middleware that adds 1 to each request\n13 | |     .map_request(|request: usize| request + 1)\n   | |     -^^^^^^^^^^^ method not found in `ServiceBuilder<Identity>`\n   | |_____|\n   |\n\n",
+      "line": 11
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:5:1\n  |\n5 | async fn main() -> Result<(), ()> {\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 5
+    }
+  ],
+  "error_count": 5,
+  "stderr_excerpt": "error: could not compile `n05_tower_consumer` (bin \"n05_tower_consumer\") due to 5 previous errors\n",
+  "code_sha256": "b7b5e7e9f4746e7036d20a2295c13d917b069e852c74903b9fdfbd4b9ea203d7",
+  "manifest_sha256": "26868b8190d1c863374370170f526108cc23ca34b421542d513c0830871fe22d",
+  "log_file": "holdout/results/check_logs/83d025c30dba1af415.txt.gz"
+}

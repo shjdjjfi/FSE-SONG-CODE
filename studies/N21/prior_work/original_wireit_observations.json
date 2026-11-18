@@ -1,0 +1,176 @@
+[
+  {
+    "project": "ts-pattern",
+    "cache": "local",
+    "removed": "internals/helpers.js",
+    "cold": {
+      "argv": [
+        "node",
+        "C:\\Users\\35286\\Documents\\Codex\\2026-11-14\\an-z\\work\\tools\\npm-11.4.2\\package\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "stdout": "\n> build\n> wireit\n\n\u2705 Ran 1 script and skipped 0 in 2.8s.\n",
+      "stderr": "Analyzing\n  0% [0 / 1] [1 running] build\n"
+    },
+    "on_missing": {
+      "argv": [
+        "node",
+        "C:\\Users\\35286\\Documents\\Codex\\2026-11-14\\an-z\\work\\tools\\npm-11.4.2\\package\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "stdout": "\n> build\n> wireit\n\n\u2705 Ran 0 scripts and skipped 1 in 0.2s.\n",
+      "stderr": "Analyzing\n"
+    },
+    "matches_clean": true,
+    "restored": true
+  },
+  {
+    "project": "zod",
+    "cache": "local",
+    "removed": "helpers/enumUtil.js",
+    "cold": {
+      "argv": [
+        "node",
+        "C:\\Users\\35286\\Documents\\Codex\\2026-11-14\\an-z\\work\\tools\\npm-11.4.2\\package\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "stdout": "\n> build\n> wireit\n\n\u2705 Ran 1 script and skipped 0 in 3.1s.\n",
+      "stderr": "Analyzing\n  0% [0 / 1] [1 running] build\n"
+    },
+    "on_missing": {
+      "argv": [
+        "node",
+        "C:\\Users\\35286\\Documents\\Codex\\2026-11-14\\an-z\\work\\tools\\npm-11.4.2\\package\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "stdout": "\n> build\n> wireit\n\n\u2705 Ran 0 scripts and skipped 1 in 0.2s.\n",
+      "stderr": "Analyzing\n"
+    },
+    "matches_clean": true,
+    "restored": true
+  },
+  {
+    "project": "ts-pattern",
+    "cache": "none",
+    "removed": "internals/helpers.js",
+    "cold": {
+      "argv": [
+        "node",
+        "C:\\Users\\35286\\Documents\\Codex\\2026-11-14\\an-z\\work\\tools\\npm-11.4.2\\package\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "stdout": "\n> build\n> wireit\n\n\u2705 Ran 1 script and skipped 0 in 2.4s.\n",
+      "stderr": "Analyzing\n  0% [0 / 1] [1 running] build\n"
+    },
+    "on_missing": {
+      "argv": [
+        "node",
+        "C:\\Users\\35286\\Documents\\Codex\\2026-11-14\\an-z\\work\\tools\\npm-11.4.2\\package\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "stdout": "\n> build\n> wireit\n\n\u2705 Ran 1 script and skipped 0 in 0.5s.\n",
+      "stderr": "Analyzing\n"
+    },
+    "matches_clean": false,
+    "restored": false
+  },
+  {
+    "project": "zod",
+    "cache": "none",
+    "removed": "helpers/enumUtil.js",
+    "cold": {
+      "argv": [
+        "node",
+        "C:\\Users\\35286\\Documents\\Codex\\2026-11-14\\an-z\\work\\tools\\npm-11.4.2\\package\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "stdout": "\n> build\n> wireit\n\n\u2705 Ran 1 script and skipped 0 in 3.2s.\n",
+      "stderr": "Analyzing\n  0% [0 / 1] [1 running] build\n"
+    },
+    "on_missing": {
+      "argv": [
+        "node",
+        "C:\\Users\\35286\\Documents\\Codex\\2026-11-14\\an-z\\work\\tools\\npm-11.4.2\\package\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "stdout": "\n> build\n> wireit\n\n\u2705 Ran 1 script and skipped 0 in 0.4s.\n",
+      "stderr": "Analyzing\n"
+    },
+    "matches_clean": false,
+    "restored": false
+  },
+  {
+    "project": "ts-pattern",
+    "cache": "always",
+    "removed": "internals/helpers.js",
+    "cold": {
+      "argv": [
+        "node",
+        "C:\\Users\\35286\\Documents\\Codex\\2026-11-14\\an-z\\work\\tools\\npm-11.4.2\\package\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "stdout": "\n> build\n> wireit\n\n\u2705 Ran 1 script and skipped 0 in 2.9s.\n",
+      "stderr": "Analyzing\n  0% [0 / 1] [1 running] build\n"
+    },
+    "on_missing": {
+      "argv": [
+        "node",
+        "C:\\Users\\35286\\Documents\\Codex\\2026-11-14\\an-z\\work\\tools\\npm-11.4.2\\package\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "stdout": "\n> build\n> wireit\n\n\u2705 Ran 1 script and skipped 0 in 2.5s.\n",
+      "stderr": "Analyzing\n  0% [0 / 1] [1 running] build\n"
+    },
+    "matches_clean": true,
+    "restored": true
+  },
+  {
+    "project": "zod",
+    "cache": "always",
+    "removed": "helpers/enumUtil.js",
+    "cold": {
+      "argv": [
+        "node",
+        "C:\\Users\\35286\\Documents\\Codex\\2026-11-14\\an-z\\work\\tools\\npm-11.4.2\\package\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "stdout": "\n> build\n> wireit\n\n\u2705 Ran 1 script and skipped 0 in 3.4s.\n",
+      "stderr": "Analyzing\n  0% [0 / 1] [1 running] build\n"
+    },
+    "on_missing": {
+      "argv": [
+        "node",
+        "C:\\Users\\35286\\Documents\\Codex\\2026-11-14\\an-z\\work\\tools\\npm-11.4.2\\package\\bin\\npm-cli.js",
+        "run",
+        "build"
+      ],
+      "exit": 0,
+      "stdout": "\n> build\n> wireit\n\n\u2705 Ran 1 script and skipped 0 in 3.3s.\n",
+      "stderr": "Analyzing\n  0% [0 / 1] [1 running] build\n"
+    },
+    "matches_clean": true,
+    "restored": true
+  }
+]

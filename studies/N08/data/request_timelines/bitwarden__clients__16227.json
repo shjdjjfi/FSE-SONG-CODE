@@ -1,0 +1,82 @@
+{
+  "pr": 16227,
+  "pr_author": "jaasen-livefront",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-08-29T22:56:10Z",
+      "requested_people": [
+        "jaasen-livefront"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-08-29T22:56:11Z",
+      "requested_people": [
+        "btreston",
+        "jaasen-livefront",
+        "rr-bw",
+        "shane-melton",
+        "vleague2"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-08-30T00:58:39Z",
+      "requested_people": [
+        "jaasen-livefront"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-08-30T00:58:39Z",
+      "requested_people": [
+        "jaasen-livefront",
+        "kdenney"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-09-02T19:08:54Z",
+      "requested_people": [
+        "djsmith85",
+        "jaasen-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-09-03T19:00:40Z",
+      "requested_people": [
+        "djsmith85",
+        "jaasen-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-09-05T20:32:52Z",
+      "requested_people": [
+        "djsmith85",
+        "jaasen-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-09-08T20:03:18Z",
+      "requested_people": [
+        "jaasen-livefront",
+        "kdenney"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "7ceb70e789aabcccd75764dc72c1bdc2a03c6fd6622e0822bf4e30498393caac",
+  "url": "https://github.com/bitwarden/clients/pull/16227"
+}

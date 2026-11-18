@@ -1,0 +1,40 @@
+{
+  "key": "f72fd8ea4e1c1b674e",
+  "args": {
+    "crate": "sqlx",
+    "version": "0.8.6",
+    "id": "29b3e1680322e82f",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 25.1958,
+  "errors": [
+    {
+      "code": "E0425",
+      "message": "cannot find value `user_email` in this scope",
+      "rendered": "error[E0425]: cannot find value `user_email` in this scope\n --> src/main.rs:6:11\n  |\n6 |     .bind(user_email)\n  |           ^^^^^^^^^^ not found in this scope\n\n",
+      "line": 6
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find value `user_name` in this scope",
+      "rendered": "error[E0425]: cannot find value `user_name` in this scope\n --> src/main.rs:7:11\n  |\n7 |     .bind(user_name)\n  |           ^^^^^^^^^ not found in this scope\n\n",
+      "line": 7
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find value `conn` in this scope",
+      "rendered": "error[E0425]: cannot find value `conn` in this scope\n --> src/main.rs:8:17\n  |\n8 |     .fetch(&mut conn);\n  |                 ^^^^ not found in this scope\n\n",
+      "line": 8
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_sqlx_consumer` (bin \"n05_sqlx_consumer\") due to 3 previous errors\n",
+  "code_sha256": "039f0263d4d189d60229afc8fded7fc4711e8189a1bff32302baba0686bb1162",
+  "manifest_sha256": "a37da12a3c6a302dcebc888dae63b1a2c4bd74e00e0e8a87f42c2f74f54cbfbb",
+  "log_file": "results/check_logs/f72fd8ea4e1c1b674e.txt.gz"
+}

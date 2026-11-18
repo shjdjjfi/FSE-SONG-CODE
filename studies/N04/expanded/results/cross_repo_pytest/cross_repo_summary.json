@@ -1,0 +1,629 @@
+{
+  "created_utc": "2026-11-15T00:06:40.617396+00:00",
+  "source": "Real, immutable historical source revisions in two external projects; no upstream CI job modified",
+  "total_pytest_invocations": 80,
+  "total_recorded_testcase_executions": 4990,
+  "all_invocations_exited_zero": true,
+  "cases": [
+    {
+      "pre_functions": 22,
+      "post_functions": 23,
+      "pre_duplicate_names": 0,
+      "post_duplicate_names": 0,
+      "unique_identical_body_lineages": 21,
+      "identical_body_moved_paths": 0,
+      "identical_body_renamed_methods": 0,
+      "verified_identical_body_links": [
+        {
+          "before": "tests/test_context.py::test_propagate_opt_prefixes",
+          "after": "tests/test_context.py::test_propagate_opt_prefixes",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_parameter_source",
+          "after": "tests/test_context.py::test_parameter_source",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_get_context_objects_no_ensuring",
+          "after": "tests/test_context.py::test_get_context_objects_no_ensuring",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_no_state_leaks",
+          "after": "tests/test_context.py::test_no_state_leaks",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_ensure_context_objects",
+          "after": "tests/test_context.py::test_ensure_context_objects",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_make_pass_meta_decorator",
+          "after": "tests/test_context.py::test_make_pass_meta_decorator",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_global_context_object",
+          "after": "tests/test_context.py::test_global_context_object",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_propagate_show_default_setting",
+          "after": "tests/test_context.py::test_propagate_show_default_setting",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_pass_obj",
+          "after": "tests/test_context.py::test_pass_obj",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_multiple_eager_callbacks",
+          "after": "tests/test_context.py::test_multiple_eager_callbacks",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_with_resource",
+          "after": "tests/test_context.py::test_with_resource",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_make_pass_decorator_args",
+          "after": "tests/test_context.py::test_make_pass_decorator_args",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_close_before_pop",
+          "after": "tests/test_context.py::test_close_before_pop",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_context_meta",
+          "after": "tests/test_context.py::test_context_meta",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_context_pushing",
+          "after": "tests/test_context.py::test_context_pushing",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_get_context_objects_missing",
+          "after": "tests/test_context.py::test_get_context_objects_missing",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_make_pass_meta_decorator_doc",
+          "after": "tests/test_context.py::test_make_pass_meta_decorator_doc",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_multi_enter",
+          "after": "tests/test_context.py::test_multi_enter",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_close_before_exit",
+          "after": "tests/test_context.py::test_close_before_exit",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_get_context_objects",
+          "after": "tests/test_context.py::test_get_context_objects",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_context.py::test_exit_not_standalone",
+          "after": "tests/test_context.py::test_exit_not_standalone",
+          "name_changed": false,
+          "path_changed": false
+        }
+      ],
+      "unique_name_with_modified_body_count": 1,
+      "same_name_body_changed_examples": [
+        {
+          "before": "tests/test_context.py::test_with_resource_exception",
+          "after": "tests/test_context.py::test_with_resource_exception"
+        }
+      ],
+      "case": "click-case-split-2025",
+      "project": "pallets/click",
+      "pre_sha": "92129c552da88ac30b578132031efa4b003ecc46",
+      "post_sha": "7c7ec36354f49d1a092cb077fa4881ea4d70ba01",
+      "developer_change_annotation": "one-to-many test-method split: nested resource logic extracted",
+      "observed_test_method_split": {
+        "before": "tests/test_context.py::test_with_resource_exception",
+        "after": [
+          "tests/test_context.py::test_with_resource_exception",
+          "tests/test_context.py::test_with_resource_nested_exception"
+        ],
+        "evidence": "nested resource checks moved from original test into a newly introduced method",
+        "safe_1_to_1_history_transfer": false
+      }
+    },
+    {
+      "pre_functions": 20,
+      "post_functions": 21,
+      "pre_duplicate_names": 0,
+      "post_duplicate_names": 2,
+      "unique_identical_body_lineages": 11,
+      "identical_body_moved_paths": 11,
+      "identical_body_renamed_methods": 0,
+      "verified_identical_body_links": [
+        {
+          "before": "tests/test_types.py::test_invalid_path_with_esc_sequence",
+          "after": "tests/test_types/test_Path.py::test_invalid_path_with_esc_sequence",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_types.py::test_path_dash_no_byteswarning",
+          "after": "tests/test_types/test_Path.py::test_path_dash_no_byteswarning",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_types.py::test_path_surrogates",
+          "after": "tests/test_types/test_Path.py::test_path_surrogates",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_types.py::test_path_resolve_symlink",
+          "after": "tests/test_types/test_Path.py::test_path_resolve_symlink",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_types.py::test_path_type",
+          "after": "tests/test_types/test_Path.py::test_path_type",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_types.py::test_file_surrogates",
+          "after": "tests/test_types/test_File.py::test_file_surrogates",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_types.py::test_param_type_subclass_omitting_input_parameter",
+          "after": "tests/test_types/test_ParamType.py::test_param_type_subclass_omitting_input_parameter",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_types.py::test_func_param_type_uses_value_error_message",
+          "after": "tests/test_types/test_FuncParamType.py::test_func_param_type_uses_value_error_message",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_types.py::test_param_type_input_parameter_defaults_at_runtime",
+          "after": "tests/test_types/test_ParamType.py::test_param_type_input_parameter_defaults_at_runtime",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_types.py::test_choice_get_invalid_choice_message",
+          "after": "tests/test_types/test_Choice.py::test_choice_get_invalid_choice_message",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_types.py::test_float_range_no_clamp_open",
+          "after": "tests/test_types/test_FloatRange.py::test_float_range_no_clamp_open",
+          "name_changed": false,
+          "path_changed": true
+        }
+      ],
+      "unique_name_with_modified_body_count": 6,
+      "same_name_body_changed_examples": [
+        {
+          "before": "tests/test_types.py::test_file_error_surrogates",
+          "after": "tests/test_exceptions/test_FileError.py::test_file_error_surrogates"
+        },
+        {
+          "before": "tests/test_types.py::test_convert_type_from_container_default",
+          "after": "tests/test_types/test_convert_type.py::test_convert_type_from_container_default"
+        },
+        {
+          "before": "tests/test_types.py::test_explicit_container_type_splits_string",
+          "after": "tests/test_types/test_convert_type.py::test_explicit_container_type_splits_string"
+        },
+        {
+          "before": "tests/test_types.py::test_explicit_dict_type_rejects_string",
+          "after": "tests/test_types/test_convert_type.py::test_explicit_dict_type_rejects_string"
+        },
+        {
+          "before": "tests/test_types.py::test_type_inferred_from_default",
+          "after": "tests/test_types/test_convert_type.py::test_type_inferred_from_default"
+        },
+        {
+          "before": "tests/test_types.py::test_type_inferred_from_nested_sequence_default",
+          "after": "tests/test_types/test_convert_type.py::test_type_inferred_from_nested_sequence_default"
+        }
+      ],
+      "case": "click-module-split-types-2026",
+      "project": "pallets/click",
+      "pre_sha": "87f7a316f482d88d7ef45660da12cdcc5a5c14f6",
+      "post_sha": "7ecc8d7ee4a2e5c0732d6551baeb7597b7a73ade",
+      "developer_change_annotation": "module split into multiple files; do not label all as test-case splits"
+    },
+    {
+      "pre_functions": 32,
+      "post_functions": 32,
+      "pre_duplicate_names": 0,
+      "post_duplicate_names": 0,
+      "unique_identical_body_lineages": 32,
+      "identical_body_moved_paths": 32,
+      "identical_body_renamed_methods": 0,
+      "verified_identical_body_links": [
+        {
+          "before": "tests/test_utils.py::test_filename_formatting",
+          "after": "tests/test_utils/test_format_filename.py::test_filename_formatting",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_expand_args",
+          "after": "tests/test_utils/test__expand_args.py::test_expand_args",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_stress_echo_via_pager_exception_cleanup",
+          "after": "tests/test_utils/test_echo_via_pager.py::test_stress_echo_via_pager_exception_cleanup",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_detect_program_name",
+          "after": "tests/test_utils/test__detect_program_name.py::test_detect_program_name",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_echo_via_pager",
+          "after": "tests/test_utils/test_echo_via_pager.py::test_echo_via_pager",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_open_file_respects_ignore",
+          "after": "tests/test_utils/test_open_file.py::test_open_file_respects_ignore",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_open_file_ignore_no_encoding",
+          "after": "tests/test_utils/test_open_file.py::test_open_file_ignore_no_encoding",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_echo_no_streams",
+          "after": "tests/test_utils/test_echo.py::test_echo_no_streams",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_open_file_ignore_invalid_utf8",
+          "after": "tests/test_utils/test_open_file.py::test_open_file_ignore_invalid_utf8",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_prompts_eof",
+          "after": "tests/test_utils/test_prompt.py::test_prompts_eof",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_open_file",
+          "after": "tests/test_utils/test_open_file.py::test_open_file",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_styling",
+          "after": "tests/test_utils/test_style.py::test_styling",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_echo_custom_file",
+          "after": "tests/test_utils/test_echo.py::test_echo_custom_file",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_prompts",
+          "after": "tests/test_utils/test_confirm.py::test_prompts",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_make_default_short_help",
+          "after": "tests/test_utils/test_make_default_short_help.py::test_make_default_short_help",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_echo_via_pager_yields_before_exception",
+          "after": "tests/test_utils/test_echo_via_pager.py::test_echo_via_pager_yields_before_exception",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_unset_sentinel",
+          "after": "tests/test_utils/test_sentinel.py::test_unset_sentinel",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_iter_keepopenfile",
+          "after": "tests/test_utils/test_KeepOpenFile.py::test_iter_keepopenfile",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_prompt_cast_default",
+          "after": "tests/test_utils/test_prompt.py::test_prompt_cast_default",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_echo_writing_to_standard_error",
+          "after": "tests/test_utils/test_echo.py::test_echo_writing_to_standard_error",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_echo_with_capsys",
+          "after": "tests/test_utils/test_echo.py::test_echo_with_capsys",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_full_prompt_passed_to_readline",
+          "after": "tests/test_utils/test_prompt.py::test_full_prompt_passed_to_readline",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_iter_lazyfile",
+          "after": "tests/test_utils/test_LazyFile.py::test_iter_lazyfile",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_open_file_atomic_permissions_existing_file",
+          "after": "tests/test_utils/test_open_file.py::test_open_file_atomic_permissions_existing_file",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_unstyle_other_ansi",
+          "after": "tests/test_utils/test_style.py::test_unstyle_other_ansi",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_echo_color_flag",
+          "after": "tests/test_utils/test_echo.py::test_echo_color_flag",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_echo",
+          "after": "tests/test_utils/test_echo.py::test_echo",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_open_file_pathlib_dash",
+          "after": "tests/test_utils/test_open_file.py::test_open_file_pathlib_dash",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_open_file_atomic_permissions_new_file",
+          "after": "tests/test_utils/test_open_file.py::test_open_file_atomic_permissions_new_file",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_open_file_ignore_errors_stdin",
+          "after": "tests/test_utils/test_open_file.py::test_open_file_ignore_errors_stdin",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_prompts_abort",
+          "after": "tests/test_utils/test_prompt.py::test_prompts_abort",
+          "name_changed": false,
+          "path_changed": true
+        },
+        {
+          "before": "tests/test_utils.py::test_confirm_repeat",
+          "after": "tests/test_utils/test_confirm.py::test_confirm_repeat",
+          "name_changed": false,
+          "path_changed": true
+        }
+      ],
+      "unique_name_with_modified_body_count": 0,
+      "same_name_body_changed_examples": [],
+      "case": "click-module-split-utils-2026",
+      "project": "pallets/click",
+      "pre_sha": "df2e5ed8c4e89f51ff4eddb9600d913083613e62",
+      "post_sha": "9ab346f6b57f2c99388b4e9db58a0961bc3027c8",
+      "developer_change_annotation": "module split into multiple files; same-name collisions possible"
+    },
+    {
+      "pre_functions": 19,
+      "post_functions": 19,
+      "pre_duplicate_names": 0,
+      "post_duplicate_names": 0,
+      "unique_identical_body_lineages": 18,
+      "identical_body_moved_paths": 0,
+      "identical_body_renamed_methods": 0,
+      "verified_identical_body_links": [
+        {
+          "before": "tests/test_markupsafe.py::test_dict_interpol",
+          "after": "tests/test_markupsafe.py::test_dict_interpol",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_formatting_empty",
+          "after": "tests/test_markupsafe.py::test_formatting_empty",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_unescape",
+          "after": "tests/test_markupsafe.py::test_unescape",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_missing_interpol",
+          "after": "tests/test_markupsafe.py::test_missing_interpol",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_splitting",
+          "after": "tests/test_markupsafe.py::test_splitting",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_string_interpolation",
+          "after": "tests/test_markupsafe.py::test_string_interpolation",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_formatting_with_objects",
+          "after": "tests/test_markupsafe.py::test_formatting_with_objects",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_tuple_interpol",
+          "after": "tests/test_markupsafe.py::test_tuple_interpol",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_soft_str",
+          "after": "tests/test_markupsafe.py::test_soft_str",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_complex_custom_formatting",
+          "after": "tests/test_markupsafe.py::test_complex_custom_formatting",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_escape_return_type",
+          "after": "tests/test_markupsafe.py::test_escape_return_type",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_format",
+          "after": "tests/test_markupsafe.py::test_format",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_mul",
+          "after": "tests/test_markupsafe.py::test_mul",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_adding",
+          "after": "tests/test_markupsafe.py::test_adding",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_type_behavior",
+          "after": "tests/test_markupsafe.py::test_type_behavior",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_custom_formatting",
+          "after": "tests/test_markupsafe.py::test_custom_formatting",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_escape_silent",
+          "after": "tests/test_markupsafe.py::test_escape_silent",
+          "name_changed": false,
+          "path_changed": false
+        },
+        {
+          "before": "tests/test_markupsafe.py::test_html_interop",
+          "after": "tests/test_markupsafe.py::test_html_interop",
+          "name_changed": false,
+          "path_changed": false
+        }
+      ],
+      "unique_name_with_modified_body_count": 1,
+      "same_name_body_changed_examples": [
+        {
+          "before": "tests/test_markupsafe.py::test_escaping",
+          "after": "tests/test_markupsafe.py::test_escaping"
+        }
+      ],
+      "case": "markupsafe-semantic-extension-2022",
+      "project": "pallets/markupsafe",
+      "pre_sha": "0e366be90424816156802b41997b37b5dadd0851",
+      "post_sha": "e49d257126d09937b1bf5e2b2173238df729fb13",
+      "developer_change_annotation": "same test name, changed coverage after fix; unsafe not proven",
+      "observed_semantic_change": {
+        "before": "tests/test_markupsafe.py::test_escaping",
+        "after": "tests/test_markupsafe.py::test_escaping",
+        "evidence": "commit adds multiline comments and newline-in-tag cases to existing test",
+        "wrong_transfer_was_observed": false
+      }
+    }
+  ],
+  "limits": [
+    "PYTEST results are local replays, not the original project's CI runs.",
+    "Module splitting and individual test-case splitting are different events.",
+    "Source-equivalent links do not establish equality of fixture/environment semantics.",
+    "A same-name test gaining new assertions is risk evidence, not an observed false CI outcome."
+  ]
+}

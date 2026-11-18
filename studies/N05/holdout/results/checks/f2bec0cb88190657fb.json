@@ -1,0 +1,46 @@
+{
+  "key": "f2bec0cb88190657fb",
+  "args": {
+    "crate": "tower",
+    "version": "0.5.2",
+    "id": "c7310a3265db2b24",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0851,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved imports `tower::ServiceExt`, `tower::service_fn`",
+      "rendered": "error[E0432]: unresolved imports `tower::ServiceExt`, `tower::service_fn`\n   --> src/main.rs:2:29\n    |\n  2 | use tower::{ServiceBuilder, ServiceExt, BoxError, service_fn};\n    |                             ^^^^^^^^^^            ^^^^^^^^^^ no `service_fn` in the root\n    |                             |\n    |                             no `ServiceExt` in the root\n    |                             help: a similar name exists in the module: `Service`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-0.5.2/src/lib.rs:205:34\n    |\n202 | #[cfg(feature = \"util\")]\n    |       ---------------- the item is gated behind the `util` feature\n...\n205 | pub use self::util::{service_fn, ServiceExt};\n    |                                  ^^^^^^^^^^\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-0.5.2/src/lib.rs:205:22\n    |\n202 | #[cfg(feature = \"util\")]\n    |       ---------------- the item is gated behind the `util` feature\n...\n205 | pub use self::util::{service_fn, ServiceExt};\n    |  ",
+      "line": 2
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:4:3\n  |\n4 | #[tokio::main]\n  |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `buffer` found for struct `ServiceBuilder<L>` in the current scope",
+      "rendered": "error[E0599]: no method named `buffer` found for struct `ServiceBuilder<L>` in the current scope\n  --> src/main.rs:11:6\n   |\n10 |   let svc = ServiceBuilder::new()\n   |  ___________-\n11 | |     .buffer(1024)\n   | |     -^^^^^^ method not found in `ServiceBuilder<Identity>`\n   | |_____|\n   |\n\n",
+      "line": 10
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:5:1\n  |\n5 | async fn main() -> Result<(), BoxError> {\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 5
+    }
+  ],
+  "error_count": 4,
+  "stderr_excerpt": "error: could not compile `n05_tower_consumer` (bin \"n05_tower_consumer\") due to 4 previous errors\n",
+  "code_sha256": "0e5baa23a24cb5637f3ea061824250ae3c5a41a56116e5f15a77cc6a116a0d60",
+  "manifest_sha256": "26868b8190d1c863374370170f526108cc23ca34b421542d513c0830871fe22d",
+  "log_file": "holdout/results/check_logs/f2bec0cb88190657fb.txt.gz"
+}

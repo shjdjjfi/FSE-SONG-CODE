@@ -1,0 +1,61 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 41461,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW14987",
+  "examples": [
+    {
+      "change": "-",
+      "code": "import { TypographyModule } from \"@bitwarden/components\";",
+      "file": "libs/dirt/card/src/card.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { TypographyModule, CardComponent as BitCardComponent } from \"@bitwarden/components\";",
+      "file": "libs/dirt/card/src/card.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "imports: [CommonModule, TypographyModule, JslibModule],",
+      "file": "libs/dirt/card/src/card.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "host: {",
+      "file": "libs/dirt/card/src/card.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "class:",
+      "file": "libs/dirt/card/src/card.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "\"tw-box-border tw-bg-background tw-block tw-text-main tw-border-solid tw-border tw-border-secondary-300 tw-border [&:not(bit-layout_*)]:tw-rounded-lg tw-rounded-lg tw-p-6\",",
+      "file": "libs/dirt/card/src/card.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "},",
+      "file": "libs/dirt/card/src/card.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "imports: [CommonModule, TypographyModule, JslibModule, BitCardComponent],",
+      "file": "libs/dirt/card/src/card.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:39.887822+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/14987",
+  "noncomment_nonimport_changed_lines": 6,
+  "pr": 16952,
+  "repository": "bitwarden/clients",
+  "sha256": "d9da1b7f011de68890651ed1f650ca002d14dd2615647e19db4b4460591d9bbd",
+  "target_code_changed_lines": 8,
+  "target_files": [
+    "libs/dirt/card/src/card.component.html",
+    "libs/dirt/card/src/card.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/16952.patch"
+}

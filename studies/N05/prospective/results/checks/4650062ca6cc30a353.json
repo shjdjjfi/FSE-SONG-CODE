@@ -1,0 +1,21 @@
+{
+  "key": "4650062ca6cc30a353",
+  "args": {
+    "crate": "redis",
+    "version": "0.32.1",
+    "id": "0ef961ca072cf45c",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 6.9575,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "error: rustc 1.91.0 is not supported by the following packages:\n  lock_api@0.5.0 requires rustc 1.95\n  parking_lot@0.13.0 requires rustc 1.95\n  parking_lot_core@0.10.0 requires rustc 1.95\nEither upgrade rustc or select compatible dependency versions with\n`cargo update <name>@<current-ver> --precise <compatible-ver>`\nwhere `<compatible-ver>` is the latest version supporting rustc 1.91.0\n\n",
+  "code_sha256": "6b008fbf96a443f3ed0fe7c6cc0a6803ae5a762bd8a5190ba1412900d29b390f",
+  "manifest_sha256": "b1a8145b7d8fa29bdea482874044f7ce0dc110c9b0558bf9ef52daca8c2733ea",
+  "log_file": "prospective/results/check_logs/4650062ca6cc30a353.txt.gz"
+}

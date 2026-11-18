@@ -1,57 +1,31 @@
 # FSE-SONG-CODE
 
-**Reproducible software-engineering experiments for the FSE 2027 Industry Track research portfolio.**
+Code and experimental evidence for nine software engineering studies prepared for the FSE 2027 Industry Track.
 
-This repository organizes **12 dated experiment packages for 9 distinct studies**. The original research questions, executable source, frozen observations, negative results, provenance, and explicit submission gaps are documented separately. **A public artifact is not a claim that a paper is submission-ready.**
-
-> 中文说明：本仓库按研究编号整理现有实验，不将合成数据称作真实工业生产记录，不将 AI 模拟评审称作独立真人评审，也不把受控故障注入当作自然发生的事故。
+本仓库汇集 12 个原始实验包。各研究目录提供代码、复现说明、冻结结果与局限性。原始包来源和 SHA-256 见 [档案清单](docs/PROVENANCE.md)。
 
 ## Study index
 
-| ID | Topic | Entry point | Evidence boundary |
-|---|---|---|---|
-| **I01** | Whether advertised Python security fixes are installable on real targets (*Patchability Cliff*) | [studies/I01](studies/I01) | CPU resolution/installation checks; **not** complete production CI |
-| **N02** | Configuration intent lost across Helm chart upgrades | [studies/N02](studies/N02) | Real upstream charts, constructed states, external challenge; **no** production cluster or human timing |
-| **N04** | Flaky-test history across test renames and splits | [studies/N04](studies/N04) | Public histories and test replays; original deployment/industrial benefit gate remains open |
-| **N05** | Published Rust examples under consumer feature profiles | [studies/N05](studies/N05) | Compiled public crate examples; superiority and prospective ROI not established |
-| **N06** | Preserving alert timing across metric identity churn | [studies/N06](studies/N06) | Synthetic event traces and public rules; real clusters and native end-to-end validation missing |
-| **N08** | Whether expertise coverage after CODEOWNERS transfers is identifiable | [studies/N08](studies/N08) | Public observations and sharp bounds; **no** independent expertise oracle |
-| **N21** | Partial TypeScript cache recovery with the Attest action | [studies/N21](studies/N21) | 45 real GitHub-hosted jobs with **controlled** cache defects, not natural incidents |
-| **N22** | Data contracts across converging database migrations | [studies/N22](studies/N22) | Two separately documented experimental phases; no general prospective ROI |
-| **N24** | Collateral npm lockfile churn during platform repair | [studies/N24](studies/N24) | Controlled multiplatform jobs and historical public locks; strongest npm baseline remains competitive |
+| Study | Research question | Reproduction and evidence |
+| --- | --- | --- |
+| I01 | Are advertised Python security fixes installable on target environments? | [CPU extension](studies/I01/i01_industry/README.md) · [120-project baseline](studies/I01/i01_full/README.md) |
+| N02 | What configuration intent is lost across Helm chart upgrades? | [Phases 1–3](studies/N02/README.md) · [Initial protocol and results](studies/N02/README_PHASE1.md) |
+| N04 | How can flaky-test history be recovered across test renames and splits? | [Base study](studies/N04/base/README.md) · [Expanded study](studies/N04/expanded/REPRODUCE_EXTENSION.md) |
+| N05 | Do published Rust examples work under consumer feature profiles? | [Experiment](studies/N05/README.md) · [中文说明](studies/N05/README_CN.md) |
+| N06 | Can alert timing be preserved across metric identity changes? | [Simulation](studies/N06/README.md) · [Field-readiness evidence](studies/N06/results_field/README.md) |
+| N08 | What can public traces establish about expertise after CODEOWNERS transfers? | [Study](studies/N08/README.md) · [Identifiability analysis](studies/N08/measurement/README.md) |
+| N21 | Can incomplete TypeScript build outputs be detected and recovered? | [Experiment](studies/N21/README.md) · [Hosted-run evidence](studies/N21/github_actions/README.md) |
+| N22 | Can converging database migration paths produce different data outcomes? | [Initial experiment](studies/N22/base/N22/README.md) · [Django and OpenCode follow-up](studies/N22/addendum-20261118/README.md) |
+| N24 | How much collateral lockfile churn occurs during npm platform repair? | [Source and evidence guide](studies/N24/START_HERE.md) · [Corrected report](studies/N24/source/N24_FSE2027_EXPERIMENT_REPORT.md) |
 
-## Repository layout
+Start from each study's linked guide and run commands from the directory that
+guide specifies. The [publication notes](docs/PUBLICATION_NOTES.md) list the
+offline checks, external inputs, and known limits. The archived GitHub Actions
+workflows live under the relevant study directories for reference.
 
-```text
-studies/
-  I01/                       security-fix reachability and CPU validation
-  N02/                       cumulative Helm phases 1–3
-  N04/                       expanded experiment and historical phase snapshot
-  N05/                       Rust feature-profile experiment
-  N06/                       alert-identity experiment
-  N08/                       CODEOWNERS identifiability study
-  N21/                       TypeScript CI cache experiment
-  N22/base/                  initial DB-migration experiment
-  N22/addendum-20261118/     later Django/OpenCode study
-  N24/                       npm platform-lockfile experiment
-docs/
-  PROVENANCE.md              inventory and hashes of supplied ZIP files
-  PUBLICATION_NOTES.md       evidence boundaries and redistribution choices
-```
+## License
 
-Each study keeps its **original internal layout** as far as possible, so commands in its own README continue to apply when run from that study's folder. Multiple versions were never silently merged into a single new experiment: N02's newest package includes earlier phases, while N04 and N22 expose their distinct stages explicitly.
-
-## Reproduction
-
-1. Open the corresponding `studies/<ID>/README.md` (for N22, choose `base/` or `addendum-20261118/`).
-2. Run its **offline verification** or local tests first; verification of an archived result is not the same as independently re-executing an industrial system.
-3. Only run network-dependent replays, package installation, or hosted workflows after reviewing the pinned environment and expected cost. Workflows provided inside study directories are examples and **do not automatically execute** from the repository root.
-4. Read the study-specific limitations and the [publication notes](docs/PUBLICATION_NOTES.md) before using any result in a manuscript.
-
-The [provenance file](docs/PROVENANCE.md) records the exact names and SHA-256 hashes of all 12 supplied ZIP packages, including earlier versions that have been superseded in the navigable source tree. The original archives are preserved outside this index by their original filenames; publication copies may exclude sensitive logs and upstream distributables (see [publication notes](docs/PUBLICATION_NOTES.md)).
-
-## License and third-party material
-
-Unless an individual file says otherwise, the **original research code** in this collection is offered under the [MIT License](LICENSE). Public-source fixtures, published crate and Helm distributions, source excerpts, cached dependency metadata, and upstream work retain their own licenses; see [publication notes](docs/PUBLICATION_NOTES.md). This license does not relicense third-party material.
-
-**Research integrity:** archived estimates are descriptive of their documented cohorts. Do not convert exploratory results, simulations, user-written fixtures, proxy labels, model-assisted annotations, or controlled faults into claims of independently confirmed industrial field performance.
+This repository applies the [MIT License](LICENSE) to the original research
+code. Third-party materials retain their upstream terms. Source attributions,
+upstream licenses where supplied, and study-specific data provenance are
+documented alongside each study.

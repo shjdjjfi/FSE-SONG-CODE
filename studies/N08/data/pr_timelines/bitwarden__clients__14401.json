@@ -1,0 +1,57 @@
+{
+  "fetched_utc": "2026-11-14T17:12:52.022232+00:00",
+  "merged_at": "2025-05-01T13:03:32Z",
+  "opened_at": "2025-04-24T12:57:48-05:00",
+  "pr": 14401,
+  "raw_html_sha256": "f9f6b7fb0af32ff410be0a1a92bb8fc6fe16e985bbca7f940382fe8c0ff1bddf",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 9,
+  "reviews": [
+    {
+      "login": "djsmith85",
+      "state": "COMMENTED",
+      "submitted_at": "2025-04-24T16:51:58Z"
+    },
+    {
+      "login": "shane-melton",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2025-04-24T16:53:47Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2025-04-24T17:09:03Z"
+    },
+    {
+      "login": "voommen-livefront",
+      "state": "COMMENTED",
+      "submitted_at": "2025-04-25T14:40:52Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2025-04-25T16:19:50Z"
+    },
+    {
+      "login": "Banrion",
+      "state": "COMMENTED",
+      "submitted_at": "2025-04-25T16:50:17Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-25T17:02:29Z"
+    },
+    {
+      "login": "shane-melton",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-28T19:50:46Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-30T14:10:01Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/14401"
+}

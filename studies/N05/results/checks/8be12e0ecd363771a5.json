@@ -1,0 +1,25 @@
+{
+  "key": "8be12e0ecd363771a5",
+  "args": {
+    "crate": "uuid",
+    "version": "1.17.0",
+    "id": "88fe8ee22c2585f0",
+    "profile": "candidate",
+    "features": [
+      "rng-getrandom",
+      "sha1",
+      "v8"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.2052,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "610cf6d7f3e03e7021d688bd63facaaa7a13ac823069758f3becb7dd55ab04e5",
+  "manifest_sha256": "3f81fe3047e8fe884f6973807905351f55863536088da90003bb88440f7e479e",
+  "log_file": "results/check_logs/8be12e0ecd363771a5.txt.gz"
+}

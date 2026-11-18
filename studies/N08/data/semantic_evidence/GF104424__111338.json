@@ -1,0 +1,183 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 47,
+  "bytes": 186928,
+  "control_flow_or_callback_lines": 132,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "+",
+      "code": "AuthorizeTestByUID(context.Context, identity.Requester, string) error",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "AuthorizeTestNew(context.Context, identity.Requester) error",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "switch attr.GetSubresource() {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "case \"test\":",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "var err error",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "if uid == newReceiverNamePlaceholder {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "err = ac.AuthorizeTestNew(ctx, user)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "} else {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "err = ac.AuthorizeTestByUID(ctx, user, uid)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "if err != nil {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "return deny(err)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "return authorizer.DecisionAllow, \"\", nil",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "change": "+",
+      "code": "package receiver",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "import (",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "\"context\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "\"encoding/json\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "\"errors\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "\"fmt\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/grafana-app-sdk/app\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "metav1 \"k8s.io/apimachinery/pkg/apis/meta/v1\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/grafana/apps/alerting/notifications/pkg/apis/alertingnotifications/v0alpha1\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/grafana/pkg/apimachinery/identity\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/grafana/pkg/services/ngalert/models\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/grafana/pkg/services/ngalert/notifier\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/grafana/pkg/util/errhttp\"",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/subresource.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:58:00.615110+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 638,
+  "pr": 111338,
+  "repository": "grafana/grafana",
+  "sha256": "700cc87440c11b02bdedaf26b2b4409e8176ca5262c88018f5b91ac0fa1e790e",
+  "target_code_changed_lines": 683,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/receiver/authorize.go",
+    "pkg/registry/apps/alerting/notifications/receiver/subresource.go",
+    "pkg/registry/apps/alerting/notifications/receiver/subresource_test.go",
+    "pkg/registry/apps/alerting/notifications/register.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/111338.patch"
+}

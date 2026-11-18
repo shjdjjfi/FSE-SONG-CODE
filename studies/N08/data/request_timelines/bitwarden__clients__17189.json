@@ -1,0 +1,26 @@
+{
+  "pr": 17189,
+  "pr_author": "vleague2",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-11-04T19:24:41Z",
+      "requested_people": [
+        "reneelund08",
+        "vleague2"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-11-04T20:54:26Z",
+      "requested_people": [
+        "vleague2"
+      ],
+      "team_request_anonymized": true
+    }
+  ],
+  "sha256": "afb3c366001fdb93a8b6b58a3298cde2d5cd8359cb06fe193d48426c53b3cd87",
+  "url": "https://github.com/bitwarden/clients/pull/17189"
+}

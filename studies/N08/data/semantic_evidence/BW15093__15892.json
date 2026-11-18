@@ -1,0 +1,30 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 45388,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "-",
+      "code": "<button bitButton>Perform Action</button>",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "<button type=\"button\" bitButton>Perform Action</button>",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:46.640133+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 2,
+  "pr": 15892,
+  "repository": "bitwarden/clients",
+  "sha256": "7c9d9c2c412f26f60c3015ba9a364694218d4616000702891b38ac0bb759b22a",
+  "target_code_changed_lines": 2,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout.stories.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15892.patch"
+}

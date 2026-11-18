@@ -1,0 +1,42 @@
+{
+  "key": "b227bdb285b658eee4",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "7b7e8b78670012f6",
+    "profile": "candidate",
+    "features": [
+      "macros"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0651,
+  "errors": [
+    {
+      "code": null,
+      "message": "The #[tokio::main] macro requires rt or rt-multi-thread.",
+      "rendered": "error: The #[tokio::main] macro requires rt or rt-multi-thread.\n --> src/main.rs:3:1\n  |\n3 | #[tokio::main]\n  | ^^^^^^^^^^^^^^\n  |\n  = note: this error originates in the attribute macro `tokio::main` (in Nightly builds, run with -Z macro-backtrace for more info)\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio::io::AsyncWriteExt`",
+      "rendered": "error[E0432]: unresolved import `tokio::io::AsyncWriteExt`\n   --> src/main.rs:1:23\n    |\n  1 | use tokio::io::{self, AsyncWriteExt};\n    |                       ^^^^^^^^^^^^^\n    |                       |\n    |                       no `AsyncWriteExt` in `io`\n    |                       help: a similar name exists in the module: `AsyncWrite`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/io/mod.rs:277:159\n    |\n268 | / cfg_io_util! {\n269 | |     mod split;\n270 | |     pub use split::{split, ReadHalf, WriteHalf};\n271 | |     mod join;\n...   |\n277 | |         copy, copy_bidirectional, copy_bidirectional_with_sizes, copy_buf, duplex, empty, repeat, sink, simplex, AsyncBufReadExt, AsyncReadExt, AsyncSeekExt, AsyncWriteExt,\n    | |                                                                                                                                                               ^^^^^^^^^^^^^\n278 | |         BufReader, BufStream, BufWriter, DuplexStream, Empty, Lines, Repeat, Sink, Split, Take, SimplexStream,\n279 | |     };\n280 | | }\n    | |_- the item is gat",
+      "line": 1
+    },
+    {
+      "code": "E0601",
+      "message": "`main` function not found in crate `n05_tokio_consumer`",
+      "rendered": "error[E0601]: `main` function not found in crate `n05_tokio_consumer`\n --> src/main.rs:8:2\n  |\n8 | }\n  |  ^ consider adding a `main` function to `src/main.rs`\n\n",
+      "line": 8
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 3 previous errors; 1 warning emitted\n",
+  "code_sha256": "87948ff11f649f37da3ebd5b1b57fa4548d364735a17cd7bda46b1903ace4581",
+  "manifest_sha256": "0f47871f943015f1fd1df733556fa00f189468f4d3f911c83277244779f24883",
+  "log_file": "results/check_logs/b227bdb285b658eee4.txt.gz"
+}

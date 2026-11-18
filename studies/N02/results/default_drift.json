@@ -1,0 +1,122 @@
+[
+  {
+    "family": "argo",
+    "old_render": {
+      "ok": true,
+      "exit_code": 0,
+      "seconds": 0.2835,
+      "stdout_sha256": "8ba4628bfdff11a5eee345758be1b5f4e9c749a3fa9c817a15af432f34ff7e21",
+      "stdout_bytes": 1259050,
+      "error": "",
+      "resource_count": 51
+    },
+    "new_render": {
+      "ok": true,
+      "exit_code": 0,
+      "seconds": 0.2927,
+      "stdout_sha256": "1a8ab873f23075cc9ef6e6c5d942ac6a52081e145459a4ffd18e947a59418e24",
+      "stdout_bytes": 1258922,
+      "error": "",
+      "resource_count": 51
+    },
+    "default_changed_field_positions": 63,
+    "default_old_resources": 51,
+    "default_new_resources": 51
+  },
+  {
+    "family": "tempo",
+    "old_render": {
+      "ok": true,
+      "exit_code": 0,
+      "seconds": 0.1706,
+      "stdout_sha256": "7c3694d5c11865b8e898d142ca2a7aab2a74ac4e45d7831e167e6a2da7fa25c4",
+      "stdout_bytes": 34871,
+      "error": "",
+      "resource_count": 20
+    },
+    "new_render": {
+      "ok": true,
+      "exit_code": 0,
+      "seconds": 0.1286,
+      "stdout_sha256": "7507027ae5c6eb2ae2b36e84c6eb2c8c08084e251a5e6c095ec28e4cf9cf5b29",
+      "stdout_bytes": 34892,
+      "error": "",
+      "resource_count": 20
+    },
+    "default_changed_field_positions": 64,
+    "default_old_resources": 20,
+    "default_new_resources": 20
+  },
+  {
+    "family": "prometheus",
+    "old_render": {
+      "ok": true,
+      "exit_code": 0,
+      "seconds": 0.1043,
+      "stdout_sha256": "90ed1164ba91524a68f323c385cd966c74ccc76112f678f7c818b2b6f667c835",
+      "stdout_bytes": 38484,
+      "error": "",
+      "resource_count": 23
+    },
+    "new_render": {
+      "ok": true,
+      "exit_code": 0,
+      "seconds": 0.103,
+      "stdout_sha256": "e7c73890c1743d01f783494103b65a60395e6807680f096674bc939f5bb4a525",
+      "stdout_bytes": 38515,
+      "error": "",
+      "resource_count": 23
+    },
+    "default_changed_field_positions": 100,
+    "default_old_resources": 23,
+    "default_new_resources": 23
+  },
+  {
+    "family": "ksm",
+    "old_render": {
+      "ok": true,
+      "exit_code": 0,
+      "seconds": 0.0682,
+      "stdout_sha256": "0e7f0c073fb19e6d73c35b5edfb03714d59527b2310d8c0a1d5fd11ffe25e8ce",
+      "stdout_bytes": 6605,
+      "error": "",
+      "resource_count": 5
+    },
+    "new_render": {
+      "ok": true,
+      "exit_code": 0,
+      "seconds": 0.0494,
+      "stdout_sha256": "b90645bcf414284b2a3ad193e70918084925cda8ad2148d525eb283a10bf87f7",
+      "stdout_bytes": 6573,
+      "error": "",
+      "resource_count": 5
+    },
+    "default_changed_field_positions": 34,
+    "default_old_resources": 5,
+    "default_new_resources": 5
+  },
+  {
+    "family": "certmanager",
+    "old_render": {
+      "ok": true,
+      "exit_code": 0,
+      "seconds": 0.0976,
+      "stdout_sha256": "b4a794b80d0fd679201e0c6bc9000ff8d5f36698f9fb9046366a4f328f937a20",
+      "stdout_bytes": 43327,
+      "error": "",
+      "resource_count": 43
+    },
+    "new_render": {
+      "ok": true,
+      "exit_code": 0,
+      "seconds": 0.1078,
+      "stdout_sha256": "16065992af441d5a9dfcd6281147f623afa3fe13b03d727c7f67d76eb8733239",
+      "stdout_bytes": 45913,
+      "error": "",
+      "resource_count": 46
+    },
+    "default_changed_field_positions": 124,
+    "default_old_resources": 43,
+    "default_new_resources": 46
+  }
+]

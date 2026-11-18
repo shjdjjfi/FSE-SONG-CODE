@@ -1,0 +1,182 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 6,
+  "bytes": 188763,
+  "control_flow_or_callback_lines": 8,
+  "event": "BW11709",
+  "examples": [
+    {
+      "change": "-",
+      "code": "// FIXME: Update this file to be type safe and remove this and next line",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "-",
+      "code": "// @ts-strict-ignore",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "-",
+      "code": "// FIXME: remove `src` and fix import",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "-",
+      "code": "// eslint-disable-next-line no-restricted-imports",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { SendWithIdRequest } from \"@bitwarden/common/src/tools/send/models/request/send-with-id.request\";",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "-",
+      "code": "// FIXME: remove `src` and fix import",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "-",
+      "code": "// eslint-disable-next-line no-restricted-imports",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { CipherWithIdRequest } from \"@bitwarden/common/src/vault/models/request/cipher-with-id.request\";",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "-",
+      "code": "// FIXME: remove `src` and fix import",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "-",
+      "code": "// eslint-disable-next-line no-restricted-imports",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { FolderWithIdRequest } from \"@bitwarden/common/src/vault/models/request/folder-with-id.request\";",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { SendWithIdRequest } from \"@bitwarden/common/tools/send/models/request/send-with-id.request\";",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { CipherWithIdRequest } from \"@bitwarden/common/vault/models/request/cipher-with-id.request\";",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { FolderWithIdRequest } from \"@bitwarden/common/vault/models/request/folder-with-id.request\";",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "constructor(masterPasswordHash: string, key: string, privateKey: string) {",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.masterPasswordHash = masterPasswordHash;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.key = key;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.privateKey = privateKey;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "-",
+      "code": "// FIXME: Update this file to be type safe and remove this and next line",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "// @ts-strict-ignore",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "if (!newUserKey || !newEncUserKey) {",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (newUserKey == null || newEncUserKey == null || newEncUserKey.encryptedString == null) {",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "// Create new request",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "const request = new UpdateKeyRequest();",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "// Add new user key",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "request.key = newEncUserKey.encryptedString;",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "// New user key",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "const key = newEncUserKey.encryptedString;",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "request.masterPasswordHash = masterPasswordHash;",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:41.054494+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+  "noncomment_nonimport_changed_lines": 22,
+  "pr": 13121,
+  "repository": "bitwarden/clients",
+  "sha256": "375c342d059109486a6b98850f44ec99fba6bfd0158e08b821f7278b02499d35",
+  "target_code_changed_lines": 45,
+  "target_files": [
+    "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/13121.patch"
+}

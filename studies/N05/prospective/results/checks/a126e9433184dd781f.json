@@ -1,0 +1,34 @@
+{
+  "key": "a126e9433184dd781f",
+  "args": {
+    "crate": "poem",
+    "version": "3.1.12",
+    "id": "ef215d108b7d1fb0",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1524,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n  --> src/main.rs:10:3\n   |\n10 | #[tokio::main]\n   |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 10
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n  --> src/main.rs:11:1\n   |\n11 | async fn main() -> Result<(), std::io::Error> {\n   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 11
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_poem_consumer` (bin \"n05_poem_consumer\") due to 2 previous errors\n",
+  "code_sha256": "ab9e696f3564370252eb8cf51a5fe4fb6af7a7db92aebd0a81ae07365218e12d",
+  "manifest_sha256": "3559a05e1a85dc0736bdaa0f9d4a542cc775e0a207e1bed482cb6d6129ba564d",
+  "log_file": "prospective/results/check_logs/a126e9433184dd781f.txt.gz"
+}

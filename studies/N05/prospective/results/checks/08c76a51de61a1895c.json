@@ -1,0 +1,28 @@
+{
+  "key": "08c76a51de61a1895c",
+  "args": {
+    "crate": "async-compression",
+    "version": "0.4.23",
+    "id": "9c7c6c1656f6e371",
+    "profile": "candidate",
+    "features": [
+      "all",
+      "deflate",
+      "lzma",
+      "xz",
+      "xz2",
+      "zstd"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 1.1447,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "ba79cfd9ccd5ffedf3bf8ad0ffb891faecc8182f1a12f23d9f17316c6ff37341",
+  "manifest_sha256": "2dff6088737cb5e9918efbc9d7c5a1debb607f357b51629e915ce6db250b994b",
+  "log_file": "prospective/results/check_logs/08c76a51de61a1895c.txt.gz"
+}

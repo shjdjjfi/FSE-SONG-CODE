@@ -1,0 +1,47 @@
+{
+  "fetched_utc": "2026-11-14T17:13:30.195949+00:00",
+  "merged_at": "2025-04-18T14:38:20Z",
+  "opened_at": "2025-04-15T17:32:26Z",
+  "pr": 14295,
+  "raw_html_sha256": "30e5be6ed71b2de09f14e86e44deb5b5932d62de317ce1272b908d41fbdf8cbf",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 7,
+  "reviews": [
+    {
+      "login": "amorask-bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-15T19:19:05Z"
+    },
+    {
+      "login": "r-tome",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-16T09:12:15Z"
+    },
+    {
+      "login": "vleague2",
+      "state": "COMMENTED",
+      "submitted_at": "2025-04-16T19:26:03Z"
+    },
+    {
+      "login": "vleague2",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-17T13:23:27Z"
+    },
+    {
+      "login": "Patrick-Pimentel-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-17T13:30:13Z"
+    },
+    {
+      "login": "r-tome",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-17T13:57:37Z"
+    },
+    {
+      "login": "amorask-bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-18T14:02:50Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/14295"
+}

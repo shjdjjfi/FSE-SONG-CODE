@@ -1,0 +1,82 @@
+{
+  "pr": 15375,
+  "pr_author": "nick-livefront",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-06-27T20:35:21Z",
+      "requested_people": [
+        "nick-livefront"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-06-27T20:35:21Z",
+      "requested_people": [
+        "gbubemismith",
+        "nick-livefront",
+        "rr-bw",
+        "willmartian"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-06-30T19:32:29Z",
+      "requested_people": [
+        "jingo88",
+        "nick-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-01T22:34:49Z",
+      "requested_people": [
+        "jingo88",
+        "nick-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-02T18:17:10Z",
+      "requested_people": [
+        "nick-livefront"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-02T18:17:10Z",
+      "requested_people": [
+        "addisonbeck",
+        "nick-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-02T18:20:08Z",
+      "requested_people": [
+        "jingo88",
+        "nick-livefront",
+        "willmartian"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-02T18:24:15Z",
+      "requested_people": [
+        "jaredsnider-bitwarden",
+        "nick-livefront"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "ae39f798253e351ada0f7d0b172b492901fe2b897c5b1f121f01c1a98e9f14f3",
+  "url": "https://github.com/bitwarden/clients/pull/15375"
+}

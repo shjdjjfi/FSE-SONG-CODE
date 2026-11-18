@@ -1,0 +1,378 @@
+{
+  "evaluation_type": "unmodified test source; temporary JDK21 compatibility adaptations in Maven build (see maven_replay)",
+  "test_identity_evidence": "name suffix + JUnit runtime parameter index + two revisions of actual execution",
+  "not_independent_oracle": true,
+  "not_historical_CI": true,
+  "further_caveat": "A matched ID is a candidate lineage, not proof of identical test intent or quarantine state",
+  "summary": {
+    "git_migration_commit": "2ce6e6149d0ef44f4919e75326265c64c144a00f",
+    "old_test_instances_candidate_from_source": 27,
+    "new_matched_parameter_instances": 27,
+    "exact_identity_survivors": 0,
+    "unique_post_parameter_instances": 27,
+    "total_measured_old_cases_across_runs": 120,
+    "total_measured_new_cases_across_runs": 120,
+    "measured_old_statuses": {
+      "passed": 120
+    },
+    "measured_new_statuses": {
+      "passed": 119,
+      "skipped": 1
+    },
+    "n_local_repeats_each_revision_per_test_class": 3,
+    "test_classes": [
+      "Issue256Test",
+      "Issue580Test"
+    ],
+    "n_revisions": 2
+  },
+  "mappings": [
+    {
+      "old_runtime_method": "runNoCloseBlockingTestScenario0",
+      "predicted_runtime_method": "runNoCloseBlockingTestScenario[0]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runNoCloseBlockingTestScenario2",
+      "predicted_runtime_method": "runNoCloseBlockingTestScenario[2]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runNoCloseBlockingTestScenario3",
+      "predicted_runtime_method": "runNoCloseBlockingTestScenario[3]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runNoCloseBlockingTestScenario4",
+      "predicted_runtime_method": "runNoCloseBlockingTestScenario[4]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runNoCloseBlockingTestScenario5",
+      "predicted_runtime_method": "runNoCloseBlockingTestScenario[5]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runNoCloseBlockingTestScenario6",
+      "predicted_runtime_method": "runNoCloseBlockingTestScenario[6]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runNoCloseBlockingTestScenario8",
+      "predicted_runtime_method": "runNoCloseBlockingTestScenario[8]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectBlockingScenario0",
+      "predicted_runtime_method": "runReconnectCloseBlocking[0]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectBlockingScenario1",
+      "predicted_runtime_method": "runReconnectCloseBlocking[1]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectBlockingScenario2",
+      "predicted_runtime_method": "runReconnectCloseBlocking[2]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectBlockingScenario3",
+      "predicted_runtime_method": "runReconnectCloseBlocking[3]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectBlockingScenario4",
+      "predicted_runtime_method": "runReconnectCloseBlocking[4]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectBlockingScenario5",
+      "predicted_runtime_method": "runReconnectCloseBlocking[5]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectBlockingScenario6",
+      "predicted_runtime_method": "runReconnectCloseBlocking[6]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectBlockingScenario7",
+      "predicted_runtime_method": "runReconnectCloseBlocking[7]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectBlockingScenario8",
+      "predicted_runtime_method": "runReconnectCloseBlocking[8]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectBlockingScenario9",
+      "predicted_runtime_method": "runReconnectCloseBlocking[9]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectScenario0",
+      "predicted_runtime_method": "runReconnectSocketClose[0]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectScenario1",
+      "predicted_runtime_method": "runReconnectSocketClose[1]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectScenario2",
+      "predicted_runtime_method": "runReconnectSocketClose[2]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectScenario3",
+      "predicted_runtime_method": "runReconnectSocketClose[3]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectScenario4",
+      "predicted_runtime_method": "runReconnectSocketClose[4]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectScenario5",
+      "predicted_runtime_method": "runReconnectSocketClose[5]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectScenario6",
+      "predicted_runtime_method": "runReconnectSocketClose[6]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectScenario7",
+      "predicted_runtime_method": "runReconnectSocketClose[7]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "skipped": 1,
+        "passed": 2
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectScenario8",
+      "predicted_runtime_method": "runReconnectSocketClose[8]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    },
+    {
+      "old_runtime_method": "runReconnectScenario9",
+      "predicted_runtime_method": "runReconnectSocketClose[9]",
+      "instance_runtime_match": true,
+      "original_node_id_after_exists": false,
+      "old_outcome_counts": {
+        "passed": 3
+      },
+      "new_outcome_counts": {
+        "passed": 3
+      }
+    }
+  ],
+  "mapping_strategies": [
+    {
+      "strategy": "exact_runtime_id",
+      "candidate_instance_links": 0,
+      "unsafe_collapsed_groups": 0
+    },
+    {
+      "strategy": "method_level_name_only",
+      "candidate_instance_links": 0,
+      "unsafe_collapsed_groups": 27
+    },
+    {
+      "strategy": "guarded_abstain_on_group",
+      "candidate_instance_links": 0,
+      "unsafe_collapsed_groups": 0
+    },
+    {
+      "strategy": "source_family_plus_parameter_index",
+      "candidate_instance_links": 27,
+      "unsafe_collapsed_groups": 0
+    }
+  ]
+}

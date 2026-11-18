@@ -1,0 +1,19 @@
+{
+  "source_zip_sha256": "305dbca79abb7dc1bf52c8466c1be9e7c134b25ec67975c2d395f5259041d22e",
+  "corpus_json_entries": 26915,
+  "withdrawn_entries": 640,
+  "eligible_unique_projects": 1364,
+  "eligible_project_strata": {
+    "recent": 909,
+    "early": 388,
+    "middle": 67
+  },
+  "selected_unique_projects": 120,
+  "selected_strata": {
+    "early": 40,
+    "middle": 40,
+    "recent": 40
+  },
+  "selection_key": "i01-20261114-project-",
+  "selection_procedure": "latest published OSV per project; first final fix; lowest SHA256(project+seed) per year stratum"
+}

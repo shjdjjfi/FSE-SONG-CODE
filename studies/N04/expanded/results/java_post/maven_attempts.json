@@ -1,0 +1,19 @@
+{
+  "source_commit": "2ce6e6149d0ef44f4919e75326265c64c144a00f",
+  "source_unmodified": true,
+  "java": "openjdk version \"21.0.13\" 2026-10-20",
+  "network_proxy_configured": true,
+  "results": [
+    {
+      "iteration": 1,
+      "return_code": 1,
+      "elapsed_seconds": 25.75,
+      "log_filename": "attempt_01.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": true,
+      "tests_ran": false
+    }
+  ],
+  "attempted_post_refactor_test_execution": true,
+  "post_refactor_runs_completed": 0
+}

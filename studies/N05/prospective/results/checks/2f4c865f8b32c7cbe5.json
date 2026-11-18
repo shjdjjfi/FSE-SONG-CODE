@@ -1,0 +1,52 @@
+{
+  "key": "2f4c865f8b32c7cbe5",
+  "args": {
+    "crate": "config",
+    "version": "0.15.11",
+    "id": "65ebc46d47e2d9a8",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2616,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Config`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Config`\n --> src/main.rs:2:19\n  |\n2 | let mut builder = Config::builder();\n  |                   ^^^^^^ use of undeclared type `Config`\n  |\nhelp: consider importing this struct\n  |\n1 + use config::Config;\n  |\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `File`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `File`\n --> src/main.rs:4:30\n  |\n4 | builder = builder.add_source(File::new(\"config/settings\", FileFormat::Json));\n  |                              ^^^^ use of undeclared type `File`\n  |\nhelp: consider importing one of these structs\n  |\n1 + use std::fs::File;\n  |\n1 + use config::File;\n  |\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `FileFormat`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `FileFormat`\n --> src/main.rs:4:59\n  |\n4 | builder = builder.add_source(File::new(\"config/settings\", FileFormat::Json));\n  |                                                           ^^^^^^^^^^ use of undeclared type `FileFormat`\n  |\nhelp: consider importing this enum\n  |\n1 + use config::FileFormat;\n  |\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `File`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `File`\n --> src/main.rs:5:30\n  |\n5 | builder = builder.add_source(File::new(\"config/settings.prod\", FileFormat::Json));\n  |                              ^^^^ use of undeclared type `File`\n  |\nhelp: consider importing one of these structs\n  |\n1 + use std::fs::File;\n  |\n1 + use config::File;\n  |\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `FileFormat`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `FileFormat`\n --> src/main.rs:5:64\n  |\n5 | builder = builder.add_source(File::new(\"config/settings.prod\", FileFormat::Json));\n  |                                                                ^^^^^^^^^^ use of undeclared type `FileFormat`\n  |\nhelp: consider importing this enum\n  |\n1 + use config::FileFormat;\n  |\n\n",
+      "line": 5
+    }
+  ],
+  "error_count": 5,
+  "stderr_excerpt": "error: could not compile `n05_config_consumer` (bin \"n05_config_consumer\") due to 5 previous errors\n",
+  "code_sha256": "9f827b82bada78502b4d61a5bf34171ce1458e8b1716edef7b431e404f082b6d",
+  "manifest_sha256": "df3977dd24482d10f10ca62873499a8318deb038c73795830276eb44fdb21f34",
+  "log_file": "prospective/results/check_logs/2f4c865f8b32c7cbe5.txt.gz"
+}

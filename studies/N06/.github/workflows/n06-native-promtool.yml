@@ -1,0 +1,34 @@
+name: N06 official Prometheus promtool
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'promtool/**'
+      - '.github/workflows/n06-native-promtool.yml'
+jobs:
+  native-promtool:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pull official fixed-version Prometheus image
+        run: docker pull prom/prometheus:v3.16.0
+      - name: Record actual image identity and native version
+        run: |
+          docker image inspect prom/prometheus:v3.16.0 --format '{{json .RepoDigests}}'
+          docker run --rm --network none --read-only --entrypoint /bin/promtool prom/prometheus:v3.16.0 --version
+      - name: Check native rule syntax
+        run: >-
+          docker run --rm --network none --read-only --tmpfs /tmp
+          -v "$PWD/promtool:/work:ro" -w /work --entrypoint /bin/promtool
+          prom/prometheus:v3.16.0 check rules alert_rules.yml
+      - name: Evaluate handcrafted native PromQL cases
+        run: >-
+          docker run --rm --network none --read-only --tmpfs /tmp
+          -v "$PWD/promtool:/work:ro" -w /work --entrypoint /bin/promtool
+          prom/prometheus:v3.16.0 test rules tests.yml
+      - name: Evaluate generated native PromQL cases
+        run: >-
+          docker run --rm --network none --read-only --tmpfs /tmp
+          -v "$PWD/promtool:/work:ro" -w /work --entrypoint /bin/promtool
+          prom/prometheus:v3.16.0 test rules generated_owner_cases.yml

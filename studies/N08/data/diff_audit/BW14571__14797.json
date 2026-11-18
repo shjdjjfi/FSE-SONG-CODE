@@ -1,0 +1,33 @@
+{
+  "changed_code_lines_under_target": 15,
+  "changed_files_in_whole_pr": 311,
+  "changed_files_under_target": 15,
+  "code_files_under_target": 15,
+  "code_touched": true,
+  "event": "BW14571",
+  "focused_code_touched": false,
+  "pr": 14797,
+  "raw_size_bytes": 232158,
+  "repo": "bitwarden/clients",
+  "sha256": "fa5377c39e1099c523879706f7d85176aeca732786eaa0b795af72cb51bec40d",
+  "target_file_fraction": 0.04823,
+  "target_paths": [
+    "apps/web/src/app/dirt/reports/pages/breach-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/exposed-passwords-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/inactive-two-factor-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/organizations/exposed-passwords-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/organizations/reused-passwords-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/organizations/unsecured-websites-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/organizations/weak-passwords-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/reports-home.component.ts",
+    "apps/web/src/app/dirt/reports/pages/reused-passwords-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/unsecured-websites-report.component.ts",
+    "apps/web/src/app/dirt/reports/pages/weak-passwords-report.component.ts",
+    "apps/web/src/app/dirt/reports/reports-layout.component.ts",
+    "apps/web/src/app/dirt/reports/shared/report-card/report-card.component.ts",
+    "apps/web/src/app/dirt/reports/shared/report-list/report-list.component.ts"
+  ],
+  "test_files_under_target": 0,
+  "url": "https://github.com/bitwarden/clients/pull/14797.patch"
+}

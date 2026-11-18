@@ -1,0 +1,29 @@
+{
+  "changed_code_lines_under_target": 1162,
+  "changed_files_in_whole_pr": 44,
+  "changed_files_under_target": 11,
+  "code_files_under_target": 6,
+  "code_touched": true,
+  "event": "BW13285",
+  "focused_code_touched": true,
+  "pr": 15153,
+  "raw_size_bytes": 242613,
+  "repo": "bitwarden/clients",
+  "sha256": "6d9130d0879b4ea4d50026d94ac3dc03852e0a6236d73794c6fc3282111f1d83",
+  "target_file_fraction": 0.25,
+  "target_paths": [
+    "libs/common/src/key-management/crypto/services/bulk-encrypt.service.impementation.spec.ts",
+    "libs/common/src/key-management/crypto/services/bulk-encrypt.service.implementation.ts",
+    "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts",
+    "libs/common/src/key-management/crypto/services/encrypt.service.spec.ts",
+    "libs/common/src/key-management/crypto/services/encrypt.worker.ts",
+    "libs/common/src/key-management/crypto/services/fallback-bulk-encrypt.service.spec.ts",
+    "libs/common/src/key-management/crypto/services/fallback-bulk-encrypt.service.ts",
+    "libs/common/src/key-management/crypto/services/multithread-encrypt.service.implementation.spec.ts",
+    "libs/common/src/key-management/crypto/services/multithread-encrypt.service.implementation.ts",
+    "libs/common/src/key-management/crypto/services/web-crypto-function.service.spec.ts",
+    "libs/common/src/key-management/crypto/services/web-crypto-function.service.ts"
+  ],
+  "test_files_under_target": 5,
+  "url": "https://github.com/bitwarden/clients/pull/15153.patch"
+}

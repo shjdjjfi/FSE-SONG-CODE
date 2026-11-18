@@ -1,0 +1,28 @@
+{
+  "key": "333441df25d0216d2f",
+  "args": {
+    "crate": "tracing-subscriber",
+    "version": "0.3.19",
+    "id": "7c62006a8e0bc50e",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1098,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tracing`",
+      "rendered": "error[E0432]: unresolved import `tracing`\n --> src/main.rs:1:5\n  |\n1 | use tracing::info;\n  |     ^^^^^^^ use of unresolved module or unlinked crate `tracing`\n  |\n  = help: if you wanted to use a crate named `tracing`, use `cargo add tracing` to add it to your `Cargo.toml`\n\n",
+      "line": 1
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tracing_subscriber_consumer` (bin \"n05_tracing_subscriber_consumer\") due to 1 previous error\n",
+  "code_sha256": "6c727ec8f3c4f8ad6f66c1e98154ad5203bc999ebc05abe4f751bcf3806c0f80",
+  "manifest_sha256": "9d051edaf1bfed636c4fca37ddcc0f24c8d2f5fe1437acbe72ab360adc95f0cc",
+  "log_file": "results/check_logs/333441df25d0216d2f.txt.gz"
+}

@@ -1,0 +1,94 @@
+{
+  "key": "10a64e62a73ffdf8a1",
+  "args": {
+    "crate": "sqlparser",
+    "version": "0.56.0",
+    "id": "24b428c75e832135",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1001,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `TokenWithLocation`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `TokenWithLocation`\n --> src/main.rs:3:12\n  |\n3 | let tok1 = TokenWithLocation::new(\n  |            ^^^^^^^^^^^^^^^^^ use of undeclared type `TokenWithLocation`\n  |\nhelp: consider importing this type alias\n  |\n1 + use sqlparser::tokenizer::TokenWithLocation;\n  |\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Token`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Token`\n --> src/main.rs:4:3\n  |\n4 |   Token::Comma,\n  |   ^^^^^ use of undeclared type `Token`\n  |\nhelp: consider importing this enum\n  |\n1 + use sqlparser::tokenizer::Token;\n  |\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Span`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Span`\n --> src/main.rs:5:3\n  |\n5 |   Span::new(Location::new(1, 10), Location::new(1, 11)),\n  |   ^^^^ use of undeclared type `Span`\n  |\nhelp: consider importing this struct\n  |\n1 + use sqlparser::tokenizer::Span;\n  |\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Location`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Location`\n --> src/main.rs:5:13\n  |\n5 |   Span::new(Location::new(1, 10), Location::new(1, 11)),\n  |             ^^^^^^^^ use of undeclared type `Location`\n  |\nhelp: consider importing one of these structs\n  |\n1 + use std::panic::Location;\n  |\n1 + use sqlparser::tokenizer::Location;\n  |\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Location`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Location`\n --> src/main.rs:5:35\n  |\n5 |   Span::new(Location::new(1, 10), Location::new(1, 11)),\n  |                                   ^^^^^^^^ use of undeclared type `Location`\n  |\nhelp: consider importing one of these structs\n  |\n1 + use std::panic::Location;\n  |\n1 + use sqlparser::tokenizer::Location;\n  |\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `TokenWithLocation`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `TokenWithLocation`\n --> src/main.rs:8:12\n  |\n8 | let tok2 = TokenWithLocation::new(\n  |            ^^^^^^^^^^^^^^^^^ use of undeclared type `TokenWithLocation`\n  |\nhelp: consider importing this type alias\n  |\n1 + use sqlparser::tokenizer::TokenWithLocation;\n  |\n\n",
+      "line": 8
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Token`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Token`\n --> src/main.rs:9:2\n  |\n9 |  Token::Period,\n  |  ^^^^^ use of undeclared type `Token`\n  |\nhelp: consider importing this enum\n  |\n1 + use sqlparser::tokenizer::Token;\n  |\n\n",
+      "line": 9
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Span`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Span`\n  --> src/main.rs:10:3\n   |\n10 |   Span::new(Location::new(2, 10), Location::new(2, 21)),\n   |   ^^^^ use of undeclared type `Span`\n   |\nhelp: consider importing this struct\n   |\n 1 + use sqlparser::tokenizer::Span;\n   |\n\n",
+      "line": 10
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Location`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Location`\n  --> src/main.rs:10:13\n   |\n10 |   Span::new(Location::new(2, 10), Location::new(2, 21)),\n   |             ^^^^^^^^ use of undeclared type `Location`\n   |\nhelp: consider importing one of these structs\n   |\n 1 + use std::panic::Location;\n   |\n 1 + use sqlparser::tokenizer::Location;\n   |\n\n",
+      "line": 10
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Location`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Location`\n  --> src/main.rs:10:35\n   |\n10 |   Span::new(Location::new(2, 10), Location::new(2, 21)),\n   |                                   ^^^^^^^^ use of undeclared type `Location`\n   |\nhelp: consider importing one of these structs\n   |\n 1 + use std::panic::Location;\n   |\n 1 + use sqlparser::tokenizer::Location;\n   |\n\n",
+      "line": 10
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find function, tuple struct or tuple variant `AttachedToken` in this scope",
+      "rendered": "error[E0425]: cannot find function, tuple struct or tuple variant `AttachedToken` in this scope\n  --> src/main.rs:14:12\n   |\n14 | assert_eq!(AttachedToken(tok1), AttachedToken(tok2)); // attached tokens are\n   |            ^^^^^^^^^^^^^ not found in this scope\n   |\nhelp: consider importing this tuple struct\n   |\n 1 + use sqlparser::ast::helpers::attached_token::AttachedToken;\n   |\n\n",
+      "line": 14
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find function, tuple struct or tuple variant `AttachedToken` in this scope",
+      "rendered": "error[E0425]: cannot find function, tuple struct or tuple variant `AttachedToken` in this scope\n  --> src/main.rs:14:33\n   |\n14 | assert_eq!(AttachedToken(tok1), AttachedToken(tok2)); // attached tokens are\n   |                                 ^^^^^^^^^^^^^ not found in this scope\n   |\nhelp: consider importing this tuple struct\n   |\n 1 + use sqlparser::ast::helpers::attached_token::AttachedToken;\n   |\n\n",
+      "line": 14
+    }
+  ],
+  "error_count": 12,
+  "stderr_excerpt": "error: could not compile `n05_sqlparser_consumer` (bin \"n05_sqlparser_consumer\") due to 12 previous errors\n",
+  "code_sha256": "2da9d6924b1a03aec865e13d5a2596c0f4a5bae43f76b1972cc3d93ca55f3bfb",
+  "manifest_sha256": "3448fa11d3cca660bf6962a5f7e1c4d436e75726090d429c20cb7e5de60b5cc7",
+  "log_file": "prospective/results/check_logs/10a64e62a73ffdf8a1.txt.gz"
+}

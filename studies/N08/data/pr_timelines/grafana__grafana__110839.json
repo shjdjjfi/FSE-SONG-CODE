@@ -1,0 +1,22 @@
+{
+  "fetched_utc": "2026-11-14T17:20:50.644522+00:00",
+  "merged_at": "2025-09-16T13:32:05Z",
+  "opened_at": "2025-09-08T11:26:57-04:00",
+  "pr": 110839,
+  "raw_html_sha256": "b3a05677be5f5cab66e507308433e4d63837b04ce32f32c9739bca123ccc2e4d",
+  "repo": "grafana/grafana",
+  "review_count_visible": 2,
+  "reviews": [
+    {
+      "login": "alexander-akhmetov",
+      "state": "COMMENTED",
+      "submitted_at": "2025-09-15T14:50:59Z"
+    },
+    {
+      "login": "alexander-akhmetov",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-16T06:51:10Z"
+    }
+  ],
+  "source_url": "https://github.com/grafana/grafana/pull/110839"
+}

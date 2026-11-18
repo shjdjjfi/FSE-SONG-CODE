@@ -1,0 +1,291 @@
+{
+  "type": "controlled_pytest_mechanism",
+  "pytest_version": "pytest 8.4.2",
+  "experiments": [
+    {
+      "seed": 17,
+      "old_id": "test_cases.py::test_original_failure_17",
+      "baseline_run": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "-o",
+          "cache_dir=/tmp/n04-pytest-6dqoivfo/cache",
+          "test_cases.py"
+        ],
+        "returncode": 1,
+        "duration_ms": 672.92,
+        "selected_nodes": [
+          "FAILED test_cases.py::test_original_failure_17 - assert False"
+        ],
+        "selected_count": 1,
+        "output": ".F.                                                                      [100%]\n=========================== short test summary info ============================\nFAILED test_cases.py::test_original_failure_17 - assert False\n1 failed, 2 passed in 0.01s\n"
+      },
+      "baseline_same_id": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "-o",
+          "cache_dir=/tmp/n04-pytest-6dqoivfo/cache",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "returncode": 0,
+        "duration_ms": 755.99,
+        "selected_nodes": [
+          "test_cases.py::test_original_failure_17"
+        ],
+        "selected_count": 1,
+        "output": "test_cases.py::test_original_failure_17\n\n1 test collected in 0.01s\n"
+      },
+      "stale_renamed": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "-o",
+          "cache_dir=/tmp/n04-pytest-6dqoivfo/cache",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "returncode": 0,
+        "duration_ms": 534.79,
+        "selected_nodes": [
+          "test_cases.py::test_unrelated_pass_1",
+          "test_cases.py::test_renamed_failure_17",
+          "test_cases.py::test_unrelated_pass_2"
+        ],
+        "selected_count": 3,
+        "output": "test_cases.py::test_unrelated_pass_1\ntest_cases.py::test_renamed_failure_17\ntest_cases.py::test_unrelated_pass_2\n\n3 tests collected in 0.01s\n"
+      },
+      "identity_migrated": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "-o",
+          "cache_dir=/tmp/n04-pytest-6dqoivfo/cache",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "returncode": 0,
+        "duration_ms": 478.94,
+        "selected_nodes": [
+          "test_cases.py::test_renamed_failure_17"
+        ],
+        "selected_count": 1,
+        "output": "test_cases.py::test_renamed_failure_17\n\n1 test collected in 0.01s\n"
+      },
+      "cached_prior_failures": 1,
+      "body_equal_after_rename": true,
+      "body_equal_after_semantic_change": false,
+      "semantic_change_confirmed": true
+    },
+    {
+      "seed": 29,
+      "old_id": "test_cases.py::test_original_failure_29",
+      "baseline_run": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "-o",
+          "cache_dir=/tmp/n04-pytest-oiwvr2gy/cache",
+          "test_cases.py"
+        ],
+        "returncode": 1,
+        "duration_ms": 839.32,
+        "selected_nodes": [
+          "FAILED test_cases.py::test_original_failure_29 - assert False"
+        ],
+        "selected_count": 1,
+        "output": ".F.                                                                      [100%]\n=========================== short test summary info ============================\nFAILED test_cases.py::test_original_failure_29 - assert False\n1 failed, 2 passed in 0.01s\n"
+      },
+      "baseline_same_id": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "-o",
+          "cache_dir=/tmp/n04-pytest-oiwvr2gy/cache",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "returncode": 0,
+        "duration_ms": 928.82,
+        "selected_nodes": [
+          "test_cases.py::test_original_failure_29"
+        ],
+        "selected_count": 1,
+        "output": "test_cases.py::test_original_failure_29\n\n1 test collected in 0.01s\n"
+      },
+      "stale_renamed": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "-o",
+          "cache_dir=/tmp/n04-pytest-oiwvr2gy/cache",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "returncode": 0,
+        "duration_ms": 690.09,
+        "selected_nodes": [
+          "test_cases.py::test_unrelated_pass_1",
+          "test_cases.py::test_renamed_failure_29",
+          "test_cases.py::test_unrelated_pass_2"
+        ],
+        "selected_count": 3,
+        "output": "test_cases.py::test_unrelated_pass_1\ntest_cases.py::test_renamed_failure_29\ntest_cases.py::test_unrelated_pass_2\n\n3 tests collected in 0.01s\n"
+      },
+      "identity_migrated": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "-o",
+          "cache_dir=/tmp/n04-pytest-oiwvr2gy/cache",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "returncode": 0,
+        "duration_ms": 649.13,
+        "selected_nodes": [
+          "test_cases.py::test_renamed_failure_29"
+        ],
+        "selected_count": 1,
+        "output": "test_cases.py::test_renamed_failure_29\n\n1 test collected in 0.00s\n"
+      },
+      "cached_prior_failures": 1,
+      "body_equal_after_rename": true,
+      "body_equal_after_semantic_change": false,
+      "semantic_change_confirmed": true
+    },
+    {
+      "seed": 43,
+      "old_id": "test_cases.py::test_original_failure_43",
+      "baseline_run": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "-o",
+          "cache_dir=/tmp/n04-pytest-8xfil6xu/cache",
+          "test_cases.py"
+        ],
+        "returncode": 1,
+        "duration_ms": 725.14,
+        "selected_nodes": [
+          "FAILED test_cases.py::test_original_failure_43 - assert False"
+        ],
+        "selected_count": 1,
+        "output": ".F.                                                                      [100%]\n=========================== short test summary info ============================\nFAILED test_cases.py::test_original_failure_43 - assert False\n1 failed, 2 passed in 0.01s\n"
+      },
+      "baseline_same_id": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "-o",
+          "cache_dir=/tmp/n04-pytest-8xfil6xu/cache",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "returncode": 0,
+        "duration_ms": 532.12,
+        "selected_nodes": [
+          "test_cases.py::test_original_failure_43"
+        ],
+        "selected_count": 1,
+        "output": "test_cases.py::test_original_failure_43\n\n1 test collected in 0.00s\n"
+      },
+      "stale_renamed": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "-o",
+          "cache_dir=/tmp/n04-pytest-8xfil6xu/cache",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "returncode": 0,
+        "duration_ms": 840.04,
+        "selected_nodes": [
+          "test_cases.py::test_unrelated_pass_1",
+          "test_cases.py::test_renamed_failure_43",
+          "test_cases.py::test_unrelated_pass_2"
+        ],
+        "selected_count": 3,
+        "output": "test_cases.py::test_unrelated_pass_1\ntest_cases.py::test_renamed_failure_43\ntest_cases.py::test_unrelated_pass_2\n\n3 tests collected in 0.01s\n"
+      },
+      "identity_migrated": {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=no",
+          "-o",
+          "cache_dir=/tmp/n04-pytest-8xfil6xu/cache",
+          "--lf",
+          "--lfnf",
+          "none",
+          "--collect-only"
+        ],
+        "returncode": 0,
+        "duration_ms": 700.5,
+        "selected_nodes": [
+          "test_cases.py::test_renamed_failure_43"
+        ],
+        "selected_count": 1,
+        "output": "test_cases.py::test_renamed_failure_43\n\n1 test collected in 0.01s\n"
+      },
+      "cached_prior_failures": 1,
+      "body_equal_after_rename": true,
+      "body_equal_after_semantic_change": false,
+      "semantic_change_confirmed": true
+    }
+  ]
+}

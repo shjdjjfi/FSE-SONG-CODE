@@ -1,0 +1,30 @@
+{
+  "key": "d435ae21bf0f3d15ae",
+  "args": {
+    "crate": "figment",
+    "version": "0.10.19",
+    "id": "f0d40d06dc5d38a8",
+    "profile": "candidate",
+    "features": [
+      "env"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.7183,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `figment::Jail`",
+      "rendered": "error[E0432]: unresolved import `figment::Jail`\n   --> src/main.rs:2:15\n    |\n  2 | use figment::{Jail, providers::Env};\n    |               ^^^^ no `Jail` in the root\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/figment-0.10.19/src/lib.rs:594:51\n    |\n594 | #[cfg(any(test, feature = \"test\"))] pub use jail::Jail;\n    |          ------------------------                 ^^^^\n    |          |\n    |          the item is gated here\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_figment_consumer` (bin \"n05_figment_consumer\") due to 1 previous error\n",
+  "code_sha256": "ed5ffec5250dac0a150ea4ff72987a25801cdb050375e938cff514aa5e5cd208",
+  "manifest_sha256": "90fd4f0f059ccf777f897bc95f78f87621ae70da164564f8913b1fe538c783ad",
+  "log_file": "prospective/results/check_logs/d435ae21bf0f3d15ae.txt.gz"
+}

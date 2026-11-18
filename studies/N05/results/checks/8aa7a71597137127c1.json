@@ -1,0 +1,34 @@
+{
+  "key": "8aa7a71597137127c1",
+  "args": {
+    "crate": "tracing-subscriber",
+    "version": "0.3.19",
+    "id": "7cf792d58ba414b7",
+    "profile": "candidate",
+    "features": [
+      "ansi",
+      "env-filter",
+      "fmt",
+      "nu-ansi-term",
+      "std"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0766,
+  "errors": [
+    {
+      "code": "E0599",
+      "message": "no method named `json` found for struct `tracing_subscriber::fmt::Layer<S, N, E, W>` in the current scope",
+      "rendered": "error[E0599]: no method named `json` found for struct `tracing_subscriber::fmt::Layer<S, N, E, W>` in the current scope\n  --> src/main.rs:16:14\n   |\n13 | /         tracing_subscriber::fmt::layer()\n14 | |             .with_thread_ids(true)\n15 | |             .with_thread_names(true)\n16 | |             .json()\n   | |             -^^^^ method not found in `tracing_subscriber::fmt::Layer<_>`\n   | |_____________|\n   |\n\n",
+      "line": 13
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tracing_subscriber_consumer` (bin \"n05_tracing_subscriber_consumer\") due to 1 previous error\n",
+  "code_sha256": "a3a5400c83ea95027bf2472938feb81e4a3d549d738a025aa5ebf9cd4925d82e",
+  "manifest_sha256": "f19651e3744205f5e93074b7158da43d8c20c3d1571ca1ac7ccb8fa47931305e",
+  "log_file": "results/check_logs/8aa7a71597137127c1.txt.gz"
+}

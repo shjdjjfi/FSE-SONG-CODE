@@ -1,0 +1,28 @@
+{
+  "key": "7877854270482effde",
+  "args": {
+    "crate": "slog",
+    "version": "2.7.0",
+    "id": "91b6ce8a02eab268",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0437,
+  "errors": [
+    {
+      "code": "E0782",
+      "message": "expected a type, found a trait",
+      "rendered": "error[E0782]: expected a type, found a trait\n --> src/main.rs:7:56\n  |\n7 |    fn serialize(&self, _rec: &Record, serializer: &mut Serializer) -> Result {\n  |                                                        ^^^^^^^^^^\n  |\nhelp: use a new generic type parameter, constrained by `Serializer`\n  |\n7 -    fn serialize(&self, _rec: &Record, serializer: &mut Serializer) -> Result {\n7 +    fn serialize<T: Serializer>(&self, _rec: &Record, serializer: &mut T) -> Result {\n  |\nhelp: you can also use an opaque type, but users won't be able to specify the type parameter when calling the `fn`, having to rely exclusively on type inference\n  |\n7 |    fn serialize(&self, _rec: &Record, serializer: &mut impl Serializer) -> Result {\n  |                                                        ++++\nhelp: alternatively, use a trait object to accept any type that implements `Serializer`, accessing its methods at runtime using dynamic dispatch\n  |\n7 |    fn serialize(&self, _rec: &Record, serializer: &mut dyn Serializer) -> Result {\n  |                                                        +++\n\n",
+      "line": 7
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_slog_consumer` (bin \"n05_slog_consumer\") due to 1 previous error\n",
+  "code_sha256": "b2d78ef3084069129abcb04da03776e18feec86d05a7a1aac4bc82048043d441",
+  "manifest_sha256": "b09bb3e9ca0c90ba11b595536331994707ae44aca1087a17d4f2428dd981a4c5",
+  "log_file": "prospective/results/check_logs/7877854270482effde.txt.gz"
+}

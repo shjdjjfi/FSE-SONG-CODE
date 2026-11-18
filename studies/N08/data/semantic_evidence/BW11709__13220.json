@@ -1,0 +1,31 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 211266,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW11709",
+  "examples": [
+    {
+      "change": "-",
+      "code": "import { EncryptService } from \"@bitwarden/common/platform/abstractions/encrypt.service\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { EncryptService } from \"@bitwarden/common/key-management/crypto/abstractions/encrypt.service\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:47.298526+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+  "noncomment_nonimport_changed_lines": 0,
+  "pr": 13220,
+  "repository": "bitwarden/clients",
+  "sha256": "88cd971d0ce9bb7ab0900206392ba34ded46b97417be316319ce9d944ceb728a",
+  "target_code_changed_lines": 2,
+  "target_files": [
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/13220.patch"
+}

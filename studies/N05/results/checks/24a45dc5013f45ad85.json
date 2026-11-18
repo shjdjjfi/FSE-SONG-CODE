@@ -1,0 +1,34 @@
+{
+  "key": "24a45dc5013f45ad85",
+  "args": {
+    "crate": "tracing-subscriber",
+    "version": "0.3.19",
+    "id": "c480e8d6f1ca9fd5",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 8.1787,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tracing_core`",
+      "rendered": "error[E0432]: unresolved import `tracing_core`\n --> src/main.rs:7:5\n  |\n7 | use tracing_core::Level;\n  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `tracing_core`\n  |\n  = help: if you wanted to use a crate named `tracing_core`, use `cargo add tracing_core` to add it to your `Cargo.toml`\n\n",
+      "line": 7
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `json` found for struct `tracing_subscriber::fmt::Layer<S, N, E, W>` in the current scope",
+      "rendered": "error[E0599]: no method named `json` found for struct `tracing_subscriber::fmt::Layer<S, N, E, W>` in the current scope\n  --> src/main.rs:19:6\n   |\n17 |   let debug_log = fmt::layer()\n   |  _________________-\n18 | |     .with_writer(Arc::new(file))\n19 | |     .json();\n   | |     -^^^^ method not found in `tracing_subscriber::fmt::Layer<_, DefaultFields, Format, Arc<File>>`\n   | |_____|\n   |\n\n",
+      "line": 17
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_tracing_subscriber_consumer` (bin \"n05_tracing_subscriber_consumer\") due to 2 previous errors\n",
+  "code_sha256": "4d9d2c791fd29975117c03efa209e48f1a804b401f28764fab4b98b8f8973ee4",
+  "manifest_sha256": "92cf2d13035c833ec4e262847a9acbfe9f5f7726ee8a89d09c031781d79a9028",
+  "log_file": "results/check_logs/24a45dc5013f45ad85.txt.gz"
+}

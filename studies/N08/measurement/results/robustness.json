@@ -1,0 +1,276 @@
+{
+  "all_settings_are_sensitivity_not_independent_confirmation": true,
+  "method": "exact optimization over unknown one-person expert identity",
+  "settings": {
+    "all_path_touching": {
+      "bounds_observed_only_one_expert": [
+        -0.07073921186408286,
+        0.12660934744268076
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.3361988850120945,
+        0.4053346874812303
+      ],
+      "n_events": 9,
+      "n_pairs": 114,
+      "switched": 48,
+      "two_world_witnesses_with_actual_decision_reviewers": 5,
+      "two_world_witnesses_with_historical_reviewers": 41
+    },
+    "budget_1": {
+      "bounds_observed_only_one_expert": [
+        -0.1496796184360684,
+        0.0553513413162536
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.35310116249228735,
+        0.40371844644290467
+      ],
+      "n_events": 9,
+      "n_pairs": 114,
+      "switched": 41,
+      "two_world_witnesses_with_actual_decision_reviewers": 5,
+      "two_world_witnesses_with_historical_reviewers": 38
+    },
+    "budget_2": {
+      "bounds_observed_only_one_expert": [
+        -0.07073921186408286,
+        0.12660934744268076
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.3361988850120945,
+        0.4053346874812303
+      ],
+      "n_events": 9,
+      "n_pairs": 114,
+      "switched": 48,
+      "two_world_witnesses_with_actual_decision_reviewers": 5,
+      "two_world_witnesses_with_historical_reviewers": 41
+    },
+    "budget_3": {
+      "bounds_observed_only_one_expert": [
+        -0.05731328593815693,
+        0.1146384479717813
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.5196981424148607,
+        0.5505623399457249
+      ],
+      "n_events": 9,
+      "n_pairs": 114,
+      "switched": 56,
+      "two_world_witnesses_with_actual_decision_reviewers": 3,
+      "two_world_witnesses_with_historical_reviewers": 51
+    },
+    "budget_5": {
+      "bounds_observed_only_one_expert": [
+        -0.11046584325738093,
+        0.06535299304907148
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.5379890357702535,
+        0.5953082597561442
+      ],
+      "n_events": 9,
+      "n_pairs": 114,
+      "switched": 63,
+      "two_world_witnesses_with_actual_decision_reviewers": 4,
+      "two_world_witnesses_with_historical_reviewers": 54
+    },
+    "code_touching_mechanical": {
+      "bounds_observed_only_one_expert": [
+        -0.06758999896254798,
+        0.1734500067833401
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.3366571699905033,
+        0.43542260208926875
+      ],
+      "n_events": 9,
+      "n_pairs": 102,
+      "switched": 44,
+      "two_world_witnesses_with_actual_decision_reviewers": 4,
+      "two_world_witnesses_with_historical_reviewers": 37
+    },
+    "focused_posthoc": {
+      "bounds_observed_only_one_expert": [
+        0.008658008658008658,
+        0.1354978354978355
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.2992578849721707,
+        0.42306740878169447
+      ],
+      "n_events": 7,
+      "n_pairs": 58,
+      "switched": 25,
+      "two_world_witnesses_with_actual_decision_reviewers": 1,
+      "two_world_witnesses_with_historical_reviewers": 21
+    },
+    "grace_180d": {
+      "bounds_observed_only_one_expert": [
+        -0.07073921186408286,
+        0.12660934744268076
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.3361988850120945,
+        0.4053346874812303
+      ],
+      "n_events": 9,
+      "n_pairs": 114,
+      "switched": 48,
+      "two_world_witnesses_with_actual_decision_reviewers": 5,
+      "two_world_witnesses_with_historical_reviewers": 41
+    },
+    "grace_30d": {
+      "bounds_observed_only_one_expert": [
+        -0.02471333562664832,
+        0.07470760233918129
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.13670163972021557,
+        0.18731892367083286
+      ],
+      "n_events": 9,
+      "n_pairs": 114,
+      "switched": 20,
+      "two_world_witnesses_with_actual_decision_reviewers": 3,
+      "two_world_witnesses_with_historical_reviewers": 16
+    },
+    "grace_365d": {
+      "bounds_observed_only_one_expert": [
+        -0.16881992563107115,
+        0.13763227513227513
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.6070399309821395,
+        0.6638300544389296
+      ],
+      "n_events": 9,
+      "n_pairs": 114,
+      "switched": 71,
+      "two_world_witnesses_with_actual_decision_reviewers": 5,
+      "two_world_witnesses_with_historical_reviewers": 66
+    },
+    "grace_90d": {
+      "bounds_observed_only_one_expert": [
+        -0.04560113519091847,
+        0.07424463937621832
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.1735738447425754,
+        0.23036396819936553
+      ],
+      "n_events": 9,
+      "n_pairs": 114,
+      "switched": 27,
+      "two_world_witnesses_with_actual_decision_reviewers": 4,
+      "two_world_witnesses_with_historical_reviewers": 22
+    },
+    "opened_after90d": {
+      "bounds_observed_only_one_expert": [
+        -0.0234375,
+        0.05989583333333333
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.1640625,
+        0.1796875
+      ],
+      "n_events": 8,
+      "n_pairs": 68,
+      "switched": 14,
+      "two_world_witnesses_with_actual_decision_reviewers": 1,
+      "two_world_witnesses_with_historical_reviewers": 12
+    },
+    "opened_within90d": {
+      "bounds_observed_only_one_expert": [
+        -0.16950757575757575,
+        0.16647727272727272
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.5346590909090909,
+        0.709659090909091
+      ],
+      "n_events": 8,
+      "n_pairs": 46,
+      "switched": 34,
+      "two_world_witnesses_with_actual_decision_reviewers": 4,
+      "two_world_witnesses_with_historical_reviewers": 29
+    },
+    "repository_bitwarden/clients": {
+      "bounds_observed_only_one_expert": [
+        -0.08652605779153766,
+        0.13549107142857142
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.37127930119416186,
+        0.42127930119416185
+      ],
+      "n_events": 8,
+      "n_pairs": 96,
+      "switched": 43,
+      "two_world_witnesses_with_actual_decision_reviewers": 5,
+      "two_world_witnesses_with_historical_reviewers": 40
+    },
+    "repository_grafana/grafana": {
+      "bounds_observed_only_one_expert": [
+        0.05555555555555555,
+        0.05555555555555555
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.05555555555555555,
+        0.2777777777777778
+      ],
+      "n_events": 1,
+      "n_pairs": 18,
+      "switched": 5,
+      "two_world_witnesses_with_actual_decision_reviewers": 0,
+      "two_world_witnesses_with_historical_reviewers": 1
+    },
+    "semantic_researcher_yes_nonblind": {
+      "bounds_observed_only_one_expert": [
+        -0.027380952380952384,
+        0.12846320346320345
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.36385281385281387,
+        0.48766233766233763
+      ],
+      "n_events": 7,
+      "n_pairs": 46,
+      "switched": 23,
+      "two_world_witnesses_with_actual_decision_reviewers": 1,
+      "two_world_witnesses_with_historical_reviewers": 19
+    },
+    "unique_pr_first_event_sensitivity": {
+      "bounds_observed_only_one_expert": [
+        -0.061419753086419754,
+        0.11596119929453262
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.39764109347442683,
+        0.46677689594356264
+      ],
+      "n_events": 9,
+      "n_pairs": 103,
+      "switched": 44,
+      "two_world_witnesses_with_actual_decision_reviewers": 4,
+      "two_world_witnesses_with_historical_reviewers": 37
+    },
+    "unique_pr_last_event_sensitivity": {
+      "bounds_observed_only_one_expert": [
+        -0.05396361273554256,
+        0.1218294051627385
+      ],
+      "bounds_observed_or_prior_module_one_expert": [
+        -0.3500856518400378,
+        0.4192214543091736
+      ],
+      "n_events": 9,
+      "n_pairs": 103,
+      "switched": 45,
+      "two_world_witnesses_with_actual_decision_reviewers": 4,
+      "two_world_witnesses_with_historical_reviewers": 38
+    }
+  }
+}

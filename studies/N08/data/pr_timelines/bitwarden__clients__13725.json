@@ -1,0 +1,37 @@
+{
+  "fetched_utc": "2026-11-14T17:12:56.403617+00:00",
+  "merged_at": "2025-03-10T19:52:53Z",
+  "opened_at": "2025-03-06T21:27:34Z",
+  "pr": 13725,
+  "raw_html_sha256": "cadb353138ceaee9bdcbe0d949578475a399bcf680d101245626668faa8e40ab",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 5,
+  "reviews": [
+    {
+      "login": "audreyality",
+      "state": "COMMENTED",
+      "submitted_at": "2025-03-07T15:44:41Z"
+    },
+    {
+      "login": "audreyality",
+      "state": "COMMENTED",
+      "submitted_at": "2025-03-07T15:47:07Z"
+    },
+    {
+      "login": "audreyality",
+      "state": "APPROVED",
+      "submitted_at": "2025-03-07T17:38:41Z"
+    },
+    {
+      "login": "willmartian",
+      "state": "APPROVED",
+      "submitted_at": "2025-03-08T02:15:25Z"
+    },
+    {
+      "login": "ttalty",
+      "state": "APPROVED",
+      "submitted_at": "2025-03-10T19:52:12Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/13725"
+}

@@ -1,0 +1,28 @@
+{
+  "key": "665d644213e0a95994",
+  "args": {
+    "crate": "quick-xml",
+    "version": "0.37.5",
+    "id": "4a1eb23ae4370195",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0502,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `pretty_assertions`",
+      "rendered": "error[E0432]: unresolved import `pretty_assertions`\n --> src/main.rs:2:5\n  |\n2 | use pretty_assertions::assert_eq;\n  |     ^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `pretty_assertions`\n  |\n  = help: if you wanted to use a crate named `pretty_assertions`, use `cargo add pretty_assertions` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_quick_xml_consumer` (bin \"n05_quick_xml_consumer\") due to 1 previous error; 2 warnings emitted\n",
+  "code_sha256": "ab1f4986df3146aa46f621761fe1fc1729b7d67d37b5b712cf13f68da48f87b9",
+  "manifest_sha256": "ebdbc46ef63196b0272bfb542c9057438d6f78d4878f599effb8654ea83a6f59",
+  "log_file": "prospective/results/check_logs/665d644213e0a95994.txt.gz"
+}

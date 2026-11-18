@@ -1,0 +1,32 @@
+{
+  "fetched_utc": "2026-11-14T17:13:37.544324+00:00",
+  "merged_at": "2025-07-10T21:02:42Z",
+  "opened_at": "2025-07-07T16:54:18-04:00",
+  "pr": 15522,
+  "raw_html_sha256": "3d1a815d417602e77c0d332f7d0e2d2049926da2e30d5a6d7318383ea4948345",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 4,
+  "reviews": [
+    {
+      "login": "vleague2",
+      "state": "COMMENTED",
+      "submitted_at": "2025-07-07T20:40:10Z"
+    },
+    {
+      "login": "vleague2",
+      "state": "COMMENTED",
+      "submitted_at": "2025-07-07T21:14:07Z"
+    },
+    {
+      "login": "willmartian",
+      "state": "APPROVED",
+      "submitted_at": "2025-07-09T14:29:57Z"
+    },
+    {
+      "login": "willmartian",
+      "state": "APPROVED",
+      "submitted_at": "2025-07-10T02:18:37Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/15522"
+}

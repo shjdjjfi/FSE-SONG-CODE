@@ -1,0 +1,47 @@
+{
+  "fetched_utc": "2026-11-14T17:13:37.197342+00:00",
+  "merged_at": "2025-07-03T20:12:56Z",
+  "opened_at": "2025-06-12T13:37:46-04:00",
+  "pr": 15226,
+  "raw_html_sha256": "5abaf75ed5d453133b65a876f6799552855717e27b4bd9ea478cfb47f8ff90b5",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 7,
+  "reviews": [
+    {
+      "login": "danielleflinn",
+      "state": "COMMENTED",
+      "submitted_at": "2025-06-18T00:24:19Z"
+    },
+    {
+      "login": "vleague2",
+      "state": "COMMENTED",
+      "submitted_at": "2025-06-20T20:53:51Z"
+    },
+    {
+      "login": "sukhleenb",
+      "state": "APPROVED",
+      "submitted_at": "2025-07-02T14:18:45Z"
+    },
+    {
+      "login": "vleague2",
+      "state": "COMMENTED",
+      "submitted_at": "2025-07-02T19:24:51Z"
+    },
+    {
+      "login": "vleague2",
+      "state": "APPROVED",
+      "submitted_at": "2025-07-02T21:12:47Z"
+    },
+    {
+      "login": "sukhleenb",
+      "state": "APPROVED",
+      "submitted_at": "2025-07-02T21:21:00Z"
+    },
+    {
+      "login": "r-tome",
+      "state": "APPROVED",
+      "submitted_at": "2025-07-03T10:03:34Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/15226"
+}

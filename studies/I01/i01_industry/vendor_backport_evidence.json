@@ -1,0 +1,68 @@
+{
+  "audit_date": "2026-11-14",
+  "interpretation": "Documented security backports are vendor-specific packages, NOT upstream PyPI wheels. They were not installed or tested in this CPU follow-up.",
+  "positive_confirmed_vendor_backports": [
+    {
+      "target_advisory": "PYSEC-2026-3943",
+      "cve": "CVE-2026-54770",
+      "upstream_pypi_fixed": "webob==1.8.11",
+      "vendor": "SUSE",
+      "product": "openSUSE Leap 15.4",
+      "vendor_security_advisory": "SUSE-SU-2026:4298-1",
+      "vendor_release_date": "2026-09-23",
+      "vendor_patched_binary_package": "python311-WebOb-1.8.7-150400.11.9.1",
+      "vendor_advisory_url": "https://www.suse.com/support/update/announcement/2026/suse-su-20264298-1/",
+      "claim_scope": "Vendor states this old-base package update fixes CVE-2026-54770; no local RPM installation or test."
+    },
+    {
+      "target_advisory": "PYSEC-2026-3943",
+      "cve": "CVE-2026-54770",
+      "upstream_pypi_fixed": "webob==1.8.11",
+      "vendor": "SUSE",
+      "product": "SUSE Linux Enterprise Server 12 (Public Cloud Module 12)",
+      "vendor_security_advisory": "SUSE-SU-2026:4351-1",
+      "vendor_release_date": "2026-09-25",
+      "vendor_patched_binary_package": "python-WebOb-1.2.3-3.6.1",
+      "vendor_advisory_url": "https://www.suse.com/support/update/announcement/2026/suse-su-20264351-1/",
+      "claim_scope": "Vendor states this much older-base package update fixes CVE-2026-54770; no local RPM installation or test."
+    }
+  ],
+  "distro_contrasting_statuses": [
+    {
+      "target_advisory": "GHSA-cjwg-qfpm-7377",
+      "cve": "CVE-2024-33664",
+      "distribution": "Debian bookworm",
+      "tracked_package": "python-jose 3.3.0+dfsg-4",
+      "tracker_status": "vulnerable",
+      "evidence_url": "https://security-tracker.debian.org/tracker/CVE-2024-33664",
+      "claim_scope": "Evidence that an old distro package remains tracked as vulnerable; NOT evidence that no backport exists anywhere."
+    },
+    {
+      "target_advisory": "PYSEC-2026-3943",
+      "cve": "CVE-2026-54770",
+      "distribution": "Debian bookworm",
+      "tracked_package": "python-webob 1:1.8.6-3",
+      "tracker_status": "vulnerable / postponed",
+      "evidence_url": "https://security-tracker.debian.org/tracker/CVE-2026-54770",
+      "claim_scope": "Debian tracker records unresolved status in a different distribution, despite SUSE's documented old-base updates."
+    }
+  ],
+  "upstream_patch_not_synonymous_with_backport": [
+    {
+      "package": "fastapi",
+      "advisory": "PYSEC-2024-38",
+      "upstream_first_fixed": "0.109.1",
+      "source_fix_commit": "9d34ad0ee8a0dfbbcce06f76c2d5d851085024fc",
+      "evidence_url": "https://github.com/tiangolo/fastapi/commit/9d34ad0ee8a0dfbbcce06f76c2d5d851085024fc",
+      "claim_scope": "Upstream fix commit is linked by official OSV; it does NOT imply a separately published patched 0.109.0 artifact."
+    },
+    {
+      "package": "webob",
+      "advisory": "PYSEC-2026-3943",
+      "upstream_first_fixed": "1.8.11",
+      "source_fix_commit": "ff89560643fb252751b4db8806a283b5377f1f07",
+      "evidence_url": "https://github.com/Pylons/webob/commit/ff89560643fb252751b4db8806a283b5377f1f07",
+      "claim_scope": "Upstream fixed commit and downstream SUSE old-base update are separate evidence categories."
+    }
+  ]
+}

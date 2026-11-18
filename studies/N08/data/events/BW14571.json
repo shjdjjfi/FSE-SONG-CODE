@@ -1,0 +1,781 @@
+{
+  "after_codeowners_sha256": "c09cc5cbf23408d1107d3fcdfd41b10602613770110765aedf7cd365f0df43b5",
+  "all_patch_renames": 102,
+  "base_sha": "1123a5993eac31493bd691fc106ceb2062ebaaec",
+  "before_codeowners_sha256": "dfdf4957705a75dc1a0458ef5e7e7c6b6a2576ff750e6a4a5d3ebc5a479cc66d",
+  "expected_new_team": "@bitwarden/team-data-insights-and-reporting-dev",
+  "expected_old_team": "@bitwarden/team-tools-dev",
+  "histories": {
+    "after": {
+      "commit_count": 51,
+      "pr_linked_count": 47,
+      "records": [
+        {
+          "date": "2025-05-07T21:07:14Z",
+          "pr": 14298,
+          "sha": "8ecb32f30ff1b695e0f036dcabce2167a94f8b46",
+          "title": "[CL-333] Icon Refresh Feature Branch (#14298)"
+        },
+        {
+          "date": "2025-05-08T16:16:11Z",
+          "pr": 14625,
+          "sha": "78dafe2265e3d92937f9e7db168d62576526a13b",
+          "title": "Cleanup migrated components (#14625)"
+        },
+        {
+          "date": "2025-05-13T14:07:38Z",
+          "pr": 14650,
+          "sha": "0b0397c3f05d94e1ea8cbedd97b7706fba968e9b",
+          "title": "fix(enums-eslint): Enum Rule for ESLint (#14650)"
+        },
+        {
+          "date": "2025-05-15T14:44:07Z",
+          "pr": 14797,
+          "sha": "ac49e594c1957734bfc14b5d0c04738d501d65f9",
+          "title": "Add standalone false to all non migrated (#14797)"
+        },
+        {
+          "date": "2025-06-04T14:04:33Z",
+          "pr": 14590,
+          "sha": "032fedf308ec251f17632d7d08c4daf6f41a4b1d",
+          "title": "[PM-21040] Update Ciphers after editing in Reports (#14590)"
+        },
+        {
+          "date": "2025-07-17T10:35:51Z",
+          "pr": 14850,
+          "sha": "c4888efca77222e35b36e6041481f1d08ef89128",
+          "title": "[PM-21804] Migrate vault loose components (#14850)"
+        },
+        {
+          "date": "2025-08-19T19:15:41Z",
+          "pr": 15750,
+          "sha": "4449d8baf6506ffc82f1609ffd7c83e5cb94631a",
+          "title": "[CL-689][CL-799] Fix Icon button a11y errors (#15750)"
+        },
+        {
+          "date": "2025-08-21T16:35:59Z",
+          "pr": 16020,
+          "sha": "805b6fe7aaf812fad0f9063023011223c01a85fc",
+          "title": "[CL-573] Move all svg icons to new libs/assets (#16020)"
+        },
+        {
+          "date": "2025-09-09T20:39:24Z",
+          "pr": 16227,
+          "sha": "30af3d7035c2c2183c0e591bbf520750f95af658",
+          "title": "[PM-24985][PM-24986][PM-25211][PM-24987] - [Vault] Migrate components to use Premium badge component (#16227)"
+        },
+        {
+          "date": "2025-09-10T21:23:53Z",
+          "pr": 16219,
+          "sha": "926f587ea2e2a449aeb11e85e623356a596f96d3",
+          "title": "[CL-581] Update svgs to new designs and make responsive (#16219)"
+        },
+        {
+          "date": "2025-09-22T14:06:58Z",
+          "pr": 16353,
+          "sha": "85311090810e3eed4e0309a2276544ec754bef55",
+          "title": "[PM-25417] DIRT API Service Refactor (ADR-0005) (#16353)"
+        },
+        {
+          "date": "2025-10-07T15:40:57Z",
+          "pr": 16463,
+          "sha": "9f0a565241869d7a2a135347af99ff042db84d56",
+          "title": "[PM-25682] Migrate CipherView and subviews to be TS strict compliant (#16463)"
+        },
+        {
+          "date": "2025-10-08T17:04:39Z",
+          "pr": 14588,
+          "sha": "a4a53e27d4f71674f8930c47417b5ee37e449480",
+          "title": "[CL-616][CL-670] first pass at responsive updates to vault (#14588)"
+        },
+        {
+          "date": "2025-10-23T16:54:52Z",
+          "pr": 16987,
+          "sha": "81e9015b5b7ecbc38b50bbf3a0fb3420ea5c402d",
+          "title": "Adding include my items to the services and reports (#16987)"
+        },
+        {
+          "date": "2025-10-24T16:17:58Z",
+          "pr": 16939,
+          "sha": "fc26a21b85c6c61231c7efefb069208cb27635c0",
+          "title": "DIRT - Prefer signal & change detection (#16939)"
+        },
+        {
+          "date": "2025-10-27T15:14:42Z",
+          "pr": 16952,
+          "sha": "f452f39f3c1b6204876602e4212788241cea0c3d",
+          "title": "[CL-847] Card consolidation (#16952)"
+        },
+        {
+          "date": "2025-10-29T15:58:38Z",
+          "pr": 16823,
+          "sha": "687f3d144cc0c236b826f26b22719dece8c14caf",
+          "title": "[PM-17577] Inactive two-step login report - check hostname and domain name (#16823)"
+        },
+        {
+          "date": "2025-11-03T16:16:01Z",
+          "pr": 16911,
+          "sha": "e1e3966cc21d779c010a83f5fbb07fe07e38f3e8",
+          "title": "[PM-23713] premium badge interaction (#16911)"
+        },
+        {
+          "date": "2025-11-06T15:45:36Z",
+          "pr": 17189,
+          "sha": "1cc08c59680d1efe98f447fa6477e65568cb6d40",
+          "title": "[PM-26984] Use medium instead of semibold or bold (#17189)"
+        },
+        {
+          "date": "2025-11-20T18:52:23Z",
+          "pr": 17434,
+          "sha": "43897df9ed783f5a38acdc6c14d45283a48ba968",
+          "title": "[PM-27287] Items in My Items should show in Inactive 2FA report (#17434)"
+        },
+        {
+          "date": "2025-11-25T10:11:21Z",
+          "pr": 15791,
+          "sha": "e6d6f8d266d325289229b8ce139919aa38ba042f",
+          "title": "Migrate org reports to standalone and remove from loose components (#15791)"
+        },
+        {
+          "date": "2025-12-17T15:23:33Z",
+          "pr": 18002,
+          "sha": "b0fcd92f35515144d04da0b8381b3f876c9b386e",
+          "title": "add padding between name and icons in health reports (#18002)"
+        },
+        {
+          "date": "2025-12-26T22:28:10Z",
+          "pr": 18058,
+          "sha": "5ddfd91a14c09f3fa9bdbe6db60585573767f44a",
+          "title": "correct virtual scroll rowSize for password reports (#18058)"
+        },
+        {
+          "date": "2026-01-13T20:28:06Z",
+          "pr": 18325,
+          "sha": "4ea32e7a93d202c54a9945443ae53837f91237e5",
+          "title": "[PM-25228] Remove unknown elements from spec files (#18325)"
+        },
+        {
+          "date": "2026-01-15T15:17:00Z",
+          "pr": 17919,
+          "sha": "44bdaf71b33c54172f5f2d9dca1d265c6739cbc9",
+          "title": "Desktop/pm 18769/migrate vault filters (#17919)"
+        },
+        {
+          "date": "2026-01-21T17:25:53Z",
+          "pr": 18399,
+          "sha": "5a4ac17e03c50d059348b03c5ead8ab0309bf8d4",
+          "title": "[PM-30250] Prevent over scrolling on Inactive 2FA and Unsecure Website reports (#18399)"
+        },
+        {
+          "date": "2026-01-26T15:24:20Z",
+          "pr": 18368,
+          "sha": "2aea6406a57de9b4e6a6d2bd80e75d04bb12389a",
+          "title": "[PM-29501] Use bit-chip-select when there are too many orgs (#18368)"
+        },
+        {
+          "date": "2026-01-26T19:52:30Z",
+          "pr": 18489,
+          "sha": "8b9211ea620f5cfcbe908fed31e390ae06268d1e",
+          "title": "do not show badge/button in AC (#18489)"
+        },
+        {
+          "date": "2026-01-28T16:36:27Z",
+          "pr": 18584,
+          "sha": "5dc49f21d2e5aa145fe9611222b4c0c5659db1c5",
+          "title": "[CL-82] rename `bit-icon` to `bit-svg`; create new `bit-icon` component for font icons (#18584)"
+        },
+        {
+          "date": "2026-01-28T20:47:38Z",
+          "pr": 18416,
+          "sha": "d40e9a36443f49bbd90389539ee3f190f53b56a4",
+          "title": "[PM-30918] Migrate DIRT components to new Angular control flow syntax (#18416)"
+        },
+        {
+          "date": "2026-01-28T22:20:17Z",
+          "pr": 18631,
+          "sha": "2109092a9443d178e3c1be2a74819b85a390c0d4",
+          "title": "[PM-31354] Fix Reports page loading (#18631)"
+        },
+        {
+          "date": "2026-02-02T20:49:11Z",
+          "pr": 18719,
+          "sha": "8ceb28f2b93b6eeaa8e8a0db6a11c05d61d61bd8",
+          "title": "default weakness sort to descending order (PM-31164) (#18719)"
+        },
+        {
+          "date": "2026-02-05T17:42:22Z",
+          "pr": 18662,
+          "sha": "0b8d61a1b8b6c6227640ea75d3ebe4d34e087c2c",
+          "title": "[PM-31423] updated isAdminConsoleAction check in cipher-report (#18662)"
+        },
+        {
+          "date": "2026-02-06T18:18:20Z",
+          "pr": 18375,
+          "sha": "b6ff3a110e0f505c5f676450ea3541b11d1d06e1",
+          "title": "[PM-18855] Add edit Cipher permission check to Cipher Authorization Service and use in Vault dialog (#18375)"
+        },
+        {
+          "date": "2026-02-12T17:01:30Z",
+          "pr": 18769,
+          "sha": "7342bf672fe4551b83182ca9af188db58e01ea14",
+          "title": "[PM-31161] reports scroll bug (#18769)"
+        },
+        {
+          "date": "2026-02-18T04:31:08Z",
+          "pr": 18708,
+          "sha": "03340aee7102f4c296b0e83e732bff7d7f14cf1c",
+          "title": "[PM-31163] stabilize table column widths with fixed layout (#18708)"
+        },
+        {
+          "date": "2026-02-18T16:00:36Z",
+          "pr": 18956,
+          "sha": "1ef8f257b0120fbef5f22e1828e2facea9a9913e",
+          "title": "[PM-31803] Fix Password Manager reports not displaying items with limited collection access (#18956)"
+        },
+        {
+          "date": "2026-02-20T01:43:51Z",
+          "pr": 18706,
+          "sha": "36635741138bb5235083724112d653ed8850154a",
+          "title": "[PM-31496] Reports back button placement (#18706)"
+        },
+        {
+          "date": "2026-02-24T17:45:28Z",
+          "pr": 19153,
+          "sha": "bc14512a02482514366612d9038915e765eec8e0",
+          "title": "Revert \"[PM-31803] Fix Password Manager reports not displaying items with limited collection access (#18956)\" (#19153)"
+        },
+        {
+          "date": "2026-03-09T17:26:42Z",
+          "pr": 19201,
+          "sha": "5e90565a79a02e65d3e715de7a9dd9fd8d0d5958",
+          "title": "[CL-1063] add enforce-readonly-angular-properties ESLint rule (#19201)"
+        },
+        {
+          "date": "2026-03-11T18:09:09Z",
+          "pr": 19403,
+          "sha": "4b25324c44cbeb992bb43880bf8b6e1a2b7fa393",
+          "title": "pm-33009: Add email validation to data breach report (#19403)"
+        },
+        {
+          "date": "2026-03-18T14:40:08Z",
+          "pr": 19627,
+          "sha": "c60d9edcf5e3071b9edca5a3244ee72585837c64",
+          "title": "fix(reports): skip malformed login ciphers and guard splice index in weak password report (#19627)"
+        },
+        {
+          "date": "2026-03-25T15:55:06Z",
+          "pr": 19061,
+          "sha": "d763590ce641a23c9fd4533ddda2523ceceafa70",
+          "title": "[CL-1023][CL-1031] Design system refresh: Milestone 1 (#19061)"
+        },
+        {
+          "date": "2026-04-03T17:45:48Z",
+          "pr": 19874,
+          "sha": "4c3cf00a5ac042ddee5f6f208d3be3a91d95e416",
+          "title": "[PM-33928] Fix: Can view MyItems Passwords in Org Vault Health Reports (#19874)"
+        },
+        {
+          "date": "2026-04-10T19:19:31Z",
+          "pr": 20083,
+          "sha": "72e385671715479dd83e9bbe14f604565bd0f7e9",
+          "title": "PM-34863 Org name has a contrast issue (#20083)"
+        },
+        {
+          "date": "2026-04-16T14:23:37Z",
+          "pr": 19341,
+          "sha": "a4c457ffd93e8897cc717f1a17530dc92d06eabf",
+          "title": "Feature/pm 28167 desktop migrate vault drawers UI shared lib 2 (#19341)"
+        },
+        {
+          "date": "2026-04-30T20:23:28Z",
+          "pr": 20181,
+          "sha": "e57b460be36e47f98c92448948c7285bb2020f33",
+          "title": "[PM-34890] Update icon usage to bit icon (#20181)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=apps%2Fweb%2Fsrc%2Fapp%2Fdirt%2Freports%2F&since=2025-05-06T08%3A32%3A49Z&until=2026-05-06T08%3A32%3A48Z&per_page=100",
+      "truncated": false
+    },
+    "before": {
+      "commit_count": 41,
+      "pr_linked_count": 41,
+      "records": [
+        {
+          "date": "2024-05-16T22:21:00Z",
+          "pr": 9133,
+          "sha": "ee690cd1efbe758d7dd60bb6695f2fa5e16b8b6c",
+          "title": "Use account service for getting account profile data. (#9133)"
+        },
+        {
+          "date": "2024-06-18T21:13:55Z",
+          "pr": 9335,
+          "sha": "1a37d025564e4d47a119069d0df7b3fe648f7c7b",
+          "title": "[AC-2504] Add new members access report card (#9335)"
+        },
+        {
+          "date": "2024-07-11T16:11:05Z",
+          "pr": 10011,
+          "sha": "ea76760782543b394434f95c4695960a14a1ae3f",
+          "title": "[AC-2508][AC-2511] member access report view and export logic (#10011)"
+        },
+        {
+          "date": "2024-07-15T10:26:11Z",
+          "pr": 9952,
+          "sha": "fb311bfb4b9beca787faa884434a3410513fe733",
+          "title": "[PM-4964] migrate exposed passwords report components (#9952)"
+        },
+        {
+          "date": "2024-07-16T10:59:04Z",
+          "pr": 10094,
+          "sha": "d852a5ff07b6a9d9a9a18a809fc7da3fbbf68160",
+          "title": "[PM-97089] [Bootstrap] Convert remaining sr-only to tw-sr-only (#10094)"
+        },
+        {
+          "date": "2024-07-18T21:04:50Z",
+          "pr": 10046,
+          "sha": "9dd80c92c86a0738306c70813bd1fea0451ec0f9",
+          "title": "[PM-4968] Migrate unsecured websites report components (#10046)"
+        },
+        {
+          "date": "2024-07-19T13:18:30Z",
+          "pr": 10038,
+          "sha": "bc1ee0a16907b4c344974ee3f3607223d9267985",
+          "title": "Modifying the unsecured reports to check for proper permissions (#10038)"
+        },
+        {
+          "date": "2024-07-19T15:27:23Z",
+          "pr": 10185,
+          "sha": "087440989efdfdbe0857780b2739a77c6dea9cf6",
+          "title": "Fixing the test for unsecured reports (#10185)"
+        },
+        {
+          "date": "2024-07-20T00:23:02Z",
+          "pr": 10045,
+          "sha": "b2d4d1bec21c789baf88578dc2a65a5cf013360c",
+          "title": "[PM-4963] Migrate breach report components (#10045)"
+        },
+        {
+          "date": "2024-07-25T21:00:29Z",
+          "pr": 9595,
+          "sha": "ad26f0890a1d6c80a852a3fde3746675d77e466e",
+          "title": "[PM-4348] Migrate AuthGuards to functions (#9595)"
+        },
+        {
+          "date": "2024-08-14T19:53:30Z",
+          "pr": 10516,
+          "sha": "6fd184728f05b41f7a291cb422b3d419ef8fcd40",
+          "title": "add missing header to exposed passwords report (#10516)"
+        },
+        {
+          "date": "2024-08-16T00:16:38Z",
+          "pr": 10524,
+          "sha": "92f87dad9a81362b57cde2ede98afbf80556f75b",
+          "title": "[PM-4962] remove all bootstrap classes from reports. add missing header column (#10524)"
+        },
+        {
+          "date": "2024-08-16T07:28:29Z",
+          "pr": 10288,
+          "sha": "604e22334ad8bea7b7a9090b7498cc5cd4a0ceb1",
+          "title": "[BEEEP] [PM-10132] Upgrade storybook to v8 (#10288)"
+        },
+        {
+          "date": "2024-08-19T10:30:46Z",
+          "pr": 10545,
+          "sha": "ef281099b88c268cc4001080b09853d9ec91002a",
+          "title": "migrate report-layout component (#10545)"
+        },
+        {
+          "date": "2024-09-18T16:53:04Z",
+          "pr": 11029,
+          "sha": "a674f698a270a1fbb7fa8b32db17a32266e8965b",
+          "title": "[PM-12067] Add sorting to exposed passwords report (#11029)"
+        },
+        {
+          "date": "2024-09-20T14:04:48Z",
+          "pr": 9878,
+          "sha": "c276d5dfa57425a9477255c5d777c2e61ddb2e6a",
+          "title": "[PM-281] A11y visual distinction required for page links (#9878)"
+        },
+        {
+          "date": "2024-09-26T23:38:18Z",
+          "pr": 11027,
+          "sha": "9eeaf0a61f534dc404cfc10704b80a018f0ef391",
+          "title": "[PM-12066] Add sorting to weak password report (#11027)"
+        },
+        {
+          "date": "2024-09-27T17:03:22Z",
+          "pr": 11293,
+          "sha": "20c253e87b6ab437e663da0d3e044c88b18ab926",
+          "title": "[PM-12066] Add missing column headers to reports (#11293)"
+        },
+        {
+          "date": "2024-10-08T14:14:39Z",
+          "pr": 11278,
+          "sha": "7c72795d1cb9fb3ad2797636a396a93718d3c86c",
+          "title": "[PM-12747] Move CollectionService and models to AC Team (#11278)"
+        },
+        {
+          "date": "2024-10-10T18:29:34Z",
+          "pr": 11483,
+          "sha": "14d71e74089b3ebfeea95d2d58dd382dcbd23125",
+          "title": "Add numeric score to the result row, as bitSortable does not support sorting by an object/object-ket (#11483)"
+        },
+        {
+          "date": "2024-12-09T19:58:50Z",
+          "pr": 12235,
+          "sha": "9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+          "title": "Typescript-strict-plugin (#12235)"
+        },
+        {
+          "date": "2025-01-07T15:25:26Z",
+          "pr": 12273,
+          "sha": "91d696307445c81b6c2441de7a75fba9a426cd31",
+          "title": "[PM-14366] Deprecated active user state from billing state service (#12273)"
+        },
+        {
+          "date": "2025-01-22T20:20:25Z",
+          "pr": 12839,
+          "sha": "a949f793ed8ee3dab99756146b87859920ff73f9",
+          "title": "[PM-15506] Implement vNextOrganizationService (#12839)"
+        },
+        {
+          "date": "2025-01-27T21:25:40Z",
+          "pr": 12359,
+          "sha": "582beaf70662a7708e3545d50b43876b02a884bc",
+          "title": "[PM-13404] Weak Passwords Report - Sort by password weakness (#12359)"
+        },
+        {
+          "date": "2025-01-28T18:17:00Z",
+          "pr": 13105,
+          "sha": "26a0594056134ae86bca4dbb70a7f5b929415ce1",
+          "title": "[PM-17655] Billing Code Ownership Updates (#13105)"
+        },
+        {
+          "date": "2025-02-05T14:31:37Z",
+          "pr": 13263,
+          "sha": "9cbe295c74c3a2e81b04e6a244602b6b749addcc",
+          "title": "Revert \"[PM-13404] Weak Passwords Report - Sort by password weakness (#12359)\" (#13263)"
+        },
+        {
+          "date": "2025-02-12T13:53:31Z",
+          "pr": 12814,
+          "sha": "a2945203f49933ead622f8e96ad8335ee8217f32",
+          "title": "[PM-12047] Remove usage of ActiveUserState from cipher.service (#12814)"
+        },
+        {
+          "date": "2025-02-20T02:06:43Z",
+          "pr": 13439,
+          "sha": "2425cda4d776527c5b27181cad724becc7ab3ddb",
+          "title": "[PM-18356] Reconcile ownership of import export and reporting (#13439)"
+        },
+        {
+          "date": "2025-02-21T13:45:30Z",
+          "pr": 12383,
+          "sha": "1d0422788484a828abe0da42c2c353b6a1f2a796",
+          "title": "[PM-12985] - Updating reports to use new modal for view/edit cipher (#12383)"
+        },
+        {
+          "date": "2025-02-25T22:02:19Z",
+          "pr": 13556,
+          "sha": "cec117459bcb024520e420c255df6df594484845",
+          "title": "[PM-18599] Forbid unknown property and element in tests (#13556)"
+        },
+        {
+          "date": "2025-02-27T19:55:24Z",
+          "pr": 13610,
+          "sha": "407368b3ea0ba3774c0e73d20af6599c1913d2cd",
+          "title": "[PM-18706] Added permission check for organizational inactive 2fa report (#13610)"
+        },
+        {
+          "date": "2025-02-27T19:55:38Z",
+          "pr": 13611,
+          "sha": "eaeea195e4ec8df9b6c02e93cea2f40584b80a9a",
+          "title": "Added permission check for organizational unsecure website (#13611)"
+        },
+        {
+          "date": "2025-02-27T20:49:13Z",
+          "pr": 13612,
+          "sha": "0b6828a72ba5aa84fc41f2ac9d04b7de08a5d08c",
+          "title": "[PM-18456] Display unassigned items in reports (#13612)"
+        },
+        {
+          "date": "2025-03-10T13:33:08Z",
+          "pr": 13463,
+          "sha": "ef72f513b17696ec4c749288144f551d9ef291bc",
+          "title": "eslint: report unused disable directives (#13463)"
+        },
+        {
+          "date": "2025-03-10T19:52:52Z",
+          "pr": 13725,
+          "sha": "a877450e0a18916e7a9010b611b66488ee7572ae",
+          "title": "PM-2630 virtual scroll on tables (#13725)"
+        },
+        {
+          "date": "2025-03-20T01:20:07Z",
+          "pr": 13644,
+          "sha": "886f85df48afb8e08e8682509e7910639bd9154f",
+          "title": "[CL-605] Fix whitespace between elements (#13644)"
+        },
+        {
+          "date": "2025-04-02T19:08:38Z",
+          "pr": 14074,
+          "sha": "76cb3fd38dae03dde282747c37fe5181624f89aa",
+          "title": "[CL-623] export CDK dialog deps from `libs/components` (#14074)"
+        },
+        {
+          "date": "2025-04-04T18:58:28Z",
+          "pr": 14102,
+          "sha": "b385dd430ecc2126bea05dc8c165fedff0f9be57",
+          "title": "[PM-17500] Migrate reports-layout to use tailwind (#14102)"
+        },
+        {
+          "date": "2025-04-10T19:35:22Z",
+          "pr": 14195,
+          "sha": "3ad6a98e2183fdf8f6b48836b23e353ca34d880c",
+          "title": "PM-13404 sort fix (#14195)"
+        },
+        {
+          "date": "2025-04-17T14:08:39Z",
+          "pr": 14203,
+          "sha": "6c930deefee42365b256e558f7d3cdaa43b88aee",
+          "title": "Migrate bootstrap styling to use tailwind while keeping the same styling (#14203)"
+        },
+        {
+          "date": "2025-05-01T13:03:32Z",
+          "pr": 14401,
+          "sha": "e596584e87109a1e96c311d550e06ff48ee88562",
+          "title": "[PM-20505] Weak-passwords-report: refresh rows after edit (#14401)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=apps%2Fweb%2Fsrc%2Fapp%2Ftools%2Freports%2F&since=2024-05-06T08%3A32%3A48Z&until=2025-05-06T08%3A32%3A47Z&per_page=100",
+      "truncated": false
+    }
+  },
+  "id": "BW14571",
+  "merge_sha": "5166a9c7304f0b6274751ad267124f00d541e466",
+  "merged_at": "2025-05-06T08:32:48Z",
+  "migration_patch_sha256": "4b493a75e4a4f2b76777cc4a6d04c62416484b989ffa7a867615cd1d7772e2b7",
+  "migration_pr": 14571,
+  "new_owner": [
+    "@bitwarden/team-data-insights-and-reporting-dev"
+  ],
+  "new_prefix": "apps/web/src/app/dirt/reports/",
+  "old_owner": [
+    "@bitwarden/team-tools-dev"
+  ],
+  "old_prefix": "apps/web/src/app/tools/reports/",
+  "post_days": 365,
+  "pre_days": 365,
+  "rename_pairs": [
+    {
+      "new": "apps/web/src/app/dirt/reports/icons/report-breach.icon.ts",
+      "old": "apps/web/src/app/tools/reports/icons/report-breach.icon.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/icons/report-exposed-passwords.icon.ts",
+      "old": "apps/web/src/app/tools/reports/icons/report-exposed-passwords.icon.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/icons/report-inactive-two-factor.icon.ts",
+      "old": "apps/web/src/app/tools/reports/icons/report-inactive-two-factor.icon.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/icons/report-member-access.icon.ts",
+      "old": "apps/web/src/app/tools/reports/icons/report-member-access.icon.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/icons/report-reused-passwords.icon.ts",
+      "old": "apps/web/src/app/tools/reports/icons/report-reused-passwords.icon.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/icons/report-unsecured-websites.icon.ts",
+      "old": "apps/web/src/app/tools/reports/icons/report-unsecured-websites.icon.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/icons/report-weak-passwords.icon.ts",
+      "old": "apps/web/src/app/tools/reports/icons/report-weak-passwords.icon.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/index.ts",
+      "old": "apps/web/src/app/tools/reports/index.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/breach-report.component.html",
+      "old": "apps/web/src/app/tools/reports/pages/breach-report.component.html"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/breach-report.component.spec.ts",
+      "old": "apps/web/src/app/tools/reports/pages/breach-report.component.spec.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/breach-report.component.ts",
+      "old": "apps/web/src/app/tools/reports/pages/breach-report.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/cipher-report.component.ts",
+      "old": "apps/web/src/app/tools/reports/pages/cipher-report.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/exposed-passwords-report.component.html",
+      "old": "apps/web/src/app/tools/reports/pages/exposed-passwords-report.component.html"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/exposed-passwords-report.component.spec.ts",
+      "old": "apps/web/src/app/tools/reports/pages/exposed-passwords-report.component.spec.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/exposed-passwords-report.component.ts",
+      "old": "apps/web/src/app/tools/reports/pages/exposed-passwords-report.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/inactive-two-factor-report.component.html",
+      "old": "apps/web/src/app/tools/reports/pages/inactive-two-factor-report.component.html"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/inactive-two-factor-report.component.spec.ts",
+      "old": "apps/web/src/app/tools/reports/pages/inactive-two-factor-report.component.spec.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/inactive-two-factor-report.component.ts",
+      "old": "apps/web/src/app/tools/reports/pages/inactive-two-factor-report.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/organizations/exposed-passwords-report.component.ts",
+      "old": "apps/web/src/app/tools/reports/pages/organizations/exposed-passwords-report.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/organizations/inactive-two-factor-report.component.ts",
+      "old": "apps/web/src/app/tools/reports/pages/organizations/inactive-two-factor-report.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/organizations/reused-passwords-report.component.ts",
+      "old": "apps/web/src/app/tools/reports/pages/organizations/reused-passwords-report.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/organizations/unsecured-websites-report.component.ts",
+      "old": "apps/web/src/app/tools/reports/pages/organizations/unsecured-websites-report.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/organizations/weak-passwords-report.component.ts",
+      "old": "apps/web/src/app/tools/reports/pages/organizations/weak-passwords-report.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/reports-ciphers.mock.ts",
+      "old": "apps/web/src/app/tools/reports/pages/reports-ciphers.mock.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/reports-home.component.html",
+      "old": "apps/web/src/app/tools/reports/pages/reports-home.component.html"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/reports-home.component.ts",
+      "old": "apps/web/src/app/tools/reports/pages/reports-home.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/reused-passwords-report.component.html",
+      "old": "apps/web/src/app/tools/reports/pages/reused-passwords-report.component.html"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/reused-passwords-report.component.spec.ts",
+      "old": "apps/web/src/app/tools/reports/pages/reused-passwords-report.component.spec.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/reused-passwords-report.component.ts",
+      "old": "apps/web/src/app/tools/reports/pages/reused-passwords-report.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/unsecured-websites-report.component.html",
+      "old": "apps/web/src/app/tools/reports/pages/unsecured-websites-report.component.html"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/unsecured-websites-report.component.spec.ts",
+      "old": "apps/web/src/app/tools/reports/pages/unsecured-websites-report.component.spec.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/unsecured-websites-report.component.ts",
+      "old": "apps/web/src/app/tools/reports/pages/unsecured-websites-report.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/weak-passwords-report.component.html",
+      "old": "apps/web/src/app/tools/reports/pages/weak-passwords-report.component.html"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/weak-passwords-report.component.spec.ts",
+      "old": "apps/web/src/app/tools/reports/pages/weak-passwords-report.component.spec.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/pages/weak-passwords-report.component.ts",
+      "old": "apps/web/src/app/tools/reports/pages/weak-passwords-report.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/report-utils.spec.ts",
+      "old": "apps/web/src/app/tools/reports/report-utils.spec.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/report-utils.ts",
+      "old": "apps/web/src/app/tools/reports/report-utils.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/reports-layout.component.html",
+      "old": "apps/web/src/app/tools/reports/reports-layout.component.html"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/reports-layout.component.ts",
+      "old": "apps/web/src/app/tools/reports/reports-layout.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/reports-routing.module.ts",
+      "old": "apps/web/src/app/tools/reports/reports-routing.module.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/reports.module.ts",
+      "old": "apps/web/src/app/tools/reports/reports.module.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/reports.ts",
+      "old": "apps/web/src/app/tools/reports/reports.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/shared/index.ts",
+      "old": "apps/web/src/app/tools/reports/shared/index.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/shared/models/report-entry.ts",
+      "old": "apps/web/src/app/tools/reports/shared/models/report-entry.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/shared/models/report-variant.ts",
+      "old": "apps/web/src/app/tools/reports/shared/models/report-variant.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/shared/report-card/report-card.component.html",
+      "old": "apps/web/src/app/tools/reports/shared/report-card/report-card.component.html"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/shared/report-card/report-card.component.ts",
+      "old": "apps/web/src/app/tools/reports/shared/report-card/report-card.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/shared/report-card/report-card.stories.ts",
+      "old": "apps/web/src/app/tools/reports/shared/report-card/report-card.stories.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/shared/report-list/report-list.component.html",
+      "old": "apps/web/src/app/tools/reports/shared/report-list/report-list.component.html"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/shared/report-list/report-list.component.ts",
+      "old": "apps/web/src/app/tools/reports/shared/report-list/report-list.component.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/shared/report-list/report-list.stories.ts",
+      "old": "apps/web/src/app/tools/reports/shared/report-list/report-list.stories.ts"
+    },
+    {
+      "new": "apps/web/src/app/dirt/reports/shared/reports-shared.module.ts",
+      "old": "apps/web/src/app/tools/reports/shared/reports-shared.module.ts"
+    }
+  ],
+  "repo": "bitwarden/clients",
+  "valid": true
+}

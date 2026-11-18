@@ -1,0 +1,40 @@
+{
+  "key": "5a292da0ff94a02ffc",
+  "args": {
+    "crate": "tokio-stream",
+    "version": "0.1.17",
+    "id": "395c9233fa65661f",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0931,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:4:5\n  |\n4 | use tokio::sync::watch;\n  |     ^^^^^ use of unresolved module or unlinked crate `tokio`\n  |\n  = help: if you wanted to use a crate named `tokio`, use `cargo add tokio` to add it to your `Cargo.toml`\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:1:3\n  |\n1 | #[tokio::main]\n  |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:2:1\n  |\n2 | async fn main() {\n  | ^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_tokio_stream_consumer` (bin \"n05_tokio_stream_consumer\") due to 3 previous errors\n",
+  "code_sha256": "6f4ef414b55e98b60c8a417bdadf092159c5b74f19ab425676e47774fe50936d",
+  "manifest_sha256": "e8b584b96d260651c77a36ab8d6cddf72bb8d196079ffeb95d9505c05bdf8858",
+  "log_file": "holdout/results/check_logs/5a292da0ff94a02ffc.txt.gz"
+}

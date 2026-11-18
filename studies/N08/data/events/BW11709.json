@@ -1,0 +1,281 @@
+{
+  "after_codeowners_sha256": "d832904e213fb8e1cb2a647e75d8622e12696c3935aee655edea8d40be6cac9c",
+  "all_patch_renames": 8,
+  "base_sha": "c780cbc77eb4dabeaeb32bd256b0c293f6083d74",
+  "before_codeowners_sha256": "6cb487b82d64ff07717898d0e1120e3ed1d8b12062be954a91b37bfa129e0e14",
+  "expected_new_team": "@bitwarden/team-key-management-dev",
+  "expected_old_team": "@bitwarden/team-auth-dev",
+  "histories": {
+    "after": {
+      "commit_count": 17,
+      "pr_linked_count": 17,
+      "records": [
+        {
+          "date": "2024-10-30T21:54:39Z",
+          "pr": 11779,
+          "sha": "4de7cb8012a0716d0c834d279a04fc4fd62c5112",
+          "title": "BEEEP - Auth AccountService Improvements (#11779)"
+        },
+        {
+          "date": "2024-12-09T19:58:50Z",
+          "pr": 12235,
+          "sha": "9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+          "title": "Typescript-strict-plugin (#12235)"
+        },
+        {
+          "date": "2025-01-23T21:03:17Z",
+          "pr": 12935,
+          "sha": "382a2a0f24ed1ec4187fb74cba8d910347ef5e48",
+          "title": "Ignore more bad imports (#12935)"
+        },
+        {
+          "date": "2025-02-05T16:39:11Z",
+          "pr": 13220,
+          "sha": "2f8a7a95bdec0cd38296d36f16779ca7b9280667",
+          "title": "[PM-15994] Move encrypt service to km ownership (#13220)"
+        },
+        {
+          "date": "2025-02-20T17:45:37Z",
+          "pr": 13121,
+          "sha": "3924bc9c84f768e03f24f74a69e0ce6f90410d20",
+          "title": "[PM-14445] TS strict for Key Management, Keys and Lock component (#13121)"
+        },
+        {
+          "date": "2025-03-17T17:02:44Z",
+          "pr": 13194,
+          "sha": "a11536a4249711efce20777de89e9e3a71203c6c",
+          "title": "[PM-17668] Move DeviceTrustService to KM ownership (#13194)"
+        },
+        {
+          "date": "2025-03-24T19:41:21Z",
+          "pr": 12646,
+          "sha": "8c6a33d7b87a59d341a02728aba97a32d8b3801a",
+          "title": "[PM-16603] Implement userkey rotation v2 (#12646)"
+        },
+        {
+          "date": "2025-03-31T16:16:11Z",
+          "pr": 13576,
+          "sha": "6849d3aa98d6b42b5069bc2fdd9a4ef9f9e02ea1",
+          "title": "[PM-2199] Implement userkey rotation for all TDE devices (#13576)"
+        },
+        {
+          "date": "2025-04-07T11:41:19Z",
+          "pr": 12655,
+          "sha": "1c44640ea582eb2501a5b8440c70dc16b3207796",
+          "title": "[PM-16541] Key rotation & enrollment trust for emergency access & organizations (#12655)"
+        },
+        {
+          "date": "2025-04-22T13:56:39Z",
+          "pr": 14080,
+          "sha": "e231286f37c6f600f6129c24d96155295967b8c0",
+          "title": "[PM-19731] Refactor encrypt service to expose key wrapping (#14080)"
+        },
+        {
+          "date": "2025-05-20T19:25:14Z",
+          "pr": 14539,
+          "sha": "d7c936e1ea07338aafe15b6e055c28f5589cf383",
+          "title": "[PM-17900] Add cose / xchacha20poly1305 migration on userkey rotation (#14539)"
+        },
+        {
+          "date": "2025-06-03T21:52:53Z",
+          "pr": 14945,
+          "sha": "9aaeacf2bedf4dfaae717bbdc6569fd510d46079",
+          "title": "[PM-22194] Remove key rotation v1 (#14945)"
+        },
+        {
+          "date": "2025-06-10T13:57:47Z",
+          "pr": 14900,
+          "sha": "45605e975298b04ab0947c4008f36378301b99a9",
+          "title": "[PM-21944] Split up userkey rotation v2 and add tests (#14900)"
+        },
+        {
+          "date": "2025-07-16T15:15:24Z",
+          "pr": 15457,
+          "sha": "60855c734fe34ed98ae321777266ededdb571e6d",
+          "title": "[PM-17666] Move Encstring to KM ownership (#15457)"
+        },
+        {
+          "date": "2025-09-23T20:10:54Z",
+          "pr": 15748,
+          "sha": "4b73198ce51fa9e1f10ef70643065a31c1384887",
+          "title": "[PM-23230] Implement KDF Change Service (#15748)"
+        },
+        {
+          "date": "2025-10-10T21:04:47Z",
+          "pr": 14942,
+          "sha": "cc8bd71775c8131e4529e90e78c61b25c77ecba5",
+          "title": "[PM-21033/PM-22863] User Encryption v2 (#14942)"
+        },
+        {
+          "date": "2025-10-21T15:24:52Z",
+          "pr": 16820,
+          "sha": "5a307633bb8d1d7347d67bc3249d0393ca8ec23c",
+          "title": "[PM-26778] Make VaultTimeoutService use LogoutService (#16820)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=apps%2Fweb%2Fsrc%2Fapp%2Fkey-management%2Fkey-rotation%2F&since=2024-10-26T11%3A47%3A41Z&until=2025-10-26T11%3A47%3A40Z&per_page=100",
+      "truncated": false
+    },
+    "before": {
+      "commit_count": 19,
+      "pr_linked_count": 19,
+      "records": [
+        {
+          "date": "2023-12-22T15:31:24Z",
+          "pr": 6881,
+          "sha": "a62f8cd6522eec49d84d0f7c18cf315a8603edac",
+          "title": "[PM-3797] Client changes to use new key rotation process (#6881)"
+        },
+        {
+          "date": "2024-01-17T12:27:44Z",
+          "pr": 7531,
+          "sha": "160a636fa0463a365fb405dc2e0a057e578ca9f1",
+          "title": "Move key types to central location (#7531)"
+        },
+        {
+          "date": "2024-03-27T17:03:09Z",
+          "pr": 8325,
+          "sha": "62ad39e697a617b07a7beb21081ea4db301703a7",
+          "title": "Ps/pm 5965/better config polling (#8325)"
+        },
+        {
+          "date": "2024-04-01T20:02:58Z",
+          "pr": 7882,
+          "sha": "c202c93378f1d48e15767d74e902e4888210cf26",
+          "title": "Auth/PM-5268 - DeviceTrustCryptoService state provider migration (#7882)"
+        },
+        {
+          "date": "2024-04-04T14:22:41Z",
+          "pr": 7623,
+          "sha": "b1abfb0a5cd48c23affb1bd52e7d17e361037ff6",
+          "title": "[PM-5362]Create MP Service for state provider migration (#7623)"
+        },
+        {
+          "date": "2024-04-04T16:17:09Z",
+          "pr": 8617,
+          "sha": "775c8a1bbe2c71d7c1b66c3645766412bd505fa2",
+          "title": "Revert \"[PM-5362]Create MP Service for state provider migration (#7623)\" (#8617)"
+        },
+        {
+          "date": "2024-04-10T00:50:20Z",
+          "pr": 8619,
+          "sha": "9d10825dbd891c0f41fe1b4c4dd3ca4171f63be5",
+          "title": "[PM-5362] Add MP Service (attempt #2) (#8619)"
+        },
+        {
+          "date": "2024-04-24T16:54:54Z",
+          "pr": 8819,
+          "sha": "5dc83cd34c9a5e93f1fce7a614af6af11b3e383e",
+          "title": "PM-6787 - Rename DeviceTrustCryptoService to DeviceTrustService (#8819)"
+        },
+        {
+          "date": "2024-04-25T18:26:01Z",
+          "pr": 8715,
+          "sha": "1e4158fd878994093710db9d072f356a9fc8bdc8",
+          "title": "[PM-5735] Create kdf Service (#8715)"
+        },
+        {
+          "date": "2024-04-26T10:57:26Z",
+          "pr": 8612,
+          "sha": "14b2eb99a2baa74279036b412ad174b31bdc8ef8",
+          "title": "[PM-2282] Make feature flags type safe (#8612)"
+        },
+        {
+          "date": "2024-05-09T17:24:11Z",
+          "pr": 8816,
+          "sha": "a89e148804e20467c350e1f5b4ab91da9c58e65d",
+          "title": "[PM-7029] Remove key-rotation-feature-flag (#8816)"
+        },
+        {
+          "date": "2024-05-16T22:21:00Z",
+          "pr": 9133,
+          "sha": "ee690cd1efbe758d7dd60bb6695f2fa5e16b8b6c",
+          "title": "Use account service for getting account profile data. (#9133)"
+        },
+        {
+          "date": "2024-05-30T09:08:47Z",
+          "pr": 9235,
+          "sha": "6d0ef650941edd03445439a29cd5601d6fe705e0",
+          "title": "[PM-5938] Prevent vault coruption on key-rotation on desycned vault (#9235)"
+        },
+        {
+          "date": "2024-06-17T18:47:06Z",
+          "pr": 9517,
+          "sha": "1970abf723a147dc93d85fb300029f614830c1ff",
+          "title": "[PM-4370] Implement PRF key rotation (#9517)"
+        },
+        {
+          "date": "2024-06-20T15:36:24Z",
+          "pr": 9498,
+          "sha": "b3065546756c9671252782affa207e4c25d717e4",
+          "title": "[PM-6789] finish key rotation distribution and fix legacy user (#9498)"
+        },
+        {
+          "date": "2024-07-01T15:15:18Z",
+          "pr": 9722,
+          "sha": "9531d1c6557453f10a1d162b2e33ac67237f3500",
+          "title": "use user verification as a part of key rotation (#9722)"
+        },
+        {
+          "date": "2024-09-04T22:21:26Z",
+          "pr": 10785,
+          "sha": "834462318505e8dfb140499b2c4658283d97f1ee",
+          "title": "[PM-11450] Move organization-user domain to admin-console lib (#10785)"
+        },
+        {
+          "date": "2024-10-24T17:41:30Z",
+          "pr": 11358,
+          "sha": "b486fcc689bb6eedf61a1949887a66568f9b1b50",
+          "title": "[Pm-13097] Rename cryptoservice to keyservice and move it to km ownership (#11358)"
+        },
+        {
+          "date": "2024-10-24T17:54:39Z",
+          "pr": 11682,
+          "sha": "9264e6775ca73c3883c0f8363269006d30df5895",
+          "title": "Add logging for userkey / device trust rotation (#11682)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=apps%2Fweb%2Fsrc%2Fapp%2Fauth%2Fkey-rotation%2F&since=2023-10-27T11%3A47%3A40Z&until=2024-10-26T11%3A47%3A39Z&per_page=100",
+      "truncated": false
+    }
+  },
+  "id": "BW11709",
+  "merge_sha": "e83dca529b217632b1a52c9da79df9248549ac7e",
+  "merged_at": "2024-10-26T11:47:40Z",
+  "migration_patch_sha256": "0771dca06c65b9acd77aa8dc7901d9fa6a4dc2b5be811081abc7f93135db4267",
+  "migration_pr": 11709,
+  "new_owner": [
+    "@bitwarden/team-key-management-dev"
+  ],
+  "new_prefix": "apps/web/src/app/key-management/key-rotation/",
+  "old_owner": [
+    "@bitwarden/team-auth-dev"
+  ],
+  "old_prefix": "apps/web/src/app/auth/key-rotation/",
+  "post_days": 365,
+  "pre_days": 365,
+  "rename_pairs": [
+    {
+      "new": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts",
+      "old": "apps/web/src/app/auth/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "new": "apps/web/src/app/key-management/key-rotation/user-key-rotation-api.service.ts",
+      "old": "apps/web/src/app/auth/key-rotation/user-key-rotation-api.service.ts"
+    },
+    {
+      "new": "apps/web/src/app/key-management/key-rotation/user-key-rotation.module.ts",
+      "old": "apps/web/src/app/auth/key-rotation/user-key-rotation.module.ts"
+    },
+    {
+      "new": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+      "old": "apps/web/src/app/auth/key-rotation/user-key-rotation.service.spec.ts"
+    },
+    {
+      "new": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts",
+      "old": "apps/web/src/app/auth/key-rotation/user-key-rotation.service.ts"
+    }
+  ],
+  "repo": "bitwarden/clients",
+  "valid": true
+}

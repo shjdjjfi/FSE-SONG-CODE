@@ -1,0 +1,23 @@
+{
+  "key": "ced76181a2afb65b3c",
+  "args": {
+    "crate": "poem",
+    "version": "3.1.12",
+    "id": "4c965389a976c73d",
+    "profile": "candidate",
+    "features": [
+      "cookie"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 4.2541,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "1353988f6f96d7ed109a3bc8945242fc2e25554128e4f351655dd8fbc4f0afff",
+  "manifest_sha256": "90d6759a2c45ce7f378b9f6a2defaa08cbfd7439898e9d3461e24ef76f214134",
+  "log_file": "prospective/results/check_logs/ced76181a2afb65b3c.txt.gz"
+}

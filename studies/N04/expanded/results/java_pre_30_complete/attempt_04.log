@@ -1,0 +1,118 @@
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective settings
+[WARNING] 'proxies.proxy.id' must be unique but found duplicate proxy with id configured-network-route @ /tmp/n04-maven-settings-r00yii4g/settings.xml
+[WARNING] 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------
+[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-cli) @ Java-WebSocket ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.java_websocket.issues.Issue256Test
+[ERROR] Tests run: 20, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 6.478 s <<< FAILURE! -- in org.java_websocket.issues.Issue256Test
+[ERROR] org.java_websocket.issues.Issue256Test.runReconnectScenario0 -- Time elapsed: 5.019 s <<< ERROR!
+java.lang.Exception: test timed out after 5000 milliseconds
+	at java.base/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base/java.util.concurrent.locks.LockSupport.park(LockSupport.java:221)
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:788)
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1133)
+	at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:230)
+	at org.java_websocket.client.WebSocketClient.connectBlocking(WebSocketClient.java:301)
+	at org.java_websocket.client.WebSocketClient.reconnectBlocking(WebSocketClient.java:246)
+	at org.java_websocket.issues.Issue256Test.runTestScenarioReconnect(Issue256Test.java:124)
+	at org.java_websocket.issues.Issue256Test.runReconnectScenario0(Issue256Test.java:185)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+[ERROR] org.java_websocket.issues.Issue256Test.runReconnectScenario8 -- Time elapsed: 1.014 s <<< FAILURE!
+java.lang.AssertionError: Found 1 zombie thread(s) 
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.java_websocket.util.ThreadCheck.checkZombies(ThreadCheck.java:69)
+	at org.java_websocket.util.ThreadCheck.after(ThreadCheck.java:49)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:50)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+[INFO] Running org.java_websocket.issues.Issue580Test
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.065 s -- in org.java_websocket.issues.Issue580Test
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   Issue256Test.runReconnectScenario8 Found 1 zombie thread(s) 
+[ERROR] Errors: 
+[ERROR]   Issue256Test.runReconnectScenario0:185->runTestScenarioReconnect:124 »  test timed out after 5000 milliseconds
+[INFO] 
+[ERROR] Tests run: 40, Failures: 1, Errors: 1, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.801 s
+[INFO] Finished at: 2026-11-15T02:33:31+09:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test (default-cli) on project Java-WebSocket: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_pre/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endConnect(NioSocketImpl.java:531)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:604)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.java_websocket.client.WebSocketClient.run(WebSocketClient.java:395)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Exception in thread "WebSocketConnectReadThread-44" org.junit.internal.AssumptionViolatedException: got: <true>, expected: is <false>
+	at org.junit.Assume.assumeThat(Assume.java:95)
+	at org.java_websocket.issues.Issue256Test$2.onError(Issue256Test.java:113)
+	at org.java_websocket.client.WebSocketClient.onWebsocketError(WebSocketClient.java:536)
+	at org.java_websocket.client.WebSocketClient.run(WebSocketClient.java:412)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+WebSocketWriteThread-106
+    at java.base/jdk.internal.misc.Unsafe.park(Native Method)
+    at java.base/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+    at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+    at java.base/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+    at java.base/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+    at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1746)
+    at java.base/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+    at org.java_websocket.client.WebSocketClient$WebsocketWriteThread.run(WebSocketClient.java:660)
+    at java.base/java.lang.Thread.run(Thread.java:1583)

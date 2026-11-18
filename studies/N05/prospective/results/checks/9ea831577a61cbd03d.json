@@ -1,0 +1,28 @@
+{
+  "key": "9ea831577a61cbd03d",
+  "args": {
+    "crate": "config",
+    "version": "0.15.11",
+    "id": "c9ec89abaa787953",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0937,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde`",
+      "rendered": "error[E0432]: unresolved import `serde`\n --> src/main.rs:3:5\n  |\n3 | use serde::Deserialize;\n  |     ^^^^^ use of unresolved module or unlinked crate `serde`\n  |\n  = help: if you wanted to use a crate named `serde`, use `cargo add serde` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_config_consumer` (bin \"n05_config_consumer\") due to 1 previous error; 3 warnings emitted\n",
+  "code_sha256": "ce206a5e44f8f140f471490779f6c212f5fff4899f2842035ff1ede61193ac92",
+  "manifest_sha256": "df3977dd24482d10f10ca62873499a8318deb038c73795830276eb44fdb21f34",
+  "log_file": "prospective/results/check_logs/9ea831577a61cbd03d.txt.gz"
+}

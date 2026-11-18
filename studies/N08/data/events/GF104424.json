@@ -1,0 +1,520 @@
+{
+  "after_codeowners_sha256": "484b56d5624c752abc2493550b80cce805aa0771a2e11e3fbce1df5608933ed8",
+  "all_patch_renames": 22,
+  "base_sha": "c7f97060a0cb690a7bcd96ddce418009f08729a3",
+  "before_codeowners_sha256": "117ccc1ceceeb4f1e651152b1910554adaf2896c00bf3a65aad09be8fd6ca8b0",
+  "expected_new_team": "@grafana/alerting-backend",
+  "expected_old_team": "@grafana/grafana-app-platform-squad",
+  "histories": {
+    "after": {
+      "commit_count": 30,
+      "pr_linked_count": 30,
+      "records": [
+        {
+          "date": "2025-05-07T23:19:33Z",
+          "pr": 104252,
+          "sha": "3e2296acd3319093f5b5782a8c5738d815eee56e",
+          "title": "Alerting: Support for active time intervals in notification policies (#104252)"
+        },
+        {
+          "date": "2025-05-08T12:59:33Z",
+          "pr": 105068,
+          "sha": "c78ae5cb76fc3e46301cff078c69962ea5bddeef",
+          "title": "Alerting: Move alerting codegen to --grouping=group (#105068)"
+        },
+        {
+          "date": "2025-06-20T21:37:17Z",
+          "pr": 107056,
+          "sha": "ef6e28b9555efb07fb90c96b6067f59aedc368df",
+          "title": "K8s: Make v0alpha1 opt-in (#107056)"
+        },
+        {
+          "date": "2025-08-08T18:13:23Z",
+          "pr": 109419,
+          "sha": "898ef9cf587c9a200b73244fe5c50e86ef32e54c",
+          "title": "Alerting: Update alerting module to dae4478cb0dc9326319d27e5f3feb301825f2922 (#109419)"
+        },
+        {
+          "date": "2025-08-28T18:46:30Z",
+          "pr": 109969,
+          "sha": "15fab1cb993791d9b9362a51ea9ac96df7885966",
+          "title": "Alerting: Update integration schema to support versions (#109969)"
+        },
+        {
+          "date": "2025-09-05T14:46:46Z",
+          "pr": 110619,
+          "sha": "ce55d70fa57e509cb12543ad6baa387b82204e23",
+          "title": "Alerting: Refactor notification legacy storage (#110619)"
+        },
+        {
+          "date": "2025-09-16T13:32:04Z",
+          "pr": 110839,
+          "sha": "356521c9b93735c173b26c7dba4a5ecbb89bee53",
+          "title": "Alerting: Annotation CanUse for receiver resource (#110839)"
+        },
+        {
+          "date": "2025-09-23T13:42:40Z",
+          "pr": 109309,
+          "sha": "896a56ada8ea7a03090591848e269bdc1f42808d",
+          "title": "Migrate Alerting Notifications API to app installer (#109309)"
+        },
+        {
+          "date": "2025-10-07T15:08:16Z",
+          "pr": 112010,
+          "sha": "7d1c6b6bd255fce1af260c5529f0f1d27fa0fc42",
+          "title": "Alerting: Replace IntegrationConfig with IntegrationSchemaVersion (#112010)"
+        },
+        {
+          "date": "2025-10-23T15:21:13Z",
+          "pr": 112880,
+          "sha": "62c5df36d611aa8f89d1b3599ec356fde2a26c46",
+          "title": "Alerting: Always initialize an empty slice of routes for the routingtree (#112880)"
+        },
+        {
+          "date": "2025-12-16T20:56:02Z",
+          "pr": 115442,
+          "sha": "f2c30cbbd10cdf5221d2ded07db10121555f2351",
+          "title": "Alerting: Protected fields for Contact points (#115442)"
+        },
+        {
+          "date": "2025-12-17T20:26:22Z",
+          "pr": 114196,
+          "sha": "db3503fb32d607bf6b7b17f2ab20a3f2f51b7e65",
+          "title": "Alerting: Support for imported Templates (#114196)"
+        },
+        {
+          "date": "2026-01-09T18:43:36Z",
+          "pr": 115959,
+          "sha": "e4ba1c1a6dd467f5d5959a91065b2ec2f22b8db4",
+          "title": "Alerting: Refactor encryption and receiver handling for improved clarity (#115959)"
+        },
+        {
+          "date": "2026-01-16T21:13:34Z",
+          "pr": 116434,
+          "sha": "9a56ed255b5cff868f1e1a6835b2b229977011c2",
+          "title": "Alerting: Refactor receiver integration conversion and error handling (#116434)"
+        },
+        {
+          "date": "2026-01-19T09:30:47Z",
+          "pr": 116475,
+          "sha": "426e55f358f5a540fe11c845c6debd270094894f",
+          "title": "Chore: Regenerate app-sdk files (#116475)"
+        },
+        {
+          "date": "2026-01-22T16:37:18Z",
+          "pr": 116563,
+          "sha": "02e2223c983ec941f4bdf6d5f0074713381c9e5f",
+          "title": "Alerting: Fine-grained authorization for receiver testing API (#116563)"
+        },
+        {
+          "date": "2026-01-22T21:15:27Z",
+          "pr": 116308,
+          "sha": "8ce672e3b69d9113625dc5ba405d43fac9e8eea6",
+          "title": "Alerting: Support imported time intervals (#116308)"
+        },
+        {
+          "date": "2026-01-27T21:41:16Z",
+          "pr": 111338,
+          "sha": "56423fb0856f95fd21a22840de6342ef7ec22411",
+          "title": "Alerting: Receiver testing via app platform APIs (#111338)"
+        },
+        {
+          "date": "2026-01-29T18:45:50Z",
+          "pr": 117090,
+          "sha": "f296157784f553035182b2c401fa945cc6cf394d",
+          "title": "Alerting: Refactorings for named notification policies (#117090)"
+        },
+        {
+          "date": "2026-01-29T23:54:19Z",
+          "pr": 117061,
+          "sha": "1fa264657fae8bcca881a06b2038fc26b5339705",
+          "title": "Alerting: Add backend support for named notification policies (#117061)"
+        },
+        {
+          "date": "2026-02-03T15:23:30Z",
+          "pr": 117041,
+          "sha": "37efd9fc8ffe8d0e4aa335d0c7d312ebe923a527",
+          "title": "Alerting: add receivers schema app platform API (#117041)"
+        },
+        {
+          "date": "2026-02-10T10:55:07Z",
+          "pr": 117292,
+          "sha": "2cbf613dbbdcf9d481df8669c3bd48e20c543f39",
+          "title": "Chore: Upgrade app-sdk to 0.50.1 (#117292)"
+        },
+        {
+          "date": "2026-02-20T16:45:01Z",
+          "pr": 117555,
+          "sha": "a02078755da2167d15d4634152189605c3c971d0",
+          "title": "Alerting: add inhibition rules app platform api (#117555)"
+        },
+        {
+          "date": "2026-03-13T14:03:06Z",
+          "pr": 120119,
+          "sha": "492eb9d55c038146b789ea9553a028e2d47c94d7",
+          "title": "Alerting: Add user argument to managed routes service methods (#120119)"
+        },
+        {
+          "date": "2026-03-20T23:00:43Z",
+          "pr": 120738,
+          "sha": "f5e2ff4489de39fb957662f6cf80bc7be4bdb66e",
+          "title": "Alerting: Promote notifications.alerting.grafana.app resources to v1beta1 (#120738)"
+        },
+        {
+          "date": "2026-03-26T14:58:23Z",
+          "pr": 121204,
+          "sha": "31ed68aed47600a395c7f5f042d97d19c7b25578",
+          "title": "Alerting: Fix apiVersion for list items on k8s API's (#121204)"
+        },
+        {
+          "date": "2026-03-31T20:12:35Z",
+          "pr": 121034,
+          "sha": "52cbb9a211dfdc35255210c7673d47f2b2ba9241",
+          "title": "Alerting: Add access control for managed routes (#121034)"
+        },
+        {
+          "date": "2026-04-01T14:20:12Z",
+          "pr": 121253,
+          "sha": "5f903dc15653357ca98e0b78de2691a2f6fd437d",
+          "title": "Alerting: Route API access control attirbutes (#121253)"
+        },
+        {
+          "date": "2026-04-03T17:28:05Z",
+          "pr": 121335,
+          "sha": "054e4b4d85594d4608a7837e6e5c83d5f428d62d",
+          "title": "Alerting: Enforce provenance permissions via service-layer validator in notification APIs (#121335)"
+        },
+        {
+          "date": "2026-04-20T18:41:15Z",
+          "pr": 118858,
+          "sha": "4c5defc4da9dad753e3bdb4bf01b30897a6f8bd2",
+          "title": "Alerting: Allow restricting contact point integration types (#118858)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/grafana/grafana/commits?path=pkg%2Fregistry%2Fapps%2Falerting%2Fnotifications%2F&since=2025-04-30T14%3A23%3A57Z&until=2026-04-30T14%3A23%3A56Z&per_page=100",
+      "truncated": false
+    },
+    "before": {
+      "commit_count": 35,
+      "pr_linked_count": 35,
+      "records": [
+        {
+          "date": "2024-06-20T20:52:03Z",
+          "pr": 88201,
+          "sha": "b07592620279f16b0353444e7aba3c457c50d7ec",
+          "title": "Alerting: Time Intervals API (#88201)"
+        },
+        {
+          "date": "2024-06-25T14:06:03Z",
+          "pr": 89635,
+          "sha": "71270f3203d46f78c79832669e43cb15453ce824",
+          "title": "Storage: Avoid relying on RequestInfo (#89635)"
+        },
+        {
+          "date": "2024-06-26T17:03:25Z",
+          "pr": 89707,
+          "sha": "e121e2609f63d66f935b090f1a24c32e8a45bede",
+          "title": "Alerting: Receiver API (#89707)"
+        },
+        {
+          "date": "2024-07-01T15:42:34Z",
+          "pr": 89918,
+          "sha": "9c6d3590a213aaefae40404368cbab38f0731b69",
+          "title": "Chore: Fix apiserver circular dependencies (#89918)"
+        },
+        {
+          "date": "2024-07-08T19:45:30Z",
+          "pr": 90022,
+          "sha": "5ae5fa3a7a0d6d5187b38bbe8d8f9504c5bd465d",
+          "title": "Alerting: Support field selectors in time interval API (#90022)"
+        },
+        {
+          "date": "2024-07-11T20:23:31Z",
+          "pr": 90013,
+          "sha": "d2bc4f32558d8f95abf17e2f6ed697135a3488a7",
+          "title": "DualWrite: Cleanup and centralize the dual write creation (#90013)"
+        },
+        {
+          "date": "2024-07-16T14:02:16Z",
+          "pr": 90384,
+          "sha": "b7f422b68d27f6c12339b67d56c0418f961ae9cd",
+          "title": "Alerting: Receiver API Get+List+Delete (#90384)"
+        },
+        {
+          "date": "2024-07-26T13:39:23Z",
+          "pr": 91030,
+          "sha": "be7b1ce2df46f593b43ac8d2d00adf5304b27f51",
+          "title": "Chore: Replace appcontext.User(ctx) with identity.GetRequester(ctx) (#91030)"
+        },
+        {
+          "date": "2024-07-26T20:43:40Z",
+          "pr": 90563,
+          "sha": "6b0d20c96affe74c015469ebca465dde6d4d3019",
+          "title": "Alerting: time interval service to support addressing intervals by Base64 encoded name (#90563)"
+        },
+        {
+          "date": "2024-07-29T19:55:49Z",
+          "pr": 91153,
+          "sha": "1b4b1af9b7073b4f86caaba554cdd00ca734fd13",
+          "title": "Alerting: Receiver API to use same logic for calculating UID as backend serivce (#91153)"
+        },
+        {
+          "date": "2024-08-02T17:02:58Z",
+          "pr": 91430,
+          "sha": "96f7f0f486a7fbd3f42852595eec84c437e86ed3",
+          "title": "Alerting: Use Unstructured type for settings of K8s model Integration + code owners (#91430)"
+        },
+        {
+          "date": "2024-08-05T12:38:12Z",
+          "pr": 91520,
+          "sha": "a223c46506fd0d7fa1f01f5c24dc5c55250a9d6d",
+          "title": "APIServer: Make TableConverter part of ResourceInfo (#91520)"
+        },
+        {
+          "date": "2024-08-26T14:47:53Z",
+          "pr": 91738,
+          "sha": "32f06c6d9ce3d1768eb5ec36e2695a7f86e4c461",
+          "title": "Alerting: Receiver API complete core implementation (#91738)"
+        },
+        {
+          "date": "2024-08-28T00:45:04Z",
+          "pr": 92378,
+          "sha": "85ef26a85dec42ae9ecbfe311118747b37ef8427",
+          "title": "K8s: Add generic support for status (#92378)"
+        },
+        {
+          "date": "2024-09-10T14:58:14Z",
+          "pr": 93015,
+          "sha": "eea28172e0ce9f5798b42d74e749b47f7d85050a",
+          "title": "Alerting: Add field selectors for k8s receivers API (#93015)"
+        },
+        {
+          "date": "2024-09-12T17:57:53Z",
+          "pr": 93013,
+          "sha": "ff6a20f54aa82c2076f293d9d4326a3af26f5be8",
+          "title": "Alerting: Include access control metadata in k8s receiver LIST & GET (#93013)"
+        },
+        {
+          "date": "2024-09-13T17:20:09Z",
+          "pr": 93016,
+          "sha": "3bf77d2e0593222626240c33bd606aca5726c3f9",
+          "title": "Alerting: Include in-use metadata in k8s receiver LIST & GET (#93016)"
+        },
+        {
+          "date": "2024-09-17T16:07:31Z",
+          "pr": 93349,
+          "sha": "0f788d8d830c5182ac13071adf009b15fb1d6af1",
+          "title": "Alerting: Support for renaming receivers (#93349)"
+        },
+        {
+          "date": "2024-09-20T22:31:42Z",
+          "pr": 93552,
+          "sha": "1ede1e32b8d4c3bb5adf028bc79ea1ae5cdbda8c",
+          "title": "Alerting: Receiver resource permissions service (#93552)"
+        },
+        {
+          "date": "2024-09-24T02:07:52Z",
+          "pr": 93199,
+          "sha": "db97da3465082c3173fdbfc152a4b21f78f2d45a",
+          "title": "K8s: handle multiple versions of the same group in standalone mode (#93199)"
+        },
+        {
+          "date": "2024-09-25T13:31:57Z",
+          "pr": 91349,
+          "sha": "10582e48f7b20db1045901a6b5bad203cfcabdff",
+          "title": "Alerting: Notifications Templates API (#91349)"
+        },
+        {
+          "date": "2024-09-26T13:26:45Z",
+          "pr": 93778,
+          "sha": "afe464bc209fa73227311e1039543f6d8771ab02",
+          "title": "K8s/Storage: add a reusable generic storage builder  (#93778)"
+        },
+        {
+          "date": "2024-09-27T18:56:32Z",
+          "pr": 92885,
+          "sha": "fc51ec70ba99cd047ef33c59472c7a8a598a2ff8",
+          "title": "Alerting: Add manage permissions UI logic for Contact Points (#92885)"
+        },
+        {
+          "date": "2024-10-15T04:46:08Z",
+          "pr": 94684,
+          "sha": "36c38b531066cf93666aa618f050128f98096aca",
+          "title": "APIServer: add prometheus.Registerer to every init request (#94684)"
+        },
+        {
+          "date": "2024-10-18T17:16:03Z",
+          "pr": 94995,
+          "sha": "00bb3215cb633df0e4fe1cb49b5743a1da2de728",
+          "title": "Alerting: Fix time-interval conversion to return bad request if payload is incorrect (#94995)"
+        },
+        {
+          "date": "2024-10-24T17:53:03Z",
+          "pr": 91550,
+          "sha": "2deced7d401acf4a03e3376d8a717617b10016db",
+          "title": "Alerting: Notifications Routes API (#91550)"
+        },
+        {
+          "date": "2024-12-07T00:08:18Z",
+          "pr": 97531,
+          "sha": "5f39d2eeb051b1bc544840d2214f512db9ccda20",
+          "title": "K8s: Make GetAPIRoutes an optional interface (#97531)"
+        },
+        {
+          "date": "2024-12-09T15:29:05Z",
+          "pr": 95430,
+          "sha": "2d386e6704b68559840ee9b9483384c0c12df385",
+          "title": "Alerting: Migrate notification models to generated by grafnaa-app-sdk (#95430)"
+        },
+        {
+          "date": "2025-01-11T00:53:18Z",
+          "pr": 96330,
+          "sha": "ad1417b732484f6793d2239be98d23344f3913fc",
+          "title": "Alerting: Return default builtin templates in k8s templategroup API and UI (#96330)"
+        },
+        {
+          "date": "2025-01-30T09:51:55Z",
+          "pr": 99793,
+          "sha": "9d5af95565631b0758141242781299516d039ae6",
+          "title": "K8s/OpenAPI: Remove /watch/ from the openapi spec (#99793)"
+        },
+        {
+          "date": "2025-02-27T10:27:28Z",
+          "pr": 101395,
+          "sha": "58457d41d3257d712b8fa88c9c88b83793bcdb80",
+          "title": "K8s/DualWriter: Remove legacy interface (#101395)"
+        },
+        {
+          "date": "2025-04-10T12:42:23Z",
+          "pr": 103572,
+          "sha": "757be6365af3bfae9ae3e8e6834721d4bc576766",
+          "title": "CI: Bump golangci-lint to 2.0.2 (#103572)"
+        },
+        {
+          "date": "2025-04-11T21:38:53Z",
+          "pr": 103819,
+          "sha": "a5288db624c2e4320fe4ec76dc9077e7c5b75375",
+          "title": "Alerting: Remove the POST endpoint for the internal Grafana Alertmanager config (#103819)"
+        },
+        {
+          "date": "2025-04-15T20:52:56Z",
+          "pr": 104063,
+          "sha": "71b06e984518833cc8b5277bba9b233975969c6a",
+          "title": "Alerting: Return an empty array for contact points with no integrations (#104063)"
+        },
+        {
+          "date": "2025-04-18T14:14:52Z",
+          "pr": 104053,
+          "sha": "c174c855c30cac7ddd747697a7edddd41a02e653",
+          "title": "Alerting: Update alerting cue definitions (#104053)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/grafana/grafana/commits?path=pkg%2Fregistry%2Fapis%2Falerting%2Fnotifications%2F&since=2024-04-30T14%3A23%3A56Z&until=2025-04-30T14%3A23%3A55Z&per_page=100",
+      "truncated": false
+    }
+  },
+  "id": "GF104424",
+  "merge_sha": "85344e30c0c5f4ccd3eae2eb2c529c10526f7bdc",
+  "merged_at": "2025-04-30T14:23:56Z",
+  "migration_patch_sha256": "3abd0943b5d8a0f6d0e0a25039fa12d17b5d7328af0b596065f4af9b639ec0f3",
+  "migration_pr": 104424,
+  "new_owner": [
+    "@grafana/alerting-backend"
+  ],
+  "new_prefix": "pkg/registry/apps/alerting/notifications/",
+  "old_owner": [
+    "@grafana/grafana-app-platform-squad",
+    "@grafana/alerting-backend"
+  ],
+  "old_prefix": "pkg/registry/apis/alerting/notifications/",
+  "post_days": 365,
+  "pre_days": 365,
+  "rename_pairs": [
+    {
+      "new": "pkg/registry/apps/alerting/notifications/receiver/authorize.go",
+      "old": "pkg/registry/apis/alerting/notifications/receiver/authorize.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/receiver/conversions.go",
+      "old": "pkg/registry/apis/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go",
+      "old": "pkg/registry/apis/alerting/notifications/receiver/legacy_storage.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/receiver/storage.go",
+      "old": "pkg/registry/apis/alerting/notifications/receiver/storage.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/receiver/type.go",
+      "old": "pkg/registry/apis/alerting/notifications/receiver/type.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/register.go",
+      "old": "pkg/registry/apis/alerting/notifications/register.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/routingtree/authorize.go",
+      "old": "pkg/registry/apis/alerting/notifications/routingtree/authorize.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go",
+      "old": "pkg/registry/apis/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/routingtree/legacy_storage.go",
+      "old": "pkg/registry/apis/alerting/notifications/routingtree/legacy_storage.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/routingtree/storage.go",
+      "old": "pkg/registry/apis/alerting/notifications/routingtree/storage.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/routingtree/type.go",
+      "old": "pkg/registry/apis/alerting/notifications/routingtree/type.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/templategroup/authorize.go",
+      "old": "pkg/registry/apis/alerting/notifications/templategroup/authorize.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/templategroup/conversions.go",
+      "old": "pkg/registry/apis/alerting/notifications/templategroup/conversions.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/templategroup/legacy_storage.go",
+      "old": "pkg/registry/apis/alerting/notifications/templategroup/legacy_storage.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/templategroup/storage.go",
+      "old": "pkg/registry/apis/alerting/notifications/templategroup/storage.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/templategroup/type.go",
+      "old": "pkg/registry/apis/alerting/notifications/templategroup/type.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/timeinterval/authorize.go",
+      "old": "pkg/registry/apis/alerting/notifications/timeinterval/authorize.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/timeinterval/conversions.go",
+      "old": "pkg/registry/apis/alerting/notifications/timeinterval/conversions.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/timeinterval/legacy_storage.go",
+      "old": "pkg/registry/apis/alerting/notifications/timeinterval/legacy_storage.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/timeinterval/storage.go",
+      "old": "pkg/registry/apis/alerting/notifications/timeinterval/storage.go"
+    },
+    {
+      "new": "pkg/registry/apps/alerting/notifications/timeinterval/type.go",
+      "old": "pkg/registry/apis/alerting/notifications/timeinterval/type.go"
+    }
+  ],
+  "repo": "grafana/grafana",
+  "valid": true
+}

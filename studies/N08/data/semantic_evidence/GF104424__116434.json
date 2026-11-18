@@ -1,0 +1,180 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 9,
+  "bytes": 33034,
+  "control_flow_or_callback_lines": 29,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "-",
+      "code": "t, err := alertingNotify.IntegrationTypeFromString(integration.Type)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "grafanaIntegration, secureFields, err := convertReceiverIntegrationToIntegration(receiver.Spec.Title, integration)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "var config schema.IntegrationSchemaVersion",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "typeSchema, _ := alertingNotify.GetSchemaForIntegration(t)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "if integration.Version != \"\" {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "var ok bool",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "config, ok = typeSchema.GetVersion(schema.Version(integration.Version))",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "if !ok {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "return nil, nil, fmt.Errorf(\"invalid version %s for integration type %s\", integration.Version, integration.Type)",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "} else {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "config = typeSchema.GetCurrentVersion()",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "grafanaIntegration := ngmodels.Integration{",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "Name:           receiver.Spec.Title,",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "Config:         config,",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "Settings:       maps.Clone(integration.Settings),",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "SecureSettings: make(map[string]string),",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "if integration.Uid != nil {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "grafanaIntegration.UID = *integration.Uid",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "if integration.DisableResolveMessage != nil {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "grafanaIntegration.DisableResolveMessage = *integration.DisableResolveMessage",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "storedSecureFields[grafanaIntegration.UID] = secureFields",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "if grafanaIntegration.UID != \"\" {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "// This is an existing integration, so we track the secure fields being requested to copy over from existing values.",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "secureFields := make([]string, 0, len(integration.SecureFields))",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "for k, isSecure := range integration.SecureFields {",
+      "file": "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:58:00.591960+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 78,
+  "pr": 116434,
+  "repository": "grafana/grafana",
+  "sha256": "2121909aa7025ca203cecf8cd27906d2681fd204fa1cadb1740ffac5e2c1cf34",
+  "target_code_changed_lines": 83,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/receiver/conversions.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/116434.patch"
+}

@@ -1,0 +1,26 @@
+{
+  "pr": 15610,
+  "pr_author": "jaredsnider-bitwarden",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-07-14T20:36:25Z",
+      "requested_people": [
+        "jaredsnider-bitwarden"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-14T20:36:26Z",
+      "requested_people": [
+        "jaredsnider-bitwarden",
+        "willmartian"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "75a1167c7b0f63e53db70966f16185ece42fa07986989ce49ac06eea18d80a1c",
+  "url": "https://github.com/bitwarden/clients/pull/15610"
+}

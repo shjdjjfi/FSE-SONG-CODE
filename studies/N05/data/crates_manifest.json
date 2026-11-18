@@ -1,0 +1,2225 @@
+[
+  {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "archive_url": "https://static.crates.io/crates/tokio/tokio-1.45.1.crate",
+    "archive_sha256": "75ef51a33ef1da925cea3e4eb122833cb377c61439ca401b770f54902b806779",
+    "size": 811787,
+    "edition": "2021",
+    "rust_version": "1.70",
+    "license": "MIT",
+    "license_file": null,
+    "repository": "https://github.com/tokio-rs/tokio",
+    "docs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ],
+      "rustc-args": [
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ]
+    },
+    "default_features": [],
+    "feature_names": [
+      "default",
+      "fs",
+      "full",
+      "io-std",
+      "io-util",
+      "macros",
+      "net",
+      "process",
+      "rt",
+      "rt-multi-thread",
+      "signal",
+      "sync",
+      "test-util",
+      "time"
+    ],
+    "feature_map": {
+      "default": [],
+      "full": [
+        "fs",
+        "io-util",
+        "io-std",
+        "macros",
+        "net",
+        "parking_lot",
+        "process",
+        "rt",
+        "rt-multi-thread",
+        "signal",
+        "sync",
+        "time"
+      ],
+      "fs": [],
+      "io-util": [
+        "bytes"
+      ],
+      "io-std": [],
+      "macros": [
+        "tokio-macros"
+      ],
+      "net": [
+        "libc",
+        "mio/os-poll",
+        "mio/os-ext",
+        "mio/net",
+        "socket2",
+        "windows-sys/Win32_Foundation",
+        "windows-sys/Win32_Security",
+        "windows-sys/Win32_Storage_FileSystem",
+        "windows-sys/Win32_System_Pipes",
+        "windows-sys/Win32_System_SystemServices"
+      ],
+      "process": [
+        "bytes",
+        "libc",
+        "mio/os-poll",
+        "mio/os-ext",
+        "mio/net",
+        "signal-hook-registry",
+        "windows-sys/Win32_Foundation",
+        "windows-sys/Win32_System_Threading",
+        "windows-sys/Win32_System_WindowsProgramming"
+      ],
+      "rt": [],
+      "rt-multi-thread": [
+        "rt"
+      ],
+      "signal": [
+        "libc",
+        "mio/os-poll",
+        "mio/net",
+        "mio/os-ext",
+        "signal-hook-registry",
+        "windows-sys/Win32_Foundation",
+        "windows-sys/Win32_System_Console"
+      ],
+      "sync": [],
+      "test-util": [
+        "rt",
+        "sync",
+        "time"
+      ],
+      "time": []
+    },
+    "n_snippets": 549,
+    "n_explicit": 14
+  },
+  {
+    "crate": "sqlx",
+    "version": "0.8.6",
+    "archive_url": "https://static.crates.io/crates/sqlx/sqlx-0.8.6.crate",
+    "archive_sha256": "1fefb893899429669dcdd979aff487bd78f4064e5e7907e4269081e0ef7d97dc",
+    "size": 190134,
+    "edition": {
+      "workspace": true
+    },
+    "rust_version": null,
+    "license": {
+      "workspace": true
+    },
+    "license_file": null,
+    "repository": {
+      "workspace": true
+    },
+    "docs_metadata": {
+      "features": [
+        "all-databases",
+        "_unstable-all-types",
+        "sqlite-preupdate-hook"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "default_features": [
+      "any",
+      "macros",
+      "migrate",
+      "json"
+    ],
+    "feature_names": [
+      "_rt-async-std",
+      "_rt-tokio",
+      "_sqlite",
+      "_unstable-all-types",
+      "all-databases",
+      "any",
+      "bigdecimal",
+      "bit-vec",
+      "bstr",
+      "chrono",
+      "default",
+      "derive",
+      "ipnet",
+      "ipnetwork",
+      "json",
+      "mac_address",
+      "macros",
+      "migrate",
+      "mysql",
+      "postgres",
+      "regexp",
+      "runtime-async-std",
+      "runtime-async-std-native-tls",
+      "runtime-async-std-rustls",
+      "runtime-tokio",
+      "runtime-tokio-native-tls",
+      "runtime-tokio-rustls",
+      "rust_decimal",
+      "sqlite",
+      "sqlite-preupdate-hook",
+      "sqlite-unbundled",
+      "time",
+      "tls-native-tls",
+      "tls-none",
+      "tls-rustls",
+      "tls-rustls-aws-lc-rs",
+      "tls-rustls-ring",
+      "tls-rustls-ring-native-roots",
+      "tls-rustls-ring-webpki",
+      "uuid"
+    ],
+    "feature_map": {
+      "default": [
+        "any",
+        "macros",
+        "migrate",
+        "json"
+      ],
+      "derive": [
+        "sqlx-macros/derive"
+      ],
+      "macros": [
+        "derive",
+        "sqlx-macros/macros"
+      ],
+      "migrate": [
+        "sqlx-core/migrate",
+        "sqlx-macros?/migrate",
+        "sqlx-mysql?/migrate",
+        "sqlx-postgres?/migrate",
+        "sqlx-sqlite?/migrate"
+      ],
+      "all-databases": [
+        "mysql",
+        "sqlite",
+        "postgres",
+        "any"
+      ],
+      "_unstable-all-types": [
+        "bigdecimal",
+        "rust_decimal",
+        "json",
+        "time",
+        "chrono",
+        "ipnet",
+        "ipnetwork",
+        "mac_address",
+        "uuid",
+        "bit-vec",
+        "bstr"
+      ],
+      "runtime-async-std": [
+        "_rt-async-std",
+        "sqlx-core/_rt-async-std",
+        "sqlx-macros?/_rt-async-std"
+      ],
+      "runtime-tokio": [
+        "_rt-tokio",
+        "sqlx-core/_rt-tokio",
+        "sqlx-macros?/_rt-tokio"
+      ],
+      "tls-native-tls": [
+        "sqlx-core/_tls-native-tls",
+        "sqlx-macros?/_tls-native-tls"
+      ],
+      "tls-rustls": [
+        "tls-rustls-ring"
+      ],
+      "tls-rustls-aws-lc-rs": [
+        "sqlx-core/_tls-rustls-aws-lc-rs",
+        "sqlx-macros?/_tls-rustls-aws-lc-rs"
+      ],
+      "tls-rustls-ring": [
+        "tls-rustls-ring-webpki"
+      ],
+      "tls-rustls-ring-webpki": [
+        "sqlx-core/_tls-rustls-ring-webpki",
+        "sqlx-macros?/_tls-rustls-ring-webpki"
+      ],
+      "tls-rustls-ring-native-roots": [
+        "sqlx-core/_tls-rustls-ring-native-roots",
+        "sqlx-macros?/_tls-rustls-ring-native-roots"
+      ],
+      "tls-none": [],
+      "runtime-async-std-native-tls": [
+        "runtime-async-std",
+        "tls-native-tls"
+      ],
+      "runtime-async-std-rustls": [
+        "runtime-async-std",
+        "tls-rustls-ring"
+      ],
+      "runtime-tokio-native-tls": [
+        "runtime-tokio",
+        "tls-native-tls"
+      ],
+      "runtime-tokio-rustls": [
+        "runtime-tokio",
+        "tls-rustls-ring"
+      ],
+      "_rt-async-std": [],
+      "_rt-tokio": [],
+      "_sqlite": [],
+      "any": [
+        "sqlx-core/any",
+        "sqlx-mysql?/any",
+        "sqlx-postgres?/any",
+        "sqlx-sqlite?/any"
+      ],
+      "postgres": [
+        "sqlx-postgres",
+        "sqlx-macros?/postgres"
+      ],
+      "mysql": [
+        "sqlx-mysql",
+        "sqlx-macros?/mysql"
+      ],
+      "sqlite": [
+        "_sqlite",
+        "sqlx-sqlite/bundled",
+        "sqlx-macros?/sqlite"
+      ],
+      "sqlite-unbundled": [
+        "_sqlite",
+        "sqlx-sqlite/unbundled",
+        "sqlx-macros?/sqlite-unbundled"
+      ],
+      "sqlite-preupdate-hook": [
+        "sqlx-sqlite/preupdate-hook"
+      ],
+      "json": [
+        "sqlx-core/json",
+        "sqlx-macros?/json",
+        "sqlx-mysql?/json",
+        "sqlx-postgres?/json",
+        "sqlx-sqlite?/json"
+      ],
+      "bigdecimal": [
+        "sqlx-core/bigdecimal",
+        "sqlx-macros?/bigdecimal",
+        "sqlx-mysql?/bigdecimal",
+        "sqlx-postgres?/bigdecimal"
+      ],
+      "bit-vec": [
+        "sqlx-core/bit-vec",
+        "sqlx-macros?/bit-vec",
+        "sqlx-postgres?/bit-vec"
+      ],
+      "chrono": [
+        "sqlx-core/chrono",
+        "sqlx-macros?/chrono",
+        "sqlx-mysql?/chrono",
+        "sqlx-postgres?/chrono",
+        "sqlx-sqlite?/chrono"
+      ],
+      "ipnet": [
+        "sqlx-core/ipnet",
+        "sqlx-macros?/ipnet",
+        "sqlx-postgres?/ipnet"
+      ],
+      "ipnetwork": [
+        "sqlx-core/ipnetwork",
+        "sqlx-macros?/ipnetwork",
+        "sqlx-postgres?/ipnetwork"
+      ],
+      "mac_address": [
+        "sqlx-core/mac_address",
+        "sqlx-macros?/mac_address",
+        "sqlx-postgres?/mac_address"
+      ],
+      "rust_decimal": [
+        "sqlx-core/rust_decimal",
+        "sqlx-macros?/rust_decimal",
+        "sqlx-mysql?/rust_decimal",
+        "sqlx-postgres?/rust_decimal"
+      ],
+      "time": [
+        "sqlx-core/time",
+        "sqlx-macros?/time",
+        "sqlx-mysql?/time",
+        "sqlx-postgres?/time",
+        "sqlx-sqlite?/time"
+      ],
+      "uuid": [
+        "sqlx-core/uuid",
+        "sqlx-macros?/uuid",
+        "sqlx-mysql?/uuid",
+        "sqlx-postgres?/uuid",
+        "sqlx-sqlite?/uuid"
+      ],
+      "regexp": [
+        "sqlx-sqlite?/regexp"
+      ],
+      "bstr": [
+        "sqlx-core/bstr"
+      ]
+    },
+    "n_snippets": 9,
+    "n_explicit": 0
+  },
+  {
+    "crate": "clap",
+    "version": "4.5.40",
+    "archive_url": "https://static.crates.io/crates/clap/clap-4.5.40.crate",
+    "archive_sha256": "40b6887a1d8685cebccf115538db5c0efe625ccac9696ad45c409d96566e910f",
+    "size": 57419,
+    "edition": {
+      "workspace": true
+    },
+    "rust_version": {
+      "workspace": true
+    },
+    "license": {
+      "workspace": true
+    },
+    "license_file": null,
+    "repository": {
+      "workspace": true
+    },
+    "docs_metadata": {
+      "features": [
+        "unstable-doc"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--generate-link-to-definition"
+      ]
+    },
+    "default_features": [
+      "std",
+      "color",
+      "help",
+      "usage",
+      "error-context",
+      "suggestions"
+    ],
+    "feature_names": [
+      "cargo",
+      "color",
+      "debug",
+      "default",
+      "deprecated",
+      "derive",
+      "env",
+      "error-context",
+      "help",
+      "std",
+      "string",
+      "suggestions",
+      "unicode",
+      "unstable-derive-ui-tests",
+      "unstable-doc",
+      "unstable-ext",
+      "unstable-markdown",
+      "unstable-styles",
+      "unstable-v5",
+      "usage",
+      "wrap_help"
+    ],
+    "feature_map": {
+      "default": [
+        "std",
+        "color",
+        "help",
+        "usage",
+        "error-context",
+        "suggestions"
+      ],
+      "debug": [
+        "clap_builder/debug",
+        "clap_derive?/debug"
+      ],
+      "unstable-doc": [
+        "clap_builder/unstable-doc",
+        "derive"
+      ],
+      "std": [
+        "clap_builder/std"
+      ],
+      "color": [
+        "clap_builder/color"
+      ],
+      "help": [
+        "clap_builder/help"
+      ],
+      "usage": [
+        "clap_builder/usage"
+      ],
+      "error-context": [
+        "clap_builder/error-context"
+      ],
+      "suggestions": [
+        "clap_builder/suggestions"
+      ],
+      "deprecated": [
+        "clap_builder/deprecated",
+        "clap_derive?/deprecated"
+      ],
+      "derive": [
+        "dep:clap_derive"
+      ],
+      "cargo": [
+        "clap_builder/cargo"
+      ],
+      "wrap_help": [
+        "clap_builder/wrap_help"
+      ],
+      "env": [
+        "clap_builder/env"
+      ],
+      "unicode": [
+        "clap_builder/unicode"
+      ],
+      "string": [
+        "clap_builder/string"
+      ],
+      "unstable-v5": [
+        "clap_builder/unstable-v5",
+        "clap_derive?/unstable-v5",
+        "deprecated"
+      ],
+      "unstable-ext": [
+        "clap_builder/unstable-ext"
+      ],
+      "unstable-styles": [
+        "clap_builder/unstable-styles"
+      ],
+      "unstable-derive-ui-tests": [],
+      "unstable-markdown": [
+        "clap_derive/unstable-markdown"
+      ]
+    },
+    "n_snippets": 4,
+    "n_explicit": 0
+  },
+  {
+    "crate": "serde",
+    "version": "1.0.219",
+    "archive_url": "https://static.crates.io/crates/serde/serde-1.0.219.crate",
+    "archive_sha256": "5f0e2c6ed6606019b4e29e69dbaba95b11854410e5347d525002456dbbb786b6",
+    "size": 78983,
+    "edition": "2018",
+    "rust_version": "1.31",
+    "license": "MIT OR Apache-2.0",
+    "license_file": null,
+    "repository": "https://github.com/serde-rs/serde",
+    "docs_metadata": {
+      "features": [
+        "derive",
+        "rc",
+        "unstable"
+      ],
+      "targets": [
+        "x86_64-unknown-linux-gnu"
+      ],
+      "rustdoc-args": [
+        "--generate-link-to-definition",
+        "--extern-html-root-url=core=https://doc.rust-lang.org",
+        "--extern-html-root-url=alloc=https://doc.rust-lang.org",
+        "--extern-html-root-url=std=https://doc.rust-lang.org"
+      ]
+    },
+    "default_features": [
+      "std"
+    ],
+    "feature_names": [
+      "alloc",
+      "default",
+      "derive",
+      "rc",
+      "std",
+      "unstable"
+    ],
+    "feature_map": {
+      "default": [
+        "std"
+      ],
+      "derive": [
+        "serde_derive"
+      ],
+      "std": [],
+      "unstable": [],
+      "alloc": [],
+      "rc": []
+    },
+    "n_snippets": 1,
+    "n_explicit": 1
+  },
+  {
+    "crate": "reqwest",
+    "version": "0.12.19",
+    "archive_url": "https://static.crates.io/crates/reqwest/reqwest-0.12.19.crate",
+    "archive_sha256": "a2f8e5513d63f2e5b386eb5106dc67eaf3f84e95258e210489136b8b92ad6119",
+    "size": 198998,
+    "edition": "2021",
+    "rust_version": "1.64.0",
+    "license": "MIT OR Apache-2.0",
+    "license_file": null,
+    "repository": "https://github.com/seanmonstar/reqwest",
+    "docs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "reqwest_unstable"
+      ],
+      "targets": [
+        "x86_64-unknown-linux-gnu",
+        "wasm32-unknown-unknown"
+      ]
+    },
+    "default_features": [
+      "default-tls",
+      "charset",
+      "http2",
+      "system-proxy"
+    ],
+    "feature_names": [
+      "__rustls",
+      "__rustls-ring",
+      "__tls",
+      "blocking",
+      "brotli",
+      "charset",
+      "cookies",
+      "default",
+      "default-tls",
+      "deflate",
+      "gzip",
+      "hickory-dns",
+      "http2",
+      "http3",
+      "json",
+      "macos-system-configuration",
+      "multipart",
+      "native-tls",
+      "native-tls-alpn",
+      "native-tls-vendored",
+      "rustls-tls",
+      "rustls-tls-manual-roots",
+      "rustls-tls-manual-roots-no-provider",
+      "rustls-tls-native-roots",
+      "rustls-tls-native-roots-no-provider",
+      "rustls-tls-no-provider",
+      "rustls-tls-webpki-roots",
+      "rustls-tls-webpki-roots-no-provider",
+      "socks",
+      "stream",
+      "system-proxy",
+      "trust-dns",
+      "zstd"
+    ],
+    "feature_map": {
+      "default": [
+        "default-tls",
+        "charset",
+        "http2",
+        "system-proxy"
+      ],
+      "default-tls": [
+        "dep:hyper-tls",
+        "dep:native-tls-crate",
+        "__tls",
+        "dep:tokio-native-tls"
+      ],
+      "http2": [
+        "h2",
+        "hyper/http2",
+        "hyper-util/http2",
+        "hyper-rustls?/http2"
+      ],
+      "native-tls": [
+        "default-tls"
+      ],
+      "native-tls-alpn": [
+        "native-tls",
+        "native-tls-crate?/alpn",
+        "hyper-tls?/alpn"
+      ],
+      "native-tls-vendored": [
+        "native-tls",
+        "native-tls-crate?/vendored"
+      ],
+      "rustls-tls": [
+        "rustls-tls-webpki-roots"
+      ],
+      "rustls-tls-no-provider": [
+        "rustls-tls-manual-roots-no-provider"
+      ],
+      "rustls-tls-manual-roots-no-provider": [
+        "__rustls"
+      ],
+      "rustls-tls-webpki-roots-no-provider": [
+        "dep:webpki-roots",
+        "hyper-rustls?/webpki-tokio",
+        "__rustls"
+      ],
+      "rustls-tls-native-roots-no-provider": [
+        "dep:rustls-native-certs",
+        "hyper-rustls?/native-tokio",
+        "__rustls"
+      ],
+      "rustls-tls-manual-roots": [
+        "rustls-tls-manual-roots-no-provider",
+        "__rustls-ring"
+      ],
+      "rustls-tls-webpki-roots": [
+        "rustls-tls-webpki-roots-no-provider",
+        "__rustls-ring"
+      ],
+      "rustls-tls-native-roots": [
+        "rustls-tls-native-roots-no-provider",
+        "__rustls-ring"
+      ],
+      "blocking": [
+        "dep:futures-channel",
+        "futures-channel?/sink",
+        "dep:futures-util",
+        "futures-util?/io",
+        "futures-util?/sink",
+        "tokio/sync"
+      ],
+      "charset": [
+        "dep:encoding_rs"
+      ],
+      "cookies": [
+        "dep:cookie_crate",
+        "dep:cookie_store"
+      ],
+      "gzip": [
+        "dep:async-compression",
+        "async-compression?/gzip",
+        "dep:futures-util",
+        "dep:tokio-util"
+      ],
+      "brotli": [
+        "dep:async-compression",
+        "async-compression?/brotli",
+        "dep:futures-util",
+        "dep:tokio-util"
+      ],
+      "zstd": [
+        "dep:async-compression",
+        "async-compression?/zstd",
+        "dep:futures-util",
+        "dep:tokio-util"
+      ],
+      "deflate": [
+        "dep:async-compression",
+        "async-compression?/zlib",
+        "dep:futures-util",
+        "dep:tokio-util"
+      ],
+      "json": [
+        "dep:serde_json"
+      ],
+      "multipart": [
+        "dep:mime_guess",
+        "dep:futures-util"
+      ],
+      "trust-dns": [],
+      "hickory-dns": [
+        "dep:hickory-resolver"
+      ],
+      "stream": [
+        "tokio/fs",
+        "dep:futures-util",
+        "dep:tokio-util",
+        "dep:wasm-streams"
+      ],
+      "socks": [
+        "dep:tokio-socks"
+      ],
+      "system-proxy": [
+        "hyper-util/client-proxy-system"
+      ],
+      "macos-system-configuration": [
+        "system-proxy"
+      ],
+      "http3": [
+        "rustls-tls-manual-roots",
+        "dep:h3",
+        "dep:h3-quinn",
+        "dep:quinn",
+        "dep:slab",
+        "dep:futures-channel",
+        "tokio/macros"
+      ],
+      "__tls": [
+        "dep:rustls-pki-types",
+        "tokio/io-util"
+      ],
+      "__rustls": [
+        "dep:hyper-rustls",
+        "dep:tokio-rustls",
+        "dep:rustls",
+        "__tls"
+      ],
+      "__rustls-ring": [
+        "hyper-rustls?/ring",
+        "tokio-rustls?/ring",
+        "rustls?/ring",
+        "quinn?/ring"
+      ]
+    },
+    "n_snippets": 91,
+    "n_explicit": 11
+  },
+  {
+    "crate": "tracing-subscriber",
+    "version": "0.3.19",
+    "archive_url": "https://static.crates.io/crates/tracing-subscriber/tracing-subscriber-0.3.19.crate",
+    "archive_sha256": "e8189decb5ac0fa7bc8b96b7cb9b2701d60d48805aca84a238004d665fcc4008",
+    "size": 198345,
+    "edition": "2018",
+    "rust_version": "1.63.0",
+    "license": "MIT",
+    "license_file": null,
+    "repository": "https://github.com/tokio-rs/tracing",
+    "docs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "default_features": [
+      "smallvec",
+      "fmt",
+      "ansi",
+      "tracing-log",
+      "std"
+    ],
+    "feature_names": [
+      "alloc",
+      "ansi",
+      "default",
+      "env-filter",
+      "fmt",
+      "json",
+      "local-time",
+      "nu-ansi-term",
+      "registry",
+      "std",
+      "valuable"
+    ],
+    "feature_map": {
+      "default": [
+        "smallvec",
+        "fmt",
+        "ansi",
+        "tracing-log",
+        "std"
+      ],
+      "alloc": [],
+      "std": [
+        "alloc",
+        "tracing-core/std"
+      ],
+      "env-filter": [
+        "matchers",
+        "regex",
+        "once_cell",
+        "tracing",
+        "std",
+        "thread_local"
+      ],
+      "fmt": [
+        "registry",
+        "std"
+      ],
+      "ansi": [
+        "fmt",
+        "nu-ansi-term"
+      ],
+      "registry": [
+        "sharded-slab",
+        "thread_local",
+        "std"
+      ],
+      "json": [
+        "tracing-serde",
+        "serde",
+        "serde_json"
+      ],
+      "valuable": [
+        "tracing-core/valuable",
+        "valuable_crate",
+        "valuable-serde",
+        "tracing-serde/valuable"
+      ],
+      "local-time": [
+        "time/local-offset"
+      ],
+      "nu-ansi-term": [
+        "dep:nu-ansi-term"
+      ]
+    },
+    "n_snippets": 138,
+    "n_explicit": 7
+  },
+  {
+    "crate": "rand",
+    "version": "0.9.1",
+    "archive_url": "https://static.crates.io/crates/rand/rand-0.9.1.crate",
+    "archive_sha256": "9fbfd9d094a40bf3ae768db9361049ace4c0e04a4fd6b359518bd7b73a73dd97",
+    "size": 97986,
+    "edition": "2021",
+    "rust_version": "1.63",
+    "license": "MIT OR Apache-2.0",
+    "license_file": null,
+    "repository": "https://github.com/rust-random/rand",
+    "docs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--generate-link-to-definition"
+      ]
+    },
+    "default_features": [
+      "std",
+      "std_rng",
+      "os_rng",
+      "small_rng",
+      "thread_rng"
+    ],
+    "feature_names": [
+      "alloc",
+      "default",
+      "log",
+      "nightly",
+      "os_rng",
+      "serde",
+      "simd_support",
+      "small_rng",
+      "std",
+      "std_rng",
+      "thread_rng",
+      "unbiased"
+    ],
+    "feature_map": {
+      "default": [
+        "std",
+        "std_rng",
+        "os_rng",
+        "small_rng",
+        "thread_rng"
+      ],
+      "nightly": [],
+      "serde": [
+        "dep:serde",
+        "rand_core/serde"
+      ],
+      "std": [
+        "rand_core/std",
+        "rand_chacha?/std",
+        "alloc"
+      ],
+      "alloc": [],
+      "os_rng": [
+        "rand_core/os_rng"
+      ],
+      "simd_support": [],
+      "std_rng": [
+        "dep:rand_chacha"
+      ],
+      "small_rng": [],
+      "thread_rng": [
+        "std",
+        "std_rng",
+        "os_rng"
+      ],
+      "unbiased": [],
+      "log": [
+        "dep:log"
+      ]
+    },
+    "n_snippets": 57,
+    "n_explicit": 2
+  },
+  {
+    "crate": "chrono",
+    "version": "0.4.41",
+    "archive_url": "https://static.crates.io/crates/chrono/chrono-0.4.41.crate",
+    "archive_sha256": "c469d952047f47f91b68d1cba3f10d63c11d73e4636f24f08daf0278abf01c4d",
+    "size": 234621,
+    "edition": "2021",
+    "rust_version": "1.62.0",
+    "license": "MIT OR Apache-2.0",
+    "license_file": null,
+    "repository": "https://github.com/chronotope/chrono",
+    "docs_metadata": {
+      "features": [
+        "arbitrary",
+        "rkyv",
+        "serde",
+        "unstable-locales"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "default_features": [
+      "clock",
+      "std",
+      "oldtime",
+      "wasmbind"
+    ],
+    "feature_names": [
+      "__internal_bench",
+      "alloc",
+      "clock",
+      "default",
+      "libc",
+      "now",
+      "oldtime",
+      "rkyv",
+      "rkyv-16",
+      "rkyv-32",
+      "rkyv-64",
+      "rkyv-validation",
+      "std",
+      "unstable-locales",
+      "wasmbind",
+      "winapi"
+    ],
+    "feature_map": {
+      "default": [
+        "clock",
+        "std",
+        "oldtime",
+        "wasmbind"
+      ],
+      "alloc": [],
+      "libc": [],
+      "winapi": [
+        "windows-link"
+      ],
+      "std": [
+        "alloc"
+      ],
+      "clock": [
+        "winapi",
+        "iana-time-zone",
+        "android-tzdata",
+        "now"
+      ],
+      "now": [
+        "std"
+      ],
+      "oldtime": [],
+      "wasmbind": [
+        "wasm-bindgen",
+        "js-sys"
+      ],
+      "unstable-locales": [
+        "pure-rust-locales"
+      ],
+      "rkyv": [
+        "dep:rkyv",
+        "rkyv/size_32"
+      ],
+      "rkyv-16": [
+        "dep:rkyv",
+        "rkyv?/size_16"
+      ],
+      "rkyv-32": [
+        "dep:rkyv",
+        "rkyv?/size_32"
+      ],
+      "rkyv-64": [
+        "dep:rkyv",
+        "rkyv?/size_64"
+      ],
+      "rkyv-validation": [
+        "rkyv?/validation"
+      ],
+      "__internal_bench": []
+    },
+    "n_snippets": 322,
+    "n_explicit": 3
+  },
+  {
+    "crate": "uuid",
+    "version": "1.17.0",
+    "archive_url": "https://static.crates.io/crates/uuid/uuid-1.17.0.crate",
+    "archive_sha256": "3cf4199d1e5d15ddd86a694e4d0dffa9c323ce759fea589f00fef9d81cc1931d",
+    "size": 59014,
+    "edition": "2018",
+    "rust_version": "1.63.0",
+    "license": "Apache-2.0 OR MIT",
+    "license_file": null,
+    "repository": "https://github.com/uuid-rs/uuid",
+    "docs_metadata": {
+      "rustc-args": [
+        "--cfg",
+        "uuid_unstable"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "uuid_unstable"
+      ],
+      "targets": [
+        "x86_64-unknown-linux-gnu"
+      ],
+      "features": [
+        "serde",
+        "arbitrary",
+        "slog",
+        "borsh",
+        "v1",
+        "v3",
+        "v4",
+        "v5",
+        "v6",
+        "v7",
+        "v8"
+      ]
+    },
+    "default_features": [
+      "std"
+    ],
+    "feature_names": [
+      "atomic",
+      "borsh",
+      "default",
+      "fast-rng",
+      "js",
+      "macro-diagnostics",
+      "md5",
+      "rng",
+      "rng-getrandom",
+      "rng-rand",
+      "sha1",
+      "std",
+      "v1",
+      "v3",
+      "v4",
+      "v5",
+      "v6",
+      "v7",
+      "v8"
+    ],
+    "feature_map": {
+      "default": [
+        "std"
+      ],
+      "std": [
+        "wasm-bindgen?/std",
+        "js-sys?/std"
+      ],
+      "macro-diagnostics": [
+        "dep:uuid-macro-internal"
+      ],
+      "v1": [
+        "atomic"
+      ],
+      "v3": [
+        "md5"
+      ],
+      "v4": [
+        "rng"
+      ],
+      "v5": [
+        "sha1"
+      ],
+      "v6": [
+        "atomic"
+      ],
+      "v7": [
+        "rng"
+      ],
+      "v8": [],
+      "js": [
+        "dep:wasm-bindgen",
+        "dep:js-sys"
+      ],
+      "rng": [
+        "dep:getrandom"
+      ],
+      "rng-getrandom": [
+        "rng",
+        "dep:getrandom",
+        "uuid-rng-internal-lib",
+        "uuid-rng-internal-lib/getrandom"
+      ],
+      "rng-rand": [
+        "rng",
+        "dep:rand",
+        "uuid-rng-internal-lib",
+        "uuid-rng-internal-lib/rand"
+      ],
+      "fast-rng": [
+        "rng",
+        "dep:rand"
+      ],
+      "sha1": [
+        "dep:sha1_smol"
+      ],
+      "md5": [
+        "dep:md-5"
+      ],
+      "atomic": [
+        "dep:atomic"
+      ],
+      "borsh": [
+        "dep:borsh",
+        "dep:borsh-derive"
+      ]
+    },
+    "n_snippets": 89,
+    "n_explicit": 13
+  },
+  {
+    "crate": "rayon",
+    "version": "1.10.0",
+    "archive_url": "https://static.crates.io/crates/rayon/rayon-1.10.0.crate",
+    "archive_sha256": "b418a60154510ca1a002a752ca9714984e21e4241e804d32555251faf8b78ffa",
+    "size": 180155,
+    "edition": "2021",
+    "rust_version": "1.63",
+    "license": "MIT OR Apache-2.0",
+    "license_file": null,
+    "repository": "https://github.com/rayon-rs/rayon",
+    "docs_metadata": {},
+    "default_features": [],
+    "feature_names": [
+      "web_spin_lock"
+    ],
+    "feature_map": {
+      "web_spin_lock": [
+        "dep:wasm_sync",
+        "rayon-core/web_spin_lock"
+      ]
+    },
+    "n_snippets": 162,
+    "n_explicit": 0
+  },
+  {
+    "crate": "bitflags",
+    "version": "2.9.1",
+    "archive_url": "https://static.crates.io/crates/bitflags/bitflags-2.9.1.crate",
+    "archive_sha256": "1b8e56985ec62d17e9c1001dc89c88ecd7dc08e47eba5ec7c29c7b5eeecde967",
+    "size": 47913,
+    "edition": "2021",
+    "rust_version": "1.56.0",
+    "license": "MIT OR Apache-2.0",
+    "license_file": null,
+    "repository": "https://github.com/bitflags/bitflags",
+    "docs_metadata": {
+      "features": [
+        "example_generated"
+      ]
+    },
+    "default_features": [],
+    "feature_names": [
+      "example_generated",
+      "rustc-dep-of-std",
+      "std"
+    ],
+    "feature_map": {
+      "std": [],
+      "example_generated": [],
+      "rustc-dep-of-std": [
+        "core",
+        "compiler_builtins"
+      ]
+    },
+    "n_snippets": 3,
+    "n_explicit": 0
+  },
+  {
+    "crate": "itertools",
+    "version": "0.14.0",
+    "archive_url": "https://static.crates.io/crates/itertools/itertools-0.14.0.crate",
+    "archive_sha256": "2b192c782037fadd9cfa75548310488aabdbf3d2da73885b31bd0abd03351285",
+    "size": 152715,
+    "edition": "2018",
+    "rust_version": "1.63.0",
+    "license": "MIT OR Apache-2.0",
+    "license_file": null,
+    "repository": "https://github.com/rust-itertools/itertools",
+    "docs_metadata": {},
+    "default_features": [
+      "use_std"
+    ],
+    "feature_names": [
+      "default",
+      "use_alloc",
+      "use_std"
+    ],
+    "feature_map": {
+      "default": [
+        "use_std"
+      ],
+      "use_std": [
+        "use_alloc",
+        "either/use_std"
+      ],
+      "use_alloc": []
+    },
+    "n_snippets": 189,
+    "n_explicit": 0
+  },
+  {
+    "crate": "futures-util",
+    "version": "0.3.31",
+    "archive_url": "https://static.crates.io/crates/futures-util/futures-util-0.3.31.crate",
+    "archive_sha256": "9fa08315bb612088cc391249efdc3bc77536f16c91f6cf495e6fbe85b20a4a81",
+    "size": 162124,
+    "edition": "2018",
+    "rust_version": "1.56",
+    "license": "MIT OR Apache-2.0",
+    "license_file": null,
+    "repository": "https://github.com/rust-lang/futures-rs",
+    "docs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "default_features": [
+      "std",
+      "async-await",
+      "async-await-macro"
+    ],
+    "feature_names": [
+      "alloc",
+      "async-await",
+      "async-await-macro",
+      "bilock",
+      "cfg-target-has-atomic",
+      "channel",
+      "compat",
+      "default",
+      "io",
+      "io-compat",
+      "portable-atomic",
+      "sink",
+      "std",
+      "unstable",
+      "write-all-vectored"
+    ],
+    "feature_map": {
+      "default": [
+        "std",
+        "async-await",
+        "async-await-macro"
+      ],
+      "std": [
+        "alloc",
+        "futures-core/std",
+        "futures-task/std",
+        "slab"
+      ],
+      "alloc": [
+        "futures-core/alloc",
+        "futures-task/alloc"
+      ],
+      "async-await": [],
+      "async-await-macro": [
+        "async-await",
+        "futures-macro"
+      ],
+      "compat": [
+        "std",
+        "futures_01"
+      ],
+      "io-compat": [
+        "io",
+        "compat",
+        "tokio-io"
+      ],
+      "sink": [
+        "futures-sink"
+      ],
+      "io": [
+        "std",
+        "futures-io",
+        "memchr"
+      ],
+      "channel": [
+        "std",
+        "futures-channel"
+      ],
+      "portable-atomic": [
+        "futures-core/portable-atomic"
+      ],
+      "unstable": [
+        "futures-core/unstable",
+        "futures-task/unstable"
+      ],
+      "bilock": [],
+      "write-all-vectored": [
+        "io"
+      ],
+      "cfg-target-has-atomic": []
+    },
+    "n_snippets": 7,
+    "n_explicit": 0
+  },
+  {
+    "crate": "tokio-util",
+    "version": "0.7.15",
+    "archive_url": "https://static.crates.io/crates/tokio-util/tokio-util-0.7.15.crate",
+    "archive_sha256": "66a539a9ad6d5d281510d5bd368c973d636c02dbf8a67300bfb6b950696ad7df",
+    "size": 124255,
+    "edition": "2021",
+    "rust_version": "1.70",
+    "license": "MIT",
+    "license_file": null,
+    "repository": "https://github.com/tokio-rs/tokio",
+    "docs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "tokio_unstable"
+      ],
+      "rustc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "tokio_unstable"
+      ]
+    },
+    "default_features": [],
+    "feature_names": [
+      "__docs_rs",
+      "codec",
+      "compat",
+      "default",
+      "full",
+      "io",
+      "io-util",
+      "net",
+      "rt",
+      "time"
+    ],
+    "feature_map": {
+      "default": [],
+      "full": [
+        "codec",
+        "compat",
+        "io-util",
+        "time",
+        "net",
+        "rt"
+      ],
+      "net": [
+        "tokio/net"
+      ],
+      "compat": [
+        "futures-io"
+      ],
+      "codec": [],
+      "time": [
+        "tokio/time",
+        "slab"
+      ],
+      "io": [],
+      "io-util": [
+        "io",
+        "tokio/rt",
+        "tokio/io-util"
+      ],
+      "rt": [
+        "tokio/rt",
+        "tokio/sync",
+        "futures-util",
+        "hashbrown"
+      ],
+      "__docs_rs": [
+        "futures-util"
+      ]
+    },
+    "n_snippets": 86,
+    "n_explicit": 1
+  },
+  {
+    "crate": "hyper",
+    "version": "1.6.0",
+    "archive_url": "https://static.crates.io/crates/hyper/hyper-1.6.0.crate",
+    "archive_sha256": "cc2b571658e38e0c01b1fdca3bbbe93c00d3d71693ff2770043f8c29bc7d6f80",
+    "size": 153923,
+    "edition": "2021",
+    "rust_version": "1.63",
+    "license": "MIT",
+    "license_file": null,
+    "repository": "https://github.com/hyperium/hyper",
+    "docs_metadata": {
+      "features": [
+        "ffi",
+        "full",
+        "tracing"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "hyper_unstable_ffi",
+        "--cfg",
+        "hyper_unstable_tracing"
+      ]
+    },
+    "default_features": [],
+    "feature_names": [
+      "capi",
+      "client",
+      "default",
+      "ffi",
+      "full",
+      "http1",
+      "http2",
+      "nightly",
+      "server",
+      "tracing"
+    ],
+    "feature_map": {
+      "default": [],
+      "full": [
+        "client",
+        "http1",
+        "http2",
+        "server"
+      ],
+      "http1": [
+        "dep:futures-channel",
+        "dep:futures-util",
+        "dep:httparse",
+        "dep:itoa"
+      ],
+      "http2": [
+        "dep:futures-channel",
+        "dep:futures-util",
+        "dep:h2"
+      ],
+      "client": [
+        "dep:want",
+        "dep:pin-project-lite",
+        "dep:smallvec"
+      ],
+      "server": [
+        "dep:httpdate",
+        "dep:pin-project-lite",
+        "dep:smallvec"
+      ],
+      "ffi": [
+        "dep:http-body-util",
+        "futures-util?/alloc"
+      ],
+      "capi": [],
+      "tracing": [
+        "dep:tracing"
+      ],
+      "nightly": []
+    },
+    "n_snippets": 6,
+    "n_explicit": 0
+  },
+  {
+    "crate": "axum",
+    "version": "0.8.4",
+    "archive_url": "https://static.crates.io/crates/axum/axum-0.8.4.crate",
+    "archive_sha256": "021e862c184ae977658b36c4500f7feac3221ca5da43e3f25bd04ab6c79a29b5",
+    "size": 175159,
+    "edition": "2021",
+    "rust_version": {
+      "workspace": true
+    },
+    "license": "MIT",
+    "license_file": null,
+    "repository": "https://github.com/tokio-rs/axum",
+    "docs_metadata": {
+      "all-features": true
+    },
+    "default_features": [
+      "form",
+      "http1",
+      "json",
+      "matched-path",
+      "original-uri",
+      "query",
+      "tokio",
+      "tower-log",
+      "tracing"
+    ],
+    "feature_names": [
+      "__private",
+      "__private_docs",
+      "default",
+      "form",
+      "http1",
+      "http2",
+      "json",
+      "macros",
+      "matched-path",
+      "multipart",
+      "original-uri",
+      "query",
+      "tokio",
+      "tower-log",
+      "tracing",
+      "ws"
+    ],
+    "feature_map": {
+      "default": [
+        "form",
+        "http1",
+        "json",
+        "matched-path",
+        "original-uri",
+        "query",
+        "tokio",
+        "tower-log",
+        "tracing"
+      ],
+      "form": [
+        "dep:form_urlencoded",
+        "dep:serde_urlencoded",
+        "dep:serde_path_to_error"
+      ],
+      "http1": [
+        "dep:hyper",
+        "hyper?/http1",
+        "hyper-util?/http1"
+      ],
+      "http2": [
+        "dep:hyper",
+        "hyper?/http2",
+        "hyper-util?/http2"
+      ],
+      "json": [
+        "dep:serde_json",
+        "dep:serde_path_to_error"
+      ],
+      "macros": [
+        "dep:axum-macros"
+      ],
+      "matched-path": [],
+      "multipart": [
+        "dep:multer"
+      ],
+      "original-uri": [],
+      "query": [
+        "dep:form_urlencoded",
+        "dep:serde_urlencoded",
+        "dep:serde_path_to_error"
+      ],
+      "tokio": [
+        "dep:hyper-util",
+        "dep:tokio",
+        "tokio/net",
+        "tokio/rt",
+        "tower/make",
+        "tokio/macros"
+      ],
+      "tower-log": [
+        "tower/log"
+      ],
+      "tracing": [
+        "dep:tracing",
+        "axum-core/tracing"
+      ],
+      "ws": [
+        "dep:hyper",
+        "tokio",
+        "dep:tokio-tungstenite",
+        "dep:sha1",
+        "dep:base64"
+      ],
+      "__private_docs": [
+        "axum-core/__private_docs",
+        "tower/full",
+        "dep:tower-http"
+      ],
+      "__private": [
+        "tokio",
+        "http1",
+        "dep:reqwest"
+      ]
+    },
+    "n_snippets": 91,
+    "n_explicit": 2
+  },
+  {
+    "crate": "regex",
+    "version": "1.11.1",
+    "archive_url": "https://static.crates.io/crates/regex/regex-1.11.1.crate",
+    "archive_sha256": "b544ef1b4eac5dc2db33ea63606ae9ffcfac26c1416a2806ae0bf5f56b201191",
+    "size": 254170,
+    "edition": "2021",
+    "rust_version": "1.65",
+    "license": "MIT OR Apache-2.0",
+    "license_file": null,
+    "repository": "https://github.com/rust-lang/regex",
+    "docs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "default_features": [
+      "std",
+      "perf",
+      "unicode",
+      "regex-syntax/default"
+    ],
+    "feature_names": [
+      "default",
+      "logging",
+      "pattern",
+      "perf",
+      "perf-backtrack",
+      "perf-cache",
+      "perf-dfa",
+      "perf-dfa-full",
+      "perf-inline",
+      "perf-literal",
+      "perf-onepass",
+      "std",
+      "unicode",
+      "unicode-age",
+      "unicode-bool",
+      "unicode-case",
+      "unicode-gencat",
+      "unicode-perl",
+      "unicode-script",
+      "unicode-segment",
+      "unstable",
+      "use_std"
+    ],
+    "feature_map": {
+      "default": [
+        "std",
+        "perf",
+        "unicode",
+        "regex-syntax/default"
+      ],
+      "std": [
+        "aho-corasick?/std",
+        "memchr?/std",
+        "regex-automata/std",
+        "regex-syntax/std"
+      ],
+      "logging": [
+        "aho-corasick?/logging",
+        "memchr?/logging",
+        "regex-automata/logging"
+      ],
+      "use_std": [
+        "std"
+      ],
+      "perf": [
+        "perf-cache",
+        "perf-dfa",
+        "perf-onepass",
+        "perf-backtrack",
+        "perf-inline",
+        "perf-literal"
+      ],
+      "perf-dfa": [
+        "regex-automata/hybrid"
+      ],
+      "perf-dfa-full": [
+        "regex-automata/dfa-build",
+        "regex-automata/dfa-search"
+      ],
+      "perf-onepass": [
+        "regex-automata/dfa-onepass"
+      ],
+      "perf-backtrack": [
+        "regex-automata/nfa-backtrack"
+      ],
+      "perf-inline": [
+        "regex-automata/perf-inline"
+      ],
+      "perf-literal": [
+        "dep:aho-corasick",
+        "dep:memchr",
+        "regex-automata/perf-literal"
+      ],
+      "perf-cache": [],
+      "unicode": [
+        "unicode-age",
+        "unicode-bool",
+        "unicode-case",
+        "unicode-gencat",
+        "unicode-perl",
+        "unicode-script",
+        "unicode-segment",
+        "regex-automata/unicode",
+        "regex-syntax/unicode"
+      ],
+      "unicode-age": [
+        "regex-automata/unicode-age",
+        "regex-syntax/unicode-age"
+      ],
+      "unicode-bool": [
+        "regex-automata/unicode-bool",
+        "regex-syntax/unicode-bool"
+      ],
+      "unicode-case": [
+        "regex-automata/unicode-case",
+        "regex-syntax/unicode-case"
+      ],
+      "unicode-gencat": [
+        "regex-automata/unicode-gencat",
+        "regex-syntax/unicode-gencat"
+      ],
+      "unicode-perl": [
+        "regex-automata/unicode-perl",
+        "regex-automata/unicode-word-boundary",
+        "regex-syntax/unicode-perl"
+      ],
+      "unicode-script": [
+        "regex-automata/unicode-script",
+        "regex-syntax/unicode-script"
+      ],
+      "unicode-segment": [
+        "regex-automata/unicode-segment",
+        "regex-syntax/unicode-segment"
+      ],
+      "unstable": [
+        "pattern"
+      ],
+      "pattern": []
+    },
+    "n_snippets": 214,
+    "n_explicit": 1
+  },
+  {
+    "crate": "petgraph",
+    "version": "0.8.1",
+    "archive_url": "https://static.crates.io/crates/petgraph/petgraph-0.8.1.crate",
+    "archive_sha256": "7a98c6720655620a521dcc722d0ad66cd8afd5d86e34a89ef691c50b7b24de06",
+    "size": 763960,
+    "edition": {
+      "workspace": true
+    },
+    "rust_version": {
+      "workspace": true
+    },
+    "license": "MIT OR Apache-2.0",
+    "license_file": null,
+    "repository": "https://github.com/petgraph/petgraph",
+    "docs_metadata": {
+      "features": [
+        "rayon",
+        "serde-1",
+        "quickcheck"
+      ]
+    },
+    "default_features": [
+      "std",
+      "graphmap",
+      "stable_graph",
+      "matrix_graph"
+    ],
+    "feature_names": [
+      "all",
+      "default",
+      "generate",
+      "graphmap",
+      "matrix_graph",
+      "rayon",
+      "serde-1",
+      "stable_graph",
+      "std",
+      "unstable"
+    ],
+    "feature_map": {
+      "rayon": [
+        "std",
+        "dep:rayon",
+        "indexmap/rayon"
+      ],
+      "all": [
+        "unstable",
+        "quickcheck",
+        "matrix_graph",
+        "stable_graph",
+        "graphmap",
+        "rayon"
+      ],
+      "default": [
+        "std",
+        "graphmap",
+        "stable_graph",
+        "matrix_graph"
+      ],
+      "generate": [],
+      "graphmap": [],
+      "matrix_graph": [],
+      "serde-1": [
+        "serde",
+        "serde_derive"
+      ],
+      "stable_graph": [
+        "serde?/alloc"
+      ],
+      "unstable": [
+        "generate"
+      ],
+      "std": [
+        "indexmap/std"
+      ]
+    },
+    "n_snippets": 46,
+    "n_explicit": 0
+  },
+  {
+    "crate": "indexmap",
+    "version": "2.10.0",
+    "archive_url": "https://static.crates.io/crates/indexmap/indexmap-2.10.0.crate",
+    "archive_sha256": "fe4cd85333e22411419a0bcae1297d25e58c9443848b11dc6a86fefe8c78a661",
+    "size": 95836,
+    "edition": "2021",
+    "rust_version": "1.63",
+    "license": "Apache-2.0 OR MIT",
+    "license_file": null,
+    "repository": "https://github.com/indexmap-rs/indexmap",
+    "docs_metadata": {
+      "features": [
+        "arbitrary",
+        "quickcheck",
+        "serde",
+        "borsh",
+        "rayon"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "default_features": [
+      "std"
+    ],
+    "feature_names": [
+      "default",
+      "std",
+      "test_debug"
+    ],
+    "feature_map": {
+      "default": [
+        "std"
+      ],
+      "std": [],
+      "test_debug": []
+    },
+    "n_snippets": 32,
+    "n_explicit": 0
+  },
+  {
+    "crate": "strum",
+    "version": "0.27.1",
+    "archive_url": "https://static.crates.io/crates/strum/strum-0.27.1.crate",
+    "archive_sha256": "f64def088c51c9510a8579e3c5d67c65349dcf755e5479ad3d010aa6454e2c32",
+    "size": 7467,
+    "edition": "2021",
+    "rust_version": "1.66.1",
+    "license": "MIT",
+    "license_file": null,
+    "repository": "https://github.com/Peternator7/strum",
+    "docs_metadata": {
+      "features": [
+        "derive"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "default_features": [
+      "std"
+    ],
+    "feature_names": [
+      "default",
+      "derive",
+      "std"
+    ],
+    "feature_map": {
+      "default": [
+        "std"
+      ],
+      "derive": [
+        "strum_macros"
+      ],
+      "std": []
+    },
+    "n_snippets": 3,
+    "n_explicit": 0
+  },
+  {
+    "crate": "flate2",
+    "version": "1.1.2",
+    "archive_url": "https://static.crates.io/crates/flate2/flate2-1.1.2.crate",
+    "archive_sha256": "4a3d7db9596fecd151c5f638c0ee5d5bd487b6e0ea232e5dc96d5250f6f94b1d",
+    "size": 76495,
+    "edition": "2018",
+    "rust_version": "1.67.0",
+    "license": "MIT OR Apache-2.0",
+    "license_file": null,
+    "repository": "https://github.com/rust-lang/flate2-rs",
+    "docs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "default_features": [
+      "rust_backend"
+    ],
+    "feature_names": [
+      "any_impl",
+      "any_zlib",
+      "cloudflare_zlib",
+      "default",
+      "miniz-sys",
+      "rust_backend",
+      "zlib",
+      "zlib-default",
+      "zlib-ng",
+      "zlib-ng-compat",
+      "zlib-rs"
+    ],
+    "feature_map": {
+      "default": [
+        "rust_backend"
+      ],
+      "any_zlib": [
+        "any_impl"
+      ],
+      "any_impl": [],
+      "zlib": [
+        "any_zlib",
+        "libz-sys"
+      ],
+      "zlib-default": [
+        "any_zlib",
+        "libz-sys/default"
+      ],
+      "zlib-ng-compat": [
+        "zlib",
+        "libz-sys/zlib-ng"
+      ],
+      "zlib-ng": [
+        "any_zlib",
+        "libz-ng-sys"
+      ],
+      "zlib-rs": [
+        "any_zlib",
+        "libz-rs-sys"
+      ],
+      "cloudflare_zlib": [
+        "any_zlib",
+        "cloudflare-zlib-sys"
+      ],
+      "rust_backend": [
+        "miniz_oxide",
+        "any_impl"
+      ],
+      "miniz-sys": [
+        "rust_backend"
+      ]
+    },
+    "n_snippets": 24,
+    "n_explicit": 0
+  },
+  {
+    "crate": "indicatif",
+    "version": "0.17.11",
+    "archive_url": "https://static.crates.io/crates/indicatif/indicatif-0.17.11.crate",
+    "archive_sha256": "183b3088984b400f4cfac3620d5e076c84da5364016b4f49473de574b2586235",
+    "size": 66577,
+    "edition": "2021",
+    "rust_version": "1.70",
+    "license": "MIT",
+    "license_file": null,
+    "repository": "https://github.com/console-rs/indicatif",
+    "docs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "default_features": [
+      "unicode-width",
+      "console/unicode-width"
+    ],
+    "feature_names": [
+      "default",
+      "futures",
+      "improved_unicode",
+      "in_memory"
+    ],
+    "feature_map": {
+      "default": [
+        "unicode-width",
+        "console/unicode-width"
+      ],
+      "improved_unicode": [
+        "unicode-segmentation",
+        "unicode-width",
+        "console/unicode-width"
+      ],
+      "in_memory": [
+        "vt100"
+      ],
+      "futures": [
+        "dep:futures-core"
+      ]
+    },
+    "n_snippets": 16,
+    "n_explicit": 0
+  },
+  {
+    "crate": "prost",
+    "version": "0.13.5",
+    "archive_url": "https://static.crates.io/crates/prost/prost-0.13.5.crate",
+    "archive_sha256": "2796faa41db3ec313a31f7624d9286acf277b52de526150b7e69f3debf891ee5",
+    "size": 32469,
+    "edition": {
+      "workspace": true
+    },
+    "rust_version": {
+      "workspace": true
+    },
+    "license": {
+      "workspace": true
+    },
+    "license_file": null,
+    "repository": {
+      "workspace": true
+    },
+    "docs_metadata": {},
+    "default_features": [
+      "derive",
+      "std"
+    ],
+    "feature_names": [
+      "default",
+      "derive",
+      "no-recursion-limit",
+      "prost-derive",
+      "std"
+    ],
+    "feature_map": {
+      "default": [
+        "derive",
+        "std"
+      ],
+      "derive": [
+        "dep:prost-derive"
+      ],
+      "prost-derive": [
+        "derive"
+      ],
+      "no-recursion-limit": [],
+      "std": []
+    },
+    "n_snippets": 0,
+    "n_explicit": 0
+  },
+  {
+    "crate": "tinyvec",
+    "version": "1.9.0",
+    "archive_url": "https://static.crates.io/crates/tinyvec/tinyvec-1.9.0.crate",
+    "archive_sha256": "09b3661f17e86524eccd4371ab0429194e0d7c008abb45f7a7495b1719463c71",
+    "size": 54137,
+    "edition": "2018",
+    "rust_version": null,
+    "license": "Zlib OR Apache-2.0 OR MIT",
+    "license_file": null,
+    "repository": "https://github.com/Lokathor/tinyvec",
+    "docs_metadata": {
+      "features": [
+        "alloc",
+        "std",
+        "grab_spare_slice",
+        "latest_stable_rust",
+        "serde",
+        "borsh"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docs_rs"
+      ]
+    },
+    "default_features": [],
+    "feature_names": [
+      "alloc",
+      "debugger_visualizer",
+      "default",
+      "experimental_write_impl",
+      "grab_spare_slice",
+      "latest_stable_rust",
+      "nightly_slice_partition_dedup",
+      "real_blackbox",
+      "rustc_1_40",
+      "rustc_1_55",
+      "rustc_1_57",
+      "rustc_1_61",
+      "std"
+    ],
+    "feature_map": {
+      "default": [],
+      "alloc": [
+        "tinyvec_macros"
+      ],
+      "std": [
+        "alloc"
+      ],
+      "grab_spare_slice": [],
+      "rustc_1_40": [],
+      "rustc_1_55": [
+        "rustc_1_40"
+      ],
+      "rustc_1_57": [
+        "rustc_1_55"
+      ],
+      "rustc_1_61": [
+        "rustc_1_57"
+      ],
+      "latest_stable_rust": [
+        "rustc_1_61"
+      ],
+      "nightly_slice_partition_dedup": [],
+      "debugger_visualizer": [],
+      "experimental_write_impl": [],
+      "real_blackbox": [
+        "criterion/real_blackbox"
+      ]
+    },
+    "n_snippets": 73,
+    "n_explicit": 1
+  }
+]

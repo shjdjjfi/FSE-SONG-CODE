@@ -1,0 +1,25 @@
+{
+  "key": "b9868d0e9deef6d261",
+  "args": {
+    "crate": "tower-http",
+    "version": "0.6.6",
+    "id": "aa3075d576525f77",
+    "profile": "candidate",
+    "features": [
+      "cors",
+      "request-id",
+      "validate-request"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.37,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "3129422a032f7fbf704cf25dd9cd5a38d5195e1d337b333d4d196a076543048e",
+  "manifest_sha256": "e80c2ef9aa7ed8d7fef3c13da916abe62213f20646e7f416adf4dbdbb120b1b8",
+  "log_file": "industrial/local_ci_runs/tower-http-0.6.6/results/check_logs/b9868d0e9deef6d261.txt.gz"
+}

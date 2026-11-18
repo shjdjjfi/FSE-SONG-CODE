@@ -1,0 +1,28 @@
+{
+  "key": "35f7f0ec13547be14f",
+  "args": {
+    "crate": "tinyvec",
+    "version": "1.9.0",
+    "id": "a24e3c1538f3e9c3",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0534,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `SliceVec`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `SliceVec`\n --> src/main.rs:3:14\n  |\n3 | let mut sv = SliceVec::from(&mut arr);\n  |              ^^^^^^^^ use of undeclared type `SliceVec`\n  |\nhelp: consider importing this struct\n  |\n1 + use tinyvec::SliceVec;\n  |\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tinyvec_consumer` (bin \"n05_tinyvec_consumer\") due to 1 previous error\n",
+  "code_sha256": "7c65b33e9fb9dad8106a7863756b39bd8b1ef2c0089803270d49e3cec9acfc70",
+  "manifest_sha256": "0007d09df4993aa205a1fe389ad78c0a3b89190126ca8659de851655e6931e11",
+  "log_file": "results/check_logs/35f7f0ec13547be14f.txt.gz"
+}

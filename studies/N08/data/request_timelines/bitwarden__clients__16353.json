@@ -1,0 +1,34 @@
+{
+  "pr": 16353,
+  "pr_author": "alexrubik",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-09-09T03:17:24Z",
+      "requested_people": [
+        "alexrubik"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-09-16T15:28:47Z",
+      "requested_people": [
+        "alexrubik",
+        "ttalty"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-09-17T15:12:07Z",
+      "requested_people": [
+        "alexrubik"
+      ],
+      "team_request_anonymized": true
+    }
+  ],
+  "sha256": "216281415babc69e77f1ad1b01b1d04b727f443e98ea67a2492dc91812056425",
+  "url": "https://github.com/bitwarden/clients/pull/16353"
+}

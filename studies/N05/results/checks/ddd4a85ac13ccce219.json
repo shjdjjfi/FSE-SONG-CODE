@@ -1,0 +1,37 @@
+{
+  "key": "ddd4a85ac13ccce219",
+  "args": {
+    "crate": "tinyvec",
+    "version": "1.9.0",
+    "id": "57ff1aff71a9024b",
+    "profile": "candidate",
+    "features": [
+      "real_blackbox",
+      "std"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.6291,
+  "errors": [
+    {
+      "code": "E0599",
+      "message": "no method named `grab_spare_slice` found for struct `ArrayVec<[i32; 4]>` in the current scope",
+      "rendered": "error[E0599]: no method named `grab_spare_slice` found for struct `ArrayVec<[i32; 4]>` in the current scope\n --> src/main.rs:4:15\n  |\n4 | assert_eq!(av.grab_spare_slice().len(), 4);\n  |               ^^^^^^^^^^^^^^^^\n  |\nhelp: there is a method `as_slice` with a similar name\n  |\n4 - assert_eq!(av.grab_spare_slice().len(), 4);\n4 + assert_eq!(av.as_slice().len(), 4);\n  |\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `grab_spare_slice` found for struct `ArrayVec<[i32; 4]>` in the current scope",
+      "rendered": "error[E0599]: no method named `grab_spare_slice` found for struct `ArrayVec<[i32; 4]>` in the current scope\n --> src/main.rs:9:15\n  |\n9 | assert_eq!(av.grab_spare_slice().len(), 0);\n  |               ^^^^^^^^^^^^^^^^\n  |\nhelp: there is a method `as_slice` with a similar name\n  |\n9 - assert_eq!(av.grab_spare_slice().len(), 0);\n9 + assert_eq!(av.as_slice().len(), 0);\n  |\n\n",
+      "line": 9
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_tinyvec_consumer` (bin \"n05_tinyvec_consumer\") due to 2 previous errors\n",
+  "code_sha256": "6790e2f93f757e5ff70afdc23962cf1913a761625a43f7a68e87de5545a32a1d",
+  "manifest_sha256": "6cb59f646692cfa24e857ba5d5e144734d7fdb799b6c74953af44fde3ffe5463",
+  "log_file": "results/check_logs/ddd4a85ac13ccce219.txt.gz"
+}

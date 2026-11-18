@@ -1,0 +1,26 @@
+{
+  "key": "e6ab1ddc6ef724fff0",
+  "args": {
+    "crate": "sea-query",
+    "version": "0.32.5",
+    "id": "cc57460dbc68671e",
+    "profile": "candidate",
+    "features": [
+      "backend-postgres",
+      "postgres-vector",
+      "tests-cfg",
+      "with-time"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 1.9586,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "6cbfbfaea8c94f9ba92c25a1902076f620eed685566edf330e4597dd9a6771f3",
+  "manifest_sha256": "343224b3c07891247171adf949bea03a19e2ec8d160e663db40605a2d888e847",
+  "log_file": "prospective/results/check_logs/e6ab1ddc6ef724fff0.txt.gz"
+}

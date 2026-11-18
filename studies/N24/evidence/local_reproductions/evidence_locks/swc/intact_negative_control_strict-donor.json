@@ -1,0 +1,235 @@
+{
+  "lockfileVersion": 3,
+  "name": "n24-swc",
+  "packages": {
+    "": {
+      "dependencies": {
+        "@swc/core": "1.10.14",
+        "picocolors": "^1.0.0"
+      },
+      "name": "n24-swc",
+      "version": "1.0.0"
+    },
+    "node_modules/@swc/core": {
+      "dependencies": {
+        "@swc/counter": "^0.1.3",
+        "@swc/types": "^0.1.17"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/swc"
+      },
+      "hasInstallScript": true,
+      "integrity": "sha512-WSrnE6JRnH20ZYjOOgSS4aOaPv9gxlkI2KRkN24kagbZnPZMnN8bZZyzw1rrLvwgpuRGv17Uz+hflosbR+SP6w==",
+      "license": "Apache-2.0",
+      "optionalDependencies": {
+        "@swc/core-darwin-arm64": "1.10.14",
+        "@swc/core-darwin-x64": "1.10.14",
+        "@swc/core-linux-arm-gnueabihf": "1.10.14",
+        "@swc/core-linux-arm64-gnu": "1.10.14",
+        "@swc/core-linux-arm64-musl": "1.10.14",
+        "@swc/core-linux-x64-gnu": "1.10.14",
+        "@swc/core-linux-x64-musl": "1.10.14",
+        "@swc/core-win32-arm64-msvc": "1.10.14",
+        "@swc/core-win32-ia32-msvc": "1.10.14",
+        "@swc/core-win32-x64-msvc": "1.10.14"
+      },
+      "peerDependencies": {
+        "@swc/helpers": "*"
+      },
+      "peerDependenciesMeta": {
+        "@swc/helpers": {
+          "optional": true
+        }
+      },
+      "resolved": "https://registry.npmjs.org/@swc/core/-/core-1.10.14.tgz",
+      "version": "1.10.14"
+    },
+    "node_modules/@swc/core-darwin-arm64": {
+      "cpu": [
+        "arm64"
+      ],
+      "engines": {
+        "node": ">=10"
+      },
+      "integrity": "sha512-Dh4VyrhDDb05tdRmqJ/MucOPMTnrB4pRJol18HVyLlqu1HOT5EzonUniNTCdQbUXjgdv5UVJSTE1lYTzrp+myA==",
+      "license": "Apache-2.0 AND MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "resolved": "https://registry.npmjs.org/@swc/core-darwin-arm64/-/core-darwin-arm64-1.10.14.tgz",
+      "version": "1.10.14"
+    },
+    "node_modules/@swc/core-darwin-x64": {
+      "cpu": [
+        "x64"
+      ],
+      "engines": {
+        "node": ">=10"
+      },
+      "integrity": "sha512-KpzotL/I0O12RE3tF8NmQErINv0cQe/0mnN/Q50ESFzB5kU6bLgp2HMnnwDTm/XEZZRJCNe0oc9WJ5rKbAJFRQ==",
+      "license": "Apache-2.0 AND MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "resolved": "https://registry.npmjs.org/@swc/core-darwin-x64/-/core-darwin-x64-1.10.14.tgz",
+      "version": "1.10.14"
+    },
+    "node_modules/@swc/core-linux-arm-gnueabihf": {
+      "cpu": [
+        "arm"
+      ],
+      "engines": {
+        "node": ">=10"
+      },
+      "integrity": "sha512-20yRXZjMJVz1wp1TcscKiGTVXistG+saIaxOmxSNQia1Qun3hSWLL+u6+5kXbfYGr7R2N6kqSwtZbIfJI25r9Q==",
+      "license": "Apache-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "resolved": "https://registry.npmjs.org/@swc/core-linux-arm-gnueabihf/-/core-linux-arm-gnueabihf-1.10.14.tgz",
+      "version": "1.10.14"
+    },
+    "node_modules/@swc/core-linux-arm64-gnu": {
+      "cpu": [
+        "arm64"
+      ],
+      "engines": {
+        "node": ">=10"
+      },
+      "integrity": "sha512-Gy7cGrNkiMfPxQyLGxdgXPwyWzNzbHuWycJFcoKBihxZKZIW8hkPBttkGivuLC+0qOgsV2/U+S7tlvAju7FtmQ==",
+      "license": "Apache-2.0 AND MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "resolved": "https://registry.npmjs.org/@swc/core-linux-arm64-gnu/-/core-linux-arm64-gnu-1.10.14.tgz",
+      "version": "1.10.14"
+    },
+    "node_modules/@swc/core-linux-arm64-musl": {
+      "cpu": [
+        "arm64"
+      ],
+      "engines": {
+        "node": ">=10"
+      },
+      "integrity": "sha512-+oYVqJvFw62InZ8PIy1rBACJPC2WTe4vbVb9kM1jJj2D7dKLm9acnnYIVIDsM5Wo7Uab8RvPHXVbs19IBurzuw==",
+      "license": "Apache-2.0 AND MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "resolved": "https://registry.npmjs.org/@swc/core-linux-arm64-musl/-/core-linux-arm64-musl-1.10.14.tgz",
+      "version": "1.10.14"
+    },
+    "node_modules/@swc/core-linux-x64-gnu": {
+      "cpu": [
+        "x64"
+      ],
+      "engines": {
+        "node": ">=10"
+      },
+      "integrity": "sha512-OmEbVEKQFLQVHwo4EJl9osmlulURy46k232Opfpn/1ji0t2KcNCci3POsnfMuoZjLkGJv8vGNJdPQxX+CP+wSA==",
+      "license": "Apache-2.0 AND MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "resolved": "https://registry.npmjs.org/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.10.14.tgz",
+      "version": "1.10.14"
+    },
+    "node_modules/@swc/core-linux-x64-musl": {
+      "cpu": [
+        "x64"
+      ],
+      "engines": {
+        "node": ">=10"
+      },
+      "integrity": "sha512-OZW+Icm8DMPqHbhdxplkuG8qrNnPk5i7xJOZWYi1y5bTjgGFI4nEzrsmmeHKMdQTaWwsFrm3uK1rlyQ48MmXmg==",
+      "license": "Apache-2.0 AND MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "resolved": "https://registry.npmjs.org/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.10.14.tgz",
+      "version": "1.10.14"
+    },
+    "node_modules/@swc/core-win32-arm64-msvc": {
+      "cpu": [
+        "arm64"
+      ],
+      "engines": {
+        "node": ">=10"
+      },
+      "integrity": "sha512-sTvc+xrDQXy3HXZFtTEClY35Efvuc3D+busYm0+rb1+Thau4HLRY9WP+sOKeGwH9/16rzfzYEqD7Ds8A9ykrHw==",
+      "license": "Apache-2.0 AND MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "resolved": "https://registry.npmjs.org/@swc/core-win32-arm64-msvc/-/core-win32-arm64-msvc-1.10.14.tgz",
+      "version": "1.10.14"
+    },
+    "node_modules/@swc/core-win32-ia32-msvc": {
+      "cpu": [
+        "ia32"
+      ],
+      "engines": {
+        "node": ">=10"
+      },
+      "integrity": "sha512-j2iQ4y9GWTKtES5eMU0sDsFdYni7IxME7ejFej25Tv3Fq4B+U9tgtYWlJwh1858nIWDXelHiKcSh/UICAyVMdQ==",
+      "license": "Apache-2.0 AND MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "resolved": "https://registry.npmjs.org/@swc/core-win32-ia32-msvc/-/core-win32-ia32-msvc-1.10.14.tgz",
+      "version": "1.10.14"
+    },
+    "node_modules/@swc/core-win32-x64-msvc": {
+      "cpu": [
+        "x64"
+      ],
+      "engines": {
+        "node": ">=10"
+      },
+      "integrity": "sha512-TYtWkUSMkjs0jGPeWdtWbex4B+DlQZmN/ySVLiPI+EltYCLEXsFMkVFq6aWn48dqFHggFK0UYfvDrJUR2c3Qxg==",
+      "license": "Apache-2.0 AND MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "resolved": "https://registry.npmjs.org/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.10.14.tgz",
+      "version": "1.10.14"
+    },
+    "node_modules/@swc/counter": {
+      "integrity": "sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==",
+      "license": "Apache-2.0",
+      "resolved": "https://registry.npmjs.org/@swc/counter/-/counter-0.1.3.tgz",
+      "version": "0.1.3"
+    },
+    "node_modules/@swc/types": {
+      "dependencies": {
+        "@swc/counter": "^0.1.3"
+      },
+      "integrity": "sha512-V6Mnml8v09QALx6K0elJ7o9K/MkVDtW3t6L+7Ou/JcWtb3xwId2AH4FeOceySd2JaO87IMw4+6vSZxLm34LPbw==",
+      "license": "Apache-2.0",
+      "resolved": "https://registry.npmjs.org/@swc/types/-/types-0.1.28.tgz",
+      "version": "0.1.28"
+    },
+    "node_modules/picocolors": {
+      "integrity": "sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==",
+      "license": "ISC",
+      "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.0.0.tgz",
+      "version": "1.0.0"
+    }
+  },
+  "requires": true,
+  "version": "1.0.0"
+}

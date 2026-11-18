@@ -1,0 +1,21 @@
+{
+  "key": "f1d41d327b7b98a106",
+  "args": {
+    "crate": "regex",
+    "version": "1.11.1",
+    "id": "0e23dc535010c9ff",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0656,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "e590a5014e16845702cc071ca762fb17743940199378c9aebf7982fb9a6f1618",
+  "manifest_sha256": "d7f8eb05ae980ce5c705e047fb672a8668356084cbeb97a7da6a7b8a5dd2501b",
+  "log_file": "results/check_logs/f1d41d327b7b98a106.txt.gz"
+}

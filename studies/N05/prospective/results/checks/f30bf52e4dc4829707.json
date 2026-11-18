@@ -1,0 +1,30 @@
+{
+  "key": "f30bf52e4dc4829707",
+  "args": {
+    "crate": "hyper-util",
+    "version": "0.1.15",
+    "id": "babba9f5f04cf89e",
+    "profile": "candidate",
+    "features": [
+      "server-auto"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0941,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `hyper_util::rt::TokioExecutor`",
+      "rendered": "error[E0432]: unresolved import `hyper_util::rt::TokioExecutor`\n  --> src/main.rs:3:5\n   |\n 3 |     rt::TokioExecutor,\n   |     ^^^^^^^^^^^^^^^^^ no `TokioExecutor` in `rt`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-util-0.1.15/src/rt/mod.rs:12:23\n   |\n11 | #[cfg(feature = \"tokio\")]\n   |       ----------------- the item is gated behind the `tokio` feature\n12 | pub use self::tokio::{TokioExecutor, TokioIo, TokioTimer};\n   |                       ^^^^^^^^^^^^^\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_hyper_util_consumer` (bin \"n05_hyper_util_consumer\") due to 1 previous error\n",
+  "code_sha256": "07a34e7fac218ce40399e1f45bdcb4b59d20e73c4be5d688eaf74cdc092d750b",
+  "manifest_sha256": "b8e9d9e9af5e97f6a8c3f89534fa4b9d2c6bb24061fe0d3dcc5268582e86875d",
+  "log_file": "prospective/results/check_logs/f30bf52e4dc4829707.txt.gz"
+}

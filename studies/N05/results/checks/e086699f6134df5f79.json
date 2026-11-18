@@ -1,0 +1,21 @@
+{
+  "key": "e086699f6134df5f79",
+  "args": {
+    "crate": "indexmap",
+    "version": "2.10.0",
+    "id": "8620300d32f39360",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0985,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "475185fab18d1d3164782d6c45732536b862c463d2648ae65c43f052f349337e",
+  "manifest_sha256": "6f6ab335f95ef9d6f44e71110f840d20fa75936e817a45de2e3d7007734ad1b3",
+  "log_file": "results/check_logs/e086699f6134df5f79.txt.gz"
+}

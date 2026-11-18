@@ -1,0 +1,40 @@
+{
+  "crate": "tower",
+  "release": "0.5.2",
+  "snippet_id": "70f8633f0aab478c",
+  "source": "src/builder/mod.rs",
+  "line": 589,
+  "original_selected_feature": "balance",
+  "source_named_feature": "util",
+  "intervention": "counterfactual actual Cargo checks in isolated consumer, not an upstream CI deployment",
+  "original_broad": {
+    "requested": [
+      "balance"
+    ],
+    "status": "pass",
+    "check": "0081abb70fe5def33c",
+    "feature_closure": [
+      "__common",
+      "balance",
+      "discover",
+      "load",
+      "make",
+      "ready-cache",
+      "util"
+    ],
+    "feature_closure_size": 7
+  },
+  "narrow_candidate": {
+    "requested": [
+      "util"
+    ],
+    "status": "pass",
+    "check": "5955667a55da203ae4",
+    "feature_closure": [
+      "__common",
+      "util"
+    ],
+    "feature_closure_size": 2
+  },
+  "observed_narrower_repair": true
+}

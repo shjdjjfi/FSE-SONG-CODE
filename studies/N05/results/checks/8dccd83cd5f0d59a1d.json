@@ -1,0 +1,52 @@
+{
+  "key": "8dccd83cd5f0d59a1d",
+  "args": {
+    "crate": "strum",
+    "version": "0.27.1",
+    "id": "59c54a68094a4178",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.168,
+  "errors": [
+    {
+      "code": null,
+      "message": "cannot find derive macro `EnumMessage` in this scope",
+      "rendered": "error: cannot find derive macro `EnumMessage` in this scope\n --> src/main.rs:6:32\n  |\n6 | #[derive(PartialEq, Eq, Debug, EnumMessage)]\n  |                                ^^^^^^^^^^^\n  |\nnote: `EnumMessage` is imported here, but it is only a trait, without a derive macro\n --> src/main.rs:4:5\n  |\n4 | use strum::EnumMessage;\n  |     ^^^^^^^^^^^^^^^^^^\n\n",
+      "line": 6
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `strum` in this scope",
+      "rendered": "error: cannot find attribute `strum` in this scope\n --> src/main.rs:8:7\n  |\n8 |     #[strum(message=\"I have a dog\")]\n  |       ^^^^^\n  |\n  = note: `strum` is in scope, but it is a crate, not an attribute\n\n",
+      "line": 8
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `strum` in this scope",
+      "rendered": "error: cannot find attribute `strum` in this scope\n --> src/main.rs:9:7\n  |\n9 |     #[strum(detailed_message=\"My dog's name is Spots\")]\n  |       ^^^^^\n  |\n  = note: `strum` is in scope, but it is a crate, not an attribute\n\n",
+      "line": 9
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `strum` in this scope",
+      "rendered": "error: cannot find attribute `strum` in this scope\n  --> src/main.rs:12:7\n   |\n12 |     #[strum(message=\"I don't have a cat\")]\n   |       ^^^^^\n   |\n   = note: `strum` is in scope, but it is a crate, not an attribute\n\n",
+      "line": 12
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `get_message` found for enum `Pet` in the current scope",
+      "rendered": "error[E0599]: no method named `get_message` found for enum `Pet` in the current scope\n  --> src/main.rs:17:35\n   |\n 7 | enum Pet {\n   | -------- method `get_message` not found for this enum\n...\n17 | assert_eq!(\"I have a dog\", my_pet.get_message().unwrap());\n   |                                   ^^^^^^^^^^^ method not found in `Pet`\n   |\n   = help: items from traits can only be used if the trait is implemented and in scope\n   = note: the following trait defines an item `get_message`, perhaps you need to implement it:\n           candidate #1: `EnumMessage`\n\n",
+      "line": 17
+    }
+  ],
+  "error_count": 5,
+  "stderr_excerpt": "error: could not compile `n05_strum_consumer` (bin \"n05_strum_consumer\") due to 5 previous errors\n",
+  "code_sha256": "b9c45e513a5bd1107268b5237d222e92478283a22a534a40ee41cd5ae380b2fa",
+  "manifest_sha256": "d49acf40cf93f688fb1b9fa06e1846a76b60bd83b4c9cea870c2e76db9d9687d",
+  "log_file": "results/check_logs/8dccd83cd5f0d59a1d.txt.gz"
+}

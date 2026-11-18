@@ -1,0 +1,27 @@
+{
+  "pr": 16952,
+  "pr_author": "bryancunningham",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-10-23T19:21:37Z",
+      "requested_people": [
+        "bryancunningham"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-23T19:21:38Z",
+      "requested_people": [
+        "bryancunningham",
+        "cyprain-okeke",
+        "vleague2"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "4ed954280c09363ec0cbc15c85a9327cc442dac3d0680271bfa4b01722bf73bf",
+  "url": "https://github.com/bitwarden/clients/pull/16952"
+}

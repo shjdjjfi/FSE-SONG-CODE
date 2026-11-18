@@ -1,0 +1,28 @@
+{
+  "key": "fe758945b5cce88647",
+  "args": {
+    "crate": "redis",
+    "version": "0.32.1",
+    "id": "77b8de4bea093de8",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1514,
+  "errors": [
+    {
+      "code": "E0425",
+      "message": "cannot find value `con` in this scope",
+      "rendered": "error[E0425]: cannot find value `con` in this scope\n --> src/main.rs:2:60\n  |\n2 | let info : redis::InfoDict = redis::cmd(\"INFO\").query(&mut con)?;\n  |                                                            ^^^ not found in this scope\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_redis_consumer` (bin \"n05_redis_consumer\") due to 1 previous error\n",
+  "code_sha256": "55504232cbb449a8dcf97ab33f6627c2846223e87371c17637c6cdcacf890c06",
+  "manifest_sha256": "5c2057a3e4fac2ad0526d11aa2287ac877f0da879fa70488b773b6f1d03fb340",
+  "log_file": "prospective/results/check_logs/fe758945b5cce88647.txt.gz"
+}

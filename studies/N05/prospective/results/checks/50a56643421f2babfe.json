@@ -1,0 +1,88 @@
+{
+  "key": "50a56643421f2babfe",
+  "args": {
+    "crate": "validator",
+    "version": "0.20.0",
+    "id": "0f2aba462a5cc0c0",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 10.2705,
+  "errors": [
+    {
+      "code": null,
+      "message": "`match` arm body without braces",
+      "rendered": "error: `match` arm body without braces\n  --> src/main.rs:31:13\n   |\n31 |   Err(e) => return e;\n   |          -- ^^^^^^^^ this statement is not surrounded by a body\n   |          |\n   |          while parsing the `match` arm starting here\n   |\nhelp: replace `;` with `,` to end a `match` arm expression\n   |\n31 -   Err(e) => return e;\n31 +   Err(e) => return e,\n   |\n\n",
+      "line": 31
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde`",
+      "rendered": "error[E0432]: unresolved import `serde`\n --> src/main.rs:2:5\n  |\n2 | use serde::Deserialize;\n  |     ^^^^^ use of unresolved module or unlinked crate `serde`\n  |\n  = help: if you wanted to use a crate named `serde`, use `cargo add serde` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": null,
+      "message": "cannot find derive macro `Validate` in this scope",
+      "rendered": "error: cannot find derive macro `Validate` in this scope\n  --> src/main.rs:22:17\n   |\n22 | #[derive(Debug, Validate, Deserialize)]\n   |                 ^^^^^^^^\n   |\nnote: `Validate` is imported here, but it is only a trait, without a derive macro\n  --> src/main.rs:4:5\n   |\n 4 | use validator::Validate;\n   |     ^^^^^^^^^^^^^^^^^^^\n\n",
+      "line": 22
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `validate` in this scope",
+      "rendered": "error: cannot find attribute `validate` in this scope\n  --> src/main.rs:24:7\n   |\n24 |     #[validate(length(min = 4))]\n   |       ^^^^^^^^\n\n",
+      "line": 24
+    },
+    {
+      "code": null,
+      "message": "cannot find derive macro `Validate` in this scope",
+      "rendered": "error: cannot find derive macro `Validate` in this scope\n  --> src/main.rs:16:17\n   |\n16 | #[derive(Debug, Validate, Deserialize)]\n   |                 ^^^^^^^^\n   |\nnote: `Validate` is imported here, but it is only a trait, without a derive macro\n  --> src/main.rs:4:5\n   |\n 4 | use validator::Validate;\n   |     ^^^^^^^^^^^^^^^^^^^\n\n",
+      "line": 16
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `validate` in this scope",
+      "rendered": "error: cannot find attribute `validate` in this scope\n  --> src/main.rs:18:7\n   |\n18 |     #[validate(email)]\n   |       ^^^^^^^^\n\n",
+      "line": 18
+    },
+    {
+      "code": null,
+      "message": "cannot find derive macro `Validate` in this scope",
+      "rendered": "error: cannot find derive macro `Validate` in this scope\n --> src/main.rs:6:17\n  |\n6 | #[derive(Debug, Validate, Deserialize)]\n  |                 ^^^^^^^^\n  |\nnote: `Validate` is imported here, but it is only a trait, without a derive macro\n --> src/main.rs:4:5\n  |\n4 | use validator::Validate;\n  |     ^^^^^^^^^^^^^^^^^^^\n\n",
+      "line": 6
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `validate` in this scope",
+      "rendered": "error: cannot find attribute `validate` in this scope\n --> src/main.rs:8:7\n  |\n8 |     #[validate(nested)]\n  |       ^^^^^^^^\n\n",
+      "line": 8
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `validate` in this scope",
+      "rendered": "error: cannot find attribute `validate` in this scope\n  --> src/main.rs:10:7\n   |\n10 |     #[validate(nested)]\n   |       ^^^^^^^^\n\n",
+      "line": 10
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `validate` in this scope",
+      "rendered": "error: cannot find attribute `validate` in this scope\n  --> src/main.rs:12:7\n   |\n12 |     #[validate(required)]\n   |       ^^^^^^^^\n\n",
+      "line": 12
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find value `signup_data` in this scope",
+      "rendered": "error[E0425]: cannot find value `signup_data` in this scope\n  --> src/main.rs:29:7\n   |\n29 | match signup_data.validate() {\n   |       ^^^^^^^^^^^ not found in this scope\n\n",
+      "line": 29
+    }
+  ],
+  "error_count": 11,
+  "stderr_excerpt": "error: could not compile `n05_validator_consumer` (bin \"n05_validator_consumer\") due to 11 previous errors\n",
+  "code_sha256": "ef4784094ed8c30dd8773bc97f969ba2c010591118443992950bb1d47439f113",
+  "manifest_sha256": "2aa2f15e9c0020389c7a72fbb506dda19fd624635cf25ac0ac4172f7a7feb93a",
+  "log_file": "prospective/results/check_logs/50a56643421f2babfe.txt.gz"
+}

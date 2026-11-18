@@ -1,0 +1,19 @@
+{
+  "changed_code_lines_under_target": 2,
+  "changed_files_in_whole_pr": 83,
+  "changed_files_under_target": 1,
+  "code_files_under_target": 1,
+  "code_touched": true,
+  "event": "BW12927",
+  "focused_code_touched": false,
+  "pr": 16944,
+  "raw_size_bytes": 111032,
+  "repo": "bitwarden/clients",
+  "sha256": "daca3a5ac8545cc16535c4a23ce43d51ccef1da5cba6396c20ecf9d0c5495e2b",
+  "target_file_fraction": 0.01205,
+  "target_paths": [
+    "apps/desktop/src/billing/app/accounts/premium.component.ts"
+  ],
+  "test_files_under_target": 0,
+  "url": "https://github.com/bitwarden/clients/pull/16944.patch"
+}

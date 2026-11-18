@@ -1,0 +1,125 @@
+{
+  "after_codeowners_sha256": "bb26a21c335736070ec4c8c667bd603af845aa85694435b80034ab86b52517be",
+  "all_patch_renames": 3,
+  "base_sha": "a04dd7a324af52190f61aabd87c547c641564adc",
+  "before_codeowners_sha256": "1f91d8f3ee0157e74802f3d31113e2978678acb8815252569e0b3d5630080be5",
+  "expected_new_team": "@bitwarden/team-billing-dev",
+  "expected_old_team": "@bitwarden/team-vault-dev",
+  "histories": {
+    "after": {
+      "commit_count": 6,
+      "pr_linked_count": 6,
+      "records": [
+        {
+          "date": "2025-05-15T14:44:07Z",
+          "pr": 14797,
+          "sha": "ac49e594c1957734bfc14b5d0c04738d501d65f9",
+          "title": "Add standalone false to all non migrated (#14797)"
+        },
+        {
+          "date": "2025-09-04T16:33:39Z",
+          "pr": 16042,
+          "sha": "896f54696b1dd8891d90e884476768a9004d7aee",
+          "title": "[PM-24158] Add Premium Check (#16042)"
+        },
+        {
+          "date": "2025-09-11T19:15:29Z",
+          "pr": 16373,
+          "sha": "db9061d120441a6f7cff5aba72e97ee65fef87a6",
+          "title": "[PM-25633] - [Defect] Fix premium badge in totp (#16373)"
+        },
+        {
+          "date": "2025-09-23T16:32:45Z",
+          "pr": 16461,
+          "sha": "6024f6eef21c8c6e6502a562ae7a5acc5ee23d7a",
+          "title": "[PM-25879][PM-25881] - [Defect] Premium badges missing reusable component (#16461)"
+        },
+        {
+          "date": "2025-10-23T20:02:01Z",
+          "pr": 16944,
+          "sha": "e3f943364f519e4d3d5465b783100d35d3beeab7",
+          "title": "Billing - Prefer signal & change detection (#16944)"
+        },
+        {
+          "date": "2025-12-02T15:49:55Z",
+          "pr": 17393,
+          "sha": "a9bf66e689c33451f9014108ffb7d44655b49516",
+          "title": "[PM-27600] Replace Hard-Coded Storage amount (#17393)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=apps%2Fdesktop%2Fsrc%2Fbilling%2Fapp%2Faccounts%2F&since=2025-01-29T16%3A09%3A21Z&until=2026-01-29T16%3A09%3A20Z&per_page=100",
+      "truncated": false
+    },
+    "before": {
+      "commit_count": 6,
+      "pr_linked_count": 6,
+      "records": [
+        {
+          "date": "2024-03-15T19:53:05Z",
+          "pr": 8133,
+          "sha": "b99153a01667a592f62ed009695b99bbc1c564e7",
+          "title": "[AC-2156] Billing State Provider Migration (#8133)"
+        },
+        {
+          "date": "2024-08-15T17:31:04Z",
+          "pr": 10514,
+          "sha": "a72ec8ab89bc8a812fca7c275a32ad9b8212ab7c",
+          "title": "[PM-8228] - Create new Premium Component (#10514)"
+        },
+        {
+          "date": "2024-08-16T13:40:00Z",
+          "pr": 10540,
+          "sha": "4d088f38565a9c830ac09cbaf59f9b5e264be3c7",
+          "title": "Fix desktop broken on main (#10540)"
+        },
+        {
+          "date": "2025-01-07T15:25:26Z",
+          "pr": 12273,
+          "sha": "91d696307445c81b6c2441de7a75fba9a426cd31",
+          "title": "[PM-14366] Deprecated active user state from billing state service (#12273)"
+        },
+        {
+          "date": "2025-01-17T23:01:18Z",
+          "pr": 10664,
+          "sha": "a803e5b411e7179783c0c0020ffa2edc66d18038",
+          "title": "[PM-6565] migrate vault toasts to CL toastService (#10664)"
+        },
+        {
+          "date": "2025-01-29T16:09:19Z",
+          "pr": 12927,
+          "sha": "e73cb3e3ff4490d5410198241cce754242099296",
+          "title": "Move premium component into billing ownership (#12927)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=apps%2Fdesktop%2Fsrc%2Fvault%2Fapp%2Faccounts%2F&since=2024-01-30T16%3A09%3A20Z&until=2025-01-29T16%3A09%3A19Z&per_page=100",
+      "truncated": false
+    }
+  },
+  "id": "BW12927",
+  "merge_sha": "e73cb3e3ff4490d5410198241cce754242099296",
+  "merged_at": "2025-01-29T16:09:20Z",
+  "migration_patch_sha256": "ba809ee0c620e668c6ab77da25bd78f016757aa37938f8987db0acceb9c60206",
+  "migration_pr": 12927,
+  "new_owner": [
+    "@bitwarden/team-billing-dev"
+  ],
+  "new_prefix": "apps/desktop/src/billing/app/accounts/",
+  "old_owner": [
+    "@bitwarden/team-vault-dev"
+  ],
+  "old_prefix": "apps/desktop/src/vault/app/accounts/",
+  "post_days": 365,
+  "pre_days": 365,
+  "rename_pairs": [
+    {
+      "new": "apps/desktop/src/billing/app/accounts/premium.component.html",
+      "old": "apps/desktop/src/vault/app/accounts/premium.component.html"
+    },
+    {
+      "new": "apps/desktop/src/billing/app/accounts/premium.component.ts",
+      "old": "apps/desktop/src/vault/app/accounts/premium.component.ts"
+    }
+  ],
+  "repo": "bitwarden/clients",
+  "valid": true
+}

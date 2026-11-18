@@ -1,0 +1,326 @@
+{
+  ".": {
+    "n_searched": 25,
+    "n_clusters": 8,
+    "preregistered_primary": false,
+    "exploratory_budget_curve": [
+      {
+        "budget": 1,
+        "guided_success": 0.72,
+        "random_success": 0.1467,
+        "gain": 0.5733,
+        "gain_project_cluster_ci": [
+          0.3067,
+          0.8833
+        ],
+        "pathaware_success": null,
+        "diagnostic_success": 0.36
+      },
+      {
+        "budget": 2,
+        "guided_success": 0.72,
+        "random_success": 0.3333,
+        "gain": 0.3867,
+        "gain_project_cluster_ci": [
+          0.1111,
+          0.7222
+        ],
+        "pathaware_success": null,
+        "diagnostic_success": 0.48
+      },
+      {
+        "budget": 3,
+        "guided_success": 0.92,
+        "random_success": 0.36,
+        "gain": 0.56,
+        "gain_project_cluster_ci": [
+          0.3333,
+          0.7037
+        ],
+        "pathaware_success": null,
+        "diagnostic_success": 0.56
+      },
+      {
+        "budget": 4,
+        "guided_success": 0.96,
+        "random_success": 0.4133,
+        "gain": 0.5467,
+        "gain_project_cluster_ci": [
+          0.2698,
+          0.716
+        ],
+        "pathaware_success": null,
+        "diagnostic_success": 0.56
+      },
+      {
+        "budget": 5,
+        "guided_success": 1.0,
+        "random_success": 0.44,
+        "gain": 0.56,
+        "gain_project_cluster_ci": [
+          0.3148,
+          0.716
+        ],
+        "pathaware_success": null,
+        "diagnostic_success": 0.76
+      },
+      {
+        "budget": 6,
+        "guided_success": 1.0,
+        "random_success": 0.4933,
+        "gain": 0.5067,
+        "gain_project_cluster_ci": [
+          0.2667,
+          0.6559
+        ],
+        "pathaware_success": null,
+        "diagnostic_success": 0.76
+      },
+      {
+        "budget": 7,
+        "guided_success": 1.0,
+        "random_success": 0.5467,
+        "gain": 0.4533,
+        "gain_project_cluster_ci": [
+          0.254,
+          0.6111
+        ],
+        "pathaware_success": null,
+        "diagnostic_success": 0.76
+      },
+      {
+        "budget": 8,
+        "guided_success": 1.0,
+        "random_success": 0.64,
+        "gain": 0.36,
+        "gain_project_cluster_ci": [
+          0.197,
+          0.5
+        ],
+        "pathaware_success": null,
+        "diagnostic_success": 0.76
+      }
+    ],
+    "mean_auc_guided_minus_random": 0.4933,
+    "auc_cluster_ci": [
+      0.3113,
+      0.6439
+    ]
+  },
+  "holdout": {
+    "n_searched": 7,
+    "n_clusters": 3,
+    "preregistered_primary": false,
+    "exploratory_budget_curve": [
+      {
+        "budget": 1,
+        "guided_success": 0.5714,
+        "random_success": 0.2381,
+        "gain": 0.3333,
+        "gain_project_cluster_ci": [
+          -0.6667,
+          0.5
+        ],
+        "pathaware_success": 0.7143,
+        "diagnostic_success": 0.7143
+      },
+      {
+        "budget": 2,
+        "guided_success": 0.8571,
+        "random_success": 0.381,
+        "gain": 0.4762,
+        "gain_project_cluster_ci": [
+          0.0,
+          0.6667
+        ],
+        "pathaware_success": 1.0,
+        "diagnostic_success": 1.0
+      },
+      {
+        "budget": 3,
+        "guided_success": 0.8571,
+        "random_success": 0.4762,
+        "gain": 0.381,
+        "gain_project_cluster_ci": [
+          0.0,
+          0.5833
+        ],
+        "pathaware_success": 1.0,
+        "diagnostic_success": 1.0
+      },
+      {
+        "budget": 4,
+        "guided_success": 0.8571,
+        "random_success": 0.7143,
+        "gain": 0.1429,
+        "gain_project_cluster_ci": [
+          0.0,
+          0.1667
+        ],
+        "pathaware_success": 1.0,
+        "diagnostic_success": 1.0
+      },
+      {
+        "budget": 5,
+        "guided_success": 0.8571,
+        "random_success": 0.7143,
+        "gain": 0.1429,
+        "gain_project_cluster_ci": [
+          0.0,
+          0.1667
+        ],
+        "pathaware_success": 1.0,
+        "diagnostic_success": 1.0
+      },
+      {
+        "budget": 6,
+        "guided_success": 0.8571,
+        "random_success": 0.7619,
+        "gain": 0.0952,
+        "gain_project_cluster_ci": [
+          0.0,
+          0.1667
+        ],
+        "pathaware_success": 1.0,
+        "diagnostic_success": 1.0
+      },
+      {
+        "budget": 7,
+        "guided_success": 0.8571,
+        "random_success": 0.8095,
+        "gain": 0.0476,
+        "gain_project_cluster_ci": [
+          0.0,
+          0.0833
+        ],
+        "pathaware_success": 1.0,
+        "diagnostic_success": 1.0
+      },
+      {
+        "budget": 8,
+        "guided_success": 0.8571,
+        "random_success": 0.8571,
+        "gain": 0.0,
+        "gain_project_cluster_ci": [
+          0.0,
+          0.0
+        ],
+        "pathaware_success": 1.0,
+        "diagnostic_success": 1.0
+      }
+    ],
+    "mean_auc_guided_minus_random": 0.2024,
+    "auc_cluster_ci": [
+      -0.0833,
+      0.2812
+    ]
+  },
+  "prospective": {
+    "n_searched": 24,
+    "n_clusters": 9,
+    "preregistered_primary": false,
+    "exploratory_budget_curve": [
+      {
+        "budget": 1,
+        "guided_success": 0.75,
+        "random_success": 0.1667,
+        "gain": 0.5833,
+        "gain_project_cluster_ci": [
+          0.2899,
+          0.8111
+        ],
+        "pathaware_success": 0.7917,
+        "diagnostic_success": 0.4167
+      },
+      {
+        "budget": 2,
+        "guided_success": 0.7917,
+        "random_success": 0.3194,
+        "gain": 0.4722,
+        "gain_project_cluster_ci": [
+          0.1429,
+          0.7
+        ],
+        "pathaware_success": 0.8333,
+        "diagnostic_success": 0.5
+      },
+      {
+        "budget": 3,
+        "guided_success": 0.875,
+        "random_success": 0.4722,
+        "gain": 0.4028,
+        "gain_project_cluster_ci": [
+          0.0175,
+          0.6667
+        ],
+        "pathaware_success": 0.9167,
+        "diagnostic_success": 0.5
+      },
+      {
+        "budget": 4,
+        "guided_success": 1.0,
+        "random_success": 0.5556,
+        "gain": 0.4444,
+        "gain_project_cluster_ci": [
+          0.2,
+          0.6111
+        ],
+        "pathaware_success": 1.0,
+        "diagnostic_success": 0.6667
+      },
+      {
+        "budget": 5,
+        "guided_success": 1.0,
+        "random_success": 0.6389,
+        "gain": 0.3611,
+        "gain_project_cluster_ci": [
+          0.1111,
+          0.5517
+        ],
+        "pathaware_success": 1.0,
+        "diagnostic_success": 0.6667
+      },
+      {
+        "budget": 6,
+        "guided_success": 1.0,
+        "random_success": 0.6944,
+        "gain": 0.3056,
+        "gain_project_cluster_ci": [
+          0.0667,
+          0.4889
+        ],
+        "pathaware_success": 1.0,
+        "diagnostic_success": 0.6667
+      },
+      {
+        "budget": 7,
+        "guided_success": 1.0,
+        "random_success": 0.7222,
+        "gain": 0.2778,
+        "gain_project_cluster_ci": [
+          0.0,
+          0.4706
+        ],
+        "pathaware_success": 1.0,
+        "diagnostic_success": 0.75
+      },
+      {
+        "budget": 8,
+        "guided_success": 1.0,
+        "random_success": 0.75,
+        "gain": 0.25,
+        "gain_project_cluster_ci": [
+          0.0,
+          0.4298
+        ],
+        "pathaware_success": 1.0,
+        "diagnostic_success": 0.75
+      }
+    ],
+    "mean_auc_guided_minus_random": 0.3872,
+    "auc_cluster_ci": [
+      0.1313,
+      0.5822
+    ]
+  }
+}

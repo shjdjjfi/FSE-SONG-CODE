@@ -1,0 +1,1236 @@
+{
+  "summary": {
+    "n": 72,
+    "family_count": 6,
+    "original_reset_then_reuse_nonlosses": 72,
+    "emulated_reuse_render_failures": 0,
+    "emulated_reuse_value_losses": 0,
+    "interpretation": "application runtime not tested; not exact Helm merge semantics"
+  },
+  "rows": [
+    {
+      "case": "H-grafana-01",
+      "family": "grafana",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.1109,
+        "stdout_sha256": "6213c65649899a041a8f32aa8570df4d713cc30536f91f8204cdf8913d745598",
+        "stdout_bytes": 9116,
+        "error": "",
+        "resource_count": 12
+      }
+    },
+    {
+      "case": "H-grafana-02",
+      "family": "grafana",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.1007,
+        "stdout_sha256": "b92157688a7578247d5a8f7fa1aba67ae988dd77fb1613eb45f5d9f41dbbeb49",
+        "stdout_bytes": 9092,
+        "error": "",
+        "resource_count": 12
+      }
+    },
+    {
+      "case": "H-grafana-03",
+      "family": "grafana",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0744,
+        "stdout_sha256": "858d6596e74a42a7c2b057576515ef9fb8b3ea017cd7fc0b5adeb635d0271b03",
+        "stdout_bytes": 9130,
+        "error": "",
+        "resource_count": 12
+      }
+    },
+    {
+      "case": "H-grafana-04",
+      "family": "grafana",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0835,
+        "stdout_sha256": "caa64a024f778b9791dce434a6bcc6a5a0181c45a1881c04c2d960dc565115b5",
+        "stdout_bytes": 9094,
+        "error": "",
+        "resource_count": 12
+      }
+    },
+    {
+      "case": "H-grafana-05",
+      "family": "grafana",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.076,
+        "stdout_sha256": "295703779193c77772571ceeda5015d4f3f29945ce0abad818e5325fcc0bb81f",
+        "stdout_bytes": 9114,
+        "error": "",
+        "resource_count": 12
+      }
+    },
+    {
+      "case": "H-grafana-06",
+      "family": "grafana",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0753,
+        "stdout_sha256": "64a535c6f8d1d02bc978d632100815c1f4d86c2a3ddea92fe7d7399842fc63e3",
+        "stdout_bytes": 9116,
+        "error": "",
+        "resource_count": 12
+      }
+    },
+    {
+      "case": "H-grafana-07",
+      "family": "grafana",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0891,
+        "stdout_sha256": "3178060da5b94b356f40676a9d7fb9d96286a29b2b1c5baa21ff35cb8c0247e3",
+        "stdout_bytes": 9130,
+        "error": "",
+        "resource_count": 12
+      }
+    },
+    {
+      "case": "H-grafana-08",
+      "family": "grafana",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0789,
+        "stdout_sha256": "fec8a5852b6d19fe8c0b8c6f361ab987059a1b6fd33cd9b87adc1535a7bcafd8",
+        "stdout_bytes": 9110,
+        "error": "",
+        "resource_count": 12
+      }
+    },
+    {
+      "case": "H-grafana-09",
+      "family": "grafana",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.1009,
+        "stdout_sha256": "90d272924e80fcd815983e9c17ece1ba649fb18b718f6e90c261f95acf21abd2",
+        "stdout_bytes": 9112,
+        "error": "",
+        "resource_count": 12
+      }
+    },
+    {
+      "case": "H-grafana-10",
+      "family": "grafana",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0823,
+        "stdout_sha256": "cdb5bb9bb4b841e891953e89181e2c09a2c40b7c46119f0ffed263b1f7ba926b",
+        "stdout_bytes": 9116,
+        "error": "",
+        "resource_count": 12
+      }
+    },
+    {
+      "case": "H-grafana-11",
+      "family": "grafana",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.108,
+        "stdout_sha256": "9fdf6dad58845a32e05d992306300fac2814d57ec1c45c1fefc1ebb63002d127",
+        "stdout_bytes": 9117,
+        "error": "",
+        "resource_count": 12
+      }
+    },
+    {
+      "case": "H-grafana-12",
+      "family": "grafana",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0985,
+        "stdout_sha256": "c777db2bcce3ba3afd717adb95908822ca1f2f74a65891697485afa513478293",
+        "stdout_bytes": 9130,
+        "error": "",
+        "resource_count": 12
+      }
+    },
+    {
+      "case": "H-ingress-nginx-01",
+      "family": "ingress-nginx",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0875,
+        "stdout_sha256": "84421797b9ba72782ac3de3168f8c828ec681ba016ae4a11742c07cf85e2db5b",
+        "stdout_bytes": 21234,
+        "error": "",
+        "resource_count": 18
+      }
+    },
+    {
+      "case": "H-ingress-nginx-02",
+      "family": "ingress-nginx",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0889,
+        "stdout_sha256": "3ceafd78a8f9ec2d047a18305fac2483763ecf36a5597026c33eb30ec7dbf59b",
+        "stdout_bytes": 21253,
+        "error": "",
+        "resource_count": 18
+      }
+    },
+    {
+      "case": "H-ingress-nginx-03",
+      "family": "ingress-nginx",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.1154,
+        "stdout_sha256": "02ae31bdee4583d4f7fc48d0647380422590123d8851971d1f60fa7e4c2ce65d",
+        "stdout_bytes": 21243,
+        "error": "",
+        "resource_count": 18
+      }
+    },
+    {
+      "case": "H-ingress-nginx-04",
+      "family": "ingress-nginx",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0772,
+        "stdout_sha256": "490f4834e8be32fa7a452ebffc99eacfe225e742befbc7fd9573323775013cc8",
+        "stdout_bytes": 21237,
+        "error": "",
+        "resource_count": 18
+      }
+    },
+    {
+      "case": "H-ingress-nginx-05",
+      "family": "ingress-nginx",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.083,
+        "stdout_sha256": "4fcfe290af7eb895335fd6547b638638984540133571d1c97688f1ee4b3f9a6c",
+        "stdout_bytes": 21119,
+        "error": "",
+        "resource_count": 18
+      }
+    },
+    {
+      "case": "H-ingress-nginx-06",
+      "family": "ingress-nginx",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.1013,
+        "stdout_sha256": "e0c8a60f9ca4207ebec6d1b2cfb99070406c5f69a2675d94bc173dff6f62b937",
+        "stdout_bytes": 21230,
+        "error": "",
+        "resource_count": 18
+      }
+    },
+    {
+      "case": "H-ingress-nginx-07",
+      "family": "ingress-nginx",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.1377,
+        "stdout_sha256": "7485bc1d9d09f2f63771c3ad4c4e58767ab3a933935204c9250b1dc9b4ecf133",
+        "stdout_bytes": 21238,
+        "error": "",
+        "resource_count": 18
+      }
+    },
+    {
+      "case": "H-ingress-nginx-08",
+      "family": "ingress-nginx",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.1126,
+        "stdout_sha256": "7a0167b2556ab49721e846c2037cec06bd39c8e57109751f59670fc8f5973bf8",
+        "stdout_bytes": 21237,
+        "error": "",
+        "resource_count": 18
+      }
+    },
+    {
+      "case": "H-ingress-nginx-09",
+      "family": "ingress-nginx",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0772,
+        "stdout_sha256": "124c893e3cfc963d8e9d980cf5f391f51e679a8371fe927341f90f5985b46a4c",
+        "stdout_bytes": 21251,
+        "error": "",
+        "resource_count": 18
+      }
+    },
+    {
+      "case": "H-ingress-nginx-10",
+      "family": "ingress-nginx",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.1307,
+        "stdout_sha256": "b20d4fc926cef8b7d53699f8bb42efc5bf3589d89362f87da57a78e739862b37",
+        "stdout_bytes": 21237,
+        "error": "",
+        "resource_count": 18
+      }
+    },
+    {
+      "case": "H-ingress-nginx-11",
+      "family": "ingress-nginx",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.1462,
+        "stdout_sha256": "d0b4ee6511ab978e77c38c2734f50f0878b0e3e53a5323e29f015ec863067d98",
+        "stdout_bytes": 21238,
+        "error": "",
+        "resource_count": 18
+      }
+    },
+    {
+      "case": "H-ingress-nginx-12",
+      "family": "ingress-nginx",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0883,
+        "stdout_sha256": "8df43a8721e85155ed1242bf12a136297717b8246323907b838168f4f62a72d3",
+        "stdout_bytes": 21218,
+        "error": "",
+        "resource_count": 18
+      }
+    },
+    {
+      "case": "H-metrics-server-01",
+      "family": "metrics-server",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0919,
+        "stdout_sha256": "6fd69f8df7185ad361ddf3983ed17ff3b4c27b610fc7c4d9cda78aa6aef7dca1",
+        "stdout_bytes": 6796,
+        "error": "",
+        "resource_count": 9
+      }
+    },
+    {
+      "case": "H-metrics-server-02",
+      "family": "metrics-server",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.1017,
+        "stdout_sha256": "49419037958ea615fe9dc4238e4898a0f169ea5c94f6ddbce1244c9f99b9ba36",
+        "stdout_bytes": 6796,
+        "error": "",
+        "resource_count": 9
+      }
+    },
+    {
+      "case": "H-metrics-server-03",
+      "family": "metrics-server",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0748,
+        "stdout_sha256": "2304eca61929dd23fbfbee4ba6cdbb7aa99dbc65a61c9a386bd4595ec7c2957b",
+        "stdout_bytes": 6778,
+        "error": "",
+        "resource_count": 9
+      }
+    },
+    {
+      "case": "H-metrics-server-04",
+      "family": "metrics-server",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0911,
+        "stdout_sha256": "c25f09b0b6dac729d7f77c04e9a28f3af935df17a4c3f2bb4b0370306b87ec80",
+        "stdout_bytes": 6795,
+        "error": "",
+        "resource_count": 9
+      }
+    },
+    {
+      "case": "H-metrics-server-05",
+      "family": "metrics-server",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0587,
+        "stdout_sha256": "90f3c315a8a55b20056e60d4075b2392aceb0cb6271253b64afcb62bd993d18a",
+        "stdout_bytes": 6789,
+        "error": "",
+        "resource_count": 9
+      }
+    },
+    {
+      "case": "H-metrics-server-06",
+      "family": "metrics-server",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0644,
+        "stdout_sha256": "e4e71f07dbae9378b7cb9512c31c6931debd2f96f8712b9086915cc50e133c24",
+        "stdout_bytes": 6792,
+        "error": "",
+        "resource_count": 9
+      }
+    },
+    {
+      "case": "H-metrics-server-07",
+      "family": "metrics-server",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0613,
+        "stdout_sha256": "168525cda08e5a67d339b5078b221c4fd1d3438c4fd68f059e1959cb41e71cdc",
+        "stdout_bytes": 6796,
+        "error": "",
+        "resource_count": 9
+      }
+    },
+    {
+      "case": "H-metrics-server-08",
+      "family": "metrics-server",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0557,
+        "stdout_sha256": "fac134fa7d19ad6a03ee8062a93c987b0cf10df6f8558e02d614e58c01db3721",
+        "stdout_bytes": 6796,
+        "error": "",
+        "resource_count": 9
+      }
+    },
+    {
+      "case": "H-metrics-server-09",
+      "family": "metrics-server",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0455,
+        "stdout_sha256": "b2c305cfdf04ba7f087aebe9fc109b57fb0cb9403a7e182eaf9fc0c2d7428a60",
+        "stdout_bytes": 6811,
+        "error": "",
+        "resource_count": 9
+      }
+    },
+    {
+      "case": "H-metrics-server-10",
+      "family": "metrics-server",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0532,
+        "stdout_sha256": "f88d8f01e25b40c7c7c6e43be819b3777faae41a5faca484e035bd7efecdf924",
+        "stdout_bytes": 6772,
+        "error": "",
+        "resource_count": 9
+      }
+    },
+    {
+      "case": "H-metrics-server-11",
+      "family": "metrics-server",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0531,
+        "stdout_sha256": "ae77c35a2cc2618da2ef92d0edeafa49a5bc7694ca3eb20e4617ff0c05ab3a8f",
+        "stdout_bytes": 6796,
+        "error": "",
+        "resource_count": 9
+      }
+    },
+    {
+      "case": "H-metrics-server-12",
+      "family": "metrics-server",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0564,
+        "stdout_sha256": "b0e743f6053ff97e47b0a58704a308261a7cbeeb6a4955ad05c309cc5ca9b6ab",
+        "stdout_bytes": 6797,
+        "error": "",
+        "resource_count": 9
+      }
+    },
+    {
+      "case": "H-vault-01",
+      "family": "vault",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0797,
+        "stdout_sha256": "80d4471cae8f69768a4644176b7a7cbc5e31ef3ef58c3421996aaee9efcac5f3",
+        "stdout_bytes": 16622,
+        "error": "",
+        "resource_count": 13
+      }
+    },
+    {
+      "case": "H-vault-02",
+      "family": "vault",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0724,
+        "stdout_sha256": "2d547a6ba5a3fca12355b0e8d64360e482c67b461b8923e8b2976283529ee4ab",
+        "stdout_bytes": 16617,
+        "error": "",
+        "resource_count": 13
+      }
+    },
+    {
+      "case": "H-vault-03",
+      "family": "vault",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0723,
+        "stdout_sha256": "c79b33a3e96b56d0a3b0506273e015047e56fccb7d9ecfabbc2c506899de91c6",
+        "stdout_bytes": 16651,
+        "error": "",
+        "resource_count": 13
+      }
+    },
+    {
+      "case": "H-vault-04",
+      "family": "vault",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.074,
+        "stdout_sha256": "e754e1dc77ac45760d711b127b60d112bbfedc6e554ba5c223c68da33cbbbec7",
+        "stdout_bytes": 16622,
+        "error": "",
+        "resource_count": 13
+      }
+    },
+    {
+      "case": "H-vault-05",
+      "family": "vault",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.075,
+        "stdout_sha256": "c1ca178c203f0fdaea5f0a602f8934ef4ecc56f6c249d3a02163191e29da8795",
+        "stdout_bytes": 16626,
+        "error": "",
+        "resource_count": 13
+      }
+    },
+    {
+      "case": "H-vault-06",
+      "family": "vault",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.079,
+        "stdout_sha256": "2337c8345285edbcb8651369d4a7e98d97e669e8e9e5cc123a701c4a581afea1",
+        "stdout_bytes": 16637,
+        "error": "",
+        "resource_count": 13
+      }
+    },
+    {
+      "case": "H-vault-07",
+      "family": "vault",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0764,
+        "stdout_sha256": "753aa5d0e7765f7cb7fa5dc3d4e1d3b5eaf2d1ccb39340800a1b347cb6ef73bc",
+        "stdout_bytes": 16618,
+        "error": "",
+        "resource_count": 13
+      }
+    },
+    {
+      "case": "H-vault-08",
+      "family": "vault",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0904,
+        "stdout_sha256": "e0955083c201df77ca740802f1493a4d9f2f76210b159b0c624ca2e03415c78d",
+        "stdout_bytes": 16624,
+        "error": "",
+        "resource_count": 13
+      }
+    },
+    {
+      "case": "H-vault-09",
+      "family": "vault",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.14,
+        "stdout_sha256": "b8a7e858f7fb911de4569569beebc19e69fe1e100c601dc42c2938bb50652127",
+        "stdout_bytes": 16625,
+        "error": "",
+        "resource_count": 13
+      }
+    },
+    {
+      "case": "H-vault-10",
+      "family": "vault",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.1026,
+        "stdout_sha256": "3cdc9c862f526e8bfa825ca879c83b90687752a1d869449dedb3189902427179",
+        "stdout_bytes": 16625,
+        "error": "",
+        "resource_count": 13
+      }
+    },
+    {
+      "case": "H-vault-11",
+      "family": "vault",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.1034,
+        "stdout_sha256": "5b664e68e438a362fc7c875b20ebfb43f72675cb58edb44c9b057345f2164e5d",
+        "stdout_bytes": 16625,
+        "error": "",
+        "resource_count": 13
+      }
+    },
+    {
+      "case": "H-vault-12",
+      "family": "vault",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0742,
+        "stdout_sha256": "040c36fea10add6132707380b436dea97cd4413b62a5681aa66e4b2d9911a097",
+        "stdout_bytes": 16631,
+        "error": "",
+        "resource_count": 13
+      }
+    },
+    {
+      "case": "H-traefik-01",
+      "family": "traefik",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0796,
+        "stdout_sha256": "281709b6c08d28e28ac43bb7a48ef4e46a7070312d31925ed9ece2f7197ca7fa",
+        "stdout_bytes": 6923,
+        "error": "",
+        "resource_count": 7
+      }
+    },
+    {
+      "case": "H-traefik-02",
+      "family": "traefik",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0846,
+        "stdout_sha256": "9678559cb70500c61ff2f6c6cff0373d2ad29a43b2bb45ff89521f1e52b75720",
+        "stdout_bytes": 6864,
+        "error": "",
+        "resource_count": 7
+      }
+    },
+    {
+      "case": "H-traefik-03",
+      "family": "traefik",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0691,
+        "stdout_sha256": "3d8928a231ae904e2ad42b172d9ce610af12d73bf899fea01028105b164be68f",
+        "stdout_bytes": 6920,
+        "error": "",
+        "resource_count": 7
+      }
+    },
+    {
+      "case": "H-traefik-04",
+      "family": "traefik",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.057,
+        "stdout_sha256": "6066e3c6ad93ecaffc3e625e914d064fcdeabebb57b7f3cdf206d4eb59dd8ea9",
+        "stdout_bytes": 6856,
+        "error": "",
+        "resource_count": 7
+      }
+    },
+    {
+      "case": "H-traefik-05",
+      "family": "traefik",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0676,
+        "stdout_sha256": "b1d34360a4656dfa14936e305b2119938a85ad9760cc78661cd35cdcae877b8e",
+        "stdout_bytes": 6897,
+        "error": "",
+        "resource_count": 7
+      }
+    },
+    {
+      "case": "H-traefik-06",
+      "family": "traefik",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0669,
+        "stdout_sha256": "55dbe0f5077f15736ab2f595631e6f737225f12084e7260c7909fe4b1918dfa0",
+        "stdout_bytes": 6923,
+        "error": "",
+        "resource_count": 7
+      }
+    },
+    {
+      "case": "H-traefik-07",
+      "family": "traefik",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0756,
+        "stdout_sha256": "015d8832ca40026359bd447613db1eed741cc80150d067d713fc46259edbd190",
+        "stdout_bytes": 6921,
+        "error": "",
+        "resource_count": 7
+      }
+    },
+    {
+      "case": "H-traefik-08",
+      "family": "traefik",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0688,
+        "stdout_sha256": "23cb9ba06f74b9ad4ce2cb537c84da92467a419c3a852a2df2ad4361717cdead",
+        "stdout_bytes": 6905,
+        "error": "",
+        "resource_count": 7
+      }
+    },
+    {
+      "case": "H-traefik-09",
+      "family": "traefik",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0707,
+        "stdout_sha256": "7d04f0d09242946d8e024aa63b27c829f1b5e449776dcec4fb862cf0b0da5dba",
+        "stdout_bytes": 6919,
+        "error": "",
+        "resource_count": 7
+      }
+    },
+    {
+      "case": "H-traefik-10",
+      "family": "traefik",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0657,
+        "stdout_sha256": "6f091b8e54a8ee1f8f9bc315fed4d5c61ebf41159c328786b8da6ad992a22564",
+        "stdout_bytes": 6897,
+        "error": "",
+        "resource_count": 7
+      }
+    },
+    {
+      "case": "H-traefik-11",
+      "family": "traefik",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0536,
+        "stdout_sha256": "35edcb699318ab05c97d4d5d7f853c0040fce559b1aa6d0164a21638194e3618",
+        "stdout_bytes": 6843,
+        "error": "",
+        "resource_count": 7
+      }
+    },
+    {
+      "case": "H-traefik-12",
+      "family": "traefik",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0704,
+        "stdout_sha256": "c97187e82144b3abc0b53afeebccf8b046f88272b2b40ad25181b17b6048c66c",
+        "stdout_bytes": 6898,
+        "error": "",
+        "resource_count": 7
+      }
+    },
+    {
+      "case": "H-external-dns-01",
+      "family": "external-dns",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0505,
+        "stdout_sha256": "adae63e11968e58aeaced7ea1e554f4b49c3ec53e4ce25aa8e704633706069cf",
+        "stdout_bytes": 4360,
+        "error": "",
+        "resource_count": 5
+      }
+    },
+    {
+      "case": "H-external-dns-02",
+      "family": "external-dns",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0511,
+        "stdout_sha256": "8f653c8c356b7d7dc6617642a50ce52233bd75c037bee277e5724f81e2281de2",
+        "stdout_bytes": 4381,
+        "error": "",
+        "resource_count": 5
+      }
+    },
+    {
+      "case": "H-external-dns-03",
+      "family": "external-dns",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0689,
+        "stdout_sha256": "34526f1ed35e4af4485b111b01f8642eb5cab4211a0a0b0f030eb21c8a0fb5f4",
+        "stdout_bytes": 4384,
+        "error": "",
+        "resource_count": 5
+      }
+    },
+    {
+      "case": "H-external-dns-04",
+      "family": "external-dns",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0585,
+        "stdout_sha256": "66ea714582d19734cac61aba1c87becab7307adeaec81ab603ac0990f3ef64a0",
+        "stdout_bytes": 4369,
+        "error": "",
+        "resource_count": 5
+      }
+    },
+    {
+      "case": "H-external-dns-05",
+      "family": "external-dns",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0563,
+        "stdout_sha256": "fd35b6790dd22004bad4f42a8448138c57426908e2bc5fab637836df0ce4c90a",
+        "stdout_bytes": 4367,
+        "error": "",
+        "resource_count": 5
+      }
+    },
+    {
+      "case": "H-external-dns-06",
+      "family": "external-dns",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.1041,
+        "stdout_sha256": "965f7488204017e7efb790634ae55a99fcfeffb80c53499e28aa7e705e45f37f",
+        "stdout_bytes": 4346,
+        "error": "",
+        "resource_count": 5
+      }
+    },
+    {
+      "case": "H-external-dns-07",
+      "family": "external-dns",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0765,
+        "stdout_sha256": "6ce91f5806c10c82f5f30c1474cc83240a0cbdc28fb36ea63d289e225faafa90",
+        "stdout_bytes": 4363,
+        "error": "",
+        "resource_count": 5
+      }
+    },
+    {
+      "case": "H-external-dns-08",
+      "family": "external-dns",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0845,
+        "stdout_sha256": "b2219ede4b7ee9d67ee797f206d0bfaf109b76068ccae21a5d2e388fc1b9017b",
+        "stdout_bytes": 4359,
+        "error": "",
+        "resource_count": 5
+      }
+    },
+    {
+      "case": "H-external-dns-09",
+      "family": "external-dns",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0488,
+        "stdout_sha256": "f1a618965ff7a069fbb77476ff7fbb7f747712938927901da5f36314c7bef3e7",
+        "stdout_bytes": 4368,
+        "error": "",
+        "resource_count": 5
+      }
+    },
+    {
+      "case": "H-external-dns-10",
+      "family": "external-dns",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0698,
+        "stdout_sha256": "5b2da3c4c2762e82b684d49252d653728a3eb65159a91af27e86bd2628e22364",
+        "stdout_bytes": 4363,
+        "error": "",
+        "resource_count": 5
+      }
+    },
+    {
+      "case": "H-external-dns-11",
+      "family": "external-dns",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0578,
+        "stdout_sha256": "ed8b353d312053dd49bba6b81065c7036da417d5bd2b1fe72e2043f54f5dc591",
+        "stdout_bytes": 4363,
+        "error": "",
+        "resource_count": 5
+      }
+    },
+    {
+      "case": "H-external-dns-12",
+      "family": "external-dns",
+      "reset_new_default_preserved": true,
+      "reuse_old_defaults_emulated_render_ok": true,
+      "reuse_old_defaults_emulated_preserved": true,
+      "warning": "not a Helm upgrade with persisted history, value-merge proxy",
+      "render": {
+        "ok": true,
+        "exit_code": 0,
+        "seconds": 0.0552,
+        "stdout_sha256": "851015d27e31468eb2a51b304d8c7f3711ec0cfacd1780d49451060ed40a00cb",
+        "stdout_bytes": 4367,
+        "error": "",
+        "resource_count": 5
+      }
+    }
+  ]
+}

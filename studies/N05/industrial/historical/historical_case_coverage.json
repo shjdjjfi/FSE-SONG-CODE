@@ -1,0 +1,69 @@
+{
+  "evidence_level": "independently_maintainer_reported_not_N05_deployment",
+  "releases": [
+    {
+      "crate": "iced",
+      "version": "0.10.0",
+      "published_utc": "2023-07-28T18:00:41.712231Z",
+      "original_archive_sha256": "c708807ec86f99dd729dc4d42db5239acf118cec14d3c5f57679dcfdbbc472b1",
+      "archive_url": "https://static.crates.io/crates/iced/iced-0.10.0.crate",
+      "extracted_snippets": 2,
+      "docs_metadata": {
+        "rustdoc-args": [
+          "--cfg",
+          "docsrs"
+        ],
+        "all-features": true
+      }
+    },
+    {
+      "crate": "iced",
+      "version": "0.12.0",
+      "published_utc": "2024-02-15T02:41:51.033893Z",
+      "original_archive_sha256": "c4201d43f7b74e6024a52bc20f4d742a44760685474b07c14680a6293c861644",
+      "archive_url": "https://static.crates.io/crates/iced/iced-0.12.0.crate",
+      "extracted_snippets": 2,
+      "docs_metadata": {
+        "rustdoc-args": [
+          "--cfg",
+          "docsrs"
+        ],
+        "all-features": true
+      }
+    }
+  ],
+  "historical_targets": [
+    {
+      "maintainer_pr": "https://github.com/iced-rs/iced/pull/2188",
+      "description": "Missing feature guidance for iced::time::every",
+      "releases": {
+        "0.10.0": {
+          "literal_snippets_mentioning_affected_api": 0,
+          "snippets": [],
+          "detection_status": "not detectable by current literal-snippet extractor"
+        },
+        "0.12.0": {
+          "literal_snippets_mentioning_affected_api": 0,
+          "snippets": [],
+          "detection_status": "not detectable by current literal-snippet extractor"
+        }
+      }
+    },
+    {
+      "maintainer_pr": "https://github.com/iced-rs/iced/pull/2184",
+      "description": "Missing feature badges for lazy widget helpers",
+      "releases": {
+        "0.10.0": {
+          "literal_snippets_mentioning_affected_api": 0,
+          "snippets": [],
+          "detection_status": "not detectable by current literal-snippet extractor"
+        },
+        "0.12.0": {
+          "literal_snippets_mentioning_affected_api": 0,
+          "snippets": [],
+          "detection_status": "not detectable by current literal-snippet extractor"
+        }
+      }
+    }
+  ]
+}

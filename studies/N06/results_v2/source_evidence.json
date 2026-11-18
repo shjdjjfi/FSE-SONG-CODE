@@ -1,0 +1,25 @@
+{
+  "kube_prometheus": {
+    "repository": "prometheus-operator/kube-prometheus",
+    "commit": "d88939bfbe7ffa368a62dcc1ff477b1c19fa9674",
+    "file": "jsonnet/kube-prometheus/components/mixin/alerts/general.libsonnet",
+    "alert": "TargetDown",
+    "for_minutes": 10,
+    "warning": "Original expression is >10% down grouped by cluster/job/namespace/service; modeled contract differs."
+  },
+  "fractal_techware": {
+    "repository": "Fractal-Techware/prometheus-alert-rules",
+    "commit": "3e61642f0dbbcab5a4fae1c830962fe8cd009c29",
+    "file": "rules/kubernetes-workloads.rules.yml",
+    "alert": "KubePodNotReady",
+    "for_minutes": 15,
+    "warning": "Original expression targets individual pod readiness; modeled contract is owner/service outage."
+  },
+  "local_sha256": {
+    "ftw_kubernetes_workloads.test.yml": "4b84fa7407644ff9c1c400f414190c7d9c0bf69c787ac74c3d99d76ce6ca21e3",
+    "kube_prometheus_LICENSE": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14",
+    "ftw_LICENSE": "39cdc487250b5d7fad84d8494a055177c5d01cf455a37926d8842a99dc9360ce",
+    "kube_prometheus_general.libsonnet": "291752179518f1dadd922615589aa59957419ea38079a61fe521ad3171083c19",
+    "ftw_kubernetes_workloads.rules.yml": "cadce6282c7aa7e125fa9ccf0aa5594d2f56b1c55c9e38c851f757db12550e62"
+  }
+}

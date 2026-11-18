@@ -1,0 +1,21 @@
+{
+  "key": "afb22b47aa4cf8c30c",
+  "args": {
+    "crate": "rayon",
+    "version": "1.10.0",
+    "id": "0cbdd560f7526e67",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0629,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "3b03df71357e46a0f8e19bc678f67e24e38ae50e3f9eb96395d721a76663c05d",
+  "manifest_sha256": "8cf51f8c5c8dadc739f473faf43ea09432c2452dff9f9c6a3d572d6cf427c1ea",
+  "log_file": "results/check_logs/afb22b47aa4cf8c30c.txt.gz"
+}

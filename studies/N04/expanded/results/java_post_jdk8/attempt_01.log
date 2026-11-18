@@ -1,0 +1,43 @@
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective settings
+[WARNING] 'proxies.proxy.id' must be unique but found duplicate proxy with id configured-network-route @ /tmp/n04-maven-settings-am7cy19a/settings.xml
+[WARNING] 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------
+[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---
+[INFO] skip non existing resourceDirectory /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 70 source files to /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 55 source files to /workspace/scratch/11a743861359/n04_experiments/data/javawebsocket_post/target/test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ Java-WebSocket ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.2.5/maven-surefire-common-3.2.5.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.585 s
+[INFO] Finished at: 2026-11-15T02:24:57+09:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test (default-test) on project Java-WebSocket: Execution default-test of goal org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test failed: Plugin org.apache.maven.plugins:maven-surefire-plugin:3.2.5 or one of its dependencies could not be resolved:
+[ERROR] 	Failed to read artifact descriptor for org.apache.maven.surefire:maven-surefire-common:jar:3.2.5
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginResolutionException
+

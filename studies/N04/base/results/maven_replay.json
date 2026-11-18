@@ -1,0 +1,768 @@
+{
+  "type": "offline_CPU_only_Maven_reexecution",
+  "not_historical_CI": true,
+  "revisions": [
+    "2ce6e6149d0ef44f4919e75326265c64c144a00f^",
+    "2ce6e6149d0ef44f4919e75326265c64c144a00f"
+  ],
+  "maven_test": "Issue256Test",
+  "repeats": 3,
+  "outcomes": [
+    {
+      "git_sha": "2ce6e6149d0ef44f4919e75326265c64c144a00f^",
+      "returncode": 0,
+      "build_compatibility_adjustment": "build-only Java 6 to Java 8 compiler level adjustment; excluded unrelated CORBA-dependent test file; excluded its dependent suite aggregator; excluded top-level suite aggregator",
+      "elapsed_seconds": 19.518,
+      "test_executions": [
+        {
+          "path": "target/surefire-reports/TEST-org.java_websocket.issues.Issue256Test.xml",
+          "tests": [
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario0",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario1",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario2",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario3",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario4",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario5",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario6",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario7",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario8",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario9",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario0",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario1",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario2",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario3",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario4",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario5",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario6",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario7",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario8",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario9",
+              "status": "passed"
+            }
+          ],
+          "suite_attrs": {
+            "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd",
+            "version": "3.0",
+            "name": "org.java_websocket.issues.Issue256Test",
+            "time": "0.546",
+            "tests": "20",
+            "errors": "0",
+            "skipped": "0",
+            "failures": "0"
+          }
+        }
+      ],
+      "test_count": 20,
+      "log_tail": "[INFO] Scanning for projects...\n[INFO] \n[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------\n[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---\n[INFO] skip non existing resourceDirectory /tmp/n04-maven-gfzm0xrb/src/main/resources\n[INFO] \n[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 70 source files to /tmp/n04-maven-gfzm0xrb/target/classes\n[INFO] /tmp/n04-maven-gfzm0xrb/src/main/java/org/java_websocket/server/WebSocketServer.java: Some input files use or override a deprecated API.\n[INFO] /tmp/n04-maven-gfzm0xrb/src/main/java/org/java_websocket/server/WebSocketServer.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-gfzm0xrb/src/main/java/org/java_websocket/drafts/Draft.java: /tmp/n04-maven-gfzm0xrb/src/main/java/org/java_websocket/drafts/Draft.java uses or overrides a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-gfzm0xrb/src/main/java/org/java_websocket/drafts/Draft.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---\n[INFO] Copying 1 resource from src/test/resources to target/test-classes\n[INFO] \n[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 52 source files to /tmp/n04-maven-gfzm0xrb/target/test-classes\n[INFO] /tmp/n04-maven-gfzm0xrb/src/test/java/org/java_websocket/util/ThreadCheck.java: /tmp/n04-maven-gfzm0xrb/src/test/java/org/java_websocket/util/ThreadCheck.java uses or overrides a deprecated API.\n[INFO] /tmp/n04-maven-gfzm0xrb/src/test/java/org/java_websocket/util/ThreadCheck.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-gfzm0xrb/src/test/java/org/java_websocket/example/AutobahnClientTest.java: Some input files use or override a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-gfzm0xrb/src/test/java/org/java_websocket/example/AutobahnClientTest.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- surefire:3.2.5:test (default-test) @ Java-WebSocket ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running org.java_websocket.issues.Issue256Test\n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.546 s -- in org.java_websocket.issues.Issue256Test\n[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  17.766 s\n[INFO] Finished at: 2026-11-15T02:48:13+09:00\n[INFO] ------------------------------------------------------------------------\n\n",
+      "repeat_index": 0
+    },
+    {
+      "git_sha": "2ce6e6149d0ef44f4919e75326265c64c144a00f^",
+      "returncode": 0,
+      "build_compatibility_adjustment": "build-only Java 6 to Java 8 compiler level adjustment; excluded unrelated CORBA-dependent test file; excluded its dependent suite aggregator; excluded top-level suite aggregator",
+      "elapsed_seconds": 5.109,
+      "test_executions": [
+        {
+          "path": "target/surefire-reports/TEST-org.java_websocket.issues.Issue256Test.xml",
+          "tests": [
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario0",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario1",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario2",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario3",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario4",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario5",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario6",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario7",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario8",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario9",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario0",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario1",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario2",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario3",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario4",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario5",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario6",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario7",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario8",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario9",
+              "status": "passed"
+            }
+          ],
+          "suite_attrs": {
+            "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd",
+            "version": "3.0",
+            "name": "org.java_websocket.issues.Issue256Test",
+            "time": "0.61",
+            "tests": "20",
+            "errors": "0",
+            "skipped": "0",
+            "failures": "0"
+          }
+        }
+      ],
+      "test_count": 20,
+      "log_tail": "[INFO] Scanning for projects...\n[INFO] \n[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------\n[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---\n[INFO] skip non existing resourceDirectory /tmp/n04-maven-yjjwsip0/src/main/resources\n[INFO] \n[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 70 source files to /tmp/n04-maven-yjjwsip0/target/classes\n[INFO] /tmp/n04-maven-yjjwsip0/src/main/java/org/java_websocket/server/WebSocketServer.java: Some input files use or override a deprecated API.\n[INFO] /tmp/n04-maven-yjjwsip0/src/main/java/org/java_websocket/server/WebSocketServer.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-yjjwsip0/src/main/java/org/java_websocket/drafts/Draft.java: /tmp/n04-maven-yjjwsip0/src/main/java/org/java_websocket/drafts/Draft.java uses or overrides a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-yjjwsip0/src/main/java/org/java_websocket/drafts/Draft.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---\n[INFO] Copying 1 resource from src/test/resources to target/test-classes\n[INFO] \n[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 52 source files to /tmp/n04-maven-yjjwsip0/target/test-classes\n[INFO] /tmp/n04-maven-yjjwsip0/src/test/java/org/java_websocket/util/ThreadCheck.java: /tmp/n04-maven-yjjwsip0/src/test/java/org/java_websocket/util/ThreadCheck.java uses or overrides a deprecated API.\n[INFO] /tmp/n04-maven-yjjwsip0/src/test/java/org/java_websocket/util/ThreadCheck.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-yjjwsip0/src/test/java/org/java_websocket/example/AutobahnClientTest.java: Some input files use or override a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-yjjwsip0/src/test/java/org/java_websocket/example/AutobahnClientTest.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- surefire:3.2.5:test (default-test) @ Java-WebSocket ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running org.java_websocket.issues.Issue256Test\n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.610 s -- in org.java_websocket.issues.Issue256Test\n[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  3.523 s\n[INFO] Finished at: 2026-11-15T02:48:18+09:00\n[INFO] ------------------------------------------------------------------------\n\n",
+      "repeat_index": 1
+    },
+    {
+      "git_sha": "2ce6e6149d0ef44f4919e75326265c64c144a00f^",
+      "returncode": 0,
+      "build_compatibility_adjustment": "build-only Java 6 to Java 8 compiler level adjustment; excluded unrelated CORBA-dependent test file; excluded its dependent suite aggregator; excluded top-level suite aggregator",
+      "elapsed_seconds": 6.646,
+      "test_executions": [
+        {
+          "path": "target/surefire-reports/TEST-org.java_websocket.issues.Issue256Test.xml",
+          "tests": [
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario0",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario1",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario2",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario3",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario4",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario5",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario6",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario7",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario8",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectScenario9",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario0",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario1",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario2",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario3",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario4",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario5",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario6",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario7",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario8",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectBlockingScenario9",
+              "status": "passed"
+            }
+          ],
+          "suite_attrs": {
+            "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd",
+            "version": "3.0",
+            "name": "org.java_websocket.issues.Issue256Test",
+            "time": "0.59",
+            "tests": "20",
+            "errors": "0",
+            "skipped": "0",
+            "failures": "0"
+          }
+        }
+      ],
+      "test_count": 20,
+      "log_tail": "[INFO] Scanning for projects...\n[INFO] \n[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------\n[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---\n[INFO] skip non existing resourceDirectory /tmp/n04-maven-egm8v50m/src/main/resources\n[INFO] \n[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 70 source files to /tmp/n04-maven-egm8v50m/target/classes\n[INFO] /tmp/n04-maven-egm8v50m/src/main/java/org/java_websocket/server/WebSocketServer.java: Some input files use or override a deprecated API.\n[INFO] /tmp/n04-maven-egm8v50m/src/main/java/org/java_websocket/server/WebSocketServer.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-egm8v50m/src/main/java/org/java_websocket/drafts/Draft.java: /tmp/n04-maven-egm8v50m/src/main/java/org/java_websocket/drafts/Draft.java uses or overrides a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-egm8v50m/src/main/java/org/java_websocket/drafts/Draft.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---\n[INFO] Copying 1 resource from src/test/resources to target/test-classes\n[INFO] \n[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 52 source files to /tmp/n04-maven-egm8v50m/target/test-classes\n[INFO] /tmp/n04-maven-egm8v50m/src/test/java/org/java_websocket/util/ThreadCheck.java: /tmp/n04-maven-egm8v50m/src/test/java/org/java_websocket/util/ThreadCheck.java uses or overrides a deprecated API.\n[INFO] /tmp/n04-maven-egm8v50m/src/test/java/org/java_websocket/util/ThreadCheck.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-egm8v50m/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Some input files use or override a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-egm8v50m/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- surefire:3.2.5:test (default-test) @ Java-WebSocket ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running org.java_websocket.issues.Issue256Test\n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.590 s -- in org.java_websocket.issues.Issue256Test\n[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  4.695 s\n[INFO] Finished at: 2026-11-15T02:48:25+09:00\n[INFO] ------------------------------------------------------------------------\n\n",
+      "repeat_index": 2
+    },
+    {
+      "git_sha": "2ce6e6149d0ef44f4919e75326265c64c144a00f",
+      "returncode": 0,
+      "build_compatibility_adjustment": "build-only Java 6 to Java 8 compiler level adjustment; excluded unrelated CORBA-dependent test file; excluded its dependent suite aggregator; excluded top-level suite aggregator",
+      "elapsed_seconds": 6.103,
+      "test_executions": [
+        {
+          "path": "target/surefire-reports/TEST-org.java_websocket.issues.Issue256Test.xml",
+          "tests": [
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[0]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[0]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[1]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[1]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[2]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[2]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[3]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[3]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[4]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[4]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[5]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[5]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[6]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[6]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[7]",
+              "status": "skipped"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[7]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[8]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[8]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[9]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[9]",
+              "status": "passed"
+            }
+          ],
+          "suite_attrs": {
+            "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd",
+            "version": "3.0",
+            "name": "org.java_websocket.issues.Issue256Test",
+            "time": "0.6",
+            "tests": "20",
+            "errors": "0",
+            "skipped": "1",
+            "failures": "0"
+          }
+        }
+      ],
+      "test_count": 20,
+      "log_tail": "[INFO] Scanning for projects...\n[INFO] \n[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------\n[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---\n[INFO] skip non existing resourceDirectory /tmp/n04-maven-5no3rf5x/src/main/resources\n[INFO] \n[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 70 source files to /tmp/n04-maven-5no3rf5x/target/classes\n[INFO] /tmp/n04-maven-5no3rf5x/src/main/java/org/java_websocket/server/WebSocketServer.java: Some input files use or override a deprecated API.\n[INFO] /tmp/n04-maven-5no3rf5x/src/main/java/org/java_websocket/server/WebSocketServer.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-5no3rf5x/src/main/java/org/java_websocket/drafts/Draft.java: /tmp/n04-maven-5no3rf5x/src/main/java/org/java_websocket/drafts/Draft.java uses or overrides a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-5no3rf5x/src/main/java/org/java_websocket/drafts/Draft.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---\n[INFO] Copying 1 resource from src/test/resources to target/test-classes\n[INFO] \n[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 52 source files to /tmp/n04-maven-5no3rf5x/target/test-classes\n[INFO] /tmp/n04-maven-5no3rf5x/src/test/java/org/java_websocket/util/ThreadCheck.java: /tmp/n04-maven-5no3rf5x/src/test/java/org/java_websocket/util/ThreadCheck.java uses or overrides a deprecated API.\n[INFO] /tmp/n04-maven-5no3rf5x/src/test/java/org/java_websocket/util/ThreadCheck.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-5no3rf5x/src/test/java/org/java_websocket/example/AutobahnSSLServerTest.java: Some input files use or override a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-5no3rf5x/src/test/java/org/java_websocket/example/AutobahnSSLServerTest.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- surefire:3.2.5:test (default-test) @ Java-WebSocket ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running org.java_websocket.issues.Issue256Test\n[WARNING] Tests run: 20, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.600 s -- in org.java_websocket.issues.Issue256Test\n[INFO] \n[INFO] Results:\n[INFO] \n[WARNING] Tests run: 20, Failures: 0, Errors: 0, Skipped: 1\n[INFO] \n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  4.665 s\n[INFO] Finished at: 2026-11-15T02:48:31+09:00\n[INFO] ------------------------------------------------------------------------\n\njava.lang.NullPointerException: Cannot invoke \"java.lang.Thread.interrupt()\" because \"this.writeThread\" is null\n\tat org.java_websocket.client.WebSocketClient.reset(WebSocketClient.java:261)\n\tat org.java_websocket.client.WebSocketClient.reconnectBlocking(WebSocketClient.java:245)\n\tat org.java_websocket.issues.Issue256Test.runTestScenarioReconnect(Issue256Test.java:134)\n\tat org.java_websocket.issues.Issue256Test.runReconnectSocketClose(Issue256Test.java:152)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)\n",
+      "repeat_index": 0
+    },
+    {
+      "git_sha": "2ce6e6149d0ef44f4919e75326265c64c144a00f",
+      "returncode": 0,
+      "build_compatibility_adjustment": "build-only Java 6 to Java 8 compiler level adjustment; excluded unrelated CORBA-dependent test file; excluded its dependent suite aggregator; excluded top-level suite aggregator",
+      "elapsed_seconds": 4.98,
+      "test_executions": [
+        {
+          "path": "target/surefire-reports/TEST-org.java_websocket.issues.Issue256Test.xml",
+          "tests": [
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[0]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[0]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[1]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[1]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[2]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[2]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[3]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[3]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[4]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[4]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[5]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[5]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[6]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[6]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[7]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[7]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[8]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[8]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[9]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[9]",
+              "status": "passed"
+            }
+          ],
+          "suite_attrs": {
+            "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd",
+            "version": "3.0",
+            "name": "org.java_websocket.issues.Issue256Test",
+            "time": "0.538",
+            "tests": "20",
+            "errors": "0",
+            "skipped": "0",
+            "failures": "0"
+          }
+        }
+      ],
+      "test_count": 20,
+      "log_tail": "[INFO] Scanning for projects...\n[INFO] \n[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------\n[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---\n[INFO] skip non existing resourceDirectory /tmp/n04-maven-r0tcrl7i/src/main/resources\n[INFO] \n[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 70 source files to /tmp/n04-maven-r0tcrl7i/target/classes\n[INFO] /tmp/n04-maven-r0tcrl7i/src/main/java/org/java_websocket/server/WebSocketServer.java: Some input files use or override a deprecated API.\n[INFO] /tmp/n04-maven-r0tcrl7i/src/main/java/org/java_websocket/server/WebSocketServer.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-r0tcrl7i/src/main/java/org/java_websocket/drafts/Draft.java: /tmp/n04-maven-r0tcrl7i/src/main/java/org/java_websocket/drafts/Draft.java uses or overrides a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-r0tcrl7i/src/main/java/org/java_websocket/drafts/Draft.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---\n[INFO] Copying 1 resource from src/test/resources to target/test-classes\n[INFO] \n[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 52 source files to /tmp/n04-maven-r0tcrl7i/target/test-classes\n[INFO] /tmp/n04-maven-r0tcrl7i/src/test/java/org/java_websocket/util/ThreadCheck.java: /tmp/n04-maven-r0tcrl7i/src/test/java/org/java_websocket/util/ThreadCheck.java uses or overrides a deprecated API.\n[INFO] /tmp/n04-maven-r0tcrl7i/src/test/java/org/java_websocket/util/ThreadCheck.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-r0tcrl7i/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Some input files use or override a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-r0tcrl7i/src/test/java/org/java_websocket/example/AutobahnServerTest.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- surefire:3.2.5:test (default-test) @ Java-WebSocket ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running org.java_websocket.issues.Issue256Test\n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.538 s -- in org.java_websocket.issues.Issue256Test\n[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  3.709 s\n[INFO] Finished at: 2026-11-15T02:48:36+09:00\n[INFO] ------------------------------------------------------------------------\n\n",
+      "repeat_index": 1
+    },
+    {
+      "git_sha": "2ce6e6149d0ef44f4919e75326265c64c144a00f",
+      "returncode": 0,
+      "build_compatibility_adjustment": "build-only Java 6 to Java 8 compiler level adjustment; excluded unrelated CORBA-dependent test file; excluded its dependent suite aggregator; excluded top-level suite aggregator",
+      "elapsed_seconds": 5.95,
+      "test_executions": [
+        {
+          "path": "target/surefire-reports/TEST-org.java_websocket.issues.Issue256Test.xml",
+          "tests": [
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[0]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[0]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[1]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[1]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[2]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[2]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[3]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[3]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[4]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[4]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[5]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[5]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[6]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[6]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[7]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[7]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[8]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[8]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectSocketClose[9]",
+              "status": "passed"
+            },
+            {
+              "classname": "org.java_websocket.issues.Issue256Test",
+              "name": "runReconnectCloseBlocking[9]",
+              "status": "passed"
+            }
+          ],
+          "suite_attrs": {
+            "{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation": "https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd",
+            "version": "3.0",
+            "name": "org.java_websocket.issues.Issue256Test",
+            "time": "0.613",
+            "tests": "20",
+            "errors": "0",
+            "skipped": "0",
+            "failures": "0"
+          }
+        }
+      ],
+      "test_count": 20,
+      "log_tail": "[INFO] Scanning for projects...\n[INFO] \n[INFO] -----------------< org.java-websocket:Java-WebSocket >------------------\n[INFO] Building Java-WebSocket 1.4.0-SNAPSHOT\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.3.1:resources (default-resources) @ Java-WebSocket ---\n[INFO] skip non existing resourceDirectory /tmp/n04-maven-_6nbl6p4/src/main/resources\n[INFO] \n[INFO] --- compiler:3.7.0:compile (default-compile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 70 source files to /tmp/n04-maven-_6nbl6p4/target/classes\n[INFO] /tmp/n04-maven-_6nbl6p4/src/main/java/org/java_websocket/server/WebSocketServer.java: Some input files use or override a deprecated API.\n[INFO] /tmp/n04-maven-_6nbl6p4/src/main/java/org/java_websocket/server/WebSocketServer.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-_6nbl6p4/src/main/java/org/java_websocket/drafts/Draft.java: /tmp/n04-maven-_6nbl6p4/src/main/java/org/java_websocket/drafts/Draft.java uses or overrides a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-_6nbl6p4/src/main/java/org/java_websocket/drafts/Draft.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- resources:3.3.1:testResources (default-testResources) @ Java-WebSocket ---\n[INFO] Copying 1 resource from src/test/resources to target/test-classes\n[INFO] \n[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ Java-WebSocket ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 52 source files to /tmp/n04-maven-_6nbl6p4/target/test-classes\n[INFO] /tmp/n04-maven-_6nbl6p4/src/test/java/org/java_websocket/util/ThreadCheck.java: /tmp/n04-maven-_6nbl6p4/src/test/java/org/java_websocket/util/ThreadCheck.java uses or overrides a deprecated API.\n[INFO] /tmp/n04-maven-_6nbl6p4/src/test/java/org/java_websocket/util/ThreadCheck.java: Recompile with -Xlint:deprecation for details.\n[INFO] /tmp/n04-maven-_6nbl6p4/src/test/java/org/java_websocket/example/AutobahnSSLServerTest.java: Some input files use or override a deprecated API that is marked for removal.\n[INFO] /tmp/n04-maven-_6nbl6p4/src/test/java/org/java_websocket/example/AutobahnSSLServerTest.java: Recompile with -Xlint:removal for details.\n[INFO] \n[INFO] --- surefire:3.2.5:test (default-test) @ Java-WebSocket ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running org.java_websocket.issues.Issue256Test\n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.613 s -- in org.java_websocket.issues.Issue256Test\n[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  4.301 s\n[INFO] Finished at: 2026-11-15T02:48:42+09:00\n[INFO] ------------------------------------------------------------------------\n\n",
+      "repeat_index": 2
+    }
+  ]
+}

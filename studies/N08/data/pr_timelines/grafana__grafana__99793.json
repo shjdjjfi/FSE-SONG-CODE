@@ -1,0 +1,22 @@
+{
+  "fetched_utc": "2026-11-14T17:20:28.736530+00:00",
+  "merged_at": "2025-01-30T09:51:55Z",
+  "opened_at": "2025-01-30T08:58:11Z",
+  "pr": 99793,
+  "raw_html_sha256": "7b49f57620252719510eeb30f83f23de0703373e0d07634542ab199d0da39586",
+  "repo": "grafana/grafana",
+  "review_count_visible": 2,
+  "reviews": [
+    {
+      "login": "ryantxu",
+      "state": "COMMENTED",
+      "submitted_at": "2025-01-30T09:00:52Z"
+    },
+    {
+      "login": "Clarity-89",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-30T09:05:28Z"
+    }
+  ],
+  "source_url": "https://github.com/grafana/grafana/pull/99793"
+}

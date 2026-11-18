@@ -1,0 +1,32 @@
+{
+  "fetched_utc": "2026-11-14T17:12:05.475017+00:00",
+  "merged_at": "2024-12-12T21:10:54Z",
+  "opened_at": "2024-12-12T07:53:18Z",
+  "pr": 12363,
+  "raw_html_sha256": "87c243c20f2088780bd9cb27c12316cf7655780c5affe3c168b7faa86429ff2f",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 4,
+  "reviews": [
+    {
+      "login": "rr-bw",
+      "state": "COMMENTED",
+      "submitted_at": "2024-12-12T08:25:07Z"
+    },
+    {
+      "login": "rr-bw",
+      "state": "COMMENTED",
+      "submitted_at": "2024-12-12T08:28:37Z"
+    },
+    {
+      "login": "rr-bw",
+      "state": "COMMENTED",
+      "submitted_at": "2024-12-12T08:32:16Z"
+    },
+    {
+      "login": "JaredSnider-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2024-12-12T20:17:01Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/12363"
+}

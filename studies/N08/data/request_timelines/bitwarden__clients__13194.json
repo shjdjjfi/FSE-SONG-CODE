@@ -1,0 +1,65 @@
+{
+  "pr": 13194,
+  "pr_author": "thomas-avery",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-02-03T22:05:11Z",
+      "requested_people": [
+        "thomas-avery"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-02-03T22:05:12Z",
+      "requested_people": [
+        "rr-bw",
+        "thomas-avery"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-02-04T15:49:07Z",
+      "requested_people": [
+        "rr-bw",
+        "thomas-avery"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-02-06T16:42:26Z",
+      "requested_people": [
+        "quexten",
+        "rr-bw",
+        "thomas-avery"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-02-10T20:05:53Z",
+      "requested_people": [
+        "mzieniukbw",
+        "quexten",
+        "thomas-avery"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-03-14T22:43:53Z",
+      "requested_people": [
+        "mzieniukbw",
+        "rr-bw",
+        "thomas-avery"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "5f3fd7446fec931d0a3a9fdad8801484981e227029ca7b7053f5b1634a94d07f",
+  "url": "https://github.com/bitwarden/clients/pull/13194"
+}

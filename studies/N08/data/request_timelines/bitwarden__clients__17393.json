@@ -1,0 +1,35 @@
+{
+  "pr": 17393,
+  "pr_author": "sbrown-livefront",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-11-14T21:32:38Z",
+      "requested_people": [
+        "sbrown-livefront"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-11-14T21:32:38Z",
+      "requested_people": [
+        "cyprain-okeke",
+        "sbrown-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-11-21T19:46:50Z",
+      "requested_people": [
+        "amorask-bitwarden",
+        "sbrown-livefront"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "465e482acc3fa292d77e0b4d5640652ef9f8ae7254a3260a60df02a3c8d08374",
+  "url": "https://github.com/bitwarden/clients/pull/17393"
+}

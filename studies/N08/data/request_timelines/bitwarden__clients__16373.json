@@ -1,0 +1,55 @@
+{
+  "pr": 16373,
+  "pr_author": "jaasen-livefront",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-09-10T21:19:01Z",
+      "requested_people": [
+        "jaasen-livefront"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-09-10T21:19:02Z",
+      "requested_people": [
+        "gbubemismith",
+        "jaasen-livefront",
+        "sbrown-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-09-10T21:53:52Z",
+      "requested_people": [
+        "jaasen-livefront"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-09-10T21:53:52Z",
+      "requested_people": [
+        "jaasen-livefront",
+        "jimmyvo16"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-09-11T18:06:25Z",
+      "requested_people": [
+        "gbubemismith",
+        "jaasen-livefront",
+        "jimmyvo16",
+        "sbrown-livefront"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "29a21878ff5373787c55386354f9a7dcdda72319ee9114c1783da6faffbda2ca",
+  "url": "https://github.com/bitwarden/clients/pull/16373"
+}

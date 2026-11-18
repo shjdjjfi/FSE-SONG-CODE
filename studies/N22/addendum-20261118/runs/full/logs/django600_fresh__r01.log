@@ -1,0 +1,6 @@
+COMMAND: ["/workspace/scratch/2881099d856a/n22_env_dj600/bin/python", "/workspace/scratch/2881099d856a/N22_FSE_Industry/code/replay_django.py", "--db", "/workspace/scratch/2881099d856a/N22_FSE_Industry/runs/full/databases/django600_fresh__r01.sqlite", "--out", "/workspace/scratch/2881099d856a/N22_FSE_Industry/runs/full/raw_json/django600_fresh__r01.json", "--mode", "fresh"]
+RETURN CODE: 0
+STDOUT:
+{"mode": "fresh", "oracle": {"expected_songprofile_permission": true, "observed_songprofile_permission": true, "observed_son_permission": false, "contract_violation": false}, "schema": "5dac277d566103ee43e44d40dfbeb2401dd316ee7df39f543f57f84c0536c115", "ledger": "c6e4620b6459bb38f3984bac4f277a56a4964021b4a284cbb0e133c3e65e1bc2"}
+
+STDERR:

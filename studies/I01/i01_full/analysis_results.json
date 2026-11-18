@@ -1,0 +1,606 @@
+{
+  "source_date": "2026-11-14",
+  "planned_scenarios": 1440,
+  "performed_uv": 1440,
+  "uncorrected_uv_first_pass_scenarios": 1440,
+  "macos11_corrective_rerun_scenarios": 480,
+  "macos13_default_to_macos11_changed_outcomes": 11,
+  "macos_version_correction_changed_ids": [
+    "scipy==1.8.0|py3.10|macos_arm64",
+    "scipy==1.8.0|py3.8|macos_arm64",
+    "streampipes==0.97.0|py3.14|macos_arm64",
+    "max==25.6.0|py3.10|macos_arm64",
+    "max==25.6.0|py3.12|macos_arm64",
+    "ultralytics==8.3.47|py3.12|macos_arm64",
+    "ray==2.56.0|py3.12|macos_arm64",
+    "ray==2.56.0|py3.10|macos_arm64",
+    "ray==2.56.0|py3.14|macos_arm64",
+    "crawl4ai==0.8.7|py3.12|macos_arm64",
+    "crawl4ai==0.8.7|py3.10|macos_arm64"
+  ],
+  "performed_pip": 288,
+  "performed_pip_all": 1440,
+  "uv_status_counts": {
+    "unsat": 792,
+    "success": 648
+  },
+  "strict_pip_status_counts": {
+    "unsat": 806,
+    "success": 626,
+    "timeout": 5,
+    "unknown_error": 3
+  },
+  "uv_vs_strict_pip_all_contingency": {
+    "unsat|unsat": 788,
+    "success|success": 626,
+    "unsat|timeout": 2,
+    "success|unsat": 18,
+    "unsat|unknown_error": 2,
+    "success|unknown_error": 1,
+    "success|timeout": 3
+  },
+  "uv_vs_strict_pip_all_disagreement_ids": [
+    "embedchain==0.1.57|py3.10|windows_amd64",
+    "streampipes==0.97.0|py3.12|linux_amd64",
+    "streampipes==0.97.0|py3.12|windows_amd64",
+    "streampipes==0.97.0|py3.12|macos_arm64",
+    "streampipes==0.97.0|py3.14|windows_amd64",
+    "ultralytics==8.3.47|py3.12|windows_amd64",
+    "ultralytics==8.3.47|py3.14|windows_amd64",
+    "cg==60.2.12|py3.14|windows_amd64",
+    "cg==60.2.12|py3.14|macos_arm64",
+    "apache-airflow-providers-mysql==6.2.0|py3.10|macos_arm64",
+    "apache-airflow-providers-mysql==6.2.0|py3.12|macos_arm64",
+    "apache-airflow-providers-mysql==6.2.0|py3.14|macos_arm64",
+    "pycti==7.260401.0|py3.10|windows_amd64",
+    "pycti==7.260401.0|py3.12|windows_amd64",
+    "pycti==7.260401.0|py3.14|windows_amd64",
+    "py7zr==1.1.3|py3.14|linux_amd64",
+    "py7zr==1.1.3|py3.14|windows_amd64",
+    "py7zr==1.1.3|py3.14|macos_arm64"
+  ],
+  "two_solver_consensus": {
+    "both_success": 626,
+    "both_unsat": 788,
+    "uv_success_pip_unsat": 18,
+    "uv_unsat_pip_success": 0,
+    "either_unknown": 8
+  },
+  "linux_python312_nearest_host_anchor": {
+    "cases": 120,
+    "uv_success": 60,
+    "strict_pip_success": 59,
+    "both_success": 59,
+    "both_unsat": 60,
+    "disagreement": 1
+  },
+  "strict_pip_full_inferred_from_independent_root_rejection": 406,
+  "strict_pip_actual_full_solver_calls": 1034,
+  "strict_pip_actual_no_deps_calls": 694,
+  "strict_pip_total_observed_subprocess_seconds": 6728.15,
+  "strict_pip_false_blocks_by_root_gate": 0,
+  "strict_pip_false_blocks_cases": [],
+  "strict_pip_root_gate_false_rejects_pip_nodeps": 0,
+  "strict_pip_root_gate_false_rejects_cases": [],
+  "primary_eligible_decisive": 1404,
+  "primary_eligible_success": 648,
+  "preflight_pass": 881,
+  "preflight_impossible": 523,
+  "preflight_unknown": 36,
+  "false_blocked_vs_uv": 6,
+  "false_blocked_cases": [
+    "streampipes==0.97.0|py3.12|linux_amd64",
+    "streampipes==0.97.0|py3.12|windows_amd64",
+    "streampipes==0.97.0|py3.12|macos_arm64",
+    "streampipes==0.97.0|py3.14|windows_amd64",
+    "cg==60.2.12|py3.14|windows_amd64",
+    "cg==60.2.12|py3.14|macos_arm64"
+  ],
+  "full_resolution_fail_given_root_pass": 239,
+  "full_resolution_fail_given_root_pass_cases": [
+    "sqla-yaml-fixtures==1.0.0|py3.8|macos_arm64",
+    "python-jwt==3.3.4|py3.8|macos_arm64",
+    "aws-encryption-sdk-cli==1.9.0|py3.8|macos_arm64",
+    "azure-cli==2.40.0|py3.8|linux_amd64",
+    "azure-cli==2.40.0|py3.8|windows_amd64",
+    "azure-cli==2.40.0|py3.8|macos_arm64",
+    "azure-cli==2.40.0|py3.10|linux_amd64",
+    "azure-cli==2.40.0|py3.10|windows_amd64",
+    "azure-cli==2.40.0|py3.10|macos_arm64",
+    "azure-cli==2.40.0|py3.12|linux_amd64",
+    "azure-cli==2.40.0|py3.12|windows_amd64",
+    "azure-cli==2.40.0|py3.12|macos_arm64",
+    "azure-cli==2.40.0|py3.14|linux_amd64",
+    "azure-cli==2.40.0|py3.14|windows_amd64",
+    "azure-cli==2.40.0|py3.14|macos_arm64",
+    "freetakserver==1.9.8.5|py3.8|macos_arm64",
+    "freetakserver==1.9.8.5|py3.10|linux_amd64",
+    "freetakserver==1.9.8.5|py3.10|windows_amd64",
+    "freetakserver==1.9.8.5|py3.10|macos_arm64",
+    "freetakserver==1.9.8.5|py3.12|linux_amd64"
+  ],
+  "strict_pip_resolution_fail_given_root_pass": 247,
+  "strict_pip_resolution_fail_given_root_pass_cases": [
+    "sqla-yaml-fixtures==1.0.0|py3.8|macos_arm64",
+    "python-jwt==3.3.4|py3.8|macos_arm64",
+    "aws-encryption-sdk-cli==1.9.0|py3.8|macos_arm64",
+    "azure-cli==2.40.0|py3.8|linux_amd64",
+    "azure-cli==2.40.0|py3.8|windows_amd64",
+    "azure-cli==2.40.0|py3.8|macos_arm64",
+    "azure-cli==2.40.0|py3.10|linux_amd64",
+    "azure-cli==2.40.0|py3.10|windows_amd64",
+    "azure-cli==2.40.0|py3.10|macos_arm64",
+    "azure-cli==2.40.0|py3.12|linux_amd64",
+    "azure-cli==2.40.0|py3.12|windows_amd64",
+    "azure-cli==2.40.0|py3.12|macos_arm64",
+    "azure-cli==2.40.0|py3.14|linux_amd64",
+    "azure-cli==2.40.0|py3.14|windows_amd64",
+    "azure-cli==2.40.0|py3.14|macos_arm64",
+    "freetakserver==1.9.8.5|py3.8|macos_arm64",
+    "freetakserver==1.9.8.5|py3.10|linux_amd64",
+    "freetakserver==1.9.8.5|py3.10|windows_amd64",
+    "freetakserver==1.9.8.5|py3.10|macos_arm64",
+    "freetakserver==1.9.8.5|py3.12|linux_amd64"
+  ],
+  "top_transitive_no_wheel_dependencies": {
+    "antlr4-python3-runtime": 12,
+    "django-bootstrap4-form": 12,
+    "inifile": 12,
+    "wikipedia": 12,
+    "flask-basicauth": 11,
+    "embit": 9,
+    "jieba": 9,
+    "greenlet": 8,
+    "cffi": 7,
+    "sqlalchemy": 7,
+    "pynginxconfig": 7,
+    "galaxy-data": 7,
+    "bx-python": 7,
+    "tiktoken": 7,
+    "cryptography": 6,
+    "pyarrow": 6,
+    "pynng": 6,
+    "django-qsstats-magic": 6,
+    "halo": 6,
+    "telethonfaketls": 6
+  },
+  "per_cell": [
+    {
+      "python": "3.8",
+      "platform": "linux_amd64",
+      "success": 44,
+      "decisive": 117,
+      "rate": 0.37606837606837606
+    },
+    {
+      "python": "3.10",
+      "platform": "linux_amd64",
+      "success": 64,
+      "decisive": 117,
+      "rate": 0.5470085470085471
+    },
+    {
+      "python": "3.12",
+      "platform": "linux_amd64",
+      "success": 60,
+      "decisive": 117,
+      "rate": 0.5128205128205128
+    },
+    {
+      "python": "3.14",
+      "platform": "linux_amd64",
+      "success": 46,
+      "decisive": 117,
+      "rate": 0.39316239316239315
+    },
+    {
+      "python": "3.8",
+      "platform": "windows_amd64",
+      "success": 43,
+      "decisive": 117,
+      "rate": 0.36752136752136755
+    },
+    {
+      "python": "3.10",
+      "platform": "windows_amd64",
+      "success": 64,
+      "decisive": 117,
+      "rate": 0.5470085470085471
+    },
+    {
+      "python": "3.12",
+      "platform": "windows_amd64",
+      "success": 63,
+      "decisive": 117,
+      "rate": 0.5384615384615384
+    },
+    {
+      "python": "3.14",
+      "platform": "windows_amd64",
+      "success": 58,
+      "decisive": 117,
+      "rate": 0.49572649572649574
+    },
+    {
+      "python": "3.8",
+      "platform": "macos_arm64",
+      "success": 25,
+      "decisive": 117,
+      "rate": 0.21367521367521367
+    },
+    {
+      "python": "3.10",
+      "platform": "macos_arm64",
+      "success": 62,
+      "decisive": 117,
+      "rate": 0.5299145299145299
+    },
+    {
+      "python": "3.12",
+      "platform": "macos_arm64",
+      "success": 62,
+      "decisive": 117,
+      "rate": 0.5299145299145299
+    },
+    {
+      "python": "3.14",
+      "platform": "macos_arm64",
+      "success": 57,
+      "decisive": 117,
+      "rate": 0.48717948717948717
+    }
+  ],
+  "per_cell_strict_pip": [
+    {
+      "python": "3.8",
+      "platform": "linux_amd64",
+      "success": 44,
+      "decisive": 117,
+      "rate": 0.37606837606837606
+    },
+    {
+      "python": "3.10",
+      "platform": "linux_amd64",
+      "success": 64,
+      "decisive": 117,
+      "rate": 0.5470085470085471
+    },
+    {
+      "python": "3.12",
+      "platform": "linux_amd64",
+      "success": 59,
+      "decisive": 117,
+      "rate": 0.5042735042735043
+    },
+    {
+      "python": "3.14",
+      "platform": "linux_amd64",
+      "success": 45,
+      "decisive": 117,
+      "rate": 0.38461538461538464
+    },
+    {
+      "python": "3.8",
+      "platform": "windows_amd64",
+      "success": 43,
+      "decisive": 116,
+      "rate": 0.3706896551724138
+    },
+    {
+      "python": "3.10",
+      "platform": "windows_amd64",
+      "success": 61,
+      "decisive": 115,
+      "rate": 0.5304347826086957
+    },
+    {
+      "python": "3.12",
+      "platform": "windows_amd64",
+      "success": 59,
+      "decisive": 116,
+      "rate": 0.5086206896551724
+    },
+    {
+      "python": "3.14",
+      "platform": "windows_amd64",
+      "success": 52,
+      "decisive": 116,
+      "rate": 0.4482758620689655
+    },
+    {
+      "python": "3.8",
+      "platform": "macos_arm64",
+      "success": 25,
+      "decisive": 115,
+      "rate": 0.21739130434782608
+    },
+    {
+      "python": "3.10",
+      "platform": "macos_arm64",
+      "success": 60,
+      "decisive": 116,
+      "rate": 0.5172413793103449
+    },
+    {
+      "python": "3.12",
+      "platform": "macos_arm64",
+      "success": 60,
+      "decisive": 117,
+      "rate": 0.5128205128205128
+    },
+    {
+      "python": "3.14",
+      "platform": "macos_arm64",
+      "success": 54,
+      "decisive": 117,
+      "rate": 0.46153846153846156
+    }
+  ],
+  "per_stratum": [
+    {
+      "stratum": "early",
+      "success": 220,
+      "decisive": 468,
+      "rate": 0.4700854700854701
+    },
+    {
+      "stratum": "middle",
+      "success": 218,
+      "decisive": 480,
+      "rate": 0.45416666666666666
+    },
+    {
+      "stratum": "recent",
+      "success": 210,
+      "decisive": 456,
+      "rate": 0.4605263157894737
+    }
+  ],
+  "per_stratum_strict_pip": [
+    {
+      "stratum": "early",
+      "success": 220,
+      "decisive": 467,
+      "rate": 0.47109207708779444
+    },
+    {
+      "stratum": "middle",
+      "success": 208,
+      "decisive": 476,
+      "rate": 0.4369747899159664
+    },
+    {
+      "stratum": "recent",
+      "success": 198,
+      "decisive": 453,
+      "rate": 0.4370860927152318
+    }
+  ],
+  "outcome_patterns": {
+    "0000": 143,
+    "1111": 91,
+    "0111": 61,
+    "0110": 19,
+    "????": 9,
+    "1100": 8,
+    "1000": 7,
+    "1110": 6,
+    "0011": 6,
+    "0100": 5,
+    "0001": 3,
+    "0010": 2
+  },
+  "strict_pip_outcome_patterns": {
+    "0000": 145,
+    "1111": 90,
+    "0111": 49,
+    "0110": 22,
+    "????": 9,
+    "1100": 9,
+    "1000": 7,
+    "0100": 7,
+    "1110": 6,
+    "0011": 6,
+    "0001": 3,
+    "?111": 2,
+    "0010": 2,
+    "0???": 1,
+    "??00": 1,
+    "0?11": 1
+  },
+  "strict_pip_python38_fail_to_python314_success": 59,
+  "strict_pip_python38_fail_count": 236,
+  "strict_pip_reverse_python38_success_to_python314_fail": 22,
+  "strict_pip_first_successful_migration": {
+    "none": 145,
+    "3.10": 78,
+    "3.14": 3,
+    "3.12": 8
+  },
+  "fixed_release_first_upload_year": {
+    "2013": 1,
+    "2014": 1,
+    "2015": 1,
+    "2017": 2,
+    "2019": 3,
+    "2020": 10,
+    "2021": 8,
+    "2022": 12,
+    "2023": 9,
+    "2024": 24,
+    "2025": 20,
+    "2026": 26,
+    "missing": 3
+  },
+  "earliest_working_python_by_project_platform": {
+    "never": 143,
+    "3.10": 85,
+    "3.8": 112,
+    "3.14": 3,
+    "3.12": 8
+  },
+  "first_successful_migration_from_python38": {
+    "none": 143,
+    "3.10": 85,
+    "3.14": 3,
+    "3.12": 8
+  },
+  "old_python_fail_new_python_success_project_platforms": 70,
+  "old_python_fail_count_project_platforms": 239,
+  "reverse_cliff_old_success_new_fail": 21,
+  "old_to_new_recovery_by_platform": {
+    "windows_amd64": 23,
+    "macos_arm64": 33,
+    "linux_amd64": 14
+  },
+  "cross_platform_disagreements": 72,
+  "cross_platform_decisive_project_python": 468,
+  "solver_calls_saved_by_preflight": 523,
+  "solver_calls_reduction_fraction": 0.36319444444444443,
+  "solver_total_subprocess_seconds": 5637.09,
+  "uv_success_resolved_package_count_median": 12.0,
+  "uv_success_resolved_package_count_max": 151,
+  "estimated_avoided_subprocess_seconds": 1508.53,
+  "estimated_subprocess_time_reduction_fraction": 0.2676075007133556,
+  "pip_full": {
+    "unsat": 168,
+    "success": 118,
+    "timeout": 1,
+    "unknown_error": 1
+  },
+  "pip_root": {
+    "unsat": 123,
+    "success": 165
+  },
+  "pip_full_vs_uv_disagreement": 2,
+  "pip_full_vs_uv_disagreement_ids": [
+    "embedchain==0.1.57|py3.10|windows_amd64",
+    "py7zr==1.1.3|py3.14|windows_amd64"
+  ],
+  "pip_root_baseline_comparison": {
+    "b0_requires_python": {
+      "tested": 282,
+      "correct": 209,
+      "accuracy": 0.7411347517730497,
+      "false_safe": 73,
+      "false_blocked": 0,
+      "false_blocked_cases": []
+    },
+    "b1_tags": {
+      "tested": 282,
+      "correct": 247,
+      "accuracy": 0.875886524822695,
+      "false_safe": 35,
+      "false_blocked": 0,
+      "false_blocked_cases": []
+    },
+    "b2_root_gate": {
+      "tested": 282,
+      "correct": 282,
+      "accuracy": 1.0,
+      "false_safe": 0,
+      "false_blocked": 0,
+      "false_blocked_cases": []
+    }
+  },
+  "pip_root_exact_paired_mcnemar": {
+    "b2_vs_b0_requires_python": {
+      "paired_cases": 282,
+      "b2_correct_only": 73,
+      "comparator_correct_only": 0,
+      "discordant_pairs": 73,
+      "two_sided_exact_p": 2.117582368135751e-22,
+      "holm_adjusted_p": 4.235164736271502e-22
+    },
+    "b2_vs_b1_tags": {
+      "paired_cases": 282,
+      "b2_correct_only": 35,
+      "comparator_correct_only": 0,
+      "discordant_pairs": 35,
+      "two_sided_exact_p": 5.820766091346741e-11,
+      "holm_adjusted_p": 5.820766091346741e-11
+    }
+  },
+  "pip_root_baseline_project_bootstrap": {
+    "b0_requires_python_accuracy": {
+      "point": 0.7411347517730497,
+      "lower_95": 0.6598639455782312,
+      "upper_95": 0.8202247191011236,
+      "bootstrap_samples": 2000
+    },
+    "b1_tags_accuracy": {
+      "point": 0.875886524822695,
+      "lower_95": 0.8208955223880597,
+      "upper_95": 0.924187725631769,
+      "bootstrap_samples": 2000
+    },
+    "b2_root_gate_accuracy": {
+      "point": 1.0,
+      "lower_95": 1.0,
+      "upper_95": 1.0,
+      "bootstrap_samples": 2000
+    },
+    "b2_minus_b0_accuracy": {
+      "point": 0.25886524822695034,
+      "lower_95": 0.17985611510791366,
+      "upper_95": 0.34050179211469533,
+      "bootstrap_samples": 2000
+    },
+    "b2_minus_b1_accuracy": {
+      "point": 0.12411347517730496,
+      "lower_95": 0.07586206896551724,
+      "upper_95": 0.1795774647887324,
+      "bootstrap_samples": 2000
+    }
+  },
+  "project_cluster_bootstrap": {
+    "closure_success": {
+      "point": 0.46153846153846156,
+      "lower_95": 0.3877118644067797,
+      "upper_95": 0.5340277777777778,
+      "bootstrap_samples": 2000
+    },
+    "prune_fraction": {
+      "point": 0.36319444444444443,
+      "lower_95": 0.29583333333333334,
+      "upper_95": 0.43472222222222223,
+      "bootstrap_samples": 2000
+    },
+    "root_to_full_failure": {
+      "point": 0.27128263337116915,
+      "lower_95": 0.19318181818181818,
+      "upper_95": 0.3600451467268623,
+      "bootstrap_samples": 2000
+    },
+    "python314_minus_python38_success_rate": {
+      "point": 0.13960113960113962,
+      "lower_95": 0.07183908045977017,
+      "upper_95": 0.20689655172413796,
+      "bootstrap_samples": 2000
+    },
+    "strict_pip_success_rate": {
+      "point": 0.4484240687679083,
+      "lower_95": 0.3749098774333093,
+      "upper_95": 0.5215827338129496,
+      "bootstrap_samples": 2000
+    },
+    "uv_vs_strict_pip_disagreement_rate": {
+      "point": 0.012569832402234637,
+      "lower_95": 0.00418702023726448,
+      "upper_95": 0.02244039270687237,
+      "bootstrap_samples": 2000
+    }
+  },
+  "preregistered_thresholds": {
+    "uv_decisive_at_least_90pct": true,
+    "pip_full_decisive_at_least_95pct": true,
+    "root_gate_false_blocks_zero": false,
+    "at_least_10pct_solver_call_reduction": true
+  },
+  "warnings": [
+    "Wheel-only; cannot imply security-safe alternate/backport is absent.",
+    "pip cross-target environment markers may use host interpreter/platform; uv pip compile is primary full resolver.",
+    "Result is distribution-only, NOT deployment/build/tests/functional compatibility.",
+    "Stratified by advisory year; not a prevalence-weighted PyPI random sample."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "key": "04acc49a2a7610fe57",
+  "args": {
+    "crate": "poem",
+    "version": "3.1.12",
+    "id": "fd02b052feef4504",
+    "profile": "candidate",
+    "features": [
+      "multipart",
+      "sonic-rs"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 3.1024,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `poem::web::cookie`",
+      "rendered": "error[E0432]: unresolved import `poem::web::cookie`\n --> src/main.rs:2:16\n  |\n2 | use poem::web::cookie::Cookie;\n  |                ^^^^^^ could not find `cookie` in `web`\n  |\nnote: found an item that was configured out\n --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/poem-3.1.12/src/web/mod.rs:9:9\n  |\n7 | #[cfg(feature = \"cookie\")]\n  |       ------------------ the item is gated behind the `cookie` feature\n8 | #[cfg_attr(docsrs, doc(cfg(feature = \"cookie\")))]\n9 | pub mod cookie;\n  |         ^^^^^^\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_poem_consumer` (bin \"n05_poem_consumer\") due to 1 previous error\n",
+  "code_sha256": "216647de2e0e69262032555f644644fb19df41c7fb32d9f934bb463713aa4a87",
+  "manifest_sha256": "22f6aa4e76288d68febc6d5889bd75d0ef4e60a4cef3b2a5adf1fe8b8aa50834",
+  "log_file": "prospective/results/check_logs/04acc49a2a7610fe57.txt.gz"
+}

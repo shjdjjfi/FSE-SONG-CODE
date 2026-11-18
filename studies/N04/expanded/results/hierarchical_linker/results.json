@@ -1,0 +1,77 @@
+{
+  "status": "exploratory post-hoc method; simple-baseline family, not novel",
+  "summary": {
+    "name_body_tiebreak": {
+      "pairs": 2526,
+      "recovered": 2460,
+      "recovery_rate": 0.9738717339667459,
+      "wrong_matched": 3,
+      "wrong_absent": 33,
+      "absent_false_transfer_rate": 0.013064133016627079,
+      "combined_false_transfer_rate": 0.007125890736342043,
+      "selective_precision": 0.9855769230769231,
+      "cost_ratio_5": 0.09738717339667459,
+      "cost_ratio_10": 0.16864608076009502
+    },
+    "hierarchical_case": {
+      "pairs": 2526,
+      "recovered": 2481,
+      "recovery_rate": 0.982185273159145,
+      "wrong_matched": 3,
+      "wrong_absent": 33,
+      "absent_false_transfer_rate": 0.013064133016627079,
+      "combined_false_transfer_rate": 0.007125890736342043,
+      "selective_precision": 0.9856972586412396,
+      "cost_ratio_5": 0.08907363420427554,
+      "cost_ratio_10": 0.16033254156769597
+    },
+    "hierarchical_case_content": {
+      "pairs": 2526,
+      "recovered": 2484,
+      "recovery_rate": 0.9833729216152018,
+      "wrong_matched": 3,
+      "wrong_absent": 44,
+      "absent_false_transfer_rate": 0.01741884402216944,
+      "combined_false_transfer_rate": 0.009303246239113222,
+      "selective_precision": 0.9814302647175029,
+      "cost_ratio_5": 0.10965954077593032,
+      "cost_ratio_10": 0.20269200316706254
+    }
+  },
+  "paired_project_cluster_bootstrap_vs_name_body_tiebreak": {
+    "hierarchical_case": {
+      "cluster_count": 13,
+      "diff": 0.00831353919239905,
+      "ci95": [
+        0.0,
+        0.056910569105691054
+      ]
+    },
+    "hierarchical_case_content": {
+      "cluster_count": 13,
+      "diff": 0.009501187648456057,
+      "ci95": [
+        0.0,
+        0.058355437665782495
+      ]
+    }
+  },
+  "audit": {
+    "parsed_pairs": 877,
+    "non_single_test_snippet": 55,
+    "ambiguous_duplicate_identity": 2,
+    "unique_pairs": 875,
+    "unique_projects": 13,
+    "unique_commits": 108
+  },
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "limits": [
+    "Rules selected after reviewing prior results.",
+    "No CI quarantine actions observed in benchmark data.",
+    "False transfers from absent cases are controlled candidate removals."
+  ]
+}

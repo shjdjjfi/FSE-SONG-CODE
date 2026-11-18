@@ -1,0 +1,48 @@
+{
+  "key": "37d746578a9b24d189",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "7b7e8b78670012f6",
+    "profile": "candidate",
+    "features": [
+      "io-std"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0668,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio::io::AsyncWriteExt`",
+      "rendered": "error[E0432]: unresolved import `tokio::io::AsyncWriteExt`\n   --> src/main.rs:1:23\n    |\n  1 | use tokio::io::{self, AsyncWriteExt};\n    |                       ^^^^^^^^^^^^^\n    |                       |\n    |                       no `AsyncWriteExt` in `io`\n    |                       help: a similar name exists in the module: `AsyncWrite`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/io/mod.rs:277:159\n    |\n268 | / cfg_io_util! {\n269 | |     mod split;\n270 | |     pub use split::{split, ReadHalf, WriteHalf};\n271 | |     mod join;\n...   |\n277 | |         copy, copy_bidirectional, copy_bidirectional_with_sizes, copy_buf, duplex, empty, repeat, sink, simplex, AsyncBufReadExt, AsyncReadExt, AsyncSeekExt, AsyncWriteExt,\n    | |                                                                                                                                                               ^^^^^^^^^^^^^\n278 | |         BufReader, BufStream, BufWriter, DuplexStream, Empty, Lines, Repeat, Sink, Split, Take, SimplexStream,\n279 | |     };\n280 | | }\n    | |_- the item is gat",
+      "line": 1
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: could not find `main` in `tokio`",
+      "rendered": "error[E0433]: failed to resolve: could not find `main` in `tokio`\n --> src/main.rs:3:10\n  |\n3 | #[tokio::main]\n  |          ^^^^ could not find `main` in `tokio`\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find function `empty` in module `io`",
+      "rendered": "error[E0425]: cannot find function `empty` in module `io`\n   --> src/main.rs:6:25\n    |\n  6 |     let num_bytes = io::empty().write(&buffer).await.unwrap();\n    |                         ^^^^^ not found in `io`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/io/mod.rs:277:84\n    |\n268 | / cfg_io_util! {\n269 | |     mod split;\n270 | |     pub use split::{split, ReadHalf, WriteHalf};\n271 | |     mod join;\n...   |\n277 | |         copy, copy_bidirectional, copy_bidirectional_with_sizes, copy_buf, duplex, empty, repeat, sink, simplex, AsyncBufReadExt, AsyncRe...\n    | |                                                                                    ^^^^^\n278 | |         BufReader, BufStream, BufWriter, DuplexStream, Empty, Lines, Repeat, Sink, Split, Take, SimplexStream,\n279 | |     };\n280 | | }\n    | |_- the item is gated behind the `io-util` feature\nhelp: consider importing one of these functions\n    |\n  1 + use std::io::empty;\n    |\n  1 + use std::iter::empty;\n    |\n  1 + use core::iter::empty;\n    |\nhelp: if you import `empty`, refer to it directly\n    |\n  6 - ",
+      "line": 6
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:4:1\n  |\n4 | async fn main() {\n  | ^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 4
+    }
+  ],
+  "error_count": 4,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 4 previous errors\n",
+  "code_sha256": "87948ff11f649f37da3ebd5b1b57fa4548d364735a17cd7bda46b1903ace4581",
+  "manifest_sha256": "5ab2bee5005fca1e5c837550a584604f429f4dffcf484d786812faad156d90d6",
+  "log_file": "results/check_logs/37d746578a9b24d189.txt.gz"
+}

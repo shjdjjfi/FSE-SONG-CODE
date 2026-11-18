@@ -1,0 +1,67 @@
+{
+  "fetched_utc": "2026-11-14T17:13:17.327481+00:00",
+  "merged_at": "2025-01-10T10:21:38Z",
+  "opened_at": "2025-01-09T10:37:37Z",
+  "pr": 12770,
+  "raw_html_sha256": "d656bc19e663899213103cbcb83dc2257be29a362cddc24c64c2bc0fcb9de7a5",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 11,
+  "reviews": [
+    {
+      "login": "Hinton",
+      "state": "COMMENTED",
+      "submitted_at": "2025-01-09T10:38:29Z"
+    },
+    {
+      "login": "audreyality",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-09T15:40:13Z"
+    },
+    {
+      "login": "audreyality",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-09T17:05:58Z"
+    },
+    {
+      "login": "JaredSnider-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-09T17:06:22Z"
+    },
+    {
+      "login": "willmartian",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-09T17:24:59Z"
+    },
+    {
+      "login": "jonashendrickx",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-09T17:43:32Z"
+    },
+    {
+      "login": "shane-melton",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-09T18:22:09Z"
+    },
+    {
+      "login": "mzieniukbw",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2025-01-09T22:38:52Z"
+    },
+    {
+      "login": "mzieniukbw",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-09T23:01:14Z"
+    },
+    {
+      "login": "eliykat",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-10T01:01:27Z"
+    },
+    {
+      "login": "dani-garcia",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-10T10:21:36Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/12770"
+}

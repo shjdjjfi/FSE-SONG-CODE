@@ -1,0 +1,67 @@
+{
+  "fetched_utc": "2026-11-14T17:11:49.924314+00:00",
+  "merged_at": "2024-04-25T18:26:01Z",
+  "opened_at": "2024-02-28T09:19:04-08:00",
+  "pr": 8715,
+  "raw_html_sha256": "613f1e0873c2a0c36cd58d0d35196402aba79c5dfe42295c84687c97fda9a223",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 11,
+  "reviews": [
+    {
+      "login": "jlf0dev",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2024-04-22T13:54:14Z"
+    },
+    {
+      "login": "jlf0dev",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-23T12:46:38Z"
+    },
+    {
+      "login": "shane-melton",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-23T15:50:02Z"
+    },
+    {
+      "login": "r-tome",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-23T17:29:45Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-23T19:00:10Z"
+    },
+    {
+      "login": "MGibson1",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2024-04-24T10:15:30Z"
+    },
+    {
+      "login": "MGibson1",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-25T00:24:46Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-25T07:31:19Z"
+    },
+    {
+      "login": "r-tome",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-25T08:58:26Z"
+    },
+    {
+      "login": "jlf0dev",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-25T13:25:00Z"
+    },
+    {
+      "login": "shane-melton",
+      "state": "APPROVED",
+      "submitted_at": "2024-04-25T18:22:28Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/8715"
+}

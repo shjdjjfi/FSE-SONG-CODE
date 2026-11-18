@@ -1,0 +1,99 @@
+{
+  "source_repo": "https://github.com/trycua/cua.git",
+  "ledger_path": ".github/flaky/quarantine.json",
+  "interpretation": "Real source-controlled quarantine actions, NOT proof of a historical test rename or CI runtime saving",
+  "critical_caution": "A removed entry may indicate test deletion, expiry, fix, or policy change; matching old/new identities requires source confirmation",
+  "summary": {
+    "ledger_revisions": 4,
+    "add_decisions": 3,
+    "remove_decisions_unresolved": 0,
+    "distinct_identifiers_ever_added": 3,
+    "added_entries_with_action_links": 0,
+    "possible_rename_with_same_evidence": 0,
+    "current_active_quarantine_identifiers": 3,
+    "parse_errors": 0
+  },
+  "commits": [
+    {
+      "commit": "1e6db4557075de567530a180a55e6cabb4bc35eb",
+      "date": "2026-10-26",
+      "subject": "ci: retry flaky tests once, report them, add a quarantine list (CUA-2336) (#5996)",
+      "n_active": 0,
+      "added": [],
+      "removed": [],
+      "modified_existing": [],
+      "same_evidence_identity_change_candidates": []
+    },
+    {
+      "commit": "3cad7878d7dbac1c87bbb74b000b8075a8ddb7c5",
+      "date": "2026-11-03",
+      "subject": "ci: quarantine known flaky jobs in ci-gate and scan reruns nightly (CUA-3134) (#6372)",
+      "n_active": 2,
+      "added": [
+        "linux-kvm (concurrent)",
+        "macOS * mock E2E"
+      ],
+      "removed": [],
+      "modified_existing": [],
+      "same_evidence_identity_change_candidates": []
+    },
+    {
+      "commit": "16b103843120295ca8f71c1523f05673fb01977c",
+      "date": "2026-11-08",
+      "subject": "ci: conflict alert workflow and quarantine the handover_process flake (CUA-3855) (#7002)",
+      "n_active": 3,
+      "added": [
+        "handover_process::the_next_relay_waits_then_serves_what_queued"
+      ],
+      "removed": [],
+      "modified_existing": [],
+      "same_evidence_identity_change_candidates": []
+    },
+    {
+      "commit": "aa525439ca74450254e16448aa9998b695464e51",
+      "date": "2026-11-11",
+      "subject": "ci: renew two expired flaky quarantine entries for 7 days (#7317)",
+      "n_active": 3,
+      "added": [],
+      "removed": [],
+      "modified_existing": [
+        "linux-kvm (concurrent)",
+        "macOS * mock E2E"
+      ],
+      "same_evidence_identity_change_candidates": []
+    }
+  ],
+  "decisions": [
+    {
+      "kind": "added_to_quarantine",
+      "commit": "3cad7878d7dbac1c87bbb74b000b8075a8ddb7c5",
+      "date": "2026-11-03",
+      "identifier": "linux-kvm (concurrent)",
+      "issue": "CUA-3132",
+      "quarantined_at": null,
+      "reason": "",
+      "linked_action_runs": []
+    },
+    {
+      "kind": "added_to_quarantine",
+      "commit": "3cad7878d7dbac1c87bbb74b000b8075a8ddb7c5",
+      "date": "2026-11-03",
+      "identifier": "macOS * mock E2E",
+      "issue": "CUA-3133",
+      "quarantined_at": null,
+      "reason": "",
+      "linked_action_runs": []
+    },
+    {
+      "kind": "added_to_quarantine",
+      "commit": "16b103843120295ca8f71c1523f05673fb01977c",
+      "date": "2026-11-08",
+      "identifier": "handover_process::the_next_relay_waits_then_serves_what_queued",
+      "issue": "CUA-3855",
+      "quarantined_at": null,
+      "reason": "",
+      "linked_action_runs": []
+    }
+  ],
+  "errors": []
+}

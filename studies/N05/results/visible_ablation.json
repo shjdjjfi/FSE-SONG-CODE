@@ -1,0 +1,209 @@
+[
+  {
+    "id": "0e644db7283639ee",
+    "crate": "axum",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "17ff6ce190bc6d1325"
+  },
+  {
+    "id": "54004c2631eefe66",
+    "crate": "axum",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "docs",
+    "check": "69f53deee171da349b"
+  },
+  {
+    "id": "220d2e9fde7bd5c7",
+    "crate": "bitflags",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "612de398fe28a5b196"
+  },
+  {
+    "id": "06601215013e9aee",
+    "crate": "chrono",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "72424a57a77af0cbd5"
+  },
+  {
+    "id": "a1a1a5743fad4e89",
+    "crate": "clap",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "docs",
+    "check": "f10ef08a15abaf2287"
+  },
+  {
+    "id": "07eecf322e9348f8",
+    "crate": "flate2",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "52f8475e202ea15f3f"
+  },
+  {
+    "id": "209ae679f4d5145b",
+    "crate": "indexmap",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "37438e811807f231dc"
+  },
+  {
+    "id": "1fa0440330abb332",
+    "crate": "indicatif",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "6fafc9f8b78a8369e5"
+  },
+  {
+    "id": "2b54f5fa3f49a42b",
+    "crate": "itertools",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "3131b596f250f82d61"
+  },
+  {
+    "id": "1803ded34e8d7675",
+    "crate": "petgraph",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "ef2f78c70a22dea01e"
+  },
+  {
+    "id": "0473f0c3f45c632e",
+    "crate": "rand",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "166c40c3bfae8af72b"
+  },
+  {
+    "id": "0cbdd560f7526e67",
+    "crate": "rayon",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "afb22b47aa4cf8c30c"
+  },
+  {
+    "id": "0e23dc535010c9ff",
+    "crate": "regex",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "f1d41d327b7b98a106"
+  },
+  {
+    "id": "c80e17f9337101f4",
+    "crate": "reqwest",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "80dea0bf54843d51d9"
+  },
+  {
+    "id": "4479ab5fc6d4ba3f",
+    "crate": "strum",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "docs",
+    "check": "b060d3f41fdbba40e9"
+  },
+  {
+    "id": "a24e3c1538f3e9c3",
+    "crate": "tinyvec",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "default",
+    "check": "35f7f0ec13547be14f"
+  },
+  {
+    "id": "21c6a67eeaea12a8",
+    "crate": "tinyvec",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "docs",
+    "check": "59a6aaf3a048df0b85"
+  },
+  {
+    "id": "089aafa8ca1f9b01",
+    "crate": "tokio",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "docs",
+    "check": "9ac07e43de30e629ad"
+  },
+  {
+    "id": "b567f72ae45aedf4",
+    "crate": "tokio-util",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "docs",
+    "check": "7cd9e3730957d1793b"
+  },
+  {
+    "id": "af72398c40433cf0",
+    "crate": "tracing-subscriber",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "468808802191707256"
+  },
+  {
+    "id": "7cf792d58ba414b7",
+    "crate": "tracing-subscriber",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "docs",
+    "check": "17e26167a61d0f2c75"
+  },
+  {
+    "id": "03668d3bb1fcb846",
+    "crate": "uuid",
+    "label": "default_compiles",
+    "hidden_included_status": "pass",
+    "visible_only_status": "pass",
+    "profile": "default",
+    "check": "777a1d3c56e6e1aca1"
+  },
+  {
+    "id": "6f8f25468af9f32d",
+    "crate": "uuid",
+    "label": "eligible_mismatch",
+    "hidden_included_status": "pass",
+    "visible_only_status": "fail",
+    "profile": "docs",
+    "check": "84aa0758da4f2c89e6"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "key": "7aa1f862f11f9a985b",
+  "args": {
+    "crate": "tower",
+    "version": "0.5.2",
+    "id": "a5dfe62ecb17830e",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0908,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `ServiceBuilder`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `ServiceBuilder`\n --> src/main.rs:2:1\n  |\n2 | ServiceBuilder::new()\n  | ^^^^^^^^^^^^^^ use of undeclared type `ServiceBuilder`\n  |\nhelp: consider importing this struct\n  |\n1 + use tower::ServiceBuilder;\n  |\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find value `svc` in this scope",
+      "rendered": "error[E0425]: cannot find value `svc` in this scope\n --> src/main.rs:4:14\n  |\n4 |     .service(svc);\n  |              ^^^ not found in this scope\n\n",
+      "line": 4
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_tower_consumer` (bin \"n05_tower_consumer\") due to 2 previous errors\n",
+  "code_sha256": "cf3acfd21feeb2b0a88c3bc930a7522430afa6884df1614e867d7988aba10f71",
+  "manifest_sha256": "26868b8190d1c863374370170f526108cc23ca34b421542d513c0830871fe22d",
+  "log_file": "holdout/results/check_logs/7aa1f862f11f9a985b.txt.gz"
+}

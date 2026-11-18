@@ -1,0 +1,840 @@
+{
+  "artifact": "The Patchability Cliff: actual public consumer constraints, CPU installs and vendor backports",
+  "date": "2026-11-14",
+  "original_study_sha256": "62950c93bbd3a830b9c05b6cf03857f48f0f3abb9e6fb6b8e149559abbc0b5e5",
+  "record_count": {
+    "public_git_repositories": 7,
+    "pip_dryruns": 23,
+    "isolated_install_test_conditions": 10,
+    "additional_uv_full_resolution": 204,
+    "verified_data_checks": 32
+  },
+  "included_files": [
+    {
+      "path": "i01_industry/EXPERIMENT_PROTOCOL.md",
+      "bytes": 6570,
+      "sha256": "464d88309f133755f155053fc8e50bf81dd4f494d3dfa0575cbcc8144d5e81ad"
+    },
+    {
+      "path": "i01_industry/I01_工业真实项目扩展实验报告.md",
+      "bytes": 19267,
+      "sha256": "ae2b1c32af38b3e18fe5075ea15f60e0568a811a46528ff6ae36c7ee3a6e4205"
+    },
+    {
+      "path": "i01_industry/README.md",
+      "bytes": 6849,
+      "sha256": "14fecfba563b1ce408adc951b763b0fa05bbf4ed55c0b8e53000fc7e53c22d5e"
+    },
+    {
+      "path": "i01_industry/alternative_catalog_manifest.json",
+      "bytes": 1089,
+      "sha256": "e40d070f191a9648086c0fb3620d9083e2d2c30d0b9a8a38ee7084bad74ba804"
+    },
+    {
+      "path": "i01_industry/alternative_metadata.json",
+      "bytes": 18451,
+      "sha256": "8196c71f6a9ec3d721a5d5b831a7a2221ec7c3cdaf14ddc7a5ea1021e9581e7e"
+    },
+    {
+      "path": "i01_industry/alternative_preflight_276.json",
+      "bytes": 95655,
+      "sha256": "0b66b7ee8c62a6458827525133a28a4507b9195256c28d7efa0545ba4e9f7f6d"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/aws-encryption-sdk-cli/1.9.0.json",
+      "bytes": 25441,
+      "sha256": "a0bc40bb2e1975da54d509664776e310f3a2d6b2a3b2735737a000392359b32d"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/aws-encryption-sdk-cli/2.2.0.json",
+      "bytes": 25441,
+      "sha256": "9e999f0e0c9c18c9dde00cab24473599e17947f0615eb0d2aef8cb2c889df1c8"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/case-utils/0.10.1.json",
+      "bytes": 3795,
+      "sha256": "7e319ea85d89dd85c60bff38d4be85872e80032f67d35ce562a143cde2196e1a"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/case-utils/0.11.1.json",
+      "bytes": 3965,
+      "sha256": "116a8713aff7f94246dded113807acf218f82844cc86350742363f56f19a71bb"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/case-utils/0.12.1.json",
+      "bytes": 3965,
+      "sha256": "9161fb2780975e5d762a2090315f0a33ac674b43043de5d1c2aeead452d91bec"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/case-utils/0.13.1.json",
+      "bytes": 3965,
+      "sha256": "2c2ebd4afbed7b22a849875be3f7c474107483af0d99b1228c33b0d01060725f"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/case-utils/0.14.1.json",
+      "bytes": 3966,
+      "sha256": "569a0a837e71a83898a811d83c8317e17debe7258919379aaf40815caf298351"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/case-utils/0.5.1.json",
+      "bytes": 3793,
+      "sha256": "aa8310012fc3f9dea215e3939296f34dbb3dd3624b6a7b257783b8b6df5b6a3b"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/case-utils/0.6.1.json",
+      "bytes": 3793,
+      "sha256": "a2d410a011f1651d2900871e209dec26fd024c0ccd2910d8335117faebf441da"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/case-utils/0.7.1.json",
+      "bytes": 3797,
+      "sha256": "f59a72fd3f2505740ce674d6b868461ff5d571ee7c6b5de5f19f6c00d0d4f93f"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/case-utils/0.8.1.json",
+      "bytes": 3789,
+      "sha256": "b4ec6da60c19964fb316020ff69880f91c7784dbbe7fcd909b576f4449b53533"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/case-utils/0.9.1.json",
+      "bytes": 3796,
+      "sha256": "435061e94a08db7114af3b542ee531f9f000bb0b893fc29e2d3fa63ff78258ac"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/jupyterlab/4.5.11.json",
+      "bytes": 18276,
+      "sha256": "7395f098c4b20c28d4927ece64e80f00d25f77fe00ad68512d9fed4fd17549ae"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/jupyterlab/4.6.4.json",
+      "bytes": 18144,
+      "sha256": "a8c823a5d33b68c0b7b8973db046f3777c7f4b6e6cc260166b7e63a5872077c5"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/mayan-edms/4.10.2.json",
+      "bytes": 8837,
+      "sha256": "c8581425a61418e3eb507e0e0961fd915d2ad940d36f5c43369a14a5e1d07275"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/mayan-edms/4.6.12.json",
+      "bytes": 10809,
+      "sha256": "65e730c48cb5a3c5c2b0402b028a2397b2d80ad98ddc931453ce418b7eea1937"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/mayan-edms/4.7.8.json",
+      "bytes": 10545,
+      "sha256": "bed675f3a6d6b71ea471f82857b50a7c8aa713291baecb59a0dcf72584e4d9e8"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/mayan-edms/4.8.10.json",
+      "bytes": 10599,
+      "sha256": "e97b5946944ad3a930b94efa3fcc82b44ee1a5c9365bb71398c36d859cc124f2"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/mayan-edms/4.9.7.json",
+      "bytes": 10462,
+      "sha256": "1b4cc7b050160283ec85f85d704b2290d4717f960d11d57c0f149e75eab79627"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/protobuf/5.29.6.json",
+      "bytes": 10371,
+      "sha256": "8b4d30edf7050d01f012bc69acf49ab0459c44158929f867ce241fc6b65a0d94"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/protobuf/6.33.5.json",
+      "bytes": 9570,
+      "sha256": "4961c92a4631a94610e367bf739247e32bda7af53e0d8f0f0323b8804500a73a"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/tortoise-orm/0.15.23.json",
+      "bytes": 10546,
+      "sha256": "a8168ef35acf8f15df4094cdb1b3488eb326a1dd70ba66a4aa6f325aeb9fedf4"
+    },
+    {
+      "path": "i01_industry/alternative_raw_pypi/tortoise-orm/0.16.6.json",
+      "bytes": 10530,
+      "sha256": "a28f576d2920e0f438999503245a58215a6c8996fa4db1f23dea05126d7eb91e"
+    },
+    {
+      "path": "i01_industry/alternative_results.json",
+      "bytes": 52987,
+      "sha256": "5395824e768eab6b67a88da097889fa91e497c176cea2ffbd7c993e657e113e7"
+    },
+    {
+      "path": "i01_industry/alternative_uv.jsonl",
+      "bytes": 203998,
+      "sha256": "04c426197f7b6a583e9d2abdeae01a2f5554fbfdea492a0c7230de8ed00dc038"
+    },
+    {
+      "path": "i01_industry/analyze_alternatives.py",
+      "bytes": 9574,
+      "sha256": "a94126a2b9ee8f12c03b05dbdd3f79a26de23965f589a3fc8567e26c9c6e8ca8"
+    },
+    {
+      "path": "i01_industry/build_industry_report.py",
+      "bytes": 27278,
+      "sha256": "dd95cbc0dac97ef3e592fc938d93ca18e68b37bfa4fb73f7d37096f2e06ad999"
+    },
+    {
+      "path": "i01_industry/collect_sources.py",
+      "bytes": 7252,
+      "sha256": "912c938013d9bab52a88e1e77c20c5f44efc36d793c8b9a0d6b58ddd8bf3c0db"
+    },
+    {
+      "path": "i01_industry/consumer_pip_audit.jsonl",
+      "bytes": 69790,
+      "sha256": "215a5d495842e74a2706b48a730b7147272871d693016a08320e9703a3939803"
+    },
+    {
+      "path": "i01_industry/consumer_probe_manifest.json",
+      "bytes": 11233,
+      "sha256": "24db1b104e2ad36f41de1a93598dae56fa882d7d03312c3dd4e13310e58e83ba"
+    },
+    {
+      "path": "i01_industry/dry_run_reports/193ad59a7c28884e.json",
+      "bytes": 223623,
+      "sha256": "ea1930501ef7e16a0943527614dbb6833d07f8d8b8964593284fa095d37ef667"
+    },
+    {
+      "path": "i01_industry/dry_run_reports/1d18cf97908b9db9.json",
+      "bytes": 119680,
+      "sha256": "36e920f5266b095d5a3e72ea5faede639870e4abc754461846f0ad1bb8606be3"
+    },
+    {
+      "path": "i01_industry/dry_run_reports/346aace646b312aa.json",
+      "bytes": 927535,
+      "sha256": "be37c5ee7bdec898ee427de5e5f7ebc4bea2b4492651e0160e6e699596b96faf"
+    },
+    {
+      "path": "i01_industry/dry_run_reports/35e045b9f58eef18.json",
+      "bytes": 920319,
+      "sha256": "d0309569090bbca074d78992cc232b6fd55eb7d84d3204eb82e86571c821da0e"
+    },
+    {
+      "path": "i01_industry/dry_run_reports/563a0f1cc3d7d720.json",
+      "bytes": 927411,
+      "sha256": "703f42bd028811ab92cc5793b6ce136dd4d9478f5041de8aacd6eb4a2ce8a9b6"
+    },
+    {
+      "path": "i01_industry/dry_run_reports/673d67dd056b94ee.json",
+      "bytes": 13957,
+      "sha256": "24dc5a65bc7697c7d4a473b64d1df61332ecc80f55c2694d92f4cf7f1afa8ca2"
+    },
+    {
+      "path": "i01_industry/dry_run_reports/a1755fec13e71ee0.json",
+      "bytes": 236622,
+      "sha256": "fab044440e229311f65f2759c4243dd90814eed1d41936afe808b8fff0a5042a"
+    },
+    {
+      "path": "i01_industry/dry_run_reports/b3e56b348f6f9660.json",
+      "bytes": 357171,
+      "sha256": "9cccb9df429a193d5d00fad0c07756c62d915f3a6e265b44eb173f4a3ecf89c7"
+    },
+    {
+      "path": "i01_industry/dry_run_reports/c95b270ea64139b1.json",
+      "bytes": 56928,
+      "sha256": "4093dd93c17f78d98bff3002cd15eef25907186b8244265640432837f46f4307"
+    },
+    {
+      "path": "i01_industry/dry_run_reports/cf63d4319340fa61.json",
+      "bytes": 49712,
+      "sha256": "6a429313ee31852b76d4c59e5951bda98728a0be8ac1ce9928fd0afca79ae9ec"
+    },
+    {
+      "path": "i01_industry/dry_run_reports/daad2f341a71ce04.json",
+      "bytes": 15151,
+      "sha256": "b4ac644cf312a6f448e7e19726e5fd997f05939744f25b692f5ef48ec72e45ce"
+    },
+    {
+      "path": "i01_industry/dry_run_reports/ef2a32c9450bd7dd.json",
+      "bytes": 56804,
+      "sha256": "0b9b84a6865d22a9d252711dcfad776a7a6c2145a1090285ed5227ca523f30d0"
+    },
+    {
+      "path": "i01_industry/dry_run_reports/f50fd6d6fa03ab6f.json",
+      "bytes": 357120,
+      "sha256": "264e84c6a131924007fa61bf369d3c31705a4f3bcb1cad641898234895cef1f8"
+    },
+    {
+      "path": "i01_industry/dry_run_reports/ff94e9d6a04b95b2.json",
+      "bytes": 223674,
+      "sha256": "7d3b8a74853cedebce267efa947c2b27300b41c453e37072648988bb3c9f69f8"
+    },
+    {
+      "path": "i01_industry/figures/alternative_fix_recovery.png",
+      "bytes": 70620,
+      "sha256": "79f22fd3c978db3c1af053a11a54c8bd3335e65785d02984ef8fa6736c8bf7ea"
+    },
+    {
+      "path": "i01_industry/figures/consumer_constraints_matrix.png",
+      "bytes": 89418,
+      "sha256": "424c3d0c8ffe268beb6a31e06509da5cd7bd43dea802ed0681dca26863ca5bfd"
+    },
+    {
+      "path": "i01_industry/generated_requirements/ai_npc/declared.txt",
+      "bytes": 147,
+      "sha256": "de5869a190015d1c9c1eb20cc7473c4d286c7fb0706769e376babd693e20e81c"
+    },
+    {
+      "path": "i01_industry/generated_requirements/ai_npc/injected_fixed.txt",
+      "bytes": 164,
+      "sha256": "576dbb60ccbd3252b035eb6512abd65604046f4afd3f0f55f987226c75b23fc7"
+    },
+    {
+      "path": "i01_industry/generated_requirements/ai_npc/replaced_fixed.txt",
+      "bytes": 147,
+      "sha256": "8fb91d924801db853f15dc525caf4b9db7cf0d4cb9605b56660110f00b308743"
+    },
+    {
+      "path": "i01_industry/generated_requirements/ai_npc/replaced_latest.txt",
+      "bytes": 147,
+      "sha256": "88647904046a4d91f0984644e473c046d703c62754915d49d7c7731f83482f4d"
+    },
+    {
+      "path": "i01_industry/generated_requirements/allura/declared.txt",
+      "bytes": 6835,
+      "sha256": "1c6defa476adbfee6b0ea111ac561e39bfe30dc6213ed025fd2b70625cd4e81d"
+    },
+    {
+      "path": "i01_industry/generated_requirements/allura/replaced_vulnerable.txt",
+      "bytes": 6835,
+      "sha256": "b7e6acbc403508b2730d668ce6420e499bbcebcc17f56fd156f23d4f7a1e9421"
+    },
+    {
+      "path": "i01_industry/generated_requirements/pyfa_historical/declared.txt",
+      "bytes": 272,
+      "sha256": "1a3bc23391212ad804cbeaab27f08b007e7888f9a3830e3e00740f9667e9d89c"
+    },
+    {
+      "path": "i01_industry/generated_requirements/pyfa_historical/injected_fixed.txt",
+      "bytes": 291,
+      "sha256": "917d8609b0a3b5917f05dfdcff543c8e4f43aea22ec082dc5a32714add7a528c"
+    },
+    {
+      "path": "i01_industry/generated_requirements/pyfa_historical/replaced_fixed.txt",
+      "bytes": 272,
+      "sha256": "828b359fc9b9f9a6dbff7955289d5e8cf01e569dc45f04e535ba97d92d34cbbc"
+    },
+    {
+      "path": "i01_industry/generated_requirements/pyfa_historical/replaced_latest.txt",
+      "bytes": 272,
+      "sha256": "c599560af59f669d1b7c06054dbcf82124da7d328d5881efed3eb5028e9769a7"
+    },
+    {
+      "path": "i01_industry/generated_requirements/pyramid_multiauth/declared_lock.txt",
+      "bytes": 5515,
+      "sha256": "cc5e2da950adcf3a72fd82a49f779aa151caf990ff171e1098ed10e36fe744e8"
+    },
+    {
+      "path": "i01_industry/generated_requirements/root_controls/fastapi-first_fixed.txt",
+      "bytes": 17,
+      "sha256": "641c57b8ae0b63fac103ff263b23aa4e2ce15a66a4f479b864d3da7f7f60dc54"
+    },
+    {
+      "path": "i01_industry/generated_requirements/root_controls/fastapi-latest.txt",
+      "bytes": 17,
+      "sha256": "12c73183d066aa3687def15f23843db842804aa0c8438641d08439660153b878"
+    },
+    {
+      "path": "i01_industry/generated_requirements/root_controls/fastapi-vulnerable.txt",
+      "bytes": 17,
+      "sha256": "c8283a67d6dc6a3c841c1a7c0fa1a10818e96dae090b425df569fab9f0b46e0b"
+    },
+    {
+      "path": "i01_industry/generated_requirements/root_controls/python-jose-first_fixed.txt",
+      "bytes": 19,
+      "sha256": "1238a3e2018cb591c0dcfd28801d27ca593a6b6408935cead6cf88d2ccb35ba5"
+    },
+    {
+      "path": "i01_industry/generated_requirements/root_controls/python-jose-latest.txt",
+      "bytes": 19,
+      "sha256": "1067e6f2ad1db59be6ce35b79771f348eac8fb44b1d8ee740a769021802918e9"
+    },
+    {
+      "path": "i01_industry/generated_requirements/root_controls/python-jose-vulnerable.txt",
+      "bytes": 19,
+      "sha256": "090c12dc5262f8052a04d0e9640e91e14b940a6e28072b4bc5815213e90f6acd"
+    },
+    {
+      "path": "i01_industry/generated_requirements/root_controls/webob-first_fixed.txt",
+      "bytes": 14,
+      "sha256": "96079c84a7a018110190b0047160a62dffb1701a773c6d824f744505d13f002f"
+    },
+    {
+      "path": "i01_industry/generated_requirements/root_controls/webob-vulnerable.txt",
+      "bytes": 14,
+      "sha256": "9c6d57675469285c7caa2f937bdd14ec9b384d01bafd2331e1c62a68737a92ce"
+    },
+    {
+      "path": "i01_industry/generated_requirements/skyline/declared.txt",
+      "bytes": 846,
+      "sha256": "a334ec15c149f806117c365f005eb609181eeca36b9cb5fc210f79094440ac0c"
+    },
+    {
+      "path": "i01_industry/generated_requirements/skyline/injected_fixed.txt",
+      "bytes": 865,
+      "sha256": "704471d64139acb866532e95a6261d0af6501a5e59ade4a79d504fc9dc5a3886"
+    },
+    {
+      "path": "i01_industry/generated_requirements/skyline/replaced_fixed.txt",
+      "bytes": 846,
+      "sha256": "c55834c3bae7ae1d3b4e8a2f9ca565e0f80f1dbfa66817da322db1e930b79af1"
+    },
+    {
+      "path": "i01_industry/generated_requirements/skyline/replaced_latest.txt",
+      "bytes": 846,
+      "sha256": "0fdedabbc34aac5e621d9bd6aa48edbd0b0c19c29eba803f0c07ce43918bcc8f"
+    },
+    {
+      "path": "i01_industry/industry_summary.json",
+      "bytes": 641,
+      "sha256": "cfd280e9cd907f50e2ba3712a6661b329f0b305c877977def052aafe16cbf187"
+    },
+    {
+      "path": "i01_industry/industry_verification.json",
+      "bytes": 1966,
+      "sha256": "4c8639d727aba7f5ae7beb4ae9591414c38bd38195411e09ffc9a290ce687464"
+    },
+    {
+      "path": "i01_industry/install_logs/ai_npc_first_fixed__install.log",
+      "bytes": 9494,
+      "sha256": "ad3d363979ae5d1c714e4231b3bf628e25701f5d1f1d0d2ba0b66e256a7be9dc"
+    },
+    {
+      "path": "i01_industry/install_logs/ai_npc_first_fixed__installed_version.log",
+      "bytes": 208,
+      "sha256": "b634d540db741a78d39733bac0efc329e53f42634c04c1ce4ebc4fa5c05dd2a8"
+    },
+    {
+      "path": "i01_industry/install_logs/ai_npc_first_fixed__pip_pin.log",
+      "bytes": 686,
+      "sha256": "289ad0eb1f5b6fac60b2afeefb1c02498ea813416f1fadc5021befda70d2bb5d"
+    },
+    {
+      "path": "i01_industry/install_logs/ai_npc_first_fixed__test.log",
+      "bytes": 875,
+      "sha256": "b053ea019c86acd033ceb290f0326f5c4b21636a16b57f635b300a23e63a9d1a"
+    },
+    {
+      "path": "i01_industry/install_logs/ai_npc_first_fixed__venv.log",
+      "bytes": 211,
+      "sha256": "7a596c8636ef49e9d93e1976238e078523acac5904d02226a129f6f5cf40be25"
+    },
+    {
+      "path": "i01_industry/install_logs/ai_npc_latest__install.log",
+      "bytes": 3694,
+      "sha256": "cd6b4ccb558dd7605bf717cf032099806493dfae59dade27d3535b8d5a58c532"
+    },
+    {
+      "path": "i01_industry/install_logs/ai_npc_latest__pip_pin.log",
+      "bytes": 683,
+      "sha256": "50a83265ef6187b11db3ec4c398bee97609bbd063e8ed4377ec69121fed0d17d"
+    },
+    {
+      "path": "i01_industry/install_logs/ai_npc_latest__venv.log",
+      "bytes": 206,
+      "sha256": "321ea8519422786371e148149384705ace28adbadaa53662457558ae13f8d3c2"
+    },
+    {
+      "path": "i01_industry/install_logs/ai_npc_vulnerable__install.log",
+      "bytes": 9330,
+      "sha256": "deaf7c04fd7e2e5e34d5380e7ee65c15f15b21a05bf5c4214f016a093cc8ce56"
+    },
+    {
+      "path": "i01_industry/install_logs/ai_npc_vulnerable__installed_version.log",
+      "bytes": 207,
+      "sha256": "e80453ad44535fc28dcb923adc7e76dd1593160535c35aa2bf7083428fefd9f8"
+    },
+    {
+      "path": "i01_industry/install_logs/ai_npc_vulnerable__pip_pin.log",
+      "bytes": 685,
+      "sha256": "3f324e7402caa51dcc2328318a8d77aa74fb109874bfd9a36f821daa2458ab1d"
+    },
+    {
+      "path": "i01_industry/install_logs/ai_npc_vulnerable__test.log",
+      "bytes": 874,
+      "sha256": "116542c531823d53eccafa42aa78008d769bf608383fe45a83ee6c32e8ea7bee"
+    },
+    {
+      "path": "i01_industry/install_logs/ai_npc_vulnerable__venv.log",
+      "bytes": 210,
+      "sha256": "bdc0e1bb2417feab0ceb2be1c279ea88cae2ee750664ecda6f312c5f524ed6d2"
+    },
+    {
+      "path": "i01_industry/install_logs/pypiserver_first_fixed__install.log",
+      "bytes": 5089,
+      "sha256": "521d528a9aaf23c2360b63327e0f02b47ce416e7a0446f8ce204c5ccfb86b1d6"
+    },
+    {
+      "path": "i01_industry/install_logs/pypiserver_first_fixed__installed_version.log",
+      "bytes": 209,
+      "sha256": "c9eeef59fee42625e022e185e6fadf3fec53b088704622e38319a124cc87badf"
+    },
+    {
+      "path": "i01_industry/install_logs/pypiserver_first_fixed__pip_pin.log",
+      "bytes": 692,
+      "sha256": "79887fdd2158979333e5a3f1902c1b475058f89cb6c0beee0e86aaaad8960701"
+    },
+    {
+      "path": "i01_industry/install_logs/pypiserver_first_fixed__test.log",
+      "bytes": 3195,
+      "sha256": "230ba6d4b1571238a24b208e0a8bb333ab32869350a2c1f3d60e9c84ea3168ab"
+    },
+    {
+      "path": "i01_industry/install_logs/pypiserver_first_fixed__venv.log",
+      "bytes": 215,
+      "sha256": "87beb3d9fdf441fa7b31e36780146db73f5e1dde5d472ab91426c7612393d558"
+    },
+    {
+      "path": "i01_industry/install_logs/pypiserver_vulnerable__install.log",
+      "bytes": 5085,
+      "sha256": "2453623bca59d840a82fd39d3251ee68f23fc935f593315d047af650bdd74e5a"
+    },
+    {
+      "path": "i01_industry/install_logs/pypiserver_vulnerable__installed_version.log",
+      "bytes": 208,
+      "sha256": "21412a1c50528566d2aadb79d2ade8e23fed2ae05250cce0f3414eae07345ec6"
+    },
+    {
+      "path": "i01_industry/install_logs/pypiserver_vulnerable__pip_pin.log",
+      "bytes": 691,
+      "sha256": "beb90032189c11095336e4d271383e0434e900dbeeff347be87e13b54cc9a36c"
+    },
+    {
+      "path": "i01_industry/install_logs/pypiserver_vulnerable__test.log",
+      "bytes": 3188,
+      "sha256": "5f140a93f04db42bba638132fe7d7d62105e6638161f0718f8f334d0e6730a9f"
+    },
+    {
+      "path": "i01_industry/install_logs/pypiserver_vulnerable__venv.log",
+      "bytes": 214,
+      "sha256": "e4ba5694bfaa2d0fb5f1e92baa7fdf9fcc82a25b7ac315c502920062d95738ec"
+    },
+    {
+      "path": "i01_industry/install_logs/pyramid_multiauth_first_fixed__install.log",
+      "bytes": 4837,
+      "sha256": "b666929a38205d996971bee00088627ec965f90ac5d0e263aaaeb0f693e01ecd"
+    },
+    {
+      "path": "i01_industry/install_logs/pyramid_multiauth_first_fixed__installed_version.log",
+      "bytes": 216,
+      "sha256": "493da326a5fc954f68c0b3c466bc796dce58be201acd4f2e94c6e8e413c0d0a6"
+    },
+    {
+      "path": "i01_industry/install_logs/pyramid_multiauth_first_fixed__pip_pin.log",
+      "bytes": 699,
+      "sha256": "2cbddf9e652a25cf863084329d3647c60bf6c03f5d5373c2efd2c589b8ad7a61"
+    },
+    {
+      "path": "i01_industry/install_logs/pyramid_multiauth_first_fixed__test.log",
+      "bytes": 9219,
+      "sha256": "d3b731b03fee3db83a90edf68a01265cd0b4296787e3f8f84dfa0cd1bf28bb1a"
+    },
+    {
+      "path": "i01_industry/install_logs/pyramid_multiauth_first_fixed__venv.log",
+      "bytes": 222,
+      "sha256": "7f1331ed657b9558110c3464dcecf71ff3311574edb4b7bfd7aeea37217ba1d5"
+    },
+    {
+      "path": "i01_industry/install_logs/pyramid_multiauth_vulnerable__install.log",
+      "bytes": 4814,
+      "sha256": "636f58a20d443a310d0fac77b66c4bddf718451a423c5d52cf2d1886d38f0f2c"
+    },
+    {
+      "path": "i01_industry/install_logs/pyramid_multiauth_vulnerable__installed_version.log",
+      "bytes": 215,
+      "sha256": "70f353f5be025c50c95f2beb13949ba185671c670383d4b96bb8f941110a779c"
+    },
+    {
+      "path": "i01_industry/install_logs/pyramid_multiauth_vulnerable__pip_pin.log",
+      "bytes": 698,
+      "sha256": "1105ae0671584dd81741121164a072e4ee1614111f1beb176d60bbe74c2cff18"
+    },
+    {
+      "path": "i01_industry/install_logs/pyramid_multiauth_vulnerable__test.log",
+      "bytes": 9211,
+      "sha256": "7ffe945805d4c843f9d39337118fa4a3f85f49256c64272ab3f0db3fb32ad80d"
+    },
+    {
+      "path": "i01_industry/install_logs/pyramid_multiauth_vulnerable__venv.log",
+      "bytes": 221,
+      "sha256": "4a5f5a87964df5fe9c3c8f3e509677bf5f327841107c648292075a7494aa4926"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_first_fixed__install.log",
+      "bytes": 1370,
+      "sha256": "4e9d3d51d4cba05abea29119b05950c4ae2093c625f8d54b7cf1417bccc2941b"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_first_fixed__installed_version.log",
+      "bytes": 215,
+      "sha256": "406f9ca27b7fdaa36a8f95eace083c2226a3be73389fba96695c990e8a7a5570"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_first_fixed__pip_pin.log",
+      "bytes": 693,
+      "sha256": "159de1bd9ca4102349768f44f0194c4559e1a584bb47bc775cdc8b572d508c1f"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_first_fixed__test.log",
+      "bytes": 497,
+      "sha256": "77725796b16b16373887df48d1f421ea9affd242c9102639b261a968fd73f1a3"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_first_fixed__venv.log",
+      "bytes": 216,
+      "sha256": "77f7465bf503560b0b0882da181015bfc4ad3e9a9d0c347ce95693e4502ae1b1"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_latest__install.log",
+      "bytes": 1354,
+      "sha256": "9c70a06861f176c5a2cac7444d0207db519403a5072dd823bce99cef582fb5d0"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_latest__installed_version.log",
+      "bytes": 210,
+      "sha256": "f19d7a719e20db0ae56c3897236fa3b2c2d17dc01e133efca71c6c0ee16a0d97"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_latest__pip_pin.log",
+      "bytes": 688,
+      "sha256": "279f35734014f877c0dcb3b3e2dbb4d96bfedc99a2bc5969ca9afabd67720d11"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_latest__test.log",
+      "bytes": 492,
+      "sha256": "d1981bcee9c803426232be2c870d8e2ff3c44cac37cab23aa481fb3708f6ed1d"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_latest__venv.log",
+      "bytes": 211,
+      "sha256": "87d080038fef15b5b3023e6f6d5e48e0bf679371d5cdc1f0158599b890563e8b"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_vulnerable__install.log",
+      "bytes": 1324,
+      "sha256": "0c1b3e9b27b4f60162e3f1be6f7e2eeeff63b28ecc325b258c47366d2653cbd8"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_vulnerable__installed_version.log",
+      "bytes": 214,
+      "sha256": "51cffa618bf7bfc1c17bb4129082c877ea06a0be5c2d96c0bc2bc97264346f6e"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_vulnerable__pip_pin.log",
+      "bytes": 692,
+      "sha256": "d10ba84b7446db3d676c12bd243d380a0f5dbcafae135ef8298d3c9391744a44"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_vulnerable__test.log",
+      "bytes": 496,
+      "sha256": "325ecdf37f5497e220f2985b20c9cfcbc98e279a1f9aec14947f2d3631652b26"
+    },
+    {
+      "path": "i01_industry/install_logs/python_jose_vulnerable__venv.log",
+      "bytes": 215,
+      "sha256": "3000d4224464db2ebd8af79a1e1777799ad3a9d0e58ddc41fb6e9d05b45b84a1"
+    },
+    {
+      "path": "i01_industry/install_test_manifest.json",
+      "bytes": 7982,
+      "sha256": "90ad4bc037e5b81f7d6fcd493d6fc1db641a2bc555b3ea6a341be8701eabe21c"
+    },
+    {
+      "path": "i01_industry/install_test_results.jsonl",
+      "bytes": 71188,
+      "sha256": "91a2c1b13caa07938c54006362871acc2a59bb29de5be6a508a19af49ad4a1c7"
+    },
+    {
+      "path": "i01_industry/package_industry.py",
+      "bytes": 4560,
+      "sha256": "9f1acfea12a65b05e71908e988f47ed5cc142144153eed5778dc55d97d8140b3"
+    },
+    {
+      "path": "i01_industry/run_install_tests.py",
+      "bytes": 9929,
+      "sha256": "8d3a60669ba66bdad431e3683f31ee8b8e35a65052bf7f7198c43adddf769cb9"
+    },
+    {
+      "path": "i01_industry/run_project_audit.py",
+      "bytes": 8915,
+      "sha256": "264be20ff7313ac0526845dfd25d573a5b585b86566f460eae60b5ddf6a8a7c7"
+    },
+    {
+      "path": "i01_industry/snapshots/github/AI-NPC/app/config.py",
+      "bytes": 685,
+      "sha256": "82698bc19b8d0e0b2b2be491eb0efeb36aecb4a12d5764bc45597d1457b5274c"
+    },
+    {
+      "path": "i01_industry/snapshots/github/AI-NPC/app/main.py",
+      "bytes": 8008,
+      "sha256": "53387711ffa42375cd58d4a902a1907afd600b870edd32290436217659e7b28f"
+    },
+    {
+      "path": "i01_industry/snapshots/github/AI-NPC/requirements.txt",
+      "bytes": 147,
+      "sha256": "de5869a190015d1c9c1eb20cc7473c4d286c7fb0706769e376babd693e20e81c"
+    },
+    {
+      "path": "i01_industry/snapshots/github/allura/CHANGES",
+      "bytes": 99724,
+      "sha256": "684c87e1a15c3b2e2099b5a2098e25cc664585c278a5aa660937102512be7e4c"
+    },
+    {
+      "path": "i01_industry/snapshots/github/allura/requirements.txt",
+      "bytes": 6835,
+      "sha256": "1c6defa476adbfee6b0ea111ac561e39bfe30dc6213ed025fd2b70625cd4e81d"
+    },
+    {
+      "path": "i01_industry/snapshots/github/overhave/pyproject.toml",
+      "bytes": 3551,
+      "sha256": "8951d469cb698e6fdb5bc4aa980a7cd63616d52ea571693d9bd1cca98725647c"
+    },
+    {
+      "path": "i01_industry/snapshots/github/pyfa/current_pyproject-pyproject.toml",
+      "bytes": 2158,
+      "sha256": "1cbcdecac059f19bb6e420cfd4791d5c4a25a6cd92b9d80be6bf0ed39735ba64"
+    },
+    {
+      "path": "i01_industry/snapshots/github/pyfa/historical_requirements-requirements.txt",
+      "bytes": 272,
+      "sha256": "1a3bc23391212ad804cbeaab27f08b007e7888f9a3830e3e00740f9667e9d89c"
+    },
+    {
+      "path": "i01_industry/snapshots/github/pypiserver/CHANGES.rst",
+      "bytes": 26323,
+      "sha256": "58d11e39c1f6c5135a96617e886da180748a13a6cffc0c6fd05f2ab438cda4b7"
+    },
+    {
+      "path": "i01_industry/snapshots/github/pypiserver/pyproject.toml",
+      "bytes": 4902,
+      "sha256": "23f0842039d29797a3dd1982af67a92da026cb259816cf7c7c75e60501648997"
+    },
+    {
+      "path": "i01_industry/snapshots/github/pypiserver/uv.lock",
+      "bytes": 264522,
+      "sha256": "0d3981769c18e2a5979d0732f1fc0aefc6399119a9574de82e11ecaad2e5b078"
+    },
+    {
+      "path": "i01_industry/snapshots/github/pyramid_multiauth/pyproject.toml",
+      "bytes": 1673,
+      "sha256": "a794df8f1fcd87ae0c399950bce584fc36fd1862401279991c5b0b093bc782f2"
+    },
+    {
+      "path": "i01_industry/snapshots/github/pyramid_multiauth/requirements.in",
+      "bytes": 14,
+      "sha256": "ab9f1fdcd3b3c2a82c414aa176829a01d9f7caba0bffe59a3ce1823c9653ce3c"
+    },
+    {
+      "path": "i01_industry/snapshots/github/pyramid_multiauth/requirements.txt",
+      "bytes": 5515,
+      "sha256": "cc5e2da950adcf3a72fd82a49f779aa151caf990ff171e1098ed10e36fe744e8"
+    },
+    {
+      "path": "i01_industry/snapshots/github/skyline-apiserver/pyproject.toml",
+      "bytes": 1843,
+      "sha256": "86f52ef740180dc422b428c8ae54c605a0ec4178372dce62d3ba0309766e5c14"
+    },
+    {
+      "path": "i01_industry/snapshots/github/skyline-apiserver/requirements.txt",
+      "bytes": 846,
+      "sha256": "a334ec15c149f806117c365f005eb609181eeca36b9cb5fc210f79094440ac0c"
+    },
+    {
+      "path": "i01_industry/snapshots/osv/GHSA-cjwg-qfpm-7377.json",
+      "bytes": 2013,
+      "sha256": "159b9b78c7263d5215a214b2d7f0171c61c4dd4c6d78199ffec9a0ce441860bb"
+    },
+    {
+      "path": "i01_industry/snapshots/osv/PYSEC-2024-38.json",
+      "bytes": 3429,
+      "sha256": "703fff0c5a6d69f3d4685bd6d1b98ec5792691bf1f77377d3bed67b511349ed4"
+    },
+    {
+      "path": "i01_industry/snapshots/osv/PYSEC-2026-3943.json",
+      "bytes": 9862,
+      "sha256": "7d54966f2979e90f7ecfb7baf765d500510a9630827ad9185e64b1358cde991d"
+    },
+    {
+      "path": "i01_industry/snapshots/pypi/fastapi/fixed-0.109.1.json",
+      "bytes": 27698,
+      "sha256": "de4e77b99554adf486147f3f19e1d858245b585fab150f6afa1f7d626b3ff788"
+    },
+    {
+      "path": "i01_industry/snapshots/pypi/fastapi/index.json",
+      "bytes": 594654,
+      "sha256": "417f72cc5b022018c49be79e08fa29b7e580b95b7e2cd321e180297b2654c447"
+    },
+    {
+      "path": "i01_industry/snapshots/pypi/fastapi/latest-0.162.7.json",
+      "bytes": 29758,
+      "sha256": "cf710802e1c3d4f436ab5f4544cf1107130408a639e6da44ae30d6f22f1a58c0"
+    },
+    {
+      "path": "i01_industry/snapshots/pypi/fastapi/vulnerable-0.109.0.json",
+      "bytes": 28526,
+      "sha256": "48dd162e77502e72f61f5ae67051db757d93df47884b49e81a1c254154c87e30"
+    },
+    {
+      "path": "i01_industry/snapshots/pypi/python-jose/fixed-3.4.0.json",
+      "bytes": 8672,
+      "sha256": "e8e92a3db26541216c7e690bb057f66fef51cf1cc293ae8309ea279f8eb6e11a"
+    },
+    {
+      "path": "i01_industry/snapshots/pypi/python-jose/index.json",
+      "bytes": 46247,
+      "sha256": "45158e5be7642c8f692179aebb6297d0c6f6bfa2f803862871678dc29c147b97"
+    },
+    {
+      "path": "i01_industry/snapshots/pypi/python-jose/latest-3.5.0.json",
+      "bytes": 8690,
+      "sha256": "e692de71348eb29e4da23c8f91a5f041f7f8ef1e005f0bee86b31fdf9ccb82b1"
+    },
+    {
+      "path": "i01_industry/snapshots/pypi/python-jose/vulnerable-3.3.0.json",
+      "bytes": 10701,
+      "sha256": "1b3897daab42ec620c573bcea99b75f1b8db00fd318fe1c77434c7ec36230fad"
+    },
+    {
+      "path": "i01_industry/snapshots/pypi/webob/fixed-1.8.11.json",
+      "bytes": 15691,
+      "sha256": "4f5d4b88443de3f4ede321d55707b1baf48e6bfe7d9ac9939d17c766807053c6"
+    },
+    {
+      "path": "i01_industry/snapshots/pypi/webob/index.json",
+      "bytes": 105814,
+      "sha256": "fe91fc4cc86f1795e3fe37ed2d6b5f39bc7d8be5687e16172946567d5799241c"
+    },
+    {
+      "path": "i01_industry/snapshots/pypi/webob/latest-1.8.11.json",
+      "bytes": 15691,
+      "sha256": "4f5d4b88443de3f4ede321d55707b1baf48e6bfe7d9ac9939d17c766807053c6"
+    },
+    {
+      "path": "i01_industry/snapshots/pypi/webob/vulnerable-1.8.10.json",
+      "bytes": 30938,
+      "sha256": "94f49eb34b9e83445f620612be24cb8685156d6554a3cbcd7a3bc06398d0665a"
+    },
+    {
+      "path": "i01_industry/source_manifest.json",
+      "bytes": 13023,
+      "sha256": "6905df83d6be586fb74eec500246e2417c527d6efc75522cbe23db157f898319"
+    },
+    {
+      "path": "i01_industry/vendor_backport_evidence.json",
+      "bytes": 3319,
+      "sha256": "e63aa51e4f252dd243c7d5b2fbe47f13dba22d3d518a3dda55e1a8b336830d9e"
+    },
+    {
+      "path": "i01_industry/verify_industry.py",
+      "bytes": 11272,
+      "sha256": "c5b77c445bf908e37ea38875e21135290f6ee58bc7f91df37ec68fee8ef0c53a"
+    },
+    {
+      "path": "previous_offline_study.zip",
+      "bytes": 39647534,
+      "sha256": "62950c93bbd3a830b9c05b6cf03857f48f0f3abb9e6fb6b8e149559abbc0b5e5"
+    }
+  ],
+  "excluded": "public Git clones, isolated venvs, caches and secrets; fully recreatable with scripts"
+}

@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+node_modules/
+/studies/I01/previous_offline_study.zip
+/studies/I01/i01_full/raw/osv-pypi-20261114.zip
+/studies/N02/**/charts/*.tgz
+/studies/N05/**/data/crates/*.crate
+/studies/N21/runtime/

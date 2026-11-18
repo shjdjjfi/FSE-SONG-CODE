@@ -1,0 +1,53 @@
+{
+  "pr": 15340,
+  "pr_author": "vleague2",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-07-03T13:58:43Z",
+      "requested_people": [
+        "bryancunningham",
+        "vleague2"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-10T19:18:38Z",
+      "requested_people": [
+        "vleague2",
+        "willmartian"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-10T20:59:09Z",
+      "requested_people": [
+        "vleague2"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-10T20:59:10Z",
+      "requested_people": [
+        "jingo88",
+        "vleague2"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-15T14:57:02Z",
+      "requested_people": [
+        "vleague2",
+        "willmartian"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "9ab1344a11de033d3f8fc5b304d792c4b1f49f36b56a0a164cfb8fd0b29a1191",
+  "url": "https://github.com/bitwarden/clients/pull/15340"
+}

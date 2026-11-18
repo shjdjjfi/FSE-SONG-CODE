@@ -1,0 +1,30 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 2,
+  "bytes": 1100,
+  "control_flow_or_callback_lines": 2,
+  "event": "BW13285",
+  "examples": [
+    {
+      "change": "-",
+      "code": "if (key.inner().type === EncryptionType.AesCbc256_B64 || key.key.byteLength < 64) {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (key.inner().type === EncryptionType.AesCbc256_B64) {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:59.364961+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/13285",
+  "noncomment_nonimport_changed_lines": 2,
+  "pr": 14432,
+  "repository": "bitwarden/clients",
+  "sha256": "19961897a8745a988460f9228cbdf62a9fe7676bad220c9404a84ff55912e783",
+  "target_code_changed_lines": 2,
+  "target_files": [
+    "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/14432.patch"
+}

@@ -1,0 +1,1910 @@
+{
+  "audited": 114,
+  "critical_limit": "Anonymized team requests and observed old-path reviewers cannot establish independent missing-expertise truth.",
+  "errors": {},
+  "missing_pr_authors": 0,
+  "pr_event_pairs": 114,
+  "records": [
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW10818",
+      "named_review_requests": [
+        "mzieniukbw",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 12187,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW10818",
+      "named_review_requests": [
+        "btreston",
+        "dani-garcia",
+        "djsmith85",
+        "hinton",
+        "jprusik",
+        "merissaacosta",
+        "mgibson1",
+        "mzieniukbw",
+        "rr-bw",
+        "shane-melton",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 12235,
+      "pr_author": "mgibson1",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW10818",
+      "named_review_requests": [
+        "mzieniukbw",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 12907,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW10818",
+      "named_review_requests": [
+        "audreyality",
+        "djsmith85",
+        "hinton",
+        "jingo88",
+        "justindbaur",
+        "mzieniukbw",
+        "quexten",
+        "tangowithfoxtrot",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 13039,
+      "pr_author": "mzieniukbw",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 8
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW10818",
+      "named_review_requests": [
+        "jaredsnider-bitwarden",
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 13287,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 4
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW10818",
+      "named_review_requests": [
+        "dani-garcia",
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 13598,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW10818",
+      "named_review_requests": [
+        "mzieniukbw",
+        "tangowithfoxtrot"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 13609,
+      "pr_author": "mzieniukbw",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW10818",
+      "named_review_requests": [
+        "dani-garcia",
+        "mzieniukbw",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 14953,
+      "pr_author": "mzieniukbw",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 7
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW10818",
+      "named_review_requests": [
+        "dani-garcia",
+        "mzieniukbw",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15070,
+      "pr_author": "mzieniukbw",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW10818",
+      "named_review_requests": [
+        "addisonbeck",
+        "mzieniukbw",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15047,
+      "pr_author": "mzieniukbw",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 5
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW10818",
+      "named_review_requests": [
+        "mzieniukbw",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15140,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW10818",
+      "named_review_requests": [
+        "addisonbeck",
+        "mzieniukbw",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15401,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW10818",
+      "named_review_requests": [
+        "dani-garcia",
+        "ike-kottlowski",
+        "jrmccannon",
+        "quexten",
+        "shane-melton",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15457,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW10818",
+      "named_review_requests": [
+        "mzieniukbw",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15957,
+      "pr_author": "mzieniukbw",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "jaredsnider-bitwarden",
+        "justindbaur",
+        "rr-bw"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 11779,
+      "pr_author": "jaredsnider-bitwarden",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "btreston",
+        "dani-garcia",
+        "djsmith85",
+        "hinton",
+        "jprusik",
+        "merissaacosta",
+        "mgibson1",
+        "mzieniukbw",
+        "rr-bw",
+        "shane-melton",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 12235,
+      "pr_author": "mgibson1",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "jaredsnider-bitwarden",
+        "mzieniukbw",
+        "quexten",
+        "rr-bw",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 12646,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 9
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "btreston",
+        "jingo88",
+        "patrick-pimentel-bitwarden",
+        "quexten",
+        "tangowithfoxtrot",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 12655,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "djsmith85",
+        "hinton",
+        "jaredsnider-bitwarden",
+        "mzieniukbw",
+        "r-tome",
+        "shane-melton",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 12935,
+      "pr_author": "hinton",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "cd-bitwarden",
+        "coroiu",
+        "djsmith85",
+        "jrmccannon",
+        "mzieniukbw",
+        "patrick-pimentel-bitwarden",
+        "quexten",
+        "ttalty",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 13121,
+      "pr_author": "mzieniukbw",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 7
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "jaredsnider-bitwarden",
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 13576,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "mzieniukbw",
+        "quexten",
+        "rr-bw",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 13194,
+      "pr_author": "thomas-avery",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 6
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "audreyality",
+        "connerbw",
+        "coroiu",
+        "jimmyvo16",
+        "jprusik",
+        "mzieniukbw",
+        "patrick-pimentel-bitwarden",
+        "quexten",
+        "shane-melton"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 13220,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "jaredsnider-bitwarden",
+        "jimmyvo16",
+        "jingo88",
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 14080,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 4
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "jaredsnider-bitwarden",
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 14945,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "mzieniukbw",
+        "quexten",
+        "tangowithfoxtrot"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 14539,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 4
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "addisonbeck",
+        "ike-kottlowski",
+        "mzieniukbw",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 14942,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "mzieniukbw",
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 14900,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "dani-garcia",
+        "ike-kottlowski",
+        "jrmccannon",
+        "quexten",
+        "shane-melton",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15457,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "btreston",
+        "dereknance",
+        "jaredsnider-bitwarden",
+        "jlf0dev",
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15748,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 4
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW11709",
+      "named_review_requests": [
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 16820,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW12407",
+      "named_review_requests": [
+        "ike-kottlowski",
+        "mzieniukbw",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 12853,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 5
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW12407",
+      "named_review_requests": [
+        "jaredsnider-bitwarden",
+        "mzieniukbw",
+        "patrick-pimentel-bitwarden",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 12854,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 6
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW12407",
+      "named_review_requests": [
+        "jlf0dev"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 12875,
+      "pr_author": "jlf0dev",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 1
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW12407",
+      "named_review_requests": [
+        "addisonbeck",
+        "mzieniukbw",
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 12928,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 6
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW12407",
+      "named_review_requests": [
+        "hinton",
+        "justindbaur",
+        "merissaacosta",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 13093,
+      "pr_author": "hinton",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 6
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW12927",
+      "named_review_requests": [
+        "btreston",
+        "cd-bitwarden",
+        "dani-garcia",
+        "hinton",
+        "rr-bw",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 14797,
+      "pr_author": "hinton",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW12927",
+      "named_review_requests": [
+        "coltonhurst",
+        "cyprain-okeke",
+        "jprusik",
+        "neuronull"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 16042,
+      "pr_author": "coltonhurst",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 7
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW12927",
+      "named_review_requests": [
+        "gbubemismith",
+        "jaasen-livefront",
+        "jimmyvo16",
+        "sbrown-livefront"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16373,
+      "pr_author": "jaasen-livefront",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 5
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW12927",
+      "named_review_requests": [
+        "harr1424",
+        "jaasen-livefront",
+        "kdenney",
+        "nick-livefront"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16461,
+      "pr_author": "jaasen-livefront",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 5
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW12927",
+      "named_review_requests": [
+        "amorask-bitwarden",
+        "btreston",
+        "cyprain-okeke",
+        "hinton"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16944,
+      "pr_author": "hinton",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 4
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW12927",
+      "named_review_requests": [
+        "amorask-bitwarden",
+        "cyprain-okeke",
+        "sbrown-livefront"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 17393,
+      "pr_author": "sbrown-livefront",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW13285",
+      "named_review_requests": [
+        "justindbaur",
+        "mgibson1",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 14277,
+      "pr_author": "mgibson1",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW13285",
+      "named_review_requests": [
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 14388,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW13285",
+      "named_review_requests": [
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 14398,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW13285",
+      "named_review_requests": [
+        "mzieniukbw",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 14538,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": false,
+      "event": "BW13285",
+      "named_review_requests": [
+        "djsmith85",
+        "gbubemismith",
+        "jaredsnider-bitwarden",
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15153,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW13285",
+      "named_review_requests": [
+        "addisonbeck",
+        "ike-kottlowski",
+        "mzieniukbw",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 14942,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW13285",
+      "named_review_requests": [
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 14432,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 1
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW13285",
+      "named_review_requests": [
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 14434,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 1
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW13285",
+      "named_review_requests": [
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 15138,
+      "pr_author": "thomas-avery",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW13285",
+      "named_review_requests": [
+        "addisonbeck",
+        "mzieniukbw",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15401,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW13285",
+      "named_review_requests": [
+        "dani-garcia",
+        "ike-kottlowski",
+        "jrmccannon",
+        "quexten",
+        "shane-melton",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15457,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW13285",
+      "named_review_requests": [
+        "coroiu",
+        "mzieniukbw",
+        "quexten"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16865,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW13285",
+      "named_review_requests": [
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 17742,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW13285",
+      "named_review_requests": [
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 17771,
+      "pr_author": "quexten",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW13285",
+      "named_review_requests": [
+        "coroiu",
+        "quexten",
+        "thomas-avery"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 18413,
+      "pr_author": "thomas-avery",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14571",
+      "named_review_requests": [
+        "btreston",
+        "coroiu",
+        "hinton",
+        "jaredsnider-bitwarden",
+        "jprusik",
+        "nick-livefront",
+        "patrick-pimentel-bitwarden"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 14650,
+      "pr_author": "patrick-pimentel-bitwarden",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 7
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14571",
+      "named_review_requests": [
+        "btreston",
+        "cd-bitwarden",
+        "dani-garcia",
+        "hinton",
+        "rr-bw",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 14797,
+      "pr_author": "hinton",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14571",
+      "named_review_requests": [
+        "banrion",
+        "dani-garcia",
+        "hinton",
+        "nick-livefront"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 14850,
+      "pr_author": "hinton",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 6
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14571",
+      "named_review_requests": [
+        "bensbits91",
+        "bryancunningham",
+        "djsmith85",
+        "jaredsnider-bitwarden",
+        "jimmyvo16",
+        "justindbaur",
+        "mzieniukbw",
+        "nick-livefront",
+        "vleague2",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15750,
+      "pr_author": "bryancunningham",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 4
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14571",
+      "named_review_requests": [
+        "bryancunningham",
+        "btreston",
+        "dani-garcia",
+        "enmande",
+        "jingo88",
+        "jprusik",
+        "vleague2",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16020,
+      "pr_author": "vleague2",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14571",
+      "named_review_requests": [
+        "alexrubik",
+        "ttalty"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 16353,
+      "pr_author": "alexrubik",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14571",
+      "named_review_requests": [
+        "bryancunningham",
+        "cyprain-okeke",
+        "dani-garcia",
+        "danielleflinn",
+        "jimmyvo16",
+        "jingo88",
+        "rr-bw",
+        "vleague2",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 16219,
+      "pr_author": "vleague2",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 5
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14571",
+      "named_review_requests": [
+        "btreston",
+        "djsmith85",
+        "jaasen-livefront",
+        "kdenney",
+        "rr-bw",
+        "shane-melton",
+        "vleague2"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16227,
+      "pr_author": "jaasen-livefront",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 8
+    },
+    {
+      "anonymized_team_auto_request": false,
+      "event": "BW14571",
+      "named_review_requests": [
+        "banrion",
+        "btreston",
+        "dani-garcia",
+        "djsmith85",
+        "jprusik",
+        "nick-livefront",
+        "nikwithak",
+        "shane-melton"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 16463,
+      "pr_author": "shane-melton",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14571",
+      "named_review_requests": [
+        "btreston",
+        "prograhamming",
+        "voommen-livefront"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 16823,
+      "pr_author": "voommen-livefront",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 6
+    },
+    {
+      "anonymized_team_auto_request": false,
+      "event": "BW14571",
+      "named_review_requests": [
+        "banrion",
+        "coroiu",
+        "cyprain-okeke",
+        "danielleflinn",
+        "djsmith85",
+        "ike-kottlowski",
+        "jimmyvo16",
+        "kdenney",
+        "nick-livefront"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 16911,
+      "pr_author": "kdenney",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 4
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14571",
+      "named_review_requests": [
+        "bryancunningham",
+        "cyprain-okeke",
+        "vleague2"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 16952,
+      "pr_author": "bryancunningham",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14571",
+      "named_review_requests": [
+        "banrion",
+        "hinton"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16939,
+      "pr_author": "hinton",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14571",
+      "named_review_requests": [
+        "gbubemismith",
+        "ttalty"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16987,
+      "pr_author": "ttalty",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14571",
+      "named_review_requests": [
+        "reneelund08",
+        "vleague2"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 17189,
+      "pr_author": "vleague2",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14571",
+      "named_review_requests": [
+        "banrion",
+        "voommen-livefront"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 17434,
+      "pr_author": "voommen-livefront",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14987",
+      "named_review_requests": [
+        "hinton"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15041,
+      "pr_author": "hinton",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 1
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14987",
+      "named_review_requests": [
+        "addisonbeck"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16562,
+      "pr_author": "addisonbeck",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 1
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14987",
+      "named_review_requests": [
+        "bryancunningham",
+        "cyprain-okeke",
+        "vleague2"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 16952,
+      "pr_author": "bryancunningham",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW14987",
+      "named_review_requests": [
+        "banrion",
+        "hinton"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 16939,
+      "pr_author": "hinton",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "danielleflinn",
+        "vleague2",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 15273,
+      "pr_author": "vleague2",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "bryancunningham",
+        "jingo88",
+        "vleague2",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15340,
+      "pr_author": "vleague2",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 5
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "jaredsnider-bitwarden",
+        "vleague2",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 15362,
+      "pr_author": "jaredsnider-bitwarden",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 4
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "addisonbeck",
+        "gbubemismith",
+        "jaredsnider-bitwarden",
+        "jingo88",
+        "nick-livefront",
+        "rr-bw",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 15375,
+      "pr_author": "nick-livefront",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 8
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "vleague2",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 15522,
+      "pr_author": "vleague2",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "jaredsnider-bitwarden",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 15610,
+      "pr_author": "jaredsnider-bitwarden",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "jingo88",
+        "nick-livefront",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 15620,
+      "pr_author": "nick-livefront",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "gbubemismith",
+        "vleague2",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 15738,
+      "pr_author": "willmartian",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 4
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "hinton",
+        "vleague2"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 15777,
+      "pr_author": "hinton",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "nick-livefront",
+        "shane-melton",
+        "vleague2"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 15827,
+      "pr_author": "nick-livefront",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "bryancunningham",
+        "vleague2",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 15892,
+      "pr_author": "vleague2",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "bryancunningham",
+        "danielleflinn",
+        "vleague2",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16002,
+      "pr_author": "bryancunningham",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 4
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "bryancunningham",
+        "btreston",
+        "dani-garcia",
+        "enmande",
+        "jingo88",
+        "jprusik",
+        "vleague2",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16020,
+      "pr_author": "vleague2",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "bryancunningham",
+        "cyprain-okeke",
+        "dani-garcia",
+        "danielleflinn",
+        "jimmyvo16",
+        "jingo88",
+        "rr-bw",
+        "vleague2",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 16219,
+      "pr_author": "vleague2",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 5
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "bryancunningham",
+        "vleague2"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16349,
+      "pr_author": "bryancunningham",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "bryancunningham",
+        "coroiu",
+        "danielleflinn",
+        "djsmith85",
+        "jingo88",
+        "vleague2"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16433,
+      "pr_author": "vleague2",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 6
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "banrion",
+        "bryancunningham",
+        "vleague2",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16748,
+      "pr_author": "willmartian",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 6
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "bryancunningham",
+        "cyprain-okeke",
+        "vleague2"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 16952,
+      "pr_author": "bryancunningham",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "BW15093",
+      "named_review_requests": [
+        "hinton",
+        "willmartian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 16940,
+      "pr_author": "hinton",
+      "repo": "bitwarden/clients",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "clarity-89",
+        "gillesdemey"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 105068,
+      "pr_author": "gillesdemey",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "stephaniehingtgen"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 107056,
+      "pr_author": "stephaniehingtgen",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 3
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "yuri-tceretian"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 109309,
+      "pr_author": "yuri-tceretian",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "yuri-tceretian"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 109969,
+      "pr_author": "yuri-tceretian",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 1
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "yuri-tceretian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 110619,
+      "pr_author": "yuri-tceretian",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 1
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "yuri-tceretian"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 110839,
+      "pr_author": "yuri-tceretian",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 1
+    },
+    {
+      "anonymized_team_auto_request": false,
+      "event": "GF104424",
+      "named_review_requests": [],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 111338,
+      "pr_author": "yuri-tceretian",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 0
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "yuri-tceretian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 112010,
+      "pr_author": "yuri-tceretian",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 1
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "gillesdemey"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 112880,
+      "pr_author": "gillesdemey",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 1
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "jacobsonmt",
+        "titolins",
+        "yuri-tceretian"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 114196,
+      "pr_author": "yuri-tceretian",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "yuri-tceretian"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 115442,
+      "pr_author": "yuri-tceretian",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 5
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "yuri-tceretian"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 115959,
+      "pr_author": "yuri-tceretian",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "titolins",
+        "yuri-tceretian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 116308,
+      "pr_author": "titolins",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 2
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "yuri-tceretian"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 116434,
+      "pr_author": "yuri-tceretian",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 1
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "ryantxu"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": false,
+      "old_path_reviewers_invited_within_72_hours": false,
+      "pr": 116475,
+      "pr_author": "ryantxu",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 5
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "irenerl24",
+        "johnnyk-grafana",
+        "yuri-tceretian"
+      ],
+      "old_path_reviewers_actually_reviewed": false,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 116563,
+      "pr_author": "yuri-tceretian",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 4
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "jacobsonmt"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 117061,
+      "pr_author": "jacobsonmt",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 1
+    },
+    {
+      "anonymized_team_auto_request": true,
+      "event": "GF104424",
+      "named_review_requests": [
+        "jacobsonmt",
+        "yuri-tceretian"
+      ],
+      "old_path_reviewers_actually_reviewed": true,
+      "old_path_reviewers_invited_by_name": true,
+      "old_path_reviewers_invited_within_72_hours": true,
+      "pr": 117090,
+      "pr_author": "jacobsonmt",
+      "repo": "grafana/grafana",
+      "visible_review_request_events": 2
+    }
+  ],
+  "visible_request_events": 369,
+  "with_anonymized_team_review_request": 110,
+  "with_named_review_request": 113,
+  "with_neither_old_history_reviewer_named_request_nor_review": 12,
+  "with_observed_old_history_reviewer_named_request": 98,
+  "with_observed_old_history_reviewer_named_request_within_72_hours": 60,
+  "with_observed_old_history_reviewer_review": 86
+}

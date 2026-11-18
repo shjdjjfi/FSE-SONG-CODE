@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-11-18T05:30:44.946779+00:00",
+  "scope": "retrospective exploratory research, not blind preregistered validation",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "django_versions": {
+    "django600": "6.0",
+    "django601": "6.0.1",
+    "sites": "5.1.8"
+  },
+  "bun_version": "1.3.1",
+  "opencode_commit": "1fd016ef32286de9489b7b24f1029f52c49a27b3",
+  "opencode_test_sha256": "c898aecfef9ae7060151b90d2c3f7349f504b6460c47736a98f94dd12e345026",
+  "repetitions": 3,
+  "user_variants": 30,
+  "jobs": 6,
+  "unique_cases": 46,
+  "total_processes": 126,
+  "total_observations": 138,
+  "elapsed_seconds": 11.647,
+  "data_design": "Each Django case uses a new SQLite database; each OpenCode scenario uses a new in-memory database.",
+  "result_sha256": "36ae5b4ce853c68634a8acaf6ea129f1d53028b62b1ef3b945b805813f4b3d15"
+}

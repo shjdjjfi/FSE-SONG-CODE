@@ -1,0 +1,120 @@
+n02-test, n02-kong, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kong
+      app.kubernetes.io/version: "2.4"
+-     helm.sh/chart: kong-2.1.0
++     helm.sh/chart: kong-2.2.0
+    name: n02-kong
+  rules:
+  - apiGroups:
+...
+n02-test, n02-kong, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kong
+      app.kubernetes.io/version: "2.4"
+-     helm.sh/chart: kong-2.1.0
++     helm.sh/chart: kong-2.2.0
+    name: n02-kong
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-kong, Deployment (apps) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kong
+      app.kubernetes.io/version: "2.4"
+-     helm.sh/chart: kong-2.1.0
++     helm.sh/chart: kong-2.2.0
+    name: n02-kong
+    namespace: n02-test
+  spec:
+...
+          app.kubernetes.io/managed-by: Helm
+          app.kubernetes.io/name: kong
+          app.kubernetes.io/version: "2.4"
+-         helm.sh/chart: kong-2.1.0
++         helm.sh/chart: kong-2.2.0
+      spec:
++       automountServiceAccountToken: true
+        containers:
+        - args:
+          - /kong-ingress-controller
+...
+            value: https://localhost:8444
+          - name: CONTROLLER_PUBLISH_SERVICE
+            value: n02-test/n02-kong-proxy
+-         image: kong/kubernetes-ingress-controller:1.2
++         image: kong/kubernetes-ingress-controller:1.3
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            failureThreshold: 3
+...
+            successThreshold: 1
+            timeoutSeconds: 5
+          name: ingress-controller
++         ports: null
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+...
+            successThreshold: 1
+            timeoutSeconds: 5
+          resources: {}
++         securityContext: {}
+        - env:
+          - name: KONG_ADMIN_ACCESS_LOG
+            value: /dev/stdout
+...
+            successThreshold: 1
+            timeoutSeconds: 5
+          resources: {}
++         securityContext: {}
+          volumeMounts:
+          - mountPath: /kong_prefix/
+            name: n02-kong-prefix-dir
+...
+n02-test, n02-kong, Role (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kong
+      app.kubernetes.io/version: "2.4"
+-     helm.sh/chart: kong-2.1.0
++     helm.sh/chart: kong-2.2.0
+    name: n02-kong
+    namespace: n02-test
+  rules:
+...
+n02-test, n02-kong, RoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kong
+      app.kubernetes.io/version: "2.4"
+-     helm.sh/chart: kong-2.1.0
++     helm.sh/chart: kong-2.2.0
+    name: n02-kong
+    namespace: n02-test
+  roleRef:
+...
+n02-test, n02-kong, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kong
+      app.kubernetes.io/version: "2.4"
+-     helm.sh/chart: kong-2.1.0
++     helm.sh/chart: kong-2.2.0
+    name: n02-kong
+    namespace: n02-test
+
+n02-test, n02-kong-proxy, Service (v1) has changed:
+...
+      app.kubernetes.io/name: kong
+      app.kubernetes.io/version: "2.4"
+      enable-metrics: "true"
+-     helm.sh/chart: kong-2.1.0
++     helm.sh/chart: kong-2.2.0
+    name: n02-kong-proxy
+    namespace: n02-test
+  spec:
+...

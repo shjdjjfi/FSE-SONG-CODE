@@ -1,0 +1,37 @@
+{
+  "key": "864de46fe651fc90ae",
+  "args": {
+    "crate": "clap",
+    "version": "4.5.40",
+    "id": "b74f305275415e6b",
+    "profile": "candidate",
+    "features": [
+      "deprecated",
+      "std"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0702,
+  "errors": [
+    {
+      "code": null,
+      "message": "cannot find derive macro `Parser` in this scope",
+      "rendered": "error: cannot find derive macro `Parser` in this scope\n --> src/main.rs:3:10\n  |\n3 | #[derive(Parser)]\n  |          ^^^^^^\n  |\nnote: `Parser` is imported here, but it is only a trait, without a derive macro\n --> src/main.rs:2:5\n  |\n2 | use clap::Parser;\n  |     ^^^^^^^^^^^^\n\n",
+      "line": 3
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `arg` in this scope",
+      "rendered": "error: cannot find attribute `arg` in this scope\n  --> src/main.rs:15:7\n   |\n15 |     #[arg(long, action)]\n   |       ^^^\n\n",
+      "line": 15
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_clap_consumer` (bin \"n05_clap_consumer\") due to 2 previous errors\n",
+  "code_sha256": "0c84be224f68c5690a9360db42023631476aaf63311d85b63b4627b721207a89",
+  "manifest_sha256": "0d27f58a026baee87dc6481065ec2447f46239608b51984e94a4ee46251c7dfc",
+  "log_file": "results/check_logs/864de46fe651fc90ae.txt.gz"
+}

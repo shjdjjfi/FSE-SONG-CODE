@@ -1,0 +1,28 @@
+{
+  "key": "a3548bf1b723b35a5e",
+  "args": {
+    "crate": "reqwest",
+    "version": "0.12.19",
+    "id": "5e89b6a4b9062775",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 1.5085,
+  "errors": [
+    {
+      "code": null,
+      "message": "The `http3` feature is unstable, and requires the `RUSTFLAGS='--cfg reqwest_unstable'` environment variable to be set.",
+      "rendered": "error: The `http3` feature is unstable, and requires the `RUSTFLAGS='--cfg reqwest_unstable'` environment variable to be set.\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-0.12.19/src/lib.rs:250:1\n    |\n250 | / compile_error!(\n251 | |     \"\\\n252 | |     The `http3` feature is unstable, and requires the \\\n253 | |     `RUSTFLAGS='--cfg reqwest_unstable'` environment variable to be set.\\\n254 | | \"\n255 | | );\n    | |_^\n\n",
+      "line": 250
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `reqwest` (lib) due to 1 previous error\n",
+  "code_sha256": "dfa322e945063d7fe2eaedae0db1aaace5566b8b7f713e0b7e04c1af46794dd2",
+  "manifest_sha256": "7043b6f443bd3ec3e86ae84e7a9e507257ffb73b2b99bbef2592cde1cd198015",
+  "log_file": "results/check_logs/a3548bf1b723b35a5e.txt.gz"
+}

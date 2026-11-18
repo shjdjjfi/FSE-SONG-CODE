@@ -1,0 +1,161 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 12,
+  "bytes": 173046,
+  "control_flow_or_callback_lines": 2,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "-",
+      "code": "// FIXME: Update this file to be type safe and remove this and next line",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "// @ts-strict-ignore",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { Subject, filter, switchMap, takeUntil, tap } from \"rxjs\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { Subject, filter, of, switchMap, takeUntil, tap } from \"rxjs\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "protected pageTitle: string;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "protected pageSubtitle: string;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "protected pageIcon: Icon;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "protected showReadonlyHostname: boolean;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "protected maxWidth: AnonLayoutMaxWidth;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "protected hideCardWrapper: boolean;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "protected hideIcon: boolean = false;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected pageTitle?: string | null;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected pageSubtitle?: string | null;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected pageIcon?: Icon | null;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected showReadonlyHostname?: boolean | null;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected maxWidth?: AnonLayoutMaxWidth | null;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected hideCardWrapper?: boolean | null;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected hideIcon?: boolean | null;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "switchMap(() => this.route.firstChild?.data || null),",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "switchMap(() => this.route.firstChild?.data || of(null)),",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "private setAnonLayoutWrapperDataFromRouteData(firstChildRouteData: Data | null) {",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "private setAnonLayoutWrapperDataFromRouteData(firstChildRouteData?: Data | null) {",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "// FIXME: Update this file to be type safe and remove this and next line",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "// @ts-strict-ignore",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "protected hostname: string;",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "protected version: string;",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected hostname?: string;",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected version?: string;",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:46.636452+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 22,
+  "pr": 15738,
+  "repository": "bitwarden/clients",
+  "sha256": "7d318b7221dbefabc7adf9a22f93367f7c3a9f94b931bf79330fec6a7cf4a524",
+  "target_code_changed_lines": 28,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout-wrapper.component.ts",
+    "libs/components/src/anon-layout/anon-layout.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15738.patch"
+}

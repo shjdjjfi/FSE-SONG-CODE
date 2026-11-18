@@ -1,0 +1,34 @@
+{
+  "key": "9ffa142ad5a24f8a8d",
+  "args": {
+    "crate": "chrono-tz",
+    "version": "0.10.3",
+    "id": "8f6b5473e0ba99c1",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0937,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `chrono`",
+      "rendered": "error[E0432]: unresolved import `chrono`\n --> src/main.rs:2:5\n  |\n2 | use chrono::{Duration, TimeZone};\n  |     ^^^^^^ use of unresolved module or unlinked crate `chrono`\n  |\n  = help: if you wanted to use a crate named `chrono`, use `cargo add chrono` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `ymd` found for enum `Tz` in the current scope",
+      "rendered": "error[E0599]: no method named `ymd` found for enum `Tz` in the current scope\n   --> src/main.rs:6:26\n    |\n  6 | let london_time = London.ymd(2016, 5, 10).and_hms(12, 0, 0);\n    |                          ^^^ method not found in `Tz`\n    |\n   ::: /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-0.4.45/src/offset/mod.rs:335:8\n    |\n335 |     fn ymd(&self, year: i32, month: u32, day: u32) -> Date<Self> {\n    |        --- the method is available for `Tz` here\n    |\n    = help: items from traits can only be used if the trait is in scope\nhelp: trait `TimeZone` which provides `ymd` is implemented but not in scope; perhaps you want to import it\n    |\n  1 + use chrono::offset::TimeZone;\n    |\n\n",
+      "line": 6
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_chrono_tz_consumer` (bin \"n05_chrono_tz_consumer\") due to 2 previous errors\n",
+  "code_sha256": "a97b295bda02b31a560dc4df345daa17843fb63952ffcc4ac97f13b103f3b3a5",
+  "manifest_sha256": "c148937b29ac8b366a8ae9b8c6793536da756bb7e6164bf363a4932bcb0e7e1c",
+  "log_file": "prospective/results/check_logs/9ffa142ad5a24f8a8d.txt.gz"
+}

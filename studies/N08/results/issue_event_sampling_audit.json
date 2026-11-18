@@ -1,0 +1,265 @@
+{
+  "available_unique_prs": 2,
+  "errors": {
+    "('bitwarden/clients', 12875)": "HTTP 403"
+  },
+  "incomplete_due_to_rate_or_other_error": true,
+  "pairs": [
+    {
+      "data_available": false,
+      "event": "BW10818",
+      "pr": 13039,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/13039/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW10818",
+      "pr": 13609,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/13609/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW10818",
+      "pr": 15070,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/15070/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW10818",
+      "pr": 15401,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/15401/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW11709",
+      "pr": 13121,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/13121/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW11709",
+      "pr": 13220,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/13220/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW11709",
+      "pr": 14539,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/14539/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW11709",
+      "pr": 16820,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/16820/events?per_page=100"
+    },
+    {
+      "data_available": true,
+      "event": "BW12407",
+      "pr": 12853,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/12853/events?per_page=100"
+    },
+    {
+      "data_available": true,
+      "event": "BW12407",
+      "pr": 12854,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/12854/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW12407",
+      "pr": 12875,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/12875/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW12407",
+      "pr": 13093,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/13093/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW12927",
+      "pr": 16042,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/16042/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW12927",
+      "pr": 16373,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/16373/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW12927",
+      "pr": 16461,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/16461/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW12927",
+      "pr": 17393,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/17393/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW13285",
+      "pr": 14432,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/14432/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW13285",
+      "pr": 15401,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/15401/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW13285",
+      "pr": 17771,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/17771/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW13285",
+      "pr": 18413,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/18413/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW14571",
+      "pr": 16020,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/16020/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW14571",
+      "pr": 16227,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/16227/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW14571",
+      "pr": 16939,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/16939/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW14571",
+      "pr": 17434,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/17434/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW14987",
+      "pr": 15041,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/15041/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW14987",
+      "pr": 16562,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/16562/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW14987",
+      "pr": 16939,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/16939/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW14987",
+      "pr": 16952,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/16952/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW15093",
+      "pr": 15340,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/15340/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW15093",
+      "pr": 15375,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/15375/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW15093",
+      "pr": 15620,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/15620/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "BW15093",
+      "pr": 16349,
+      "repo": "bitwarden/clients",
+      "source_url": "https://api.github.com/repos/bitwarden/clients/issues/16349/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "GF104424",
+      "pr": 110619,
+      "repo": "grafana/grafana",
+      "source_url": "https://api.github.com/repos/grafana/grafana/issues/110619/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "GF104424",
+      "pr": 114196,
+      "repo": "grafana/grafana",
+      "source_url": "https://api.github.com/repos/grafana/grafana/issues/114196/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "GF104424",
+      "pr": 116308,
+      "repo": "grafana/grafana",
+      "source_url": "https://api.github.com/repos/grafana/grafana/issues/116308/events?per_page=100"
+    },
+    {
+      "data_available": false,
+      "event": "GF104424",
+      "pr": 117061,
+      "repo": "grafana/grafana",
+      "source_url": "https://api.github.com/repos/grafana/grafana/issues/117061/events?per_page=100"
+    }
+  ],
+  "seed": 20271115,
+  "selected_pr_event_pairs": 36,
+  "selected_unique_prs": 34,
+  "selection": "Four PRs per event; seeded random sample within each event; PR labels not used"
+}

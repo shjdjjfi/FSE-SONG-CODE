@@ -1,0 +1,382 @@
+{
+  "date": "2026-11-14",
+  "repositories": {
+    "skyline-apiserver": {
+      "url": "https://github.com/openstack/skyline-apiserver",
+      "commit": "8d130ece9600179150a393e3971a4d304a0848e2",
+      "paths": [
+        "requirements.txt",
+        "pyproject.toml"
+      ],
+      "files": {
+        "requirements.txt": {
+          "path": "snapshots/github/skyline-apiserver/requirements.txt",
+          "sha256": "a334ec15c149f806117c365f005eb609181eeca36b9cb5fc210f79094440ac0c",
+          "bytes": 846
+        },
+        "pyproject.toml": {
+          "path": "snapshots/github/skyline-apiserver/pyproject.toml",
+          "sha256": "86f52ef740180dc422b428c8ae54c605a0ec4178372dce62d3ba0309766e5c14",
+          "bytes": 1843
+        }
+      }
+    },
+    "overhave": {
+      "url": "https://github.com/Tinkoff/overhave",
+      "commit": "793bbd6cb98c2cd0b1cb432d1cd56bbf77e11518",
+      "paths": [
+        "pyproject.toml"
+      ],
+      "files": {
+        "pyproject.toml": {
+          "path": "snapshots/github/overhave/pyproject.toml",
+          "sha256": "8951d469cb698e6fdb5bc4aa980a7cd63616d52ea571693d9bd1cca98725647c",
+          "bytes": 3551
+        }
+      }
+    },
+    "AI-NPC": {
+      "url": "https://github.com/rainpaw/AI-NPC",
+      "commit": "6d3dfb80758c2163af72254281d74a5144ba3174",
+      "paths": [
+        "requirements.txt",
+        "app/main.py",
+        "app/config.py"
+      ],
+      "files": {
+        "requirements.txt": {
+          "path": "snapshots/github/AI-NPC/requirements.txt",
+          "sha256": "de5869a190015d1c9c1eb20cc7473c4d286c7fb0706769e376babd693e20e81c",
+          "bytes": 147
+        },
+        "app/main.py": {
+          "path": "snapshots/github/AI-NPC/app/main.py",
+          "sha256": "53387711ffa42375cd58d4a902a1907afd600b870edd32290436217659e7b28f",
+          "bytes": 8008
+        },
+        "app/config.py": {
+          "path": "snapshots/github/AI-NPC/app/config.py",
+          "sha256": "82698bc19b8d0e0b2b2be491eb0efeb36aecb4a12d5764bc45597d1457b5274c",
+          "bytes": 685
+        }
+      }
+    },
+    "allura": {
+      "url": "https://github.com/apache/allura",
+      "commit": "22b7bfb96a268d4e1c04dee0c71ddcbb4a03f450",
+      "paths": [
+        "requirements.txt",
+        "CHANGES"
+      ],
+      "files": {
+        "requirements.txt": {
+          "path": "snapshots/github/allura/requirements.txt",
+          "sha256": "1c6defa476adbfee6b0ea111ac561e39bfe30dc6213ed025fd2b70625cd4e81d",
+          "bytes": 6835
+        },
+        "CHANGES": {
+          "path": "snapshots/github/allura/CHANGES",
+          "sha256": "684c87e1a15c3b2e2099b5a2098e25cc664585c278a5aa660937102512be7e4c",
+          "bytes": 99724
+        }
+      }
+    },
+    "pypiserver": {
+      "url": "https://github.com/pypiserver/pypiserver",
+      "commit": "70648dbe7193a3687fb48650b0c67287cc69d6b6",
+      "paths": [
+        "pyproject.toml",
+        "uv.lock",
+        "CHANGES.rst"
+      ],
+      "files": {
+        "pyproject.toml": {
+          "path": "snapshots/github/pypiserver/pyproject.toml",
+          "sha256": "23f0842039d29797a3dd1982af67a92da026cb259816cf7c7c75e60501648997",
+          "bytes": 4902
+        },
+        "uv.lock": {
+          "path": "snapshots/github/pypiserver/uv.lock",
+          "sha256": "0d3981769c18e2a5979d0732f1fc0aefc6399119a9574de82e11ecaad2e5b078",
+          "bytes": 264522
+        },
+        "CHANGES.rst": {
+          "path": "snapshots/github/pypiserver/CHANGES.rst",
+          "sha256": "58d11e39c1f6c5135a96617e886da180748a13a6cffc0c6fd05f2ab438cda4b7",
+          "bytes": 26323
+        }
+      }
+    },
+    "pyramid_multiauth": {
+      "url": "https://github.com/mozilla-services/pyramid_multiauth",
+      "commit": "86865c11248a3ac168f5c448be51dfb7cce773b6",
+      "paths": [
+        "pyproject.toml",
+        "requirements.in",
+        "requirements.txt"
+      ],
+      "files": {
+        "pyproject.toml": {
+          "path": "snapshots/github/pyramid_multiauth/pyproject.toml",
+          "sha256": "a794df8f1fcd87ae0c399950bce584fc36fd1862401279991c5b0b093bc782f2",
+          "bytes": 1673
+        },
+        "requirements.in": {
+          "path": "snapshots/github/pyramid_multiauth/requirements.in",
+          "sha256": "ab9f1fdcd3b3c2a82c414aa176829a01d9f7caba0bffe59a3ce1823c9653ce3c",
+          "bytes": 14
+        },
+        "requirements.txt": {
+          "path": "snapshots/github/pyramid_multiauth/requirements.txt",
+          "sha256": "cc5e2da950adcf3a72fd82a49f779aa151caf990ff171e1098ed10e36fe744e8",
+          "bytes": 5515
+        }
+      }
+    },
+    "pyfa": {
+      "url": "https://github.com/pyfa-org/Pyfa",
+      "current_commit": "b79cd902b0bfa56a43cc5c08b6266fa842f25e85",
+      "historical_commit": "430e7af225b4b3ef061ea777fb849fdc05f7e7d0",
+      "historical_removed_by": "9d57e3b8072676d854132e2d2835b0c37c9125ca",
+      "files": {
+        "current_pyproject": {
+          "path": "snapshots/github/pyfa/current_pyproject-pyproject.toml",
+          "sha256": "1cbcdecac059f19bb6e420cfd4791d5c4a25a6cd92b9d80be6bf0ed39735ba64",
+          "bytes": 2158,
+          "source_url": "https://raw.githubusercontent.com/pyfa-org/Pyfa/b79cd902b0bfa56a43cc5c08b6266fa842f25e85/pyproject.toml",
+          "commit": "b79cd902b0bfa56a43cc5c08b6266fa842f25e85"
+        },
+        "historical_requirements": {
+          "path": "snapshots/github/pyfa/historical_requirements-requirements.txt",
+          "sha256": "1a3bc23391212ad804cbeaab27f08b007e7888f9a3830e3e00740f9667e9d89c",
+          "bytes": 272,
+          "source_url": "https://raw.githubusercontent.com/pyfa-org/Pyfa/430e7af225b4b3ef061ea777fb849fdc05f7e7d0/requirements.txt",
+          "commit": "430e7af225b4b3ef061ea777fb849fdc05f7e7d0"
+        }
+      },
+      "history_status": "historical pin verified; current pin verified"
+    }
+  },
+  "osv": {
+    "python-jose": {
+      "path": "snapshots/osv/GHSA-cjwg-qfpm-7377.json",
+      "sha256": "159b9b78c7263d5215a214b2d7f0171c61c4dd4c6d78199ffec9a0ce441860bb",
+      "bytes": 2013,
+      "osv_id": "GHSA-cjwg-qfpm-7377",
+      "published": "2024-04-26T00:30:35Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-33664"
+        },
+        {
+          "type": "WEB",
+          "url": "https://github.com/mpdavis/python-jose/issues/344"
+        },
+        {
+          "type": "WEB",
+          "url": "https://github.com/mpdavis/python-jose/pull/345"
+        },
+        {
+          "type": "PACKAGE",
+          "url": "https://github.com/mpdavis/python-jose"
+        },
+        {
+          "type": "WEB",
+          "url": "https://github.com/mpdavis/python-jose/releases/tag/3.4.0"
+        },
+        {
+          "type": "WEB",
+          "url": "https://github.com/pypa/advisory-database/tree/main/vulns/python-jose/PYSEC-2024-233.yaml"
+        },
+        {
+          "type": "WEB",
+          "url": "https://www.vicarius.io/vsociety/posts/jwt-bomb-in-python-jose-cve-2024-33664"
+        }
+      ]
+    },
+    "fastapi": {
+      "path": "snapshots/osv/PYSEC-2024-38.json",
+      "sha256": "703fff0c5a6d69f3d4685bd6d1b98ec5792691bf1f77377d3bed67b511349ed4",
+      "bytes": 3429,
+      "osv_id": "PYSEC-2024-38",
+      "published": "2024-02-05T15:15:00Z",
+      "references": [
+        {
+          "type": "ADVISORY",
+          "url": "https://github.com/tiangolo/fastapi/security/advisories/GHSA-qf9m-vfgh-m389"
+        },
+        {
+          "type": "FIX",
+          "url": "https://github.com/tiangolo/fastapi/commit/9d34ad0ee8a0dfbbcce06f76c2d5d851085024fc"
+        },
+        {
+          "type": "WEB",
+          "url": "https://github.com/tiangolo/fastapi/releases/tag/0.109.1"
+        }
+      ]
+    },
+    "webob": {
+      "path": "snapshots/osv/PYSEC-2026-3943.json",
+      "sha256": "7d54966f2979e90f7ecfb7baf765d500510a9630827ad9185e64b1358cde991d",
+      "bytes": 9862,
+      "osv_id": "PYSEC-2026-3943",
+      "published": "2026-09-10T09:44:57.798668Z",
+      "references": [
+        {
+          "type": "WEB",
+          "url": "https://github.com/Pylons/webob/security/advisories/GHSA-6hx8-3wjj-gr8g"
+        },
+        {
+          "type": "ADVISORY",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54770"
+        },
+        {
+          "type": "WEB",
+          "url": "https://github.com/Pylons/webob/commit/ff89560643fb252751b4db8806a283b5377f1f07"
+        },
+        {
+          "type": "PACKAGE",
+          "url": "https://github.com/Pylons/webob"
+        },
+        {
+          "type": "WEB",
+          "url": "https://github.com/Pylons/webob/tree/1.8.11"
+        },
+        {
+          "type": "PACKAGE",
+          "url": "https://pypi.org/project/webob"
+        },
+        {
+          "type": "ADVISORY",
+          "url": "https://github.com/advisories/GHSA-6hx8-3wjj-gr8g"
+        }
+      ]
+    }
+  },
+  "pypi": {
+    "python-jose": {
+      "index": {
+        "path": "snapshots/pypi/python-jose/index.json",
+        "sha256": "45158e5be7642c8f692179aebb6297d0c6f6bfa2f803862871678dc29c147b97",
+        "bytes": 46247
+      },
+      "latest_final_available": "3.5.0",
+      "arms": {
+        "vulnerable": {
+          "path": "snapshots/pypi/python-jose/vulnerable-3.3.0.json",
+          "sha256": "1b3897daab42ec620c573bcea99b75f1b8db00fd318fe1c77434c7ec36230fad",
+          "bytes": 10701,
+          "version": "3.3.0",
+          "requires_python": "",
+          "wheel_count": 1
+        },
+        "fixed": {
+          "path": "snapshots/pypi/python-jose/fixed-3.4.0.json",
+          "sha256": "e8e92a3db26541216c7e690bb057f66fef51cf1cc293ae8309ea279f8eb6e11a",
+          "bytes": 8672,
+          "version": "3.4.0",
+          "requires_python": null,
+          "wheel_count": 1
+        },
+        "latest": {
+          "path": "snapshots/pypi/python-jose/latest-3.5.0.json",
+          "sha256": "e692de71348eb29e4da23c8f91a5f041f7f8ef1e005f0bee86b31fdf9ccb82b1",
+          "bytes": 8690,
+          "version": "3.5.0",
+          "requires_python": ">=3.9",
+          "wheel_count": 1
+        }
+      }
+    },
+    "fastapi": {
+      "index": {
+        "path": "snapshots/pypi/fastapi/index.json",
+        "sha256": "417f72cc5b022018c49be79e08fa29b7e580b95b7e2cd321e180297b2654c447",
+        "bytes": 594654
+      },
+      "latest_final_available": "0.162.7",
+      "arms": {
+        "vulnerable": {
+          "path": "snapshots/pypi/fastapi/vulnerable-0.109.0.json",
+          "sha256": "48dd162e77502e72f61f5ae67051db757d93df47884b49e81a1c254154c87e30",
+          "bytes": 28526,
+          "version": "0.109.0",
+          "requires_python": ">=3.8",
+          "wheel_count": 1
+        },
+        "fixed": {
+          "path": "snapshots/pypi/fastapi/fixed-0.109.1.json",
+          "sha256": "de4e77b99554adf486147f3f19e1d858245b585fab150f6afa1f7d626b3ff788",
+          "bytes": 27698,
+          "version": "0.109.1",
+          "requires_python": ">=3.8",
+          "wheel_count": 1
+        },
+        "latest": {
+          "path": "snapshots/pypi/fastapi/latest-0.162.7.json",
+          "sha256": "cf710802e1c3d4f436ab5f4544cf1107130408a639e6da44ae30d6f22f1a58c0",
+          "bytes": 29758,
+          "version": "0.162.7",
+          "requires_python": ">=3.11",
+          "wheel_count": 1
+        }
+      }
+    },
+    "webob": {
+      "index": {
+        "path": "snapshots/pypi/webob/index.json",
+        "sha256": "fe91fc4cc86f1795e3fe37ed2d6b5f39bc7d8be5687e16172946567d5799241c",
+        "bytes": 105814
+      },
+      "latest_final_available": "1.8.11",
+      "arms": {
+        "vulnerable": {
+          "path": "snapshots/pypi/webob/vulnerable-1.8.10.json",
+          "sha256": "94f49eb34b9e83445f620612be24cb8685156d6554a3cbcd7a3bc06398d0665a",
+          "bytes": 30938,
+          "version": "1.8.10",
+          "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+          "wheel_count": 1
+        },
+        "fixed": {
+          "path": "snapshots/pypi/webob/fixed-1.8.11.json",
+          "sha256": "4f5d4b88443de3f4ede321d55707b1baf48e6bfe7d9ac9939d17c766807053c6",
+          "bytes": 15691,
+          "version": "1.8.11",
+          "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+          "wheel_count": 1
+        },
+        "latest": {
+          "path": "snapshots/pypi/webob/latest-1.8.11.json",
+          "sha256": "4f5d4b88443de3f4ede321d55707b1baf48e6bfe7d9ac9939d17c766807053c6",
+          "bytes": 15691,
+          "version": "1.8.11",
+          "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+          "wheel_count": 1
+        }
+      }
+    }
+  },
+  "fixed_selection": {
+    "python-jose": {
+      "vulnerable": "3.3.0",
+      "fixed": "3.4.0",
+      "osv": "GHSA-cjwg-qfpm-7377"
+    },
+    "fastapi": {
+      "vulnerable": "0.109.0",
+      "fixed": "0.109.1",
+      "osv": "PYSEC-2024-38"
+    },
+    "webob": {
+      "vulnerable": "1.8.10",
+      "fixed": "1.8.11",
+      "osv": "PYSEC-2026-3943"
+    }
+  },
+  "notes": [
+    "Git SHAs are checked before resolution/install.",
+    "Pyfa historical requirements.txt is from the parent of its 2026-07-31 removal commit."
+  ]
+}

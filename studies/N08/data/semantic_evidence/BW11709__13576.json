@@ -1,0 +1,187 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 17,
+  "bytes": 113964,
+  "control_flow_or_callback_lines": 40,
+  "event": "BW11709",
+  "examples": [
+    {
+      "change": "+",
+      "code": "export class AccountKeysRequest {",
+      "file": "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "// Other keys encrypted by the userkey",
+      "file": "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "userKeyEncryptedAccountPrivateKey: string;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "accountPublicKey: string;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "constructor(userKeyEncryptedAccountPrivateKey: string, accountPublicKey: string) {",
+      "file": "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.userKeyEncryptedAccountPrivateKey = userKeyEncryptedAccountPrivateKey;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.accountPublicKey = accountPublicKey;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { Argon2KdfConfig, KdfConfig, KdfType } from \"@bitwarden/key-management\";",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "export class MasterPasswordUnlockDataRequest {",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "kdfType: KdfType = KdfType.PBKDF2_SHA256;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "kdfIterations: number = 0;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "kdfMemory?: number;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "kdfParallelism?: number;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "email: string;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "masterKeyAuthenticationHash: string;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "masterKeyEncryptedUserKey: string;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "constructor(",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "kdfConfig: KdfConfig,",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "email: string,",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "masterKeyAuthenticationHash: string,",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "masterKeyEncryptedUserKey: string,",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": ") {",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.kdfType = kdfConfig.kdfType;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.kdfIterations = kdfConfig.iterations;",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (kdfConfig.kdfType === KdfType.Argon2id) {",
+      "file": "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:47.274425+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+  "noncomment_nonimport_changed_lines": 267,
+  "pr": 13576,
+  "repository": "bitwarden/clients",
+  "sha256": "82532b0a96b4508384260b59d9144836f99c0784809dced0bea8186ec8a59b61",
+  "target_code_changed_lines": 359,
+  "target_files": [
+    "apps/web/src/app/key-management/key-rotation/request/account-keys.request.ts",
+    "apps/web/src/app/key-management/key-rotation/request/master-password-unlock-data.request.ts",
+    "apps/web/src/app/key-management/key-rotation/request/rotate-user-account-keys.request.ts",
+    "apps/web/src/app/key-management/key-rotation/request/unlock-data.request.ts",
+    "apps/web/src/app/key-management/key-rotation/request/userdata.request.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation-api.service.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.spec.ts",
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/13576.patch"
+}

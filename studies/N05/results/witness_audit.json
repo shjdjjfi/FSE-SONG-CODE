@@ -1,0 +1,1140 @@
+[
+  {
+    "id": "54004c2631eefe66",
+    "crate": "axum",
+    "version": "0.8.4",
+    "path": "src/extract/ws.rs",
+    "line": 602,
+    "source_url": "https://docs.rs/crate/axum/0.8.4/source/src/extract/ws.rs",
+    "archive_sha256": "021e862c184ae977658b36c4500f7feac3221ca5da43e3f25bd04ab6c79a29b5",
+    "docs_rs_metadata": {
+      "all-features": true
+    },
+    "candidate_feature_names": [
+      "__private",
+      "__private_docs",
+      "default",
+      "form",
+      "http1",
+      "http2",
+      "json",
+      "macros",
+      "matched-path",
+      "multipart",
+      "original-uri",
+      "query",
+      "tokio",
+      "tower-log",
+      "tracing",
+      "ws"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "572:     }\n573: }\n574: \n575: /// UTF-8 wrapper for [Bytes].\n576: ///\n577: /// An [Utf8Bytes] is always guaranteed to contain valid UTF-8.\n578: #[derive(Debug, Clone, PartialEq, Eq, Default)]\n579: pub struct Utf8Bytes(ts::Utf8Bytes);\n580: \n581: impl Utf8Bytes {\n582:     /// Creates from a static str.\n583:     #[inline]\n584:     pub const fn from_static(str: &'static str) -> Self {\n585:         Self(ts::Utf8Bytes::from_static(str))\n586:     }\n587: \n588:     /// Returns as a string slice.\n589:     #[inline]\n590:     pub fn as_str(&self) -> &str {\n591:         self.0.as_str()\n592:     }\n593: \n594:     fn into_tungstenite(self) -> ts::Utf8Bytes {\n595:         self.0\n596:     }\n597: }\n598: \n599: impl std::ops::Deref for Utf8Bytes {\n600:     type Target = str;\n601: \n602:     /// ```\n603:     /// /// Example fn that takes a str slice\n604:     /// fn a(s: &str) {}\n605:     ///\n606:     /// let data = axum::extract::ws::Utf8Bytes::from_static(\"foo123\");\n607:     ///\n608:     /// // auto-deref as arg\n609:     /// a(&data);\n610:     ///\n611:     /// // deref to str methods\n612:     /// assert_eq!(data.len(), 6);",
+    "compiled_rustdoc_example": "/// Example fn that takes a str slice\nfn a(s: &str) {}\n\nlet data = axum::extract::ws::Utf8Bytes::from_static(\"foo123\");\n\n// auto-deref as arg\na(&data);\n\n// deref to str methods\nassert_eq!(data.len(), 6);",
+    "visible_rustdoc_example": "/// Example fn that takes a str slice\nfn a(s: &str) {}\n\nlet data = axum::extract::ws::Utf8Bytes::from_static(\"foo123\");\n\n// auto-deref as arg\na(&data);\n\n// deref to str methods\nassert_eq!(data.len(), 6);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "664dca3e05a99f5b",
+    "crate": "axum",
+    "version": "0.8.4",
+    "path": "src/extract/ws.rs",
+    "line": 677,
+    "source_url": "https://docs.rs/crate/axum/0.8.4/source/src/extract/ws.rs",
+    "archive_sha256": "021e862c184ae977658b36c4500f7feac3221ca5da43e3f25bd04ab6c79a29b5",
+    "docs_rs_metadata": {
+      "all-features": true
+    },
+    "candidate_feature_names": [
+      "__private",
+      "__private_docs",
+      "default",
+      "form",
+      "http1",
+      "http2",
+      "json",
+      "macros",
+      "matched-path",
+      "multipart",
+      "original-uri",
+      "query",
+      "tokio",
+      "tower-log",
+      "tracing",
+      "ws"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "647:     fn from(s: String) -> Self {\n648:         Self(s.into())\n649:     }\n650: }\n651: \n652: impl From<&str> for Utf8Bytes {\n653:     #[inline]\n654:     fn from(s: &str) -> Self {\n655:         Self(s.into())\n656:     }\n657: }\n658: \n659: impl From<&String> for Utf8Bytes {\n660:     #[inline]\n661:     fn from(s: &String) -> Self {\n662:         Self(s.into())\n663:     }\n664: }\n665: \n666: impl From<Utf8Bytes> for Bytes {\n667:     #[inline]\n668:     fn from(Utf8Bytes(bytes): Utf8Bytes) -> Self {\n669:         bytes.into()\n670:     }\n671: }\n672: \n673: impl<T> PartialEq<T> for Utf8Bytes\n674: where\n675:     for<'a> &'a str: PartialEq<T>,\n676: {\n677:     /// ```\n678:     /// let payload = axum::extract::ws::Utf8Bytes::from_static(\"foo123\");\n679:     /// assert_eq!(payload, \"foo123\");\n680:     /// assert_eq!(payload, \"foo123\".to_string());\n681:     /// assert_eq!(payload, &\"foo123\".to_string());\n682:     /// assert_eq!(payload, std::borrow::Cow::from(\"foo123\"));\n683:     /// ```\n684:     #[inline]\n685:     fn eq(&self, other: &T) -> bool {\n686:         self.as_str() == *other\n687:     }",
+    "compiled_rustdoc_example": "let payload = axum::extract::ws::Utf8Bytes::from_static(\"foo123\");\nassert_eq!(payload, \"foo123\");\nassert_eq!(payload, \"foo123\".to_string());\nassert_eq!(payload, &\"foo123\".to_string());\nassert_eq!(payload, std::borrow::Cow::from(\"foo123\"));",
+    "visible_rustdoc_example": "let payload = axum::extract::ws::Utf8Bytes::from_static(\"foo123\");\nassert_eq!(payload, \"foo123\");\nassert_eq!(payload, \"foo123\".to_string());\nassert_eq!(payload, &\"foo123\".to_string());\nassert_eq!(payload, std::borrow::Cow::from(\"foo123\"));",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "b74f305275415e6b",
+    "crate": "clap",
+    "version": "4.5.40",
+    "path": "src/_derive/mod.rs",
+    "line": 382,
+    "source_url": "https://docs.rs/crate/clap/4.5.40/source/src/_derive/mod.rs",
+    "archive_sha256": "40b6887a1d8685cebccf115538db5c0efe625ccac9696ad45c409d96566e910f",
+    "docs_rs_metadata": {
+      "features": [
+        "unstable-doc"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--generate-link-to-definition"
+      ]
+    },
+    "candidate_feature_names": [
+      "cargo",
+      "color",
+      "debug",
+      "default",
+      "deprecated",
+      "derive",
+      "env",
+      "error-context",
+      "help",
+      "std",
+      "string",
+      "suggestions",
+      "unicode",
+      "unstable-derive-ui-tests",
+      "unstable-doc",
+      "unstable-ext",
+      "unstable-markdown",
+      "unstable-styles",
+      "unstable-v5",
+      "usage",
+      "wrap_help"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "352: //! ```\n353: //!\n354: //! For convenience, doc comments can be used instead of raw methods\n355: //! (this example works exactly like the one above):\n356: //!\n357: //! ```rust\n358: //! # use clap::Parser;\n359: //!\n360: //! #[derive(Parser)]\n361: //! /// I am a program and I work, just pass `-h`\n362: //! struct Foo {\n363: //!     /// Pass `-h` and you'll see me!\n364: //!     bar: String,\n365: //! }\n366: //! ```\n367: //!\n368: //! <div class=\"warning\">\n369: //!\n370: //! **NOTE:** Attributes have priority over doc comments!\n371: //!\n372: //! **Top level doc comments always generate `Command::about/long_about` calls!**\n373: //! If you really want to use the `Command::about/long_about` methods (you likely don't),\n374: //! use the `about` / `long_about` attributes to override the calls generated from\n375: //! the doc comment.  To clear `long_about`, you can use\n376: //! `#[command(long_about = None)]`.\n377: //!\n378: //! </div>\n379: //!\n380: //! ### Pre-processing\n381: //!\n382: //! ```rust\n383: //! # use clap::Parser;\n384: //! #[derive(Parser)]\n385: //! /// Hi there, I'm Robo!\n386: //! ///\n387: //! /// I like beeping, stumbling, eating your electricity,\n388: //! /// and making records of you singing in a shower.\n389: //! /// Pay up, or I'll upload it to youtube!\n390: //! struct Robo {\n391: //!     /// Call my brother SkyNet.\n392: //!     ///",
+    "compiled_rustdoc_example": "use clap::Parser;\n#[derive(Parser)]\n/// Hi there, I'm Robo!\n///\n/// I like beeping, stumbling, eating your electricity,\n/// and making records of you singing in a shower.\n/// Pay up, or I'll upload it to youtube!\nstruct Robo {\n    /// Call my brother SkyNet.\n    ///\n    /// I am artificial superintelligence. I won't rest\n    /// until I'll have destroyed humanity. Enjoy your\n    /// pathetic existence, you mere mortals.\n    #[arg(long, action)]\n    kill_all_humans: bool,\n}",
+    "visible_rustdoc_example": "#[derive(Parser)]\n/// Hi there, I'm Robo!\n///\n/// I like beeping, stumbling, eating your electricity,\n/// and making records of you singing in a shower.\n/// Pay up, or I'll upload it to youtube!\nstruct Robo {\n    /// Call my brother SkyNet.\n    ///\n    /// I am artificial superintelligence. I won't rest\n    /// until I'll have destroyed humanity. Enjoy your\n    /// pathetic existence, you mere mortals.\n    #[arg(long, action)]\n    kill_all_humans: bool,\n}",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "febca273195721c4",
+    "crate": "clap",
+    "version": "4.5.40",
+    "path": "src/_derive/mod.rs",
+    "line": 343,
+    "source_url": "https://docs.rs/crate/clap/4.5.40/source/src/_derive/mod.rs",
+    "archive_sha256": "40b6887a1d8685cebccf115538db5c0efe625ccac9696ad45c409d96566e910f",
+    "docs_rs_metadata": {
+      "features": [
+        "unstable-doc"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--generate-link-to-definition"
+      ]
+    },
+    "candidate_feature_names": [
+      "cargo",
+      "color",
+      "debug",
+      "default",
+      "deprecated",
+      "derive",
+      "env",
+      "error-context",
+      "help",
+      "std",
+      "string",
+      "suggestions",
+      "unicode",
+      "unstable-derive-ui-tests",
+      "unstable-doc",
+      "unstable-ext",
+      "unstable-markdown",
+      "unstable-styles",
+      "unstable-v5",
+      "usage",
+      "wrap_help"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "313: //! | `bool`                | flag                                                 | `.action(ArgAction::SetTrue)`                               |       |\n314: //! | `Option<T>`           | optional argument                                    | `.action(ArgAction::Set).required(false)`                   |       |\n315: //! | `Option<Option<T>>`   | optional value for optional argument                 | `.action(ArgAction::Set).required(false).num_args(0..=1)`   |       |\n316: //! | `T`                   | required argument                                    | `.action(ArgAction::Set).required(!has_default)`            |       |\n317: //! | `Vec<T>`              | `0..` occurrences of argument                        | `.action(ArgAction::Append).required(false)`  |       |\n318: //! | `Option<Vec<T>>`      | `0..` occurrences of argument                        | `.action(ArgAction::Append).required(false)`  |       |\n319: //! | `Vec<Vec<T>>`         | `0..` occurrences of argument, grouped by occurrence | `.action(ArgAction::Append).required(false)`  | requires `unstable-v5` |\n320: //! | `Option<Vec<Vec<T>>>` | `0..` occurrences of argument, grouped by occurrence | `.action(ArgAction::Append).required(false)`  | requires `unstable-v5` |\n321: //!\n322: //! In addition, [`.value_parser(value_parser!(T))`][crate::value_parser!] is called for each\n323: //! field.\n324: //!\n325: //! Notes:\n326: //! - For custom type behavior, you can override the implied attributes/settings and/or set additional ones\n327: //!   - To force any inferred type (like `Vec<T>`) to be treated as `T`, you can refer to the type\n328: //!     by another means, like using `std::vec::Vec` instead of `Vec`.  For improving this, see\n329: //!     [#4626](https://github.com/clap-rs/clap/issues/4626).\n330: //! - `Option<Vec<T>>` and `Option<Vec<Vec<T>>` will be `None` instead of `vec![]` if no arguments are provided.\n331: //!   - This gives the user some flexibility in designing their argument, like with `num_args(0..)`\n332: //! - `Vec<Vec<T>>` will need [`Arg::num_args`][crate::Arg::num_args] set to be meaningful\n333: //!\n334: //! ## Doc Comments\n335: //!\n336: //! In clap, help messages for the whole binary can be specified\n337: //! via [`Command::about`][crate::Command::about] and [`Command::long_about`][crate::Command::long_about] while help messages\n338: //! for individual arguments can be specified via [`Arg::help`][crate::Arg::help] and [`Arg::long_help`][crate::Arg::long_help].\n339: //!\n340: //! `long_*` variants are used when user calls the program with\n341: //! `--help` and \"short\" variants are used with `-h` flag.\n342: //!\n343: //! ```rust\n344: //! # use clap::Parser;\n345: //!\n346: //! #[derive(Parser)]\n347: //! #[command(about = \"I am a program and I work, just pass `-h`\", long_about = None)]\n348: //! struct Foo {\n349: //!     #[arg(short, help = \"Pass `-h` and you'll see me!\")]\n350: //!     bar: String,\n351: //! }\n352: //! ```\n353: //!",
+    "compiled_rustdoc_example": "use clap::Parser;\n\n#[derive(Parser)]\n#[command(about = \"I am a program and I work, just pass `-h`\", long_about = None)]\nstruct Foo {\n    #[arg(short, help = \"Pass `-h` and you'll see me!\")]\n    bar: String,\n}",
+    "visible_rustdoc_example": "\n#[derive(Parser)]\n#[command(about = \"I am a program and I work, just pass `-h`\", long_about = None)]\nstruct Foo {\n    #[arg(short, help = \"Pass `-h` and you'll see me!\")]\n    bar: String,\n}",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "a1a1a5743fad4e89",
+    "crate": "clap",
+    "version": "4.5.40",
+    "path": "src/_derive/mod.rs",
+    "line": 357,
+    "source_url": "https://docs.rs/crate/clap/4.5.40/source/src/_derive/mod.rs",
+    "archive_sha256": "40b6887a1d8685cebccf115538db5c0efe625ccac9696ad45c409d96566e910f",
+    "docs_rs_metadata": {
+      "features": [
+        "unstable-doc"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--generate-link-to-definition"
+      ]
+    },
+    "candidate_feature_names": [
+      "cargo",
+      "color",
+      "debug",
+      "default",
+      "deprecated",
+      "derive",
+      "env",
+      "error-context",
+      "help",
+      "std",
+      "string",
+      "suggestions",
+      "unicode",
+      "unstable-derive-ui-tests",
+      "unstable-doc",
+      "unstable-ext",
+      "unstable-markdown",
+      "unstable-styles",
+      "unstable-v5",
+      "usage",
+      "wrap_help"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "327: //!   - To force any inferred type (like `Vec<T>`) to be treated as `T`, you can refer to the type\n328: //!     by another means, like using `std::vec::Vec` instead of `Vec`.  For improving this, see\n329: //!     [#4626](https://github.com/clap-rs/clap/issues/4626).\n330: //! - `Option<Vec<T>>` and `Option<Vec<Vec<T>>` will be `None` instead of `vec![]` if no arguments are provided.\n331: //!   - This gives the user some flexibility in designing their argument, like with `num_args(0..)`\n332: //! - `Vec<Vec<T>>` will need [`Arg::num_args`][crate::Arg::num_args] set to be meaningful\n333: //!\n334: //! ## Doc Comments\n335: //!\n336: //! In clap, help messages for the whole binary can be specified\n337: //! via [`Command::about`][crate::Command::about] and [`Command::long_about`][crate::Command::long_about] while help messages\n338: //! for individual arguments can be specified via [`Arg::help`][crate::Arg::help] and [`Arg::long_help`][crate::Arg::long_help].\n339: //!\n340: //! `long_*` variants are used when user calls the program with\n341: //! `--help` and \"short\" variants are used with `-h` flag.\n342: //!\n343: //! ```rust\n344: //! # use clap::Parser;\n345: //!\n346: //! #[derive(Parser)]\n347: //! #[command(about = \"I am a program and I work, just pass `-h`\", long_about = None)]\n348: //! struct Foo {\n349: //!     #[arg(short, help = \"Pass `-h` and you'll see me!\")]\n350: //!     bar: String,\n351: //! }\n352: //! ```\n353: //!\n354: //! For convenience, doc comments can be used instead of raw methods\n355: //! (this example works exactly like the one above):\n356: //!\n357: //! ```rust\n358: //! # use clap::Parser;\n359: //!\n360: //! #[derive(Parser)]\n361: //! /// I am a program and I work, just pass `-h`\n362: //! struct Foo {\n363: //!     /// Pass `-h` and you'll see me!\n364: //!     bar: String,\n365: //! }\n366: //! ```\n367: //!",
+    "compiled_rustdoc_example": "use clap::Parser;\n\n#[derive(Parser)]\n/// I am a program and I work, just pass `-h`\nstruct Foo {\n    /// Pass `-h` and you'll see me!\n    bar: String,\n}",
+    "visible_rustdoc_example": "\n#[derive(Parser)]\n/// I am a program and I work, just pass `-h`\nstruct Foo {\n    /// Pass `-h` and you'll see me!\n    bar: String,\n}",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "f76f735b2f324842",
+    "crate": "strum",
+    "version": "0.27.1",
+    "path": "src/lib.rs",
+    "line": 163,
+    "source_url": "https://docs.rs/crate/strum/0.27.1/source/src/lib.rs",
+    "archive_sha256": "f64def088c51c9510a8579e3c5d67c65349dcf755e5479ad3d010aa6454e2c32",
+    "docs_rs_metadata": {
+      "features": [
+        "derive"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "derive",
+      "std"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "133: ///\n134: /// #[derive(PartialEq, Eq, Debug, EnumMessage)]\n135: /// enum Pet {\n136: ///     #[strum(message=\"I have a dog\")]\n137: ///     #[strum(detailed_message=\"My dog's name is Spots\")]\n138: ///     Dog,\n139: ///     /// I am documented.\n140: ///     #[strum(message=\"I don't have a cat\")]\n141: ///     Cat,\n142: /// }\n143: ///\n144: /// let my_pet = Pet::Dog;\n145: /// assert_eq!(\"I have a dog\", my_pet.get_message().unwrap());\n146: /// ```\n147: pub trait EnumMessage {\n148:     fn get_message(&self) -> Option<&'static str>;\n149:     fn get_detailed_message(&self) -> Option<&'static str>;\n150: \n151:     /// Get the doc comment associated with a variant if it exists.\n152:     fn get_documentation(&self) -> Option<&'static str>;\n153:     fn get_serializations(&self) -> &'static [&'static str];\n154: }\n155: \n156: /// `EnumProperty` is a trait that makes it possible to store additional information\n157: /// with enum variants. This trait is designed to be used with the macro of the same\n158: /// name in the `strum_macros` crate. Currently, the string, integer and bool literals\n159: /// are supported in attributes.\n160: ///\n161: /// # Example\n162: ///\n163: /// ```rust\n164: /// # use std::fmt::Debug;\n165: /// // You need to bring the type into scope to use it!!!\n166: /// use strum::EnumProperty;\n167: ///\n168: /// #[derive(PartialEq, Eq, Debug, EnumProperty)]\n169: /// enum Class {\n170: ///     #[strum(props(Teacher=\"Ms.Frizzle\", Room=\"201\", students=16, mandatory=true))]\n171: ///     History,\n172: ///     #[strum(props(Teacher=\"Mr.Smith\"))]\n173: ///     #[strum(props(Room=\"103\", students=10))]",
+    "compiled_rustdoc_example": "use std::fmt::Debug;\n// You need to bring the type into scope to use it!!!\nuse strum::EnumProperty;\n\n#[derive(PartialEq, Eq, Debug, EnumProperty)]\nenum Class {\n    #[strum(props(Teacher=\"Ms.Frizzle\", Room=\"201\", students=16, mandatory=true))]\n    History,\n    #[strum(props(Teacher=\"Mr.Smith\"))]\n    #[strum(props(Room=\"103\", students=10))]\n    Mathematics,\n    #[strum(props(Time=\"2:30\", mandatory=true))]\n    Science,\n}\n\nlet history = Class::History;\nassert_eq!(\"Ms.Frizzle\", history.get_str(\"Teacher\").unwrap());\nassert_eq!(16, history.get_int(\"students\").unwrap());\nassert!(history.get_bool(\"mandatory\").unwrap());",
+    "visible_rustdoc_example": "// You need to bring the type into scope to use it!!!\nuse strum::EnumProperty;\n\n#[derive(PartialEq, Eq, Debug, EnumProperty)]\nenum Class {\n    #[strum(props(Teacher=\"Ms.Frizzle\", Room=\"201\", students=16, mandatory=true))]\n    History,\n    #[strum(props(Teacher=\"Mr.Smith\"))]\n    #[strum(props(Room=\"103\", students=10))]\n    Mathematics,\n    #[strum(props(Time=\"2:30\", mandatory=true))]\n    Science,\n}\n\nlet history = Class::History;\nassert_eq!(\"Ms.Frizzle\", history.get_str(\"Teacher\").unwrap());\nassert_eq!(16, history.get_int(\"students\").unwrap());\nassert!(history.get_bool(\"mandatory\").unwrap());",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "4479ab5fc6d4ba3f",
+    "crate": "strum",
+    "version": "0.27.1",
+    "path": "src/lib.rs",
+    "line": 74,
+    "source_url": "https://docs.rs/crate/strum/0.27.1/source/src/lib.rs",
+    "archive_sha256": "f64def088c51c9510a8579e3c5d67c65349dcf755e5479ad3d010aa6454e2c32",
+    "docs_rs_metadata": {
+      "features": [
+        "derive"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "derive",
+      "std"
+    ],
+    "nearby_source_mentions_feature_config": true,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "44: }\n45: \n46: #[cfg(feature = \"std\")]\n47: impl std::fmt::Display for ParseError {\n48:     fn fmt(&self, f: &mut std::fmt::Formatter) -> Result<(), std::fmt::Error> {\n49:         // We could use our macro here, but this way we don't take a dependency on the\n50:         // macros crate.\n51:         match self {\n52:             ParseError::VariantNotFound => write!(f, \"Matching variant not found\"),\n53:         }\n54:     }\n55: }\n56: \n57: #[cfg(feature = \"std\")]\n58: impl std::error::Error for ParseError {\n59:     fn description(&self) -> &str {\n60:         match self {\n61:             ParseError::VariantNotFound => {\n62:                 \"Unable to find a variant of the given enum matching the string given. Matching \\\n63:                  can be extended with the Serialize attribute and is case sensitive.\"\n64:             }\n65:         }\n66:     }\n67: }\n68: \n69: /// This trait designates that an `Enum` can be iterated over. It can\n70: /// be auto generated using the [`EnumIter`](derive.EnumIter.html) derive macro.\n71: ///\n72: /// # Example\n73: ///\n74: /// ```rust\n75: /// # use std::fmt::Debug;\n76: /// // You need to bring the type into scope to use it!!!\n77: /// use strum::{EnumIter, IntoEnumIterator};\n78: ///\n79: /// #[derive(EnumIter, Debug)]\n80: /// enum Color {\n81: ///     Red,\n82: ///     Green { range: usize },\n83: ///     Blue(usize),\n84: ///     Yellow,",
+    "compiled_rustdoc_example": "use std::fmt::Debug;\n// You need to bring the type into scope to use it!!!\nuse strum::{EnumIter, IntoEnumIterator};\n\n#[derive(EnumIter, Debug)]\nenum Color {\n    Red,\n    Green { range: usize },\n    Blue(usize),\n    Yellow,\n}\n\n// Iterate over the items in an enum and perform some function on them.\nfn generic_iterator<E, F>(pred: F)\nwhere\n    E: IntoEnumIterator,\n    F: Fn(E),\n{\n    for e in E::iter() {\n        pred(e)\n    }\n}\n\ngeneric_iterator::<Color, _>(|color| println!(\"{:?}\", color));",
+    "visible_rustdoc_example": "// You need to bring the type into scope to use it!!!\nuse strum::{EnumIter, IntoEnumIterator};\n\n#[derive(EnumIter, Debug)]\nenum Color {\n    Red,\n    Green { range: usize },\n    Blue(usize),\n    Yellow,\n}\n\n// Iterate over the items in an enum and perform some function on them.\nfn generic_iterator<E, F>(pred: F)\nwhere\n    E: IntoEnumIterator,\n    F: Fn(E),\n{\n    for e in E::iter() {\n        pred(e)\n    }\n}\n\ngeneric_iterator::<Color, _>(|color| println!(\"{:?}\", color));",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "59c54a68094a4178",
+    "crate": "strum",
+    "version": "0.27.1",
+    "path": "src/lib.rs",
+    "line": 129,
+    "source_url": "https://docs.rs/crate/strum/0.27.1/source/src/lib.rs",
+    "archive_sha256": "f64def088c51c9510a8579e3c5d67c65349dcf755e5479ad3d010aa6454e2c32",
+    "docs_rs_metadata": {
+      "features": [
+        "derive"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "derive",
+      "std"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "99: /// ```\n100: pub trait IntoEnumIterator: Sized {\n101:     type Iterator: Iterator<Item = Self>\n102:         + Clone\n103:         + DoubleEndedIterator\n104:         + ExactSizeIterator\n105:         + FusedIterator;\n106: \n107:     fn iter() -> Self::Iterator;\n108: }\n109: \n110: pub trait VariantIterator: Sized {\n111:     type Iterator: Iterator<Item = Self>;\n112: \n113:     fn iter() -> Self::Iterator;\n114: }\n115: \n116: pub trait VariantMetadata {\n117:     const VARIANT_COUNT: usize;\n118:     const VARIANT_NAMES: &'static [&'static str];\n119: \n120:     fn variant_name(&self) -> &'static str;\n121: }\n122: \n123: /// Associates additional pieces of information with an Enum. This can be\n124: /// autoimplemented by deriving `EnumMessage` and annotating your variants with\n125: /// `#[strum(message=\"...\")]`.\n126: ///\n127: /// # Example\n128: ///\n129: /// ```rust\n130: /// # use std::fmt::Debug;\n131: /// // You need to bring the type into scope to use it!!!\n132: /// use strum::EnumMessage;\n133: ///\n134: /// #[derive(PartialEq, Eq, Debug, EnumMessage)]\n135: /// enum Pet {\n136: ///     #[strum(message=\"I have a dog\")]\n137: ///     #[strum(detailed_message=\"My dog's name is Spots\")]\n138: ///     Dog,\n139: ///     /// I am documented.",
+    "compiled_rustdoc_example": "use std::fmt::Debug;\n// You need to bring the type into scope to use it!!!\nuse strum::EnumMessage;\n\n#[derive(PartialEq, Eq, Debug, EnumMessage)]\nenum Pet {\n    #[strum(message=\"I have a dog\")]\n    #[strum(detailed_message=\"My dog's name is Spots\")]\n    Dog,\n    /// I am documented.\n    #[strum(message=\"I don't have a cat\")]\n    Cat,\n}\n\nlet my_pet = Pet::Dog;\nassert_eq!(\"I have a dog\", my_pet.get_message().unwrap());",
+    "visible_rustdoc_example": "// You need to bring the type into scope to use it!!!\nuse strum::EnumMessage;\n\n#[derive(PartialEq, Eq, Debug, EnumMessage)]\nenum Pet {\n    #[strum(message=\"I have a dog\")]\n    #[strum(detailed_message=\"My dog's name is Spots\")]\n    Dog,\n    /// I am documented.\n    #[strum(message=\"I don't have a cat\")]\n    Cat,\n}\n\nlet my_pet = Pet::Dog;\nassert_eq!(\"I have a dog\", my_pet.get_message().unwrap());",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "43d3d6bbc0f68d92",
+    "crate": "tinyvec",
+    "version": "1.9.0",
+    "path": "src/slicevec.rs",
+    "line": 647,
+    "source_url": "https://docs.rs/crate/tinyvec/1.9.0/source/src/slicevec.rs",
+    "archive_sha256": "09b3661f17e86524eccd4371ab0429194e0d7c008abb45f7a7495b1719463c71",
+    "docs_rs_metadata": {
+      "features": [
+        "alloc",
+        "std",
+        "grab_spare_slice",
+        "latest_stable_rust",
+        "serde",
+        "borsh"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docs_rs"
+      ]
+    },
+    "candidate_feature_names": [
+      "alloc",
+      "debugger_visualizer",
+      "default",
+      "experimental_write_impl",
+      "grab_spare_slice",
+      "latest_stable_rust",
+      "nightly_slice_partition_dedup",
+      "real_blackbox",
+      "rustc_1_40",
+      "rustc_1_55",
+      "rustc_1_57",
+      "rustc_1_61",
+      "std"
+    ],
+    "nearby_source_mentions_feature_config": true,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "617:       }\n618:     } else {\n619:       self.len = self.len.min(new_len);\n620:     }\n621:   }\n622: \n623:   /// Wraps a slice, using the given length as the starting length.\n624:   ///\n625:   /// If you want to use the whole length of the slice, you can just use the\n626:   /// `From` impl.\n627:   ///\n628:   /// ## Failure\n629:   ///\n630:   /// If the given length is greater than the length of the slice you get\n631:   /// `None`.\n632:   #[inline]\n633:   pub fn try_from_slice_len(data: &'s mut [T], len: usize) -> Option<Self> {\n634:     if len <= data.len() {\n635:       Some(Self { data, len })\n636:     } else {\n637:       None\n638:     }\n639:   }\n640: }\n641: \n642: #[cfg(feature = \"grab_spare_slice\")]\n643: impl<'s, T> SliceVec<'s, T> {\n644:   /// Obtain the shared slice of the array _after_ the active memory.\n645:   ///\n646:   /// ## Example\n647:   /// ```rust\n648:   /// # use tinyvec::*;\n649:   /// let mut arr = [0; 4];\n650:   /// let mut sv = SliceVec::from_slice_len(&mut arr, 0);\n651:   /// assert_eq!(sv.grab_spare_slice().len(), 4);\n652:   /// sv.push(10);\n653:   /// sv.push(11);\n654:   /// sv.push(12);\n655:   /// sv.push(13);\n656:   /// assert_eq!(sv.grab_spare_slice().len(), 0);\n657:   /// ```",
+    "compiled_rustdoc_example": "use tinyvec::*;\nlet mut arr = [0; 4];\nlet mut sv = SliceVec::from_slice_len(&mut arr, 0);\nassert_eq!(sv.grab_spare_slice().len(), 4);\nsv.push(10);\nsv.push(11);\nsv.push(12);\nsv.push(13);\nassert_eq!(sv.grab_spare_slice().len(), 0);",
+    "visible_rustdoc_example": "let mut arr = [0; 4];\nlet mut sv = SliceVec::from_slice_len(&mut arr, 0);\nassert_eq!(sv.grab_spare_slice().len(), 4);\nsv.push(10);\nsv.push(11);\nsv.push(12);\nsv.push(13);\nassert_eq!(sv.grab_spare_slice().len(), 0);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "57ff1aff71a9024b",
+    "crate": "tinyvec",
+    "version": "1.9.0",
+    "path": "src/arrayvec.rs",
+    "line": 1188,
+    "source_url": "https://docs.rs/crate/tinyvec/1.9.0/source/src/arrayvec.rs",
+    "archive_sha256": "09b3661f17e86524eccd4371ab0429194e0d7c008abb45f7a7495b1719463c71",
+    "docs_rs_metadata": {
+      "features": [
+        "alloc",
+        "std",
+        "grab_spare_slice",
+        "latest_stable_rust",
+        "serde",
+        "borsh"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docs_rs"
+      ]
+    },
+    "candidate_feature_names": [
+      "alloc",
+      "debugger_visualizer",
+      "default",
+      "experimental_write_impl",
+      "grab_spare_slice",
+      "latest_stable_rust",
+      "nightly_slice_partition_dedup",
+      "real_blackbox",
+      "rustc_1_40",
+      "rustc_1_55",
+      "rustc_1_57",
+      "rustc_1_61",
+      "std"
+    ],
+    "nearby_source_mentions_feature_config": true,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "1158:   ///\n1159:   /// This method in particular allows to create values for statics:\n1160:   ///\n1161:   /// ```rust\n1162:   /// # use tinyvec::ArrayVec;\n1163:   /// static DATA: ArrayVec<[u8; 5]> = ArrayVec::from_array_empty([0; 5]);\n1164:   /// assert_eq!(DATA.len(), 0);\n1165:   /// ```\n1166:   ///\n1167:   /// But of course it is just an normal empty `ArrayVec`:\n1168:   ///\n1169:   /// ```rust\n1170:   /// # use tinyvec::ArrayVec;\n1171:   /// let mut data = ArrayVec::from_array_empty([1, 2, 3, 4]);\n1172:   /// assert_eq!(&data[..], &[]);\n1173:   /// data.push(42);\n1174:   /// assert_eq!(&data[..], &[42]);\n1175:   /// ```\n1176:   #[inline]\n1177:   #[must_use]\n1178:   pub const fn from_array_empty(data: A) -> Self {\n1179:     Self { data, len: 0 }\n1180:   }\n1181: }\n1182: \n1183: #[cfg(feature = \"grab_spare_slice\")]\n1184: impl<A: Array> ArrayVec<A> {\n1185:   /// Obtain the shared slice of the array _after_ the active memory.\n1186:   ///\n1187:   /// ## Example\n1188:   /// ```rust\n1189:   /// # use tinyvec::*;\n1190:   /// let mut av = array_vec!([i32; 4]);\n1191:   /// assert_eq!(av.grab_spare_slice().len(), 4);\n1192:   /// av.push(10);\n1193:   /// av.push(11);\n1194:   /// av.push(12);\n1195:   /// av.push(13);\n1196:   /// assert_eq!(av.grab_spare_slice().len(), 0);\n1197:   /// ```\n1198:   #[inline(always)]",
+    "compiled_rustdoc_example": "use tinyvec::*;\nlet mut av = array_vec!([i32; 4]);\nassert_eq!(av.grab_spare_slice().len(), 4);\nav.push(10);\nav.push(11);\nav.push(12);\nav.push(13);\nassert_eq!(av.grab_spare_slice().len(), 0);",
+    "visible_rustdoc_example": "let mut av = array_vec!([i32; 4]);\nassert_eq!(av.grab_spare_slice().len(), 4);\nav.push(10);\nav.push(11);\nav.push(12);\nav.push(13);\nassert_eq!(av.grab_spare_slice().len(), 0);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "21c6a67eeaea12a8",
+    "crate": "tinyvec",
+    "version": "1.9.0",
+    "path": "src/tinyvec.rs",
+    "line": 845,
+    "source_url": "https://docs.rs/crate/tinyvec/1.9.0/source/src/tinyvec.rs",
+    "archive_sha256": "09b3661f17e86524eccd4371ab0429194e0d7c008abb45f7a7495b1719463c71",
+    "docs_rs_metadata": {
+      "features": [
+        "alloc",
+        "std",
+        "grab_spare_slice",
+        "latest_stable_rust",
+        "serde",
+        "borsh"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "docs_rs"
+      ]
+    },
+    "candidate_feature_names": [
+      "alloc",
+      "debugger_visualizer",
+      "default",
+      "experimental_write_impl",
+      "grab_spare_slice",
+      "latest_stable_rust",
+      "nightly_slice_partition_dedup",
+      "real_blackbox",
+      "rustc_1_40",
+      "rustc_1_55",
+      "rustc_1_57",
+      "rustc_1_61",
+      "std"
+    ],
+    "nearby_source_mentions_feature_config": true,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "815:       let (dedup, _) = self.as_mut_slice().partition_dedup_by(same_bucket);\n816:       dedup.len()\n817:     };\n818:     self.truncate(len);\n819:   }\n820: \n821:   /// De-duplicates the vec according to the key selector given.\n822:   #[cfg(feature = \"nightly_slice_partition_dedup\")]\n823:   #[inline(always)]\n824:   pub fn dedup_by_key<F, K>(&mut self, mut key: F)\n825:   where\n826:     F: FnMut(&mut A::Item) -> K,\n827:     K: PartialEq,\n828:   {\n829:     self.dedup_by(|a, b| key(a) == key(b))\n830:   }\n831: \n832:   /// Creates a draining iterator that removes the specified range in the vector\n833:   /// and yields the removed items.\n834:   ///\n835:   /// **Note: This method has significant performance issues compared to\n836:   /// matching on the TinyVec and then calling drain on the Inline or Heap value\n837:   /// inside. The draining iterator has to branch on every single access. It is\n838:   /// provided for simplicity and compatibility only.**\n839:   ///\n840:   /// ## Panics\n841:   /// * If the start is greater than the end\n842:   /// * If the end is past the edge of the vec.\n843:   ///\n844:   /// ## Example\n845:   /// ```rust\n846:   /// use tinyvec::*;\n847:   /// let mut tv = tiny_vec!([i32; 4] => 1, 2, 3);\n848:   /// let tv2: TinyVec<[i32; 4]> = tv.drain(1..).collect();\n849:   /// assert_eq!(tv.as_slice(), &[1][..]);\n850:   /// assert_eq!(tv2.as_slice(), &[2, 3][..]);\n851:   ///\n852:   /// tv.drain(..);\n853:   /// assert_eq!(tv.as_slice(), &[]);\n854:   /// ```\n855:   #[inline]",
+    "compiled_rustdoc_example": "use tinyvec::*;\nlet mut tv = tiny_vec!([i32; 4] => 1, 2, 3);\nlet tv2: TinyVec<[i32; 4]> = tv.drain(1..).collect();\nassert_eq!(tv.as_slice(), &[1][..]);\nassert_eq!(tv2.as_slice(), &[2, 3][..]);\n\ntv.drain(..);\nassert_eq!(tv.as_slice(), &[]);",
+    "visible_rustdoc_example": "use tinyvec::*;\nlet mut tv = tiny_vec!([i32; 4] => 1, 2, 3);\nlet tv2: TinyVec<[i32; 4]> = tv.drain(1..).collect();\nassert_eq!(tv.as_slice(), &[1][..]);\nassert_eq!(tv2.as_slice(), &[2, 3][..]);\n\ntv.drain(..);\nassert_eq!(tv.as_slice(), &[]);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "81a01fc7b68c2228",
+    "crate": "tokio",
+    "version": "1.45.1",
+    "path": "src/sync/mpsc/bounded.rs",
+    "line": 1292,
+    "source_url": "https://docs.rs/crate/tokio/1.45.1/source/src/sync/mpsc/bounded.rs",
+    "archive_sha256": "75ef51a33ef1da925cea3e4eb122833cb377c61439ca401b770f54902b806779",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ],
+      "rustc-args": [
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "fs",
+      "full",
+      "io-std",
+      "io-util",
+      "macros",
+      "net",
+      "process",
+      "rt",
+      "rt-multi-thread",
+      "signal",
+      "sync",
+      "test-util",
+      "time"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "1262: \n1263:     async fn reserve_inner(&self, n: usize) -> Result<(), SendError<()>> {\n1264:         crate::trace::async_trace_leaf().await;\n1265: \n1266:         if n > self.max_capacity() {\n1267:             return Err(SendError(()));\n1268:         }\n1269:         match self.chan.semaphore().semaphore.acquire(n).await {\n1270:             Ok(()) => Ok(()),\n1271:             Err(_) => Err(SendError(())),\n1272:         }\n1273:     }\n1274: \n1275:     /// Tries to acquire a slot in the channel without waiting for the slot to become\n1276:     /// available.\n1277:     ///\n1278:     /// If the channel is full this function will return [`TrySendError`], otherwise\n1279:     /// if there is a slot available it will return a [`Permit`] that will then allow you\n1280:     /// to [`send`] on the channel with a guaranteed slot. This function is similar to\n1281:     /// [`reserve`] except it does not await for the slot to become available.\n1282:     ///\n1283:     /// Dropping [`Permit`] without sending a message releases the capacity back\n1284:     /// to the channel.\n1285:     ///\n1286:     /// [`Permit`]: Permit\n1287:     /// [`send`]: Permit::send\n1288:     /// [`reserve`]: Sender::reserve\n1289:     ///\n1290:     /// # Examples\n1291:     ///\n1292:     /// ```\n1293:     /// use tokio::sync::mpsc;\n1294:     ///\n1295:     /// #[tokio::main]\n1296:     /// async fn main() {\n1297:     ///     let (tx, mut rx) = mpsc::channel(1);\n1298:     ///\n1299:     ///     // Reserve capacity\n1300:     ///     let permit = tx.try_reserve().unwrap();\n1301:     ///\n1302:     ///     // Trying to send directly on the `tx` will fail due to no",
+    "compiled_rustdoc_example": "use tokio::sync::mpsc;\n\n#[tokio::main]\nasync fn main() {\n    let (tx, mut rx) = mpsc::channel(1);\n\n    // Reserve capacity\n    let permit = tx.try_reserve().unwrap();\n\n    // Trying to send directly on the `tx` will fail due to no\n    // available capacity.\n    assert!(tx.try_send(123).is_err());\n\n    // Trying to reserve an additional slot on the `tx` will\n    // fail because there is no capacity.\n    assert!(tx.try_reserve().is_err());\n\n    // Sending on the permit succeeds\n    permit.send(456);\n\n    // The value sent on the permit is received\n    assert_eq!(rx.recv().await.unwrap(), 456);\n\n}",
+    "visible_rustdoc_example": "use tokio::sync::mpsc;\n\n#[tokio::main]\nasync fn main() {\n    let (tx, mut rx) = mpsc::channel(1);\n\n    // Reserve capacity\n    let permit = tx.try_reserve().unwrap();\n\n    // Trying to send directly on the `tx` will fail due to no\n    // available capacity.\n    assert!(tx.try_send(123).is_err());\n\n    // Trying to reserve an additional slot on the `tx` will\n    // fail because there is no capacity.\n    assert!(tx.try_reserve().is_err());\n\n    // Sending on the permit succeeds\n    permit.send(456);\n\n    // The value sent on the permit is received\n    assert_eq!(rx.recv().await.unwrap(), 456);\n\n}",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "cd28cf9ef0f1f8e2",
+    "crate": "tokio",
+    "version": "1.45.1",
+    "path": "src/time/instant.rs",
+    "line": 43,
+    "source_url": "https://docs.rs/crate/tokio/1.45.1/source/src/time/instant.rs",
+    "archive_sha256": "75ef51a33ef1da925cea3e4eb122833cb377c61439ca401b770f54902b806779",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ],
+      "rustc-args": [
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "fs",
+      "full",
+      "io-std",
+      "io-util",
+      "macros",
+      "net",
+      "process",
+      "rt",
+      "rt-multi-thread",
+      "signal",
+      "sync",
+      "test-util",
+      "time"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "13: ///\n14: /// Note, however, that instants are not guaranteed to be **steady**. In other\n15: /// words, each tick of the underlying clock may not be the same length (e.g.\n16: /// some seconds may be longer than others). An instant may jump forwards or\n17: /// experience time dilation (slow down or speed up), but it will never go\n18: /// backwards.\n19: ///\n20: /// Instants are opaque types that can only be compared to one another. There is\n21: /// no method to get \"the number of seconds\" from an instant. Instead, it only\n22: /// allows measuring the duration between two instants (or comparing two\n23: /// instants).\n24: ///\n25: /// The size of an `Instant` struct may vary depending on the target operating\n26: /// system.\n27: ///\n28: /// # Note\n29: ///\n30: /// This type wraps the inner `std` variant and is used to align the Tokio\n31: /// clock for uses of `now()`. This can be useful for testing where you can\n32: /// take advantage of `time::pause()` and `time::advance()`.\n33: #[derive(Clone, Copy, Eq, PartialEq, PartialOrd, Ord, Hash)]\n34: pub struct Instant {\n35:     std: std::time::Instant,\n36: }\n37: \n38: impl Instant {\n39:     /// Returns an instant corresponding to \"now\".\n40:     ///\n41:     /// # Examples\n42:     ///\n43:     /// ```\n44:     /// use tokio::time::Instant;\n45:     ///\n46:     /// let now = Instant::now();\n47:     /// ```\n48:     pub fn now() -> Instant {\n49:         variant::now()\n50:     }\n51: \n52:     /// Create a `tokio::time::Instant` from a `std::time::Instant`.\n53:     pub fn from_std(std: std::time::Instant) -> Instant {",
+    "compiled_rustdoc_example": "use tokio::time::Instant;\n\nlet now = Instant::now();",
+    "visible_rustdoc_example": "use tokio::time::Instant;\n\nlet now = Instant::now();",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "4de8032810115862",
+    "crate": "tokio",
+    "version": "1.45.1",
+    "path": "src/io/util/async_read_ext.rs",
+    "line": 432,
+    "source_url": "https://docs.rs/crate/tokio/1.45.1/source/src/io/util/async_read_ext.rs",
+    "archive_sha256": "75ef51a33ef1da925cea3e4eb122833cb377c61439ca401b770f54902b806779",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ],
+      "rustc-args": [
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "fs",
+      "full",
+      "io-std",
+      "io-util",
+      "macros",
+      "net",
+      "process",
+      "rt",
+      "rt-multi-thread",
+      "signal",
+      "sync",
+      "test-util",
+      "time"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "402:             fn read_i8(&mut self) -> ReadI8;\n403: \n404:             /// Reads an unsigned 16-bit integer in big-endian order from the\n405:             /// underlying reader.\n406:             ///\n407:             /// Equivalent to:\n408:             ///\n409:             /// ```ignore\n410:             /// async fn read_u16(&mut self) -> io::Result<u16>;\n411:             /// ```\n412:             ///\n413:             /// It is recommended to use a buffered reader to avoid excessive\n414:             /// syscalls.\n415:             ///\n416:             /// # Errors\n417:             ///\n418:             /// This method returns the same errors as [`AsyncReadExt::read_exact`].\n419:             ///\n420:             /// [`AsyncReadExt::read_exact`]: AsyncReadExt::read_exact\n421:             ///\n422:             /// # Cancel safety\n423:             ///\n424:             /// This method is not cancellation safe. If the method is used as the\n425:             /// event in a [`tokio::select!`](crate::select) statement and some\n426:             /// other branch completes first, then some data may be lost.\n427:             ///\n428:             /// # Examples\n429:             ///\n430:             /// Read unsigned 16 bit big-endian integers from a `AsyncRead`:\n431:             ///\n432:             /// ```rust\n433:             /// use tokio::io::{self, AsyncReadExt};\n434:             ///\n435:             /// use std::io::Cursor;\n436:             ///\n437:             /// #[tokio::main]\n438:             /// async fn main() -> io::Result<()> {\n439:             ///     let mut reader = Cursor::new(vec![2, 5, 3, 0]);\n440:             ///\n441:             ///     assert_eq!(517, reader.read_u16().await?);\n442:             ///     assert_eq!(768, reader.read_u16().await?);",
+    "compiled_rustdoc_example": "use tokio::io::{self, AsyncReadExt};\n\nuse std::io::Cursor;\n\n#[tokio::main]\nasync fn main() -> io::Result<()> {\n    let mut reader = Cursor::new(vec![2, 5, 3, 0]);\n\n    assert_eq!(517, reader.read_u16().await?);\n    assert_eq!(768, reader.read_u16().await?);\n    Ok(())\n}",
+    "visible_rustdoc_example": "use tokio::io::{self, AsyncReadExt};\n\nuse std::io::Cursor;\n\n#[tokio::main]\nasync fn main() -> io::Result<()> {\n    let mut reader = Cursor::new(vec![2, 5, 3, 0]);\n\n    assert_eq!(517, reader.read_u16().await?);\n    assert_eq!(768, reader.read_u16().await?);\n    Ok(())\n}",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "f235f93ca230a419",
+    "crate": "uuid",
+    "version": "1.17.0",
+    "path": "src/v1.rs",
+    "line": 71,
+    "source_url": "https://docs.rs/crate/uuid/1.17.0/source/src/v1.rs",
+    "archive_sha256": "3cf4199d1e5d15ddd86a694e4d0dffa9c323ce759fea589f00fef9d81cc1931d",
+    "docs_rs_metadata": {
+      "rustc-args": [
+        "--cfg",
+        "uuid_unstable"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "uuid_unstable"
+      ],
+      "targets": [
+        "x86_64-unknown-linux-gnu"
+      ],
+      "features": [
+        "serde",
+        "arbitrary",
+        "slog",
+        "borsh",
+        "v1",
+        "v3",
+        "v4",
+        "v5",
+        "v6",
+        "v7",
+        "v8"
+      ]
+    },
+    "candidate_feature_names": [
+      "atomic",
+      "borsh",
+      "default",
+      "fast-rng",
+      "js",
+      "macro-diagnostics",
+      "md5",
+      "rng",
+      "rng-getrandom",
+      "rng-rand",
+      "sha1",
+      "std",
+      "v1",
+      "v3",
+      "v4",
+      "v5",
+      "v6",
+      "v7",
+      "v8"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "41:     ///    clock sequences (this crate provides [`Context`] for this\n42:     ///    purpose. However you can create your own [`ClockSequence`]\n43:     ///    implementation, if [`Context`] does not meet your needs).\n44:     ///\n45:     /// Note that usage of this method requires the `v1` feature of this crate\n46:     /// to be enabled.\n47:     ///\n48:     /// # Examples\n49:     ///\n50:     /// A UUID can be created from a unix [`Timestamp`] with a\n51:     /// [`ClockSequence`]. RFC 9562 requires the clock sequence\n52:     /// is seeded with a random value:\n53:     ///\n54:     /// ```\n55:     /// # use uuid::{Timestamp, Context};\n56:     /// # use uuid::Uuid;\n57:     /// # fn random_seed() -> u16 { 42 }\n58:     /// let context = Context::new(random_seed());\n59:     /// let ts = Timestamp::from_unix(&context, 1497624119, 1234);\n60:     ///\n61:     /// let uuid = Uuid::new_v1(ts, &[1, 2, 3, 4, 5, 6]);\n62:     ///\n63:     /// assert_eq!(\n64:     ///     uuid.hyphenated().to_string(),\n65:     ///     \"f3b4958c-52a1-11e7-802a-010203040506\"\n66:     /// );\n67:     /// ```\n68:     ///\n69:     /// The timestamp can also be created manually as per RFC 9562:\n70:     ///\n71:     /// ```\n72:     /// # use uuid::{Uuid, Timestamp, Context, ClockSequence};\n73:     /// let context = Context::new(42);\n74:     /// let ts = Timestamp::from_gregorian(14976234442241191232, context.generate_sequence(0, 0));\n75:     ///\n76:     /// let uuid = Uuid::new_v1(ts, &[1, 2, 3, 4, 5, 6]);\n77:     ///\n78:     /// assert_eq!(\n79:     ///     uuid.hyphenated().to_string(),\n80:     ///     \"b2c1ad40-45e0-1fd6-802a-010203040506\"\n81:     /// );",
+    "compiled_rustdoc_example": "use uuid::{Uuid, Timestamp, Context, ClockSequence};\nlet context = Context::new(42);\nlet ts = Timestamp::from_gregorian(14976234442241191232, context.generate_sequence(0, 0));\n\nlet uuid = Uuid::new_v1(ts, &[1, 2, 3, 4, 5, 6]);\n\nassert_eq!(\n    uuid.hyphenated().to_string(),\n    \"b2c1ad40-45e0-1fd6-802a-010203040506\"\n);",
+    "visible_rustdoc_example": "let context = Context::new(42);\nlet ts = Timestamp::from_gregorian(14976234442241191232, context.generate_sequence(0, 0));\n\nlet uuid = Uuid::new_v1(ts, &[1, 2, 3, 4, 5, 6]);\n\nassert_eq!(\n    uuid.hyphenated().to_string(),\n    \"b2c1ad40-45e0-1fd6-802a-010203040506\"\n);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "6f8f25468af9f32d",
+    "crate": "uuid",
+    "version": "1.17.0",
+    "path": "src/v1.rs",
+    "line": 54,
+    "source_url": "https://docs.rs/crate/uuid/1.17.0/source/src/v1.rs",
+    "archive_sha256": "3cf4199d1e5d15ddd86a694e4d0dffa9c323ce759fea589f00fef9d81cc1931d",
+    "docs_rs_metadata": {
+      "rustc-args": [
+        "--cfg",
+        "uuid_unstable"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "uuid_unstable"
+      ],
+      "targets": [
+        "x86_64-unknown-linux-gnu"
+      ],
+      "features": [
+        "serde",
+        "arbitrary",
+        "slog",
+        "borsh",
+        "v1",
+        "v3",
+        "v4",
+        "v5",
+        "v6",
+        "v7",
+        "v8"
+      ]
+    },
+    "candidate_feature_names": [
+      "atomic",
+      "borsh",
+      "default",
+      "fast-rng",
+      "js",
+      "macro-diagnostics",
+      "md5",
+      "rng",
+      "rng-getrandom",
+      "rng-rand",
+      "sha1",
+      "std",
+      "v1",
+      "v3",
+      "v4",
+      "v5",
+      "v6",
+      "v7",
+      "v8"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "24: \n25:         Self::new_v1(ts, node_id)\n26:     }\n27: \n28:     /// Create a new version 1 UUID using the given timestamp and node ID.\n29:     ///\n30:     /// Also see [`Uuid::now_v1`] for a convenient way to generate version 1\n31:     /// UUIDs using the current system time.\n32:     ///\n33:     /// When generating [`Timestamp`]s using a [`ClockSequence`], this function\n34:     /// is only guaranteed to produce unique values if the following conditions\n35:     /// hold:\n36:     ///\n37:     /// 1. The *node ID* is unique for this process,\n38:     /// 2. The *context* is shared across all threads which are generating version 1\n39:     ///    UUIDs,\n40:     /// 3. The [`ClockSequence`] implementation reliably returns unique\n41:     ///    clock sequences (this crate provides [`Context`] for this\n42:     ///    purpose. However you can create your own [`ClockSequence`]\n43:     ///    implementation, if [`Context`] does not meet your needs).\n44:     ///\n45:     /// Note that usage of this method requires the `v1` feature of this crate\n46:     /// to be enabled.\n47:     ///\n48:     /// # Examples\n49:     ///\n50:     /// A UUID can be created from a unix [`Timestamp`] with a\n51:     /// [`ClockSequence`]. RFC 9562 requires the clock sequence\n52:     /// is seeded with a random value:\n53:     ///\n54:     /// ```\n55:     /// # use uuid::{Timestamp, Context};\n56:     /// # use uuid::Uuid;\n57:     /// # fn random_seed() -> u16 { 42 }\n58:     /// let context = Context::new(random_seed());\n59:     /// let ts = Timestamp::from_unix(&context, 1497624119, 1234);\n60:     ///\n61:     /// let uuid = Uuid::new_v1(ts, &[1, 2, 3, 4, 5, 6]);\n62:     ///\n63:     /// assert_eq!(\n64:     ///     uuid.hyphenated().to_string(),",
+    "compiled_rustdoc_example": "use uuid::{Timestamp, Context};\nuse uuid::Uuid;\nfn random_seed() -> u16 { 42 }\nlet context = Context::new(random_seed());\nlet ts = Timestamp::from_unix(&context, 1497624119, 1234);\n\nlet uuid = Uuid::new_v1(ts, &[1, 2, 3, 4, 5, 6]);\n\nassert_eq!(\n    uuid.hyphenated().to_string(),\n    \"f3b4958c-52a1-11e7-802a-010203040506\"\n);",
+    "visible_rustdoc_example": "let context = Context::new(random_seed());\nlet ts = Timestamp::from_unix(&context, 1497624119, 1234);\n\nlet uuid = Uuid::new_v1(ts, &[1, 2, 3, 4, 5, 6]);\n\nassert_eq!(\n    uuid.hyphenated().to_string(),\n    \"f3b4958c-52a1-11e7-802a-010203040506\"\n);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "9de6c4abaf3d5e7d",
+    "crate": "tokio",
+    "version": "1.45.1",
+    "path": "README.md",
+    "line": 63,
+    "source_url": "https://docs.rs/crate/tokio/1.45.1/source/README.md",
+    "archive_sha256": "75ef51a33ef1da925cea3e4eb122833cb377c61439ca401b770f54902b806779",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ],
+      "rustc-args": [
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "fs",
+      "full",
+      "io-std",
+      "io-util",
+      "macros",
+      "net",
+      "process",
+      "rt",
+      "rt-multi-thread",
+      "signal",
+      "sync",
+      "test-util",
+      "time"
+    ],
+    "nearby_source_mentions_feature_config": true,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "33: \n34: ## Overview\n35: \n36: Tokio is an event-driven, non-blocking I/O platform for writing\n37: asynchronous applications with the Rust programming language. At a high\n38: level, it provides a few major components:\n39: \n40: * A multithreaded, work-stealing based task [scheduler].\n41: * A reactor backed by the operating system's event queue (epoll, kqueue,\n42:   IOCP, etc...).\n43: * Asynchronous [TCP and UDP][net] sockets.\n44: \n45: These components provide the runtime components necessary for building\n46: an asynchronous application.\n47: \n48: [net]: https://docs.rs/tokio/latest/tokio/net/index.html\n49: [scheduler]: https://docs.rs/tokio/latest/tokio/runtime/index.html\n50: \n51: ## Example\n52: \n53: A basic TCP echo server with Tokio.\n54: \n55: Make sure you activated the full features of the tokio crate on Cargo.toml:\n56: \n57: ```toml\n58: [dependencies]\n59: tokio = { version = \"1.45.1\", features = [\"full\"] }\n60: ```\n61: Then, on your main.rs:\n62: \n63: ```rust,no_run\n64: use tokio::net::TcpListener;\n65: use tokio::io::{AsyncReadExt, AsyncWriteExt};\n66: \n67: #[tokio::main]\n68: async fn main() -> Result<(), Box<dyn std::error::Error>> {\n69:     let listener = TcpListener::bind(\"127.0.0.1:8080\").await?;\n70: \n71:     loop {\n72:         let (mut socket, _) = listener.accept().await?;\n73: ",
+    "compiled_rustdoc_example": "use tokio::net::TcpListener;\nuse tokio::io::{AsyncReadExt, AsyncWriteExt};\n\n#[tokio::main]\nasync fn main() -> Result<(), Box<dyn std::error::Error>> {\n    let listener = TcpListener::bind(\"127.0.0.1:8080\").await?;\n\n    loop {\n        let (mut socket, _) = listener.accept().await?;\n\n        tokio::spawn(async move {\n            let mut buf = [0; 1024];\n\n            // In a loop, read data from the socket and write the data back.\n            loop {\n                let n = match socket.read(&mut buf).await {\n                    // socket closed\n                    Ok(0) => return,\n                    Ok(n) => n,\n                    Err(e) => {\n                        eprintln!(\"failed to read from socket; err = {:?}\", e);\n                        return;\n                    }\n                };\n\n                // Write the data back\n                if let Err(e) = socket.write_all(&buf[0..n]).await {\n                    eprintln!(\"failed to write to socket; err = {:?}\", e);\n                    return;\n                }\n            }\n        });\n    }\n}",
+    "visible_rustdoc_example": "use tokio::net::TcpListener;\nuse tokio::io::{AsyncReadExt, AsyncWriteExt};\n\n#[tokio::main]\nasync fn main() -> Result<(), Box<dyn std::error::Error>> {\n    let listener = TcpListener::bind(\"127.0.0.1:8080\").await?;\n\n    loop {\n        let (mut socket, _) = listener.accept().await?;\n\n        tokio::spawn(async move {\n            let mut buf = [0; 1024];\n\n            // In a loop, read data from the socket and write the data back.\n            loop {\n                let n = match socket.read(&mut buf).await {\n                    // socket closed\n                    Ok(0) => return,\n                    Ok(n) => n,\n                    Err(e) => {\n                        eprintln!(\"failed to read from socket; err = {:?}\", e);\n                        return;\n                    }\n                };\n\n                // Write the data back\n                if let Err(e) = socket.write_all(&buf[0..n]).await {\n                    eprintln!(\"failed to write to socket; err = {:?}\", e);\n                    return;\n                }\n            }\n        });\n    }\n}",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "7b7e8b78670012f6",
+    "crate": "tokio",
+    "version": "1.45.1",
+    "path": "src/io/util/empty.rs",
+    "line": 52,
+    "source_url": "https://docs.rs/crate/tokio/1.45.1/source/src/io/util/empty.rs",
+    "archive_sha256": "75ef51a33ef1da925cea3e4eb122833cb377c61439ca401b770f54902b806779",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ],
+      "rustc-args": [
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "fs",
+      "full",
+      "io-std",
+      "io-util",
+      "macros",
+      "net",
+      "process",
+      "rt",
+      "rt-multi-thread",
+      "signal",
+      "sync",
+      "test-util",
+      "time"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "22:     }\n23: \n24:     /// Creates a value that is always at EOF for reads, and ignores all data written.\n25:     ///\n26:     /// All writes on the returned instance will return `Poll::Ready(Ok(buf.len()))`\n27:     /// and the contents of the buffer will not be inspected.\n28:     ///\n29:     /// All reads from the returned instance will return `Poll::Ready(Ok(0))`.\n30:     ///\n31:     /// This is an asynchronous version of [`std::io::empty`][std].\n32:     ///\n33:     /// [std]: std::io::empty\n34:     ///\n35:     /// # Examples\n36:     ///\n37:     /// A slightly sad example of not reading anything into a buffer:\n38:     ///\n39:     /// ```\n40:     /// use tokio::io::{self, AsyncReadExt};\n41:     ///\n42:     /// #[tokio::main]\n43:     /// async fn main() {\n44:     ///     let mut buffer = String::new();\n45:     ///     io::empty().read_to_string(&mut buffer).await.unwrap();\n46:     ///     assert!(buffer.is_empty());\n47:     /// }\n48:     /// ```\n49:     ///\n50:     /// A convoluted way of getting the length of a buffer:\n51:     ///\n52:     /// ```\n53:     /// use tokio::io::{self, AsyncWriteExt};\n54:     ///\n55:     /// #[tokio::main]\n56:     /// async fn main() {\n57:     ///     let buffer = vec![1, 2, 3, 5, 8];\n58:     ///     let num_bytes = io::empty().write(&buffer).await.unwrap();\n59:     ///     assert_eq!(num_bytes, 5);\n60:     /// }\n61:     /// ```\n62:     pub fn empty() -> Empty {",
+    "compiled_rustdoc_example": "use tokio::io::{self, AsyncWriteExt};\n\n#[tokio::main]\nasync fn main() {\n    let buffer = vec![1, 2, 3, 5, 8];\n    let num_bytes = io::empty().write(&buffer).await.unwrap();\n    assert_eq!(num_bytes, 5);\n}",
+    "visible_rustdoc_example": "use tokio::io::{self, AsyncWriteExt};\n\n#[tokio::main]\nasync fn main() {\n    let buffer = vec![1, 2, 3, 5, 8];\n    let num_bytes = io::empty().write(&buffer).await.unwrap();\n    assert_eq!(num_bytes, 5);\n}",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "7cf792d58ba414b7",
+    "crate": "tracing-subscriber",
+    "version": "0.3.19",
+    "path": "src/layer/mod.rs",
+    "line": 1191,
+    "source_url": "https://docs.rs/crate/tracing-subscriber/0.3.19/source/src/layer/mod.rs",
+    "archive_sha256": "e8189decb5ac0fa7bc8b96b7cb9b2701d60d48805aca84a238004d665fcc4008",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs"
+      ]
+    },
+    "candidate_feature_names": [
+      "alloc",
+      "ansi",
+      "default",
+      "env-filter",
+      "fmt",
+      "json",
+      "local-time",
+      "nu-ansi-term",
+      "registry",
+      "std",
+      "valuable"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "1161:     ///     },\n1162:     ///\n1163:     ///     // If logging to stdout, use a pretty, human-readable configuration.\n1164:     ///     LogConfig::Stdout => tracing_subscriber::fmt::layer()\n1165:     ///         // Selecting the \"pretty\" logging format changes the\n1166:     ///         // layer's type!\n1167:     ///         .pretty()\n1168:     ///         .with_writer(io::stdout)\n1169:     ///         // Add a filter based on the RUST_LOG environment variable;\n1170:     ///         // this changes the type too!\n1171:     ///         .and_then(tracing_subscriber::EnvFilter::from_default_env()),\n1172:     ///\n1173:     ///     // If logging to stdout, only log errors and warnings.\n1174:     ///     LogConfig::Stderr => tracing_subscriber::fmt::layer()\n1175:     ///         // Changing the writer changes the layer's type\n1176:     ///         .with_writer(io::stderr)\n1177:     ///         // Only log the `WARN` and `ERROR` levels. Adding a filter\n1178:     ///         // changes the layer's type to `Filtered<LevelFilter, ...>`.\n1179:     ///         .with_filter(LevelFilter::WARN),\n1180:     /// };\n1181:     ///\n1182:     /// tracing_subscriber::registry()\n1183:     ///     .with(log_layer)\n1184:     ///     .init();\n1185:     /// # Ok(()) }\n1186:     /// ```\n1187:     ///\n1188:     /// However, adding a call to `.boxed()` after each match arm erases the\n1189:     /// layer's type, so this code *does* compile:\n1190:     ///\n1191:     /// ```\n1192:     /// # fn main() -> Result<(), Box<dyn std::error::Error>> {\n1193:     /// # use tracing_subscriber::{Layer, filter::LevelFilter, prelude::*};\n1194:     /// # use std::{path::PathBuf, fs::File, io};\n1195:     /// # pub enum LogConfig {\n1196:     /// #    File(PathBuf),\n1197:     /// #    Stdout,\n1198:     /// #    Stderr,\n1199:     /// # }\n1200:     /// # let config = LogConfig::Stdout;\n1201:     /// let log_layer = match config {",
+    "compiled_rustdoc_example": "fn main() -> Result<(), Box<dyn std::error::Error>> {\nuse tracing_subscriber::{Layer, filter::LevelFilter, prelude::*};\nuse std::{path::PathBuf, fs::File, io};\npub enum LogConfig {\n   File(PathBuf),\n   Stdout,\n   Stderr,\n}\nlet config = LogConfig::Stdout;\nlet log_layer = match config {\n    LogConfig::File(path) => {\n        let file = File::create(path)?;\n        tracing_subscriber::fmt::layer()\n            .with_thread_ids(true)\n            .with_thread_names(true)\n            .json()\n            .with_span_list(true)\n            .with_writer(file)\n            // Erase the type by boxing the layer\n            .boxed()\n    },\n\n    LogConfig::Stdout => tracing_subscriber::fmt::layer()\n        .pretty()\n        .with_writer(io::stdout)\n        .and_then(tracing_subscriber::EnvFilter::from_default_env())\n        // Erase the type by boxing the layer\n        .boxed(),\n\n    LogConfig::Stderr => tracing_subscriber::fmt::layer()\n        .with_writer(io::stderr)\n        .with_filter(LevelFilter::WARN)\n        // Erase the type by boxing the layer\n        .boxed(),\n};\n\ntracing_subscriber::registry()\n    .with(log_layer)\n    .init();\nOk(()) }",
+    "visible_rustdoc_example": "let log_layer = match config {\n    LogConfig::File(path) => {\n        let file = File::create(path)?;\n        tracing_subscriber::fmt::layer()\n            .with_thread_ids(true)\n            .with_thread_names(true)\n            .json()\n            .with_span_list(true)\n            .with_writer(file)\n            // Erase the type by boxing the layer\n            .boxed()\n    },\n\n    LogConfig::Stdout => tracing_subscriber::fmt::layer()\n        .pretty()\n        .with_writer(io::stdout)\n        .and_then(tracing_subscriber::EnvFilter::from_default_env())\n        // Erase the type by boxing the layer\n        .boxed(),\n\n    LogConfig::Stderr => tracing_subscriber::fmt::layer()\n        .with_writer(io::stderr)\n        .with_filter(LevelFilter::WARN)\n        // Erase the type by boxing the layer\n        .boxed(),\n};\n\ntracing_subscriber::registry()\n    .with(log_layer)\n    .init();",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "81fe659e70e253fb",
+    "crate": "uuid",
+    "version": "1.17.0",
+    "path": "src/v5.rs",
+    "line": 20,
+    "source_url": "https://docs.rs/crate/uuid/1.17.0/source/src/v5.rs",
+    "archive_sha256": "3cf4199d1e5d15ddd86a694e4d0dffa9c323ce759fea589f00fef9d81cc1931d",
+    "docs_rs_metadata": {
+      "rustc-args": [
+        "--cfg",
+        "uuid_unstable"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "uuid_unstable"
+      ],
+      "targets": [
+        "x86_64-unknown-linux-gnu"
+      ],
+      "features": [
+        "serde",
+        "arbitrary",
+        "slog",
+        "borsh",
+        "v1",
+        "v3",
+        "v4",
+        "v5",
+        "v6",
+        "v7",
+        "v8"
+      ]
+    },
+    "candidate_feature_names": [
+      "atomic",
+      "borsh",
+      "default",
+      "fast-rng",
+      "js",
+      "macro-diagnostics",
+      "md5",
+      "rng",
+      "rng-getrandom",
+      "rng-rand",
+      "sha1",
+      "std",
+      "v1",
+      "v3",
+      "v4",
+      "v5",
+      "v6",
+      "v7",
+      "v8"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "1: use crate::Uuid;\n2: \n3: impl Uuid {\n4:     /// Creates a UUID using a name from a namespace, based on the SHA-1 hash.\n5:     ///\n6:     /// A number of namespaces are available as constants in this crate:\n7:     ///\n8:     /// * [`NAMESPACE_DNS`]\n9:     /// * [`NAMESPACE_OID`]\n10:     /// * [`NAMESPACE_URL`]\n11:     /// * [`NAMESPACE_X500`]\n12:     ///\n13:     /// Note that usage of this method requires the `v5` feature of this crate\n14:     /// to be enabled.\n15:     ///\n16:     /// # Examples\n17:     ///\n18:     /// Generating a SHA1 DNS UUID for `rust-lang.org`:\n19:     ///\n20:     /// ```\n21:     /// # use uuid::{Uuid, Version};\n22:     /// let uuid = Uuid::new_v5(&Uuid::NAMESPACE_DNS, b\"rust-lang.org\");\n23:     ///\n24:     /// assert_eq!(Some(Version::Sha1), uuid.get_version());\n25:     /// ```\n26:     ///\n27:     /// # References\n28:     ///\n29:     /// * [UUID Version 5 in RFC 9562](https://www.ietf.org/rfc/rfc9562.html#section-5.5)\n30:     /// * [Name-Based UUID Generation in RFC 9562](https://www.ietf.org/rfc/rfc9562.html#section-6.5)",
+    "compiled_rustdoc_example": "use uuid::{Uuid, Version};\nlet uuid = Uuid::new_v5(&Uuid::NAMESPACE_DNS, b\"rust-lang.org\");\n\nassert_eq!(Some(Version::Sha1), uuid.get_version());",
+    "visible_rustdoc_example": "let uuid = Uuid::new_v5(&Uuid::NAMESPACE_DNS, b\"rust-lang.org\");\n\nassert_eq!(Some(Version::Sha1), uuid.get_version());",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "88fe8ee22c2585f0",
+    "crate": "uuid",
+    "version": "1.17.0",
+    "path": "src/v8.rs",
+    "line": 17,
+    "source_url": "https://docs.rs/crate/uuid/1.17.0/source/src/v8.rs",
+    "archive_sha256": "3cf4199d1e5d15ddd86a694e4d0dffa9c323ce759fea589f00fef9d81cc1931d",
+    "docs_rs_metadata": {
+      "rustc-args": [
+        "--cfg",
+        "uuid_unstable"
+      ],
+      "rustdoc-args": [
+        "--cfg",
+        "uuid_unstable"
+      ],
+      "targets": [
+        "x86_64-unknown-linux-gnu"
+      ],
+      "features": [
+        "serde",
+        "arbitrary",
+        "slog",
+        "borsh",
+        "v1",
+        "v3",
+        "v4",
+        "v5",
+        "v6",
+        "v7",
+        "v8"
+      ]
+    },
+    "candidate_feature_names": [
+      "atomic",
+      "borsh",
+      "default",
+      "fast-rng",
+      "js",
+      "macro-diagnostics",
+      "md5",
+      "rng",
+      "rng-getrandom",
+      "rng-rand",
+      "sha1",
+      "std",
+      "v1",
+      "v3",
+      "v4",
+      "v5",
+      "v6",
+      "v7",
+      "v8"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "1: use crate::{Builder, Uuid};\n2: \n3: impl Uuid {\n4:     /// Creates a custom UUID comprised almost entirely of user-supplied bytes.\n5:     ///\n6:     /// This will inject the UUID Version at 4 bits starting at the 48th bit\n7:     /// and the Variant into 2 bits 64th bit. Any existing bits in the user-supplied bytes\n8:     /// at those locations will be overridden.\n9:     ///\n10:     /// Note that usage of this method requires the `v8` feature of this crate\n11:     /// to be enabled.\n12:     ///\n13:     /// # Examples\n14:     ///\n15:     /// Basic usage:\n16:     ///\n17:     /// ```\n18:     /// # use uuid::{Uuid, Version};\n19:     /// let buf: [u8; 16] = *b\"abcdefghijklmnop\";\n20:     /// let uuid = Uuid::new_v8(buf);\n21:     ///\n22:     /// assert_eq!(Some(Version::Custom), uuid.get_version());\n23:     /// ```\n24:     ///\n25:     /// # References\n26:     ///\n27:     /// * [UUID Version 8 in RFC 9562](https://www.ietf.org/rfc/rfc9562.html#section-5.8)",
+    "compiled_rustdoc_example": "use uuid::{Uuid, Version};\nlet buf: [u8; 16] = *b\"abcdefghijklmnop\";\nlet uuid = Uuid::new_v8(buf);\n\nassert_eq!(Some(Version::Custom), uuid.get_version());",
+    "visible_rustdoc_example": "let buf: [u8; 16] = *b\"abcdefghijklmnop\";\nlet uuid = Uuid::new_v8(buf);\n\nassert_eq!(Some(Version::Custom), uuid.get_version());",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "6dabd92fe51ac316",
+    "crate": "tokio",
+    "version": "1.45.1",
+    "path": "src/sync/once_cell.rs",
+    "line": 147,
+    "source_url": "https://docs.rs/crate/tokio/1.45.1/source/src/sync/once_cell.rs",
+    "archive_sha256": "75ef51a33ef1da925cea3e4eb122833cb377c61439ca401b770f54902b806779",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ],
+      "rustc-args": [
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "fs",
+      "full",
+      "io-std",
+      "io-util",
+      "macros",
+      "net",
+      "process",
+      "rt",
+      "rt-multi-thread",
+      "signal",
+      "sync",
+      "test-util",
+      "time"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "117:         OnceCell {\n118:             value_set: AtomicBool::new(true),\n119:             value: UnsafeCell::new(MaybeUninit::new(value)),\n120:             semaphore: Semaphore::new_closed(),\n121:         }\n122:     }\n123: }\n124: \n125: impl<T> OnceCell<T> {\n126:     /// Creates a new empty `OnceCell` instance.\n127:     pub fn new() -> Self {\n128:         OnceCell {\n129:             value_set: AtomicBool::new(false),\n130:             value: UnsafeCell::new(MaybeUninit::uninit()),\n131:             semaphore: Semaphore::new(1),\n132:         }\n133:     }\n134: \n135:     /// Creates a new empty `OnceCell` instance.\n136:     ///\n137:     /// Equivalent to `OnceCell::new`, except that it can be used in static\n138:     /// variables.\n139:     ///\n140:     /// When using the `tracing` [unstable feature], a `OnceCell` created with\n141:     /// `const_new` will not be instrumented. As such, it will not be visible\n142:     /// in [`tokio-console`]. Instead, [`OnceCell::new`] should be used to\n143:     /// create an instrumented object if that is needed.\n144:     ///\n145:     /// # Example\n146:     ///\n147:     /// ```\n148:     /// use tokio::sync::OnceCell;\n149:     ///\n150:     /// static ONCE: OnceCell<u32> = OnceCell::const_new();\n151:     ///\n152:     /// async fn get_global_integer() -> &'static u32 {\n153:     ///     ONCE.get_or_init(|| async {\n154:     ///         1 + 1\n155:     ///     }).await\n156:     /// }\n157:     ///",
+    "compiled_rustdoc_example": "use tokio::sync::OnceCell;\n\nstatic ONCE: OnceCell<u32> = OnceCell::const_new();\n\nasync fn get_global_integer() -> &'static u32 {\n    ONCE.get_or_init(|| async {\n        1 + 1\n    }).await\n}\n\n#[tokio::main]\nasync fn main() {\n    let result = get_global_integer().await;\n    assert_eq!(*result, 2);\n}",
+    "visible_rustdoc_example": "use tokio::sync::OnceCell;\n\nstatic ONCE: OnceCell<u32> = OnceCell::const_new();\n\nasync fn get_global_integer() -> &'static u32 {\n    ONCE.get_or_init(|| async {\n        1 + 1\n    }).await\n}\n\n#[tokio::main]\nasync fn main() {\n    let result = get_global_integer().await;\n    assert_eq!(*result, 2);\n}",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "089aafa8ca1f9b01",
+    "crate": "tokio",
+    "version": "1.45.1",
+    "path": "src/io/util/async_write_ext.rs",
+    "line": 741,
+    "source_url": "https://docs.rs/crate/tokio/1.45.1/source/src/io/util/async_write_ext.rs",
+    "archive_sha256": "75ef51a33ef1da925cea3e4eb122833cb377c61439ca401b770f54902b806779",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ],
+      "rustc-args": [
+        "--cfg",
+        "tokio_unstable",
+        "--cfg",
+        "tokio_taskdump"
+      ]
+    },
+    "candidate_feature_names": [
+      "default",
+      "fs",
+      "full",
+      "io-std",
+      "io-util",
+      "macros",
+      "net",
+      "process",
+      "rt",
+      "rt-multi-thread",
+      "signal",
+      "sync",
+      "test-util",
+      "time"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "711:             ///         0x00, 0x03, 0x43, 0x95, 0x4d, 0x60, 0x86, 0x83,\n712:             ///         0x00, 0x03, 0x43, 0x95, 0x4d, 0x60, 0x86, 0x83\n713:             ///     ]);\n714:             ///     Ok(())\n715:             /// }\n716:             /// ```\n717:             fn write_u128(&mut self, n: u128) -> WriteU128;\n718: \n719:             /// Writes an signed 128-bit integer in big-endian order to the\n720:             /// underlying writer.\n721:             ///\n722:             /// Equivalent to:\n723:             ///\n724:             /// ```ignore\n725:             /// async fn write_i128(&mut self, n: i128) -> io::Result<()>;\n726:             /// ```\n727:             ///\n728:             /// It is recommended to use a buffered writer to avoid excessive\n729:             /// syscalls.\n730:             ///\n731:             /// # Errors\n732:             ///\n733:             /// This method returns the same errors as [`AsyncWriteExt::write_all`].\n734:             ///\n735:             /// [`AsyncWriteExt::write_all`]: AsyncWriteExt::write_all\n736:             ///\n737:             /// # Examples\n738:             ///\n739:             /// Write signed 128-bit integers to a `AsyncWrite`:\n740:             ///\n741:             /// ```rust\n742:             /// use tokio::io::{self, AsyncWriteExt};\n743:             ///\n744:             /// #[tokio::main]\n745:             /// async fn main() -> io::Result<()> {\n746:             ///     let mut writer = Vec::new();\n747:             ///\n748:             ///     writer.write_i128(i128::MIN).await?;\n749:             ///\n750:             ///     assert_eq!(writer, vec![\n751:             ///         0x80, 0, 0, 0, 0, 0, 0, 0,",
+    "compiled_rustdoc_example": "use tokio::io::{self, AsyncWriteExt};\n\n#[tokio::main]\nasync fn main() -> io::Result<()> {\n    let mut writer = Vec::new();\n\n    writer.write_i128(i128::MIN).await?;\n\n    assert_eq!(writer, vec![\n        0x80, 0, 0, 0, 0, 0, 0, 0,\n        0, 0, 0, 0, 0, 0, 0, 0\n    ]);\n    Ok(())\n}",
+    "visible_rustdoc_example": "use tokio::io::{self, AsyncWriteExt};\n\n#[tokio::main]\nasync fn main() -> io::Result<()> {\n    let mut writer = Vec::new();\n\n    writer.write_i128(i128::MIN).await?;\n\n    assert_eq!(writer, vec![\n        0x80, 0, 0, 0, 0, 0, 0, 0,\n        0, 0, 0, 0, 0, 0, 0, 0\n    ]);\n    Ok(())\n}",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "fc2ecf8ee46e4641",
+    "crate": "tokio-util",
+    "version": "0.7.15",
+    "path": "src/codec/lines_codec.rs",
+    "line": 77,
+    "source_url": "https://docs.rs/crate/tokio-util/0.7.15/source/src/codec/lines_codec.rs",
+    "archive_sha256": "66a539a9ad6d5d281510d5bd368c973d636c02dbf8a67300bfb6b950696ad7df",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "tokio_unstable"
+      ],
+      "rustc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "tokio_unstable"
+      ]
+    },
+    "candidate_feature_names": [
+      "__docs_rs",
+      "codec",
+      "compat",
+      "default",
+      "full",
+      "io",
+      "io-util",
+      "net",
+      "rt",
+      "time"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "47:         }\n48:     }\n49: \n50:     /// Returns a `LinesCodec` with a maximum line length limit.\n51:     ///\n52:     /// If this is set, calls to `LinesCodec::decode` will return a\n53:     /// [`LinesCodecError`] when a line exceeds the length limit. Subsequent calls\n54:     /// will discard up to `limit` bytes from that line until a newline\n55:     /// character is reached, returning `None` until the line over the limit\n56:     /// has been fully discarded. After that point, calls to `decode` will\n57:     /// function as normal.\n58:     ///\n59:     /// # Note\n60:     ///\n61:     /// Setting a length limit is highly recommended for any `LinesCodec` which\n62:     /// will be exposed to untrusted input. Otherwise, the size of the buffer\n63:     /// that holds the line currently being read is unbounded. An attacker could\n64:     /// exploit this unbounded buffer by sending an unbounded amount of input\n65:     /// without any `\\n` characters, causing unbounded memory consumption.\n66:     ///\n67:     /// [`LinesCodecError`]: crate::codec::LinesCodecError\n68:     pub fn new_with_max_length(max_length: usize) -> Self {\n69:         LinesCodec {\n70:             max_length,\n71:             ..LinesCodec::new()\n72:         }\n73:     }\n74: \n75:     /// Returns the maximum line length when decoding.\n76:     ///\n77:     /// ```\n78:     /// use std::usize;\n79:     /// use tokio_util::codec::LinesCodec;\n80:     ///\n81:     /// let codec = LinesCodec::new();\n82:     /// assert_eq!(codec.max_length(), usize::MAX);\n83:     /// ```\n84:     /// ```\n85:     /// use tokio_util::codec::LinesCodec;\n86:     ///\n87:     /// let codec = LinesCodec::new_with_max_length(256);",
+    "compiled_rustdoc_example": "use std::usize;\nuse tokio_util::codec::LinesCodec;\n\nlet codec = LinesCodec::new();\nassert_eq!(codec.max_length(), usize::MAX);",
+    "visible_rustdoc_example": "use std::usize;\nuse tokio_util::codec::LinesCodec;\n\nlet codec = LinesCodec::new();\nassert_eq!(codec.max_length(), usize::MAX);",
+    "manual_annotation_status": "NOT_REVIEWED"
+  },
+  {
+    "id": "b567f72ae45aedf4",
+    "crate": "tokio-util",
+    "version": "0.7.15",
+    "path": "src/codec/length_delimited.rs",
+    "line": 951,
+    "source_url": "https://docs.rs/crate/tokio-util/0.7.15/source/src/codec/length_delimited.rs",
+    "archive_sha256": "66a539a9ad6d5d281510d5bd368c973d636c02dbf8a67300bfb6b950696ad7df",
+    "docs_rs_metadata": {
+      "all-features": true,
+      "rustdoc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "tokio_unstable"
+      ],
+      "rustc-args": [
+        "--cfg",
+        "docsrs",
+        "--cfg",
+        "tokio_unstable"
+      ]
+    },
+    "candidate_feature_names": [
+      "__docs_rs",
+      "codec",
+      "compat",
+      "default",
+      "full",
+      "io",
+      "io-util",
+      "net",
+      "rt",
+      "time"
+    ],
+    "nearby_source_mentions_feature_config": false,
+    "rustdoc_hidden_cfg_condition": false,
+    "context_source": "921:     }\n922: \n923:     /// Sets the number of bytes to skip before reading the payload\n924:     ///\n925:     /// Default value is `length_field_len + length_field_offset`\n926:     ///\n927:     /// This configuration option only applies to decoding\n928:     ///\n929:     /// # Examples\n930:     ///\n931:     /// ```\n932:     /// # use tokio::io::AsyncRead;\n933:     /// use tokio_util::codec::LengthDelimitedCodec;\n934:     ///\n935:     /// # fn bind_read<T: AsyncRead>(io: T) {\n936:     /// LengthDelimitedCodec::builder()\n937:     ///     .num_skip(4)\n938:     ///     .new_read(io);\n939:     /// # }\n940:     /// # pub fn main() {}\n941:     /// ```\n942:     pub fn num_skip(&mut self, val: usize) -> &mut Self {\n943:         self.num_skip = Some(val);\n944:         self\n945:     }\n946: \n947:     /// Create a configured length delimited `LengthDelimitedCodec`\n948:     ///\n949:     /// # Examples\n950:     ///\n951:     /// ```\n952:     /// use tokio_util::codec::LengthDelimitedCodec;\n953:     /// # pub fn main() {\n954:     /// LengthDelimitedCodec::builder()\n955:     ///     .length_field_offset(0)\n956:     ///     .length_field_type::<u16>()\n957:     ///     .length_adjustment(0)\n958:     ///     .num_skip(0)\n959:     ///     .new_codec();\n960:     /// # }\n961:     /// ```",
+    "compiled_rustdoc_example": "use tokio_util::codec::LengthDelimitedCodec;\npub fn main() {\nLengthDelimitedCodec::builder()\n    .length_field_offset(0)\n    .length_field_type::<u16>()\n    .length_adjustment(0)\n    .num_skip(0)\n    .new_codec();\n}",
+    "visible_rustdoc_example": "use tokio_util::codec::LengthDelimitedCodec;\nLengthDelimitedCodec::builder()\n    .length_field_offset(0)\n    .length_field_type::<u16>()\n    .length_adjustment(0)\n    .num_skip(0)\n    .new_codec();",
+    "manual_annotation_status": "NOT_REVIEWED"
+  }
+]

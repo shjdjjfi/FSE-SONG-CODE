@@ -1,0 +1,31 @@
+{
+  "key": "79ee5a8b3ccc33b1e5",
+  "args": {
+    "crate": "tower",
+    "version": "0.5.2",
+    "id": "c67ede2141155902",
+    "profile": "candidate",
+    "features": [
+      "load",
+      "load-shed"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.19,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved imports `tower::ServiceExt`, `tower::service_fn`, `tower::util`",
+      "rendered": "error[E0432]: unresolved imports `tower::ServiceExt`, `tower::service_fn`, `tower::util`\n   --> src/main.rs:2:22\n    |\n  2 | use tower::{Service, ServiceExt, BoxError, service_fn, util::BoxCloneService};\n    |                      ^^^^^^^^^^            ^^^^^^^^^^  ^^^^ could not find `util` in `tower`\n    |                      |                     |\n    |                      |                     no `service_fn` in the root\n    |                      no `ServiceExt` in the root\n    |                      help: a similar name exists in the module: `Service`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-0.5.2/src/lib.rs:205:34\n    |\n202 | #[cfg(feature = \"util\")]\n    |       ---------------- the item is gated behind the `util` feature\n...\n205 | pub use self::util::{service_fn, ServiceExt};\n    |                                  ^^^^^^^^^^\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-0.5.2/src/lib.rs:205:22\n    |\n202 | #[cfg(feature = \"util\")]\n    |       -----------",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tower_consumer` (bin \"n05_tower_consumer\") due to 1 previous error\n",
+  "code_sha256": "3b1add99b3b08ded2201a0407f7f097f857c8ef70620783ebe6eae788a44edb5",
+  "manifest_sha256": "e43b3e810ee993fdc1fa947c7b1bca24fae3b5f74f4e8be5e3459da6bd6d6a47",
+  "log_file": "holdout/results/check_logs/79ee5a8b3ccc33b1e5.txt.gz"
+}

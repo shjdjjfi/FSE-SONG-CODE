@@ -1,0 +1,33 @@
+{
+  "key": "dfbefb1e0b11873677",
+  "args": {
+    "crate": "tinyvec",
+    "version": "1.9.0",
+    "id": "43d3d6bbc0f68d92",
+    "profile": "candidate",
+    "features": [
+      "grab_spare_slice",
+      "nightly_slice_partition_dedup",
+      "rustc_1_57",
+      "rustc_1_61"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1756,
+  "errors": [
+    {
+      "code": "E0554",
+      "message": "`#![feature]` may not be used on the stable release channel",
+      "rendered": "error[E0554]: `#![feature]` may not be used on the stable release channel\n --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tinyvec-1.9.0/src/lib.rs:5:3\n  |\n5 |   feature(slice_partition_dedup)\n  |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n",
+      "line": 5
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `tinyvec` (lib) due to 1 previous error\n",
+  "code_sha256": "14f1b544bca13abcbac7987738c9b5c269422732a33d05577352bc3711a4074e",
+  "manifest_sha256": "c065dbf74b296337eab8712bd43d071c9e30dda68f579fad2bc64b68cc95c281",
+  "log_file": "results/check_logs/dfbefb1e0b11873677.txt.gz"
+}

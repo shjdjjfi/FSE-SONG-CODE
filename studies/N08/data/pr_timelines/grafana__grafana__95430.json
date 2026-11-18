@@ -1,0 +1,47 @@
+{
+  "fetched_utc": "2026-11-14T17:20:35.167424+00:00",
+  "merged_at": "2024-12-09T15:29:05Z",
+  "opened_at": "2024-10-25T14:53:09-04:00",
+  "pr": 95430,
+  "raw_html_sha256": "174f776fc8e14e069d6edafa80dafc2195d3d8ddf5e3efc815b3cedd51eb69ea",
+  "repo": "grafana/grafana",
+  "review_count_visible": 7,
+  "reviews": [
+    {
+      "login": "toddtreece",
+      "state": "COMMENTED",
+      "submitted_at": "2024-10-29T12:24:07Z"
+    },
+    {
+      "login": "toddtreece",
+      "state": "COMMENTED",
+      "submitted_at": "2024-10-29T12:37:17Z"
+    },
+    {
+      "login": "toddtreece",
+      "state": "COMMENTED",
+      "submitted_at": "2024-10-29T12:47:55Z"
+    },
+    {
+      "login": "toddtreece",
+      "state": "COMMENTED",
+      "submitted_at": "2024-10-29T12:54:51Z"
+    },
+    {
+      "login": "toddtreece",
+      "state": "COMMENTED",
+      "submitted_at": "2024-10-29T13:00:46Z"
+    },
+    {
+      "login": "JacobsonMT",
+      "state": "APPROVED",
+      "submitted_at": "2024-11-21T04:21:33Z"
+    },
+    {
+      "login": "tomratcliffe",
+      "state": "COMMENTED",
+      "submitted_at": "2024-12-09T14:00:15Z"
+    }
+  ],
+  "source_url": "https://github.com/grafana/grafana/pull/95430"
+}

@@ -1,0 +1,42 @@
+{
+  "fetched_utc": "2026-11-14T17:11:35.040314+00:00",
+  "merged_at": "2025-06-30T10:38:53Z",
+  "opened_at": "2025-05-27T21:35:44+01:00",
+  "pr": 15070,
+  "raw_html_sha256": "7b6c0ba510adc1077ae9317733bff67537c813ece24fb6fc1459158708fe16df",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 6,
+  "reviews": [
+    {
+      "login": "quexten",
+      "state": "APPROVED",
+      "submitted_at": "2025-06-04T12:37:05Z"
+    },
+    {
+      "login": "quexten",
+      "state": "APPROVED",
+      "submitted_at": "2025-06-04T12:56:19Z"
+    },
+    {
+      "login": "dani-garcia",
+      "state": "APPROVED",
+      "submitted_at": "2025-06-04T14:31:33Z"
+    },
+    {
+      "login": "dani-garcia",
+      "state": "APPROVED",
+      "submitted_at": "2025-06-30T09:29:30Z"
+    },
+    {
+      "login": "quexten",
+      "state": "APPROVED",
+      "submitted_at": "2025-06-30T10:38:48Z"
+    },
+    {
+      "login": "quexten",
+      "state": "APPROVED",
+      "submitted_at": "2025-06-30T11:34:29Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/15070"
+}

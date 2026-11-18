@@ -1,0 +1,36 @@
+name: N22 SQLite replay
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - n22-fse-industry
+    paths:
+      - "N22/**"
+      - ".github/workflows/n22-replay.yml"
+
+jobs:
+  ubuntu:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install pinned runtimes
+        run: |
+          python -m pip install -r N22/requirements.txt
+          npm ci --prefix N22 --no-audit --no-fund
+      - name: Execute independent SQLite replays and assertions
+        run: bash N22/scripts/replay.sh
+      - name: Preserve primary evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: n22-sqlite-replay
+          path: N22/results
+          retention-days: 30

@@ -1,0 +1,26 @@
+{
+  "pr": 12907,
+  "pr_author": "quexten",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-01-16T11:19:22Z",
+      "requested_people": [
+        "quexten"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-16T15:56:48Z",
+      "requested_people": [
+        "mzieniukbw",
+        "quexten"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "8acc11868f5d45db96524555e43e01031dcd46c5dff717e4eefd00e081753391",
+  "url": "https://github.com/bitwarden/clients/pull/12907"
+}

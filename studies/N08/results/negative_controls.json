@@ -1,0 +1,128 @@
+{
+  "false_positives": 0,
+  "limits": "Eligibility controls; these are not downstream reviewer-recall trials.",
+  "observations": [
+    {
+      "added_old_reviewers": false,
+      "case": "same-team move: stars API",
+      "expected_added_old_reviewers": false,
+      "id": "GF114006",
+      "matching_renames": 1,
+      "merged_at": "2025-11-19T05:28:39Z",
+      "new_owner": [
+        "@grafana/grafana-app-platform-squad",
+        "@grafana/grafana-frontend-platform"
+      ],
+      "new_prefix": "apps/collections/kinds/",
+      "old_owner": [
+        "@grafana/grafana-app-platform-squad",
+        "@grafana/grafana-frontend-platform"
+      ],
+      "old_prefix": "apps/preferences/kinds/",
+      "pr": 114006,
+      "repo": "grafana/grafana",
+      "sha256": "81702337ab564343674ddf190d18729c1edc3ed506b7e4d5e14c17389ec697df",
+      "source_url": "https://github.com/grafana/grafana/pull/114006.patch",
+      "substantive": true
+    },
+    {
+      "added_old_reviewers": false,
+      "case": "same-team move: alerting type",
+      "expected_added_old_reviewers": false,
+      "id": "GF110257",
+      "matching_renames": 1,
+      "merged_at": "2025-08-28T12:11:19Z",
+      "new_owner": [
+        "@grafana/alerting-frontend"
+      ],
+      "new_prefix": "public/app/features/alerting/unified/types/alerting.ts",
+      "old_owner": [
+        "@grafana/alerting-frontend"
+      ],
+      "old_prefix": "public/app/types/alerting.ts",
+      "pr": 110257,
+      "repo": "grafana/grafana",
+      "sha256": "2935f0ee055eb2af1c3b850392053cf83f4dcb70c2b3b2728e6e61c6ee89899c",
+      "source_url": "https://github.com/grafana/grafana/pull/110257.patch",
+      "substantive": true
+    },
+    {
+      "added_old_reviewers": false,
+      "case": "same-team move: SDK generator",
+      "expected_added_old_reviewers": false,
+      "id": "GF105548",
+      "matching_renames": 7,
+      "merged_at": "2025-05-16T14:58:04Z",
+      "new_owner": [
+        "@grafana/grafana-frontend-platform"
+      ],
+      "new_prefix": "scripts/rtk-client-generator/",
+      "old_owner": [
+        "@grafana/grafana-frontend-platform"
+      ],
+      "old_prefix": "public/app/api/generator/",
+      "pr": 105548,
+      "repo": "grafana/grafana",
+      "sha256": "8661657b89aa7f79be69717bbd7a3de22a536b6a41e5796788d0936259d066e4",
+      "source_url": "https://github.com/grafana/grafana/pull/105548.patch",
+      "substantive": true
+    },
+    {
+      "added_old_reviewers": false,
+      "case": "test-fixture-only move, ownership changed",
+      "expected_added_old_reviewers": false,
+      "id": "GF100371",
+      "matching_renames": 2,
+      "merged_at": "2025-02-14T11:05:04Z",
+      "new_owner": [
+        "@grafana/observability-traces-and-profiling"
+      ],
+      "new_prefix": "public/app/features/explore/spec/helper/testdata/",
+      "old_owner": [
+        "@grafana/grafana-frontend-platform"
+      ],
+      "old_prefix": "public/app/features/query-library/api/testdata/",
+      "pr": 100371,
+      "repo": "grafana/grafana",
+      "sha256": "52c4c989985e5cb0db3327bd56b6a94b69c8b0adb1cfd6cfcbbcf892ab143b80",
+      "source_url": "https://github.com/grafana/grafana/pull/100371.patch",
+      "substantive": false
+    },
+    {
+      "added_old_reviewers": false,
+      "case": "ownership-only change: OpenTSDB",
+      "expected_added_old_reviewers": false,
+      "id": "GF114837",
+      "matching_renames": 0,
+      "merged_at": "2025-12-15T15:31:31Z",
+      "new_owner": [],
+      "new_prefix": "none/",
+      "old_owner": [],
+      "old_prefix": "none/",
+      "pr": 114837,
+      "repo": "grafana/grafana",
+      "sha256": "2b764232e4193ae7fb51fa7cb5c3e1527be5145738a98514fd09abca5a33e984",
+      "source_url": "https://github.com/grafana/grafana/pull/114837.patch",
+      "substantive": true
+    },
+    {
+      "added_old_reviewers": false,
+      "case": "ownership-only change: desktop autofill",
+      "expected_added_old_reviewers": false,
+      "id": "BW16500",
+      "matching_renames": 0,
+      "merged_at": "2025-09-19T17:47:02Z",
+      "new_owner": [],
+      "new_prefix": "none/",
+      "old_owner": [],
+      "old_prefix": "none/",
+      "pr": 16500,
+      "repo": "bitwarden/clients",
+      "sha256": "72a03fb0c2dceab8a19624144d66814bf98264c704499f31be90f3eb22815d50",
+      "source_url": "https://github.com/bitwarden/clients/pull/16500.patch",
+      "substantive": true
+    }
+  ],
+  "real_merged_controls": 6,
+  "true_negatives": 6
+}

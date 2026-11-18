@@ -1,0 +1,19 @@
+{
+  "changed_code_lines_under_target": 4,
+  "changed_files_in_whole_pr": 1,
+  "changed_files_under_target": 1,
+  "code_files_under_target": 1,
+  "code_touched": true,
+  "event": "BW12407",
+  "focused_code_touched": true,
+  "pr": 12875,
+  "raw_size_bytes": 1033,
+  "repo": "bitwarden/clients",
+  "sha256": "c876c162758249e69290ce398f26c67a41598e2576f529114355e3d22d4bf3f7",
+  "target_file_fraction": 1.0,
+  "target_paths": [
+    "libs/key-management/src/angular/lock/components/lock.component.ts"
+  ],
+  "test_files_under_target": 0,
+  "url": "https://github.com/bitwarden/clients/pull/12875.patch"
+}

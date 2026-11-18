@@ -1,0 +1,46 @@
+{
+  "key": "f3e2fdf4fac4ef1150",
+  "args": {
+    "crate": "chrono",
+    "version": "0.4.41",
+    "id": "f1cd1e50bd3d48cf",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1054,
+  "errors": [
+    {
+      "code": null,
+      "message": "expected `;`, found `Ok`",
+      "rendered": "error: expected `;`, found `Ok`\n  --> src/main.rs:21:32\n   |\n21 | Ok::<(), serde_json::Error>(())\n   |                                ^ help: add `;` here\n22 | Ok(())\n   | -- unexpected token\n\n",
+      "line": 22
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde_derive`",
+      "rendered": "error[E0432]: unresolved import `serde_derive`\n --> src/main.rs:3:5\n  |\n3 | use serde_derive::Serialize;\n  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `serde_derive`\n  |\n  = help: if you wanted to use a crate named `serde_derive`, use `cargo add serde_derive` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `serde` in this scope",
+      "rendered": "error: cannot find attribute `serde` in this scope\n --> src/main.rs:7:7\n  |\n7 |     #[serde(serialize_with = \"to_nano_tsopt\")]\n  |       ^^^^^\n\n",
+      "line": 7
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:19:17\n   |\n19 | let as_string = serde_json::to_string(&my_s)?;\n   |                 ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 19
+    }
+  ],
+  "error_count": 4,
+  "stderr_excerpt": "error: could not compile `n05_chrono_consumer` (bin \"n05_chrono_consumer\") due to 4 previous errors; 1 warning emitted\n",
+  "code_sha256": "c78537caf3f87fc95c0e6b2c5b54bad5dad83d7b5a9052316ab8a315d959a8c6",
+  "manifest_sha256": "1d431ffb60efcc4fc4f538497f887cd1c193798500ed5912e183965ac071e38d",
+  "log_file": "results/check_logs/f3e2fdf4fac4ef1150.txt.gz"
+}

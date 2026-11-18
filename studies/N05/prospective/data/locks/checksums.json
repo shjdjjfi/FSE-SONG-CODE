@@ -1,0 +1,152 @@
+[
+  {
+    "crate": "serde_with",
+    "status": "frozen",
+    "sha256": "40c5658ae839e1c1756c5eb229b8688b6b5eca712e1ea67c92d72818b6795009"
+  },
+  {
+    "crate": "redis",
+    "status": "frozen",
+    "sha256": "5b0b75ee2f8ce7a57426c72dc55eb5f88e5f2ee8177485d38587220b998063ae"
+  },
+  {
+    "crate": "mio",
+    "status": "frozen",
+    "sha256": "c3a9a03fe777662c53363a805f455e247316848cefa0d6e87734c5e005792b31"
+  },
+  {
+    "crate": "async-compression",
+    "status": "frozen",
+    "sha256": "2781dd14ec995b2ff78ce6c6df4178cecd56bf490b62256b6d795fe3cf8524c0"
+  },
+  {
+    "crate": "hyper-util",
+    "status": "frozen",
+    "sha256": "50da17730102ed3444543328dfd7f890103da426c1c4e33f91df9e2d021d32b6"
+  },
+  {
+    "crate": "tonic",
+    "status": "frozen",
+    "sha256": "df0b7341695948a9b95408d47f0c2e113955317ddfd8ce7eb6a07728d70ea714"
+  },
+  {
+    "crate": "rand_distr",
+    "status": "frozen",
+    "sha256": "79af892214a7f3b576aa5ca9a8ecf448964a6df3d4c104761062f36a166ec220"
+  },
+  {
+    "crate": "ulid",
+    "status": "frozen",
+    "sha256": "9c24155b2ad5da1b7af25a272c432452df4cf22e67cb9018e14f5e110ec34034"
+  },
+  {
+    "crate": "semver",
+    "status": "frozen",
+    "sha256": "9043459d05320389b640fc92cdd2b1a4c530550872ba9d07ab2182aecb8402a3"
+  },
+  {
+    "crate": "time",
+    "status": "frozen",
+    "sha256": "5ec6183dbf3829acea6d7fd24c3f98407a734e7e909f6692eb4a60e953eb6ed1"
+  },
+  {
+    "crate": "rust_decimal",
+    "status": "frozen",
+    "sha256": "8a5a167f391b783e92b66191b55687fe7b6918e59fbd59b8d4a32a1b2c267bf6"
+  },
+  {
+    "crate": "chrono-tz",
+    "status": "frozen",
+    "sha256": "85c3ce158a46bf3882c1d7dd72357c707dbca62d60e5613aff2cbec27c433ba9"
+  },
+  {
+    "crate": "deadpool",
+    "status": "frozen",
+    "sha256": "684f1ba55bce991e852faf26de3798b521d70a69915722554f00c83321c3d621"
+  },
+  {
+    "crate": "slog",
+    "status": "frozen",
+    "sha256": "4a5c441ae10fce01f69d7e4708be965307cc0cbda9049509b478b745f3b9c137"
+  },
+  {
+    "crate": "ratatui",
+    "status": "frozen",
+    "sha256": "c1893387c4d2943fab14b10aca33eaaef7b5cce4d057b4e295e0c5534761c015"
+  },
+  {
+    "crate": "crossterm",
+    "status": "frozen",
+    "sha256": "a9f9bcec25445cf5b41f87e94edccc3715ea7603b46ebfe3ac124493dad5ed02"
+  },
+  {
+    "crate": "config",
+    "status": "frozen",
+    "sha256": "ab20c6dcb43cc9273a08c8dc5aa725b5fb0354835fbae89fe7ccd76cb395ed9f"
+  },
+  {
+    "crate": "validator",
+    "status": "frozen",
+    "sha256": "26d41518891d87d788931fd0956f9805dea31030f33138412cd595e0b58a0e94"
+  },
+  {
+    "crate": "utoipa",
+    "status": "frozen",
+    "sha256": "42b4eb0735133fb4cba2eb01c8163063d2e962df07e01dbf72e0891866ba64aa"
+  },
+  {
+    "crate": "schemars",
+    "status": "frozen",
+    "sha256": "7dace1d041a6163c427072d602cb2838152ffab21977d9047997926bd22b7ab6"
+  },
+  {
+    "crate": "quick-xml",
+    "status": "frozen",
+    "sha256": "27fb9bbbbc1326044e55b13ac4cbc4cf4f7bfb1e2dda238dfe7f362b895ad92d"
+  },
+  {
+    "crate": "notify",
+    "status": "frozen",
+    "sha256": "f38c65206de93c2b9194bd444879dfc451b57e40b6b73ceb3a58211619fa33dd"
+  },
+  {
+    "crate": "http-body-util",
+    "status": "frozen",
+    "sha256": "fb4ee857920fcf47eaa4297d87ae4a44ceeea2bb19f154b9a5cd0af6413290b6"
+  },
+  {
+    "crate": "clap_complete",
+    "status": "frozen",
+    "sha256": "03ca8096c87f65e3e15a1727e335455ed1b22b76e11b72822916b29a11b3a71a"
+  },
+  {
+    "crate": "bincode",
+    "status": "frozen",
+    "sha256": "f37d7d7000eafb449b3c713ec8e8b9a5a7901c6171257f6c2d1ce2610aed8aaf"
+  },
+  {
+    "crate": "sqlparser",
+    "status": "frozen",
+    "sha256": "3cb65e2b11c61f382050f3b7743cc538367849928277332cebee55576a1b712e"
+  },
+  {
+    "crate": "sea-query",
+    "status": "frozen",
+    "sha256": "76f0ba0b742890774b676bf15d41415963b494c1ae22941b1de03d055e2f31b6"
+  },
+  {
+    "crate": "figment",
+    "status": "frozen",
+    "sha256": "b2e4ccca980dda3b8fb6aceb8c1634f7c78402ff31ba2d7b1073ffe912e65b55"
+  },
+  {
+    "crate": "opentelemetry",
+    "status": "frozen",
+    "sha256": "fe9f4907f7e4ab1b73e17e5eba636f5b2c072c67397a389ef29493f5e6898515"
+  },
+  {
+    "crate": "poem",
+    "status": "frozen",
+    "sha256": "aa69c9bb7d412e7c9a11f8098ab7c1dcb43247d5c1b3607b642119b893585b9e"
+  }
+]

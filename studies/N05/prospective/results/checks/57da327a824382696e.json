@@ -1,0 +1,28 @@
+{
+  "key": "57da327a824382696e",
+  "args": {
+    "crate": "sea-query",
+    "version": "0.32.5",
+    "id": "a177aebdb27b5488",
+    "profile": "candidate",
+    "features": [
+      "all-features",
+      "attr",
+      "backend-postgres",
+      "tests-cfg",
+      "thread-safe",
+      "with-ipnetwork"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 1.2575,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "b15e8feb6e2a4c4d2cd4976aa1b320b8a0440f222ea5bc208491b7927e406dd4",
+  "manifest_sha256": "485ec835824df3101f9b3a4067e1c82bafa08a4521f6553c3006b2980420d91d",
+  "log_file": "prospective/results/check_logs/57da327a824382696e.txt.gz"
+}

@@ -1,0 +1,29 @@
+{
+  "key": "f08ea6d78f00b90c98",
+  "args": {
+    "crate": "hyper-util",
+    "version": "0.1.15",
+    "id": "6414873f00061607",
+    "profile": "candidate",
+    "features": [
+      "client",
+      "client-legacy",
+      "client-proxy",
+      "client-proxy-system",
+      "full",
+      "server",
+      "tokio"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0962,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "57ab7fad8a8d9a1d1f0da46c617ef89d0c575b24bf075d7053f1177929da13aa",
+  "manifest_sha256": "1d9f52c7cd1e08a121f3bda947747ca0cb62ea84d4b1aaa092b4b77877c3bad5",
+  "log_file": "prospective/results/check_logs/f08ea6d78f00b90c98.txt.gz"
+}

@@ -1,0 +1,28 @@
+{
+  "key": "f9d87e37d8c67fedda",
+  "args": {
+    "crate": "miette",
+    "version": "7.6.0",
+    "id": "13767d76e29f6821",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2189,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `semver`",
+      "rendered": "error[E0432]: unresolved import `semver`\n --> src/main.rs:3:5\n  |\n3 | use semver::Version;\n  |     ^^^^^^ use of unresolved module or unlinked crate `semver`\n  |\n  = help: if you wanted to use a crate named `semver`, use `cargo add semver` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_miette_consumer` (bin \"n05_miette_consumer\") due to 1 previous error\n",
+  "code_sha256": "1bee0a2364ad9c3af3dd6bb0ca520162f72ef772239aa65f12c014efc14a624c",
+  "manifest_sha256": "ba6b5da671ee0fa1466c82363064ff4804fad51e35f15a34f72402f84483ed15",
+  "log_file": "holdout/results/check_logs/f9d87e37d8c67fedda.txt.gz"
+}

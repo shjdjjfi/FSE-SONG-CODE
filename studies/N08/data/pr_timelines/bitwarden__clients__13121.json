@@ -1,0 +1,67 @@
+{
+  "fetched_utc": "2026-11-14T17:11:54.837170+00:00",
+  "merged_at": "2025-02-20T17:45:38Z",
+  "opened_at": "2025-01-23T23:00:08Z",
+  "pr": 13121,
+  "raw_html_sha256": "d87e3856e455e2036858ff120b69d1506b9a147336fd8a7bf287e8e11ceb24e6",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 11,
+  "reviews": [
+    {
+      "login": "coroiu",
+      "state": "COMMENTED",
+      "submitted_at": "2025-01-31T14:51:14Z"
+    },
+    {
+      "login": "Patrick-Pimentel-Bitwarden",
+      "state": "COMMENTED",
+      "submitted_at": "2025-02-03T21:31:09Z"
+    },
+    {
+      "login": "jrmccannon",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-04T14:01:23Z"
+    },
+    {
+      "login": "coroiu",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-13T08:13:47Z"
+    },
+    {
+      "login": "quexten",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2025-02-13T11:52:17Z"
+    },
+    {
+      "login": "jrmccannon",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-13T14:07:02Z"
+    },
+    {
+      "login": "quexten",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-14T23:59:40Z"
+    },
+    {
+      "login": "coroiu",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-17T08:27:13Z"
+    },
+    {
+      "login": "jrmccannon",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-17T15:05:16Z"
+    },
+    {
+      "login": "Patrick-Pimentel-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-20T15:39:23Z"
+    },
+    {
+      "login": "ttalty",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-20T16:56:57Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/13121"
+}

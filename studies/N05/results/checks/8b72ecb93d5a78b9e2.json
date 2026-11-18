@@ -1,0 +1,21 @@
+{
+  "key": "8b72ecb93d5a78b9e2",
+  "args": {
+    "crate": "axum",
+    "version": "0.8.4",
+    "id": "412bbf92ccbd4568",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.109,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "0d17216dc74378e8fdbb21461ffd2c51b1fc3246677d56361bc04b3532b363f9",
+  "manifest_sha256": "1a08b2dcf1c48f38e1c32ef3858db3a81b3ef7a397dc1bcdc4a31d82be49ebd7",
+  "log_file": "results/check_logs/8b72ecb93d5a78b9e2.txt.gz"
+}

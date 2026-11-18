@@ -1,0 +1,27 @@
+{
+  "fetched_utc": "2026-11-14T17:13:11.043787+00:00",
+  "merged_at": "2025-10-24T16:17:59Z",
+  "opened_at": "2025-10-20T20:03:19Z",
+  "pr": 16939,
+  "raw_html_sha256": "1e876123ce093f9fbc1c8f07a309e447536f355d025f9b49dc2664d1c2c17b1e",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 3,
+  "reviews": [
+    {
+      "login": "Banrion",
+      "state": "COMMENTED",
+      "submitted_at": "2025-10-22T15:42:33Z"
+    },
+    {
+      "login": "Banrion",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2025-10-23T13:56:45Z"
+    },
+    {
+      "login": "Banrion",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-24T16:17:57Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/16939"
+}

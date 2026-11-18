@@ -1,0 +1,30 @@
+{
+  "pr": 15457,
+  "pr_author": "quexten",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-07-16T08:47:37Z",
+      "requested_people": [
+        "quexten"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-16T08:47:38Z",
+      "requested_people": [
+        "dani-garcia",
+        "ike-kottlowski",
+        "jrmccannon",
+        "quexten",
+        "shane-melton",
+        "thomas-avery"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "28bcb1233eedec3e468b3280af1396b857daa2d8b9eb048775a2939ecc624217",
+  "url": "https://github.com/bitwarden/clients/pull/15457"
+}

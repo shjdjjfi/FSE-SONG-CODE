@@ -1,0 +1,67 @@
+[
+  {
+    "project": "aws-encryption-sdk-cli",
+    "osv_id": "GHSA-89v2-g37m-g3ff",
+    "versions": [
+      "1.9.0",
+      "2.2.0"
+    ],
+    "first": "1.9.0"
+  },
+  {
+    "project": "case-utils",
+    "osv_id": "GHSA-rgrf-6mf5-m882",
+    "versions": [
+      "0.5.1",
+      "0.6.1",
+      "0.7.1",
+      "0.8.1",
+      "0.9.1",
+      "0.10.1",
+      "0.11.1",
+      "0.12.1",
+      "0.13.1",
+      "0.14.1"
+    ],
+    "first": "0.5.1"
+  },
+  {
+    "project": "jupyterlab",
+    "osv_id": "GHSA-jwrc-gm9j-263p",
+    "versions": [
+      "4.5.11",
+      "4.6.4"
+    ],
+    "first": "4.5.11"
+  },
+  {
+    "project": "mayan-edms",
+    "osv_id": "GHSA-x37w-7p52-8f49",
+    "versions": [
+      "4.6.12",
+      "4.7.8",
+      "4.8.10",
+      "4.9.7",
+      "4.10.2"
+    ],
+    "first": "4.6.12"
+  },
+  {
+    "project": "protobuf",
+    "osv_id": "PYSEC-2026-1805",
+    "versions": [
+      "5.29.6",
+      "6.33.5"
+    ],
+    "first": "5.29.6"
+  },
+  {
+    "project": "tortoise-orm",
+    "osv_id": "PYSEC-2020-144",
+    "versions": [
+      "0.15.23",
+      "0.16.6"
+    ],
+    "first": "0.15.23"
+  }
+]

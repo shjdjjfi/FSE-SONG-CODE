@@ -1,0 +1,25 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 1,
+  "bytes": 1740,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "+",
+      "code": "this.hideIcon = null;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:46.572911+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 1,
+  "pr": 15610,
+  "repository": "bitwarden/clients",
+  "sha256": "64111a5b126c17aca7081d8831337e94e70626eb0d20258fa188a288fe13fde0",
+  "target_code_changed_lines": 1,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15610.patch"
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "crate": "tower-http",
+    "status": "frozen",
+    "sha256": "0ef10fb6190b79b1c9cbbfc059d93f73c3ad4a5dfd57224607784c0e990d69af"
+  },
+  {
+    "crate": "tower",
+    "status": "missing"
+  },
+  {
+    "crate": "tokio-stream",
+    "status": "missing"
+  },
+  {
+    "crate": "bytes",
+    "status": "missing"
+  },
+  {
+    "crate": "dashmap",
+    "status": "missing"
+  },
+  {
+    "crate": "miette",
+    "status": "missing"
+  },
+  {
+    "crate": "serde_json",
+    "status": "missing"
+  },
+  {
+    "crate": "hashbrown",
+    "status": "missing"
+  }
+]

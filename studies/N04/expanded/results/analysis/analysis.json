@@ -1,0 +1,22 @@
+{
+  "migration": {
+    "source_pairs": 875,
+    "method_changes_total": 25,
+    "class_changes_total": 609,
+    "file_changes_total": 227,
+    "pairing_by_index_curated": true
+  },
+  "history_replay": {
+    "missed_future_flaky_increase_reset_minus_preserved": {
+      "point": 0.2830188679245283,
+      "ci95": [
+        0.10139860139860139,
+        0.3140432098765432
+      ],
+      "clusters": 8
+    },
+    "unit": "test x commit x seed; project clusters resampled; outcomes genuine, reset artificial"
+  },
+  "multiple_testing_warning": "Subgroup analyses are exploratory; three resamplings are not independent external replications.",
+  "posthoc_model_warning": "hybrid_posthoc introduced after initial result inspection; do not use as a confirmatory success claim."
+}

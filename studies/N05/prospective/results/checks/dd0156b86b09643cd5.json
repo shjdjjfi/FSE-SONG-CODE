@@ -1,0 +1,35 @@
+{
+  "key": "dd0156b86b09643cd5",
+  "args": {
+    "crate": "poem",
+    "version": "3.1.12",
+    "id": "bbe13d6ad3a253ac",
+    "profile": "candidate",
+    "features": [
+      "compression",
+      "embed",
+      "multipart",
+      "native-tls",
+      "session",
+      "xml"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 2.5977,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `poem::endpoint::StaticFilesEndpoint`",
+      "rendered": "error[E0432]: unresolved import `poem::endpoint::StaticFilesEndpoint`\n  --> src/main.rs:2:19\n   |\n 2 | use poem::{Route, endpoint::StaticFilesEndpoint};\n   |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ no `StaticFilesEndpoint` in `endpoint`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/poem-3.1.12/src/endpoint/mod.rs:44:44\n   |\n43 | #[cfg(feature = \"static-files\")]\n   |       ------------------------ the item is gated behind the `static-files` feature\n44 | pub use static_files::{StaticFileEndpoint, StaticFilesEndpoint};\n   |                                            ^^^^^^^^^^^^^^^^^^^\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_poem_consumer` (bin \"n05_poem_consumer\") due to 1 previous error\n",
+  "code_sha256": "6eb85c9ffa55f0398fbaa2afc267392eaf8d3e52bf458db6852d7e62eb74b3ac",
+  "manifest_sha256": "ef6a590a9265a2ac3f01be941cd40b041a4eef193bdf2dc03ab78ed235f5f09c",
+  "log_file": "prospective/results/check_logs/dd0156b86b09643cd5.txt.gz"
+}

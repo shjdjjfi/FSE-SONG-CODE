@@ -1,0 +1,34 @@
+{
+  "key": "37773b49ac418948be",
+  "args": {
+    "crate": "redis",
+    "version": "0.32.1",
+    "id": "5c3b2933c9cbf459",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1086,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `redis::cluster`",
+      "rendered": "error[E0432]: unresolved import `redis::cluster`\n   --> src/main.rs:2:12\n    |\n  2 | use redis::cluster::ClusterConfig;\n    |            ^^^^^^^ could not find `cluster` in `redis`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/redis-0.32.1/src/lib.rs:676:9\n    |\n674 | #[cfg(feature = \"cluster\")]\n    |       ------------------- the item is gated behind the `cluster` feature\n675 | #[cfg_attr(docsrs, doc(cfg(feature = \"cluster\")))]\n676 | pub mod cluster;\n    |         ^^^^^^^\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:3:20\n  |\n3 | let (tx, mut rx) = tokio::sync::mpsc::unbounded_channel();\n  |                    ^^^^^ use of unresolved module or unlinked crate `tokio`\n  |\n  = help: if you wanted to use a crate named `tokio`, use `cargo add tokio` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_redis_consumer` (bin \"n05_redis_consumer\") due to 2 previous errors\n",
+  "code_sha256": "baed349b75ddab8a1e4f31eb9fcb523949c6142e28074f7bf3befbf806d7daf6",
+  "manifest_sha256": "5c2057a3e4fac2ad0526d11aa2287ac877f0da879fa70488b773b6f1d03fb340",
+  "log_file": "prospective/results/check_logs/37773b49ac418948be.txt.gz"
+}

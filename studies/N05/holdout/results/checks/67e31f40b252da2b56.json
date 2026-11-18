@@ -1,0 +1,21 @@
+{
+  "key": "67e31f40b252da2b56",
+  "args": {
+    "crate": "tower-http",
+    "version": "0.6.6",
+    "id": "6d2144000d187cfb",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0493,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "27e053f8a3f9080cc2f3c95c43577d7d37e22d11d15f902b65a9595342055d2f",
+  "manifest_sha256": "3eb60df689daaecee477cb941bcad98ac8fe4dfddf1225303ec8fe3f6ff02c1a",
+  "log_file": "holdout/results/check_logs/67e31f40b252da2b56.txt.gz"
+}

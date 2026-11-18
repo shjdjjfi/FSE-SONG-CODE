@@ -1,0 +1,28 @@
+{
+  "key": "7831c7d991706aa077",
+  "args": {
+    "crate": "regex",
+    "version": "1.11.1",
+    "id": "af67a021d69f3836",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0522,
+  "errors": [
+    {
+      "code": null,
+      "message": "expected `;`, found `Ok`",
+      "rendered": "error: expected `;`, found `Ok`\n  --> src/main.rs:17:41\n   |\n17 | Ok::<(), Box<dyn std::error::Error>>(())\n   |                                         ^ help: add `;` here\n18 | Ok(())\n   | -- unexpected token\n\n",
+      "line": 18
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_regex_consumer` (bin \"n05_regex_consumer\") due to 1 previous error\n",
+  "code_sha256": "55c42162f167d080ab129670e4a5f011991be065fe52e51fe6dabd2ea475ae52",
+  "manifest_sha256": "d7f8eb05ae980ce5c705e047fb672a8668356084cbeb97a7da6a7b8a5dd2501b",
+  "log_file": "results/check_logs/7831c7d991706aa077.txt.gz"
+}

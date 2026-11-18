@@ -1,0 +1,55 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 24181,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW11709",
+  "examples": [
+    {
+      "change": "-",
+      "code": "import { AccountInfo } from \"@bitwarden/common/auth/abstractions/account.service\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { Account } from \"@bitwarden/common/auth/abstractions/account.service\";",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "async rotateUserKeyAndEncryptedData(",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "masterPassword: string,",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "user: { id: UserId } & AccountInfo,",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "): Promise<void> {",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "async rotateUserKeyAndEncryptedData(masterPassword: string, user: Account): Promise<void> {",
+      "file": "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:41.008722+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+  "noncomment_nonimport_changed_lines": 5,
+  "pr": 11779,
+  "repository": "bitwarden/clients",
+  "sha256": "b736977c92e473e4f0f9de82d9e7f35d7cfceac20f870af896da7ab18235395a",
+  "target_code_changed_lines": 7,
+  "target_files": [
+    "apps/web/src/app/key-management/key-rotation/user-key-rotation.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/11779.patch"
+}

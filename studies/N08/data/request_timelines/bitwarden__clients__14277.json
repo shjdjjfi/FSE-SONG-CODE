@@ -1,0 +1,35 @@
+{
+  "pr": 14277,
+  "pr_author": "mgibson1",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-04-14T18:54:30Z",
+      "requested_people": [
+        "mgibson1"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-04-14T18:54:30Z",
+      "requested_people": [
+        "justindbaur",
+        "mgibson1"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-04-15T14:44:04Z",
+      "requested_people": [
+        "mgibson1",
+        "quexten"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "02f74264d1a062da212795cdfeff168ecaffb0801a6a3f54e388e3332ccc4d5d",
+  "url": "https://github.com/bitwarden/clients/pull/14277"
+}

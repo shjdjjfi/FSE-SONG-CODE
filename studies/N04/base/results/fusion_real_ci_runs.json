@@ -1,0 +1,1213 @@
+{
+  "retrieved_at_utc": "2026-11-15T00:17:36.541296+00:00",
+  "public_api": "https://api.github.com/repos/Runfusion/Fusion/actions/runs/{id}/jobs",
+  "study_commit": "b5450832494d24e4171acea606b4c022a5a8475b",
+  "pre_run_is_original_maintainer_linked_failure": true,
+  "post_run_head_descends_from_study_commit": true,
+  "post_run_is_not_at_exact_study_commit": true,
+  "observational_warning": "Before/after runs differ in source revisions and may have other failures; duration changes cannot be attributed to N04 or quarantine migration",
+  "actual_retry_count_unobserved": "Two independent run IDs, each run_attempt=1; not a before-after rerun inventory for one failed PR",
+  "job_log_access": "Public runs/jobs metadata available; anonymous /actions/jobs/{id}/logs returned HTTP 403",
+  "runs": [
+    {
+      "id": 28697507894,
+      "name": "Full Suite (non-blocking)",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-07-04T06:19:45Z",
+      "run_started_at": "2026-07-04T06:19:45Z",
+      "updated_at": "2026-07-04T06:28:27Z",
+      "head_sha": "046d2d3f72d8339e4ab2ca55913cf21588d58eae",
+      "run_attempt": 1,
+      "event": "push",
+      "head_branch": "main",
+      "html_url": "https://github.com/Runfusion/Fusion/actions/runs/28697507894",
+      "job_count": 7,
+      "job_walltimes_sum_seconds": 1609.0,
+      "overall_update_elapsed_seconds": 522.0,
+      "jobs": [
+        {
+          "id": 85109656697,
+          "name": "Line-count audit",
+          "conclusion": "success",
+          "started_at": "2026-07-04T06:19:49Z",
+          "completed_at": "2026-07-04T06:20:06Z",
+          "duration_seconds": 17.0,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:49Z",
+              "completed_at": "2026-07-04T06:19:50Z"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:50Z",
+              "completed_at": "2026-07-04T06:19:54Z"
+            },
+            {
+              "name": "Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:54Z",
+              "completed_at": "2026-07-04T06:20:04Z"
+            },
+            {
+              "name": "Run line-count audit",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:04Z",
+              "completed_at": "2026-07-04T06:20:05Z"
+            },
+            {
+              "name": "Post Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:05Z",
+              "completed_at": "2026-07-04T06:20:05Z"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:05Z",
+              "completed_at": "2026-07-04T06:20:05Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:05Z",
+              "completed_at": "2026-07-04T06:20:05Z"
+            }
+          ]
+        },
+        {
+          "id": 85109656713,
+          "name": "Dashboard curated-gate guard",
+          "conclusion": "success",
+          "started_at": "2026-07-04T06:19:49Z",
+          "completed_at": "2026-07-04T06:20:14Z",
+          "duration_seconds": 25.0,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:50Z",
+              "completed_at": "2026-07-04T06:19:50Z"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:50Z",
+              "completed_at": "2026-07-04T06:19:55Z"
+            },
+            {
+              "name": "Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:55Z",
+              "completed_at": "2026-07-04T06:20:10Z"
+            },
+            {
+              "name": "Compute dist source hash",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:10Z",
+              "completed_at": "2026-07-04T06:20:10Z"
+            },
+            {
+              "name": "Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:10Z",
+              "completed_at": "2026-07-04T06:20:10Z"
+            },
+            {
+              "name": "Seed artifact hash-cache on cache hit",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T06:20:10Z",
+              "completed_at": "2026-07-04T06:20:10Z"
+            },
+            {
+              "name": "Assert every dashboard test file is gated or skip-listed",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:10Z",
+              "completed_at": "2026-07-04T06:20:11Z"
+            },
+            {
+              "name": "Post Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:11Z",
+              "completed_at": "2026-07-04T06:20:11Z"
+            },
+            {
+              "name": "Post Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:11Z",
+              "completed_at": "2026-07-04T06:20:11Z"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:11Z",
+              "completed_at": "2026-07-04T06:20:12Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:12Z",
+              "completed_at": "2026-07-04T06:20:12Z"
+            }
+          ]
+        },
+        {
+          "id": 85109656718,
+          "name": "Test shard 2/4",
+          "conclusion": "failure",
+          "started_at": "2026-07-04T06:19:49Z",
+          "completed_at": "2026-07-04T06:28:26Z",
+          "duration_seconds": 517.0,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:49Z",
+              "completed_at": "2026-07-04T06:19:50Z"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:50Z",
+              "completed_at": "2026-07-04T06:20:05Z"
+            },
+            {
+              "name": "Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:05Z",
+              "completed_at": "2026-07-04T06:20:21Z"
+            },
+            {
+              "name": "Compute dist source hash",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:21Z",
+              "completed_at": "2026-07-04T06:20:22Z"
+            },
+            {
+              "name": "Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:22Z",
+              "completed_at": "2026-07-04T06:20:22Z"
+            },
+            {
+              "name": "Seed artifact hash-cache on cache hit",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T06:20:22Z",
+              "completed_at": "2026-07-04T06:20:22Z"
+            },
+            {
+              "name": "Test (deterministic shard)",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-07-04T06:20:22Z",
+              "completed_at": "2026-07-04T06:28:24Z"
+            },
+            {
+              "name": "Upload per-shard test timings",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:28:24Z",
+              "completed_at": "2026-07-04T06:28:24Z"
+            },
+            {
+              "name": "Post Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T06:28:24Z",
+              "completed_at": "2026-07-04T06:28:24Z"
+            },
+            {
+              "name": "Post Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:28:24Z",
+              "completed_at": "2026-07-04T06:28:24Z"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:28:24Z",
+              "completed_at": "2026-07-04T06:28:24Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:28:24Z",
+              "completed_at": "2026-07-04T06:28:24Z"
+            }
+          ]
+        },
+        {
+          "id": 85109656720,
+          "name": "Test shard 4/4",
+          "conclusion": "failure",
+          "started_at": "2026-07-04T06:19:49Z",
+          "completed_at": "2026-07-04T06:24:19Z",
+          "duration_seconds": 270.0,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:50Z",
+              "completed_at": "2026-07-04T06:19:51Z"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:51Z",
+              "completed_at": "2026-07-04T06:20:02Z"
+            },
+            {
+              "name": "Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:02Z",
+              "completed_at": "2026-07-04T06:20:22Z"
+            },
+            {
+              "name": "Compute dist source hash",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:22Z",
+              "completed_at": "2026-07-04T06:20:22Z"
+            },
+            {
+              "name": "Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:22Z",
+              "completed_at": "2026-07-04T06:20:22Z"
+            },
+            {
+              "name": "Seed artifact hash-cache on cache hit",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T06:20:22Z",
+              "completed_at": "2026-07-04T06:20:22Z"
+            },
+            {
+              "name": "Test (deterministic shard)",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-07-04T06:20:22Z",
+              "completed_at": "2026-07-04T06:24:15Z"
+            },
+            {
+              "name": "Upload per-shard test timings",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:24:15Z",
+              "completed_at": "2026-07-04T06:24:15Z"
+            },
+            {
+              "name": "Post Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T06:24:15Z",
+              "completed_at": "2026-07-04T06:24:15Z"
+            },
+            {
+              "name": "Post Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:24:15Z",
+              "completed_at": "2026-07-04T06:24:15Z"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:24:15Z",
+              "completed_at": "2026-07-04T06:24:16Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:24:16Z",
+              "completed_at": "2026-07-04T06:24:16Z"
+            }
+          ]
+        },
+        {
+          "id": 85109656723,
+          "name": "Test shard 1/4",
+          "conclusion": "failure",
+          "started_at": "2026-07-04T06:19:49Z",
+          "completed_at": "2026-07-04T06:26:51Z",
+          "duration_seconds": 422.0,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:50Z",
+              "completed_at": "2026-07-04T06:19:51Z"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:51Z",
+              "completed_at": "2026-07-04T06:20:05Z"
+            },
+            {
+              "name": "Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:05Z",
+              "completed_at": "2026-07-04T06:20:21Z"
+            },
+            {
+              "name": "Compute dist source hash",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:21Z",
+              "completed_at": "2026-07-04T06:20:22Z"
+            },
+            {
+              "name": "Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:22Z",
+              "completed_at": "2026-07-04T06:20:22Z"
+            },
+            {
+              "name": "Seed artifact hash-cache on cache hit",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T06:20:22Z",
+              "completed_at": "2026-07-04T06:20:22Z"
+            },
+            {
+              "name": "Test (deterministic shard)",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-07-04T06:20:22Z",
+              "completed_at": "2026-07-04T06:26:47Z"
+            },
+            {
+              "name": "Upload per-shard test timings",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:26:47Z",
+              "completed_at": "2026-07-04T06:26:47Z"
+            },
+            {
+              "name": "Post Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T06:26:47Z",
+              "completed_at": "2026-07-04T06:26:47Z"
+            },
+            {
+              "name": "Post Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:26:47Z",
+              "completed_at": "2026-07-04T06:26:47Z"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:26:47Z",
+              "completed_at": "2026-07-04T06:26:48Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:26:48Z",
+              "completed_at": "2026-07-04T06:26:48Z"
+            }
+          ]
+        },
+        {
+          "id": 85109656727,
+          "name": "Engine slow tier",
+          "conclusion": "success",
+          "started_at": "2026-07-04T06:19:50Z",
+          "completed_at": "2026-07-04T06:21:35Z",
+          "duration_seconds": 105.0,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:50Z",
+              "completed_at": "2026-07-04T06:19:51Z"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:51Z",
+              "completed_at": "2026-07-04T06:20:06Z"
+            },
+            {
+              "name": "Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:06Z",
+              "completed_at": "2026-07-04T06:20:23Z"
+            },
+            {
+              "name": "Run engine-slow with non-empty-execution assertion",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:23Z",
+              "completed_at": "2026-07-04T06:21:33Z"
+            },
+            {
+              "name": "Post Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:21:33Z",
+              "completed_at": "2026-07-04T06:21:33Z"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:21:33Z",
+              "completed_at": "2026-07-04T06:21:34Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:21:34Z",
+              "completed_at": "2026-07-04T06:21:34Z"
+            }
+          ]
+        },
+        {
+          "id": 85109656738,
+          "name": "Test shard 3/4",
+          "conclusion": "failure",
+          "started_at": "2026-07-04T06:19:49Z",
+          "completed_at": "2026-07-04T06:24:02Z",
+          "duration_seconds": 253.0,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:50Z",
+              "completed_at": "2026-07-04T06:19:51Z"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:19:51Z",
+              "completed_at": "2026-07-04T06:20:04Z"
+            },
+            {
+              "name": "Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:04Z",
+              "completed_at": "2026-07-04T06:20:25Z"
+            },
+            {
+              "name": "Compute dist source hash",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:25Z",
+              "completed_at": "2026-07-04T06:20:25Z"
+            },
+            {
+              "name": "Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:20:25Z",
+              "completed_at": "2026-07-04T06:20:25Z"
+            },
+            {
+              "name": "Seed artifact hash-cache on cache hit",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T06:20:25Z",
+              "completed_at": "2026-07-04T06:20:25Z"
+            },
+            {
+              "name": "Test (deterministic shard)",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-07-04T06:20:25Z",
+              "completed_at": "2026-07-04T06:23:58Z"
+            },
+            {
+              "name": "Upload per-shard test timings",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:23:58Z",
+              "completed_at": "2026-07-04T06:23:58Z"
+            },
+            {
+              "name": "Post Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T06:23:58Z",
+              "completed_at": "2026-07-04T06:23:58Z"
+            },
+            {
+              "name": "Post Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:23:58Z",
+              "completed_at": "2026-07-04T06:23:59Z"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:23:59Z",
+              "completed_at": "2026-07-04T06:23:59Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T06:23:59Z",
+              "completed_at": "2026-07-04T06:23:59Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 28720367126,
+      "name": "Full Suite (non-blocking)",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-07-04T21:35:05Z",
+      "run_started_at": "2026-07-04T21:35:05Z",
+      "updated_at": "2026-07-04T21:43:54Z",
+      "head_sha": "c16cc9e08a431e4080f50a43925e1a08b42f8287",
+      "run_attempt": 1,
+      "event": "push",
+      "head_branch": "main",
+      "html_url": "https://github.com/Runfusion/Fusion/actions/runs/28720367126",
+      "job_count": 7,
+      "job_walltimes_sum_seconds": 1706.0,
+      "overall_update_elapsed_seconds": 529.0,
+      "jobs": [
+        {
+          "id": 85168869750,
+          "name": "Test shard 2/4",
+          "conclusion": "failure",
+          "started_at": "2026-07-04T21:35:08Z",
+          "completed_at": "2026-07-04T21:43:53Z",
+          "duration_seconds": 525.0,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:09Z",
+              "completed_at": "2026-07-04T21:35:10Z"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:10Z",
+              "completed_at": "2026-07-04T21:35:26Z"
+            },
+            {
+              "name": "Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:26Z",
+              "completed_at": "2026-07-04T21:35:41Z"
+            },
+            {
+              "name": "Compute dist source hash",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:41Z",
+              "completed_at": "2026-07-04T21:35:42Z"
+            },
+            {
+              "name": "Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:42Z",
+              "completed_at": "2026-07-04T21:35:42Z"
+            },
+            {
+              "name": "Seed artifact hash-cache on cache hit",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T21:35:42Z",
+              "completed_at": "2026-07-04T21:35:42Z"
+            },
+            {
+              "name": "Test (deterministic shard)",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-07-04T21:35:42Z",
+              "completed_at": "2026-07-04T21:43:50Z"
+            },
+            {
+              "name": "Upload per-shard test timings",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:43:50Z",
+              "completed_at": "2026-07-04T21:43:51Z"
+            },
+            {
+              "name": "Post Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T21:43:51Z",
+              "completed_at": "2026-07-04T21:43:51Z"
+            },
+            {
+              "name": "Post Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:43:51Z",
+              "completed_at": "2026-07-04T21:43:51Z"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:43:51Z",
+              "completed_at": "2026-07-04T21:43:51Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:43:51Z",
+              "completed_at": "2026-07-04T21:43:51Z"
+            }
+          ]
+        },
+        {
+          "id": 85168869752,
+          "name": "Test shard 4/4",
+          "conclusion": "failure",
+          "started_at": "2026-07-04T21:35:09Z",
+          "completed_at": "2026-07-04T21:38:12Z",
+          "duration_seconds": 183.0,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:09Z",
+              "completed_at": "2026-07-04T21:35:10Z"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:10Z",
+              "completed_at": "2026-07-04T21:35:26Z"
+            },
+            {
+              "name": "Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:26Z",
+              "completed_at": "2026-07-04T21:35:40Z"
+            },
+            {
+              "name": "Compute dist source hash",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:40Z",
+              "completed_at": "2026-07-04T21:35:41Z"
+            },
+            {
+              "name": "Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:41Z",
+              "completed_at": "2026-07-04T21:35:41Z"
+            },
+            {
+              "name": "Seed artifact hash-cache on cache hit",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T21:35:41Z",
+              "completed_at": "2026-07-04T21:35:41Z"
+            },
+            {
+              "name": "Test (deterministic shard)",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-07-04T21:35:41Z",
+              "completed_at": "2026-07-04T21:38:09Z"
+            },
+            {
+              "name": "Upload per-shard test timings",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:38:09Z",
+              "completed_at": "2026-07-04T21:38:10Z"
+            },
+            {
+              "name": "Post Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T21:38:10Z",
+              "completed_at": "2026-07-04T21:38:10Z"
+            },
+            {
+              "name": "Post Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:38:10Z",
+              "completed_at": "2026-07-04T21:38:10Z"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:38:10Z",
+              "completed_at": "2026-07-04T21:38:10Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:38:10Z",
+              "completed_at": "2026-07-04T21:38:10Z"
+            }
+          ]
+        },
+        {
+          "id": 85168869763,
+          "name": "Line-count audit",
+          "conclusion": "success",
+          "started_at": "2026-07-04T21:35:09Z",
+          "completed_at": "2026-07-04T21:35:27Z",
+          "duration_seconds": 18.0,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:09Z",
+              "completed_at": "2026-07-04T21:35:10Z"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:10Z",
+              "completed_at": "2026-07-04T21:35:15Z"
+            },
+            {
+              "name": "Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:15Z",
+              "completed_at": "2026-07-04T21:35:25Z"
+            },
+            {
+              "name": "Run line-count audit",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:25Z",
+              "completed_at": "2026-07-04T21:35:25Z"
+            },
+            {
+              "name": "Post Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:25Z",
+              "completed_at": "2026-07-04T21:35:26Z"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:26Z",
+              "completed_at": "2026-07-04T21:35:26Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:26Z",
+              "completed_at": "2026-07-04T21:35:26Z"
+            }
+          ]
+        },
+        {
+          "id": 85168869772,
+          "name": "Test shard 1/4",
+          "conclusion": "failure",
+          "started_at": "2026-07-04T21:35:09Z",
+          "completed_at": "2026-07-04T21:42:39Z",
+          "duration_seconds": 450.0,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:09Z",
+              "completed_at": "2026-07-04T21:35:11Z"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:11Z",
+              "completed_at": "2026-07-04T21:35:26Z"
+            },
+            {
+              "name": "Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:26Z",
+              "completed_at": "2026-07-04T21:35:43Z"
+            },
+            {
+              "name": "Compute dist source hash",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:43Z",
+              "completed_at": "2026-07-04T21:35:43Z"
+            },
+            {
+              "name": "Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:43Z",
+              "completed_at": "2026-07-04T21:35:44Z"
+            },
+            {
+              "name": "Seed artifact hash-cache on cache hit",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T21:35:44Z",
+              "completed_at": "2026-07-04T21:35:44Z"
+            },
+            {
+              "name": "Test (deterministic shard)",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-07-04T21:35:44Z",
+              "completed_at": "2026-07-04T21:42:37Z"
+            },
+            {
+              "name": "Upload per-shard test timings",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:42:37Z",
+              "completed_at": "2026-07-04T21:42:37Z"
+            },
+            {
+              "name": "Post Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T21:42:37Z",
+              "completed_at": "2026-07-04T21:42:37Z"
+            },
+            {
+              "name": "Post Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:42:37Z",
+              "completed_at": "2026-07-04T21:42:37Z"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:42:37Z",
+              "completed_at": "2026-07-04T21:42:38Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:42:38Z",
+              "completed_at": "2026-07-04T21:42:38Z"
+            }
+          ]
+        },
+        {
+          "id": 85168869780,
+          "name": "Test shard 3/4",
+          "conclusion": "failure",
+          "started_at": "2026-07-04T21:35:08Z",
+          "completed_at": "2026-07-04T21:41:49Z",
+          "duration_seconds": 401.0,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:09Z",
+              "completed_at": "2026-07-04T21:35:10Z"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:10Z",
+              "completed_at": "2026-07-04T21:35:26Z"
+            },
+            {
+              "name": "Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:26Z",
+              "completed_at": "2026-07-04T21:35:42Z"
+            },
+            {
+              "name": "Compute dist source hash",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:42Z",
+              "completed_at": "2026-07-04T21:35:42Z"
+            },
+            {
+              "name": "Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:42Z",
+              "completed_at": "2026-07-04T21:35:42Z"
+            },
+            {
+              "name": "Seed artifact hash-cache on cache hit",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T21:35:42Z",
+              "completed_at": "2026-07-04T21:35:42Z"
+            },
+            {
+              "name": "Test (deterministic shard)",
+              "status": "completed",
+              "conclusion": "failure",
+              "started_at": "2026-07-04T21:35:42Z",
+              "completed_at": "2026-07-04T21:41:47Z"
+            },
+            {
+              "name": "Upload per-shard test timings",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:41:47Z",
+              "completed_at": "2026-07-04T21:41:47Z"
+            },
+            {
+              "name": "Post Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T21:41:47Z",
+              "completed_at": "2026-07-04T21:41:47Z"
+            },
+            {
+              "name": "Post Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:41:47Z",
+              "completed_at": "2026-07-04T21:41:47Z"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:41:47Z",
+              "completed_at": "2026-07-04T21:41:47Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:41:47Z",
+              "completed_at": "2026-07-04T21:41:47Z"
+            }
+          ]
+        },
+        {
+          "id": 85168869788,
+          "name": "Engine slow tier",
+          "conclusion": "success",
+          "started_at": "2026-07-04T21:35:09Z",
+          "completed_at": "2026-07-04T21:36:52Z",
+          "duration_seconds": 103.0,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:10Z",
+              "completed_at": "2026-07-04T21:35:11Z"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:11Z",
+              "completed_at": "2026-07-04T21:35:26Z"
+            },
+            {
+              "name": "Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:26Z",
+              "completed_at": "2026-07-04T21:35:45Z"
+            },
+            {
+              "name": "Run engine-slow with non-empty-execution assertion",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:45Z",
+              "completed_at": "2026-07-04T21:36:48Z"
+            },
+            {
+              "name": "Post Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:36:48Z",
+              "completed_at": "2026-07-04T21:36:49Z"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:36:49Z",
+              "completed_at": "2026-07-04T21:36:49Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:36:49Z",
+              "completed_at": "2026-07-04T21:36:49Z"
+            }
+          ]
+        },
+        {
+          "id": 85168869794,
+          "name": "Dashboard curated-gate guard",
+          "conclusion": "success",
+          "started_at": "2026-07-04T21:35:09Z",
+          "completed_at": "2026-07-04T21:35:35Z",
+          "duration_seconds": 26.0,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:09Z",
+              "completed_at": "2026-07-04T21:35:10Z"
+            },
+            {
+              "name": "Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:10Z",
+              "completed_at": "2026-07-04T21:35:15Z"
+            },
+            {
+              "name": "Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:15Z",
+              "completed_at": "2026-07-04T21:35:31Z"
+            },
+            {
+              "name": "Compute dist source hash",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:31Z",
+              "completed_at": "2026-07-04T21:35:32Z"
+            },
+            {
+              "name": "Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:32Z",
+              "completed_at": "2026-07-04T21:35:32Z"
+            },
+            {
+              "name": "Seed artifact hash-cache on cache hit",
+              "status": "completed",
+              "conclusion": "skipped",
+              "started_at": "2026-07-04T21:35:32Z",
+              "completed_at": "2026-07-04T21:35:32Z"
+            },
+            {
+              "name": "Assert every dashboard test file is gated or skip-listed",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:32Z",
+              "completed_at": "2026-07-04T21:35:33Z"
+            },
+            {
+              "name": "Post Cache built dist artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:33Z",
+              "completed_at": "2026-07-04T21:35:33Z"
+            },
+            {
+              "name": "Post Setup Node.js and pnpm",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:33Z",
+              "completed_at": "2026-07-04T21:35:33Z"
+            },
+            {
+              "name": "Post Checkout",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:33Z",
+              "completed_at": "2026-07-04T21:35:34Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "started_at": "2026-07-04T21:35:34Z",
+              "completed_at": "2026-07-04T21:35:34Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

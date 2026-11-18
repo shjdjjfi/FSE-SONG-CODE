@@ -1,0 +1,28 @@
+{
+  "key": "17ff6ce190bc6d1325",
+  "args": {
+    "crate": "axum",
+    "version": "0.8.4",
+    "id": "0e644db7283639ee",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2958,
+  "errors": [
+    {
+      "code": "E0283",
+      "message": "type annotations needed for `Router<_>`",
+      "rendered": "error[E0283]: type annotations needed for `Router<_>`\n   --> src/main.rs:10:5\n    |\n 10 | let app = Router::new().route(\"/\", get(handler));\n    |     ^^^   ------------- type must be known at this point\n    |\n    = note: cannot satisfy `_: Clone`\nnote: required by a bound in `Router::<S>::new`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/axum-0.8.4/src/routing/mod.rs:140:8\n    |\n140 |     S: Clone + Send + Sync + 'static,\n    |        ^^^^^ required by this bound in `Router::<S>::new`\n...\n146 |     pub fn new() -> Self {\n    |            --- required by a bound in this associated function\nhelp: consider giving `app` an explicit type, where the type for type parameter `S` is specified\n    |\n 10 | let app: Router<S> = Router::new().route(\"/\", get(handler));\n    |        +++++++++++\n\n",
+      "line": 10
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_axum_consumer` (bin \"n05_axum_consumer\") due to 1 previous error\n",
+  "code_sha256": "6599fc7e3d6d5211cae0e0782a90f989d7adbd30638bc959853ab11d8ce59fc8",
+  "manifest_sha256": "1a08b2dcf1c48f38e1c32ef3858db3a81b3ef7a397dc1bcdc4a31d82be49ebd7",
+  "log_file": "results/check_logs/17ff6ce190bc6d1325.txt.gz"
+}

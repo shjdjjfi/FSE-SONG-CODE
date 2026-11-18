@@ -1,0 +1,183 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 15,
+  "bytes": 157574,
+  "control_flow_or_callback_lines": 40,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "-",
+      "code": "return routingtree.NewStorage(api.Policies, namespacer)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "return routingtree.NewStorage(api.RouteService, namespacer)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/grafana/pkg/services/ngalert/notifier/legacy_storage\"",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "func ConvertToK8sResource(orgID int64, r definitions.Route, version string, namespacer request.NamespaceMapper) (*model.RoutingTree, error) {",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "func ConvertToK8sResources(orgID int64, routes legacy_storage.ManagedRoutes, namespacer request.NamespaceMapper) (*model.RoutingTreeList, error) {",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "result := &model.RoutingTreeList{",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "Items: make([]model.RoutingTree, 0, len(routes)),",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "for _, r := range routes {",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "k8sResource, err := ConvertToK8sResource(orgID, r, namespacer)",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "if err != nil {",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "return nil, fmt.Errorf(\"failed to convert route %q to k8s resource: %w\", r.Name, err)",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "result.Items = append(result.Items, *k8sResource)",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "return result, nil",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "func ConvertToK8sResource(orgID int64, r *legacy_storage.ManagedRoute, namespacer request.NamespaceMapper) (*model.RoutingTree, error) {",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "GroupBy:        r.GroupByStr,",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "GroupBy:        r.GroupBy,",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "Name:            model.UserDefinedRoutingTreeName,",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "Name:            r.Name,",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "ResourceVersion: version,",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "ResourceVersion: r.Version,",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/grafana/pkg/services/ngalert/notifier/legacy_storage\"",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "GetPolicyTree(ctx context.Context, orgID int64) (definitions.Route, string, error)",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "UpdatePolicyTree(ctx context.Context, orgID int64, tree definitions.Route, p alerting_models.Provenance, version string) (definitions.Route, string, error)",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/legacy_storage.go"
+    },
+    {
+      "change": "-",
+      "code": "ResetPolicyTree(ctx context.Context, orgID int64, p alerting_models.Provenance) (definitions.Route, error)",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/legacy_storage.go"
+    },
+    {
+      "change": "+",
+      "code": "GetManagedRoutes(ctx context.Context, orgID int64) (legacy_storage.ManagedRoutes, error)",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/legacy_storage.go"
+    },
+    {
+      "change": "+",
+      "code": "GetManagedRoute(ctx context.Context, orgID int64, name string) (legacy_storage.ManagedRoute, error)",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/legacy_storage.go"
+    },
+    {
+      "change": "+",
+      "code": "DeleteManagedRoute(ctx context.Context, orgID int64, name string, p alerting_models.Provenance, version string) error",
+      "file": "pkg/registry/apps/alerting/notifications/routingtree/legacy_storage.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:58:06.518812+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 141,
+  "pr": 117061,
+  "repository": "grafana/grafana",
+  "sha256": "b0f6c471584bf8a4eacd520129cd5d255e95d5a952328b756e4c45eb13eacb04",
+  "target_code_changed_lines": 145,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/register.go",
+    "pkg/registry/apps/alerting/notifications/routingtree/conversions.go",
+    "pkg/registry/apps/alerting/notifications/routingtree/legacy_storage.go",
+    "pkg/registry/apps/alerting/notifications/routingtree/type.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/117061.patch"
+}

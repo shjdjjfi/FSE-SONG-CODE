@@ -1,0 +1,830 @@
+{
+  "purpose": "same-output-manifest is unsafe if inputs change",
+  "fault_origin": "synthetic source edit with deliberately backdated mtime",
+  "observations": [
+    {
+      "case": "libraries",
+      "project": "mitt",
+      "arm": "standard",
+      "source_mutation": "packages/mitt/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": false,
+      "error_counts": {
+        "missing": 0,
+        "altered": 2,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": false,
+        "seconds": 0.2175,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "tsconfig.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 0.2175,
+            "compiled_projects": [],
+            "stdout": "12:17:45 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:17:45 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:17:45 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:17:45 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:17:45 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 3.7304,
+        "compiled_projects": [
+          "ts-pattern",
+          "zod",
+          "neverthrow",
+          "mitt"
+        ],
+        "stdout": "12:17:46 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:17:46 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:17:46 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/ts-pattern/tsconfig.json'...\n\n12:17:47 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:17:47 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/zod/tsconfig.json'...\n\n12:17:49 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:17:49 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/neverthrow/tsconfig.json'...\n\n12:17:49 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:17:49 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/mitt/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "libraries",
+      "project": "mitt",
+      "arm": "selective_hash",
+      "source_mutation": "packages/mitt/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": false,
+      "error_counts": {
+        "missing": 0,
+        "altered": 2,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": false,
+        "seconds": 0.1801,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "tsconfig.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 0.1722,
+            "compiled_projects": [],
+            "stdout": "12:17:49 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:17:49 PM - Project 'packages/ts-pattern/tsconfig.json' is up to date because newest input 'packages/ts-pattern/src/types/index.ts' is older than output 'packages/ts-pattern/cache.tsbuildinfo'\n\n12:17:49 PM - Project 'packages/zod/tsconfig.json' is up to date because newest input 'packages/zod/src/ZodError.ts' is older than output 'packages/zod/cache.tsbuildinfo'\n\n12:17:49 PM - Project 'packages/neverthrow/tsconfig.json' is up to date because newest input 'packages/neverthrow/src/result.ts' is older than output 'packages/neverthrow/cache.tsbuildinfo'\n\n12:17:49 PM - Project 'packages/mitt/tsconfig.json' is up to date because newest input 'packages/mitt/src/index.ts' is older than output 'packages/mitt/cache.tsbuildinfo'\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 2.9186,
+        "compiled_projects": [
+          "ts-pattern",
+          "zod",
+          "neverthrow",
+          "mitt"
+        ],
+        "stdout": "12:17:50 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:17:50 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:17:50 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/ts-pattern/tsconfig.json'...\n\n12:17:51 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:17:51 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/zod/tsconfig.json'...\n\n12:17:52 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:17:52 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/neverthrow/tsconfig.json'...\n\n12:17:52 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:17:52 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/mitt/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "libraries",
+      "project": "mitt",
+      "arm": "invalidate_all",
+      "source_mutation": "packages/mitt/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": true,
+      "error_counts": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": false,
+        "seconds": 3.5523,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "tsconfig.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 3.552,
+            "compiled_projects": [
+              "ts-pattern",
+              "zod",
+              "neverthrow",
+              "mitt"
+            ],
+            "stdout": "12:17:53 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:17:53 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:17:53 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/invalidate_all/packages/ts-pattern/tsconfig.json'...\n\n12:17:54 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:17:54 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/invalidate_all/packages/zod/tsconfig.json'...\n\n12:17:56 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:17:56 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/invalidate_all/packages/neverthrow/tsconfig.json'...\n\n12:17:56 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:17:56 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/invalidate_all/packages/mitt/tsconfig.json'...\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 3.3991,
+        "compiled_projects": [
+          "ts-pattern",
+          "zod",
+          "neverthrow",
+          "mitt"
+        ],
+        "stdout": "12:17:56 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:17:56 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:17:56 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/ts-pattern/tsconfig.json'...\n\n12:17:58 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:17:58 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/zod/tsconfig.json'...\n\n12:17:59 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:17:59 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/neverthrow/tsconfig.json'...\n\n12:17:59 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:17:59 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/mitt/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "libraries",
+      "project": "mitt",
+      "arm": "guarded_hash",
+      "source_mutation": "packages/mitt/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": true,
+      "error_counts": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": true,
+        "seconds": 3.6948,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "tsconfig.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 3.6861,
+            "compiled_projects": [
+              "ts-pattern",
+              "zod",
+              "neverthrow",
+              "mitt"
+            ],
+            "stdout": "12:18:00 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:18:00 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:18:00 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/guarded_hash/packages/ts-pattern/tsconfig.json'...\n\n12:18:01 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:18:01 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/guarded_hash/packages/zod/tsconfig.json'...\n\n12:18:03 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:18:03 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/guarded_hash/packages/neverthrow/tsconfig.json'...\n\n12:18:03 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:18:03 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/guarded_hash/packages/mitt/tsconfig.json'...\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 4.3996,
+        "compiled_projects": [
+          "ts-pattern",
+          "zod",
+          "neverthrow",
+          "mitt"
+        ],
+        "stdout": "12:18:03 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:18:03 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:18:03 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/ts-pattern/tsconfig.json'...\n\n12:18:06 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:18:06 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/zod/tsconfig.json'...\n\n12:18:07 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:18:07 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/neverthrow/tsconfig.json'...\n\n12:18:08 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:18:08 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/mitt/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "libraries",
+      "project": "mitt",
+      "arm": "clean_all",
+      "source_mutation": "packages/mitt/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": true,
+      "error_counts": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": false,
+        "seconds": 4.8475,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "tsconfig.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 4.8427,
+            "compiled_projects": [
+              "ts-pattern",
+              "zod",
+              "neverthrow",
+              "mitt"
+            ],
+            "stdout": "12:18:08 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:18:08 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:18:08 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_all/packages/ts-pattern/tsconfig.json'...\n\n12:18:10 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:18:10 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_all/packages/zod/tsconfig.json'...\n\n12:18:12 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:18:12 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_all/packages/neverthrow/tsconfig.json'...\n\n12:18:13 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:18:13 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_all/packages/mitt/tsconfig.json'...\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 4.6564,
+        "compiled_projects": [
+          "ts-pattern",
+          "zod",
+          "neverthrow",
+          "mitt"
+        ],
+        "stdout": "12:18:13 PM - Projects in this build: \n    * packages/ts-pattern/tsconfig.json\n    * packages/zod/tsconfig.json\n    * packages/neverthrow/tsconfig.json\n    * packages/mitt/tsconfig.json\n    * tsconfig.json\n\n12:18:13 PM - Project 'packages/ts-pattern/tsconfig.json' is out of date because output file 'packages/ts-pattern/cache.tsbuildinfo' does not exist\n\n12:18:13 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/ts-pattern/tsconfig.json'...\n\n12:18:15 PM - Project 'packages/zod/tsconfig.json' is out of date because output file 'packages/zod/cache.tsbuildinfo' does not exist\n\n12:18:15 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/zod/tsconfig.json'...\n\n12:18:17 PM - Project 'packages/neverthrow/tsconfig.json' is out of date because output file 'packages/neverthrow/cache.tsbuildinfo' does not exist\n\n12:18:17 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/neverthrow/tsconfig.json'...\n\n12:18:17 PM - Project 'packages/mitt/tsconfig.json' is out of date because output file 'packages/mitt/cache.tsbuildinfo' does not exist\n\n12:18:17 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/libraries/clean_oracle/packages/mitt/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "andrewthauer",
+      "project": "core",
+      "arm": "standard",
+      "source_mutation": "packages/core/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": false,
+      "error_counts": {
+        "missing": 0,
+        "altered": 4,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": false,
+        "seconds": 0.3212,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "packages/tsconfig.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 0.3212,
+            "compiled_projects": [],
+            "stdout": "12:18:18 PM - Projects in this build: \n    * packages/core/tsconfig.json\n    * packages/api/tsconfig.json\n    * packages/cli/tsconfig.json\n    * packages/web/tsconfig.json\n    * packages/tsconfig.json\n\n12:18:18 PM - Project 'packages/core/tsconfig.json' is up to date because newest input 'packages/core/src/index.ts' is older than output '.build-cache/core.tsbuildinfo'\n\n12:18:18 PM - Project 'packages/api/tsconfig.json' is up to date because newest input 'packages/api/src/index.ts' is older than output '.build-cache/api.tsbuildinfo'\n\n12:18:18 PM - Project 'packages/cli/tsconfig.json' is up to date because newest input 'packages/cli/src/index.ts' is older than output '.build-cache/cli.tsbuildinfo'\n\n12:18:18 PM - Project 'packages/web/tsconfig.json' is up to date because newest input 'packages/web/src/index.ts' is older than output '.build-cache/web.tsbuildinfo'\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "packages/tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 3.7862,
+        "compiled_projects": [
+          "core",
+          "api",
+          "cli",
+          "web"
+        ],
+        "stdout": "12:18:18 PM - Projects in this build: \n    * packages/core/tsconfig.json\n    * packages/api/tsconfig.json\n    * packages/cli/tsconfig.json\n    * packages/web/tsconfig.json\n    * packages/tsconfig.json\n\n12:18:18 PM - Project 'packages/core/tsconfig.json' is out of date because output file '.build-cache/core.tsbuildinfo' does not exist\n\n12:18:18 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/core/tsconfig.json'...\n\n12:18:20 PM - Project 'packages/api/tsconfig.json' is out of date because output file '.build-cache/api.tsbuildinfo' does not exist\n\n12:18:20 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/api/tsconfig.json'...\n\n12:18:21 PM - Project 'packages/cli/tsconfig.json' is out of date because output file '.build-cache/cli.tsbuildinfo' does not exist\n\n12:18:21 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/cli/tsconfig.json'...\n\n12:18:21 PM - Project 'packages/web/tsconfig.json' is out of date because output file '.build-cache/web.tsbuildinfo' does not exist\n\n12:18:21 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/web/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "andrewthauer",
+      "project": "core",
+      "arm": "selective_hash",
+      "source_mutation": "packages/core/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": false,
+      "error_counts": {
+        "missing": 0,
+        "altered": 4,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": false,
+        "seconds": 0.2874,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "packages/tsconfig.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 0.2845,
+            "compiled_projects": [],
+            "stdout": "12:18:22 PM - Projects in this build: \n    * packages/core/tsconfig.json\n    * packages/api/tsconfig.json\n    * packages/cli/tsconfig.json\n    * packages/web/tsconfig.json\n    * packages/tsconfig.json\n\n12:18:22 PM - Project 'packages/core/tsconfig.json' is up to date because newest input 'packages/core/src/index.ts' is older than output '.build-cache/core.tsbuildinfo'\n\n12:18:22 PM - Project 'packages/api/tsconfig.json' is up to date because newest input 'packages/api/src/index.ts' is older than output '.build-cache/api.tsbuildinfo'\n\n12:18:22 PM - Project 'packages/cli/tsconfig.json' is up to date because newest input 'packages/cli/src/index.ts' is older than output '.build-cache/cli.tsbuildinfo'\n\n12:18:22 PM - Project 'packages/web/tsconfig.json' is up to date because newest input 'packages/web/src/index.ts' is older than output '.build-cache/web.tsbuildinfo'\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "packages/tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 3.6109,
+        "compiled_projects": [
+          "core",
+          "api",
+          "cli",
+          "web"
+        ],
+        "stdout": "12:18:22 PM - Projects in this build: \n    * packages/core/tsconfig.json\n    * packages/api/tsconfig.json\n    * packages/cli/tsconfig.json\n    * packages/web/tsconfig.json\n    * packages/tsconfig.json\n\n12:18:22 PM - Project 'packages/core/tsconfig.json' is out of date because output file '.build-cache/core.tsbuildinfo' does not exist\n\n12:18:22 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/core/tsconfig.json'...\n\n12:18:24 PM - Project 'packages/api/tsconfig.json' is out of date because output file '.build-cache/api.tsbuildinfo' does not exist\n\n12:18:24 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/api/tsconfig.json'...\n\n12:18:24 PM - Project 'packages/cli/tsconfig.json' is out of date because output file '.build-cache/cli.tsbuildinfo' does not exist\n\n12:18:24 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/cli/tsconfig.json'...\n\n12:18:25 PM - Project 'packages/web/tsconfig.json' is out of date because output file '.build-cache/web.tsbuildinfo' does not exist\n\n12:18:25 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/web/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "andrewthauer",
+      "project": "core",
+      "arm": "invalidate_all",
+      "source_mutation": "packages/core/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": true,
+      "error_counts": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": false,
+        "seconds": 3.5825,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "packages/tsconfig.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 3.582,
+            "compiled_projects": [
+              "core",
+              "api",
+              "cli",
+              "web"
+            ],
+            "stdout": "12:18:26 PM - Projects in this build: \n    * packages/core/tsconfig.json\n    * packages/api/tsconfig.json\n    * packages/cli/tsconfig.json\n    * packages/web/tsconfig.json\n    * packages/tsconfig.json\n\n12:18:26 PM - Project 'packages/core/tsconfig.json' is out of date because output file '.build-cache/core.tsbuildinfo' does not exist\n\n12:18:26 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/invalidate_all/packages/core/tsconfig.json'...\n\n12:18:27 PM - Project 'packages/api/tsconfig.json' is out of date because output file '.build-cache/api.tsbuildinfo' does not exist\n\n12:18:27 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/invalidate_all/packages/api/tsconfig.json'...\n\n12:18:28 PM - Project 'packages/cli/tsconfig.json' is out of date because output file '.build-cache/cli.tsbuildinfo' does not exist\n\n12:18:28 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/invalidate_all/packages/cli/tsconfig.json'...\n\n12:18:29 PM - Project 'packages/web/tsconfig.json' is out of date because output file '.build-cache/web.tsbuildinfo' does not exist\n\n12:18:29 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/invalidate_all/packages/web/tsconfig.json'...\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "packages/tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 2.1778,
+        "compiled_projects": [
+          "core",
+          "api",
+          "cli",
+          "web"
+        ],
+        "stdout": "12:18:30 PM - Projects in this build: \n    * packages/core/tsconfig.json\n    * packages/api/tsconfig.json\n    * packages/cli/tsconfig.json\n    * packages/web/tsconfig.json\n    * packages/tsconfig.json\n\n12:18:30 PM - Project 'packages/core/tsconfig.json' is out of date because output file '.build-cache/core.tsbuildinfo' does not exist\n\n12:18:30 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/core/tsconfig.json'...\n\n12:18:30 PM - Project 'packages/api/tsconfig.json' is out of date because output file '.build-cache/api.tsbuildinfo' does not exist\n\n12:18:30 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/api/tsconfig.json'...\n\n12:18:31 PM - Project 'packages/cli/tsconfig.json' is out of date because output file '.build-cache/cli.tsbuildinfo' does not exist\n\n12:18:31 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/cli/tsconfig.json'...\n\n12:18:31 PM - Project 'packages/web/tsconfig.json' is out of date because output file '.build-cache/web.tsbuildinfo' does not exist\n\n12:18:31 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/web/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "andrewthauer",
+      "project": "core",
+      "arm": "guarded_hash",
+      "source_mutation": "packages/core/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": true,
+      "error_counts": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": true,
+        "seconds": 3.7422,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "packages/tsconfig.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 3.7372,
+            "compiled_projects": [
+              "core",
+              "api",
+              "cli",
+              "web"
+            ],
+            "stdout": "12:18:32 PM - Projects in this build: \n    * packages/core/tsconfig.json\n    * packages/api/tsconfig.json\n    * packages/cli/tsconfig.json\n    * packages/web/tsconfig.json\n    * packages/tsconfig.json\n\n12:18:32 PM - Project 'packages/core/tsconfig.json' is out of date because output file '.build-cache/core.tsbuildinfo' does not exist\n\n12:18:32 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/guarded_hash/packages/core/tsconfig.json'...\n\n12:18:33 PM - Project 'packages/api/tsconfig.json' is out of date because output file '.build-cache/api.tsbuildinfo' does not exist\n\n12:18:33 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/guarded_hash/packages/api/tsconfig.json'...\n\n12:18:34 PM - Project 'packages/cli/tsconfig.json' is out of date because output file '.build-cache/cli.tsbuildinfo' does not exist\n\n12:18:34 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/guarded_hash/packages/cli/tsconfig.json'...\n\n12:18:35 PM - Project 'packages/web/tsconfig.json' is out of date because output file '.build-cache/web.tsbuildinfo' does not exist\n\n12:18:35 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/guarded_hash/packages/web/tsconfig.json'...\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "packages/tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 2.7901,
+        "compiled_projects": [
+          "core",
+          "api",
+          "cli",
+          "web"
+        ],
+        "stdout": "12:18:36 PM - Projects in this build: \n    * packages/core/tsconfig.json\n    * packages/api/tsconfig.json\n    * packages/cli/tsconfig.json\n    * packages/web/tsconfig.json\n    * packages/tsconfig.json\n\n12:18:36 PM - Project 'packages/core/tsconfig.json' is out of date because output file '.build-cache/core.tsbuildinfo' does not exist\n\n12:18:36 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/core/tsconfig.json'...\n\n12:18:37 PM - Project 'packages/api/tsconfig.json' is out of date because output file '.build-cache/api.tsbuildinfo' does not exist\n\n12:18:37 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/api/tsconfig.json'...\n\n12:18:37 PM - Project 'packages/cli/tsconfig.json' is out of date because output file '.build-cache/cli.tsbuildinfo' does not exist\n\n12:18:37 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/cli/tsconfig.json'...\n\n12:18:38 PM - Project 'packages/web/tsconfig.json' is out of date because output file '.build-cache/web.tsbuildinfo' does not exist\n\n12:18:38 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/web/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "andrewthauer",
+      "project": "core",
+      "arm": "clean_all",
+      "source_mutation": "packages/core/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": true,
+      "error_counts": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": false,
+        "seconds": 3.0197,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "packages/tsconfig.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 3.0188,
+            "compiled_projects": [
+              "core",
+              "api",
+              "cli",
+              "web"
+            ],
+            "stdout": "12:18:38 PM - Projects in this build: \n    * packages/core/tsconfig.json\n    * packages/api/tsconfig.json\n    * packages/cli/tsconfig.json\n    * packages/web/tsconfig.json\n    * packages/tsconfig.json\n\n12:18:38 PM - Project 'packages/core/tsconfig.json' is out of date because output file '.build-cache/core.tsbuildinfo' does not exist\n\n12:18:38 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_all/packages/core/tsconfig.json'...\n\n12:18:40 PM - Project 'packages/api/tsconfig.json' is out of date because output file '.build-cache/api.tsbuildinfo' does not exist\n\n12:18:40 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_all/packages/api/tsconfig.json'...\n\n12:18:40 PM - Project 'packages/cli/tsconfig.json' is out of date because output file '.build-cache/cli.tsbuildinfo' does not exist\n\n12:18:40 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_all/packages/cli/tsconfig.json'...\n\n12:18:41 PM - Project 'packages/web/tsconfig.json' is out of date because output file '.build-cache/web.tsbuildinfo' does not exist\n\n12:18:41 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_all/packages/web/tsconfig.json'...\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "packages/tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 2.8448,
+        "compiled_projects": [
+          "core",
+          "api",
+          "cli",
+          "web"
+        ],
+        "stdout": "12:18:41 PM - Projects in this build: \n    * packages/core/tsconfig.json\n    * packages/api/tsconfig.json\n    * packages/cli/tsconfig.json\n    * packages/web/tsconfig.json\n    * packages/tsconfig.json\n\n12:18:41 PM - Project 'packages/core/tsconfig.json' is out of date because output file '.build-cache/core.tsbuildinfo' does not exist\n\n12:18:41 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/core/tsconfig.json'...\n\n12:18:43 PM - Project 'packages/api/tsconfig.json' is out of date because output file '.build-cache/api.tsbuildinfo' does not exist\n\n12:18:43 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/api/tsconfig.json'...\n\n12:18:43 PM - Project 'packages/cli/tsconfig.json' is out of date because output file '.build-cache/cli.tsbuildinfo' does not exist\n\n12:18:43 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/cli/tsconfig.json'...\n\n12:18:44 PM - Project 'packages/web/tsconfig.json' is out of date because output file '.build-cache/web.tsbuildinfo' does not exist\n\n12:18:44 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/andrewthauer/clean_oracle/packages/web/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "quramy",
+      "project": "x-core",
+      "arm": "standard",
+      "source_mutation": "packages/x-core/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": false,
+      "error_counts": {
+        "missing": 0,
+        "altered": 3,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": false,
+        "seconds": 0.172,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "tsconfig.build.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 0.172,
+            "compiled_projects": [],
+            "stdout": "12:18:44 PM - Projects in this build: \n    * packages/x-core/tsconfig.json\n    * packages/x-cli/tsconfig.json\n    * tsconfig.build.json\n\n12:18:44 PM - Project 'packages/x-core/tsconfig.json' is up to date because newest input 'packages/x-core/src/index.ts' is older than output 'packages/x-core/tsconfig.tsbuildinfo'\n\n12:18:44 PM - Project 'packages/x-cli/tsconfig.json' is up to date because newest input 'packages/x-cli/src/cli.ts' is older than output 'packages/x-cli/tsconfig.tsbuildinfo'\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "tsconfig.build.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 1.2433,
+        "compiled_projects": [
+          "x-core",
+          "x-cli"
+        ],
+        "stdout": "12:18:44 PM - Projects in this build: \n    * packages/x-core/tsconfig.json\n    * packages/x-cli/tsconfig.json\n    * tsconfig.build.json\n\n12:18:44 PM - Project 'packages/x-core/tsconfig.json' is out of date because output file 'packages/x-core/tsconfig.tsbuildinfo' does not exist\n\n12:18:44 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/clean_oracle/packages/x-core/tsconfig.json'...\n\n12:18:45 PM - Project 'packages/x-cli/tsconfig.json' is out of date because output file 'packages/x-cli/tsconfig.tsbuildinfo' does not exist\n\n12:18:45 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/clean_oracle/packages/x-cli/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "quramy",
+      "project": "x-core",
+      "arm": "selective_hash",
+      "source_mutation": "packages/x-core/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": false,
+      "error_counts": {
+        "missing": 0,
+        "altered": 3,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": false,
+        "seconds": 0.2275,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "tsconfig.build.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 0.2235,
+            "compiled_projects": [],
+            "stdout": "12:18:46 PM - Projects in this build: \n    * packages/x-core/tsconfig.json\n    * packages/x-cli/tsconfig.json\n    * tsconfig.build.json\n\n12:18:46 PM - Project 'packages/x-core/tsconfig.json' is up to date because newest input 'packages/x-core/src/index.ts' is older than output 'packages/x-core/tsconfig.tsbuildinfo'\n\n12:18:46 PM - Project 'packages/x-cli/tsconfig.json' is up to date because newest input 'packages/x-cli/src/cli.ts' is older than output 'packages/x-cli/tsconfig.tsbuildinfo'\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "tsconfig.build.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 1.1997,
+        "compiled_projects": [
+          "x-core",
+          "x-cli"
+        ],
+        "stdout": "12:18:46 PM - Projects in this build: \n    * packages/x-core/tsconfig.json\n    * packages/x-cli/tsconfig.json\n    * tsconfig.build.json\n\n12:18:46 PM - Project 'packages/x-core/tsconfig.json' is out of date because output file 'packages/x-core/tsconfig.tsbuildinfo' does not exist\n\n12:18:46 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/clean_oracle/packages/x-core/tsconfig.json'...\n\n12:18:47 PM - Project 'packages/x-cli/tsconfig.json' is out of date because output file 'packages/x-cli/tsconfig.tsbuildinfo' does not exist\n\n12:18:47 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/clean_oracle/packages/x-cli/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "quramy",
+      "project": "x-core",
+      "arm": "invalidate_all",
+      "source_mutation": "packages/x-core/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": true,
+      "error_counts": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": false,
+        "seconds": 1.217,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "tsconfig.build.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 1.2168,
+            "compiled_projects": [
+              "x-core",
+              "x-cli"
+            ],
+            "stdout": "12:18:47 PM - Projects in this build: \n    * packages/x-core/tsconfig.json\n    * packages/x-cli/tsconfig.json\n    * tsconfig.build.json\n\n12:18:47 PM - Project 'packages/x-core/tsconfig.json' is out of date because output file 'packages/x-core/tsconfig.tsbuildinfo' does not exist\n\n12:18:47 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/invalidate_all/packages/x-core/tsconfig.json'...\n\n12:18:48 PM - Project 'packages/x-cli/tsconfig.json' is out of date because output file 'packages/x-cli/tsconfig.tsbuildinfo' does not exist\n\n12:18:48 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/invalidate_all/packages/x-cli/tsconfig.json'...\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "tsconfig.build.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 1.0768,
+        "compiled_projects": [
+          "x-core",
+          "x-cli"
+        ],
+        "stdout": "12:18:48 PM - Projects in this build: \n    * packages/x-core/tsconfig.json\n    * packages/x-cli/tsconfig.json\n    * tsconfig.build.json\n\n12:18:48 PM - Project 'packages/x-core/tsconfig.json' is out of date because output file 'packages/x-core/tsconfig.tsbuildinfo' does not exist\n\n12:18:48 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/clean_oracle/packages/x-core/tsconfig.json'...\n\n12:18:49 PM - Project 'packages/x-cli/tsconfig.json' is out of date because output file 'packages/x-cli/tsconfig.tsbuildinfo' does not exist\n\n12:18:49 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/clean_oracle/packages/x-cli/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "quramy",
+      "project": "x-core",
+      "arm": "guarded_hash",
+      "source_mutation": "packages/x-core/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": true,
+      "error_counts": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": true,
+        "seconds": 1.138,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "tsconfig.build.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 1.1338,
+            "compiled_projects": [
+              "x-core",
+              "x-cli"
+            ],
+            "stdout": "12:18:50 PM - Projects in this build: \n    * packages/x-core/tsconfig.json\n    * packages/x-cli/tsconfig.json\n    * tsconfig.build.json\n\n12:18:50 PM - Project 'packages/x-core/tsconfig.json' is out of date because output file 'packages/x-core/tsconfig.tsbuildinfo' does not exist\n\n12:18:50 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/guarded_hash/packages/x-core/tsconfig.json'...\n\n12:18:50 PM - Project 'packages/x-cli/tsconfig.json' is out of date because output file 'packages/x-cli/tsconfig.tsbuildinfo' does not exist\n\n12:18:50 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/guarded_hash/packages/x-cli/tsconfig.json'...\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "tsconfig.build.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 1.1183,
+        "compiled_projects": [
+          "x-core",
+          "x-cli"
+        ],
+        "stdout": "12:18:51 PM - Projects in this build: \n    * packages/x-core/tsconfig.json\n    * packages/x-cli/tsconfig.json\n    * tsconfig.build.json\n\n12:18:51 PM - Project 'packages/x-core/tsconfig.json' is out of date because output file 'packages/x-core/tsconfig.tsbuildinfo' does not exist\n\n12:18:51 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/clean_oracle/packages/x-core/tsconfig.json'...\n\n12:18:52 PM - Project 'packages/x-cli/tsconfig.json' is out of date because output file 'packages/x-cli/tsconfig.tsbuildinfo' does not exist\n\n12:18:52 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/clean_oracle/packages/x-cli/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "quramy",
+      "project": "x-core",
+      "arm": "clean_all",
+      "source_mutation": "packages/x-core/src/index.ts",
+      "source_mtime_backdated_by_3600s": true,
+      "input_key_different": true,
+      "correct_against_new_clean_oracle": true,
+      "error_counts": {
+        "missing": 0,
+        "altered": 0,
+        "extra": 0
+      },
+      "work": {
+        "input_key_rejected": false,
+        "seconds": 1.3846,
+        "logs": [
+          {
+            "argv": [
+              "node",
+              "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+              "--build",
+              "tsconfig.build.json",
+              "--verbose"
+            ],
+            "exit": 0,
+            "seconds": 1.384,
+            "compiled_projects": [
+              "x-core",
+              "x-cli"
+            ],
+            "stdout": "12:18:52 PM - Projects in this build: \n    * packages/x-core/tsconfig.json\n    * packages/x-cli/tsconfig.json\n    * tsconfig.build.json\n\n12:18:52 PM - Project 'packages/x-core/tsconfig.json' is out of date because output file 'packages/x-core/tsconfig.tsbuildinfo' does not exist\n\n12:18:52 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/clean_all/packages/x-core/tsconfig.json'...\n\n12:18:53 PM - Project 'packages/x-cli/tsconfig.json' is out of date because output file 'packages/x-cli/tsconfig.tsbuildinfo' does not exist\n\n12:18:53 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/clean_all/packages/x-cli/tsconfig.json'...\n\n",
+            "stderr": ""
+          }
+        ]
+      },
+      "clean_oracle": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "--build",
+          "tsconfig.build.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 1.1232,
+        "compiled_projects": [
+          "x-core",
+          "x-cli"
+        ],
+        "stdout": "12:18:53 PM - Projects in this build: \n    * packages/x-core/tsconfig.json\n    * packages/x-cli/tsconfig.json\n    * tsconfig.build.json\n\n12:18:53 PM - Project 'packages/x-core/tsconfig.json' is out of date because output file 'packages/x-core/tsconfig.tsbuildinfo' does not exist\n\n12:18:53 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/clean_oracle/packages/x-core/tsconfig.json'...\n\n12:18:54 PM - Project 'packages/x-cli/tsconfig.json' is out of date because output file 'packages/x-cli/tsconfig.tsbuildinfo' does not exist\n\n12:18:54 PM - Building project '/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/drift_probe/quramy/clean_oracle/packages/x-cli/tsconfig.json'...\n\n",
+        "stderr": ""
+      }
+    }
+  ]
+}

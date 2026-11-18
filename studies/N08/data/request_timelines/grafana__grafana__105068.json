@@ -1,0 +1,34 @@
+{
+  "pr": 105068,
+  "pr_author": "gillesdemey",
+  "repo": "grafana/grafana",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-05-07T14:16:13Z",
+      "requested_people": [
+        "clarity-89",
+        "gillesdemey"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-05-07T14:16:14Z",
+      "requested_people": [
+        "gillesdemey"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-05-07T14:16:14Z",
+      "requested_people": [
+        "gillesdemey"
+      ],
+      "team_request_anonymized": true
+    }
+  ],
+  "sha256": "2fb1fa724195e931acf533103703128ed86e5f02ec63337df653e4b07e835633",
+  "url": "https://github.com/grafana/grafana/pull/105068"
+}

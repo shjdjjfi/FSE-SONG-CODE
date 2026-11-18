@@ -1,0 +1,41 @@
+argv: ["/workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/venvs/ai_npc_latest/bin/python", "-m", "pip", "install", "--no-input", "--disable-pip-version-check", "--only-binary=:all:", "--progress-bar", "off", "--timeout", "12", "--retries", "1", "--index-url", "https://pypi.org/simple", "-r", "/workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/generated_requirements/ai_npc/replaced_latest.txt"]
+
+[STDOUT]
+Collecting fastapi==0.162.7 (from -r /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/generated_requirements/ai_npc/replaced_latest.txt (line 1))
+  Using cached fastapi-0.162.7-py3-none-any.whl.metadata (27 kB)
+Collecting uvicorn==0.27.0 (from uvicorn[standard]==0.27.0->-r /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/generated_requirements/ai_npc/replaced_latest.txt (line 2))
+  Using cached uvicorn-0.27.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting pydantic==2.5.3 (from -r /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/generated_requirements/ai_npc/replaced_latest.txt (line 3))
+  Using cached pydantic-2.5.3-py3-none-any.whl.metadata (65 kB)
+Collecting pydantic-settings==2.1.0 (from -r /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/generated_requirements/ai_npc/replaced_latest.txt (line 4))
+  Using cached pydantic_settings-2.1.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting redis==5.0.1 (from -r /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/generated_requirements/ai_npc/replaced_latest.txt (line 5))
+  Using cached redis-5.0.1-py3-none-any.whl.metadata (8.9 kB)
+Collecting openai==1.10.0 (from -r /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/generated_requirements/ai_npc/replaced_latest.txt (line 6))
+  Using cached openai-1.10.0-py3-none-any.whl.metadata (18 kB)
+Collecting python-dotenv==1.0.0 (from -r /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/generated_requirements/ai_npc/replaced_latest.txt (line 7))
+  Using cached python_dotenv-1.0.0-py3-none-any.whl.metadata (21 kB)
+Collecting httpx==0.26.0 (from -r /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/generated_requirements/ai_npc/replaced_latest.txt (line 8))
+  Using cached httpx-0.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting starlette>=0.46.0 (from fastapi==0.162.7->-r /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/generated_requirements/ai_npc/replaced_latest.txt (line 1))
+  Using cached starlette-1.10.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting anyio>=4.1.0 (from fastapi==0.162.7->-r /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/generated_requirements/ai_npc/replaced_latest.txt (line 1))
+  Using cached anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+INFO: pip is looking at multiple versions of fastapi to determine which version is compatible with other requirements. This could take a while.
+
+The conflict is caused by:
+    The user requested pydantic==2.5.3
+    fastapi 0.162.7 depends on pydantic>=2.9.0
+
+Additionally, some packages in these conflicts have no matching distributions available for your environment:
+    pydantic
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip to attempt to solve the dependency conflict
+
+
+
+[STDERR]
+ERROR: Cannot install -r /workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/generated_requirements/ai_npc/replaced_latest.txt (line 1) and pydantic==2.5.3 because these package versions have conflicting dependencies.
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts

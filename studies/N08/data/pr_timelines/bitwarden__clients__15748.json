@@ -1,0 +1,57 @@
+{
+  "fetched_utc": "2026-11-14T17:12:00.242596+00:00",
+  "merged_at": "2025-09-23T20:10:54Z",
+  "opened_at": "2025-07-16T15:02:44+02:00",
+  "pr": 15748,
+  "raw_html_sha256": "171de3c8baba66aeed42e0108c8fb3769f1e62039716f2d3b0b4688a6bd3b3bc",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 9,
+  "reviews": [
+    {
+      "login": "Thomas-Avery",
+      "state": "COMMENTED",
+      "submitted_at": "2025-08-12T17:09:05Z"
+    },
+    {
+      "login": "Thomas-Avery",
+      "state": "APPROVED",
+      "submitted_at": "2025-08-12T20:33:35Z"
+    },
+    {
+      "login": "BTreston",
+      "state": "APPROVED",
+      "submitted_at": "2025-08-14T13:35:14Z"
+    },
+    {
+      "login": "JaredSnider-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-08-14T14:33:17Z"
+    },
+    {
+      "login": "Thomas-Avery",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-22T21:16:02Z"
+    },
+    {
+      "login": "jlf0dev",
+      "state": "COMMENTED",
+      "submitted_at": "2025-09-23T15:03:27Z"
+    },
+    {
+      "login": "JaredSnider-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-23T15:05:25Z"
+    },
+    {
+      "login": "BTreston",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-23T16:33:02Z"
+    },
+    {
+      "login": "dereknance",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-23T20:09:22Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/15748"
+}

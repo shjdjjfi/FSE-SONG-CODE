@@ -1,0 +1,34 @@
+{
+  "key": "9a6bc3fa0db5a06ac7",
+  "args": {
+    "crate": "rust_decimal",
+    "version": "1.37.2",
+    "id": "3b1c78417ca45c8b",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.4529,
+  "errors": [
+    {
+      "code": "E0658",
+      "message": "use of unstable library feature `atomic_try_update`",
+      "rendered": "error[E0658]: use of unstable library feature `atomic_try_update`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/ref-swap-0.1.3/src/lib.rs:194:14\n    |\n194 |             .try_update(load_store(set_order), load(fetch_order), |ptr| {\n    |              ^^^^^^^^^^\n    |\n    = note: see issue #135894 <https://github.com/rust-lang/rust/issues/135894> for more information\n\n",
+      "line": 194
+    },
+    {
+      "code": "E0658",
+      "message": "use of unstable library feature `atomic_try_update`",
+      "rendered": "error[E0658]: use of unstable library feature `atomic_try_update`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/ref-swap-0.1.3/src/lib.rs:395:14\n    |\n395 |             .try_update(load_store(set_order), load(fetch_order), |ptr| {\n    |              ^^^^^^^^^^\n    |\n    = note: see issue #135894 <https://github.com/rust-lang/rust/issues/135894> for more information\n\n",
+      "line": 395
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `ref-swap` (lib) due to 2 previous errors\n",
+  "code_sha256": "3244e7e1d241e47052b166d70861d1496826cfb18fde2a6120675b274540e919",
+  "manifest_sha256": "491068d8e80e4ef210254ff9967fca5cdcb25fd3d2eee116f8feafe07b3c0921",
+  "log_file": "prospective/results/check_logs/9a6bc3fa0db5a06ac7.txt.gz"
+}

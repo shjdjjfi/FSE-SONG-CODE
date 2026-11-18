@@ -1,0 +1,28 @@
+{
+  "key": "611945943c77abc5fb",
+  "args": {
+    "crate": "rust_decimal",
+    "version": "1.37.2",
+    "id": "3b1c78417ca45c8b",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1057,
+  "errors": [
+    {
+      "code": null,
+      "message": "cannot find macro `dec` in this scope",
+      "rendered": "error: cannot find macro `dec` in this scope\n  --> src/main.rs:34:14\n   |\n34 | let amount = dec!(25.12);\n   |              ^^^ help: a macro with a similar name exists: `vec`\n   |\n  --> /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/alloc/src/macros.rs:42:1\n   |\n   = note: similarly named macro `vec` defined here\n\n",
+      "line": 42
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_rust_decimal_consumer` (bin \"n05_rust_decimal_consumer\") due to 1 previous error\n",
+  "code_sha256": "3244e7e1d241e47052b166d70861d1496826cfb18fde2a6120675b274540e919",
+  "manifest_sha256": "b7ceba14a96af3e43b96de33621ae96f5b5feaf645a281c5e56db937905f48db",
+  "log_file": "prospective/results/check_logs/611945943c77abc5fb.txt.gz"
+}

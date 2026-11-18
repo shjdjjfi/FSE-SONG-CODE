@@ -1,0 +1,88 @@
+{
+  "pr": 13039,
+  "pr_author": "mzieniukbw",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-01-23T23:01:48Z",
+      "requested_people": [
+        "mzieniukbw"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-23T23:01:49Z",
+      "requested_people": [
+        "mzieniukbw",
+        "tangowithfoxtrot",
+        "willmartian"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-23T23:28:30Z",
+      "requested_people": [
+        "mzieniukbw"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-23T23:28:30Z",
+      "requested_people": [
+        "jingo88",
+        "mzieniukbw"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-24T11:04:12Z",
+      "requested_people": [
+        "audreyality",
+        "djsmith85"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-28T15:14:12Z",
+      "requested_people": [
+        "audreyality",
+        "jingo88",
+        "mzieniukbw",
+        "tangowithfoxtrot"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-28T15:14:15Z",
+      "requested_people": [
+        "mzieniukbw",
+        "quexten",
+        "willmartian"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-02-05T13:19:11Z",
+      "requested_people": [
+        "audreyality",
+        "hinton",
+        "jingo88",
+        "justindbaur",
+        "mzieniukbw",
+        "quexten",
+        "willmartian"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "e19cc0538051e4bac99e98ad452a1bbcd80bd8de61e33b7f08dd38dce4d688a4",
+  "url": "https://github.com/bitwarden/clients/pull/13039"
+}

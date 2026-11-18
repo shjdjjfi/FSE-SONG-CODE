@@ -1,0 +1,19 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 10348,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW12927",
+  "examples": [],
+  "fetched_utc": "2026-11-14T23:56:53.554900+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/12927",
+  "noncomment_nonimport_changed_lines": 0,
+  "pr": 16373,
+  "repository": "bitwarden/clients",
+  "sha256": "777724fe09459cd0bf3785f9c70fa2b2b694f989b815379390dbf235282099bf",
+  "target_code_changed_lines": 0,
+  "target_files": [
+    "apps/desktop/src/billing/app/accounts/premium.component.html"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/16373.patch"
+}

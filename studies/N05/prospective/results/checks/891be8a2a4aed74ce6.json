@@ -1,0 +1,24 @@
+{
+  "key": "891be8a2a4aed74ce6",
+  "args": {
+    "crate": "mio",
+    "version": "1.0.4",
+    "id": "a108262e04d9c2c7",
+    "profile": "candidate",
+    "features": [
+      "net",
+      "os-ext"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0984,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "abf70bc87413feee8c2d72f4d2f1a602093fcb8aa44fb7cde9bbb66ba8affdaf",
+  "manifest_sha256": "9ce218a903e9cb17966bd552ce1b5c45b676065f50ed69b1f19d516b57daeac9",
+  "log_file": "prospective/results/check_logs/891be8a2a4aed74ce6.txt.gz"
+}

@@ -1,0 +1,34 @@
+{
+  "key": "3af58bd7910927490b",
+  "args": {
+    "crate": "ulid",
+    "version": "1.2.1",
+    "id": "fe3b9c099759a7ef",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1635,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `rand`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rand`\n --> src/main.rs:5:5\n  |\n5 | use rand::prelude::*;\n  |     ^^^^ use of unresolved module or unlinked crate `rand`\n  |\n  = help: if you wanted to use a crate named `rand`, use `cargo add rand` to add it to your `Cargo.toml`\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `StdRng`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `StdRng`\n --> src/main.rs:7:15\n  |\n7 | let mut rng = StdRng::from_os_rng();\n  |               ^^^^^^\n  |               |\n  |               use of undeclared type `StdRng`\n  |               help: a struct with a similar name exists: `String`\n\n",
+      "line": 7
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_ulid_consumer` (bin \"n05_ulid_consumer\") due to 2 previous errors; 2 warnings emitted\n",
+  "code_sha256": "2adf79674807fe9aff290d6568d7f658cab5d61571db00f5c2f022419d0bc572",
+  "manifest_sha256": "bdfcd9bbed4690d34e628106efc57a9d6c3289dc9bff36164af6bf6b39b2f32d",
+  "log_file": "prospective/results/check_logs/3af58bd7910927490b.txt.gz"
+}

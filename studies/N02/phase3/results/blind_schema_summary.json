@@ -1,0 +1,64 @@
+{
+  "selection_without_documentation": true,
+  "exploratory_not_independent_confirmatory": true,
+  "old_scorer_sha256": "64381bae392d703b7fbc20159dbaa02cf9cb6591412eb8249e6bf1f55fbf2b2e",
+  "pairs": [
+    {
+      "pair": "loki 5.47.2->6.0.0",
+      "old_string_keys_absent_from_new": 5,
+      "exposed_old_candidates_evaluated": 4,
+      "lost_literals_after_upgrade": 4
+    },
+    {
+      "pair": "traefik 24.0.0->25.0.0",
+      "old_string_keys_absent_from_new": 0,
+      "exposed_old_candidates_evaluated": 0,
+      "lost_literals_after_upgrade": 0
+    },
+    {
+      "pair": "kong 2.1.0->2.2.0",
+      "old_string_keys_absent_from_new": 1,
+      "exposed_old_candidates_evaluated": 0,
+      "lost_literals_after_upgrade": 0
+    },
+    {
+      "pair": "vault 0.25.0->0.26.0",
+      "old_string_keys_absent_from_new": 0,
+      "exposed_old_candidates_evaluated": 0,
+      "lost_literals_after_upgrade": 0
+    },
+    {
+      "pair": "vault 0.28.1->0.29.0",
+      "old_string_keys_absent_from_new": 0,
+      "exposed_old_candidates_evaluated": 0,
+      "lost_literals_after_upgrade": 0
+    },
+    {
+      "pair": "grafana 7.3.12->8.0.0",
+      "old_string_keys_absent_from_new": 0,
+      "exposed_old_candidates_evaluated": 0,
+      "lost_literals_after_upgrade": 0
+    },
+    {
+      "pair": "ingress-nginx 4.10.0->4.11.0",
+      "old_string_keys_absent_from_new": 0,
+      "exposed_old_candidates_evaluated": 0,
+      "lost_literals_after_upgrade": 0
+    },
+    {
+      "pair": "metrics-server 3.11.0->3.12.0",
+      "old_string_keys_absent_from_new": 0,
+      "exposed_old_candidates_evaluated": 0,
+      "lost_literals_after_upgrade": 0
+    },
+    {
+      "pair": "external-dns 1.14.4->1.15.0",
+      "old_string_keys_absent_from_new": 0,
+      "exposed_old_candidates_evaluated": 0,
+      "lost_literals_after_upgrade": 0
+    }
+  ],
+  "total_candidates": 6,
+  "total_literal_loss_candidates": 4,
+  "limitations": "Sentinel loss is NOT a runtime failure; manually validate before positive label."
+}

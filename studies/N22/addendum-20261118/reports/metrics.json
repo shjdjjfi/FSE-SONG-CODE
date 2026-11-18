@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-18",
+  "status": "retrospective_exploratory_evaluation_only",
+  "project_count": 2,
+  "primary_positive_cases": 2,
+  "primary_negative_cases": 13,
+  "separately_reported_correlated_negative_stress_cases": 30,
+  "stress_contract_false_positives": 0,
+  "stress_naive_row_diff_false_positives": 30,
+  "conditional_excluded": [
+    "opencode_late_session"
+  ],
+  "replicated_runs": 138,
+  "unique_case_inputs": 46,
+  "scores": {
+    "contract_detector": {
+      "TP": 2,
+      "FN": 0,
+      "FP": 0,
+      "TN": 13,
+      "recall": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "full_manual_contract_baseline": {
+      "TP": 2,
+      "FN": 0,
+      "FP": 0,
+      "TN": 13,
+      "recall": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "schema_only": {
+      "TP": 0,
+      "FN": 2,
+      "FP": 0,
+      "TN": 13,
+      "recall": 0.0,
+      "false_positive_rate": 0.0
+    },
+    "ledger_only": {
+      "TP": 0,
+      "FN": 2,
+      "FP": 0,
+      "TN": 13,
+      "recall": 0.0,
+      "false_positive_rate": 0.0
+    },
+    "status_only": {
+      "TP": 0,
+      "FN": 2,
+      "FP": 0,
+      "TN": 13,
+      "recall": 0.0,
+      "false_positive_rate": 0.0
+    },
+    "naive_row_diff": {
+      "TP": 2,
+      "FN": 0,
+      "FP": 5,
+      "TN": 8,
+      "recall": 1.0,
+      "false_positive_rate": 0.38461538461538464
+    },
+    "row_count_only": {
+      "TP": 2,
+      "FN": 0,
+      "FP": 4,
+      "TN": 9,
+      "recall": 1.0,
+      "false_positive_rate": 0.3076923076923077
+    }
+  },
+  "zero_of_n_false_positive_one_sided_95_upper": 0.20581666518655073,
+  "two_of_two_recall_one_sided_95_lower": 0.22360679774997896,
+  "original_hypothesis_gate": {
+    "required_recall_gain_vs_full_baseline_percentage_points": 15,
+    "observed_recall_gain_vs_full_baseline_percentage_points": 0.0,
+    "required_observed_false_positive_rate_max": 0.05,
+    "observed_false_positive_rate": 0.0,
+    "gate_passed": false,
+    "reason": "No incremental recall over a fully asserted baseline; FPR upper bound also exceeds 5%."
+  },
+  "independence_warning": "Even the 13 distinct core negatives are correlated by project. 30 legitimate site edits and 3 repeats each are NOT additional independent cases; confidence bounds are optimistic.",
+  "full_manual_baseline": "A baseline supplied with the identical data-contract assertions has the identical decisions; no measured advantage.",
+  "industrial_roi": "not_measured; local runtime is not industrial production cost"
+}

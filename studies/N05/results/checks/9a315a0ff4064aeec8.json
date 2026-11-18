@@ -1,0 +1,27 @@
+{
+  "key": "9a315a0ff4064aeec8",
+  "args": {
+    "crate": "clap",
+    "version": "4.5.40",
+    "id": "b74f305275415e6b",
+    "profile": "candidate",
+    "features": [
+      "cargo",
+      "color",
+      "debug",
+      "deprecated",
+      "derive"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 1.2763,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "0c84be224f68c5690a9360db42023631476aaf63311d85b63b4627b721207a89",
+  "manifest_sha256": "9fbd53de95e0e1bc0867a760ecd39294a54ac17f40f1107380616c8e2ece4938",
+  "log_file": "results/check_logs/9a315a0ff4064aeec8.txt.gz"
+}

@@ -1,0 +1,189 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 88,
+  "bytes": 156906,
+  "control_flow_or_callback_lines": 259,
+  "event": "BW13285",
+  "examples": [
+    {
+      "change": "-",
+      "code": "// Handle updating private properties to turn on/off feature flags.",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "onServerConfigChange(newConfig: ServerConfig): void {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.blockType0 = getFeatureFlagValue(newConfig, FeatureFlag.PM17987_BlockType0);",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "// Proxy functions; Their implementation are temporary before moving at this level to the SDK",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "async encryptString(plainValue: string, key: SymmetricCryptoKey): Promise<EncString> {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "return this.encrypt(plainValue, key);",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "async encrypt(plainValue: string | Uint8Array, key: SymmetricCryptoKey): Promise<EncString> {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "if (key == null) {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "throw new Error(\"No encryption key provided.\");",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "async encryptBytes(plainValue: Uint8Array, key: SymmetricCryptoKey): Promise<EncString> {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "return this.encrypt(plainValue, key);",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "if (this.blockType0) {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "if (key.inner().type === EncryptionType.AesCbc256_B64 || key.key.byteLength < 64) {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "throw new Error(\"Type 0 encryption is not supported.\");",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "async encryptFileData(plainValue: Uint8Array, key: SymmetricCryptoKey): Promise<EncArrayBuffer> {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "return this.encryptToBytes(plainValue, key);",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "if (plainValue == null) {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "return Promise.resolve(null);",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "async decryptString(encString: EncString, key: SymmetricCryptoKey): Promise<string> {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "return this.decryptToUtf8(encString, key);",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "if (typeof plainValue === \"string\") {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "return this.encryptUint8Array(Utils.fromUtf8ToArray(plainValue), key);",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "} else {",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "return this.encryptUint8Array(plainValue, key);",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:59.494936+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/13285",
+  "noncomment_nonimport_changed_lines": 736,
+  "pr": 14538,
+  "repository": "bitwarden/clients",
+  "sha256": "c33da8351b5e4132d5506078c3273f4ce27fe6aa728ac0ee8a4a5705920c070f",
+  "target_code_changed_lines": 870,
+  "target_files": [
+    "libs/common/src/key-management/crypto/services/bulk-encrypt.service.impementation.spec.ts",
+    "libs/common/src/key-management/crypto/services/bulk-encrypt.service.implementation.ts",
+    "libs/common/src/key-management/crypto/services/encrypt.service.implementation.ts",
+    "libs/common/src/key-management/crypto/services/encrypt.service.spec.ts",
+    "libs/common/src/key-management/crypto/services/fallback-bulk-encrypt.service.spec.ts",
+    "libs/common/src/key-management/crypto/services/fallback-bulk-encrypt.service.ts",
+    "libs/common/src/key-management/crypto/services/multithread-encrypt.service.implementation.spec.ts",
+    "libs/common/src/key-management/crypto/services/multithread-encrypt.service.implementation.ts",
+    "libs/common/src/key-management/crypto/services/web-crypto-function.service.spec.ts",
+    "libs/common/src/key-management/crypto/services/web-crypto-function.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/14538.patch"
+}

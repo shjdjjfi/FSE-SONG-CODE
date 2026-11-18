@@ -1,0 +1,2689 @@
+{
+  "scope": "True end-to-end successor discovery from Git-changed Java test files, evaluated against independent RefactoringMiner test-method refactoring oracle",
+  "no_target_or_label_in_prediction": true,
+  "not_quarantine_oracle": true,
+  "strong_caveat": "A refactoring FP is not automatically a negative test-identity label; performance is method-refactoring target recall only, not safety or industrial impact",
+  "excluded": {
+    "repository_not_fetched": 37
+  },
+  "event_info": [
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "1a2c1bcdc7267abec9b19d77726aedbb045d79a8",
+      "n_oracle_proposals": 2,
+      "changed_test_java_files": 1,
+      "new_test_method_candidates": 8
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "446e2537895c15b404a74107069a12f3fc404b15",
+      "n_oracle_proposals": 9,
+      "changed_test_java_files": 3,
+      "new_test_method_candidates": 11
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "4fcd7d4d366d001cf5f1f7d926c608c902e3f0af",
+      "n_oracle_proposals": 1,
+      "changed_test_java_files": 2,
+      "new_test_method_candidates": 2
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "5790b4a44ba85e7e8ece64613d9e6a1b737a6cde",
+      "n_oracle_proposals": 2,
+      "changed_test_java_files": 4,
+      "new_test_method_candidates": 58
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "n_oracle_proposals": 46,
+      "changed_test_java_files": 32,
+      "new_test_method_candidates": 308
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "n_oracle_proposals": 24,
+      "changed_test_java_files": 7,
+      "new_test_method_candidates": 91
+    },
+    {
+      "repository": "https://github.com/google/closure-compiler",
+      "commit": "5a853a60f93e09c446d458673bc7a2f6bb26742c",
+      "n_oracle_proposals": 7,
+      "changed_test_java_files": 1,
+      "new_test_method_candidates": 23
+    },
+    {
+      "repository": "https://github.com/google/closure-compiler",
+      "commit": "ea96643364e91125f560e9508a5cbcdb776bde64",
+      "n_oracle_proposals": 2,
+      "changed_test_java_files": 4,
+      "new_test_method_candidates": 343
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "commit": "35b6c869546a7968b6fd2f640add6eea87e03c22",
+      "n_oracle_proposals": 2,
+      "changed_test_java_files": 6,
+      "new_test_method_candidates": 243
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "commit": "8f446b6ddf540e1b1fefca34dd10f45ba7256095",
+      "n_oracle_proposals": 10,
+      "changed_test_java_files": 11,
+      "new_test_method_candidates": 41
+    }
+  ],
+  "summary": [
+    {
+      "arm": "exact_id",
+      "independently_confirmed_refactoring_pairs": 54,
+      "independent_target_recovered": 0,
+      "independent_target_recall": 0.0,
+      "refactoring_proposals_labeled_FP": 51,
+      "predicted_same_target_as_refactoring_FP": 0,
+      "warning": "FP of a Move Method may still entail test identity continuity, so this count is NOT unsafe quarantine inheritance"
+    },
+    {
+      "arm": "unique_name",
+      "independently_confirmed_refactoring_pairs": 54,
+      "independent_target_recovered": 39,
+      "independent_target_recall": 0.7222,
+      "refactoring_proposals_labeled_FP": 51,
+      "predicted_same_target_as_refactoring_FP": 43,
+      "warning": "FP of a Move Method may still entail test identity continuity, so this count is NOT unsafe quarantine inheritance"
+    },
+    {
+      "arm": "unique_body",
+      "independently_confirmed_refactoring_pairs": 54,
+      "independent_target_recovered": 17,
+      "independent_target_recall": 0.3148,
+      "refactoring_proposals_labeled_FP": 51,
+      "predicted_same_target_as_refactoring_FP": 33,
+      "warning": "FP of a Move Method may still entail test identity continuity, so this count is NOT unsafe quarantine inheritance"
+    },
+    {
+      "arm": "guarded_lineage",
+      "independently_confirmed_refactoring_pairs": 54,
+      "independent_target_recovered": 40,
+      "independent_target_recall": 0.7407,
+      "refactoring_proposals_labeled_FP": 51,
+      "predicted_same_target_as_refactoring_FP": 43,
+      "warning": "FP of a Move Method may still entail test identity continuity, so this count is NOT unsafe quarantine inheritance"
+    },
+    {
+      "arm": "name_calls_guard",
+      "independently_confirmed_refactoring_pairs": 54,
+      "independent_target_recovered": 40,
+      "independent_target_recall": 0.7407,
+      "refactoring_proposals_labeled_FP": 51,
+      "predicted_same_target_as_refactoring_FP": 43,
+      "warning": "FP of a Move Method may still entail test identity continuity, so this count is NOT unsafe quarantine inheritance"
+    },
+    {
+      "arm": "guarded_with_group_guard",
+      "independently_confirmed_refactoring_pairs": 54,
+      "independent_target_recovered": 40,
+      "independent_target_recall": 0.7407,
+      "refactoring_proposals_labeled_FP": 51,
+      "predicted_same_target_as_refactoring_FP": 43,
+      "warning": "FP of a Move Method may still entail test identity continuity, so this count is NOT unsafe quarantine inheritance"
+    }
+  ],
+  "per_repository": [
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "TP": 21,
+      "FP": 39,
+      "guarded_TP_recovered": 11,
+      "name_only_TP_recovered": 10
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "TP": 24,
+      "FP": 0,
+      "guarded_TP_recovered": 22,
+      "name_only_TP_recovered": 22
+    },
+    {
+      "repository": "https://github.com/google/closure-compiler",
+      "TP": 7,
+      "FP": 2,
+      "guarded_TP_recovered": 7,
+      "name_only_TP_recovered": 7
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "TP": 2,
+      "FP": 10,
+      "guarded_TP_recovered": 0,
+      "name_only_TP_recovered": 0
+    }
+  ],
+  "records": [
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "446e2537895c15b404a74107069a12f3fc404b15",
+      "old_id": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCassandraStorageFilter",
+      "third_party_proposed_target": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCqlNativeStorageFilter",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "446e2537895c15b404a74107069a12f3fc404b15",
+      "old_id": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCassandraStorageFullCopy",
+      "third_party_proposed_target": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCqlNativeStorageFullCopy",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "446e2537895c15b404a74107069a12f3fc404b15",
+      "old_id": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCassandraStorageBagOnlyCopy",
+      "third_party_proposed_target": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCqlNativeStorageBagOnlyCopy",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "446e2537895c15b404a74107069a12f3fc404b15",
+      "old_id": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCassandraStorageSingleTupleCopy",
+      "third_party_proposed_target": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCqlNativeStorageSingleTupleCopy",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "446e2537895c15b404a74107069a12f3fc404b15",
+      "old_id": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCassandraStorageCounterCF",
+      "third_party_proposed_target": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCqlNativeStorageCounterCF",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "446e2537895c15b404a74107069a12f3fc404b15",
+      "old_id": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCassandraStorageJoin",
+      "third_party_proposed_target": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCqlNativeStorageJoin",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "446e2537895c15b404a74107069a12f3fc404b15",
+      "old_id": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCassandraStorageCompositeColumnCF",
+      "third_party_proposed_target": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCqlNativeStorageCompositeColumnCF",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "446e2537895c15b404a74107069a12f3fc404b15",
+      "old_id": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCassandraStorageSchema",
+      "third_party_proposed_target": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCqlNativeStorageSchema",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "446e2537895c15b404a74107069a12f3fc404b15",
+      "old_id": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCassandraStorageCompositeKeyCF",
+      "third_party_proposed_target": "org.apache.cassandra.pig.ThriftColumnFamilyTest.testCqlNativeStorageCompositeKeyCF",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/google/closure-compiler",
+      "commit": "ea96643364e91125f560e9508a5cbcdb776bde64",
+      "old_id": "com.google.javascript.jscomp.parsing.TypeSyntaxTest.testFunctionParamDeclaration_destructuringArray",
+      "third_party_proposed_target": "com.google.javascript.jscomp.parsing.TypeSyntaxTest.testFunctionType_illegalParam",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": "com.google.javascript.jscomp.parsing.TypeSyntaxTest.testFunctionParamDeclaration_destructuringArray",
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/google/closure-compiler",
+      "commit": "ea96643364e91125f560e9508a5cbcdb776bde64",
+      "old_id": "com.google.javascript.jscomp.parsing.TypeSyntaxTest.testFunctionParamDeclaration_destructuringObject",
+      "third_party_proposed_target": "com.google.javascript.jscomp.parsing.TypeSyntaxTest.testFunctionType_bothRestAndOptionalParam",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": "com.google.javascript.jscomp.parsing.TypeSyntaxTest.testFunctionParamDeclaration_destructuringObject",
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/google/closure-compiler",
+      "commit": "5a853a60f93e09c446d458673bc7a2f6bb26742c",
+      "old_id": "com.google.javascript.jscomp.parsing.TypeDeclarationsIRFactoryTest.testConvertFunctionNewType",
+      "third_party_proposed_target": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertFunctionNewType",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertFunctionNewType",
+        "unique_body": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertFunctionNewType",
+        "guarded_lineage": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertFunctionNewType",
+        "name_calls_guard": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertFunctionNewType",
+        "guarded_with_group_guard": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertFunctionNewType"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/google/closure-compiler",
+      "commit": "5a853a60f93e09c446d458673bc7a2f6bb26742c",
+      "old_id": "com.google.javascript.jscomp.parsing.TypeDeclarationsIRFactoryTest.testConvertFunctionType",
+      "third_party_proposed_target": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertFunctionType",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertFunctionType",
+        "unique_body": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertFunctionType",
+        "guarded_lineage": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertFunctionType",
+        "name_calls_guard": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertFunctionType",
+        "guarded_with_group_guard": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertFunctionType"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/google/closure-compiler",
+      "commit": "5a853a60f93e09c446d458673bc7a2f6bb26742c",
+      "old_id": "com.google.javascript.jscomp.parsing.TypeDeclarationsIRFactoryTest.testConvertNullableType",
+      "third_party_proposed_target": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertNullableType",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertNullableType",
+        "unique_body": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertNullableType",
+        "guarded_lineage": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertNullableType",
+        "name_calls_guard": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertNullableType",
+        "guarded_with_group_guard": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertNullableType"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/google/closure-compiler",
+      "commit": "5a853a60f93e09c446d458673bc7a2f6bb26742c",
+      "old_id": "com.google.javascript.jscomp.parsing.TypeDeclarationsIRFactoryTest.testConvertRecordType",
+      "third_party_proposed_target": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertRecordType",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertRecordType",
+        "unique_body": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertRecordType",
+        "guarded_lineage": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertRecordType",
+        "name_calls_guard": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertRecordType",
+        "guarded_with_group_guard": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertRecordType"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/google/closure-compiler",
+      "commit": "5a853a60f93e09c446d458673bc7a2f6bb26742c",
+      "old_id": "com.google.javascript.jscomp.parsing.TypeDeclarationsIRFactoryTest.testConvertRecordTypeWithTypeApplication",
+      "third_party_proposed_target": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertRecordTypeWithTypeApplication",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertRecordTypeWithTypeApplication",
+        "unique_body": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertRecordTypeWithTypeApplication",
+        "guarded_lineage": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertRecordTypeWithTypeApplication",
+        "name_calls_guard": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertRecordTypeWithTypeApplication",
+        "guarded_with_group_guard": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertRecordTypeWithTypeApplication"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/google/closure-compiler",
+      "commit": "5a853a60f93e09c446d458673bc7a2f6bb26742c",
+      "old_id": "com.google.javascript.jscomp.parsing.TypeDeclarationsIRFactoryTest.testConvertSimpleTypes",
+      "third_party_proposed_target": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertSimpleTypes",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertSimpleTypes",
+        "unique_body": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertSimpleTypes",
+        "guarded_lineage": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertSimpleTypes",
+        "name_calls_guard": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertSimpleTypes",
+        "guarded_with_group_guard": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertSimpleTypes"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/google/closure-compiler",
+      "commit": "5a853a60f93e09c446d458673bc7a2f6bb26742c",
+      "old_id": "com.google.javascript.jscomp.parsing.TypeDeclarationsIRFactoryTest.testConvertTypeUnion",
+      "third_party_proposed_target": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertTypeUnion",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertTypeUnion",
+        "unique_body": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertTypeUnion",
+        "guarded_lineage": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertTypeUnion",
+        "name_calls_guard": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertTypeUnion",
+        "guarded_with_group_guard": "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest.testConvertTypeUnion"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.CollectionsTest.testInvalidCollectionsMix",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testInvalidCollectionsMix",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testInvalidCollectionsMix",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testInvalidCollectionsMix",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testInvalidCollectionsMix",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testInvalidCollectionsMix",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testInvalidCollectionsMix"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.CollectionsTest.testLists",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testLists",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testLists",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testLists",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testLists",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testLists",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testLists"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.CollectionsTest.testMapBulkRemoval",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testMapBulkRemoval",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testMapBulkRemoval",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testMapBulkRemoval",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testMapBulkRemoval",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testMapBulkRemoval",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testMapBulkRemoval"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.CollectionsTest.testMaps",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testMaps",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testMaps",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testMaps",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testMaps",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testMaps",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testMaps"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.CollectionsTest.testSets",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testSets",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testSets",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testSets",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testSets",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testSets",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.CollectionsTest.testSets"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.CreateTriggerStatementTest.testCreateTrigger",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.CreateTest.testCreateTrigger",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.operations.CreateTest.testCreateTrigger",
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.CreateTest.testCreateTrigger",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.CreateTest.testCreateTrigger",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.CreateTest.testCreateTrigger",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.CreateTest.testCreateTrigger"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.CreateTriggerStatementTest.testCreateTriggerIfNotExists",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.CreateTest.testCreateTriggerIfNotExists",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.operations.CreateTest.testCreateTriggerIfNotExists",
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.CreateTest.testCreateTriggerIfNotExists",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.CreateTest.testCreateTriggerIfNotExists",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.CreateTest.testCreateTriggerIfNotExists",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.CreateTest.testCreateTriggerIfNotExists"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.CreateTriggerStatementTest.testDropTrigger",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.CreateTest.testDropTrigger",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.operations.CreateTest.testDropTrigger",
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.CreateTest.testDropTrigger",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.CreateTest.testDropTrigger",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.CreateTest.testDropTrigger",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.CreateTest.testDropTrigger"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.CreateTriggerStatementTest.testDropTriggerIfExists",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.CreateTest.testDropTriggerIfExists",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.operations.CreateTest.testDropTriggerIfExists",
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.CreateTest.testDropTriggerIfExists",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.CreateTest.testDropTriggerIfExists",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.CreateTest.testDropTriggerIfExists",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.CreateTest.testDropTriggerIfExists"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.IndexedValuesValidationTest.testCompactTableWithValueOver64k",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testCompactTableWithValueOver64k",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testCompactTableWithValueOver64k",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testCompactTableWithValueOver64k",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testCompactTableWithValueOver64k",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testCompactTableWithValueOver64k",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testCompactTableWithValueOver64k"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.IndexedValuesValidationTest.testIndexOnClusteringColumnInsertPartitionKeyAndClusteringsOver64k",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnClusteringColumnInsertPartitionKeyAndClusteringsOver64k",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnClusteringColumnInsertPartitionKeyAndClusteringsOver64k",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnClusteringColumnInsertPartitionKeyAndClusteringsOver64k",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnClusteringColumnInsertPartitionKeyAndClusteringsOver64k",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnClusteringColumnInsertPartitionKeyAndClusteringsOver64k",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnClusteringColumnInsertPartitionKeyAndClusteringsOver64k"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.IndexedValuesValidationTest.testIndexOnClusteringColumnInsertValueOver64k",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnClusteringColumnInsertValueOver64k",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnClusteringColumnInsertValueOver64k",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnClusteringColumnInsertValueOver64k",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnClusteringColumnInsertValueOver64k",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnClusteringColumnInsertValueOver64k",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnClusteringColumnInsertValueOver64k"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.IndexedValuesValidationTest.testIndexOnCollectionKeyInsertPartitionKeyAndClusteringOver64k",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCollectionKeyInsertPartitionKeyAndClusteringOver64k",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCollectionKeyInsertPartitionKeyAndClusteringOver64k",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCollectionKeyInsertPartitionKeyAndClusteringOver64k",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCollectionKeyInsertPartitionKeyAndClusteringOver64k",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCollectionKeyInsertPartitionKeyAndClusteringOver64k",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCollectionKeyInsertPartitionKeyAndClusteringOver64k"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.IndexedValuesValidationTest.testIndexOnCollectionValueInsertPartitionKeyAndCollectionKeyOver64k",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCollectionValueInsertPartitionKeyAndCollectionKeyOver64k",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCollectionValueInsertPartitionKeyAndCollectionKeyOver64k",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCollectionValueInsertPartitionKeyAndCollectionKeyOver64k",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCollectionValueInsertPartitionKeyAndCollectionKeyOver64k",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCollectionValueInsertPartitionKeyAndCollectionKeyOver64k",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCollectionValueInsertPartitionKeyAndCollectionKeyOver64k"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.IndexedValuesValidationTest.testIndexOnCompositeValueOver64k",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCompositeValueOver64k",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCompositeValueOver64k",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCompositeValueOver64k",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCompositeValueOver64k",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCompositeValueOver64k",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnCompositeValueOver64k"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.IndexedValuesValidationTest.testIndexOnFullCollectionEntryInsertCollectionValueOver64k",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnFullCollectionEntryInsertCollectionValueOver64k",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnFullCollectionEntryInsertCollectionValueOver64k",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnFullCollectionEntryInsertCollectionValueOver64k",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnFullCollectionEntryInsertCollectionValueOver64k",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnFullCollectionEntryInsertCollectionValueOver64k",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnFullCollectionEntryInsertCollectionValueOver64k"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.IndexedValuesValidationTest.testIndexOnPartitionKeyInsertValueOver64k",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnPartitionKeyInsertValueOver64k",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnPartitionKeyInsertValueOver64k",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnPartitionKeyInsertValueOver64k",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnPartitionKeyInsertValueOver64k",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnPartitionKeyInsertValueOver64k",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest.testIndexOnPartitionKeyInsertValueOver64k"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.SelectWithTokenFunctionTest.testTokenFunctionWithCompoundPartitionAndClusteringCols",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithCompoundPartitionAndClusteringCols",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithCompoundPartitionAndClusteringCols",
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithCompoundPartitionAndClusteringCols",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithCompoundPartitionAndClusteringCols",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithCompoundPartitionAndClusteringCols",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithCompoundPartitionAndClusteringCols"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.SelectWithTokenFunctionTest.testTokenFunctionWithMultiColumnPartitionKey",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithMultiColumnPartitionKey",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithMultiColumnPartitionKey",
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithMultiColumnPartitionKey",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithMultiColumnPartitionKey",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithMultiColumnPartitionKey",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithMultiColumnPartitionKey"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.SelectWithTokenFunctionTest.testTokenFunctionWithPartitionKeyAndClusteringKeyArguments",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithPartitionKeyAndClusteringKeyArguments",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithPartitionKeyAndClusteringKeyArguments",
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithPartitionKeyAndClusteringKeyArguments",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithPartitionKeyAndClusteringKeyArguments",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithPartitionKeyAndClusteringKeyArguments",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithPartitionKeyAndClusteringKeyArguments"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.SelectWithTokenFunctionTest.testTokenFunctionWithSingleColumnPartitionKey",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithSingleColumnPartitionKey",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithSingleColumnPartitionKey",
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithSingleColumnPartitionKey",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithSingleColumnPartitionKey",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithSingleColumnPartitionKey",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderedPartitionerTest.testTokenFunctionWithSingleColumnPartitionKey"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.SelectionOrderingTest.testFieldSelectionOrderSingleClustering",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFieldSelectionOrderSingleClustering",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFieldSelectionOrderSingleClustering",
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFieldSelectionOrderSingleClustering",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFieldSelectionOrderSingleClustering",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFieldSelectionOrderSingleClustering",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFieldSelectionOrderSingleClustering"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.SelectionOrderingTest.testFunctionSelectionOrderMultipleClustering",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFunctionSelectionOrderMultipleClustering",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFunctionSelectionOrderMultipleClustering",
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFunctionSelectionOrderMultipleClustering",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFunctionSelectionOrderMultipleClustering",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFunctionSelectionOrderMultipleClustering",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFunctionSelectionOrderMultipleClustering"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.SelectionOrderingTest.testFunctionSelectionOrderSingleClustering",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFunctionSelectionOrderSingleClustering",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFunctionSelectionOrderSingleClustering",
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFunctionSelectionOrderSingleClustering",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFunctionSelectionOrderSingleClustering",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFunctionSelectionOrderSingleClustering",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testFunctionSelectionOrderSingleClustering"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.SelectionOrderingTest.testNormalSelectionOrderMultipleClustering",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testNormalSelectionOrderMultipleClustering",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testNormalSelectionOrderMultipleClustering",
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testNormalSelectionOrderMultipleClustering",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testNormalSelectionOrderMultipleClustering",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testNormalSelectionOrderMultipleClustering",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testNormalSelectionOrderMultipleClustering"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.SelectionOrderingTest.testNormalSelectionOrderSingleClustering",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testNormalSelectionOrderSingleClustering",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testNormalSelectionOrderSingleClustering",
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testNormalSelectionOrderSingleClustering",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testNormalSelectionOrderSingleClustering",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testNormalSelectionOrderSingleClustering",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.SelectOrderByTest.testNormalSelectionOrderSingleClustering"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.StaticColumnsQueryTest.testSingleClustering",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.SelectTest.testSingleClustering",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.SelectTest.testSingleClustering",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.SelectTest.testSingleClustering",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.SelectTest.testSingleClustering",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.SelectTest.testSingleClustering"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.StaticColumnsQueryTest.testSingleClusteringReversed",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.SelectTest.testSingleClusteringReversed",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.operations.SelectTest.testSingleClusteringReversed",
+        "unique_body": "org.apache.cassandra.cql3.validation.operations.SelectTest.testSingleClusteringReversed",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.operations.SelectTest.testSingleClusteringReversed",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.operations.SelectTest.testSingleClusteringReversed",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.operations.SelectTest.testSingleClusteringReversed"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.TimestampTest.testNegativeTimestamps",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.TimestampTest.testNegativeTimestamps",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.TimestampTest.testNegativeTimestamps",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.TimestampTest.testNegativeTimestamps",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.TimestampTest.testNegativeTimestamps",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.TimestampTest.testNegativeTimestamps",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.TimestampTest.testNegativeTimestamps"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.TupleTypeTest.testInvalidQueries",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testInvalidQueries",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testInvalidQueries",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testInvalidQueries",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testInvalidQueries",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testInvalidQueries",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testInvalidQueries"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.TupleTypeTest.testNestedTuple",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testNestedTuple",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testNestedTuple",
+        "unique_body": null,
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testNestedTuple",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testNestedTuple",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testNestedTuple"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.TupleTypeTest.testTupleInClusteringKey",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTupleInClusteringKey",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTupleInClusteringKey",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTupleInClusteringKey",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTupleInClusteringKey",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTupleInClusteringKey",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTupleInClusteringKey"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.TupleTypeTest.testTupleInPartitionKey",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTupleInPartitionKey",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTupleInPartitionKey",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTupleInPartitionKey",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTupleInPartitionKey",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTupleInPartitionKey",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTupleInPartitionKey"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.TupleTypeTest.testTuplePutAndGet",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTuplePutAndGet",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTuplePutAndGet",
+        "unique_body": null,
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTuplePutAndGet",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTuplePutAndGet",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.TupleTypeTest.testTuplePutAndGet"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.UserTypesTest.testAlterUDT",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlterUDT",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlterUDT",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlterUDT",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlterUDT",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlterUDT",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlterUDT"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.UserTypesTest.testAlteringUserTypeNestedWithinList",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinList",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinList",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinList",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinList",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinList",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinList"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.UserTypesTest.testAlteringUserTypeNestedWithinMap",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinMap",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinMap",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinMap",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinMap",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinMap",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinMap"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.UserTypesTest.testAlteringUserTypeNestedWithinNestedTuple",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinNestedTuple",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinNestedTuple",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinNestedTuple",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinNestedTuple",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinNestedTuple",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinNestedTuple"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.UserTypesTest.testAlteringUserTypeNestedWithinSet",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinSet",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinSet",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinSet",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinSet",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinSet",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinSet"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.UserTypesTest.testAlteringUserTypeNestedWithinTuple",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinTuple",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinTuple",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinTuple",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinTuple",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinTuple",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinTuple"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.UserTypesTest.testAlteringUserTypeNestedWithinUserType",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinUserType",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinUserType",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinUserType",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinUserType",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinUserType",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testAlteringUserTypeNestedWithinUserType"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.UserTypesTest.testCassandra8105",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testCassandra8105",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testCassandra8105",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testCassandra8105",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testCassandra8105",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testCassandra8105",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testCassandra8105"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.UserTypesTest.testCreateInvalidTablesWithUDT",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testCreateInvalidTablesWithUDT",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testCreateInvalidTablesWithUDT",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testCreateInvalidTablesWithUDT",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testCreateInvalidTablesWithUDT",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testCreateInvalidTablesWithUDT",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testCreateInvalidTablesWithUDT"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.UserTypesTest.testFor7684",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testFor7684",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testFor7684",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testFor7684",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testFor7684",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testFor7684",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testFor7684"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.UserTypesTest.testInvalidField",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testInvalidField",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testInvalidField",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testInvalidField",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testInvalidField",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testInvalidField",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.UserTypesTest.testInvalidField"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": true,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+      "old_id": "org.apache.cassandra.cql3.CreateAndAlterKeyspaceTest.testCreateAndAlterWithDoubleWith",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.operations.CreateTest.testDoubleWith",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "commit": "35b6c869546a7968b6fd2f640add6eea87e03c22",
+      "old_id": "org.infinispan.client.hotrod.marshall.EmbeddedCompatTest.testEmbeddedQuery",
+      "third_party_proposed_target": "org.infinispan.client.hotrod.marshall.EmbeddedCompatTest.testEmbeddedLuceneQuery",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "commit": "35b6c869546a7968b6fd2f640add6eea87e03c22",
+      "old_id": "org.infinispan.client.hotrod.marshall.NonIndexedEmbeddedCompatTest.testEmbeddedQuery",
+      "third_party_proposed_target": "org.infinispan.client.hotrod.marshall.NonIndexedEmbeddedCompatTest.testEmbeddedLuceneQuery",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "commit": "8f446b6ddf540e1b1fefca34dd10f45ba7256095",
+      "old_id": "org.jboss.as.clustering.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackAddRemoveSequenceWithParameters",
+      "third_party_proposed_target": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackAddRemoveSequenceWithParameters",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackAddRemoveSequenceWithParameters",
+        "unique_body": null,
+        "guarded_lineage": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackAddRemoveSequenceWithParameters",
+        "name_calls_guard": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackAddRemoveSequenceWithParameters",
+        "guarded_with_group_guard": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackAddRemoveSequenceWithParameters"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "commit": "8f446b6ddf540e1b1fefca34dd10f45ba7256095",
+      "old_id": "org.jboss.as.clustering.jgroups.subsystem.OperationsTestCase.testSubsystemReadWriteOperations",
+      "third_party_proposed_target": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testSubsystemReadWriteOperations",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testSubsystemReadWriteOperations",
+        "unique_body": null,
+        "guarded_lineage": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testSubsystemReadWriteOperations",
+        "name_calls_guard": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testSubsystemReadWriteOperations",
+        "guarded_with_group_guard": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testSubsystemReadWriteOperations"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "commit": "8f446b6ddf540e1b1fefca34dd10f45ba7256095",
+      "old_id": "org.jboss.as.clustering.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackRemoveRemoveSequence",
+      "third_party_proposed_target": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackRemoveRemoveSequence",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackRemoveRemoveSequence",
+        "unique_body": null,
+        "guarded_lineage": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackRemoveRemoveSequence",
+        "name_calls_guard": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackRemoveRemoveSequence",
+        "guarded_with_group_guard": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackRemoveRemoveSequence"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "commit": "8f446b6ddf540e1b1fefca34dd10f45ba7256095",
+      "old_id": "org.jboss.as.clustering.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackRemoveRollback",
+      "third_party_proposed_target": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackRemoveRollback",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackRemoveRollback",
+        "unique_body": null,
+        "guarded_lineage": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackRemoveRollback",
+        "name_calls_guard": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackRemoveRollback",
+        "guarded_with_group_guard": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackRemoveRollback"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "commit": "8f446b6ddf540e1b1fefca34dd10f45ba7256095",
+      "old_id": "org.jboss.as.clustering.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackAddRemoveAddSequence",
+      "third_party_proposed_target": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackAddRemoveAddSequence",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackAddRemoveAddSequence",
+        "unique_body": null,
+        "guarded_lineage": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackAddRemoveAddSequence",
+        "name_calls_guard": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackAddRemoveAddSequence",
+        "guarded_with_group_guard": "org.infinispan.server.jgroups.subsystem.OperationSequencesTestCase.testProtocolStackAddRemoveAddSequence"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "commit": "8f446b6ddf540e1b1fefca34dd10f45ba7256095",
+      "old_id": "org.jboss.as.clustering.jgroups.subsystem.JGroupsSubsystemTestCase.testDescribeHandler",
+      "third_party_proposed_target": "org.infinispan.server.jgroups.subsystem.SubsystemParsingTestCase.testDescribeHandler",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": "org.infinispan.server.endpoint.EndpointSubsystemTestCase.testDescribeHandler",
+        "guarded_lineage": "org.infinispan.server.endpoint.EndpointSubsystemTestCase.testDescribeHandler",
+        "name_calls_guard": null,
+        "guarded_with_group_guard": "org.infinispan.server.endpoint.EndpointSubsystemTestCase.testDescribeHandler"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "commit": "8f446b6ddf540e1b1fefca34dd10f45ba7256095",
+      "old_id": "org.jboss.as.clustering.jgroups.subsystem.OperationsTestCase.testProtocolReadWriteOperation",
+      "third_party_proposed_target": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testProtocolReadWriteOperation",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testProtocolReadWriteOperation",
+        "unique_body": null,
+        "guarded_lineage": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testProtocolReadWriteOperation",
+        "name_calls_guard": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testProtocolReadWriteOperation",
+        "guarded_with_group_guard": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testProtocolReadWriteOperation"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "commit": "8f446b6ddf540e1b1fefca34dd10f45ba7256095",
+      "old_id": "org.jboss.as.clustering.jgroups.subsystem.OperationsTestCase.testTransportReadWriteOperation",
+      "third_party_proposed_target": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testTransportReadWriteOperation",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testTransportReadWriteOperation",
+        "unique_body": null,
+        "guarded_lineage": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testTransportReadWriteOperation",
+        "name_calls_guard": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testTransportReadWriteOperation",
+        "guarded_with_group_guard": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testTransportReadWriteOperation"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "commit": "8f446b6ddf540e1b1fefca34dd10f45ba7256095",
+      "old_id": "org.jboss.as.clustering.jgroups.subsystem.JGroupsSubsystemTestCase.testParseAndMarshalModel",
+      "third_party_proposed_target": "org.infinispan.server.jgroups.subsystem.SubsystemParsingTestCase.testParseAndMarshalModel",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": "org.infinispan.server.endpoint.EndpointSubsystemTestCase.testParseAndMarshalModel",
+        "guarded_lineage": "org.infinispan.server.endpoint.EndpointSubsystemTestCase.testParseAndMarshalModel",
+        "name_calls_guard": null,
+        "guarded_with_group_guard": "org.infinispan.server.endpoint.EndpointSubsystemTestCase.testParseAndMarshalModel"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/infinispan/infinispan",
+      "commit": "8f446b6ddf540e1b1fefca34dd10f45ba7256095",
+      "old_id": "org.jboss.as.clustering.jgroups.subsystem.OperationsTestCase.testTransportReadWriteWithParameters",
+      "third_party_proposed_target": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testTransportReadWriteWithParameters",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testTransportReadWriteWithParameters",
+        "unique_body": null,
+        "guarded_lineage": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testTransportReadWriteWithParameters",
+        "name_calls_guard": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testTransportReadWriteWithParameters",
+        "guarded_with_group_guard": "org.infinispan.server.jgroups.subsystem.OperationsTestCase.testTransportReadWriteWithParameters"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "4fcd7d4d366d001cf5f1f7d926c608c902e3f0af",
+      "old_id": "org.apache.cassandra.locator.DynamicEndpointSnitchTest.testConcurrency",
+      "third_party_proposed_target": "org.apache.cassandra.locator.DynamicEndpointSnitchLongTest.testConcurrency",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.locator.DynamicEndpointSnitchLongTest.testConcurrency",
+        "unique_body": null,
+        "guarded_lineage": "org.apache.cassandra.locator.DynamicEndpointSnitchLongTest.testConcurrency",
+        "name_calls_guard": "org.apache.cassandra.locator.DynamicEndpointSnitchLongTest.testConcurrency",
+        "guarded_with_group_guard": "org.apache.cassandra.locator.DynamicEndpointSnitchLongTest.testConcurrency"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "5790b4a44ba85e7e8ece64613d9e6a1b737a6cde",
+      "old_id": "org.apache.cassandra.cql3.validation.entities.UFTest.testJavascriptSimpleCollections",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.UFTest.testSecurityPermissions",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.UFPureScriptTest.testJavascriptSimpleCollections",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.UFPureScriptTest.testJavascriptSimpleCollections",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.UFPureScriptTest.testJavascriptSimpleCollections",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.UFPureScriptTest.testJavascriptSimpleCollections",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.UFPureScriptTest.testJavascriptSimpleCollections"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "5790b4a44ba85e7e8ece64613d9e6a1b737a6cde",
+      "old_id": "org.apache.cassandra.cql3.validation.entities.UFTest.testScriptReturnTypeCasting",
+      "third_party_proposed_target": "org.apache.cassandra.cql3.validation.entities.UFTest.testAmokUDF",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "org.apache.cassandra.cql3.validation.entities.UFPureScriptTest.testScriptReturnTypeCasting",
+        "unique_body": "org.apache.cassandra.cql3.validation.entities.UFPureScriptTest.testScriptReturnTypeCasting",
+        "guarded_lineage": "org.apache.cassandra.cql3.validation.entities.UFPureScriptTest.testScriptReturnTypeCasting",
+        "name_calls_guard": "org.apache.cassandra.cql3.validation.entities.UFPureScriptTest.testScriptReturnTypeCasting",
+        "guarded_with_group_guard": "org.apache.cassandra.cql3.validation.entities.UFPureScriptTest.testScriptReturnTypeCasting"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "1a2c1bcdc7267abec9b19d77726aedbb045d79a8",
+      "old_id": "org.apache.cassandra.db.compaction.CompactionsCQLTest.testTriggerMinorCompaction",
+      "third_party_proposed_target": "org.apache.cassandra.db.compaction.CompactionsCQLTest.testTriggerMinorCompactionSTCSAlterTable",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/apache/cassandra",
+      "commit": "1a2c1bcdc7267abec9b19d77726aedbb045d79a8",
+      "old_id": "org.apache.cassandra.db.compaction.CompactionsCQLTest.testTriggerMinorCompaction",
+      "third_party_proposed_target": "org.apache.cassandra.db.compaction.CompactionsCQLTest.testTriggerMinorCompactionLCS",
+      "oracle_refactoring_label": "FP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testRelativeNormalizedPathWithNullBaseDirectory",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPathWithNullBaseDirectory",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPathWithNullBaseDirectory",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPathWithNullBaseDirectory",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPathWithNullBaseDirectory",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPathWithNullBaseDirectory"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testBaseClassnameForSimpleName",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBaseClassnameForSimpleName",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBaseClassnameForSimpleName",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBaseClassnameForSimpleName",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBaseClassnameForSimpleName",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBaseClassnameForSimpleName"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testIsProperUtilsClass",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testIsProperUtilsClass",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testFileExtensions",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testFileExtensions",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testFileExtensions",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testFileExtensions",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testFileExtensions",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testFileExtensions"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testLengthExpandedTabs",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testLengthExpandedTabs",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testLengthExpandedTabs",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testLengthExpandedTabs",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testLengthExpandedTabs",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testLengthExpandedTabs"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testGetExistingConstructor",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testGetExistingConstructor",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testGetExistingConstructor",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testGetExistingConstructor",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testGetExistingConstructor",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testGetExistingConstructor"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testRelativeNormalizedPath",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPath",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPath",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPath",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPath",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPath"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testRelativeNormalizedPathWithDenormalizedBaseDirectory",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPathWithDenormalizedBaseDirectory",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPathWithDenormalizedBaseDirectory",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPathWithDenormalizedBaseDirectory",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPathWithDenormalizedBaseDirectory",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testRelativeNormalizedPathWithDenormalizedBaseDirectory"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testGetNonExistingConstructor",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testGetNonExistingConstructor",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testGetNonExistingConstructor",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testGetNonExistingConstructor",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testGetNonExistingConstructor",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testGetNonExistingConstructor"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testClose",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testClose",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testClose",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testClose",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testClose",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testClose"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testInvalidPattern",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvalidPattern",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvalidPattern",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvalidPattern",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvalidPattern",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvalidPattern"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testBaseClassnameForCanonicalName",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBaseClassnameForCanonicalName",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBaseClassnameForCanonicalName",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBaseClassnameForCanonicalName",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBaseClassnameForCanonicalName",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBaseClassnameForCanonicalName"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testTokenValueIncorrect",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenValueIncorrect",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenValueIncorrect",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenValueIncorrect",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenValueIncorrect",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenValueIncorrect"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testCloseWithException",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testCloseWithException",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testCloseWithException",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testCloseWithException",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testCloseWithException",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testCloseWithException"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testGetIntFromAccessibleField",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testGetIntFromAccessibleField",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testGetIntFromAccessibleField",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testGetIntFromAccessibleField",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testGetIntFromAccessibleField",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testGetIntFromAccessibleField"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testTokenValueIncorrect2",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenValueIncorrect2",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenValueIncorrect2",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenValueIncorrect2",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenValueIncorrect2",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenValueIncorrect2"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testIsProperUtilsClass",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testIsProperUtilsClass",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": null,
+        "unique_body": null,
+        "guarded_lineage": null,
+        "name_calls_guard": null,
+        "guarded_with_group_guard": null
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": false,
+        "unique_body": false,
+        "guarded_lineage": false,
+        "name_calls_guard": false,
+        "guarded_with_group_guard": false
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testShortDescriptionIncorrect",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testShortDescriptionIncorrect",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testShortDescriptionIncorrect",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testShortDescriptionIncorrect",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testShortDescriptionIncorrect",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testShortDescriptionIncorrect"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testIsCommentType",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testIsCommentType",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testIsCommentType",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testIsCommentType",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testIsCommentType",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testIsCommentType"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testInvokeConstructor",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvokeConstructor",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvokeConstructor",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvokeConstructor",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvokeConstructor",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvokeConstructor"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testInvokeConstructorThatFails",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvokeConstructorThatFails",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvokeConstructorThatFails",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvokeConstructorThatFails",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvokeConstructorThatFails",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testInvokeConstructorThatFails"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testGetIntFromInaccessibleField",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testGetIntFromInaccessibleField",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testGetIntFromInaccessibleField",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testGetIntFromInaccessibleField",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testGetIntFromInaccessibleField",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testGetIntFromInaccessibleField"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testBadRegex",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBadRegex",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBadRegex",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBadRegex",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBadRegex",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.CommonUtilsTest.testBadRegex"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle",
+      "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+      "old_id": "com.puppycrawl.tools.checkstyle.utils.UtilsTest.testTokenIdIncorrect",
+      "third_party_proposed_target": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenIdIncorrect",
+      "oracle_refactoring_label": "TP",
+      "test_identity_transfer_ground_truth": null,
+      "predicted_targets": {
+        "exact_id": null,
+        "unique_name": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenIdIncorrect",
+        "unique_body": null,
+        "guarded_lineage": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenIdIncorrect",
+        "name_calls_guard": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenIdIncorrect",
+        "guarded_with_group_guard": "com.puppycrawl.tools.checkstyle.utils.TokenUtilsTest.testTokenIdIncorrect"
+      },
+      "oracle_target_matched": {
+        "exact_id": false,
+        "unique_name": true,
+        "unique_body": false,
+        "guarded_lineage": true,
+        "name_calls_guard": true,
+        "guarded_with_group_guard": true
+      }
+    }
+  ]
+}

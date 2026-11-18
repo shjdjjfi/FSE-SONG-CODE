@@ -1,0 +1,34 @@
+{
+  "key": "1a8e89c38a9fb8fae1",
+  "args": {
+    "crate": "serde_json",
+    "version": "1.0.140",
+    "id": "0563461d2ca6fd93",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1213,
+  "errors": [
+    {
+      "code": null,
+      "message": "cannot find macro `json` in this scope",
+      "rendered": "error: cannot find macro `json` in this scope\n --> src/main.rs:5:15\n  |\n5 | assert_eq!(v, json!({ \"a\": [] }));\n  |               ^^^^\n  |\nhelp: consider importing this macro\n  |\n1 + use serde_json::json;\n  |\n\n",
+      "line": 5
+    },
+    {
+      "code": null,
+      "message": "cannot find macro `json` in this scope",
+      "rendered": "error: cannot find macro `json` in this scope\n --> src/main.rs:2:13\n  |\n2 | let mut v = json!({ \"a\": [\"an\", \"array\"] });\n  |             ^^^^\n  |\nhelp: consider importing this macro\n  |\n1 + use serde_json::json;\n  |\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_serde_json_consumer` (bin \"n05_serde_json_consumer\") due to 2 previous errors\n",
+  "code_sha256": "cadb68749b2a9fcfd4b3a8e21c691042366aeb9cd3b4034440396d39edeb5432",
+  "manifest_sha256": "a897ce8f2eb7416e83e720437ceea15f5f4378e7dece5d03e8f78e64706e38fa",
+  "log_file": "holdout/results/check_logs/1a8e89c38a9fb8fae1.txt.gz"
+}

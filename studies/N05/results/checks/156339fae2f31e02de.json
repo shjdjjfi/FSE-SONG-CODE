@@ -1,0 +1,24 @@
+{
+  "key": "156339fae2f31e02de",
+  "args": {
+    "crate": "tinyvec",
+    "version": "1.9.0",
+    "id": "21c6a67eeaea12a8",
+    "profile": "candidate",
+    "features": [
+      "real_blackbox",
+      "std"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0515,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "8fa0119c510bd1cdc597202c46986323e067fc3aa4b920ea3552cb6731b67365",
+  "manifest_sha256": "00695cd564023215ea62e75c21752f92f3a929ffc3a26aad6b6aee6c8e5c9bd4",
+  "log_file": "results/check_logs/156339fae2f31e02de.txt.gz"
+}

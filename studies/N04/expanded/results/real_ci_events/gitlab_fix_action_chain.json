@@ -1,0 +1,66 @@
+{
+  "study": "GitLab quarantine / intervening cause remediation / release",
+  "events": [
+    {
+      "type": "quarantine_added",
+      "iid": 162803,
+      "merged_at": "2024-08-19T08:44:16.397Z",
+      "url": "https://gitlab.com/gitlab-org/gitlab/-/merge_requests/162803",
+      "quarantine_annotations_added": 1
+    },
+    {
+      "type": "developer_remediation",
+      "iid": 163832,
+      "merged_at": "2024-08-26T15:20:39.457Z",
+      "url": "https://gitlab.com/gitlab-org/gitlab/-/merge_requests/163832",
+      "merge_commit_sha": "a90c07cf9c9e163726c4f69de2000fe34e5041e9",
+      "title": "Disable Sidekiq worker open transaction check in JS specs",
+      "changed_files": [
+        {
+          "path": "config/initializers/forbid_sidekiq_in_transactions.rb",
+          "diff_sha256": "9432271040c46481fd22ecdd33afcdcfd2907353bfa2892ed6b3172ee4f64326",
+          "added_lines": 10,
+          "removed_lines": 0
+        },
+        {
+          "path": "spec/initializers/forbid_sidekiq_in_transactions_spec.rb",
+          "diff_sha256": "8a553d7cc2d8ef74fba8f731ae115a810520a7321b7cde479492c0e15f0ed3aa",
+          "added_lines": 16,
+          "removed_lines": 2
+        },
+        {
+          "path": "spec/support/capybara.rb",
+          "diff_sha256": "bd84199f7fa991747c8fd2d9382b6c841573bb09a28bc8a73ce92fb41a5525fd",
+          "added_lines": 15,
+          "removed_lines": 0
+        }
+      ],
+      "metadata_provenance": {
+        "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/merge_requests/163832",
+        "sha256": "a884390d4f6ef7dfcce81d61632ea73f10e6f28c34eda856862034e043e87089",
+        "response_bytes": 5145,
+        "access": "public"
+      },
+      "diff_provenance": {
+        "source_url": "https://gitlab.com/api/v4/projects/gitlab-org%2Fgitlab/merge_requests/163832/changes",
+        "sha256": "928603c97971f08c9d33df193beb8f31214d1f7e80242109bed960ffa7e11b8d",
+        "response_bytes": 9059,
+        "access": "public"
+      }
+    },
+    {
+      "type": "quarantine_removed",
+      "iid": 164022,
+      "merged_at": "2024-08-27T08:08:06.376Z",
+      "url": "https://gitlab.com/gitlab-org/gitlab/-/merge_requests/164022",
+      "quarantine_annotations_removed": 1
+    }
+  ],
+  "test": "spec/features/merge_request/user_reverts_merge_request_spec.rb / reverts a merge request in a new merge request",
+  "observable_after_effect": "Quarantine marker removed in merged GitLab source; CI test reliability after removal not independently observed",
+  "not_observed": [
+    "CI rerun count/outcome for this one RSpec after removal",
+    "per-test quarantine action timestamps inside CI server",
+    "causal reduction in flaky alerts/build failures"
+  ]
+}

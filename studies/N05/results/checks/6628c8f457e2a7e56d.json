@@ -1,0 +1,48 @@
+{
+  "key": "6628c8f457e2a7e56d",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "7b7e8b78670012f6",
+    "profile": "candidate",
+    "features": [
+      "io-std",
+      "macros",
+      "net",
+      "process",
+      "rt",
+      "test-util",
+      "time"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 2.4685,
+  "errors": [
+    {
+      "code": null,
+      "message": "The default runtime flavor is `multi_thread`, but the `rt-multi-thread` feature is disabled.",
+      "rendered": "error: The default runtime flavor is `multi_thread`, but the `rt-multi-thread` feature is disabled.\n --> src/main.rs:3:1\n  |\n3 | #[tokio::main]\n  | ^^^^^^^^^^^^^^\n  |\n  = note: this error originates in the attribute macro `tokio::main` (in Nightly builds, run with -Z macro-backtrace for more info)\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio::io::AsyncWriteExt`",
+      "rendered": "error[E0432]: unresolved import `tokio::io::AsyncWriteExt`\n   --> src/main.rs:1:23\n    |\n  1 | use tokio::io::{self, AsyncWriteExt};\n    |                       ^^^^^^^^^^^^^\n    |                       |\n    |                       no `AsyncWriteExt` in `io`\n    |                       help: a similar name exists in the module: `AsyncWrite`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/io/mod.rs:277:159\n    |\n268 | / cfg_io_util! {\n269 | |     mod split;\n270 | |     pub use split::{split, ReadHalf, WriteHalf};\n271 | |     mod join;\n...   |\n277 | |         copy, copy_bidirectional, copy_bidirectional_with_sizes, copy_buf, duplex, empty, repeat, sink, simplex, AsyncBufReadExt, AsyncReadExt, AsyncSeekExt, AsyncWriteExt,\n    | |                                                                                                                                                               ^^^^^^^^^^^^^\n278 | |         BufReader, BufStream, BufWriter, DuplexStream, Empty, Lines, Repeat, Sink, Split, Take, SimplexStream,\n279 | |     };\n280 | | }\n    | |_- the item is gat",
+      "line": 1
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find function `empty` in module `io`",
+      "rendered": "error[E0425]: cannot find function `empty` in module `io`\n   --> src/main.rs:6:25\n    |\n  6 |     let num_bytes = io::empty().write(&buffer).await.unwrap();\n    |                         ^^^^^ not found in `io`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/io/mod.rs:277:84\n    |\n268 | / cfg_io_util! {\n269 | |     mod split;\n270 | |     pub use split::{split, ReadHalf, WriteHalf};\n271 | |     mod join;\n...   |\n277 | |         copy, copy_bidirectional, copy_bidirectional_with_sizes, copy_buf, duplex, empty, repeat, sink, simplex, AsyncBufReadExt, AsyncRe...\n    | |                                                                                    ^^^^^\n278 | |         BufReader, BufStream, BufWriter, DuplexStream, Empty, Lines, Repeat, Sink, Split, Take, SimplexStream,\n279 | |     };\n280 | | }\n    | |_- the item is gated behind the `io-util` feature\nhelp: consider importing one of these functions\n    |\n  1 + use std::io::empty;\n    |\n  1 + use std::iter::empty;\n    |\n  1 + use core::iter::empty;\n    |\nhelp: if you import `empty`, refer to it directly\n    |\n  6 - ",
+      "line": 6
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 3 previous errors\n",
+  "code_sha256": "87948ff11f649f37da3ebd5b1b57fa4548d364735a17cd7bda46b1903ace4581",
+  "manifest_sha256": "cd5c2477421298e8b1e3b061d4a5afa018bd90a621fbc894c063e22c9a30c2f5",
+  "log_file": "results/check_logs/6628c8f457e2a7e56d.txt.gz"
+}

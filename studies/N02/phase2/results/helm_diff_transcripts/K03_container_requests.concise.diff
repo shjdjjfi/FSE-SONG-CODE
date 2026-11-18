@@ -1,0 +1,120 @@
+n02-test, n02-kube-state-metrics, ClusterRole (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kube-state-metrics
+-     helm.sh/chart: kube-state-metrics-2.13.2
++     helm.sh/chart: kube-state-metrics-3.0.0
+    name: n02-kube-state-metrics
+  rules:
+  - apiGroups:
+...
+n02-test, n02-kube-state-metrics, ClusterRoleBinding (rbac.authorization.k8s.io) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kube-state-metrics
+-     helm.sh/chart: kube-state-metrics-2.13.2
++     helm.sh/chart: kube-state-metrics-3.0.0
+    name: n02-kube-state-metrics
+  roleRef:
+    apiGroup: rbac.authorization.k8s.io
+...
+n02-test, n02-kube-state-metrics, Deployment (apps) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kube-state-metrics
+-     app.kubernetes.io/version: 1.9.8
+-     helm.sh/chart: kube-state-metrics-2.13.2
++     app.kubernetes.io/version: 2.0.0
++     helm.sh/chart: kube-state-metrics-3.0.0
+    name: n02-kube-state-metrics
+    namespace: n02-test
+  spec:
+...
+      spec:
+        containers:
+        - args:
+-         - --collectors=certificatesigningrequests
+-         - --collectors=configmaps
+-         - --collectors=cronjobs
+-         - --collectors=daemonsets
+-         - --collectors=deployments
+-         - --collectors=endpoints
+-         - --collectors=horizontalpodautoscalers
+-         - --collectors=ingresses
+-         - --collectors=jobs
+-         - --collectors=limitranges
+-         - --collectors=mutatingwebhookconfigurations
+-         - --collectors=namespaces
+-         - --collectors=networkpolicies
+-         - --collectors=nodes
+-         - --collectors=persistentvolumeclaims
+-         - --collectors=persistentvolumes
+-         - --collectors=poddisruptionbudgets
+-         - --collectors=pods
+-         - --collectors=replicasets
+-         - --collectors=replicationcontrollers
+-         - --collectors=resourcequotas
+-         - --collectors=secrets
+-         - --collectors=services
+-         - --collectors=statefulsets
+-         - --collectors=storageclasses
+-         - --collectors=validatingwebhookconfigurations
+-         - --collectors=volumeattachments
++         - --resources=certificatesigningrequests
++         - --resources=configmaps
++         - --resources=cronjobs
++         - --resources=daemonsets
++         - --resources=deployments
++         - --resources=endpoints
++         - --resources=horizontalpodautoscalers
++         - --resources=ingresses
++         - --resources=jobs
++         - --resources=limitranges
++         - --resources=mutatingwebhookconfigurations
++         - --resources=namespaces
++         - --resources=networkpolicies
++         - --resources=nodes
++         - --resources=persistentvolumeclaims
++         - --resources=persistentvolumes
++         - --resources=poddisruptionbudgets
++         - --resources=pods
++         - --resources=replicasets
++         - --resources=replicationcontrollers
++         - --resources=resourcequotas
++         - --resources=secrets
++         - --resources=services
++         - --resources=statefulsets
++         - --resources=storageclasses
++         - --resources=validatingwebhookconfigurations
++         - --resources=volumeattachments
+          - --telemetry-port=8081
+-         image: k8s.gcr.io/kube-state-metrics/kube-state-metrics:v1.9.8
++         image: k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            httpGet:
+...
+n02-test, n02-kube-state-metrics, Service (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kube-state-metrics
+-     helm.sh/chart: kube-state-metrics-2.13.2
++     helm.sh/chart: kube-state-metrics-3.0.0
+    name: n02-kube-state-metrics
+    namespace: n02-test
+  spec:
+...
+n02-test, n02-kube-state-metrics, ServiceAccount (v1) has changed:
+...
+      app.kubernetes.io/instance: n02
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: kube-state-metrics
+-     helm.sh/chart: kube-state-metrics-2.13.2
++     helm.sh/chart: kube-state-metrics-3.0.0
+    name: n02-kube-state-metrics
+    namespace: n02-test
+

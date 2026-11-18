@@ -1,0 +1,42 @@
+{
+  "source": "https://github.com/TestingResearchIllinois/idoft",
+  "policy": "IDoFT FAQ says unchanged test-method bodies with moved IDs should be marked MovedOrRenamed; these cases warrant manual source/fixture review",
+  "not_an_automatic_correction": true,
+  "n_cases": 74,
+  "n_deleted": 9,
+  "conflict_count": 4,
+  "conflicts": [
+    {
+      "event": "zalando/riptide@cef45a1e325b",
+      "detected_sha": "8277e11fc069d8e24df0d233ef2577cc75659b75",
+      "old_id": "org.zalando.riptide.spring.AccessTokensDefaultCredentialsDirectoryTest.shouldUseCredentialsDirectory",
+      "target_identical_method": "org.zalando.riptide.autoconfigure.AccessTokensDefaultCredentialsDirectoryTest.shouldUseCredentialsDirectory",
+      "original_status": "Deleted",
+      "conflict_type": "IDoFT Deleted vs same-name equal-body moved Java test"
+    },
+    {
+      "event": "zalando/riptide@cef45a1e325b",
+      "detected_sha": "8277e11fc069d8e24df0d233ef2577cc75659b75",
+      "old_id": "org.zalando.riptide.spring.AccessTokensMissingTest.shouldFailDueToMissingAccessTokenUrl",
+      "target_identical_method": "org.zalando.riptide.autoconfigure.AccessTokensMissingTest.shouldFailDueToMissingAccessTokenUrl",
+      "original_status": "Deleted",
+      "conflict_type": "IDoFT Deleted vs same-name equal-body moved Java test"
+    },
+    {
+      "event": "zalando/riptide@cef45a1e325b",
+      "detected_sha": "8277e11fc069d8e24df0d233ef2577cc75659b75",
+      "old_id": "org.zalando.riptide.spring.AccessTokensPropertiesTest.shouldRun",
+      "target_identical_method": "org.zalando.riptide.autoconfigure.AccessTokensPropertiesTest.shouldRun",
+      "original_status": "Deleted",
+      "conflict_type": "IDoFT Deleted vs same-name equal-body moved Java test"
+    },
+    {
+      "event": "zalando/riptide@cef45a1e325b",
+      "detected_sha": "8277e11fc069d8e24df0d233ef2577cc75659b75",
+      "old_id": "org.zalando.riptide.spring.LogbookCompatibilityTest.shouldUseInterceptors",
+      "target_identical_method": "org.zalando.riptide.autoconfigure.LogbookCompatibilityTest.shouldUseInterceptors",
+      "original_status": "Deleted",
+      "conflict_type": "IDoFT Deleted vs same-name equal-body moved Java test"
+    }
+  ]
+}

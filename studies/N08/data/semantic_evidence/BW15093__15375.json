@@ -1,0 +1,66 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 2,
+  "bytes": 1123989,
+  "control_flow_or_callback_lines": 1,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "+",
+      "code": "/**",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "* Hides the default Bitwarden shield icon.",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "*/",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "hideIcon?: boolean;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected hideIcon: boolean = false;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (firstChildRouteData[\"hideIcon\"] !== undefined) {",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.hideIcon = firstChildRouteData[\"hideIcon\"];",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:46.755747+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 5,
+  "pr": 15375,
+  "repository": "bitwarden/clients",
+  "sha256": "5194077d24ee87d0e55852c71ab278a7d0dfc8c80205e6e803157709967eef5c",
+  "target_code_changed_lines": 9,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout-wrapper.component.html",
+    "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15375.patch"
+}

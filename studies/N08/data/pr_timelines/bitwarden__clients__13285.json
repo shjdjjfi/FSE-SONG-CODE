@@ -1,0 +1,82 @@
+{
+  "fetched_utc": "2026-11-14T17:12:45.663900+00:00",
+  "merged_at": "2025-04-10T09:09:35Z",
+  "opened_at": "2025-02-06T10:47:05Z",
+  "pr": 13285,
+  "raw_html_sha256": "3ac4d30eb74e3ca34437f7ab68f4fedaef0155a61629303948f29da763976fc9",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 14,
+  "reviews": [
+    {
+      "login": "mzieniukbw",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-06T12:35:55Z"
+    },
+    {
+      "login": "jprusik",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-06T20:04:06Z"
+    },
+    {
+      "login": "Patrick-Pimentel-Bitwarden",
+      "state": "COMMENTED",
+      "submitted_at": "2025-02-06T21:24:01Z"
+    },
+    {
+      "login": "Patrick-Pimentel-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-06T21:24:30Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-10T09:59:45Z"
+    },
+    {
+      "login": "addisonbeck",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-12T11:56:19Z"
+    },
+    {
+      "login": "shane-melton",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-12T19:48:38Z"
+    },
+    {
+      "login": "eliykat",
+      "state": "APPROVED",
+      "submitted_at": "2025-02-17T02:35:52Z"
+    },
+    {
+      "login": "Patrick-Pimentel-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-09T12:58:24Z"
+    },
+    {
+      "login": "jprusik",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-09T13:02:35Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-09T13:11:18Z"
+    },
+    {
+      "login": "mzieniukbw",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-09T13:21:10Z"
+    },
+    {
+      "login": "eliykat",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-10T03:50:50Z"
+    },
+    {
+      "login": "addisonbeck",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-10T04:07:53Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/13285"
+}

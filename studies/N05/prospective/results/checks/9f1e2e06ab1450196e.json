@@ -1,0 +1,34 @@
+{
+  "key": "9f1e2e06ab1450196e",
+  "args": {
+    "crate": "hyper-util",
+    "version": "0.1.15",
+    "id": "babba9f5f04cf89e",
+    "profile": "candidate",
+    "features": [
+      "client-legacy",
+      "client-proxy",
+      "service",
+      "tokio",
+      "tracing"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.76,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: could not find `server` in `hyper_util`",
+      "rendered": "error[E0433]: failed to resolve: could not find `server` in `hyper_util`\n  --> src/main.rs:4:5\n   |\n 4 |     server::conn::auto,\n   |     ^^^^^^ could not find `server` in `hyper_util`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-util-0.1.15/src/lib.rs:14:9\n   |\n13 | #[cfg(feature = \"server\")]\n   |       ------------------ the item is gated behind the `server` feature\n14 | pub mod server;\n   |         ^^^^^^\n\n",
+      "line": 4
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_hyper_util_consumer` (bin \"n05_hyper_util_consumer\") due to 1 previous error\n",
+  "code_sha256": "07a34e7fac218ce40399e1f45bdcb4b59d20e73c4be5d688eaf74cdc092d750b",
+  "manifest_sha256": "b1c186e819c394cb5a37d40bd8101ad30bc51c914b09ae7a3539bf834a584643",
+  "log_file": "prospective/results/check_logs/9f1e2e06ab1450196e.txt.gz"
+}

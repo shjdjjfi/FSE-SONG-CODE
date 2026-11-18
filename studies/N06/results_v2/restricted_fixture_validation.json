@@ -1,0 +1,58 @@
+{
+  "result": "PASS_RESTRICTED_REFERENCE_ONLY",
+  "promtool_executed": false,
+  "promql_executed": false,
+  "tests": 4,
+  "assertions": 7,
+  "cases": [
+    {
+      "case": "continuous service failure with two distinct pod identities",
+      "alert": "N06InstanceDown",
+      "eval_minute": 15,
+      "expected_firing": 0,
+      "restricted_model_match": true
+    },
+    {
+      "case": "continuous service failure with two distinct pod identities",
+      "alert": "N06ServiceDown",
+      "eval_minute": 15,
+      "expected_firing": 1,
+      "restricted_model_match": true
+    },
+    {
+      "case": "two unrelated owners reuse one service name, stable aggregate still fires",
+      "alert": "N06ServiceDown",
+      "eval_minute": 15,
+      "expected_firing": 1,
+      "restricted_model_match": true
+    },
+    {
+      "case": "two unrelated owners reuse one service name, stable aggregate still fires",
+      "alert": "N06InstanceDown",
+      "eval_minute": 15,
+      "expected_firing": 0,
+      "restricted_model_match": true
+    },
+    {
+      "case": "pending continuity not supplied by keep_firing_for",
+      "alert": "N06InstanceWithKeepFiring",
+      "eval_minute": 14,
+      "expected_firing": 0,
+      "restricted_model_match": true
+    },
+    {
+      "case": "healthy targets must not fire",
+      "alert": "N06InstanceDown",
+      "eval_minute": 15,
+      "expected_firing": 0,
+      "restricted_model_match": true
+    },
+    {
+      "case": "healthy targets must not fire",
+      "alert": "N06ServiceDown",
+      "eval_minute": 15,
+      "expected_firing": 0,
+      "restricted_model_match": true
+    }
+  ]
+}

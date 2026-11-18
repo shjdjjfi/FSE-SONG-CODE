@@ -1,0 +1,62 @@
+{
+  "pr": 12854,
+  "pr_author": "quexten",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-01-14T12:16:35Z",
+      "requested_people": [
+        "quexten"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-14T15:26:42Z",
+      "requested_people": [
+        "quexten"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-14T15:26:42Z",
+      "requested_people": [
+        "patrick-pimentel-bitwarden",
+        "quexten"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-15T13:22:09Z",
+      "requested_people": [
+        "mzieniukbw",
+        "quexten"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-15T14:47:25Z",
+      "requested_people": [
+        "jaredsnider-bitwarden",
+        "quexten"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-01-15T15:50:00Z",
+      "requested_people": [
+        "jaredsnider-bitwarden",
+        "mzieniukbw",
+        "quexten"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "87a4edf7435f845336897abd951a54cec435b9861c391b229e21769b62175743",
+  "url": "https://github.com/bitwarden/clients/pull/12854"
+}

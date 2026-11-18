@@ -1,0 +1,46 @@
+{
+  "key": "e6a542591458d52fcd",
+  "args": {
+    "crate": "quick-xml",
+    "version": "0.37.5",
+    "id": "586961fbe13a263a",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0839,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `pretty_assertions`",
+      "rendered": "error[E0432]: unresolved import `pretty_assertions`\n --> src/main.rs:1:5\n  |\n1 | use pretty_assertions::assert_eq;\n  |     ^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `pretty_assertions`\n  |\n  = help: if you wanted to use a crate named `pretty_assertions`, use `cargo add pretty_assertions` to add it to your `Cargo.toml`\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde`",
+      "rendered": "error[E0432]: unresolved import `serde`\n --> src/main.rs:2:5\n  |\n2 | use serde::Serialize;\n  |     ^^^^^ use of unresolved module or unlinked crate `serde`\n  |\n  = help: if you wanted to use a crate named `serde`, use `cargo add serde` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `quick_xml::se`",
+      "rendered": "error[E0432]: unresolved import `quick_xml::se`\n  --> src/main.rs:5:16\n   |\n 5 | use quick_xml::se::SeError;\n   |                ^^ could not find `se` in `quick_xml`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/quick-xml-0.37.5/src/lib.rs:65:9\n   |\n64 | #[cfg(feature = \"serialize\")]\n   |       --------------------- the item is gated behind the `serialize` feature\n65 | pub mod se;\n   |         ^^\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `write_serializable` found for struct `Writer<W>` in the current scope",
+      "rendered": "error[E0599]: no method named `write_serializable` found for struct `Writer<W>` in the current scope\n  --> src/main.rs:25:8\n   |\n25 | writer.write_serializable(\"my_data\", &data)?;\n   |        ^^^^^^^^^^^^^^^^^^ method not found in `Writer<&mut Vec<u8>>`\n\n",
+      "line": 25
+    }
+  ],
+  "error_count": 4,
+  "stderr_excerpt": "error: could not compile `n05_quick_xml_consumer` (bin \"n05_quick_xml_consumer\") due to 4 previous errors\n",
+  "code_sha256": "2612242ca402769921261fe873dd4b4f22fa728f4ffa2a0b8c4acf8d97dfc9ce",
+  "manifest_sha256": "ebdbc46ef63196b0272bfb542c9057438d6f78d4878f599effb8654ea83a6f59",
+  "log_file": "prospective/results/check_logs/e6a542591458d52fcd.txt.gz"
+}

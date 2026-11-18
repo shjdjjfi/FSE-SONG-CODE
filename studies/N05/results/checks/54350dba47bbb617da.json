@@ -1,0 +1,34 @@
+{
+  "key": "54350dba47bbb617da",
+  "args": {
+    "crate": "hyper",
+    "version": "1.6.0",
+    "id": "a1601de600a18ac6",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 1.8362,
+  "errors": [
+    {
+      "code": null,
+      "message": "The `tracing` feature is unstable, and requires the `RUSTFLAGS='--cfg hyper_unstable_tracing'` environment variable to be set.",
+      "rendered": "error: The `tracing` feature is unstable, and requires the `RUSTFLAGS='--cfg hyper_unstable_tracing'` environment variable to be set.\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-1.6.0/src/trace.rs:6:1\n   |\n 6 | / compile_error!(\n 7 | |     \"\\\n 8 | |     The `tracing` feature is unstable, and requires the \\\n 9 | |     `RUSTFLAGS='--cfg hyper_unstable_tracing'` environment variable to be set.\\\n10 | | \"\n11 | | );\n   | |_^\n\n",
+      "line": 6
+    },
+    {
+      "code": null,
+      "message": "The `ffi` feature is unstable, and requires the `RUSTFLAGS='--cfg hyper_unstable_ffi'` environment variable to be set.",
+      "rendered": "error: The `ffi` feature is unstable, and requires the `RUSTFLAGS='--cfg hyper_unstable_ffi'` environment variable to be set.\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-1.6.0/src/ffi/mod.rs:40:1\n   |\n40 | / compile_error!(\n41 | |     \"\\\n42 | |     The `ffi` feature is unstable, and requires the \\\n43 | |     `RUSTFLAGS='--cfg hyper_unstable_ffi'` environment variable to be set.\\\n44 | | \"\n45 | | );\n   | |_^\n\n",
+      "line": 40
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `hyper` (lib) due to 2 previous errors\n",
+  "code_sha256": "7897a10c8c55db4962e7f6e36147682bc5b6364cbb870934be58f82eb40ceb82",
+  "manifest_sha256": "b210c38e9ef45eb59082b79c2c0dddcfff3c85527f37df6221b2657ac8923b7a",
+  "log_file": "results/check_logs/54350dba47bbb617da.txt.gz"
+}

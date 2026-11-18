@@ -1,0 +1,19 @@
+{
+  "native_promtool_executed": false,
+  "cases": [
+    {
+      "episode_id": "kube_prometheus_targetdown_10m__churn_outage__s17__r000",
+      "oracle_category": "positive",
+      "test_tick": 59,
+      "expected_firing": 1,
+      "evidence_kind": "synthetic policy-output replay, not native engine execution"
+    },
+    {
+      "episode_id": "kube_prometheus_targetdown_10m__owner_reuse__s17__r000",
+      "oracle_category": "negative",
+      "test_tick": 75,
+      "expected_firing": 0,
+      "evidence_kind": "synthetic policy-output replay, not native engine execution"
+    }
+  ]
+}

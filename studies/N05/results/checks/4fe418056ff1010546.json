@@ -1,0 +1,27 @@
+{
+  "key": "4fe418056ff1010546",
+  "args": {
+    "crate": "axum",
+    "version": "0.8.4",
+    "id": "54004c2631eefe66",
+    "profile": "candidate",
+    "features": [
+      "http2",
+      "json",
+      "multipart",
+      "tower-log",
+      "ws"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 3.4418,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "256d7c35f670b42cd0ecadfe72ad18e164a0f69d5440e9c8e377a16233d7c2af",
+  "manifest_sha256": "9760eff64e4b91de682686f156d3c70058dd2508158231ab794255de271b090b",
+  "log_file": "results/check_logs/4fe418056ff1010546.txt.gz"
+}

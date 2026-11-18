@@ -1,0 +1,50 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 26118,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW11709",
+  "examples": [
+    {
+      "change": "+",
+      "code": "// FIXME: remove `src` and fix import",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "// eslint-disable-next-line no-restricted-imports",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "// FIXME: remove `src` and fix import",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "// eslint-disable-next-line no-restricted-imports",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "// FIXME: remove `src` and fix import",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    },
+    {
+      "change": "+",
+      "code": "// eslint-disable-next-line no-restricted-imports",
+      "file": "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:41.002856+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/11709",
+  "noncomment_nonimport_changed_lines": 0,
+  "pr": 12935,
+  "repository": "bitwarden/clients",
+  "sha256": "aae4e9ff62cc970203ee707ed8130544c50476d289bfecf98806473199ee0d68",
+  "target_code_changed_lines": 6,
+  "target_files": [
+    "apps/web/src/app/key-management/key-rotation/request/update-key.request.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/12935.patch"
+}

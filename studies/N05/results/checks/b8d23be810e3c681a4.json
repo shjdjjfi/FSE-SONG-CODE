@@ -1,0 +1,28 @@
+{
+  "key": "b8d23be810e3c681a4",
+  "args": {
+    "crate": "tracing-subscriber",
+    "version": "0.3.19",
+    "id": "195b2cb7ce7a9fef",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.133,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tracing_core`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tracing_core`\n  --> src/main.rs:19:12\n   |\n19 |         S: tracing_core::Subscriber,\n   |            ^^^^^^^^^^^^ use of unresolved module or unlinked crate `tracing_core`\n   |\n   = help: if you wanted to use a crate named `tracing_core`, use `cargo add tracing_core` to add it to your `Cargo.toml`\n\n",
+      "line": 19
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tracing_subscriber_consumer` (bin \"n05_tracing_subscriber_consumer\") due to 1 previous error\n",
+  "code_sha256": "9c6f0074255e5907ed9e951022d3c49628592edd190ef52f619af032aebf4663",
+  "manifest_sha256": "9d051edaf1bfed636c4fca37ddcc0f24c8d2f5fe1437acbe72ab360adc95f0cc",
+  "log_file": "results/check_logs/b8d23be810e3c681a4.txt.gz"
+}

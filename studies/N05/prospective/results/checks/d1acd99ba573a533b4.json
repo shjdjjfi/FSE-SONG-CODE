@@ -1,0 +1,28 @@
+{
+  "key": "d1acd99ba573a533b4",
+  "args": {
+    "crate": "rand_distr",
+    "version": "0.5.1",
+    "id": "af48a3831909797c",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2242,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `rand`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rand`\n --> src/main.rs:5:36\n  |\n5 | let v = norm_inv_gauss.sample(&mut rand::rng());\n  |                                    ^^^^ use of unresolved module or unlinked crate `rand`\n  |\n  = help: if you wanted to use a crate named `rand`, use `cargo add rand` to add it to your `Cargo.toml`\n\n",
+      "line": 5
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_rand_distr_consumer` (bin \"n05_rand_distr_consumer\") due to 1 previous error\n",
+  "code_sha256": "450f1b1b2f18ff6225bb48a485aa844d270fb268305303e1858f22c963d7360f",
+  "manifest_sha256": "34167c389cf681bfcb71e821e92c535457fb8db9aa16b819854a853eddd28076",
+  "log_file": "prospective/results/check_logs/d1acd99ba573a533b4.txt.gz"
+}

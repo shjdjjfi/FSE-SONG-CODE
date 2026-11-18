@@ -1,0 +1,657 @@
+{
+  "expected_rows": 16,
+  "observations": [
+    {
+      "after": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "before": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 0.26656,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:44 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:44 PM - Project 'packages/alpha/tsconfig.json' is up to date because newest input 'packages/alpha/src/index.ts' is older than output 'packages/alpha/cache.tsbuildinfo'\n\n1:30:44 PM - Project 'packages/beta/tsconfig.json' is up to date because newest input 'packages/beta/src/index.ts' is older than output 'packages/beta/cache.tsbuildinfo'\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.10621,
+      "build_child_cpu_user_seconds": 0.28439,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": true,
+      "detected_projects": [],
+      "fault": "none",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 0,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "attest_only",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 0.26681
+    },
+    {
+      "after": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "before": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 0.13413,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:44 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:44 PM - Project 'packages/alpha/tsconfig.json' is up to date because newest input 'packages/alpha/src/index.ts' is older than output 'packages/alpha/cache.tsbuildinfo'\n\n1:30:44 PM - Project 'packages/beta/tsconfig.json' is up to date because newest input 'packages/beta/src/index.ts' is older than output 'packages/beta/cache.tsbuildinfo'\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.02564,
+      "build_child_cpu_user_seconds": 0.1215,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": true,
+      "detected_projects": [],
+      "fault": "none",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 339,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "guarded_sha",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 0.13509
+    },
+    {
+      "after": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "before": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 1.66359,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:45 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:45 PM - Project 'packages/alpha/tsconfig.json' is out of date because output file 'packages/alpha/cache.tsbuildinfo' does not exist\n\n1:30:45 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/alpha/tsconfig.json'...\n\n1:30:46 PM - Project 'packages/beta/tsconfig.json' is out of date because output file 'packages/beta/cache.tsbuildinfo' does not exist\n\n1:30:46 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/beta/tsconfig.json'...\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.50111,
+      "build_child_cpu_user_seconds": 3.25842,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": true,
+      "detected_projects": [],
+      "fault": "none",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 0,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "clean_all",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 1.66381
+    },
+    {
+      "after": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "before": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose",
+          "--force"
+        ],
+        "exit": 0,
+        "seconds": 2.0186,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:46 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:46 PM - Project 'packages/alpha/tsconfig.json' is being forcibly rebuilt\n\n1:30:46 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/alpha/tsconfig.json'...\n\n1:30:47 PM - Project 'packages/beta/tsconfig.json' is being forcibly rebuilt\n\n1:30:47 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/beta/tsconfig.json'...\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.282,
+      "build_child_cpu_user_seconds": 3.53473,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": true,
+      "detected_projects": [],
+      "fault": "none",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 0,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "force_all",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 2.01884
+    },
+    {
+      "after": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 1
+      },
+      "before": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 1
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 0.13315,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:48 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:48 PM - Project 'packages/alpha/tsconfig.json' is up to date because newest input 'packages/alpha/src/index.ts' is older than output 'packages/alpha/cache.tsbuildinfo'\n\n1:30:48 PM - Project 'packages/beta/tsconfig.json' is up to date because newest input 'packages/beta/src/index.ts' is older than output 'packages/beta/cache.tsbuildinfo'\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.04084,
+      "build_child_cpu_user_seconds": 0.11124,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": false,
+      "detected_projects": [],
+      "fault": "delete_js",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 0,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "attest_only",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 0.13323
+    },
+    {
+      "after": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "before": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 1
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 0.94836,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:48 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:48 PM - Project 'packages/alpha/tsconfig.json' is out of date because output file 'packages/alpha/cache.tsbuildinfo' does not exist\n\n1:30:48 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/alpha/tsconfig.json'...\n\n1:30:49 PM - Project 'packages/beta/tsconfig.json' is up to date because newest input 'packages/beta/src/index.ts' is older than output 'packages/beta/cache.tsbuildinfo'\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.19991,
+      "build_child_cpu_user_seconds": 1.98919,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": true,
+      "detected_projects": [
+        "alpha"
+      ],
+      "fault": "delete_js",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 209,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "guarded_sha",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 0.94902
+    },
+    {
+      "after": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "before": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 1
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 1.67863,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:49 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:49 PM - Project 'packages/alpha/tsconfig.json' is out of date because output file 'packages/alpha/cache.tsbuildinfo' does not exist\n\n1:30:49 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/alpha/tsconfig.json'...\n\n1:30:50 PM - Project 'packages/beta/tsconfig.json' is out of date because output file 'packages/beta/cache.tsbuildinfo' does not exist\n\n1:30:50 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/beta/tsconfig.json'...\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.4044,
+      "build_child_cpu_user_seconds": 3.0614,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": true,
+      "detected_projects": [],
+      "fault": "delete_js",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 0,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "clean_all",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 1.67882
+    },
+    {
+      "after": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "before": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 1
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose",
+          "--force"
+        ],
+        "exit": 0,
+        "seconds": 1.4172,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:51 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:51 PM - Project 'packages/alpha/tsconfig.json' is being forcibly rebuilt\n\n1:30:51 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/alpha/tsconfig.json'...\n\n1:30:52 PM - Project 'packages/beta/tsconfig.json' is being forcibly rebuilt\n\n1:30:52 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/beta/tsconfig.json'...\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.33839,
+      "build_child_cpu_user_seconds": 2.76494,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": true,
+      "detected_projects": [],
+      "fault": "delete_js",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 0,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "force_all",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 1.41728
+    },
+    {
+      "after": {
+        "altered": 1,
+        "extra": 0,
+        "missing": 0
+      },
+      "before": {
+        "altered": 1,
+        "extra": 0,
+        "missing": 0
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 0.13231,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:52 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:52 PM - Project 'packages/alpha/tsconfig.json' is up to date because newest input 'packages/alpha/src/index.ts' is older than output 'packages/alpha/cache.tsbuildinfo'\n\n1:30:52 PM - Project 'packages/beta/tsconfig.json' is up to date because newest input 'packages/beta/src/index.ts' is older than output 'packages/beta/cache.tsbuildinfo'\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.03686,
+      "build_child_cpu_user_seconds": 0.10612,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": false,
+      "detected_projects": [],
+      "fault": "corrupt_dts",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 0,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "attest_only",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 0.1324
+    },
+    {
+      "after": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "before": {
+        "altered": 1,
+        "extra": 0,
+        "missing": 0
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 0.8958,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:53 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:53 PM - Project 'packages/alpha/tsconfig.json' is out of date because output file 'packages/alpha/cache.tsbuildinfo' does not exist\n\n1:30:53 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/alpha/tsconfig.json'...\n\n1:30:53 PM - Project 'packages/beta/tsconfig.json' is up to date because newest input 'packages/beta/src/index.ts' is older than output 'packages/beta/cache.tsbuildinfo'\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.22162,
+      "build_child_cpu_user_seconds": 1.66351,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": true,
+      "detected_projects": [
+        "alpha"
+      ],
+      "fault": "corrupt_dts",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 369,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "guarded_sha",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 0.89672
+    },
+    {
+      "after": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "before": {
+        "altered": 1,
+        "extra": 0,
+        "missing": 0
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 1.35295,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:53 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:53 PM - Project 'packages/alpha/tsconfig.json' is out of date because output file 'packages/alpha/cache.tsbuildinfo' does not exist\n\n1:30:53 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/alpha/tsconfig.json'...\n\n1:30:54 PM - Project 'packages/beta/tsconfig.json' is out of date because output file 'packages/beta/cache.tsbuildinfo' does not exist\n\n1:30:54 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/beta/tsconfig.json'...\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.3083,
+      "build_child_cpu_user_seconds": 2.77398,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": true,
+      "detected_projects": [],
+      "fault": "corrupt_dts",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 0,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "clean_all",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 1.35313
+    },
+    {
+      "after": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "before": {
+        "altered": 1,
+        "extra": 0,
+        "missing": 0
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose",
+          "--force"
+        ],
+        "exit": 0,
+        "seconds": 1.34561,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:55 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:55 PM - Project 'packages/alpha/tsconfig.json' is being forcibly rebuilt\n\n1:30:55 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/alpha/tsconfig.json'...\n\n1:30:56 PM - Project 'packages/beta/tsconfig.json' is being forcibly rebuilt\n\n1:30:56 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/beta/tsconfig.json'...\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.26757,
+      "build_child_cpu_user_seconds": 2.8333,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": true,
+      "detected_projects": [],
+      "fault": "corrupt_dts",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 0,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "force_all",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 1.3457
+    },
+    {
+      "after": {
+        "altered": 0,
+        "extra": 1,
+        "missing": 0
+      },
+      "before": {
+        "altered": 0,
+        "extra": 1,
+        "missing": 0
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 0.15636,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:56 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:56 PM - Project 'packages/alpha/tsconfig.json' is up to date because newest input 'packages/alpha/src/index.ts' is older than output 'packages/alpha/cache.tsbuildinfo'\n\n1:30:56 PM - Project 'packages/beta/tsconfig.json' is up to date because newest input 'packages/beta/src/index.ts' is older than output 'packages/beta/cache.tsbuildinfo'\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.0422,
+      "build_child_cpu_user_seconds": 0.12658,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": false,
+      "detected_projects": [],
+      "fault": "extra_stale",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 0,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "attest_only",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 0.15645
+    },
+    {
+      "after": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "before": {
+        "altered": 0,
+        "extra": 1,
+        "missing": 0
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 1.01286,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:56 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:56 PM - Project 'packages/alpha/tsconfig.json' is out of date because output file 'packages/alpha/cache.tsbuildinfo' does not exist\n\n1:30:56 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/alpha/tsconfig.json'...\n\n1:30:57 PM - Project 'packages/beta/tsconfig.json' is up to date because newest input 'packages/beta/src/index.ts' is older than output 'packages/beta/cache.tsbuildinfo'\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.22417,
+      "build_child_cpu_user_seconds": 1.75684,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": true,
+      "detected_projects": [
+        "alpha"
+      ],
+      "fault": "extra_stale",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 369,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "guarded_sha",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 1.01372
+    },
+    {
+      "after": {
+        "altered": 0,
+        "extra": 0,
+        "missing": 0
+      },
+      "before": {
+        "altered": 0,
+        "extra": 1,
+        "missing": 0
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose"
+        ],
+        "exit": 0,
+        "seconds": 2.02969,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:57 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:30:57 PM - Project 'packages/alpha/tsconfig.json' is out of date because output file 'packages/alpha/cache.tsbuildinfo' does not exist\n\n1:30:57 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/alpha/tsconfig.json'...\n\n1:30:58 PM - Project 'packages/beta/tsconfig.json' is out of date because output file 'packages/beta/cache.tsbuildinfo' does not exist\n\n1:30:58 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/beta/tsconfig.json'...\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.46357,
+      "build_child_cpu_user_seconds": 3.72785,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": true,
+      "detected_projects": [],
+      "fault": "extra_stale",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 0,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "clean_all",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 2.02988
+    },
+    {
+      "after": {
+        "altered": 0,
+        "extra": 1,
+        "missing": 0
+      },
+      "before": {
+        "altered": 0,
+        "extra": 1,
+        "missing": 0
+      },
+      "build": {
+        "argv": [
+          "node",
+          "/workspace/scratch/c4778c21603f/n21_submission_experiments/runtime/compiler/package/bin/tsc",
+          "-b",
+          "tsconfig.json",
+          "--verbose",
+          "--force"
+        ],
+        "exit": 0,
+        "seconds": 1.99364,
+        "stderr_tail": "",
+        "stdout_tail": "1:30:59 PM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n1:31:00 PM - Project 'packages/alpha/tsconfig.json' is being forcibly rebuilt\n\n1:31:00 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/alpha/tsconfig.json'...\n\n1:31:01 PM - Project 'packages/beta/tsconfig.json' is being forcibly rebuilt\n\n1:31:01 PM - Building project '/tmp/n21_gha_smoke_86octbi6/trial/packages/beta/tsconfig.json'...\n\n"
+      },
+      "build_child_cpu_system_seconds": 0.4041,
+      "build_child_cpu_user_seconds": 3.49702,
+      "cache_state": "local_complete_cache_copy",
+      "correct_against_trusted_oracle": false,
+      "detected_projects": [],
+      "fault": "extra_stale",
+      "github_run_id": null,
+      "input_rejected": false,
+      "observed_in_github_actions": false,
+      "output_sha_scanned_bytes": 0,
+      "runner_name": null,
+      "runner_os": null,
+      "strategy": "force_all",
+      "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+      "work_seconds": 1.99405
+    }
+  ],
+  "run_mode": "local script smoke, not GitHub Actions or Attest execution",
+  "typescript": "5.9.3"
+}

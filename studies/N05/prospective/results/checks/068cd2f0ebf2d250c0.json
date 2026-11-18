@@ -1,0 +1,21 @@
+{
+  "key": "068cd2f0ebf2d250c0",
+  "args": {
+    "crate": "opentelemetry",
+    "version": "0.29.1",
+    "id": "331bfd6561a2b2e7",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 10.7575,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "1cca0cefec138dbca730f193a9ecaf3228bf882136dba7518beef412c61c058e",
+  "manifest_sha256": "d58170bc288220d57170a9ea4f885676696fcb4fb462ae80256aad4d8ea261df",
+  "log_file": "prospective/results/check_logs/068cd2f0ebf2d250c0.txt.gz"
+}

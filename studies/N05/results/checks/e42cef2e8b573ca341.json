@@ -1,0 +1,28 @@
+{
+  "key": "e42cef2e8b573ca341",
+  "args": {
+    "crate": "tokio-util",
+    "version": "0.7.15",
+    "id": "2955b2048716f133",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 6.2014,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n --> src/main.rs:1:5\n  |\n1 | use tokio::io::AsyncRead;\n  |     ^^^^^ use of unresolved module or unlinked crate `tokio`\n  |\n  = help: if you wanted to use a crate named `tokio`, use `cargo add tokio` to add it to your `Cargo.toml`\n\n",
+      "line": 1
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tokio_util_consumer` (bin \"n05_tokio_util_consumer\") due to 1 previous error\n",
+  "code_sha256": "3d14459d691747c9a9df4de1a53f0819a92699eebf5e458d1b745c346279cdf9",
+  "manifest_sha256": "061a865f39cf2498d94e5d0dd50a774f1da41b2696e0c3bd0206847fdf5e1ee2",
+  "log_file": "results/check_logs/e42cef2e8b573ca341.txt.gz"
+}

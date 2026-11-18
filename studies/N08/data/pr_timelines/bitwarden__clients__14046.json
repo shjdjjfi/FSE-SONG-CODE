@@ -1,0 +1,47 @@
+{
+  "fetched_utc": "2026-11-14T17:12:36.882307+00:00",
+  "merged_at": "2025-04-15T14:39:03Z",
+  "opened_at": "2025-03-28T18:09:08Z",
+  "pr": 14046,
+  "raw_html_sha256": "3a4aa088cc7dfe1cc07cb372a5fa68f1ba48c347cee477fbc9172556115207bf",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 7,
+  "reviews": [
+    {
+      "login": "JimmyVo16",
+      "state": "APPROVED",
+      "submitted_at": "2025-03-31T14:39:56Z"
+    },
+    {
+      "login": "Thomas-Avery",
+      "state": "COMMENTED",
+      "submitted_at": "2025-04-07T22:29:19Z"
+    },
+    {
+      "login": "Thomas-Avery",
+      "state": "COMMENTED",
+      "submitted_at": "2025-04-08T14:57:42Z"
+    },
+    {
+      "login": "Thomas-Avery",
+      "state": "COMMENTED",
+      "submitted_at": "2025-04-08T15:00:48Z"
+    },
+    {
+      "login": "Thomas-Avery",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-09T16:07:09Z"
+    },
+    {
+      "login": "JaredSnider-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-15T14:26:34Z"
+    },
+    {
+      "login": "JimmyVo16",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-15T14:30:50Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/14046"
+}

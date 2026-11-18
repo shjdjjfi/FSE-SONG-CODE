@@ -1,0 +1,43 @@
+{
+  "pr": 116563,
+  "pr_author": "yuri-tceretian",
+  "repo": "grafana/grafana",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2026-01-20T19:32:30Z",
+      "requested_people": [
+        "yuri-tceretian"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2026-01-20T19:32:31Z",
+      "requested_people": [
+        "irenerl24",
+        "johnnyk-grafana",
+        "yuri-tceretian"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2026-01-20T21:07:49Z",
+      "requested_people": [
+        "yuri-tceretian"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2026-01-20T22:36:09Z",
+      "requested_people": [
+        "yuri-tceretian"
+      ],
+      "team_request_anonymized": true
+    }
+  ],
+  "sha256": "7623186fbf7f154bd2a7e14e9a51a574359ac69bbc3e2f6fba2792ea91e023ba",
+  "url": "https://github.com/grafana/grafana/pull/116563"
+}

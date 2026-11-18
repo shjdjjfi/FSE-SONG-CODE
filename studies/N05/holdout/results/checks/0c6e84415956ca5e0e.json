@@ -1,0 +1,32 @@
+{
+  "key": "0c6e84415956ca5e0e",
+  "args": {
+    "crate": "tower",
+    "version": "0.5.2",
+    "id": "70f8633f0aab478c",
+    "profile": "candidate",
+    "features": [
+      "load",
+      "log",
+      "steer"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2121,
+  "errors": [
+    {
+      "code": "E0599",
+      "message": "no method named `map_request` found for struct `ServiceBuilder<L>` in the current scope",
+      "rendered": "error[E0599]: no method named `map_request` found for struct `ServiceBuilder<L>` in the current scope\n --> src/main.rs:9:6\n  |\n7 |   let builder = ServiceBuilder::new()\n  |  _______________-\n8 | |     // Do something before processing the request\n9 | |     .map_request(|request: String| {\n  | |     -^^^^^^^^^^^ method not found in `ServiceBuilder<Identity>`\n  | |_____|\n  |\n\n",
+      "line": 7
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tower_consumer` (bin \"n05_tower_consumer\") due to 1 previous error\n",
+  "code_sha256": "0c9cb58efb8ea5b5301ff6684c099b79d4893b988dc99d4a93343949968ee689",
+  "manifest_sha256": "c552cdd3e8f4d795d4109ac313a8bbc9f46b2f2da98f722a88ec6f5a076baea7",
+  "log_file": "holdout/results/check_logs/0c6e84415956ca5e0e.txt.gz"
+}

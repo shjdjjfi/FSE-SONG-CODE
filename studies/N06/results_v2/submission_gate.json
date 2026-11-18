@@ -1,0 +1,17 @@
+{
+  "verdict": "NOT_SUBMISSION_READY",
+  "reason": "No independent real rollout+probe trace; no executable native promtool evaluation.",
+  "synthetic_candidate_pareto_dominated_by": [],
+  "synthetic_candidate_tied_with": [],
+  "real_outage_trace_count": 0,
+  "independent_real_system_count": 0,
+  "upstream_rule_repositories": 2,
+  "native_promtool_executions": 0,
+  "synthetic_episodes": 1980,
+  "pre_registered_engineering_gate": {
+    "heldout_first_page_improvement_at_least_minutes": 0.25,
+    "healthy_rollout_false_pages_no_increase": true,
+    "two_independent_systems": true,
+    "status": "NOT_EVALUABLE_WITH_SYNTHETIC_DATA"
+  }
+}

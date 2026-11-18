@@ -1,0 +1,85 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 2,
+  "bytes": 27541,
+  "control_flow_or_callback_lines": 9,
+  "event": "BW10818",
+  "examples": [
+    {
+      "change": "-",
+      "code": "const requireClientKeyHalf = await this.biometricStateService.getRequirePasswordOnStart(userId);",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "if (!requireClientKeyHalf) {",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "return null;",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "const requireClientKeyHalf = await this.biometricStateService.getRequirePasswordOnStart(userId);",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "const clientKeyHalfB64 = this.clientKeyHalves.get(userId);",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "const clientKeyHalfSatisfied = !requireClientKeyHalf || !!clientKeyHalfB64;",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "if (!clientKeyHalfSatisfied) {",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (this.clientKeyHalves.has(userId)) {",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "return BiometricsStatus.Available;",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "} else {",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "return BiometricsStatus.Available;",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:41.006569+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+  "noncomment_nonimport_changed_lines": 12,
+  "pr": 15957,
+  "repository": "bitwarden/clients",
+  "sha256": "85e28cb659a4cd395f076a786c9949ea900eaebb3f379a717daf11a2218da135",
+  "target_code_changed_lines": 13,
+  "target_files": [
+    "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15957.patch"
+}

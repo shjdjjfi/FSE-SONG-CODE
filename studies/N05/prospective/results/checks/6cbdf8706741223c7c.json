@@ -1,0 +1,34 @@
+{
+  "key": "6cbdf8706741223c7c",
+  "args": {
+    "crate": "notify",
+    "version": "8.0.0",
+    "id": "4f951365bc3190a2",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0805,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Config`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Config`\n --> src/main.rs:2:14\n  |\n2 | let config = Config::default()\n  |              ^^^^^^ use of undeclared type `Config`\n  |\nhelp: consider importing this struct\n  |\n1 + use notify::Config;\n  |\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of undeclared type `Duration`",
+      "rendered": "error[E0433]: failed to resolve: use of undeclared type `Duration`\n --> src/main.rs:3:25\n  |\n3 |     .with_poll_interval(Duration::from_secs(2))\n  |                         ^^^^^^^^ use of undeclared type `Duration`\n  |\nhelp: consider importing this struct\n  |\n1 + use std::time::Duration;\n  |\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_notify_consumer` (bin \"n05_notify_consumer\") due to 2 previous errors\n",
+  "code_sha256": "746905c523a2d36c168d8f2210593affee1b06cef215fea3ef88f876c53eef37",
+  "manifest_sha256": "8cea2d5c5ea3c98344a7c6497879ef72435dfa4ce85e9cd55d6010fd2d12b8a7",
+  "log_file": "prospective/results/check_logs/6cbdf8706741223c7c.txt.gz"
+}

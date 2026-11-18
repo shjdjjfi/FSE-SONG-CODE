@@ -1,0 +1,20 @@
+{
+  "changed_code_lines_under_target": 0,
+  "changed_files_in_whole_pr": 2,
+  "changed_files_under_target": 2,
+  "code_files_under_target": 0,
+  "code_touched": false,
+  "event": "BW14987",
+  "focused_code_touched": false,
+  "pr": 16562,
+  "raw_size_bytes": 1977,
+  "repo": "bitwarden/clients",
+  "sha256": "f76c73f5885d7ed0ccca9dc4ecf52557b7987412a0bcc0f432020a5d8b3e0fa7",
+  "target_file_fraction": 1.0,
+  "target_paths": [
+    "libs/dirt/card/package.json",
+    "libs/dirt/card/project.json"
+  ],
+  "test_files_under_target": 0,
+  "url": "https://github.com/bitwarden/clients/pull/16562.patch"
+}

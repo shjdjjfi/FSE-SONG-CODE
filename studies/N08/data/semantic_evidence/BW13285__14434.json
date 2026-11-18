@@ -1,0 +1,19 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 2166,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW13285",
+  "examples": [],
+  "fetched_utc": "2026-11-14T23:56:59.339394+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/13285",
+  "noncomment_nonimport_changed_lines": 0,
+  "pr": 14434,
+  "repository": "bitwarden/clients",
+  "sha256": "69061590aa9c2630abf12fba9c14ecd9461bf0d3e310f7d93c18f163ac700925",
+  "target_code_changed_lines": 0,
+  "target_files": [
+    "libs/common/src/key-management/crypto/services/encrypt.service.spec.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/14434.patch"
+}

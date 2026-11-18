@@ -1,0 +1,40 @@
+{
+  "after": {
+    "altered": 1,
+    "extra": 0,
+    "missing": 0
+  },
+  "before": {
+    "altered": 1,
+    "extra": 0,
+    "missing": 0
+  },
+  "build": {
+    "argv": [
+      "node",
+      "/home/runner/work/FSE-EXP-1/FSE-EXP-1/n21_ci_deps/node_modules/typescript/bin/tsc",
+      "-b",
+      "tsconfig.json",
+      "--verbose"
+    ],
+    "exit": 0,
+    "seconds": 0.14268,
+    "stderr_tail": "",
+    "stdout_tail": "4:27:25 AM - Projects in this build: \n    * packages/alpha/tsconfig.json\n    * packages/beta/tsconfig.json\n    * tsconfig.json\n\n4:27:25 AM - Project 'packages/alpha/tsconfig.json' is up to date because newest input 'packages/alpha/src/index.ts' is older than output 'packages/alpha/cache.tsbuildinfo'\n\n4:27:25 AM - Project 'packages/beta/tsconfig.json' is up to date because newest input 'packages/beta/src/index.ts' is older than output 'packages/beta/cache.tsbuildinfo'\n\n"
+  },
+  "build_child_cpu_system_seconds": 0.02601,
+  "build_child_cpu_user_seconds": 0.12206,
+  "cache_state": "complete",
+  "correct_against_trusted_oracle": false,
+  "detected_projects": [],
+  "fault": "corrupt_dts",
+  "github_run_id": "44237397496",
+  "input_rejected": false,
+  "observed_in_github_actions": true,
+  "output_sha_scanned_bytes": 0,
+  "runner_name": "GitHub Actions 1000000277",
+  "runner_os": "Linux",
+  "strategy": "attest_only",
+  "test_environment": "GitHub Actions runner only if GITHUB_ACTIONS=true",
+  "work_seconds": 0.14278
+}

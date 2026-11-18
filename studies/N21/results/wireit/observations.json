@@ -1,0 +1,391 @@
+{
+  "wireit": "0.14.12",
+  "typescript": "5.9.3",
+  "note": "faults are controlled; full-cache availability is deliberately varied",
+  "observations": [
+    {
+      "project": "ts-pattern",
+      "profile": "local",
+      "fault": "delete_js",
+      "damaged_file": "types/FindSelected.js",
+      "cold": {
+        "exit": 0,
+        "seconds": 2.624,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "local",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 2.3s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n"
+      },
+      "recovery": {
+        "exit": 0,
+        "seconds": 0.405,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "local",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 0 scripts and skipped 1 in 0.1s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n"
+      },
+      "correct": true,
+      "post_mismatches": 0
+    },
+    {
+      "project": "ts-pattern",
+      "profile": "local",
+      "fault": "corrupt_js",
+      "damaged_file": "types/FindSelected.js",
+      "cold": {
+        "exit": 0,
+        "seconds": 2.413,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "local",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 2.1s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n100% [1 / 1] [0 running]\n"
+      },
+      "recovery": {
+        "exit": 0,
+        "seconds": 0.421,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "local",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 0 scripts and skipped 1 in 0.1s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n"
+      },
+      "correct": true,
+      "post_mismatches": 0
+    },
+    {
+      "project": "ts-pattern",
+      "profile": "none",
+      "fault": "delete_js",
+      "damaged_file": "types/FindSelected.js",
+      "cold": {
+        "exit": 0,
+        "seconds": 2.129,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 1.8s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n"
+      },
+      "recovery": {
+        "exit": 0,
+        "seconds": 0.502,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 0.2s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n"
+      },
+      "correct": false,
+      "post_mismatches": 1
+    },
+    {
+      "project": "ts-pattern",
+      "profile": "none",
+      "fault": "corrupt_js",
+      "damaged_file": "types/FindSelected.js",
+      "cold": {
+        "exit": 0,
+        "seconds": 2.265,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 1.9s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n"
+      },
+      "recovery": {
+        "exit": 0,
+        "seconds": 0.547,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 0.2s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n"
+      },
+      "correct": false,
+      "post_mismatches": 1
+    },
+    {
+      "project": "ts-pattern",
+      "profile": "always",
+      "fault": "delete_js",
+      "damaged_file": "types/FindSelected.js",
+      "cold": {
+        "exit": 0,
+        "seconds": 1.98,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 1.6s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n"
+      },
+      "recovery": {
+        "exit": 0,
+        "seconds": 1.985,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 1.6s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n"
+      },
+      "correct": true,
+      "post_mismatches": 0
+    },
+    {
+      "project": "ts-pattern",
+      "profile": "always",
+      "fault": "corrupt_js",
+      "damaged_file": "types/FindSelected.js",
+      "cold": {
+        "exit": 0,
+        "seconds": 2.26,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 1.8s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n"
+      },
+      "recovery": {
+        "exit": 0,
+        "seconds": 2.444,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 2.1s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n"
+      },
+      "correct": true,
+      "post_mismatches": 0
+    },
+    {
+      "project": "zod",
+      "profile": "local",
+      "fault": "delete_js",
+      "damaged_file": "helpers/partialUtil.js",
+      "cold": {
+        "exit": 0,
+        "seconds": 2.714,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "local",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 2.4s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n"
+      },
+      "recovery": {
+        "exit": 0,
+        "seconds": 0.503,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "local",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 0 scripts and skipped 1 in 0.1s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n"
+      },
+      "correct": true,
+      "post_mismatches": 0
+    },
+    {
+      "project": "zod",
+      "profile": "local",
+      "fault": "corrupt_js",
+      "damaged_file": "helpers/partialUtil.js",
+      "cold": {
+        "exit": 0,
+        "seconds": 3.366,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "local",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 3s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n100% [1 / 1] [0 running]\n"
+      },
+      "recovery": {
+        "exit": 0,
+        "seconds": 0.43,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "local",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 0 scripts and skipped 1 in 0.1s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n"
+      },
+      "correct": true,
+      "post_mismatches": 0
+    },
+    {
+      "project": "zod",
+      "profile": "none",
+      "fault": "delete_js",
+      "damaged_file": "helpers/partialUtil.js",
+      "cold": {
+        "exit": 0,
+        "seconds": 3.441,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 3.1s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n"
+      },
+      "recovery": {
+        "exit": 0,
+        "seconds": 0.703,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 0.3s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n"
+      },
+      "correct": false,
+      "post_mismatches": 1
+    },
+    {
+      "project": "zod",
+      "profile": "none",
+      "fault": "corrupt_js",
+      "damaged_file": "helpers/partialUtil.js",
+      "cold": {
+        "exit": 0,
+        "seconds": 2.687,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 2.3s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n"
+      },
+      "recovery": {
+        "exit": 0,
+        "seconds": 0.681,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 0.3s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n"
+      },
+      "correct": false,
+      "post_mismatches": 1
+    },
+    {
+      "project": "zod",
+      "profile": "always",
+      "fault": "delete_js",
+      "damaged_file": "helpers/partialUtil.js",
+      "cold": {
+        "exit": 0,
+        "seconds": 3.853,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 3.4s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n"
+      },
+      "recovery": {
+        "exit": 0,
+        "seconds": 2.549,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 2.1s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n"
+      },
+      "correct": true,
+      "post_mismatches": 0
+    },
+    {
+      "project": "zod",
+      "profile": "always",
+      "fault": "corrupt_js",
+      "damaged_file": "helpers/partialUtil.js",
+      "cold": {
+        "exit": 0,
+        "seconds": 2.704,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 2.3s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n"
+      },
+      "recovery": {
+        "exit": 0,
+        "seconds": 2.692,
+        "argv": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "cache": "none",
+        "stdout": "\n> build\n> wireit\n\n✅ Ran 1 script and skipped 0 in 2.3s.\n",
+        "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nAnalyzing\n  0% [0 / 1] [1 running] build\n"
+      },
+      "correct": true,
+      "post_mismatches": 0
+    }
+  ]
+}

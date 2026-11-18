@@ -1,0 +1,76 @@
+{
+  "key": "6d535de1c98e4ebadb",
+  "args": {
+    "crate": "tower-http",
+    "version": "0.6.6",
+    "id": "2cc52308249836df",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0732,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower_http::ServiceBuilderExt`",
+      "rendered": "error[E0432]: unresolved import `tower_http::ServiceBuilderExt`\n   --> src/main.rs:1:5\n    |\n  1 | use tower_http::ServiceBuilderExt;\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ no `ServiceBuilderExt` in the root\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-http-0.6.6/src/lib.rs:342:25\n    |\n340 | #[cfg(feature = \"util\")]\n    |       ---------------- the item is gated behind the `util` feature\n341 | #[doc(inline)]\n342 | pub use self::{builder::ServiceBuilderExt, service_ext::ServiceExt};\n    |                         ^^^^^^^^^^^^^^^^^\n\n",
+      "line": 1
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower_http::request_id`",
+      "rendered": "error[E0432]: unresolved import `tower_http::request_id`\n   --> src/main.rs:4:17\n    |\n  4 | use tower_http::request_id::{\n    |                 ^^^^^^^^^^ could not find `request_id` in `tower_http`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-http-0.6.6/src/lib.rs:318:9\n    |\n317 | #[cfg(feature = \"request-id\")]\n    |       ---------------------- the item is gated behind the `request-id` feature\n318 | pub mod request_id;\n    |         ^^^^^^^^^^\n\n",
+      "line": 4
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `http`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `http`\n --> src/main.rs:2:5\n  |\n2 | use http::{Request, Response, header::HeaderName};\n  |     ^^^^ use of unresolved module or unlinked crate `http`\n  |\n  = help: if you wanted to use a crate named `http`, use `cargo add http` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `http`",
+      "rendered": "error[E0432]: unresolved import `http`\n --> src/main.rs:2:5\n  |\n2 | use http::{Request, Response, header::HeaderName};\n  |     ^^^^ use of unresolved module or unlinked crate `http`\n  |\n  = help: if you wanted to use a crate named `http`, use `cargo add http` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower`",
+      "rendered": "error[E0432]: unresolved import `tower`\n --> src/main.rs:3:5\n  |\n3 | use tower::{Service, ServiceExt, ServiceBuilder};\n  |     ^^^^^ use of unresolved module or unlinked crate `tower`\n  |\n  = help: if you wanted to use a crate named `tower`, use `cargo add tower` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `bytes`",
+      "rendered": "error[E0432]: unresolved import `bytes`\n --> src/main.rs:7:5\n  |\n7 | use bytes::Bytes;\n  |     ^^^^^ use of unresolved module or unlinked crate `bytes`\n  |\n  = help: if you wanted to use a crate named `bytes`, use `cargo add bytes` to add it to your `Cargo.toml`\n\n",
+      "line": 7
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `http_body_util`",
+      "rendered": "error[E0432]: unresolved import `http_body_util`\n --> src/main.rs:8:5\n  |\n8 | use http_body_util::Full;\n  |     ^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `http_body_util`\n  |\n  = help: if you wanted to use a crate named `http_body_util`, use `cargo add http_body_util` to add it to your `Cargo.toml`\n\n",
+      "line": 8
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n  --> src/main.rs:10:3\n   |\n10 | #[tokio::main]\n   |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 10
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tower`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tower`\n  --> src/main.rs:12:15\n   |\n12 | let handler = tower::service_fn(|request: Request<Full<Bytes>>| async move {\n   |               ^^^^^ use of unresolved module or unlinked crate `tower`\n   |\n   = help: if you wanted to use a crate named `tower`, use `cargo add tower` to add it to your `Cargo.toml`\n\n",
+      "line": 12
+    }
+  ],
+  "error_count": 9,
+  "stderr_excerpt": "error: could not compile `n05_tower_http_consumer` (bin \"n05_tower_http_consumer\") due to 9 previous errors\n",
+  "code_sha256": "864270c9686fd742e959611a568344e8fb63ae0adb5d81a85066abe2d9ab2fe7",
+  "manifest_sha256": "3eb60df689daaecee477cb941bcad98ac8fe4dfddf1225303ec8fe3f6ff02c1a",
+  "log_file": "holdout/results/check_logs/6d535de1c98e4ebadb.txt.gz"
+}

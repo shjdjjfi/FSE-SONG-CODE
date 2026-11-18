@@ -1,0 +1,21 @@
+{
+  "key": "a90642a35ed1ff315a",
+  "args": {
+    "crate": "bincode",
+    "version": "2.0.1",
+    "id": "010dbce71772c182",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.118,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "ec37983edcd3efaf07eafd7ed5b0e66df80a403eb94417d0534ab6ddd05f8aec",
+  "manifest_sha256": "36959d1c9924ce2a6a5fefb2eb293f382ed65f166bee94649ced704f810d3c8b",
+  "log_file": "prospective/results/check_logs/a90642a35ed1ff315a.txt.gz"
+}

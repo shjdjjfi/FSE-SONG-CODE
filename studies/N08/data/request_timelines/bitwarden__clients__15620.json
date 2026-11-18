@@ -1,0 +1,36 @@
+{
+  "pr": 15620,
+  "pr_author": "nick-livefront",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-07-15T15:03:32Z",
+      "requested_people": [
+        "nick-livefront"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-15T15:03:32Z",
+      "requested_people": [
+        "jingo88",
+        "nick-livefront",
+        "willmartian"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-15T20:22:44Z",
+      "requested_people": [
+        "nick-livefront",
+        "willmartian"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "2a668cc716fbab031f37e3ec128f8bd5f90c561cda1a6f3c77d2c7e628904955",
+  "url": "https://github.com/bitwarden/clients/pull/15620"
+}

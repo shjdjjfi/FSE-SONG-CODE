@@ -1,0 +1,82 @@
+{
+  "scope": "Mined real GitHub Actions failure candidates, NOT full test logs or verified quarantine decisions",
+  "uses_official_data_snapshot_files_only": true,
+  "cannot_label_post_rename_pass_from_missing_failed_node": true,
+  "unique_across_repositories_not_assumed": true,
+  "reproduction_passes_are_not_historical_CI_runs": true,
+  "snapshot_files": [
+    {
+      "repository": "PrefectHQ/prefect",
+      "source_path": "work/inputs/flaky-test-dataset/data/PrefectHQ/prefect/main.json",
+      "runs_with_failing_candidate": 4,
+      "unique_failed_node_ids": 3,
+      "test_fail_records": 5,
+      "test_fail_records_with_mixed_replication": 0,
+      "unique_ids_with_mixed_replication": 0,
+      "run_records_without_quarantine_field": 4,
+      "min_created_at": "2026-06-02T13:50:37Z",
+      "max_created_at": "2026-06-08T19:39:05Z"
+    },
+    {
+      "repository": "PrefectHQ/prefect",
+      "source_path": "work/inputs/flaky-test-dataset/data/PrefectHQ/prefect/main2026-06-26T08:07:27.257905.json",
+      "runs_with_failing_candidate": 4,
+      "unique_failed_node_ids": 3,
+      "test_fail_records": 5,
+      "test_fail_records_with_mixed_replication": 0,
+      "unique_ids_with_mixed_replication": 0,
+      "run_records_without_quarantine_field": 4,
+      "min_created_at": "2026-06-02T13:50:37Z",
+      "max_created_at": "2026-06-08T19:39:05Z"
+    },
+    {
+      "repository": "home-assistant/core",
+      "source_path": "work/inputs/flaky-test-dataset/data/home-assistant/core/dev.json",
+      "runs_with_failing_candidate": 27,
+      "unique_failed_node_ids": 178,
+      "test_fail_records": 188,
+      "test_fail_records_with_mixed_replication": 2,
+      "unique_ids_with_mixed_replication": 2,
+      "run_records_without_quarantine_field": 27,
+      "min_created_at": "2026-05-25T12:58:14Z",
+      "max_created_at": "2026-05-28T09:58:41Z"
+    },
+    {
+      "repository": "home-assistant/core",
+      "source_path": "work/inputs/flaky-test-dataset/data/home-assistant/core/dev-new2026-07-01T09:07:13.672728.json",
+      "runs_with_failing_candidate": 31,
+      "unique_failed_node_ids": 33,
+      "test_fail_records": 43,
+      "test_fail_records_with_mixed_replication": 2,
+      "unique_ids_with_mixed_replication": 2,
+      "run_records_without_quarantine_field": 31,
+      "min_created_at": "2026-06-14T18:26:07Z",
+      "max_created_at": "2026-06-18T21:26:01Z"
+    }
+  ],
+  "repository_unions": [
+    {
+      "repository": "PrefectHQ/prefect",
+      "unique_run_attempts": 4,
+      "unique_failed_node_ids": 3,
+      "unique_ids_with_mixed_replication": 0,
+      "unique_runs_without_quarantine_field": 4,
+      "duplicate_run_attempts_across_snapshots": 4
+    },
+    {
+      "repository": "home-assistant/core",
+      "unique_run_attempts": 58,
+      "unique_failed_node_ids": 209,
+      "unique_ids_with_mixed_replication": 4,
+      "unique_runs_without_quarantine_field": 58,
+      "duplicate_run_attempts_across_snapshots": 0
+    }
+  ],
+  "overall": {
+    "unique_repository_run_attempts": 62,
+    "unique_failed_test_ids_per_repo_summed": 212,
+    "distinct_test_ids_with_mixed_replications_per_repo_summed": 4,
+    "runs_missing_quarantine_field": 62,
+    "duplicate_run_attempts_across_snapshots": 4
+  }
+}

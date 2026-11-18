@@ -1,0 +1,67 @@
+{
+  "fetched_utc": "2026-11-14T17:13:47.274351+00:00",
+  "merged_at": "2025-10-15T14:32:02Z",
+  "opened_at": "2025-10-06T11:41:50-04:00",
+  "pr": 16748,
+  "raw_html_sha256": "3e72b7f7ee48bdcd8e4990e1046bd1902a9cf4eb011f10abcc404c8a5253e201",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 11,
+  "reviews": [
+    {
+      "login": "vleague2",
+      "state": "COMMENTED",
+      "submitted_at": "2025-10-06T16:33:55Z"
+    },
+    {
+      "login": "vleague2",
+      "state": "COMMENTED",
+      "submitted_at": "2025-10-06T17:43:28Z"
+    },
+    {
+      "login": "BryanCunningham",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-06T20:37:57Z"
+    },
+    {
+      "login": "Banrion",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-07T14:14:13Z"
+    },
+    {
+      "login": "Banrion",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-07T16:08:25Z"
+    },
+    {
+      "login": "vleague2",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-07T19:50:56Z"
+    },
+    {
+      "login": "BryanCunningham",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-09T13:07:44Z"
+    },
+    {
+      "login": "vleague2",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-14T13:54:23Z"
+    },
+    {
+      "login": "BryanCunningham",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-14T14:20:05Z"
+    },
+    {
+      "login": "danielleflinn",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-14T15:02:49Z"
+    },
+    {
+      "login": "Banrion",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-15T14:21:01Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/16748"
+}

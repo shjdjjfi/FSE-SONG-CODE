@@ -1,0 +1,47 @@
+{
+  "fetched_utc": "2026-11-14T17:11:39.874099+00:00",
+  "merged_at": "2024-09-04T22:21:26Z",
+  "opened_at": "2024-08-29T04:09:36Z",
+  "pr": 10785,
+  "raw_html_sha256": "7428758ef3a473d57128af4796bf7299c9e8e60ae292bf0273be3d049e98c140",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 7,
+  "reviews": [
+    {
+      "login": "JaredSnider-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2024-08-29T15:25:17Z"
+    },
+    {
+      "login": "shane-melton",
+      "state": "APPROVED",
+      "submitted_at": "2024-08-29T16:38:41Z"
+    },
+    {
+      "login": "vincentsalucci",
+      "state": "APPROVED",
+      "submitted_at": "2024-08-29T20:46:50Z"
+    },
+    {
+      "login": "dani-garcia",
+      "state": "APPROVED",
+      "submitted_at": "2024-09-02T09:00:28Z"
+    },
+    {
+      "login": "JaredSnider-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2024-09-04T19:49:09Z"
+    },
+    {
+      "login": "shane-melton",
+      "state": "APPROVED",
+      "submitted_at": "2024-09-04T21:06:12Z"
+    },
+    {
+      "login": "addisonbeck",
+      "state": "APPROVED",
+      "submitted_at": "2024-09-04T22:21:25Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/10785"
+}

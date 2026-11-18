@@ -1,0 +1,23 @@
+{
+  "sampling_rule": "Consecutive publicly retrieved GitHub repositories containing an indexed platform-native package-lock.json in frozen 2026-11-18 search results, plus a documented StrykerJS incident repository. Convenience sample; not a random sample of npm projects or of incidents.",
+  "snapshot_utc": "2026-11-18",
+  "sources": [
+    {"repo": "remarkablemark/npm-package-name-checker", "ref": "master", "path": "package-lock.json"},
+    {"repo": "jquery/jquery-ui", "ref": "main", "path": "package-lock.json"},
+    {"repo": "membranehq/mcp-server", "ref": "main", "path": "package-lock.json"},
+    {"repo": "narumiruna/pi-extensions", "ref": "main", "path": "package-lock.json"},
+    {"repo": "davidolrik/subspace", "ref": "main", "path": "package-lock.json"},
+    {"repo": "cloudflare/pipelines-starter", "ref": "main", "path": "package-lock.json"},
+    {"repo": "concourse/docs", "ref": "master", "path": "package-lock.json"},
+    {"repo": "invoiceninja/ui", "ref": "main", "path": "package-lock.json"},
+    {"repo": "cloudreve/frontend", "ref": "master", "path": "package-lock.json"},
+    {"repo": "maptiler/leaflet-maptilersdk", "ref": "main", "path": "package-lock.json"},
+    {"repo": "google/clasp", "ref": "master", "path": "package-lock.json"},
+    {"repo": "aws-actions/configure-aws-credentials", "ref": "main", "path": "package-lock.json"},
+    {"repo": "hectorm/otpauth", "ref": "master", "path": "package-lock.json"},
+    {"repo": "ollama/ollama-js", "ref": "main", "path": "package-lock.json"},
+    {"repo": "adonisjs/inertia", "ref": "5.x", "path": "package-lock.json"},
+    {"repo": "adonisjs/i18n", "ref": "3.x", "path": "package-lock.json"},
+    {"repo": "stryker-mutator/stryker-js", "ref": "43a4123db7a7a6112bb700fabe818d2a134cbdb2", "path": "e2e/package-lock.json"}
+  ]
+}

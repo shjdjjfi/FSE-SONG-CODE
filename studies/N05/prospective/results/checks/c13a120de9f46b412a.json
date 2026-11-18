@@ -1,0 +1,28 @@
+{
+  "key": "c13a120de9f46b412a",
+  "args": {
+    "crate": "crossterm",
+    "version": "0.28.1",
+    "id": "4d4e3552985a4464",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 12.9662,
+  "errors": [
+    {
+      "code": "E0599",
+      "message": "no variant or associated item named `new` found for enum `FileDesc<'a>` in the current scope",
+      "rendered": "error[E0599]: no variant or associated item named `new` found for enum `FileDesc<'a>` in the current scope\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/crossterm-0.28.1/src/event/source/unix/tty.rs:188:36\n    |\n188 |                 let fd = FileDesc::new(self.wake_pipe.receiver.as_raw_fd(), false);\n    |                                    ^^^ variant or associated item not found in `FileDesc<'_>`\n    |\n   ::: /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/crossterm-0.28.1/src/terminal/sys/file_descriptor.rs:30:1\n    |\n 30 | pub enum FileDesc<'a> {\n    | --------------------- variant or associated item `new` not found for this enum\n    |\n    = help: items from traits can only be used if the trait is implemented and in scope\n    = note: the following trait defines an item `new`, perhaps you need to implement it:\n            candidate #1: `parking_lot_core::thread_parker::ThreadParkerT`\n\n",
+      "line": 188
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `crossterm` (lib) due to 1 previous error\n",
+  "code_sha256": "089830f9154a12a0c6f25cbba81edea0e1c69ac471b1adf441be941ab07578e7",
+  "manifest_sha256": "e9b96aeb7c69591758f81b854ba4c9ca3c58fc57e2f3618bd7c779e0fde984ca",
+  "log_file": "prospective/results/check_logs/c13a120de9f46b412a.txt.gz"
+}

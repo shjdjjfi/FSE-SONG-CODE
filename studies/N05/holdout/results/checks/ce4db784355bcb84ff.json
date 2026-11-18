@@ -1,0 +1,52 @@
+{
+  "key": "ce4db784355bcb84ff",
+  "args": {
+    "crate": "tower",
+    "version": "0.5.2",
+    "id": "09806dfece38750d",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.076,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `futures_util`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_util`\n --> src/main.rs:3:5\n  |\n3 | use futures_util::future::{ready, Ready, poll_fn};\n  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_util`\n  |\n  = help: if you wanted to use a crate named `futures_util`, use `cargo add futures_util` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower_service`",
+      "rendered": "error[E0432]: unresolved import `tower_service`\n --> src/main.rs:2:5\n  |\n2 | use tower_service::Service;\n  |     ^^^^^^^^^^^^^ use of unresolved module or unlinked crate `tower_service`\n  |\n  = help: if you wanted to use a crate named `tower_service`, use `cargo add tower_service` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `http`",
+      "rendered": "error[E0432]: unresolved import `http`\n --> src/main.rs:9:5\n  |\n9 | use http::{Request, Response, StatusCode, Method};\n  |     ^^^^ use of unresolved module or unlinked crate `http`\n  |\n  = help: if you wanted to use a crate named `http`, use `cargo add http` to add it to your `Cargo.toml`\n\n",
+      "line": 9
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `tokio`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `tokio`\n  --> src/main.rs:11:3\n   |\n11 | #[tokio::main]\n   |   ^^^^^ use of unresolved module or unlinked crate `tokio`\n\n",
+      "line": 11
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n  --> src/main.rs:12:1\n   |\n12 | async fn main() -> Result<(), Box<dyn std::error::Error>> {\n   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 12
+    }
+  ],
+  "error_count": 5,
+  "stderr_excerpt": "error: could not compile `n05_tower_consumer` (bin \"n05_tower_consumer\") due to 5 previous errors; 1 warning emitted\n",
+  "code_sha256": "3a41ec2a2e680088bfde9143943db4d1ecaf5c7a072e1e3395334da4a2e7fe52",
+  "manifest_sha256": "bd645f89ecaac2a3980e78d9eda46be2738f29c34e7bad6f632626e3c930ddb6",
+  "log_file": "holdout/results/check_logs/ce4db784355bcb84ff.txt.gz"
+}

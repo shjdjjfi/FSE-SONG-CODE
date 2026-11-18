@@ -1,0 +1,37 @@
+{
+  "key": "bb5555c4c82c68576f",
+  "args": {
+    "crate": "tinyvec",
+    "version": "1.9.0",
+    "id": "43d3d6bbc0f68d92",
+    "profile": "candidate",
+    "features": [
+      "rustc_1_57",
+      "rustc_1_61"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0638,
+  "errors": [
+    {
+      "code": "E0599",
+      "message": "no method named `grab_spare_slice` found for struct `tinyvec::SliceVec<'_, {integer}>` in the current scope",
+      "rendered": "error[E0599]: no method named `grab_spare_slice` found for struct `tinyvec::SliceVec<'_, {integer}>` in the current scope\n --> src/main.rs:5:15\n  |\n5 | assert_eq!(sv.grab_spare_slice().len(), 4);\n  |               ^^^^^^^^^^^^^^^^\n  |\nhelp: there is a method `as_slice` with a similar name\n  |\n5 - assert_eq!(sv.grab_spare_slice().len(), 4);\n5 + assert_eq!(sv.as_slice().len(), 4);\n  |\n\n",
+      "line": 5
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `grab_spare_slice` found for struct `tinyvec::SliceVec<'_, {integer}>` in the current scope",
+      "rendered": "error[E0599]: no method named `grab_spare_slice` found for struct `tinyvec::SliceVec<'_, {integer}>` in the current scope\n  --> src/main.rs:10:15\n   |\n10 | assert_eq!(sv.grab_spare_slice().len(), 0);\n   |               ^^^^^^^^^^^^^^^^\n   |\nhelp: there is a method `as_slice` with a similar name\n   |\n10 - assert_eq!(sv.grab_spare_slice().len(), 0);\n10 + assert_eq!(sv.as_slice().len(), 0);\n   |\n\n",
+      "line": 10
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_tinyvec_consumer` (bin \"n05_tinyvec_consumer\") due to 2 previous errors\n",
+  "code_sha256": "14f1b544bca13abcbac7987738c9b5c269422732a33d05577352bc3711a4074e",
+  "manifest_sha256": "8f23075a951ec9da3d23818b13e0cd7ce59234a8960d2ac2aa94ca3beba1c952",
+  "log_file": "results/check_logs/bb5555c4c82c68576f.txt.gz"
+}

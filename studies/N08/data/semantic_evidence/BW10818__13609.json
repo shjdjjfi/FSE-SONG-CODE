@@ -1,0 +1,100 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 7,
+  "bytes": 30094,
+  "control_flow_or_callback_lines": 2,
+  "event": "BW10818",
+  "examples": [
+    {
+      "change": "-",
+      "code": "abstract setClientKeyHalfForUser(userId: UserId, value: string): Promise<void>;",
+      "file": "apps/desktop/src/key-management/biometrics/desktop.biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "abstract setClientKeyHalfForUser(userId: UserId, value: string | null): Promise<void>;",
+      "file": "apps/desktop/src/key-management/biometrics/desktop.biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "private clientKeyHalves = new Map<string, string>();",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "private clientKeyHalves = new Map<string, string | null>();",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "async setClientKeyHalfForUser(userId: UserId, value: string): Promise<void> {",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "async setClientKeyHalfForUser(userId: UserId, value: string | null): Promise<void> {",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.clientKeyHalves.get(userId),",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.clientKeyHalves.get(userId) ?? undefined,",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.clientKeyHalves.get(userId),",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.clientKeyHalves.get(userId) ?? undefined,",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "async setClientKeyHalfForUser(userId: UserId, value: string): Promise<void> {",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "async setClientKeyHalfForUser(userId: UserId, value: string | null): Promise<void> {",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "if (message.key == null) {",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts"
+    },
+    {
+      "change": "-",
+      "code": "return;",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:34.506909+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+  "noncomment_nonimport_changed_lines": 15,
+  "pr": 13609,
+  "repository": "bitwarden/clients",
+  "sha256": "11839e72ff72d30b36ba7be2928e25a2f65fc973059cdc731c9209ae07495b1f",
+  "target_code_changed_lines": 15,
+  "target_files": [
+    "apps/desktop/src/key-management/biometrics/biometrics.service.spec.ts",
+    "apps/desktop/src/key-management/biometrics/desktop.biometrics.service.ts",
+    "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts",
+    "apps/desktop/src/key-management/biometrics/main-biometrics.service.spec.ts",
+    "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts",
+    "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/13609.patch"
+}

@@ -1,0 +1,21 @@
+{
+  "key": "fb8ce8ef3b63805035",
+  "args": {
+    "crate": "rayon",
+    "version": "1.10.0",
+    "id": "36cda4b902264729",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.0537,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "4bdf259c9c717ce939f647a61d488bc172c97b955f68172bb3a582b7097a537e",
+  "manifest_sha256": "8cf51f8c5c8dadc739f473faf43ea09432c2452dff9f9c6a3d572d6cf427c1ea",
+  "log_file": "results/check_logs/fb8ce8ef3b63805035.txt.gz"
+}

@@ -1,0 +1,212 @@
+{
+  "design": "preregistered out-of-family manifest literal-preservation, not native runtime",
+  "freeze": "64381bae392d703b7fbc20159dbaa02cf9cb6591412eb8249e6bf1f55fbf2b2e",
+  "seed": 20261115,
+  "inclusions_per_family": 12,
+  "max_attempts": 150,
+  "by_family": {
+    "external-dns": {
+      "states": 12,
+      "losses": 0,
+      "controls": 12,
+      "cid_tp": 0,
+      "cid_fp": 0,
+      "missing_key_tp": 0,
+      "missing_key_fp": 0
+    },
+    "grafana": {
+      "states": 12,
+      "losses": 0,
+      "controls": 12,
+      "cid_tp": 0,
+      "cid_fp": 0,
+      "missing_key_tp": 0,
+      "missing_key_fp": 0
+    },
+    "ingress-nginx": {
+      "states": 12,
+      "losses": 0,
+      "controls": 12,
+      "cid_tp": 0,
+      "cid_fp": 0,
+      "missing_key_tp": 0,
+      "missing_key_fp": 0
+    },
+    "metrics-server": {
+      "states": 12,
+      "losses": 0,
+      "controls": 12,
+      "cid_tp": 0,
+      "cid_fp": 0,
+      "missing_key_tp": 0,
+      "missing_key_fp": 0
+    },
+    "traefik": {
+      "states": 12,
+      "losses": 0,
+      "controls": 12,
+      "cid_tp": 0,
+      "cid_fp": 0,
+      "missing_key_tp": 0,
+      "missing_key_fp": 0
+    },
+    "vault": {
+      "states": 12,
+      "losses": 0,
+      "controls": 12,
+      "cid_tp": 0,
+      "cid_fp": 0,
+      "missing_key_tp": 0,
+      "missing_key_fp": 0
+    }
+  },
+  "aggregate": {
+    "states": 72,
+    "losses": 0,
+    "controls": 72,
+    "cid_tp": 0,
+    "cid_fp": 0,
+    "missing_key_tp": 0,
+    "missing_key_fp": 0,
+    "render_failures": 0,
+    "cid_recall": null,
+    "cid_fpr": 0.0,
+    "missing_key_recall": null,
+    "missing_key_fpr": 0.0,
+    "family_clusters": 6,
+    "preregistered_families": 8,
+    "cid_minus_missing_key_delta_pp": null,
+    "cluster_bootstrap_delta_95_pp": null
+  },
+  "all_original_pairs": [
+    {
+      "family": "grafana",
+      "from": "7.3.12",
+      "to": "8.0.0",
+      "repository": "https://grafana.github.io/helm-charts",
+      "old_archive": "grafana-7.3.12.tgz",
+      "new_archive": "grafana-8.0.0.tgz",
+      "old_sha256": "ceebfee5db8d6c5101b5ba08e4a677b61c7933748226ffd5d8bf3e6c0d482f91",
+      "new_sha256": "6c9671f5ae28dbd29e500c80b7d88c657b8307747bc1f87c8993e1498016610c",
+      "status": "evaluated",
+      "old_default_resources": 12,
+      "new_default_resources": 12,
+      "eligible_paths": 83,
+      "included_states": 12,
+      "attempted_paths": 40
+    },
+    {
+      "family": "ingress-nginx",
+      "from": "4.10.0",
+      "to": "4.11.0",
+      "repository": "https://kubernetes.github.io/ingress-nginx",
+      "old_archive": "ingress-nginx-4.10.0.tgz",
+      "new_archive": "ingress-nginx-4.11.0.tgz",
+      "old_sha256": "74f6590786bee20295bbe76f914514d9a111d7e9317acf13d26de482ae8abc1a",
+      "new_sha256": "eac211cdd9a5ae960f9c319e88c81d4e6e1ba5339599e217229d907bc9f67737",
+      "status": "evaluated",
+      "old_default_resources": 18,
+      "new_default_resources": 18,
+      "eligible_paths": 56,
+      "included_states": 12,
+      "attempted_paths": 18
+    },
+    {
+      "family": "metrics-server",
+      "from": "3.11.0",
+      "to": "3.12.0",
+      "repository": "https://kubernetes-sigs.github.io/metrics-server",
+      "old_archive": "metrics-server-3.11.0.tgz",
+      "new_archive": "metrics-server-3.12.0.tgz",
+      "old_sha256": "e7cba5a2d7e2b0949b3ea1aa48fc3780b71eba17e1edccc8273f5da67048164b",
+      "new_sha256": "19df2fa9c4c6e1ec4f134da56ae9c3e6b610bfd5674744115c9e9864c5f3debe",
+      "status": "evaluated",
+      "old_default_resources": 9,
+      "new_default_resources": 9,
+      "eligible_paths": 25,
+      "included_states": 12,
+      "attempted_paths": 23
+    },
+    {
+      "family": "vault",
+      "from": "0.27.0",
+      "to": "0.28.0",
+      "repository": "https://helm.releases.hashicorp.com",
+      "old_archive": "vault-0.27.0.tgz",
+      "new_archive": "vault-0.28.0.tgz",
+      "old_sha256": "4cdbfafaa97b9f4abb4525ff18d0c783fc234e2a8c2904b0b6a32cfadadd59f5",
+      "new_sha256": "76db52a750a0f496a995634d11da8607ad29a2117a3f9096fa22c0f5d64add1b",
+      "status": "evaluated",
+      "old_default_resources": 13,
+      "new_default_resources": 13,
+      "eligible_paths": 48,
+      "included_states": 12,
+      "attempted_paths": 31
+    },
+    {
+      "family": "traefik",
+      "from": "24.0.0",
+      "to": "25.0.0",
+      "repository": "https://traefik.github.io/charts",
+      "old_archive": "traefik-24.0.0.tgz",
+      "new_archive": "traefik-25.0.0.tgz",
+      "old_sha256": "7d9e81be17642e6dafb9ee8c3a5538d663db128fd1ba472fb64fc97a0058b579",
+      "new_sha256": "79624b04ba57be3510a9f11780c79bfddb0927a1f0a9443cfdf83b7526a1dc9a",
+      "status": "evaluated",
+      "old_default_resources": 7,
+      "new_default_resources": 7,
+      "eligible_paths": 20,
+      "included_states": 12,
+      "attempted_paths": 17
+    },
+    {
+      "family": "loki",
+      "from": "5.47.2",
+      "to": "6.0.0",
+      "repository": "https://grafana.github.io/helm-charts",
+      "old_archive": "loki-5.47.2.tgz",
+      "new_archive": "loki-6.0.0.tgz",
+      "old_sha256": "c355cea23e7a5e522c3029b5e27947f4c18ff0efb032bbaad908597a53611fe1",
+      "new_sha256": "f383f246a7e96c6989b8ccbb1d4b6b46fc37f504e0544e69c545183ac93c1dc4",
+      "status": "default_render_failure",
+      "errors": {
+        "old": "",
+        "new": "Error: execution error at (loki/templates/validate.yaml:40:4): You must provide a schema_config for Loki, one is not provided as this will be individual for every Loki cluster. See https://grafana.com/docs/loki/latest/operations/storage/schema/ for schema information. For quick testing (with no persistence) add `--set loki.useTestSchema=true`\n\nUse --debug flag to render out invalid YAML\n"
+      }
+    },
+    {
+      "family": "external-dns",
+      "from": "1.14.4",
+      "to": "1.15.0",
+      "repository": "https://kubernetes-sigs.github.io/external-dns",
+      "old_archive": "external-dns-1.14.4.tgz",
+      "new_archive": "external-dns-1.15.0.tgz",
+      "old_sha256": "20cfea28511e4c94194de51cc50309550eafe6bae463b1a23ce2381c18169488",
+      "new_sha256": "ad32b4331335e26fe866921c4f49b6121c3bed281cdf49bd53169ad9f74d90b3",
+      "status": "evaluated",
+      "old_default_resources": 5,
+      "new_default_resources": 5,
+      "eligible_paths": 19,
+      "included_states": 12,
+      "attempted_paths": 15
+    },
+    {
+      "family": "sealed-secrets",
+      "from": "2.14.2",
+      "to": "2.15.0",
+      "repository": "https://bitnami-labs.github.io/sealed-secrets",
+      "old_archive": "sealed-secrets-2.14.2.tgz",
+      "new_archive": "sealed-secrets-2.15.0.tgz",
+      "old_sha256": null,
+      "new_sha256": null,
+      "status": "archive_unavailable_prespecified_no_replacement"
+    }
+  ],
+  "limitations": [
+    "oracle is exact sentinel retention in rendered manifests, not native health",
+    "new-template render failures separate from silent losses",
+    "not an empirical helm-diff plus human-reading study",
+    "selection uses only old-chart successful exposures",
+    "states within same chart family are not independent installations"
+  ]
+}

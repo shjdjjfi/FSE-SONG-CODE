@@ -1,0 +1,34 @@
+{
+  "key": "4d479d12629d4ccb04",
+  "args": {
+    "crate": "rust_decimal",
+    "version": "1.37.2",
+    "id": "ae0abb5041578301",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2213,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `rust_decimal_macros`",
+      "rendered": "error[E0432]: unresolved import `rust_decimal_macros`\n --> src/main.rs:3:5\n  |\n3 | use rust_decimal_macros::dec;\n  |     ^^^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `rust_decimal_macros`\n  |\n  = help: if you wanted to use a crate named `rust_decimal_macros`, use `cargo add rust_decimal_macros` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0599",
+      "message": "no associated item named `PI` found for struct `Decimal` in the current scope",
+      "rendered": "error[E0599]: no associated item named `PI` found for struct `Decimal` in the current scope\n --> src/main.rs:4:21\n  |\n4 | assert_eq!(Decimal::PI, dec!(3.1415926535897932384626433833));\n  |                     ^^ associated item not found in `Decimal`\n\n",
+      "line": 4
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_rust_decimal_consumer` (bin \"n05_rust_decimal_consumer\") due to 2 previous errors\n",
+  "code_sha256": "90ef1b7886c34a3f0e06b6d148d618e13f37531878b2b7e89ac66962590e9628",
+  "manifest_sha256": "b7ceba14a96af3e43b96de33621ae96f5b5feaf645a281c5e56db937905f48db",
+  "log_file": "prospective/results/check_logs/4d479d12629d4ccb04.txt.gz"
+}

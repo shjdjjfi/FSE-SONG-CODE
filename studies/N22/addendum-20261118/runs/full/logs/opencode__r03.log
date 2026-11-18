@@ -1,0 +1,59 @@
+COMMAND: ["/workspace/scratch/2881099d856a/n22_tooling/node_modules/@oven/bun-linux-x64/bin/bun", "test", "test/n22_contract_replay.test.ts", "--timeout", "30000"]
+RETURN CODE: 0
+STDOUT:
+bun test v1.3.1 (89fa0f34)
+[05:30:44.649] INFO (#1): database schema bootstrap started {
+  migrations: 48,
+}
+[05:30:44.673] INFO (#1): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 24,
+}
+[05:30:44.697] WARN (#1): Skipped V1 migration row {
+  reason: "invalid-message",
+  sessionID: "ses_test",
+  messageID: "msg_000000000002aaaaaaaaaaaaaa",
+}
+N22_CASE_JSON {"case_id":"early_agent_missing","migration_status":"completed","checkpoint":"{\"phase\":\"completed\"}","source_messages":["msg_000000000001aaaaaaaaaaaaaa","msg_000000000002aaaaaaaaaaaaaa"],"projected_messages":["msg_000000000001aaaaaaaaaaaaaa"],"source_sessions":["ses_test"],"projected_sessions":["ses_test"],"schema_sha256":"f86bb26099322a73ff9d7ee39b97a8f0e04b7fa87f2f35f0c5fba9c5a09e5f9f","ledger_sha256":"f1f95f29be18912af780683308200dc179311643d5a14f573c80c00ca37c759b","migration_tables":[{"name":"migration"}],"observed_missing_source_messages":["msg_000000000002aaaaaaaaaaaaaa"],"observed_missing_source_sessions":[],"elapsed_milliseconds":36.96}
+[05:30:44.827] INFO (#9): database schema bootstrap started {
+  migrations: 48,
+}
+[05:30:44.862] INFO (#9): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 35,
+}
+N22_CASE_JSON {"case_id":"agent_present","migration_status":"completed","checkpoint":"{\"phase\":\"completed\"}","source_messages":["msg_000000000001aaaaaaaaaaaaaa","msg_000000000002aaaaaaaaaaaaaa"],"projected_messages":["msg_000000000001aaaaaaaaaaaaaa","msg_000000000002aaaaaaaaaaaaaa"],"source_sessions":["ses_test"],"projected_sessions":["ses_test"],"schema_sha256":"f86bb26099322a73ff9d7ee39b97a8f0e04b7fa87f2f35f0c5fba9c5a09e5f9f","ledger_sha256":"f1f95f29be18912af780683308200dc179311643d5a14f573c80c00ca37c759b","migration_tables":[{"name":"migration"}],"observed_missing_source_messages":[],"observed_missing_source_sessions":[],"elapsed_milliseconds":6.874}
+[05:30:44.872] INFO (#17): database schema bootstrap started {
+  migrations: 48,
+}
+[05:30:44.883] INFO (#17): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 11,
+}
+N22_CASE_JSON {"case_id":"mode_backfill","migration_status":"completed","checkpoint":"{\"phase\":\"completed\"}","source_messages":["msg_000000000001aaaaaaaaaaaaaa","msg_000000000002aaaaaaaaaaaaaa"],"projected_messages":["msg_000000000001aaaaaaaaaaaaaa","msg_000000000002aaaaaaaaaaaaaa"],"source_sessions":["ses_test"],"projected_sessions":["ses_test"],"schema_sha256":"f86bb26099322a73ff9d7ee39b97a8f0e04b7fa87f2f35f0c5fba9c5a09e5f9f","ledger_sha256":"f1f95f29be18912af780683308200dc179311643d5a14f573c80c00ca37c759b","migration_tables":[{"name":"migration"}],"observed_missing_source_messages":[],"observed_missing_source_sessions":[],"elapsed_milliseconds":5.63}
+[05:30:44.892] INFO (#25): database schema bootstrap started {
+  migrations: 48,
+}
+[05:30:44.902] INFO (#25): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 11,
+}
+N22_CASE_JSON {"case_id":"late_session","migration_status":"completed","checkpoint":"{\"phase\":\"completed\"}","source_messages":["msg_000000000001aaaaaaaaaaaaaa","msg_000000000003aaaaaaaaaaaaaa"],"projected_messages":["msg_000000000001aaaaaaaaaaaaaa"],"source_sessions":["ses_late","ses_test"],"projected_sessions":["ses_test"],"schema_sha256":"f86bb26099322a73ff9d7ee39b97a8f0e04b7fa87f2f35f0c5fba9c5a09e5f9f","ledger_sha256":"f1f95f29be18912af780683308200dc179311643d5a14f573c80c00ca37c759b","migration_tables":[{"name":"migration"}],"observed_missing_source_messages":["msg_000000000003aaaaaaaaaaaaaa"],"observed_missing_source_sessions":["ses_late"],"elapsed_milliseconds":0.228}
+[05:30:44.911] INFO (#32): database schema bootstrap started {
+  migrations: 48,
+}
+[05:30:44.919] INFO (#32): database schema bootstrap completed {
+  migrations: 48,
+  durationMs: 8,
+}
+N22_CASE_JSON {"case_id":"no_late_session","migration_status":"completed","checkpoint":"{\"phase\":\"completed\"}","source_messages":["msg_000000000001aaaaaaaaaaaaaa"],"projected_messages":["msg_000000000001aaaaaaaaaaaaaa"],"source_sessions":["ses_test"],"projected_sessions":["ses_test"],"schema_sha256":"f86bb26099322a73ff9d7ee39b97a8f0e04b7fa87f2f35f0c5fba9c5a09e5f9f","ledger_sha256":"f1f95f29be18912af780683308200dc179311643d5a14f573c80c00ca37c759b","migration_tables":[{"name":"migration"}],"observed_missing_source_messages":[],"observed_missing_source_sessions":[],"elapsed_milliseconds":0.325}
+
+STDERR:
+
+test/n22_contract_replay.test.ts:
+(pass) N22: unchanged upstream migration misses historically valid rows and late V1 sessions [299.17ms]
+
+ 1 pass
+ 0 fail
+ 22 expect() calls
+Ran 1 test across 1 file. [627.00ms]

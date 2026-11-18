@@ -1,0 +1,46 @@
+{
+  "key": "0800cf19e904474aba",
+  "args": {
+    "crate": "figment",
+    "version": "0.10.19",
+    "id": "a2b1d65fc6783618",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0918,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `figment::providers::Env`",
+      "rendered": "error[E0432]: unresolved import `figment::providers::Env`\n  --> src/main.rs:25:13\n   |\n25 |         use figment::providers::Env;\n   |             ^^^^^^^^^^^^^^^^^^^^^^^ no `Env` in `providers`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/figment-0.10.19/src/providers/mod.rs:10:44\n   |\n10 | #[cfg(feature = \"env\")] pub use self::env::Env;\n   |       ---------------                      ^^^\n   |       |\n   |       the item is gated behind the `env` feature\n\n",
+      "line": 25
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde`",
+      "rendered": "error[E0432]: unresolved import `serde`\n --> src/main.rs:2:5\n  |\n2 | use serde::{Serialize, Deserialize};\n  |     ^^^^^ use of unresolved module or unlinked crate `serde`\n  |\n  = help: if you wanted to use a crate named `serde`, use `cargo add serde` to add it to your `Cargo.toml`\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0277",
+      "message": "the trait bound `Config: serde::Deserialize<'de>` is not satisfied",
+      "rendered": "error[E0277]: the trait bound `Config: serde::Deserialize<'de>` is not satisfied\n   --> src/main.rs:20:33\n    |\n 20 |         Figment::from(provider).extract()\n    |                                 ^^^^^^^ unsatisfied trait bound\n    |\nhelp: the trait `serde_core::de::Deserialize<'_>` is not implemented for `Config`\n   --> src/main.rs:8:1\n    |\n  8 | struct Config { /* the library's required/expected values */ }\n    | ^^^^^^^^^^^^^\n    = note: for local types consider adding `#[derive(serde::Deserialize)]` to your `Config` type\n    = note: for types from other crates check whether the crate offers a `serde` feature flag\n    = help: the following other types implement trait `serde_core::de::Deserialize<'de>`:\n              &'a Path\n              &'a [u8]\n              &'a str\n              ()\n              (T,)\n              (T0, T1)\n              (T0, T1, T2)\n              (T0, T1, T2, T3)\n            and 144 others\nnote: required by a bound in `Figment::extract`\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/figment-0.10.19/src/figment.rs:484:27\n    |\n484 |     pub fn extract<'a, T: Deserialize<'a>>(&self) -> Result<T> {\n    |",
+      "line": 20
+    },
+    {
+      "code": "E0599",
+      "message": "the method `data` exists for struct `Serialized<Config>`, but its trait bounds were not satisfied",
+      "rendered": "error[E0599]: the method `data` exists for struct `Serialized<Config>`, but its trait bounds were not satisfied\n   --> src/main.rs:41:69\n    |\n  8 | struct Config { /* the library's required/expected values */ }\n    | ------------- doesn't satisfy `Config: serde_core::ser::Serialize`\n...\n 41 |         figment::providers::Serialized::defaults(Config::default()).data()\n    |                                                                     ^^^^ method cannot be called on `Serialized<Config>` due to unsatisfied trait bounds\n    |\n   ::: /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/figment-0.10.19/src/providers/serialized.rs:37:1\n    |\n 37 | pub struct Serialized<T> {\n    | ------------------------ doesn't satisfy `Serialized<Config>: Provider`\n    |\n    = note: the following trait bounds were not satisfied:\n            `Config: serde_core::ser::Serialize`\n            which is required by `Serialized<Config>: Provider`\nnote: the trait `serde_core::ser::Serialize` must be implemented\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.229/src/ser/mod.rs:234:1\n    |\n234 | ",
+      "line": 41
+    }
+  ],
+  "error_count": 4,
+  "stderr_excerpt": "error: could not compile `n05_figment_consumer` (bin \"n05_figment_consumer\") due to 4 previous errors\n",
+  "code_sha256": "557e7e2eb05273b247f0869063b15d29936cc948c02b937e35438861e5dd0f9a",
+  "manifest_sha256": "a48490f2efee29ea47ced65139c28fe37d0ba071363941ab6e4ee7c5c6de4622",
+  "log_file": "prospective/results/check_logs/0800cf19e904474aba.txt.gz"
+}

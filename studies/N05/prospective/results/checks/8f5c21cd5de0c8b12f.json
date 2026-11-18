@@ -1,0 +1,46 @@
+{
+  "key": "8f5c21cd5de0c8b12f",
+  "args": {
+    "crate": "quick-xml",
+    "version": "0.37.5",
+    "id": "8f4798cca2422625",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0692,
+  "errors": [
+    {
+      "code": "E0412",
+      "message": "cannot find type `LocalName` in this scope",
+      "rendered": "error[E0412]: cannot find type `LocalName` in this scope\n --> src/main.rs:3:12\n  |\n3 | let local: LocalName = QName(b\"unprefixed\").into();\n  |            ^^^^^^^^^ not found in this scope\n  |\nhelp: consider importing this struct\n  |\n1 + use quick_xml::name::LocalName;\n  |\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find function, tuple struct or tuple variant `QName` in this scope",
+      "rendered": "error[E0425]: cannot find function, tuple struct or tuple variant `QName` in this scope\n --> src/main.rs:3:24\n  |\n3 | let local: LocalName = QName(b\"unprefixed\").into();\n  |                        ^^^^^ not found in this scope\n  |\nhelp: consider importing this tuple struct\n  |\n1 + use quick_xml::name::QName;\n  |\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0412",
+      "message": "cannot find type `LocalName` in this scope",
+      "rendered": "error[E0412]: cannot find type `LocalName` in this scope\n --> src/main.rs:6:12\n  |\n6 | let local: LocalName = QName(b\"some:prefix\").into();\n  |            ^^^^^^^^^ not found in this scope\n  |\nhelp: consider importing this struct\n  |\n1 + use quick_xml::name::LocalName;\n  |\n\n",
+      "line": 6
+    },
+    {
+      "code": "E0425",
+      "message": "cannot find function, tuple struct or tuple variant `QName` in this scope",
+      "rendered": "error[E0425]: cannot find function, tuple struct or tuple variant `QName` in this scope\n --> src/main.rs:6:24\n  |\n6 | let local: LocalName = QName(b\"some:prefix\").into();\n  |                        ^^^^^ not found in this scope\n  |\nhelp: consider importing this tuple struct\n  |\n1 + use quick_xml::name::QName;\n  |\n\n",
+      "line": 6
+    }
+  ],
+  "error_count": 4,
+  "stderr_excerpt": "error: could not compile `n05_quick_xml_consumer` (bin \"n05_quick_xml_consumer\") due to 4 previous errors\n",
+  "code_sha256": "5aca08075a4064eaa04234a1606e91f5cd701a34c0eaed9e5122bb0b76c9ecf5",
+  "manifest_sha256": "ebdbc46ef63196b0272bfb542c9057438d6f78d4878f599effb8654ea83a6f59",
+  "log_file": "prospective/results/check_logs/8f5c21cd5de0c8b12f.txt.gz"
+}

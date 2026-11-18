@@ -1,0 +1,28 @@
+{
+  "key": "9d373c48cf6ebab913",
+  "args": {
+    "crate": "reqwest",
+    "version": "0.12.19",
+    "id": "61e7e0ad96f7e86b",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2956,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: could not find `multipart` in `reqwest`",
+      "rendered": "error[E0433]: failed to resolve: could not find `multipart` in `reqwest`\n   --> src/main.rs:2:21\n    |\n  2 | let form = reqwest::multipart::Form::new()\n    |                     ^^^^^^^^^ could not find `multipart` in `reqwest`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-0.12.19/src/lib.rs:361:31\n    |\n360 |     #[cfg(feature = \"multipart\")]\n    |           --------------------- the item is gated behind the `multipart` feature\n361 |     pub use self::async_impl::multipart;\n    |                               ^^^^^^^^^\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-0.12.19/src/lib.rs:384:25\n    |\n378 | / if_wasm! {\n379 | |     mod wasm;\n380 | |     mod util;\n...   |\n384 | |     pub use self::wasm::multipart;\n    | |                         ^^^^^^^^^\n385 | | }\n    | |_- the item is gated behind the `wasm32` feature\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_reqwest_consumer` (bin \"n05_reqwest_consumer\") due to 1 previous error\n",
+  "code_sha256": "6fc38769b449cf77a863a9a3bf18561050b21d24e4496f65ce09a03c3f143cba",
+  "manifest_sha256": "6ae11118f89c48e1404353ad362df548bcef5af7372b0ae8059b7b9091d56b4e",
+  "log_file": "results/check_logs/9d373c48cf6ebab913.txt.gz"
+}

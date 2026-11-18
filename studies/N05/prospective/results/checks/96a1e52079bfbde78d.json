@@ -1,0 +1,28 @@
+{
+  "key": "96a1e52079bfbde78d",
+  "args": {
+    "crate": "rust_decimal",
+    "version": "1.37.2",
+    "id": "93b88843b8b72ad7",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1062,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `rust_decimal_macros`",
+      "rendered": "error[E0432]: unresolved import `rust_decimal_macros`\n --> src/main.rs:3:5\n  |\n3 | use rust_decimal_macros::dec;\n  |     ^^^^^^^^^^^^^^^^^^^ use of unresolved module or unlinked crate `rust_decimal_macros`\n  |\n  = help: if you wanted to use a crate named `rust_decimal_macros`, use `cargo add rust_decimal_macros` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_rust_decimal_consumer` (bin \"n05_rust_decimal_consumer\") due to 1 previous error; 1 warning emitted\n",
+  "code_sha256": "0204a995a60f85895fce4077317b569608dabda8ca8b98938d185f0131ed2936",
+  "manifest_sha256": "b7ceba14a96af3e43b96de33621ae96f5b5feaf645a281c5e56db937905f48db",
+  "log_file": "prospective/results/check_logs/96a1e52079bfbde78d.txt.gz"
+}

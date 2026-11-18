@@ -1,0 +1,32 @@
+{
+  "key": "78c0308cf314e4e8b1",
+  "args": {
+    "crate": "hyper-util",
+    "version": "0.1.15",
+    "id": "babba9f5f04cf89e",
+    "profile": "candidate",
+    "features": [
+      "http2",
+      "server-graceful",
+      "service"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.3209,
+  "errors": [
+    {
+      "code": "E0599",
+      "message": "no method named `title_case_headers` found for struct `hyper_util::server::conn::auto::Builder<E>` in the current scope",
+      "rendered": "error[E0599]: no method named `title_case_headers` found for struct `hyper_util::server::conn::auto::Builder<E>` in the current scope\n --> src/main.rs:8:6\n  |\n7 | / auto::Builder::new(TokioExecutor::new())\n8 | |     .title_case_headers(true);\n  | |     -^^^^^^^^^^^^^^^^^^ method not found in `hyper_util::server::conn::auto::Builder<TokioExecutor>`\n  | |_____|\n  |\n\n",
+      "line": 7
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_hyper_util_consumer` (bin \"n05_hyper_util_consumer\") due to 1 previous error\n",
+  "code_sha256": "07a34e7fac218ce40399e1f45bdcb4b59d20e73c4be5d688eaf74cdc092d750b",
+  "manifest_sha256": "adbc52fe2abbf55db252c6c6008a0e46d65666e732175032fbc9676fef3f0c2d",
+  "log_file": "prospective/results/check_logs/78c0308cf314e4e8b1.txt.gz"
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "BW10818", "repo": "bitwarden/clients", "migration_pr": 10818,
+    "old_prefix": "apps/desktop/src/platform/main/biometric/",
+    "new_prefix": "apps/desktop/src/key-management/biometrics/",
+    "expected_old_team": "@bitwarden/team-platform-dev",
+    "expected_new_team": "@bitwarden/team-key-management-dev"
+  },
+  {
+    "id": "BW11709", "repo": "bitwarden/clients", "migration_pr": 11709,
+    "old_prefix": "apps/web/src/app/auth/key-rotation/",
+    "new_prefix": "apps/web/src/app/key-management/key-rotation/",
+    "expected_old_team": "@bitwarden/team-auth-dev",
+    "expected_new_team": "@bitwarden/team-key-management-dev"
+  },
+  {
+    "id": "BW12407", "repo": "bitwarden/clients", "migration_pr": 12407,
+    "old_prefix": "libs/auth/src/angular/lock/",
+    "new_prefix": "libs/key-management/src/angular/lock/",
+    "expected_old_team": "@bitwarden/team-auth-dev",
+    "expected_new_team": "@bitwarden/team-key-management-dev"
+  },
+  {
+    "id": "BW12927", "repo": "bitwarden/clients", "migration_pr": 12927,
+    "old_prefix": "apps/desktop/src/vault/app/accounts/",
+    "new_prefix": "apps/desktop/src/billing/app/accounts/",
+    "expected_old_team": "@bitwarden/team-vault-dev",
+    "expected_new_team": "@bitwarden/team-billing-dev"
+  },
+  {
+    "id": "BW13285", "repo": "bitwarden/clients", "migration_pr": 13285,
+    "old_prefix": "libs/common/src/platform/services/",
+    "new_prefix": "libs/common/src/key-management/crypto/services/",
+    "expected_old_team": "@bitwarden/team-platform-dev",
+    "expected_new_team": "@bitwarden/team-key-management-dev"
+  },
+  {
+    "id": "BW14571", "repo": "bitwarden/clients", "migration_pr": 14571,
+    "old_prefix": "apps/web/src/app/tools/reports/",
+    "new_prefix": "apps/web/src/app/dirt/reports/",
+    "expected_old_team": "@bitwarden/team-tools-dev",
+    "expected_new_team": "@bitwarden/team-data-insights-and-reporting-dev"
+  },
+  {
+    "id": "BW14987", "repo": "bitwarden/clients", "migration_pr": 14987,
+    "old_prefix": "libs/tools/card/",
+    "new_prefix": "libs/dirt/card/",
+    "expected_old_team": "@bitwarden/team-tools-dev",
+    "expected_new_team": "@bitwarden/team-data-insights-and-reporting-dev"
+  },
+  {
+    "id": "BW15093", "repo": "bitwarden/clients", "migration_pr": 15093,
+    "old_prefix": "libs/auth/src/angular/anon-layout/",
+    "new_prefix": "libs/components/src/anon-layout/",
+    "expected_old_team": "@bitwarden/team-auth-dev",
+    "expected_new_team": "@bitwarden/team-ui-foundation"
+  },
+  {
+    "id": "GF104424", "repo": "grafana/grafana", "migration_pr": 104424,
+    "old_prefix": "pkg/registry/apis/alerting/notifications/",
+    "new_prefix": "pkg/registry/apps/alerting/notifications/",
+    "expected_old_team": "@grafana/grafana-app-platform-squad",
+    "expected_new_team": "@grafana/alerting-backend"
+  }
+]

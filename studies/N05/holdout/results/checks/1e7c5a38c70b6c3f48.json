@@ -1,0 +1,31 @@
+{
+  "key": "1e7c5a38c70b6c3f48",
+  "args": {
+    "crate": "tower-http",
+    "version": "0.6.6",
+    "id": "0351acaee18dfeba",
+    "profile": "candidate",
+    "features": [
+      "follow-redirect",
+      "request-id"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.3547,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tower_http::cors`",
+      "rendered": "error[E0432]: unresolved import `tower_http::cors`\n   --> src/main.rs:2:17\n    |\n  2 | use tower_http::cors::{Any, CorsLayer};\n    |                 ^^^^ could not find `cors` in `tower_http`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tower-http-0.6.6/src/lib.rs:315:9\n    |\n314 | #[cfg(feature = \"cors\")]\n    |       ---------------- the item is gated behind the `cors` feature\n315 | pub mod cors;\n    |         ^^^^\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tower_http_consumer` (bin \"n05_tower_http_consumer\") due to 1 previous error\n",
+  "code_sha256": "cdf48144aa8b86c11e5af4275ed08d00871d085183e64fd340b28376d4a24267",
+  "manifest_sha256": "97e50143c855693de9c95b6f4e81bec82ecf999dff9c7e300e798013414def91",
+  "log_file": "holdout/results/check_logs/1e7c5a38c70b6c3f48.txt.gz"
+}

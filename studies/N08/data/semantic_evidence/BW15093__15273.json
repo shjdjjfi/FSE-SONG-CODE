@@ -1,0 +1,185 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 5,
+  "bytes": 16720,
+  "control_flow_or_callback_lines": 2,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "+",
+      "code": "@Input() hideCardWrapper: boolean = false;",
+      "file": "libs/components/src/anon-layout/anon-layout.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "hideCardWrapper: false,",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "export const HideCardWrapper: Story = {",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "render: (args) => ({",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "props: {",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "...args,",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "hideCardWrapper: true,",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "},",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "template: `",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "<auth-anon-layout [title]=\"title\" [subtitle]=\"subtitle\" [showReadonlyHostname]=\"showReadonlyHostname\" [hideLogo]=\"hideLogo\" [hideCardWrapper]=\"hideCardWrapper\">",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "<div>",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "<div class=\"tw-font-bold\">Primary Projected Content Area (customizable)</div>",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus illum vero, placeat recusandae esse ratione eius minima veniam nemo, quas beatae! Impedit molestiae ali",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "</div>",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "<div slot=\"secondary\" class=\"text-center\">",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "<div class=\"tw-font-bold tw-mb-2\">Secondary Projected Content (optional)</div>",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "<button bitButton>Perform Action</button>",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "</div>",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "</auth-anon-layout>",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "`,",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "}),",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "};",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/components/src/anon-layout/anon-layout.stories.ts"
+    },
+    {
+      "change": "+",
+      "code": "/**",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "* Hide the card that wraps the default content. Defaults to false.",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "*/",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "hideCardWrapper?: boolean;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "protected hideCardWrapper: boolean;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.hideCardWrapper = Boolean(firstChildRouteData[\"hideCardWrapper\"]);",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (data.hideCardWrapper !== undefined) {",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.hideCardWrapper = data.hideCardWrapper;",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:39.966447+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 40,
+  "pr": 15273,
+  "repository": "bitwarden/clients",
+  "sha256": "e142e7d2d73fad7db482e7673c257086f0e7f716f2da34ad6878fe6bb3bd27f0",
+  "target_code_changed_lines": 45,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout-wrapper.component.html",
+    "libs/components/src/anon-layout/anon-layout-wrapper.component.ts",
+    "libs/components/src/anon-layout/anon-layout-wrapper.stories.ts",
+    "libs/components/src/anon-layout/anon-layout.component.html",
+    "libs/components/src/anon-layout/anon-layout.component.ts",
+    "libs/components/src/anon-layout/anon-layout.stories.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15273.patch"
+}

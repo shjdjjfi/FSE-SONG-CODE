@@ -1,0 +1,71 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 3,
+  "bytes": 100016,
+  "control_flow_or_callback_lines": 2,
+  "event": "BW10818",
+  "examples": [
+    {
+      "change": "+",
+      "code": "import { EncryptionType } from \"@bitwarden/common/platform/enums\";",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { Utils } from \"@bitwarden/common/platform/misc/utils\";",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "const key = symmetricKey?.macKeyB64 ?? symmetricKey?.keyB64;",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "let key = null;",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "const innerKey = symmetricKey.inner();",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (innerKey.type === EncryptionType.AesCbc256_HmacSha256_B64) {",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "key = Utils.fromBufferToB64(innerKey.authenticationKey);",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "} else {",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "key = Utils.fromBufferToB64(innerKey.encryptionKey);",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:34.626920+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+  "noncomment_nonimport_changed_lines": 8,
+  "pr": 13598,
+  "repository": "bitwarden/clients",
+  "sha256": "350657fe450971f0c3065509ab724f08e8ac1cc8b83801f8e6d9df24a6562662",
+  "target_code_changed_lines": 10,
+  "target_files": [
+    "apps/desktop/src/key-management/biometrics/main-biometrics.service.spec.ts",
+    "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/13598.patch"
+}

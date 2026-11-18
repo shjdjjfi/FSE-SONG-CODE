@@ -1,0 +1,38 @@
+{
+  "key": "28589f0b8904e4e617",
+  "args": {
+    "crate": "uuid",
+    "version": "1.17.0",
+    "id": "6f8f25468af9f32d",
+    "profile": "candidate",
+    "features": [
+      "fast-rng",
+      "macro-diagnostics",
+      "md5"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2658,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `uuid::Context`",
+      "rendered": "error[E0432]: unresolved import `uuid::Context`\n   --> src/main.rs:2:23\n    |\n  2 | use uuid::{Timestamp, Context};\n    |                       ^^^^^^^\n    |                       |\n    |                       no `Context` in the root\n    |                       help: a similar name exists in the module: `NoContext`\n    |\n    = help: consider importing this struct instead:\n            std::task::Context\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.17.0/src/lib.rs:238:29\n    |\n237 | #[cfg(any(feature = \"v1\", feature = \"v6\"))]\n    |          -------------------------------- the item is gated here\n238 | pub use timestamp::context::Context;\n    |                             ^^^^^^^\n\n",
+      "line": 2
+    },
+    {
+      "code": "E0599",
+      "message": "no function or associated item named `new_v1` found for struct `Uuid` in the current scope",
+      "rendered": "error[E0599]: no function or associated item named `new_v1` found for struct `Uuid` in the current scope\n   --> src/main.rs:8:18\n    |\n  8 | let uuid = Uuid::new_v1(ts, &[1, 2, 3, 4, 5, 6]);\n    |                  ^^^^^^ function or associated item not found in `Uuid`\n    |\nnote: if you're trying to build a new `Uuid` consider using one of the following associated functions:\n      uuid::builder::<impl Uuid>::nil\n      uuid::builder::<impl Uuid>::max\n      uuid::builder::<impl Uuid>::from_fields\n      uuid::builder::<impl Uuid>::from_fields_le\n      and 10 others\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.17.0/src/builder.rs:72:5\n    |\n 72 |     pub const fn nil() -> Self {\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^\n...\n 98 |     pub const fn max() -> Self {\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^\n...\n122 |     pub const fn from_fields(d1: u32, d2: u16, d3: u16, d4: &[u8; 8]) -> Uuid {\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n...\n168 |     pub const fn from_fields_le(d1: u32, d2: u16, d3: u16, d4: &[u8; 8]) -> Uuid {\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "line": 8
+    }
+  ],
+  "error_count": 2,
+  "stderr_excerpt": "error: could not compile `n05_uuid_consumer` (bin \"n05_uuid_consumer\") due to 2 previous errors\n",
+  "code_sha256": "560a4883b90177f6aeeab0e07f9b1c53011391e6852f679a6442a1df2e073d97",
+  "manifest_sha256": "29ea18dfd4d7ec09ee0503f81d22a92615f3e5328ebd13ae06c75eb8ebf33bab",
+  "log_file": "results/check_logs/28589f0b8904e4e617.txt.gz"
+}

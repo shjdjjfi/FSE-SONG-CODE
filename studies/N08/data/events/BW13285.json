@@ -1,0 +1,791 @@
+{
+  "after_codeowners_sha256": "4c7d82491613cdedbe6eeb6d2105f5b0ada787b7d7a8e5bbd451d0389a88431a",
+  "all_patch_renames": 3,
+  "base_sha": "a2cd3ecc1c58fad68de8b30925415cf980c57148",
+  "before_codeowners_sha256": "10c6eabb2cbe0bdf7bcfcd9694c58db1fcc1bd6d50197c44058e6bfd2445f012",
+  "expected_new_team": "@bitwarden/team-key-management-dev",
+  "expected_old_team": "@bitwarden/team-platform-dev",
+  "histories": {
+    "after": {
+      "commit_count": 23,
+      "pr_linked_count": 23,
+      "records": [
+        {
+          "date": "2025-04-14T17:47:09Z",
+          "pr": 13991,
+          "sha": "95ea1b22aea9389ee2853237d82f761268a2928a",
+          "title": "[PM-17987] Add feature flag (#13991)"
+        },
+        {
+          "date": "2025-04-15T14:39:02Z",
+          "pr": 14046,
+          "sha": "b09305577f450922fe0a37f3ee35e756eb603eb8",
+          "title": "[PM-19603] Change asymmetric interface to only allow key encapsulation (#14046)"
+        },
+        {
+          "date": "2025-04-21T14:57:26Z",
+          "pr": 13598,
+          "sha": "43b1f5536024693c5de969b9109ae0f123d567d3",
+          "title": "[PM-18697] Remove old symmetric key representations in symmetriccryptokey (#13598)"
+        },
+        {
+          "date": "2025-04-22T13:56:39Z",
+          "pr": 14080,
+          "sha": "e231286f37c6f600f6129c24d96155295967b8c0",
+          "title": "[PM-19731] Refactor encrypt service to expose key wrapping (#14080)"
+        },
+        {
+          "date": "2025-04-23T16:45:29Z",
+          "pr": 14388,
+          "sha": "ef80c2370700c79a095d562bbc4cb1ab03d49a8f",
+          "title": "Fix type 0 not being blocked on key wrapping (#14388)"
+        },
+        {
+          "date": "2025-04-25T15:48:32Z",
+          "pr": 14432,
+          "sha": "e4ba98f2d0ca5b90a8ac1d475f1c91f8a0744196",
+          "title": "Remove key.key.bytelength check in encryptUint8array (#14432)"
+        },
+        {
+          "date": "2025-04-25T17:11:39Z",
+          "pr": 14434,
+          "sha": "aafc82e1b8e59a11070d30e472d7db73697a44d9",
+          "title": "Remove direct key buffer access in encrypt service test (#14434)"
+        },
+        {
+          "date": "2025-04-25T17:26:39Z",
+          "pr": 14371,
+          "sha": "fd0db40f79b8431b2bf4057664a6fe74ef6dc392",
+          "title": "[PM-20492] Refactor symmetric keys - remove key buffer representation, migrate consumers to .toEncoded() (#14371)"
+        },
+        {
+          "date": "2025-04-29T15:04:47Z",
+          "pr": 14398,
+          "sha": "3694903a2a738be7ae86310a2dcd70d97761926c",
+          "title": "[PM-20567] Add new encrypt service functions (#14398)"
+        },
+        {
+          "date": "2025-05-05T16:19:52Z",
+          "pr": 14277,
+          "sha": "013a34e0429eb3183bd2d334fc6f63e4fba5706c",
+          "title": "[PM-17440] Use SDK for decryption (#14277)"
+        },
+        {
+          "date": "2025-06-12T15:11:44Z",
+          "pr": 15138,
+          "sha": "381e7fa45ec009b229112969c366d574dfc8f600",
+          "title": "[PM-22563] Add awaiting the SDK to be ready to EncryptService (#15138)"
+        },
+        {
+          "date": "2025-07-15T09:53:58Z",
+          "pr": 15401,
+          "sha": "8250e40c6c19d1b1007b8e9ed152eabdda8c1ab8",
+          "title": "[PM-22271] Switch to SDK argon2 implementation, and drop other impls (#15401)"
+        },
+        {
+          "date": "2025-07-16T15:15:24Z",
+          "pr": 15457,
+          "sha": "60855c734fe34ed98ae321777266ededdb571e6d",
+          "title": "[PM-17666] Move Encstring to KM ownership (#15457)"
+        },
+        {
+          "date": "2025-07-21T13:52:38Z",
+          "pr": 14538,
+          "sha": "8b5e6adc376d21552137e31ca63b8939f343f447",
+          "title": "[PM-21378] Switch encrypt service to use SDK functions (#14538)"
+        },
+        {
+          "date": "2025-07-30T13:50:00Z",
+          "pr": 15153,
+          "sha": "5dae5267d9c98554539e563ddaf801926fd9c327",
+          "title": "[PM-22623] Remove most TS encryption code, remove service workers (#15153)"
+        },
+        {
+          "date": "2025-10-10T21:04:47Z",
+          "pr": 14942,
+          "sha": "cc8bd71775c8131e4529e90e78c61b25c77ecba5",
+          "title": "[PM-21033/PM-22863] User Encryption v2 (#14942)"
+        },
+        {
+          "date": "2025-10-20T11:15:11Z",
+          "pr": 16865,
+          "sha": "433a2801f6ba7a527ce6f0afea4d7c8cac59fbc9",
+          "title": "[PM-25174] Disable type 0 decryption based on feature flag (#16865)"
+        },
+        {
+          "date": "2025-12-02T13:39:32Z",
+          "pr": 17771,
+          "sha": "049acf1e12f4841d867d11c959a3224748a1f87a",
+          "title": "Update sdk to build 403 and move webcrypto rsa to use sdk rsa extract public key (#17771)"
+        },
+        {
+          "date": "2025-12-03T12:11:03Z",
+          "pr": 17742,
+          "sha": "a6100d8a0ebe67fbb453049627879fa54b7c45db",
+          "title": "Replace webcrypto RSA with PureCrypto RSA (#17742)"
+        },
+        {
+          "date": "2026-01-23T17:09:59Z",
+          "pr": 18413,
+          "sha": "bc8c925cd000a6d4665455ff4c171be2aff5a54a",
+          "title": "[PM-27486] Remove feature flag PM25174_DisableType0Decryption (#18413)"
+        },
+        {
+          "date": "2026-02-20T18:22:05Z",
+          "pr": 17943,
+          "sha": "3a56f2e832ac373a038408466690449a77b3ea58",
+          "title": "[PM-30785|BEEEP] Remove deprecated master key login with device flow (#17943)"
+        },
+        {
+          "date": "2026-03-07T12:15:04Z",
+          "pr": 19222,
+          "sha": "8186eb6b9a13c05c94957199c38e909b215fcbb0",
+          "title": "[PM-31406] Migrate cryptofunction service and remove old crypto (#19222)"
+        },
+        {
+          "date": "2026-03-19T22:13:06Z",
+          "pr": 19461,
+          "sha": "5b4e8c10f0ddeb5fa7424867ed265ad20eedcc84",
+          "title": "[PM-33345] Bump typescript to 5.9 (#19461)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=libs%2Fcommon%2Fsrc%2Fkey-management%2Fcrypto%2Fservices%2F&since=2025-04-10T09%3A09%3A36Z&until=2026-04-10T09%3A09%3A35Z&per_page=100",
+      "truncated": false
+    },
+    "before": {
+      "commit_count": 100,
+      "pr_linked_count": 100,
+      "records": [
+        {
+          "date": "2024-05-03T18:30:45Z",
+          "pr": 9029,
+          "sha": "b46766affdc7ee71b34443b4bccb4b3911db31e1",
+          "title": "[PM-7907] No more optional `privateKey` (#9029)"
+        },
+        {
+          "date": "2024-05-04T06:04:56Z",
+          "pr": 9033,
+          "sha": "869fa29da6f586826437816d53164f160893447d",
+          "title": "Encourage The Use of UserId in CryptoService (#9033)"
+        },
+        {
+          "date": "2024-05-07T17:25:49Z",
+          "pr": 9024,
+          "sha": "de0852431adf467e828da17b0d8038804c1c30dc",
+          "title": "[PM-7917] Remove session sync (#9024)"
+        },
+        {
+          "date": "2024-05-08T18:34:47Z",
+          "pr": 8244,
+          "sha": "a42de41587a62749d699af04ea8d2102234d690b",
+          "title": "[PM-5363] PinService State Providers (#8244)"
+        },
+        {
+          "date": "2024-05-13T19:56:04Z",
+          "pr": 8604,
+          "sha": "473c5311fa166f07d30abd127106e4d7f289352a",
+          "title": "Auth/PM-5501 - VaultTimeoutSettingsService State Provider Migration (#8604)"
+        },
+        {
+          "date": "2024-05-14T14:08:41Z",
+          "pr": 8044,
+          "sha": "7f91e84456e4a74a1bd15666c931bfffd05eaf1a",
+          "title": "[PM-6400] Move core FIDO2 code from vault to platform ownership (#8044)"
+        },
+        {
+          "date": "2024-05-15T20:54:05Z",
+          "pr": 9006,
+          "sha": "385664c9771390f193dff91df7d815cb84ea679e",
+          "title": "Add devFlag for the config service retrieval interval when developing (#9006)"
+        },
+        {
+          "date": "2024-05-15T21:40:16Z",
+          "pr": 9191,
+          "sha": "4ccf920da8d373bcfa6c745fda8d27043ce421bd",
+          "title": "[PM-8155] Keep crypto derive dependencies in lockstep (#9191)"
+        },
+        {
+          "date": "2024-05-16T19:48:03Z",
+          "pr": 9221,
+          "sha": "4afe5de87b00aa9824682034dc710ed5137ca642",
+          "title": "Revert \"[PM-7810] Handle Multithread Decryption Through Offscreen API (#8978)\" (#9221)"
+        },
+        {
+          "date": "2024-05-16T22:21:00Z",
+          "pr": 9133,
+          "sha": "ee690cd1efbe758d7dd60bb6695f2fa5e16b8b6c",
+          "title": "Use account service for getting account profile data. (#9133)"
+        },
+        {
+          "date": "2024-05-20T20:19:58Z",
+          "pr": 9275,
+          "sha": "f2d24e036b413395c3be98266f818ad6d315e5ee",
+          "title": "Ps/pm-8197/clean-up-desktop-biometric-ipc (#9275)"
+        },
+        {
+          "date": "2024-05-29T16:12:58Z",
+          "pr": 9292,
+          "sha": "a6df92341679421459720927046d0cf8cdf0257a",
+          "title": "[PM-8292] Fixup `ForegroundSyncService` (#9292)"
+        },
+        {
+          "date": "2024-05-30T16:03:17Z",
+          "pr": 9014,
+          "sha": "e29025df28767dd420033b0c994613fb35b55529",
+          "title": "[PM-5951] Migrate org invite state (#9014)"
+        },
+        {
+          "date": "2024-05-31T16:10:23Z",
+          "pr": 9364,
+          "sha": "0e7ed8dd7f8030fd048e54bb9639647984595c4f",
+          "title": "[PM-8210] Discourage Active User in `CryptoService` (#9364)"
+        },
+        {
+          "date": "2024-06-04T22:42:04Z",
+          "pr": 9501,
+          "sha": "3154d219259e080be25c92217cc84d413d9af82c",
+          "title": "[PM-8285] Resolve app id race (#9501)"
+        },
+        {
+          "date": "2024-06-06T18:26:17Z",
+          "pr": 9310,
+          "sha": "ba3d21094e493d85a40dcdbfd6bd5305bd5274b1",
+          "title": "[PM-7541] Move Last Desktop Settings (#9310)"
+        },
+        {
+          "date": "2024-06-20T15:36:24Z",
+          "pr": 9498,
+          "sha": "b3065546756c9671252782affa207e4c25d717e4",
+          "title": "[PM-6789] finish key rotation distribution and fix legacy user (#9498)"
+        },
+        {
+          "date": "2024-06-25T09:06:04Z",
+          "pr": 9236,
+          "sha": "dce5c0f184ab64df4715cff1c16b8352b6afa617",
+          "title": "[PM-6413] Add http loophole for localhost (#9236)"
+        },
+        {
+          "date": "2024-06-25T12:21:02Z",
+          "pr": 9567,
+          "sha": "0add2949c0694de9eacd381319540209e7b1f121",
+          "title": "[PM-8772] move ranges to static properties on class (#9567)"
+        },
+        {
+          "date": "2024-06-29T22:48:56Z",
+          "pr": 9756,
+          "sha": "c23ee3b98aefac9d1cf593bfa75bb1b1c18d41c5",
+          "title": "PM-4661: Add passkey.username as item.username (#9756)"
+        },
+        {
+          "date": "2024-07-09T00:38:10Z",
+          "pr": 9858,
+          "sha": "053e255a68bc7b9dd550161c7cc7af51e91c3b03",
+          "title": "Delete Unused Bits of StateService (#9858)"
+        },
+        {
+          "date": "2024-07-15T14:41:10Z",
+          "pr": 10031,
+          "sha": "5fcf4bbd10b4d356f24f40d7c4aca450b10f5aab",
+          "title": "[PM-8979] Check that user is authed before getting user config (#10031)"
+        },
+        {
+          "date": "2024-07-15T15:32:30Z",
+          "pr": 8566,
+          "sha": "974162b1a4a6a0013a95ed1046d0157b3736fe3d",
+          "title": "[PM-6426] Create TaskSchedulerService and update long lived timeouts in the extension to leverage the new service (#8566)"
+        },
+        {
+          "date": "2024-07-16T17:39:41Z",
+          "pr": 9804,
+          "sha": "dbc9b9c90be15c63875be180a4ea3ace88c4a0e6",
+          "title": "PM-4877: Only allow replacing passkeys for the same userhandle (#9804)"
+        },
+        {
+          "date": "2024-07-18T12:56:22Z",
+          "pr": 6465,
+          "sha": "84b719d797291c75db959f29f587a0e42479caf8",
+          "title": "[PM-4154] Introduce Bulk Encrypt Service for Faster Unlock Times (#6465)"
+        },
+        {
+          "date": "2024-07-22T13:40:19Z",
+          "pr": 9943,
+          "sha": "457c0795bec0d9ebcd3ad62e3ba37db221dec928",
+          "title": "Remove old biometrics masterkey logic (#9943)"
+        },
+        {
+          "date": "2024-07-25T15:11:55Z",
+          "pr": 10228,
+          "sha": "b9eb4003a1b7cc13869de66e054209f0ea09a4f5",
+          "title": "[deps] Autofill: Update prettier to v3.3.3 (#10228)"
+        },
+        {
+          "date": "2024-07-29T13:24:22Z",
+          "pr": 10226,
+          "sha": "f1c177b3cf644ebb4b45cae7b7950090a1601299",
+          "title": "[PM-9980] Turn off cache for certain keys (#10226)"
+        },
+        {
+          "date": "2024-07-29T14:19:21Z",
+          "pr": 10316,
+          "sha": "271d65c9537d68fbb0f8a00c9d07b30d562b8f85",
+          "title": "Turn On Debug Info For 2 Keys (#10316)"
+        },
+        {
+          "date": "2024-08-05T15:39:08Z",
+          "pr": 10298,
+          "sha": "2819ac597f6f7ee25085eea33b0089ad2f1d1330",
+          "title": "[BEEEP: PM-10190] Use strict TS checks in CLI service container (#10298)"
+        },
+        {
+          "date": "2024-08-06T19:01:42Z",
+          "pr": 10272,
+          "sha": "dcb21c268502016f0efd729a0dbe3a10649e8d13",
+          "title": "Move `lastSync` State (#10272)"
+        },
+        {
+          "date": "2024-08-06T19:35:04Z",
+          "pr": 10326,
+          "sha": "7cd6fcf265d2a6ea16e1a4ec8f32e9e3d1acbddd",
+          "title": "[PM-2192] Improve userkey verification on biometric unlock (#10326)"
+        },
+        {
+          "date": "2024-08-06T22:23:38Z",
+          "pr": 10404,
+          "sha": "e4ed4a38583be41ccecd8a24abad79ccb6926056",
+          "title": "Add consistent and contextual logging around decryption failure (#10404)"
+        },
+        {
+          "date": "2024-08-07T21:25:19Z",
+          "pr": 10127,
+          "sha": "dfb69f81309d532d72faa1fac490380f0c7c2f7d",
+          "title": "[PM-6471] Implement Inline Menu Autofill for Passkeys (#10127)"
+        },
+        {
+          "date": "2024-08-08T13:50:59Z",
+          "pr": 10436,
+          "sha": "48cb6fbec41e8bf84548bbe4f334eacbdbde0fc6",
+          "title": "[PM-10706] Moving webauthn-specific files from Vault ownership to autofill and fixing issue with excluded domains showing passkeys within inline menu (#10436)"
+        },
+        {
+          "date": "2024-08-13T12:07:36Z",
+          "pr": 9675,
+          "sha": "7b508b1ad79547244c2786af5d97173d738dd7ab",
+          "title": "[PM-8933] Require userId on setUserKey (#9675)"
+        },
+        {
+          "date": "2024-08-14T18:24:29Z",
+          "pr": 10481,
+          "sha": "7571c766e0ac45f238d6e6b60175e68f964c7005",
+          "title": "[PM-10813] add eslint rule to restrict imports from `apps` in `libs` (#10481)"
+        },
+        {
+          "date": "2024-08-20T16:00:48Z",
+          "pr": 10509,
+          "sha": "dedd7f1b5cc66038abb120b4fae83666c487ad04",
+          "title": "[PM-10607] Require userId for getKeyForCipherKeyDecryption  (#10509)"
+        },
+        {
+          "date": "2024-08-22T17:32:31Z",
+          "pr": 10635,
+          "sha": "c782c92f6ce72497f0d19862418333e8d5d57bfb",
+          "title": "[PM-11170] Inline menu should not show incomplete login item along passkey (#10635)"
+        },
+        {
+          "date": "2024-08-26T18:23:33Z",
+          "pr": 10452,
+          "sha": "c18a7cb3e82f910426c1185401a885bfa2c0f4d8",
+          "title": "[PM-8748] Ensure Reasonable ConfigService Emission (#10452)"
+        },
+        {
+          "date": "2024-08-27T00:44:08Z",
+          "pr": 10627,
+          "sha": "9459cda304c906188879c24625446fa10e436711",
+          "title": "Pm-10953/add-user-context-to-sync-replaces (#10627)"
+        },
+        {
+          "date": "2024-08-27T14:01:04Z",
+          "pr": 10744,
+          "sha": "e926aa4bc93d02725b56971323ea6aaae0f2030a",
+          "title": "fixed user state type (#10744)"
+        },
+        {
+          "date": "2024-08-27T17:11:42Z",
+          "pr": 10550,
+          "sha": "11eba8d77902c8b115da541cc09a0472cf74aca3",
+          "title": "Add Null Check On `diskAccount` (#10550)"
+        },
+        {
+          "date": "2024-08-29T13:42:42Z",
+          "pr": 10655,
+          "sha": "9f7350d08535dfc3d8b62fd4c60ebfb4835ccea8",
+          "title": "[PM-6727] Implement new `setUserKeys` function in `CryptoService` (#10655)"
+        },
+        {
+          "date": "2024-09-04T15:16:57Z",
+          "pr": 10882,
+          "sha": "192fd885d5a5cf0f939e47f557a2d53d0cc52d3e",
+          "title": "Return null in derivePublicKey if privateKey is null (#10882)"
+        },
+        {
+          "date": "2024-09-05T18:44:19Z",
+          "pr": 10835,
+          "sha": "3bbc2cc691536a82bbf92f0a9c509c9bbdfdc0fc",
+          "title": "Change AppIdService to Use Storage Directly (#10835)"
+        },
+        {
+          "date": "2024-09-05T19:36:43Z",
+          "pr": 10914,
+          "sha": "ef3b3c1cb56cfc483e2116ee54ece414c7605e57",
+          "title": "Remove Comments (#10914)"
+        },
+        {
+          "date": "2024-09-06T13:48:27Z",
+          "pr": 10905,
+          "sha": "92e71d92529410c22654579838ff0362b742ef36",
+          "title": "[PM-11661]Add New Reseed - Fill Buffer Behind Feature Flag (#10905)"
+        },
+        {
+          "date": "2024-09-09T12:44:08Z",
+          "pr": 10892,
+          "sha": "2827d338ee459baac33526f4aa120ffec8ac6dfe",
+          "title": "[PM-11419] Fix issues encountered with inline menu passkeys (#10892)"
+        },
+        {
+          "date": "2024-09-09T14:03:30Z",
+          "pr": 10917,
+          "sha": "e9546217615898c466f9bf0bea96cb33d2058721",
+          "title": "Auth/PM-10684 - Fix CLI asking for MP even if session key provided as command option (#10917)"
+        },
+        {
+          "date": "2024-09-18T12:11:22Z",
+          "pr": 8787,
+          "sha": "502d8ed729502a73ebf93ad0937100df6577f417",
+          "title": "fix wrong buffer conversion for Uint8Array (#8787)"
+        },
+        {
+          "date": "2024-09-19T12:45:45Z",
+          "pr": 10817,
+          "sha": "354079725ffdd2c0379b78a26b801ff40c4a0121",
+          "title": "PM-7673: Reduce syncs when signing in with passkeys (#10817)"
+        },
+        {
+          "date": "2024-09-24T09:28:33Z",
+          "pr": 10854,
+          "sha": "d92b2cbea27feb62fd23d0bceed96fa588b6b519",
+          "title": "[PM-11477] Remove deprecated cryptoservice functions (#10854)"
+        },
+        {
+          "date": "2024-09-30T16:14:32Z",
+          "pr": 10818,
+          "sha": "19f547e638742646a8faf05729139822a1acc73d",
+          "title": "[PM-8836] Move ownership of biometrics to key-management (#10818)"
+        },
+        {
+          "date": "2024-10-01T15:47:41Z",
+          "pr": 10903,
+          "sha": "dafe795854a8beb402bcf9bd109d1144871f1d3f",
+          "title": "Move asymmetric crypto functions out of crypto service (#10903)"
+        },
+        {
+          "date": "2024-10-04T18:57:40Z",
+          "pr": 11397,
+          "sha": "87cb45c5202599a6daf5c6dc75d7a5cf3863f454",
+          "title": "Auth/PM-13114 - WebEnvService Refactor + Unit Tests to support QA Env Selector (#11397)"
+        },
+        {
+          "date": "2024-10-07T11:20:50Z",
+          "pr": 10974,
+          "sha": "c88c5bf1ef2a983f0a8c5589c2d5d83fec85b67d",
+          "title": "[PM-11766] Introduce SDK client (#10974)"
+        },
+        {
+          "date": "2024-10-07T11:56:02Z",
+          "pr": 11378,
+          "sha": "9ea9c3a932433ac44997df6da9f26855ae79546d",
+          "title": "[PM-11290] Enable SDK (#11378)"
+        },
+        {
+          "date": "2024-10-18T14:15:10Z",
+          "pr": 11472,
+          "sha": "c787ecd22c250371f357433eab53f4a953f2f3c2",
+          "title": "[PM-11764] Implement account switching and sdk initialization (#11472)"
+        },
+        {
+          "date": "2024-10-23T17:05:24Z",
+          "pr": 10853,
+          "sha": "74dabb97bfd6902972b5af0d8156845c463d203a",
+          "title": "Move process reload ownership to key-management (#10853)"
+        },
+        {
+          "date": "2024-10-24T13:43:49Z",
+          "pr": 11683,
+          "sha": "b3b311e164bf677d3b589cb0a72fe6968044610b",
+          "title": "Add logging for decryption failures (#11683)"
+        },
+        {
+          "date": "2024-10-24T17:41:30Z",
+          "pr": 11358,
+          "sha": "b486fcc689bb6eedf61a1949887a66568f9b1b50",
+          "title": "[Pm-13097] Rename cryptoservice to keyservice and move it to km ownership (#11358)"
+        },
+        {
+          "date": "2024-10-25T13:22:30Z",
+          "pr": 11684,
+          "sha": "122c3c780999b63c76515c35c4dad17666d145d0",
+          "title": "Add context to logs for decryption failures (#11684)"
+        },
+        {
+          "date": "2024-10-28T13:52:45Z",
+          "pr": 11748,
+          "sha": "65074b0d12d261d99c1c7f420a92069a20a2e144",
+          "title": "Initialize SDK even when orgKeys is null (#11748)"
+        },
+        {
+          "date": "2024-10-30T21:54:39Z",
+          "pr": 11779,
+          "sha": "4de7cb8012a0716d0c834d279a04fc4fd62c5112",
+          "title": "BEEEP - Auth AccountService Improvements (#11779)"
+        },
+        {
+          "date": "2024-10-31T09:07:55Z",
+          "pr": 11771,
+          "sha": "5e157c5bcac637dfd3d4908acbef2615e19608bd",
+          "title": "[PM-14180] Provide more debugging details in wasm-debug (#11771)"
+        },
+        {
+          "date": "2024-11-06T22:57:07Z",
+          "pr": 11811,
+          "sha": "f5e6fc8ed5a4756d7866ae05118ff795ec68a374",
+          "title": "[PM-5237] Clients, Self Hosted: Login - Hide \"Create account\" when registration disabled (#11811)"
+        },
+        {
+          "date": "2024-11-11T19:54:36Z",
+          "pr": 11784,
+          "sha": "6d89c0f157e5c8d9a54dc3db7287c82aae45d282",
+          "title": "fido2-utils: fix BufferSource conversions (#11784)"
+        },
+        {
+          "date": "2024-11-19T12:59:59Z",
+          "pr": 11601,
+          "sha": "33f7643e15b229c9e85a77cfe11165863d790baf",
+          "title": "[PM-12989] Create process for qa to build client with particular sdk version (#11601)"
+        },
+        {
+          "date": "2024-11-21T12:45:28Z",
+          "pr": 11877,
+          "sha": "38c4eeb27db8006715c8c54d393c33222f28c087",
+          "title": "[PM-14542] Move kdf to km ownership (#11877)"
+        },
+        {
+          "date": "2024-11-21T14:54:19Z",
+          "pr": 11993,
+          "sha": "acf5b1e9e6860cb1a94eb7d1b46c9ca10f7af3b6",
+          "title": "[PM-7382] Add support for non-UUID credential (#11993)"
+        },
+        {
+          "date": "2024-11-27T10:04:30Z",
+          "pr": 11652,
+          "sha": "35764b53dce7a2ab389479b5edca23cc7dac96ec",
+          "title": "[PM-13923] [CLI] fix: resolve CLI file upload issue in Node.js 18+ (#11652)"
+        },
+        {
+          "date": "2024-11-27T11:00:46Z",
+          "pr": 12164,
+          "sha": "f71d42e051c536d7edafc205e1027a10d1b0148b",
+          "title": "fix: lint after PM-13923 (#12164)"
+        },
+        {
+          "date": "2024-11-28T10:58:09Z",
+          "pr": 12158,
+          "sha": "59686346d4f4e4aae1df14a72529247bab68e5e0",
+          "title": "[PM-15444] Increase WASM timeout to 10s (#12158)"
+        },
+        {
+          "date": "2024-12-06T15:31:30Z",
+          "pr": 10181,
+          "sha": "f16bfa4cd2136d55d1cfd4d4f4e63b8d364bea2a",
+          "title": "[PM-9035] desktop build logic to provide credentials to os on sync (#10181)"
+        },
+        {
+          "date": "2024-12-09T19:58:50Z",
+          "pr": 12235,
+          "sha": "9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+          "title": "Typescript-strict-plugin (#12235)"
+        },
+        {
+          "date": "2024-12-10T12:17:00Z",
+          "pr": 7342,
+          "sha": "161a358c492032745c42c702e08d0e6929f10892",
+          "title": "[PM-5214] [CLI] Add proxy support for file uploads (#7342)"
+        },
+        {
+          "date": "2024-12-19T08:00:21Z",
+          "pr": 10768,
+          "sha": "51f6594d4b680f250207e8f3dcac9fcc7bb26e16",
+          "title": "[PM-9473] Add messaging for macOS passkey extension and desktop (#10768)"
+        },
+        {
+          "date": "2024-12-20T12:54:52Z",
+          "pr": 12476,
+          "sha": "8caadacfbc79ac34fd14242c216d1a723c261890",
+          "title": "[PM-16217] Remove wasm timeout (#12476)"
+        },
+        {
+          "date": "2024-12-20T14:20:23Z",
+          "pr": 12501,
+          "sha": "1d335bb16400ce8b452593d519ccbae2788bf46b",
+          "title": "[PM-16262] Make `getEnvironment` observable and use it in SdkService (#12501)"
+        },
+        {
+          "date": "2025-01-08T13:29:26Z",
+          "pr": 12743,
+          "sha": "3949aae8e396f999c21813ae6b0095b52610b27b",
+          "title": "[PM-16838] Fix bad imports for shared and platform code (#12743)"
+        },
+        {
+          "date": "2025-01-09T19:23:55Z",
+          "pr": 12749,
+          "sha": "8cabb36c99a7e51af3225f45b4f8a58b042bad68",
+          "title": "[PM-16699] Add decrypt trace for decrypt failures (#12749)"
+        },
+        {
+          "date": "2025-01-09T23:58:22Z",
+          "pr": 12737,
+          "sha": "6ef3e9a07673ab9d332aa880cb1f212688e1c446",
+          "title": "[PM-16831] TS Strict crypto function service (#12737)"
+        },
+        {
+          "date": "2025-01-10T15:37:34Z",
+          "pr": 12744,
+          "sha": "db84ccf935a1069234846b8ba92c72e8b293ac57",
+          "title": "[PM-16838] Forbid imports containing /src/ (#12744)"
+        },
+        {
+          "date": "2025-01-23T19:34:22Z",
+          "pr": 12764,
+          "sha": "f9f30f8ec467dfbf48d765c59b46fc58305cad15",
+          "title": "[PM-17479] Load-sdk-once (#12764)"
+        },
+        {
+          "date": "2025-01-29T13:49:01Z",
+          "pr": 11346,
+          "sha": "b07d6c29a45b8bea60f7e9e11993714a7394df86",
+          "title": "Add Web Push Support (#11346)"
+        },
+        {
+          "date": "2025-02-03T14:09:25Z",
+          "pr": 12475,
+          "sha": "d7c46bb3a5859cdc08179a26747f8eb51519b4a3",
+          "title": "[PM-16231] Improved SDK referencing (#12475)"
+        },
+        {
+          "date": "2025-02-05T16:39:11Z",
+          "pr": 13220,
+          "sha": "2f8a7a95bdec0cd38296d36f16779ca7b9280667",
+          "title": "[PM-15994] Move encrypt service to km ownership (#13220)"
+        },
+        {
+          "date": "2025-02-10T17:50:56Z",
+          "pr": 12807,
+          "sha": "2b5c7861e2820c4733204337ec5e5b8ba69eb90f",
+          "title": "[PM-16926] Fix KM bad imports (#12807)"
+        },
+        {
+          "date": "2025-02-12T13:53:31Z",
+          "pr": 12814,
+          "sha": "a2945203f49933ead622f8e96ad8335ee8217f32",
+          "title": "[PM-12047] Remove usage of ActiveUserState from cipher.service (#12814)"
+        },
+        {
+          "date": "2025-02-20T17:45:37Z",
+          "pr": 13121,
+          "sha": "3924bc9c84f768e03f24f74a69e0ce6f90410d20",
+          "title": "[PM-14445] TS strict for Key Management, Keys and Lock component (#13121)"
+        },
+        {
+          "date": "2025-02-24T10:29:47Z",
+          "pr": 13309,
+          "sha": "a9862d2a19f0feb77c87924ee2416a60af3ca04b",
+          "title": "[PM-17408] Create new method on sdk service to allow explicit addition of a new client instance (#13309)"
+        },
+        {
+          "date": "2025-02-24T13:02:26Z",
+          "pr": 13537,
+          "sha": "f8f2ec6722cd2345bc6acae8dc1fb1d421065551",
+          "title": "fix: type error (#13537)"
+        },
+        {
+          "date": "2025-02-25T22:58:26Z",
+          "pr": 13362,
+          "sha": "44d50a70c25249a82b6db40341b9f3a4f6965135",
+          "title": "Auth/PM-5712 - Extension & Desktop Account Switcher - Fix incorrect env showing when adding new accounts (#13362)"
+        },
+        {
+          "date": "2025-02-26T08:08:42Z",
+          "pr": 13353,
+          "sha": "ce5a5e36498eddcf3e10222278a7f8b372a1fed2",
+          "title": "Improve SDK direct function usage (#13353)"
+        },
+        {
+          "date": "2025-03-03T15:51:08Z",
+          "pr": 13581,
+          "sha": "a7a5a2771eb0d39d8f5d32ca7dad4be6443c6dfd",
+          "title": "Remove runOnlyPendingTimers (#13581)"
+        },
+        {
+          "date": "2025-03-03T17:09:35Z",
+          "pr": 13619,
+          "sha": "92f027af5e88a900473ef82282a8a4c6ddac273a",
+          "title": "fix(LoginComp + LoginStrategies): [Auth/PM-18654] Refreshed UI - Desktop TDE JIT provisioned user creation errors with missing org SSO id (#13619)"
+        },
+        {
+          "date": "2025-03-24T19:17:18Z",
+          "pr": 13536,
+          "sha": "8e62e0589d43795b9f48ced58d95354bb0328253",
+          "title": "PM-11230: Add hybrid as passkey transport (#13536)"
+        },
+        {
+          "date": "2025-03-31T14:58:02Z",
+          "pr": 13266,
+          "sha": "22039d038d7d88c92247c856f9358fb8e11c018b",
+          "title": "[PM-3475] Remove deprecated keys (#13266)"
+        },
+        {
+          "date": "2025-04-01T19:14:00Z",
+          "pr": 13894,
+          "sha": "17f661e3d1e7a507f790f2ce7eb29f2be5d62fcd",
+          "title": "[PM-19287] Feature flag for encrypt service (#13894)"
+        }
+      ],
+      "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=libs%2Fcommon%2Fsrc%2Fplatform%2Fservices%2F&since=2024-04-10T09%3A09%3A35Z&until=2025-04-10T09%3A09%3A34Z&per_page=100",
+      "truncated": false
+    }
+  },
+  "id": "BW13285",
+  "merge_sha": "5a1b0744f0a357844efdac24879ede9bdb9f4f83",
+  "merged_at": "2025-04-10T09:09:35Z",
+  "migration_patch_sha256": "9c7af002108d02612166eb460cb5ec9500e6c292545b627eafa585dea27a185b",
+  "migration_pr": 13285,
+  "new_owner": [
+    "@bitwarden/team-key-management-dev"
+  ],
+  "new_prefix": "libs/common/src/key-management/crypto/services/",
+  "old_owner": [
+    "@bitwarden/team-platform-dev"
+  ],
+  "old_prefix": "libs/common/src/platform/services/",
+  "post_days": 365,
+  "pre_days": 365,
+  "rename_pairs": [
+    {
+      "new": "libs/common/src/key-management/crypto/services/web-crypto-function.service.spec.ts",
+      "old": "libs/common/src/platform/services/web-crypto-function.service.spec.ts"
+    },
+    {
+      "new": "libs/common/src/key-management/crypto/services/web-crypto-function.service.ts",
+      "old": "libs/common/src/platform/services/web-crypto-function.service.ts"
+    }
+  ],
+  "repo": "bitwarden/clients",
+  "valid": true
+}

@@ -1,0 +1,37 @@
+{
+  "fetched_utc": "2026-11-14T17:20:29.197501+00:00",
+  "merged_at": "2025-04-11T21:38:53Z",
+  "opened_at": "2025-04-10T13:14:16-04:00",
+  "pr": 103819,
+  "raw_html_sha256": "79c94f78f76fdcd1aecc16a4e99c3a1d0a17b2a1ffd5d36782a1e131a07e223a",
+  "repo": "grafana/grafana",
+  "review_count_visible": 5,
+  "reviews": [
+    {
+      "login": "JacobsonMT",
+      "state": "COMMENTED",
+      "submitted_at": "2025-04-11T18:39:22Z"
+    },
+    {
+      "login": "JacobsonMT",
+      "state": "COMMENTED",
+      "submitted_at": "2025-04-11T18:42:12Z"
+    },
+    {
+      "login": "JacobsonMT",
+      "state": "COMMENTED",
+      "submitted_at": "2025-04-11T19:01:16Z"
+    },
+    {
+      "login": "JacobsonMT",
+      "state": "COMMENTED",
+      "submitted_at": "2025-04-11T19:15:29Z"
+    },
+    {
+      "login": "JacobsonMT",
+      "state": "APPROVED",
+      "submitted_at": "2025-04-11T21:08:27Z"
+    }
+  ],
+  "source_url": "https://github.com/grafana/grafana/pull/103819"
+}

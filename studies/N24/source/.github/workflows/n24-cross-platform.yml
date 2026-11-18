@@ -1,0 +1,188 @@
+name: N24 cross-platform lockfile restoration benchmark
+
+on:
+  push:
+    branches: [n24-fse-benchmark]
+    paths:
+      - .github/workflows/n24-cross-platform.yml
+      - n24_submission_experiments/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  produce-linux:
+    name: Produce Linux lock and test on Linux
+    runs-on: ubuntu-22.04
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install exact npm implementations, with lifecycle scripts disabled
+        shell: bash
+        run: |
+          npm install --prefix n24_submission_experiments/tools/npm10 --no-save --no-package-lock --ignore-scripts --no-audit --no-fund npm@10.9.2
+          npm install --prefix n24_submission_experiments/tools/npm11 --no-save --no-package-lock --ignore-scripts --no-audit --no-fund npm@11.4.2
+          npm install --prefix n24_submission_experiments/tools/npm12 --no-save --no-package-lock --ignore-scripts --no-audit --no-fund npm@12.2.3
+      - name: Run conservative policy contract tests
+        shell: bash
+        run: python -m unittest discover -s n24_submission_experiments/tests -v
+      - name: Generate npm10 defects, evaluate baselines, and execute native bindings
+        shell: bash
+        run: |
+          python n24_submission_experiments/lock_lab.py \
+            --families rollup,esbuild,biome,swc,lightningcss \
+            --output n24_submission_experiments/results/linux
+      - name: Local metric calculation
+        if: always()
+        shell: bash
+        run: |
+          if test -f n24_submission_experiments/results/linux/runs.json; then
+            python n24_submission_experiments/analyze.py n24_submission_experiments/results/linux --output n24_submission_experiments/results/linux/summary.json
+          fi
+      - name: Replay three authentic committed project lockfiles (post-hoc positive sample)
+        if: always()
+        shell: bash
+        run: |
+          python n24_submission_experiments/historical_replay.py \
+            --projects cloudreve,clasp,ollama \
+            --output n24_submission_experiments/results/history_linux
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: n24-host-linux
+          path: |
+            n24_submission_experiments/results/linux/runs.json
+            n24_submission_experiments/results/linux/summary.json
+            n24_submission_experiments/results/linux/evidence_locks/**/*.json
+          if-no-files-found: warn
+          retention-days: 90
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: n24-history-linux
+          path: |
+            n24_submission_experiments/results/history_linux/runs.json
+            n24_submission_experiments/results/history_linux/evidence_locks/**/*.json
+          if-no-files-found: warn
+          retention-days: 90
+
+  other-hosts:
+    name: Import Linux lock and execute / ${{ matrix.label }}
+    needs: [produce-linux]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 55
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {os: windows-2022, label: windows}
+          - {os: macos-15, label: macos}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/download-artifact@v4
+        with:
+          name: n24-host-linux
+          path: n24_linux_source
+      - name: Install exact npm implementations, with lifecycle scripts disabled
+        shell: bash
+        run: |
+          npm install --prefix n24_submission_experiments/tools/npm10 --no-save --no-package-lock --ignore-scripts --no-audit --no-fund npm@10.9.2
+          npm install --prefix n24_submission_experiments/tools/npm11 --no-save --no-package-lock --ignore-scripts --no-audit --no-fund npm@11.4.2
+          npm install --prefix n24_submission_experiments/tools/npm12 --no-save --no-package-lock --ignore-scripts --no-audit --no-fund npm@12.2.3
+      - name: Run conservative policy contract tests
+        shell: bash
+        run: python -m unittest discover -s n24_submission_experiments/tests -v
+      - name: Install Linux-broken locks and execute native binary on actual target host
+        shell: bash
+        run: |
+          python n24_submission_experiments/lock_lab.py \
+            --source-linux-locks n24_linux_source/evidence_locks \
+            --families rollup,esbuild,biome,swc,lightningcss \
+            --output n24_submission_experiments/results/${{ matrix.label }}
+      - name: Local metric calculation
+        if: always()
+        shell: bash
+        run: |
+          if test -f n24_submission_experiments/results/${{ matrix.label }}/runs.json; then
+            python n24_submission_experiments/analyze.py n24_submission_experiments/results/${{ matrix.label }} --output n24_submission_experiments/results/${{ matrix.label }}/summary.json
+          fi
+      - name: Replay same three historic committed project lockfiles on actual host
+        if: always()
+        shell: bash
+        run: |
+          python n24_submission_experiments/historical_replay.py \
+            --projects cloudreve,clasp,ollama \
+            --output n24_submission_experiments/results/history_${{ matrix.label }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: n24-host-${{ matrix.label }}
+          path: |
+            n24_submission_experiments/results/${{ matrix.label }}/runs.json
+            n24_submission_experiments/results/${{ matrix.label }}/summary.json
+            n24_submission_experiments/results/${{ matrix.label }}/evidence_locks/**/*.json
+          if-no-files-found: warn
+          retention-days: 90
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: n24-history-${{ matrix.label }}
+          path: |
+            n24_submission_experiments/results/history_${{ matrix.label }}/runs.json
+            n24_submission_experiments/results/history_${{ matrix.label }}/evidence_locks/**/*.json
+          if-no-files-found: warn
+          retention-days: 90
+
+  aggregate:
+    name: Paired three-OS results
+    runs-on: ubuntu-22.04
+    if: always()
+    needs: [produce-linux, other-hosts]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: n24-host-*
+          path: n24_artifacts
+      - name: Aggregate from exact stored observations
+        shell: bash
+        run: python n24_submission_experiments/analyze.py n24_artifacts/* --output n24_cross_platform_summary.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: n24-aggregated-summary
+          path: n24_cross_platform_summary.json
+          retention-days: 90
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: n24-history-*
+          path: n24_history_artifacts
+      - name: Aggregate authentic-project replay results
+        shell: bash
+        run: python n24_submission_experiments/analyze_history.py n24_history_artifacts/* --output n24_historical_replay_summary.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: n24-history-aggregated-summary
+          path: n24_historical_replay_summary.json
+          retention-days: 90

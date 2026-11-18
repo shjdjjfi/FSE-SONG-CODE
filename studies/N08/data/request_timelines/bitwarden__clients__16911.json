@@ -1,0 +1,50 @@
+{
+  "pr": 16911,
+  "pr_author": "kdenney",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-10-17T21:22:04Z",
+      "requested_people": [
+        "danielleflinn",
+        "kdenney"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-29T21:20:18Z",
+      "requested_people": [
+        "banrion",
+        "djsmith85",
+        "ike-kottlowski",
+        "jimmyvo16",
+        "kdenney",
+        "nick-livefront"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-30T13:57:56Z",
+      "requested_people": [
+        "coroiu",
+        "cyprain-okeke",
+        "kdenney"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-10-30T15:19:06Z",
+      "requested_people": [
+        "coroiu",
+        "kdenney"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "d88d317aee3e74475ad5841cdefae2accf215a7df8ad9db6fa6498fe0ab7c6c3",
+  "url": "https://github.com/bitwarden/clients/pull/16911"
+}

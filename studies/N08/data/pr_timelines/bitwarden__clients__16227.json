@@ -1,0 +1,67 @@
+{
+  "fetched_utc": "2026-11-14T17:13:06.667203+00:00",
+  "merged_at": "2025-09-09T20:39:25Z",
+  "opened_at": "2025-08-29T16:51:13-07:00",
+  "pr": 16227,
+  "raw_html_sha256": "5168f307e97723728cbfbd337e243aa9416f151450c2de66c641bc754c71b7ee",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 11,
+  "reviews": [
+    {
+      "login": "djsmith85",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2025-09-01T10:52:38Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2025-09-03T09:18:41Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2025-09-05T10:54:17Z"
+    },
+    {
+      "login": "kdenney",
+      "state": "COMMENTED",
+      "submitted_at": "2025-09-08T19:02:34Z"
+    },
+    {
+      "login": "kdenney",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-08T20:28:50Z"
+    },
+    {
+      "login": "BTreston",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-08T20:32:17Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-09T16:17:44Z"
+    },
+    {
+      "login": "rr-bw",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-09T16:28:06Z"
+    },
+    {
+      "login": "shane-melton",
+      "state": "COMMENTED",
+      "submitted_at": "2025-09-09T16:45:56Z"
+    },
+    {
+      "login": "shane-melton",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-09T17:10:31Z"
+    },
+    {
+      "login": "ttalty",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-09T17:56:10Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/16227"
+}

@@ -1,0 +1,27 @@
+{
+  "source_commit": "27e26758d6604f5d078709233028bb87b4a39e16",
+  "maven_goal": "test",
+  "source_unmodified": true,
+  "java": "openjdk version \"1.8.0_512\"",
+  "network_proxy_configured": true,
+  "results": [
+    {
+      "iteration": 1,
+      "return_code": 0,
+      "elapsed_seconds": 9.897,
+      "log_filename": "attempt_01.log",
+      "dependency_resolution_failure": false,
+      "compiler_source_level_failure": false,
+      "tests_ran": true,
+      "overall_test_summary": [
+        40,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "attempted_post_refactor_test_execution": true,
+  "successful_maven_invocations": 1,
+  "collected_junit_case_rows": 40
+}

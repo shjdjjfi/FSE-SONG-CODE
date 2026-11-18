@@ -1,0 +1,34 @@
+{
+  "expected_grid_size": 920,
+  "observed_trials": 920,
+  "missing_grid_cells": 0,
+  "unexpected_grid_cells": 0,
+  "duplicate_keys": [],
+  "missing": [],
+  "unexpected": [],
+  "violations": [],
+  "supplements": {
+    "wireit/observations.json": true,
+    "turborepo/observations.json": true,
+    "input_drift_probe.json": true,
+    "api_incremental_probe.json": true,
+    "version_holdout.json": true,
+    "public_issue_audit.json": true,
+    "github_actions_aggregate.json": true,
+    "public_ci_observability.json": true,
+    "public_ci_incident_evidence.json": true,
+    "gha_harness_local_smoke.json": true
+  },
+  "independent_source_repos": 7,
+  "project_units": 13,
+  "source_units_total": 297,
+  "emitted_file_total": 604,
+  "eligible_for_FSE_industry_complete": false,
+  "unresolved": [
+    "One first-person natural CI impact report, but no complete natural incident run/job/cache/output logs",
+    "No valid N21 partial-output incidence denominator (17 real GitHub-hosted Wireit cache tests lack output SHA manifests)",
+    "Three real GitHub-hosted Attest benchmark runs cover only a controlled two-project/four-output fixture, not production-scale industrial timing",
+    "No verified organization-specific engineering hours, operational burden, or business-impact measurement for an actual N21 rollout"
+  ],
+  "internal_checks_passed": true
+}

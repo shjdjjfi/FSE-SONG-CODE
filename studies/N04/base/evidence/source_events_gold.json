@@ -1,0 +1,65 @@
+{
+  "provenance": "Manually audited Git source diffs, November 2026. Not observed quarantine decisions.",
+  "unit": "unique (repository, source revision transition, old test ID)",
+  "labels": [
+    {
+      "repository": "apereo/java-cas-client",
+      "before": "f915f55",
+      "after": "f59544c",
+      "old": "org.jasig.cas.client.session.SingleSignOutHandlerTests::backChannelLogoutDoesDoesNotRunIfLogoutPathDoesNotMatch",
+      "new": "org.jasig.cas.client.session.SingleSignOutHandlerTests::backChannelLogoutDoesNotRunIfPathIsNotEligibleForLogout",
+      "decision": "transfer",
+      "reason": "Git diff changes the JUnit method name only; assertions and statement bodies are unchanged"
+    },
+    {
+      "repository": "apereo/java-cas-client",
+      "before": "f915f55",
+      "after": "f59544c",
+      "old": "org.jasig.cas.client.session.SingleSignOutHandlerTests::backChannelLogoutRunsWhenLogoutPathDoesMatch",
+      "new": "org.jasig.cas.client.session.SingleSignOutHandlerTests::backChannelLogoutRunsIfPathEqualsLogoutPath",
+      "decision": "transfer",
+      "reason": "Git diff changes the method name only and preserves the body"
+    },
+    {
+      "repository": "javadelight/delight-nashorn-sandbox",
+      "before": "0f1fb57",
+      "after": "027c07a",
+      "old": "delight.nashornsandbox.TestExit::test",
+      "new": "delight.nashornsandbox.TestExit::testExit",
+      "decision": "transfer",
+      "reason": "Exactly one added test (testExit) preserves the old test body; other new tests exercise quit()"
+    },
+    {
+      "repository": "apereo/java-cas-client",
+      "before": "6e5be5b",
+      "after": "296b1fc",
+      "old": "org.jasig.cas.client.authentication.AuthenticationFilterTests::testRedirect",
+      "new": null,
+      "decision": "abstain_split",
+      "reason": "Old implementation moved into a helper, with two new configuration-specific wrapper tests; instance-level inherited history is ambiguous"
+    },
+    {
+      "repository": "apereo/java-cas-client",
+      "before": "6e5be5b",
+      "after": "296b1fc",
+      "old": "org.jasig.cas.client.session.SingleSignOutHandlerTests::backChannelLogoutDoesNotRunIfPathIsNotEligibleForLogout",
+      "new": null,
+      "decision": "abstain_deleted",
+      "reason": "Method removed with no equivalent new test; earlier specialized assertions were removed"
+    },
+    {
+      "repository": "apereo/java-cas-client",
+      "before": "6e5be5b",
+      "after": "296b1fc",
+      "old": "org.jasig.cas.client.session.SingleSignOutHandlerTests::backChannelLogoutRunsIfPathEqualsLogoutPath",
+      "new": null,
+      "decision": "abstain_deleted",
+      "reason": "Method deleted and only general back-channel logout behavior remains"
+    }
+  ],
+  "audit_commands": [
+    "git diff f915f55 f59544c -- cas-client-core/src/test/java/org/jasig/cas/client/session/SingleSignOutHandlerTests.java",
+    "git diff 6e5be5b 296b1fc -- cas-client-core/src/test/java/org/jasig/cas/client/authentication/AuthenticationFilterTests.java cas-client-core/src/test/java/org/jasig/cas/client/session/SingleSignOutHandlerTests.java",
+    "git diff 0f1fb57 027c07a -- src/test/java/delight/nashornsandbox/TestExit.java"
+  ]
+}

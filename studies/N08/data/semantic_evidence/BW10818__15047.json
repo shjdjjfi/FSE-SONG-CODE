@@ -1,0 +1,61 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 2,
+  "bytes": 24510,
+  "control_flow_or_callback_lines": 5,
+  "event": "BW10818",
+  "examples": [
+    {
+      "change": "+",
+      "code": "import { SymmetricCryptoKey } from \"@bitwarden/common/platform/models/domain/symmetric-crypto-key\";",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "return await ipc.keyManagement.biometric.unlockWithBiometricsForUser(userId);",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "const userKey = await ipc.keyManagement.biometric.unlockWithBiometricsForUser(userId);",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (userKey == null) {",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "return null;",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "// Objects received over IPC lose their prototype, so they must be recreated to restore methods and properties.",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "return SymmetricCryptoKey.fromJSON(userKey) as UserKey;",
+      "file": "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:34.551285+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+  "noncomment_nonimport_changed_lines": 6,
+  "pr": 15047,
+  "repository": "bitwarden/clients",
+  "sha256": "d2b738f5ddbbac956ba0a9bb768fd6f59566c0c8adfbe4b317c98402c201d25f",
+  "target_code_changed_lines": 8,
+  "target_files": [
+    "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.spec.ts",
+    "apps/desktop/src/key-management/biometrics/renderer-biometrics.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15047.patch"
+}

@@ -1,0 +1,24 @@
+% N22 exploratory controlled-replay table. DO NOT generalize these scenario
+% counts into an industrial failure incidence or independent confidence bound.
+\begin{table}[t]
+\centering
+\caption{Exploratory detection on 12 hand-curated convergent SQLite replay
+scenarios (6 issue-guided faults, 6 valid controls; only two independently
+reported defect mechanisms). Full application-test baselines are not included.}
+\label{tab:n22_replay}
+\begin{tabular}{lrr}
+\toprule
+Check & Detected faults & False alarms \\
+\midrule
+Schema + migration history & 0/6 & 0/6 \\
+Also compare per-table counts & 3/6 & 1/6 \\
+Compare raw rows & 6/6 & 2/6 \\
+Explicit typed business contracts & 6/6 & 0/6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Narrow explanatory paragraph for the paper:
+% Six defect-condition variants come from Open WebUI and Drizzle ORM.
+% These observations are not blinded, not independent within project,
+% and not a statistically valid estimate of industry-wide recall/FPR.

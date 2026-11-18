@@ -1,0 +1,36 @@
+{
+  "pr": 15070,
+  "pr_author": "mzieniukbw",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-06-04T12:21:29Z",
+      "requested_people": [
+        "mzieniukbw"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-06-04T12:21:30Z",
+      "requested_people": [
+        "dani-garcia",
+        "mzieniukbw"
+      ],
+      "team_request_anonymized": false
+    },
+    {
+      "actor": "",
+      "datetime": "2025-06-29T09:12:48Z",
+      "requested_people": [
+        "dani-garcia",
+        "mzieniukbw",
+        "quexten"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "a46d02df96a3fcb81b165d1cceab270ec098abc9d37903288e5c22bcaf054081",
+  "url": "https://github.com/bitwarden/clients/pull/15070"
+}

@@ -1,0 +1,36 @@
+{
+  "key": "1f29520e6871db6070",
+  "args": {
+    "crate": "uuid",
+    "version": "1.17.0",
+    "id": "6f8f25468af9f32d",
+    "profile": "candidate",
+    "features": [
+      "fast-rng",
+      "md5",
+      "rng-getrandom",
+      "v4",
+      "v5",
+      "v6",
+      "v7"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.2556,
+  "errors": [
+    {
+      "code": "E0599",
+      "message": "no function or associated item named `new_v1` found for struct `Uuid` in the current scope",
+      "rendered": "error[E0599]: no function or associated item named `new_v1` found for struct `Uuid` in the current scope\n   --> src/main.rs:8:18\n    |\n  8 | let uuid = Uuid::new_v1(ts, &[1, 2, 3, 4, 5, 6]);\n    |                  ^^^^^^ function or associated item not found in `Uuid`\n    |\nnote: if you're trying to build a new `Uuid` consider using one of the following associated functions:\n      uuid::builder::<impl Uuid>::nil\n      uuid::builder::<impl Uuid>::max\n      uuid::builder::<impl Uuid>::from_fields\n      uuid::builder::<impl Uuid>::from_fields_le\n      and 16 others\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/uuid-1.17.0/src/builder.rs:72:5\n    |\n 72 |     pub const fn nil() -> Self {\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^\n...\n 98 |     pub const fn max() -> Self {\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^\n...\n122 |     pub const fn from_fields(d1: u32, d2: u16, d3: u16, d4: &[u8; 8]) -> Uuid {\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n...\n168 |     pub const fn from_fields_le(d1: u32, d2: u16, d3: u16, d4: &[u8; 8]) -> Uuid {\n    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "line": 8
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_uuid_consumer` (bin \"n05_uuid_consumer\") due to 1 previous error\n",
+  "code_sha256": "560a4883b90177f6aeeab0e07f9b1c53011391e6852f679a6442a1df2e073d97",
+  "manifest_sha256": "bc2f1d148accd81f37d83c5f2204c35e6106e0fe18e47fac64531dce92092dfb",
+  "log_file": "results/check_logs/1f29520e6871db6070.txt.gz"
+}

@@ -1,0 +1,97 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 0,
+  "bytes": 89097,
+  "control_flow_or_callback_lines": 3,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/alerting/definition\"",
+      "file": "pkg/registry/apps/alerting/notifications/templategroup/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "Kind:            definition.GrafanaTemplateKind,",
+      "file": "pkg/registry/apps/alerting/notifications/templategroup/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/grafana/pkg/services/featuremgmt\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "return templategroup.NewStorage(api.Templates, namespacer)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "srv := api.Templates",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "if a.ng.FeatureToggles.IsEnabledGlobally(featuremgmt.FlagAlertingImportAlertmanagerAPI) {",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "srv = srv.WithIncludeImported()",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "return templategroup.NewStorage(srv, namespacer)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "Kind:    model.TemplateGroupTemplateKind(template.Kind),",
+      "file": "pkg/registry/apps/alerting/notifications/templategroup/conversions.go"
+    },
+    {
+      "change": "-",
+      "code": "Kind:            definition.GrafanaTemplateKind,",
+      "file": "pkg/registry/apps/alerting/notifications/templategroup/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "Kind:            definition.TemplateKind(template.Spec.Kind),",
+      "file": "pkg/registry/apps/alerting/notifications/templategroup/conversions.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/alerting/definition\"",
+      "file": "pkg/registry/apps/alerting/notifications/templategroup/legacy_storage.go"
+    },
+    {
+      "change": "+",
+      "code": "Kind:       definition.GrafanaTemplateKind,",
+      "file": "pkg/registry/apps/alerting/notifications/templategroup/legacy_storage.go"
+    },
+    {
+      "change": "+",
+      "code": "//nolint:staticcheck // not yet migrated to OpenFeature",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:58:00.621412+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 14,
+  "pr": 114196,
+  "repository": "grafana/grafana",
+  "sha256": "c0f4b06017fee6c96a880890b6559aea2490eaf0ad6c1e0cb245ee2ac7927483",
+  "target_code_changed_lines": 15,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/register.go",
+    "pkg/registry/apps/alerting/notifications/templategroup/conversions.go",
+    "pkg/registry/apps/alerting/notifications/templategroup/legacy_storage.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/114196.patch"
+}

@@ -1,0 +1,263 @@
+{
+  "condition": "native helm-diff v3.12 + synthetic historical release",
+  "production_cluster": false,
+  "real_operator_decisions": false,
+  "reviewer_must_read_diff_and_official_docs": true,
+  "cases": [
+    {
+      "case": "L01_canary_disabled",
+      "status": "old_render_failed",
+      "stderr": "Error: execution error at (loki/templates/validate.yaml:10:4): Helm test requires the Loki Canary to be enabled\n\nUse --debug flag to render out invalid YAML\n"
+    },
+    {
+      "case": "L02_canary_label",
+      "status": "plugin_executed",
+      "exit_code": 0,
+      "plugin_wall_seconds": 0.7833,
+      "lines": 1750,
+      "plus": 524,
+      "minus": 888,
+      "stderr": "",
+      "api_reads": [
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets"
+      ],
+      "transcript": "L02_canary_label.diff",
+      "release_type": "SYNTHETIC encoded Secret on localhost; no Pods",
+      "history_values": {
+        "loki": {
+          "useTestSchema": true
+        },
+        "monitoring": {
+          "lokiCanary": {
+            "labelname": "n02_canary_contract"
+          }
+        }
+      }
+    },
+    {
+      "case": "L03_canary_image",
+      "status": "plugin_executed",
+      "exit_code": 0,
+      "plugin_wall_seconds": 0.546,
+      "lines": 1749,
+      "plus": 523,
+      "minus": 887,
+      "stderr": "",
+      "api_reads": [
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets"
+      ],
+      "transcript": "L03_canary_image.diff",
+      "release_type": "SYNTHETIC encoded Secret on localhost; no Pods",
+      "history_values": {
+        "loki": {
+          "useTestSchema": true
+        },
+        "monitoring": {
+          "lokiCanary": {
+            "image": {
+              "repository": "example.invalid/n02canary"
+            }
+          }
+        }
+      }
+    },
+    {
+      "case": "L04_external_config",
+      "status": "plugin_executed",
+      "exit_code": 0,
+      "plugin_wall_seconds": 0.6082,
+      "lines": 1846,
+      "plus": 584,
+      "minus": 948,
+      "stderr": "",
+      "api_reads": [
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets"
+      ],
+      "transcript": "L04_external_config.diff",
+      "release_type": "SYNTHETIC encoded Secret on localhost; no Pods",
+      "history_values": {
+        "loki": {
+          "useTestSchema": true,
+          "externalConfigSecretName": "n02-config-external"
+        }
+      }
+    },
+    {
+      "case": "G01_pdb_default",
+      "status": "plugin_executed",
+      "exit_code": 0,
+      "plugin_wall_seconds": 0.4549,
+      "lines": 141,
+      "plus": 15,
+      "minus": 12,
+      "stderr": "",
+      "api_reads": [
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets"
+      ],
+      "transcript": "G01_pdb_default.diff",
+      "release_type": "SYNTHETIC encoded Secret on localhost; no Pods",
+      "history_values": {
+        "podDisruptionBudget": {
+          "enabled": true
+        }
+      }
+    },
+    {
+      "case": "G02_pdb_disabled",
+      "status": "plugin_executed",
+      "exit_code": 0,
+      "plugin_wall_seconds": 0.4334,
+      "lines": 120,
+      "plus": 13,
+      "minus": 9,
+      "stderr": "",
+      "api_reads": [
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets"
+      ],
+      "transcript": "G02_pdb_disabled.diff",
+      "release_type": "SYNTHETIC encoded Secret on localhost; no Pods",
+      "history_values": {
+        "podDisruptionBudget": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "case": "V01_ha_replicas",
+      "status": "plugin_executed",
+      "exit_code": 0,
+      "plugin_wall_seconds": 0.4692,
+      "lines": 157,
+      "plus": 15,
+      "minus": 15,
+      "stderr": "",
+      "api_reads": [
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets"
+      ],
+      "transcript": "V01_ha_replicas.diff",
+      "release_type": "SYNTHETIC encoded Secret on localhost; no Pods",
+      "history_values": {
+        "server": {
+          "ha": {
+            "enabled": true,
+            "replicas": 2
+          }
+        }
+      }
+    },
+    {
+      "case": "V02_ha_default",
+      "status": "plugin_executed",
+      "exit_code": 0,
+      "plugin_wall_seconds": 0.4166,
+      "lines": 148,
+      "plus": 14,
+      "minus": 14,
+      "stderr": "",
+      "api_reads": [
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets"
+      ],
+      "transcript": "V02_ha_default.diff",
+      "release_type": "SYNTHETIC encoded Secret on localhost; no Pods",
+      "history_values": {
+        "server": {
+          "ha": {
+            "enabled": true,
+            "replicas": 3
+          }
+        }
+      }
+    },
+    {
+      "case": "V03_config_tpl",
+      "status": "plugin_executed",
+      "exit_code": 0,
+      "plugin_wall_seconds": 0.4149,
+      "lines": 105,
+      "plus": 12,
+      "minus": 12,
+      "stderr": "",
+      "api_reads": [
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets"
+      ],
+      "transcript": "V03_config_tpl.diff",
+      "release_type": "SYNTHETIC encoded Secret on localhost; no Pods",
+      "history_values": {
+        "server": {
+          "standalone": {
+            "config": "ui = true\nstorage \"file\" { path = \"/vault/data/{{ .Release.Name }}\" }\n"
+          }
+        }
+      }
+    },
+    {
+      "case": "T01_unused_gateway",
+      "status": "plugin_executed",
+      "exit_code": 0,
+      "plugin_wall_seconds": 0.4298,
+      "lines": 94,
+      "plus": 9,
+      "minus": 9,
+      "stderr": "",
+      "api_reads": [
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets",
+        "/version",
+        "/api/v1/namespaces/n02-test/secrets"
+      ],
+      "transcript": "T01_unused_gateway.diff",
+      "release_type": "SYNTHETIC encoded Secret on localhost; no Pods",
+      "history_values": {
+        "experimental": {
+          "kubernetesGateway": {
+            "gateway": {
+              "enabled": true
+            }
+          }
+        }
+      }
+    }
+  ]
+}

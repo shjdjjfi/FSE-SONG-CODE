@@ -1,0 +1,30 @@
+{
+  "key": "aafcccff6616b67953",
+  "args": {
+    "crate": "figment",
+    "version": "0.10.19",
+    "id": "292a6fb8e93f439c",
+    "profile": "candidate",
+    "features": [
+      "test"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.0967,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `figment::providers::Env`",
+      "rendered": "error[E0432]: unresolved import `figment::providers::Env`\n  --> src/main.rs:2:21\n   |\n 2 | use figment::{Jail, providers::Env};\n   |                     ^^^^^^^^^^^^^^ no `Env` in `providers`\n   |\nnote: found an item that was configured out\n  --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/figment-0.10.19/src/providers/mod.rs:10:44\n   |\n10 | #[cfg(feature = \"env\")] pub use self::env::Env;\n   |       ---------------                      ^^^\n   |       |\n   |       the item is gated behind the `env` feature\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_figment_consumer` (bin \"n05_figment_consumer\") due to 1 previous error\n",
+  "code_sha256": "d192937ca747b1b0680a9b09e1c864453d964811c90088007209f997ada3dae4",
+  "manifest_sha256": "7be32f3c069d5e11c8b3b3d0155dfba58e6f69d27e901d2e85c224f491c133dc",
+  "log_file": "prospective/results/check_logs/aafcccff6616b67953.txt.gz"
+}

@@ -1,0 +1,26 @@
+{
+  "key": "91d522586362408f7b",
+  "args": {
+    "crate": "axum",
+    "version": "0.8.4",
+    "id": "54004c2631eefe66",
+    "profile": "candidate",
+    "features": [
+      "form",
+      "tokio",
+      "tower-log",
+      "ws"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.1311,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "256d7c35f670b42cd0ecadfe72ad18e164a0f69d5440e9c8e377a16233d7c2af",
+  "manifest_sha256": "07a953103d6f6459f0cda1f7aa527ab52945be5d7616bcab9ab6baa3586734d7",
+  "log_file": "results/check_logs/91d522586362408f7b.txt.gz"
+}

@@ -1,0 +1,62 @@
+{
+  "frozen_projects": 8,
+  "candidate_snippets": 909,
+  "frozen_seed_assignments": 72,
+  "frozen_distinct_snippets": 60,
+  "screened": 60,
+  "missing_screens": 0,
+  "labels": {
+    "default_compiles": 33,
+    "invalid_doc_sample": 20,
+    "eligible_mismatch": 7
+  },
+  "admissible": 32,
+  "strict_negative_controls": 25,
+  "default_pass_docs_fail_not_in_denominator": 8,
+  "seed_outcomes": {
+    "17": {
+      "screened": 24,
+      "positive": 1,
+      "docs_and_default_both_pass": 9
+    },
+    "29": {
+      "screened": 24,
+      "positive": 3,
+      "docs_and_default_both_pass": 9
+    },
+    "43": {
+      "screened": 24,
+      "positive": 3,
+      "docs_and_default_both_pass": 8
+    }
+  },
+  "risk_static_prefilter_precision_on_compiler_mismatch": 0.8,
+  "conditional_mismatch_rate_among_admissible": 0.2188,
+  "searched": 7,
+  "unsearched_positive": 0,
+  "guided_success_at_8": 0.8571,
+  "random_success_at_8": 0.8571,
+  "explicit_success_at_8": 0.5714,
+  "guided_mean_additional_compilations": 2.2857,
+  "random_mean_additional_compilations": 3.9048,
+  "random_minus_guided_compilations_95pct_project_cluster_bootstrap_CI": [
+    -0.6667,
+    2.25
+  ],
+  "guided_mean_requested_features_on_success": 1.3333,
+  "random_mean_requested_features_on_success_conditional": 3.2619,
+  "guided_minus_random_95pct_project_cluster_bootstrap_CI": [
+    0.0,
+    0.0
+  ],
+  "projects_with_eligible_mismatch": 3,
+  "completed_minimizations": 6,
+  "certified_subset_minimal": 6,
+  "certified_one_flag_cardinality_optimal": 5,
+  "post_discovery_minimization_compilations": 8,
+  "generic_lexical_ablation_completed": 0,
+  "generic_lexical_ablation_success_at_8": null,
+  "visible_only_ablations": 11,
+  "visible_only_failed": 3,
+  "results_complete": true
+}

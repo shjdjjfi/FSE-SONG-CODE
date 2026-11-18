@@ -1,0 +1,70 @@
+argv: ["/workspace/scratch/a09f805e18c6/fse2027-forge/task/i01_industry/venvs/pyramid_multiauth_first_fixed/bin/python", "-m", "pip", "install", "--no-input", "--disable-pip-version-check", "--only-binary=:all:", "--progress-bar", "off", "--timeout", "12", "--retries", "1", "--index-url", "https://pypi.org/simple", "pyramid>=2,<3", "webob==1.8.11", "pytest>=8,<10", "pytest-cov>=4", "setuptools>=64", "setuptools-scm>=8"]
+
+[STDOUT]
+Collecting pyramid<3,>=2
+  Using cached pyramid-2.1-py3-none-any.whl.metadata (4.3 kB)
+Collecting webob==1.8.11
+  Using cached webob-1.8.11-py2.py3-none-any.whl.metadata (13 kB)
+Collecting pytest<10,>=8
+  Using cached pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+Collecting pytest-cov>=4
+  Using cached pytest_cov-7.1.0-py3-none-any.whl.metadata (32 kB)
+Collecting setuptools>=64
+  Using cached setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting setuptools-scm>=8
+  Using cached setuptools_scm-10.3.4-py3-none-any.whl.metadata (6.7 kB)
+Collecting hupper>=1.5 (from pyramid<3,>=2)
+  Using cached hupper-1.12.1-py3-none-any.whl.metadata (3.7 kB)
+Collecting plaster (from pyramid<3,>=2)
+  Using cached plaster-1.1.2-py2.py3-none-any.whl.metadata (6.4 kB)
+Collecting plaster_pastedeploy (from pyramid<3,>=2)
+  Using cached plaster_pastedeploy-1.0.1-py2.py3-none-any.whl.metadata (8.1 kB)
+Collecting setuptools>=64
+  Using cached setuptools-81.0.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting translationstring>=0.4 (from pyramid<3,>=2)
+  Using cached translationstring-1.4-py2.py3-none-any.whl.metadata (4.1 kB)
+Collecting venusian>=1.0 (from pyramid<3,>=2)
+  Using cached venusian-3.1.1-py3-none-any.whl.metadata (10 kB)
+Collecting zope.deprecation>=3.5.0 (from pyramid<3,>=2)
+  Using cached zope_deprecation-6.0-py3-none-any.whl.metadata (5.5 kB)
+Collecting zope.interface>=3.8.0 (from pyramid<3,>=2)
+  Using cached zope_interface-8.7-cp312-cp312-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl.metadata (48 kB)
+Collecting iniconfig>=2 (from pytest<10,>=8)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting packaging>=24 (from pytest<10,>=8)
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pluggy<2,>=1.6 (from pytest<10,>=8)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.15 (from pytest<10,>=8)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting coverage>=7.10.6 (from coverage[toml]>=7.10.6->pytest-cov>=4)
+  Using cached coverage-7.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (8.3 kB)
+Collecting vcs-versioning<3,>=2.5.0.dev0 (from setuptools-scm>=8)
+  Using cached vcs_versioning-2.6.0-py3-none-any.whl.metadata (1.7 kB)
+Collecting PasteDeploy>=2.0 (from plaster_pastedeploy->pyramid<3,>=2)
+  Using cached PasteDeploy-3.1.0-py3-none-any.whl.metadata (2.7 kB)
+Using cached webob-1.8.11-py2.py3-none-any.whl (118 kB)
+Using cached pyramid-2.1-py3-none-any.whl (243 kB)
+Using cached pytest-9.2.0-py3-none-any.whl (411 kB)
+Using cached setuptools-81.0.0-py3-none-any.whl (1.1 MB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached pytest_cov-7.1.0-py3-none-any.whl (22 kB)
+Using cached setuptools_scm-10.3.4-py3-none-any.whl (33 kB)
+Using cached vcs_versioning-2.6.0-py3-none-any.whl (123 kB)
+Using cached coverage-7.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (264 kB)
+Using cached hupper-1.12.1-py3-none-any.whl (22 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached translationstring-1.4-py2.py3-none-any.whl (15 kB)
+Using cached venusian-3.1.1-py3-none-any.whl (14 kB)
+Using cached zope_deprecation-6.0-py3-none-any.whl (9.5 kB)
+Using cached zope_interface-8.7-cp312-cp312-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl (284 kB)
+Using cached plaster-1.1.2-py2.py3-none-any.whl (11 kB)
+Using cached plaster_pastedeploy-1.0.1-py2.py3-none-any.whl (7.8 kB)
+Using cached PasteDeploy-3.1.0-py3-none-any.whl (16 kB)
+Installing collected packages: translationstring, zope.interface, webob, venusian, setuptools, pygments, pluggy, plaster, PasteDeploy, packaging, iniconfig, hupper, coverage, zope.deprecation, vcs-versioning, pytest, plaster_pastedeploy, setuptools-scm, pytest-cov, pyramid
+Successfully installed PasteDeploy-3.1.0 coverage-7.17.3 hupper-1.12.1 iniconfig-2.3.1 packaging-26.3 plaster-1.1.2 plaster_pastedeploy-1.0.1 pluggy-1.7.0 pygments-2.21.0 pyramid-2.1 pytest-9.2.0 pytest-cov-7.1.0 setuptools-81.0.0 setuptools-scm-10.3.4 translationstring-1.4 vcs-versioning-2.6.0 venusian-3.1.1 webob-1.8.11 zope.deprecation-6.0 zope.interface-8.7
+
+
+[STDERR]

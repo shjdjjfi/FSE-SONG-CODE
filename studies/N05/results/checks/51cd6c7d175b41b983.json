@@ -1,0 +1,52 @@
+{
+  "key": "51cd6c7d175b41b983",
+  "args": {
+    "crate": "chrono",
+    "version": "0.4.41",
+    "id": "c5b6a9f3523804f0",
+    "profile": "docs",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1496,
+  "errors": [
+    {
+      "code": null,
+      "message": "expected `;`, found `Ok`",
+      "rendered": "error: expected `;`, found `Ok`\n  --> src/main.rs:19:32\n   |\n19 | Ok::<(), serde_json::Error>(())\n   |                                ^ help: add `;` here\n20 | Ok(())\n   | -- unexpected token\n\n",
+      "line": 20
+    },
+    {
+      "code": "E0432",
+      "message": "unresolved import `serde_derive`",
+      "rendered": "error[E0432]: unresolved import `serde_derive`\n --> src/main.rs:3:5\n  |\n3 | use serde_derive::{Deserialize, Serialize};\n  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `serde_derive`\n  |\n  = help: if you wanted to use a crate named `serde_derive`, use `cargo add serde_derive` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    },
+    {
+      "code": null,
+      "message": "cannot find attribute `serde` in this scope",
+      "rendered": "error: cannot find attribute `serde` in this scope\n --> src/main.rs:7:7\n  |\n7 |     #[serde(with = \"ts_milliseconds\")]\n  |       ^^^^^\n\n",
+      "line": 7
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:15:17\n   |\n15 | let as_string = serde_json::to_string(&my_s)?;\n   |                 ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 15
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `serde_json`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `serde_json`\n  --> src/main.rs:17:15\n   |\n17 | let my_s: S = serde_json::from_str(&as_string)?;\n   |               ^^^^^^^^^^ use of unresolved module or unlinked crate `serde_json`\n   |\n   = help: if you wanted to use a crate named `serde_json`, use `cargo add serde_json` to add it to your `Cargo.toml`\n\n",
+      "line": 17
+    }
+  ],
+  "error_count": 5,
+  "stderr_excerpt": "error: could not compile `n05_chrono_consumer` (bin \"n05_chrono_consumer\") due to 5 previous errors; 1 warning emitted\n",
+  "code_sha256": "bf41a97ea14f62ce6a58fc8d3f502c7071793d0a309992ccf56167f4fb16c3d6",
+  "manifest_sha256": "1d431ffb60efcc4fc4f538497f887cd1c193798500ed5912e183965ac071e38d",
+  "log_file": "results/check_logs/51cd6c7d175b41b983.txt.gz"
+}

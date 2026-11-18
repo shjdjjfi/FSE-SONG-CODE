@@ -1,0 +1,829 @@
+{
+  "body": [
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/102181210?v=4",
+        "events_url": "https://api.github.com/users/rr-bw/events{/privacy}",
+        "followers_url": "https://api.github.com/users/rr-bw/followers",
+        "following_url": "https://api.github.com/users/rr-bw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rr-bw/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/rr-bw",
+        "id": 102181210,
+        "login": "rr-bw",
+        "node_id": "U_kgDOBhcpWg",
+        "organizations_url": "https://api.github.com/users/rr-bw/orgs",
+        "received_events_url": "https://api.github.com/users/rr-bw/received_events",
+        "repos_url": "https://api.github.com/users/rr-bw/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/rr-bw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rr-bw/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/rr-bw",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/d209da4c945b9fddbc480c779150989596bfd90f/comments",
+      "commit": {
+        "author": {
+          "date": "2024-12-20T18:23:03Z",
+          "email": "102181210+rr-bw@users.noreply.github.com",
+          "name": "rr-bw"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-12-20T18:23:03Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "feat(auth): [PM-9674] Remove Deprecated LockComponents (#12453)\n\nThis PR deletes the legacy lock components from the Angular clients and also removes feature flag control from the routing. The lock component will now be based entirely on the new, recently refreshed LockComponent in libs/auth/angular.",
+        "tree": {
+          "sha": "631f3fe9e4b98361e3771944c255a6a6e239615d",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/631f3fe9e4b98361e3771944c255a6a6e239615d"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/d209da4c945b9fddbc480c779150989596bfd90f",
+        "verification": {
+          "payload": "tree 631f3fe9e4b98361e3771944c255a6a6e239615d\nparent 2e6031eee90631274864f9b9ba65e935132ed32f\nauthor rr-bw <102181210+rr-bw@users.noreply.github.com> 1734718983 -0800\ncommitter GitHub <noreply@github.com> 1734718983 -0800\n\nfeat(auth): [PM-9674] Remove Deprecated LockComponents (#12453)\n\nThis PR deletes the legacy lock components from the Angular clients and also removes feature flag control from the routing. The lock component will now be based entirely on the new, recently refreshed LockComponent in libs/auth/angular.",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnZbYHCRC1aQ7uu5UhlAAAOagQAJlfzL+bOkYj1lpWpN2Y/s+v\n2l14/WKF85TwjJavk1BYMjZ2ftnLJWoMkBwTZ5/TKQqrD47Ct8Ot6FO4bDoiXIZj\n/Hk6rehw/xZ9YZadIfVCEYSVjrDbStbAz9X9Ebr0cTURlU18S3swx9ksFOUn37as\n7HUX83vKKACBt1m60wAb4khrlfjDtB0PLS+4CGsfGH56xnm0P8/vrv5okwLgvobv\nLnKSCcUa7ovNUgG4zhIfgS5sJ+r7DRGLJGl/tzLWfambT91gvHd1pMb/nT2xuUEa\npCtTVJv2fabC1zP2imhRCt9PdTSqv0GMpaUiIhd6E9UYBvsdN+4oehVM5Dbd6GFB\ntQH/56TWK1YfAh8W6FHjGXp3FD/qdHO8T3zKt5aIUFSfunkpy6ir6mybkO5pdKKz\ngb4vcSpEJCT/THOJgWw/rb5I7dG5M8r/Nr869mgP86BrQlJQV9i0+DEnuMvzzhRZ\nkNy4S8iwOhrjJHLZI4Fj8nECaaGfc6mDv4CwiOz4j658XD2Qbs6NgGiKDempG5Lt\ndSQVVmM7kVub/bvdCasSkbCaTv9jdrcB6/eFcna38kYcrvn4KbczPHdTvxPWIL6U\n7X6WcfJhHv3TZhA3bCZBvsTjIBXW/qFXqy+v2A0AR5JmmrMfl3p84VhPBRec3noV\nL2Z5bSgUgjrHfgh3N6aF\n=3Z7x\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-12-20T18:23:07Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/d209da4c945b9fddbc480c779150989596bfd90f",
+      "node_id": "C_kwDOAzDwU9oAKGQyMDlkYTRjOTQ1YjlmZGRiYzQ4MGM3NzkxNTA5ODk1OTZiZmQ5MGY",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/2e6031eee90631274864f9b9ba65e935132ed32f",
+          "sha": "2e6031eee90631274864f9b9ba65e935132ed32f",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/2e6031eee90631274864f9b9ba65e935132ed32f"
+        }
+      ],
+      "sha": "d209da4c945b9fddbc480c779150989596bfd90f",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/d209da4c945b9fddbc480c779150989596bfd90f"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/43214426?v=4",
+        "events_url": "https://api.github.com/users/Thomas-Avery/events{/privacy}",
+        "followers_url": "https://api.github.com/users/Thomas-Avery/followers",
+        "following_url": "https://api.github.com/users/Thomas-Avery/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Thomas-Avery/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/Thomas-Avery",
+        "id": 43214426,
+        "login": "Thomas-Avery",
+        "node_id": "MDQ6VXNlcjQzMjE0NDI2",
+        "organizations_url": "https://api.github.com/users/Thomas-Avery/orgs",
+        "received_events_url": "https://api.github.com/users/Thomas-Avery/received_events",
+        "repos_url": "https://api.github.com/users/Thomas-Avery/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/Thomas-Avery/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Thomas-Avery/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/Thomas-Avery",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/971c157f564793aafbd62884e39d4f9f0dafbeac/comments",
+      "commit": {
+        "author": {
+          "date": "2024-12-16T18:00:17Z",
+          "email": "43214426+Thomas-Avery@users.noreply.github.com",
+          "name": "Thomas Avery"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-12-16T18:00:17Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[PM-12700] Add private key regeneration process (#11829)\n\n* add user asymmetric key api service\r\n\r\n* Add user asymmetric key regen service\r\n\r\n* add feature flag\r\n\r\n* Add LoginSuccessHandlerService\r\n\r\n* add loginSuccessHandlerService to BaseLoginViaWebAuthnComponent\r\n\r\n* Only run loginSuccessHandlerService if webAuthn is used for vault decryption.\r\n\r\n* Updates for TS strict\r\n\r\n* bump SDK version\r\n\r\n* swap to combineLatest\r\n\r\n* Update abstractions",
+        "tree": {
+          "sha": "5d3f3915eec4cb16959be6d6b7561ff5c88b8974",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/5d3f3915eec4cb16959be6d6b7561ff5c88b8974"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/971c157f564793aafbd62884e39d4f9f0dafbeac",
+        "verification": {
+          "payload": "tree 5d3f3915eec4cb16959be6d6b7561ff5c88b8974\nparent c628f541d18d0c99c8e9c123b135cab1a8c9631b\nauthor Thomas Avery <43214426+Thomas-Avery@users.noreply.github.com> 1734372017 -0600\ncommitter GitHub <noreply@github.com> 1734372017 -0600\n\n[PM-12700] Add private key regeneration process (#11829)\n\n* add user asymmetric key api service\r\n\r\n* Add user asymmetric key regen service\r\n\r\n* add feature flag\r\n\r\n* Add LoginSuccessHandlerService\r\n\r\n* add loginSuccessHandlerService to BaseLoginViaWebAuthnComponent\r\n\r\n* Only run loginSuccessHandlerService if webAuthn is used for vault decryption.\r\n\r\n* Updates for TS strict\r\n\r\n* bump SDK version\r\n\r\n* swap to combineLatest\r\n\r\n* Update abstractions",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnYGqxCRC1aQ7uu5UhlAAACDsQAFpmiR+XRQq3VGueGX07wQeV\nQ39t/5jNyyuyO5QYZ04FKuVJDVqnQecpbBQ6ZgINoQs33nOxNY563BO1pYdGb6Th\not4qgGbvSftVrSROoBHXh9EAzQgChq22VTQjgFAuNspriLZc6Pgjp8lYiory+kkJ\nZobfF2G0lgBBJ54pgE6ergI//LwGnw0gzuOwZbIuxQ9TrkzuvGKgA9KY20Uqz6kZ\n+DLLmtWtkbZYSrYMrT4Za5OT0vcYJFS8h1EMNkNMjFUbxzun+fPYVD4Bfaj8Te3G\nCoPTdLf0CFDKiJ0Y2SzSN6VFma52inJbulIyNtfm3TrOPUXKpZChlqNFpnqmmgLE\n0Jlr3K5/AKOaNAOZeIWmHWWbxcYs9bDndzqPCzuI3XYcSh37ZHvKN0yAUjRFmPwm\nuEIM+qxknfLzRgUTwM5OpbA1vsEnpxa15KhHPqm7CCgKBtSexk8ETJJ5fU0maVAK\n5IehqTg9tkX0qaAYDYo5rQhY9PyLSUepffyQ19iYJn0NLxKRenYUthBowK3XISuu\nS4tCFi/Ikq8x3R6yoYI+M4DB2M1VY3TrAO70HjcMDSvK/g5TLsBwwLsQoOzkHlGe\ntZS8jZossi+CjaVQMmz39VEqQ6q4IJUL0kQt4BDc3Twgs7bGxey2wwPlqsqp2+2i\n2snUuK7F2WgU77LMD1lV\n=r4w+\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-12-16T18:00:20Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/971c157f564793aafbd62884e39d4f9f0dafbeac",
+      "node_id": "C_kwDOAzDwU9oAKDk3MWMxNTdmNTY0NzkzYWFmYmQ2Mjg4NGUzOWQ0ZjlmMGRhZmJlYWM",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/c628f541d18d0c99c8e9c123b135cab1a8c9631b",
+          "sha": "c628f541d18d0c99c8e9c123b135cab1a8c9631b",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/c628f541d18d0c99c8e9c123b135cab1a8c9631b"
+        }
+      ],
+      "sha": "971c157f564793aafbd62884e39d4f9f0dafbeac",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/971c157f564793aafbd62884e39d4f9f0dafbeac"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/102181210?v=4",
+        "events_url": "https://api.github.com/users/rr-bw/events{/privacy}",
+        "followers_url": "https://api.github.com/users/rr-bw/followers",
+        "following_url": "https://api.github.com/users/rr-bw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rr-bw/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/rr-bw",
+        "id": 102181210,
+        "login": "rr-bw",
+        "node_id": "U_kgDOBhcpWg",
+        "organizations_url": "https://api.github.com/users/rr-bw/orgs",
+        "received_events_url": "https://api.github.com/users/rr-bw/received_events",
+        "repos_url": "https://api.github.com/users/rr-bw/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/rr-bw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rr-bw/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/rr-bw",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/8ec75613dcb05a931db366b5600c3df8f9654b15/comments",
+      "commit": {
+        "author": {
+          "date": "2024-12-12T21:10:54Z",
+          "email": "102181210+rr-bw@users.noreply.github.com",
+          "name": "rr-bw"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-12-12T21:10:54Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "fix(passkeys): [PM-13932] Fix passkey flow incorrect routing (#12363)\n\nThis PR fixes a bug in the LockComponent refresh that affected the setup/save and use passkey flows. The user was wrongly directly to the /vault after unlock instead of to /fido2 (the passkey screen).\r\n\r\nFeature Flag: ExtensionRefresh ON",
+        "tree": {
+          "sha": "6c37e2ce590aa2e102f3f455af49e2122152590f",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/6c37e2ce590aa2e102f3f455af49e2122152590f"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/8ec75613dcb05a931db366b5600c3df8f9654b15",
+        "verification": {
+          "payload": "tree 6c37e2ce590aa2e102f3f455af49e2122152590f\nparent 2da304369704df14108fad1c5beabb1a8f08fa8b\nauthor rr-bw <102181210+rr-bw@users.noreply.github.com> 1734037854 -0800\ncommitter GitHub <noreply@github.com> 1734037854 -0800\n\nfix(passkeys): [PM-13932] Fix passkey flow incorrect routing (#12363)\n\nThis PR fixes a bug in the LockComponent refresh that affected the setup/save and use passkey flows. The user was wrongly directly to the /vault after unlock instead of to /fido2 (the passkey screen).\r\n\r\nFeature Flag: ExtensionRefresh ON",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnW1FeCRC1aQ7uu5UhlAAApO8QAKY98Jcpk9h+ZaAdZ8vGuRsx\nOBJaDIKOyHTYSc/cVN8q5elvdFGYUdfLs2F8YMPwSKTNkAPfdgD/Gj1Qb5eL8wdD\nt4D3PsnlrMdrky4TbLmgjhgfPy7sL7Ho8iI0xWX+an76Ps/SFJgRP2mDWv7CfLxl\n8vHfeLMh2N0UxS/c5CJQn7HrVECmSwMR0spdb4/Touml/Al/gM97ZKwKvsxLC/7H\nvdgoNAUbA7R6FI7OAAR/LyTxfDeRSsXVsIKgciimpjRIiM5c6mIrzioI/6yD3Su/\n8oCmqYKG4HGDBli1Ofa2ew9jMhd4UBsbz1lG9UNptuuf2MSmZPotM7cFAM3YTxJh\nFEN3bWDYmK6nDJFhJ3xbov2DK5UahgolDccATZhERPV/kj6g0S0Dp7XuLcBCqyRd\nVmVOyJWxO4dg3B7I3HUqBctIcT+PIdN64xqhkZogayEZWC6+jFskf6VCtFEcENIf\nkenw/5Ke7friZ+4oYs4jQMKn4ffG8favY5kRx98vj1OtyQmzj253XeYhCE5pOoAY\nICNPqC3oR4U5lik/XOKC9/aimZwh8KxIXb0WZvy3xoRtuA0/FFijKPE41UuBb0Cn\nDgcqtch9uq/EvFe4ZnB5jMvA55cJ35/jdYaBuPFOlW9cMB+/ojuwNHwpZBBuyFzF\nK5r5dgpNR/3dIJRr6qbV\n=8nd3\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-12-12T21:10:56Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/8ec75613dcb05a931db366b5600c3df8f9654b15",
+      "node_id": "C_kwDOAzDwU9oAKDhlYzc1NjEzZGNiMDVhOTMxZGIzNjZiNTYwMGMzZGY4Zjk2NTRiMTU",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/2da304369704df14108fad1c5beabb1a8f08fa8b",
+          "sha": "2da304369704df14108fad1c5beabb1a8f08fa8b",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/2da304369704df14108fad1c5beabb1a8f08fa8b"
+        }
+      ],
+      "sha": "8ec75613dcb05a931db366b5600c3df8f9654b15",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/8ec75613dcb05a931db366b5600c3df8f9654b15"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/18214891?v=4",
+        "events_url": "https://api.github.com/users/MGibson1/events{/privacy}",
+        "followers_url": "https://api.github.com/users/MGibson1/followers",
+        "following_url": "https://api.github.com/users/MGibson1/following{/other_user}",
+        "gists_url": "https://api.github.com/users/MGibson1/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/MGibson1",
+        "id": 18214891,
+        "login": "MGibson1",
+        "node_id": "MDQ6VXNlcjE4MjE0ODkx",
+        "organizations_url": "https://api.github.com/users/MGibson1/orgs",
+        "received_events_url": "https://api.github.com/users/MGibson1/received_events",
+        "repos_url": "https://api.github.com/users/MGibson1/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/MGibson1/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/MGibson1/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/MGibson1",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9/comments",
+      "commit": {
+        "author": {
+          "date": "2024-12-09T19:58:50Z",
+          "email": "mgibson@bitwarden.com",
+          "name": "Matt Gibson"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-12-09T19:58:50Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Typescript-strict-plugin (#12235)\n\n* Use typescript-strict-plugin to iteratively turn on strict\r\n\r\n* Add strict testing to pipeline\r\n\r\nCan be executed locally through either `npm run test:types` for full type checking including spec files, or `npx tsc-strict` for only tsconfig.json included files.\r\n\r\n* turn on strict for scripts directory\r\n\r\n* Use plugin for all tsconfigs in monorepo\r\n\r\nvscode is capable of executing tsc with plugins, but uses the most relevant tsconfig to do so. If the plugin is not a part of that config, it is skipped and developers get no feedback of strict compile time issues. These updates remedy that at the cost of slightly more complex removal of the plugin when the time comes.\r\n\r\n* remove plugin from configs that extend one that already has it\r\n\r\n* Update workspace settings to honor strict plugin\r\n\r\n* Apply strict-plugin to native message test runner\r\n\r\n* Update vscode workspace to use root tsc version\r\n\r\n* `./node_modules/.bin/update-strict-comments` :robot:\r\n\r\nThis is a one-time operation. All future files should adhere to strict type checking.\r\n\r\n* Add fixme to `ts-strict-ignore` comments\r\n\r\n* `update-strict-comments` :robot:\r\n\r\nrepeated for new merge files",
+        "tree": {
+          "sha": "4784372a41bf8b4452f52ea7b37d92eef2a8fba6",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/4784372a41bf8b4452f52ea7b37d92eef2a8fba6"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+        "verification": {
+          "payload": "tree 4784372a41bf8b4452f52ea7b37d92eef2a8fba6\nparent 0906c503e1f35d264d5169df178dd5a46a39a9b7\nauthor Matt Gibson <mgibson@bitwarden.com> 1733774330 -0800\ncommitter GitHub <noreply@github.com> 1733774330 +0100\n\nTypescript-strict-plugin (#12235)\n\n* Use typescript-strict-plugin to iteratively turn on strict\r\n\r\n* Add strict testing to pipeline\r\n\r\nCan be executed locally through either `npm run test:types` for full type checking including spec files, or `npx tsc-strict` for only tsconfig.json included files.\r\n\r\n* turn on strict for scripts directory\r\n\r\n* Use plugin for all tsconfigs in monorepo\r\n\r\nvscode is capable of executing tsc with plugins, but uses the most relevant tsconfig to do so. If the plugin is not a part of that config, it is skipped and developers get no feedback of strict compile time issues. These updates remedy that at the cost of slightly more complex removal of the plugin when the time comes.\r\n\r\n* remove plugin from configs that extend one that already has it\r\n\r\n* Update workspace settings to honor strict plugin\r\n\r\n* Apply strict-plugin to native message test runner\r\n\r\n* Update vscode workspace to use root tsc version\r\n\r\n* `./node_modules/.bin/update-strict-comments` :robot:\r\n\r\nThis is a one-time operation. All future files should adhere to strict type checking.\r\n\r\n* Add fixme to `ts-strict-ignore` comments\r\n\r\n* `update-strict-comments` :robot:\r\n\r\nrepeated for new merge files",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnV0v6CRC1aQ7uu5UhlAAAPwwQABEtatQNxF1YgQIItkBsUdFm\nGZyQD9Qx7dU3BHOATCsTzg3Y+bqiYa+94nVQBRD12XQ6PhMBzuZ71sPB/cgcdXrB\nrTUxefh/v9o1wIZOHSHDpHLcFO+Z2I25jrSffLeYizb7y8gBehBUwJlM2HFwAtN3\ns/lqC9GK8d+w+4QpekgZD6TiXsLhSRx1IJjV8jnSa+Y7ToFD6UxSGRQIY173iuje\njyDlTBQRcI/zSSxxivtLJve9ngt6gdNWgxkOwp29tpnmWf2CiPWGy/08eU6qpET+\nlnmruRII2Hgw3+q/l1OqZtwmxb/UsPfpaja2iy9I36tkeu3FHv6uwKVEP+kJeZK7\nfhAcMciDHi34Vgo4MRApl1K5rnoeDty6/kdkTmaaidD2WjdpMyTTCRg46/PMW9dX\nj9dXaix2OxZbZVDn1Y7hQ9RqO1/dA+QAJkd8pEdeYRQVXBE0IsJiBUTR7HGOsmXB\nYPjmsi9so8Nw+bHFGZF9vMUI5bMct36M91SASl666QdPsc+zyljv5ArIfyLsfXN2\ndXbFMkg6Kj+BX6Gj9bjFC542P4oITZ9Wl8ggARa78/mQur4ZcwuvT4x7ZfPe1BVX\nlsjvbZKsk96Dxd1vULqJuQ7d10SmeHwO/BiWwXJKErjaGa2PtxcE9WzL6qkbKINK\nvu2s2kJpnHcmrHYk7Wnu\n=85PO\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-12-09T19:58:54Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+      "node_id": "C_kwDOAzDwU9oAKDljMWUyZWJkNjc3OWRkYTRiZDgxNzQ3MjJiOWMzOTc0ZjY3ZGM1Zjk",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/0906c503e1f35d264d5169df178dd5a46a39a9b7",
+          "sha": "0906c503e1f35d264d5169df178dd5a46a39a9b7",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/0906c503e1f35d264d5169df178dd5a46a39a9b7"
+        }
+      ],
+      "sha": "9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/9c1e2ebd6779dda4bd8174722b9c3974f67dc5f9"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/102181210?v=4",
+        "events_url": "https://api.github.com/users/rr-bw/events{/privacy}",
+        "followers_url": "https://api.github.com/users/rr-bw/followers",
+        "following_url": "https://api.github.com/users/rr-bw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/rr-bw/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/rr-bw",
+        "id": 102181210,
+        "login": "rr-bw",
+        "node_id": "U_kgDOBhcpWg",
+        "organizations_url": "https://api.github.com/users/rr-bw/orgs",
+        "received_events_url": "https://api.github.com/users/rr-bw/received_events",
+        "repos_url": "https://api.github.com/users/rr-bw/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/rr-bw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/rr-bw/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/rr-bw",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/820b03dd49e3160d343970d6a96d4d6f4caead7e/comments",
+      "commit": {
+        "author": {
+          "date": "2024-11-25T19:34:53Z",
+          "email": "102181210+rr-bw@users.noreply.github.com",
+          "name": "rr-bw"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-11-25T19:34:53Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "fix(biometrics): [PM-13901] Bugfix for \"Ask for biometrics on launch does not auto prompt biometrics\" (#12144)\n\nThis PR ensures that, on the Chrome browser extension, biometrics gets auto-prompted when the user selects \"Ask for biometrics on launch\" by resetting the `isInitialLockScreen` to `true` on active account change.\r\n\r\nFeature flag: `ExtensionRefresh` ON.",
+        "tree": {
+          "sha": "aed4c23864ade734b69f1af8410bef02a34f3e24",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/aed4c23864ade734b69f1af8410bef02a34f3e24"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/820b03dd49e3160d343970d6a96d4d6f4caead7e",
+        "verification": {
+          "payload": "tree aed4c23864ade734b69f1af8410bef02a34f3e24\nparent d13bbf979f75617d6c2a00e4244eaa4eddf28226\nauthor rr-bw <102181210+rr-bw@users.noreply.github.com> 1732563293 -0800\ncommitter GitHub <noreply@github.com> 1732563293 -0800\n\nfix(biometrics): [PM-13901] Bugfix for \"Ask for biometrics on launch does not auto prompt biometrics\" (#12144)\n\nThis PR ensures that, on the Chrome browser extension, biometrics gets auto-prompted when the user selects \"Ask for biometrics on launch\" by resetting the `isInitialLockScreen` to `true` on active account change.\r\n\r\nFeature flag: `ExtensionRefresh` ON.",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnRNFdCRC1aQ7uu5UhlAAAW5QQAB3jNdxvbB4fcB6958js/v+i\npCenHew/HXi7aCGSjrXzv6yWVIuwBfYP7dn1DyQIOntKpFlLea+oAEMQiQWCBhu5\nAX8c7kdVl5p6b+t5CzE3pQ7fVb4QA9hGpfIFkrtHnPqgOwDcNeoMP7qMPJnvh/wh\nKWV7yHuRoJLoSAIKX8MgxuV1JAygRdI0DT+aeCXP6L8JVP9f9UpnjROHlJKYF9F+\nXBVdxxjoT97a/bvyh2ky98k9d1LE0bNDsh6GKe20nlGiO5MbnUlJBlX2RRDSNpdn\nQkNOQXd2SwtFqy9K3L3b9iJ46kdIW0W+0H1EAqZ835XxQyNhZMCEmm67xvxdj7Ei\ncPL8lqcnzs/bxsJsEWEaSg1SXyjzMZbnGLQUtS/O914xj3CaHgbMHxJSIeY84C17\nbXHhLiIz97rwVXXP4XlRHdHDqxE7suuSTnjgxErw88BBwOOD2HfTVfey0gfZjgyA\nXWjmYjneEqg/qUx/Lk+aaf6/jEIXELebDR57PM9z1eZwSBklZRm87Aa445M292N8\nzE7VfSLQWc3EtFbx0CtJnBpkM157mNpnQVr93wNElgZcDIhZ3GF1o3gP6Z7/Nuym\nynYuEGQu1/g+u5cXbqDyAFJ1T5G6NKvAKLdszpWSkMXQHbHwKINUTdZ7MzhaCc26\noP/393QbZN7EYacUsoxG\n=CO/m\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-25T19:34:54Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/820b03dd49e3160d343970d6a96d4d6f4caead7e",
+      "node_id": "C_kwDOAzDwU9oAKDgyMGIwM2RkNDllMzE2MGQzNDM5NzBkNmE5NmQ0ZDZmNGNhZWFkN2U",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/d13bbf979f75617d6c2a00e4244eaa4eddf28226",
+          "sha": "d13bbf979f75617d6c2a00e4244eaa4eddf28226",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/d13bbf979f75617d6c2a00e4244eaa4eddf28226"
+        }
+      ],
+      "sha": "820b03dd49e3160d343970d6a96d4d6f4caead7e",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/820b03dd49e3160d343970d6a96d4d6f4caead7e"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/106564991?v=4",
+        "events_url": "https://api.github.com/users/trmartin4/events{/privacy}",
+        "followers_url": "https://api.github.com/users/trmartin4/followers",
+        "following_url": "https://api.github.com/users/trmartin4/following{/other_user}",
+        "gists_url": "https://api.github.com/users/trmartin4/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/trmartin4",
+        "id": 106564991,
+        "login": "trmartin4",
+        "node_id": "U_kgDOBloNfw",
+        "organizations_url": "https://api.github.com/users/trmartin4/orgs",
+        "received_events_url": "https://api.github.com/users/trmartin4/received_events",
+        "repos_url": "https://api.github.com/users/trmartin4/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/trmartin4/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/trmartin4/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/trmartin4",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/a049b553a66ee618f8f50239d3b0809a417c806b/comments",
+      "commit": {
+        "author": {
+          "date": "2024-11-01T15:21:18Z",
+          "email": "106564991+trmartin4@users.noreply.github.com",
+          "name": "Todd Martin"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-11-01T15:21:18Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Update decryptUserKeyWithMasterKey to requireUserId (#11560)\n\n* Updated decryptUserKeyWithMasterKey to requireUserId\r\n\r\n* Removed unintended extra character.\r\n\r\n* Added dependency to LogService.\r\n\r\n* Fixed unlock command.",
+        "tree": {
+          "sha": "2c1b7298664a922f7ecc9e6de4bba5312b483fb7",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/2c1b7298664a922f7ecc9e6de4bba5312b483fb7"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/a049b553a66ee618f8f50239d3b0809a417c806b",
+        "verification": {
+          "payload": "tree 2c1b7298664a922f7ecc9e6de4bba5312b483fb7\nparent 5eae599b81623ec6d067776d8667291391b64a28\nauthor Todd Martin <106564991+trmartin4@users.noreply.github.com> 1730474478 -0400\ncommitter GitHub <noreply@github.com> 1730474478 -0400\n\nUpdate decryptUserKeyWithMasterKey to requireUserId (#11560)\n\n* Updated decryptUserKeyWithMasterKey to requireUserId\r\n\r\n* Removed unintended extra character.\r\n\r\n* Added dependency to LogService.\r\n\r\n* Fixed unlock command.",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnJPHuCRC1aQ7uu5UhlAAAprsQAJ7iwZu6aCY2V1zRd6VCH5Ta\nyoq69E0DL7n0wt2xoU6tO6Niu5CMGI2w6QuKCrnuVpkCMpG7nFe2gjsNB3O4rCUw\ntoaZCXFIh/V19I4nJKj9kStfxK448qOg99IOrZfMKtJRvulL4yPtUSLjPa7zKotK\nYIg0Wi6Hcyh0JkM4P68xuIPv5tJbF/ovN3fHKLK+JEIttNdXyjgKn8V9GPRg7Rbc\nCOc0A2COV8CzkEYxPjZVpffM/kLDGqJq4efP6qv6lbwigqfQLSfd/D7US4dTgffJ\nwFhlp7tzUR3SR7ZBWQx6dabGyKuUesF+HhKNoHibfgiTMMZ1AgjvLHBpO9actaiT\nl0dZAnm52pQPakHkXpMjCOQnScrrl7thsjSWXtIxomC4kmDBmOUhLPU8zPFeH0p2\nElq+tSPZMJOymrQJWt6eB2E6wzVWEnpaw/Ve9L88KdaP0mSO4h4CSaRX84KEehXv\n5xDto3sL7M0lL/Fnlvf54uJecpLebJZ0wEs6UVrBnP4zjHwmYNg1bfGtxHW3lP77\nEAJ1AISMFm7UPsvqVvEHqYPr8Z1MZPNbOfifHq7MBjhRdTA2QU4TkXhkbwQF1omL\nQGtJ5CRCkEWtRYb17ExiTqwXsSvkj78gGbrLgxkr0OH/UgVjJjFYeWEWTlv6jzrr\nQi1yawKkGp8HapmckKLQ\n=Zsi6\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-05T17:04:19Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/a049b553a66ee618f8f50239d3b0809a417c806b",
+      "node_id": "C_kwDOAzDwU9oAKGEwNDliNTUzYTY2ZWU2MThmOGY1MDIzOWQzYjA4MDlhNDE3YzgwNmI",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/5eae599b81623ec6d067776d8667291391b64a28",
+          "sha": "5eae599b81623ec6d067776d8667291391b64a28",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/5eae599b81623ec6d067776d8667291391b64a28"
+        }
+      ],
+      "sha": "a049b553a66ee618f8f50239d3b0809a417c806b",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/a049b553a66ee618f8f50239d3b0809a417c806b"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/116684653?v=4",
+        "events_url": "https://api.github.com/users/JaredSnider-Bitwarden/events{/privacy}",
+        "followers_url": "https://api.github.com/users/JaredSnider-Bitwarden/followers",
+        "following_url": "https://api.github.com/users/JaredSnider-Bitwarden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JaredSnider-Bitwarden/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/JaredSnider-Bitwarden",
+        "id": 116684653,
+        "login": "JaredSnider-Bitwarden",
+        "node_id": "U_kgDOBvR3bQ",
+        "organizations_url": "https://api.github.com/users/JaredSnider-Bitwarden/orgs",
+        "received_events_url": "https://api.github.com/users/JaredSnider-Bitwarden/received_events",
+        "repos_url": "https://api.github.com/users/JaredSnider-Bitwarden/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/JaredSnider-Bitwarden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JaredSnider-Bitwarden/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/JaredSnider-Bitwarden",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/4de7cb8012a0716d0c834d279a04fc4fd62c5112/comments",
+      "commit": {
+        "author": {
+          "date": "2024-10-30T21:54:39Z",
+          "email": "116684653+JaredSnider-Bitwarden@users.noreply.github.com",
+          "name": "Jared Snider"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-10-30T21:54:39Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "BEEEP - Auth AccountService Improvements (#11779)\n\n* BEEEP Adjacent - AccountService misc improvements - (1) prefer null over undefined and (2) add new Account type\r\n\r\n* LockCompV2 - Fix activeAccount type per PR feedback\r\n\r\n* AccountService - update getUserId per PR feedback.",
+        "tree": {
+          "sha": "c271a40f1475f1df12d75e25d9008fd18ae912c3",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/c271a40f1475f1df12d75e25d9008fd18ae912c3"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/4de7cb8012a0716d0c834d279a04fc4fd62c5112",
+        "verification": {
+          "payload": "tree c271a40f1475f1df12d75e25d9008fd18ae912c3\nparent 690e175b1d70a0a39b97f285043337f98fffaa80\nauthor Jared Snider <116684653+JaredSnider-Bitwarden@users.noreply.github.com> 1730325279 -0400\ncommitter GitHub <noreply@github.com> 1730325279 -0400\n\nBEEEP - Auth AccountService Improvements (#11779)\n\n* BEEEP Adjacent - AccountService misc improvements - (1) prefer null over undefined and (2) add new Account type\r\n\r\n* LockCompV2 - Fix activeAccount type per PR feedback\r\n\r\n* AccountService - update getUserId per PR feedback.",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnIqsfCRC1aQ7uu5UhlAAAz68QAGjsq8fdbooYoZgvvwpQqQzI\nuS0ddEgHTQWiXXu+hPg5F9VU4lEMuTDvpQbsFeWx6mf9UAn4LKO1co2EMbCd9hFj\nppxtLOmU/Coj81OnoP+zboyMpWD658aWe9waaNLwK515QnG8qkNbRQeKPagLmSoy\n7d6LQ37IUiTg/Wdm+yhp8RLjZuCgxvCrRkdw3JL9sLOfpFmSk1BIQIhXpqHLP3FM\nQi3qI/ZoyEEZi7aMW+zxCMgd90POs21PfJ5EmIMJNyrzqnqlobEuRn4QyVhwZH16\ngg51C5VNhgwxo/szRgrxqnKjKFStVwA3kHNsiQluieqiMGS/E6CyqpZ6/RPkeC4S\n25jN0Zktda5KSrFZ6aYL0gielPlRL7dZ1YcSiL1jkQum/gfIwoUJrhgq5/Gm7DZR\nodtfPbVj4obzPP7IvE+knpQ11NwgBTwzX9+m/qgktvLozQumCzW1r/qWv1xgZ3VR\nnCMRCPujvBg9AcoCw+h6UJ+JEtK7Ip7Q+k34iHMCzYC1CEYP2+706R0VRnOu6tOR\nZ5Y7s+IPyVOiJhEhOH2oe0V6hsxfYmMw9x1/mqkWO3ff7HCcQ1AGP9nx54oHTyOc\n03gZ2kxkChD2tgar2rnAL4M0X76S8mPQmvIv1e9hB609Z9ckW03nYroshOJAbUfT\nXEgMivaifGzHIjkFH9FY\n=13M/\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-05T17:04:19Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/4de7cb8012a0716d0c834d279a04fc4fd62c5112",
+      "node_id": "C_kwDOAzDwU9oAKDRkZTdjYjgwMTJhMDcxNmQwYzgzNGQyNzlhMDRmYzRmZDYyYzUxMTI",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/690e175b1d70a0a39b97f285043337f98fffaa80",
+          "sha": "690e175b1d70a0a39b97f285043337f98fffaa80",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/690e175b1d70a0a39b97f285043337f98fffaa80"
+        }
+      ],
+      "sha": "4de7cb8012a0716d0c834d279a04fc4fd62c5112",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/4de7cb8012a0716d0c834d279a04fc4fd62c5112"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/11866552?v=4",
+        "events_url": "https://api.github.com/users/quexten/events{/privacy}",
+        "followers_url": "https://api.github.com/users/quexten/followers",
+        "following_url": "https://api.github.com/users/quexten/following{/other_user}",
+        "gists_url": "https://api.github.com/users/quexten/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/quexten",
+        "id": 11866552,
+        "login": "quexten",
+        "node_id": "MDQ6VXNlcjExODY2NTUy",
+        "organizations_url": "https://api.github.com/users/quexten/orgs",
+        "received_events_url": "https://api.github.com/users/quexten/received_events",
+        "repos_url": "https://api.github.com/users/quexten/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/quexten/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/quexten/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/quexten",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/b486fcc689bb6eedf61a1949887a66568f9b1b50/comments",
+      "commit": {
+        "author": {
+          "date": "2024-10-24T17:41:30Z",
+          "email": "mail@quexten.com",
+          "name": "Bernd Schoolmann"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-10-24T17:41:30Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "[Pm-13097] Rename cryptoservice to keyservice and move it to km ownership (#11358)\n\n* Rename cryptoservice to keyservice\r\n\r\n* Rename cryptoservice to keyservice\r\n\r\n* Move key service to key management ownership\r\n\r\n* Remove accidentally added file\r\n\r\n* Fix cli build\r\n\r\n* Fix browser build\r\n\r\n* Run prettier\r\n\r\n* Fix builds\r\n\r\n* Fix cli build\r\n\r\n* Fix tests\r\n\r\n* Fix incorrect renames\r\n\r\n* Rename webauthn-login-crypto-service\r\n\r\n* Fix build errors due to merge conflicts\r\n\r\n* Fix linting",
+        "tree": {
+          "sha": "8e31b23ceb26cac3a634f86a88ee05f872d73e3c",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/8e31b23ceb26cac3a634f86a88ee05f872d73e3c"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/b486fcc689bb6eedf61a1949887a66568f9b1b50",
+        "verification": {
+          "payload": "tree 8e31b23ceb26cac3a634f86a88ee05f872d73e3c\nparent 554171b6882d71c9a0e0e5cbb49f88f93c867f4d\nauthor Bernd Schoolmann <mail@quexten.com> 1729791690 +0200\ncommitter GitHub <noreply@github.com> 1729791690 +0200\n\n[Pm-13097] Rename cryptoservice to keyservice and move it to km ownership (#11358)\n\n* Rename cryptoservice to keyservice\r\n\r\n* Rename cryptoservice to keyservice\r\n\r\n* Move key service to key management ownership\r\n\r\n* Remove accidentally added file\r\n\r\n* Fix cli build\r\n\r\n* Fix browser build\r\n\r\n* Run prettier\r\n\r\n* Fix builds\r\n\r\n* Fix cli build\r\n\r\n* Fix tests\r\n\r\n* Fix incorrect renames\r\n\r\n* Rename webauthn-login-crypto-service\r\n\r\n* Fix build errors due to merge conflicts\r\n\r\n* Fix linting",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnGobKCRC1aQ7uu5UhlAAAvo0QAFftNRGs9Ep1DX1mYPniLUG2\n2QxUVPyWeYKJZ2Awr4nOUjaeq4J4xKTlNcVVPpGibN9+RAGkEGPFRewHCxSGk4Sn\nfmr9LpR9Fbz617Uo3Qj+4wVgVLf1qZIsyoSiPN5hSFmaulXAlR8Eq4boC0qzt+BK\nmFhfU5OmG1ZuQRw0ee4ggSPB89u5phFNZh/VhvbWVGCGJRAiVxZz3qtyAVy9mLNh\nL1an+eSBJsHxBFLRPndyWSCUffauJr86BTB6BoYI3/WVlmau9UflXXqOZuFC/yQ8\n/0iyRksKPdNmxGM0Xi041viFHrUOeexlwZ2KIV4KkfB1rhKwv3lYqmI0vlf8zzmr\nWzQeXG47Ar/g2KfRutVWIVrIoE7kUR4tq7pZUOJwCZlCXJaVKv0I36W5U4zpo6oz\nAQhKWOfLqmp2tT00Mhnrz/HAQ+pxs5cvY+PqTZqa6LS5VWQm81rhztu8K6WsYgi9\n2/Fe/c6d0wNDnAzxi/PYIl/j7e3CvfGPV59M3V+hzJmw5bJvpKG9zHvjfeRqMhay\ndNMgU2qg+hH+aidceIMRcAZcjtl8OiG9E6AX27p2KcSTegn6sgBzx7PvVKY3Y8T9\nezQH21qkBH+PAmUbw98upj9BKUaHEZ8rp3hOkpaNiPwhIQM9XkuZ3cicFq0kSleu\nIDHl3K7pjz/b02KG4hKJ\n=elQC\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-05T20:22:35Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/b486fcc689bb6eedf61a1949887a66568f9b1b50",
+      "node_id": "C_kwDOAzDwU9oAKGI0ODZmY2M2ODliYjZlZWRmNjFhMTk0OTg4N2E2NjU2OGY5YjFiNTA",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/554171b6882d71c9a0e0e5cbb49f88f93c867f4d",
+          "sha": "554171b6882d71c9a0e0e5cbb49f88f93c867f4d",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/554171b6882d71c9a0e0e5cbb49f88f93c867f4d"
+        }
+      ],
+      "sha": "b486fcc689bb6eedf61a1949887a66568f9b1b50",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/b486fcc689bb6eedf61a1949887a66568f9b1b50"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/116684653?v=4",
+        "events_url": "https://api.github.com/users/JaredSnider-Bitwarden/events{/privacy}",
+        "followers_url": "https://api.github.com/users/JaredSnider-Bitwarden/followers",
+        "following_url": "https://api.github.com/users/JaredSnider-Bitwarden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JaredSnider-Bitwarden/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/JaredSnider-Bitwarden",
+        "id": 116684653,
+        "login": "JaredSnider-Bitwarden",
+        "node_id": "U_kgDOBvR3bQ",
+        "organizations_url": "https://api.github.com/users/JaredSnider-Bitwarden/orgs",
+        "received_events_url": "https://api.github.com/users/JaredSnider-Bitwarden/received_events",
+        "repos_url": "https://api.github.com/users/JaredSnider-Bitwarden/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/JaredSnider-Bitwarden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JaredSnider-Bitwarden/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/JaredSnider-Bitwarden",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/7297d0fccd0eb18aed721227f4dc70c937fe0afa/comments",
+      "commit": {
+        "author": {
+          "date": "2024-10-11T20:02:47Z",
+          "email": "116684653+JaredSnider-Bitwarden@users.noreply.github.com",
+          "name": "Jared Snider"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-10-11T20:02:47Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Auth/PM-13318 - AnonLayoutWrapperData Refactor to add full Translation support (#11513)\n\n* PM-13318 - AnonLayoutWrapperData refactor to support all possible string scenarios (untranslated string, translated string, and translated string with placeholders)\r\n\r\n* PM-13318 - Fix accidental check in\r\n\r\n* PM-13318 - Revert the correct change.\r\n\r\n* PM-13318 - Fix test failures",
+        "tree": {
+          "sha": "eeaceb7301e31a623fc3c91c2c296263ea0faa9b",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/eeaceb7301e31a623fc3c91c2c296263ea0faa9b"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/7297d0fccd0eb18aed721227f4dc70c937fe0afa",
+        "verification": {
+          "payload": "tree eeaceb7301e31a623fc3c91c2c296263ea0faa9b\nparent 784dd3c9a041b01dd030c893cec223cbdce4e42a\nauthor Jared Snider <116684653+JaredSnider-Bitwarden@users.noreply.github.com> 1728676967 -0400\ncommitter GitHub <noreply@github.com> 1728676967 -0400\n\nAuth/PM-13318 - AnonLayoutWrapperData Refactor to add full Translation support (#11513)\n\n* PM-13318 - AnonLayoutWrapperData refactor to support all possible string scenarios (untranslated string, translated string, and translated string with placeholders)\r\n\r\n* PM-13318 - Fix accidental check in\r\n\r\n* PM-13318 - Revert the correct change.\r\n\r\n* PM-13318 - Fix test failures",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJnCYRnCRC1aQ7uu5UhlAAAes0QAAVNwUhNOybMPEu874ArkIBa\nJxTUiVTXiZLudNEp3+QFYut3sKDVlYL6mf2l4ejkovs8H4XceYKJEa/qmW3VtGWa\nlq/yTHYAPM+/xpvDWn/8SDylRbZCO9+oVRXOSarRANn7AqwPJm95MbbHlj6Tj/1T\nGkTlYKzqjtEr/fLCf6s/64zhZRuRK3sQ98Sjgd7t2Sn5sTAvfowHFUQ0jFa2O3If\naUnXki3txr5XgA+cTLUG6i9iiHlVESJOBz5BQdo6eXjZWxdzNSISPJfTNPtUQeax\nrvM1fcjzKTrEAB3yREMiFZPz5398i0xE9O0GO3xqasf7ek2hJA6YKWxlp6Bo4YPJ\nqwlMuRvsSKg1P9yW6SRmXgb83CZ1HWo16C5Ur0yQoLMTCOJRPeBUAFIyKx/TYO+O\nDvsRNcsG99i0GPPTl2HFO+Ps/QEZUZehgWwmn7ZX/oKYV9GD4L2/3D/qlLufHb7S\ntQ4kUzcTJBItz83a8OmUNIG155OUI/wktRdw5wRCspttzKiOyUEACps6zZOTQ05t\nA9O648O8H8Q/YeTpPmv32YfmXvwtfim0c2tBRVlfBdL/qbOzsEQYAe7s1Nuuse1j\nJa+Mvj94CkWbwUCNKa5MVYwWiLtCAzhteZdMssdTx4AGOqaeoH0nPfvl6JeypfzK\nQm04Tl0WblPimNOXf8Ub\n=u1hw\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-05T20:22:36Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/7297d0fccd0eb18aed721227f4dc70c937fe0afa",
+      "node_id": "C_kwDOAzDwU9oAKDcyOTdkMGZjY2QwZWIxOGFlZDcyMTIyN2Y0ZGM3MGM5MzdmZTBhZmE",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/784dd3c9a041b01dd030c893cec223cbdce4e42a",
+          "sha": "784dd3c9a041b01dd030c893cec223cbdce4e42a",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/784dd3c9a041b01dd030c893cec223cbdce4e42a"
+        }
+      ],
+      "sha": "7297d0fccd0eb18aed721227f4dc70c937fe0afa",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/7297d0fccd0eb18aed721227f4dc70c937fe0afa"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/116684653?v=4",
+        "events_url": "https://api.github.com/users/JaredSnider-Bitwarden/events{/privacy}",
+        "followers_url": "https://api.github.com/users/JaredSnider-Bitwarden/followers",
+        "following_url": "https://api.github.com/users/JaredSnider-Bitwarden/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JaredSnider-Bitwarden/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/JaredSnider-Bitwarden",
+        "id": 116684653,
+        "login": "JaredSnider-Bitwarden",
+        "node_id": "U_kgDOBvR3bQ",
+        "organizations_url": "https://api.github.com/users/JaredSnider-Bitwarden/orgs",
+        "received_events_url": "https://api.github.com/users/JaredSnider-Bitwarden/received_events",
+        "repos_url": "https://api.github.com/users/JaredSnider-Bitwarden/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/JaredSnider-Bitwarden/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JaredSnider-Bitwarden/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/JaredSnider-Bitwarden",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/bitwarden/clients/commits/9ff1db757318a81c594d40849c4bbe01ab5d8193/comments",
+      "commit": {
+        "author": {
+          "date": "2024-10-01T20:06:18Z",
+          "email": "116684653+JaredSnider-Bitwarden@users.noreply.github.com",
+          "name": "Jared Snider"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2024-10-01T20:06:18Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Auth/PM-9449 - UI Refresh + Client component consolidation into new LockV2 Component (#10451)\n\n* PM-9449 - Init stub of new lock comp\r\n\r\n* PM-9449 - (1) Add new lock screen title to all clients (2) Add to temp web routing module config\r\n\r\n* PM-9449 - LockV2Comp - Building now with web HTML\r\n\r\n* PM-9449 - Libs/Auth LockComp - bring in all desktop ts code; WIP, need to stand up LockCompService to facilitate ipc communication.\r\n\r\n* PM-9449 - Create LockComponentService for facilitating client logic; potentially will decompose later.\r\n\r\n* PM-9449 - Add extension lock comp service.\r\n\r\n* PM-9449 - Libs/auth LockComp - bring in browser extension logic\r\n\r\n* PM-9449 - Libs/auth LockComp html start\r\n\r\n* PM-9449 - Libs/Auth LockComp - (1) Remove unused dep (2) Update setEmailAsPageSubtitle to work.\r\n\r\n* PM-9449 - Add getBiometricsError to lock comp service for extension.\r\n\r\n* PM-9449 - LockComp - (1) Save off client type as public comp var (2) Rename biometricLock as biometricLockSet\r\n\r\n* PM-9449 - Work on lock comp service getAvailableUnlockOptions\r\n\r\n* PM-9449 - WIP libs/auth LockComp\r\n\r\n* PM-9449 - (1) Remove default lock comp svc (2) Add web lock comp svc.\r\n\r\n* PM-9449 - UnlockOptions - replace incorrect type\r\n\r\n* PM-9449 - DesktopLockComponentService -get most of observable based getAvailableUnlockOptions$ logic in place.\r\n\r\n* PM-9449 - LockCompSvc - getAvailableUnlockOptions in place for all clients.\r\n\r\n* PM-9449 - Add getBiometricsUnlockBtnText to LockCompSvc and put TODO for wiring it up later\r\n\r\n* PM-9449 - Lock Comp - Replace all manual bools with unlock options.\r\n\r\n* PM-9449 - Desktop Lock Comp Svc - adjust spacing\r\n\r\n* PM-9449 - LockCompSvc - remove biometricsEnabled method\r\n\r\n* PM-9449 - LockComp - Clean up commented out code\r\n\r\n* PM-9449 - LockComp - webVaultHostname --> envHostName\r\n\r\n* PM-9449 - Fix lock comp svc deps\r\n\r\n* PM-9449 - LockComp - HTML progress\r\n\r\n* PM-9449 - LockComp cleanup\r\n\r\n* PM-9449 - Web Routing Module - wire up lock vs lockv2 using extension swap\r\n\r\n* PM-9449 - Wire up loading state\r\n\r\n* PM-9449 - LockComp - start wiring up listenForActiveUnlockOptionChanges logic with reactivity\r\n\r\n* PM-9449 - Update desktop & extension lock comp service to use new biometrics service vs platform utils for biometrics information.\r\n\r\n* PM-9449 - LockV2 - Swap platform util usage with toast svc\r\n\r\n* PM-9449 - LockV2Comp - Bring over user id logic from PM-8933\r\n\r\n* PM-9449 - LockV2Comp - Adjust everything to use activeAccount.id.\r\n\r\n* PM-9449 - LockV2Comp - Progress on wiring up unlock option reactive stream.\r\n\r\n* PM-9449 - LockComp ts - some refactoring and minor progress.\r\n\r\n* PM-9449 - LockComp HTML - refactoring based on new idea to keep unlock options as separate as possible.\r\n\r\n* PM-9449 - Add PIN translation to web\r\n\r\n* PM-9449 - (1) Lock HTML refactor to make as independent verticals as possible (2) Refactor Lock ts (3) LockSvc - replace type with enum.\r\n\r\n* PM-9449 - LockV2Comp - remove hardcoded await.\r\n\r\n* PM-9449 - LockComp HTML - add todo\r\n\r\n* PM-9449 - Web - Routing module - cleanup commented out stuff\r\n\r\n* PM-9449 - LockV2Comp - Wire up biometrics + mild refactor.\r\n\r\n* PM-9449 - Desktop - Wire up lockV2 redirection\r\n\r\n* PM-9449 - LockV2 - Desktop - don't focus until unlock opts defined.\r\n\r\n* PM-9449 - Fix accidental check in\r\n\r\n* PM-9449 - LockV2 - loading state depends on unlock opts\r\n\r\n* PM-9449 - LockV2 comp - remove unnecessary hr\r\n\r\n* PM-9449 - Migrate  \"yourVaultIsLockedV2\" translation to desktop & browser.\r\n\r\n* PM-9449 - LockV2 - Layout tweaks for biometrics\r\n\r\n* PM-9449 - LockV2 - Biometric btn text\r\n\r\n* PM-9449 - LockV2 - Wire up biometrics loading / disable state + remove unnecessary conditions around biometricsUnlockBtnText\r\n\r\n* PM-9449 - DesktopLockSvc - Per discussion with Bernd, remove interval polling and just check once for biometric support and availability.\r\n\r\n* PM-9449 - AuthGuard - Add todo to remove promptBiometric\r\n\r\n* PM-9449 - LockV2 - Refactor primary and desktop init logic + misc clean up\r\n\r\n* PM-9449 - LockV2 - Reorder init methods\r\n\r\n* PM-9449 - LockV2 - Per discussion with Product, deprecate windows biometric settings update warning\r\n\r\n* PM-9449 - Add TODO per discussion with Justin and remove TODO\r\n\r\n* PM-9449 - LockV2 - Restore hide password on desktop window hidden functionality.\r\n\r\n* PM-9449 - Clean up accomplished todo\r\n\r\n* PM-9449 - LockV2 - Refactor func name.\r\n\r\n* PM-9449 - LockV2 Comp - (1) TODO cleanup (2) Add browser logic to handleBiometricsUnlockEnabled\r\n\r\n* PM-9449 - LockCompSvc changes - (1) Observability for isFido2Session (2) Adjust errors and returns per discussion with Justin\r\n\r\n* PM-9449 - Per product, no longer need to support special fido2 case on extension.\r\n\r\n* PM-9449 - LockCompSvc - add getPreviousUrl support\r\n\r\n* PM-9449 - LockV2 - Continued ts cleanup\r\n\r\n* PM-9449 - LockV2Comp - clean up unused props\r\n\r\n* PM-9449 - LockV2Comp - Rename response to masterPasswordVerificationResponse\r\n\r\n* PM-9449 - LockV2 - Remove unused formPromise prop\r\n\r\n* PM-9449 - Add missing translations + update desktop to showReadonlyHostName\r\n\r\n* PM-9449 - LockV2 - cleanup TODO\r\n\r\n* PM-9449 - LockV2 - more cleanup\r\n\r\n* PM-9449 - Desktop Routing Module - only allow LockV2 access if extension refresh flag is enabled.\r\n\r\n* PM-9449 - Extension - AppRoutingModule - Add extension redirect + new lockV2 route.\r\n\r\n* PM-9449 - Extension - AppRoutingModule - Add lockV2 to the ExtensionAnonLayoutWrapperComponent intead of the regular one.\r\n\r\n* PM-9449 - Extension - CurrentAccountComp - add null checks as anon layout components don't have a state today. This prevents the account switcher from working on the new lockV2 comp.\r\n\r\n* PM-9449 - Extension AppRoutingModule - LockV2 should use ExtensionAnonLayoutWrapperData\r\n\r\n* PM-9449 - LockComp - BiometricUnlock - cancelling is a valid action.\r\n\r\n* PM-9449 - LockV2 - Biometric autoprompt cleanup\r\n\r\n* PM-9449 - LockV2 - (1) Add TODO for KM team (2) Fix submit logic.\r\n\r\n* PM-9449 - Tweak TODO to add task #\r\n\r\n* PM-9449 - Test WebLockComponentService\r\n\r\n* PM-9449 - ExtensionLockComponentService tested\r\n\r\n* PM-9449 - Tweak extension lock comp svc test\r\n\r\n* PM-9449 - DesktopLockComponentService tested\r\n\r\n* PM-9449 - Add task # to TODO\r\n\r\n* PM-9449 - Update apps/browser/src/services/extension-lock-component.service.ts per PR feedback\r\n\r\nCo-authored-by: Justin Baur <19896123+justindbaur@users.noreply.github.com>\r\n\r\n* PM-9449 - Per PR feedback, replace from with defer for better reactive execution of promise based functions.\r\n\r\n* PM-9449 - Per PR feedback replace enum with type.\r\n\r\n* PM-9449 - Fix imports and tests due to key management file moves.\r\n\r\n* PM-9449 - Another test file import fix\r\n\r\n---------\r\n\r\nCo-authored-by: Justin Baur <19896123+justindbaur@users.noreply.github.com>",
+        "tree": {
+          "sha": "1964b1b978338d4ec0567c1aff31f8561b564906",
+          "url": "https://api.github.com/repos/bitwarden/clients/git/trees/1964b1b978338d4ec0567c1aff31f8561b564906"
+        },
+        "url": "https://api.github.com/repos/bitwarden/clients/git/commits/9ff1db757318a81c594d40849c4bbe01ab5d8193",
+        "verification": {
+          "payload": "tree 1964b1b978338d4ec0567c1aff31f8561b564906\nparent dab60dbaea503c91840b847871a0cc2d734e6899\nauthor Jared Snider <116684653+JaredSnider-Bitwarden@users.noreply.github.com> 1727813178 -0400\ncommitter GitHub <noreply@github.com> 1727813178 -0400\n\nAuth/PM-9449 - UI Refresh + Client component consolidation into new LockV2 Component (#10451)\n\n* PM-9449 - Init stub of new lock comp\r\n\r\n* PM-9449 - (1) Add new lock screen title to all clients (2) Add to temp web routing module config\r\n\r\n* PM-9449 - LockV2Comp - Building now with web HTML\r\n\r\n* PM-9449 - Libs/Auth LockComp - bring in all desktop ts code; WIP, need to stand up LockCompService to facilitate ipc communication.\r\n\r\n* PM-9449 - Create LockComponentService for facilitating client logic; potentially will decompose later.\r\n\r\n* PM-9449 - Add extension lock comp service.\r\n\r\n* PM-9449 - Libs/auth LockComp - bring in browser extension logic\r\n\r\n* PM-9449 - Libs/auth LockComp html start\r\n\r\n* PM-9449 - Libs/Auth LockComp - (1) Remove unused dep (2) Update setEmailAsPageSubtitle to work.\r\n\r\n* PM-9449 - Add getBiometricsError to lock comp service for extension.\r\n\r\n* PM-9449 - LockComp - (1) Save off client type as public comp var (2) Rename biometricLock as biometricLockSet\r\n\r\n* PM-9449 - Work on lock comp service getAvailableUnlockOptions\r\n\r\n* PM-9449 - WIP libs/auth LockComp\r\n\r\n* PM-9449 - (1) Remove default lock comp svc (2) Add web lock comp svc.\r\n\r\n* PM-9449 - UnlockOptions - replace incorrect type\r\n\r\n* PM-9449 - DesktopLockComponentService -get most of observable based getAvailableUnlockOptions$ logic in place.\r\n\r\n* PM-9449 - LockCompSvc - getAvailableUnlockOptions in place for all clients.\r\n\r\n* PM-9449 - Add getBiometricsUnlockBtnText to LockCompSvc and put TODO for wiring it up later\r\n\r\n* PM-9449 - Lock Comp - Replace all manual bools with unlock options.\r\n\r\n* PM-9449 - Desktop Lock Comp Svc - adjust spacing\r\n\r\n* PM-9449 - LockCompSvc - remove biometricsEnabled method\r\n\r\n* PM-9449 - LockComp - Clean up commented out code\r\n\r\n* PM-9449 - LockComp - webVaultHostname --> envHostName\r\n\r\n* PM-9449 - Fix lock comp svc deps\r\n\r\n* PM-9449 - LockComp - HTML progress\r\n\r\n* PM-9449 - LockComp cleanup\r\n\r\n* PM-9449 - Web Routing Module - wire up lock vs lockv2 using extension swap\r\n\r\n* PM-9449 - Wire up loading state\r\n\r\n* PM-9449 - LockComp - start wiring up listenForActiveUnlockOptionChanges logic with reactivity\r\n\r\n* PM-9449 - Update desktop & extension lock comp service to use new biometrics service vs platform utils for biometrics information.\r\n\r\n* PM-9449 - LockV2 - Swap platform util usage with toast svc\r\n\r\n* PM-9449 - LockV2Comp - Bring over user id logic from PM-8933\r\n\r\n* PM-9449 - LockV2Comp - Adjust everything to use activeAccount.id.\r\n\r\n* PM-9449 - LockV2Comp - Progress on wiring up unlock option reactive stream.\r\n\r\n* PM-9449 - LockComp ts - some refactoring and minor progress.\r\n\r\n* PM-9449 - LockComp HTML - refactoring based on new idea to keep unlock options as separate as possible.\r\n\r\n* PM-9449 - Add PIN translation to web\r\n\r\n* PM-9449 - (1) Lock HTML refactor to make as independent verticals as possible (2) Refactor Lock ts (3) LockSvc - replace type with enum.\r\n\r\n* PM-9449 - LockV2Comp - remove hardcoded await.\r\n\r\n* PM-9449 - LockComp HTML - add todo\r\n\r\n* PM-9449 - Web - Routing module - cleanup commented out stuff\r\n\r\n* PM-9449 - LockV2Comp - Wire up biometrics + mild refactor.\r\n\r\n* PM-9449 - Desktop - Wire up lockV2 redirection\r\n\r\n* PM-9449 - LockV2 - Desktop - don't focus until unlock opts defined.\r\n\r\n* PM-9449 - Fix accidental check in\r\n\r\n* PM-9449 - LockV2 - loading state depends on unlock opts\r\n\r\n* PM-9449 - LockV2 comp - remove unnecessary hr\r\n\r\n* PM-9449 - Migrate  \"yourVaultIsLockedV2\" translation to desktop & browser.\r\n\r\n* PM-9449 - LockV2 - Layout tweaks for biometrics\r\n\r\n* PM-9449 - LockV2 - Biometric btn text\r\n\r\n* PM-9449 - LockV2 - Wire up biometrics loading / disable state + remove unnecessary conditions around biometricsUnlockBtnText\r\n\r\n* PM-9449 - DesktopLockSvc - Per discussion with Bernd, remove interval polling and just check once for biometric support and availability.\r\n\r\n* PM-9449 - AuthGuard - Add todo to remove promptBiometric\r\n\r\n* PM-9449 - LockV2 - Refactor primary and desktop init logic + misc clean up\r\n\r\n* PM-9449 - LockV2 - Reorder init methods\r\n\r\n* PM-9449 - LockV2 - Per discussion with Product, deprecate windows biometric settings update warning\r\n\r\n* PM-9449 - Add TODO per discussion with Justin and remove TODO\r\n\r\n* PM-9449 - LockV2 - Restore hide password on desktop window hidden functionality.\r\n\r\n* PM-9449 - Clean up accomplished todo\r\n\r\n* PM-9449 - LockV2 - Refactor func name.\r\n\r\n* PM-9449 - LockV2 Comp - (1) TODO cleanup (2) Add browser logic to handleBiometricsUnlockEnabled\r\n\r\n* PM-9449 - LockCompSvc changes - (1) Observability for isFido2Session (2) Adjust errors and returns per discussion with Justin\r\n\r\n* PM-9449 - Per product, no longer need to support special fido2 case on extension.\r\n\r\n* PM-9449 - LockCompSvc - add getPreviousUrl support\r\n\r\n* PM-9449 - LockV2 - Continued ts cleanup\r\n\r\n* PM-9449 - LockV2Comp - clean up unused props\r\n\r\n* PM-9449 - LockV2Comp - Rename response to masterPasswordVerificationResponse\r\n\r\n* PM-9449 - LockV2 - Remove unused formPromise prop\r\n\r\n* PM-9449 - Add missing translations + update desktop to showReadonlyHostName\r\n\r\n* PM-9449 - LockV2 - cleanup TODO\r\n\r\n* PM-9449 - LockV2 - more cleanup\r\n\r\n* PM-9449 - Desktop Routing Module - only allow LockV2 access if extension refresh flag is enabled.\r\n\r\n* PM-9449 - Extension - AppRoutingModule - Add extension redirect + new lockV2 route.\r\n\r\n* PM-9449 - Extension - AppRoutingModule - Add lockV2 to the ExtensionAnonLayoutWrapperComponent intead of the regular one.\r\n\r\n* PM-9449 - Extension - CurrentAccountComp - add null checks as anon layout components don't have a state today. This prevents the account switcher from working on the new lockV2 comp.\r\n\r\n* PM-9449 - Extension AppRoutingModule - LockV2 should use ExtensionAnonLayoutWrapperData\r\n\r\n* PM-9449 - LockComp - BiometricUnlock - cancelling is a valid action.\r\n\r\n* PM-9449 - LockV2 - Biometric autoprompt cleanup\r\n\r\n* PM-9449 - LockV2 - (1) Add TODO for KM team (2) Fix submit logic.\r\n\r\n* PM-9449 - Tweak TODO to add task #\r\n\r\n* PM-9449 - Test WebLockComponentService\r\n\r\n* PM-9449 - ExtensionLockComponentService tested\r\n\r\n* PM-9449 - Tweak extension lock comp svc test\r\n\r\n* PM-9449 - DesktopLockComponentService tested\r\n\r\n* PM-9449 - Add task # to TODO\r\n\r\n* PM-9449 - Update apps/browser/src/services/extension-lock-component.service.ts per PR feedback\r\n\r\nCo-authored-by: Justin Baur <19896123+justindbaur@users.noreply.github.com>\r\n\r\n* PM-9449 - Per PR feedback, replace from with defer for better reactive execution of promise based functions.\r\n\r\n* PM-9449 - Per PR feedback replace enum with type.\r\n\r\n* PM-9449 - Fix imports and tests due to key management file moves.\r\n\r\n* PM-9449 - Another test file import fix\r\n\r\n---------\r\n\r\nCo-authored-by: Justin Baur <19896123+justindbaur@users.noreply.github.com>",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJm/FY6CRC1aQ7uu5UhlAAA6lkQAC1BTvZJGGOd8pOGTxfG/CsL\nSpP++1b2pmKpIXzHT2SnayHA2cp1qTN6S9rKboOsSbmAKGhQI2ElVNdub0TD+JEg\nDxGHlpuetw5Uivw3jivyymuAvHyU7umq94Mz24wpenebthb3UHrNMFslI5lTVFAF\n2Wu86C3DZPHO9IZ93bALcvTP5slwP5rcAI3h7szTQ9gaDgTTUYXG+XrROhfzFkMq\nOZFOwGimI2Z8aknfH6hOPtqTFZNk+6FzTVsFQnC2XGClSlQwbeZ4a2w4+FZaBRBK\nmHnm4qO3DomOGCAVX27Ww4XhsA8BlntGVq5Rt/g1NDjQ7dQiRv6Lu61vuHObgrei\nTt0mj19E79rUQUzoRRchu6Wg6X1yBGfSKiqKxv7mqsm4wPYTFx19fF4IJjI1hxVO\n0MPwyUsObWp+eGzjr0X2NXPN4PiozJ/7WL1PyCL2KpLFWZIOwM7a9dfgujbs82wX\n9OA6X1kXW+OlF20rBS2nfUj3/yycA4JpKBAwq4ZYpW1Y9CPQCFBrzmRJf6zR5xg0\nu8DmKa2ayEyv4gwVmH9DfrlhhKPKhoYb9PMUk1vyNAoe3a7uJc9o6JsRKWUtby9t\n09yW4tf261hUPYVmQkFJnNS3MG++8MLGVkVyrBS4xn90CSvKoPOEoccCaq8y6e6x\npLrp+9gR5l3boZup6tg3\n=7hTk\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2024-11-05T18:02:41Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/bitwarden/clients/commit/9ff1db757318a81c594d40849c4bbe01ab5d8193",
+      "node_id": "C_kwDOAzDwU9oAKDlmZjFkYjc1NzMxOGE4MWM1OTRkNDA4NDljNGJiZTAxYWI1ZDgxOTM",
+      "parents": [
+        {
+          "html_url": "https://github.com/bitwarden/clients/commit/dab60dbaea503c91840b847871a0cc2d734e6899",
+          "sha": "dab60dbaea503c91840b847871a0cc2d734e6899",
+          "url": "https://api.github.com/repos/bitwarden/clients/commits/dab60dbaea503c91840b847871a0cc2d734e6899"
+        }
+      ],
+      "sha": "9ff1db757318a81c594d40849c4bbe01ab5d8193",
+      "url": "https://api.github.com/repos/bitwarden/clients/commits/9ff1db757318a81c594d40849c4bbe01ab5d8193"
+    }
+  ],
+  "fetched_utc": "2026-11-14T17:09:04.574362+00:00",
+  "link_header": null,
+  "rate_remaining": null,
+  "sha256": "0ec9ece910ae9d36b054fe63748a59ec61fefcf5f5d1f8afd40b68c98847a08c",
+  "source_url": "https://api.github.com/repos/bitwarden/clients/commits?path=libs%2Fauth%2Fsrc%2Fangular%2Flock%2F&since=2024-01-08T15%3A47%3A51Z&until=2025-01-07T15%3A47%3A50Z&per_page=100"
+}

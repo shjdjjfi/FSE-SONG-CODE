@@ -1,0 +1,28 @@
+{
+  "key": "34fa167683ea2665f6",
+  "args": {
+    "crate": "poem",
+    "version": "3.1.12",
+    "id": "6376b52903c6550a",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.3371,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `unic_langid`",
+      "rendered": "error[E0432]: unresolved import `unic_langid`\n --> src/main.rs:3:5\n  |\n3 | use unic_langid::langid;\n  |     ^^^^^^^^^^^ use of unresolved module or unlinked crate `unic_langid`\n  |\n  = help: if you wanted to use a crate named `unic_langid`, use `cargo add unic_langid` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_poem_consumer` (bin \"n05_poem_consumer\") due to 1 previous error\n",
+  "code_sha256": "571fe5329fa1e80991960513c5134b4193a0ba59144961234b0ccca226e26d04",
+  "manifest_sha256": "3dd72976a982aec880835065a9f99741da6f46c9b9e0e20ae56c4a765a8a7966",
+  "log_file": "prospective/results/check_logs/34fa167683ea2665f6.txt.gz"
+}

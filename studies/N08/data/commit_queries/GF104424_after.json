@@ -1,0 +1,2469 @@
+{
+  "body": [
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/51393127?v=4",
+        "events_url": "https://api.github.com/users/chriscerie/events{/privacy}",
+        "followers_url": "https://api.github.com/users/chriscerie/followers",
+        "following_url": "https://api.github.com/users/chriscerie/following{/other_user}",
+        "gists_url": "https://api.github.com/users/chriscerie/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/chriscerie",
+        "id": 51393127,
+        "login": "chriscerie",
+        "node_id": "MDQ6VXNlcjUxMzkzMTI3",
+        "organizations_url": "https://api.github.com/users/chriscerie/orgs",
+        "received_events_url": "https://api.github.com/users/chriscerie/received_events",
+        "repos_url": "https://api.github.com/users/chriscerie/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/chriscerie/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/chriscerie/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/chriscerie",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/4c5defc4da9dad753e3bdb4bf01b30897a6f8bd2/comments",
+      "commit": {
+        "author": {
+          "date": "2026-04-20T18:41:15Z",
+          "email": "51393127+chriscerie@users.noreply.github.com",
+          "name": "Chris Chang"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-04-20T18:41:15Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Allow restricting contact point integration types (#118858)\n\n* add config option [unified_alerting].allowed_integrations that controls what integration types are allowed for configuration. \n* fix contact point front-end component to disable not allowed integration types in the list. \n\n---------\n\nCo-authored-by: Santiago Hernández <santiagohernandez.1997@gmail.com>\nCo-authored-by: Gilles De Mey <gilles.de.mey@gmail.com>",
+        "tree": {
+          "sha": "4a247f1aca0393ac9d90fe0e49182b913d89bcfb",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/4a247f1aca0393ac9d90fe0e49182b913d89bcfb"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/4c5defc4da9dad753e3bdb4bf01b30897a6f8bd2",
+        "verification": {
+          "payload": "tree 4a247f1aca0393ac9d90fe0e49182b913d89bcfb\nparent af8f8bd368c147c03ef53106891d724b5f18e11a\nauthor Chris Chang <51393127+chriscerie@users.noreply.github.com> 1776710475 -0700\ncommitter GitHub <noreply@github.com> 1776710475 -0400\n\nAlerting: Allow restricting contact point integration types (#118858)\n\n* add config option [unified_alerting].allowed_integrations that controls what integration types are allowed for configuration. \n* fix contact point front-end component to disable not allowed integration types in the list. \n\n---------\n\nCo-authored-by: Santiago Hernández <santiagohernandez.1997@gmail.com>\nCo-authored-by: Gilles De Mey <gilles.de.mey@gmail.com>",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJp5nNLCRC1aQ7uu5UhlAAAtLsQAGvHEY5RV53RgHTA1pLyLY1z\nTC32LeSN26+zZFC/ubSHkvMrguj1YBbGAjcuQc+Cd17/PJW7eTUKe/jqnn1HaVoE\nkFCfGTVB9L4hwwQDWY8nXU5avMUavX6j7q8pppVsDKPtAmhQXu4zeffqfpBJBeff\nrjGk5IS88CFeU4YZQo2J7GXn9c2NqW9UgcSQN52hSqwFjz1MFO/O4ltgDfFESuz9\nNu4Lw+Z1yBGiVdicRvEYbPVaAKQBYYTGIeqgP9rzjaVyQExYYGCDuh3n5BPziiTd\nzL8dqkPkzo8R2bu90sI4pc2ip6Uu+TCaTIad9ovKYMcomWr1WtcGpWhPtpjBlDQt\nZXsjzPO+xuRXBGnZ5g+DBPjFxynvuNq9FNrIbk9uzsiCe2VZznGMzZIw75atzX8/\nCYEX2QkngqXuiosj68YeHQ9sC137qAt5rJ+BNPthWAo1+ejeicECFsQcKcDe49B2\ncZtfi56oCXZHmQ0Lgsp8jTDcBMu99AociCL/ODoBeMnyZsK62zHpNhK2bNjfe6hH\nMq+i8hxvOxxbfKgTj5mZavQlDM+0eN1DIaUBqC0Bnmal9P7JgXQFWwB7boVDu8x+\n5Q+NVT6wGpM4LECNlkpuAibJ/sy8elJyoPWrD30q1J9ZgJjx45Q7+npEzAfAj+fO\ngwfyEjJ9EokFeAMMtvYD\n=WpQX\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-04-20T18:41:16Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/4c5defc4da9dad753e3bdb4bf01b30897a6f8bd2",
+      "node_id": "C_kwDOAOaWjdoAKDRjNWRlZmM0ZGE5ZGFkNzUzZTNiZGI0YmYwMWIzMDg5N2E2ZjhiZDI",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/af8f8bd368c147c03ef53106891d724b5f18e11a",
+          "sha": "af8f8bd368c147c03ef53106891d724b5f18e11a",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/af8f8bd368c147c03ef53106891d724b5f18e11a"
+        }
+      ],
+      "sha": "4c5defc4da9dad753e3bdb4bf01b30897a6f8bd2",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/4c5defc4da9dad753e3bdb4bf01b30897a6f8bd2"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/8942194?v=4",
+        "events_url": "https://api.github.com/users/titolins/events{/privacy}",
+        "followers_url": "https://api.github.com/users/titolins/followers",
+        "following_url": "https://api.github.com/users/titolins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/titolins/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/titolins",
+        "id": 8942194,
+        "login": "titolins",
+        "node_id": "MDQ6VXNlcjg5NDIxOTQ=",
+        "organizations_url": "https://api.github.com/users/titolins/orgs",
+        "received_events_url": "https://api.github.com/users/titolins/received_events",
+        "repos_url": "https://api.github.com/users/titolins/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/titolins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/titolins/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/titolins",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/054e4b4d85594d4608a7837e6e5c83d5f428d62d/comments",
+      "commit": {
+        "author": {
+          "date": "2026-04-03T17:28:05Z",
+          "email": "tito.linsesilva@grafana.com",
+          "name": "Tito Lins"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-04-03T17:28:05Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Enforce provenance permissions via service-layer validator in notification APIs (#121335)\n\n- introduce a new provenance transition validation logic that allows all transitions for whoever has permissions. Exception is `none-none` - it does not require permissions, and `prometheus_converted` - it's not allowed in any transition.\n- update APIs to not return provenance annotation if status is `none`. \n- update alerting notifications domain services to support setting provenance via annotation. Now users can set the annotation.",
+        "tree": {
+          "sha": "6043d24dc1c2034b6323c6c3d00e413e1079b013",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/6043d24dc1c2034b6323c6c3d00e413e1079b013"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/054e4b4d85594d4608a7837e6e5c83d5f428d62d",
+        "verification": {
+          "payload": "tree 6043d24dc1c2034b6323c6c3d00e413e1079b013\nparent 9e916beb88c377d6bfa7390cf19010736b0789d2\nauthor Tito Lins <tito.linsesilva@grafana.com> 1775237285 +0200\ncommitter GitHub <noreply@github.com> 1775237285 -0400\n\nAlerting: Enforce provenance permissions via service-layer validator in notification APIs (#121335)\n\n- introduce a new provenance transition validation logic that allows all transitions for whoever has permissions. Exception is `none-none` - it does not require permissions, and `prometheus_converted` - it's not allowed in any transition.\n- update APIs to not return provenance annotation if status is `none`. \n- update alerting notifications domain services to support setting provenance via annotation. Now users can set the annotation. ",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpz/ilCRC1aQ7uu5UhlAAAfzYQAJf8WqMXB2fLsFbvnJGPqhiS\n5XbxoWJYBA6SPlhpLN5G7AjFU42zKgBsO+oRh495wKpwVHJgouvXp0lSiRTVGJoG\nAJ2MfCSY+Uk4QyLH+GqPs8E3JjEWBRURSpJh6Czk2Eo+nnYvwpzGNdnaEUuEUkPR\nmgSfPoGO5xmrd47qlJIt9cSHznCXnfrirW/fd3JH2mtyU1JW4t3hrpzcSlq2cp76\nNzJODPJGQW1oNMwR++C/GU4QBXwfG6jprLPW0c704VUIc+mxTHjWUc+nL/M/dKFd\ndezlw8LbQ5sXNr5N7ErCc4Qle1HkSF1XIfYDfzzVVcdn3v8ev+a55elFUkXT0JhK\nEid4/qeRkq0gl2r2aQyHe0bWOEcMr0wDhWg2vk9+EdL5ZioaToewcgndwe6T7c07\nCoTkdWlkNEB4TFPWx5x0xO9J7ajwVN/vwxWuWyClC/nFtHunTquOMBoxGcBYHhmk\ngFDIync2gYbYpvFwbdUCjhrmu7ftjiw5kpyV/syUFjQUowoozczgESg36+gsmgRY\nG6/FpFB30ecwdOb80iqNurZLO6YoJdqCwbshe6ZibONQ+EDd+fMYM3W9Fc05lLSZ\nihOmFQcPaTv1oe1BbZge1Y9Rgry4AOQocoev4d02ms0h2a39oh7iTWXzQ0lI7e6F\nxgocjvkupFuNmH/1+nTr\n=c4JD\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-04-03T17:28:06Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/054e4b4d85594d4608a7837e6e5c83d5f428d62d",
+      "node_id": "C_kwDOAOaWjdoAKDA1NGU0YjRkODU1OTRkNDYwOGE3ODM3ZTZlNWM4M2Q1ZjQyOGQ2MmQ",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/9e916beb88c377d6bfa7390cf19010736b0789d2",
+          "sha": "9e916beb88c377d6bfa7390cf19010736b0789d2",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/9e916beb88c377d6bfa7390cf19010736b0789d2"
+        }
+      ],
+      "sha": "054e4b4d85594d4608a7837e6e5c83d5f428d62d",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/054e4b4d85594d4608a7837e6e5c83d5f428d62d"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/5f903dc15653357ca98e0b78de2691a2f6fd437d/comments",
+      "commit": {
+        "author": {
+          "date": "2026-04-01T14:20:12Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-04-01T14:20:12Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Route API access control attirbutes (#121253)\n\n* add access control attributes to managed routes + permissions set tests\n\n* update navtree to use new permissions\n\n* do not delete permissions when default route is reset",
+        "tree": {
+          "sha": "9cc64414a4a82b48f1302df848d31b7752cb19d8",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/9cc64414a4a82b48f1302df848d31b7752cb19d8"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/5f903dc15653357ca98e0b78de2691a2f6fd437d",
+        "verification": {
+          "payload": "tree 9cc64414a4a82b48f1302df848d31b7752cb19d8\nparent 17665bd06945f32692cf213c6f2bc623116c7ec5\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1775053212 -0400\ncommitter GitHub <noreply@github.com> 1775053212 +0000\n\nAlerting: Route API access control attirbutes (#121253)\n\n* add access control attributes to managed routes + permissions set tests\n\n* update navtree to use new permissions\n\n* do not delete permissions when default route is reset",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpzSmdCRC1aQ7uu5UhlAAA+aMQAI0Z4puQufy60WOC6swKrJ9n\ngoH4kOc+GBgsRSSRW75uFZeqXnQKEFbl3KJtwI2SlRSMYT1EivS6owkzCC/Wrbly\nw6x2E0XoYDPJ6AHuXiWp6URWqyH2AV9/DO96jkyaWkFKJ2e2cDcbjL8aNIbNbtC+\nV8RjZ6fGbvjSadO0fX3GEoHM5QlI1SDzdRsYvO/EQg8dIWNhRIBNXs8ClS3W7yrN\n8fa1eJoC/AZQRjTwRPy5HMT0pvRo/tXqcaNOjmsUkHASy4UjCILlrgz/OhTqBrTN\nnzm9MFRreYIVs75F4gAOuf5g0rumwTO2UZ45sqwpDgL2Ce6AZ8ulPW7pYjotRxC4\nnJ1mOM/WILLA/N5tOOfBywtvL+K43YNuyOV94LRsi0AZCNXeV5oVUSKWajXu+ahs\nycrODpScTrdUBzUg9aNoaGJ/6+5MVV1NZG27dbm3o7TKtoz1247XJKpt+V7II6d/\nHWjETunPTvFybpwfmg/8CYemGQaLtoRMoTAVPI9PGxfUusGbcUP2O1D7hIUGhOvu\nTknUNMfHMhGAUkmObTFTfywwenmR1OG+DpGoB1pJehY+bh1TDw5TwLw4KwbG4CW0\nOmV8wBGgGL5U6WSJMZaucuZx8DuXzvMTrHDEBETz/fDtk0RhYFqbJ5sdIU7KfTcx\n4LhLL7wKeMrRV4aeqHTl\n=E2zn\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-04-01T14:20:13Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/5f903dc15653357ca98e0b78de2691a2f6fd437d",
+      "node_id": "C_kwDOAOaWjdoAKDVmOTAzZGMxNTY1MzM1N2NhOThlMGI3OGRlMjY5MWEyZjZmZDQzN2Q",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/17665bd06945f32692cf213c6f2bc623116c7ec5",
+          "sha": "17665bd06945f32692cf213c6f2bc623116c7ec5",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/17665bd06945f32692cf213c6f2bc623116c7ec5"
+        }
+      ],
+      "sha": "5f903dc15653357ca98e0b78de2691a2f6fd437d",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/5f903dc15653357ca98e0b78de2691a2f6fd437d"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/52cbb9a211dfdc35255210c7673d47f2b2ba9241/comments",
+      "commit": {
+        "author": {
+          "date": "2026-03-31T20:12:35Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-03-31T20:12:35Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Add access control for managed routes (#121034)\n\n* wire access control service to route service and API authz\n* update alerting roles\n- legacy permissions moved to hidden roles to keep access the default route for Viewer and Editor basic roles.\n- fixed roles now use the new scoped permissions and they are granted to Admin only\nThis way, after upgrade basic roles will always keep the permissions to the default route, while permissions to the new managed routes will be granted via managed roles, which could be revoked. At the same time, the semantics of the fixed roles that grant wildcard access to the resource is kept the same.\n\n* assert Forbidden error on non-existing resource because admin only can read all\n* add test cases for legacy routes permissions\n* set provisioning service to use proper authz service\n\n* add migration to grant access to default route for basic roles\n\n* set permissions on create and remove on delete\n\n* remove legacy route permissions from fixed and basic roles\n\n* set route permissions when alertmanager config is initialized",
+        "tree": {
+          "sha": "b13ce4303d67764335c1039c1434cbd359c43308",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/b13ce4303d67764335c1039c1434cbd359c43308"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/52cbb9a211dfdc35255210c7673d47f2b2ba9241",
+        "verification": {
+          "payload": "tree b13ce4303d67764335c1039c1434cbd359c43308\nparent ab4f1a101f7056aef6bfe73c2434e4ff52d9bfa0\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1774987955 -0400\ncommitter GitHub <noreply@github.com> 1774987955 -0400\n\nAlerting: Add access control for managed routes (#121034)\n\n* wire access control service to route service and API authz\n* update alerting roles\n- legacy permissions moved to hidden roles to keep access the default route for Viewer and Editor basic roles.\n- fixed roles now use the new scoped permissions and they are granted to Admin only\nThis way, after upgrade basic roles will always keep the permissions to the default route, while permissions to the new managed routes will be granted via managed roles, which could be revoked. At the same time, the semantics of the fixed roles that grant wildcard access to the resource is kept the same.\n\n* assert Forbidden error on non-existing resource because admin only can read all\n* add test cases for legacy routes permissions\n* set provisioning service to use proper authz service\n\n* add migration to grant access to default route for basic roles\n\n* set permissions on create and remove on delete\n\n* remove legacy route permissions from fixed and basic roles\n\n* set route permissions when alertmanager config is initialized",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpzCqzCRC1aQ7uu5UhlAAA6xoQAEobGHecIpi5FKOOWII2ngoI\nPuG62tSGv+8lhG03y5vXxplnE/vyDFcRTQSkWp8PtzZlz9pajuiph7KSqhVRm3Ev\nGrbUMKeHKzVbARxdHrGPNOqG5MnjAE94+P0MhfTqjLrKw0JUdaPsoz1sApLI11P6\n+3XS4V+xruJC3P7r87UbWukxG5EIre4s2F+RCsAwMCi/Lk0SshpZpff2O7USs/Bh\nMCP96ALYTR9QeRPBpLZGKSKpuMlJWpgZ2Ri4MBcMz+H6TnK+hxEG6mI+SVg8UEA8\nipMUWkfLfnYVqTRpUjRHPbd4QWVUcQ1mj+ZkEzbddP4viOFnMR5JNTTCyGojPOWp\nKJ8fvB3eg+l/xG+Kby4n5ZGA8OKDTA+PY57wmpcc5ZPyxXCyH5u5XWfEJ+8R8fe1\nh3q2PoTpl6ogQpM93vCQzE3NVUzqhZzYRSHeErTI0pDtp6glybeBDS4peBWZdC1a\nR7mrs7YE4wL7mh+2e87UWzbWYdvSrFPYEBlu7kdGOTH/t7bCsnL9yENRaZ7hGSl0\niADF+S9iW4RODQbYXr2wJvAsZZ6lvmKtIFs7+Fq9S2KJk/4+8Evv2qhFg3GNaZoN\ntv/UJxJ7H6MEWxH9Qr9avwPgBblDe7SBuGni8mXhpWqDq6FrRD2I07dHiruYpWy1\nYfiTT3wCCzauFqFNBlJr\n=vhzF\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-03-31T20:12:35Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/52cbb9a211dfdc35255210c7673d47f2b2ba9241",
+      "node_id": "C_kwDOAOaWjdoAKDUyY2JiOWEyMTFkZmRjMzUyNTUyMTBjNzY3M2Q0N2YyYjJiYTkyNDE",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/ab4f1a101f7056aef6bfe73c2434e4ff52d9bfa0",
+          "sha": "ab4f1a101f7056aef6bfe73c2434e4ff52d9bfa0",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/ab4f1a101f7056aef6bfe73c2434e4ff52d9bfa0"
+        }
+      ],
+      "sha": "52cbb9a211dfdc35255210c7673d47f2b2ba9241",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/52cbb9a211dfdc35255210c7673d47f2b2ba9241"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/8942194?v=4",
+        "events_url": "https://api.github.com/users/titolins/events{/privacy}",
+        "followers_url": "https://api.github.com/users/titolins/followers",
+        "following_url": "https://api.github.com/users/titolins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/titolins/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/titolins",
+        "id": 8942194,
+        "login": "titolins",
+        "node_id": "MDQ6VXNlcjg5NDIxOTQ=",
+        "organizations_url": "https://api.github.com/users/titolins/orgs",
+        "received_events_url": "https://api.github.com/users/titolins/received_events",
+        "repos_url": "https://api.github.com/users/titolins/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/titolins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/titolins/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/titolins",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/31ed68aed47600a395c7f5f042d97d19c7b25578/comments",
+      "commit": {
+        "author": {
+          "date": "2026-03-26T14:58:23Z",
+          "email": "tito.linsesilva@grafana.com",
+          "name": "Tito Lins"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-03-26T14:58:23Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Fix apiVersion for list items on k8s API's (#121204)\n\nWe've promoted the alerting.notifications API's to v1beta1, adding conversion functions for bi-directional conversion of v0alpha1 <-> v1beta1. We did that using unsafe pointers as the memory layout of the schemas are the same.\n\nFor list endpoints, however, there's a subtle bug. The list envelope is correctly set to the apiVersion that gets\ncalled, but the list items will always be set to v1beta1 (since that's what legacy storage returns). This fixes it by recreating the items array and individually setting the `apiVersion` to the correct one",
+        "tree": {
+          "sha": "ffffe8b11966e3417295870a6db8f15e4142bf32",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/ffffe8b11966e3417295870a6db8f15e4142bf32"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/31ed68aed47600a395c7f5f042d97d19c7b25578",
+        "verification": {
+          "payload": "tree ffffe8b11966e3417295870a6db8f15e4142bf32\nparent 3542ef9d82405bd1b36cb8d02f2447bd049c717c\nauthor Tito Lins <tito.linsesilva@grafana.com> 1774537103 +0100\ncommitter GitHub <noreply@github.com> 1774537103 +0100\n\nAlerting: Fix apiVersion for list items on k8s API's (#121204)\n\nWe've promoted the alerting.notifications API's to v1beta1, adding conversion functions for bi-directional conversion of v0alpha1 <-> v1beta1. We did that using unsafe pointers as the memory layout of the schemas are the same.\n\nFor list endpoints, however, there's a subtle bug. The list envelope is correctly set to the apiVersion that gets\ncalled, but the list items will always be set to v1beta1 (since that's what legacy storage returns). This fixes it by recreating the items array and individually setting the `apiVersion` to the correct one",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpxUmPCRC1aQ7uu5UhlAAAPYwQABNGwI6RO3UtlkTYRkynz8A+\nfayC0RZMincCKGHSdaGMoRcKKIcoJLkiVtiGwxnV9BUQvYhX/OIlSoKBRkRP+mRx\nPwOZZpJS8u3GLD4E5jCIj7TDRLBr7JLkG5YNNuq8cOwq0ZRmykqbbzQ0PE19UylM\nW1BLdSvRlDccNkG9jVkREzK7c1EwVCWxuAsiQ3wsu6namPtZImPn2ZX6MjKJj7V6\nvidgMsNPA9L2GiA6X2eoear7XoVMx0DWGQgPHUUDtn1FKmcB8QwGA8oAuEEn+Dt1\n8gRy+PbWckfHnKkp/Pz3qZzzPs1m5ELL2jwAQabIlr2/mCIcaInNDYQQ5QTgE89J\nDR1sUKmhgdzBXBMehV4LrTQ5SpKkViPtegWHZnuSXNQjBz/oDtVk08aS6R85fdxz\nK8V2OBCt3Il+hKkBq6rgBb/H4p0ZkdSzIiQmP6niR2UvhoyPElNIvBW0Lfm3u9g8\nphZjc6Of07UfvVdjiUc7dyscATaLsRbt5WAwqDo0STZ6f2NjLbU82oaRRxsQwGfU\nTIA8znR+abRdIrqIqfnlUAJPZaeRzivtSLvLnKUj73wjPNdcJVZdX3feDoObMpLE\nOj56/SKjgAXInzc8C9PNuNN8fYYS8Y+wBWZTOJGSgyNJtzk1PmSXreRT1uX89cj+\ngxxdpQd1NGZzhE1BI5Pa\n=v7kM\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-03-26T14:58:24Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/31ed68aed47600a395c7f5f042d97d19c7b25578",
+      "node_id": "C_kwDOAOaWjdoAKDMxZWQ2OGFlZDQ3NjAwYTM5NWM3ZjVmMDQyZDk3ZDE5YzdiMjU1Nzg",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/3542ef9d82405bd1b36cb8d02f2447bd049c717c",
+          "sha": "3542ef9d82405bd1b36cb8d02f2447bd049c717c",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/3542ef9d82405bd1b36cb8d02f2447bd049c717c"
+        }
+      ],
+      "sha": "31ed68aed47600a395c7f5f042d97d19c7b25578",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/31ed68aed47600a395c7f5f042d97d19c7b25578"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/8942194?v=4",
+        "events_url": "https://api.github.com/users/titolins/events{/privacy}",
+        "followers_url": "https://api.github.com/users/titolins/followers",
+        "following_url": "https://api.github.com/users/titolins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/titolins/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/titolins",
+        "id": 8942194,
+        "login": "titolins",
+        "node_id": "MDQ6VXNlcjg5NDIxOTQ=",
+        "organizations_url": "https://api.github.com/users/titolins/orgs",
+        "received_events_url": "https://api.github.com/users/titolins/received_events",
+        "repos_url": "https://api.github.com/users/titolins/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/titolins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/titolins/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/titolins",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/f5e2ff4489de39fb957662f6cf80bc7be4bdb66e/comments",
+      "commit": {
+        "author": {
+          "date": "2026-03-20T23:00:43Z",
+          "email": "tito.linsesilva@grafana.com",
+          "name": "Tito Lins"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-03-20T23:00:43Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Promote notifications.alerting.grafana.app resources to v1beta1 (#120738)\n\n* alerting: promote notifications api's to v1beta1\n\n* alerting: fix GetLegacyStorage panic for v0alpha1 notifications resources\n\nGetLegacyStorage was matching on the full GVR (group + version + resource),\nso requests for v0alpha1 resources would panic since ResourceInfo now points\nto v1beta1. Since v0alpha1 is still a served (non-storage) version, the SDK\ncalls GetLegacyStorage for both versions.\n\nFix by switching to match on gvr.Resource only (ignoring version). This is\ncorrect because legacy storage is backed by the domain service layer, not\ntied to a specific API version _ the SDK handles v0alpha1_v1beta1 conversion\nat the API layer before storage is invoked.\n\n* generate snapshot\n\n* generate FE clients\n\n* register converters\n\n* add converter for list types\n\n* ignore unsafepointer linter complaints\n\n* fix linter complaints",
+        "tree": {
+          "sha": "7797438304dd9b284d3a684756dfec4105df745d",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/7797438304dd9b284d3a684756dfec4105df745d"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/f5e2ff4489de39fb957662f6cf80bc7be4bdb66e",
+        "verification": {
+          "payload": "tree 7797438304dd9b284d3a684756dfec4105df745d\nparent fcb70b5876889cb8cfbf35fa7b3ed574e6317bbf\nauthor Tito Lins <tito.linsesilva@grafana.com> 1774047643 +0100\ncommitter GitHub <noreply@github.com> 1774047643 +0100\n\nAlerting: Promote notifications.alerting.grafana.app resources to v1beta1 (#120738)\n\n* alerting: promote notifications api's to v1beta1\n\n* alerting: fix GetLegacyStorage panic for v0alpha1 notifications resources\n\nGetLegacyStorage was matching on the full GVR (group + version + resource),\nso requests for v0alpha1 resources would panic since ResourceInfo now points\nto v1beta1. Since v0alpha1 is still a served (non-storage) version, the SDK\ncalls GetLegacyStorage for both versions.\n\nFix by switching to match on gvr.Resource only (ignoring version). This is\ncorrect because legacy storage is backed by the domain service layer, not\ntied to a specific API version _ the SDK handles v0alpha1_v1beta1 conversion\nat the API layer before storage is invoked.\n\n* generate snapshot\n\n* generate FE clients\n\n* register converters\n\n* add converter for list types\n\n* ignore unsafepointer linter complaints\n\n* fix linter complaints",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpvdGbCRC1aQ7uu5UhlAAAydkQAJtgfE52JDAwBDMQ6OyRDxaa\nJTXihfi66ORaLVThloiC5ZGmE70NaUIyvF38OA7eZ+92j3OhE5NL+UuRV1e0n4je\n9lXcY2GycRwx8NzubqmHbUtCgXQ1vmqGqaVrfM7FvHu+0J4J5s/6aL74gFycQQcP\nghgL70O278dZucCFw105C8M8yg+mMofpeWE+QmNa6l/LyjdumoUEGRc/hNYgelln\ntHLcwVDYKDv6TUIXhTIsFRCqvqiseYlK7tpVmS94/uFr8iE0aY0OtBEFEnvGF9XR\nAGZLVrjuftU/AUDxp7dMhvgF8fa6+0Zy74Q4PgAu4R7fhW012CK/qip0P3K+9ZaS\nbhuqHblEkr5CDS0XO8aq8PdO5YczWFQ7GeEsQyHcRd6yhyYks2HBv9wjEH9PMWLU\nscYSroW9eidxLVGOVt9QtNaCRBeos7zWN+Pjht831Abhds7XSfefSswbXKmVhHbL\nWuxNCm8vLDIPNrz6pFco97mS3/8CUBzU/lHRwcrDAzosfMT2TGyM+IqNdy2MWkSX\n3cUOUuqPrTl/FMVky20vA3OBWxNSgvNpRb6KHc/bfF0Qf2rJFz8VhhyBDMV+6sAP\nRjo0jmvcK9rSS5qkmrPPvWGSSUKGmea939m2w50VNQwbf7ug87KYP2qMMz9MxaHH\nGTbC3qknST1xsq9pCFlx\n=Tk4v\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-03-20T23:00:44Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/f5e2ff4489de39fb957662f6cf80bc7be4bdb66e",
+      "node_id": "C_kwDOAOaWjdoAKGY1ZTJmZjQ0ODlkZTM5ZmI5NTc2NjJmNmNmODBiYzdiZTRiZGI2NmU",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/fcb70b5876889cb8cfbf35fa7b3ed574e6317bbf",
+          "sha": "fcb70b5876889cb8cfbf35fa7b3ed574e6317bbf",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/fcb70b5876889cb8cfbf35fa7b3ed574e6317bbf"
+        }
+      ],
+      "sha": "f5e2ff4489de39fb957662f6cf80bc7be4bdb66e",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/f5e2ff4489de39fb957662f6cf80bc7be4bdb66e"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/492eb9d55c038146b789ea9553a028e2d47c94d7/comments",
+      "commit": {
+        "author": {
+          "date": "2026-03-13T14:03:06Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-03-13T14:03:06Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Add user argument to managed routes service methods (#120119)",
+        "tree": {
+          "sha": "98bbaddd277bb4faf19751b772d7cec419875b77",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/98bbaddd277bb4faf19751b772d7cec419875b77"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/492eb9d55c038146b789ea9553a028e2d47c94d7",
+        "verification": {
+          "payload": "tree 98bbaddd277bb4faf19751b772d7cec419875b77\nparent cea7eb61f4321738a895095942d600bd770b51a8\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1773410586 -0400\ncommitter GitHub <noreply@github.com> 1773410586 +0000\n\nAlerting: Add user argument to managed routes service methods (#120119)",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJptBkaCRC1aQ7uu5UhlAAA77gQAIMcj8yYJ/j2tcjcbzJ3wosx\nPL9VQWN+7b0hSCgV746T4DXD9BJj2fzM53cmAfvPtqy4zNAAjlnO4+ATYOeVSCmX\nY7qERMZQSlpXpmYHwItHVkixuHg6yGKXMNqiBylOQuJyeECF5DVuhdV1GvvTAxUl\nHmLxNNFQ92BbEjwEM1Z47q9Uqj9Qs1fKS8ycg4Dh94E8J5PKYjTpJwARMrVUHAmw\noUVnayF2CpCn1GQoC1G0t5iixY5FF0i4Sx08OXt4zySugwFUI14PYLCTREey8ltA\nMI5TOHUVPIUSnyk2D37J4vZ/Wp7gyNHdEwLY2KBW6X9lG7YwqOob+L9jzVsp4n2O\ntRlmIjQaqK/S2x9r4HeRTnkEZLAlq0oPDaiQtBfm95qho81vC9LAP60gLvcdbTIt\ncpm4bD7o8riPBl2boFNdchHzuRJwR1eihuKbR8j44F7KVSrLQZb5bpARgl6g95eA\n3c0RtsFRR02gwX/6ZMhKnxU0CoELDDE0rsJI9zWya4dGxJtRbXOPZ38fd4zqqj6K\nzQXSoEF91f+brlPxRmK4d/OvSGV0b0cEs24Usdki7GKBWjM7K+vkk2GSlVzhnFZM\nCi8wHbL1cPtRhb9HyMvXJUGaGHW2GznwvJExdLeccvohiALFduxoQDcc6xjGamX4\ng8yPr1HmufQ/SUGeMjL5\n=hWxD\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-03-13T14:03:08Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/492eb9d55c038146b789ea9553a028e2d47c94d7",
+      "node_id": "C_kwDOAOaWjdoAKDQ5MmViOWQ1NWMwMzgxNDZiNzg5ZWE5NTUzYTAyOGUyZDQ3Yzk0ZDc",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/cea7eb61f4321738a895095942d600bd770b51a8",
+          "sha": "cea7eb61f4321738a895095942d600bd770b51a8",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/cea7eb61f4321738a895095942d600bd770b51a8"
+        }
+      ],
+      "sha": "492eb9d55c038146b789ea9553a028e2d47c94d7",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/492eb9d55c038146b789ea9553a028e2d47c94d7"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/8942194?v=4",
+        "events_url": "https://api.github.com/users/titolins/events{/privacy}",
+        "followers_url": "https://api.github.com/users/titolins/followers",
+        "following_url": "https://api.github.com/users/titolins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/titolins/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/titolins",
+        "id": 8942194,
+        "login": "titolins",
+        "node_id": "MDQ6VXNlcjg5NDIxOTQ=",
+        "organizations_url": "https://api.github.com/users/titolins/orgs",
+        "received_events_url": "https://api.github.com/users/titolins/received_events",
+        "repos_url": "https://api.github.com/users/titolins/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/titolins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/titolins/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/titolins",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/a02078755da2167d15d4634152189605c3c971d0/comments",
+      "commit": {
+        "author": {
+          "date": "2026-02-20T16:45:01Z",
+          "email": "tito.linsesilva@grafana.com",
+          "name": "Tito Lins"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-02-20T16:45:01Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: add inhibition rules app platform api (#117555)",
+        "tree": {
+          "sha": "9c8b1eb1b384b3ed99a66b04049a6974d90168fe",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/9c8b1eb1b384b3ed99a66b04049a6974d90168fe"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/a02078755da2167d15d4634152189605c3c971d0",
+        "verification": {
+          "payload": "tree 9c8b1eb1b384b3ed99a66b04049a6974d90168fe\nparent c8733d05ccea8d96c244e742af9f66371463bd7b\nauthor Tito Lins <tito.linsesilva@grafana.com> 1771605901 +0100\ncommitter GitHub <noreply@github.com> 1771605901 +0000\n\nAlerting: add inhibition rules app platform api (#117555)\n\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpmI+NCRC1aQ7uu5UhlAAAT8AQAICny3S8jWHXz5meF6mnXOyI\nfa4piZwWOpWRAYiM1uWJjGghNvnxRSBA4fREtfe7XLIF+TW/I2R033+5zA8Z2hba\nqUhuTi9z/9NALAYb+6Yh2gfRWnhU1tZqMJmx7kyyrvtfN9D1egPaYxMu5qpghBod\nVGgFUoWwbNFwevVmvA5z9qdiVfEudhQymGj4ky5TWipKQtOCOCKgY6gHat8gU9/r\nt6ITwLVaFK8P7dBedsjX1kERuX/wQ/yIV15wfhtqOoNaFvMqpjMUqyzvGWVaq5Sx\nVXFIYyHI0nr9uywsHzPOIKAxOPZ5Egf218fGw+Gr94BZhwDQx7vnmUObrPF3zwgs\nCR4YLSVDqPBIL0pycUsdTtnu8gkFmR8pLUTkFqYJtg7A+khlM+uzyFZauF7kBk0I\n5JRmkKWlINEmEtPDKp1wFf60OdyWtJdLR0cpAP4RQ/0gNh4O1HAQv3fBNf/v1EmW\nME9Z7LuLI5g6mFPm6cUvShAnDM96QTqCmwkA0fPTg3dB0CJjV4VGRfoEQAyBDur+\nFgz5lF5StW7n19o3sor92WVqyIyinPe3qTCyhBYv2/+QKJ6Q6JhsWSEX8zQM3rIT\nvgCcyfMG811gUebmg8E4gIX0ZTF1NCO0qvOEXbIDlqpETZgjsPGOmPPsKP2nmvbQ\noYs1+nEqanO8zWIbvoH+\n=MGLx\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-02-20T16:45:02Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/a02078755da2167d15d4634152189605c3c971d0",
+      "node_id": "C_kwDOAOaWjdoAKGEwMjA3ODc1NWRhMjE2N2QxNWQ0NjM0MTUyMTg5NjA1YzNjOTcxZDA",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/c8733d05ccea8d96c244e742af9f66371463bd7b",
+          "sha": "c8733d05ccea8d96c244e742af9f66371463bd7b",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/c8733d05ccea8d96c244e742af9f66371463bd7b"
+        }
+      ],
+      "sha": "a02078755da2167d15d4634152189605c3c971d0",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/a02078755da2167d15d4634152189605c3c971d0"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/705951?v=4",
+        "events_url": "https://api.github.com/users/ryantxu/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ryantxu/followers",
+        "following_url": "https://api.github.com/users/ryantxu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ryantxu/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ryantxu",
+        "id": 705951,
+        "login": "ryantxu",
+        "node_id": "MDQ6VXNlcjcwNTk1MQ==",
+        "organizations_url": "https://api.github.com/users/ryantxu/orgs",
+        "received_events_url": "https://api.github.com/users/ryantxu/received_events",
+        "repos_url": "https://api.github.com/users/ryantxu/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ryantxu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ryantxu/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ryantxu",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/2cbf613dbbdcf9d481df8669c3bd48e20c543f39/comments",
+      "commit": {
+        "author": {
+          "date": "2026-02-10T10:55:07Z",
+          "email": "ryantxu@gmail.com",
+          "name": "Ryan McKinley"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-02-10T10:55:07Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Chore: Upgrade app-sdk to 0.50.1 (#117292)",
+        "tree": {
+          "sha": "4a5f8e6eeeeaefb143658e7c65b15ae0014b611a",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/4a5f8e6eeeeaefb143658e7c65b15ae0014b611a"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/2cbf613dbbdcf9d481df8669c3bd48e20c543f39",
+        "verification": {
+          "payload": "tree 4a5f8e6eeeeaefb143658e7c65b15ae0014b611a\nparent 38de450d959b1f4d8067d8ba6a2fdcc26ece97e2\nauthor Ryan McKinley <ryantxu@gmail.com> 1770720907 +0300\ncommitter GitHub <noreply@github.com> 1770720907 +0300\n\nChore: Upgrade app-sdk to 0.50.1 (#117292)\n\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpiw6LCRC1aQ7uu5UhlAAAAqYQADPNYsTZW7ZxO56uuk9HVBIA\nx/U98faOvVoACU0TLWFxUIC+S0GiqFza5VUj2vGgqh6Tt6jKZBXrdEQk+uepZdMl\nBtxHSKxmBbu1nsKHa5Axds0bjioG10ozKviUShWzpH2B8NF9zitvl7dTkQoV0hAJ\nykHmkGatIjFJSvzu65cJGBhOmeDRNVOxyDAZGk2f5mIHB8k5b5lUFhMFldoFzszC\nxjIP4YP5iW+ywhaeGWCCRrAqcIOoIrFs7UGjYzk7gR66ALkiRcusBgMK3OE2IZWe\noaFJPmPJ4A+KVQz8w0HhOADPq8YRFFP2AV5Ljcn/T3aH6qJLwOEnw5O5YVIDGmpv\nAP7BbKrD1bJDoPDivGoSKvV4uEoIkyLr/7loC7sEJ7ASJKLiLkbQ3AeQ8GxCRxFG\n13Wji1uDG/qWwL5U1K66pfbYJtCrkYPZUHNY38bHNR6ZVbAHbUkTStJoixN+4SGC\n79gNjGZckEC9KkYFKEcdrv3s1eqTY35ctnaD/ZTzb7yh9gobRqJvcTJDqA3ZWRkE\nIGIxpnMcIM0NugrQhd16TF2Cd0SAtsedyHJeEwI2NlGCTbM8unEkecSb1alQXzFX\nPKSaTkXeMZFS70MAmW+L9VWeqisSmucLD+ZIcoGMSpC77cr1A90b6uHgQf5yZlgy\n+E1MPXJT8g1bs2l+wtnx\n=I5KE\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-02-10T10:55:08Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/2cbf613dbbdcf9d481df8669c3bd48e20c543f39",
+      "node_id": "C_kwDOAOaWjdoAKDJjYmY2MTNkYmJkY2Y5ZDQ4MWRmODY2OWMzYmQ0OGUyMGM1NDNmMzk",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/38de450d959b1f4d8067d8ba6a2fdcc26ece97e2",
+          "sha": "38de450d959b1f4d8067d8ba6a2fdcc26ece97e2",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/38de450d959b1f4d8067d8ba6a2fdcc26ece97e2"
+        }
+      ],
+      "sha": "2cbf613dbbdcf9d481df8669c3bd48e20c543f39",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/2cbf613dbbdcf9d481df8669c3bd48e20c543f39"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/8942194?v=4",
+        "events_url": "https://api.github.com/users/titolins/events{/privacy}",
+        "followers_url": "https://api.github.com/users/titolins/followers",
+        "following_url": "https://api.github.com/users/titolins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/titolins/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/titolins",
+        "id": 8942194,
+        "login": "titolins",
+        "node_id": "MDQ6VXNlcjg5NDIxOTQ=",
+        "organizations_url": "https://api.github.com/users/titolins/orgs",
+        "received_events_url": "https://api.github.com/users/titolins/received_events",
+        "repos_url": "https://api.github.com/users/titolins/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/titolins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/titolins/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/titolins",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/37efd9fc8ffe8d0e4aa335d0c7d312ebe923a527/comments",
+      "commit": {
+        "author": {
+          "date": "2026-02-03T15:23:30Z",
+          "email": "tito.linsesilva@grafana.com",
+          "name": "Tito Lins"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-02-03T15:23:30Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: add receivers schema app platform API (#117041)",
+        "tree": {
+          "sha": "11f0e468e54da987540d3ca51efc5c24cb55065d",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/11f0e468e54da987540d3ca51efc5c24cb55065d"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/37efd9fc8ffe8d0e4aa335d0c7d312ebe923a527",
+        "verification": {
+          "payload": "tree 11f0e468e54da987540d3ca51efc5c24cb55065d\nparent 40895616aea818372675e4a01847c1fbcca3d575\nauthor Tito Lins <tito.linsesilva@grafana.com> 1770132210 +0100\ncommitter GitHub <noreply@github.com> 1770132210 +0100\n\nAlerting: add receivers schema app platform API (#117041)\n\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpghLyCRC1aQ7uu5UhlAAA7tMQAB1vFO7RvPCL30/1nC2fWEmd\nmX6IbwHEIsU1pdOPvZO0x5UGSFRX5Jbsyab0UyoOIgx05yvmRTTGQxB38Hdc7853\nn57hfkmEDNDNFg7jPsr0oAx2piZC+h2noD20R6v4F43CUhNtsJY/4Lf/Csq80aSh\neVG+XgyK+zDzOv0gQnNqyIWFxgRp6ok75SXtuQzYl1LMatelTF1EMO7vG5jLacGO\n9lNUBJFL1ZrOFSew3vhq6ypZo5v5GJMQDdrtq4nCiEwAW96vfB//7s3xKX7c6WkJ\ncFglXpa1p5M5q/46j4bc/92XBkKqv7qG4K2K4JHIZIGIEBeOMRYoEWg3juOPiXJO\n0IWu2+6m6pZx6Jg1OzwvADSGYmANy5Cp04znMk8LlcVAWBba8fi+0DW8izG4pgwc\np8pegLn2OMfP1sRMbOFFb2uFeZHcmhpVX+2S/SntO36kJzDWDdXP0bhtcdbq/+Zm\nnNLdR5ALDq1R5NQyTvRrrbYcFA2MgiuIOVTb3ILRCWz8JFNG5eMm0HBF0SwQ3A2a\nzcO7qZ1xvIxKWFaDmpumCOPoUpbDawrR2A1S/nuBtSIikxYffymZpv9pakHbLqfS\nRxN8ws8nAH511zN5kCWcsrX0JMD9dh1L7jlwNEDiLAmNatfvRC9BDi4wrC8SS2fh\nY/gWQxDlHZQ8Jax/pr0q\n=2x0S\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-02-03T15:23:32Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/37efd9fc8ffe8d0e4aa335d0c7d312ebe923a527",
+      "node_id": "C_kwDOAOaWjdoAKDM3ZWZkOWZjOGZmZThkMGU0YWEzMzVkMGM3ZDMxMmViZTkyM2E1Mjc",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/40895616aea818372675e4a01847c1fbcca3d575",
+          "sha": "40895616aea818372675e4a01847c1fbcca3d575",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/40895616aea818372675e4a01847c1fbcca3d575"
+        }
+      ],
+      "sha": "37efd9fc8ffe8d0e4aa335d0c7d312ebe923a527",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/37efd9fc8ffe8d0e4aa335d0c7d312ebe923a527"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/8484471?v=4",
+        "events_url": "https://api.github.com/users/JacobsonMT/events{/privacy}",
+        "followers_url": "https://api.github.com/users/JacobsonMT/followers",
+        "following_url": "https://api.github.com/users/JacobsonMT/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JacobsonMT/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/JacobsonMT",
+        "id": 8484471,
+        "login": "JacobsonMT",
+        "node_id": "MDQ6VXNlcjg0ODQ0NzE=",
+        "organizations_url": "https://api.github.com/users/JacobsonMT/orgs",
+        "received_events_url": "https://api.github.com/users/JacobsonMT/received_events",
+        "repos_url": "https://api.github.com/users/JacobsonMT/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/JacobsonMT/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JacobsonMT/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/JacobsonMT",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/1fa264657fae8bcca881a06b2038fc26b5339705/comments",
+      "commit": {
+        "author": {
+          "date": "2026-01-29T23:54:19Z",
+          "email": "matthew.jacobson@grafana.com",
+          "name": "Matthew Jacobson"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-01-29T23:54:19Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Add backend support for named notification policies (#117061)\n\nThis PR introduces backend support for named notification policies in Grafana Alerting.\n\nIn addition to the existing single \"user-defined\" routing tree, notification policies can now \nbe created and managed individually.\n\nThe feature is gated behind an experimental feature flag alertingMultiplePolicies. When the \nflag is disabled, the system behaves exactly as before and continues to expose a single \nlegacy routing tree in APIs.",
+        "tree": {
+          "sha": "5c1d590935d6421c8940b5ba02d830e497860deb",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/5c1d590935d6421c8940b5ba02d830e497860deb"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/1fa264657fae8bcca881a06b2038fc26b5339705",
+        "verification": {
+          "payload": "tree 5c1d590935d6421c8940b5ba02d830e497860deb\nparent b4b8c2f353c4915ad50866b35ab80b2082efccaf\nauthor Matthew Jacobson <matthew.jacobson@grafana.com> 1769730859 -0500\ncommitter GitHub <noreply@github.com> 1769730859 +0000\n\nAlerting: Add backend support for named notification policies (#117061)\n\nThis PR introduces backend support for named notification policies in Grafana Alerting.\n\nIn addition to the existing single \"user-defined\" routing tree, notification policies can now \nbe created and managed individually.\n\nThe feature is gated behind an experimental feature flag alertingMultiplePolicies. When the \nflag is disabled, the system behaves exactly as before and continues to expose a single \nlegacy routing tree in APIs.",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpe/MrCRC1aQ7uu5UhlAAADQYQAEVCfK8RDCDTXBdp8pKYq2nV\noK1d0hsCaP+oHKxlVj/wZRwxwndQxXANNaa4FG5S1PPRnMSiKW3173e9jhA4dJyT\nUD4KCM/nDxqs99TIqBAHeplLlYTtTkceA8Ja1m6SbZfrCP8KPVwaB4Cb7F2PpNju\nkxYP5sEiBuLcWJeUyDdd2wOhnLnvRwSkP+bFMLicdE3ENH1Fx0T8vl+RHkUOt6ei\n0dmn8myDXBCwthaGOZrNzWbd+ZtCmq/0yJbE4zSvDN+4VYAJs+okpQHVO/rfC6p+\nOQ6W3d+p1vb/3ZVsUOoL7RpEbnFzUEHU0rgfq0PpFPYmK2Ojxpc0+mY6MZKJ+ZZa\nR93khJ885VWLQ+cG5+SKrJid7c3VxZxdCOabI5OPHa6Z5jlz9L9h0q0qAXjigCYs\n3XL6FoNAZ+DuEJJ2J83Zh2vW1T/ca3SDgwPUxsb0cwQdy8F59N0PwYXyIEf/Y3Ru\ncDVaBZS+KT3eBvrYUR8QqBSaeSA7F3GhcY0m/O35HsPs9njrNdBzdbgUDPnnE5xP\naM4Aq2/wpCR2ZsHLhUiO1X3aCSDG2hpL4zyODS2RiJI3pFiWZf5qMcF9fMPxNqw2\nrZrewtS/YGP6sVonHrJByszm/voHDmr939kzL/R9aWoF5QGawtrpdXeYRry8krGl\nQdE0VGPOCGCudd9MiAVi\n=DoIj\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-01-29T23:54:19Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/1fa264657fae8bcca881a06b2038fc26b5339705",
+      "node_id": "C_kwDOAOaWjdoAKDFmYTI2NDY1N2ZhZThiY2NhODgxYTA2YjIwMzhmYzI2YjUzMzk3MDU",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/b4b8c2f353c4915ad50866b35ab80b2082efccaf",
+          "sha": "b4b8c2f353c4915ad50866b35ab80b2082efccaf",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/b4b8c2f353c4915ad50866b35ab80b2082efccaf"
+        }
+      ],
+      "sha": "1fa264657fae8bcca881a06b2038fc26b5339705",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/1fa264657fae8bcca881a06b2038fc26b5339705"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/8484471?v=4",
+        "events_url": "https://api.github.com/users/JacobsonMT/events{/privacy}",
+        "followers_url": "https://api.github.com/users/JacobsonMT/followers",
+        "following_url": "https://api.github.com/users/JacobsonMT/following{/other_user}",
+        "gists_url": "https://api.github.com/users/JacobsonMT/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/JacobsonMT",
+        "id": 8484471,
+        "login": "JacobsonMT",
+        "node_id": "MDQ6VXNlcjg0ODQ0NzE=",
+        "organizations_url": "https://api.github.com/users/JacobsonMT/orgs",
+        "received_events_url": "https://api.github.com/users/JacobsonMT/received_events",
+        "repos_url": "https://api.github.com/users/JacobsonMT/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/JacobsonMT/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/JacobsonMT/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/JacobsonMT",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/f296157784f553035182b2c401fa945cc6cf394d/comments",
+      "commit": {
+        "author": {
+          "date": "2026-01-29T18:45:50Z",
+          "email": "matthew.jacobson@grafana.com",
+          "name": "Matthew Jacobson"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-01-29T18:45:50Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Refactorings for named notification policies (#117090)\n\nThis contains refactorings pulled from main named routes PR, should be functionally no-op.\n\n- Moves common route operations (validate, reset-to-default, rename references, fingerprinting, group-by conversion) into shared `legacy_storage` helpers.\n- Moves route errors to `models` layer.\n- Fix `convertK8sSubRouteToRoute` initializing the wrong matchers field.\n- Threads feature toggles through some components that will be needed in followup.",
+        "tree": {
+          "sha": "c015061a222675421f7389d20836e4622b225577",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/c015061a222675421f7389d20836e4622b225577"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/f296157784f553035182b2c401fa945cc6cf394d",
+        "verification": {
+          "payload": "tree c015061a222675421f7389d20836e4622b225577\nparent d601f04cb8520463a5053f0b8f3d1b091d6da4dc\nauthor Matthew Jacobson <matthew.jacobson@grafana.com> 1769712350 -0500\ncommitter GitHub <noreply@github.com> 1769712350 +0000\n\nAlerting: Refactorings for named notification policies (#117090)\n\nThis contains refactorings pulled from main named routes PR, should be functionally no-op.\n\n- Moves common route operations (validate, reset-to-default, rename references, fingerprinting, group-by conversion) into shared `legacy_storage` helpers.\n- Moves route errors to `models` layer.\n- Fix `convertK8sSubRouteToRoute` initializing the wrong matchers field.\n- Threads feature toggles through some components that will be needed in followup.",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpe6reCRC1aQ7uu5UhlAAAJUAQAFsxKmgnypL1Nr9J8T1/YGbZ\nyrFwvdaKROVfl7/GOvbgB3tUeO3lCjPvha+lmtfbj5eDr18LRnObZ4XStkCyKVsL\n9m7MssosDufWR9hsoEgjri7h714o4xA8vbOvQVfBkUDequKSjQCMTsDBFB7fNlY9\nbcF67BecT9HdYzugqF3wmEY+iNqMn4xzfXLrHTNgYgsOVjv+5ZqLQZjn2bYeef5k\nukcZzTxR3vJtvOP/FE2GeZm/N0pHOz2LBGEs1TCi1emm8nbCPYygttRc/f2LVmje\nIAKqKdBVRJjj3PawtGP4x6UDMwWy34k7QXJJFWgFI11gPlDX+zJ2PdKi2Lxg3sLG\nRsJ+Awb8U9hZWLP5qOPGZlCQ7VyjD48q6jyHwgf74gJE07gRFZRZzS19n2GA+Fiw\nOzoySDDwQfNlhIjGnIMzlTG/y8JXKL4tDbu0KTST6t/bD7efOkayUPHLIryqCuMv\nhJ2+IRjHsRaN46lU9LDsMudWDFMlM+eIqPRzT9jTTc8vFFjJJOIYN35GK2bsXXaW\n9P0G4CVWhvufZ08WeyJ3AxizVGM3xwa2KPkGemEdgPOZSubEHLa3Bt+MM5STRqhM\nmw/eaDnPhkwesFsxUvyJwhVzZOrZtJqpKpdRin+ikJlpWiIlNx70skNrNf0HhYXv\ne7ZiubPcXu9YMuy29lc3\n=RhrR\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-01-29T18:45:50Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/f296157784f553035182b2c401fa945cc6cf394d",
+      "node_id": "C_kwDOAOaWjdoAKGYyOTYxNTc3ODRmNTUzMDM1MTgyYjJjNDAxZmE5NDVjYzZjZjM5NGQ",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/d601f04cb8520463a5053f0b8f3d1b091d6da4dc",
+          "sha": "d601f04cb8520463a5053f0b8f3d1b091d6da4dc",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/d601f04cb8520463a5053f0b8f3d1b091d6da4dc"
+        }
+      ],
+      "sha": "f296157784f553035182b2c401fa945cc6cf394d",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/f296157784f553035182b2c401fa945cc6cf394d"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/56423fb0856f95fd21a22840de6342ef7ec22411/comments",
+      "commit": {
+        "author": {
+          "date": "2026-01-27T21:41:16Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-01-27T21:41:16Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Receiver testing via app platform APIs (#111338)\n\n* implement receiver testing domain service\n* register the testing service in ngalert service\n* declare a new subresource \"test\" for receiver resource\n* implement request handler for integration testing\n* integration tests for new endpoint\n\n---------\n\nCo-authored-by: Tito Lins <tito.linsesilva@grafana.com>",
+        "tree": {
+          "sha": "729a1677d8fe9190308d2d97fea340acfd6f32c3",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/729a1677d8fe9190308d2d97fea340acfd6f32c3"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/56423fb0856f95fd21a22840de6342ef7ec22411",
+        "verification": {
+          "payload": "tree 729a1677d8fe9190308d2d97fea340acfd6f32c3\nparent 36e7d6fddba673d4b3373340af80a7849f4737a6\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1769550076 -0500\ncommitter GitHub <noreply@github.com> 1769550076 -0500\n\nAlerting: Receiver testing via app platform APIs (#111338)\n\n* implement receiver testing domain service\n* register the testing service in ngalert service\n* declare a new subresource \"test\" for receiver resource\n* implement request handler for integration testing\n* integration tests for new endpoint\n\n---------\n\nCo-authored-by: Tito Lins <tito.linsesilva@grafana.com>",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpeTD8CRC1aQ7uu5UhlAAAb2sQAKq94alNZbZbDwnAU63LsID4\nUEN478JHm5GOZytygA0WY/k9Fts4myqLMN9xXQa+SXPXAYY39GNcpm9OeA8xkDXG\nex63ALcRIct1jSCGETOxg0FNAt+vm3WB7A9asKeE8RQbzjzM2ufu+BR8gfx3PNO7\n8E4VQ3fi9Eh2tgig7FG3thssmc3sWb1qOtoVB+7AdYfXtr9BfmammRDhxH2WPbDf\nP6ykHmOcctehVaIG8jfZquHnJ/3HFUvVpAhag+oRgyOu5xPLXp1OS5MeXzkD6Ygy\nJLXD0eB3AilUIBvWHlarxShVIXfzOEdJxSWoEmCeOC6bTt7oC+q1lehybVREMYmA\n9DOiartU9QrX2XDEUEsZGnrAJMVmJjduKgW3N8QcLnKd0EgbtsQJR0HH7tg68R8h\nEWlvBHgIMSoUfXhivKMlba3uFumuaI7okjDvcuovCKFNblmVJT1PsPJ+xx4AqduR\nPUnBZ0efEUSsr1P3kT9uvdDD1XzugnMtoOq52v8mTlybT2pvZZCDCAKXaRmN/WR7\nr+ktly3F+u1ChgsL+zMZ76EzYlqpALoOM7wSf76SvpGlnCptitW46UGVP/nun8h8\nmFqjeHOTnXa/1WAznP5DDssVxRUTvcRqYVyZ2qUu2igmo0PaqXWIf2+b7Z5tsjAr\nmN0qa47+taSV+sTON3By\n=IZqu\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-01-27T21:41:16Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/56423fb0856f95fd21a22840de6342ef7ec22411",
+      "node_id": "C_kwDOAOaWjdoAKDU2NDIzZmIwODU2Zjk1ZmQyMWEyMjg0MGRlNjM0MmVmN2VjMjI0MTE",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/36e7d6fddba673d4b3373340af80a7849f4737a6",
+          "sha": "36e7d6fddba673d4b3373340af80a7849f4737a6",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/36e7d6fddba673d4b3373340af80a7849f4737a6"
+        }
+      ],
+      "sha": "56423fb0856f95fd21a22840de6342ef7ec22411",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/56423fb0856f95fd21a22840de6342ef7ec22411"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/8942194?v=4",
+        "events_url": "https://api.github.com/users/titolins/events{/privacy}",
+        "followers_url": "https://api.github.com/users/titolins/followers",
+        "following_url": "https://api.github.com/users/titolins/following{/other_user}",
+        "gists_url": "https://api.github.com/users/titolins/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/titolins",
+        "id": 8942194,
+        "login": "titolins",
+        "node_id": "MDQ6VXNlcjg5NDIxOTQ=",
+        "organizations_url": "https://api.github.com/users/titolins/orgs",
+        "received_events_url": "https://api.github.com/users/titolins/received_events",
+        "repos_url": "https://api.github.com/users/titolins/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/titolins/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/titolins/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/titolins",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/8ce672e3b69d9113625dc5ba405d43fac9e8eea6/comments",
+      "commit": {
+        "author": {
+          "date": "2026-01-22T21:15:27Z",
+          "email": "tito.linsesilva@grafana.com",
+          "name": "Tito Lins"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-01-22T21:15:27Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Support imported time intervals (#116308)",
+        "tree": {
+          "sha": "62eb1dd32054bd34dd62d2b95ab6748908c5c683",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/62eb1dd32054bd34dd62d2b95ab6748908c5c683"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/8ce672e3b69d9113625dc5ba405d43fac9e8eea6",
+        "verification": {
+          "payload": "tree 62eb1dd32054bd34dd62d2b95ab6748908c5c683\nparent ed24cb4591e3a153e6332b08e10d59f753657614\nauthor Tito Lins <tito.linsesilva@grafana.com> 1769116527 +0100\ncommitter GitHub <noreply@github.com> 1769116527 +0100\n\nAlerting: Support imported time intervals (#116308)\n\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpcpNvCRC1aQ7uu5UhlAAAPd0QAHdweiGWPo5ZyfURFnUpGN2C\nPeJyBPyL46cT/ib5M91wSVzsB8tmxEVxfcnCQ2OMDpsDtBgnaNxwESVjwKyi9qJn\nM7rvFePlHOkev+haOBWTsjJ0NYLJXu0yQ6Z/tOTdp6Qatp4cD2/7zU3oYVI//o8R\nDG1MPBBRUYXelIYKThKEZ/jBPDYVSijH8WYb2y6SF2vBFRZ+fu1YrGR0S6Re5yNm\nw6Q5/OJOBEBiujeoS7TKIaRMyQ1RC/AVI/HBJw9oWGNPzDDJZrnkEPSmkzWaUSoc\nMUxU3p1HaXjObnepNytngp4PP7267nb3RJ/cst91BDYKVvGIMwkQJTnJq/kqiYau\nf7NbC/vB0Xa9kqRVq0sVo3d2kk/JyKZYcHFJsK5/niBztEs3qugCcNKM+55RtAhP\nzZLPDbX6iQTAyNo8yt3Y4w49mwoMm212SO4aYvLHPddihwSB2zSO1twqPJrFekF6\nS0WNWcgozeeLHlW38BBw79CKBe7h4z90y7Emmw/8QNh/Pt/DpsUNtxoEKxTxspGW\neOEC7PEhWN0lT2sPZk1glbGWKqnSRWjG8aFjdjmTR1BoibR1XHFQ+MhhCIxTEnPR\ndTQNYzEiT7WZ8jp2Sito8mQJifNTGnVBIaGl897dY4vT5F+nU1CUtueHlNveWWXb\nyQHRzCJdWQUft7TyyqzR\n=DRwm\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-01-22T21:15:27Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/8ce672e3b69d9113625dc5ba405d43fac9e8eea6",
+      "node_id": "C_kwDOAOaWjdoAKDhjZTY3MmUzYjY5ZDkxMTM2MjVkYzViYTQwNWQ0M2ZhYzllOGVlYTY",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/ed24cb4591e3a153e6332b08e10d59f753657614",
+          "sha": "ed24cb4591e3a153e6332b08e10d59f753657614",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/ed24cb4591e3a153e6332b08e10d59f753657614"
+        }
+      ],
+      "sha": "8ce672e3b69d9113625dc5ba405d43fac9e8eea6",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/8ce672e3b69d9113625dc5ba405d43fac9e8eea6"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/02e2223c983ec941f4bdf6d5f0074713381c9e5f/comments",
+      "commit": {
+        "author": {
+          "date": "2026-01-22T16:37:18Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-01-22T16:37:18Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Fine-grained authorization for receiver testing API (#116563)\n\n* introduce a new action alert.notifications.receivers.test:create\n- scoped by receiver UID\n- permission to test ones without receiver name is covered by scope \"receivers:type:new\"\n- support it in receivers authz\n\n* add permission status and annotation canTest\n* grant new actions to fixed roles\n* update receiver test API to use new permission model\n* add migration for managed roles\n\n* update UI to send real name of receiver under test\n* FE: Add tests for receiver name in test contact point requests\n\n- Update snapshot: new receivers now send empty name instead of 'test'\n- Add test: verify empty name is sent when testing a new contact point\n- Add test: verify original name is sent when testing an existing contact point\n- Add test: verify original name is sent even when the name is changed in the form\n\n---------\n\nCo-authored-by: Sonia Aguilar <soniaaguilarpeiron@gmail.com>",
+        "tree": {
+          "sha": "7892db9289a2be673e14bbaf3a5f1341cb76cb3f",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/7892db9289a2be673e14bbaf3a5f1341cb76cb3f"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/02e2223c983ec941f4bdf6d5f0074713381c9e5f",
+        "verification": {
+          "payload": "tree 7892db9289a2be673e14bbaf3a5f1341cb76cb3f\nparent fd67fc93a0f0a6dad9312384291bab1b2f66098b\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1769099838 -0500\ncommitter GitHub <noreply@github.com> 1769099838 -0500\n\nAlerting: Fine-grained authorization for receiver testing API (#116563)\n\n* introduce a new action alert.notifications.receivers.test:create\n- scoped by receiver UID\n- permission to test ones without receiver name is covered by scope \"receivers:type:new\"\n- support it in receivers authz\n\n* add permission status and annotation canTest\n* grant new actions to fixed roles\n* update receiver test API to use new permission model\n* add migration for managed roles\n\n* update UI to send real name of receiver under test\n* FE: Add tests for receiver name in test contact point requests\n\n- Update snapshot: new receivers now send empty name instead of 'test'\n- Add test: verify empty name is sent when testing a new contact point\n- Add test: verify original name is sent when testing an existing contact point\n- Add test: verify original name is sent even when the name is changed in the form\n\n---------\n\nCo-authored-by: Sonia Aguilar <soniaaguilarpeiron@gmail.com>",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpclI+CRC1aQ7uu5UhlAAAtIMQAFq2mBZv/NIcjGFntcmhlWtV\nrFGjvn0K94r6ArA73BfH1eKuCEoXJlgftdKmC9kD3miGPMzDgO6hYqusDZ3tH6xr\nM7hd0E/Dvh3bpxAzq1hUzykNsu+Kli4VaWo2cUeChlYUbxUsU7sDkDHI42MdiS2k\nIGtvauCfqCrX0s6hGaABEDtHPttz6O/RXG6WS32PCQdGrsbSi36yB6OyelrT+o4E\nTvOqMGnt9caYIjnMLzmQcsSD3K/MZuxG0+9JpgvhVdomyXPAlYT5tHDfc0fV6Th+\n6OV1GyqctWBAJWDDIeNtVkN/Y/CoRe8STQ5gptK2RvwnjTsrE+O6wkekZf/JLkXJ\ne36DXhniN27c9krKOG4/kiFoXMYLrCo9sCEebJZqzQ/+HrOa7PnQgpma/3t1zI6S\nttIF0jzlhd9942HDsUfAxOnZbyUmi2FkEc1ka1orWZHCJGZzdZgLR07ro2PM40+B\nNJs2hER5Z2KX4tw1H/T7UIU4sjyeZTIbbqHG/o7oef0yWBnB3GoudxjH7YSFw9Jb\nEMuun8vlAyEDQhscXjq31co7tOlaLBUjIy2zevv1XiQaXjaNF/LKMeZ21nUIenft\nNQHGFVnSIMGpDhbBgTqwXWg2jTwJf1agTFaBpY8z5pg2QimEz9HNRzBor6W6APku\n7hSolcoDmSJPM4RhqIa9\n=+DzK\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-01-22T16:37:19Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/02e2223c983ec941f4bdf6d5f0074713381c9e5f",
+      "node_id": "C_kwDOAOaWjdoAKDAyZTIyMjNjOTgzZWM5NDFmNGJkZjZkNWYwMDc0NzEzMzgxYzllNWY",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/fd67fc93a0f0a6dad9312384291bab1b2f66098b",
+          "sha": "fd67fc93a0f0a6dad9312384291bab1b2f66098b",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/fd67fc93a0f0a6dad9312384291bab1b2f66098b"
+        }
+      ],
+      "sha": "02e2223c983ec941f4bdf6d5f0074713381c9e5f",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/02e2223c983ec941f4bdf6d5f0074713381c9e5f"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/705951?v=4",
+        "events_url": "https://api.github.com/users/ryantxu/events{/privacy}",
+        "followers_url": "https://api.github.com/users/ryantxu/followers",
+        "following_url": "https://api.github.com/users/ryantxu/following{/other_user}",
+        "gists_url": "https://api.github.com/users/ryantxu/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/ryantxu",
+        "id": 705951,
+        "login": "ryantxu",
+        "node_id": "MDQ6VXNlcjcwNTk1MQ==",
+        "organizations_url": "https://api.github.com/users/ryantxu/orgs",
+        "received_events_url": "https://api.github.com/users/ryantxu/received_events",
+        "repos_url": "https://api.github.com/users/ryantxu/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/ryantxu/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/ryantxu/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/ryantxu",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/426e55f358f5a540fe11c845c6debd270094894f/comments",
+      "commit": {
+        "author": {
+          "date": "2026-01-19T09:30:47Z",
+          "email": "ryantxu@gmail.com",
+          "name": "Ryan McKinley"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-01-19T09:30:47Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Chore: Regenerate app-sdk files (#116475)",
+        "tree": {
+          "sha": "1cb54772ff68da0a8b212f58e6d2fa043b8aa5f7",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/1cb54772ff68da0a8b212f58e6d2fa043b8aa5f7"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/426e55f358f5a540fe11c845c6debd270094894f",
+        "verification": {
+          "payload": "tree 1cb54772ff68da0a8b212f58e6d2fa043b8aa5f7\nparent 669211e5a420793486128cb1f151128e866d4901\nauthor Ryan McKinley <ryantxu@gmail.com> 1768815047 +0300\ncommitter GitHub <noreply@github.com> 1768815047 +0300\n\nChore: Regenerate app-sdk files (#116475)\n\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpbfnHCRC1aQ7uu5UhlAAAnIkQAHbGYBsyhxlx3SKLkfjNpgNv\nMq4QNyjbYHBLSgESy3/yCW5A/uNQHR/DG16jxSVpSPXTNTY9ClBebefduydzQeUu\n0nP90c5zoMlPGLmOYCHJ2y61rze0oWl6lzWHCR6W8m74435ZzRZoF8aDZwenyM8r\nI/gXjUbH0Td7tiwFn48u5apKCPlX8ELJXpLiMXX4gvpajvZzIsBXib+zeu7d/xJB\n68aZ9IWjx6ni+M1MKx3HdGTymBWXdW4HUYJrbAt1Ru1nbr7XFcEYx3BiIPzWR9VI\nlNig504LLaPsAvPcwB0icKXsrgoPM+7Nv0IGMoehX70h8POsrIvL/ZxZvmnG6RBU\nP0ClUXKwryW9o2pHKQtR6wuemvKRwx3IzUJngw57xPdGX+p8+5XwpfG7O8ZSJ3xk\n/cn6eaTrJ9GXp/Dgmz3HmP4HCzzcqi+LAPg9bGSuzDf6Sd0JnEvU1LeHV+giy8wS\njbMW0Aimr+wnwmsN8KkwUibObLYDZ/SE2FW6ZzK4WVw/kYhbTUJi5DPGUn3dBfwO\nQLDbXP4JLQvF2zP2n7DvaSVl76WFPia702Pz1YOJSZBkrukLriJUM28tGr7UNc+z\nOJsrEQJMHL/5QcnpR6bOQclisKxHWwmQ0MkGbbEbg799RMt5iIKvF8hFLTkh1v74\n+awfwUEcWi2giLpButI0\n=OfHr\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-01-19T09:30:47Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/426e55f358f5a540fe11c845c6debd270094894f",
+      "node_id": "C_kwDOAOaWjdoAKDQyNmU1NWYzNThmNWE1NDBmZTExYzg0NWM2ZGViZDI3MDA5NDg5NGY",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/669211e5a420793486128cb1f151128e866d4901",
+          "sha": "669211e5a420793486128cb1f151128e866d4901",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/669211e5a420793486128cb1f151128e866d4901"
+        }
+      ],
+      "sha": "426e55f358f5a540fe11c845c6debd270094894f",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/426e55f358f5a540fe11c845c6debd270094894f"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/9a56ed255b5cff868f1e1a6835b2b229977011c2/comments",
+      "commit": {
+        "author": {
+          "date": "2026-01-16T21:13:34Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-01-16T21:13:34Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Refactor receiver integration conversion and error handling (#116434)\n\n* move receiver errors to models package\n\n* refactor: extract conversion to integration to convertReceiverIntegrationToIntegration\n\n* update ConvertReceiverIntegrationToIntegration to return ErrReceiverInvalid",
+        "tree": {
+          "sha": "6d5a7f929e01273402618e4fb4b08adb301903a0",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/6d5a7f929e01273402618e4fb4b08adb301903a0"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/9a56ed255b5cff868f1e1a6835b2b229977011c2",
+        "verification": {
+          "payload": "tree 6d5a7f929e01273402618e4fb4b08adb301903a0\nparent 71686480765d972fd33a2f6cfe50ac51b0d67760\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1768598014 -0500\ncommitter GitHub <noreply@github.com> 1768598014 -0500\n\nAlerting: Refactor receiver integration conversion and error handling (#116434)\n\n* move receiver errors to models package\n\n* refactor: extract conversion to integration to convertReceiverIntegrationToIntegration\n\n* update ConvertReceiverIntegrationToIntegration to return ErrReceiverInvalid",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpaqn+CRC1aQ7uu5UhlAAAZh0QAAL7EFDQnFIOfoUTQzGr77iF\nrHFbVLsnP5Jt1eXeUDQhOKTQy/1HqdF1uSEu92dRzRKTZwi0IDkaudS44QFx6dPu\nD+h7n/hE7PY1VTR/Sf9I29IBMk7hJ86glIg/3r+0Uv72AWERFMRtilVIZ31YRNed\noNDPVA3ytL+LisuEQO9CAzZoLbX3OfP9vdoY6yHBb/pkr9GtG1NXya/jCuNNta73\nPXthn/Z/bHkIsXRh8w4rQ108cvlBq/2YMi637M04dBm1WS9R2+6bZUa+O6oUfczD\nBULHN4Ak8Cz+BJHTgu5SuQ/UrStUMFl+9Otszo979CfamWuyImLK/OaS7/pKL81o\nLpSCF1T8Yov54e+UDEvHR0J9pDh8Sst/nlooSzrbLrshmHGjlaFgiiMOT1j9Xzf5\nZbLiSNUlq9f1y9aTSihFDWumvF6qVsuho0HZz2ANEaAGgtJuUW63WCqZCJsci77I\nLUwZQdSToTcLkegTjLQQ75uyGYoE7jPvwWE+t8pxcbRUa94AlL37pu30pQIaO2gV\nq7K4mWjsOxY1JOQT43vxMuUmq4D83JYDF/fOE63aMXoXwCJ2VoYN4+thBA9Q2RSt\nEOBylBPJIea8fjMNolA5jOw8wGwsVPOIcQM84+Z3okK998hm7Sdn58PSWs7yIglc\nXp/6jNl16aZMCSWv4oy0\n=JWKu\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-01-16T21:13:35Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/9a56ed255b5cff868f1e1a6835b2b229977011c2",
+      "node_id": "C_kwDOAOaWjdoAKDlhNTZlZDI1NWI1Y2ZmODY4ZjFlMWE2ODM1YjJiMjI5OTc3MDExYzI",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/71686480765d972fd33a2f6cfe50ac51b0d67760",
+          "sha": "71686480765d972fd33a2f6cfe50ac51b0d67760",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/71686480765d972fd33a2f6cfe50ac51b0d67760"
+        }
+      ],
+      "sha": "9a56ed255b5cff868f1e1a6835b2b229977011c2",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/9a56ed255b5cff868f1e1a6835b2b229977011c2"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/e4ba1c1a6dd467f5d5959a91065b2ec2f22b8db4/comments",
+      "commit": {
+        "author": {
+          "date": "2026-01-09T18:43:36Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2026-01-09T18:43:36Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Refactor encryption and receiver handling for improved clarity (#115959)\n\n* refactor: change GetReceiver to get by UID\n\nto avoid conversions of name to uid back an forth\n\n* refactor: consolidate all encrypt\\decrypt functions\n\n* move error from temporary location",
+        "tree": {
+          "sha": "01a980186652ce72863308dea62c9ed08666f9c9",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/01a980186652ce72863308dea62c9ed08666f9c9"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/e4ba1c1a6dd467f5d5959a91065b2ec2f22b8db4",
+        "verification": {
+          "payload": "tree 01a980186652ce72863308dea62c9ed08666f9c9\nparent 909ed022186037bf7e270ee87c654f84bd3c64e9\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1767984216 -0500\ncommitter GitHub <noreply@github.com> 1767984216 -0500\n\nAlerting: Refactor encryption and receiver handling for improved clarity (#115959)\n\n* refactor: change GetReceiver to get by UID\n\nto avoid conversions of name to uid back an forth\n\n* refactor: consolidate all encrypt\\decrypt functions\n\n* move error from temporary location",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpYUxYCRC1aQ7uu5UhlAAAouIQAHrqIJ6gcKKi0TYfqp5x6AFJ\nFlbbLvPvODSB7yic2qscgUEFiNXNJUhXHqH0nNaZhB3fhSUg8leXXVmSwMYn6WLZ\ndFd94CZ/m77f4MFE3xGlVXzexrKxLXoL+RhrSEG9lLwbmGW/9KiOwwVnyhQ9TiYy\noUCyUjWjqSgiukhXf3+tuzGWtyWOJgI7EapTByr83gf0VhArO+eixoFMaG9zEDrF\n9HKOeXi8IzFMQcgLzHJrg6kdO3Wz/ECncLg9gjrgy937EPLqrFsZRvmmqJ6+BXvb\nS6RrKTsjNoeAF3+qJbLVurDG+Hqgiy+B4yHogr2gfsTKqKRlkEb0tbEtp9aOGroQ\nCrQDWxGezOeZrtH48rx4iWbd9kZBCQRl4eU2mn/GHOt4SkOl5IMeXT6pGuIOBAkR\nBTQSGC2vGLnLYMb3xPP9IIHwlavYJOmg4F8Wfkok0Fxax0L+lgNU6++35//8uwKX\n3Q2d/6yzl1mYpohuWSHjSWTpeDKqcAybpnvPedt4NIQvCzSfmQR14d8gEoU6MGLe\nU1q0b9N9V4rrGx2M08QTWnnpuV1TbpwrC/1rhPQIMCPPMJc+7wT5ycQ5FkSMjKZf\nl+JcPLGekjLzG36A27CGhwTq9Zho8k858HlsrsVPwqi/pSy3qQtCI155Nzta027s\nWB8rqfkBsvCxMXY86tjo\n=Tc8q\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2026-01-09T18:43:36Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/e4ba1c1a6dd467f5d5959a91065b2ec2f22b8db4",
+      "node_id": "C_kwDOAOaWjdoAKGU0YmExYzFhNmRkNDY3ZjVkNTk1OWE5MTA2NWIyZWMyZjIyYjhkYjQ",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/909ed022186037bf7e270ee87c654f84bd3c64e9",
+          "sha": "909ed022186037bf7e270ee87c654f84bd3c64e9",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/909ed022186037bf7e270ee87c654f84bd3c64e9"
+        }
+      ],
+      "sha": "e4ba1c1a6dd467f5d5959a91065b2ec2f22b8db4",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/e4ba1c1a6dd467f5d5959a91065b2ec2f22b8db4"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/db3503fb32d607bf6b7b17f2ab20a3f2f51b7e65/comments",
+      "commit": {
+        "author": {
+          "date": "2025-12-17T20:26:22Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-12-17T20:26:22Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Support for imported Templates (#114196)\n\n* refactor template service to contstruct notification template in one place, get provenance before creating and calculate resource version after.\n* refactor get by UID and name\n\n* introduce template kind in NotificationTemplate\n* introduce includeImported flag and use in the k8s api\n* support imported templates\n* add kind to template uid\n* tests for imported templates\n* update API model\n* set kind to default templates",
+        "tree": {
+          "sha": "a0e06e2925b233875a00e67ab1c1a8483f803a6e",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/a0e06e2925b233875a00e67ab1c1a8483f803a6e"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/db3503fb32d607bf6b7b17f2ab20a3f2f51b7e65",
+        "verification": {
+          "payload": "tree a0e06e2925b233875a00e67ab1c1a8483f803a6e\nparent 370d5c2dc2dbc6e035d76bc64e0e0f00b80a6049\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1766003182 -0500\ncommitter GitHub <noreply@github.com> 1766003182 +0000\n\nAlerting: Support for imported Templates (#114196)\n\n* refactor template service to contstruct notification template in one place, get provenance before creating and calculate resource version after.\n* refactor get by UID and name\n\n* introduce template kind in NotificationTemplate\n* introduce includeImported flag and use in the k8s api\n* support imported templates\n* add kind to template uid\n* tests for imported templates\n* update API model\n* set kind to default templates",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpQxHuCRC1aQ7uu5UhlAAAIp8QAFeeFte003LIRVxTedbXbDtl\njs0EKEskX4zha4BIsT5x5uImqiSUouDQCFD+mzTpa823CA1o5V+FxoHH9zgSlz0J\ntEh8zJuCEJF7qHhAfuHEyEZAVasdBdc2zww0uW90CCLZQUS/i7sNdPRKm6kBo0Jn\nNxgPybSHwZ21sHah9VIe+JgcJDWZk2dAvQvE5EEq80J8/BR3MiIzfYa01yteD+gw\nh4nMuflxM54zGowwNvJmXO/TfC2TfRJSu0XZmjSNVdgTlf5wQQQSIx1KkPcrJxm5\nPNypweV80hrxKGTMUXPDzdTUY8eZdw5F0Em3B5T4f19iKov8pUU6b74DZq3pCjBs\nmN9YrQcZrOuxkVN4MFGflWC532APOgZF5ECUlsEXGm4QgcxqPZ2P2dh7VxY3NSbC\nzCEzIaRHwY1b0Gba98zf4UYboNQWt1h68ZHfAAXTvO+LjZBmgsDPBrT1FJZTAUVV\njFoJ69+VCYy3prTctBgpyd/aA5M2yMXTO93c5+UK5/bXFCC8lMK26L5FfL330TTE\nJwGaA0e7UW7Cx0zd5LgBkUquyomsOXyHkFa3a0enpUsRjTyo+3kWhP5pJP206MBk\nkIp16gAQZYxnaBmsIwFsu0owoIRYrvWUd607UjGylVhKRru2S8pVNhz5RXdAbgXm\ntcPa3MQ1KQ7SYUUVaF/m\n=9Eu0\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-12-17T20:26:22Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/db3503fb32d607bf6b7b17f2ab20a3f2f51b7e65",
+      "node_id": "C_kwDOAOaWjdoAKGRiMzUwM2ZiMzJkNjA3YmY2YjdiMTdmMmFiMjBhM2YyZjUxYjdlNjU",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/370d5c2dc2dbc6e035d76bc64e0e0f00b80a6049",
+          "sha": "370d5c2dc2dbc6e035d76bc64e0e0f00b80a6049",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/370d5c2dc2dbc6e035d76bc64e0e0f00b80a6049"
+        }
+      ],
+      "sha": "db3503fb32d607bf6b7b17f2ab20a3f2f51b7e65",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/db3503fb32d607bf6b7b17f2ab20a3f2f51b7e65"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/f2c30cbbd10cdf5221d2ded07db10121555f2351/comments",
+      "commit": {
+        "author": {
+          "date": "2025-12-16T20:56:02Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-12-16T20:56:02Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Protected fields for Contact points (#115442)\n\n* Alerting: Protect sensitive fields of contact points from\n unauthorized modification\n\n- Introduce a new permission alert.notifications.receivers.protected:write. The permission is granted to contact point administrators.\n- Introduce field Protected to NotifierOption\n- Introduce DiffReport for models.Integrations with focus on Settings. The diff report is extended with methods that return all keys that are different between two settings.\n- Add new annotation 'grafana.com/access/CanModifyProtected' to Receiver model\n- Update receiver service to enforce the permission and return status 403 if unauthorized user modifies protected field\n- Update receiver testing API to enforce permission and return status 403 if unauthorized user modifies protected field.\n- Update UI to disable protected fields if user cannot modify them",
+        "tree": {
+          "sha": "1365b9f69c103774157242527f3e89fc2202bcce",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/1365b9f69c103774157242527f3e89fc2202bcce"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/f2c30cbbd10cdf5221d2ded07db10121555f2351",
+        "verification": {
+          "payload": "tree 1365b9f69c103774157242527f3e89fc2202bcce\nparent 30fb1c032a93c45c1d36d29ec520481c846c4011\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1765918562 -0500\ncommitter GitHub <noreply@github.com> 1765918562 -0500\n\nAlerting: Protected fields for Contact points (#115442)\n\n* Alerting: Protect sensitive fields of contact points from\n unauthorized modification\n\n- Introduce a new permission alert.notifications.receivers.protected:write. The permission is granted to contact point administrators.\n- Introduce field Protected to NotifierOption\n- Introduce DiffReport for models.Integrations with focus on Settings. The diff report is extended with methods that return all keys that are different between two settings.\n- Add new annotation 'grafana.com/access/CanModifyProtected' to Receiver model\n- Update receiver service to enforce the permission and return status 403 if unauthorized user modifies protected field\n- Update receiver testing API to enforce permission and return status 403 if unauthorized user modifies protected field.\n- Update UI to disable protected fields if user cannot modify them",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJpQcdiCRC1aQ7uu5UhlAAAcr4QAIhFWvYelDt6g5bV2eSY68X2\nhdPYHPBAB7rhfD5h0CkKTHWwYLBG49l8+ViV2Gt91mNDiDiEXbiZ7J6A+Ky2cfk7\nKoDXE/ziROLB08310bDk7gQzIOdr/sdaFQACHpz19spP2M2A+27gUsAJgElXvayF\nl/bCgZ/4dUJpV5ZhGGWBwbuY4Qw9yCTIjBAzZgMCBPdetFVE3F7eHl6n3w6ZnVqg\nvA3ivYJVywWGEPKTaiOVbHqhlhpG/gb67tFFR8XfG+W45Q9YH8xyXOyDB8/ixtm0\nsYpphSPcYcHDRbb2RvvdTl2v/2rqerEVZD8CeSvW8zpi/hIldXGAv+dUVxj69jGG\no8YxH9mK1sTkD9xu1Oygiepg7B7RBIjm/LJOnxBkWchukHzFIJo/Iggh421CsL8P\n7S6mw/YWlspmqC99N/Vfh9HxbDM4et/UWhuHc4NrlrTX+tvr5RO+xyWosizaB4lB\n1+ARDKmpq0s/pnPJGzMb/aA+Ormh2rGX6UjIDJE061r5RdBLlDN5qW0UGf9lja25\nogg1UWKWBOFjh4Akg5+HCpCWRyHcwfmGWxG4rLEexa38XIILAkJsWkc28LGcxcZH\nOYRtfgTtNPesctPot2Wq9hzf9El/HLHHjKL1DuxzHFKvI4apHCjbkYHo8USbBMk3\nS6KRvDYrdE7v2coHSIZu\n=TfFV\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-12-16T20:56:03Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/f2c30cbbd10cdf5221d2ded07db10121555f2351",
+      "node_id": "C_kwDOAOaWjdoAKGYyYzMwY2JiZDEwY2RmNTIyMWQyZGVkMDdkYjEwMTIxNTU1ZjIzNTE",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/30fb1c032a93c45c1d36d29ec520481c846c4011",
+          "sha": "30fb1c032a93c45c1d36d29ec520481c846c4011",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/30fb1c032a93c45c1d36d29ec520481c846c4011"
+        }
+      ],
+      "sha": "f2c30cbbd10cdf5221d2ded07db10121555f2351",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/f2c30cbbd10cdf5221d2ded07db10121555f2351"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/868844?v=4",
+        "events_url": "https://api.github.com/users/gillesdemey/events{/privacy}",
+        "followers_url": "https://api.github.com/users/gillesdemey/followers",
+        "following_url": "https://api.github.com/users/gillesdemey/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gillesdemey/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/gillesdemey",
+        "id": 868844,
+        "login": "gillesdemey",
+        "node_id": "MDQ6VXNlcjg2ODg0NA==",
+        "organizations_url": "https://api.github.com/users/gillesdemey/orgs",
+        "received_events_url": "https://api.github.com/users/gillesdemey/received_events",
+        "repos_url": "https://api.github.com/users/gillesdemey/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/gillesdemey/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gillesdemey/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/gillesdemey",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/62c5df36d611aa8f89d1b3599ec356fde2a26c46/comments",
+      "commit": {
+        "author": {
+          "date": "2025-10-23T15:21:13Z",
+          "email": "gilles.de.mey@gmail.com",
+          "name": "Gilles De Mey"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-10-23T15:21:13Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Always initialize an empty slice of routes for the routingtree (#112880)",
+        "tree": {
+          "sha": "ff18bb68608c14c9d4854e89a8d7d4742c1a4014",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/ff18bb68608c14c9d4854e89a8d7d4742c1a4014"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/62c5df36d611aa8f89d1b3599ec356fde2a26c46",
+        "verification": {
+          "payload": "tree ff18bb68608c14c9d4854e89a8d7d4742c1a4014\nparent c74af4f3d4e97dc088ddc1a494cad460bacdc222\nauthor Gilles De Mey <gilles.de.mey@gmail.com> 1761232873 +0200\ncommitter GitHub <noreply@github.com> 1761232873 +0200\n\nAlerting: Always initialize an empty slice of routes for the routingtree (#112880)\n\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJo+kfpCRC1aQ7uu5UhlAAA9bAQADBFJ9yOy16ReARL7FZFIO4Z\nLlTpU8MkPL22AIcicTNVDouQZvXgXMEHKf8cw7RTWqyt85NowrSm+oSNjI+k3NYJ\nxRsenVDTDP5zzQk8ubkF8m5DyYQCkDW3zuPdr8nPhPQDuz7QqmYsTKzGD9LeiPxy\nCbv8UohtENNW4D8qgDUOE0rwSY5qJnG1R4EXDDapt385X1XGaiGHMuJgqtpdYbKh\nQkQ2v9+kS/RoenmfLq6XBWLIJ9cxrsOR5RwfDkgefxoZpHn7vtaQOixY/qjws0D8\nWaHw8VSlUZsqglaestrCreGbO8RlpaSOd8iHcpSvtXZQRlIob6fBz3gGUltcSnAA\nb7q1pieR5pvUhajoJiFiqSLGGWDchBygWGg5C0bZA8Gof/qsacG0YSO1qlCmZAPC\n/Di18VwvPXBBbqc+Sh9OFCfhbPZkHkopRrYY2UbYpyT0yidPuJN6rOg/bUgpgL1S\nH0fqVuHmKvrgFd7XxqtrrCugtWE+429RrEew1welJIFygiyqrIPL4T9nQrheRJ9+\nkl4wdkB6bGe0RQ0Crq88JfeC6KSvdNZxQw7xp9rvpbCQ9NeNg5551VTPjg93NpfR\nOkaov3h+g/+mIFH1B94O7eQ0KPKVXbSR9C63OzXtVWPrBWbUfQmn5SL7Dq5p6xcT\nEpvJmJO9XUO5oCTKH7/D\n=5h7P\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-10-23T15:21:13Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/62c5df36d611aa8f89d1b3599ec356fde2a26c46",
+      "node_id": "C_kwDOAOaWjdoAKDYyYzVkZjM2ZDYxMWFhOGY4OWQxYjM1OTllYzM1NmZkZTJhMjZjNDY",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/c74af4f3d4e97dc088ddc1a494cad460bacdc222",
+          "sha": "c74af4f3d4e97dc088ddc1a494cad460bacdc222",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/c74af4f3d4e97dc088ddc1a494cad460bacdc222"
+        }
+      ],
+      "sha": "62c5df36d611aa8f89d1b3599ec356fde2a26c46",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/62c5df36d611aa8f89d1b3599ec356fde2a26c46"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/7d1c6b6bd255fce1af260c5529f0f1d27fa0fc42/comments",
+      "commit": {
+        "author": {
+          "date": "2025-10-07T15:08:16Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-10-07T15:08:16Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Replace IntegrationConfig with IntegrationSchemaVersion (#112010)\n\n* remove unused compat functions\n\n* update to alerting module from pr\n\n* replace IntegrationConfig with IntegrationSchemaVersion\n\n* safely resolve a string into integration type\n\n* change usages of integration config",
+        "tree": {
+          "sha": "d7205c02331850316aedbea666b6938fa3a491b4",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/d7205c02331850316aedbea666b6938fa3a491b4"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/7d1c6b6bd255fce1af260c5529f0f1d27fa0fc42",
+        "verification": {
+          "payload": "tree d7205c02331850316aedbea666b6938fa3a491b4\nparent 66fc694718cb174e4e1a4eb1b65350e9299dcdbb\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1759849696 -0400\ncommitter GitHub <noreply@github.com> 1759849696 -0400\n\nAlerting: Replace IntegrationConfig with IntegrationSchemaVersion (#112010)\n\n* remove unused compat functions\n\n* update to alerting module from pr\n\n* replace IntegrationConfig with IntegrationSchemaVersion\n\n* safely resolve a string into integration type\n\n* change usages of integration config",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJo5SzgCRC1aQ7uu5UhlAAAzYwQAD2vaco2kyBzwUBYMqI1Cluv\nyrMVlZHHLbbxDYnHpG+8i39CFZdIxKsdTVV1nOSMG5/Q4zTCOIwca06VfF6MTveA\n9jaA9ldCI04MhebM0aa7nUogHKr5EZtECCWS4k1VPSSBJTkzMLKTkz06c3+aBxC/\nxniNvDpJp2Dn4K5gzEWEFQAqC6HR+vy3z40rurnBqjidL3xQIz+DElSuA0m7SXkR\n1IV8RHuCGAqODt6BD1Uvr7oknilJstd6otzHkHHh9wMZUg96qdPZsiZF5HvpLVXP\nXh6svb/kuP2cuTSWARWVULyUBwwbQ2NN6lgh1Cq+DSd1wVz1deHS+VnSpTz8mlwG\n7HCa0avGCQRsr/VkuJNHfzx8nWwyiBlAaIcGVQ6zmoh/BK8eNTDW41QCafM5T/N5\ncBdG/MfKdPFJvKrQc0MexqDpOS1gmaNVg8Xz+p0nVAIKFQNh2vN5h6jfDR+n/Nb8\n23r9/uLp8Qyr/CNlk4qX+WDTnM1rlKBgodSY1V0YewO6dOb9eWtbEHSB6BLokDkP\nfIe4pyhirY6B5pjcOwlmld3um/0EP7pL9HFb3p1s/sxAnlcCBndnxOMnGSEdAtaN\nyBc8nNIWkJkCvIytJKvJvKFLIJsHFxS0xlXdFXbbNGS12N5f+IEXYQuM9pVuIdm0\nGZfpqDC369o3XiobNwsC\n=e/PY\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-10-07T15:08:16Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/7d1c6b6bd255fce1af260c5529f0f1d27fa0fc42",
+      "node_id": "C_kwDOAOaWjdoAKDdkMWM2YjZiZDI1NWZjZTFhZjI2MGM1NTI5ZjBmMWQyN2ZhMGZjNDI",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/66fc694718cb174e4e1a4eb1b65350e9299dcdbb",
+          "sha": "66fc694718cb174e4e1a4eb1b65350e9299dcdbb",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/66fc694718cb174e4e1a4eb1b65350e9299dcdbb"
+        }
+      ],
+      "sha": "7d1c6b6bd255fce1af260c5529f0f1d27fa0fc42",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/7d1c6b6bd255fce1af260c5529f0f1d27fa0fc42"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/896a56ada8ea7a03090591848e269bdc1f42808d/comments",
+      "commit": {
+        "author": {
+          "date": "2025-09-23T13:42:40Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-09-23T13:42:40Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Migrate Alerting Notifications API to app installer (#109309)\n\n* migrate to new manifest format\n* rename app to alerting.notifications to not conflict with rules\n* disable custom field selectors as they are not supported in appinstaller",
+        "tree": {
+          "sha": "bb39e97a87fcdddc00fdc2e9fa0d2cd9cc7854e3",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/bb39e97a87fcdddc00fdc2e9fa0d2cd9cc7854e3"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/896a56ada8ea7a03090591848e269bdc1f42808d",
+        "verification": {
+          "payload": "tree bb39e97a87fcdddc00fdc2e9fa0d2cd9cc7854e3\nparent 6c5bd69f981de06c4a129c108c6b7e331851e28d\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1758634960 -0400\ncommitter GitHub <noreply@github.com> 1758634960 -0400\n\nMigrate Alerting Notifications API to app installer (#109309)\n\n* migrate to new manifest format\n* rename app to alerting.notifications to not conflict with rules\n* disable custom field selectors as they are not supported in appinstaller",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJo0qPQCRC1aQ7uu5UhlAAA+WUQAKFMIL0kkIulbx8lclXzf1jO\nyMI30DdzIGUMrIQpWkLqTRI/XvzVgJ2tlAeofjMKYQs+hORoNpCFr0tHfNfCD7DK\nWGzlWDXlnHCJRS2qwt3EchvOpvh4iP2utOioHwOSFWDs2LgLYZLE5oEpcwFs/8/N\nLuUio7D0PvnZsAMnFyr3yO59O/d9uXuz/6QdylICBYGGlWBXOVYal68O2QjXmO9B\ngfJqPd5LFaveTV2lsIEhgWvd1hS0myHkEb1fut3/C8ZVch6RKZPUZVUlO3S38Wjm\nSEPz7PnNdBd+V6FlcDF0lINAJmLfNkNEmIJ054dTpLWFYbQgppIu69BTFHhbLglM\nb33Un4+LVyFPrvKByDkSvJpG39lJLKU7uxgNYpDi1Ue/GMZUVvvxonbA9e3r/n1S\nyyswQg+ziOsMoTsDIu6QMV04ASEQswFV1PfjO30GvtqrPT3kWZc22dgJCxJ36tHi\nCOb9qu8QdunwwGh0wNAHMPNI27bsgUKHtQTwPRqIvpFW5TDCgpxaA/k5AhUacZfF\nv8rMxx40H5SVuBOzCYv8F+nRmSXeffNG5CTnmwYWGRD3Y934XlSekcDMRVUucuTG\nafJ6b9eVr6Hrrl52BccWbX2K53nQ8qpuNHPyXGGH0cWTcaT+L0iB41W5BA0lWtUw\n76qsV1pEPnnJGFEV7wD0\n=RLkO\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-09-23T13:42:41Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/896a56ada8ea7a03090591848e269bdc1f42808d",
+      "node_id": "C_kwDOAOaWjdoAKDg5NmE1NmFkYThlYTdhMDMwOTA1OTE4NDhlMjY5YmRjMWY0MjgwOGQ",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/6c5bd69f981de06c4a129c108c6b7e331851e28d",
+          "sha": "6c5bd69f981de06c4a129c108c6b7e331851e28d",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/6c5bd69f981de06c4a129c108c6b7e331851e28d"
+        }
+      ],
+      "sha": "896a56ada8ea7a03090591848e269bdc1f42808d",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/896a56ada8ea7a03090591848e269bdc1f42808d"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/356521c9b93735c173b26c7dba4a5ecbb89bee53/comments",
+      "commit": {
+        "author": {
+          "date": "2025-09-16T13:32:04Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-09-16T13:32:04Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Annotation CanUse for receiver resource (#110839)\n\n* add origin to receiver\n* populate origin of the receiver\n* set CanUse to false if origin is not Grafana\n* set provenance if origin is imported\n* set Grafana origin by default in conversion API\n* set canUse annotation\n* reject update\\delete operations on resources with origin other than Grafana\n* fail to create with wrong origin",
+        "tree": {
+          "sha": "739e54c9391822a40ca780dda7ccb26ad3a791d9",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/739e54c9391822a40ca780dda7ccb26ad3a791d9"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/356521c9b93735c173b26c7dba4a5ecbb89bee53",
+        "verification": {
+          "payload": "tree 739e54c9391822a40ca780dda7ccb26ad3a791d9\nparent a15b6ec2a264cab9dca592796023008f1c2b63ea\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1758029524 -0400\ncommitter GitHub <noreply@github.com> 1758029524 -0400\n\nAlerting: Annotation CanUse for receiver resource (#110839)\n\n* add origin to receiver\n* populate origin of the receiver\n* set CanUse to false if origin is not Grafana\n* set provenance if origin is imported\n* set Grafana origin by default in conversion API\n* set canUse annotation\n* reject update\\delete operations on resources with origin other than Grafana\n* fail to create with wrong origin",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoyWbUCRC1aQ7uu5UhlAAAajsQAIy/kjZMrUGQoMygg7ueaOm4\nqh1RPTjkdIgIFlGpif4hL8/haF7hfYhU6P1wOCz8yKLVa9rO8AtOfFAtbyGa3yQi\n6j3PZmWbEWKGtSZRVBPlFvSYTOJKpIdxRJQCKujIOtAJrEiGSiWlPIHiM0tQ0p/+\nSxKyEtjc3iY8nquqJqY0/DKKg+c2dx6AAdpAdWC/E7IIcNusyDRqQKGw9pX7JNsA\nsT6fhFgSJx2nTCXGoPtqf4mFkJS5GT/lPWk/y2A/F8qj4VO3rcA0WOlhzfnP90PD\nxed4wZMKVGxRoCgR7hHWa/D+ySpJEXSOYoWe3Zi3PGHM/G33+lsBZ0rn4JutGwEc\ny7bGdYcE84cTSNT6uOtN5FFXjIlRaCw7HOCyjDOGx1fT6aE46BGAOCIQQEwNJOHR\nGblLV1eI6PisPSGBGP8kbuxkf+m8eow2JNzvfuIrFIYPV0sLF1kfucKhtm7bthr0\nJSj8Letlnuo9zPbfO7GsH+i0G2SMs5VjxbrCQilUGGdKlq1JFMGkJrTHEbq5C/np\ncc/lRnB9hthLuLduMex4GHlQsrAO8OWAl36ghI8NTMhgi4y2Z9RVhbH7QsM+NeJc\npN/UYqchUYTNQAd6mskSuCKbD1+5PjQOeH2PjvolNfvoHD1E/k3NiP0ifag2GMpL\nsO6gz812A2KIFxnFCHKz\n=8EoP\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-09-16T13:32:05Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/356521c9b93735c173b26c7dba4a5ecbb89bee53",
+      "node_id": "C_kwDOAOaWjdoAKDM1NjUyMWM5YjkzNzM1YzE3M2IyNmM3ZGJhNGE1ZWNiYjg5YmVlNTM",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/a15b6ec2a264cab9dca592796023008f1c2b63ea",
+          "sha": "a15b6ec2a264cab9dca592796023008f1c2b63ea",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/a15b6ec2a264cab9dca592796023008f1c2b63ea"
+        }
+      ],
+      "sha": "356521c9b93735c173b26c7dba4a5ecbb89bee53",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/356521c9b93735c173b26c7dba4a5ecbb89bee53"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/ce55d70fa57e509cb12543ad6baa387b82204e23/comments",
+      "commit": {
+        "author": {
+          "date": "2025-09-05T14:46:46Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-09-05T14:46:46Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Refactor notification legacy storage (#110619)\n\n* make legacy store expose only model.Receiver\n* use integration as provenance type provider\n* use revision RenameReceiverInRoutes\n* introduce function GetReceiversNames in config revision\n\n---------\n\nCo-authored-by: Matthew Jacobson <matthew.jacobson@grafana.com>",
+        "tree": {
+          "sha": "ba46699be394e12d99378e0266c712886eb8a0ff",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/ba46699be394e12d99378e0266c712886eb8a0ff"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/ce55d70fa57e509cb12543ad6baa387b82204e23",
+        "verification": {
+          "payload": "tree ba46699be394e12d99378e0266c712886eb8a0ff\nparent 439fefeda8b9f07a921f7db8514dce34f4f02994\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1757083606 -0400\ncommitter GitHub <noreply@github.com> 1757083606 +0000\n\nAlerting: Refactor notification legacy storage (#110619)\n\n* make legacy store expose only model.Receiver\n* use integration as provenance type provider\n* use revision RenameReceiverInRoutes\n* introduce function GetReceiversNames in config revision\n\n---------\n\nCo-authored-by: Matthew Jacobson <matthew.jacobson@grafana.com>",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJouvfWCRC1aQ7uu5UhlAAAJGsQAAvHVSnRZ8rOkY69h0AjnI7k\ni2MJ9oETjQ1+n5gBZLDhzfk8yuJrl2MZLbE78BMg/201j45BCXQAMbOHiAl8j1qa\n6nUwAcKSdfd3+by+yfFTt0hbWPyEgPI+WdpkBaMNqhx0rqkKN8scfqIa9jopzLfc\nvT55oHbV7H5YMAb3EqRz+714mkE29hbue2Lzyyll4a+SO/qLMQkE281SV8ECq6cb\n3NNOmQ6WQHrI4B6hDFcOI5pi6YiOLaWXQMHlY8JEZq414QyFejgH5IsKBNJSXjNk\nG5tLL8AOUurzpKzAGD6DmUBms3CdYnvU+gg7HfJyY56H3bEmRDO+YYe5mO2ieODY\n5soYUJSNiLVUcB8yzoYIJfNTsDaA/4pa1WhRz4Uw+41fQIEPKrhanQqHdWZfNRnd\nma2jrcuDOrUGK6RMe/qDKvPUY0wTg6moHlRnFbvfFF/mvURvYpWk0qWGFm5OKfRU\nVEqwTMzoRMX8VNP6BsFak0tTRQttEJXK1c1HqleB5GoXAYApW9eLNnLDqOxhvmoA\nBcx4qeZs2qtTQ6TSfwF/vopcjPQqcvtyDCf4oAt+7hWgt4sUOsvojC2HplK/43GK\nl5fm6q3eTgKjDCotXEn1rOKZ/UmzQs7CaOGWzPfiRepqZQLvlBpc1BHbg/pcFEiu\nPZU34sTXQq0eDW7yyJyU\n=4E+j\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-09-05T14:46:47Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/ce55d70fa57e509cb12543ad6baa387b82204e23",
+      "node_id": "C_kwDOAOaWjdoAKGNlNTVkNzBmYTU3ZTUwOWNiMTI1NDNhZDZiYWEzODdiODIyMDRlMjM",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/439fefeda8b9f07a921f7db8514dce34f4f02994",
+          "sha": "439fefeda8b9f07a921f7db8514dce34f4f02994",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/439fefeda8b9f07a921f7db8514dce34f4f02994"
+        }
+      ],
+      "sha": "ce55d70fa57e509cb12543ad6baa387b82204e23",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/ce55d70fa57e509cb12543ad6baa387b82204e23"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/15fab1cb993791d9b9362a51ea9ac96df7885966/comments",
+      "commit": {
+        "author": {
+          "date": "2025-08-28T18:46:30Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-08-28T18:46:30Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Update integration schema to support versions (#109969)\n\n* add VersionedNotifierPlugin and method that converts NotifierPlugin to it\n\n* return new schema if query parameter version=2\n\n* add version to k8s model of integration\n\n* fix open api snapshot\n\n* add version to IntegrationConfig\n\n* use current version on conversion\n\n* create versioned integrations for test",
+        "tree": {
+          "sha": "9efed39758e56d4681f1240e4a1d5ba87e8e66d3",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/9efed39758e56d4681f1240e4a1d5ba87e8e66d3"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/15fab1cb993791d9b9362a51ea9ac96df7885966",
+        "verification": {
+          "payload": "tree 9efed39758e56d4681f1240e4a1d5ba87e8e66d3\nparent 3a2483a73acb9ef4b3d209c958dbf8dc03f76346\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1756406790 -0400\ncommitter GitHub <noreply@github.com> 1756406790 -0400\n\nAlerting: Update integration schema to support versions (#109969)\n\n* add VersionedNotifierPlugin and method that converts NotifierPlugin to it\n\n* return new schema if query parameter version=2\n\n* add version to k8s model of integration\n\n* fix open api snapshot\n\n* add version to IntegrationConfig\n\n* use current version on conversion\n\n* create versioned integrations for test",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJosKQGCRC1aQ7uu5UhlAAAJvUQAEEBLkNZvM5CUL1gNn4nhyvl\navNbmAUl8/8m+qOQ59Fov9rCV46DHstlzuetZSW3A61Akfyf9QnOj0dlIZPT3P59\nNgZ4sEr8cVcPdO1GvYCTYIFblKJa4bTbe9KhovIBZfXwkCkfnKCqknhNRDVYBYK3\n4gdvjsQ5cuCCz9KdpSxNcHZnfEf4T+Qfb2Ux6YoKeReRp3LOZ7RQfvfv7MFzH1v8\nsM54YZuvGcaxiN0pwEZCS1nmFRjUcO/405T1OB+SCk4jzRg35WIwi2IXpwyJQvWw\nOhIjrEj0n6hHNoKsqe+lV5ZkF60FOYaay3fN3QcZC4nGZim+28szOD+duAltalr/\n9Eqb4f1LDnoTA7QELXaIHtCeYstbn/WvFSdVwnS6bC5//u32NqcrM9vUsOgUHCxC\noWTdKPuPvvRiErLbDquojmjjZFE/ggOCLThCfvCd0hwTxgW8i2I8cJJtQO5s2o76\ne3BSVZeU6mpwAYaS38dtzLH/WMlfXLWvaUcHlOT0EggBs0d624PXDiuKAAA81KGE\n+VULttMC73cxYqdnMJ6Gox0dO6Rk57hYfjc/VhPOsuX1VRWwu6OSJdbxcI/I6mbZ\nL0FAd7qIVFdMZWfFzYqeg1QWqjc4kOsnibtBT5A/UpQdSUz19fVfjA4lKWgTFvte\n5ZkNIcRf7zYhPkTddfLu\n=4GM3\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-08-28T18:46:31Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/15fab1cb993791d9b9362a51ea9ac96df7885966",
+      "node_id": "C_kwDOAOaWjdoAKDE1ZmFiMWNiOTkzNzkxZDliOTM2MmE1MWVhOWFjOTZkZjc4ODU5NjY",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/3a2483a73acb9ef4b3d209c958dbf8dc03f76346",
+          "sha": "3a2483a73acb9ef4b3d209c958dbf8dc03f76346",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/3a2483a73acb9ef4b3d209c958dbf8dc03f76346"
+        }
+      ],
+      "sha": "15fab1cb993791d9b9362a51ea9ac96df7885966",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/15fab1cb993791d9b9362a51ea9ac96df7885966"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/7195757?v=4",
+        "events_url": "https://api.github.com/users/alerting-team%5Bbot%5D/events{/privacy}",
+        "followers_url": "https://api.github.com/users/alerting-team%5Bbot%5D/followers",
+        "following_url": "https://api.github.com/users/alerting-team%5Bbot%5D/following{/other_user}",
+        "gists_url": "https://api.github.com/users/alerting-team%5Bbot%5D/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/apps/alerting-team",
+        "id": 158350966,
+        "login": "alerting-team[bot]",
+        "node_id": "BOT_kgDOCXA-dg",
+        "organizations_url": "https://api.github.com/users/alerting-team%5Bbot%5D/orgs",
+        "received_events_url": "https://api.github.com/users/alerting-team%5Bbot%5D/received_events",
+        "repos_url": "https://api.github.com/users/alerting-team%5Bbot%5D/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/alerting-team%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/alerting-team%5Bbot%5D/subscriptions",
+        "type": "Bot",
+        "url": "https://api.github.com/users/alerting-team%5Bbot%5D",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/898ef9cf587c9a200b73244fe5c50e86ef32e54c/comments",
+      "commit": {
+        "author": {
+          "date": "2025-08-08T18:13:23Z",
+          "email": "158350966+alerting-team[bot]@users.noreply.github.com",
+          "name": "alerting-team[bot]"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-08-08T18:13:23Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Update alerting module to dae4478cb0dc9326319d27e5f3feb301825f2922 (#109419)\n\n* [create-pull-request] automated change\n* omit email templates from the result\n\n---------\n\nCo-authored-by: yuri-tceretian <25988953+yuri-tceretian@users.noreply.github.com>\nCo-authored-by: Yuri Tseretyan <yuriy.tseretyan@grafana.com>",
+        "tree": {
+          "sha": "440967b4a9bffec73fbb60a06dd8490966720b30",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/440967b4a9bffec73fbb60a06dd8490966720b30"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/898ef9cf587c9a200b73244fe5c50e86ef32e54c",
+        "verification": {
+          "payload": "tree 440967b4a9bffec73fbb60a06dd8490966720b30\nparent f77e8839d9ae11c2c3ffc220e2ef6f91f775fd84\nauthor alerting-team[bot] <158350966+alerting-team[bot]@users.noreply.github.com> 1754676803 +0000\ncommitter GitHub <noreply@github.com> 1754676803 +0000\n\nAlerting: Update alerting module to dae4478cb0dc9326319d27e5f3feb301825f2922 (#109419)\n\n* [create-pull-request] automated change\n* omit email templates from the result\n\n---------\n\nCo-authored-by: yuri-tceretian <25988953+yuri-tceretian@users.noreply.github.com>\nCo-authored-by: Yuri Tseretyan <yuriy.tseretyan@grafana.com>",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJolj5DCRC1aQ7uu5UhlAAAHkkQAEOoUtElaycM9at3zle6RvVs\nMF1xA9AlD/EWGhzh2PPETaQ3uz+4tKHAeXfoGUv3vKh+gXooIO/o0eXEBp7Kadhs\n7zHdanHXACuVkT58ns9TEr9sXQjZV2TjgWohQgzPQYyJNZiNCCKgpB2IyOmDvSQW\n5ldo3LhS7teuQKlv+MPvUAORTm2quirPl6g1qDrMmRFKl62ShdScezGVA4Y2NslP\nkKNVUNI96FfGM3rYXtV0lYj8dBIh7NQyQ+JWP4bw+t7kJAL0kUmpIi13K8lRL87R\nj250yAcOcibDrzU7jEWIP9rFA91Bi5YF1e9fEkW63wZuNJmZWjeSoEDFmx+Bo0OV\nPQt2Cp52WaZ1NpU3CbT3ZGe/OMs8K+2XkGH3+lFX7iMhOqjV06CltzyGDazxdnSA\nmKc8L3cr43MtQ3jG5/ilZFK+IAfMcSTDmfFUbfEA2sy+w0971YZk4KSfx/RMKEau\nl8R3lZW6nalRUjFX0Lzv1CR/sM/KsN3IU8iUFJr0qeYVaA4JRD3HcaJpueOwcw3/\nwzSuPf8EotjD5dT3HkinTw6+ilHjWZ+jsQgCXF29VJGFtWo3Z3C3Mmn+OQQqPJwF\npxRfsbc/CM2E85ovzsg12BHRVCwYsrbneIyzoZ1BLYx4vkAZCIXjiuFWnsAlJTkj\nMKWSSIbUEWF3U/GZ/+2q\n=mzab\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-08-08T18:13:24Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/898ef9cf587c9a200b73244fe5c50e86ef32e54c",
+      "node_id": "C_kwDOAOaWjdoAKDg5OGVmOWNmNTg3YzlhMjAwYjczMjQ0ZmU1YzUwZTg2ZWYzMmU1NGM",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/f77e8839d9ae11c2c3ffc220e2ef6f91f775fd84",
+          "sha": "f77e8839d9ae11c2c3ffc220e2ef6f91f775fd84",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/f77e8839d9ae11c2c3ffc220e2ef6f91f775fd84"
+        }
+      ],
+      "sha": "898ef9cf587c9a200b73244fe5c50e86ef32e54c",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/898ef9cf587c9a200b73244fe5c50e86ef32e54c"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/14365078?v=4",
+        "events_url": "https://api.github.com/users/stephaniehingtgen/events{/privacy}",
+        "followers_url": "https://api.github.com/users/stephaniehingtgen/followers",
+        "following_url": "https://api.github.com/users/stephaniehingtgen/following{/other_user}",
+        "gists_url": "https://api.github.com/users/stephaniehingtgen/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/stephaniehingtgen",
+        "id": 14365078,
+        "login": "stephaniehingtgen",
+        "node_id": "MDQ6VXNlcjE0MzY1MDc4",
+        "organizations_url": "https://api.github.com/users/stephaniehingtgen/orgs",
+        "received_events_url": "https://api.github.com/users/stephaniehingtgen/received_events",
+        "repos_url": "https://api.github.com/users/stephaniehingtgen/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/stephaniehingtgen/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/stephaniehingtgen/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/stephaniehingtgen",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/ef6e28b9555efb07fb90c96b6067f59aedc368df/comments",
+      "commit": {
+        "author": {
+          "date": "2025-06-20T21:37:17Z",
+          "email": "stephanie.hingtgen@grafana.com",
+          "name": "Stephanie Hingtgen"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-06-20T21:37:17Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "K8s: Make v0alpha1 opt-in (#107056)",
+        "tree": {
+          "sha": "9534f7cbf2dad1b4ab1fdcd82e256758bc2d3513",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/9534f7cbf2dad1b4ab1fdcd82e256758bc2d3513"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/ef6e28b9555efb07fb90c96b6067f59aedc368df",
+        "verification": {
+          "payload": "tree 9534f7cbf2dad1b4ab1fdcd82e256758bc2d3513\nparent 0e35c8bdb415d8bf12d5d11735162fad95138ab2\nauthor Stephanie Hingtgen <stephanie.hingtgen@grafana.com> 1750455437 -0500\ncommitter GitHub <noreply@github.com> 1750455437 -0500\n\nK8s: Make v0alpha1 opt-in (#107056)\n\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoVdSNCRC1aQ7uu5UhlAAAXuEQABEexzMosrCZ416QNN4WH9Rq\ncsLzFJG8EE01ItKc87ep0l1Wzzb8Hbq7z/3pOAalWtRvqEPJ+HVL7CCZf0xgMV/G\ntjLBPw4gyIW81Mbdzlj2YJFdPLPRp4nStWrji0uUCqwxSfCyeqn7UKXL56mpa7ov\nZswsLoG2uv8UnIn2sFjbaOfIzOtzfAE83+lGTfQCJw9zeUF5rYRGiJN14FLNPISK\nw3GnnbHZEAkSvQmhtZ0bPJAytPCIT7NgXt4zeefYUzfqQW2Vti/RJqAri2kjYufz\nYzyM1L1rzIiTHLZKMD0cBuvvY9otydmmjpRJj3MTKJvaD0roTFfnJ706PgLE6iTH\nSsBmyqVyBtf03kp8SUjxvJFBR3zyYoUzhf1knS5uX9DBeSu6pLb+wOHf23D+5a62\n76JF5L2fUbzmzumCfDC9tDNs0rHI5LecYGlxuRKwXLP+YmYAldo4Snf+ugLWpKWf\nRs60CsgYeOsNPAFJsefhhgW8kqzcWvxhf9wwyM3KyYkydLDvGDvh5t6LLOquJp1c\nhYXUv47azHtgqASc7i8FNJXk3NHx8t6AV2KRARncd9rOz2WcJDbF4ZhVlN0CVYHx\n7MYvBVpHM3OoBLUmh+bzNY4bYoG2KI/1AiEBw4ENaM15TixNlZfEBCYGRLpBWYFO\naYW03i0eWXvttsx2Pjov\n=3s9n\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-06-20T21:37:17Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/ef6e28b9555efb07fb90c96b6067f59aedc368df",
+      "node_id": "C_kwDOAOaWjdoAKGVmNmUyOGI5NTU1ZWZiMDdmYjkwYzk2YjYwNjdmNTlhZWRjMzY4ZGY",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/0e35c8bdb415d8bf12d5d11735162fad95138ab2",
+          "sha": "0e35c8bdb415d8bf12d5d11735162fad95138ab2",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/0e35c8bdb415d8bf12d5d11735162fad95138ab2"
+        }
+      ],
+      "sha": "ef6e28b9555efb07fb90c96b6067f59aedc368df",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/ef6e28b9555efb07fb90c96b6067f59aedc368df"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/868844?v=4",
+        "events_url": "https://api.github.com/users/gillesdemey/events{/privacy}",
+        "followers_url": "https://api.github.com/users/gillesdemey/followers",
+        "following_url": "https://api.github.com/users/gillesdemey/following{/other_user}",
+        "gists_url": "https://api.github.com/users/gillesdemey/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/gillesdemey",
+        "id": 868844,
+        "login": "gillesdemey",
+        "node_id": "MDQ6VXNlcjg2ODg0NA==",
+        "organizations_url": "https://api.github.com/users/gillesdemey/orgs",
+        "received_events_url": "https://api.github.com/users/gillesdemey/received_events",
+        "repos_url": "https://api.github.com/users/gillesdemey/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/gillesdemey/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/gillesdemey/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/gillesdemey",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/c78ae5cb76fc3e46301cff078c69962ea5bddeef/comments",
+      "commit": {
+        "author": {
+          "date": "2025-05-08T12:59:33Z",
+          "email": "gilles.de.mey@gmail.com",
+          "name": "Gilles De Mey"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-05-08T12:59:33Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Move alerting codegen to --grouping=group (#105068)",
+        "tree": {
+          "sha": "0d910036ce3aa8f970853da3d54c48c5c7ad39ad",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/0d910036ce3aa8f970853da3d54c48c5c7ad39ad"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/c78ae5cb76fc3e46301cff078c69962ea5bddeef",
+        "verification": {
+          "payload": "tree 0d910036ce3aa8f970853da3d54c48c5c7ad39ad\nparent 91561499608fc466a8fae43793cacb8485a156a7\nauthor Gilles De Mey <gilles.de.mey@gmail.com> 1746709173 +0200\ncommitter GitHub <noreply@github.com> 1746709173 +0000\n\nAlerting: Move alerting codegen to --grouping=group (#105068)\n\n",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoHKq1CRC1aQ7uu5UhlAAAa8EQAEwY+KyqXp/+jXYJ7wFmcBP4\naLVBNtGsNzDqPBTLh+D9uGXgAFj5RRCa0Jf4drhEKa15MkjZnle8qhGM2zhvpvzJ\nH+7xo7bdZ8CZBJ3K3JAuYs1maZymsggTnpRTSjQr2nPwIgcm9LEX6FO80+3BLrk1\nNgnXXreHXzCXcCmeDN7HKyli17Mov2RpefFJ67mWv/DJOEmo/PRLbIvptnYWhMca\njqe/TVxIynXGmMqy3jDcQyrBamD+esWN/4eiuBXxYk8FAqltNoKeAsY6BrmhJ3jF\n3FD/cG/2H8UUDrmSa/Xl3dKQk8h3AU0qATbX6q8O3H4jg8o0IV2bCuMPQ1InA06R\nRRBeROasWnaz5b67u7bunR7FA1cnkYQG0mKvWYjyAME0T9Yet4zSYGd5+ePR5XnH\n4bJdMABFf/beotVVtKHRAHUfAlVYriEP/5dYpBqiooJTQHra9raT5e/c/ZStDswH\n7/KAhA7ivIh79wnVgI0MQ6pAnrNRpzX6iXN3l4y8Xh9ESNMDFrtO6NeUVV8PDcCD\ne6kcRu0v6zc0DA0w4/iOIgnAPfS1ol/602Uf5uYJysUkkFe12YqM10qvzqvmuqvg\nHWA63DIQq8grBEtSxUqRd0Gbz8u0qyGZdmJDP0BH05TpdbcxP5G72jRK6/7v7U90\nyWSZAG37qS13pw0WiF+J\n=iIG8\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-05-08T12:59:37Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/c78ae5cb76fc3e46301cff078c69962ea5bddeef",
+      "node_id": "C_kwDOAOaWjdoAKGM3OGFlNWNiNzZmYzNlNDYzMDFjZmYwNzhjNjk5NjJlYTViZGRlZWY",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/91561499608fc466a8fae43793cacb8485a156a7",
+          "sha": "91561499608fc466a8fae43793cacb8485a156a7",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/91561499608fc466a8fae43793cacb8485a156a7"
+        }
+      ],
+      "sha": "c78ae5cb76fc3e46301cff078c69962ea5bddeef",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/c78ae5cb76fc3e46301cff078c69962ea5bddeef"
+    },
+    {
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/25988953?v=4",
+        "events_url": "https://api.github.com/users/yuri-tceretian/events{/privacy}",
+        "followers_url": "https://api.github.com/users/yuri-tceretian/followers",
+        "following_url": "https://api.github.com/users/yuri-tceretian/following{/other_user}",
+        "gists_url": "https://api.github.com/users/yuri-tceretian/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/yuri-tceretian",
+        "id": 25988953,
+        "login": "yuri-tceretian",
+        "node_id": "MDQ6VXNlcjI1OTg4OTUz",
+        "organizations_url": "https://api.github.com/users/yuri-tceretian/orgs",
+        "received_events_url": "https://api.github.com/users/yuri-tceretian/received_events",
+        "repos_url": "https://api.github.com/users/yuri-tceretian/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/yuri-tceretian/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/yuri-tceretian/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/yuri-tceretian",
+        "user_view_type": "public"
+      },
+      "comments_url": "https://api.github.com/repos/grafana/grafana/commits/3e2296acd3319093f5b5782a8c5738d815eee56e/comments",
+      "commit": {
+        "author": {
+          "date": "2025-05-07T23:19:33Z",
+          "email": "yuriy.tseretyan@grafana.com",
+          "name": "Yuri Tseretyan"
+        },
+        "comment_count": 0,
+        "committer": {
+          "date": "2025-05-07T23:19:33Z",
+          "email": "noreply@github.com",
+          "name": "GitHub"
+        },
+        "message": "Alerting: Support for active time intervals in notification policies (#104252)\n\n* add active_time_intervals to route model\n\n* update k8s compat layer\n\n* update notification policies service to validate active time intervals\n\n* update integration tests\n\n* update openapi\n\n* add active time interval to model\n\n* update route generator to include active time interval\n\n* Update storage list and rename methods to handle active intervals\n\n* update api model\n\n* update provisioning and export models\n\n* update ui to allow active timing config\n\n* update i18n\n\n* fix snapshots for ui tests\n\n* run prettier\n\n* Alerting: Active time intervals UI naming (#104402)\n\n* update naming in UI\n\n* update naming in the edit page title\n\n* update translations\n\n* update alerting module\n\n---------\n\nSigned-off-by: Yuri Tseretyan <yuriy.tseretyan@grafana.com>\nCo-authored-by: Sonia Aguilar <33540275+soniaAguilarPeiron@users.noreply.github.com>\nCo-authored-by: Sonia Aguilar <soniaaguilarpeiron@gmail.com>",
+        "tree": {
+          "sha": "f0b09c3d0482273f4cc139abaca95b7a8d5f81e7",
+          "url": "https://api.github.com/repos/grafana/grafana/git/trees/f0b09c3d0482273f4cc139abaca95b7a8d5f81e7"
+        },
+        "url": "https://api.github.com/repos/grafana/grafana/git/commits/3e2296acd3319093f5b5782a8c5738d815eee56e",
+        "verification": {
+          "payload": "tree f0b09c3d0482273f4cc139abaca95b7a8d5f81e7\nparent a8dee54aa4a4b6095bc8693013fed0587e80d20d\nauthor Yuri Tseretyan <yuriy.tseretyan@grafana.com> 1746659973 -0400\ncommitter GitHub <noreply@github.com> 1746659973 -0400\n\nAlerting: Support for active time intervals in notification policies (#104252)\n\n* add active_time_intervals to route model\n\n* update k8s compat layer\n\n* update notification policies service to validate active time intervals\n\n* update integration tests\n\n* update openapi\n\n* add active time interval to model\n\n* update route generator to include active time interval\n\n* Update storage list and rename methods to handle active intervals\n\n* update api model\n\n* update provisioning and export models\n\n* update ui to allow active timing config\n\n* update i18n\n\n* fix snapshots for ui tests\n\n* run prettier\n\n* Alerting: Active time intervals UI naming (#104402)\n\n* update naming in UI\n\n* update naming in the edit page title\n\n* update translations\n\n* update alerting module\n\n---------\n\nSigned-off-by: Yuri Tseretyan <yuriy.tseretyan@grafana.com>\nCo-authored-by: Sonia Aguilar <33540275+soniaAguilarPeiron@users.noreply.github.com>\nCo-authored-by: Sonia Aguilar <soniaaguilarpeiron@gmail.com>",
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJoG+qFCRC1aQ7uu5UhlAAASeUQACoopghzwVCBjh819xp62XEX\n0nJsShmxoGpJ0TiiMcSDiiTPbPlGUSRnO4gJAaeT9Lrs4BvVscqLudzllP+MzEJn\n+WrZt4pPODhbcew/46n5u20k97d1MKPqq9l6bTSQnaSjE6LRMJAUBoYHHBZEAMVg\nB0YSkYRCs1xEQRepeFTZiD8qm8S3XbvAy1NQRSMc7MCSwzjl/IdAKcQV8vTI+euw\nO3Yg8/VJQ5HYMnvN1SEIfqSk86RPWhJe/AwGaMHxkMy38faYLwE9bEzl6RgHgFmp\njESHYbslKVCJriwqXjQq3mNFZNByAmNPDZudWp0jhcgHL+fBq2im22nXEr2kvd1F\n3eQ+zyF4XHTIDcfcW4F0yafBpK6vTu3BPwEbDOOkevKUR88Bl9LsvT2lKKOTAYu3\nlM9a3vVLG51MHTU/0lRcUv88gi3Truzq+qR5F+5PdUZQDaRU+Wfe+5+w1qtJoCEZ\nTgTLyRv97CP0axrtosfCLiGtoqhexlHyHiUCKpSH5PXH2s/AjR0U/hn5VAJau985\nm4iV+i00eGlmDzCTJQifJU6ZvPMNPCtjBOqKZYywXEh6knanGF/Ak9w4wSne6x7e\n2K+PJI8Ob2oUXmmLaH2whySevQT4pULfS3bWtu86WNSHnvPhlElxwO1RQXvx6LZ2\nehAX8m3/UE6mqz9aXc16\n=UHIv\n-----END PGP SIGNATURE-----\n",
+          "verified": true,
+          "verified_at": "2025-05-07T23:19:37Z"
+        }
+      },
+      "committer": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/web-flow",
+        "id": 19864447,
+        "login": "web-flow",
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/web-flow",
+        "user_view_type": "public"
+      },
+      "html_url": "https://github.com/grafana/grafana/commit/3e2296acd3319093f5b5782a8c5738d815eee56e",
+      "node_id": "C_kwDOAOaWjdoAKDNlMjI5NmFjZDMzMTkwOTNmNWI1NzgyYThjNTczOGQ4MTVlZWU1NmU",
+      "parents": [
+        {
+          "html_url": "https://github.com/grafana/grafana/commit/a8dee54aa4a4b6095bc8693013fed0587e80d20d",
+          "sha": "a8dee54aa4a4b6095bc8693013fed0587e80d20d",
+          "url": "https://api.github.com/repos/grafana/grafana/commits/a8dee54aa4a4b6095bc8693013fed0587e80d20d"
+        }
+      ],
+      "sha": "3e2296acd3319093f5b5782a8c5738d815eee56e",
+      "url": "https://api.github.com/repos/grafana/grafana/commits/3e2296acd3319093f5b5782a8c5738d815eee56e"
+    }
+  ],
+  "fetched_utc": "2026-11-14T17:20:23.527682+00:00",
+  "link_header": null,
+  "rate_remaining": null,
+  "sha256": "071a4bbe35fc6f7263deb47567c0f0d2e7cdbeb0b43c9325a349ad4fd0993096",
+  "source_url": "https://api.github.com/repos/grafana/grafana/commits?path=pkg%2Fregistry%2Fapps%2Falerting%2Fnotifications%2F&since=2025-04-30T14%3A23%3A57Z&until=2026-04-30T14%3A23%3A56Z&per_page=100"
+}

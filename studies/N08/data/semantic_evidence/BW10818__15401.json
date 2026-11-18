@@ -1,0 +1,19 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 67733,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW10818",
+  "examples": [],
+  "fetched_utc": "2026-11-14T23:56:41.036887+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+  "noncomment_nonimport_changed_lines": 0,
+  "pr": 15401,
+  "repository": "bitwarden/clients",
+  "sha256": "4f1c840e4152bbd5ad7beab155bc873b0d6534a4c1352fc7dcf73cc20a4b5641",
+  "target_code_changed_lines": 0,
+  "target_files": [
+    "apps/desktop/src/key-management/biometrics/main-biometrics.service.spec.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15401.patch"
+}

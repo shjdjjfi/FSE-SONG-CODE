@@ -1,0 +1,57 @@
+{
+  "fetched_utc": "2026-11-14T17:12:05.577488+00:00",
+  "merged_at": "2024-10-26T11:47:40Z",
+  "opened_at": "2024-10-25T10:56:09Z",
+  "pr": 11709,
+  "raw_html_sha256": "77e8b6fc1d0714fa27a174eaf0b8b587793a5b4a675930f08555db1c831f03ef",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 9,
+  "reviews": [
+    {
+      "login": "mzieniukbw",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2024-10-25T12:06:24Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2024-10-25T12:50:13Z"
+    },
+    {
+      "login": "mzieniukbw",
+      "state": "APPROVED",
+      "submitted_at": "2024-10-25T13:26:53Z"
+    },
+    {
+      "login": "mzieniukbw",
+      "state": "APPROVED",
+      "submitted_at": "2024-10-25T13:41:47Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "APPROVED",
+      "submitted_at": "2024-10-25T14:36:37Z"
+    },
+    {
+      "login": "Jingo88",
+      "state": "APPROVED",
+      "submitted_at": "2024-10-25T15:55:34Z"
+    },
+    {
+      "login": "rr-bw",
+      "state": "APPROVED",
+      "submitted_at": "2024-10-25T16:39:47Z"
+    },
+    {
+      "login": "BTreston",
+      "state": "APPROVED",
+      "submitted_at": "2024-10-25T16:58:56Z"
+    },
+    {
+      "login": "ike-kottlowski",
+      "state": "APPROVED",
+      "submitted_at": "2024-10-25T19:17:17Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/11709"
+}

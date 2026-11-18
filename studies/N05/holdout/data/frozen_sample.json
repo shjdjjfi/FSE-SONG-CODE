@@ -1,0 +1,445 @@
+{
+  "selection_version": 1,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "rule": "Per seed and crate: up to two risk, plus control, three total; all before compiling.",
+  "n_corpus": 909,
+  "n_filtered": 838,
+  "assignments": [
+    {
+      "seed": 17,
+      "crate": "bytes",
+      "id": "70016af03eab2e34",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "bytes",
+      "id": "b90c211b589c88f5",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "bytes",
+      "id": "a3b218afc8aa463b",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "dashmap",
+      "id": "c932911d7e0c6733",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "dashmap",
+      "id": "13c58fb468ed9f98",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "dashmap",
+      "id": "6b49a2224709b2cc",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "hashbrown",
+      "id": "8db3798fb485cc92",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "hashbrown",
+      "id": "1436c637f2ea2e08",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "hashbrown",
+      "id": "906709300c5c25a1",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "miette",
+      "id": "f1c56b6f4feba3c8",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "miette",
+      "id": "de2e80b42e838970",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "miette",
+      "id": "fdf61f38a1d80971",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "serde_json",
+      "id": "5dc94881817044fe",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "serde_json",
+      "id": "79e42f84bff21af0",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "serde_json",
+      "id": "6b48b1ae5feebc3c",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "tokio-stream",
+      "id": "395c9233fa65661f",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tokio-stream",
+      "id": "894b7346a7df35e2",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tokio-stream",
+      "id": "42b0485d06b6145e",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "tower",
+      "id": "09806dfece38750d",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tower",
+      "id": "a5dfe62ecb17830e",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tower",
+      "id": "b482fede975ff41d",
+      "stratum": "control"
+    },
+    {
+      "seed": 17,
+      "crate": "tower-http",
+      "id": "0351acaee18dfeba",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tower-http",
+      "id": "cf0065a6f159bfe3",
+      "stratum": "risk"
+    },
+    {
+      "seed": 17,
+      "crate": "tower-http",
+      "id": "2d6fe3e2e2f7a46b",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "bytes",
+      "id": "cc2bddb983e94731",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "bytes",
+      "id": "d7cd9ca0e3c22f7e",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "bytes",
+      "id": "73b6b7a5d822199e",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "dashmap",
+      "id": "5c69a19a4c14e872",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "dashmap",
+      "id": "13c58fb468ed9f98",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "dashmap",
+      "id": "d50530e0763f5f3a",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "hashbrown",
+      "id": "1436c637f2ea2e08",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "hashbrown",
+      "id": "d58190c52e214adb",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "hashbrown",
+      "id": "8a4fe7ee2060817e",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "miette",
+      "id": "0f21fc4721ba5c28",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "miette",
+      "id": "bc3dd6fe87c9aa93",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "miette",
+      "id": "13767d76e29f6821",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "serde_json",
+      "id": "79e42f84bff21af0",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "serde_json",
+      "id": "5dc94881817044fe",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "serde_json",
+      "id": "0563461d2ca6fd93",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "tokio-stream",
+      "id": "954c5f4a458cfd10",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tokio-stream",
+      "id": "894b7346a7df35e2",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tokio-stream",
+      "id": "ce072f3a57f8b09a",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "tower",
+      "id": "c7310a3265db2b24",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tower",
+      "id": "0b9a0622b2b03524",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tower",
+      "id": "b482fede975ff41d",
+      "stratum": "control"
+    },
+    {
+      "seed": 29,
+      "crate": "tower-http",
+      "id": "2cc52308249836df",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tower-http",
+      "id": "63431ea9ad341edd",
+      "stratum": "risk"
+    },
+    {
+      "seed": 29,
+      "crate": "tower-http",
+      "id": "94bbf0761db099ce",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "bytes",
+      "id": "dc41b64cbcf582db",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "bytes",
+      "id": "4e4ac94512565e69",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "bytes",
+      "id": "0bf19fac2edb5627",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "dashmap",
+      "id": "2cf6f63a284cdf09",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "dashmap",
+      "id": "0ebb9f3214c33219",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "dashmap",
+      "id": "1dd5e2c28aaf1bfb",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "hashbrown",
+      "id": "e27469a32ac540ec",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "hashbrown",
+      "id": "3d9b7fd9b89cace4",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "hashbrown",
+      "id": "b86758c6a9480312",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "miette",
+      "id": "f1c56b6f4feba3c8",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "miette",
+      "id": "9846fc8a90fdd696",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "miette",
+      "id": "fdf61f38a1d80971",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "serde_json",
+      "id": "79e42f84bff21af0",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "serde_json",
+      "id": "5dc94881817044fe",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "serde_json",
+      "id": "e8cb42b050b87312",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "tokio-stream",
+      "id": "954c5f4a458cfd10",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tokio-stream",
+      "id": "894b7346a7df35e2",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tokio-stream",
+      "id": "6720fc068d932b98",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "tower",
+      "id": "c67ede2141155902",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tower",
+      "id": "5c9691fe1f14ac88",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tower",
+      "id": "70f8633f0aab478c",
+      "stratum": "control"
+    },
+    {
+      "seed": 43,
+      "crate": "tower-http",
+      "id": "1d6373b4cc5c8b2a",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tower-http",
+      "id": "9c464b0d7ae57814",
+      "stratum": "risk"
+    },
+    {
+      "seed": 43,
+      "crate": "tower-http",
+      "id": "6d2144000d187cfb",
+      "stratum": "control"
+    }
+  ]
+}

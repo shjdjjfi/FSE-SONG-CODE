@@ -1,0 +1,28 @@
+{
+  "key": "ec6b939619638f2748",
+  "args": {
+    "crate": "utoipa",
+    "version": "5.3.1",
+    "id": "d81575448e484b0d",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 14.3668,
+  "errors": [
+    {
+      "code": "E0554",
+      "message": "`#![feature]` may not be used on the stable release channel",
+      "rendered": "error[E0554]: `#![feature]` may not be used on the stable release channel\n --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/utoipa-gen-5.5.0/src/lib.rs:7:22\n  |\n7 | #![cfg_attr(doc_cfg, feature(doc_cfg))]\n  |                      ^^^^^^^^^^^^^^^^\n\n",
+      "line": 7
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `utoipa-gen` (lib) due to 1 previous error\n",
+  "code_sha256": "feb1dc2a70d17bfec59ded71cf7f63da41ec587a15c76d352ea5bc9c725f807b",
+  "manifest_sha256": "e213b22133b4fa99ce8160e3c8b8f44581c0392ff01453924af514817c24c48e",
+  "log_file": "prospective/results/check_logs/ec6b939619638f2748.txt.gz"
+}

@@ -1,0 +1,76 @@
+{
+  "lockfileVersion": 3,
+  "name": "n24-rollup",
+  "packages": {
+    "": {
+      "dependencies": {
+        "picocolors": "^1.0.0",
+        "rollup": "4.18.1"
+      },
+      "name": "n24-rollup",
+      "version": "1.0.0"
+    },
+    "node_modules/@rollup/rollup-linux-x64-gnu": {
+      "cpu": [
+        "x64"
+      ],
+      "integrity": "sha512-7O5u/p6oKUFYjRbZkL2FLbwsyoJAjyeXHCU3O4ndvzg2OFO2GinFPSJFGbiwFDaCFc+k7gs9CF243PwdPQFh5g==",
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.18.1.tgz",
+      "version": "4.18.1"
+    },
+    "node_modules/@types/estree": {
+      "integrity": "sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==",
+      "license": "MIT",
+      "resolved": "https://registry.npmjs.org/@types/estree/-/estree-1.0.5.tgz",
+      "version": "1.0.5"
+    },
+    "node_modules/picocolors": {
+      "integrity": "sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==",
+      "license": "ISC",
+      "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.0.0.tgz",
+      "version": "1.0.0"
+    },
+    "node_modules/rollup": {
+      "bin": {
+        "rollup": "dist/bin/rollup"
+      },
+      "dependencies": {
+        "@types/estree": "1.0.5"
+      },
+      "engines": {
+        "node": ">=18.0.0",
+        "npm": ">=8.0.0"
+      },
+      "integrity": "sha512-Elx2UT8lzxxOXMpy5HWQGZqkrQOtrVDDa/bm9l10+U4rQnVzbL/LgZ4NOM1MPIDyHk69W4InuYDF5dzRh4Kw1A==",
+      "license": "MIT",
+      "optionalDependencies": {
+        "@rollup/rollup-android-arm-eabi": "4.18.1",
+        "@rollup/rollup-android-arm64": "4.18.1",
+        "@rollup/rollup-darwin-arm64": "4.18.1",
+        "@rollup/rollup-darwin-x64": "4.18.1",
+        "@rollup/rollup-linux-arm-gnueabihf": "4.18.1",
+        "@rollup/rollup-linux-arm-musleabihf": "4.18.1",
+        "@rollup/rollup-linux-arm64-gnu": "4.18.1",
+        "@rollup/rollup-linux-arm64-musl": "4.18.1",
+        "@rollup/rollup-linux-powerpc64le-gnu": "4.18.1",
+        "@rollup/rollup-linux-riscv64-gnu": "4.18.1",
+        "@rollup/rollup-linux-s390x-gnu": "4.18.1",
+        "@rollup/rollup-linux-x64-gnu": "4.18.1",
+        "@rollup/rollup-linux-x64-musl": "4.18.1",
+        "@rollup/rollup-win32-arm64-msvc": "4.18.1",
+        "@rollup/rollup-win32-ia32-msvc": "4.18.1",
+        "@rollup/rollup-win32-x64-msvc": "4.18.1",
+        "fsevents": "~2.3.2"
+      },
+      "resolved": "https://registry.npmjs.org/rollup/-/rollup-4.18.1.tgz",
+      "version": "4.18.1"
+    }
+  },
+  "requires": true,
+  "version": "1.0.0"
+}

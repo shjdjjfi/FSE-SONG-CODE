@@ -1,0 +1,27 @@
+{
+  "fetched_utc": "2026-11-14T17:12:25.210428+00:00",
+  "merged_at": "2025-01-29T16:09:20Z",
+  "opened_at": "2025-01-17T10:30:15Z",
+  "pr": 12927,
+  "raw_html_sha256": "8315ca7033430e243a2125a81395a2aa4513faa824bfc6ee291494304ac73680",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 3,
+  "reviews": [
+    {
+      "login": "amorask-bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-27T14:14:50Z"
+    },
+    {
+      "login": "shane-melton",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-29T16:09:18Z"
+    },
+    {
+      "login": "gbubemismith",
+      "state": "APPROVED",
+      "submitted_at": "2025-01-29T16:12:59Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/12927"
+}

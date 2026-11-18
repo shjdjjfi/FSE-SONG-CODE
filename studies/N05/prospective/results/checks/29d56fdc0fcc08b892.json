@@ -1,0 +1,23 @@
+{
+  "key": "29d56fdc0fcc08b892",
+  "args": {
+    "crate": "poem",
+    "version": "3.1.12",
+    "id": "8be82433cb971cda",
+    "profile": "candidate",
+    "features": [
+      "redis-session"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "pass",
+  "returncode": 0,
+  "seconds": 0.2152,
+  "errors": [],
+  "error_count": 0,
+  "stderr_excerpt": "",
+  "code_sha256": "dd73226df6b12b44a7bdc9611d738ce4a8b76cf2605a5a936caaa35536b98bcf",
+  "manifest_sha256": "c7da7674e665c91cafb81cbf22faa022ca235e4ef130ab420677a1aa5c02cd22",
+  "log_file": "prospective/results/check_logs/29d56fdc0fcc08b892.txt.gz"
+}

@@ -1,0 +1,1045 @@
+{
+  "total_trials": 920,
+  "workspace_cases": [
+    "andrewthauer",
+    "libraries",
+    "quramy",
+    "typescript"
+  ],
+  "distinct_projects": [
+    [
+      "andrewthauer",
+      "api"
+    ],
+    [
+      "andrewthauer",
+      "cli"
+    ],
+    [
+      "andrewthauer",
+      "core"
+    ],
+    [
+      "andrewthauer",
+      "web"
+    ],
+    [
+      "libraries",
+      "mitt"
+    ],
+    [
+      "libraries",
+      "neverthrow"
+    ],
+    [
+      "libraries",
+      "ts-pattern"
+    ],
+    [
+      "libraries",
+      "zod"
+    ],
+    [
+      "quramy",
+      "x-cli"
+    ],
+    [
+      "quramy",
+      "x-core"
+    ],
+    [
+      "typescript",
+      "compiler"
+    ],
+    [
+      "typescript",
+      "jsTyping"
+    ],
+    [
+      "typescript",
+      "services"
+    ]
+  ],
+  "fault_types": [
+    "buildinfo_missing",
+    "corrupt_dts",
+    "corrupt_js",
+    "delete_dts",
+    "delete_entry_js",
+    "delete_nested_js",
+    "erase_dist",
+    "extra_stale",
+    "intact"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "arm_summaries": {
+    "standard": {
+      "n": 101,
+      "correct": 0,
+      "median_compile_units": 0,
+      "median_seconds": 0.184
+    },
+    "selective_path": {
+      "n": 101,
+      "correct": 71,
+      "median_compile_units": 3,
+      "median_seconds": 1.15
+    },
+    "selective_hash": {
+      "n": 77,
+      "correct": 77,
+      "median_compile_units": 3,
+      "median_seconds": 1.484
+    },
+    "guarded_hash": {
+      "n": 101,
+      "correct": 101,
+      "median_compile_units": 3,
+      "median_seconds": 1.981
+    },
+    "invalidate_all": {
+      "n": 77,
+      "correct": 64,
+      "median_compile_units": 4,
+      "median_seconds": 3.0
+    },
+    "clean_all": {
+      "n": 101,
+      "correct": 101,
+      "median_compile_units": 4,
+      "median_seconds": 2.948
+    },
+    "force_all": {
+      "n": 77,
+      "correct": 64,
+      "median_compile_units": 4,
+      "median_seconds": 3.051
+    },
+    "full_cache": {
+      "n": 101,
+      "correct": 101,
+      "median_compile_units": 0,
+      "median_seconds": 0.011
+    }
+  },
+  "case_arm": {
+    "andrewthauer:clean_all": {
+      "n": 32,
+      "correct": 32,
+      "median_units": 4.0,
+      "median_seconds": 2.736
+    },
+    "andrewthauer:force_all": {
+      "n": 26,
+      "correct": 22,
+      "median_units": 4.0,
+      "median_seconds": 2.697
+    },
+    "andrewthauer:full_cache": {
+      "n": 32,
+      "correct": 32,
+      "median_units": 0.0,
+      "median_seconds": 0.006
+    },
+    "andrewthauer:guarded_hash": {
+      "n": 32,
+      "correct": 32,
+      "median_units": 2.0,
+      "median_seconds": 2.085
+    },
+    "andrewthauer:invalidate_all": {
+      "n": 26,
+      "correct": 22,
+      "median_units": 4.0,
+      "median_seconds": 2.69
+    },
+    "andrewthauer:selective_hash": {
+      "n": 26,
+      "correct": 26,
+      "median_units": 2.0,
+      "median_seconds": 1.821
+    },
+    "andrewthauer:selective_path": {
+      "n": 32,
+      "correct": 23,
+      "median_units": 1.0,
+      "median_seconds": 1.316
+    },
+    "andrewthauer:standard": {
+      "n": 32,
+      "correct": 0,
+      "median_units": 0.0,
+      "median_seconds": 0.179
+    },
+    "libraries:clean_all": {
+      "n": 40,
+      "correct": 40,
+      "median_units": 37.0,
+      "median_seconds": 3.273
+    },
+    "libraries:force_all": {
+      "n": 28,
+      "correct": 24,
+      "median_units": 37.0,
+      "median_seconds": 3.297
+    },
+    "libraries:full_cache": {
+      "n": 40,
+      "correct": 40,
+      "median_units": 0.0,
+      "median_seconds": 0.022
+    },
+    "libraries:guarded_hash": {
+      "n": 40,
+      "correct": 40,
+      "median_units": 13.0,
+      "median_seconds": 2.152
+    },
+    "libraries:invalidate_all": {
+      "n": 28,
+      "correct": 24,
+      "median_units": 37.0,
+      "median_seconds": 3.223
+    },
+    "libraries:selective_hash": {
+      "n": 28,
+      "correct": 28,
+      "median_units": 9.0,
+      "median_seconds": 1.419
+    },
+    "libraries:selective_path": {
+      "n": 40,
+      "correct": 28,
+      "median_units": 5.0,
+      "median_seconds": 1.078
+    },
+    "libraries:standard": {
+      "n": 40,
+      "correct": 0,
+      "median_units": 0.0,
+      "median_seconds": 0.195
+    },
+    "quramy:clean_all": {
+      "n": 20,
+      "correct": 20,
+      "median_units": 4.0,
+      "median_seconds": 1.071
+    },
+    "quramy:force_all": {
+      "n": 14,
+      "correct": 12,
+      "median_units": 4.0,
+      "median_seconds": 1.043
+    },
+    "quramy:full_cache": {
+      "n": 20,
+      "correct": 20,
+      "median_units": 0.0,
+      "median_seconds": 0.003
+    },
+    "quramy:guarded_hash": {
+      "n": 20,
+      "correct": 20,
+      "median_units": 3.0,
+      "median_seconds": 1.418
+    },
+    "quramy:invalidate_all": {
+      "n": 14,
+      "correct": 12,
+      "median_units": 4.0,
+      "median_seconds": 1.08
+    },
+    "quramy:selective_hash": {
+      "n": 14,
+      "correct": 14,
+      "median_units": 3.5,
+      "median_seconds": 1.166
+    },
+    "quramy:selective_path": {
+      "n": 20,
+      "correct": 14,
+      "median_units": 3.0,
+      "median_seconds": 1.134
+    },
+    "quramy:standard": {
+      "n": 20,
+      "correct": 0,
+      "median_units": 0.0,
+      "median_seconds": 0.183
+    },
+    "typescript:clean_all": {
+      "n": 9,
+      "correct": 9,
+      "median_units": 252,
+      "median_seconds": 16.251
+    },
+    "typescript:force_all": {
+      "n": 9,
+      "correct": 6,
+      "median_units": 252,
+      "median_seconds": 15.692
+    },
+    "typescript:full_cache": {
+      "n": 9,
+      "correct": 9,
+      "median_units": 0,
+      "median_seconds": 0.095
+    },
+    "typescript:guarded_hash": {
+      "n": 9,
+      "correct": 9,
+      "median_units": 174,
+      "median_seconds": 5.859
+    },
+    "typescript:invalidate_all": {
+      "n": 9,
+      "correct": 6,
+      "median_units": 252,
+      "median_seconds": 15.959
+    },
+    "typescript:selective_hash": {
+      "n": 9,
+      "correct": 9,
+      "median_units": 174,
+      "median_seconds": 6.192
+    },
+    "typescript:selective_path": {
+      "n": 9,
+      "correct": 6,
+      "median_units": 168,
+      "median_seconds": 5.874
+    },
+    "typescript:standard": {
+      "n": 9,
+      "correct": 0,
+      "median_units": 0,
+      "median_seconds": 0.161
+    }
+  },
+  "fault_arm": {
+    "corrupt_dts:clean_all": {
+      "n": 12,
+      "correct": 12
+    },
+    "corrupt_dts:force_all": {
+      "n": 12,
+      "correct": 12
+    },
+    "corrupt_dts:full_cache": {
+      "n": 12,
+      "correct": 12
+    },
+    "corrupt_dts:guarded_hash": {
+      "n": 12,
+      "correct": 12
+    },
+    "corrupt_dts:invalidate_all": {
+      "n": 12,
+      "correct": 12
+    },
+    "corrupt_dts:selective_hash": {
+      "n": 12,
+      "correct": 12
+    },
+    "corrupt_dts:selective_path": {
+      "n": 12,
+      "correct": 0
+    },
+    "corrupt_dts:standard": {
+      "n": 12,
+      "correct": 0
+    },
+    "corrupt_js:clean_all": {
+      "n": 18,
+      "correct": 18
+    },
+    "corrupt_js:force_all": {
+      "n": 10,
+      "correct": 10
+    },
+    "corrupt_js:full_cache": {
+      "n": 18,
+      "correct": 18
+    },
+    "corrupt_js:guarded_hash": {
+      "n": 18,
+      "correct": 18
+    },
+    "corrupt_js:invalidate_all": {
+      "n": 10,
+      "correct": 10
+    },
+    "corrupt_js:selective_hash": {
+      "n": 10,
+      "correct": 10
+    },
+    "corrupt_js:selective_path": {
+      "n": 18,
+      "correct": 0
+    },
+    "corrupt_js:standard": {
+      "n": 18,
+      "correct": 0
+    },
+    "delete_dts:clean_all": {
+      "n": 12,
+      "correct": 12
+    },
+    "delete_dts:force_all": {
+      "n": 12,
+      "correct": 12
+    },
+    "delete_dts:full_cache": {
+      "n": 12,
+      "correct": 12
+    },
+    "delete_dts:guarded_hash": {
+      "n": 12,
+      "correct": 12
+    },
+    "delete_dts:invalidate_all": {
+      "n": 12,
+      "correct": 12
+    },
+    "delete_dts:selective_hash": {
+      "n": 12,
+      "correct": 12
+    },
+    "delete_dts:selective_path": {
+      "n": 12,
+      "correct": 12
+    },
+    "delete_dts:standard": {
+      "n": 12,
+      "correct": 0
+    },
+    "delete_entry_js:clean_all": {
+      "n": 10,
+      "correct": 10
+    },
+    "delete_entry_js:force_all": {
+      "n": 10,
+      "correct": 10
+    },
+    "delete_entry_js:full_cache": {
+      "n": 10,
+      "correct": 10
+    },
+    "delete_entry_js:guarded_hash": {
+      "n": 10,
+      "correct": 10
+    },
+    "delete_entry_js:invalidate_all": {
+      "n": 10,
+      "correct": 10
+    },
+    "delete_entry_js:selective_hash": {
+      "n": 10,
+      "correct": 10
+    },
+    "delete_entry_js:selective_path": {
+      "n": 10,
+      "correct": 10
+    },
+    "delete_entry_js:standard": {
+      "n": 10,
+      "correct": 0
+    },
+    "delete_nested_js:clean_all": {
+      "n": 18,
+      "correct": 18
+    },
+    "delete_nested_js:force_all": {
+      "n": 10,
+      "correct": 10
+    },
+    "delete_nested_js:full_cache": {
+      "n": 18,
+      "correct": 18
+    },
+    "delete_nested_js:guarded_hash": {
+      "n": 18,
+      "correct": 18
+    },
+    "delete_nested_js:invalidate_all": {
+      "n": 10,
+      "correct": 10
+    },
+    "delete_nested_js:selective_hash": {
+      "n": 10,
+      "correct": 10
+    },
+    "delete_nested_js:selective_path": {
+      "n": 18,
+      "correct": 18
+    },
+    "delete_nested_js:standard": {
+      "n": 18,
+      "correct": 0
+    },
+    "erase_dist:clean_all": {
+      "n": 10,
+      "correct": 10
+    },
+    "erase_dist:force_all": {
+      "n": 10,
+      "correct": 10
+    },
+    "erase_dist:full_cache": {
+      "n": 10,
+      "correct": 10
+    },
+    "erase_dist:guarded_hash": {
+      "n": 10,
+      "correct": 10
+    },
+    "erase_dist:invalidate_all": {
+      "n": 10,
+      "correct": 10
+    },
+    "erase_dist:selective_hash": {
+      "n": 10,
+      "correct": 10
+    },
+    "erase_dist:selective_path": {
+      "n": 10,
+      "correct": 10
+    },
+    "erase_dist:standard": {
+      "n": 10,
+      "correct": 0
+    },
+    "extra_stale:clean_all": {
+      "n": 21,
+      "correct": 21
+    },
+    "extra_stale:force_all": {
+      "n": 13,
+      "correct": 0
+    },
+    "extra_stale:full_cache": {
+      "n": 21,
+      "correct": 21
+    },
+    "extra_stale:guarded_hash": {
+      "n": 21,
+      "correct": 21
+    },
+    "extra_stale:invalidate_all": {
+      "n": 13,
+      "correct": 0
+    },
+    "extra_stale:selective_hash": {
+      "n": 13,
+      "correct": 13
+    },
+    "extra_stale:selective_path": {
+      "n": 21,
+      "correct": 21
+    },
+    "extra_stale:standard": {
+      "n": 21,
+      "correct": 0
+    }
+  },
+  "paired_comparisons": {
+    "selective_hash_vs_force_all": {
+      "n": 64,
+      "median_saved_source_units": 3.0,
+      "median_unit_reduction": 0.514,
+      "median_time_saved_seconds": 1.296,
+      "mean_time_saved_seconds": 1.661,
+      "projects": [
+        [
+          "andrewthauer",
+          "api"
+        ],
+        [
+          "andrewthauer",
+          "cli"
+        ],
+        [
+          "andrewthauer",
+          "core"
+        ],
+        [
+          "andrewthauer",
+          "web"
+        ],
+        [
+          "libraries",
+          "mitt"
+        ],
+        [
+          "libraries",
+          "neverthrow"
+        ],
+        [
+          "libraries",
+          "ts-pattern"
+        ],
+        [
+          "libraries",
+          "zod"
+        ],
+        [
+          "quramy",
+          "x-cli"
+        ],
+        [
+          "quramy",
+          "x-core"
+        ],
+        [
+          "typescript",
+          "compiler"
+        ],
+        [
+          "typescript",
+          "jsTyping"
+        ],
+        [
+          "typescript",
+          "services"
+        ]
+      ]
+    },
+    "selective_hash_vs_invalidate_all": {
+      "n": 64,
+      "median_saved_source_units": 3.0,
+      "median_unit_reduction": 0.514,
+      "median_time_saved_seconds": 1.327,
+      "mean_time_saved_seconds": 1.9,
+      "projects": [
+        [
+          "andrewthauer",
+          "api"
+        ],
+        [
+          "andrewthauer",
+          "cli"
+        ],
+        [
+          "andrewthauer",
+          "core"
+        ],
+        [
+          "andrewthauer",
+          "web"
+        ],
+        [
+          "libraries",
+          "mitt"
+        ],
+        [
+          "libraries",
+          "neverthrow"
+        ],
+        [
+          "libraries",
+          "ts-pattern"
+        ],
+        [
+          "libraries",
+          "zod"
+        ],
+        [
+          "quramy",
+          "x-cli"
+        ],
+        [
+          "quramy",
+          "x-core"
+        ],
+        [
+          "typescript",
+          "compiler"
+        ],
+        [
+          "typescript",
+          "jsTyping"
+        ],
+        [
+          "typescript",
+          "services"
+        ]
+      ]
+    },
+    "selective_hash_vs_clean_all": {
+      "n": 77,
+      "median_saved_source_units": 3,
+      "median_unit_reduction": 0.514,
+      "median_time_saved_seconds": 1.331,
+      "mean_time_saved_seconds": 1.923,
+      "projects": [
+        [
+          "andrewthauer",
+          "api"
+        ],
+        [
+          "andrewthauer",
+          "cli"
+        ],
+        [
+          "andrewthauer",
+          "core"
+        ],
+        [
+          "andrewthauer",
+          "web"
+        ],
+        [
+          "libraries",
+          "mitt"
+        ],
+        [
+          "libraries",
+          "neverthrow"
+        ],
+        [
+          "libraries",
+          "ts-pattern"
+        ],
+        [
+          "libraries",
+          "zod"
+        ],
+        [
+          "quramy",
+          "x-cli"
+        ],
+        [
+          "quramy",
+          "x-core"
+        ],
+        [
+          "typescript",
+          "compiler"
+        ],
+        [
+          "typescript",
+          "jsTyping"
+        ],
+        [
+          "typescript",
+          "services"
+        ]
+      ]
+    },
+    "selective_hash_vs_full_cache": {
+      "n": 77,
+      "median_saved_source_units": -3,
+      "median_unit_reduction": null,
+      "median_time_saved_seconds": -1.476,
+      "mean_time_saved_seconds": -2.506,
+      "projects": [
+        [
+          "andrewthauer",
+          "api"
+        ],
+        [
+          "andrewthauer",
+          "cli"
+        ],
+        [
+          "andrewthauer",
+          "core"
+        ],
+        [
+          "andrewthauer",
+          "web"
+        ],
+        [
+          "libraries",
+          "mitt"
+        ],
+        [
+          "libraries",
+          "neverthrow"
+        ],
+        [
+          "libraries",
+          "ts-pattern"
+        ],
+        [
+          "libraries",
+          "zod"
+        ],
+        [
+          "quramy",
+          "x-cli"
+        ],
+        [
+          "quramy",
+          "x-core"
+        ],
+        [
+          "typescript",
+          "compiler"
+        ],
+        [
+          "typescript",
+          "jsTyping"
+        ],
+        [
+          "typescript",
+          "services"
+        ]
+      ]
+    },
+    "guarded_hash_vs_force_all": {
+      "n": 64,
+      "median_saved_source_units": 3.0,
+      "median_unit_reduction": 0.514,
+      "median_time_saved_seconds": 1.076,
+      "mean_time_saved_seconds": 1.582,
+      "projects": [
+        [
+          "andrewthauer",
+          "api"
+        ],
+        [
+          "andrewthauer",
+          "cli"
+        ],
+        [
+          "andrewthauer",
+          "core"
+        ],
+        [
+          "andrewthauer",
+          "web"
+        ],
+        [
+          "libraries",
+          "mitt"
+        ],
+        [
+          "libraries",
+          "neverthrow"
+        ],
+        [
+          "libraries",
+          "ts-pattern"
+        ],
+        [
+          "libraries",
+          "zod"
+        ],
+        [
+          "quramy",
+          "x-cli"
+        ],
+        [
+          "quramy",
+          "x-core"
+        ],
+        [
+          "typescript",
+          "compiler"
+        ],
+        [
+          "typescript",
+          "jsTyping"
+        ],
+        [
+          "typescript",
+          "services"
+        ]
+      ]
+    },
+    "guarded_hash_vs_invalidate_all": {
+      "n": 64,
+      "median_saved_source_units": 3.0,
+      "median_unit_reduction": 0.514,
+      "median_time_saved_seconds": 1.345,
+      "mean_time_saved_seconds": 1.821,
+      "projects": [
+        [
+          "andrewthauer",
+          "api"
+        ],
+        [
+          "andrewthauer",
+          "cli"
+        ],
+        [
+          "andrewthauer",
+          "core"
+        ],
+        [
+          "andrewthauer",
+          "web"
+        ],
+        [
+          "libraries",
+          "mitt"
+        ],
+        [
+          "libraries",
+          "neverthrow"
+        ],
+        [
+          "libraries",
+          "ts-pattern"
+        ],
+        [
+          "libraries",
+          "zod"
+        ],
+        [
+          "quramy",
+          "x-cli"
+        ],
+        [
+          "quramy",
+          "x-core"
+        ],
+        [
+          "typescript",
+          "compiler"
+        ],
+        [
+          "typescript",
+          "jsTyping"
+        ],
+        [
+          "typescript",
+          "services"
+        ]
+      ]
+    },
+    "guarded_hash_vs_clean_all": {
+      "n": 101,
+      "median_saved_source_units": 3,
+      "median_unit_reduction": 0.514,
+      "median_time_saved_seconds": 0.776,
+      "mean_time_saved_seconds": 1.641,
+      "projects": [
+        [
+          "andrewthauer",
+          "api"
+        ],
+        [
+          "andrewthauer",
+          "cli"
+        ],
+        [
+          "andrewthauer",
+          "core"
+        ],
+        [
+          "andrewthauer",
+          "web"
+        ],
+        [
+          "libraries",
+          "mitt"
+        ],
+        [
+          "libraries",
+          "neverthrow"
+        ],
+        [
+          "libraries",
+          "ts-pattern"
+        ],
+        [
+          "libraries",
+          "zod"
+        ],
+        [
+          "quramy",
+          "x-cli"
+        ],
+        [
+          "quramy",
+          "x-core"
+        ],
+        [
+          "typescript",
+          "compiler"
+        ],
+        [
+          "typescript",
+          "jsTyping"
+        ],
+        [
+          "typescript",
+          "services"
+        ]
+      ]
+    },
+    "guarded_hash_vs_full_cache": {
+      "n": 101,
+      "median_saved_source_units": -3,
+      "median_unit_reduction": null,
+      "median_time_saved_seconds": -1.974,
+      "mean_time_saved_seconds": -2.422,
+      "projects": [
+        [
+          "andrewthauer",
+          "api"
+        ],
+        [
+          "andrewthauer",
+          "cli"
+        ],
+        [
+          "andrewthauer",
+          "core"
+        ],
+        [
+          "andrewthauer",
+          "web"
+        ],
+        [
+          "libraries",
+          "mitt"
+        ],
+        [
+          "libraries",
+          "neverthrow"
+        ],
+        [
+          "libraries",
+          "ts-pattern"
+        ],
+        [
+          "libraries",
+          "zod"
+        ],
+        [
+          "quramy",
+          "x-cli"
+        ],
+        [
+          "quramy",
+          "x-core"
+        ],
+        [
+          "typescript",
+          "compiler"
+        ],
+        [
+          "typescript",
+          "jsTyping"
+        ],
+        [
+          "typescript",
+          "services"
+        ]
+      ]
+    }
+  },
+  "method_limitations": [
+    "All observed faults were deliberately injected, not sampled from real CI failure logs.",
+    "Repository-level dependence precludes treating every trial or random seed as an independent sample.",
+    "full_cache is an idealized *available complete cache hit*; this baseline must be conditioned on availability.",
+    "Units count project source files for projects reported as rebuilt; not instructions or CPU work."
+  ]
+}

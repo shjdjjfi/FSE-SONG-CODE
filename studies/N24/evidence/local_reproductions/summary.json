@@ -1,0 +1,510 @@
+{
+  "caveats": [
+    "Wilson CIs treat package-host cells as independent; package families share npm implementation, so uncertainty may be understated",
+    "An npm ci exit 0 with native execution failure is not a successful installation",
+    "This dataset alone cannot establish naturally occurring CI incidence, dollar savings, or industrial adoption",
+    "Refusal for non-leaf and corrupted existing entries is a method boundary, not successful repair"
+  ],
+  "groups": {
+    "intact_negative_control/clean-regenerate": {
+      "median_treatment_seconds": 0.5237,
+      "missing_host_platform_entries_total": 0,
+      "n": 5,
+      "native_execution_success_fraction": 1.0,
+      "native_execution_success_n": 5,
+      "non_target_changed_versions_mean": 1.0,
+      "non_target_changed_versions_total": 5,
+      "npm_ci_ok_n": 5,
+      "reference_usable_n": 5,
+      "wilson_95_ci": [
+        0.5655,
+        1
+      ]
+    },
+    "intact_negative_control/npm11-in-place": {
+      "median_treatment_seconds": 0.3145,
+      "missing_host_platform_entries_total": 0,
+      "n": 5,
+      "native_execution_success_fraction": 1.0,
+      "native_execution_success_n": 5,
+      "non_target_changed_versions_mean": 0.0,
+      "non_target_changed_versions_total": 0,
+      "npm_ci_ok_n": 5,
+      "reference_usable_n": 5,
+      "wilson_95_ci": [
+        0.5655,
+        1
+      ]
+    },
+    "intact_negative_control/npm12-in-place": {
+      "median_treatment_seconds": 0.3674,
+      "missing_host_platform_entries_total": 0,
+      "n": 5,
+      "native_execution_success_fraction": 1.0,
+      "native_execution_success_n": 5,
+      "non_target_changed_versions_mean": 0.0,
+      "non_target_changed_versions_total": 0,
+      "npm_ci_ok_n": 5,
+      "reference_usable_n": 5,
+      "wilson_95_ci": [
+        0.5655,
+        1
+      ]
+    },
+    "intact_negative_control/strict-donor": {
+      "median_treatment_seconds": 0.4556,
+      "missing_host_platform_entries_total": 0,
+      "n": 5,
+      "native_execution_success_fraction": 1.0,
+      "native_execution_success_n": 5,
+      "non_target_changed_versions_mean": 0.0,
+      "non_target_changed_versions_total": 0,
+      "npm_ci_ok_n": 5,
+      "reference_usable_n": 5,
+      "wilson_95_ci": [
+        0.5655,
+        1
+      ]
+    },
+    "intact_negative_control/unmodified": {
+      "median_treatment_seconds": 0.0,
+      "missing_host_platform_entries_total": 0,
+      "n": 5,
+      "native_execution_success_fraction": 1.0,
+      "native_execution_success_n": 5,
+      "non_target_changed_versions_mean": 0.0,
+      "non_target_changed_versions_total": 0,
+      "npm_ci_ok_n": 5,
+      "reference_usable_n": 5,
+      "wilson_95_ci": [
+        0.5655,
+        1
+      ]
+    },
+    "npm10_warm_defect/clean-regenerate": {
+      "median_treatment_seconds": 0.4131,
+      "missing_host_platform_entries_total": 0,
+      "n": 5,
+      "native_execution_success_fraction": 1.0,
+      "native_execution_success_n": 5,
+      "non_target_changed_versions_mean": 1.0,
+      "non_target_changed_versions_total": 5,
+      "npm_ci_ok_n": 5,
+      "reference_usable_n": 5,
+      "wilson_95_ci": [
+        0.5655,
+        1
+      ]
+    },
+    "npm10_warm_defect/npm11-in-place": {
+      "median_treatment_seconds": 0.3018,
+      "missing_host_platform_entries_total": 0,
+      "n": 5,
+      "native_execution_success_fraction": 1.0,
+      "native_execution_success_n": 5,
+      "non_target_changed_versions_mean": 0.0,
+      "non_target_changed_versions_total": 0,
+      "npm_ci_ok_n": 5,
+      "reference_usable_n": 5,
+      "wilson_95_ci": [
+        0.5655,
+        1
+      ]
+    },
+    "npm10_warm_defect/npm12-in-place": {
+      "median_treatment_seconds": 0.5564,
+      "missing_host_platform_entries_total": 0,
+      "n": 5,
+      "native_execution_success_fraction": 1.0,
+      "native_execution_success_n": 5,
+      "non_target_changed_versions_mean": 0.0,
+      "non_target_changed_versions_total": 0,
+      "npm_ci_ok_n": 5,
+      "reference_usable_n": 5,
+      "wilson_95_ci": [
+        0.5655,
+        1
+      ]
+    },
+    "npm10_warm_defect/strict-donor": {
+      "median_treatment_seconds": 0.4557,
+      "missing_host_platform_entries_total": 0,
+      "n": 5,
+      "native_execution_success_fraction": 1.0,
+      "native_execution_success_n": 5,
+      "non_target_changed_versions_mean": 0.0,
+      "non_target_changed_versions_total": 0,
+      "npm_ci_ok_n": 5,
+      "reference_usable_n": 5,
+      "wilson_95_ci": [
+        0.5655,
+        1
+      ]
+    },
+    "npm10_warm_defect/unmodified": {
+      "median_treatment_seconds": 0.0,
+      "missing_host_platform_entries_total": 0,
+      "n": 5,
+      "native_execution_success_fraction": 1.0,
+      "native_execution_success_n": 5,
+      "non_target_changed_versions_mean": 0.0,
+      "non_target_changed_versions_total": 0,
+      "npm_ci_ok_n": 5,
+      "reference_usable_n": 5,
+      "wilson_95_ci": [
+        0.5655,
+        1
+      ]
+    }
+  },
+  "n_observations": 50,
+  "n_source_files": 1,
+  "observational_unit": "package family x observed host x fault, paired across strategies",
+  "paired_strategies_vs_unmodified": [
+    {
+      "churn_delta": 1,
+      "condition": "intact_negative_control",
+      "family": "biome",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "clean-regenerate"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "biome",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm11-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "biome",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm12-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "biome",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "strict-donor"
+    },
+    {
+      "churn_delta": 1,
+      "condition": "npm10_warm_defect",
+      "family": "biome",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "clean-regenerate"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "biome",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm11-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "biome",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm12-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "biome",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "strict-donor"
+    },
+    {
+      "churn_delta": 1,
+      "condition": "intact_negative_control",
+      "family": "esbuild",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "clean-regenerate"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "esbuild",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm11-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "esbuild",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm12-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "esbuild",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "strict-donor"
+    },
+    {
+      "churn_delta": 1,
+      "condition": "npm10_warm_defect",
+      "family": "esbuild",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "clean-regenerate"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "esbuild",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm11-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "esbuild",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm12-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "esbuild",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "strict-donor"
+    },
+    {
+      "churn_delta": 1,
+      "condition": "intact_negative_control",
+      "family": "lightningcss",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "clean-regenerate"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "lightningcss",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm11-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "lightningcss",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm12-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "lightningcss",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "strict-donor"
+    },
+    {
+      "churn_delta": 1,
+      "condition": "npm10_warm_defect",
+      "family": "lightningcss",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "clean-regenerate"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "lightningcss",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm11-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "lightningcss",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm12-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "lightningcss",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "strict-donor"
+    },
+    {
+      "churn_delta": 1,
+      "condition": "intact_negative_control",
+      "family": "rollup",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "clean-regenerate"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "rollup",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm11-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "rollup",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm12-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "rollup",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "strict-donor"
+    },
+    {
+      "churn_delta": 1,
+      "condition": "npm10_warm_defect",
+      "family": "rollup",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "clean-regenerate"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "rollup",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm11-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "rollup",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm12-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "rollup",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "strict-donor"
+    },
+    {
+      "churn_delta": 1,
+      "condition": "intact_negative_control",
+      "family": "swc",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "clean-regenerate"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "swc",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm11-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "swc",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm12-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "intact_negative_control",
+      "family": "swc",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "strict-donor"
+    },
+    {
+      "churn_delta": 1,
+      "condition": "npm10_warm_defect",
+      "family": "swc",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "clean-regenerate"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "swc",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm11-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "swc",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "npm12-in-place"
+    },
+    {
+      "churn_delta": 0,
+      "condition": "npm10_warm_defect",
+      "family": "swc",
+      "native_success_delta": 0,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json",
+      "strategy": "strict-donor"
+    }
+  ],
+  "platforms": [
+    {
+      "commit": null,
+      "errors": [],
+      "families": [
+        "rollup",
+        "esbuild",
+        "biome",
+        "swc",
+        "lightningcss"
+      ],
+      "host": {
+        "cpu": "x64",
+        "libc": "glibc",
+        "node": "v24.22.1",
+        "os": "linux",
+        "runner": "local",
+        "runner_arch": "x86_64"
+      },
+      "run": null,
+      "source": "n24_submission_experiments/results/local_all_with_npm12/runs.json"
+    }
+  ],
+  "source": "Real published npm packages; npm10 regenerated locks under node_modules (controlled, not historical incidents)",
+  "warnings": []
+}

@@ -1,0 +1,30 @@
+{
+  "pr": 14797,
+  "pr_author": "hinton",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-05-15T09:54:11Z",
+      "requested_people": [
+        "hinton"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-05-15T09:54:14Z",
+      "requested_people": [
+        "btreston",
+        "cd-bitwarden",
+        "dani-garcia",
+        "hinton",
+        "rr-bw",
+        "willmartian"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "9ea6dea8107d8844f8d0432e6a5d3dbd7654dbc2e3012253baeec17faee2628f",
+  "url": "https://github.com/bitwarden/clients/pull/14797"
+}

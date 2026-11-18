@@ -1,0 +1,73 @@
+{
+  "helm_version": "v3.17.0+g301108e",
+  "helm_sha256": "95f84183e5d7aeea239079899acb4c90cd09f470ffc132ee38d774760c41d109",
+  "helm_template_flags": [
+    "--is-upgrade",
+    "--namespace=n02-test",
+    "--kube-version=1.30.0"
+  ],
+  "semantics": "SOURCE-CODE-INSPIRED VALUES EMULATION; NOT A PERSISTED RELEASE",
+  "case_selection": "curated from cited official migration notes; not independent random holdout",
+  "chart_artifacts": {
+    "argo-old": {
+      "filename": "argo-cd-5.55.0.tgz",
+      "sha256": "8281ecbc11b7fd5e89a855e8c262711b56eec580be3cf96820a12f8f9feae774",
+      "bytes": 161751,
+      "project": "argoproj/argo-helm"
+    },
+    "argo-new": {
+      "filename": "argo-cd-6.0.0.tgz",
+      "sha256": "2a8a419dddb616a891b5b0e358805b742568a220e3e2d5f8d903284d32893b41",
+      "bytes": 161508,
+      "project": "argoproj/argo-helm"
+    },
+    "tempo-old": {
+      "filename": "tempo-distributed-1.32.0.tgz",
+      "sha256": "0b398dac5e0dd2e802ebe62c71abd989ad22f1a64c25a5aa9698fb8f8f96c568",
+      "bytes": 103917,
+      "project": "grafana/helm-charts"
+    },
+    "tempo-new": {
+      "filename": "tempo-distributed-1.33.0.tgz",
+      "sha256": "e66f1923e4501600b19c5ea5215fb1aba237912f49c576df4ad26b31e5ca8c63",
+      "bytes": 108016,
+      "project": "grafana/helm-charts"
+    },
+    "prometheus-old": {
+      "filename": "prometheus-27.0.0.tgz",
+      "sha256": "7aa796acdad21c10d15c85e7606e63c9ad3509e3b316c0621319e626e4929419",
+      "bytes": 89064,
+      "project": "prometheus-community/helm-charts"
+    },
+    "prometheus-new": {
+      "filename": "prometheus-28.0.0.tgz",
+      "sha256": "83c7c5a00e70ec498da963e8d7d32243e077460747298934fc299b270f72128b",
+      "bytes": 81129,
+      "project": "prometheus-community/helm-charts"
+    },
+    "ksm-old": {
+      "filename": "kube-state-metrics-2.13.2.tgz",
+      "sha256": "acc68acdb08df1a2b46ddf5e853d71ebd2944cdc78b3c56ebf8b34c9198b1c95",
+      "bytes": 7312,
+      "project": "prometheus-community/helm-charts"
+    },
+    "ksm-new": {
+      "filename": "kube-state-metrics-3.0.0.tgz",
+      "sha256": "403c61593a417d04299db44afb18ad3708a69a18a7eb7ce60f84f01757101dac",
+      "bytes": 7482,
+      "project": "prometheus-community/helm-charts"
+    },
+    "certmanager-old": {
+      "filename": "cert-manager-v1.15.3.tgz",
+      "sha256": "016e68d9f7083d2c4fd302f951ee6490dbf4cb1ef44cfc06914c39cbfb01d858",
+      "bytes": 94751,
+      "project": "cert-manager/cert-manager"
+    },
+    "certmanager-new": {
+      "filename": "cert-manager-v1.16.0.tgz",
+      "sha256": "9721304201a8e4059797e06abcc5530bf3903938dc9a41e86879bd097129d5da",
+      "bytes": 136791,
+      "project": "cert-manager/cert-manager"
+    }
+  }
+}

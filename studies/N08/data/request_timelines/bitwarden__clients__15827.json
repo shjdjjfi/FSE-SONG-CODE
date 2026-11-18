@@ -1,0 +1,27 @@
+{
+  "pr": 15827,
+  "pr_author": "nick-livefront",
+  "repo": "bitwarden/clients",
+  "request_events": [
+    {
+      "actor": "",
+      "datetime": "2025-07-29T18:06:21Z",
+      "requested_people": [
+        "nick-livefront"
+      ],
+      "team_request_anonymized": true
+    },
+    {
+      "actor": "",
+      "datetime": "2025-07-29T18:06:21Z",
+      "requested_people": [
+        "nick-livefront",
+        "shane-melton",
+        "vleague2"
+      ],
+      "team_request_anonymized": false
+    }
+  ],
+  "sha256": "51b787fb3dc33b54da613cd8a13c72bc324c29223b9e991de3e51973b3c9949d",
+  "url": "https://github.com/bitwarden/clients/pull/15827"
+}

@@ -1,0 +1,97 @@
+{
+  "fetched_utc": "2026-11-14T17:13:06.824560+00:00",
+  "merged_at": "2025-10-08T17:04:40Z",
+  "opened_at": "2025-05-01T20:53:33Z",
+  "pr": 14588,
+  "raw_html_sha256": "516f81796f25fd7cc2f3070c99ecd73157222cec1f4aa1fff4349e980e9524bc",
+  "repo": "bitwarden/clients",
+  "review_count_visible": 17,
+  "reviews": [
+    {
+      "login": "audreyality",
+      "state": "COMMENTED",
+      "submitted_at": "2025-06-03T13:20:03Z"
+    },
+    {
+      "login": "BryanCunningham",
+      "state": "COMMENTED",
+      "submitted_at": "2025-06-03T14:02:49Z"
+    },
+    {
+      "login": "BryanCunningham",
+      "state": "APPROVED",
+      "submitted_at": "2025-06-03T14:23:42Z"
+    },
+    {
+      "login": "audreyality",
+      "state": "APPROVED",
+      "submitted_at": "2025-06-03T18:13:54Z"
+    },
+    {
+      "login": "Banrion",
+      "state": "APPROVED",
+      "submitted_at": "2025-06-04T15:14:15Z"
+    },
+    {
+      "login": "Patrick-Pimentel-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-06-09T22:47:32Z"
+    },
+    {
+      "login": "willmartian",
+      "state": "APPROVED",
+      "submitted_at": "2025-06-10T19:35:52Z"
+    },
+    {
+      "login": "vleague2",
+      "state": "APPROVED",
+      "submitted_at": "2025-08-25T14:15:03Z"
+    },
+    {
+      "login": "audreyality",
+      "state": "APPROVED",
+      "submitted_at": "2025-08-26T16:31:52Z"
+    },
+    {
+      "login": "Patrick-Pimentel-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-08-27T13:04:32Z"
+    },
+    {
+      "login": "Banrion",
+      "state": "APPROVED",
+      "submitted_at": "2025-08-27T16:36:25Z"
+    },
+    {
+      "login": "vleague2",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-26T18:22:46Z"
+    },
+    {
+      "login": "willmartian",
+      "state": "APPROVED",
+      "submitted_at": "2025-09-29T14:08:01Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "CHANGES_REQUESTED",
+      "submitted_at": "2025-10-01T12:44:25Z"
+    },
+    {
+      "login": "djsmith85",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-02T13:13:12Z"
+    },
+    {
+      "login": "Banrion",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-02T13:46:43Z"
+    },
+    {
+      "login": "Patrick-Pimentel-Bitwarden",
+      "state": "APPROVED",
+      "submitted_at": "2025-10-08T16:10:36Z"
+    }
+  ],
+  "source_url": "https://github.com/bitwarden/clients/pull/14588"
+}

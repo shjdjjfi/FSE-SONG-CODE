@@ -1,0 +1,40 @@
+{
+  "key": "9e14072abf8e9d5f0c",
+  "args": {
+    "crate": "rand_distr",
+    "version": "0.5.1",
+    "id": "29242a275075c76a",
+    "profile": "docs_cfg",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1125,
+  "errors": [
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `rand`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rand`\n --> src/main.rs:3:5\n  |\n3 | use rand::prelude::*;\n  |     ^^^^ use of unresolved module or unlinked crate `rand`\n  |\n  = help: if you wanted to use a crate named `rand`, use `cargo add rand` to add it to your `Cargo.toml`\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: use of unresolved module or unlinked crate `rand`",
+      "rendered": "error[E0433]: failed to resolve: use of unresolved module or unlinked crate `rand`\n  --> src/main.rs:10:15\n   |\n10 | let mut rng = rand::rng();\n   |               ^^^^ use of unresolved module or unlinked crate `rand`\n   |\n   = help: if you wanted to use a crate named `rand`, use `cargo add rand` to add it to your `Cargo.toml`\n\n",
+      "line": 10
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `sample` found for struct `WeightedTreeIndex<W>` in the current scope",
+      "rendered": "error[E0599]: no method named `sample` found for struct `WeightedTreeIndex<W>` in the current scope\n  --> src/main.rs:14:18\n   |\n14 |     let i = dist.sample(&mut rng);\n   |                  ^^^^^^\n   |\n  ::: /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/rand-0.9.5/src/distr/distribution.rs:37:8\n   |\n37 |     fn sample<R: Rng + ?Sized>(&self, rng: &mut R) -> T;\n   |        ------ the method is available for `WeightedTreeIndex<{integer}>` here\n   |\n   = help: items from traits can only be used if the trait is in scope\nhelp: trait `Distribution` which provides `sample` is implemented but not in scope; perhaps you want to import it\n   |\n 1 + use rand_distr::Distribution;\n   |\nhelp: there is a method `try_sample` with a similar name\n   |\n14 |     let i = dist.try_sample(&mut rng);\n   |                  ++++\n\n",
+      "line": 37
+    }
+  ],
+  "error_count": 3,
+  "stderr_excerpt": "error: could not compile `n05_rand_distr_consumer` (bin \"n05_rand_distr_consumer\") due to 3 previous errors\n",
+  "code_sha256": "1e897ae060aaa26ff1625fc0fedae43deeee309074a795d58a663be56c0fc532",
+  "manifest_sha256": "34167c389cf681bfcb71e821e92c535457fb8db9aa16b819854a853eddd28076",
+  "log_file": "prospective/results/check_logs/9e14072abf8e9d5f0c.txt.gz"
+}

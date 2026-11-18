@@ -1,0 +1,187 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 5,
+  "bytes": 59479,
+  "control_flow_or_callback_lines": 55,
+  "event": "BW10818",
+  "examples": [
+    {
+      "change": "-",
+      "code": "this.logService.info(e);",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.logService.error(\"[Main Biometrics IPC Listener] %s failed\", message.action, e);",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.osBiometricsService = new OsBiometricsServiceMac(this.i18nService);",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.osBiometricsService = new OsBiometricsServiceMac(this.i18nService, this.logService);",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.osBiometricsService = new OsBiometricsServiceLinux(this.i18nService, this.windowMain);",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.osBiometricsService = new OsBiometricsServiceLinux(this.logService);",
+      "file": "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { I18nService } from \"@bitwarden/common/platform/abstractions/i18n.service\";",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { LogService } from \"@bitwarden/common/platform/abstractions/log.service\";",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { WindowMain } from \"../../main/window.main\";",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "constructor(",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "private i18nservice: I18nService,",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "private windowMain: WindowMain,",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": ") {}",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "constructor(private logService: LogService) {}",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "await passwords.deletePassword(service, key);",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "try {",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "await passwords.deletePassword(service, key);",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "} catch (e) {",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (e instanceof Error && e.message === passwords.PASSWORD_NOT_FOUND) {",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "this.logService.debug(`Biometric key ${key} not found for service ${service}.`);",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "throw e;",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { LogService } from \"@bitwarden/common/platform/abstractions/log.service\";",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-mac.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "constructor(private i18nservice: I18nService) {}",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-mac.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "constructor(",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-mac.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "private i18nservice: I18nService,",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-mac.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "private logService: LogService,",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-mac.service.ts"
+    },
+    {
+      "change": "+",
+      "code": ") {}",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-mac.service.ts"
+    },
+    {
+      "change": "-",
+      "code": "return await passwords.deletePassword(service, key);",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-mac.service.ts"
+    },
+    {
+      "change": "+",
+      "code": "try {",
+      "file": "apps/desktop/src/key-management/biometrics/os-biometrics-mac.service.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:34.500394+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/10818",
+  "noncomment_nonimport_changed_lines": 123,
+  "pr": 15070,
+  "repository": "bitwarden/clients",
+  "sha256": "7fd22ce9abab968a470288c905c77e4465839d3977ed999f7d46d2bc7a271622",
+  "target_code_changed_lines": 128,
+  "target_files": [
+    "apps/desktop/src/key-management/biometrics/main-biometrics-ipc.listener.ts",
+    "apps/desktop/src/key-management/biometrics/main-biometrics.service.ts",
+    "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.spec.ts",
+    "apps/desktop/src/key-management/biometrics/os-biometrics-linux.service.ts",
+    "apps/desktop/src/key-management/biometrics/os-biometrics-mac.service.spec.ts",
+    "apps/desktop/src/key-management/biometrics/os-biometrics-mac.service.ts",
+    "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.spec.ts",
+    "apps/desktop/src/key-management/biometrics/os-biometrics-windows.service.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15070.patch"
+}

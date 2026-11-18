@@ -1,0 +1,95 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 4,
+  "bytes": 37709,
+  "control_flow_or_callback_lines": 5,
+  "event": "BW12407",
+  "examples": [
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "const lastProcessReload = await this.biometricStateService.getLastProcessReload();",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "(await this.biometricStateService.getLastProcessReload()) == null ||",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "Date.now() - (await this.biometricStateService.getLastProcessReload()).getTime() >",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "AUTOPROMPT_BIOMETRICS_PROCESS_RELOAD_DELAY",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "lastProcessReload == null ||",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "isNaN(lastProcessReload.getTime()) ||",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "Date.now() - lastProcessReload.getTime() > AUTOPROMPT_BIOMETRICS_PROCESS_RELOAD_DELAY",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { ClientType } from \"@bitwarden/common/enums\";",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { ClientType, DeviceType } from \"@bitwarden/common/enums\";",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "// Firefox closes the popup when unfocused, so this would block all unlock methods",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "if (this.platformUtilsService.getDevice() === DeviceType.FirefoxExtension) {",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "return;",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "}",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/key-management/src/angular/lock/components/lock.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:56:53.486690+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/12407",
+  "noncomment_nonimport_changed_lines": 10,
+  "pr": 12854,
+  "repository": "bitwarden/clients",
+  "sha256": "23eba9ca8a15bdfff3c82e9d2999deea60beaba7dfcfcb903c9115cd90763903",
+  "target_code_changed_lines": 15,
+  "target_files": [
+    "libs/key-management/src/angular/lock/components/lock.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/12854.patch"
+}

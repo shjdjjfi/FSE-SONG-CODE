@@ -1,0 +1,192 @@
+{
+  "automated_code_semantic_signal_only": "present",
+  "branch_or_comparison_lines": 9,
+  "bytes": 495157,
+  "control_flow_or_callback_lines": 23,
+  "event": "GF104424",
+  "examples": [
+    {
+      "change": "+",
+      "code": "appsdkapiserver \"github.com/grafana/grafana-app-sdk/k8s/apiserver\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "restclient \"k8s.io/client-go/rest\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "\"github.com/grafana/grafana/apps/alerting/notifications/pkg/apis/alerting/v0alpha1\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "\"github.com/grafana/grafana/pkg/services/accesscontrol\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "\"github.com/grafana/grafana/pkg/services/apiserver/builder\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "\"github.com/grafana/grafana/pkg/services/apiserver/builder/runner\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "\"github.com/grafana/grafana/pkg/services/apiserver/appinstaller\"",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "type AlertingNotificationsAppProvider struct {",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "app.Provider",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "var (",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "_ appsdkapiserver.AppInstaller       = (*AlertingNotificationsAppInstaller)(nil)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "_ appinstaller.LegacyStorageProvider = (*AlertingNotificationsAppInstaller)(nil)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "_ appinstaller.AuthorizerProvider    = (*AlertingNotificationsAppInstaller)(nil)",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": ")",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "type AlertingNotificationsAppInstaller struct {",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "appsdkapiserver.AppInstaller",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "cfg *setting.Cfg",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "ng  *ngalert.AlertNG",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "func RegisterApp(",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "func RegisterAppInstaller(",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": ") *AlertingNotificationsAppProvider {",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": ") (*AlertingNotificationsAppInstaller, error) {",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "return nil",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "return nil, nil",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "appCfg := &runner.AppBuilderConfig{",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "Authorizer:               getAuthorizer(ng.Api.AccessControl),",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "LegacyStorageGetter:      getLegacyStorage(request.GetNamespaceMapper(cfg), ng),",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "OpenAPIDefGetter:         v0alpha1.GetOpenAPIDefinitions,",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "ManagedKinds:             notificationsResource.GetKinds(),",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "-",
+      "code": "AllowedV0Alpha1Resources: []string{builder.AllResourcesAllowed},",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "pkg/registry/apps/alerting/notifications/register.go"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:53.290475+00:00",
+  "migration_url": "https://github.com/grafana/grafana/pull/104424",
+  "noncomment_nonimport_changed_lines": 106,
+  "pr": 109309,
+  "repository": "grafana/grafana",
+  "sha256": "a5d702e023de025465f96ec62c2c0148896e467e99fd68c2eba47770784fefe8",
+  "target_code_changed_lines": 128,
+  "target_files": [
+    "pkg/registry/apps/alerting/notifications/receiver/conversions.go",
+    "pkg/registry/apps/alerting/notifications/receiver/legacy_storage.go",
+    "pkg/registry/apps/alerting/notifications/receiver/type.go",
+    "pkg/registry/apps/alerting/notifications/register.go",
+    "pkg/registry/apps/alerting/notifications/routingtree/conversions.go",
+    "pkg/registry/apps/alerting/notifications/routingtree/legacy_storage.go",
+    "pkg/registry/apps/alerting/notifications/routingtree/type.go",
+    "pkg/registry/apps/alerting/notifications/templategroup/conversions.go",
+    "pkg/registry/apps/alerting/notifications/templategroup/legacy_storage.go",
+    "pkg/registry/apps/alerting/notifications/templategroup/type.go",
+    "pkg/registry/apps/alerting/notifications/timeinterval/conversions.go",
+    "pkg/registry/apps/alerting/notifications/timeinterval/legacy_storage.go",
+    "pkg/registry/apps/alerting/notifications/timeinterval/type.go"
+  ],
+  "url": "https://github.com/grafana/grafana/pull/109309.patch"
+}

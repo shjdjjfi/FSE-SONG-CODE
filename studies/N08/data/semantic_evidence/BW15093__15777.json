@@ -1,0 +1,120 @@
+{
+  "automated_code_semantic_signal_only": "undetermined",
+  "branch_or_comparison_lines": 0,
+  "bytes": 14925,
+  "control_flow_or_callback_lines": 0,
+  "event": "BW15093",
+  "examples": [
+    {
+      "change": "-",
+      "code": "import { ChangeDetectorRef, Component, OnDestroy, OnInit } from \"@angular/core\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { ChangeDetectorRef, Component, OnInit, inject, DestroyRef } from \"@angular/core\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { takeUntilDestroyed } from \"@angular/core/rxjs-interop\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "import { Subject, filter, switchMap, takeUntil, tap } from \"rxjs\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "import { filter, switchMap, tap } from \"rxjs\";",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "export class AnonLayoutWrapperComponent implements OnInit, OnDestroy {",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "private destroy$ = new Subject<void>();",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "export class AnonLayoutWrapperComponent implements OnInit {",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "private readonly destroyRef = inject(DestroyRef);",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "takeUntil(this.destroy$),",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": "takeUntilDestroyed(this.destroyRef),",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": ".pipe(takeUntil(this.destroy$))",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "+",
+      "code": ".pipe(takeUntilDestroyed(this.destroyRef))",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "ngOnDestroy() {",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.destroy$.next();",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "this.destroy$.complete();",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    },
+    {
+      "change": "-",
+      "code": "}",
+      "file": "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+    }
+  ],
+  "fetched_utc": "2026-11-14T23:57:46.606450+00:00",
+  "migration_url": "https://github.com/bitwarden/clients/pull/15093",
+  "noncomment_nonimport_changed_lines": 12,
+  "pr": 15777,
+  "repository": "bitwarden/clients",
+  "sha256": "b77b6eec59c3b54ccf46d57b6bb40668be25e94eca8cfbcc2b699d3b666ae357",
+  "target_code_changed_lines": 20,
+  "target_files": [
+    "libs/components/src/anon-layout/anon-layout-wrapper.component.ts"
+  ],
+  "url": "https://github.com/bitwarden/clients/pull/15777.patch"
+}

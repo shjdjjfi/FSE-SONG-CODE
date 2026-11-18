@@ -1,0 +1,28 @@
+{
+  "key": "f7c244239bb6d8a19f",
+  "args": {
+    "crate": "tonic",
+    "version": "0.13.1",
+    "id": "0bcf2f83eb8c3636",
+    "profile": "default",
+    "features": [],
+    "toolchain": "1.91.0",
+    "code_mode": "visible-only-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.1551,
+  "errors": [
+    {
+      "code": "E0425",
+      "message": "cannot find value `builder` in this scope",
+      "rendered": "error[E0425]: cannot find value `builder` in this scope\n --> src/main.rs:2:1\n  |\n2 | builder.concurrency_limit(256);\n  | ^^^^^^^ not found in this scope\n\n",
+      "line": 2
+    }
+  ],
+  "error_count": 1,
+  "stderr_excerpt": "error: could not compile `n05_tonic_consumer` (bin \"n05_tonic_consumer\") due to 1 previous error\n",
+  "code_sha256": "1615c95470db1c3ae6f4e3c22f1ea610884d680bf3cbe8c604b50443fc79919b",
+  "manifest_sha256": "208e29c9ab575aaead866c9a6d666d4c94ba64eef853b291160860549c6b3322",
+  "log_file": "prospective/results/check_logs/f7c244239bb6d8a19f.txt.gz"
+}

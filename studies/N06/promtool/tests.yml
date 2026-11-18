@@ -1,0 +1,63 @@
+rule_files:
+  - alert_rules.yml
+evaluation_interval: 1m
+tests:
+  - name: continuous service failure with two distinct pod identities
+    interval: 1m
+    input_series:
+      - series: 'up{job="n06",namespace="shop",service="cart",instance="pod-a"}'
+        values: '0x9 _x20'
+      - series: 'up{job="n06",namespace="shop",service="cart",instance="pod-b"}'
+        values: '_x9 0x20'
+    alert_rule_test:
+      - eval_time: 15m
+        alertname: N06InstanceDown
+        exp_alerts: []
+      - eval_time: 15m
+        alertname: N06ServiceDown
+        exp_alerts:
+          - exp_labels:
+              namespace: shop
+              service: cart
+              severity: test
+  - name: two unrelated owners reuse one service name, stable aggregate still fires
+    interval: 1m
+    input_series:
+      - series: 'up{job="n06",namespace="shop",service="reused",instance="owner-A-pod"}'
+        values: '0x9 _x20'
+      - series: 'up{job="n06",namespace="shop",service="reused",instance="owner-B-pod"}'
+        values: '_x9 0x20'
+    alert_rule_test:
+      - eval_time: 15m
+        alertname: N06ServiceDown
+        exp_alerts:
+          - exp_labels:
+              namespace: shop
+              service: reused
+              severity: test
+      - eval_time: 15m
+        alertname: N06InstanceDown
+        exp_alerts: []
+  - name: pending continuity not supplied by keep_firing_for
+    interval: 1m
+    input_series:
+      - series: 'up{job="n06-keep",namespace="shop",service="profile",instance="old"}'
+        values: '0x6 _x18'
+      - series: 'up{job="n06-keep",namespace="shop",service="profile",instance="new"}'
+        values: '_x6 0x18'
+    alert_rule_test:
+      - eval_time: 14m
+        alertname: N06InstanceWithKeepFiring
+        exp_alerts: []
+  - name: healthy targets must not fire
+    interval: 1m
+    input_series:
+      - series: 'up{job="n06",namespace="shop",service="search",instance="pod-1"}'
+        values: '1x25'
+    alert_rule_test:
+      - eval_time: 15m
+        alertname: N06InstanceDown
+        exp_alerts: []
+      - eval_time: 15m
+        alertname: N06ServiceDown
+        exp_alerts: []

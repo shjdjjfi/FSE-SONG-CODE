@@ -1,0 +1,48 @@
+{
+  "key": "70537aae6a13f456ca",
+  "args": {
+    "crate": "tokio",
+    "version": "1.45.1",
+    "id": "089aafa8ca1f9b01",
+    "profile": "candidate",
+    "features": [
+      "sync"
+    ],
+    "toolchain": "1.91.0",
+    "code_mode": "hidden-included-v2"
+  },
+  "status": "fail",
+  "returncode": 101,
+  "seconds": 0.082,
+  "errors": [
+    {
+      "code": "E0432",
+      "message": "unresolved import `tokio::io::AsyncWriteExt`",
+      "rendered": "error[E0432]: unresolved import `tokio::io::AsyncWriteExt`\n   --> src/main.rs:1:23\n    |\n  1 | use tokio::io::{self, AsyncWriteExt};\n    |                       ^^^^^^^^^^^^^\n    |                       |\n    |                       no `AsyncWriteExt` in `io`\n    |                       help: a similar name exists in the module: `AsyncWrite`\n    |\nnote: found an item that was configured out\n   --> /workspace/scratch/6d16fd4a6fa0/tools/cargo-home/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.45.1/src/io/mod.rs:277:159\n    |\n268 | / cfg_io_util! {\n269 | |     mod split;\n270 | |     pub use split::{split, ReadHalf, WriteHalf};\n271 | |     mod join;\n...   |\n277 | |         copy, copy_bidirectional, copy_bidirectional_with_sizes, copy_buf, duplex, empty, repeat, sink, simplex, AsyncBufReadExt, AsyncReadExt, AsyncSeekExt, AsyncWriteExt,\n    | |                                                                                                                                                               ^^^^^^^^^^^^^\n278 | |         BufReader, BufStream, BufWriter, DuplexStream, Empty, Lines, Repeat, Sink, Split, Take, SimplexStream,\n279 | |     };\n280 | | }\n    | |_- the item is gat",
+      "line": 1
+    },
+    {
+      "code": "E0433",
+      "message": "failed to resolve: could not find `main` in `tokio`",
+      "rendered": "error[E0433]: failed to resolve: could not find `main` in `tokio`\n --> src/main.rs:3:10\n  |\n3 | #[tokio::main]\n  |          ^^^^ could not find `main` in `tokio`\n\n",
+      "line": 3
+    },
+    {
+      "code": "E0599",
+      "message": "no method named `write_i128` found for struct `Vec<_>` in the current scope",
+      "rendered": "error[E0599]: no method named `write_i128` found for struct `Vec<_>` in the current scope\n --> src/main.rs:7:12\n  |\n7 |     writer.write_i128(i128::MIN).await?;\n  |            ^^^^^^^^^^\n  |\nhelp: there is a method `write` with a similar name\n  |\n7 -     writer.write_i128(i128::MIN).await?;\n7 +     writer.write(i128::MIN).await?;\n  |\n\n",
+      "line": 7
+    },
+    {
+      "code": "E0752",
+      "message": "`main` function is not allowed to be `async`",
+      "rendered": "error[E0752]: `main` function is not allowed to be `async`\n --> src/main.rs:4:1\n  |\n4 | async fn main() -> io::Result<()> {\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `main` function is not allowed to be `async`\n\n",
+      "line": 4
+    }
+  ],
+  "error_count": 4,
+  "stderr_excerpt": "error: could not compile `n05_tokio_consumer` (bin \"n05_tokio_consumer\") due to 4 previous errors\n",
+  "code_sha256": "c2de536ae7c2ea007691d6542a892cdd17dc249bfcf10d1555d9e7081299bf6a",
+  "manifest_sha256": "522de30e4628d06a255e62a9a68f01e0a0cfb7b02d9d617a49e02ff09f4b49a0",
+  "log_file": "results/check_logs/70537aae6a13f456ca.txt.gz"
+}
